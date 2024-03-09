@@ -734,6 +734,9 @@ country_event = { #반란!
 	
 	option = { #진압
 		name = korea.25.a
+		ai_chance = {
+			factor = 100
+		}
 		custom_effect_tooltip = TOOLTIP_IS_HISTORICAL_MOD
 		country_event = {
 			id = korea.26
@@ -748,6 +751,9 @@ country_event = { #반란!
 	}	
 	option = { #민주
 		name = korea.25.b
+		ai_chance = {
+			factor = 0
+		}
 		trigger = {
 			OR = {
 				is_ai = no
@@ -2776,12 +2782,12 @@ country_event = { #마지막 제국
 		hidden_effect = {
 			KOR_yi_kang = {
 				remove_country_leader_role = {
-					ideology = fascism_ideology
+					ideology = ultranationalism
 				}
 				add_country_leader_role = {
 					country_leader = {
 						#expire = "1965.1.1"
-						ideology = fascism_ideology
+						ideology = ultranationalism
 						desc = "YI_KANG_DESC_2"
 						traits = {
 							failer_of_history
@@ -11107,6 +11113,10 @@ country_event = { #조기선거의 결과 친택
 				traits={ KOR_the_ilso }
 			}
 		}
+		add_ideas = kor_dip_ilsoism
+		add_ideas = kor_inn_basism
+		add_ideas = kor_pol_leadism
+		add_ideas = kor_mil_serve_to_emp_and_gov
 		hidden_effect = {
 			remove_country_leader_role = {
 				character = KOR_ahn_chang_ho
@@ -11144,6 +11154,10 @@ country_event = { #조기선거의 결과 친택
 				traits={ KOR_the_dosan }
 			}
 		}
+		add_ideas = kor_dip_givism
+		add_ideas = kor_inn_revolism
+		add_ideas = kor_pol_democratism
+		add_ideas = kor_mil_serve_to_emp_and_gov
 		hidden_effect = {
 			remove_country_leader_role = {
 				character = KOR_park_jungyang
@@ -11181,6 +11195,10 @@ country_event = { #조기선거의 결과 친택
 				traits={ KOR_the_woosa }
 			}
 		}
+		add_ideas = kor_dip_managism
+		add_ideas = kor_inn_charitism
+		add_ideas = kor_pol_gradualism
+		add_ideas = kor_mil_serve_to_emp_and_gov
 		hidden_effect = {
 			remove_country_leader_role = {
 				character = KOR_park_jungyang
@@ -13643,6 +13661,10 @@ country_event = { #독궈제국
 				}
 			}
 		}
+		add_ideas = kor_dip_breakism
+		add_ideas = kor_inn_basism
+		add_ideas = kor_pol_leadism
+		add_ideas = kor_mil_serve_to_emperor
 		set_party_name = {
 			ideology = democratic
 			long_name = "KOR_democratic_party_2_long"

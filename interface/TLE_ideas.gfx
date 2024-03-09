@@ -88,19 +88,19 @@ spriteTypes = {
     }
     spriteType = {
 		name = "GFX_idea_kor_dip_ilsoism"
-		texturefile = "gfx/interface/ideas/LAWS/DIPLOMANCY/idea_kor_dip_ilsoism.dds"
+		texturefile = "gfx/interface/ideas/LAWS/DIPLOMANCY/ilsoism.png"
     }
     spriteType = {
 		name = "GFX_idea_kor_dip_managism"
-		texturefile = "gfx/interface/ideas/LAWS/DIPLOMANCY/idea_kor_dip_managism.dds"
+		texturefile = "gfx/interface/ideas/LAWS/DIPLOMANCY/management.png"
     }
     spriteType = {
 		name = "GFX_idea_kor_dip_givism"
-		texturefile = "gfx/interface/ideas/LAWS/DIPLOMANCY/idea_kor_dip_givism.dds"
+		texturefile = "gfx/interface/ideas/LAWS/DIPLOMANCY/givism.png"
     }
     spriteType = {
 		name = "GFX_idea_kor_dip_breakism"
-		texturefile = "gfx/interface/ideas/LAWS/DIPLOMANCY/idea_kor_dip_breakism.dds"
+		texturefile = "gfx/interface/ideas/LAWS/DIPLOMANCY/tapa.png"
     }
 	####
     spriteType = {
@@ -109,19 +109,19 @@ spriteTypes = {
     }
     spriteType = {
 		name = "GFX_idea_kor_inn_basism"
-		texturefile = "gfx/interface/ideas/LAWS/INNER/idea_kor_inn_basism.dds"
+		texturefile = "gfx/interface/ideas/LAWS/INNER/basism.png"
     }
-    spriteType = {
+    spriteType = { 
 		name = "GFX_idea_kor_inn_revolism"
-		texturefile = "gfx/interface/ideas/KOR/idea_KOR_korean_taeguk.dds"
+		texturefile = "gfx/interface/ideas/LAWS/INNER/revolism.png"
     }
     spriteType = {
 		name = "GFX_idea_kor_inn_charitism"
-		texturefile = "gfx/interface/ideas/LAWS/INNER/idea_kor_inn_charitism.dds"
+		texturefile = "gfx/interface/ideas/LAWS/INNER/charitism.png"
     }
     spriteType = {
 		name = "GFX_idea_kor_inn_totalism"
-		texturefile = "gfx/interface/ideas/LAWS/INNER/idea_kor_inn_totalism.png"
+		texturefile = "gfx/interface/ideas/LAWS/INNER/totalism.png"
     }
 	####
     spriteType = {
@@ -130,15 +130,15 @@ spriteTypes = {
     }
     spriteType = {
 		name = "GFX_idea_kor_pol_leadism"
-		texturefile = "gfx/interface/ideas/KOR/idea_KOR_korean_taeguk.dds"
+		texturefile = "gfx/interface/ideas/LAWS/POLITICAL/leadism.png"
     }
     spriteType = {
 		name = "GFX_idea_kor_pol_democratism"
-		texturefile = "gfx/interface/ideas/KOR/idea_KOR_korean_taeguk.dds"
+		texturefile = "gfx/interface/ideas/LAWS/POLITICAL/democratism.png"
     }
     spriteType = {
 		name = "GFX_idea_kor_pol_gradualism"
-		texturefile = "gfx/interface/ideas/KOR/idea_KOR_korean_taeguk.dds"
+		texturefile = "gfx/interface/ideas/LAWS/POLITICAL/gradualism.png"
     }
 	####
     spriteType = {
@@ -147,19 +147,19 @@ spriteTypes = {
     }
     spriteType = {
 		name = "GFX_idea_kor_mil_serve_to_emperor"
-		texturefile = "gfx/interface/ideas/LAWS/LOALTY/idea_kor_mil_serve_to_emperor.dds"
+		texturefile = "gfx/interface/ideas/LAWS/LOALTY/imperial_army.png"
     }
     spriteType = {
 		name = "GFX_idea_kor_mil_serve_to_emp_and_gov"
-		texturefile = "gfx/interface/ideas/KOR/idea_KOR_korean_taeguk.dds"
+		texturefile = "gfx/interface/ideas/LAWS/LOALTY/govern_and_emperor_army.png"
     }
     spriteType = {
 		name = "GFX_idea_kor_mil_serve_to_government"
-		texturefile = "gfx/interface/ideas/LAWS/LOALTY/idea_kor_mil_serve_to_government.dds"
+		texturefile = "gfx/interface/ideas/LAWS/LOALTY/serve_to_govern.png"
     }
     spriteType = {
 		name = "GFX_idea_kor_mil_tongjepa"
-		texturefile = "gfx/interface/ideas/KOR/idea_KOR_korean_taeguk.dds"
+		texturefile = "gfx/interface/ideas/LAWS/uujoongbooi.png"
     }
 	####################
 	spriteType = {
