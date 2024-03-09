@@ -488,7 +488,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_idea_KOR_none_attack_soviert"
-		texturefile = "gfx/interface/ideas/idea_SOV_none_attack_korea.png"
+		texturefile = "gfx/interface/ideas/KOR/idea_SOV_none_attack_korea.png"
 	}
 	spriteType = {
 		name = "GFX_idea_JAP_chaguan_daoip"
