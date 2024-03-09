@@ -320,7 +320,7 @@ country_event = {
 		hidden_effect = {
 			set_province_name = {
 				id = 6521
-				name = "게르마니아"
+				name = "Germania"
 			}
 		}
 	}
