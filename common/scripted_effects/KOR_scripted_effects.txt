@@ -3606,6 +3606,7 @@ KOR_hangbok_event_2 = {
 TLE_german_defeat_effect = {
 	set_global_flag = TLE_germany_union_defeat
 	add_named_threat = { threat = -10000 name = TLE_germany_union_defeat }
+	clr_global_flag = italian_east_africa_flag
 	set_global_flag = show_peace_popup_alert
 	SOV = {
 		save_global_event_target_as = winning_country
@@ -3864,6 +3865,16 @@ TLE_german_defeat_effect = {
 	}
 	ETH = {
 		transfer_state = 908
+		transfer_state = 842
+		transfer_state = 841
+		transfer_state = 843
+		transfer_state = 840
+		transfer_state = 271
+		transfer_state = 839
+		transfer_state = 838
+		transfer_state = 837
+		transfer_state = 836
+		transfer_state = 835
 	}
 	every_country = {
 		limit = {
@@ -4119,6 +4130,7 @@ TLE_german_defeat_effect = {
 		transfer_state = 35
 		transfer_state = 36
 		transfer_state = 7
+		transfer_state = 695
 		set_cosmetic_tag = HOL
 	}
 	if = {

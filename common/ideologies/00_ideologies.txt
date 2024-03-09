@@ -8,17 +8,21 @@ ideologies = {
 			}
 
 			liberalism = {
+				color = { 246 139 31 }
 			}
 
 			socialism = {
+				color = { 194 30 86 }
 			}
 			
 			sanminzhuyi = {
 				can_be_randomly_selected = no
+				color = { 50 56 133 }
 			}
 			
 			korean_democracy = {
 				can_be_randomly_selected = no
+				color = { 62 66 106 }
 			}
 		}
 
@@ -77,9 +81,11 @@ ideologies = {
 		types = {
 
 			marxism = {
+				color = { 127 0 0 }
 			}
 
 			leninism = {
+				color = { 160 0 0 }
 			}
 
 			stalinism = {
@@ -93,6 +99,7 @@ ideologies = {
 			
 			sanminzhuyi_communism = {
 				can_be_randomly_selected = no
+				color = { 201 56 96 }
 			}
 		}
 
@@ -160,6 +167,8 @@ ideologies = {
 
 			ultranationalism = {
 				can_be_randomly_selected = no
+				#color = { 96 71 68 }
+				color = { 45 45 45 }
 			}
 		}
 
@@ -206,6 +215,7 @@ ideologies = {
 		types = {
 
 			despotism  = {
+				color = { 110 110 110 }
 			}
 
 			oligarchism  = {
@@ -213,6 +223,7 @@ ideologies = {
 
 			anarchism = {
 				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+				color = { 210 32 46 }
 			}
 
 			moderatism = {
@@ -227,10 +238,12 @@ ideologies = {
 			
 			kitaism = {
 				can_be_randomly_selected = no
+				color = { 45 45 45 }
 			}
 			
 			xunzheng = {
 				can_be_randomly_selected = no
+				color = { 34 68 102 }
 			}
 		}
 

@@ -1894,7 +1894,7 @@ on_actions = {
 					FROM.FROM = { state = 1035 } #점령 주 - 옌타이
 				}
                 FROM.FROM = {
-					set_state_name = "STATE_1035"
+					set_state_name = "STATE_YANTAI"
 					
 				}
                 set_province_name = {
@@ -1903,7 +1903,7 @@ on_actions = {
                 }
                 set_province_name = {
                     id = 13385
-                    name = "VICTORY_POINTS_13295"
+                    name = "jiaozhou"
                 }
 			}
 			if = {
@@ -1926,12 +1926,12 @@ on_actions = {
 					FROM.FROM = { state = 1004 } #점령 주 - 원덩
 				}
                 FROM.FROM = {
-					set_state_name = "STATE_1004"
+					set_state_name = "wendeng"
 					
 				}
                 set_province_name = {
                     id = 13386
-                    name = "VICTORY_POINTS_13296"
+                    name = "wendeng"
                 }
 			}
 			if = {
@@ -2275,7 +2275,7 @@ on_actions = {
 					FROM.FROM = { state = 1060 } #점령 주 - 금주
 				}
                 FROM.FROM = {
-					set_state_name = "STATE_955"
+					set_state_name = "STATE_GEUMJU"
 					clr_state_flag = fengtian_province_state
 					
 				}
@@ -2394,7 +2394,7 @@ on_actions = {
 					FROM.FROM = { state = 1059 } #점령 주 - 금산
 				}
                 FROM.FROM = {
-					set_state_name = "STATE_954"
+					set_state_name = "STATE_BUYEO"
 					clr_state_flag = heilongjiang_province_state
 					
 				}
@@ -4393,8 +4393,46 @@ on_actions = {
 	}
 	on_daily = {
 		effect = {
-			KOR = {
-				unit_limit_calculation_effect = yes
+			if = {
+				limit = {
+					has_global_flag = TLE_germany_union_defeat
+					any_country = {
+						original_tag = ITA
+						has_civil_war = yes
+					}
+				}	
+				every_country = {
+					limit = {
+						original_tag = ITA 
+						has_civil_war = yes
+						has_government = fascism
+					}
+					save_event_target_as = ITA_annex_target
+				}
+				every_country = {
+					limit = {
+						original_tag = ITA 
+						has_civil_war = yes
+						NOT = { has_government = fascism }
+					}
+					save_event_target_as = ITA_annex_subject
+				}
+				event_target:ITA_annex_subject = {
+					annex_country = {
+						target = event_target:ITA_annex_target
+						transfer_troops = yes
+					}
+					if = {
+						limit = {
+							event_target:ITA_annex_subject = {
+								NOT = {
+									has_government = communism
+								}
+							}
+						}
+						add_ideas = ITA_umberto_ii_king
+					}
+				}
 			}
 			if = {
 				limit = {

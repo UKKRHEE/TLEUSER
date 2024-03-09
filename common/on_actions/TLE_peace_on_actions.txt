@@ -3431,6 +3431,36 @@ on_actions = {
 			}	
 			if = {
 				limit = {
+					original_tag = ITA 
+					is_historical_focus_on = yes
+					has_civil_war = yes
+					has_government = fascism
+				}	
+				every_country = {
+					limit = {
+						original_tag = ITA 
+						has_civil_war = yes
+						has_government = fascism
+					}
+					save_event_target_as = ITA_annex_target
+				}
+				every_country = {
+					limit = {
+						original_tag = ITA 
+						has_civil_war = yes
+						NOT = { has_government = fascism }
+					}
+					save_event_target_as = ITA_annex_subject
+				}
+				event_target:ITA_annex_subject = {
+					annex_country = {
+						target = event_target:ITA_annex_target
+						transfer_troops = yes
+					}
+				}
+			}
+			if = {
+				limit = {
 					tag = YUG
 					is_historical_focus_on = yes
 					GER = {
