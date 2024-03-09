@@ -913,7 +913,7 @@ JAP_closed_bunchi_county = {
 			}
         }	
 		highlight_states = {
-			highlight_state_targets = { state = 966 } 
+			highlight_state_targets = { state = 1071 } 
 		}
 		on_map_mode = map_and_decisions_view
 		complete_effect = {
@@ -938,7 +938,7 @@ JAP_closed_bunchi_county = {
 		ai_will_do = {
 			base = 0
 			modifier = {
-				owns_state = 966
+				owns_state = 1071
 				add = 1000
 			}
 		}	
@@ -954,7 +954,7 @@ JAP_closed_bunchi_county = {
 			}
 		}
 		highlight_states = {
-			highlight_state_targets = { state = 963 } 
+			highlight_state_targets = { state = 1068 } 
 		}
 		on_map_mode = map_and_decisions_view
 
@@ -993,7 +993,7 @@ JAP_closed_bunchi_county = {
 		ai_will_do = {
 			base = 0
 			modifier = {
-				owns_state = 963
+				owns_state = 1068
 				add = 1000
 			}
 		}	
@@ -1048,7 +1048,7 @@ JAP_closed_bunchi_county = {
 		ai_will_do = {
 			base = 0
 			modifier = {
-				owns_state = 968
+				owns_state = 1073
 				add = 1000
 			}
 		}	
@@ -1120,7 +1120,7 @@ JAP_closed_bunchi_county = {
 		}
 
 		highlight_states = {
-			highlight_state_targets = { state = 968 } 
+			highlight_state_targets = { state = 1073 } 
 		}
 		on_map_mode = map_and_decisions_view
 		days_remove = 15
@@ -2302,7 +2302,7 @@ JAP_control_domain_of_KGJ = {
 		}
 	} 
 	highlight_states = {
-	 highlight_state_targets = { state = 964 } 
+	 highlight_state_targets = { state = 1069 } 
 	}
 	on_map_mode = map_and_decisions_view
 	days_remove = 7
@@ -2343,7 +2343,7 @@ JAP_control_domain_of_SDJ = {
 		}
 	} 
 	highlight_states = {
-	 highlight_state_targets = { state = 966 } 
+	 highlight_state_targets = { state = 1071 } 
 	}
 	on_map_mode = map_and_decisions_view
 	days_remove = 7
@@ -2384,7 +2384,7 @@ JAP_control_domain_of_NBJ = {
 		}
 	} 
 	highlight_states = {
-	 highlight_state_targets = { state = 963 } 
+	 highlight_state_targets = { state = 1068 } 
 	}
 	on_map_mode = map_and_decisions_view
 	days_remove = 15
