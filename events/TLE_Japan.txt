@@ -772,14 +772,17 @@ country_event = { #내전 발발
 			1072 = {
 				set_demilitarized_zone = no
 			}
-			ENG = {
+			KPL = {
 				transfer_state = 989
+				add_state_core = 989
 			}
-			FRA = {
+			KPL = {
 				transfer_state = 988
+				add_state_core = 988
 			}
-			USA = {
+			KPL = {
 				transfer_state = 1067
+				add_state_core = 1067
 			}
 			532 = {
 				set_demilitarized_zone = no

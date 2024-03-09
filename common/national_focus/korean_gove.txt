@@ -27,7 +27,6 @@ focus_tree = {
 				tag = MSR
 				tag = MON
 				tag = TAN
-				tag = PAR
 			}
 		}
 		modifier = {
