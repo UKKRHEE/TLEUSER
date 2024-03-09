@@ -1,0 +1,67 @@
+focus_tree = {
+	id = KMT_rework
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = CHI
+		}
+	}
+	default = no
+shared_focus = KMT_conversion_of_1935
+	continuous_focus_position = { x = 400 y = 600 }
+}
+focus_tree = {
+	id = KMT_rework2
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = CHI
+		}
+	}
+	default = no
+shared_focus = KMT_march_to_yangze
+}
+focus_tree = {
+	id = KMT_rework3
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = CHI
+		}
+	}
+	default = no
+	shared_focus = KMT_six_party_congress
+	shared_focus = KMT_national_defence_gov
+	shared_focus = KMT_national_unification
+}
+
+focus_tree = {
+	id = KMT_rework4
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = CHI
+		}
+	}
+	default = no
+	shared_focus = KMT_last_fight
+	continuous_focus_position = { x = 500 y = 1100 }
+}
+
+focus_tree = {
+	id = KMT_rework5
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = CHI
+		}
+	}
+	default = no
+	shared_focus = KMT_final_victory
+	continuous_focus_position = { x = 300 y = 1200 }
+}

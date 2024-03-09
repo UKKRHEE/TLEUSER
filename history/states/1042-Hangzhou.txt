@@ -1,0 +1,34 @@
+
+state={
+	id=1042
+	name="STATE_HANGZHOU"
+
+	history={
+		victory_points = {
+			7191 1 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			7191 = {
+				naval_base = 3
+
+			}
+
+		}
+		owner = AHC
+		add_core_of = AHC
+		add_core_of = WZC
+		add_core_of = CHI
+		add_core_of = PRC
+
+	}
+
+	provinces={
+		7191 
+	}
+	manpower=1301230
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

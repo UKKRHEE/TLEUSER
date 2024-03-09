@@ -1,0 +1,15 @@
+characters={
+	AS1_alfred_klaer={
+		name="AS1_alfred_klaer"
+		portraits={
+			civilian={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+			}
+		}
+		country_leader={
+			ideology=marxism
+			traits={ }
+			id=-1
+		}
+	}
+}

@@ -1,0 +1,2818 @@
+
+KOR_first_plan_lightning = {
+	KOR_zhili_attack_1 = {
+		icon = generic_tank
+		allowed = { original_tag = KOR }
+		ai_will_do = {
+			factor = 10
+		}
+		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+			has_war_with = ZLC
+			any_state = { has_state_flag = zhili_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+		}
+		visible = { tag = KOR has_war_with = ZLC has_global_flag = global_CHI_defence_the_korea } 
+		highlight_states = {
+			highlight_state_targets = { state = 608 } 
+		}
+		
+		fire_only_once = yes
+		days_remove = 30
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.264 } }
+			every_state = {
+				limit = {
+					has_state_flag = zhili_province_state
+				}
+				remove_dynamic_modifier = { modifier = CHI_defence_the_korea }
+			}	
+		}	
+		remove_effect = {
+			every_state = {
+				limit = {
+					has_state_flag = zhili_province_state
+				}
+				add_dynamic_modifier = { modifier = CHI_defence_the_korea_2 }
+			}
+			set_country_flag = flag_KOR_zhili_attack_2
+		}
+	}
+	KOR_zhili_attack_2 = {
+		icon = generic_tank
+		allowed = { original_tag = KOR }
+		ai_will_do = {
+			factor = 10
+		}
+		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+			has_war_with = ZLC
+			any_state = { has_state_flag = zhili_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			has_country_flag = flag_KOR_zhili_attack_2
+		}
+		visible = {
+			tag = KOR has_war_with = ZLC
+			has_country_flag = flag_KOR_zhili_attack_2
+		} 
+		highlight_states = {
+			highlight_state_targets = { state = 608 } 
+		}
+		
+		fire_only_once = yes
+		days_remove = 30
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.264 } }
+			every_state = {
+				limit = {
+					has_state_flag = zhili_province_state
+				}
+				remove_dynamic_modifier = { modifier = CHI_defence_the_korea_2 }
+			}	
+		}	
+		remove_effect = {
+			every_state = {
+				limit = {
+					has_state_flag = zhili_province_state
+				}
+				add_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
+			}	
+			set_country_flag = flag_KOR_zhili_attack_3
+		}
+	}
+	KOR_zhili_attack_3 = {
+		icon = generic_tank
+		allowed = { original_tag = KOR }
+		ai_will_do = {
+			factor = 10
+		}
+		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+			has_war_with = ZLC
+			any_state = { has_state_flag = zhili_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			has_country_flag = flag_KOR_zhili_attack_3
+		}
+		visible = {
+			tag = KOR has_war_with = ZLC
+			has_country_flag = flag_KOR_zhili_attack_3
+		} 
+		highlight_states = {
+			highlight_state_targets = { state = 608 } 
+		}
+		
+		fire_only_once = no
+		days_remove = 10
+		complete_effect = { if = { limit = { is_ai =no NOT = { has_country_flag = flag_KOR_zhili_attack_4 } } army_experience = -60 add_political_power = -80 } country_event = { id = korea.352 }
+			every_state = {
+				limit = {
+					has_state_flag = zhili_province_state
+				}
+				remove_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
+			}	
+		}	
+		remove_effect = {
+			every_state = {
+				limit = {
+					has_state_flag = zhili_province_state
+				}
+				add_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
+			}	
+			set_country_flag = flag_KOR_zhili_attack_4
+		}
+	}
+	KOR_shandong_attack_1 = {
+		icon = generic_tank
+		allowed = { original_tag = KOR }
+		ai_will_do = {
+			factor = 10
+		}
+		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+			has_war_with = ZLC
+			any_state = { has_state_flag = shandong_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+		}
+		visible = { tag = KOR has_war_with = ZLC has_global_flag = global_CHI_defence_the_korea } 
+		highlight_states = {
+			highlight_state_targets = { state = 597 } 
+		}
+		
+		fire_only_once = yes
+		days_remove = 30
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.264 } }
+			every_state = {
+				limit = {
+					has_state_flag = shandong_province_state
+					NOT = {
+						state = 743
+						state = 1034
+					}
+				}
+				remove_dynamic_modifier = { modifier = CHI_defence_the_korea }
+			}	
+		}	
+		remove_effect = {
+			every_state = {
+				limit = {
+					has_state_flag = shandong_province_state
+					NOT = {
+						state = 743
+						state = 1034
+					}
+				}
+				add_dynamic_modifier = { modifier = CHI_defence_the_korea_2 }
+			}	
+			set_country_flag = flag_KOR_shandong_attack_2
+		}
+	}
+	KOR_shandong_attack_2 = {
+		icon = generic_tank
+		allowed = { original_tag = KOR }
+		ai_will_do = {
+			factor = 10
+		}
+		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+			has_war_with = ZLC
+			any_state = { has_state_flag = shandong_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			has_country_flag = flag_KOR_shandong_attack_2
+		}
+		visible = {
+			tag = KOR has_war_with = ZLC
+			has_country_flag = flag_KOR_shandong_attack_2
+		} 
+		highlight_states = {
+			highlight_state_targets = { state = 597 } 
+		}
+		
+		fire_only_once = yes
+		days_remove = 30
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.264 } }
+			every_state = {
+				limit = {
+					has_state_flag = shandong_province_state
+					NOT = {
+						state = 743
+						state = 1034
+					}
+				}
+				remove_dynamic_modifier = { modifier = CHI_defence_the_korea_2 }
+			}	
+		}	
+		remove_effect = {
+			every_state = {
+				limit = {
+					has_state_flag = shandong_province_state
+					NOT = {
+						state = 743
+						state = 1034
+					}
+				}
+				add_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
+			}	
+			set_country_flag = flag_KOR_shandong_attack_3
+		}
+	}
+	KOR_shandong_attack_3 = {
+		icon = generic_tank
+		allowed = { original_tag = KOR }
+		ai_will_do = {
+			factor = 10
+		}
+		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+			has_war_with = ZLC
+			any_state = { has_state_flag = shandong_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			has_country_flag = flag_KOR_shandong_attack_3
+		}
+		visible = {
+			tag = KOR has_war_with = ZLC
+			has_country_flag = flag_KOR_shandong_attack_3
+		} 
+		highlight_states = {
+			highlight_state_targets = { state = 597 } 
+		}
+		
+		fire_only_once = no
+		days_remove = 10
+		complete_effect = { if = { limit = { is_ai =no NOT = { has_country_flag = flag_KOR_shandong_attack_4 } } army_experience = -60 add_political_power = -80 } country_event = { id = korea.352 }
+			every_state = {
+				limit = {
+					has_state_flag = shandong_province_state
+					NOT = {
+						state = 743
+						state = 1034
+					}
+				}
+				remove_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
+			}	
+		}	
+		remove_effect = {
+			every_state = {
+				limit = {
+					has_state_flag = shandong_province_state
+					NOT = {
+						state = 743
+						state = 1034
+					}
+				}
+				add_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
+			}	
+			set_country_flag = flag_KOR_shandong_attack_4
+		}
+	}
+	KOR_shanxi_attack_1 = {
+		icon = generic_tank
+		allowed = { original_tag = KOR }
+		ai_will_do = {
+			factor = 10
+		}
+		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+			has_war_with = ZLC
+			any_state = { has_state_flag = shanxi_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+		}
+		visible = { tag = KOR has_war_with = ZLC has_global_flag = global_CHI_defence_the_korea } 
+		highlight_states = {
+			highlight_state_targets = { state = 615 } 
+		}
+		
+		fire_only_once = yes
+		days_remove = 30
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.264 } }
+			every_state = {
+				limit = {
+					has_state_flag = shanxi_province_state
+				}
+				remove_dynamic_modifier = { modifier = CHI_defence_the_korea }
+			}	
+		}	
+		remove_effect = {
+			every_state = {
+				limit = {
+					has_state_flag = shanxi_province_state
+				}
+				add_dynamic_modifier = { modifier = CHI_defence_the_korea_2 }
+			}	
+			set_country_flag = flag_KOR_shanxi_attack_2
+		}
+	}
+	KOR_shanxi_attack_2 = {
+		icon = generic_tank
+		allowed = { original_tag = KOR }
+		ai_will_do = {
+			factor = 10
+		}
+		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+			has_war_with = ZLC
+			any_state = { has_state_flag = shanxi_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			has_country_flag = flag_KOR_shanxi_attack_2
+		}
+		visible = {
+			tag = KOR has_war_with = ZLC
+			has_country_flag = flag_KOR_shanxi_attack_2
+		} 
+		highlight_states = {
+			highlight_state_targets = { state = 615 } 
+		}
+		
+		fire_only_once = yes
+		days_remove = 30
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.264 } }
+			every_state = {
+				limit = {
+					has_state_flag = shanxi_province_state
+				}
+				remove_dynamic_modifier = { modifier = CHI_defence_the_korea_2 }
+			}	
+		}	
+		remove_effect = {
+			every_state = {
+				limit = {
+					has_state_flag = shanxi_province_state
+				}
+				add_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
+			}	
+			set_country_flag = flag_KOR_shanxi_attack_3
+		}
+	}
+	KOR_shanxi_attack_3 = {
+		icon = generic_tank
+		allowed = { original_tag = KOR }
+		ai_will_do = {
+			factor = 10
+		}
+		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+			has_war_with = ZLC
+			any_state = { has_state_flag = shanxi_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			has_country_flag = flag_KOR_shanxi_attack_3
+		}
+		visible = {
+			tag = KOR has_war_with = ZLC
+			has_country_flag = flag_KOR_shanxi_attack_3
+		} 
+		highlight_states = {
+			highlight_state_targets = { state = 615 } 
+		}
+		
+		fire_only_once = no
+		days_remove = 10
+		complete_effect = { if = { limit = { is_ai =no NOT = { has_country_flag = flag_KOR_shanxi_attack_4 } } army_experience = -60 add_political_power = -80 } country_event = { id = korea.352 }
+			every_state = {
+				limit = {
+					has_state_flag = shanxi_province_state
+				}
+				remove_dynamic_modifier = { modifier = CHI_defence_the_korea_2 }
+			}	
+		}	
+		remove_effect = {
+			every_state = {
+				limit = {
+					has_state_flag = shanxi_province_state
+				}
+				add_dynamic_modifier = { modifier = CHI_defence_the_korea_2 }
+			}	
+			set_country_flag = flag_KOR_shanxi_attack_4
+		}
+	}
+	KOR_shaanxi_attack_1 = {
+		icon = generic_tank
+		allowed = { original_tag = KOR }
+		ai_will_do = {
+			factor = 10
+		}
+		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+			has_war_with = ZLC
+			any_state = { has_state_flag = shaanxi_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+		}
+		visible = { tag = KOR has_war_with = ZLC has_global_flag = global_CHI_defence_the_korea } 
+		highlight_states = {
+			highlight_state_targets = { state = 622 } 
+		}
+		
+		fire_only_once = yes
+		days_remove = 30
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.264 } }
+			every_state = {
+				limit = {
+					has_state_flag = shaanxi_province_state
+				}
+				remove_dynamic_modifier = { modifier = CHI_defence_the_korea }
+			}	
+		}	
+		remove_effect = {
+			every_state = {
+				limit = {
+					has_state_flag = shaanxi_province_state
+				}
+				add_dynamic_modifier = { modifier = CHI_defence_the_korea_2 }
+			}	
+			set_country_flag = flag_KOR_shaanxi_attack_2
+		}
+	}
+	KOR_shaanxi_attack_2 = {
+		icon = generic_tank
+		allowed = { original_tag = KOR }
+		ai_will_do = {
+			factor = 10
+		}
+		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+			has_war_with = ZLC
+			any_state = { has_state_flag = shaanxi_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			has_country_flag = flag_KOR_shaanxi_attack_2
+		}
+		visible = {
+			tag = KOR has_war_with = ZLC
+			has_country_flag = flag_KOR_shaanxi_attack_2
+		} 
+		highlight_states = {
+			highlight_state_targets = { state = 622 } 
+		}
+		
+		fire_only_once = yes
+		days_remove = 30
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.264 } }
+			every_state = {
+				limit = {
+					has_state_flag = shaanxi_province_state
+				}
+				remove_dynamic_modifier = { modifier = CHI_defence_the_korea_2 }
+			}	
+		}	
+		remove_effect = {
+			every_state = {
+				limit = {
+					has_state_flag = shaanxi_province_state
+				}
+				add_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
+			}	
+			set_country_flag = flag_KOR_shaanxi_attack_3
+		}
+	}
+	KOR_shaanxi_attack_3 = {
+		icon = generic_tank
+		allowed = { original_tag = KOR }
+		ai_will_do = {
+			factor = 10
+		}
+		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+			has_war_with = ZLC
+			any_state = { has_state_flag = shaanxi_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			has_country_flag = flag_KOR_shaanxi_attack_3
+		}
+		visible = {
+			tag = KOR has_war_with = ZLC
+			has_country_flag = flag_KOR_shaanxi_attack_3
+		} 
+		highlight_states = {
+			highlight_state_targets = { state = 622 } 
+		}
+		
+		fire_only_once = no
+		days_remove = 10
+		complete_effect = { if = { limit = { is_ai =no NOT = { has_country_flag = flag_KOR_shaanxi_attack_4 } } army_experience = -60 add_political_power = -80 } country_event = { id = korea.352 }
+			every_state = {
+				limit = {
+					has_state_flag = shaanxi_province_state
+				}
+				remove_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
+			}	
+		}	
+		remove_effect = {
+			every_state = {
+				limit = {
+					has_state_flag = shaanxi_province_state
+				}
+				add_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
+			}	
+			set_country_flag = flag_KOR_shaanxi_attack_4
+		}
+	}
+	KOR_henan_attack_1 = {
+		icon = generic_tank
+		allowed = { original_tag = KOR }
+		ai_will_do = {
+			factor = 10
+		}
+		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+			has_war_with = ZLC
+			any_state = { has_state_flag = henan_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+		}
+		visible = { tag = KOR has_war_with = ZLC has_global_flag = global_CHI_defence_the_korea } 
+		highlight_states = {
+			highlight_state_targets = { state = 952 } 
+		}
+		
+		fire_only_once = yes
+		days_remove = 30
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.264 } }
+			every_state = {
+				limit = {
+					has_state_flag = henan_province_state
+				}
+				remove_dynamic_modifier = { modifier = CHI_defence_the_korea }
+			}	
+		}	
+		remove_effect = {
+			every_state = {
+				limit = {
+					has_state_flag = henan_province_state
+				}
+				add_dynamic_modifier = { modifier = CHI_defence_the_korea_2 }
+			}	
+			set_country_flag = flag_KOR_henan_attack_2
+		}
+	}
+	KOR_henan_attack_2 = {
+		icon = generic_tank
+		allowed = { original_tag = KOR }
+		ai_will_do = {
+			factor = 10
+		}
+		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+			has_war_with = ZLC
+			any_state = { has_state_flag = henan_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			has_country_flag = flag_KOR_henan_attack_2
+		}
+		visible = {
+			tag = KOR has_war_with = ZLC
+			has_country_flag = flag_KOR_henan_attack_2
+		} 
+		highlight_states = {
+			highlight_state_targets = { state = 952 } 
+		}
+		
+		fire_only_once = yes
+		days_remove = 30
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.264 } }
+			every_state = {
+				limit = {
+					has_state_flag = henan_province_state
+				}
+				remove_dynamic_modifier = { modifier = CHI_defence_the_korea_2 }
+			}	
+		}	
+		remove_effect = {
+			every_state = {
+				limit = {
+					has_state_flag = henan_province_state
+				}
+				add_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
+			}	
+			set_country_flag = flag_KOR_henan_attack_3
+		}
+	}
+	KOR_henan_attack_3 = {
+		icon = generic_tank
+		allowed = { original_tag = KOR }
+		ai_will_do = {
+			factor = 10
+		}
+		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+			has_war_with = ZLC
+			any_state = { has_state_flag = henan_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			has_country_flag = flag_KOR_henan_attack_3
+		}
+		visible = {
+			tag = KOR has_war_with = ZLC
+			has_country_flag = flag_KOR_henan_attack_3
+		} 
+		highlight_states = {
+			highlight_state_targets = { state = 952 } 
+		}
+		
+		fire_only_once = no
+		days_remove = 10
+		complete_effect = { if = { limit = { is_ai =no NOT = { has_country_flag = flag_KOR_henan_attack_4 } } army_experience = -60 add_political_power = -80 } country_event = { id = korea.352 }
+			every_state = {
+				limit = {
+					has_state_flag = henan_province_state
+				}
+				remove_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
+			}	
+		}	
+		remove_effect = {
+			every_state = {
+				limit = {
+					has_state_flag = henan_province_state
+				}
+				add_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
+			}	
+			set_country_flag = flag_KOR_henan_attack_4
+		}
+	}
+	KOR_anhui_attack_1 = {
+		icon = generic_tank
+		allowed = { original_tag = KOR }
+		ai_will_do = {
+			factor = 10
+		}
+		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+			has_war_with = ZLC
+			any_state = { has_state_flag = anhui_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+		}
+		visible = { tag = KOR has_war_with = ZLC has_global_flag = global_CHI_defence_the_korea } 
+		highlight_states = {
+			highlight_state_targets = { state = 606 } 
+		}
+		
+		fire_only_once = yes
+		days_remove = 30
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.264 } }
+			every_state = {
+				limit = {
+					has_state_flag = anhui_province_state
+				}
+				remove_dynamic_modifier = { modifier = CHI_defence_the_korea }
+			}	
+		}	
+		remove_effect = {
+			every_state = {
+				limit = {
+					has_state_flag = anhui_province_state
+				}
+				add_dynamic_modifier = { modifier = CHI_defence_the_korea_2 }
+			}	
+			set_country_flag = flag_KOR_anhui_attack_2
+		}
+	}
+	KOR_anhui_attack_2 = {
+		icon = generic_tank
+		allowed = { original_tag = KOR }
+		ai_will_do = {
+			factor = 10
+		}
+		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+			has_war_with = ZLC
+			any_state = { has_state_flag = anhui_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			has_country_flag = flag_KOR_anhui_attack_2
+		}
+		visible = {
+			tag = KOR has_war_with = ZLC
+			has_country_flag = flag_KOR_anhui_attack_2
+		} 
+		highlight_states = {
+			highlight_state_targets = { state = 606 } 
+		}
+		
+		fire_only_once = yes
+		days_remove = 30
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.264 } }
+			every_state = {
+				limit = {
+					has_state_flag = anhui_province_state
+				}
+				remove_dynamic_modifier = { modifier = CHI_defence_the_korea_2 }
+			}	
+		}	
+		remove_effect = {
+			every_state = {
+				limit = {
+					has_state_flag = anhui_province_state
+				}
+				add_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
+			}	
+			set_country_flag = flag_KOR_anhui_attack_3
+		}
+	}
+	KOR_anhui_attack_3 = {
+		icon = generic_tank
+		allowed = { original_tag = KOR }
+		ai_will_do = {
+			factor = 10
+		}
+		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+			has_war_with = ZLC
+			any_state = { has_state_flag = anhui_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			has_country_flag = flag_KOR_anhui_attack_3
+		}
+		visible = {
+			tag = KOR has_war_with = ZLC
+			has_country_flag = flag_KOR_anhui_attack_3
+		} 
+		highlight_states = {
+			highlight_state_targets = { state = 606 } 
+		}
+		
+		fire_only_once = no
+		days_remove = 10
+		complete_effect = { if = { limit = { is_ai =no NOT = { has_country_flag = flag_KOR_anhui_attack_4 } } army_experience = -60 add_political_power = -80 } country_event = { id = korea.352 }
+			every_state = {
+				limit = {
+					has_state_flag = anhui_province_state
+				}
+				remove_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
+			}	
+		}
+		remove_effect = {
+			every_state = {
+				limit = {
+					has_state_flag = anhui_province_state
+				}
+				add_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
+			}	
+			set_country_flag = flag_KOR_anhui_attack_4
+		}
+	}
+	KOR_jiangsu_attack_1 = {
+		icon = generic_tank
+		allowed = { original_tag = KOR }
+		ai_will_do = {
+			factor = 10
+		}
+		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+			has_war_with = ZLC
+			any_state = { has_state_flag = jiangsu_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+		}
+		visible = { tag = KOR has_war_with = ZLC has_global_flag = global_CHI_defence_the_korea } 
+		highlight_states = {
+			highlight_state_targets = { state = 613 } 
+		}
+		
+		fire_only_once = yes
+		days_remove = 30
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.264 } }
+			every_state = {
+				limit = {
+					has_state_flag = jiangsu_province_state
+				}
+				remove_dynamic_modifier = { modifier = CHI_defence_the_korea }
+			}	
+		}	
+		remove_effect = {
+			every_state = {
+				limit = {
+					has_state_flag = jiangsu_province_state
+				}
+				add_dynamic_modifier = { modifier = CHI_defence_the_korea_2 }
+			}	
+			set_country_flag = flag_KOR_jiangsu_attack_2
+		}
+	}
+	KOR_jiangsu_attack_2 = {
+		icon = generic_tank
+		allowed = { original_tag = KOR }
+		ai_will_do = {
+			factor = 10
+		}
+		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+			has_war_with = ZLC
+			any_state = { has_state_flag = jiangsu_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			has_country_flag = flag_KOR_jiangsu_attack_2
+		}
+		visible = {
+			tag = KOR has_war_with = ZLC
+			has_country_flag = flag_KOR_jiangsu_attack_2
+		} 
+		highlight_states = {
+			highlight_state_targets = { state = 613 } 
+		}
+		
+		fire_only_once = yes
+		days_remove = 30
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.264 } }
+			every_state = {
+				limit = {
+					has_state_flag = jiangsu_province_state
+				}
+				remove_dynamic_modifier = { modifier = CHI_defence_the_korea_2 }
+			}	
+		}	
+		remove_effect = {
+			every_state = {
+				limit = {
+					has_state_flag = jiangsu_province_state
+				}
+				add_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
+			}	
+			set_country_flag = flag_KOR_jiangsu_attack_3
+		}
+	}
+	KOR_jiangsu_attack_3 = {
+		icon = generic_tank
+		allowed = { original_tag = KOR }
+		ai_will_do = {
+			factor = 10
+		}
+		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+			has_war_with = ZLC
+			any_state = { has_state_flag = jiangsu_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			has_country_flag = flag_KOR_jiangsu_attack_3
+		}
+		visible = {
+			tag = KOR has_war_with = ZLC
+			has_country_flag = flag_KOR_jiangsu_attack_3
+		} 
+		highlight_states = {
+			highlight_state_targets = { state = 613 } 
+		}
+		
+		fire_only_once = no
+		days_remove = 10
+		complete_effect = { if = { limit = { is_ai =no NOT = { has_country_flag = flag_KOR_jiangsu_attack_4 } } army_experience = -60 add_political_power = -80 } country_event = { id = korea.352 }
+			every_state = {
+				limit = {
+					has_state_flag = jiangsu_province_state
+				}
+				remove_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
+			}	
+		}	
+		remove_effect = {
+			every_state = {
+				limit = {
+					has_state_flag = jiangsu_province_state
+				}
+				add_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
+			}	
+			set_country_flag = flag_KOR_jiangsu_attack_4
+		}
+	}
+	KOR_zhejiang_attack_1 = {
+		icon = generic_tank
+		allowed = { original_tag = KOR }
+		ai_will_do = {
+			factor = 10
+		}
+		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+			has_war_with = ZLC
+			any_state = { has_state_flag = zhejiang_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+		}
+		visible = { tag = KOR has_war_with = ZLC has_global_flag = global_CHI_defence_the_korea } 
+		highlight_states = {
+			highlight_state_targets = { state = 596 } 
+		}
+		
+		fire_only_once = yes
+		days_remove = 30
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.264 } }
+			every_state = {
+				limit = {
+					has_state_flag = zhejiang_province_state
+				}
+				remove_dynamic_modifier = { modifier = CHI_defence_the_korea }
+			}	
+		}	
+		remove_effect = {
+			every_state = {
+				limit = {
+					has_state_flag = zhejiang_province_state
+				}
+				add_dynamic_modifier = { modifier = CHI_defence_the_korea_2 }
+			}	
+			set_country_flag = flag_KOR_zhejiang_attack_2
+		}
+	}
+	KOR_zhejiang_attack_2 = {
+		icon = generic_tank
+		allowed = { original_tag = KOR }
+		ai_will_do = {
+			factor = 10
+		}
+		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+			has_war_with = ZLC
+			any_state = { has_state_flag = zhejiang_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			has_country_flag = flag_KOR_zhejiang_attack_2
+		}
+		visible = {
+			tag = KOR has_war_with = ZLC
+			has_country_flag = flag_KOR_zhejiang_attack_2
+		} 
+		highlight_states = {
+			highlight_state_targets = { state = 596 } 
+		}
+		
+		fire_only_once = yes
+		days_remove = 30
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.264 } }
+			every_state = {
+				limit = {
+					has_state_flag = zhejiang_province_state
+				}
+				remove_dynamic_modifier = { modifier = CHI_defence_the_korea_2 }
+			}	
+		}	
+		remove_effect = {
+			every_state = {
+				limit = {
+					has_state_flag = zhejiang_province_state
+				}
+				add_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
+			}	
+			set_country_flag = flag_KOR_zhejiang_attack_3
+		}
+	}
+	KOR_zhejiang_attack_3 = {
+		icon = generic_tank
+		allowed = { original_tag = KOR }
+		ai_will_do = {
+			factor = 10
+		}
+		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+			has_war_with = ZLC
+			any_state = { has_state_flag = zhejiang_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			has_country_flag = flag_KOR_zhejiang_attack_3
+		}
+		visible = {
+			tag = KOR has_war_with = ZLC
+			has_country_flag = flag_KOR_zhejiang_attack_3
+		} 
+		highlight_states = {
+			highlight_state_targets = { state = 596 } 
+		}
+		
+		fire_only_once = no
+		days_remove = 10
+		complete_effect = { if = { limit = { is_ai =no NOT = { has_country_flag = flag_KOR_zhejiang_attack_4 } } army_experience = -60 add_political_power = -80 } country_event = { id = korea.352 }
+			every_state = {
+				limit = {
+					has_state_flag = zhejiang_province_state
+				}
+				remove_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
+			}	
+		}	
+		remove_effect = {
+			every_state = {
+				limit = {
+					has_state_flag = zhejiang_province_state
+				}
+				add_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
+			}	
+			set_country_flag = flag_KOR_zhejiang_attack_4
+		}
+	}
+	KOR_fujian_attack_1 = {
+		icon = generic_tank
+		allowed = { original_tag = KOR }
+		ai_will_do = {
+			factor = 10
+		}
+		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+			has_war_with = ZLC
+			any_state = { has_state_flag = fujian_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+		}
+		visible = { tag = KOR has_war_with = ZLC has_global_flag = global_CHI_defence_the_korea } 
+		highlight_states = {
+			highlight_state_targets = { state = 595 } 
+		}
+		
+		fire_only_once = yes
+		days_remove = 30
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.264 } }
+			every_state = {
+				limit = {
+					has_state_flag = fujian_province_state
+				}
+				remove_dynamic_modifier = { modifier = CHI_defence_the_korea }
+			}	
+		}	
+		remove_effect = {
+			every_state = {
+				limit = {
+					has_state_flag = fujian_province_state
+				}
+				add_dynamic_modifier = { modifier = CHI_defence_the_korea_2 }
+			}	
+			set_country_flag = flag_KOR_fujian_attack_2
+		}
+	}
+	KOR_fujian_attack_2 = {
+		icon = generic_tank
+		allowed = { original_tag = KOR }
+		ai_will_do = {
+			factor = 10
+		}
+		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+			has_war_with = ZLC
+			any_state = { has_state_flag = fujian_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			has_country_flag = flag_KOR_fujian_attack_2
+		}
+		visible = {
+			tag = KOR has_war_with = ZLC
+			has_country_flag = flag_KOR_fujian_attack_2
+		} 
+		highlight_states = {
+			highlight_state_targets = { state = 595 } 
+		}
+		
+		fire_only_once = yes
+		days_remove = 30
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.264 } }
+			every_state = {
+				limit = {
+					has_state_flag = fujian_province_state
+				}
+				remove_dynamic_modifier = { modifier = CHI_defence_the_korea_2 }
+			}	
+		}	
+		remove_effect = {
+			every_state = {
+				limit = {
+					has_state_flag = fujian_province_state
+				}
+				add_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
+			}	
+			set_country_flag = flag_KOR_fujian_attack_3
+		}
+	}
+	KOR_fujian_attack_3 = {
+		icon = generic_tank
+		allowed = { original_tag = KOR }
+		ai_will_do = {
+			factor = 10
+		}
+		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+			has_war_with = ZLC
+			any_state = { has_state_flag = fujian_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			has_country_flag = flag_KOR_fujian_attack_3
+		}
+		visible = {
+			tag = KOR has_war_with = ZLC
+			has_country_flag = flag_KOR_fujian_attack_3
+		} 
+		highlight_states = {
+			highlight_state_targets = { state = 595 } 
+		}
+		
+		fire_only_once = no
+		days_remove = 10
+		complete_effect = { if = { limit = { is_ai =no NOT = { has_country_flag = flag_KOR_fujian_attack_4 } } army_experience = -60 add_political_power = -80 } country_event = { id = korea.352 }
+			every_state = {
+				limit = {
+					has_state_flag = fujian_province_state
+				}
+				remove_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
+			}	
+		}	
+		remove_effect = {
+			every_state = {
+				limit = {
+					has_state_flag = fujian_province_state
+				}
+				add_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
+			}	
+			set_country_flag = flag_KOR_fujian_attack_4
+		}
+	}
+	KOR_hubei_attack_1 = {
+		icon = generic_tank
+		allowed = { original_tag = KOR }
+		ai_will_do = {
+			factor = 10
+		}
+		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+			has_war_with = ZLC
+			any_state = { has_state_flag = hubei_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+		}
+		visible = { tag = KOR has_war_with = ZLC has_global_flag = global_CHI_defence_the_korea } 
+		highlight_states = {
+			highlight_state_targets = { state = 943 } 
+		}
+		
+		fire_only_once = yes
+		days_remove = 30
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.264 } }
+			every_state = {
+				limit = {
+					has_state_flag = hubei_province_state
+				}
+				remove_dynamic_modifier = { modifier = CHI_defence_the_korea }
+			}	
+		}	
+		remove_effect = {
+			every_state = {
+				limit = {
+					has_state_flag = hubei_province_state
+				}
+				add_dynamic_modifier = { modifier = CHI_defence_the_korea_2 }
+			}	
+			set_country_flag = flag_KOR_hubei_attack_2
+		}
+	}
+	KOR_hubei_attack_2 = {
+		icon = generic_tank
+		allowed = { original_tag = KOR }
+		ai_will_do = {
+			factor = 10
+		}
+		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+			has_war_with = ZLC
+			any_state = { has_state_flag = hubei_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			has_country_flag = flag_KOR_hubei_attack_2
+		}
+		visible = {
+			tag = KOR has_war_with = ZLC
+			has_country_flag = flag_KOR_hubei_attack_2
+		} 
+		highlight_states = {
+			highlight_state_targets = { state = 943 } 
+		}
+		
+		fire_only_once = yes
+		days_remove = 30
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.264 } }
+			every_state = {
+				limit = {
+					has_state_flag = hubei_province_state
+				}
+				remove_dynamic_modifier = { modifier = CHI_defence_the_korea_2 }
+			}	
+		}	
+		remove_effect = {
+			every_state = {
+				limit = {
+					has_state_flag = hubei_province_state
+				}
+				add_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
+			}	
+			set_country_flag = flag_KOR_hubei_attack_3
+		}
+	}
+	KOR_hubei_attack_3 = {
+		icon = generic_tank
+		allowed = { original_tag = KOR }
+		ai_will_do = {
+			factor = 10
+		}
+		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+			has_war_with = ZLC
+			any_state = { has_state_flag = hubei_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			has_country_flag = flag_KOR_hubei_attack_3
+		}
+		visible = {
+			tag = KOR has_war_with = ZLC
+			has_country_flag = flag_KOR_hubei_attack_3
+		} 
+		highlight_states = {
+			highlight_state_targets = { state = 943 } 
+		}
+		
+		fire_only_once = no
+		days_remove = 10
+		complete_effect = { if = { limit = { is_ai =no NOT = { has_country_flag = flag_KOR_hubei_attack_4 } } army_experience = -60 add_political_power = -80 } country_event = { id = korea.352 }
+			every_state = {
+				limit = {
+					has_state_flag = hubei_province_state
+				}
+				remove_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
+			}	
+		}	
+		remove_effect = {
+			every_state = {
+				limit = {
+					has_state_flag = hubei_province_state
+				}
+				add_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
+			}	
+			set_country_flag = flag_KOR_hubei_attack_4
+		}
+	}
+	KOR_hunan_attack_1 = {
+		icon = generic_tank
+		allowed = { original_tag = KOR }
+		ai_will_do = {
+			factor = 10
+		}
+		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+			has_war_with = ZLC
+			any_state = { has_state_flag = hunan_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+		}
+		visible = { tag = KOR has_war_with = ZLC has_global_flag = global_CHI_defence_the_korea } 
+		highlight_states = {
+			highlight_state_targets = { state = 602 } 
+		}
+		
+		fire_only_once = yes
+		days_remove = 30
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.264 } }
+			every_state = {
+				limit = {
+					has_state_flag = hunan_province_state
+				}
+				remove_dynamic_modifier = { modifier = CHI_defence_the_korea }
+			}	
+		}	
+		remove_effect = {
+			every_state = {
+				limit = {
+					has_state_flag = hunan_province_state
+				}
+				add_dynamic_modifier = { modifier = CHI_defence_the_korea_2 }
+			}	
+			set_country_flag = flag_KOR_hunan_attack_2
+		}
+	}
+	KOR_hunan_attack_2 = {
+		icon = generic_tank
+		allowed = { original_tag = KOR }
+		ai_will_do = {
+			factor = 10
+		}
+		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+			has_war_with = ZLC
+			any_state = { has_state_flag = hunan_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			has_country_flag = flag_KOR_hunan_attack_2
+		}
+		visible = {
+			tag = KOR has_war_with = ZLC
+			has_country_flag = flag_KOR_hunan_attack_2
+		} 
+		highlight_states = {
+			highlight_state_targets = { state = 602 } 
+		}
+		
+		fire_only_once = yes
+		days_remove = 30
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.264 } }
+			every_state = {
+				limit = {
+					has_state_flag = hunan_province_state
+				}
+				remove_dynamic_modifier = { modifier = CHI_defence_the_korea_2 }
+			}	
+		}	
+		remove_effect = {
+			every_state = {
+				limit = {
+					has_state_flag = hunan_province_state
+				}
+				add_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
+			}	
+			set_country_flag = flag_KOR_hunan_attack_3
+		}
+	}
+	KOR_hunan_attack_3 = {
+		icon = generic_tank
+		allowed = { original_tag = KOR }
+		ai_will_do = {
+			factor = 10
+		}
+		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+			has_war_with = ZLC
+			any_state = { has_state_flag = hunan_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			has_country_flag = flag_KOR_hunan_attack_3
+		}
+		visible = {
+			tag = KOR has_war_with = ZLC
+			has_country_flag = flag_KOR_hunan_attack_3
+		} 
+		highlight_states = {
+			highlight_state_targets = { state = 602 } 
+		}
+		
+		fire_only_once = no
+		days_remove = 10
+		complete_effect = { if = { limit = { is_ai =no NOT = { has_country_flag = flag_KOR_hunan_attack_4 } } army_experience = -60 add_political_power = -80 } country_event = { id = korea.352 }
+			every_state = {
+				limit = {
+					has_state_flag = hunan_province_state
+				}
+				remove_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
+			}	
+		}	
+		remove_effect = {
+			every_state = {
+				limit = {
+					has_state_flag = hunan_province_state
+				}
+				add_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
+			}	
+			set_country_flag = flag_KOR_hunan_attack_4
+		}
+	}
+	KOR_guangdong_attack_1 = {
+		icon = generic_tank
+		allowed = { original_tag = KOR }
+		ai_will_do = {
+			factor = 10
+		}
+		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+			has_war_with = ZLC
+			any_state = { has_state_flag = guangdong_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+		}
+		visible = { tag = KOR has_war_with = ZLC has_global_flag = global_CHI_defence_the_korea } 
+		highlight_states = {
+			highlight_state_targets = { state = 941 } 
+		}
+		
+		fire_only_once = yes
+		days_remove = 30
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.264 } }
+			every_state = {
+				limit = {
+					has_state_flag = guangdong_province_state
+					NOT = {
+						state = 729
+						state = 326
+						state = 728
+					}
+				}
+				remove_dynamic_modifier = { modifier = CHI_defence_the_korea }
+			}	
+		}	
+		remove_effect = {
+			every_state = {
+				limit = {
+					has_state_flag = guangdong_province_state
+					NOT = {
+						state = 729
+						state = 326
+						state = 728
+					}
+				}
+				add_dynamic_modifier = { modifier = CHI_defence_the_korea_2 }
+			}	
+			set_country_flag = flag_KOR_guangdong_attack_2
+		}
+	}
+	KOR_guangdong_attack_2 = {
+		icon = generic_tank
+		allowed = { original_tag = KOR }
+		ai_will_do = {
+			factor = 10
+		}
+		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+			has_war_with = ZLC
+			any_state = { has_state_flag = guangdong_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			has_country_flag = flag_KOR_guangdong_attack_2
+		}
+		visible = {
+			tag = KOR has_war_with = ZLC
+			has_country_flag = flag_KOR_guangdong_attack_2
+		} 
+		highlight_states = {
+			highlight_state_targets = { state = 941 } 
+		}
+		
+		fire_only_once = yes
+		days_remove = 30
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.264 } }
+			every_state = {
+				limit = {
+					has_state_flag = guangdong_province_state
+					NOT = {
+						state = 729
+						state = 326
+						state = 728
+					}
+				}
+				remove_dynamic_modifier = { modifier = CHI_defence_the_korea_2 }
+			}	
+		}	
+		remove_effect = {
+			every_state = {
+				limit = {
+					has_state_flag = guangdong_province_state
+					NOT = {
+						state = 729
+						state = 326
+						state = 728
+					}
+				}
+				add_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
+			}	
+			set_country_flag = flag_KOR_guangdong_attack_3
+		}
+	}
+	KOR_guangdong_attack_3 = {
+		icon = generic_tank
+		allowed = { original_tag = KOR }
+		ai_will_do = {
+			factor = 10
+		}
+		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+			has_war_with = ZLC
+			any_state = { has_state_flag = guangdong_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			has_country_flag = flag_KOR_guangdong_attack_3
+		}
+		visible = {
+			tag = KOR has_war_with = ZLC
+			has_country_flag = flag_KOR_guangdong_attack_3
+		} 
+		highlight_states = {
+			highlight_state_targets = { state = 941 } 
+		}
+		
+		fire_only_once = no
+		days_remove = 10
+		complete_effect = { if = { limit = { is_ai =no NOT = { has_country_flag = flag_KOR_guangdong_attack_4 } } army_experience = -60 add_political_power = -80 } country_event = { id = korea.352 }
+			every_state = {
+				limit = {
+					has_state_flag = guangdong_province_state
+					NOT = {
+						state = 729
+						state = 326
+						state = 728
+					}
+				}
+				remove_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
+			}	
+		}	
+		remove_effect = {
+			every_state = {
+				limit = {
+					has_state_flag = guangdong_province_state
+					NOT = {
+						state = 729
+						state = 326
+						state = 728
+					}
+				}
+				add_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
+			}	
+			set_country_flag = flag_KOR_guangdong_attack_4
+		}
+	}
+	KOR_guangxi_attack_1 = {
+		icon = generic_tank
+		allowed = { original_tag = KOR }
+		ai_will_do = {
+			factor = 10
+		}
+		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+			has_war_with = ZLC
+			any_state = { has_state_flag = guangxi_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+		}
+		visible = { tag = KOR has_war_with = ZLC has_global_flag = global_CHI_defence_the_korea } 
+		highlight_states = {
+			highlight_state_targets = { state = 594 } 
+		}
+		
+		fire_only_once = yes
+		days_remove = 30
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.264 } }
+			every_state = {
+				limit = {
+					has_state_flag = guangxi_province_state
+				}
+				remove_dynamic_modifier = { modifier = CHI_defence_the_korea }
+			}	
+		}	
+		remove_effect = {
+			every_state = {
+				limit = {
+					has_state_flag = guangxi_province_state
+				}
+				add_dynamic_modifier = { modifier = CHI_defence_the_korea_2 }
+			}	
+			set_country_flag = flag_KOR_guangxi_attack_2
+		}
+	}
+	KOR_guangxi_attack_2 = {
+		icon = generic_tank
+		allowed = { original_tag = KOR }
+		ai_will_do = {
+			factor = 10
+		}
+		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+			has_war_with = ZLC
+			any_state = { has_state_flag = guangxi_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			has_country_flag = flag_KOR_guangxi_attack_2
+		}
+		visible = {
+			tag = KOR has_war_with = ZLC
+			has_country_flag = flag_KOR_guangxi_attack_2
+		} 
+		highlight_states = {
+			highlight_state_targets = { state = 594 } 
+		}
+		
+		fire_only_once = yes
+		days_remove = 30
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.264 } }
+			every_state = {
+				limit = {
+					has_state_flag = guangxi_province_state
+				}
+				remove_dynamic_modifier = { modifier = CHI_defence_the_korea_2 }
+			}	
+		}	
+		remove_effect = {
+			every_state = {
+				limit = {
+					has_state_flag = guangxi_province_state
+				}
+				add_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
+			}	
+			set_country_flag = flag_KOR_guangxi_attack_3
+		}
+	}
+	KOR_guangxi_attack_3 = {
+		icon = generic_tank
+		allowed = { original_tag = KOR }
+		ai_will_do = {
+			factor = 10
+		}
+		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+			has_war_with = ZLC
+			any_state = { has_state_flag = guangxi_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			has_country_flag = flag_KOR_guangxi_attack_3
+		}
+		visible = {
+			tag = KOR has_war_with = ZLC
+			has_country_flag = flag_KOR_guangxi_attack_3
+		} 
+		highlight_states = {
+			highlight_state_targets = { state = 594 } 
+		}
+		
+		fire_only_once = no
+		days_remove = 10
+		complete_effect = { if = { limit = { is_ai =no NOT = { has_country_flag = flag_KOR_guangxi_attack_4 } } army_experience = -60 add_political_power = -80 } country_event = { id = korea.352 }
+			every_state = {
+				limit = {
+					has_state_flag = guangxi_province_state
+				}
+				remove_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
+			}	
+		}	
+		remove_effect = {
+			every_state = {
+				limit = {
+					has_state_flag = guangxi_province_state
+				}
+				add_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
+			}	
+			set_country_flag = flag_KOR_guangxi_attack_4
+		}
+	}
+	KOR_guizhou_attack_1 = {
+		icon = generic_tank
+		allowed = { original_tag = KOR }
+		ai_will_do = {
+			factor = 10
+		}
+		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+			has_war_with = ZLC
+			any_state = { has_state_flag = guizhou_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+		}
+		visible = { tag = KOR has_war_with = ZLC has_global_flag = global_CHI_defence_the_korea } 
+		highlight_states = {
+			highlight_state_targets = { state = 603 } 
+		}
+		
+		fire_only_once = yes
+		days_remove = 30
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.264 } }
+			every_state = {
+				limit = {
+					has_state_flag = guizhou_province_state
+				}
+				remove_dynamic_modifier = { modifier = CHI_defence_the_korea }
+			}	
+		}	
+		remove_effect = {
+			every_state = {
+				limit = {
+					has_state_flag = guizhou_province_state
+				}
+				add_dynamic_modifier = { modifier = CHI_defence_the_korea_2 }
+			}	
+			set_country_flag = flag_KOR_guizhou_attack_2
+		}
+	}
+	KOR_guizhou_attack_2 = {
+		icon = generic_tank
+		allowed = { original_tag = KOR }
+		ai_will_do = {
+			factor = 10
+		}
+		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+			has_war_with = ZLC
+			any_state = { has_state_flag = guizhou_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			has_country_flag = flag_KOR_guizhou_attack_2
+		}
+		visible = {
+			tag = KOR has_war_with = ZLC
+			has_country_flag = flag_KOR_guizhou_attack_2
+		} 
+		highlight_states = {
+			highlight_state_targets = { state = 603 } 
+		}
+		
+		fire_only_once = yes
+		days_remove = 30
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.264 } }
+			every_state = {
+				limit = {
+					has_state_flag = guizhou_province_state
+				}
+				remove_dynamic_modifier = { modifier = CHI_defence_the_korea_2 }
+			}	
+		}	
+		remove_effect = {
+			every_state = {
+				limit = {
+					has_state_flag = guizhou_province_state
+				}
+				add_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
+			}	
+			set_country_flag = flag_KOR_guizhou_attack_3
+		}
+	}
+	KOR_guizhou_attack_3 = {
+		icon = generic_tank
+		allowed = { original_tag = KOR }
+		ai_will_do = {
+			factor = 10
+		}
+		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+			has_war_with = ZLC
+			any_state = { has_state_flag = guizhou_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			has_country_flag = flag_KOR_guizhou_attack_3
+		}
+		visible = {
+			tag = KOR has_war_with = ZLC
+			has_country_flag = flag_KOR_guizhou_attack_3
+		} 
+		highlight_states = {
+			highlight_state_targets = { state = 603 } 
+		}
+		
+		fire_only_once = no
+		days_remove = 10
+		complete_effect = { if = { limit = { is_ai =no NOT = { has_country_flag = flag_KOR_guizhou_attack_4 } } army_experience = -60 add_political_power = -80 } country_event = { id = korea.352 }
+			every_state = {
+				limit = {
+					has_state_flag = guizhou_province_state
+				}
+				remove_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
+			}	
+		}	
+		remove_effect = {
+			every_state = {
+				limit = {
+					has_state_flag = guizhou_province_state
+				}
+				add_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
+			}	
+			set_country_flag = flag_KOR_guizhou_attack_4
+		}
+	}
+	KOR_sichuan_attack_1 = {
+		icon = generic_tank
+		allowed = { original_tag = KOR }
+		ai_will_do = {
+			factor = 10
+		}
+		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+			has_war_with = ZLC
+			any_state = { has_state_flag = sichuan_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+		}
+		visible = { tag = KOR has_war_with = ZLC has_global_flag = global_CHI_defence_the_korea } 
+		highlight_states = {
+			highlight_state_targets = { state = 605 } 
+		}
+		
+		fire_only_once = yes
+		days_remove = 30
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.264 } }
+			every_state = {
+				limit = {
+					has_state_flag = sichuan_province_state
+				}
+				remove_dynamic_modifier = { modifier = CHI_defence_the_korea }
+			}	
+		}	
+		remove_effect = {
+			every_state = {
+				limit = {
+					has_state_flag = sichuan_province_state
+				}
+				add_dynamic_modifier = { modifier = CHI_defence_the_korea_2 }
+			}	
+			set_country_flag = flag_KOR_sichuan_attack_2
+		}
+	}
+	KOR_sichuan_attack_2 = {
+		icon = generic_tank
+		allowed = { original_tag = KOR }
+		ai_will_do = {
+			factor = 10
+		}
+		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+			has_war_with = ZLC
+			any_state = { has_state_flag = sichuan_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			has_country_flag = flag_KOR_sichuan_attack_2
+		}
+		visible = {
+			tag = KOR has_war_with = ZLC
+			has_country_flag = flag_KOR_sichuan_attack_2
+		} 
+		highlight_states = {
+			highlight_state_targets = { state = 605 } 
+		}
+		
+		fire_only_once = yes
+		days_remove = 30
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.264 } }
+			every_state = {
+				limit = {
+					has_state_flag = sichuan_province_state
+				}
+				remove_dynamic_modifier = { modifier = CHI_defence_the_korea_2 }
+			}	
+		}	
+		remove_effect = {
+			every_state = {
+				limit = {
+					has_state_flag = sichuan_province_state
+				}
+				add_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
+			}	
+			set_country_flag = flag_KOR_sichuan_attack_3
+		}
+	}
+	KOR_sichuan_attack_3 = {
+		icon = generic_tank
+		allowed = { original_tag = KOR }
+		ai_will_do = {
+			factor = 10
+		}
+		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+			has_war_with = ZLC
+			any_state = { has_state_flag = sichuan_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			has_country_flag = flag_KOR_sichuan_attack_3
+		}
+		visible = {
+			tag = KOR has_war_with = ZLC
+			has_country_flag = flag_KOR_sichuan_attack_3
+		} 
+		highlight_states = {
+			highlight_state_targets = { state = 605 } 
+		}
+		
+		fire_only_once = no
+		days_remove = 10
+		complete_effect = { if = { limit = { is_ai =no NOT = { has_country_flag = flag_KOR_sichuan_attack_4 } } army_experience = -60 add_political_power = -80 } country_event = { id = korea.352 }
+			every_state = {
+				limit = {
+					has_state_flag = sichuan_province_state
+				}
+				remove_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
+			}	
+		}	
+		remove_effect = {
+			every_state = {
+				limit = {
+					has_state_flag = sichuan_province_state
+				}
+				add_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
+			}	
+			set_country_flag = flag_KOR_sichuan_attack_4
+		}
+	}
+}	
+KOR_forth_plan_nakil = {
+	KOR_chugoku_attack = {
+		icon = generic_tank
+		allowed = { original_tag = KOR }
+		ai_will_do = {
+			factor = 10
+		}
+		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_jap = yes
+			has_war_with = JAP
+			OR = {
+				961 = {
+					OR = {
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+				529 = {
+					OR = {
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+				989 = {
+					OR = {
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+			}
+		}
+		visible = {
+			tag = KOR has_war_with = JAP
+		} 
+		highlight_states = {
+			highlight_state_targets = { state = 529 } 
+		}
+		
+		fire_only_once = no
+		days_remove = 20
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.266 } }
+			529 = {
+				remove_dynamic_modifier = { modifier = JAP_defence_the_korea }
+			}
+			961 = {
+				remove_dynamic_modifier = { modifier = JAP_defence_the_korea }
+			}
+			989 = {
+				remove_dynamic_modifier = { modifier = JAP_defence_the_korea }
+			}
+		}	
+		remove_effect = {
+			529 = {
+				add_dynamic_modifier = { modifier = JAP_defence_the_korea }
+			}
+			961 = {
+				add_dynamic_modifier = { modifier = JAP_defence_the_korea }
+			}
+			989 = {
+				add_dynamic_modifier = { modifier = JAP_defence_the_korea }
+			}
+		}
+	}
+	KOR_sigoku_attack = {
+		icon = generic_tank
+		allowed = { original_tag = KOR }
+		ai_will_do = {
+			factor = 10
+		}
+		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_jap = yes
+			has_war_with = JAP
+			530 = {
+				OR = {
+					is_controlled_by = KOR
+					any_neighbor_state = {
+						is_controlled_by = KOR
+					}
+				}
+			}
+		}
+		visible = {
+			tag = KOR has_war_with = JAP
+		} 
+		highlight_states = {
+			highlight_state_targets = { state = 530 } 
+		}
+		
+		fire_only_once = no
+		days_remove = 20
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.266 } }
+			530 = {
+				remove_dynamic_modifier = { modifier = JAP_defence_the_korea }
+			}
+		}	
+		remove_effect = {
+			530 = {
+				add_dynamic_modifier = { modifier = JAP_defence_the_korea }
+			}
+		}
+	}
+	KOR_kansai_attack = {
+		icon = generic_tank
+		allowed = { original_tag = KOR }
+		ai_will_do = {
+			factor = 10
+		}
+		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_jap = yes
+			has_war_with = JAP
+			OR = {
+				531 = {
+					OR = {
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+				988 = {
+					OR = {
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+				965 = {
+					OR = {
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+				991 = {
+					OR = {
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+				960 = {
+					OR = {
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+			}
+		}
+		visible = {
+			tag = KOR has_war_with = JAP
+		} 
+		highlight_states = {
+			highlight_state_targets = { state = 965 } 
+		}
+		
+		fire_only_once = no
+		days_remove = 20
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.266 } }
+			965 = {
+				remove_dynamic_modifier = { modifier = JAP_defence_the_korea }
+			}
+			531 = {
+				remove_dynamic_modifier = { modifier = JAP_defence_the_korea }
+			}
+			988 = {
+				remove_dynamic_modifier = { modifier = JAP_defence_the_korea }
+			}
+			991 = {
+				remove_dynamic_modifier = { modifier = JAP_defence_the_korea }
+			}
+			960 = {
+				remove_dynamic_modifier = { modifier = JAP_defence_the_korea }
+			}
+		}	
+		remove_effect = {
+			965 = {
+				add_dynamic_modifier = { modifier = JAP_defence_the_korea }
+			}
+			531 = {
+				add_dynamic_modifier = { modifier = JAP_defence_the_korea }
+			}
+			988 = {
+				add_dynamic_modifier = { modifier = JAP_defence_the_korea }
+			}
+			991 = {
+				add_dynamic_modifier = { modifier = JAP_defence_the_korea }
+			}
+			960 = {
+				add_dynamic_modifier = { modifier = JAP_defence_the_korea }
+			}
+		}
+	}
+	KOR_chubu_attack = {
+		icon = generic_tank
+		allowed = { original_tag = KOR }
+		ai_will_do = {
+			factor = 10
+		}
+		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_jap = yes
+			has_war_with = JAP
+			OR = {
+				964 = {
+					OR = {
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+				535 = {
+					OR = {
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+				532 = {
+					OR = {
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+				534 = {
+					OR = {
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+			}
+		}
+		visible = {
+			tag = KOR has_war_with = JAP
+		} 
+		highlight_states = {
+			highlight_state_targets = { state = 535 } 
+		}
+		
+		fire_only_once = no
+		days_remove = 20
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.266 } }
+			535 = {
+				remove_dynamic_modifier = { modifier = JAP_defence_the_korea }
+			}
+			534 = {
+				remove_dynamic_modifier = { modifier = JAP_defence_the_korea }
+			}
+			532 = {
+				remove_dynamic_modifier = { modifier = JAP_defence_the_korea }
+			}
+			964 = {
+				remove_dynamic_modifier = { modifier = JAP_defence_the_korea }
+			}
+		}	
+		remove_effect = {
+			535 = {
+				add_dynamic_modifier = { modifier = JAP_defence_the_korea }
+			}
+			534 = {
+				add_dynamic_modifier = { modifier = JAP_defence_the_korea }
+			}
+			532 = {
+				add_dynamic_modifier = { modifier = JAP_defence_the_korea }
+			}
+			964 = {
+				add_dynamic_modifier = { modifier = JAP_defence_the_korea }
+			}
+		}
+	}
+	KOR_kanto_attack = {
+		icon = generic_tank
+		allowed = { original_tag = KOR }
+		ai_will_do = {
+			factor = 10
+		}
+		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_jap = yes
+			has_war_with = JAP
+			OR = {
+				990 = {
+					OR = {
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+				962 = {
+					OR = {
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+				282 = {
+					OR = {
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+				968 = {
+					OR = {
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+			}
+		}
+		visible = {
+			tag = KOR has_war_with = JAP
+		} 
+		highlight_states = {
+			highlight_state_targets = { state = 282 } 
+		}
+		
+		fire_only_once = no
+		days_remove = 20
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.266 } }
+			990 = {
+				remove_dynamic_modifier = { modifier = JAP_defence_the_korea }
+			}
+			282 = {
+				remove_dynamic_modifier = { modifier = JAP_defence_the_korea }
+			}
+			962 = {
+				remove_dynamic_modifier = { modifier = JAP_defence_the_korea }
+			}
+			968 = {
+				remove_dynamic_modifier = { modifier = JAP_defence_the_korea }
+			}
+		}	
+		remove_effect = {
+			990 = {
+				add_dynamic_modifier = { modifier = JAP_defence_the_korea }
+			}
+			282 = {
+				add_dynamic_modifier = { modifier = JAP_defence_the_korea }
+			}
+			962 = {
+				add_dynamic_modifier = { modifier = JAP_defence_the_korea }
+			}
+			968 = {
+				add_dynamic_modifier = { modifier = JAP_defence_the_korea }
+			}
+		}
+	}
+	KOR_tohoku_attack = {
+		icon = generic_tank
+		allowed = { original_tag = KOR }
+		ai_will_do = {
+			factor = 10
+		}
+		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_jap = yes
+			has_war_with = JAP
+			OR = {
+				967 = {
+					OR = {
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+				533 = {
+					OR = {
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+				966 = {
+					OR = {
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+				963 = {
+					OR = {
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+			}
+		}
+		visible = {
+			tag = KOR has_war_with = JAP
+		} 
+		highlight_states = {
+			highlight_state_targets = { state = 533 } 
+		}
+		
+		fire_only_once = no
+		days_remove = 20
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.266 } }
+			967 = {
+				remove_dynamic_modifier = { modifier = JAP_defence_the_korea }
+			}
+			533 = {
+				remove_dynamic_modifier = { modifier = JAP_defence_the_korea }
+			}
+			966 = {
+				remove_dynamic_modifier = { modifier = JAP_defence_the_korea }
+			}
+			963 = {
+				remove_dynamic_modifier = { modifier = JAP_defence_the_korea }
+			}
+		}	
+		remove_effect = {
+			967 = {
+				add_dynamic_modifier = { modifier = JAP_defence_the_korea }
+			}
+			533 = {
+				add_dynamic_modifier = { modifier = JAP_defence_the_korea }
+			}
+			966 = {
+				add_dynamic_modifier = { modifier = JAP_defence_the_korea }
+			}
+			963 = {
+				add_dynamic_modifier = { modifier = JAP_defence_the_korea }
+			}
+		}
+	}
+	
+}	
+KOR_kill_the_usa_plan = {
+	
+	KOR_the_embargo_rising = { 
+		icon = generic_civil_support
+	    
+		picture = GFX_decision_cat_national_assembly
+
+		allowed = {
+			original_tag = KOR
+		}	
+		
+		available = {
+			NOT = {
+				has_idea = KOR_embargo_us
+				has_idea = KOR_embargo_us_a
+				has_idea = KOR_embargo_us_b
+				has_idea = KOR_embargo_us_c
+				has_idea = KOR_embargo_us_d
+			}
+			NOT = {
+				has_war_with = USA
+			}
+		}
+
+		days_mission_timeout = 180
+		
+		fixed_random_seed = no
+
+		fire_only_once = no
+		
+		is_good = no
+
+		activation = {
+			OR = {
+				has_idea = KOR_embargo_us
+				has_idea = KOR_embargo_us_a
+				has_idea = KOR_embargo_us_b
+				has_idea = KOR_embargo_us_c
+				has_idea = KOR_embargo_us_d
+			}	
+			NOT = {
+				has_country_flag = flag_KOR_the_embargo_rising_end
+			}
+		}
+
+		visible = {
+			original_tag = KOR
+        }	
+		complete_effect = {
+			custom_effect_tooltip = KOR_the_embargo_rising_tt
+			set_country_flag = flag_KOR_the_embargo_rising_end
+			hidden_effect = {
+				remove_ideas = KOR_embargo_us
+				remove_ideas = KOR_embargo_us_a
+				remove_ideas = KOR_embargo_us_b
+				remove_ideas = KOR_embargo_us_c
+				remove_ideas = KOR_embargo_us_d
+			}
+		}
+
+		timeout_effect = {
+			KOR_embargo_level_up = yes
+		}
+		
+	}
+	KOR_surrander_of_phi = { 
+		icon = generic_tank
+	    
+		picture = GFX_decision_cat_national_assembly
+
+		allowed = {
+			original_tag = KOR
+		}	
+		
+		highlight_states = {
+			highlight_state_targets = { state = 327 } 
+		}
+		available = {
+			PHI = {
+				OR = {
+					has_capitulated = yes
+					AND = {
+						USA = {
+							has_war_with = KOR
+						}
+						exists = no
+						KOR = {
+							controls_state = 327
+						}
+					}
+				}
+			}
+		}
+
+		days_mission_timeout = 900
+		
+		fixed_random_seed = no
+
+		fire_only_once = no
+		
+		is_good = no
+
+		activation = {
+			OR = {
+				has_idea = KOR_embargo_us
+				has_idea = KOR_embargo_us_a
+				has_idea = KOR_embargo_us_b
+				has_idea = KOR_embargo_us_c
+				has_idea = KOR_embargo_us_d
+			}	
+			NOT = {
+				has_country_flag = flag_KOR_surrander_of_phi_end
+			}
+			#PHI = {
+			#	has_war_with = KOR
+			#}
+			USA = {
+				has_war_with = KOR
+			}
+		}
+
+		visible = {
+			original_tag = KOR
+			USA = {
+				has_war_with = KOR
+			}
+        }	
+		complete_effect = {
+			set_country_flag = flag_KOR_surrander_of_phi_end
+			KOR_embargo_level_down = yes
+		}
+
+		timeout_effect = {
+			set_country_flag = flag_KOR_surrander_of_phi_end
+			KOR_embargo_level_up = yes
+		}
+		
+	}
+	KOR_surrander_of_malay = { 
+		icon = generic_tank
+	    
+		picture = GFX_decision_cat_national_assembly
+
+		allowed = {
+			original_tag = KOR
+		}	
+		highlight_states = {
+			highlight_state_targets = { state = 336 } 
+		}
+		
+		available = {
+			MAL = {
+				OR = {
+					has_capitulated = yes
+					AND = {
+						ENG = {
+							has_war_with = KOR
+						}
+						exists = no
+						KOR = {
+							controls_state = 336
+						}
+					}
+				}
+			}
+		}
+
+		days_mission_timeout = 1200
+		
+		fixed_random_seed = no
+
+		fire_only_once = no
+		
+		is_good = no
+
+		activation = {
+			OR = {
+				has_idea = KOR_embargo_us
+				has_idea = KOR_embargo_us_a
+				has_idea = KOR_embargo_us_b
+				has_idea = KOR_embargo_us_c
+				has_idea = KOR_embargo_us_d
+			}	
+			NOT = {
+				has_country_flag = flag_KOR_surrander_of_malay_end
+			}
+			#MAL = {
+			#	has_war_with = KOR
+			#}
+			USA = {
+				has_war_with = KOR
+			}
+		}
+
+		visible = {
+			original_tag = KOR
+			USA = {
+				has_war_with = KOR
+			}
+        }	
+		complete_effect = {
+			set_country_flag = flag_KOR_surrander_of_malay_end
+			KOR_embargo_level_down = yes
+		}
+
+		timeout_effect = {
+			set_country_flag = flag_KOR_surrander_of_malay_end
+			KOR_embargo_level_up = yes
+		}
+		
+	}
+	KOR_surrander_of_indonesia = { 
+		icon = generic_tank
+	    
+		picture = GFX_decision_cat_national_assembly
+
+		allowed = {
+			original_tag = KOR
+		}	
+		highlight_states = {
+			highlight_state_targets = { state = 335 } 
+		}
+		
+		available = {
+			INS = {
+				OR = {
+					has_capitulated = yes
+					AND = {
+						HOL = {
+							has_war_with = KOR
+						}
+						exists = no
+						KOR = {
+							controls_state = 335
+						}
+					}
+				}
+			}
+		}
+
+		days_mission_timeout = 1500
+		
+		fixed_random_seed = no
+
+		fire_only_once = no
+		
+		is_good = no
+
+		activation = {
+			OR = {
+				has_idea = KOR_embargo_us
+				has_idea = KOR_embargo_us_a
+				has_idea = KOR_embargo_us_b
+				has_idea = KOR_embargo_us_c
+				has_idea = KOR_embargo_us_d
+			}	
+			NOT = {
+				has_country_flag = flag_KOR_surrander_of_indonesia_end
+			}
+			#INS = {
+			#	has_war_with = KOR
+			#}
+			USA = {
+				has_war_with = KOR
+			}
+		}
+
+		visible = {
+			original_tag = KOR
+			USA = {
+				has_war_with = KOR
+			}
+        }	
+		complete_effect = {
+			set_country_flag = flag_KOR_surrander_of_indonesia_end
+			KOR_embargo_level_down = yes
+		}
+
+		timeout_effect = {
+			set_country_flag = flag_KOR_surrander_of_indonesia_end
+			KOR_embargo_level_up = yes
+		}
+		
+	}
+	KOR_surrander_of_burma = { 
+		icon = generic_tank
+	    
+		picture = GFX_decision_cat_national_assembly
+
+		allowed = {
+			original_tag = KOR
+		}	
+		highlight_states = {
+			highlight_state_targets = { state = 288 } 
+		}
+		
+		available = {
+			KOR = {
+				has_full_control_of_state = 288
+				has_full_control_of_state = 640
+			}
+		}
+
+		days_mission_timeout = 1800
+		
+		fixed_random_seed = no
+
+		fire_only_once = no
+		
+		is_good = no
+
+		activation = {
+			OR = {
+				has_idea = KOR_embargo_us
+				has_idea = KOR_embargo_us_a
+				has_idea = KOR_embargo_us_b
+				has_idea = KOR_embargo_us_c
+				has_idea = KOR_embargo_us_d
+			}	
+			NOT = {
+				has_country_flag = flag_KOR_surrander_of_burma_end
+			}
+			#RAJ = {
+			#	has_war_with = KOR
+			#}
+			USA = {
+				has_war_with = KOR
+			}
+		}
+
+		visible = {
+			original_tag = KOR
+			USA = {
+				has_war_with = KOR
+			}
+        }	
+		complete_effect = {
+			set_country_flag = flag_KOR_surrander_of_burma_end
+			KOR_embargo_level_down = yes
+		}
+
+		timeout_effect = {
+			set_country_flag = flag_KOR_surrander_of_burma_end
+			KOR_embargo_level_up = yes
+		}
+		
+	}
+	KOR_surrander_of_india = { 
+		icon = generic_tank
+	    
+		picture = GFX_decision_cat_national_assembly
+
+		allowed = {
+			original_tag = KOR
+		}	
+		
+		available = {
+			RAJ = {
+				has_war_with = KOR
+				has_capitulated = yes
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = { state = 439 } 
+		}
+
+		days_mission_timeout = 2100
+		
+		fixed_random_seed = no
+
+		fire_only_once = no
+		
+		is_good = no
+
+		activation = {
+			OR = {
+				has_idea = KOR_embargo_us
+				has_idea = KOR_embargo_us_a
+				has_idea = KOR_embargo_us_b
+				has_idea = KOR_embargo_us_c
+				has_idea = KOR_embargo_us_d
+			}	
+			NOT = {
+				has_country_flag = flag_KOR_surrander_of_india_end
+			}
+			#RAJ = {
+			#	has_war_with = KOR
+			#}
+			USA = {
+				has_war_with = KOR
+			}
+		}
+
+		visible = {
+			original_tag = KOR
+			USA = {
+				has_war_with = KOR
+			}
+        }	
+		complete_effect = {
+			set_country_flag = flag_KOR_surrander_of_india_end
+			KOR_embargo_level_down = yes
+		}
+
+		timeout_effect = {
+			set_country_flag = flag_KOR_surrander_of_india_end
+			KOR_embargo_level_up = yes
+		}
+		
+	}
+	KOR_surrander_of_japan = { 
+		icon = generic_tank
+	    
+		picture = GFX_decision_cat_national_assembly
+
+		allowed = {
+			original_tag = KOR
+		}	
+		
+		available = {
+			JAP = {
+				OR = {
+					exists = no
+					AND = {
+						has_war_with = KOR
+						has_capitulated = yes
+					}
+				}
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = { state = 965 } 
+		}
+
+		days_mission_timeout = 1800
+		
+		fixed_random_seed = no
+
+		fire_only_once = no
+		
+		is_good = no
+
+		activation = {
+			OR = {
+				has_idea = KOR_embargo_us
+				has_idea = KOR_embargo_us_a
+				has_idea = KOR_embargo_us_b
+				has_idea = KOR_embargo_us_c
+				has_idea = KOR_embargo_us_d
+			}	
+			NOT = {
+				has_country_flag = flag_KOR_surrander_of_japan_end
+			}
+			#JAP = {
+			#	has_war_with = KOR
+			#}
+			DKG = {
+				exists = no
+			}
+			USA = {
+				has_war_with = KOR
+			}
+		}
+
+		visible = {
+			original_tag = KOR
+			USA = {
+				has_war_with = KOR
+			}
+        }	
+		complete_effect = {
+			set_country_flag = flag_KOR_surrander_of_japan_end
+			KOR_embargo_level_down = yes
+		}
+
+		timeout_effect = {
+			set_country_flag = flag_KOR_surrander_of_japan_end
+			KOR_embargo_level_up = yes
+		}
+		
+	}
+	KOR_send_the_peace = { 
+	    
+		picture = GFX_decision_cat_national_assembly
+
+		allowed = {
+			original_tag = KOR
+		}	
+		highlight_states = {
+			highlight_state_targets = { state = 361 } 
+		}
+		
+		available = {
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = KOR_send_the_peace_1
+					}
+				}
+				INS = {
+					OR = {
+						has_capitulated = yes
+						exists = no
+						is_puppet_of = KOR
+					}
+				}
+				PHI = {
+					OR = {
+						has_capitulated = yes
+						exists = no
+						is_puppet_of = KOR
+					}
+				}
+				MAL = {
+					OR = {
+						has_capitulated = yes
+						exists = no
+						is_puppet_of = KOR
+					}
+				}
+				JAP = {
+					OR = {
+						has_capitulated = yes
+						exists = no
+					}	
+				}
+				CHI = {
+					exists = no
+				}
+				ZLC = {
+					exists = no
+				}
+				every_state = {
+					limit = {
+						is_core_of = HAW
+					}
+					is_controlled_by = KOR
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = KOR_send_the_peace_1
+				}
+				INS = {
+					OR = {
+						has_capitulated = yes
+						exists = no
+						is_puppet_of = KOR
+					}
+				}
+				PHI = {
+					OR = {
+						has_capitulated = yes
+						exists = no
+						is_puppet_of = KOR
+					}
+				}
+				MAL = {
+					OR = {
+						has_capitulated = yes
+						exists = no
+						is_puppet_of = KOR
+					}
+				}
+				JAP = {
+					OR = {
+						has_capitulated = yes
+						exists = no
+					}	
+				}
+				RAJ = {
+					OR = {
+						has_capitulated = yes
+						exists = no
+						is_puppet_of = KOR
+					}
+				}
+				CHI = {
+					exists = no
+				}
+				ZLC = {
+					exists = no
+				}
+				every_state = {
+					limit = {
+						is_core_of = HAW
+					}
+					is_controlled_by = KOR
+				}
+				USA = {
+					has_navy_size = { size < 150 }
+				}
+			}
+		}
+		
+		fixed_random_seed = no
+
+		fire_only_once = no
+		
+		is_good = no
+		
+		days_remove = 100
+		
+		visible = {
+			original_tag = KOR
+			NOT = {
+				has_country_flag = KOR_send_the_peace_2
+			}
+			has_war_with = USA
+        }	
+		complete_effect = {
+			USA = {
+				country_event = {
+					id = korea.261
+				}
+			}
+		}
+
+		
+	}
+}

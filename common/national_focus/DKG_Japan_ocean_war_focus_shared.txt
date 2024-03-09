@@ -1,0 +1,116 @@
+#守るも攻むるも黑鐵の浮かべる城ぞ賴みなる浮かべるその城日の本の皇國の四方を守るべし眞鐵のその艦日の本に仇爲す國を攻めよかし
+shared_focus = {
+	id = DKG_war_of_sea
+	icon = GFX_goal_unknown
+	cost = 10.00
+	x = 36
+	y = 18
+}
+shared_focus = {
+	id = DKG_allied_powers
+	icon = GFX_goal_unknown
+	cost = 1.50
+	prerequisite = {
+		focus = DKG_war_of_sea
+	}
+	x = 34
+	y = 19
+
+}
+shared_focus = {
+	id = DKG_simonoseki
+	icon = GFX_goal_unknown
+	cost = 1.50
+	prerequisite = {
+		focus = DKG_war_of_sea
+	}
+	x = 38
+	y = 19
+
+}
+shared_focus = {
+	id = DKG_marine
+	icon = GFX_goal_unknown
+	cost = 1.50
+	prerequisite = {
+		focus = DKG_war_of_sea
+	}
+	x = 36
+	y = 19
+
+}
+shared_focus = {
+	id = DKG_time_of_revenge
+	icon = GFX_goal_unknown
+	cost = 10.00
+	prerequisite = {
+		focus = DKG_allied_powers
+	}
+	prerequisite = {
+		focus = DKG_simonoseki
+	}
+	prerequisite = {
+		focus = DKG_fort
+	}
+	x = 36
+	y = 21
+
+}
+shared_focus = {
+	id = DKG_fort
+	icon = GFX_goal_unknown
+	cost = 10.00
+	prerequisite = {
+		focus = DKG_marine
+	}
+	x = 36
+	y = 20
+
+}
+shared_focus = {
+	id = DKG_reclaim
+	icon = GFX_goal_unknown
+	cost = 10.00
+	prerequisite = {
+		focus = DKG_kyushu
+	}
+	prerequisite = {
+		focus = DKG_hokaido
+	}
+	x = 36
+	y = 23
+
+}
+shared_focus = {
+	id = DKG_kyushu
+	icon = GFX_goal_unknown
+	cost = 10.00
+	prerequisite = {
+		focus = DKG_time_of_revenge
+	}
+	x = 35
+	y = 22
+
+}
+shared_focus = {
+	id = DKG_hokaido
+	icon = GFX_goal_unknown
+	cost = 10.00
+	prerequisite = {
+		focus = DKG_time_of_revenge
+	}
+	x = 37
+	y = 22
+
+}
+shared_focus = {
+	id = DKG_the_last_empire
+	icon = GFX_goal_unknown
+	cost = 10.00
+	prerequisite = {
+		focus = DKG_reclaim
+	}
+	x = 36
+	y = 24
+	
+}

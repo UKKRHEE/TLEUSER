@@ -1,0 +1,5 @@
+﻿
+focus = {
+    current = "KOR_focus_see_the_hansung"
+    Progress = 0
+}   

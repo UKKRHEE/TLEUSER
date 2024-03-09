@@ -1,0 +1,33 @@
+﻿capital = 37 #South Korea - Seoul or Busan
+
+oob = "TV1"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	mass_assault = 1
+}
+
+set_convoys = 5
+
+recruit_character = RUS_Boris_Shepunov
+recruit_character = RUS_Pitirim_Sorokinv
+recruit_character = RUS_Pavel_Zhigarev
+recruit_character = RUS_alexandr_kolchak
+recruit_character = RUS_pyotr_wrangel
+recruit_character = RUS_anton_denikin
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 32
+	fascism = 0
+	communism = 33
+	neutrality = 35
+}
+
+add_ideas = {
+}

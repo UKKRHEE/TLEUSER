@@ -1,0 +1,41 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_KOR_album_art"
+		texturefile = "gfx/KOR_album_art.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_KOR_kim_kwang_seok_album_art"
+		texturefile = "gfx/KOR_kim_kwang_seok_album_art.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_KOR_Lee_Moon_Sae1_album_art"
+		texturefile = "gfx/KOR_Lee_Moon_Sae1_album_art.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_KOR_waktaverse_album_art"
+		texturefile = "gfx/KOR_waktaverse_album_art.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_KOR_china_music_art"
+		texturefile = "gfx/KOR_china_music.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_oshinoko_station_art"
+		texturefile = "gfx/oshinoko_station_album_art.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_UKKRHEE_personal_art"
+		texturefile = "gfx/UKKRHEE_personal_album_art.png"
+		noOfFrames = 2
+	}
+
+}

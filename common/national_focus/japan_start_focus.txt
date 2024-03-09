@@ -1,0 +1,160 @@
+focus_tree = {
+	id = japan_start_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = DKG
+			
+		}
+	}
+	continuous_focus_position = { x = 300 y = 1500 }
+	default = no
+	#시작 페이크 중점
+	focus = {
+		id = JPN_fake_1
+		icon = GFX_focus_JPN_fake_1
+		cost = 1.5
+		x = 20
+		y = 1
+		cancelable = no
+		allow_branch = {
+			NOT = {
+				JAP = {
+					has_completed_focus = JAP_economic_policy
+				}
+			}
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = japan_focus_start
+				NOT = {
+					has_country_flag = japan_focus_start
+				}
+			}
+		}
+			ai_will_do = {
+					factor = 0
+				}
+			available = {
+				}
+			completion_reward = {
+				custom_effect_tooltip = japan_focus_start_tt
+			}
+
+	}
+	focus = {
+		id = JPN_fake_2
+		icon = GFX_goal_DOM_The_Trial
+		cost = 1.5
+		x = 18
+		y = 2
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = japan_focus_start
+				NOT = {
+					has_country_flag = japan_focus_start
+				}
+			}
+		}
+		prerequisite = {
+			focus = JPN_fake_1
+		}
+			ai_will_do = {
+					factor = 0
+				}
+			available = {
+				}
+			completion_reward = {
+				custom_effect_tooltip = japan_focus_start_tt2
+			}
+
+	}
+	focus = {
+		id = JPN_fake_3
+		icon = GFX_LEC_Illegitimate_Economy
+		cost = 1.5
+		x = 22
+		y = 2
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = japan_focus_start
+				NOT = {
+					has_country_flag = japan_focus_start
+				}
+			}
+		}
+		prerequisite = {
+			focus = JPN_fake_1
+		}
+			ai_will_do = {
+					factor = 0
+				}
+			available = {
+				}
+			completion_reward = {
+				custom_effect_tooltip = japan_focus_start_tt3
+			}
+
+	}
+	focus = {
+		id = JPN_fake_4
+		icon = GFX_goal_JAP_tokyo_conf
+		cost = 1.5
+		x = 20
+		y = 3
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = japan_focus_start
+				NOT = {
+					has_country_flag = japan_focus_start
+				}
+			}
+		}
+		prerequisite = {
+			focus = JPN_fake_2
+		}
+		prerequisite = {
+			focus = JPN_fake_3
+		}
+		prerequisite = {
+			focus = JPN_fake_5
+		}
+			ai_will_do = {
+					factor = 0
+				}
+			available = {
+				}
+			completion_reward = {
+				custom_effect_tooltip = japan_focus_start_tt4
+			}
+
+	}
+	focus = {
+		id = JPN_fake_5
+		icon = GFX_goal_foreign_diplomacy
+		cost = 1.5
+		x = 20
+		y = 2
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = japan_focus_start
+				NOT = {
+					has_country_flag = japan_focus_start
+				}
+			}
+		}
+		prerequisite = {
+			focus = JPN_fake_1
+		}
+			ai_will_do = {
+					factor = 0
+				}
+			available = {
+				}
+			completion_reward = {
+				custom_effect_tooltip = japan_focus_start_tt5
+			}
+
+	}
+}

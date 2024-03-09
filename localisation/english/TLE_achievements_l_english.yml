@@ -1,0 +1,38 @@
+﻿l_english:
+ TLE_achievements_20241114:0 "THE LAST EMPIRE 도전과제"
+ 
+ ### 도전과제 ###
+ # 공통
+ welcome_to_the_last_empire_NAME:0 "첫 발걸음"
+ welcome_to_the_last_empire_DESC:0 "라스트 엠파이어에 오신 것을 환영합니다! 모드를 플레이하는 동안 즐거운 시간 되세요!"
+ # 대한제국
+ the_last_empire_NAME:0 "마지막 제국"
+ the_last_empire_DESC:0 "대한제국으로 대동아전쟁에서 패전하십시오."
+
+ duty_of_confucians_NAME:0 "유자의 짐"
+ duty_of_confucians_DESC:0 "대한제국으로 대동아전쟁에서 승전하십시오."
+
+ duty_of_confucians_good_NAME:0 "멋진 신세계"
+ duty_of_confucians_good_DESC:0 "아무런 난이도 설정을 바꾸지 않은 채 대한제국으로 대동아전쟁에서 승전하십시오."
+
+ real_ending_of_korea_NAME:0 "역사공부 좀 해"
+ real_ending_of_korea_DESC:0 "MP3에서 흘러나오는 노래는 하염없이 귀로 들리고만 있었다."
+
+ win_at_china_NAME:0 "용살자"
+ win_at_china_DESC:0 "아무런 난이도 설정을 바꾸지 않은 채 대한제국으로 지나사변에서 승전하십시오."
+
+ win_at_japan_NAME:0 "신살자"
+ win_at_japan_DESC:0 "아무런 난이도 설정을 바꾸지 않은 채 대한제국으로 한일전쟁에서 승전하십시오."
+
+ # 일본제국
+ homeland_of_the_great_sun_NAME:0 "위대한 해의 고향"
+ homeland_of_the_great_sun_DESC:0 "일본제국으로 대아대전에서 승리하여 대일본제국을 선포하십시오."
+ 
+ gas_gas_gas_jap_NAME:0 "Gas Gas Gas"
+ gas_gas_gas_jap_DESC:0 "1945년 8월 15일 이전에 일본제국으로 대아대전에서 승리하십시오."
+ 
+ # 미합중국
+ why_can_not_heojeop_NAME:0 "설마 이것도 못하겠어?"
+ why_can_not_heojeop_DESC:0 "미합중국으로 태평양 전쟁에서 승리하십시오."
+ 
+ 

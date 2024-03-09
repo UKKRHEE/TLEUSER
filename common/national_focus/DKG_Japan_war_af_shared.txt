@@ -1,0 +1,151 @@
+#도쿠가와의 지속 루트   
+	shared_focus = {
+		id = DKG_tokugawa_win
+		icon = GFX_focus_DKG_reitoku_reform
+		cost = 4.4
+		x = 36
+		y = 7
+		completion_reward = {
+			custom_effect_tooltip = DKG_reform_focus_tt
+			hidden_effect = {
+				country_event = {
+					id = TLE_DKG_event.3
+				}
+			}
+		}
+	}
+
+	shared_focus = {
+		id = DKG_kyobugatsutai
+		icon = GFX_goal_unknown
+		cost = 4.4
+		prerequisite = {
+			focus = DKG_tokugawa_win
+		}
+		relative_position_id = DKG_tokugawa_win
+		x = -1
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	shared_focus = {
+		id = DKG_martial_law_break
+		icon = GFX_goal_unknown
+		cost = 4.4
+		prerequisite = {
+			focus = DKG_kyobugatsutai
+		}
+		relative_position_id = DKG_tokugawa_win
+		x = -2
+		y = 2
+		completion_reward = {
+			
+		}
+	}
+	shared_focus = {
+		id = DKG_showa_yushinkai_disperse
+		icon = GFX_goal_unknown
+		cost = 4.4
+		prerequisite = {
+			focus = DKG_tokugawa_win
+		}
+		relative_position_id = DKG_tokugawa_win
+		x = 1
+		y = 1
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	shared_focus = {
+		id = DKG_shinsengumi
+		icon = GFX_goal_unknown
+		cost = 4.4
+		prerequisite = {
+			focus = DKG_showa_yushinkai_disperse
+		}
+		relative_position_id = DKG_tokugawa_win
+		x = 2
+		y = 2
+		completion_reward = {
+			
+		}
+	}
+	shared_focus = {
+		id = DKG_state_of_japan_law_committee
+		icon = GFX_goal_unknown
+		cost = 4.4
+		prerequisite = {
+			focus = DKG_tokugawa_win
+		}
+		relative_position_id = DKG_tokugawa_win
+		x = 0
+		y = 2
+		completion_reward = {
+			
+		}
+	}
+	shared_focus = {
+		id = DKG_state_of_japan_new_law
+		icon = GFX_goal_unknown
+		cost = 4.4
+		prerequisite = {
+			focus = DKG_shinsengumi
+		}
+		prerequisite = {
+			focus = DKG_state_of_japan_law_committee
+		}
+		prerequisite = {
+			focus = DKG_martial_law_break
+		}
+		relative_position_id = DKG_tokugawa_win
+		x = 0
+		y = 3
+		completion_reward = {
+			set_country_flag = DKG_civilwar_end_flag
+		}
+	}
+	shared_focus = {
+		id = DKG_tennouzansakusen
+		icon = GFX_goal_unknown
+		cost = 4.4
+		prerequisite = {
+			focus = DKG_state_of_japan_new_law
+		}
+		relative_position_id = DKG_tokugawa_win
+		x = 0
+		y = 4
+		completion_reward = {
+			custom_effect_tooltip = DKG_tennouzansakusen_TT
+		}
+	}
+	shared_focus = {
+		id = DKG_new_age
+		icon = GFX
+		cost = 4.4
+		x = 36
+		y = 14
+		completion_reward = {
+			set_power_balance = {
+				id = DKG_balance
+				left_side = DKG_democratic
+				right_side = DKG_facist
+				set_default = yes 
+				set_value = 0.25
+			}
+		}
+	}
+	shared_focus = {
+		id = DKG_reform_start
+		icon = GFX_goal_unknown
+		cost = 4.4
+		prerequisite = {
+			focus = DKG_new_age
+		}
+		relative_position_id = DKG_new_age
+		x = 0
+		y = 1
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}

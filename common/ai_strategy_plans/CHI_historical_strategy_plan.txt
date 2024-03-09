@@ -1,0 +1,82 @@
+CHI_nationalist_historical_plan = {
+	name = "Nationalist China historical plan"
+	desc = "Essentially historical behavior for Nationalist China"
+
+	allowed = {
+		original_tag = CHI
+	}
+	enable = {
+		OR = {
+			AND = {
+				is_historical_focus_on = yes
+				has_game_rule = {
+					rule = CHI_ai_behavior
+					option = DEFAULT
+				}	
+			}
+			has_country_flag = CHI_AI_RANDOM_HISTORICAL
+			has_game_rule = {
+				rule = CHI_ai_behavior
+				option = HISTORICAL
+			}
+		}
+	}
+	abort = {
+		KOR = {
+			OR = {
+				has_completed_focus = KOR_use_the_anti-armed
+				has_completed_focus = KOR_power_up_to_imoperial
+				is_in_faction_with = ENG 
+				is_in_faction_with = USA 
+			}
+		}
+		has_game_rule = {
+			rule = CHI_ai_behavior
+			option = ALTERNATE
+		}
+		MEN = {
+			is_subject = no
+		}
+	}
+
+	ai_national_focuses = {
+		CHI_restore_the_chinag
+		CHI_north_expedition
+		CHI_go_north
+		CHI_go_west
+		CHI_threat_the_korea
+		CHI_preparation_war_with_korea
+		CHI_military_modernization
+		CHI_the_time_to_go_west
+		CHI_government_once
+		CHI_sanminzuyi_reconfirm
+		CHI_administrative_reorganization
+		CHI_new_life_movement_chiang
+		CHI_rural_development_policy
+		CHI_meritocratic_government
+		CHI_economic_problem
+		CHI_maintain_discipline
+		CHI_guangzhou_armed
+		CHI_nanzing_line
+		CHI_xiechi_with_sichuan
+		CHI_peace_with_sichuan
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+		CHI_soong_mei_ling = 10
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}

@@ -1,0 +1,151 @@
+ideas = {
+
+	country = {
+		DKG_dakahito = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = jap_hirohito
+			
+			modifier = {
+				stability_factor = -0.05
+			}
+		}
+	DKG_nothing_popularity = {
+
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+			
+		removal_cost = -1
+
+		picture = idea_DKG_nothing_popularity
+			
+		modifier = {
+			stability_factor = -0.05
+			war_support_factor = -0.05
+			custom_modifier_tooltip = DKG_pou_TT
+		}
+	}
+	#군제개혁
+	DKG_starting_modernization_army = {
+
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+			
+		removal_cost = -1
+
+		picture = idea_JAP_pre_modern_army
+			
+		modifier = {
+			war_support_factor = -0.15
+			army_attack_factor = -0.15
+			army_org_factor = -0.1
+			army_org_regain = -0.1
+		}
+	}
+	DKG_starting_modernization_army_2 = {
+
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+			
+		removal_cost = -1
+
+		picture = idea_JAP_pre_modern_army
+			
+		modifier = {
+			army_attack_factor = -0.05
+			army_org_factor = -0.05
+			army_org_regain = -0.05
+		}
+	}
+	DKG_starting_modernization_army_3 = {
+
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+			
+		removal_cost = -1
+
+		picture = idea_JAP_pre_modern_army
+			
+		modifier = {
+			army_attack_factor = -0.05
+			army_org_factor = -0.05
+			army_org_regain = -0.05
+			conscription_factor = 0.05
+			consumer_goods_expected_value = 0.05
+		}
+	}
+	DKG_starting_modernization_army_4 = {
+
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+			
+		removal_cost = -1
+
+		picture = idea_JAP_pre_modern_army
+			
+			modifier = {
+				army_org_factor = 0.05
+				army_org_regain = 0.05
+				conscription_factor = 0.05
+				naval_damage_factor = 0.05
+				naval_defense_factor = 0.05
+				naval_speed_factor = 0.05
+				consumer_goods_expected_value = 0.1
+			}
+		}
+	
+	#조정 폐지
+	DKG_Tokugawa_government = {
+
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+			
+		removal_cost = -1
+
+		picture = idea_DKG_tokugawa_government
+			
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+	}
+}

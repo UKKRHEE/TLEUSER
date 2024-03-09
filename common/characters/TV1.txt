@@ -1,0 +1,20 @@
+characters={
+	TV1_Ivan_Konev={
+		name="TV1_Ivan_Konev"
+		portraits={
+			civilian={
+				large="gfx/leaders/SV1/Ivan_Konev.dds"
+			}
+		}
+		country_leader={
+			ideology=marxism
+			traits={ }
+			id=-1
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			id=-1
+		}
+	}
+}

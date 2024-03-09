@@ -1,0 +1,27 @@
+ideas = {
+
+	country = {
+	MJT_majo_sama = {
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+			
+		removal_cost = -1
+
+		picture = ger_revive_the_kaiserreich
+			
+		modifier = {
+			stability_factor = 0.15
+			war_support_factor = 0.1
+			army_attack_factor = 0.3
+			army_org_factor = 0.25
+			army_org_regain = 0.45
+			consumer_goods_expected_value = -0.2
+		}
+	}
+}
+}

@@ -1,0 +1,50 @@
+﻿l_english:
+ chinese_province_title: "[THIS.ChinaGetStateProvinceTitle]"
+ guangdong_province_state: "광동성" #광둥
+ guangxi_province_state: "광서성" #광시
+ zhili_province_state: "직예성" #즈리
+ henan_province_state: "하남성" #허난
+ hubei_province_state: "호북성" #후베이
+ hunan_province_state: "호남성" #후난
+ jiangsu_province_state: "강소성" #장쑤
+ jiangxi_province_state: "강서성" #장시
+ shaanxi_province_state: "섬서성" #산시
+ shanxi_province_state: "산서성" #산시
+ shandong_province_state: "산동성" #산둥
+ anhui_province_state: "안휘성" #안후이
+ zhejiang_province_state: "절강성" #저장
+ fujian_province_state: "복건성" #푸젠
+ sichuan_province_state: "사천성" #쓰촨
+ xikang_province_state: "서강성" #시캉
+ guizhou_province_state: "귀주성" #구이저우
+ yunnan_province_state: "운남성" #윈난
+ qinghai_province_state: "청해성" #칭하이 
+ gansu_province_state: "감숙성" #간쑤
+ ningxia_province_state: "영하성" #닝샤
+ suiyuan_province_state: "수원성" #쑤이위안
+ xinjiang_province_state: "신강성" #신장 
+ chahar_province_state: "찰합이성" #차하얼
+ taiwan_province_state: "대만성" #타이완
+ 
+ #조선령 만주
+ fengtian_province_state: "봉천성" #펑톈
+ jilin_province_state: "길림성" #지린
+ heilongjiang_province_state: "흑룡강성" #헤이룽장
+ jehol_province_state: "열하성" #러허
+ 
+ #일본 지방들
+ chugoku_state:0 "츄고쿠"
+ shigoku_state:0 "시고쿠"
+ kansai_state:0 "칸사이"
+ kanto_state:0 "칸토"
+ chufu_state:0 "츄부"
+ kyushu_state:0 "큐슈"
+ hokkaido_state:0 "홋카이도"
+ tohoku_state:0 "토호쿠"
+ 
+ #ㅋㅋㅋㅋ
+ xijiang_province_state: "서장성" #티베트
+ waimenggu_province_state: "외몽고성" #멍구
+ 
+ #ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+ chaoxian_province_state: "조선성" #차오시엔

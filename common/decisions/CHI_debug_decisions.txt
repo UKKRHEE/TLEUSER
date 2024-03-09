@@ -1,0 +1,48 @@
+CHI_debug_category = {
+	
+	CHI_DEV_tree = {
+
+		fire_only_once = no
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove CHI_DEV_tree"
+			load_focus_tree = KMT_rework
+		}
+	}
+	CHI_DEV_tree2 = {
+
+		fire_only_once = no
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove CHI_DEV_tree2"
+			load_focus_tree = KMT_rework2
+		}
+	}
+	CHI_DEV_tree3 = {
+
+		fire_only_once = no
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove CHI_DEV_tree3"
+			load_focus_tree = KMT_rework3
+		}
+	}
+	CHI_DEV_tree4 = {
+
+		fire_only_once = no
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove CHI_DEV_tree4"
+			load_focus_tree = KMT_rework4
+		}
+	}
+	CHI_DEV_tree5 = {
+
+		fire_only_once = no
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove CHI_DEV_tree5"
+			load_focus_tree = KMT_rework5
+		}
+	}
+}

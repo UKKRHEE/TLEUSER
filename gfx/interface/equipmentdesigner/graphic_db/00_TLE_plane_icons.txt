@@ -1,0 +1,84 @@
+KOR = {
+	small_plane_airframe = {
+		pool = {
+			icons = {
+				#"gfx/interface/technologies/KOR_fighter07.dds"
+				#"gfx/interface/technologies/KOR_fighter06.dds"
+				#"gfx/interface/technologies/KOR_fighter05.dds"
+				#"gfx/interface/technologies/KOR_Seaplane_fighter.dds"
+				#"gfx/interface/technologies/KOR_CAS04.dds"
+				GFX_KOR_naval_bomber3_medium
+				GFX_KOR_CAS3_medium
+				GFX_KOR_fighter3_medium
+				GFX_KOR_naval_bomber2_medium
+				GFX_KOR_CAS2_medium
+				GFX_KOR_fighter2_medium
+				GFX_KOR_naval_bomber1_medium
+				GFX_KOR_CAS1_medium
+				GFX_KOR_fighter1_medium
+				"gfx/interface/technologies/KOR_fighter0.dds"
+				#GFX_KOR_early_fighter_medium
+			}
+			models = {
+				KOR_light_plane_entity
+			}
+		}
+	}
+
+	cv_small_plane_airframe = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/KOR_naval_bomber3_cv.dds"
+				"gfx/interface/technologies/KOR_fighter06_cv.dds"
+				"gfx/interface/technologies/KOR_naval_bomber2_cv.dds"
+				"gfx/interface/technologies/KOR_fighter0_cv.dds"
+				"gfx/interface/technologies/KOR_CAS2_cv.dds"
+				"gfx/interface/technologies/KOR_CAS04_cv.dds"
+				"gfx/interface/technologies/KOR_fighter05_cv.dds"
+				"gfx/interface/technologies/KOR_fighter07_cv.dds"
+				"gfx/interface/technologies/KOR_fighter3_cv.dds"
+				"gfx/interface/technologies/KOR_fighter1_cv.dds"
+				"gfx/interface/technologies/KOR_naval_bomber1_cv.dds"
+				"gfx/interface/technologies/KOR_fighter2_cv.dds"
+				"gfx/interface/technologies/KOR_CAS3_cv.dds"
+				"gfx/interface/technologies/KOR_CAS1_cv.dds"
+				#GFX_KOR_early_fighter_medium
+			}
+			models = {
+				KOR_light_plane_entity
+			}
+		}
+	}
+
+	medium_plane_airframe = {
+		pool = {
+			icons = {
+				GFX_KOR_tactical_bomber3_medium
+				GFX_KOR_heavy_fighter3_medium
+				GFX_KOR_tactical_bomber2_medium
+				GFX_KOR_heavy_fighter2_medium
+				GFX_KOR_tactical_bomber1_medium
+				GFX_KOR_heavy_fighter1_medium
+				GFX_KOR_early_bomber_medium
+			}
+			models = {
+				KOR_medium_plane_entity
+			}
+		}
+	}
+	large_plane_airframe = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/KOR_strategic_maritime_patrol_bomber.dds"
+				GFX_KOR_strategic_bomber3_medium
+				GFX_KOR_strategic_bomber2_medium
+				GFX_KOR_strategic_bomber1_medium
+				"gfx/interface/technologies/KOR_early_strategic_bomber.dds"
+			}
+			models = {
+				KOR_heavy_plane_entity
+			}
+		}
+	}
+	
+}

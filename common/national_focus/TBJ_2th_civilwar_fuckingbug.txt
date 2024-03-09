@@ -1,0 +1,11 @@
+focus_tree = {
+	id = TBJ_start_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = TBJ
+		}
+	}
+	default = no
+}

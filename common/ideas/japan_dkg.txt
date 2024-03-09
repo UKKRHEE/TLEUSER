@@ -1,0 +1,15 @@
+ideas = {
+	country = {
+		DKG_korean_equipment = {
+			allowed = {
+				always = no
+			}
+
+			picture = GFX
+
+			modifier = {
+				consumer_goods_expected_value = 0.05
+			}
+		}
+	}
+}

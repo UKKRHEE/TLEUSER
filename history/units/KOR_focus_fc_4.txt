@@ -1,0 +1,5 @@
+﻿
+focus = {
+    current = "KOR_plan_manchu"
+    Progress = 0
+}   

@@ -1,0 +1,20 @@
+characters={
+	GZC_he_yingqin={
+		name="GZC_he_yingqin"
+		portraits={
+			civilian={
+				large="gfx/leaders/YUN/Portrait_Yunnan_He_Yingqing.dds"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			id=-1
+		}
+		country_leader={
+			ideology=ultranationalism
+			traits={ }
+			id=-1
+		}
+	}
+}

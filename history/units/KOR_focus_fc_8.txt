@@ -1,0 +1,5 @@
+﻿
+focus = {
+    current = "KOR_attack_colonial_territory"
+    Progress = 0
+}   

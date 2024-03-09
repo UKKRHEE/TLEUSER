@@ -1,0 +1,5 @@
+﻿
+focus = {
+    current = "KMT_new_advisory_group"
+    Progress = 0
+}   

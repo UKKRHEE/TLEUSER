@@ -1,0 +1,20 @@
+characters={
+	NT1_arthur_seissinquart ={
+		name="NT1_arthur_seissinquart"
+		portraits={
+			civilian={
+				large="gfx/leaders/GER/Portrait_Germany_Generic_land_5.dds"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			id=-1
+		}
+		country_leader={
+			ideology=nazism
+			traits={ }
+			id=-1
+		}
+	}
+}

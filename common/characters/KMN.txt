@@ -1,0 +1,79 @@
+characters={
+	KMN_yi_cheok = {
+		name="KMM_yi_cheok"
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/Portrait_KOR_Yi_Cheok.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			desc="KMN_YI_CHEOK_DESC"
+			traits={ yicheok_trait }
+		}
+		country_leader={
+			ideology=fascism_ideology
+			desc="KMN_YI_CHEOK_DESC"
+			traits={ yicheok_trait }
+		}
+		country_leader={
+			ideology=conservatism
+			desc="KMN_YI_CHEOK_DESC"
+			traits={ yicheok_trait }
+		}
+		country_leader={
+			ideology=marxism
+			desc="KMN_YI_CHEOK_DESC"
+			traits={ yicheok_trait }
+		}
+	}
+	KMN_manchurian_antirevolution_government = {
+		name="KMN_manchurian_antirevolution_government"
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/Portrait_KOR_military_junta.png"
+			}
+		}
+	}
+	KMN_john_reed_hodge = { #
+		name="KMN_john_reed_hodge"
+		portraits={
+			civilian={
+				large="gfx/leaders/USA/Portrait_USA_Generic_land_4.dds"
+			}
+		}
+	}
+	KMN_yeom_dongjin = { #ideology = conservatism
+		name="KMN_yeom_dongjin"
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/Portrait_KOR_yeom_dong_jin.png"
+			}
+		}
+	}
+	KMN_kim_philsun = { #ideology = despotism
+		name="KMN_kim_philsun"
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/Portrait_KOR_kim_pilsun.dds"
+			}
+		}
+	}
+	KMN_nam_il = { #ideology = marxism
+		name="KMN_nam_il"
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/Portrait_KOR_Nam_Il.png"
+			}
+		}
+	}
+	KMN_lee_beomseok = { #ideology = rexism
+		name="KMN_lee_beomseok"
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/Portrait_KOR_Lee_Beom_seok.png"
+			}
+		}
+	}
+
+}

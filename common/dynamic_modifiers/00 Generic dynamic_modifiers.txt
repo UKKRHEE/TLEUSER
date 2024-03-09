@@ -1,0 +1,12 @@
+mobilisation_penalty_modifier = {
+	#negative values
+	army_org_factor = mobilisation_penalty_var
+	land_reinforce_rate = mobilisation_penalty_var
+	industrial_capacity_factory = mobilisation_penalty_var
+	training_time_factor = mobilisation_penalty_var_positive
+	consumer_goods_factor = mobilisation_penalty_var_consumer_goods
+
+	#positive values
+	# training_time_factor = mobilisation_penalty_var_positive
+	# consumer_goods_factor = mobilisation_penalty_var_positive
+}

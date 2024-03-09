@@ -1,0 +1,13 @@
+﻿l_english:
+ DKG_balance:0 "가부키극-오이에모노"
+ DKG_facist:0 "토쿠가와가"
+ DKG_democratic:0 "의회파"
+ DKG_balance_range:0 "권력의 균형"
+ DKG_facist_low:0 "토쿠가와가의 약간의 우위"
+ DKG_facist_meidum:0 "토쿠가와가의 적당한 우위"
+ DKG_facist_high:0 "토쿠가와가의 큰 우위"
+ DKG_facist_total:0 "토쿠가와가의 완벽한 우위"
+ DKG_democratic_low:0 "의회파의 약간의 우위"
+ DKG_democratic_medium:0 "의회파의 적당한 우위"
+ DKG_democratic_high:0 "의회파의 큰 우위"
+ DKG_democratic_total:0 "의회파의 완벽한 우위"

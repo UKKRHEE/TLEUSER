@@ -1,0 +1,28 @@
+characters={
+	NV1_andrey_zdanov={
+		name="NV1_andrey_zdanov"
+		portraits={
+			civilian={
+				large="gfx/leaders/SV1/Andrei_Zhdanov.dds"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			id=-1
+		}
+	}
+	NV1_Nikita_Khrushchev={
+		name="NV1_Nikita_Khrushchev"
+		portraits={
+			civilian={
+				large="gfx/leaders/SV1/Nikita_Khrushchev.dds"
+			}
+		}
+		country_leader={
+			ideology=marxism
+			traits={ }
+			id=-1
+		}
+	}
+}

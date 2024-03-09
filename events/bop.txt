@@ -1,0 +1,187 @@
+add_namespace = korbop
+
+country_event = {
+	id = korbop.1
+	title = korbop.1.title
+	desc = korbop.1.desc
+	picture = GFX_TLE_korea_event_none
+
+	is_triggered_only = yes
+
+	#trigger = {
+		#is_debug = yes
+	#}
+
+	option = {
+		if = {
+			limit = {
+				is_ai = no
+			}
+			set_power_balance = {
+				id = KOR_balance
+				left_side = KOR_the_emperor
+				right_side = KOR_millitary
+				set_default = yes 
+				set_value = 0.25
+			}
+		}
+		if = {
+			limit = {
+				is_ai = yes
+			}
+			set_power_balance = {
+				id = KOR_balance
+				left_side = KOR_the_emperor
+				right_side = KOR_millitary
+				set_default = yes 
+				set_value = 1
+			}
+		}
+	}
+}
+country_event = {
+	id = korbop.2
+	title = korbop.2.title
+	desc = korbop.2.desc
+	picture = GFX_TLE_korea_event_none
+
+	is_triggered_only = yes
+	hidden = yes
+	#trigger = {
+		#is_debug = yes
+	#}
+	immediate = {
+		EOK = {
+			transfer_state = 524
+			add_state_core = 524
+		}
+		every_state = {
+			limit = {
+				is_core_of = KOR
+			}
+			add_core_of = EOK
+			remove_core_of = KOR
+		}
+		every_country = {
+			limit = {
+				is_puppet_of = KOR
+			}
+			end_puppet = KOR
+			EOK = {
+				puppet = PREV
+			}
+		}
+	}
+
+	option = {
+		if = {
+			limit = {
+				is_ai = no
+			}
+			every_state = {
+				limit = {
+					is_controlled_by = KOR
+				}
+				controller = EOK
+			}
+			EOK = {
+				create_faction = "TLE_COPERATION"
+				set_cosmetic_tag = EOK_PROV
+				hidden_effect = {
+					remove_ideas = KOR_yi_won_emperor
+					add_ideas = KOR_yi_jin
+				}
+				KOR = {
+					every_unit_leader = {
+						limit = {
+							NOT = {
+								has_trait = KOR_tongjepa
+							}
+						}
+						set_nationality = EOK
+					}
+					every_navy_leader = {
+						set_nationality = EOK
+					}
+				}
+			}
+			every_country = {
+				limit = {
+					has_war_with = KOR
+				}
+				declare_war_on = {
+					target = EOK
+					type = annex_everything
+				}
+			}
+			EOK = {
+				annex_country = {
+					target = KOR
+					transfer_troops = yes
+				}
+				change_tag_from = ROOT
+			}
+		}
+	}
+}
+country_event = {
+	id = korbop.3
+	title = korbop.3.title
+	desc = korbop.3.desc
+	picture = GFX_TLE_korea_event_none
+
+	is_triggered_only = yes
+
+	#trigger = {
+		#is_debug = yes
+	#}
+
+	option = {
+		add_power_balance_value = {
+			id = KOR_balance
+			value = -10
+		}
+	}
+}
+country_event = {
+	id = korbop.4
+	title = korbop.4.title
+	desc = korbop.4.desc
+	picture = GFX_TLE_korea_event_none
+	hidden = yes
+	is_triggered_only = yes
+
+	#trigger = {
+		#is_debug = yes
+	#}
+
+	option = {
+		add_power_balance_value = {
+			id = KOR_balance
+			value = 10
+		}
+	}
+}
+######
+country_event = {
+	id = korbop.1000
+	title = korbop.1000.title
+	desc = korbop.1000.desc
+	picture = GFX_TLE_korea_event_none
+	hidden = yes
+	is_triggered_only = yes
+
+	#trigger = {
+		#is_debug = yes
+	#}
+
+	option = {
+		set_power_balance = {
+			id = ZLC_balance
+			left_side = ZLC_caokun_side
+			right_side = ZLC_wupeifu_side
+			set_default = yes 
+			set_value = 0.25
+		}
+	}
+}

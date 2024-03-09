@@ -1,0 +1,30 @@
+scripted_gui = {
+	TLE_Germany_GUIs_Breitspurbahn = {
+		context_type = decision_category
+		parent_window_token = decision_tab
+		window_name = "TLE_Germany_GUIs_Breitspurbahn"
+		
+		visible = {
+			AND = {
+				tag = GER
+				has_completed_focus = Breitspurbahn
+			}
+		}
+
+		triggers = {
+		}
+
+		effects = {
+			ger_menu_open_click = {
+				if = {
+					limit = { NOT = { has_country_flag = GER_GUI_open_flag } }
+					set_country_flag = GER_GUI_open_flag
+				}
+				else_if = {
+					limit = { has_country_flag = GER_GUI_open_flag }
+					clr_country_flag = GER_GUI_open_flag
+				}
+			}
+		}
+	}
+}

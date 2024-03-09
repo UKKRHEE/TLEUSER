@@ -1,0 +1,118 @@
+music_station = "UKKRHEE_personal"
+music = {
+	song = "how_to_be_mine"
+	chance = {
+		modifier = {
+			factor = 10
+			is_ai = no
+		}
+	}
+}
+music = {
+	song = "internet_yamero"
+	chance = {
+		modifier = {
+			factor = 10
+			is_ai = no
+		}
+	}
+}
+music = {
+	song = "kyu_kurarin"
+	chance = {
+		modifier = {
+			factor = 10
+			is_ai = no
+		}
+	}
+}
+music = {
+	song = "shukusen_lolikami_requiem"
+	chance = {
+		modifier = {
+			factor = 10
+			is_ai = no
+		}
+	}
+}
+music = {
+	song = "dadadada_tenshi"
+	chance = {
+		modifier = {
+			factor = 10
+			is_ai = no
+		}
+	}
+}
+music = {
+	song = "yeomra"
+	chance = {
+		modifier = {
+			factor = 10
+			is_ai = no
+		}
+	}
+}
+music = {
+	song = "kick_back"
+	chance = {
+		modifier = {
+			factor = 10
+			is_ai = no
+		}
+	}
+}
+music = {
+	song = "lemon"
+	chance = {
+		modifier = {
+			factor = 10
+			is_ai = no
+		}
+	}
+}
+music = {
+	song = "night_dancer"
+	chance = {
+		modifier = {
+			factor = 10
+			is_ai = no
+		}
+	}
+}
+music = {
+	song = "airplane_geobugi"
+	chance = {
+		modifier = {
+			factor = 10
+			is_ai = no
+		}
+	}
+}
+music = {
+	song = "honey"
+	chance = {
+		modifier = {
+			factor = 10
+			is_ai = no
+		}
+	}
+}
+music = {
+	song = "so_lovely"
+	chance = {
+		modifier = {
+			factor = 10
+			is_ai = no
+		}
+	}
+}
+music = {
+	song = "your_shampoo_scent_in_the_flowers"
+	chance = {
+		modifier = {
+			factor = 10
+			is_ai = no
+		}
+	}
+}

@@ -1,0 +1,136 @@
+SOV_the_coring = {
+
+}
+SOV_fareastern_partisans = {
+	SOV_rising_anti_korea = {
+		
+		icon = generic_form_nation
+		available = {
+			KOR = {
+				has_government = fascism
+				NOT = {
+					has_country_flag = TLE_THE_WAR_IS_ENDED
+				}
+			}
+			has_global_flag = TLE_germany_union_defeat
+			has_war_support > 0.6
+		}
+		visible = {
+			KOR = {
+				has_government = fascism
+			}	
+		}
+		days_remove = 20
+		ai_will_do = {
+			base = 100
+		}
+		fire_only_once = yes
+		cost = 90
+		complete_effect = {
+			
+		}
+		remove_effect = {
+			add_war_support = 0.05
+			add_stability = 0.05
+			set_country_flag = FLAG_SOV_rising_anti_korea_end
+		}
+	}
+	SOV_yeonhae_coring = {
+		
+		icon = generic_prepare_civil_war
+		available = {
+			KOR = {
+				has_government = fascism
+				NOT = {
+					has_country_flag = TLE_THE_WAR_IS_ENDED
+				}
+			}
+			has_global_flag = TLE_germany_union_defeat
+			has_army_experience > 100
+			NOT = {
+				owns_state = 561
+				owns_state = 657
+				owns_state = 560
+			}
+		}
+		visible = {
+			KOR = {
+				has_government = fascism
+			}
+		}
+		days_remove = 15
+		ai_will_do = {
+			base = 100
+		}
+		fire_only_once = yes
+		cost = 50
+		complete_effect = {
+			army_experience = -100
+		}
+		remove_effect = {
+			add_state_core = 561
+			add_state_core = 560
+			add_state_core = 657
+			set_country_flag = FLAG_SOV_yeonhae_coring_end
+		}
+	}
+	SOV_attack_korea = {
+		
+		icon = generic_tank
+		available = {
+			KOR = {
+				has_government = fascism
+				NOT = {
+					has_country_flag = TLE_THE_WAR_IS_ENDED
+				}
+			}
+			has_global_flag = TLE_germany_union_defeat
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				date > 1945.8.6
+			}
+			has_country_flag = FLAG_SOV_yeonhae_coring_end
+			has_country_flag = FLAG_SOV_rising_anti_korea_end
+		}
+		visible = {
+			KOR = {
+				has_government = fascism
+			}
+		}
+		days_remove = 30
+		ai_will_do = {
+			base = 0
+			modifier = {
+				date < 1945.8.7
+				factor = 100
+			}
+		}
+		fire_only_once = yes
+		cost = 10
+		complete_effect = {
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				declare_war_on = {
+					target = KOR
+					type = annex_everything
+				}
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					is_ai = no
+				}
+				declare_war_on = {
+					target = KOR
+					type = annex_everything
+				}
+			}
+		}
+	}
+
+}

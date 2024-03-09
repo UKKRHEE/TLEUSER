@@ -1,0 +1,37 @@
+﻿capital = 330
+set_cosmetic_tag = MON_AHC
+oob = "MON_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+1936.1.1 = {
+	diplomatic_relation = {
+		country = AHC
+		relation = non_aggression_pact
+	}
+	add_opinion_modifier = {
+		target = AHC
+		modifier = TLE_anhui_clique_opinion
+	}
+}
+
+add_ideas = {
+	limited_conscription
+	MON_fallen_government
+}
+
+recruit_character = MON_xu_shuzheng #쉬수정
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	neutrality = 100
+	democratic = 0
+	communism = 0
+}

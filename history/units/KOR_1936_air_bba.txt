@@ -1,0 +1,180 @@
+﻿
+
+
+
+
+#AIRCRAFT
+air_wings = {
+	525 = {
+		small_plane_airframe_0 = {
+			owner = "KOR" 
+			amount = 100
+			version_name = "참수리"
+		}
+		small_plane_airframe_0 = {
+			owner = "KOR" 
+			amount = 50
+			version_name = "참수리"
+		}
+		small_plane_cas_airframe_0 = {
+			owner = "KOR" 
+			amount = 100
+			version_name = "귀조"
+		}
+		small_plane_cas_airframe_0 = {
+			owner = "KOR" 
+			amount = 10
+			version_name = "귀조"
+		}
+		cv_small_plane_naval_bomber_airframe_0 = {
+			owner = "KOR" 
+			amount = 40
+			version_name = "원앙"
+		}
+	}
+	527 = { #평안
+		small_plane_airframe_0 = {
+			owner = "KOR" 
+			amount = 100
+			version_name = "참수리"
+		}
+		small_plane_airframe_0 = {
+			owner = "KOR" 
+			amount = 25
+			version_name = "참수리"
+		}
+		medium_plane_airframe_0 = {
+			owner = "KOR" 
+			amount = 100
+			version_name = "천지"
+		}
+		small_plane_cas_airframe_0 = {
+			owner = "KOR" 
+			amount = 20
+			version_name = "귀조 개 1형"
+		}
+	}
+	1016 = { #동래
+		small_plane_airframe_0 = {
+			owner = "KOR" 
+			amount = 100
+			version_name = "참수리"
+		}
+		small_plane_cas_airframe_0 = {
+			owner = "KOR" 
+			amount = 20
+			version_name = "귀조"
+		}
+		cv_small_plane_naval_bomber_airframe_0 = {
+			owner = "KOR" 
+			amount = 10
+			version_name = "원앙"
+		}
+	}
+	1015 = { #전주
+		small_plane_airframe_0 = {
+			owner = "KOR" 
+			amount = 60
+			version_name = "참수리"
+		}
+		cv_small_plane_naval_bomber_airframe_0 = {
+			owner = "KOR" 
+			amount = 20
+			version_name = "원앙"
+		}
+		small_plane_cas_airframe_0 = {
+			owner = "KOR" 
+			amount = 10
+			version_name = "귀조 개 1형"
+		}
+	}
+	"IKN 충무공 이순신"  = { 
+		cv_small_plane_airframe_0 =  { owner = "KOR" amount = 10 version_name = "수리온" } 
+		cv_small_plane_airframe_0 =  { owner = "KOR" amount = 2 version_name = "수리온" } 
+		cv_small_plane_cas_airframe_0 =  { owner = "KOR" amount = 10 version_name = "해고양" } 
+		cv_small_plane_cas_airframe_0 =  { owner = "KOR" amount = 2 version_name = "해고양" } 
+		cv_small_plane_naval_bomber_airframe_0 = { owner = "KOR" amount = 10 version_name = "원앙" } 	# historical 12
+		cv_small_plane_naval_bomber_airframe_0 = { owner = "KOR" amount = 10 version_name = "원앙" } 	# historical 12
+		cv_small_plane_naval_bomber_airframe_0 = { owner = "KOR" amount = 10 version_name = "원앙" } 	# historical 12
+		cv_small_plane_naval_bomber_airframe_0 = { owner = "KOR" amount = 6 version_name = "원앙" } 	# historical 12
+	}
+	"IKN 의민공 이억기"  = { 
+		cv_small_plane_airframe_0 =  { owner = "KOR" amount = 10 version_name = "수리온" } 
+		cv_small_plane_airframe_0 =  { owner = "KOR" amount = 2 version_name = "수리온" } 
+		cv_small_plane_cas_airframe_0 =  { owner = "KOR" amount = 10 version_name = "해고양" } 
+		cv_small_plane_cas_airframe_0 =  { owner = "KOR" amount = 2 version_name = "해고양" } 
+		cv_small_plane_naval_bomber_airframe_0 = { owner = "KOR" amount = 10 version_name = "원앙" } 	# historical 12
+		cv_small_plane_naval_bomber_airframe_0 = { owner = "KOR" amount = 10 version_name = "원앙" } 	# historical 12
+		cv_small_plane_naval_bomber_airframe_0 = { owner = "KOR" amount = 10 version_name = "원앙" } 	# historical 12
+		cv_small_plane_naval_bomber_airframe_0 = { owner = "KOR" amount = 6 version_name = "원앙" } 	# historical 12
+	}
+	"IKN 충장공 권율"  = { 
+		cv_small_plane_airframe_0 =  { owner = "KOR" amount = 10 version_name = "수리온" } 
+		cv_small_plane_airframe_0 =  { owner = "KOR" amount = 2 version_name = "수리온" } 
+		cv_small_plane_cas_airframe_0 =  { owner = "KOR" amount = 10 version_name = "해고양" } 
+		cv_small_plane_cas_airframe_0 =  { owner = "KOR" amount = 2 version_name = "해고양" } 
+		cv_small_plane_naval_bomber_airframe_0 = { owner = "KOR" amount = 10 version_name = "원앙" } 	# historical 12
+		cv_small_plane_naval_bomber_airframe_0 = { owner = "KOR" amount = 10 version_name = "원앙" } 	# historical 12
+		cv_small_plane_naval_bomber_airframe_0 = { owner = "KOR" amount = 10 version_name = "원앙" } 	# historical 12
+		cv_small_plane_naval_bomber_airframe_0 = { owner = "KOR" amount = 6 version_name = "원앙" } 	# historical 12
+	}
+	"IKN 충무공 김시민"  = { 
+		cv_small_plane_airframe_0 =  { owner = "KOR" amount = 10 version_name = "수리온" } 
+		cv_small_plane_airframe_0 =  { owner = "KOR" amount = 2 version_name = "수리온" } 
+		cv_small_plane_cas_airframe_0 =  { owner = "KOR" amount = 10 version_name = "해고양" } 
+		cv_small_plane_cas_airframe_0 =  { owner = "KOR" amount = 2 version_name = "해고양" } 
+		cv_small_plane_naval_bomber_airframe_1 = { owner = "KOR" amount = 10 version_name = "원앙 개 1형" } 	# historical 12
+		cv_small_plane_naval_bomber_airframe_1 = { owner = "KOR" amount = 10 version_name = "원앙 개 1형" } 	# historical 12
+		cv_small_plane_naval_bomber_airframe_1 = { owner = "KOR" amount = 10 version_name = "원앙 개 1형" } 	# historical 12
+		cv_small_plane_naval_bomber_airframe_1 = { owner = "KOR" amount = 6 version_name = "원앙 개 1형" } 	# historical 12
+	}
+	"IKN 충익공 곽재우"  = { 
+		cv_small_plane_airframe_0 =  { owner = "KOR" amount = 10 version_name = "수리온" } 
+		cv_small_plane_airframe_0 =  { owner = "KOR" amount = 2 version_name = "수리온" } 
+		cv_small_plane_cas_airframe_0 =  { owner = "KOR" amount = 10 version_name = "해고양" } 
+		cv_small_plane_cas_airframe_0 =  { owner = "KOR" amount = 2 version_name = "해고양" } 
+		cv_small_plane_naval_bomber_airframe_1 = { owner = "KOR" amount = 10 version_name = "원앙 개 1형" } 	# historical 12
+		cv_small_plane_naval_bomber_airframe_1 = { owner = "KOR" amount = 10 version_name = "원앙 개 1형" } 	# historical 12
+		cv_small_plane_naval_bomber_airframe_1 = { owner = "KOR" amount = 10 version_name = "원앙 개 1형" } 	# historical 12
+		cv_small_plane_naval_bomber_airframe_1 = { owner = "KOR" amount = 6 version_name = "원앙 개 1형" } 	# historical 12
+	}
+	"IKN 제주"  = { 
+		cv_small_plane_airframe_0 =  { owner = "KOR" amount = 10 version_name = "수리온" } 
+		cv_small_plane_cas_airframe_0 =  { owner = "KOR" amount = 10 version_name = "해고양" } 
+	}
+	"IKN 대마"  = { 
+		cv_small_plane_airframe_0 =  { owner = "KOR" amount = 10 version_name = "수리온" } 
+		cv_small_plane_cas_airframe_0 =  { owner = "KOR" amount = 10 version_name = "해고양" } 
+	}
+}
+
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+instant_effect = 
+{
+	
+
+	add_equipment_production = {
+		equipment = {
+			type = small_plane_airframe_0
+			creator = "KOR" 
+			version_name = "참수리"
+		}
+		requested_factories = 1
+		progress = 0.15
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = cv_small_plane_naval_bomber_airframe_1
+			creator = "KOR" 
+			version_name = "원앙 개 1형"
+		}
+		requested_factories = 1
+		progress = 0.2
+		efficiency = 50
+	}
+}

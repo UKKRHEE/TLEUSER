@@ -1,0 +1,2142 @@
+add_namespace = eok_news
+
+news_event = { #강명제를 향한 테러
+	id = eok_news.1
+	title = eok_news.1.t
+	desc = eok_news.1.desc
+	picture = GFX_news_event_kangmyong_kick
+	
+	major = yes
+	
+	is_triggered_only = yes
+	immediate = {
+		set_global_flag = TLE_GF_KANGMYONG_TERROR
+		hidden_effect = {
+			DKG = {
+				country_event = {
+					id = japan.1061
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = eok_news.1.a
+	}
+} 
+news_event = { #이강 집권
+	id = eok_news.2
+	title = eok_news.2.t
+	desc = eok_news.2.desc
+	picture = GFX_news_event_CHI_Shanghai_militarised
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = eok_news.2.a
+		hidden_effect = {
+			set_temp_variable = { TNO_temp_super_event = token:SE_KOREA_THE_YI_KANG }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+news_event = { #남경 대학살
+	id = eok_news.3
+	title = eok_news.3.t
+	desc = eok_news.3.desc
+	picture = GFX_news_event_048
+	
+	major = yes
+    is_triggered_only = yes
+	
+	
+	option = {
+		name = eok_news.3.a
+		trigger = {
+			TAG = KOR
+		}
+	}
+	option = {
+		name = eok_news.3.b
+		trigger = {
+			TAG = CHI
+		}
+	}
+	option = {
+		name = eok_news.3.c
+		trigger = {
+			NOT = {
+				OR = {
+					TAG = KOR
+					TAG = CHI
+				}
+			}			
+		}
+	}
+}
+news_event = { #페킹 함락
+	id = eok_news.4
+	title = eok_news.4.t
+	desc = eok_news.4.desc
+	picture = GFX_news_event_japan_attacks_china
+	
+	major = yes
+    is_triggered_only = yes
+	
+	
+	option = {
+		name = eok_news.4.a
+		trigger = {
+			TAG = KOR
+		}
+	}
+	option = {
+		name = eok_news.4.b
+		trigger = {
+			OR = {
+				TAG = CHI
+				TAG = WZC
+				TAG = ZLC
+				TAG = YUN
+				TAG = GXC
+				TAG = PRC
+				TAG = XSM
+				TAG = AHC
+				TAG = HNC
+				TAG = SIK
+				TAG = SND
+				TAG = SZC
+				TAG = SCC
+				TAG = XKC
+			}	
+		}
+	}
+	option = {
+		name = eok_news.4.c
+		trigger = {
+			NOT = {
+				OR = {
+					TAG = KOR
+					TAG = CHI
+					TAG = WZC
+					TAG = ZLC
+					TAG = YUN
+					TAG = GXC
+					TAG = PRC
+					TAG = XSM
+					TAG = AHC
+					TAG = HNC
+					TAG = SIK
+					TAG = SND
+					TAG = SZC
+					TAG = SCC
+					TAG = XKC
+
+				}
+			}			
+		}
+	}
+}
+
+news_event = { #아주 해방선언
+	id = eok_news.5
+	title = eok_news.5.t
+	desc = eok_news.5.desc
+	picture = GFX_world_event_nanking
+	
+	major = yes
+    is_triggered_only = yes
+	
+	
+	option = {
+		name = eok_news.5.a
+		trigger = {
+			TAG = KOR
+		}
+	}
+	option = {
+		name = eok_news.5.b
+		trigger = {
+			OR = {
+				TAG = CHI
+				TAG = WZC
+				TAG = ZLC
+				TAG = YUN
+				TAG = GXC
+				TAG = PRC
+				TAG = XSM
+				TAG = AHC
+				TAG = HNC
+				TAG = SIK
+				TAG = SND
+				TAG = SZC
+				TAG = SCC
+				TAG = XKC
+			}	
+		}
+	}
+	option = {
+		name = eok_news.5.c
+		trigger = {
+			NOT = {
+				OR = {
+					TAG = KOR
+					TAG = CHI
+					TAG = WZC
+					TAG = ZLC
+					TAG = YUN
+					TAG = GXC
+					TAG = PRC
+					TAG = XSM
+					TAG = AHC
+					TAG = HNC
+					TAG = SIK
+					TAG = SND
+					TAG = SZC
+					TAG = SCC
+					TAG = XKC
+				}
+			}			
+		}
+	}
+}
+news_event = { #파나이 호 사건
+	id = eok_news.6
+	title = eok_news.6.t
+	desc = eok_news.6.desc
+	picture = GFX_news_event_panay_incident
+	
+	major = yes
+    trigger = {	
+		if = {
+			limit = {
+				OR = {
+					KOR = {
+						is_ai = yes
+					}
+					has_game_rule = {
+						rule = TLE_HISTORICAL_USA_ATTACK_USER
+						option = TLE_HISTORICAL_USA_ATTACK_1941
+					}				
+				}
+			}
+			date > 1941.4.24
+		}
+		if = {
+			limit = {
+				KOR = {
+					is_ai = no
+				}
+				has_game_rule = {
+					rule = TLE_HISTORICAL_USA_ATTACK_USER
+					option = TLE_HISTORICAL_USA_ATTACK_1940
+				}			
+			}
+			date > 1940.1.5
+		}
+		KOR = {
+			OR = {
+				ZLC = {
+					exists = yes
+				}
+				CHI = {
+					exists = yes
+				}
+				KVN = {
+					is_puppet_of = KOR
+				}
+				has_war_with = MAL
+				has_war_with = INS
+				owns_state = 671
+			}	
+			NOT = {
+				has_government = democratic
+				has_government = communism
+				has_government = neutrality
+			}
+			NOT = {
+				has_country_flag = KOR_PANAI_PROBLEM
+			}
+		}
+	}
+	immediate = {
+		hidden_effect = {
+			USA = {
+				country_event = {
+					id = korea.63
+				}
+			}
+			KOR = {
+				country_event = {
+					id = korea.64
+				}
+				set_country_flag = KOR_PANAI_PROBLEM
+			}
+			USA = {
+				add_opinion_modifier = { target = KOR modifier = panay_inc2_opinion_modifier }
+			}
+			ENG = {
+				add_opinion_modifier = { target = KOR modifier = panay_inc2_opinion_modifier }
+			}
+		}
+	}		
+	
+	
+	option = {
+		name = eok_news.6.a
+		trigger = {
+			TAG = KOR
+		}
+		unlock_decision_tooltip = KOR_confiscation_of_US_assets
+		unlock_decision_tooltip = KOR_not_say_the_panay
+		unlock_decision_tooltip = KOR_hunlian_in_pacific
+	}
+	option = {
+		name = eok_news.6.b
+		trigger = {
+			TAG = USA
+		}
+	}
+	option = {
+		name = eok_news.6.c
+		trigger = {
+			NOT = {
+				OR = {
+					TAG = KOR
+					TAG = USA
+				}
+			}			
+		}
+	}
+}
+news_event = { #파나이 호 사건 - 2
+	id = eok_news.7
+	title = eok_news.7.t
+	desc = eok_news.7.desc
+	picture = GFX_news_event_panay_incident
+	
+	major = yes
+	is_triggered_only = yes
+	immediate = {
+		set_global_flag = GLOBFLAG_TLE_PANAI_2
+	}
+	
+	
+	option = {
+		name = eok_news.7.a
+		trigger = {
+			TAG = KOR
+		}
+	}
+	option = {
+		name = eok_news.7.b
+		trigger = {
+			TAG = USA
+		}
+	}
+	option = {
+		name = eok_news.7.c
+		trigger = {
+			NOT = {
+				OR = {
+					TAG = KOR
+					TAG = USA
+				}
+			}			
+		}
+	}
+}
+
+news_event = { #청도 사건
+	id = eok_news.8
+	title = eok_news.8.t
+	desc = eok_news.8.desc
+	picture = GFX_news_event_qingdao
+	
+	major = yes
+    is_triggered_only = yes
+	
+	immediate = {
+	}
+	option = {
+		name = eok_news.8.a
+		trigger = {
+			TAG = KOR
+		}
+	}
+	option = {
+		name = eok_news.8.b
+		trigger = {
+			OR = {
+				TAG = CHI
+				TAG = WZC
+				TAG = ZLC
+				TAG = YUN
+				TAG = GXC
+				TAG = PRC
+				TAG = XSM
+				TAG = AHC
+				TAG = HNC
+				TAG = SIK
+				TAG = SND
+				TAG = SZC
+				TAG = SCC
+				TAG = XKC
+			}	
+		}
+	}
+	option = {
+		name = eok_news.8.c
+		trigger = {
+			NOT = {
+				OR = {
+					TAG = KOR
+					TAG = CHI
+					TAG = WZC
+					TAG = ZLC
+					TAG = YUN
+					TAG = GXC
+					TAG = PRC
+					TAG = XSM
+					TAG = AHC
+					TAG = HNC
+					TAG = SIK
+					TAG = SND
+					TAG = SZC
+					TAG = SCC
+					TAG = XKC
+				}
+			}			
+		}
+	}
+}
+news_event = { #한중전쟁
+	id = eok_news.9
+	title = eok_news.9.t
+	picture = GFX_news_event_prussia_nieder
+	
+	desc = {
+		text = eok_news.1689.desc
+		trigger = {
+			original_tag = KOR
+		}
+	}
+	desc = {
+		text = eok_news.1689.desc
+		trigger = {
+			NOT = {
+				original_tag = KOR
+			}
+		}
+	}
+	major = yes
+    is_triggered_only = yes
+	
+	
+	option = {
+		name = eok_news.9.a
+		trigger = {
+			TAG = KOR
+		}
+		hidden_effect = {
+			set_temp_variable = { TNO_temp_super_event = token:SE_KOREA_WW_CHINA }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = eok_news.9.b
+		trigger = {
+			OR = {
+				TAG = CHI
+				TAG = WZC
+				TAG = ZLC
+				TAG = YUN
+				TAG = GXC
+				TAG = PRC
+				TAG = XSM
+				TAG = AHC
+				TAG = HNC
+				TAG = SIK
+				TAG = SND
+				TAG = SZC
+				TAG = SCC
+				TAG = XKC
+			}	
+		}
+		hidden_effect = {
+			set_temp_variable = { TNO_temp_super_event = token:SE_KOREA_WW_CHINA }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = eok_news.9.c
+		trigger = {
+			NOT = {
+				OR = {
+					TAG = KOR
+					TAG = CHI
+					TAG = WZC
+					TAG = ZLC
+					TAG = YUN
+					TAG = GXC
+					TAG = PRC
+					TAG = XSM
+					TAG = AHC
+					TAG = HNC
+					TAG = SIK
+					TAG = SND
+					TAG = SZC
+					TAG = SCC
+					TAG = XKC
+				}
+			}			
+		}
+		hidden_effect = {
+			set_temp_variable = { TNO_temp_super_event = token:SE_KOREA_WW_CHINA }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+news_event = { #강명제를 향한 테러
+	id = eok_news.10
+	title = eok_news.10.t
+	desc = {
+		text = eok_news.10.desc
+		trigger = {
+			OR = {
+				KOR = {
+					has_government = fascism
+				}
+				has_completed_focus = kor_korean_lebensraum
+			}
+		}
+	}	
+	desc = {
+		text = eok_news.10_2.desc
+		trigger = {
+			KOR = {
+				NOT = {
+					has_government = fascism
+					has_completed_focus = kor_korean_lebensraum
+				}
+			}
+		}
+	}	
+	picture = GFX_news_event_GER_funeral
+	
+	major = yes
+	
+	is_triggered_only = yes
+	#fire_only_once = yes
+	
+	option = {
+		name = eok_news.10.a
+	}
+}
+
+news_event = { #강명제를 향한 테러
+	id = eok_news.11
+	title = eok_news.11.t
+	desc = eok_news.11.desc
+	picture = GFX_news_event_bavaria_unification
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		trigger = {
+			TAG = KOR
+		}
+		name = eok_news.11.a
+	}
+	option = {
+		trigger = {
+			TAG = EOK
+		}
+		name = eok_news.11.b
+	}
+	option = {
+		trigger = {
+			NOT = {
+				OR = {
+					tag = KOR
+					tag = EOK
+				}
+			}
+		}
+		name = eok_news.11.c
+	}
+}
+news_event = { #강명제를 향한 테러
+	id = eok_news.12
+	title = eok_news.12.t
+	desc = eok_news.12.desc
+	picture = GFX_news_event_CHI_hanmin_dies
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		trigger = {
+			TAG = KOR
+		}
+		name = eok_news.12.a
+		hidden_effect = {
+			set_temp_variable = { TNO_temp_super_event = token:SE_KOREAN_CIVIL_WAR }
+			TNO_fire_super_event = yes
+		}
+	}	
+	option = {
+		trigger = {
+			TAG = EOK
+		}
+		hidden_effect = {
+			set_temp_variable = { TNO_temp_super_event = token:SE_KOREAN_CIVIL_WAR }
+			TNO_fire_super_event = yes
+		}
+		name = eok_news.12.b
+	}
+	option = {
+		trigger = {
+			NOT = {
+				OR = {
+					tag = KOR
+					tag = EOK
+				}
+			}
+		}
+		hidden_effect = {
+			set_temp_variable = { TNO_temp_super_event = token:SE_KOREAN_CIVIL_WAR }
+			TNO_fire_super_event = yes
+		}
+		name = eok_news.12.c
+	}
+}
+news_event = { #대일본제국 선포
+	id = eok_news.13
+	title = eok_news.13.t
+	desc = eok_news.13.desc
+	picture = GFX_news_event_japan_attacks_russia
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		trigger = {
+			TAG = JAP
+		}
+		hidden_effect = {
+			set_temp_variable = { TNO_temp_super_event = token:SE_EMPIRE_OF_JAPAN }
+			TNO_fire_super_event = yes
+		}
+		name = eok_news.13.a
+	}
+	option = {
+		trigger = {
+			TAG = KOR
+		}
+		hidden_effect = {
+			set_temp_variable = { TNO_temp_super_event = token:SE_EMPIRE_OF_JAPAN }
+			TNO_fire_super_event = yes
+		}
+		name = eok_news.13.b
+	}
+	option = {
+		trigger = {
+			NOT = {
+				OR = {
+					tag = JAP
+					tag = KOR
+				}
+			}
+		}
+		hidden_effect = {
+			set_temp_variable = { TNO_temp_super_event = token:SE_EMPIRE_OF_JAPAN }
+			TNO_fire_super_event = yes
+		}
+		name = eok_news.13.c
+	}
+}
+news_event = { #대한제국 승전
+	id = eok_news.14
+	title = eok_news.14.t
+	desc = eok_news.14.desc
+	picture = GFX_news_event_hun_otto2
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		trigger = {
+			TAG = JAP
+		}
+		name = eok_news.14.a
+	}
+	option = {
+		trigger = {
+			TAG = KOR
+		}
+		name = eok_news.14.b
+	}
+	option = {
+		trigger = {
+			NOT = {
+				OR = {
+					tag = JAP
+					tag = KOR
+				}
+			}
+		}
+		name = eok_news.14.c
+	}
+}
+news_event = { #대한국의 탄생
+	id = eok_news.15
+	title = eok_news.15.t
+	desc = eok_news.15.desc
+	picture = GFX_news_event_POR_decol
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		trigger = {
+			TAG = JAP
+		}
+		hidden_effect = {
+			set_temp_variable = { TNO_temp_super_event = token:SE_KOREAN_STATE }
+			TNO_fire_super_event = yes
+		}
+		name = eok_news.15.a
+	}
+	option = {
+		trigger = {
+			TAG = KOR
+		}
+		hidden_effect = {
+			set_temp_variable = { TNO_temp_super_event = token:SE_KOREAN_STATE }
+			TNO_fire_super_event = yes
+		}
+		name = eok_news.15.b
+	}
+	option = {
+		trigger = {
+			is_chinese_clique = yes
+		}
+		hidden_effect = {
+			set_temp_variable = { TNO_temp_super_event = token:SE_KOREAN_STATE }
+			TNO_fire_super_event = yes
+		}
+		name = eok_news.15.c
+	}
+	option = {
+		trigger = {
+			NOT = {
+				OR = {
+					tag = JAP
+					tag = KOR
+					is_chinese_clique = yes
+				}
+			}
+		}
+		hidden_effect = {
+			set_temp_variable = { TNO_temp_super_event = token:SE_KOREAN_STATE }
+			TNO_fire_super_event = yes
+		}
+		name = eok_news.15.d
+	}
+}
+news_event = { #구주병합조약
+	id = eok_news.16
+	title = eok_news.16.t
+	desc = eok_news.16.desc
+	picture = GFX_news_event_olympics_moscow
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		trigger = {
+			TAG = JAP
+		}
+		name = eok_news.16.a
+	}
+	option = {
+		trigger = {
+			TAG = KOR
+		}
+		name = eok_news.16.b
+	}
+	option = {
+		trigger = {
+			is_chinese_clique = yes
+		}
+		name = eok_news.16.c
+	}
+	option = {
+		trigger = {
+			NOT = {
+				OR = {
+					tag = JAP
+					tag = KOR
+					is_chinese_clique = yes
+				}
+			}
+		}
+		name = eok_news.16.d
+	}
+}
+news_event = { #충무공 조약
+	id = eok_news.17
+	title = eok_news.17.t
+	desc = eok_news.17.desc
+	picture = GFX_news_event_050
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		trigger = {
+			TAG = USA
+		}
+		name = eok_news.17.a
+		hidden_effect = {
+			set_temp_variable = { TNO_temp_super_event = token:SE_SURRENDER_OF_USA }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		trigger = {
+			TAG = KOR
+		}
+		name = eok_news.17.b
+		hidden_effect = {
+			set_temp_variable = { TNO_temp_super_event = token:SE_SURRENDER_OF_USA }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		trigger = {
+			is_chinese_clique = yes
+		}
+		name = eok_news.17.c
+		hidden_effect = {
+			set_temp_variable = { TNO_temp_super_event = token:SE_SURRENDER_OF_USA }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		trigger = {
+			NOT = {
+				OR = {
+					tag = USS
+					tag = KOR
+					is_chinese_clique = yes
+				}
+			}
+		}
+		name = eok_news.17.d
+		hidden_effect = {
+			set_temp_variable = { TNO_temp_super_event = token:SE_SURRENDER_OF_USA }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+news_event = { #독일의 패망
+	id = eok_news.18
+	title = eok_news.18.t
+	desc = eok_news.18.desc
+	picture = GFX_news_event_german_reichstag_graffiti_ruins
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		trigger = {
+			TAG = SOV
+		}
+		name = eok_news.18.a
+		hidden_effect = {
+			set_temp_variable = { TNO_temp_super_event = token:SE_FALL_OF_GERMANY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		trigger = {
+			OR = {
+				tag = GER
+				tag = DDR
+				tag = WGR
+			}
+		}
+		name = eok_news.18.b
+		hidden_effect = {
+			set_temp_variable = { TNO_temp_super_event = token:SE_FALL_OF_GERMANY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		trigger = {
+			OR = {
+				tag = ENG
+				tag = USA
+				tag = FRA
+			}
+		}
+		name = eok_news.18.c
+		hidden_effect = {
+			set_temp_variable = { TNO_temp_super_event = token:SE_FALL_OF_GERMANY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		trigger = {
+			NOT = {
+				OR = {
+					tag = FRA
+					tag = SOV
+					tag = GER
+					tag = ENG
+					tag = USA
+					tag = FRA
+					tag = GER
+					tag = DDR
+					tag = WGR
+				}
+			}
+		}
+		name = eok_news.18.d
+		hidden_effect = {
+			set_temp_variable = { TNO_temp_super_event = token:SE_FALL_OF_GERMANY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+news_event = { #소련의 패망
+	id = eok_news.19
+	title = eok_news.19.t
+	desc = eok_news.19.desc
+	picture = GFX_news_event_soldiers_marching
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		trigger = {
+			TAG = SOV
+		}
+		name = eok_news.19.a
+		hidden_effect = {
+			set_temp_variable = { TNO_temp_super_event = token:SE_FALL_OF_SOVIET }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		trigger = {
+			tag = GER
+		}
+		name = eok_news.19.b
+		hidden_effect = {
+			set_temp_variable = { TNO_temp_super_event = token:SE_FALL_OF_SOVIET }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		trigger = {
+			OR = {
+				tag = ENG
+				tag = USA
+				tag = FRA
+			}
+		}
+		name = eok_news.19.c
+		hidden_effect = {
+			set_temp_variable = { TNO_temp_super_event = token:SE_FALL_OF_SOVIET }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		trigger = {
+			NOT = {
+				OR = {
+					tag = FRA
+					tag = SOV
+					tag = GER
+					tag = ENG
+					tag = USA
+					tag = FRA
+					tag = GER
+				}
+			}
+		}
+		name = eok_news.19.d
+		hidden_effect = {
+			set_temp_variable = { TNO_temp_super_event = token:SE_FALL_OF_SOVIET }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+news_event = { #독일의 승전
+	id = eok_news.20
+	title = eok_news.20.t
+	desc = eok_news.20.desc
+	picture = GFX_news_event_hitler_speech
+	
+	major = yes
+	
+	is_triggered_only = yes
+	immediate = {
+		GER = {
+			if = {
+				limit = {
+					NOT = {
+						has_cosmetic_tag = GER_TLE_ggr
+					}
+				}
+				complete_national_focus = GER_improve_national_spirit
+			}
+		}	
+	}
+	
+	option = {
+		trigger = {
+			TAG = SOV
+		}
+		name = eok_news.20.a
+		hidden_effect = {
+			set_temp_variable = { TNO_temp_super_event = token:SE_GERMANY_WIN }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		trigger = {
+			tag = GER
+		}
+		name = eok_news.20.b
+		hidden_effect = {
+			set_temp_variable = { TNO_temp_super_event = token:SE_GERMANY_WIN }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		trigger = {
+			OR = {
+				tag = ENG
+				tag = USA
+				tag = FRA
+			}
+		}
+		name = eok_news.20.c
+		hidden_effect = {
+			set_temp_variable = { TNO_temp_super_event = token:SE_GERMANY_WIN }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		trigger = {
+			NOT = {
+				OR = {
+					tag = FRA
+					tag = SOV
+					tag = GER
+					tag = ENG
+					tag = USA
+					tag = FRA
+					tag = GER
+				}
+			}
+		}
+		name = eok_news.20.d
+		hidden_effect = {
+			set_temp_variable = { TNO_temp_super_event = token:SE_GERMANY_WIN }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+news_event = {
+	id = eok_news.21 #전라
+	title = nuke_dropped.18.t
+	desc = nuke_dropped.18.d
+	picture = GFX_news_event_nuke
+
+	is_triggered_only = yes
+
+	option = {
+		name = nuke_dropped.18.a
+		trigger = {
+			NOT = { owns_state = 1015 }
+		}
+	}
+	
+	option = {
+		name = nuke_dropped.18.b
+		trigger = {
+			owns_state = 1015
+		}
+	}
+}
+news_event = {
+	id = eok_news.22 #전라
+	title = nuke_dropped.17.t
+	desc = nuke_dropped.17.d
+	picture = GFX_news_event_nuke
+
+	is_triggered_only = yes
+
+	option = {
+		name = nuke_dropped.17.a
+		trigger = {
+			NOT = { owns_state = 1025 }
+		}
+	}
+	
+	option = {
+		name = nuke_dropped.17.b
+		trigger = {
+			owns_state = 1025
+		}
+	}
+}
+news_event = {
+	id = eok_news.23 #
+	title = eok_news.23.t
+	desc = eok_news.23.d
+	picture = GFX_news_event_001
+
+	is_triggered_only = yes
+
+	option = {
+		name = eok_news.23.a
+		hidden_effect = {
+			set_temp_variable = { TNO_temp_super_event = token:SE_CHINESE_CIVIL_WAR }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+news_event = {
+	id = eok_news.24 #북벌 성공
+	title = eok_news.24.t
+	desc = eok_news.24.d
+	picture = GFX_news_event_soldiers_marching
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = eok_news.24.a
+		trigger = {
+			NOT = {
+				tag = CHI
+			}
+		}
+	}
+	option = {
+		name = eok_news.24.b
+		trigger = {
+			tag = CHI
+		}
+	}
+}
+news_event = {
+	id = eok_news.25 #교토 함락
+	title = eok_news.25.t
+	desc = eok_news.25.d
+	picture = GFX_news_event_053
+	
+	major = yes
+	
+	trigger = {
+		1070 = { is_controlled_by = KOR }
+		1070 = { is_owned_by = JAP }
+		KOR = { has_war_with = JAP }
+		NOT = { has_global_flag = fall_of_kyoto_kor }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_kyoto_kor
+		JAP_kyoto_collapse_infantry_set = yes
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = news.145.a
+		trigger = {
+			NOT = {
+				TAG = KOR
+				TAG = JAP
+			}
+		}
+	}
+	option = {
+		name = eok_news.25.a
+		trigger = { TAG = KOR }
+	}
+	option = {
+		name = news.100.c
+		trigger = { TAG = JAP }
+	}
+}
+
+news_event = {
+	id = eok_news.26 #싱가포르
+	title = eok_news.26.t
+	desc = eok_news.26.d
+	picture = GFX_news_event_038
+	
+	major = yes
+	
+	trigger = {
+		336 = { is_controlled_by = KOR }
+		336 = { is_owned_by = ENG }
+		KOR = { has_war_with = ENG }
+		NOT = { has_global_flag = fall_of_singapore }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_singapore
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = news.145.a
+		trigger = {
+			NOT = {
+				TAG = KOR
+				TAG = ENG
+			}
+		}
+	}
+	option = {
+		name = news.117.b
+		trigger = { TAG = KOR }
+	}
+	option = {
+		name = news.100.c
+		trigger = { TAG = ENG }
+	}
+}
+news_event = {
+	id = eok_news.27 #싱가포르
+	title = eok_news.27.t
+	desc = eok_news.27.d
+	picture = GFX_news_event_bavaria_unification
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = eok_news.27.a
+		trigger = {
+			NOT = {
+				TAG = USA
+				TAG = SOV
+				is_in_faction_with = USA
+				is_in_faction_with = SOV
+			}
+		}
+	}
+	option = {
+		name = eok_news.27.b
+		trigger = { OR = { TAG = USA is_in_faction_with = USA } }
+	}
+	option = {
+		name = eok_news.27.c
+		trigger = { OR = { TAG = SOV is_in_faction_with = SOV } }
+	}
+}
+news_event = {
+	id = eok_news.28 #싱가포르
+	title = eok_news.28.t
+	desc = eok_news.28.d
+	picture = GFX_news_event_SER_unification
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = eok_news.28.a
+		trigger = {
+			NOT = {
+				TAG = USA
+				TAG = SOV
+				is_in_faction_with = USA
+				is_in_faction_with = SOV
+			}
+		}
+	}
+	option = {
+		name = eok_news.28.b
+		trigger = { OR = { TAG = USA is_in_faction_with = USA } }
+	}
+	option = {
+		name = eok_news.28.c
+		trigger = { OR = { TAG = SOV is_in_faction_with = SOV } }
+	}
+}
+news_event = {
+	id = eok_news.29 #싱가포르
+	title = eok_news.29.t
+	desc = eok_news.29.d
+	picture = GFX_news_event_soviet_tanks
+	
+	major = yes
+	
+	trigger = {
+		1027 = { is_controlled_by = SOV }
+		1027 = { is_owned_by = KOR }
+		KOR = { has_war_with = SOV }
+		NOT = { has_global_flag = fall_of_haesam }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_haesam
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = eok_news.29.a
+		trigger = {
+			NOT = {
+				TAG = KOR
+				TAG = SOV
+			}
+		}
+	}
+	option = {
+		name = eok_news.29.b
+		trigger = { TAG = KOR }
+	}
+	option = {
+		name = eok_news.29.c
+		trigger = { TAG = SOV }
+	}
+}
+news_event = {
+	id = eok_news.30 #싱가포르
+	title = eok_news.30.t
+	desc = eok_news.30.d
+	picture = GFX_news_event_soviet_tanks
+	
+	major = yes
+	
+	trigger = {
+		1025 = { is_controlled_by = SOV }
+		1025 = { is_owned_by = KOR }
+		KOR = { has_war_with = SOV }
+		NOT = { has_global_flag = fall_of_uiju }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_uiju
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = eok_news.30.a
+		trigger = {
+			NOT = {
+				TAG = KOR
+				TAG = SOV
+			}
+		}
+	}
+	option = {
+		name = eok_news.30.b
+		trigger = { TAG = KOR }
+	}
+	option = {
+		name = eok_news.30.c
+		trigger = { TAG = SOV }
+	}
+}
+news_event = { #대한제국 승전
+	id = eok_news.31
+	title = eok_news.31.t
+	desc = eok_news.31.d
+	picture = GFX_news_event_041
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		trigger = {
+			TAG = JAP
+		}
+		name = eok_news.31.a
+	}
+	option = {
+		trigger = {
+			TAG = KOR
+		}
+		name = eok_news.31.b
+	}
+	option = {
+		trigger = {
+			NOT = {
+				OR = {
+					tag = JAP
+					tag = KOR
+				}
+			}
+		}
+		name = eok_news.31.c
+	}
+}
+news_event = { #서울
+	id = eok_news.32
+	title = eok_news.32.t
+	desc = eok_news.32.d
+	picture = GFX_news_event_053
+	
+	major = yes
+	
+	trigger = {
+		NOT = {
+			525 = { is_controlled_by = KOR }
+		}
+		525 = { is_owned_by = KOR }
+		KOR = { has_war_with = USA has_government = fascism }
+		NOT = { has_global_flag = fall_of_hansung }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_hansung
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		trigger = {
+			OR = {
+				TAG = JAP
+				TAG = USA
+				TAG = CHI
+				TAG = ZLC
+				TAG = SOV
+				TAG = FRA
+				TAG = ENG
+			}
+		}
+		name = eok_news.32.a
+	}
+	option = {
+		trigger = {
+			TAG = KOR
+		}
+		name = eok_news.32.b
+	}
+	option = {
+		trigger = {
+			NOT = {
+				OR = {
+					tag = JAP
+					tag = KOR
+					TAG = JAP
+					TAG = USA
+					TAG = CHI
+					TAG = ZLC
+					TAG = SOV
+					TAG = FRA
+					TAG = ENG
+				}
+			}
+		}
+		name = eok_news.32.c
+	}
+}
+news_event = { #평양
+	id = eok_news.33
+	title = eok_news.33.t
+	desc = eok_news.33.d
+	picture = GFX_news_event_chinese_soldiers_city_ruin
+	
+	major = yes
+	
+	trigger = {
+		NOT = {
+			527 = { is_controlled_by = KOR }
+		}
+		527 = { is_owned_by = KOR }
+		KOR = { has_war_with = USA has_government = fascism }
+		NOT = { has_global_flag = fall_of_pyongyang }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_pyongyang
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		trigger = {
+			OR = {
+				TAG = JAP
+				TAG = USA
+				TAG = CHI
+				TAG = ZLC
+				TAG = SOV
+				TAG = FRA
+				TAG = ENG
+			}
+		}
+		name = eok_news.33.a
+	}
+	option = {
+		trigger = {
+			TAG = KOR
+		}
+		name = eok_news.33.b
+	}
+	option = {
+		trigger = {
+			NOT = {
+				OR = {
+					tag = JAP
+					tag = KOR
+					TAG = JAP
+					TAG = USA
+					TAG = CHI
+					TAG = ZLC
+					TAG = SOV
+					TAG = FRA
+					TAG = ENG
+				}
+			}
+		}
+		name = eok_news.33.c
+	}
+}
+news_event = { #부산
+	id = eok_news.34
+	title = eok_news.34.t
+	desc = eok_news.34.d
+	picture = GFX_news_event_chinese_soldiers_march
+	
+	major = yes
+	
+	trigger = {
+		NOT = {
+			1016 = { is_controlled_by = KOR }
+		}
+		1016 = { is_owned_by = KOR }
+		KOR = { has_war_with = USA has_government = fascism }
+		NOT = { has_global_flag = fall_of_busan }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_busan
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		trigger = {
+			OR = {
+				TAG = JAP
+				TAG = USA
+				TAG = CHI
+				TAG = ZLC
+				TAG = SOV
+				TAG = FRA
+				TAG = ENG
+			}
+		}
+		name = eok_news.34.a
+	}
+	option = {
+		trigger = {
+			TAG = KOR
+		}
+		name = eok_news.34.b
+	}
+	option = {
+		trigger = {
+			NOT = {
+				OR = {
+					tag = JAP
+					tag = KOR
+					TAG = JAP
+					TAG = USA
+					TAG = CHI
+					TAG = ZLC
+					TAG = SOV
+					TAG = FRA
+					TAG = ENG
+				}
+			}
+		}
+		name = eok_news.34.c
+	}
+}
+news_event = { #만주 독립국 - 1
+	id = eok_news.35
+	title = eok_news.35.t
+	desc = eok_news.35.d
+	picture = GFX_news_event_ANZAC_day
+	
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		trigger = {
+			TAG = USA
+		}
+		name = eok_news.35.a
+	}
+	option = {
+		trigger = {
+			TAG = SOV
+		}
+		name = eok_news.35.b
+	}
+	option = {
+		trigger = {
+			NOT = {
+				OR = {
+					tag = USA
+					tag = SOV
+				}
+			}
+		}
+		name = eok_news.35.c
+	}
+}
+news_event = { #만주 독립국 - 2
+	id = eok_news.36
+	title = eok_news.36.t
+	desc = eok_news.36.d
+	picture = GFX_news_event_ANZAC_day
+	
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		trigger = {
+			TAG = USA
+		}
+		name = eok_news.36.a
+	}
+	option = {
+		trigger = {
+			TAG = SOV
+		}
+		name = eok_news.36.b
+	}
+	option = {
+		trigger = {
+			NOT = {
+				OR = {
+					tag = USA
+					tag = SOV
+				}
+			}
+		}
+		name = eok_news.36.c
+	}
+}
+news_event = { #이강 집권
+	id = eok_news.37
+	title = eok_news.37.t
+	desc = eok_news.37.desc
+	picture = GFX_news_event_004
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = eok_news.37.a
+		hidden_effect = {
+			set_temp_variable = { TNO_temp_super_event = token:SE_SECOND_NORTHATTACK }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+news_event = { #충무공 조약
+	id = eok_news.38
+	title = eok_news.38.t
+	desc = eok_news.38.desc
+	picture = GFX_news_event_050
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		trigger = {
+			TAG = USA
+		}
+		name = eok_news.17.a
+		hidden_effect = {
+			set_temp_variable = { TNO_temp_super_event = token:SE_SURRENDER_OF_USA }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		trigger = {
+			TAG = KOR
+		}
+		name = eok_news.17.b
+		hidden_effect = {
+			set_temp_variable = { TNO_temp_super_event = token:SE_SURRENDER_OF_USA }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		trigger = {
+			is_chinese_clique = yes
+		}
+		name = eok_news.17.c
+		hidden_effect = {
+			set_temp_variable = { TNO_temp_super_event = token:SE_SURRENDER_OF_USA }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		trigger = {
+			NOT = {
+				OR = {
+					tag = USS
+					tag = KOR
+					is_chinese_clique = yes
+				}
+			}
+		}
+		name = eok_news.17.d
+		hidden_effect = {
+			set_temp_variable = { TNO_temp_super_event = token:SE_SURRENDER_OF_USA }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+news_event = { #강명제를 향한 테러
+	id = eok_news.39
+	title = eok_news.39.t
+	desc = eok_news.39.desc
+	picture = GFX_news_event_chinese_soldiers_city_ruin
+	
+	major = yes
+	
+	is_triggered_only = yes
+	#fire_only_once = yes
+	
+	option = {
+		name = eok_news.39.a
+		trigger = {
+			TAG = MSR
+		}
+	}
+	option = {
+		name = eok_news.39.b
+		trigger = {
+			TAG = MON
+		}
+	}
+	option = {
+		name = eok_news.39.c
+		trigger = {
+			TAG = SOV
+		}
+	}
+	option = {
+		name = eok_news.39.d
+		trigger = {
+			tag = KOR
+		}
+	}
+	option = {
+		name = eok_news.39.e
+		trigger = {
+			NOT = {
+				TAG = MON
+				TAG = MSR
+				TAG = SOV
+				TAG = KOR
+			}
+		}
+	}
+}
+news_event = {
+	id = eok_news.40 #중화민국 선언
+	title = eok_news.40.t
+	desc = eok_news.40.d
+	picture = GFX_news_event_japan_attacks_china
+	
+	major = yes
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = eok_news.40.a
+		trigger = {
+			NOT = {
+				tag = CHI
+			}
+		}
+		set_temp_variable = { TNO_temp_super_event = token:SE_KUOMINTANG_CHINA }
+		TNO_fire_super_event = yes
+	}
+	option = {
+		name = eok_news.40.b
+		trigger = {
+			tag = CHI
+		}
+		set_temp_variable = { TNO_temp_super_event = token:SE_KUOMINTANG_CHINA }
+		TNO_fire_super_event = yes
+	}
+}
+news_event = {
+	id = eok_news.41 #중화민국 선언
+	title = eok_news.41.t
+	desc = eok_news.41.d
+	picture = GFX_news_event_048
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = eok_news.41.a
+		trigger = {
+			NOT = {
+				tag = CHI
+			}
+		}
+	}
+	option = {
+		name = eok_news.41.b
+		trigger = {
+			tag = CHI
+		}
+	}
+}
+news_event = {
+	id = eok_news.42 #일본 항복
+	title = eok_news.42.t
+	desc = eok_news.42.d
+	picture = GFX_news_event_053
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.145.a
+		trigger = {
+			NOT = {
+				TAG = KOR
+				TAG = JAP
+			}
+		}
+	}
+	option = {
+		name = eok_news.25.a
+		trigger = { TAG = KOR }
+	}
+	option = {
+		name = news.100.c
+		trigger = { TAG = JAP }
+	}
+}
+news_event = {
+	id = eok_news.43 #대한제국 항복
+	title = eok_news.43.t
+	desc = eok_news.43.d
+	picture = GFX_news_event_hangbok_of_korea
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = eok_news.43.a
+		trigger = {
+			NOT = {
+				TAG = KOR
+				TAG = JAP
+				TAG = USA
+				TAG = CHI
+				TAG = ZLC
+			}
+		}
+	}
+	option = {
+		name = eok_news.43.b
+		trigger = { TAG = KOR }
+	}
+	option = {
+		name = eok_news.43.c
+		trigger = { TAG = JAP }
+	}
+	option = {
+		name = eok_news.43.d
+		trigger = { TAG = USA }
+	}
+	option = {
+		name = eok_news.43.e
+		trigger = { OR = { TAG = USA TAG = ZLC } }
+	}
+}
+news_event = {
+	id = eok_news.44 #북벌 성공
+	title = eok_news.44.t
+	desc = eok_news.44.d
+	picture = GFX_news_event_caokun_is_dead
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = eok_news.44.a
+		trigger = {
+			NOT = {
+				tag = ZLC
+				tag = CHI
+				tag = KOR
+			}
+		}
+	}
+	option = {
+		name = eok_news.44.b
+		trigger = {
+			tag = ZLC
+		}
+	}
+	option = {
+		name = eok_news.44.c
+		trigger = {
+			tag = CHI
+		}
+	}
+	option = {
+		name = eok_news.44.d
+		trigger = {
+			tag = KOR
+		}
+	}
+}
+news_event = {
+	id = eok_news.45 #북벌 성공
+	title = eok_news.45.t
+	desc = eok_news.45.desc
+	picture = GFX_news_event_the_great_asian_war
+
+	is_triggered_only = yes
+	#fire_only_once = yes
+
+	option = {
+		name = eok_news.45.a
+		trigger = {
+			NOT = {
+				tag = JAP
+				tag = CHI
+				tag = KOR
+			}
+		}
+		hidden_effect = {
+			set_temp_variable = { TNO_temp_super_event = token:SE_GREAT_ASIAN_WAR }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = eok_news.45.b
+		trigger = {
+			tag = JAP
+		}
+		hidden_effect = {
+			set_temp_variable = { TNO_temp_super_event = token:SE_GREAT_ASIAN_WAR }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = eok_news.45.c
+		trigger = {
+			tag = CHI
+		}
+		hidden_effect = {
+			set_temp_variable = { TNO_temp_super_event = token:SE_GREAT_ASIAN_WAR }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = eok_news.45.d
+		trigger = {
+			tag = KOR
+		}
+		hidden_effect = {
+			set_temp_variable = { TNO_temp_super_event = token:SE_GREAT_ASIAN_WAR }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+news_event = {
+	id = eok_news.46 #중화민국 선언
+	title = eok_news.46.t
+	desc = eok_news.46.d
+	picture = GFX_news_event_japan_attacks_china
+	
+	major = yes
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = eok_news.46.a
+		trigger = {
+			NOT = {
+				tag = CHI
+			}
+		}
+		set_temp_variable = { TNO_temp_super_event = token:SE_BEIYANG_CHINA }
+		TNO_fire_super_event = yes
+	}
+	option = {
+		name = eok_news.46.b
+		trigger = {
+			tag = CHI
+		}
+		set_temp_variable = { TNO_temp_super_event = token:SE_BEIYANG_CHINA }
+		TNO_fire_super_event = yes
+	}
+}
+news_event = {
+	id = eok_news.47 #남방작전
+	title = eok_news.47.t
+	desc = eok_news.47.d
+	picture = GFX_news_event_southern_land_attack
+	
+	major = yes
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = eok_news.47.a
+		trigger = {
+			NOT = {
+				tag = KOR
+			}
+		}
+		set_temp_variable = { TNO_temp_super_event = token:SE_MALAYAN_CAMPAIGN }
+		TNO_fire_super_event = yes
+	}
+	option = {
+		name = eok_news.47.b
+		trigger = {
+			tag = KOR
+		}
+		set_temp_variable = { TNO_temp_super_event = token:SE_MALAYAN_CAMPAIGN }
+		TNO_fire_super_event = yes
+	}
+}
+news_event = {
+	id = eok_news.48 #UN
+	title = eok_news.48.t
+	desc = eok_news.48.d
+	picture = GFX_news_event_establish_un
+	
+	major = yes
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = eok_news.48.a
+		set_temp_variable = { TNO_temp_super_event = token:SE_UNITED_NATIONS }
+		TNO_fire_super_event = yes
+	}
+}
+news_event = {
+	id = eok_news.49 #UN
+	title = eok_news.49.t
+	desc = eok_news.49.d
+	picture = GFX_news_event_minju_226
+	
+	major = yes
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = eok_news.49.a
+		trigger = {
+			NOT = {
+				tag = KOR
+			}
+		}
+		set_temp_variable = { TNO_temp_super_event = token:SE_KOREA_THE_YI_KANG }
+		TNO_fire_super_event = yes
+	}
+	option = {
+		name = eok_news.49.b
+		trigger = {
+			tag = KOR
+		}
+		set_temp_variable = { TNO_temp_super_event = token:SE_KOREA_THE_YI_KANG }
+		TNO_fire_super_event = yes
+	}
+}
+news_event = {
+	id = eok_news.50 #UN
+	title = eok_news.50.t
+	desc = eok_news.50.d
+	picture = GFX_news_event_prime_minister_ahn
+	
+	major = yes
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = eok_news.50.a
+		trigger = {
+			NOT = {
+				tag = KOR
+			}
+		}
+	}
+	option = {
+		name = eok_news.50.b
+		trigger = {
+			tag = KOR
+		}
+	}
+}

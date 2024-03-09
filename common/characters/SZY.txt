@@ -1,0 +1,28 @@
+characters={
+	SZY_park_yongman={
+		name="SZY_park_yongman"
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/Portrait_KOR_park_yongman.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			id=-1
+		}
+		country_leader={
+			ideology=ultranationalism
+			traits={ }
+			id=-1
+		}
+	}
+	SZY_zhang_jinghui={
+		name="SZY_zhang_jinghui"
+		portraits={
+			civilian={
+				large="gfx/leaders/FNG/Portrait_FNG_Zhang_Jinghui.tga"
+			}
+		}
+	}
+}

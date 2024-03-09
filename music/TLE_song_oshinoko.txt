@@ -1,0 +1,91 @@
+music_station = "oshinoko_station"
+music = {
+	song = "idol"
+	chance = {
+		modifier = {
+			factor = 10
+			is_ai = no
+		}
+	}
+}
+music = {
+	song = "mephisto"
+	chance = {
+		modifier = {
+			factor = 10
+			is_ai = no
+		}
+	}
+}
+music = {
+	song = "star_t_rain"
+	chance = {
+		modifier = {
+			factor = 10
+			is_ai = no
+		}
+	}
+}
+music = {
+	song = "hearts_kiss"
+	chance = {
+		modifier = {
+			factor = 10
+			is_ai = no
+		}
+	}
+}
+music = {
+	song = "sine_wa_b"
+	chance = {
+		modifier = {
+			factor = 10
+			is_ai = no
+		}
+	}
+}
+music = {
+	song = "star_t_rain_new"
+	chance = {
+		modifier = {
+			factor = 10
+			is_ai = no
+		}
+	}
+}
+music = {
+	song = "hearts_kiss_new"
+	chance = {
+		modifier = {
+			factor = 10
+			is_ai = no
+		}
+	}
+}
+music = {
+	song = "sine_wa_b_new"
+	chance = {
+		modifier = {
+			factor = 10
+			is_ai = no
+		}
+	}
+}
+music = {
+	song = "full_moon"
+	chance = {
+		modifier = {
+			factor = 10
+			is_ai = no
+		}
+	}
+}
+music = {
+	song = "pimang_daisuki"
+	chance = {
+		modifier = {
+			factor = 10
+			is_ai = no
+		}
+	}
+}

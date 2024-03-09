@@ -1,0 +1,227 @@
+
+KMT_balance = {
+	initial_value = 0.25
+	left_side = KMT_wang
+	right_side = KMT_chang
+	decision_category = CHI_interservice_rivalry
+
+	range = {
+		id = KMT_balance_range
+		min = -0.10
+		max = 0.10
+		modifier = {
+
+		}
+		on_activate = {
+
+		}
+		on_deactivate = {
+			
+		}
+	}
+
+	side = {
+		id = KMT_chang
+		icon = GFX_sup_KMT_chang
+		range = {
+			id = KMT_chang_low
+			min = 0.1
+			max = 0.3
+			modifier = {
+				# if = {
+				# 	limit = {
+				# 		is_ai = no
+				# 		NOT = {
+				# 			has_country_flag = TLE_dont_want_to_balance
+				# 		}
+				# 	}
+					defensive_war_stability_factor = 0.1
+				# }
+			}
+			on_activate = {
+				
+			}
+			on_deactivate = {
+				
+			}
+		}
+		range = {
+			id = KMT_chang_meidum
+			min = 0.3
+			max = 0.6
+			modifier = {
+				# if = {
+				# 	limit = {
+				# 		is_ai = no
+				# 		NOT = {
+				# 			has_country_flag = TLE_dont_want_to_balance
+				# 		}
+				# 	}
+					defensive_war_stability_factor = 0.15
+					war_support_factor = 0.05
+				# }
+			}
+			on_activate = {
+				
+			}
+			on_deactivate = {
+				
+			}
+		}
+		range = {
+			id = KMT_chang_high
+			min = 0.6
+			max = 0.9
+			modifier = {
+				# if = {
+				# 	limit = {
+				# 		is_ai = no
+				# 		NOT = {
+				# 			has_country_flag = TLE_dont_want_to_balance
+				# 		}
+				# 	}
+					defensive_war_stability_factor = 0.2
+					war_support_factor = 0.1
+				# }
+			}
+			on_activate = {
+				
+			}
+			on_deactivate = {
+				
+			}
+		}
+		range = {
+			id = KMT_chang_total
+			min = 0.9
+			max = 1
+			modifier = {
+				# if = {
+				# 	limit = {
+				# 		is_ai = no
+				# 		NOT = {
+				# 			has_country_flag = TLE_dont_want_to_balance
+				# 		}
+				# 	}
+					defensive_war_stability_factor = 0.25
+					war_support_factor = 0.15
+				# }
+			}
+			on_activate = {
+				
+			}
+			on_deactivate = {
+				
+			}
+		}
+	}
+	side = {
+		id = KMT_wang
+		icon = GFX_sup_KMT_wang
+		range = {
+			id = KMT_wang_low
+			min = -0.3
+			max = -0.1
+			modifier = {
+				# if = {
+				# 	limit = {
+				# 		is_ai = no
+				# 		NOT = {
+				# 			has_country_flag = TLE_dont_want_to_balance
+				# 		}
+				# 	}
+					political_advisor_cost_factor = -0.1
+				# }
+			}
+			on_activate = {
+				
+			}
+			on_deactivate = {
+				
+			}
+		}
+		range = {
+			id = KMT_wang_medium
+			min = -0.6
+			max = -0.3
+			modifier = {
+				# if = {
+				# 	limit = {
+				# 		is_ai = no
+				# 		NOT = {
+				# 			has_country_flag = TLE_dont_want_to_balance
+				# 		}
+				# 	}
+					political_advisor_cost_factor = -0.15
+					defensive_war_stability_factor = -0.1
+					war_support_factor = -0.05
+				# }
+			}
+			on_activate = {
+				
+			}
+			on_deactivate = {
+				
+			}
+		}
+		range = {
+			id = KMT_wang_high
+			min = -0.9
+			max = -0.6
+			modifier = {
+				# if = {
+				# 	limit = {
+				# 		is_ai = no
+				# 		NOT = {
+				# 			has_country_flag = TLE_dont_want_to_balance
+				# 		}
+				# 	}
+					political_advisor_cost_factor = -0.2
+					defensive_war_stability_factor = -0.15
+					war_support_factor = -0.1
+				# }
+			}
+			on_activate = {
+				
+			}
+			on_deactivate = {
+				
+			}
+		}
+		range = {
+			id = KMT_wang_total
+			min = -1
+			max = -0.9
+			modifier = {
+				# if = {
+				# 	limit = {
+				# 		is_ai = no
+				# 		NOT = {
+				# 			has_country_flag = TLE_dont_want_to_balance
+				# 		}
+				# 	}
+					political_advisor_cost_factor = -0.25
+					defensive_war_stability_factor = -0.2
+					war_support_factor = -0.15
+				# }
+			}
+			on_activate = {
+			
+				# if = {
+				# 	limit = {
+				# 		is_ai = no
+				# 		NOT = {
+				# 			has_country_flag = TLE_dont_want_to_balance
+				# 		}
+				# 	}
+					
+				# }
+				
+			}
+			on_deactivate = {
+				
+			}
+		}
+	}
+}
+

@@ -1,0 +1,75 @@
+characters={
+	MON_demchugdongrub={
+		name="MON_demchugdongrub"
+		portraits={
+			civilian={
+				large="GFX_portrait_men_demchugdongrub"
+			}
+			army = {
+				large="GFX_portrait_men_demchugdongrub"
+			}
+		}
+		country_leader={
+			ideology=despotism
+		}
+		field_marshal={
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	MON_xu_shuzheng={
+		name="MON_xu_shuzheng"
+		portraits={
+			civilian={
+				large="gfx/leaders/MON/Portrait_MON_xu_shuzheng.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+		}
+		corps_commander={
+			skill = 3
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	MON_lee_shou_hsin={
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		name="MON_lee_shou_hsin"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_asia_3"
+				large="gfx/leaders/MON/Portrait_MEN_Li_Shouxin.dds"
+			}
+		}
+		corps_commander={
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+		}
+		advisor={
+			
+			
+			slot = high_command
+			idea_token = MON_lee_shou_hsin
+			ledger = army
+				allowed = {
+					original_tag = MEN
+				}
+				traits = {
+					army_regrouping_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+	}
+}

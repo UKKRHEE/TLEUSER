@@ -1,0 +1,20 @@
+characters={
+	GM1_german_goernment={
+		name="GM1_german_goernment"
+		portraits={
+			civilian={
+				large="gfx/leaders/GER/Portrait_GER_africa_government.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			id=-1
+		}
+		country_leader={
+			ideology=nazism
+			traits={ }
+			id=-1
+		}
+	}
+}

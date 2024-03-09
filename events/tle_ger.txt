@@ -1,0 +1,28 @@
+﻿###########################
+# German Events
+###########################
+
+add_namespace = tle_ger
+
+# Austrian Anschluss Completed
+country_event = {
+	id = tle_ger.1
+	title = tle_ger.1.t
+	desc = tle_ger.1.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = tle_ger.1.a
+		set_cosmetic_tag = GER_TLE_ggr
+		country_event = {
+			id = TLE_Germany.12
+			days = 4
+		}
+		country_event = {
+			id = TLE_Germany.2
+			days = 7
+		}
+	}
+}

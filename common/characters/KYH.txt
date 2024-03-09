@@ -1,0 +1,43 @@
+characters={
+	KYH_yi_kiyong = {
+		name="KYH_yi_kiyong"
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/Portrait_KOR_yi_kiyong.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+		}
+		country_leader={
+			ideology=rexism
+		}
+		country_leader={
+			ideology=liberalism
+		}
+		country_leader={
+			ideology=marxism
+		}
+	}
+	KYH_aleksandr_kolchak = {
+		name="KYH_aleksandr_kolchak"
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/Portrait_RUS_Aleksandr_Kolchak.tga"
+			}
+		}
+		country_leader={
+			ideology=despotism
+		}
+		country_leader={
+			ideology=rexism
+		}
+		country_leader={
+			ideology=liberalism
+		}
+		country_leader={
+			ideology=marxism
+		}
+	}
+
+}

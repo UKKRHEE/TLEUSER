@@ -1,0 +1,47 @@
+﻿capital = 409
+
+#oob = "KYH_1936"
+1910.1.1 = {
+add_opinion_modifier = {
+	target = KOR
+	modifier = TLE_general_government_opinion
+}
+give_military_access = KOR
+set_research_slots = 3
+set_stability = 0.25
+set_war_support = 0.3
+# Starting tech
+set_technology = {
+	### Tanks ###
+	gwtank = 1
+	### Infantry ###
+	infantry_weapons = 1
+	tech_support = 1
+	tech_engineers = 1
+	gw_artillery = 1
+}
+set_convoys = 50
+add_equipment_to_stockpile = {
+	type = infantry_equipment_0
+	amount = 3000
+	producer = KOR
+}
+add_manpower = 700000
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1933.7.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 0
+	fascism = 0
+	communism = 0
+	neutrality = 100
+}
+add_ideas = {
+	KOR_yi_jin
+	KOR_the_country_of_korea
+}
+recruit_character = KYH_yi_kiyong
+}

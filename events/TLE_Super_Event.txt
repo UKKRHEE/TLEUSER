@@ -1,0 +1,916 @@
+# add_namespace = super
+add_namespace = superevent
+
+country_event = {	#일본 함락
+	id = superevent.super
+	title = super.1.t
+	desc = super.1.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		JAP = {
+			exists = NO
+		}
+		DKG = {
+			exists = NO
+		}	
+	}
+	
+	option = {
+		name = super.1.a
+		KOR = {
+			country_event = {
+				id = japan.1200
+			}
+		}
+	}
+}
+country_event = {
+	id = superevent.1
+	title = superevent.1.t
+	desc = superevent.1.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = { always = no }
+	
+	option = {
+		name = superevent.1.a
+		every_country = { limit = { is_ai = no } set_temp_variable = { TNO_temp_super_event = token:SE_KOREA_THE_YI_KANG }
+		TNO_fire_super_event = yes }
+	}
+}
+
+country_event = {
+	id = superevent.2
+	title = superevent.1.t
+	desc = superevent.1.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = { always = no }
+	
+	option = {
+		name = superevent.1.a
+		set_temp_variable = { TLE_temp_super_event = token:SE_JAPAN_CW }
+		TNO_fire_super_event_JAPAN_CW = yes
+	}
+}
+
+country_event = {
+	id = superevent.3
+	title = superevent.1.t
+	desc = superevent.1.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = { always = no }
+	
+	option = {
+		name = superevent.1.a
+		every_country = { limit = { is_ai = no } set_temp_variable = { TNO_temp_super_event = token:SE_KOREA_WW_CHINA }
+		TNO_fire_super_event = yes }
+	}
+}
+
+country_event = {
+	id = superevent.4
+	title = superevent.1.t
+	desc = superevent.1.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = { always = no }
+	
+	option = {
+		name = superevent.1.a
+		every_country = { limit = { is_ai = no } set_temp_variable = { TNO_temp_super_event = token:SE_KOREA_WAR_WITH_USA }
+		TNO_fire_super_event = yes }
+	}
+}
+
+country_event = {
+	id = superevent.5
+	title = superevent.1.t
+	desc = superevent.1.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = { always = no }
+	
+	option = {
+		name = superevent.1.a
+		every_country = { limit = { is_ai = no } set_temp_variable = { TNO_temp_super_event = token:SE_RUSSIA_ATTACK_KOREA }
+		TNO_fire_super_event = yes }
+	}
+}
+
+country_event = {
+	id = superevent.6
+	title = superevent.1.t
+	desc = superevent.1.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = { always = no }
+	
+	option = {
+		name = superevent.1.a
+		every_country = { limit = { is_ai = no } set_temp_variable = { TNO_temp_super_event = token:SE_FALL_OF_KOREA }
+		TNO_fire_super_event = yes }
+	}
+}
+
+country_event = {
+	id = superevent.7
+	title = superevent.1.t
+	desc = superevent.1.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = { always = no }
+	
+	option = {
+		name = superevent.1.a
+		every_country = { limit = { is_ai = no } set_temp_variable = { TNO_temp_super_event = token:SE_WON_IN_CHINA }
+		TNO_fire_super_event = yes }
+	}
+}
+
+country_event = {
+	id = superevent.8
+	title = superevent.1.t
+	desc = superevent.1.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = { always = no }
+	
+	option = {
+		name = superevent.1.a
+		every_country = { limit = { is_ai = no } set_temp_variable = { TNO_temp_super_event = token:SE_SECOND_NORTHATTACK }
+		TNO_fire_super_event = yes }
+	}
+}
+
+country_event = {
+	id = superevent.9
+	title = superevent.1.t
+	desc = superevent.1.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = { always = no }
+	
+	option = {
+		name = superevent.1.a
+		every_country = { limit = { is_ai = no } set_temp_variable = { TNO_temp_super_event = token:SE_FALL_OF_GERMANY }
+		TNO_fire_super_event = yes }
+	}
+}
+
+country_event = {
+	id = superevent.10
+	title = superevent.1.t
+	desc = superevent.1.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = { always = no }
+	
+	option = {
+		name = superevent.1.a
+		every_country = { limit = { is_ai = no } set_temp_variable = { TNO_temp_super_event = token:SE_FALL_OF_SOVIET }
+		TNO_fire_super_event = yes }
+	}
+}
+
+country_event = {
+	id = superevent.11
+	title = superevent.1.t
+	desc = superevent.1.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = { always = no }
+	
+	option = {
+		name = superevent.1.a
+		every_country = { limit = { is_ai = no } set_temp_variable = { TNO_temp_super_event = token:SE_GERMANY_WIN }
+		TNO_fire_super_event = yes }
+	}
+}
+
+country_event = {
+	id = superevent.12
+	title = superevent.1.t
+	desc = superevent.1.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = { always = no }
+	
+	option = {
+		name = superevent.1.a
+		every_country = { limit = { is_ai = no } set_temp_variable = { TNO_temp_super_event = token:SE_KANGMYONG_YUSHIN }
+		TNO_fire_super_event = yes }
+	}
+}
+
+country_event = {
+	id = superevent.13
+	title = superevent.1.t
+	desc = superevent.1.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = { always = no }
+	
+	option = {
+		name = superevent.1.a
+		every_country = { limit = { is_ai = no } set_temp_variable = { TNO_temp_super_event = token:SE_KOREAN_JAPANESE_WAR }
+		TNO_fire_super_event = yes }
+	}
+}
+
+country_event = {
+	id = superevent.14
+	title = superevent.1.t
+	desc = superevent.1.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = { always = no }
+	
+	option = {
+		name = superevent.1.a
+		every_country = { limit = { is_ai = no } set_temp_variable = { TNO_temp_super_event = token:SE_SURRENDER_OF_USA }
+		TNO_fire_super_event = yes }
+	}
+}
+
+country_event = {
+	id = superevent.15
+	title = superevent.1.t
+	desc = superevent.1.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = { always = no }
+	
+	option = {
+		name = superevent.1.a
+		every_country = { limit = { is_ai = no } set_temp_variable = { TNO_temp_super_event = token:SE_OPERATION_BARBAROSSA }
+		TNO_fire_super_event = yes }
+	}
+}
+
+country_event = {
+	id = superevent.16
+	title = superevent.1.t
+	desc = superevent.1.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = { always = no }
+	
+	option = {
+		name = superevent.1.a
+		every_country = { limit = { is_ai = no } set_temp_variable = { TNO_temp_super_event = token:SE_KOREAN_CIVIL_WAR }
+		TNO_fire_super_event = yes }
+	}
+}
+
+country_event = {
+	id = superevent.17
+	title = superevent.1.t
+	desc = superevent.1.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = { always = no }
+	
+	option = {
+		name = superevent.1.a
+		every_country = { limit = { is_ai = no } set_temp_variable = { TNO_temp_super_event = token:SE_WORLD_WAR_II }
+		TNO_fire_super_event = yes }
+	}
+}
+
+country_event = {
+	id = superevent.18
+	title = superevent.1.t
+	desc = superevent.1.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = { always = no }
+	
+	option = {
+		name = superevent.1.a
+		every_country = { limit = { is_ai = no } set_temp_variable = { TNO_temp_super_event = token:SE_KOREAN_STATE }
+		TNO_fire_super_event = yes }
+	}
+}
+
+country_event = {
+	id = superevent.19
+	title = superevent.1.t
+	desc = superevent.1.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		any_country = { has_cosmetic_tag = KJE }
+	}
+	
+	option = {
+		name = superevent.1.a
+		every_country = { limit = { is_ai = no } set_temp_variable = { TNO_temp_super_event = token:SE_EMPIRE_OF_KOREA_JAPAN }
+		TNO_fire_super_event = yes }
+	}
+}
+
+country_event = {
+	id = superevent.20
+	title = superevent.1.t
+	desc = superevent.1.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = { always = no }
+	
+	option = {
+		name = superevent.1.a
+		every_country = { limit = { is_ai = no } set_temp_variable = { TNO_temp_super_event = token:SE_FALL_OF_JAPAN }
+		TNO_fire_super_event = yes }
+	}
+}
+
+country_event = {
+	id = superevent.21
+	title = superevent.1.t
+	desc = superevent.1.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = { always = no }
+	
+	option = {
+		name = superevent.1.a
+		every_country = { limit = { is_ai = no } set_temp_variable = { TNO_temp_super_event = token:SE_BEIYANG_CHINA }
+		TNO_fire_super_event = yes }
+	}
+}
+
+country_event = {
+	id = superevent.22
+	title = superevent.1.t
+	desc = superevent.1.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = { always = no }
+	
+	option = {
+		name = superevent.1.a
+		every_country = { limit = { is_ai = no } set_temp_variable = { TNO_temp_super_event = token:SE_KUOMINTANG_CHINA }
+		TNO_fire_super_event = yes }
+	}
+}
+
+country_event = {
+	id = superevent.23
+	title = superevent.1.t
+	desc = superevent.1.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		ITA = { has_civil_war = yes }
+	}
+	
+	option = {
+		name = superevent.1.a
+		every_country = { limit = { is_ai = no } set_temp_variable = { TNO_temp_super_event = token:SE_ITALY_CIVIL_WAR }
+		TNO_fire_super_event = yes }
+	}
+}
+
+country_event = {
+	id = superevent.24
+	title = superevent.1.t
+	desc = superevent.1.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = { always = no }
+	
+	option = {
+		name = superevent.1.a
+		every_country = { limit = { is_ai = no } set_temp_variable = { TNO_temp_super_event = token:SE_CHINESE_CIVIL_WAR }
+		TNO_fire_super_event = yes }
+	}
+}
+
+country_event = {
+	id = superevent.25
+	title = superevent.1.t
+	desc = superevent.1.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		any_country = { has_idea = winter_war_ns }
+	}
+	
+	option = {
+		name = superevent.1.a
+		every_country = { limit = { is_ai = no } set_temp_variable = { TNO_temp_super_event = token:SE_WINTER_WAR }
+		TNO_fire_super_event = yes }
+	}
+}
+
+country_event = {
+	id = superevent.26
+	title = superevent.1.t
+	desc = superevent.1.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+			GER = { has_government = neutrality }
+			GER = { has_offensive_war_with = FRA }
+	}
+	
+	option = {
+		name = superevent.1.a
+		every_country = { limit = { is_ai = no } set_temp_variable = { TNO_temp_super_event = token:SE_WELTKRIEG }
+		TNO_fire_super_event = yes }
+	}
+}
+
+country_event = {
+	id = superevent.27
+	title = superevent.1.t
+	desc = superevent.1.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+			GER = { has_completed_focus = GER_oppose_hitler }
+	}
+	
+	option = {
+		name = superevent.1.a
+		every_country = { limit = { is_ai = no } set_temp_variable = { TNO_temp_super_event = token:SE_GERMANY_CIVIL_WAR }
+		TNO_fire_super_event = yes }
+	}
+}
+
+country_event = {
+	id = superevent.28
+	title = superevent.1.t
+	desc = superevent.1.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		OR = {
+			GER = { 
+				has_country_leader = { ruling_only = yes character = GER_wilhelm_ii }
+			}
+			GER = { 
+				has_country_leader = { ruling_only = yes character = GER_wilhelm_iii }
+			}
+		}
+	}
+	
+	option = {
+		name = superevent.1.a
+		every_country = { limit = { is_ai = no } set_temp_variable = { TNO_temp_super_event = token:SE_KAISER }
+		TNO_fire_super_event = yes }
+	}
+}
+
+country_event = {
+	id = superevent.29
+	title = superevent.1.t
+	desc = superevent.1.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		has_global_flag = spanish_civil_war
+	}
+	
+	option = {
+		name = superevent.1.a
+		every_country = { limit = { is_ai = no } set_temp_variable = { TNO_temp_super_event = token:SE_SPAINISH_CIVIL_WAR }
+		TNO_fire_super_event = yes }
+	}
+}
+
+country_event = {
+	id = superevent.30
+	title = superevent.1.t
+	desc = superevent.1.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		OR = {
+			NOT = {
+				country_exists = FRA
+			}
+			FRA = { has_capitulated = yes }
+		}
+	}
+	
+	option = {
+		name = superevent.1.a
+		every_country = { limit = { is_ai = no } set_temp_variable = { TNO_temp_super_event = token:SE_FALL_OF_FRANCE }
+		TNO_fire_super_event = yes }
+	}
+}
+
+country_event = {
+	id = superevent.31
+	title = superevent.1.t
+	desc = superevent.1.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = { always = no }
+	
+	option = {
+		name = superevent.1.a
+		every_country = { limit = { is_ai = no } set_temp_variable = { TNO_temp_super_event = token:SE_MALAYAN_CAMPAIGN }
+		TNO_fire_super_event = yes }
+	}
+}
+
+country_event = {
+	id = superevent.32
+	title = superevent.1.t
+	desc = superevent.1.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		OR = {
+			NOT = {
+				country_exists = POL
+			}
+			POL = { has_capitulated = yes }
+		}
+	}
+	
+	option = {
+		name = superevent.1.a
+		every_country = { limit = { is_ai = no } set_temp_variable = { TNO_temp_super_event = token:SE_FALL_OF_POLAND }
+		TNO_fire_super_event = yes }
+	}
+}
+
+country_event = {
+	id = superevent.33
+	title = superevent.1.t
+	desc = superevent.1.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		any_country = { has_idea = KOR_ichigo_plan }
+	}
+	
+	option = {
+		name = superevent.1.a
+		every_country = { limit = { is_ai = no } set_temp_variable = { TNO_temp_super_event = token:SE_ICHI_GO }
+		TNO_fire_super_event = yes }
+	}
+}
+
+country_event = {
+	id = superevent.34
+	title = superevent.1.t
+	desc = superevent.1.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		OR = {
+			NOT = {
+				country_exists = ENG
+			}
+			ENG = { has_capitulated = yes }
+		}
+	}
+	
+	option = {
+		name = superevent.1.a
+		every_country = { limit = { is_ai = no } set_temp_variable = { TNO_temp_super_event = token:SE_FALL_OF_BRITAIN }
+		TNO_fire_super_event = yes }
+	}
+}
+
+country_event = {
+	id = superevent.35
+	title = superevent.1.t
+	desc = superevent.1.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		date > 1945.10.24
+		has_global_flag = TLE_germany_union_defeat 
+		has_global_flag = TLE_KOREA_IS_DEFEATED 
+	}
+	
+	option = {
+		name = superevent.1.a
+		news_event = {
+			id = eok_news.48
+		}
+	}
+}
+
+country_event = {
+	id = superevent.36
+	title = superevent.1.t
+	desc = superevent.1.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+			GER = { has_government = neutrality }
+			GER = { has_offensive_war_with = SOV }
+	}
+	
+	option = {
+		name = superevent.1.a
+		every_country = { limit = { is_ai = no } set_temp_variable = { TNO_temp_super_event = token:SE_EAST_FRONT }
+		TNO_fire_super_event = yes }
+	}
+}
+
+country_event = {
+	id = superevent.37
+	title = superevent.1.t
+	desc = superevent.1.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = { always = no }
+	
+	option = {
+		name = superevent.1.a
+		every_country = { limit = { is_ai = no } set_temp_variable = { TNO_temp_super_event = token:SE_EMPIRE_OF_JAPAN }
+		TNO_fire_super_event = yes }
+	}
+}
+
+country_event = {
+	id = superevent.38
+	title = superevent.1.t
+	desc = superevent.1.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		KOR = { 
+			has_completed_focus = KOR_use_the_anti-armed
+			has_war_with = CHI
+		}
+		always = no
+	}
+	
+	option = {
+		name = superevent.1.a
+		every_country = { limit = { is_ai = no } set_temp_variable = { TNO_temp_super_event = token:SE_GREAT_ASIAN_WAR }
+		TNO_fire_super_event = yes }
+	}
+}
+
+country_event = {
+	id = superevent.39
+	title = superevent.1.t
+	desc = superevent.1.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		KOR = { 
+			has_completed_focus = KOR_use_the_anti-armed
+			has_war_with = CHI
+		}
+		always = no
+	}
+	
+	option = {
+		name = superevent.1.a
+		every_country = { limit = { is_ai = no } set_temp_variable = { TNO_temp_super_event = token:SE_GREAT_ASIAN_WAR_ILSO }
+		TNO_fire_super_event = yes }
+	}
+}

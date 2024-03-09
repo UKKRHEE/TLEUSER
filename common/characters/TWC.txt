@@ -1,0 +1,42 @@
+characters={
+	TWC_yan_xishan={
+		name="TWC_yan_xishan"
+		portraits={
+			civilian={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			id=-1
+		}
+		country_leader={
+			ideology=rexism
+			traits={ }
+			id=-1
+		}
+		corps_commander={
+			traits={ politically_connected }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	TWC_hu_shih={
+		name="TWC_hu_shih"
+		portraits={
+			civilian={
+				large="gfx/leaders/ZLC/Portrait_QIE_Hu_Shih.png"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			traits={ }
+			id=-1
+		}
+	}
+}

@@ -1,0 +1,120 @@
+KOR = {
+	light_tank_chassis_0 = {
+		pool = {
+			icons = { 
+				GFX_gwtank_chassis_medium
+				"gfx/interface/technologies/KOR_gwtank.dds" 
+			}
+		}
+	}
+	light_tank_chassis_1 = {
+		pool = {
+			icons = { 
+				"gfx/interface/technologies/KOR_basic_light_tank.dds"
+			}
+		}
+	}
+
+	light_tank_chassis_2 = {
+		pool = {
+			icons = { 
+				"gfx/interface/technologies/KOR_imp_light_tank.dds"
+			}
+		}
+	}
+
+	light_tank_chassis_3 = {
+		pool = {
+			icons = { 
+				"gfx/interface/technologies/KOR_adv_light_tank.dds"
+			}
+		}
+	}
+	medium_tank_chassis_0 = {
+		pool = {
+			icons = { 
+				GFX_gwtank_chassis_medium
+				"gfx/interface/technologies/KOR_early_medium_art.dds"
+				"gfx/interface/technologies/KOR_early_medium_tank.dds"
+			}
+		}
+	}
+	medium_tank_chassis_1 = {
+		pool = {
+			icons = { 
+				"gfx/interface/technologies/KOR_basic_main_tank.dds"
+			}
+		}
+	}
+
+	medium_tank_chassis_2 = {
+		pool = {
+			icons = { 
+				"gfx/interface/technologies/KOR_imp_main_tank.dds"
+			}
+		}
+	}
+
+	medium_tank_chassis_3 = {
+		pool = {
+			icons = { 
+				"gfx/interface/technologies/KOR_adv_main_tank.dds"
+			}
+		}
+	}
+	heavy_tank_chassis_0 = {
+		pool = {
+			icons = { 
+				GFX_gwtank_chassis_medium
+			}
+		}
+	}
+	heavy_tank_chassis_1 = {
+		pool = {
+			icons = { 
+				"gfx/interface/technologies/KOR_basic_heavy_tank.dds"
+			}
+		}
+	}
+
+	heavy_tank_chassis_2 = {
+		pool = {
+			icons = { 
+				"gfx/interface/technologies/KOR_imp_heavy_tank.dds"
+			}
+		}
+	}
+
+	heavy_tank_chassis_3 = {
+		pool = {
+			icons = { 
+				"gfx/interface/technologies/KOR_adv_heavy_tank.dds"
+			}
+		}
+	}
+	
+	super_heavy_tank_chassis = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/KOR_superheavy_tank.dds"
+			}
+		}
+	}
+	
+	modern_tank_chassis = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/KOR_main_battle_tank.dds"
+			}
+		}
+	}
+	
+	#amphibious_tank_chassis = {
+	#	pool = {
+	#		icons = {
+	#			GFX_KOR_amphibious_tank_2_medium
+	#			GFX_KOR_amphibious_tank_medium
+	#		}
+	#	}
+	#}
+}

@@ -1,0 +1,558 @@
+spriteTypes = {
+	
+	spriteType = { 
+		name = "GFX_event_TLE_Germany_5"
+		texturefile = "gfx/event_pictures/event_TLE_Germany_5.png"
+	}
+	spriteType = {
+		name = "GFX_TLE1936"
+		texturefile = "gfx/interface/TLE1936.png"
+	}
+	spriteType = {
+		name = "GFX_event_KMT_1000"
+		texturefile = "gfx/event_pictures/event_KMT_1000.png"
+	}
+	spriteType = {
+		name = "GFX_event_zlc_1"
+		texturefile = "gfx/event_pictures/event_zlc_1.png"
+	}
+	spriteType = {
+		name = "GFX_event_zlc_3"
+		texturefile = "gfx/event_pictures/event_zlc_3.png"
+	}
+	spriteType = {
+		name = "GFX_event_zlc_5"
+		texturefile = "gfx/event_pictures/event_zlc_5.png"
+	}
+	spriteType = {
+		name = "GFX_event_zlc_8"
+		texturefile = "gfx/event_pictures/event_zlc_8.png"
+	}
+	spriteType = {
+		name = "GFX_event_zlc_10"
+		texturefile = "gfx/event_pictures/event_zlc_10.png"
+	}
+	spriteType = {
+		name = "GFX_event_japan_1030"
+		texturefile = "gfx/event_pictures/event_japan_1030.png"
+	}
+	spriteType = {
+		name = "GFX_event_japan_1049"
+		texturefile = "gfx/event_pictures/event_japan_1049.png"
+	}
+	spriteType = {
+		name = "GFX_event_japan_1100"
+		texturefile = "gfx/event_pictures/event_japan_1100.png"
+	}
+	spriteType = {
+		name = "GFX_event_japan_1101"
+		texturefile = "gfx/event_pictures/event_japan_1101.png"
+	}
+	spriteType = {
+		name = "GFX_event_japan_1106"
+		texturefile = "gfx/event_pictures/event_japan_1106.png"
+	}
+	spriteType = {
+		name = "GFX_event_japan_1109"
+		texturefile = "gfx/event_pictures/event_japan_1109.png"
+	}
+	spriteType = {
+		name = "GFX_event_japan_1110"
+		texturefile = "gfx/event_pictures/event_japan_1110.png"
+	}
+	spriteType = {
+		name = "GFX_event_japan_1111"
+		texturefile = "gfx/event_pictures/event_japan_1111.png"
+	}
+	spriteType = {
+		name = "GFX_event_japan_1112"
+		texturefile = "gfx/event_pictures/event_japan_1112_.png"
+	}
+	spriteType = {
+		name = "GFX_event_japan_1113"
+		texturefile = "gfx/event_pictures/event_japan_1113_.png"
+	}
+	spriteType = {
+		name = "GFX_event_japan_1114"
+		texturefile = "gfx/event_pictures/event_japan_1114.png"
+	}
+	spriteType = {
+		name = "GFX_event_japan_1116"
+		texturefile = "gfx/event_pictures/event_japan_1116.png"
+	}
+	spriteType = {
+		name = "GFX_event_japan_1150"
+		texturefile = "gfx/event_pictures/event_japan_1150.png"
+	}
+	spriteType = {
+		name = "GFX_event_japan_1151"
+		texturefile = "gfx/event_pictures/event_japan_1151.png"
+	}
+	spriteType = {
+		name = "GFX_event_japan_1153"
+		texturefile = "gfx/event_pictures/event_japan_1153.png"
+	}
+	spriteType = {
+		name = "GFX_event_japan_1155"
+		texturefile = "gfx/event_pictures/event_japan_1155.png"
+	}
+	spriteType = {
+		name = "GFX_event_japan_1157"
+		texturefile = "gfx/event_pictures/event_japan_1157.png"
+	}
+	spriteType = {
+		name = "GFX_event_japan_1200"
+		texturefile = "gfx/event_pictures/event_japan_1200.png"
+	}
+	spriteType = {
+		name = "GFX_event_korea_8"
+		texturefile = "gfx/event_pictures/event_korea_8.png"
+	}
+	spriteType = {
+		name = "GFX_event_korea_49"
+		texturefile = "gfx/event_pictures/event_korea_49.png"
+	}
+	spriteType = {
+		name = "GFX_event_korea_54"
+		texturefile = "gfx/event_pictures/event_korea_54.png"
+	}
+	spriteType = {
+		name = "GFX_event_korea_57"
+		texturefile = "gfx/event_pictures/event_korea_57.png"
+	}
+	spriteType = {
+		name = "GFX_event_korea_58"
+		texturefile = "gfx/event_pictures/event_korea_58.png"
+	}
+	spriteType = {
+		name = "GFX_event_korea_59"
+		texturefile = "gfx/event_pictures/event_korea_59.png"
+	}
+	spriteType = {
+		name = "GFX_event_korea_61"
+		texturefile = "gfx/event_pictures/event_korea_61.png"
+	}
+	spriteType = {
+		name = "GFX_event_korea_62"
+		texturefile = "gfx/event_pictures/event_korea_62.png"
+	}
+	spriteType = {
+		name = "GFX_event_korea_63_64"
+		texturefile = "gfx/event_pictures/event_korea_63.png"
+	}
+	spriteType = {
+		name = "GFX_event_korea_65"
+		texturefile = "gfx/event_pictures/event_korea_65.png"
+	}
+	spriteType = {
+		name = "GFX_event_korea_66"
+		texturefile = "gfx/event_pictures/event_korea_66.png"
+	}
+	spriteType = {
+		name = "GFX_event_korea_70"
+		texturefile = "gfx/event_pictures/event_korea_70.png"
+	}
+	spriteType = {
+		name = "GFX_event_korea_71"
+		texturefile = "gfx/event_pictures/event_korea_71.png"
+	}
+	spriteType = {
+		name = "GFX_event_korea_72"
+		texturefile = "gfx/event_pictures/event_korea_72.png"
+	}
+	spriteType = {
+		name = "GFX_event_korea_73"
+		texturefile = "gfx/event_pictures/event_korea_73.png"
+	}
+	spriteType = {
+		name = "GFX_event_korea_75"
+		texturefile = "gfx/event_pictures/event_korea_75.png"
+	}
+	spriteType = {
+		name = "GFX_event_korea_76"
+		texturefile = "gfx/event_pictures/event_korea_76.png"
+	}
+	spriteType = {
+		name = "GFX_event_korea_77"
+		texturefile = "gfx/event_pictures/event_korea_77.png"
+	}
+	spriteType = {
+		name = "GFX_event_korea_78"
+		texturefile = "gfx/event_pictures/event_korea_78.png"
+	}
+	spriteType = { 
+		name = "GFX_event_korea_86"
+		texturefile = "gfx/event_pictures/event_korea_86.png"
+	}
+	spriteType = {
+		name = "GFX_event_korea_120"
+		texturefile = "gfx/event_pictures/event_korea_120.png"
+	}
+	spriteType = {
+		name = "GFX_event_korea_121"
+		texturefile = "gfx/event_pictures/event_korea_121.png"
+	}
+	spriteType = {
+		name = "GFX_event_korea_122"
+		texturefile = "gfx/event_pictures/event_korea_122.png"
+	}
+	spriteType = {
+		name = "GFX_event_korea_123"
+		texturefile = "gfx/event_pictures/event_korea_123.png"
+	}
+	spriteType = {
+		name = "GFX_event_korea_124"
+		texturefile = "gfx/event_pictures/event_korea_124.png"
+	}
+	spriteType = {
+		name = "GFX_event_korea_125"
+		texturefile = "gfx/event_pictures/event_korea_125.png"
+	}
+	spriteType = {
+		name = "GFX_event_korea_126"
+		texturefile = "gfx/event_pictures/event_korea_126.png"
+	}
+	spriteType = {
+		name = "GFX_event_korea_127"
+		texturefile = "gfx/event_pictures/event_korea_127.png"
+	}
+	spriteType = {
+		name = "GFX_event_korea_128"
+		texturefile = "gfx/event_pictures/event_korea_128.png"
+	}
+	spriteType = {
+		name = "GFX_event_korea_129"
+		texturefile = "gfx/event_pictures/event_korea_129.png"
+	}
+	spriteType = {
+		name = "GFX_event_korea_130"
+		texturefile = "gfx/event_pictures/event_korea_130.png"
+	}
+	spriteType = {
+		name = "GFX_event_korea_131"
+		texturefile = "gfx/event_pictures/event_korea_131.png"
+	}
+	spriteType = {
+		name = "GFX_event_korea_133"
+		texturefile = "gfx/event_pictures/event_korea_133.png"
+	}
+	spriteType = {
+		name = "GFX_event_korea_200"
+		texturefile = "gfx/event_pictures/event_korea_200.png"
+	}
+	spriteType = {
+		name = "GFX_event_korea_201"
+		texturefile = "gfx/event_pictures/event_korea_201.png"
+	}
+	spriteType = {
+		name = "GFX_event_korea_202"
+		texturefile = "gfx/event_pictures/event_korea_202.png"
+	}
+	spriteType = {
+		name = "GFX_event_korea_203"
+		texturefile = "gfx/event_pictures/event_korea_203.png"
+	}
+	spriteType = {
+		name = "GFX_event_korea_204"
+		texturefile = "gfx/event_pictures/event_korea_204.png"
+	}
+	spriteType = {
+		name = "GFX_event_korea_205"
+		texturefile = "gfx/event_pictures/event_korea_205.png"
+	}
+	spriteType = {
+		name = "GFX_event_korea_206"
+		texturefile = "gfx/event_pictures/event_korea_206.png"
+	}
+	spriteType = {
+		name = "GFX_event_korea_207"
+		texturefile = "gfx/event_pictures/event_korea_207.png"
+	}
+	spriteType = {
+		name = "GFX_event_korea_208"
+		texturefile = "gfx/event_pictures/event_korea_208.png"
+	}
+	spriteType = {
+		name = "GFX_event_korea_209"
+		texturefile = "gfx/event_pictures/event_korea_209.png"
+	}
+	spriteType = {
+		name = "GFX_event_korea_210"
+		texturefile = "gfx/event_pictures/event_korea_210.png"
+	}
+	spriteType = { 
+		name = "GFX_event_korea_211"
+		texturefile = "gfx/event_pictures/event_korea_211.png"
+	}
+	spriteType = {
+		name = "GFX_event_korea_212"
+		texturefile = "gfx/event_pictures/event_korea_212.png"
+	}
+	spriteType = {
+		name = "GFX_event_korea_213"
+		texturefile = "gfx/event_pictures/event_korea_213.png"
+	}
+	spriteType = {
+		name = "GFX_event_korea_214"
+		texturefile = "gfx/event_pictures/event_korea_209.png"
+	}
+	spriteType = { 
+		name = "GFX_event_korea_216"
+		texturefile = "gfx/event_pictures/event_korea_216.png"
+	}
+	spriteType = { 
+		name = "GFX_event_korea_217"
+		texturefile = "gfx/event_pictures/event_korea_217.png"
+	}
+	spriteType = { 
+		name = "GFX_event_korea_218"
+		texturefile = "gfx/event_pictures/event_korea_218.png"
+	}
+	spriteType = { 
+		name = "GFX_event_korea_219"
+		texturefile = "gfx/event_pictures/event_korea_219.png"
+	}
+	spriteType = { 
+		name = "GFX_event_korea_220"
+		texturefile = "gfx/event_pictures/event_korea_220.png"
+	}
+	spriteType = { 
+		name = "GFX_event_korea_221"
+		texturefile = "gfx/event_pictures/event_korea_221.png"
+	}
+	spriteType = { 
+		name = "GFX_event_korea_222"
+		texturefile = "gfx/event_pictures/event_korea_222.png"
+	}
+	spriteType = { 
+		name = "GFX_event_korea_223"
+		texturefile = "gfx/event_pictures/event_korea_223.png"
+	}
+	spriteType = { 
+		name = "GFX_event_korea_224"
+		texturefile = "gfx/event_pictures/event_korea_224.png"
+	}
+	spriteType = { 
+		name = "GFX_event_korea_225"
+		texturefile = "gfx/event_pictures/event_korea_225.png"
+	}
+	spriteType = { 
+		name = "GFX_event_korea_226"
+		texturefile = "gfx/event_pictures/event_korea_226.png"
+	}
+	spriteType = { 
+		name = "GFX_event_korea_227"
+		texturefile = "gfx/event_pictures/event_korea_227.png"
+	}
+	spriteType = { 
+		name = "GFX_event_korea_228"
+		texturefile = "gfx/event_pictures/event_korea_228.png"
+	}
+	spriteType = { 
+		name = "GFX_event_korea_229"
+		texturefile = "gfx/event_pictures/event_korea_229.png"
+	}
+	spriteType = { 
+		name = "GFX_event_korea_230"
+		texturefile = "gfx/event_pictures/event_korea_230.png"
+	}
+	spriteType = { 
+		name = "GFX_event_korea_252"
+		texturefile = "gfx/event_pictures/event_korea_252.png"
+	}
+	spriteType = { 
+		name = "GFX_event_korea_253"
+		texturefile = "gfx/event_pictures/event_korea_253.png"
+	}
+	spriteType = { 
+		name = "GFX_event_korea_254" 
+		texturefile = "gfx/event_pictures/event_korea_254.png"
+	}
+	spriteType = { 
+		name = "GFX_event_korea_255" 
+		texturefile = "gfx/event_pictures/event_korea_255.png"
+	}
+	spriteType = { 
+		name = "GFX_event_korea_256" 
+		texturefile = "gfx/event_pictures/event_korea_256.png"
+	}
+	spriteType = { 
+		name = "GFX_event_korea_257" 
+		texturefile = "gfx/event_pictures/event_korea_257.png"
+	}
+	spriteType = { 
+		name = "GFX_event_korea_258" 
+		texturefile = "gfx/event_pictures/event_korea_258.png"
+	}
+	spriteType = { 
+		name = "GFX_event_korea_259" 
+		texturefile = "gfx/event_pictures/event_korea_259.png"
+	}
+	spriteType = { 
+		name = "GFX_event_korea_260"		
+		texturefile = "gfx/event_pictures/event_korea_260.png"
+	}
+	spriteType = { 
+		name = "GFX_event_korea_285"		
+		texturefile = "gfx/event_pictures/event_korea_285.png"
+	}
+	spriteType = { 
+		name = "GFX_event_korea_287"		
+		texturefile = "gfx/event_pictures/event_korea_287.png"
+	}
+	spriteType = { 
+		name = "GFX_event_korea_289"		
+		texturefile = "gfx/event_pictures/event_korea_289.png"
+	}
+	spriteType = { 
+		name = "GFX_event_korea_292"		
+		texturefile = "gfx/event_pictures/event_korea_292.png"
+	}
+	spriteType = { 
+		name = "GFX_event_korea_296"		
+		texturefile = "gfx/event_pictures/event_korea_296.png"
+	}
+	spriteType = { 
+		name = "GFX_event_korea_297"		
+		texturefile = "gfx/event_pictures/event_korea_297.png"
+	}
+	spriteType = { 
+		name = "GFX_event_korea_300"		
+		texturefile = "gfx/event_pictures/event_korea_300.png"
+	}
+	spriteType = { 
+		name = "GFX_event_korea_356"		
+		texturefile = "gfx/event_pictures/event_korea_356.png"
+	}
+	spriteType = { 
+		name = "GFX_event_korea_408"
+		texturefile = "gfx/event_pictures/event_korea_408.png"
+	}
+	spriteType = {
+		name = "GFX_event_korea_777"
+		texturefile = "gfx/event_pictures/event_korea_777.png"
+	}
+    spriteType = {
+      name = "GFX_TLE_korea_event_none"
+       texturefile = "gfx/event_pictures/event_none.png"
+    }
+	spriteType = {
+		name = "GFX_Korean_Red_Cross"
+		texturefile = "gfx/event_pictures/Korean_Red_Cross.dds"
+	} 
+	spriteType = {
+		name = "GFX_event_tle_city_seoul"
+		texturefile = "gfx/event_pictures/event_tle_city_seoul.png"
+	} 
+	spriteType = {
+		name = "GFX_event_tle_city_pyongyang" 
+		texturefile = "gfx/event_pictures/event_tle_city_pyongyang.png"
+	} 
+	spriteType = {
+		name = "GFX_event_tle_city_busan"
+		texturefile = "gfx/event_pictures/event_tle_city_busan.png"
+	} 
+	spriteType = {
+		name = "GFX_event_tle_city_simyang"
+		texturefile = "gfx/event_pictures/event_tle_city_simyang.png"
+	} 
+	spriteType = {
+		name = "GFX_event_tle_city_kyoto"
+		texturefile = "gfx/event_pictures/event_tle_city_kyoto.png"
+	} 
+	spriteType = {
+		name = "GFX_event_tle_city_tokyo"
+		texturefile = "gfx/event_pictures/event_tle_city_tokyo.png"
+	} 
+	spriteType = { 
+		name = "GFX_법안상정"
+		texturefile = "gfx/event_pictures/법안상정.png"
+	}
+	spriteType = { 
+		name = "GFX_윤봉길"
+		texturefile = "gfx/event_pictures/윤봉길.png"
+	}
+	spriteType = {
+		name = "GFX_고원의_아이들"
+		texturefile = "gfx/event_pictures/고원의_아이들.png"
+	}
+	spriteType = {
+		name = "GFX_위안부"
+		texturefile = "gfx/event_pictures/위안부.png"
+	}
+	spriteType = {
+		name = "GFX_국회침입"
+		texturefile = "gfx/event_pictures/국회침입.png"
+	}
+	spriteType = {
+		name = "GFX_국가재건위원회"
+		texturefile = "gfx/event_pictures/국가재건위원회.png"
+	}
+	spriteType = {
+		name = "GFX_계엄군"
+		texturefile = "gfx/event_pictures/계엄군.png"
+	}
+	spriteType = {
+		name = "GFX_계엄군3"
+		texturefile = "gfx/event_pictures/계엄군3.png"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_Kor_empire_comeback"
+		texturefile = "gfx/event_pictures/report_event_Kor_empire_comeback.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_Kor_empire_vs"
+		texturefile = "gfx/event_pictures/report_event_Kor_empire_vs.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_soviet_tanks" 
+		texturefile = "gfx/event_pictures/news_event_soviet_tanks.dds"
+	}
+	spriteType = {
+		name = "GFX_news_han_gang"
+		texturefile = "gfx/event_pictures/news_han_gang.dds"
+	}
+	spriteType = { 
+		name = "GFX_world_event_nanking"
+		texturefile = "gfx/event_pictures/GFX_world_event_nanking.png"
+	}
+	spriteType = { 
+		name = "GFX_news_event_hangbok_of_korea"
+		texturefile = "gfx/event_pictures/news_event_hangbok_of_korea.png"
+	}
+	spriteType = { 
+		name = "GFX_news_event_qingdao"
+		texturefile = "gfx/event_pictures/news_event_qingdao.png"
+	}
+	spriteType = { 
+		name = "GFX_news_event_kangmyong_kick"
+		texturefile = "gfx/event_pictures/news_event_kangmyong_kick.png"
+	}
+	spriteType = { 
+		name = "GFX_news_event_caokun_is_dead"
+		texturefile = "gfx/event_pictures/news_event_caokun_is_dead.png"
+	}
+	spriteType = { 
+		name = "GFX_news_event_the_great_asian_war"
+		texturefile = "gfx/event_pictures/news_event_the_great_asian_war.png"
+	}
+	spriteType = { 
+		name = "GFX_news_event_southern_land_attack"
+		texturefile = "gfx/event_pictures/news_event_southern_land_attack.png"
+	}
+	spriteType = { 
+		name = "GFX_news_event_establish_un"
+		texturefile = "gfx/event_pictures/news_event_establish_un.png"
+	}
+	spriteType = { 
+		name = "GFX_news_event_minju_226"
+		texturefile = "gfx/event_pictures/news_event_minju_226.png"
+	}
+	spriteType = { 
+		name = "GFX_news_event_prime_minister_ahn"
+		texturefile = "gfx/event_pictures/news_event_prime_minister_ahn.png"
+	}
+}

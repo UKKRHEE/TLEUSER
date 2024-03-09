@@ -1,0 +1,42 @@
+focus_tree = {
+	id = DKG_Japan
+	country = {
+		factor = 0
+		modifier = {
+			add = 9
+			tag = DKG
+			
+		}
+	}
+	continuous_focus_position = { x = 300 y = 1600 }
+	default = no
+	shared_focus = DKG_continuing_with_tokugawa
+}
+focus_tree = {
+	id = DKG_Japan_war_af
+	country = {
+		factor = 0
+		modifier = {
+			add = 8
+			tag = DKG
+			
+		}
+	}
+	continuous_focus_position = { x = 300 y = 1600 }
+	default = no
+	shared_focus = DKG_tokugawa_win
+}
+focus_tree = {
+	id = DKG_Japan_reform
+	country = {
+		factor = 0
+		modifier = {
+			add = 8
+			tag = DKG
+			
+		}
+	}
+	continuous_focus_position = { x = 300 y = 1600 }
+	default = no
+	shared_focus = DKG_new_age
+}

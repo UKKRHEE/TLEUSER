@@ -1,0 +1,693 @@
+﻿add_namespace = joseon
+
+country_event = {
+	id = joseon.1
+	title = joseon.1.title
+	desc = joseon.1.desc
+	picture = GFX_report_event_ast_army
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	option = {
+		name = joseon.1.a
+		set_politics = { 
+			ruling_party = democratic 
+			elections_allowed = yes
+		}
+		set_popularities = {
+			democratic = 35
+			neutrality = 15
+			fascism = 20
+			communism = 30
+		}
+	} 
+}
+
+country_event = {
+	id = joseon.2
+	title = joseon.2.title
+	desc = joseon.2.desc
+	picture = GFX_report_event_merchant_ship_01
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	option = {
+		name = joseon.2.a
+		add_equipment_to_stockpile = {
+			type = infantry_equipment_1
+			amount = 1000
+			producer = KOR
+		}
+	}
+}
+
+country_event = {
+	id = joseon.3
+	title = joseon.3.title
+	desc = joseon.3.desc
+	picture = GFX_report_event_merchant_ship_01
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	option = {
+		name = joseon.3.a
+		ai_chance = {
+			base = 100
+		}
+		FROM = { country_event = { id = joseon.4 days = 1 } }
+	}
+	option = {
+		name = joseon.3.b
+		ai_chance = {
+			base = 100
+		}
+		FROM = { country_event = { id = joseon.5 days = 1 } }
+	}
+}
+
+country_event = {
+	id = joseon.4
+	title = joseon.4.title
+	desc = joseon.4.desc
+	picture = GFX_report_event_merchant_ship_01
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	option = {
+		name = joseon.4.a
+		add_equipment_to_stockpile = {
+			type = infantry_equipment_1
+			amount = 1000
+			producer = KOR
+		}
+	}
+}
+
+country_event = {
+	id = joseon.5
+	title = joseon.5.title
+	desc = joseon.5.desc
+	picture = GFX_report_event_merchant_ship_01
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	option = {
+		name = joseon.5.a
+	}
+}
+
+country_event = {
+	id = joseon.6
+	title = joseon.6.title
+	desc = joseon.6.desc
+	picture = GFX_report_event_yugoslavia_partisans
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	option = {
+		name = joseon.6.a
+	}
+}
+
+country_event = {
+	id = joseon.7
+	title = joseon.7.title
+	desc = joseon.7.desc
+	picture = GFX_report_event_ast_army
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	option = {
+		name = joseon.7.a
+		transfer_state = 798
+		798 = {
+			create_unit = {
+				division = "name = \"지역의용군\" division_template = \"독립군\" start_experience_factor = 0.5 start_equipment_factor = 0.1"
+				owner = KOR
+			}
+			create_unit = {
+				division = "name = \"지역의용군\" division_template = \"독립군\" start_experience_factor = 0.5 start_equipment_factor = 0.1"
+				owner = KOR
+			}
+		}
+	}
+}
+
+country_event = {
+	id = joseon.8
+	title = joseon.8.title
+	desc = joseon.8.desc
+	picture = GFX_report_event_ast_army
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	option = {
+		name = joseon.8.a
+		transfer_state = 797
+		797 = {
+			create_unit = {
+				division = "name = \"지역의용군\" division_template = \"독립군\" start_experience_factor = 0.5 start_equipment_factor = 0.1"
+				owner = KOR
+			}
+			create_unit = {
+				division = "name = \"지역의용군\" division_template = \"독립군\" start_experience_factor = 0.5 start_equipment_factor = 0.1"
+				owner = KOR
+			}
+			create_unit = {
+				division = "name = \"지역의용군\" division_template = \"독립군\" start_experience_factor = 0.5 start_equipment_factor = 0.1"
+				owner = KOR
+			}
+			create_unit = {
+				division = "name = \"지역의용군\" division_template = \"독립군\" start_experience_factor = 0.5 start_equipment_factor = 0.1"
+				owner = KOR
+			}
+		}
+		KOR = { country_event = { id = joseon.9 days = 1 } }
+	}
+}
+
+country_event = {
+	id = joseon.9
+	title = joseon.9.title
+	desc = joseon.9.desc
+	picture = GFX_report_event_ast_army
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	option = {
+		name = joseon.9.a
+		transfer_state = 527
+		527 = {
+			create_unit = {
+				division = "name = \"지역의용군\" division_template = \"독립군\" start_experience_factor = 0.5 start_equipment_factor = 0.1"
+				owner = KOR
+			}
+			create_unit = {
+				division = "name = \"지역의용군\" division_template = \"독립군\" start_experience_factor = 0.5 start_equipment_factor = 0.1"
+				owner = KOR
+			}
+			create_unit = {
+				division = "name = \"지역의용군\" division_template = \"독립군\" start_experience_factor = 0.5 start_equipment_factor = 0.1"
+				owner = KOR
+			}
+		}
+		KOR = { country_event = { id = joseon.10 days = 1 } }
+	}
+}
+
+country_event = {
+	id = joseon.10
+	title = joseon.10.title
+	desc = joseon.10.desc
+	picture = GFX_report_event_ast_army
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	option = {
+		name = joseon.10.a
+		transfer_state = 799
+		799 = {
+			create_unit = {
+				division = "name = \"지역의용군\" division_template = \"독립군\" start_experience_factor = 0.5 start_equipment_factor = 0.1"
+				owner = KOR
+			}
+			create_unit = {
+				division = "name = \"지역의용군\" division_template = \"독립군\" start_experience_factor = 0.5 start_equipment_factor = 0.1"
+				owner = KOR
+			}
+			create_unit = {
+				division = "name = \"지역의용군\" division_template = \"독립군\" start_experience_factor = 0.5 start_equipment_factor = 0.1"
+				owner = KOR
+			}
+		}
+		KOR = { country_event = { id = joseon.11 days = 1 } }
+	}
+}
+
+country_event = {
+	id = joseon.11
+	title = joseon.11.title
+	desc = joseon.11.desc
+	picture = GFX_report_event_ast_army
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	option = {
+		name = joseon.11.a
+		transfer_state = 800
+		transfer_state = 801
+		transfer_state = 1014
+		800 = {
+			create_unit = {
+				division = "name = \"지역의용군\" division_template = \"독립군\" start_experience_factor = 0.5 start_equipment_factor = 0.1"
+				owner = KOR
+			}
+		}
+		801 = {
+			create_unit = {
+				division = "name = \"지역의용군\" division_template = \"독립군\" start_experience_factor = 0.5 start_equipment_factor = 0.1"
+				owner = KOR
+			}
+		}
+		KOR = { country_event = { id = joseon.12 days = 1 } }
+	}
+}
+
+country_event = {
+	id = joseon.12
+	title = joseon.12.title
+	desc = joseon.12.desc
+	picture = GFX_report_event_ast_army
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	option = {
+		name = joseon.12.a
+		transfer_state = 802
+		transfer_state = 806
+		802 = {
+			create_unit = {
+				division = "name = \"지역의용군\" division_template = \"독립군\" start_experience_factor = 0.5 start_equipment_factor = 0.1"
+				owner = KOR
+			}
+		}
+		806 = {
+			create_unit = {
+				division = "name = \"지역의용군\" division_template = \"독립군\" start_experience_factor = 0.5 start_equipment_factor = 0.1"
+				owner = KOR
+			}
+		}
+		KOR = { country_event = { id = joseon.13 days = 1 } }
+	}
+}
+
+country_event = {
+	id = joseon.13
+	title = joseon.13.title
+	desc = joseon.13.desc
+	picture = GFX_report_event_ast_army
+	fire_only_once = yes	
+    is_triggered_only = yes
+	
+	option = {
+		name = joseon.13.a
+		transfer_state = 803
+		803 = {
+			create_unit = {
+				division = "name = \"지역의용군\" division_template = \"독립군\" start_experience_factor = 0.5 start_equipment_factor = 0.1"
+				owner = KOR
+			}
+			create_unit = {
+				division = "name = \"지역의용군\" division_template = \"독립군\" start_experience_factor = 0.5 start_equipment_factor = 0.1"
+				owner = KOR
+			}
+		}
+	}
+}
+
+country_event = { 
+	id = joseon.14
+	title = joseon.14.title
+	desc = joseon.14.desc
+	picture = GFX_report_event_chinese_japanese_handshake
+	fire_only_once = yes
+
+	trigger = {
+		tag = KOR
+		525 = { is_controlled_by = KOR }
+		797 = { is_controlled_by = KOR }
+		798 = { is_controlled_by = KOR }
+		799 = { is_controlled_by = KOR }
+		800 = { is_controlled_by = KOR }
+		KOR = { has_war_with = JAP }
+	}
+
+	option = {
+		name = joseon.14.a
+		JAP = { country_event = { id = joseon.15 days = 28 } }
+	}
+
+	option = {
+		name = joseon.14.b
+		ai_chance = { factor = 0 }
+	}
+}
+
+country_event = { 
+	id = joseon.15
+	title = joseon.15.title
+	desc = joseon.15.desc
+	picture = GFX_report_event_japanese_army_parade
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = joseon.15.a
+		KOR = { country_event = { id = joseon.16 days = 1 }}
+	}
+	option = {
+		name = joseon.15.b
+		KOR = { country_event = { id = joseon.17 days = 1}}
+		ai_chance = { factor = 0 }
+	}
+}
+ 
+country_event = {
+	id = joseon.16
+	title = joseon.16.title
+	desc = joseon.16.desc
+	picture = GFX_report_event_japanese_chinese_surrender
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = joseon.16.a
+		annex_country = { target = JOS transfer_troops = no }
+		white_peace = JAP
+	}
+}
+
+country_event = {
+	id = joseon.17
+	title = joseon.17.title
+	desc = joseon.17.desc
+	picture = GFX_report_event_japanese_army_parade
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = joseon.17.a
+		JAP = {
+			annex_country = { target = JOS transfer_troops = no }
+		}	
+	}
+}
+country_event = {
+	id = joseon.18
+	title = joseon.18.title
+	desc = joseon.18.desc
+	picture = GFX_report_event_japanese_army_parade
+	is_triggered_only = yes		
+
+	option = {
+		name = joseon.18.a
+		YUG = {
+			set_popularities = {
+				neutrality = 28
+				fascism = 4
+				communism = 56
+				democratic = 12
+			}
+		}
+		add_timed_idea = {
+			idea = YUG_communist_influence 
+			days = 720
+		}
+		remove_ideas = YUG_dimitrije_ljotic
+	}
+}
+country_event = { #체코 쿠데타
+	id = joseon.19
+	title = joseon.19.title
+	desc = joseon.19.desc
+	picture = GFX_report_event_ast_army
+	fire_only_once = yes	
+    trigger = {
+		tag = CZE
+		date > 1948.1.15
+		CZE = {
+			is_ai = yes
+			NOT = { has_government = communism }
+		}
+		has_global_flag = TLE_germany_union_defeat
+	}
+	
+	option = {
+		name = joseon.19.a
+		SOV = {
+			puppet = CZE
+		}
+		CZE = {
+			set_politics = { 
+				ruling_party = communism 
+				elections_allowed = no
+			}
+			set_popularities = {
+				democratic = 0
+				neutrality = 0
+				fascism = 0
+				communism = 100
+			}
+		}
+		news_event = {
+			id = eok_news.27
+		}	
+	} 
+}
+country_event = { #체코 쿠데타
+	id = joseon.20
+	title = joseon.20.title
+	desc = joseon.20.desc
+	picture = GFX_report_event_ast_army
+	fire_only_once = yes	
+    trigger = {
+		tag = YUG
+		date > 1945.11.11
+		YUG = {
+			is_ai = yes
+			NOT = { has_government = communism }
+			if = {
+				limit = {
+					date < 1947.1.1
+				}
+				communism > 0.5
+			}
+			if = {
+				limit = {
+					date > 1947.1.1
+				}
+				communism > 0.35
+			}
+			has_idea = YUG_communist_influence
+		}
+		has_global_flag = TLE_germany_union_defeat
+	}
+	
+	option = {
+		name = joseon.20.a
+		YUG = {
+			set_politics = { 
+				ruling_party = communism 
+				elections_allowed = no
+			}
+			set_popularities = {
+				democratic = 0
+				neutrality = 0
+				fascism = 0
+				communism = 100
+			}
+			remove_ideas = king_peter_1
+		}
+		news_event = {
+			id = eok_news.28
+		}	
+	} 
+}
+country_event = { #체코 쿠데타
+	id = joseon.21
+	title = joseon.21.title
+	desc = joseon.21.desc
+	picture = GFX_report_event_ast_army
+    is_triggered_only = yes
+	
+	option = {
+		name = joseon.21.a
+		KMN = {
+			set_cosmetic_tag = KMN_REP
+		}
+		hidden_effect = {
+			USA = {
+				end_puppet = KMN
+				add_to_faction = KMN
+			}
+			714 = {
+				set_demilitarized_zone = no
+			}
+			1059 = {
+				set_demilitarized_zone = no
+			}
+			761 = {
+				set_demilitarized_zone = no
+			}
+			KMN = {
+				end_puppet = USA
+				end_puppet = KMN
+				end_puppet = yes
+				add_state_core = 714
+				add_state_core = 1059
+				add_state_core = 761
+				set_politics = {
+					ruling_party = neutrality
+					last_election = "1940.5.19"
+					election_frequency = 60
+					elections_allowed = yes
+				}
+				set_popularities = {
+					neutrality = 50
+					fascism = 2
+					communism = 14
+					democratic = 34
+				}
+				set_party_name = {
+					ideology = democratic
+					long_name = "KMN_REP_democratic_party_long"
+					name = "KMN_REP_democratic_party"
+				}
+				set_party_name = {
+					ideology = fascism
+					long_name = "KMN_REP_fascism_party_long"
+					name = "KMN_REP_fascism_party"
+				}
+				set_party_name = {
+					ideology = communism
+					long_name = "KMN_REP_communism_party_long"
+					name = "KMN_REP_communism_party"
+				}
+				set_party_name = {
+					ideology = neutrality
+					long_name = "KMN_REP_neutrality_party_long"
+					name = "KMN_REP_neutrality_party"
+				}
+				retire_character = KMN_john_reed_hodge
+				add_country_leader_role = {
+					Character = KMN_kim_philsun
+					country_leader = {
+						#expire = "1965.1.1"
+						ideology = despotism
+						traits = { }
+					}
+					promote_leader = yes
+				}	
+				add_country_leader_role = {
+					Character = KMN_kim_philsun
+					country_leader = {
+						#expire = "1965.1.1"
+						ideology = conservatism
+						traits = { }
+					}
+					promote_leader = yes
+				}	
+				add_country_leader_role = {
+					Character = KMN_nam_il
+					country_leader = {
+						#expire = "1965.1.1"
+						ideology = marxim
+						traits = { }
+					}
+					promote_leader = yes
+				}	
+				add_country_leader_role = {
+					Character = KMN_lee_beomseok
+					country_leader = {
+						#expire = "1965.1.1"
+						ideology = rexism
+						traits = { }
+					}
+					promote_leader = yes
+				}	
+			}
+		}
+		if = {
+			limit = {
+				MAN = {
+					exists = no
+				}
+			}
+			news_event = {
+				id = eok_news.35
+			}	
+		}
+		if = {
+			limit = {
+				MAN = {
+					exists = yes
+				}
+			}
+			news_event = {
+				id = eok_news.36
+			}	
+			MAN = {
+				set_cosmetic_tag = MAN
+			}
+		}
+	} 
+}
+country_event = { #체코 쿠데타
+	id = joseon.22
+	title = joseon.22.title
+	desc = joseon.22.desc
+	picture = GFX_report_event_ast_army
+    is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			FNG = {
+				set_cosmetic_tag = FNG_UN
+			}
+		}
+	}
+	option = {
+		name = joseon.22.a
+		FNG = {
+			transfer_state = 611
+			transfer_state = 612
+			transfer_state = 621
+			add_state_core = 611
+			add_state_core = 612
+			add_state_core = 621
+		}
+		611 = {
+			set_demilitarized_zone = yes
+		}
+		621 = {
+			set_demilitarized_zone = yes
+		}
+		612 = {
+			set_demilitarized_zone = yes
+		}
+	} 
+}
+country_event = {
+	id = joseon.23
+	title = joseon.23.title
+	desc = joseon.23.desc
+	picture = GFX_report_event_japanese_army_parade
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = joseon.23.a
+		ITA = {
+			leave_faction = yes
+		}
+		GER = {
+			create_wargoal = {
+				type = annex_everything
+				target = ITA
+			}
+		}
+	}
+	option = {
+		name = joseon.23.b
+		GER = {
+			transfer_state = 39
+			transfer_state = 850
+			transfer_state = 1003
+			transfer_state = 736
+			transfer_state = 852
+		}
+	}
+}

@@ -1,0 +1,5 @@
+﻿
+focus = {
+    current = "ZLC_BEI_government_reform"
+    Progress = 0
+}   

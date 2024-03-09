@@ -1,0 +1,1073 @@
+FRS_diminished_effect = {
+	hidden_effect = {
+		if = {
+			limit = {
+				SLO = {
+					exists = no
+				}
+			}
+			GER = {
+				puppet = SLO
+			}
+			SLO = {
+				transfer_state = 70
+				transfer_state = 71
+			}
+		}
+		if = {
+			limit = {
+				ROM = {
+					owns_state = 77
+				}
+			}
+			BUL = {
+				transfer_state = 77
+			}
+		}
+		every_country = {
+			limit = {
+				has_cosmetic_tag = FRA_VICHY
+			} 
+			save_event_target_as = vichy_france
+			transfer_state = 16
+		}
+		if = {
+			limit = {
+				OR = {
+					FRA = {
+						owns_state = 671
+						owns_state = 286
+						owns_state = 741
+						owns_state = 670
+					}
+					event_target:vichy_france = {
+						owns_state = 671
+						owns_state = 286
+						owns_state = 741
+						owns_state = 670
+					}
+				}
+			}
+			VIN = {
+				transfer_state = 671
+				transfer_state = 286
+			}
+			LAO = {
+				transfer_state = 670
+			}
+			CAM = {
+				transfer_state = 741
+			}
+			SIA = {
+				transfer_state = 993
+				transfer_state = 994
+				transfer_state = 995
+			}
+		}
+		every_state = { #transfer French colonial empire
+			limit = {
+				is_owned_by = event_target:vichy_france
+				OR = {
+					is_on_continent = africa
+					is_core_of = VIN
+					is_core_of = CAM
+					is_core_of = LAO
+					is_core_of = LEB
+					is_core_of = SYR
+					is_owned_by = event_target:vichy_france
+				}
+			}
+			FRS = { transfer_state = PREV }
+		}
+		every_state = {
+			limit = { #set up Vichy continental holdings
+				OR = {
+					state = 735
+					state = 21
+					state = 851
+					state = 32
+					state = 20
+					state = 26
+					state = 22
+					state = 31
+					state = 25
+					state = 33
+					state = 1
+				}
+				CONTROLLER = { 
+					OR = {
+						original_tag = FRA
+						has_war_with = FRA
+					} 
+				} #failsafe for weird shit (tm)
+			}
+			add_core_of = FRS
+		}
+		FRS = {
+			transfer_state = 33
+			transfer_state = 26
+			transfer_state = 25
+			transfer_state = 31
+			transfer_state = 22
+			transfer_state = 20
+			transfer_state = 32
+			transfer_state = 21
+			transfer_state = 806
+			transfer_state = 19
+			transfer_state = 23
+			transfer_state = 30
+			transfer_state = 14
+			transfer_state = 24
+			transfer_state = 27
+			transfer_state = 16
+			transfer_state = 15
+			transfer_state = 775
+			transfer_state = 851
+			transfer_state = 460
+			transfer_state = 461
+			transfer_state = 462
+			transfer_state = 459
+			transfer_state = 513
+			transfer_state = 514
+			transfer_state = 782
+			transfer_state = 786
+			transfer_state = 515
+			transfer_state = 557
+			transfer_state = 461
+			transfer_state = 462
+			transfer_state = 459
+			transfer_state = 513
+			transfer_state = 514
+			transfer_state = 782
+			transfer_state = 786
+			transfer_state = 515
+			set_capital = { state = 16 }
+		}
+		ENG = {
+			transfer_state = 543
+		}	
+		every_country = {
+			limit = {
+				has_cosmetic_tag = FRA_VICHY
+			}
+			transfer_units_fraction = {
+				target = FRS
+				size = 1
+				stockpile_ratio = 1
+				army_ratio = 1
+				navy_ratio = 1
+				air_ratio = 1
+			}
+		}
+		SOV = {
+			load_focus_tree = korean_government
+		}
+		ENG = {
+			load_focus_tree = korean_government
+		}
+		NR1 = {
+			load_focus_tree = korean_government
+		}
+		UK1 = {
+			load_focus_tree = korean_government
+		}
+		OT1 = {
+			load_focus_tree = korean_government
+		}
+		MK1 = {
+			load_focus_tree = korean_government
+		}
+		KA1 = {
+			load_focus_tree = korean_government
+		}
+		CRO = {
+			load_focus_tree = korean_government
+		}
+		MNT = {
+			load_focus_tree = korean_government
+		}
+		SER = {
+			load_focus_tree = korean_government
+		}
+		ALB = {
+			load_focus_tree = korean_government
+		}
+		GRE = {
+			load_focus_tree = korean_government
+			set_cosmetic_tag = GRE_TNO
+		}
+		FRS = {
+			load_focus_tree = korean_government
+			retire_character = FRS_henry_vi
+			add_country_leader_role = {
+				Character = FRS_maxime_weygand
+				country_leader = {
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = { }
+				}
+				promote_leader = yes
+			}	
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+			set_popularities = {
+				democratic = 0
+				fascism = 100
+				neutrality = 0
+				communism = 0
+			}
+			#set_cosmetic_tag = FRA_VICHY
+			change_tag_from = event_target:vichy_france
+			event_target:vichy_france = {
+				every_unit_leader = {
+					limit = {
+						OR = {
+							has_trait = old_guard
+							has_trait = old_guard_navy
+						}
+					}
+					set_nationality = FRS
+				}
+				every_navy_leader = {
+					limit = {
+						has_id = 102 #Darlan
+					}
+					set_nationality = FRS
+				}
+			}
+		}
+		
+		FRS = {
+			annex_country = {
+				target = event_target:vichy_france
+				transfer_troops = yes
+			}
+		}
+		every_state = { #transfer French colonial empire
+			limit = {
+				is_owned_by = event_target:vichy_france
+			}
+			FRS = { transfer_state = PREV }
+		}
+		every_state = { #transfer French colonial empire
+			limit = {
+				is_core_of = FRA
+			}
+			add_core_of = FRS
+		}
+		every_state = { #transfer French colonial empire
+			limit = {
+				is_core_of = event_target:vichy_france
+			}
+			remove_core_of = event_target:vichy_france
+		}
+		SYR = {
+			transfer_state = 677
+			transfer_state = 680
+			transfer_state = 554
+			# transfer_state = 553
+		}
+		TUR = {
+			transfer_state = 799
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_global_flag = PRE_THE_NEW_ORDER_GBR
+			}
+		}
+		GER = {
+			transfer_state = 847
+			set_faction_name = "new_ordernung"
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = PRE_THE_NEW_ORDER_GBR
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					has_cosmetic_tag = ITA_EMPIRE
+				}
+				save_event_target_as = italian_empire
+			}
+			every_country = {
+				limit = {
+					has_cosmetic_tag = ITA_rds
+				}
+				save_event_target_as = italian_looser
+			}
+			
+			every_state = { #transfer French colonial empire
+				limit = {
+					is_core_of = CAN
+				}
+				CAN = { transfer_state = PREV }
+			}
+			every_state = { #transfer French colonial empire
+				limit = {
+					is_core_of = RAJ
+					NOT = {
+						is_owned_by = AFG
+						is_owned_by = BRM
+						is_owned_by = POR
+						is_owned_by = BAN
+					}
+				}
+				RAJ = { transfer_state = PREV }
+			}
+			if = {
+				limit = {
+					event_target:italian_empire = {
+						NOT = {
+							has_idea = vittorio_emanuele
+							has_idea = vittorio_emanuele_emperor_of_ethiopia
+							has_idea = vittorio_emanuele_king_of_albania
+							has_idea = vittorio_emanuele_albania_ethiopia
+						}
+					}
+				}
+				event_target:italian_empire = {
+					add_ideas = ITA_umberto_ii_king
+				}
+			}
+			if = {
+				limit = {
+					KVN = {
+						exists = no
+					}
+					KOR = {
+						has_government = fascism
+					}
+				}
+				KOR = {
+					transfer_state = 671
+					transfer_state = 670
+					transfer_state = 741
+					transfer_state = 286
+				}
+			}
+			every_country = {
+				limit = {
+					has_war_with = GER
+				}
+				white_peace = GER
+				white_peace = ROM
+				white_peace = ITA
+				white_peace = BUL
+				white_peace = SPR
+			}
+			ZZZ = {
+				transfer_state = 700
+				transfer_state = 101
+				transfer_state = 701
+				
+				transfer_state = 774
+				transfer_state = 660
+				transfer_state = 773
+				transfer_state = 772
+				
+				transfer_state = 776
+				transfer_state = 777
+				transfer_state = 781
+				transfer_state = 778
+				transfer_state = 898
+				transfer_state = 556
+				transfer_state = 779
+				transfer_state = 899
+				transfer_state = 780
+				transfer_state = 272
+				
+				transfer_state = 901
+				transfer_state = 902
+				transfer_state = 900
+				transfer_state = 558
+				transfer_state = 274
+				transfer_state = 557
+				transfer_state = 786
+				transfer_state = 782
+				transfer_state = 515
+				transfer_state = 775
+
+				transfer_state = 296
+				transfer_state = 298
+				
+				add_state_core = 101
+				add_state_core = 701
+				
+				add_state_core = 774
+				add_state_core = 660
+				add_state_core = 773
+				add_state_core = 772
+				
+				add_state_core = 776
+				add_state_core = 777
+				add_state_core = 781
+				add_state_core = 778
+				add_state_core = 898
+				add_state_core = 556
+				add_state_core = 779
+				add_state_core = 899
+				add_state_core = 780
+				add_state_core = 272
+				
+				add_state_core = 901
+				add_state_core = 902
+				add_state_core = 900
+				add_state_core = 558
+				add_state_core = 274
+				add_state_core = 557
+				add_state_core = 786
+				add_state_core = 782
+				add_state_core = 515
+				add_state_core = 775
+
+				add_state_core = 296
+				add_state_core = 298
+
+			}
+			BUL = {
+				leave_faction = yes
+			}
+			HUN = {
+				leave_faction = yes
+			}
+			ROM = {
+				leave_faction = yes
+			}
+			SER = {
+				leave_faction = yes
+			}
+			SPA = {
+				leave_faction = yes
+			}
+			every_country = {
+				limit = {
+					original_tag = FRA 
+					NOT = {
+						tag = FRA
+					}
+					has_government = fascism 
+				}
+				transfer_state = 806
+				transfer_state = 19
+				transfer_state = 23
+				transfer_state = 30
+				transfer_state = 14
+				transfer_state = 24
+				transfer_state = 27
+				transfer_state = 16
+				transfer_state = 15
+				transfer_state = 461
+				transfer_state = 462
+				transfer_state = 459
+				transfer_state = 513
+				transfer_state = 514
+				transfer_state = 782
+				transfer_state = 786
+				transfer_state = 515
+				set_capital = { state = 16 }
+			}
+			GER = {
+				set_faction_name = "einheinzpakt"
+				# transfer_state = 446
+				annex_country = {
+					target = POL
+					transfer_troops = no
+				}
+				annex_country = {
+					target = AUS
+					transfer_troops = no
+				}
+				annex_country = {
+					target = CZE
+					transfer_troops = no
+				}
+				set_autonomy = {
+					target = UK1
+					autonomous_state = autonomy_reichskommissariat
+				}
+				set_autonomy = {
+					target = OT1
+					autonomous_state = autonomy_reichskommissariat
+				}
+				set_autonomy = {
+					target = KA1
+					autonomous_state = autonomy_reichskommissariat
+				}
+				set_autonomy = {
+					target = NR1
+					autonomous_state = autonomy_reichskommissariat
+				}
+				set_autonomy = {
+					target = MK1
+					autonomous_state = autonomy_reichskommissariat
+				}
+				set_autonomy = {
+					target = GW1
+					autonomous_state = autonomy_reichskommissariat
+				}
+				set_autonomy = {
+					target = GM1
+					autonomous_state = autonomy_reichskommissariat
+				}
+				set_autonomy = {
+					target = GC1
+					autonomous_state = autonomy_reichskommissariat
+				}
+				set_autonomy = {
+					target = GO1
+					autonomous_state = autonomy_reichskommissariat
+				}
+				set_autonomy = {
+					target = ENG
+					autonomous_state = autonomy_puppet
+				}
+				add_state_core = 85
+				add_state_core = 807
+				add_state_core = 86
+				add_state_core = 762
+				add_state_core = 102
+				add_state_core = 4
+				add_state_core = 152
+				add_state_core = 153
+				add_state_core = 848
+				add_state_core = 28
+				add_state_core = 8
+				
+				transfer_state = 188
+				transfer_state = 35
+				transfer_state = 7
+				transfer_state = 36
+				transfer_state = 34
+				transfer_state = 1001
+				transfer_state = 6
+				transfer_state = 37
+				transfer_state = 99
+				transfer_state = 802
+				
+				transfer_state = 8
+				transfer_state = 28
+				transfer_state = 29
+				transfer_state = 785
+				transfer_state = 18
+				transfer_state = 17
+				transfer_state = 764
+				transfer_state = 102
+			
+			}
+			NR1 = {
+				set_cosmetic_tag = NOR_reichskommissariat
+				transfer_state = 110
+				transfer_state = 142
+				transfer_state = 143
+				transfer_state = 144
+				transfer_state = 920
+				transfer_state = 921
+				transfer_state = 922
+				transfer_state = 923
+				transfer_state = 924
+				transfer_state = 925
+				
+				add_state_core = 110
+				add_state_core = 142
+				add_state_core = 143
+				add_state_core = 144
+				add_state_core = 920
+				add_state_core = 921
+				add_state_core = 922
+				add_state_core = 923
+				add_state_core = 924
+				add_state_core = 925
+			}
+			CRO = {
+				transfer_state = 103
+				transfer_state = 109
+				transfer_state = 104
+				transfer_state = 804
+			}
+			HUN = {
+				transfer_state = 664
+				transfer_state = 73
+				transfer_state = 45
+			}
+			SER = {
+				transfer_state = 107
+				transfer_state = 108
+			}
+			BUL = {
+				transfer_state = 803
+				transfer_state = 106
+				transfer_state = 184
+				transfer_state = 731
+			}
+			every_country = {
+				limit = {
+					original_tag = FRA
+					has_government = fascism
+				}
+				transfer_state = 557
+				transfer_state = 461
+				transfer_state = 462
+				transfer_state = 459
+				transfer_state = 513
+				transfer_state = 514
+				transfer_state = 782
+				transfer_state = 786
+				transfer_state = 515
+			}	
+			event_target:italian_empire = {
+				leave_faction = yes
+				create_faction = "TRAUMVIRATUS"
+				puppet = MNT
+				puppet = GRE
+				puppet = EGY
+				puppet = AOI
+				puppet = PAL
+				puppet = UAE
+
+				transfer_state = 446
+
+				transfer_state = 2
+				transfer_state = 157
+				transfer_state = 117
+				transfer_state = 849
+				transfer_state = 156
+				transfer_state = 115
+				transfer_state = 114
+				transfer_state = 1
+				transfer_state = 162
+				transfer_state = 161
+				transfer_state = 158
+				transfer_state = 159
+				transfer_state = 160
+				transfer_state = 850
+				transfer_state = 39
+				transfer_state = 736
+				transfer_state = 852
+				transfer_state = 853
+				transfer_state = 735
+
+				## 이집트 & 수단 ##
+				# transfer_state = 452
+				# transfer_state = 447
+				# transfer_state = 907
+				# transfer_state = 552
+				# transfer_state = 456
+				# transfer_state = 457
+				# transfer_state = 767
+				# transfer_state = 551
+				# transfer_state = 883
+				# transfer_state = 886
+				# transfer_state = 549
+				# transfer_state = 887
+				# transfer_state = 885
+				# transfer_state = 884
+
+				## 팔레스타인 & 요르단 & 레바논 ##
+				# transfer_state = 454
+				# transfer_state = 453
+				# transfer_state = 455
+				# transfer_state = 553
+
+				## 이탈리아령 동아프리카 ##
+				# transfer_state = 269
+				# transfer_state = 268
+				# transfer_state = 547
+				# transfer_state = 903
+				# transfer_state = 904
+				# transfer_state = 908
+				# transfer_state = 905
+
+				transfer_state = 458
+				transfer_state = 665
+				transfer_state = 656
+
+				transfer_state = 39
+				transfer_state = 850
+				transfer_state = 160
+				transfer_state = 159	
+				transfer_state = 158
+				transfer_state = 161
+				transfer_state = 162
+				transfer_state = 157
+				transfer_state = 2
+				transfer_state = 849
+				transfer_state = 117
+				transfer_state = 156
+				transfer_state = 115
+				transfer_state = 853
+				transfer_state = 735
+				transfer_state = 1
+				transfer_state = 665
+				transfer_state = 458
+				transfer_state = 116
+				transfer_state = 1002
+				transfer_state = 44
+				transfer_state = 934
+				transfer_state = 999
+				transfer_state = 802
+				transfer_state = 1000
+				transfer_state = 805
+				annex_country = {
+					target = event_target:italian_looser
+					transfer_troops = yes
+				}
+				annex_country = {
+					target = ALB
+					transfer_troops = yes
+				}
+			}
+			EGY = {
+				set_cosmetic_tag = EGY_ITA
+				transfer_state = 452
+				transfer_state = 447
+				transfer_state = 907
+				transfer_state = 552
+				transfer_state = 456
+				transfer_state = 457
+				transfer_state = 767
+				transfer_state = 551
+				transfer_state = 883
+				transfer_state = 886
+				transfer_state = 549
+				transfer_state = 887
+				transfer_state = 885
+				transfer_state = 884
+			}
+			UAE = {
+				set_cosmetic_tag = UAE_ITA
+				transfer_state = 658
+				transfer_state = 765
+			}
+			AOI = {
+				set_cosmetic_tag = AOI_ITA
+				transfer_state = 550
+				transfer_state = 559
+				transfer_state = 844
+				transfer_state = 269
+				transfer_state = 268
+				transfer_state = 547
+				transfer_state = 903
+				transfer_state = 904
+				transfer_state = 908
+				transfer_state = 905
+				annex_country = {
+					target = ETH
+					transfer_troops = yes
+				}
+			}
+			PAL = {
+				set_cosmetic_tag = PAL_ITA
+				transfer_state = 454
+				transfer_state = 453
+				transfer_state = 455
+				transfer_state = 553
+				set_victory_points = {
+					province = 1086
+					value = 5
+				}
+			}
+			IRQ = {
+				transfer_state = 656
+			}
+			SPR = {
+				transfer_state = 118
+				transfer_state = 461
+				transfer_state = 462
+			}
+			ALG = {
+				set_cosmetic_tag = ALG_RK
+				transfer_state = 459
+				transfer_state = 460
+				transfer_state = 513
+				transfer_state = 514
+			}
+			MNT = {
+				transfer_state = 105
+				transfer_state = 981
+			}
+			SCO = {
+				transfer_state = 120
+				transfer_state = 121
+				transfer_state = 136
+				transfer_state = 133
+				transfer_state = 933
+			}
+			IRE = {
+				transfer_state = 119
+			}
+			GC1 = {
+				set_cosmetic_tag = COG_RK
+				transfer_state = 538
+				transfer_state = 718
+				transfer_state = 890
+				transfer_state = 888
+				transfer_state = 295
+				transfer_state = 889
+				
+				transfer_state = 660
+				transfer_state = 772
+			
+				transfer_state = 796
+				transfer_state = 539
+
+				add_state_core = 538
+				add_state_core = 718
+				add_state_core = 890
+				add_state_core = 888
+				add_state_core = 295
+				add_state_core = 889
+				add_state_core = 660
+				add_state_core = 772
+				add_state_core = 539
+			}
+			GO1 = {
+				set_cosmetic_tag = ZAM_RK
+				transfer_state = 708
+				transfer_state = 771
+				transfer_state = 546
+				transfer_state = 770
+				transfer_state = 771
+				transfer_state = 897
+				transfer_state = 896
+				transfer_state = 544
+				transfer_state = 545
+				transfer_state = 548
+
+				transfer_state = 768
+				transfer_state = 769
+				
+				add_state_core = 708
+				add_state_core = 771
+				add_state_core = 546
+				add_state_core = 770
+				add_state_core = 771
+				add_state_core = 897
+				add_state_core = 896
+				add_state_core = 544
+				add_state_core = 545
+				add_state_core = 548
+				add_state_core = 768
+				add_state_core = 769
+			}
+			GW1 = {
+				set_cosmetic_tag = ANG_RK
+				transfer_state = 892
+				transfer_state = 540
+				transfer_state = 891
+				transfer_state = 894
+				transfer_state = 895
+				transfer_state = 541
+				transfer_state = 893
+				
+				add_state_core = 892
+				add_state_core = 540
+				add_state_core = 891
+				add_state_core = 894
+				add_state_core = 895
+				add_state_core = 541
+				add_state_core = 893
+			}	
+			CAN = {
+				set_faction_name = "OFN_pact"
+				add_to_faction = USA
+			}
+			USA = {
+				set_faction_leader = yes
+				transfer_state = 100
+				transfer_state = 101
+				transfer_state = 914
+				transfer_state = 696
+				transfer_state = 691
+				transfer_state = 692
+				transfer_state = 308
+				#
+				transfer_state = 704
+				transfer_state = 703
+				transfer_state = 720
+				transfer_state = 270
+				transfer_state = 689
+				transfer_state = 690
+				transfer_state = 693
+				transfer_state = 696
+				transfer_state = 694
+			}
+			HOL = {
+				transfer_state = 310
+				transfer_state = 687
+			}
+			GUA = {
+				transfer_state = 311
+			}
+			ARG = {
+				transfer_state = 299
+			}
+			SAF = {
+				transfer_state = 542
+			}
+			WLS = {
+				transfer_state = 122
+			}
+			GM1 = {
+				set_cosmetic_tag = MAD_RK
+				transfer_state = 543
+				transfer_state = 706
+				transfer_state = 707
+				transfer_state = 709
+				
+				add_state_core = 543
+				add_state_core = 706
+				add_state_core = 707
+				add_state_core = 709
+			}
+			TUR = {
+				annex_country = {
+					target = SYR
+					transfer_troops = no
+				}
+				transfer_state = 230
+				transfer_state = 676
+				set_cosmetic_tag = TUR_TNO
+			}
+			SAU = {
+				set_cosmetic_tag = SAU_TNO
+			}
+			PER = {
+				set_cosmetic_tag = PER_TNO
+			}
+			ENG = {
+				set_cosmetic_tag = ENG_RK
+				add_ideas = ENG_king_edward_fascism
+				remove_ideas = george_v
+				remove_ideas = ENG_george_vi
+				transfer_state = 126
+				transfer_state = 127
+				transfer_state = 123
+				transfer_state = 125
+				transfer_state = 128
+				transfer_state = 129
+				transfer_state = 130
+				transfer_state = 131
+				transfer_state = 132
+				transfer_state = 338
+			}
+			YEM = {
+				transfer_state = 659
+			}
+			RAJ = {
+				transfer_state = 281
+			}	
+			CAN = {
+				end_puppet = ENG
+				transfer_state = 332
+				transfer_state = 331
+				add_ideas = ENG_george_vi
+				set_cosmetic_tag = CAN_TNO
+			}
+			123 = {
+				set_demilitarized_zone = yes
+			}
+			15 = {
+				set_demilitarized_zone = yes
+			}
+			16 = {
+				set_demilitarized_zone = yes
+			}
+			27 = {
+				set_demilitarized_zone = yes
+			}
+			20 = {
+				set_demilitarized_zone = yes
+			}
+			32 = {
+				set_demilitarized_zone = yes
+			}
+			21 = {
+				set_demilitarized_zone = yes
+			}
+			851 = {
+				set_demilitarized_zone = yes
+			}
+			if = {
+				limit = {
+					POR = {
+						is_ai = yes
+						has_government = neutrality
+					}
+					SPR = {
+						is_ai = yes
+						#has_government = fascism
+					}
+				}
+				POR = {
+					every_unit_leader = {
+						set_nationality = SPR
+					}
+					every_navy_leader = {
+						set_nationality = SPR
+					}
+				}
+				SPR = {
+					load_focus_tree = korean_government
+					set_cosmetic_tag = IBR
+					annex_country = {
+						target = POR
+						transfer_troops = yes
+					}
+				}
+			}
+		}
+	}
+	hidden_effect = {
+		if = {
+			limit = {
+				980 = {
+					is_owned_by = GER
+				}
+			}
+			FRS = {
+				transfer_state = 785
+			}
+			785 = {
+				set_demilitarized_zone = yes
+			}
+			HUN = {
+				transfer_state = 983	
+			}
+		}
+		if = {
+			limit = {
+				980 = {
+					is_owned_by = GER
+				}
+			}
+			GER = {
+				transfer_state = 985
+				
+				set_autonomy = {
+					target = DM1
+					autonomous_state = autonomy_reichskommissariat
+				}
+			}
+			DM1 = {
+				transfer_state = 99
+				transfer_state = 37
+				transfer_state = 911
+				add_state_core = 99
+				add_state_core = 37
+				add_state_core = 911
+			}
+		}
+		CAN = {
+			set_cosmetic_tag = CAN_TNO
+		}
+		SWI = {
+			set_cosmetic_tag = SWI_TNO
+		}
+	}
+}

@@ -1,0 +1,321 @@
+focus_tree = {
+	id = HALLOWEEN_ROK
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = MCP
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 1000 y = 1000 }
+	focus = {
+		id = MCP_mechanic_president
+		icon = GFX_fix_MCP_1
+		cost = 2
+		x = 5
+		y = 0
+		completion_reward = {
+			country_event = {
+				id = TLE_halloween_mcp.1
+			}
+		}
+
+	}
+	focus = {
+		id = MCP_defense_the_princess
+		icon = GFX_fix_MCP_1
+		cost = 2
+		prerequisite = {
+			focus = MCP_mechanic_president
+		}
+		x = 3
+		y = 1
+		completion_reward = {
+			custom_effect_tooltip = MCP_defense_the_princess_tt
+			hidden_effect = {
+				country_event = {
+					id = TLE_halloween_mcp.2
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = MCP_restore_the_seoul
+		icon = GFX_fix_MCP_1
+		cost = 2
+		prerequisite = {
+			focus = MCP_mechanic_president
+		}
+		x = 5
+		y = 1
+		completion_reward = {
+			create_wargoal = {
+				target = KOR
+				type = annex_everything
+			}
+		}
+
+	}
+	focus = {
+		id = MCP_go_pokdong
+		icon = GFX_fix_MCP_1
+		cost = 2
+		prerequisite = {
+			focus = MCP_mechanic_president
+		}
+		bypass = {
+			LMC = {
+				exists = no
+			}
+		}
+		x = 7
+		y = 1
+		completion_reward = {
+			create_wargoal = {
+				target = LMC
+				type = annex_everything
+			}
+		}
+
+	}
+	focus = {
+		id = MCP_economic_grow_50th_plan
+		icon = GFX_fix_MCP_1
+		cost = 2
+		prerequisite = {
+			focus = MCP_restore_the_seoul
+		}
+		prerequisite = {
+			focus = MCP_defense_the_princess
+		}
+		prerequisite = {
+			focus = MCP_go_pokdong
+		}
+		x = 5
+		y = 2
+		completion_reward = {
+			create_wargoal = {
+				target = KRH
+				type = annex_everything
+			}
+		}
+
+	}
+	focus = {
+		id = MCP_buk_kyung_to_railway
+		icon = GFX_fix_MCP_1
+		cost = 2
+		prerequisite = {
+			focus = MCP_economic_grow_50th_plan
+		}
+		x = 3
+		y = 3
+		completion_reward = {
+			create_wargoal = {
+				target = DHD
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = SHU
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = WUG
+				type = annex_everything
+			}
+		}
+
+	}
+	focus = {
+		id = MCP_3s_project
+		icon = GFX_fix_MCP_1
+		cost = 2
+		prerequisite = {
+			focus = MCP_economic_grow_50th_plan
+		}
+		x = 5
+		y = 3
+		completion_reward = {
+			create_wargoal = {
+				target = JAP
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = SAG
+				type = annex_everything
+			}
+		}
+
+	}
+	focus = {
+		id = MCP_oral_sex_isnt_sexual_contect
+		icon = GFX_fix_MCP_1
+		cost = 2
+		prerequisite = {
+			focus = MCP_3s_project
+		}
+		x = 5
+		y = 4
+		completion_reward = {
+			create_wargoal = {
+				target = MJT
+				type = annex_everything
+			}
+		}
+
+	}
+	focus = {
+		id = MCP_mechanic_caocao
+		icon = GFX_fix_MCP_1
+		cost = 2
+		prerequisite = {
+			focus = MCP_buk_kyung_to_railway
+		}
+		x = 3
+		y = 4
+		completion_reward = {
+			add_political_power = 120
+		}
+
+	}
+	focus = {
+		id = MCP_mongolian_surebakwi
+		icon = GFX_fix_MCP_1
+		cost = 2
+		prerequisite = {
+			focus = MCP_economic_grow_50th_plan
+		}
+		x = 7
+		y = 3
+		completion_reward = {
+			create_wargoal = {
+				target = UMA
+				type = annex_everything
+			}
+		}
+
+	}
+	focus = {
+		id = MCP_tsinggis_khan_praise
+		icon = GFX_fix_MCP_1
+		cost = 2
+		prerequisite = {
+			focus = MCP_mongolian_surebakwi
+		}
+		x = 7
+		y = 4
+		completion_reward = {
+			create_wargoal = {
+				target = TIB
+				type = annex_everything
+			}
+		}
+
+	}
+	focus = {
+		id = MCP_mechanized_korea
+		icon = GFX_fix_MCP_1
+		cost = 2
+		prerequisite = {
+			focus = MCP_tsinggis_khan_praise
+			focus = MCP_mechanic_caocao
+		}
+		prerequisite = {
+			focus = MCP_oral_sex_isnt_sexual_contect
+		}
+		x = 5
+		y = 5
+		completion_reward = {
+			army_experience = 1000
+			navy_experience = 1000
+			air_experience = 1000
+		}	
+
+	}
+	focus = {
+		id = MCP_new_order
+		icon = GFX_fix_MCP_1
+		cost = 2
+		prerequisite = {
+			focus = MCP_mechanized_korea
+		}
+		x = 5
+		y = 6
+		available = {
+			KOR = {
+				exists = no
+			}
+			JAP = {
+				exists = no
+			}
+			LMC = {
+				exists = no
+			}
+			KRH = {
+				exists = no
+			}
+			UMA = {
+				exists = no
+			}
+			TIB = {
+				exists = no
+			}
+			SAG = {
+				exists = no
+			}
+			MJT = {
+				exists = no
+			}
+		}
+		completion_reward = {
+			country_event = {
+				id = TLE_halloween_mcp.3
+			}
+		}
+
+	}
+	focus = {
+		id = MCP_chunghee_chakyuer
+		icon = GFX_fix_MCP_1
+		cost = 0.3
+		prerequisite = {
+			focus = MCP_new_order
+		}
+		x = 5
+		y = 7
+		available = {
+			KOR = {
+				exists = no
+			}
+			JAP = {
+				exists = no
+			}
+			LMC = {
+				exists = no
+			}
+			KRH = {
+				exists = no
+			}
+			UMA = {
+				exists = no
+			}
+			TIB = {
+				exists = no
+			}
+			SAG = {
+				exists = no
+			}
+			MJT = {
+				exists = no
+			}
+		}
+		completion_reward = {
+			country_event = {
+				id = TLE_halloween_mcp.4
+			}
+		}
+
+	}
+}

@@ -1,0 +1,419 @@
+﻿capital = 525
+
+oob = "KOR_1936"
+
+add_equipment_to_stockpile = {
+	type = infantry_equipment_0
+	amount = 6500
+	producer = KOR
+}
+add_equipment_to_stockpile = {
+	type = train_equipment_1
+	amount = 30
+	producer = KOR
+}
+
+add_equipment_to_stockpile = {
+	type = support_equipment_1
+	amount = 2500
+	producer = KOR
+}
+
+add_equipment_to_stockpile = {
+	type = artillery_equipment_1
+	amount = 1000
+	producer = KOR
+}
+#set_autonomy = {
+#	target = KYH
+#	autonomous_state = autonomy_puppet
+#}
+add_offsite_building = {
+	type = arms_factory
+	level = 1
+}
+add_offsite_building = {
+	type = industrial_complex
+	level = 2
+}
+set_research_slots = 4
+set_stability = 0.6 #시작시 11퍼, 전쟁 끝나도 21퍼;;
+set_war_support = 0.15
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_air_oob = "KOR_1936_air_bba"
+		set_technology = {
+			aa_lmg = 1
+			engines_1 = 1
+			engines_2 = 1
+			early_bombs = 1
+			aircraft_construction = 1
+			iw_small_airframe = 1
+			iw_medium_airframe = 1
+			basic_small_airframe = 1
+		}
+	else = {
+		set_air_oob = "KOR_1936_air_legacy"
+		set_technology = {
+			cv_early_fighter = 1
+			cv_CAS1 = 1
+			cv_naval_bomber1 = 1
+			early_fighter = 1
+			naval_bomber1 = 1
+			early_bomber = 1
+			CAS1 = 1
+		}
+	}
+}	
+set_technology = {
+	### 보병 ###
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	motorised_infantry = 1
+	tech_trucks = 1
+	marines  = 1
+	
+	### 기갑 ###
+	
+	### 지원 ###
+	tech_support = 1		
+	tech_recon = 1
+	tech_engineers = 1
+	
+	### 포병 ###
+	gw_artillery = 1
+	interwar_antiair = 1
+	
+	### 공군 ###
+	
+	### 육군 교리 ###
+	superior_firepower = 1
+	
+	### 산업/공학 ###
+	fuel_silos = 1
+	synth_oil_experiments = 1
+	fuel_refining = 1
+	
+	basic_train = 1
+}
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+	}
+	set_oob = "KOR_1936"
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
+	set_oob = "KOR_1936_nsb"
+}
+
+#해군(맨더건)"
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		basic_torpedo = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_heavy_battery = 1
+		basic_medium_battery = 1
+		improved_ship_torpedo_launcher = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		mtg_transport = 1
+		coastal_defense_ships = 1
+		basic_secondary_battery = 1
+		basic_depth_charges = 1
+		basic_cruiser_armor_scheme = 1
+		cruiser_submarines = 1
+	}
+	set_naval_oob = "KOR_1936_Naval"
+}
+
+#해군(호구 에디션)"
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		basic_heavy_cruiser = 1
+		early_battleship = 1
+		basic_battleship = 1
+		early_battlecruiser = 1
+		early_carrier = 1
+		basic_carrier = 1
+		transport = 1
+	}
+	set_naval_oob = "KOR_1936_Naval_Legacy"
+}
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	set_technology = {
+		armored_car1 = 1
+	}
+}
+
+show_ideas_tooltip = {
+	KOR_kepco
+}
+
+add_ideas = {
+	KOR_yi_won_emperor
+	#####게임 시작시 국민정신 ㅅㄱ#####
+	KOR_Weakening_the_kingship #근황파
+	KOR_militarism #군국주의
+	KOR_the_first_army #정치군인
+	
+	#법률
+	low_economic_mobilisation
+	limited_conscription
+	limited_exports
+	#confucian_press
+	#age_18
+	#군부
+	KOR_interservice_rivalry_balanced #군부대립
+}
+
+country_lock_all_division_template = yes
+set_convoys = 400
+
+recruit_character = EOK_ahn_junggeun
+recruit_character = EOK_lee_beomseok
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1932.3.8"
+	election_frequency = 60
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 0 #liberalism
+	fascism = 0 #nazism
+	communism = 0 #marxism
+	neutrality = 100 #despotism
+}
+
+
+#육군(원수)
+
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	create_equipment_variant = {
+		name = "천리마"
+		type = light_tank_chassis_0
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_heavy_machine_gun
+			turret_type_slot = tank_light_one_man_tank_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 1
+			tank_nsb_armor_upgrade = 1
+		}
+		obsolete = yes
+		icon = "gfx/interface/technologies/FKR_basic_light_tank.dds"
+	}
+	create_equipment_variant = {
+		name = "만리마"
+		type = medium_tank_chassis_0
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_close_support_gun
+			turret_type_slot = tank_medium_one_man_tank_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_diesel_engine
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 3
+			tank_nsb_armor_upgrade = 2
+		}
+		icon = "gfx/interface/technologies/FKR_basic_main_tank.dds"
+	}
+	create_equipment_variant = {
+		name = "흑표 제 1식"
+		type = light_tank_chassis_1
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_small_cannon
+			turret_type_slot = tank_light_one_man_tank_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_diesel_engine
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 2
+			tank_nsb_armor_upgrade = 2
+		}
+		icon = "gfx/interface/technologies/FKR_imp_light_tank.dds"
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns"}
+		#항모
+		create_equipment_variant = {
+			name = "이순신급"
+			type = ship_hull_carrier_conversion_bb
+			name_group = KOR_CV_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_deck_slot_1 = ship_deck_space
+				fixed_ship_deck_slot_2 = ship_deck_space
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = heavy_ship_engine_1
+				fixed_ship_secondaries_slot = empty
+				mid_1_custom_slot = ship_deck_space
+			}
+		}
+		create_equipment_variant = {
+			name = "태조대제급"
+			type = ship_hull_carrier_conversion_bb
+			name_group = KOR_CV_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_deck_slot_1 = ship_deck_space
+				fixed_ship_deck_slot_2 = ship_deck_space
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = heavy_ship_engine_1
+				fixed_ship_secondaries_slot = ship_secondaries_1
+				mid_1_custom_slot = ship_deck_space
+			}
+		}
+		#전함
+		create_equipment_variant = {
+			name = "광무황제급"
+			name_group = KOR_BB_HISTORICAL
+			type = ship_hull_heavy_1
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_heavy_battery_2
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = heavy_ship_engine_1
+				fixed_ship_secondaries_slot = ship_secondaries_1
+				fixed_ship_armor_slot = ship_armor_bb_1
+				front_1_custom_slot = empty
+				mid_1_custom_slot = ship_secondaries_1
+				mid_2_custom_slot = ship_airplane_launcher_1
+				rear_1_custom_slot = ship_heavy_battery_2
+			}
+		}
+		#중순양함	
+		create_equipment_variant = {
+			name = "태종대왕급"
+			type = ship_hull_cruiser_2
+			name_group = KOR_CA_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_medium_battery_2
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = cruiser_ship_engine_2
+				fixed_ship_armor_slot = ship_armor_cruiser_2
+				fixed_ship_secondaries_slot = ship_secondaries_1
+				front_1_custom_slot = ship_medium_battery_2
+				mid_1_custom_slot = ship_torpedo_1
+				mid_2_custom_slot = ship_torpedo_1
+				rear_1_custom_slot = ship_airplane_launcher_1
+			}
+		}
+		#경순양함
+		create_equipment_variant = {
+			name = "영조대왕급"
+			type = ship_hull_cruiser_1
+			name_group = KOR_CL_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_light_medium_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = cruiser_ship_engine_1
+				fixed_ship_armor_slot = ship_armor_cruiser_1
+				fixed_ship_secondaries_slot = empty
+				mid_1_custom_slot = empty
+				mid_2_custom_slot = empty
+				rear_1_custom_slot = empty
+			}
+		}
+		#구축함
+		create_equipment_variant = {
+			name = "장보고급"
+			type = ship_hull_light_2
+			name_group = KOR_DD_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_light_battery_2
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = light_ship_engine_2
+				fixed_ship_torpedo_slot = ship_torpedo_2
+				mid_1_custom_slot = ship_torpedo_2
+				rear_1_custom_slot = ship_depth_charge_1
+			}
+		}
+		#구축함2
+		create_equipment_variant = {
+			name = "경성급"
+			type = ship_hull_light_1
+			name_group = KOR_DD_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_light_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = light_ship_engine_1
+				fixed_ship_torpedo_slot = ship_torpedo_1
+				mid_1_custom_slot = ship_torpedo_1
+				rear_1_custom_slot = ship_depth_charge_1
+			}
+		}
+		#잠수함
+		create_equipment_variant = {
+			name = "이사부급"
+			type = ship_hull_submarine_1
+			name_group = KOR_SS_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_torpedo_slot = ship_torpedo_sub_1
+				fixed_ship_engine_slot = sub_ship_engine_1
+				rear_1_custom_slot = ship_mine_layer_sub
+			}
+		}
+}

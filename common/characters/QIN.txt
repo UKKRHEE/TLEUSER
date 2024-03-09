@@ -1,0 +1,78 @@
+characters={
+	QIN_puyi={
+		name="QIN_puyi"
+		portraits={
+			civilian={
+				large="gfx/leaders/QIN/Portrait_QIE_Puyi_Uniform.png"
+			}
+			army = {
+				large="gfx/leaders/QIN/Portrait_QIE_Puyi_Uniform.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+		}
+		field_marshal={
+			traits = { politically_connected media_personality }
+			skill = 6
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	QIN_aisin_gioro_pujie={
+		name=QIN_aisin_gioro_pujie
+		portraits={
+			army={
+				large="gfx/leaders/QIN/Portrait_MAN_Pujie.dds"
+				small="gfx/interface/ideas/QIN/idea_QIN_aisin_gioro_pujie.png"
+			}
+		}
+		corps_commander={
+			traits = { politically_connected media_personality old_guard }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	QIN_aisin_gioro_yuyan={
+		name=QIN_aisin_gioro_yuyan
+		portraits={
+			army={
+				large="gfx/leaders/QIN/Portrait_MAN_Aisin_Gioro_Yuyan.dds"
+				small="gfx/interface/ideas/QIN/idea_QIN_aisin_gioro_yuyan.png"
+			}
+		}
+		corps_commander={
+			traits={ politically_connected media_personality }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	QIN_aisin_gioro_xiqia={
+		name=QIN_aisin_gioro_xiqia
+		portraits={
+			army={
+				large="GFX_portrait_man_aisin_gioro_xiqia"
+				small="GFX_idea_MAN_aisin_gioro_xiqia"
+			}
+		}
+		corps_commander={
+			traits={ career_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+}

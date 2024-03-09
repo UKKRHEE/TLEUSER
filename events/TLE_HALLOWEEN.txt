@@ -1,0 +1,468 @@
+###########################
+# JaPaN EVENTS #########
+###########################
+
+add_namespace = TLE_halloween
+add_namespace = TLE_halloween_jap
+add_namespace = TLE_halloween_kor
+add_namespace = TLE_halloween_krh
+add_namespace = TLE_halloween_mcp
+add_namespace = TLE_halloween_mjt
+add_namespace = TLE_halloween_lmc
+
+####
+country_event = { #안경을 잃어버린 히로히토
+	id = TLE_halloween.1
+	title = TLE_halloween.1.t
+	desc = TLE_halloween.1.desc
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+	#fire_only_once = yes
+
+	option = {
+		name = TLE_halloween.1.a
+		KOR = {
+			change_tag_from = ROOT
+		}
+	}
+	option = {
+		name = TLE_halloween.1.b
+		MCP = {
+			change_tag_from = ROOT
+		}
+	}
+	option = {
+		name = TLE_halloween.1.c
+		trigger = {
+			LMC = {
+				exists = yes
+			}
+		}
+		LMC = {
+			change_tag_from = ROOT
+		}
+	}
+	option = {
+		name = TLE_halloween.1.d
+		JAP = {
+			change_tag_from = ROOT
+		}
+	}
+	option = {
+		name = TLE_halloween.1.e
+		MJT = {
+			change_tag_from = ROOT
+		}
+	}
+	option = {
+		name = TLE_halloween.1.f
+		KRH = {
+			change_tag_from = ROOT
+		}
+	}
+}
+####
+country_event = { #안경을 잃어버린 히로히토
+	id = TLE_halloween_jap.1
+	title = TLE_halloween_jap.1.t
+	desc = TLE_halloween_jap.1.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+	#fire_only_once = yes
+
+	option = {
+		name = TLE_halloween_jap.1.a
+		retire_character = JAP_hideki_tojo
+	}
+}
+country_event = { #형 지금 존나 화났다
+	id = TLE_halloween_jap.2
+	title = TLE_halloween_jap.2.t
+	desc = TLE_halloween_jap.2.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+	#fire_only_once = yes
+
+	option = {
+		name = TLE_halloween_jap.2.a
+	}
+}
+country_event = { #형 지금 존나 화났다
+	id = TLE_halloween_jap.3
+	title = TLE_halloween_jap.3.t
+	desc = TLE_halloween_jap.3.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+	#fire_only_once = yes
+
+	option = {
+		name = TLE_halloween_jap.3.a
+	}
+}
+country_event = { #굴다리로 튀어와라
+	id = TLE_halloween_jap.4
+	title = TLE_halloween_jap.4.t
+	desc = TLE_halloween_jap.4.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+	#fire_only_once = yes
+
+	option = {
+		name = TLE_halloween_jap.4.a
+	}
+}
+country_event = { #자물쇠가 안풀리는데요?
+	id = TLE_halloween_jap.5
+	title = TLE_halloween_jap.5.t
+	desc = TLE_halloween_jap.5.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+	#fire_only_once = yes
+
+	option = {
+		name = TLE_halloween_jap.5.a
+	}
+}
+country_event = { #씨발 그럼 어떻게 하라는거야!
+	id = TLE_halloween_jap.6
+	title = TLE_halloween_jap.6.t
+	desc = TLE_halloween_jap.6.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+	#fire_only_once = yes
+
+	option = {
+		name = TLE_halloween_jap.6.a
+	}
+}
+country_event = { #새 안경이나 주문해야죠 뭐...
+	id = TLE_halloween_jap.7
+	title = TLE_halloween_jap.7.t
+	desc = TLE_halloween_jap.7.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+	#fire_only_once = yes
+
+	option = {
+		name = TLE_halloween_jap.7.a
+	}
+}
+country_event = { #안경.. 재료가... 없답니다..
+	id = TLE_halloween_jap.8
+	title = TLE_halloween_jap.8.t
+	desc = TLE_halloween_jap.8.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+	#fire_only_once = yes
+
+	option = {
+		name = TLE_halloween_jap.8.a
+		set_portraits = {
+			character = JAP_emperor_hirohito
+			civilian = { 
+				large =large="gfx/leaders/JAP/Portrait_JAP_showa_hirohito.png"
+			}
+		}
+	}
+}
+country_event = { #나가사키에는 뭐라도 있지 않을까...
+	id = TLE_halloween_jap.9
+	title = TLE_halloween_jap.9.t
+	desc = TLE_halloween_jap.9.d
+	picture = GFX_event_japan_1100
+
+	is_triggered_only = yes
+	#fire_only_once = yes
+
+	option = {
+		name = TLE_halloween_jap.9.a
+		custom_effect_tooltip = EVENT_TLE_halloween_jap_9
+	}
+}
+####
+country_event = { #메카 대통령 부활
+	id = TLE_halloween_mcp.1
+	title = TLE_halloween_mcp.1.t
+	desc = TLE_halloween_mcp.1.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+	#fire_only_once = yes
+
+	option = {
+		name = TLE_halloween_mcp.1.a
+	}
+}
+country_event = { #박근혜 공주님 석방 ㅋㅋ
+	id = TLE_halloween_mcp.2
+	title = TLE_halloween_mcp.2.t
+	desc = TLE_halloween_mcp.2.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+	#fire_only_once = yes
+
+	option = {
+		name = TLE_halloween_mcp.2.a
+	}
+}
+country_event = { #
+	id = TLE_halloween_mcp.3
+	title = TLE_halloween_mcp.3.t
+	desc = TLE_halloween_mcp.3.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+	#fire_only_once = yes
+
+	option = {
+		name = TLE_halloween_mcp.3.a
+	}
+}
+country_event = { #
+	id = TLE_halloween_mcp.4
+	title = TLE_halloween_mcp.4.t
+	desc = TLE_halloween_mcp.4.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+	#fire_only_once = yes
+
+	option = {
+		name = TLE_halloween_mcp.4.a
+		retire_character = MCP_park_chunghee
+		add_country_leader_role = {
+			character = MCP_park_gongju
+			desc=""
+			country_leader = {
+				#expire = "1965.1.1"
+				ideology = despotism
+				traits = { MCP_chicken_trait }
+			}
+			promote_leader = yes
+		}
+	}
+}
+#틀딱정부 (KRH)
+country_event = { #저승에서 돌아온 영락대제
+	id = TLE_halloween_KRH.1
+	title = TLE_halloween_KRH.1.t
+	desc = TLE_halloween_KRH.1.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+	#fire_only_once = yes
+
+	option = {
+		name = TLE_halloween_KRH.1.a
+	}
+}
+country_event = { #차례상 내와라!
+	id = TLE_halloween_KRH.2
+	title = TLE_halloween_KRH.2.t
+	desc = TLE_halloween_KRH.2.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+	#fire_only_once = yes
+
+	option = {
+		name = TLE_halloween_KRH.2.a
+	}
+}
+country_event = { #차례상 내와라!
+	id = TLE_halloween_KRH.3
+	title = TLE_halloween_KRH.3.t
+	desc = TLE_halloween_KRH.3.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+	#fire_only_once = yes
+
+	option = {
+		name = TLE_halloween_KRH.3.a
+	}
+}
+country_event = { #차례상 내와라!
+	id = TLE_halloween_KRH.4
+	title = TLE_halloween_KRH.4.t
+	desc = TLE_halloween_KRH.4.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+	#fire_only_once = yes
+
+	option = {
+		name = TLE_halloween_KRH.4.a
+	}
+}
+country_event = { #차례상 내와라!
+	id = TLE_halloween_KRH.5
+	title = TLE_halloween_KRH.5.t
+	desc = TLE_halloween_KRH.5.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+	#fire_only_once = yes
+
+	option = {
+		name = TLE_halloween_KRH.5.a
+		custom_effect_tooltip = EVENT_TLE_halloween_KRH_5
+	}
+}
+#은하정부
+country_event = { #시발 이게뭐노
+	id = TLE_halloween_kor.1
+	title = TLE_halloween_kor.1.t
+	desc = TLE_halloween_kor.1.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+	#fire_only_once = yes
+
+	option = {
+		name = TLE_halloween_kor.1.a
+		add_political_power = 150
+	}
+}
+country_event = { #제위를 계승중입니다
+	id = TLE_halloween_kor.2
+	title = TLE_halloween_kor.2.t
+	desc = TLE_halloween_kor.2.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+	#fire_only_once = yes
+
+	option = {
+		name = TLE_halloween_kor.2.a
+		retire_character = KOR_emperor_yi_jin
+		swap_ideas = {
+			add_idea = KOR_yi_hyul
+			remove_idea = KOR_yi_jin
+		}
+		add_country_leader_role = {
+			character = KOR_emperor_yi_hyul
+			desc=""
+			country_leader = {
+				#expire = "1965.1.1"
+				ideology = despotism
+				traits = { KORHALLOWEEN_yihyul_1 }
+			}
+			promote_leader = yes
+		}
+		add_country_leader_role = {
+			character = KOR_emperor_yi_hyul
+			desc=""
+			country_leader = {
+				#expire = "1965.1.1"
+				ideology = ultranationalism
+				traits = { KORHALLOWEEN_yihyul_1 }
+			}
+			promote_leader = yes
+		}
+	}
+}
+country_event = { #나는 종묘를 사랑해
+	id = TLE_halloween_kor.3
+	title = TLE_halloween_kor.3.t
+	desc = TLE_halloween_kor.3.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+	#fire_only_once = yes
+
+	option = {
+		name = TLE_halloween_kor.3.a
+		army_experience = 100
+	}
+}
+country_event = { #민주주의도 사랑해
+	id = TLE_halloween_kor.4
+	title = TLE_halloween_kor.4.t
+	desc = TLE_halloween_kor.4.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+	#fire_only_once = yes
+
+	option = {
+		name = TLE_halloween_kor.4.a
+		set_cosmetic_tag = KOR_HALLOWEEN_2
+	}
+}
+country_event = { #새로운 희망
+	id = TLE_halloween_kor.5
+	title = TLE_halloween_kor.5.t
+	desc = TLE_halloween_kor.5.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+	#fire_only_once = yes
+
+	option = {
+		name = TLE_halloween_kor.5.a
+		create_wargoal = {
+			target = SAG
+			type = annex_everything
+		}
+	}
+}
+country_event = { #무다구치 요다
+	id = TLE_halloween_kor.6
+	title = TLE_halloween_kor.6.t
+	desc = TLE_halloween_kor.6.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+	#fire_only_once = yes
+
+	option = {
+		name = TLE_halloween_kor.6.a
+		custom_effect_tooltip = EVENT_TLE_halloween_kor_6
+	}
+}
+country_event = { #무다구치 요다
+	id = TLE_halloween_kor.7
+	title = TLE_halloween_kor.7.t
+	desc = TLE_halloween_kor.7.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+	#fire_only_once = yes
+
+	option = {
+		name = TLE_halloween_kor.7.a
+		custom_effect_tooltip = EVENT_TLE_halloween_kor_7
+		retire_character = KOR_emperor_yi_hyul
+		add_country_leader_role = {
+			character = KOR_yi_wu
+			desc=""
+			country_leader = {
+				#expire = "1965.1.1"
+				ideology = despotism
+				traits = { }
+			}
+			promote_leader = yes
+		}
+		add_country_leader_role = {
+			character = KOR_yi_wu
+			desc=""
+			country_leader = {
+				#expire = "1965.1.1"
+				ideology = ultranationalism
+				traits = { }
+			}
+			promote_leader = yes
+		}
+	}
+}

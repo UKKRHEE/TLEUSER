@@ -1,0 +1,70 @@
+characters={
+	PRK_pak_hon_yong={
+		name="PRK_pak_hon_yong"
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/Portrait_KOR_Pak_Honyong.png"
+			}
+		}
+		country_leader={
+			ideology=marxism
+			traits={ }
+			id=-1
+		}
+	}
+	PRK_kim_sungju={
+		name="PRK_kim_sungju"
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/Portrait_KOR_Kim_Il_sung.png"
+			}
+		}
+		country_leader={
+			ideology=ultranationalism
+			traits={ }
+			id=-1
+		}
+	}
+	PRK_yeo_woonhyung={
+		name="PRK_yeo_woonhyung"
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/Portrait_leader_yeo_woonhyung.png"
+			}
+		}
+		country_leader={
+			ideology=socialism
+			traits={ }
+			id=-1
+		}
+	}
+	PRK_yi_kiyong={
+		name="PRK_yi_kiyong"
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/Portrait_KOR_yi_kiyong.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			id=-1
+		}
+	}
+	PRK_yi_geon={
+		name="PRK_yi_geon"
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/Portrait_KOR_yi_geon.png"
+			}
+		}
+		corps_commander={
+			traits = { politically_connected brilliant_strategist armor_officer }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+}

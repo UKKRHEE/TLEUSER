@@ -1,0 +1,1425 @@
+﻿###########################
+# Chinese Events
+###########################
+
+add_namespace = KMT
+
+country_event = {
+	id = KMT.1
+	title = KMT.1.t
+	desc = KMT.1.d
+	picture = GFX_report_event_german_detained_china
+	immediate = {
+		hidden_effect = {
+			load_oob=CHI_focus_a
+		}
+	}
+	is_triggered_only = yes
+	
+	option = {
+		name = KMT.1.a
+		hidden_effect = {
+			load_oob=CHI_focus_a
+		}
+	}
+}
+
+country_event = {
+	id = KMT.2
+	title = KMT.2.t
+	desc = KMT.2.d
+	picture = GFX_report_event_german_detained_china
+	
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			load_oob=CHI_focus_b
+		}
+	}
+	
+	option = {
+		name = KMT.2.a
+		remove_ideas = CHI_AEP1
+		hidden_effect = {
+			load_oob=CHI_focus_b
+		}
+	}
+}
+
+
+country_event = {
+	id = KMT.3
+	title = KMT.3.t
+	desc = KMT.3.d
+	picture = GFX_report_event_german_detained_china
+	
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			load_oob=CHI_focus_c
+		}
+	}
+	
+	option = {
+		name = KMT.3.a
+		hidden_effect = {
+			load_oob=CHI_focus_c
+		}
+	}
+}
+
+
+country_event = {
+	id = KMT.4
+	title = KMT.4.t
+	desc = KMT.4.d
+	picture = GFX_report_event_german_detained_china
+	
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			load_oob=CHI_focus_d
+		}
+	}
+	
+	option = {
+		name = KMT.4.a
+		hidden_effect = {
+			load_oob=CHI_focus_d
+		}
+	}
+}
+
+country_event = {
+	id = KMT.5
+	title = KMT.5.t
+	desc = KMT.5.d
+	picture = GFX_report_event_german_detained_china
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = KMT.5.a
+	}
+}
+
+country_event = { ##반조계 폭동
+	id = KMT.6
+	title = KMT.6.t
+	desc = KMT.6.d
+	picture = GFX_report_event_german_detained_china
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = KMT.6.a
+	}
+}
+
+country_event = { ##광범위한 몰수
+	id = KMT.7
+	title = KMT.7.t
+	desc = KMT.7.d
+	picture = GFX_report_event_german_detained_china
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = KMT.7.a
+	}
+}
+
+country_event = { ##복건 국민당의 운명
+	id = KMT.8
+	title = KMT.8.t
+	desc = KMT.8.d
+	picture = GFX_report_event_china_infiltration
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = KMT.8.a
+		PRC = {
+			every_character = {
+				set_nationality = CHI
+			}
+			every_unit_leader = {
+				set_nationality = CHI
+			}
+		}		
+		CHI = {
+			annex_country = {
+				target = PRC
+				transfer_troops = yes
+			}
+		}
+	}
+}
+
+country_event = { ## 광시의 불안
+	id = KMT.9
+	title = KMT.9.t
+	desc = KMT.9.d
+	picture = GFX_report_event_german_detained_china
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = KMT.9.a
+	}
+}
+
+
+country_event = { ## 광시의 불안
+	id = KMT.10
+	title = KMT.10.t
+	desc = KMT.10.d
+	picture = GFX_report_event_german_detained_china
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = KMT.10.a
+		custom_effect_tooltip = kmt_intro_victory
+		hidden_effect = {
+		swap_ideas = {
+				remove_idea = CHI_NRA1_idea
+				add_idea = CHI_NRA2_idea
+				}
+		add_ideas = CHI_national_revolution1
+		add_ideas = CHI_economic_death
+		}
+	}
+}
+
+country_event = { ## 제5차 전국대표회의 소집
+	id = KMT.11
+	title = KMT.11.t
+	desc = KMT.11.d
+	picture = GFX_report_event_german_detained_china
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = KMT.11.a
+		country_event = {
+			id = KMT.12
+			days = 7
+		}
+	}
+}
+country_event = { ## 국민당의 정체성
+	id = KMT.12
+	title = KMT.12.t
+	desc = KMT.12.d
+	picture = GFX_report_event_german_detained_china
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = KMT.12.a
+		country_event = {
+			id = KMT.13
+			days = 7
+		}
+	}
+}
+country_event = { ## 임시수도 난징?
+	id = KMT.13
+	title = KMT.13.t
+	desc = KMT.13.d
+	picture = GFX_report_event_german_detained_china
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = KMT.13.a
+		set_capital = { state = 613 }
+		country_event = {
+			id = KMT.14
+			days = 7
+		}
+	}
+}
+country_event = { ## 국민혁명군의 방향
+	id = KMT.14
+	title = KMT.14.t
+	desc = KMT.14.d
+	picture = GFX_report_event_german_detained_china
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = KMT.14.a
+		country_event = {
+			id = KMT.15
+			days = 7
+		}
+	}
+}
+country_event = { ## 혁명의 완수를 위해
+	id = KMT.15
+	title = KMT.15.t
+	desc = KMT.15.d
+	picture = GFX_report_event_german_detained_china
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = KMT.15.a
+		country_event = {
+			id = KMT.16
+			days = 3
+		}
+	}
+}
+
+country_event = { ## 갑작스러운 폭발
+	id = KMT.16
+	title = KMT.16.t
+	desc = KMT.16.d
+	picture = GFX_report_event_german_detained_china
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = KMT.16.a
+		country_event = {
+			id = KMT.17
+			days = 1
+		}
+	}
+}
+
+country_event = { ## 수사 그러나 광시군 습격
+	id = KMT.17
+	title = KMT.17.t
+	desc = KMT.17.d
+	picture = GFX_report_event_german_detained_china
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = KMT.17.a
+		country_event = {
+			id = KMT.18
+			days = 1
+		}
+	}
+}
+
+country_event = { ## 격퇴
+	id = KMT.18
+	title = KMT.18.t
+	desc = KMT.18.d
+	picture = GFX_report_event_german_detained_china
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = KMT.18.a
+		add_manpower = -381
+		country_event = {
+			id = KMT.19
+			days = 2
+		}	
+	}
+}
+
+country_event = { ## 내전
+	id = KMT.19
+	title = KMT.19.t
+	desc = KMT.19.d
+	picture = GFX_report_event_german_detained_china
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = KMT.19.a
+		declare_war_on = {
+    		target = GXC
+    		type = annex_everything
+		}
+	}
+}
+
+country_event = { ## 재통합
+	id = KMT.20
+	title = KMT.20.t
+	desc = KMT.20.d
+	picture = GFX_report_event_german_detained_china
+	trigger = {
+		tag = CHI
+		GXC = {
+			exists = no
+		}
+		NOT = {
+			has_country_flag = KMT_20_FLAG
+		}
+	}
+	
+	option = {
+		name = KMT.20.a
+		add_state_core = 599
+		add_state_core = 594
+		set_country_flag = KMT_20_FLAG
+		swap_ideas = {
+			remove_idea = CHI_kuomintang_spark
+			add_idea = CHI_kuomintang_rise
+		}
+	}
+}
+
+country_event = { ## 후난으로 간 마오쩌둥 동지
+	id = KMT.21
+	title = KMT.21.t
+	desc = KMT.21.d
+	picture = GFX_report_event_german_detained_china
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = KMT.21.a
+	}
+}
+
+country_event = { ## 관료제 재조직
+	id = KMT.22
+	title = KMT.22.t
+	desc = KMT.22.d
+	picture = GFX_report_event_german_detained_china
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = KMT.22.a
+		add_political_power = 60
+		add_stability = -0.02
+	}
+}
+
+country_event = { ## 임시 입법원 구성
+	id = KMT.23
+	title = KMT.23.t
+	desc = KMT.23.d
+	picture = GFX_report_event_german_detained_china
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = KMT.23.a
+	}
+}
+
+country_event = { ## 신생활혁명의 방향
+	id = KMT.24
+	title = KMT.24.t
+	desc = KMT.24.d
+	picture = GFX_report_event_german_detained_china
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = KMT.24.a
+	}
+}
+
+country_event = { ## 구체제와의 타협?
+	id = KMT.25
+	title = KMT.25.t
+	desc = KMT.25.d
+	picture = GFX_report_event_german_detained_china
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = KMT.25.a
+	}
+}
+
+country_event = { ## 토지 개혁의 방향성
+	id = KMT.26
+	title = KMT.26.t
+	desc = KMT.26.d
+	picture = GFX_report_event_german_detained_china
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = KMT.26.a
+	}
+}
+
+country_event = { ## 국가 보건 서비스 설립
+	id = KMT.27
+	title = KMT.27.t
+	desc = KMT.27.d
+	picture = GFX_report_event_german_detained_china
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = KMT.27.a
+	}
+}
+
+country_event = { ## 교육 확대
+	id = KMT.28
+	title = KMT.28.t
+	desc = KMT.28.d
+	picture = GFX_report_event_german_detained_china
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = KMT.28.a
+	}
+}
+
+country_event = { ## 항한전쟁
+	id = KMT.29
+	title = KMT.29.t
+	desc = KMT.29.d
+	picture = GFX_report_event_german_detained_china
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = KMT.29.a
+	}
+}
+
+country_event = { ## 폭풍이 다가오다
+	id = KMT.30
+	title = KMT.30.t
+	desc = KMT.30.d
+	picture = GFX_report_event_german_detained_china
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = KMT.30.a
+		set_country_flag = KMT_for_country
+	}
+	
+	option = {
+		name = KMT.30.b
+		set_country_flag = KMT_for_party
+	}
+}
+
+country_event = { ## 홀로 고립되어
+	id = KMT.31
+	title = KMT.31.t
+	desc = KMT.31.d
+	picture = GFX_report_event_german_detained_china
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = KMT.31.a
+	}
+}
+
+country_event = { ## 연합전선 논의
+	id = KMT.32
+	title = KMT.32.t
+	desc = KMT.32.d
+	picture = GFX_report_event_german_detained_china
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = KMT.32.a
+	}
+}
+
+
+country_event = { ## 계속되는 항전
+	id = KMT.33
+	title = KMT.33.t
+	desc = KMT.33.d
+	picture = GFX_report_event_german_detained_china
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = KMT.33.a
+	}
+}
+
+
+country_event = { ## 승리
+	id = KMT.34
+	title = KMT.34.t
+	desc = KMT.34.d
+	picture = GFX_report_event_german_detained_china
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = KMT.34.a
+	}
+}
+
+########## 중국 내전 포커스 ############
+country_event = { ## 3차 북벌 준비
+	id = KMT.100
+	title = KMT.100.t
+	desc = KMT.100.d
+	picture = GFX_report_event_german_detained_china
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = KMT.100.a
+	}
+}
+country_event = { ## 모택동 동지
+	id = KMT.101
+	title = KMT.101.t
+	desc = KMT.101.d
+	picture = GFX_report_event_german_detained_china
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = KMT.101.a
+		add_war_support = 0.05
+	}
+}
+country_event = { ## 거대한 약속
+	id = KMT.102
+	title = KMT.102.t
+	desc = KMT.102.d
+	picture = GFX_report_event_german_detained_china
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = KMT.102.a
+		add_timed_idea = {
+			idea = CHI_sleeping_dragon
+			days = 365
+		}
+	}
+}
+country_event = { ## 거대한 약속
+	id = KMT.103
+	title = KMT.103.t
+	desc = KMT.103.d
+	picture = GFX_report_event_german_detained_china
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = KMT.102.a
+		ZLC = {
+			add_stability = -0.05
+		}
+	}
+}
+######### 북양&국민당 파킨 ############
+country_event = { ## 국민당 파킨
+	id = KMT.120
+	title = KMT.120.t
+	desc = KMT.120.d
+	picture = GFX_report_event_german_detained_china
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	
+	option = {
+		name = KMT.120.a
+		CHI = {
+			create_wargoal = {
+				target = GDC
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = GXC
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = YUN
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = GZC
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = HNC
+				type = annex_everything
+			}
+			transfer_state = 613
+			transfer_state = 1038
+			transfer_state = 1037
+			transfer_state = 1036
+			transfer_state = 596
+			transfer_state = 1042
+			transfer_state = 1041
+			transfer_state = 749
+			transfer_state = 1043
+			transfer_state = 595
+			transfer_state = 1055
+			transfer_state = 1044
+			transfer_state = 1061
+			transfer_state = 600
+			transfer_state = 1062
+		}
+		hidden_effect = {
+			GDC = {
+				transfer_state = 593
+				transfer_state = 592
+				transfer_state = 1046
+				transfer_state = 971
+				transfer_state = 728
+				transfer_state = 1045
+				transfer_state = 591
+				add_state_core = 593
+				add_state_core = 592
+				add_state_core = 1046
+				add_state_core = 971
+				add_state_core = 728
+				add_state_core = 1045
+				add_state_core = 591
+				retire_character = GDC_song_hoseong
+				add_country_leader_role = {
+					Character = GDC_chen_jitang
+					country_leader = {
+						#expire = "1965.1.1"
+						ideology = despotism
+						traits = { }
+					}
+					promote_leader = yes
+				}	
+				add_country_leader_role = {
+					Character = GDC_chen_jitang
+					country_leader = {
+						#expire = "1965.1.1"
+						ideology = rexism
+						traits = { }
+					}
+					promote_leader = yes
+				}	
+				set_politics = {
+					ruling_party = neutrality
+					last_election = "1936.1.1"
+					election_frequency = 48
+					elections_allowed = yes
+				}
+				set_party_name = {
+					ideology = neutrality
+					long_name = "GDC_clique_party_long"
+					name = "GDC_clique_party"
+				}
+				set_party_name = {
+					ideology = fascism
+					long_name = "GDC_clique_party_long"
+					name = "GDC_clique_party"
+				}
+				set_popularities = {
+					democratic = 0
+					fascism = 0
+					communism = 0
+					neutrality = 100
+				}
+				division_template = {
+					name = "광동군"
+					regiments = {
+						infantry = {
+							x = 0
+							y = 0
+						}
+						infantry = {
+							x = 0
+							y = 1
+						}
+						infantry = {
+							x = 1
+							y = 0
+						}
+						infantry = {
+							x = 1
+							y = 1
+						}
+						infantry = {
+							x = 2
+							y = 0
+						}
+						infantry = {
+							x = 2
+							y = 1
+						}
+					}
+				}
+				random_state = {
+					prioritize = { 592 }
+					create_unit = {
+						division = "name = \"광동군\" division_template = \"광동군\" start_experience_factor = 0.6"
+						owner = GDC
+					}
+					create_unit = {
+						division = "name = \"광동군\" division_template = \"광동군\" start_experience_factor = 0.6"
+						owner = GDC
+					}
+					create_unit = {
+						division = "name = \"광동군\" division_template = \"광동군\" start_experience_factor = 0.6"
+						owner = GDC
+					}
+					create_unit = {
+						division = "name = \"광동군\" division_template = \"광동군\" start_experience_factor = 0.6"
+						owner = GDC
+					}
+					create_unit = {
+						division = "name = \"광동군\" division_template = \"광동군\" start_experience_factor = 0.6"
+						owner = GDC
+					}
+				}	
+				random_state = {
+					prioritize = { 593 }
+					create_unit = {
+						division = "name = \"광동군\" division_template = \"광동군\" start_experience_factor = 0.6"
+						owner = GDC
+					}
+					create_unit = {
+						division = "name = \"광동군\" division_template = \"광동군\" start_experience_factor = 0.6"
+						owner = GDC
+					}
+					create_unit = {
+						division = "name = \"광동군\" division_template = \"광동군\" start_experience_factor = 0.6"
+						owner = GDC
+					}
+					create_unit = {
+						division = "name = \"광동군\" division_template = \"광동군\" start_experience_factor = 0.6"
+						owner = GDC
+					}
+					create_unit = {
+						division = "name = \"광동군\" division_template = \"광동군\" start_experience_factor = 0.6"
+						owner = GDC
+					}
+				}	
+			}
+			GXC = {
+				set_cosmetic_tag = GXC
+				transfer_state = 599
+				transfer_state = 594
+				division_template = {
+					name = "광서군"
+					regiments = {
+						infantry = {
+							x = 0
+							y = 0
+						}
+						infantry = {
+							x = 0
+							y = 1
+						}
+						infantry = {
+							x = 1
+							y = 0
+						}
+						infantry = {
+							x = 1
+							y = 1
+						}
+						infantry = {
+							x = 2
+							y = 0
+						}
+						infantry = {
+							x = 2
+							y = 1
+						}
+					}
+				}
+				random_state = {
+					prioritize = { 599 }
+					create_unit = {
+						division = "name = \"광서군\" division_template = \"광서군\" start_experience_factor = 0.6"
+						owner = GXC
+					}
+					create_unit = {
+						division = "name = \"광서군\" division_template = \"광서군\" start_experience_factor = 0.6"
+						owner = GXC
+					}
+					create_unit = {
+						division = "name = \"광서군\" division_template = \"광서군\" start_experience_factor = 0.6"
+						owner = GXC
+					}
+					create_unit = {
+						division = "name = \"광서군\" division_template = \"광서군\" start_experience_factor = 0.6"
+						owner = GXC
+					}
+					create_unit = {
+						division = "name = \"광서군\" division_template = \"광서군\" start_experience_factor = 0.6"
+						owner = GXC
+					}
+					create_unit = {
+						division = "name = \"광서군\" division_template = \"광서군\" start_experience_factor = 0.6"
+						owner = GXC
+					}
+					create_unit = {
+						division = "name = \"광서군\" division_template = \"광서군\" start_experience_factor = 0.6"
+						owner = GXC
+					}
+					create_unit = {
+						division = "name = \"광서군\" division_template = \"광서군\" start_experience_factor = 0.6"
+						owner = GXC
+					}
+				}	
+			}
+			GZC = {
+				transfer_state = 1053
+				transfer_state = 603
+				transfer_state = 1058
+				division_template = {
+					name = "귀주군"
+					regiments = {
+						infantry = {
+							x = 0
+							y = 0
+						}
+						infantry = {
+							x = 0
+							y = 1
+						}
+						infantry = {
+							x = 1
+							y = 0
+						}
+						infantry = {
+							x = 1
+							y = 1
+						}
+						infantry = {
+							x = 2
+							y = 0
+						}
+						infantry = {
+							x = 2
+							y = 1
+						}
+					}
+				}
+				random_state = {
+					prioritize = { 1053 }
+					create_unit = {
+						division = "name = \"귀주군\" division_template = \"귀주군\" start_experience_factor = 0.6"
+						owner = GZC
+					}
+					create_unit = {
+						division = "name = \"귀주군\" division_template = \"귀주군\" start_experience_factor = 0.6"
+						owner = GZC
+					}
+					create_unit = {
+						division = "name = \"귀주군\" division_template = \"귀주군\" start_experience_factor = 0.6"
+						owner = GZC
+					}
+					create_unit = {
+						division = "name = \"귀주군\" division_template = \"귀주군\" start_experience_factor = 0.6"
+						owner = GZC
+					}
+					create_unit = {
+						division = "name = \"귀주군\" division_template = \"귀주군\" start_experience_factor = 0.6"
+						owner = GZC
+					}
+					create_unit = {
+						division = "name = \"귀주군\" division_template = \"귀주군\" start_experience_factor = 0.6"
+						owner = GZC
+					}
+					create_unit = {
+						division = "name = \"귀주군\" division_template = \"귀주군\" start_experience_factor = 0.6"
+						owner = GZC
+					}
+					create_unit = {
+						division = "name = \"귀주군\" division_template = \"귀주군\" start_experience_factor = 0.6"
+						owner = GZC
+					}
+				}	
+			}
+			YUN = {
+				transfer_state = 325
+				transfer_state = 747
+				transfer_state = 1010
+				transfer_state = 1013
+				load_oob="YUN_1936"
+			}
+		}
+	}
+}
+country_event = { ## 북양 파킨
+	id = KMT.121
+	title = KMT.121.t
+	desc = KMT.121.d
+	picture = GFX_report_event_german_detained_china
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = KMT.121.a
+		hidden_effect = {
+			country_event = {
+				id = joseon.22
+			}
+			SND = {
+				set_cosmetic_tag = SND_IND
+				transfer_state = 973
+				transfer_state = 1050
+				transfer_state = 597
+				transfer_state = 1049
+				transfer_state = 1035
+				transfer_state = 1034
+				transfer_state = 1004
+				transfer_state = 743
+				division_template = {
+					name = "산동군"
+					regiments = {
+						infantry = {
+							x = 0
+							y = 0
+						}
+						infantry = {
+							x = 0
+							y = 1
+						}
+						infantry = {
+							x = 1
+							y = 0
+						}
+						infantry = {
+							x = 1
+							y = 1
+						}
+						infantry = {
+							x = 2
+							y = 0
+						}
+						infantry = {
+							x = 2
+							y = 1
+						}
+					}
+				}
+				random_state = {
+					prioritize = { 597 }
+					create_unit = {
+						division = "name = \"산동군\" division_template = \"산동군\" start_experience_factor = 0.6"
+						owner = SND
+					}
+					create_unit = {
+						division = "name = \"산동군\" division_template = \"산동군\" start_experience_factor = 0.6"
+						owner = SND
+					}
+					create_unit = {
+						division = "name = \"산동군\" division_template = \"산동군\" start_experience_factor = 0.6"
+						owner = SND
+					}
+					create_unit = {
+						division = "name = \"산동군\" division_template = \"산동군\" start_experience_factor = 0.6"
+						owner = SND
+					}
+					create_unit = {
+						division = "name = \"산동군\" division_template = \"산동군\" start_experience_factor = 0.6"
+						owner = SND
+					}
+					create_unit = {
+						division = "name = \"산동군\" division_template = \"산동군\" start_experience_factor = 0.6"
+						owner = SND
+					}
+					create_unit = {
+						division = "name = \"산동군\" division_template = \"산동군\" start_experience_factor = 0.6"
+						owner = SND
+					}
+					create_unit = {
+						division = "name = \"산동군\" division_template = \"산동군\" start_experience_factor = 0.6"
+						owner = SND
+					}
+					create_unit = {
+						division = "name = \"산동군\" division_template = \"산동군\" start_experience_factor = 0.6"
+						owner = SND
+					}
+				}	
+			}
+			SZY = {
+				set_cosmetic_tag = SZY_IND
+				transfer_state = 608
+				transfer_state = 609
+				transfer_state = 1012
+				transfer_state = 970
+				transfer_state = 614
+				transfer_state = 974
+				transfer_state = 1033
+				add_state_core = 608
+				add_state_core = 609
+				add_state_core = 1012
+				add_state_core = 970
+				add_state_core = 614
+				add_state_core = 974
+				add_state_core = 1033
+				retire_character = SZY_park_yongman
+				add_country_leader_role = {
+					Character = SZY_zhang_jinghui
+					country_leader = {
+						#expire = "1965.1.1"
+						ideology = despotism
+						traits = { }
+					}
+					promote_leader = yes
+				}	
+				set_politics = {
+					ruling_party = neutrality
+					last_election = "1936.1.1"
+					election_frequency = 48
+					elections_allowed = yes
+				}
+				set_popularities = {
+					democratic = 0
+					fascism = 0
+					communism = 0
+					neutrality = 100
+				}
+				division_template = {
+					name = "북직예군"
+					regiments = {
+						infantry = {
+							x = 0
+							y = 0
+						}
+						infantry = {
+							x = 0
+							y = 1
+						}
+						infantry = {
+							x = 1
+							y = 0
+						}
+						infantry = {
+							x = 1
+							y = 1
+						}
+						infantry = {
+							x = 2
+							y = 0
+						}
+						infantry = {
+							x = 2
+							y = 1
+						}
+					}
+				}
+				random_state = {
+					prioritize = { 608 }
+					create_unit = {
+						division = "name = \"북직예군\" division_template = \"북직예군\" start_experience_factor = 0.6"
+						owner = SZY
+					}
+					create_unit = {
+						division = "name = \"북직예군\" division_template = \"북직예군\" start_experience_factor = 0.6"
+						owner = SZY
+					}
+					create_unit = {
+						division = "name = \"북직예군\" division_template = \"북직예군\" start_experience_factor = 0.6"
+						owner = SZY
+					}
+					create_unit = {
+						division = "name = \"북직예군\" division_template = \"북직예군\" start_experience_factor = 0.6"
+						owner = SZY
+					}
+					create_unit = {
+						division = "name = \"북직예군\" division_template = \"북직예군\" start_experience_factor = 0.6"
+						owner = SZY
+					}
+					create_unit = {
+						division = "name = \"북직예군\" division_template = \"북직예군\" start_experience_factor = 0.6"
+						owner = SZY
+					}
+					create_unit = {
+						division = "name = \"북직예군\" division_template = \"북직예군\" start_experience_factor = 0.6"
+						owner = SZY
+					}
+					create_unit = {
+						division = "name = \"북직예군\" division_template = \"북직예군\" start_experience_factor = 0.6"
+						owner = SZY
+					}
+					create_unit = {
+						division = "name = \"북직예군\" division_template = \"북직예군\" start_experience_factor = 0.6"
+						owner = SZY
+					}
+					create_unit = {
+						division = "name = \"북직예군\" division_template = \"북직예군\" start_experience_factor = 0.6"
+						owner = SZY
+					}
+					create_unit = {
+						division = "name = \"북직예군\" division_template = \"북직예군\" start_experience_factor = 0.6"
+						owner = SZY
+					}
+					create_unit = {
+						division = "name = \"북직예군\" division_template = \"북직예군\" start_experience_factor = 0.6"
+						owner = SZY
+					}
+				}	
+			}
+			HNC = {
+				set_cosmetic_tag = HNC_IND
+				end_puppet = ZLC
+				transfer_state = 602
+				transfer_state = 1054
+				division_template = {
+					name = "호남군"
+					regiments = {
+						infantry = {
+							x = 0
+							y = 0
+						}
+						infantry = {
+							x = 0
+							y = 1
+						}
+						infantry = {
+							x = 1
+							y = 0
+						}
+						infantry = {
+							x = 1
+							y = 1
+						}
+						infantry = {
+							x = 2
+							y = 0
+						}
+						infantry = {
+							x = 2
+							y = 1
+						}
+					}
+				}
+				random_state = {
+					prioritize = { 602 }
+					create_unit = {
+						division = "name = \"호남군\" division_template = \"호남군\" start_experience_factor = 0.6"
+						owner = HNC
+					}
+					create_unit = {
+						division = "name = \"호남군\" division_template = \"호남군\" start_experience_factor = 0.6"
+						owner = HNC
+					}
+					create_unit = {
+						division = "name = \"호남군\" division_template = \"호남군\" start_experience_factor = 0.6"
+						owner = HNC
+					}
+					create_unit = {
+						division = "name = \"호남군\" division_template = \"호남군\" start_experience_factor = 0.6"
+						owner = HNC
+					}
+					create_unit = {
+						division = "name = \"호남군\" division_template = \"호남군\" start_experience_factor = 0.6"
+						owner = HNC
+					}
+					create_unit = {
+						division = "name = \"호남군\" division_template = \"호남군\" start_experience_factor = 0.6"
+						owner = HNC
+					}
+				}	
+			}
+			AQC = {
+				transfer_state = 606
+				transfer_state = 598
+				transfer_state = 1040
+				transfer_state = 1051
+				transfer_state = 979
+				division_template = {
+					name = "안휘군"
+					regiments = {
+						infantry = {
+							x = 0
+							y = 0
+						}
+						infantry = {
+							x = 0
+							y = 1
+						}
+						infantry = {
+							x = 1
+							y = 0
+						}
+						infantry = {
+							x = 1
+							y = 1
+						}
+						infantry = {
+							x = 2
+							y = 0
+						}
+						infantry = {
+							x = 2
+							y = 1
+						}
+					}
+				}
+				random_state = {
+					prioritize = { 606 }
+					create_unit = {
+						division = "name = \"안휘군\" division_template = \"안휘군\" start_experience_factor = 0.6"
+						owner = AQC
+					}
+					create_unit = {
+						division = "name = \"안휘군\" division_template = \"안휘군\" start_experience_factor = 0.6"
+						owner = AQC
+					}
+					create_unit = {
+						division = "name = \"안휘군\" division_template = \"안휘군\" start_experience_factor = 0.6"
+						owner = AQC
+					}
+					create_unit = {
+						division = "name = \"안휘군\" division_template = \"안휘군\" start_experience_factor = 0.6"
+						owner = AQC
+					}
+					create_unit = {
+						division = "name = \"안휘군\" division_template = \"안휘군\" start_experience_factor = 0.6"
+						owner = AQC
+					}
+					create_unit = {
+						division = "name = \"안휘군\" division_template = \"안휘군\" start_experience_factor = 0.6"
+						owner = AQC
+					}
+					create_unit = {
+						division = "name = \"안휘군\" division_template = \"안휘군\" start_experience_factor = 0.6"
+						owner = AQC
+					}
+					create_unit = {
+						division = "name = \"안휘군\" division_template = \"안휘군\" start_experience_factor = 0.6"
+						owner = AQC
+					}
+					create_unit = {
+						division = "name = \"안휘군\" division_template = \"안휘군\" start_experience_factor = 0.6"
+						owner = AQC
+					}
+					create_unit = {
+						division = "name = \"안휘군\" division_template = \"안휘군\" start_experience_factor = 0.6"
+						owner = AQC
+					}
+					create_unit = {
+						division = "name = \"안휘군\" division_template = \"안휘군\" start_experience_factor = 0.6"
+						owner = AQC
+					}
+					create_unit = {
+						division = "name = \"안휘군\" division_template = \"안휘군\" start_experience_factor = 0.6"
+						owner = AQC
+					}
+				}	
+			}
+		}	
+		ZLC = {
+			if = {
+				limit = {
+					ZLC = {
+						has_country_leader = {
+							character = ZLC_cao_kun
+							ruling_only = yes
+						}
+					}
+				}
+				add_country_leader_role = {
+					Character = ZLC_Wu_Peifu
+					Promote_leader = yes
+					Country_leader = {
+						ideology = despotism
+						#expire = "1965.1.1"
+						desc = ""
+						traits = {
+							wupeifu_trait
+						}
+					}
+				}
+				hidden_effect = {
+					add_ideas = chao_kun_token
+					remove_ideas = wu_peifu_token
+				}
+				add_country_leader_role = {
+					Character = ZLC_Wu_Peifu
+					Promote_leader = yes
+					Country_leader = {
+						ideology = rexism
+						#expire = "1965.1.1"
+						desc = ""
+						traits = {
+							wupeifu_trait
+						}
+					}
+				}
+			}
+			transfer_state = 750
+			create_wargoal = {
+				target = SND
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = HNC
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = AHC
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = SZY
+				type = annex_everything
+			}
+			if = {
+				limit = {
+					ZLC = {
+						is_ai = yes
+					}
+				}
+				add_ideas = ZLC_the_attack_of_clique
+			}
+		}
+	}
+}
+
+
+###########
+country_event = { ## 국민당 엔딩 이벤트
+	id = KMT.1000
+	title = KMT.1000.t
+	desc = KMT.1000.d
+	picture = GFX_event_KMT_1000
+	
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			news_event = {
+				id = eok_news.40
+				days = 1
+			}
+		}
+	}
+	
+	option = {
+		name = KMT.1000.a
+		set_cosmetic_tag = CHI
+		custom_effect_tooltip = TOOLTIP_ENDING_CHINA
+		hidden_effect = {
+			load_focus_tree = KMT_rework5	
+			CHI = {
+				annex_country = {
+					target = XKC
+					transfer_troops = yes
+				}
+				annex_country = {
+					target = SCC
+					transfer_troops = yes
+				}
+			}
+			every_state = {
+				limit = {
+					 is_core_of =ZLC
+				}
+				add_core_of = CHI
+			}
+		}
+	}
+}

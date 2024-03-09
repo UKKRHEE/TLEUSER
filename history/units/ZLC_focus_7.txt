@@ -1,0 +1,5 @@
+﻿
+focus = {
+    current = "ZLC_BEI_south_china_problem"
+    Progress = 0
+}   

@@ -1,0 +1,339 @@
+#도쿠가와의 지속 루트
+	shared_focus = {
+		id = DKG_continuing_with_tokugawa
+		icon = GFX_GFX
+		cost = 1.50
+		x = 36
+		y = 1
+			ai_will_do = {
+				factor = 100
+				}
+			available = {
+				has_country_flag = FLAG_JAP_AUTO_COMP
+			}
+			completion_reward = {
+				add_political_power = 150
+			}
+
+	}
+	shared_focus = {
+		id = DKG_ouetsu
+		icon = GFX_GFX
+		cost = 0.80
+		prerequisite = {
+			focus = DKG_continuing_with_tokugawa
+		}
+		x = 33
+		y = 2
+		ai_will_do = {
+				factor = 90
+			}
+		available = {
+
+		}
+		completion_reward = {
+			add_political_power = 15
+			create_faction = DKG_FACTION
+		}
+	}
+	shared_focus = {
+		id = DKG_yusin
+		icon = GFX_GFX
+		cost = 0.80
+		prerequisite = {
+			focus = DKG_ouetsu
+		}
+		x = 32
+		y = 3
+			ai_will_do = {
+					factor = 90
+				}
+			available = {
+
+}
+			completion_reward = {
+					add_political_power = 100
+				}
+
+	}
+	shared_focus = {
+		id = DKG_army_reform1
+		icon = GFX_GFX
+		cost = 0.80
+		prerequisite = {
+			focus = DKG_yusin
+		}
+		x = 31
+		y = 4
+			ai_will_do = {
+					factor = 90
+				}
+			available = {
+
+}
+			completion_reward = {
+					add_political_power = 100
+				}
+
+	}
+	shared_focus = {
+		id = DKG_defend_bakufu
+		icon = GFX_GFX
+		cost = 0.80
+		prerequisite = {
+			focus = DKG_yusin
+		}
+		prerequisite = {
+			focus = DKG_ouetsu
+		}
+		x = 33
+		y = 4
+			ai_will_do = {
+					factor = 90
+				}
+			available = {
+
+}
+			completion_reward = {
+					add_political_power = 100
+				}
+
+	}
+	shared_focus = {
+		id = DKG_edo_is
+		icon = GFX_GFX
+		cost = 1.50
+		prerequisite = {
+			focus = DKG_continuing_with_tokugawa
+		}
+		x = 36
+		y = 2
+			ai_will_do = {
+					factor = 90
+				}
+			available = {
+
+			}
+			completion_reward = {
+					custom_effect_tooltip = DKG_edo_tt
+					DKG = {
+							country_event = {
+									id = TLE_DKG_event.1
+								}
+						}
+				}
+
+	}
+	shared_focus = {
+		id = DKG_never
+		icon = GFX_GFX
+		cost = 0.00
+		prerequisite = {
+			focus = DKG_edo_is
+		}
+		mutually_exclusive = {
+			focus = DKG_peace
+		}
+		x = 35
+		y = 3
+			ai_will_do = {
+					factor = 90
+				}
+			available = {
+					has_country_flag = JAPAN_civilwar_end_flag
+				}
+			completion_reward = {
+					add_political_power = 100
+				}
+
+	}
+	shared_focus = {
+		id = DKG_peace
+		icon = GFX_GFX
+		cost = 0.00
+		prerequisite = {
+			focus = DKG_edo_is
+		}
+		mutually_exclusive = {
+			focus = DKG_never
+		}
+		x = 37
+		y = 3
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					has_country_flag = JAPAN_civilwar_yusin_flag
+				}
+			completion_reward = {
+					add_political_power = 100
+				}
+
+	}
+	shared_focus = {
+		id = DKG_defence_for_nagara
+		icon = GFX_GFX
+		cost = 1.50
+		prerequisite = {
+			focus = DKG_never
+			focus = DKG_peace
+		}
+		x = 36
+		y = 4
+			ai_will_do = {
+					factor = 90
+				}
+			available = {
+
+}
+			completion_reward = {
+					add_political_power = 100
+				}
+
+	}
+	shared_focus = {
+		id = DKG_west_from
+		icon = GFX_GFX
+		cost = 1.50
+		prerequisite = {
+			focus = DKG_continuing_with_tokugawa
+		}
+
+		x = 39
+		y = 2
+
+		ai_will_do = {
+			factor = 90
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 1000
+				producer = KOR
+			}
+			add_timed_idea = {
+				idea = DKG_korean_equipment
+				days = 120
+			}
+		}
+
+	}
+	shared_focus = {
+		id = DKG_armament_expansion
+		icon = GFX_GFX
+		cost = 1.50
+		prerequisite = {
+			focus = DKG_west_from
+		}
+		x = 39
+		y = 4
+			ai_will_do = {
+					factor = 90
+				}
+			available = {
+
+}
+			completion_reward = {
+					add_political_power = 100
+				}
+
+	}
+	shared_focus = {
+		id = DKG_ammonition
+		icon = GFX_GFX
+		cost = 1.50
+		prerequisite = {
+			focus = DKG_west_from
+		}
+		x = 40
+		y = 3
+			ai_will_do = {
+					factor = 90
+				}
+			available = {
+
+}
+			completion_reward = {
+					add_political_power = 100
+				}
+
+	}
+	shared_focus = {
+		id = DKG_tax
+		icon = GFX_GFX
+		cost = 1.50
+		prerequisite = {
+			focus = DKG_ammonition
+		}
+		x = 41
+		y = 4
+			ai_will_do = {
+					factor = 90
+				}
+			available = {
+
+			}
+			completion_reward = {
+					add_political_power = 100
+				}
+
+	}
+	shared_focus = {
+		id = DKG_government_army
+		icon = GFX_GFX
+		cost = 5.00
+		prerequisite = {
+			focus = DKG_defence_for_nagara
+		}
+		prerequisite = {
+			focus = DKG_defend_bakufu
+		}
+		prerequisite = {
+			focus = DKG_army_reform1
+		}
+		prerequisite = {
+			focus = DKG_armament_expansion
+		}
+		prerequisite = {
+			focus = DKG_tax
+		}
+		x = 36
+		y = 5
+			ai_will_do = {
+					factor = 90
+				}
+			available = {
+
+}
+			completion_reward = {
+					add_political_power = 100
+				}
+
+	}
+
+	shared_focus = {
+		id = DKG_trial
+		icon = GFX_goal_unknown
+		cost = 5.80
+		available = {
+			has_country_flag = DKG_marching_to_kyoto_flag
+		}
+		prerequisite = {
+			focus = DKG_government_army
+		}
+		completion_reward = {
+			hidden_effect = {
+				load_focus_tree ={ 
+					tree = DKG_Japan_war_af
+					keep_completed = yes
+				}
+			}
+			custom_effect_tooltip = DKG_next_reform_TT
+		}
+		x = 36
+		y = 6
+
+	}

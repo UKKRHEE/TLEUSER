@@ -1,0 +1,16 @@
+﻿l_english:
+ TLE_general_government_opinion:0 "본국"
+ TLE_federal_government_opinion:0 "같은 군주를 섬김"
+ TLE_hangan_opinion:0 "우리를 지원함"
+ TLE_fight_opinion:0 "우리와 적대함"
+ TLE_anhui_clique_opinion:0 "안휘군벌"
+ TLE_zhili_clique_opinion:0 "직예군벌"
+ KMT_opinion:0 "국민당"
+ #opinion modifier
+ GER_KOR:0 "추축동맹"
+ GER_IBR_TNO:0 "이베리아의 풍요"
+ GER_BLT_TNO:0 "스칸디나비아와의 친선"
+ GER_FRS_TNO:0 "갈리아 지지"
+ GER_POR_TNO:0 "대서양 동맹"
+ GER_ITA_TNO:0 "핀란드 동맹"
+ GER_BLR_TNO:0 "추축동맹"

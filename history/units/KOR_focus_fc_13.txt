@@ -1,0 +1,5 @@
+﻿
+focus = {
+    current = "kor_forced_labor"
+    Progress = 0
+}   

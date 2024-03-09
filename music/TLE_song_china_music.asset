@@ -1,0 +1,91 @@
+
+music = {
+	name = "chinese_internationale" #인터네
+	file = "china_music/chinese_internationale.ogg"
+	volume = 1.2
+}
+music = {
+	name = "laobing" #노병
+	file = "china_music/laobing.ogg"
+	volume = 1.2
+}
+music = {
+	name = "shehuizhuyihao" #사회주의 좋다!
+	file = "china_music/shehuizhuyihao.ogg"
+	volume = 1.2
+}
+music = {
+	name = "erquanyingyue" #이천영월
+	file = "china_music/erquanyingyue.ogg"
+	volume = 1.2
+}
+music = {
+	name = "yiyongjun" #의용군진행곡
+	file = "china_music/yiyongjun.ogg"
+	volume = 1.2
+}
+music = {
+	name = "changchengyao" #장성요
+	file = "china_music/changchengyao.ogg"
+	volume = 1.2
+}
+music = {
+	name = "kmt_guoqige" #중화민국 국기가
+	file = "china_music/kmt_guoqige.ogg"
+	volume = 1.2
+}
+music = {
+	name = "dadaoxingjin" #대도행진곡
+	file = "china_music/dadaoxingjin.ogg"
+	volume = 1.2
+}
+music = {
+	name = "fangongfuguoge" #반공구국가
+	file = "china_music/fangongfuguoge.ogg"
+	volume = 1.2
+}
+music = {
+	name = "xibulezhongguo" #불멸의 중국
+	file = "china_music/xibulezhongguo.ogg"
+	volume = 1.2
+}
+music = {
+	name = "yingsusong" #영수송
+	file = "china_music/yingsusong.ogg"
+	volume = 1.2
+}
+music = {
+	name = "jcyj" #정천입지
+	file = "china_music/jcyj.ogg"
+	volume = 1.2
+}
+music = {
+	name = "dangnayitianlaili" #그날이오면
+	file = "china_music/dangnayitianlaili.ogg"
+	volume = 1.2
+}
+music = {
+	name = "defence_yellowriver" #황하를 지켜라
+	file = "china_music/defence_yellowriver.ogg"
+	volume = 1.2
+}
+music = {
+	name = "ihaveagun" #나는 총 한자루가 있다
+	file = "china_music/ihaveagun.ogg"
+	volume = 1.2
+}
+music = {
+	name = "woyouyizhiqiang" #나는 총 한자루가 있다 [무가사]
+	file = "china_music/woyouyizhiqiang.ogg"
+	volume = 1.2
+}
+music = {
+	name = "nigthraid" #야습
+	file = "china_music/nigthraid.ogg"
+	volume = 1.2
+}
+music = {
+	name = "shengli" #승리
+	file = "china_music/shengli.ogg"
+	volume = 1.2
+}

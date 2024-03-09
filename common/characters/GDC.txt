@@ -1,0 +1,28 @@
+characters={
+	GDC_song_hoseong={
+		name="GDC_song_hoseong"
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/Portrait_KOR_song_hoseong.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			id=-1
+		}
+		country_leader={
+			ideology=fascism_ideology
+			traits={ }
+			id=-1
+		}
+	}
+	GDC_chen_jitang={
+		name="GDC_chen_jitang"
+		portraits={
+			civilian={
+				large="gfx/leaders/GDC/Portrait_GDC_Chen_Jitang.png"
+			}
+		}
+	}
+}

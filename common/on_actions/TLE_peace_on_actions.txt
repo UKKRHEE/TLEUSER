@@ -1,0 +1,3980 @@
+on_actions = {
+	on_capitulation = {
+		effect = {
+			# log = "[GetDateText]: FROM: [From.GetName] ROOT: [Root.GetName] on_capitulation"
+
+			set_global_flag = show_peace_popup_alert
+			FROM = {
+				save_global_event_target_as = winning_country
+			}
+			ROOT = {
+				save_global_event_target_as = losing_country
+			}
+
+			# log = "[GetDateText]: winner/loser: FROM: [winning_country.GetName] ROOT: [losing_country.GetName] on_capitulation"
+
+			if = {
+				limit = {
+					event_target:losing_country = {
+						any_allied_country = {
+							has_war_together_with = event_target:losing_country
+						}
+					}
+				}
+				set_global_flag = losing_country_multiple
+			}
+
+			if = {
+				limit = {
+					event_target:winning_country = {
+						any_allied_country = {
+							has_war_together_with = event_target:winning_country
+						}
+					}
+				}
+				set_global_flag = winning_country_multiple
+			}
+			add_to_variable = { global.peace_popup_dirty = 1 }
+
+			if = {
+				limit = {
+					# OR = {
+					# 	ROOT = { is_in_faction = no }
+					# 	ROOT = {
+					# 		all_allied_country = {
+					# 			if = {
+					# 				limit = {
+					# 					has_war_with = FROM
+					# 					is_major = yes
+					# 				}
+					# 				has_capitulated = yes
+					# 			}
+					# 		}
+					# 	}
+					# }
+				}
+				log = "war_won"
+				set_global_flag = war_won
+
+				if = {
+					limit = {
+						# has_global_flag = west_african_war_ongoing
+					}
+					if = {
+						limit = {
+							original_tag = TBJ
+						}
+						JAP = {
+							annex_country = {
+								target = TBJ
+								transfer_troops = yes
+							}
+							country_event = {
+								id = TLE_Japan_warlord.1
+							}
+						}
+						SDJ = {
+							transfer_state = 533
+							transfer_state = 1071
+							load_oob = "SDJ"
+						}
+						NBJ = {
+							transfer_state = 1068
+							load_oob = "NBJ"
+						}
+					}
+					if = {
+						limit = {
+							original_tag = FJP
+						}
+							JAP = {
+							white_peace = FJP
+								annex_country = {
+									target = FJP
+									transfer_troops = yes
+								}
+								country_event = {
+									id = TLE_Japan_warlord.2
+								}
+							}
+						}
+					if = {
+						limit = {
+							original_tag = GJJ
+						}
+							JAP = {
+							white_peace = GJJ
+								annex_country = {
+									target = GJJ
+									transfer_troops = yes
+								}
+								country_event = {
+									id = TLE_Japan_warlord.3
+								}
+						}
+					}
+					if = {
+						limit = {
+							original_tag = NBJ
+						}
+							JAP = {
+							white_peace = NBJ
+								annex_country = {
+									target = NBJ
+									transfer_troops = yes
+								}
+							}
+						}
+					if = {
+						limit = {
+							original_tag = SDJ
+						}
+						JAP = {
+							white_peace = SDJ
+							annex_country = {
+								target = SDJ
+								transfer_troops = yes
+							}
+						}
+					}
+					if = {
+						limit = {
+							original_tag = DKG
+						}
+						JAP = {
+							news_event = {
+								id = eok_news.31
+								days = 1
+							}
+						}
+						DKG = {
+							TBJ = { change_tag_from = DKG }
+							country_event = {
+								id = Civilwar_of_Japan.4
+							}
+						}
+						JAP = {
+							annex_country = {
+								target = DKG
+								transfer_troops = yes
+							}
+							#country_event = {
+							#	id = Civilwar_of_Japan.3
+							#}
+						}
+					}
+
+					set_global_flag = skip_default_capitulation
+				}
+
+				# if = {
+				# 	limit = { NOT = { has_global_flag = skip_default_capitulation } }
+				# 	#Annex every country they've been fighting against
+				# 	log = "Default Capitulation"
+				# 	FROM = {
+				# 		every_enemy_country = {
+				# 			limit = {
+				# 				OR = {
+				# 					original_tag = ROOT
+				# 					is_in_faction_with = ROOT
+				# 					is_subject_of = ROOT
+				# 				}
+				# 			}
+				# 			FROM = {
+				# 				white_peace = PREV
+				# 				annex_country = {
+				# 					target = PREV
+				# 					transfer_troops = no
+				# 				}
+				# 			}
+				# 		}
+				# 	}
+				# }
+			}
+		}
+		###############################
+		effect = {
+			if = {
+				limit = {
+					tag = KMN
+					has_cosmetic_tag = KMN_REP
+					OR = {
+						has_war_with = CHI
+						has_war_with = ZLC
+					}
+					KOR = {
+						has_country_flag = TLE_THE_WAR_IS_ENDED
+					}
+				}
+				if = {
+					limit = {
+						CHI = {
+							exists = yes
+						}
+						ZLC = {
+							exists = no
+						}
+					}
+					every_country = {
+						limit = {
+							has_war_with = CHI 
+						}
+						white_peace = CHI
+					}
+					CHI = {
+						annex_country = {
+							target = KMN
+							transfer_troops = no
+						}
+					}
+				}
+				if = {
+					limit = {
+						ZLC = {
+							exists = yes
+						}
+						CHI = {
+							exists = no
+						}
+					}
+					every_country = {
+						limit = {
+							has_war_with = ZLC 
+						}
+						white_peace = ZLC
+					}
+					ZLC = {
+						annex_country = {
+							target = KMN
+							transfer_troops = no
+						}
+					}
+				}
+				1027 = {
+					set_state_name = "haisanwei"
+				}
+				408 = {
+					set_state_name = "yanhaizhou"
+				}
+				409 = {
+					set_state_name = "baili"
+				}
+				561 = {
+					set_state_name = "beiheilongjiang"
+				}
+				657 = {
+					set_state_name = "dongheilongjiang"
+				}
+				560 = {
+					set_state_name = "maojia"
+				}
+				655 = {
+					set_state_name = "beifushang"
+				}
+				537 = {
+					set_state_name = "nanfushang"
+				}
+				1060 = {
+					set_state_name = "jinzhou"
+				}
+				610 = {
+					set_state_name = "rehe"
+				}
+				715 = {
+					set_state_name = "liaoning"
+				}
+				716 = {
+					set_state_name = "liaodong"
+				}
+				1032 = {
+					set_state_name = "andong"
+				}
+				1031 = {
+					set_state_name = "baishan"
+				}
+				1030 = {
+					set_state_name = "jiandao"
+				}
+				328 = {
+					set_state_name = "jilin"
+				}
+				717 = {
+					set_state_name = "songjiang"
+				}
+				714 = {
+					set_state_name = "heilongjiang"
+				}
+				1059 = {
+					set_state_name = "xinganmeng"
+				}
+				761 = {
+					set_state_name = "hulunbeier"
+				}
+				1028 = {
+					set_state_name = "haicheng"
+				}
+				set_province_name = {
+					id = 6961
+					name = "xinzhao"
+				}
+				set_province_name = {
+					id = 3977
+					name = "xuangchengjia"
+				}
+				set_province_name = {
+					id = 12189
+					name = "baili"
+				}
+				set_province_name = {
+					id = 9639
+					name = "beihai"
+				}
+				set_province_name = {
+					id = 12446
+					name = "fengyan"
+				}
+				set_province_name = {
+					id = 957
+					name = "haisanwei"
+				}
+				##만주##
+				set_province_name = {
+					id = 1049
+					name = "longjing"
+				}
+				set_province_name = {
+					id = 9803
+					name = "baishan"
+				}
+				set_province_name = {
+					id = 1050
+					name = "tonghua"
+				}
+				set_province_name = {
+					id = 6981
+					name = "andong"
+				}
+				set_province_name = {
+					id = 836
+					name = "liaoxin"
+				}
+				set_province_name = {
+					id = 11764
+					name = "yingkou"
+				}
+				set_province_name = {
+					id = 1150
+					name = "lvsun"
+				}
+				set_province_name = {
+					id = 11771
+					name = "shenyang"
+				}
+				set_province_name = {
+					id = 4572
+					name = "changchun"
+				}
+				set_province_name = {
+					id = 10433
+					name = "haerbin"
+				}
+				set_province_name = {
+					id = 9623
+					name = "jiamushi"
+				}
+				set_province_name = {
+					id = 11906
+					name = "mudan"
+				}
+				set_province_name = {
+					id = 3815
+					name = "jixi"
+				}
+				set_province_name = {
+					id = 1645
+					name = "daqing"
+				}
+				set_province_name = {
+					id = 1638
+					name = "tongliao"
+				}
+				set_province_name = {
+					id = 1627
+					name = "baicheng"
+				}
+				set_province_name = {
+					id = 6837
+					name = "huludao"
+				}
+				set_province_name = {
+					id = 11801
+					name = "cifeng"
+				}
+				set_province_name = {
+					id = 1502
+					name = "xinganmeng"
+				}
+				set_province_name = {
+					id = 11752
+					name = "xilinguomeng"
+				}
+				set_province_name = {
+					id = 987
+					name = "liaoyang"
+				}
+				set_province_name = {
+					id = 7663
+					name = "jilin"
+				}
+				set_province_name = {
+					id = 3947
+					name = "dunhua"
+				}
+			}
+			if = {
+				limit = {
+					tag = SIK
+					NOT = {
+						is_puppet_of = KOR
+					}
+					has_war_with = CHI
+				}
+				CHI = {
+					annex_country = {
+						target = SIK
+						transfer_troops = no
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = HNC
+					NOT = {
+						is_puppet_of = KOR
+					}
+					OR = {
+						has_war_with = ZLC
+						has_war_with = CHI
+					}	
+				}
+				if = {
+					limit = {
+						HNC = {
+							has_war_with = ZLC
+							NOT = {
+								has_war_with = CHI
+							}
+						}
+					}
+					ZLC = {
+						annex_country = {
+							target = HNC
+							transfer_troops = yes
+						}
+					}
+				}
+				if = {
+					limit = {
+						HNC = {
+							has_war_with = CHI
+							NOT = {
+								has_war_with = ZLC
+							}
+						}
+					}
+					CHI = {
+						annex_country = {
+							target = HNC
+							transfer_troops = yes
+						}
+					}
+				}
+				if = {
+					limit = {
+						HNC = {
+							has_war_with = CHI
+								has_war_with = ZLC
+						}
+					}
+					if = {
+						limit = {
+							602 = {
+								is_controlled_by = ZLC
+							}
+						}
+						ZLC = {
+							transfer_state = 602
+						}
+					}
+					if = {
+						limit = {
+							602 = {
+								is_controlled_by = CHI
+							}
+						}
+						CHI = {
+							transfer_state = 602
+						}
+					}
+					if = {
+						limit = {
+							1054 = {
+								is_controlled_by = ZLC
+							}
+						}
+						ZLC = {
+							transfer_state = 1054
+						}
+					}
+					if = {
+						limit = {
+							1054 = {
+								is_controlled_by = CHI
+							}
+						}
+						CHI = {
+							transfer_state = 1054
+						}
+					}
+					CHI = {
+						annex_country = {
+							target = HNC
+							transfer_troops = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = SZY
+					NOT = {
+						is_puppet_of = KOR
+					}
+					has_war_with = ZLC
+					CHI = {
+						exists = yes
+					}
+					KOR = {
+						NOT = {
+							has_country_flag = TLE_THE_WAR_IS_WIN
+							has_country_flag = TLE_KOR_WIN_IN_CHINA_FUCKYEAH
+						}
+					}
+				}
+				ZLC = {
+					annex_country = {
+						target = SZY
+						transfer_troops = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = GZC
+					NOT = {
+						is_puppet_of = KOR
+					}
+					has_war_with = CHI
+					CHI = {
+						exists = yes
+					}
+					KOR = {
+						NOT = {
+							has_country_flag = TLE_THE_WAR_IS_WIN
+							has_country_flag = TLE_KOR_WIN_IN_CHINA_FUCKYEAH
+						}
+					}
+				}
+				CHI = {
+					annex_country = {
+						target = GZC
+						transfer_troops = no
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = GDC
+					NOT = {
+						is_puppet_of = KOR
+					}
+					has_war_with = CHI
+					CHI = {
+						exists = yes
+					}
+					KOR = {
+						NOT = {
+							has_country_flag = TLE_THE_WAR_IS_WIN
+							has_country_flag = TLE_KOR_WIN_IN_CHINA_FUCKYEAH
+						}
+					}
+				}
+				CHI = {
+					annex_country = {
+						target = GDC
+						transfer_troops = no
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = YUN
+					NOT = {
+						is_puppet_of = KOR
+					}
+					has_war_with = CHI
+					CHI = {
+						exists = yes
+					}
+					KOR = {
+						NOT = {
+							has_country_flag = TLE_THE_WAR_IS_WIN
+							has_country_flag = TLE_KOR_WIN_IN_CHINA_FUCKYEAH
+						}
+					}
+				}
+				CHI = {
+					annex_country = {
+						target = YUN
+						transfer_troops = no
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = HNC
+					NOT = {
+						is_puppet_of = KOR
+					}
+					has_war_with = CHI
+					CHI = {
+						exists = yes
+					}
+					KOR = {
+						NOT = {
+							has_country_flag = TLE_THE_WAR_IS_WIN
+							has_country_flag = TLE_KOR_WIN_IN_CHINA_FUCKYEAH
+						}
+					}
+				}
+				CHI = {
+					annex_country = {
+						target = HNC
+						transfer_troops = no
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = SHX
+					NOT = {
+						is_puppet_of = KOR
+					}
+					has_war_with = CHI
+					CHI = {
+						exists = yes
+					}
+					KOR = {
+						NOT = {
+							has_country_flag = TLE_THE_WAR_IS_WIN
+							has_country_flag = TLE_KOR_WIN_IN_CHINA_FUCKYEAH
+						}
+					}
+				}
+				CHI = {
+					annex_country = {
+						target = SHX
+						transfer_troops = no
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = XSM
+					NOT = {
+						is_puppet_of = KOR
+					}
+					has_war_with = CHI
+					CHI = {
+						exists = yes
+					}
+					KOR = {
+						NOT = {
+							has_country_flag = TLE_THE_WAR_IS_WIN
+							has_country_flag = TLE_KOR_WIN_IN_CHINA_FUCKYEAH
+						}
+					}
+				}
+				CHI = {
+					annex_country = {
+						target = XSM
+						transfer_troops = no
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = SZC
+					NOT = {
+						is_puppet_of = KOR
+					}
+					has_war_with = CHI
+					CHI = {
+						exists = yes
+					}
+					KOR = {
+						NOT = {
+							has_country_flag = TLE_THE_WAR_IS_WIN
+							has_country_flag = TLE_KOR_WIN_IN_CHINA_FUCKYEAH
+						}
+					}
+				}
+				CHI = {
+					annex_country = {
+						target = SZC
+						transfer_troops = no
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = SCC
+					NOT = {
+						is_puppet_of = KOR
+					}
+					has_war_with = CHI
+					CHI = {
+						exists = yes
+					}
+					KOR = {
+						NOT = {
+							has_country_flag = TLE_THE_WAR_IS_WIN
+							has_country_flag = TLE_KOR_WIN_IN_CHINA_FUCKYEAH
+						}
+					}
+				}
+				CHI = {
+					annex_country = {
+						target = SCC
+						transfer_troops = no
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = GXC
+					NOT = {
+						is_puppet_of = KOR
+					}
+					has_war_with = CHI
+					CHI = {
+						exists = yes
+					}
+					KOR = {
+						NOT = {
+							has_country_flag = TLE_THE_WAR_IS_WIN
+							has_country_flag = TLE_KOR_WIN_IN_CHINA_FUCKYEAH
+						}
+					}
+				}
+				CHI = {
+					annex_country = {
+						target = GXC
+						transfer_troops = no
+					}
+					retire_character = CHI_li_zongren
+				}
+			}
+			if = {
+				limit = {
+					tag = AHC
+					NOT = {
+						is_puppet_of = KOR
+					}
+					has_war_with = CHI
+					CHI = {
+						exists = yes
+					}
+					KOR = {
+						NOT = {
+							has_country_flag = TLE_THE_WAR_IS_WIN
+							has_country_flag = TLE_KOR_WIN_IN_CHINA_FUCKYEAH
+						}
+					}
+				}
+				CHI = {
+					annex_country = {
+						target = AHC
+						transfer_troops = no
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = WZC
+					NOT = {
+						is_puppet_of = KOR
+					}
+					has_war_with = CHI
+				}
+				AQC = {
+					transfer_state = 606
+					transfer_state = 598
+					transfer_state = 1040
+					transfer_state = 1051
+					transfer_state = 979
+					add_state_core = 606
+					add_state_core = 598
+					add_state_core = 1040
+					add_state_core = 1051
+					add_state_core = 979
+				}
+				AHC = {
+					retire_character = AHC_chen_tiao_yuan
+					country_event = {
+						id = china.1110
+						days = 7
+					}
+				}
+				ZLC = {
+					country_event = {
+						id = china.1104
+						days = 6
+					}
+				}
+				CHI = {
+					dismantle_faction = yes
+					annex_country = {
+						target = WZC
+						transfer_troops = no
+					}
+					set_cosmetic_tag = CHI_nanking
+				}
+			}
+			if = {
+				limit = {
+					tag = XSM 
+					KOR = {
+						has_country_flag = TLE_KOR_WIN_IN_CHINA_FUCKYEAH
+					}
+				}
+				every_country = {
+					limit = {
+						has_war_with = XSM
+					}
+					white_peace = XSM
+				}
+				KOR = {
+					puppet = XSM
+				}
+			}
+			if = {
+				limit = {
+					tag = TIB
+					KOR = {
+						has_country_flag = TLE_KOR_WIN_IN_CHINA_FUCKYEAH
+					}
+				}
+				every_country = {
+					limit = {
+						has_war_with = TIB
+					}
+					white_peace = TIB
+				}
+				KOR = {
+					puppet = TIB
+				}
+			}
+			if = {
+				limit = {
+					tag = SIK
+					KOR = {
+						has_country_flag = TLE_KOR_WIN_IN_CHINA_FUCKYEAH
+					}
+				}
+				every_country = {
+					limit = {
+						has_war_with = SIK
+					}
+					white_peace = SIK
+				}
+				KOR = {
+					puppet = SIK
+				}
+			}
+			if = {
+				limit = {
+					tag = XKC
+					KOR = {
+						has_country_flag = TLE_KOR_WIN_IN_CHINA_FUCKYEAH
+					}
+				}
+				every_country = {
+					limit = {
+						has_war_with = XKC
+					}
+					white_peace = XKC
+				}
+				KOR = {
+					puppet = SIK
+				}
+			}
+			if = {
+				limit = {
+					tag = SCC
+					KOR = {
+						has_country_flag = TLE_KOR_WIN_IN_CHINA_FUCKYEAH
+					}
+				}
+				every_country = {
+					limit = {
+						has_war_with = SCC
+					}
+					white_peace = SCC
+				}
+				KOR = {
+					puppet = SIK
+				}
+			}
+			if = {
+				limit = {
+					tag = AQC 
+					has_war_with = ZLC
+				}
+				ZLC = {
+					annex_country = {
+						target = AQC
+						transfer_troops = yes
+					}
+				}
+					597 = {
+						set_demilitarized_zone = yes
+					}
+					1004 = {
+						set_demilitarized_zone = yes
+					}
+					1035 = {
+						set_demilitarized_zone = yes
+					}
+					1049 = {
+						set_demilitarized_zone = yes
+					}
+					1050 = {
+						set_demilitarized_zone = yes
+					}
+					973 = {
+						set_demilitarized_zone = yes
+					}
+			}
+			if = {
+				limit = {
+					tag = TIB
+					CHI = {
+						owns_state = 608
+						has_war_with = TIB
+						has_cosmetic_tag = CHI
+					}
+				}
+				every_country = {
+					limit = {
+						has_war_with = TIB
+					}
+					white_peace = TIB
+				}
+				CHI = {
+					puppet = TIB
+				}
+				TIB = {
+					set_cosmetic_tag = CHI_TIB_PRV
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						tag = MSR
+						tag = MON
+					}
+					CHI = {
+						owns_state = 608
+						OR = {
+							has_war_with = MON
+							has_war_with = MSR
+						}
+						has_cosmetic_tag = CHI
+					}
+				}
+				MON = {
+					annex_country = {
+						target = MSR
+						transfer_troops = no
+					}	
+					transfer_troops = 819
+					transfer_troops = 1006
+					transfer_troops = 1005
+				}
+				every_country = {
+					limit = {
+						has_war_with = CHI
+					}
+					white_peace = CHI
+				}
+				every_country = {
+					limit = {
+						has_war_with = MSR
+					}
+					white_peace = MSR
+				}
+				CHI = {
+					puppet = MON
+				}
+				MON = {
+					set_cosmetic_tag = CHI_MON_PRV
+				}
+			}
+			if = {
+				limit = {
+					tag = JAP
+					has_war_with = KOR
+					OR = {
+						has_global_flag = TNO_JAP_FIGHT_KOR
+						NOT = {
+							is_in_faction_with = USA
+						}
+					}
+				}
+				KOR = {
+					white_peace = JAP
+					annex_country = {
+						target = JAP
+						transfer_troops = no
+					}
+					news_event = {
+						id = eok_news.42
+						hours = 3
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = TWC
+					has_war_with = CHI
+				}
+				CHI = {
+					annex_country = {
+						target = TWC
+						transfer_troops = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = GER
+					has_war_with = SOV
+					has_global_flag = TLE_soviet_union_defeat
+				}
+				SOV = {
+					annex_country = {
+						target = GER
+						transfer_troops = no
+					}	
+				}
+				every_country = {
+					limit = {
+						has_war_with = SOV
+					}
+					white_peace = SOV
+				}
+			}
+			if = {
+				limit = {
+					tag = SOV
+					has_war_with = GER
+					has_global_flag = TLE_soviet_union_defeat
+				}
+				GER = {
+					country_event = {
+						id = korea.247
+					}
+				}
+				every_country = {
+					limit = {
+						has_war_with = GER
+					}
+					white_peace = GER
+				}
+			}
+			if = {
+				limit = {
+					tag = BRG
+					has_war_with = SOV
+					has_global_flag = TLE_soviet_union_defeat
+				}
+				SOV = {
+					annex_country = {
+						target = BRG
+						transfer_troops = no
+					}	
+				}
+			}
+			if = {
+				limit = {
+					tag = NT1
+					has_war_with = SOV
+					has_global_flag = TLE_soviet_union_defeat
+				}
+				SOV = {
+					annex_country = {
+						target = NT1
+						transfer_troops = no
+					}	
+				}
+			}
+			if = {
+				limit = {
+					tag = SLO
+					has_war_with = SOV
+					has_global_flag = TLE_soviet_union_defeat
+				}
+				white_peace = SOV
+				SOV = {
+					puppet = SLO
+				}
+			}
+			if = {
+				limit = {
+					tag = BG1
+					has_war_with = BG1
+					has_global_flag = TLE_soviet_union_defeat
+				}
+				white_peace = SOV
+				BG1 = {
+					set_cosmetic_tag = BEL
+				}
+				SOV = {
+					puppet = BG1
+				}
+			}
+			if = {
+				limit = {
+					tag = DM1
+					has_war_with = SOV
+					has_global_flag = TLE_soviet_union_defeat
+				}
+				SOV = {
+					puppet = DEN
+				}
+				DEN = {
+					annex_country = {
+						target = DM1
+						transfer_troops = no
+					}	
+				}
+			}
+			if = {
+				limit = {
+					tag = NR1
+					has_war_with = SOV
+					has_global_flag = TLE_soviet_union_defeat
+				}
+				SOV = {
+					puppet = NOR
+				}
+				NOR = {
+					annex_country = {
+						target = NR1
+						transfer_troops = no
+					}	
+				}
+			}
+			if = {
+				limit = {
+					tag = MK1
+					has_war_with = SOV
+					has_global_flag = TLE_soviet_union_defeat
+				}
+				SOV = {
+					annex_country = {
+						target = MK1
+						transfer_troops = no
+					}	
+					transfer_state = 195
+					remove_ideas = SOV_west_russian_revolutionary_war_start
+				}
+				if = {
+					limit = {
+						MK1 = {
+							exists = no
+						}
+					}
+					GER = {
+						country_event = {
+							id = korea.243
+						}
+					}	
+				}
+			}
+			if = {
+				limit = {
+					tag = UK1
+					has_war_with = SOV
+					has_global_flag = TLE_soviet_union_defeat
+				}
+				SOV = {
+					annex_country = {
+						target = UK1
+						transfer_troops = no
+					}	
+					transfer_state = 137
+				}
+				if = {
+					limit = {
+						MK1 = {
+							exists = no
+						}
+					}
+					GER = {
+						country_event = {
+							id = korea.243
+						}
+					}	
+				}
+			}
+			if = {
+				limit = {
+					tag = OT1
+					has_war_with = SOV
+					has_global_flag = TLE_soviet_union_defeat
+				}
+				SOV = {
+					annex_country = {
+						target = OT1
+						transfer_troops = no
+					}	
+				}
+				if = {
+					limit = {
+						MK1 = {
+							exists = no
+						}
+					}
+					GER = {
+						country_event = {
+							id = korea.243
+						}
+					}	
+				}
+			}
+			if = {
+				limit = {
+					tag = KA1
+					has_war_with = SOV
+					has_global_flag = TLE_soviet_union_defeat
+				}
+				SOV = {
+					annex_country = {
+						target = KA1
+						transfer_troops = no
+					}	
+				}
+				if = {
+					limit = {
+						MK1 = {
+							exists = no
+						}
+					}
+					GER = {
+						country_event = {
+							id = korea.243
+						}
+					}	
+				}
+			}
+			if = {
+				limit = {
+					tag = MEN
+					has_war_with = MON
+					is_puppet_of = KOR
+					KOR = {
+						has_idea = KOR_yi_jin
+					}
+				}
+				MON = {
+					set_cosmetic_tag = MON
+					annex_country = {
+						target = MEN
+						transfer_troops = yes
+					}
+				}
+				every_country = {
+					limit = {
+						has_war_with = MON
+					}
+					white_peace = MON
+				}
+				if = {
+					limit = {
+						KMN = {
+							exists = yes
+						}
+					}	
+					KMN = {
+						transfer_state = 611
+						transfer_state = 612
+						transfer_state = 621
+					}
+				}
+				if = {
+					limit = {
+						KMN = {
+							exists = no
+						}
+					}	
+					KOR = {
+						transfer_state = 611
+						transfer_state = 612
+						transfer_state = 621
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = MEN
+					KOR = {
+						NOT = {
+							has_idea = KOR_yi_jin
+						}
+					}	
+					has_war_with = KOR
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_war_with = MON
+						}
+					}
+					KOR = {
+						annex_country = {
+							target = MEN
+							transfer_troops = yes
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_war_with = MON
+					}
+					MON = {
+						annex_country = {
+							target = MEN
+							transfer_troops = yes
+						}
+						set_cosmetic_tag = MON
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = EOK
+					KOR = {
+						NOT = {
+							has_idea = KOR_yi_jin
+						}
+					}	
+					has_war_with = KOR
+				}
+				KOR = {
+					annex_country = {
+						target = EOK
+						transfer_troops = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = KMN
+					KOR = {
+						NOT = {
+							has_idea = KOR_yi_jin
+						}
+					}	
+					has_war_with = KOR
+				}
+				KOR = {
+					annex_country = {
+						target = KMN
+						transfer_troops = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = KYH
+					KOR = {
+						NOT = {
+							has_idea = KOR_yi_jin
+						}
+					}	
+					has_war_with = SOV
+				}
+				SOV = {
+					annex_country = {
+						target = KYH
+						transfer_troops = no
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = KYH
+					}
+					add_core_of = SOV
+				}
+				if = {
+					limit = {
+						KOR = {
+							has_war_with = KYH
+						}
+					}
+					KOR = {
+						transfer_state = 409
+						transfer_state = 408
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_historical_focus_on = yes
+					tag = ENG
+					has_global_flag = GB_Germany_victory_at_ww2
+					has_war_with = GER
+				}
+				every_country = {
+					limit = {
+						has_war_with = GER
+					}
+					white_peace = GER
+				}
+				WLS = {
+					transfer_state = 122
+				}
+				set_autonomy = {
+					target = ENG
+					autonomous_state = autonomy_puppet
+				}
+				SCO = {
+					transfer_state = 120
+					transfer_state = 121
+					transfer_state = 136
+					transfer_state = 133
+				}
+				ENG = {
+					set_cosmetic_tag = ENG_RK
+					add_ideas = ENG_king_edward_fascism
+					remove_ideas = george_v
+					remove_ideas = ENG_george_vi
+					transfer_state = 126
+					transfer_state = 127
+					transfer_state = 123
+					transfer_state = 125
+					transfer_state = 128
+					transfer_state = 129
+					transfer_state = 130
+					transfer_state = 131
+					transfer_state = 132
+					transfer_state = 338
+				}
+				CAN = {
+					end_puppet = ENG
+					transfer_state = 332
+					transfer_state = 331
+					add_ideas = ENG_george_vi
+					set_cosmetic_tag = CAN_TNO
+				}
+				123 = {
+					set_demilitarized_zone = yes
+				}
+			}
+			if = {
+				limit = {
+					is_historical_focus_on = yes
+					tag = GRE
+					has_war_with = GER
+					NOT = {
+						has_global_flag = GRE_SUR_HIST
+					}
+				}
+				set_global_flag = GRE_SUR_HIST
+				GER = {
+					set_state_controller = 731
+					set_state_controller = 182
+				}
+				BUL = {
+					set_state_controller = 184
+				}
+				ITA = {
+					set_state_controller = 185
+					set_state_controller = 47
+					set_state_controller = 186
+					set_state_controller = 187
+				}
+			}
+			if = {
+				limit = {
+					is_historical_focus_on = yes
+					tag = YUG
+					has_war_with = GER
+					NOT = {
+						has_global_flag = YUG_SUR_HIST
+					}
+				}
+				set_global_flag = YUG_SUR_HIST
+				GER = {
+					transfer_state = 102
+					puppet = CRO
+					puppet = SER
+				}
+				SER = {
+					transfer_state = 764
+					transfer_state = 108
+					set_state_controller = 107
+					set_capital = { state = 107 }
+				}
+				HUN = {
+					transfer_state = 45
+					transfer_state = 983
+				}
+				CRO = {
+					transfer_state = 109
+					transfer_state = 104
+					transfer_state = 103
+					transfer_state = 804
+				}
+				ITA = {
+					transfer_state = 853
+					transfer_state = 1002
+					transfer_state = 105
+					transfer_state = 981
+				}
+				BUL = {
+					transfer_state = 803
+					transfer_state = 106
+				}
+				every_country = {
+					limit = {
+						owns_state = 44
+					}
+					transfer_state = 802
+					transfer_state = 1000
+					transfer_state = 999
+				}
+				
+			}
+			if = {
+				limit = {
+					is_historical_focus_on = yes
+					tag = FRA
+					has_war_with = GER
+				}
+				CAN = {
+					set_major = yes
+				}
+				SAF = {
+					set_major = yes
+				}
+				AST = {
+					set_major = yes
+				}
+				NZL = {
+					set_major = yes
+				}
+				RAJ = {
+					set_major = yes
+				}
+				every_country = {
+					limit = {
+						owns_state = 1045
+					}
+					transfer_state = 728
+				}
+				CHI = {
+					add_state_core = 728
+				}	
+			}
+			if = {
+				limit = {
+					original_tag = ENG 
+					is_historical_focus_on = yes
+					FRA = {
+						has_capitulated = yes
+					}
+					has_war_with = GER
+				}
+				CAN = {
+					set_faction_leader = yes
+					set_major = yes
+				}
+				set_global_flag = PRE_THE_NEW_ORDER_GBR
+			}
+			if = {
+				limit = {
+					original_tag = USA
+					is_historical_focus_on = yes
+					has_war_with = KOR
+					has_government = democratic
+				}
+				white_peace = KOR
+				USA = {
+					country_event = {
+						id = korea.9
+						hours = 6
+					}
+				}
+				KOR = {
+					complete_national_focus = KOR_the_new_order
+				}
+			}
+			if = {
+				limit = {
+					original_tag = ZLC
+					has_war_with = KOR
+					KOR = {
+						has_government = fascism
+						NOT = {
+							has_country_flag = TLE_THE_WAR_IS_ENDED
+						}
+					}
+					if = {
+						limit = {
+							CHI = {
+								has_war_with = KOR
+							}
+						}
+						CHI = {
+							has_capitulated = yes
+						}
+					}
+				}
+				YUN = {
+					set_faction_leader = yes
+					set_major = yes
+				}
+				XSM = {
+					set_faction_leader = yes
+					set_major = yes
+				}
+				SHX = {
+					set_faction_leader = yes
+					set_major = yes
+				}
+				XKC = {
+					set_faction_leader = yes
+					set_major = yes
+				}
+				ZLC = {
+					add_to_faction = YUN
+					add_to_faction = XSM
+					add_to_faction = XKC
+					add_to_faction = SIK
+					white_peace = KOR
+					remove_ideas = CHI_AI_WAR_BONUS_IDEA
+				}
+				CHI = {
+					add_to_faction = YUN
+					add_to_faction = XSM
+					add_to_faction = XKC
+					add_to_faction = SIK
+					white_peace = KOR
+					remove_ideas = CHI_AI_WAR_BONUS_IDEA
+				}
+				KOR = {
+					annex_country = {
+						target = ZLC
+						transfer_troops = no
+					}
+					annex_country = {
+						target = CHI
+						transfer_troops = no
+					}
+					annex_country = {
+						target = SHX
+						transfer_troops = no
+					}
+					annex_country = {
+						target = SZC
+						transfer_troops = no
+					}
+					annex_country = {
+						target = GXC
+						transfer_troops = no
+					}
+					annex_country = {
+						target = XSM
+						transfer_troops = no
+					}
+					annex_country = {
+						target = WZC
+						transfer_troops = no
+					}
+					annex_country = {
+						target = HNC
+						transfer_troops = no
+					}
+					annex_country = {
+						target = YUN
+						transfer_troops = no
+					}
+					annex_country = {
+						target = SND
+						transfer_troops = no
+					}
+					annex_country = {
+						target = SCC
+						transfer_troops = no
+					}
+					annex_country = {
+						target = XKC
+						transfer_troops = no
+					}
+					country_event = {
+						id = korea.104
+					}
+					news_event = {
+						id = eok_news.14
+						days = 3
+					}
+				}
+			}
+			if = {
+				limit = {
+					original_tag = POL
+					is_historical_focus_on = yes
+					has_war_with = GER
+				}
+				POL = {
+					set_cosmetic_tag = POL_prov
+				}
+			}
+			if = {
+				limit = {
+					original_tag = GER
+					is_historical_focus_on = yes
+					has_government = fascism
+					has_completed_focus = GER_rhineland
+					SOV = {
+						has_war_with = GER
+						has_government = communism
+						is_puppet = no
+					}
+					ENG = {
+						has_war_with = GER
+						has_government = democratic
+						is_puppet = no
+					}
+					FRA = {
+						has_war_with = GER
+						is_puppet = no
+					}
+					NOT = {
+						has_global_flag = TLE_germany_union_defeat
+						has_global_flag = TLE_soviet_union_defeat
+					}
+				}
+				SOV = {
+					news_event = {
+						id = eok_news.18
+						days = 2
+					}	
+				}
+				if = {
+					limit = {
+						ENG = {
+							has_war_with = SOV
+						}
+					}
+					every_country = {
+						limit = {
+							has_war_with = SOV
+							NOT = {
+								original_tag = KOR
+							}
+						}
+						white_peace = SOV
+					}
+				}	
+				set_global_flag = TLE_germany_union_defeat
+				TLE_german_defeat_effect = yes
+			}	
+			if = {
+				limit = {
+					original_tag = SOV
+					is_historical_focus_on = yes
+					has_government = communism
+					has_completed_focus = SOV_the_centre
+					GER = {
+						has_war_with = SOV
+						has_government = fascism
+						is_puppet = no
+					}
+					NOT = {
+						has_global_flag = TLE_soviet_union_defeat
+						has_global_flag = TLE_germany_union_defeat
+					}
+				}
+				GER = {
+					news_event = {
+						id = eok_news.19
+						days = 2
+					}
+				}
+				set_global_flag = TLE_soviet_union_defeat
+				TLE_soviet_defeat_effect = yes
+				SOV = {
+					country_event = {
+						id = korea.171
+						days = 10
+					}
+				}
+			}
+			if = {
+				limit = {
+					original_tag = MON
+					has_war_with = KOR
+					has_war_with = MEN
+					KOR = {
+						NOT = {
+							has_country_flag = TLE_THE_WAR_IS_ENDED
+						}
+					}
+				}
+				set_global_flag = show_peace_popup_alert
+				KOR = {
+					save_global_event_target_as = winning_country
+				}
+				MON = {
+					save_global_event_target_as = losing_country
+				}
+				if = {
+					limit = {
+						event_target:losing_country = {
+							any_allied_country = {
+								has_war_together_with = event_target:losing_country
+							}
+						}
+					}
+					set_global_flag = losing_country_multiple
+				}
+
+				if = {
+					limit = {
+						event_target:winning_country = {
+							any_allied_country = {
+								has_war_together_with = event_target:winning_country
+							}
+						}
+					}
+					set_global_flag = winning_country_multiple
+				}
+				every_country = {
+					limit = {
+						is_ai = no
+					}	
+					add_to_variable = { global.peace_popup_dirty = 1 }
+				}
+				log = "war_won"
+				set_global_flag = war_won
+				KOR = {
+					news_event = {
+						id = eok_news.10
+						days = 1
+					}
+					country_event = {
+						id = korea.250
+						days = 2
+					}
+				}
+				MEN = {
+					transfer_state = 612
+					transfer_state = 611
+					transfer_state = 621
+					transfer_state = 1005
+					transfer_state = 746
+					transfer_state = 1006
+					transfer_state = 819
+					set_cosmetic_tag = MEN
+				}
+				MSR = {
+					annex_country = {
+						target = MON
+						transfer_troops = no
+					}
+				}
+			}
+			if = {
+				limit = {
+					original_tag = ZLC
+					has_war_with = KOR
+					owns_state = 608
+					CHI = {
+						NOT = {
+							has_country_flag = FLAG_CHI_COSMETIC_CHINA
+						}
+						owns_state = 613
+						has_war_with = KOR
+						has_capitulated = no
+					}
+				}
+				if = {
+					limit = {
+						CHI = {
+							controls_state = 524
+						}
+					}
+					CHI = {
+						transfer_state = 524
+					}
+				}
+				if = {
+					limit = {
+						ZLC = {
+							is_ai = no
+						}
+					}
+					TWC = {
+						change_tag_from = ZLC
+					}
+				}
+				CHI = {
+					set_country_flag = FLAG_CHI_COSMETIC_CHINA
+					save_global_event_target_as = WTT_current_china_leader
+					set_major = yes
+					set_faction_leader = yes
+					if = {
+						limit = {
+							YUN = {
+								is_ai = yes
+							}
+						}
+						transfer_state = 1058
+						transfer_state = 603
+						transfer_state = 1053
+					}
+					if = {
+						limit = {
+							SZC = {
+								is_ai = yes
+							}
+						}
+						transfer_state = 1007
+						transfer_state = 1047
+						transfer_state = 605
+						transfer_state = 748
+					}
+					if = {
+						limit = {
+							HNC = {
+								is_ai = yes
+							}
+						}
+						annex_country = {
+							target = HNC
+							transfer_troops = yes
+						}
+					}
+					if = {
+						limit = {
+							SND = {
+								is_ai = yes
+							}
+						}
+						annex_country = {
+							target = SND
+							transfer_troops = yes
+						}
+					}
+				}
+				SZC = {
+					set_major = yes
+				}
+				ZLC = {
+					clear_global_event_targets = yes
+				}
+				set_global_flag = TLE_ZLC_CAP_CHI_LEAD
+			}
+			if = {
+				limit = {
+					original_tag = CHI
+					NOT = {
+						has_global_flag = TLE_ZLC_CAP_CHI_LEAD
+					}
+					has_war_with = KOR
+					KOR = {
+						has_government = fascism
+						NOT = {
+							has_country_flag = TLE_THE_WAR_IS_ENDED
+						}
+					}
+				}
+				YUN = {
+					set_faction_leader = yes
+					set_major = yes
+				}
+				XSM = {
+					set_faction_leader = yes
+					set_major = yes
+				}
+				SHX = {
+					set_faction_leader = yes
+					set_major = yes
+				}
+				ZLC = {
+					set_faction_leader = yes
+				}
+			}
+			if = {
+				limit = {
+					original_tag = CHI
+					has_global_flag = TLE_ZLC_CAP_CHI_LEAD
+					has_war_with = KOR
+					KOR = {
+						has_government = fascism
+						NOT = {
+							has_country_flag = TLE_THE_WAR_IS_ENDED
+						}
+					}
+					if = {
+						limit = {
+							ZLC = {
+								has_war_with = KOR
+							}
+						}
+						ZLC = {
+							has_capitulated = yes
+						}
+					}
+				}
+				YUN = {
+					set_faction_leader = yes
+					set_major = yes
+				}
+				XSM = {
+					set_faction_leader = yes
+					set_major = yes
+				}
+				SHX = {
+					set_faction_leader = yes
+					set_major = yes
+				}
+				XKC = {
+					set_faction_leader = yes
+					set_major = yes
+				}
+				ZLC = {
+					add_to_faction = YUN
+					add_to_faction = XSM
+					add_to_faction = XKC
+					add_to_faction = SIK
+					white_peace = KOR
+					remove_ideas = CHI_AI_WAR_BONUS_IDEA
+				}
+				CHI = {
+					white_peace = KOR
+					remove_ideas = CHI_AI_WAR_BONUS_IDEA
+				}
+				KOR = {
+					annex_country = {
+						target = ZLC
+						transfer_troops = no
+					}
+					annex_country = {
+						target = CHI
+						transfer_troops = no
+					}
+					annex_country = {
+						target = SHX
+						transfer_troops = no
+					}
+					annex_country = {
+						target = SZC
+						transfer_troops = no
+					}
+					annex_country = {
+						target = GXC
+						transfer_troops = no
+					}
+					annex_country = {
+						target = XSM
+						transfer_troops = no
+					}
+					annex_country = {
+						target = WZC
+						transfer_troops = no
+					}
+					annex_country = {
+						target = HNC
+						transfer_troops = no
+					}
+					annex_country = {
+						target = YUN
+						transfer_troops = no
+					}
+					annex_country = {
+						target = SND
+						transfer_troops = no
+					}
+					annex_country = {
+						target = SCC
+						transfer_troops = no
+					}
+					annex_country = {
+						target = XKC
+						transfer_troops = no
+					}
+					country_event = {
+						id = korea.104
+					}
+					news_event = {
+						id = eok_news.14
+						days = 3
+					}
+				}
+			}
+			if = {
+				limit = {
+					original_tag = FRA
+					NOT = {
+						tag = FRA
+					}
+					has_government = fascism
+					has_war_with = FRA
+				}
+				FRA = {
+					annex_country = {
+						target = event_target:vichy_france
+						transfer_troops = yes
+					}
+					transfer_state = 33
+					transfer_state = 26
+					transfer_state = 25
+					transfer_state = 31
+					transfer_state = 22
+					transfer_state = 20
+					transfer_state = 32
+					transfer_state = 21
+				}
+			}
+			if = {
+				limit = {
+					original_tag = CHI
+					is_major = yes
+					CHI = {
+						has_war_with = KOR
+					}
+					KOR = {
+						has_government = fascism
+						NOT = {
+							has_country_flag = TLE_THE_WAR_IS_ENDED
+						}
+					}
+					OR = {
+						ZLC = {
+							exists = no
+						}	
+						ZLC = {
+							has_capitulated = yes
+						}		
+					}
+				}
+				SZC = {
+					set_major = yes
+				}
+				YUN = {
+					set_faction_leader = yes
+					set_major = yes
+				}
+				XSM = {
+					set_faction_leader = yes
+					set_major = yes
+				}
+				XKC = {
+					set_faction_leader = yes
+					set_major = yes
+				}
+				ZLC = {
+					add_to_faction = YUN
+					add_to_faction = XSM
+					add_to_faction = XKC
+					add_to_faction = SIK
+					remove_ideas = CHI_AI_WAR_BONUS_IDEA
+				}
+				CHI = {
+					remove_ideas = CHI_AI_WAR_BONUS_IDEA
+				}
+				KOR = {
+					annex_country = {
+						target = ZLC
+						transfer_troops = no
+					}
+					annex_country = {
+						target = CHI
+						transfer_troops = no
+					}
+					annex_country = {
+						target = SHX
+						transfer_troops = no
+					}
+					annex_country = {
+						target = SZC
+						transfer_troops = no
+					}
+					annex_country = {
+						target = GXC
+						transfer_troops = no
+					}
+					annex_country = {
+						target = XSM
+						transfer_troops = no
+					}
+					annex_country = {
+						target = WZC
+						transfer_troops = no
+					}
+					annex_country = {
+						target = HNC
+						transfer_troops = no
+					}
+					annex_country = {
+						target = YUN
+						transfer_troops = no
+					}
+					annex_country = {
+						target = SND
+						transfer_troops = no
+					}
+					country_event = {
+						id = korea.104
+					}
+					news_event = {
+						id = eok_news.14
+						days = 3
+					}
+				}
+			}
+			if = {
+				limit = {
+					original_tag = SND 
+					ZLC = {
+						has_war_with = KOR
+					}
+				}
+				ZLC = {
+					annex_country = {
+						target = SND
+						transfer_troops = yes
+					}	
+				}
+				if = {
+					limit = {
+						SND = {
+							is_ai = no
+						}
+					}
+					ZLC = {
+						change_tag_from = SND
+					}
+				}	
+			}
+			if = {
+				limit = {
+					original_tag = JAP
+					JAP = {
+						has_war_with = KOR
+					}	
+					KOR = {
+						has_government = fascism 
+						NOT = {
+							has_country_flag = TLE_THE_WAR_IS_ENDED
+						}
+						has_game_rule = {
+							rule = TLE_KOREA_HARDCORE_RULE
+							option = TLE_VERY_HARD
+						}
+					}
+				}
+				every_country = {
+					limit = {
+						is_in_faction_with = JAP
+						is_faction_leader = yes
+					}
+					add_ideas = JAP_showa_hirohito_4
+				}
+				KOR = {
+					annex_country = {
+						target = JAP
+						transfer_troops = no
+					}
+				}
+			}
+			if = {
+				limit = {
+					original_tag = ZLC
+					ZLC = {
+						has_war_with = CHI
+					}
+					CHI = {
+						is_puppet = no
+					}
+				}
+				CHI = {
+					annex_country = {
+						target = ZLC
+						transfer_troops = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					original_tag = CHI
+					CHI = {
+						has_war_with = ZLC
+					}
+					CHI = {
+						is_puppet = no
+					}
+					KOR = {
+						has_country_flag = TLE_THE_WAR_IS_ENDED
+					}
+				}
+				ZLC = {
+					annex_country = {
+						target = CHI
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = YUN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = SZC
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = SHX
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = XSM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = FNG
+						transfer_troops = yes
+					}
+					set_faction_name = "BEIJING_PACT"
+					add_state_core = 524
+					remove_ideas = CHI_war_of_resistance_1
+					remove_ideas = CHI_war_of_resistance_2
+					remove_ideas = CHI_forced_conscription
+					remove_ideas = CHI_legislative_yuan
+					remove_ideas = CHI_train_marines
+					retire_character = ZLC_wu_peifu
+					retire_character = ZLC_chao_kun
+					add_country_leader_role = {
+						Character = ZLC_yan_xishan
+						country_leader = {
+							expire = "1965.1.1"
+							ideology = despotism
+							traits = { }
+						}
+						promote_leader = yes
+					}	
+				}
+				611 = {
+					set_demilitarized_zone = no
+				}
+				612 = {
+					set_demilitarized_zone = no
+				}
+				621 = {
+					set_demilitarized_zone = no
+				}
+			}
+			if = {
+				limit = {
+					original_tag = KOR
+					KOR = {
+						has_completed_focus = kor_korean_lebensraum
+						NOT = {
+							has_country_flag = TLE_THE_WAR_IS_ENDED
+						}	
+					}
+					has_global_flag = KOR_nuke_1
+					has_global_flag = KOR_nuke_2
+				}
+				KOR_hangbok_event_2 = yes
+				KOR = {
+					remove_power_balance = { id = KOR_balance }
+				}
+			}
+			if = {
+				limit = {
+					tag = KOR
+					KOR = {
+						has_completed_focus = kor_korean_lebensraum
+						NOT = {
+							has_country_flag = TLE_THE_WAR_IS_ENDED
+						}	
+					}
+					NOT = {
+						has_global_flag = KOR_nuke_1
+						has_global_flag = KOR_nuke_2
+					}
+				}
+				EOK = {
+					set_faction_leader = yes
+				}
+				KOR_hangbok_event = yes
+				KOR = {
+					remove_power_balance = { id = KOR_balance }
+				}
+			}
+		}
+		###############################
+		effect = {
+			##########################오헝제국 루트
+			if = {
+				limit = {
+					tag = HUN
+					is_historical_focus_on = yes
+					HUN = {
+						has_war_with = GER
+						has_completed_focus = HUN_invite_the_habsburg_prince
+						is_puppet = no
+						has_cosmetic_tag = HUN_EMPIRE
+					}
+					GER = {
+						has_completed_focus = GER_rhineland
+					}
+				}
+				every_country = {
+					limit = {
+						OR = {
+							is_in_faction_with = GER
+							tag = GER
+						}	
+					}
+					white_peace = HUN
+				}
+				GER = {
+					if = {
+						limit = {
+							MNT = {
+								is_puppet_of = HUN
+							}	
+						}
+						puppet = MNT
+					}
+					if = {
+						limit = {
+							SER = {
+								is_puppet_of = HUN
+							}	
+						}
+						puppet = SER
+						SER = {
+							transfer_state = 764
+						}
+					}
+					puppet = HUN
+					transfer_state = 848
+					transfer_state = 153
+					transfer_state = 986
+					transfer_state = 152
+					transfer_state = 4
+					transfer_state = 984
+					transfer_state = 69
+					transfer_state = 9
+					transfer_state = 75
+					transfer_state = 74
+					transfer_state = 72
+					if = {
+						limit = {
+							HUN = {
+								owns_state = 978
+							}
+						}
+						transfer_state = 978
+					}
+					if = {
+						limit = {
+							HUN = {
+								owns_state = 39
+							}
+						}
+						transfer_state = 39
+					}
+					if = {
+						limit = {
+							HUN = {
+								owns_state = 850
+							}
+						}
+						transfer_state = 850
+					}
+					if = {
+						limit = {
+							HUN = {
+								owns_state = 852
+							}
+						}
+						transfer_state = 852
+					}
+					if = {
+						limit = {
+							HUN = {
+								owns_state = 736
+							}
+						}
+						transfer_state = 736
+					}
+					if = {
+						limit = {
+							HUN = {
+								owns_state = 102
+							}
+						}
+						transfer_state = 102
+					}
+					if = {
+						limit = {
+							HUN = {
+								owns_state = 853
+							}
+						}
+						transfer_state = 853
+					}
+					if = {
+						limit = {
+							HUN = {
+								owns_state = 1002
+							}
+						}
+						transfer_state = 1002
+					}
+				}
+				HUN = {
+					transfer_state = 664
+					transfer_state = 73
+				}
+				CRO = {
+					if = {
+						limit = {
+							HUN = {
+								owns_state = 163
+							}
+						}
+						transfer_state = 163
+					}	
+					if = {
+						limit = {
+							HUN = {
+								owns_state = 109
+							}
+						}
+						transfer_state = 109
+						transfer_state = 103
+						transfer_state = 104
+						transfer_state = 804
+					}
+				}
+			}	
+			if = {
+				limit = {
+					tag = ITA
+					is_historical_focus_on = yes
+					HUN = {
+						has_war_with = ITA
+						has_completed_focus = HUN_invite_the_habsburg_prince
+						is_puppet = no
+					}
+				}
+				if = {
+					limit = {
+						GER = {
+							NOT = {
+								has_completed_focus = GER_oppose_hitler
+								is_in_faction_with = HUN
+							}
+						}
+					}
+					every_country = {
+						limit = {
+							OR = {
+								is_in_faction_with = GER
+								tag = GER
+							}
+						}
+						white_peace = ITA
+					}
+					HUN = {	
+						transfer_state = 39
+						transfer_state = 850
+						transfer_state = 852
+						transfer_state = 736
+						add_state_core = 39
+						add_state_core = 850
+						add_state_core = 852
+						add_state_core = 736
+						if = {
+							ITA = {
+								owns_state = 163
+							}
+							transfer_state = 163
+							add_state_core = 163
+						}
+						puppet = ITA
+					}	
+				}
+			}
+			if = {
+				limit = {
+					tag = POL
+					is_historical_focus_on = yes
+					HUN = {
+						has_war_with = POL
+						has_completed_focus = HUN_invite_the_habsburg_prince
+						is_puppet = no
+					}
+				}
+				if = {
+					limit = {
+						GER = {
+							NOT = {
+								has_completed_focus = GER_oppose_hitler
+							}
+						}
+					}
+					if = {
+						limit = {
+							GER = {
+								has_completed_focus = GER_rhineland
+								is_in_faction_with = HUN
+							}	
+						}
+						GER = {
+							transfer_state = 86
+							transfer_state = 85
+							transfer_state = 807
+							transfer_state = 762
+						}
+					}
+					every_country = {
+						limit = {
+							OR = {
+								is_in_faction_with = GER
+								tag = GER
+							}
+						}
+						white_peace = POL
+					}
+					HUN = {	
+						puppet = POL
+						transfer_state = 978
+						transfer_state = 88
+						if = {
+							POL = {
+								owns_state = 72
+							}
+							transfer_state = 72
+						}
+						if = {
+							POL = {
+								owns_state = 91
+							}
+							transfer_state = 91
+						}
+						if = {
+							POL = {
+								owns_state = 89
+							}
+							transfer_state = 89
+						}
+					}	
+				}
+			}
+			if = {
+				limit = {
+					tag = CZE
+					is_historical_focus_on = yes
+					HUN = {
+						has_war_with = CZE
+						has_completed_focus = HUN_invite_the_habsburg_prince
+						is_puppet = no
+					}
+					if = {
+						limit = {
+							GER = {
+								has_completed_focus = GER_rhineland
+							}	
+						}
+						NOT = {
+							has_war_with = GER
+						}
+					}
+				}
+				if = {
+					limit = {
+						GER = {
+							NOT = {
+								has_completed_focus = GER_oppose_hitler
+								is_in_faction_with = HUN
+							}
+						}
+					}
+					every_country = {
+						limit = {
+							OR = {
+								is_in_faction_with = GER
+								tag = GER
+							}
+						}
+						white_peace = CZE
+					}
+					HUN = {
+						annex_country = {
+							target = CZE
+							transfer_troops = no
+						}
+					}	
+				}
+			}
+			if = {
+				limit = {
+					tag = AUS
+					is_historical_focus_on = yes
+					HUN = {
+						has_war_with = AUS
+						has_completed_focus = HUN_invite_the_habsburg_prince
+						is_puppet = no
+					}
+				}
+				every_country = {
+					limit = {
+						OR = {
+							is_in_faction_with = GER
+							tag = GER
+						}
+					}
+					white_peace = AUS
+				}
+				HUN = {
+					annex_country = {
+						target = AUS
+						transfer_troops = no
+					}
+					add_state_core = 4
+					add_state_core = 984
+					add_state_core = 986
+					add_state_core = 152
+					add_state_core = 153
+					add_state_core = 848
+				}	
+			}
+			if = {
+				limit = {
+					tag = ROM
+					is_historical_focus_on = yes
+					HUN = {
+						has_war_with = ROM
+						has_completed_focus = HUN_invite_the_habsburg_prince
+						is_puppet = no
+					}
+				}
+				if = {
+					limit = {
+						GER = {
+							NOT = {
+								has_completed_focus = GER_oppose_hitler
+								is_in_faction_with = HUN
+							}
+						}
+					}
+					HUN = {
+						puppet = ROM
+					}
+					ROM = {
+						set_cosmetic_tag = ROM_KINGDOM
+					}
+					HUN = {
+						transfer_state = 76
+						transfer_state = 84
+						transfer_state = 83
+						transfer_state = 82
+						add_state_core = 76
+						add_state_core = 84
+						add_state_core = 83
+						add_state_core = 82
+					}
+					if = {
+						limit = {
+							ROM = {
+								owns_state = 80
+							}
+							HUN = {
+								has_cosmetic_tag = HUN_EMPIRE
+							}
+						}
+						HUN = {
+							transfer_state = 80
+						}	
+					}
+					if = {
+						limit = {
+							ROM = {
+								owns_state = 977
+							}
+							HUN = {
+								has_cosmetic_tag = HUN_EMPIRE
+							}
+						}
+						HUN = {
+							transfer_state = 977
+						}	
+					}
+					if = {
+						limit = {
+							BUL = {
+								is_in_faction_with = HUN
+							}
+						}
+						BUL = {
+							transfer_state = 77
+							transfer_state = 987
+							add_state_core = 77
+							add_state_core = 987
+						}
+					}
+				}	
+				every_country = {
+					limit = {
+						OR = {
+							is_in_faction_with = HUN
+							tag = HUN
+						}
+					}
+					white_peace = ROM
+				}
+			}	
+			if = {
+				limit = {
+					tag = YUG
+					is_historical_focus_on = yes
+					HUN = {
+						has_war_with = YUG
+						has_completed_focus = HUN_invite_the_habsburg_prince
+						is_puppet = no
+						has_cosmetic_tag = HUN
+					}
+				}
+				if = {
+					limit = {
+						GER = {
+							NOT = {
+								has_completed_focus = GER_oppose_hitler
+							}
+						}
+					}
+					HUN = {
+						puppet = SER
+					}
+					HUN = {
+						transfer_state = 983
+						transfer_state = 102
+						transfer_state = 45
+						transfer_state = 109
+						transfer_state = 104
+						transfer_state = 103
+						transfer_state = 804
+						transfer_state = 981
+						transfer_state = 853
+						transfer_state = 1002
+						transfer_state = 764
+						
+						add_state_core = 983
+						add_state_core = 102
+						add_state_core = 45
+						add_state_core = 109
+						add_state_core = 104
+						add_state_core = 103
+						add_state_core = 804
+						add_state_core = 981
+						add_state_core = 853
+						add_state_core = 1002
+						add_state_core = 764
+					}
+					SER = {
+						transfer_state = 107
+						transfer_state = 108
+						transfer_state = 802
+					}
+					BUL = {
+						transfer_state = 803
+						transfer_state = 106
+						transfer_state = 999
+					}	
+					MNT = {
+						transfer_state = 105
+						transfer_state = 1000
+					}
+				}
+				every_country = {
+					limit = {
+						OR = {
+							is_in_faction_with = HUN
+							tag = HUN
+						}
+					}
+					white_peace = YUG
+				}
+			}	
+			##########################독일제국 루트
+			if = {
+				limit = {
+					tag = GER
+					is_historical_focus_on = yes
+					has_completed_focus = GER_oppose_hitler
+					is_puppet = no
+				}
+				TLE_german_empire_lose = yes
+			}	
+			if = {
+				limit = {
+					original_tag = SOV
+					is_historical_focus_on = yes
+					has_government = communism
+					has_completed_focus = SOV_the_centre
+					GER = {
+						has_war_with = SOV
+						has_government = neutrality
+						has_completed_focus = GER_oppose_hitler
+						is_puppet = no
+					}
+					NOT = {
+						has_global_flag = TLE_german_empire_win
+						has_global_flag = TLE_german_empire_lose
+					}
+				}
+				GER = {
+					news_event = {
+						id = eok_news.19
+						days = 2
+					}
+				}
+				set_global_flag = TLE_german_empire_win
+				TLE_german_empire_win = yes
+			}
+			if = {
+				limit = {
+					tag = POL
+					is_historical_focus_on = yes
+					GER = {
+						has_war_with = POL
+						has_completed_focus = GER_oppose_hitler
+						is_puppet = no
+					}
+				}
+				every_country = {
+					limit = {
+						OR = {
+							is_in_faction_with = GER
+							tag = GER
+						}
+					}
+					white_peace = POL
+				}
+				GER = {
+					transfer_state = 85
+					transfer_state = 807
+					transfer_state = 86
+					transfer_state = 762
+					puppet = POL
+				}
+				POL = {
+					set_cosmetic_tag = POL_KINGDOM
+					promote_character = POL_karl_albrecht
+				}
+				if = {
+					limit = {
+						HUN = {
+							is_in_faction_with = GER
+							has_cosmetic_tag = HUN_EMPIRE
+						}
+					}
+					HUN = {
+						transfer_state = 978
+						transfer_state = 88
+						transfer_state = 91
+						transfer_state = 89
+						add_state_core = 978
+						add_state_core = 88
+						add_state_core = 91
+						add_state_core = 89
+					}
+				}
+				if = {
+					limit = {
+						LIT = {
+							exists = yes
+							is_in_faction_with = GER
+						}
+						POL = {
+							owns_state = 975
+							owns_state = 784
+						}
+					}
+					LIT = {
+						transfer_state = 975
+						transfer_state = 784
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = GRE
+					is_historical_focus_on = yes
+					GER = {
+						has_war_with = GRE
+						has_completed_focus = GER_oppose_hitler
+						is_puppet = no
+					}
+				}
+				every_country = {
+					limit = {
+						OR = {
+							is_in_faction_with = GER
+							tag = GER
+						}
+					}
+					white_peace = GRE
+				}
+				GER = {
+					puppet = GRE
+				}
+				BUL = {
+					transfer_state = 731
+					transfer_state = 184
+				}
+				GRE = {
+					set_cosmetic_tag = GRE_PUR
+				}
+			}
+			if = {
+				limit = {
+					tag = ALB
+					is_historical_focus_on = yes
+					GER = {
+						has_war_with = ALB
+						has_completed_focus = GER_oppose_hitler
+						is_puppet = no
+					}
+				}
+				every_country = {
+					limit = {
+						OR = {
+							is_in_faction_with = GER
+							tag = GER
+						}
+					}
+					white_peace = ALB
+				}
+				GER = {
+					puppet = ALB
+				}
+				ALB = {
+					set_cosmetic_tag = ALB_PUR
+				}
+			}
+			if = {
+				limit = {
+					tag = HOL
+					is_historical_focus_on = yes
+					GER = {
+						has_war_with = HOL
+						has_completed_focus = GER_oppose_hitler
+						is_puppet = no
+					}
+				}
+				every_country = {
+					limit = {
+						OR = {
+							is_in_faction_with = GER
+							tag = GER
+						}
+					}
+					white_peace = HOL
+				}
+				GER = {
+					transfer_state = 188
+					puppet = HOL
+				}
+				HOL = {
+					end_puppet = INS
+					set_cosmetic_tag = HOL_PUP
+				}
+			}
+			if = {
+				limit = {
+					tag = LIT
+					is_historical_focus_on = yes
+					GER = {
+						has_war_with = LIT
+						has_completed_focus = GER_oppose_hitler
+						is_puppet = no
+					}
+				}
+				every_country = {
+					limit = {
+						OR = {
+							is_in_faction_with = GER
+							tag = GER
+						}
+					}
+					white_peace = LIT
+				}
+				GER = {
+					transfer_state = 188
+					puppet = LIT
+				}
+				LIT = {
+					set_cosmetic_tag = LIT_KINGDOM
+					add_ideas = { LIT_karl_gero_idea }
+				}
+			}
+			if = {
+				limit = {
+					tag = CZE
+					is_historical_focus_on = yes
+					GER = {
+						has_war_with = CZE
+						has_completed_focus = GER_oppose_hitler
+						is_puppet = no
+					}
+				}
+				every_country = {
+					limit = {
+						OR = {
+							is_in_faction_with = GER
+							tag = GER
+						}
+					}
+					white_peace = CZE
+				}
+				if = {
+					limit = {
+						any_country = {
+							has_cosmetic_tag = HUN_EMPIRE
+						}
+					}
+					every_country = {
+						limit = {
+							has_cosmetic_tag = HUN_EMPIRE
+						}
+						annex_country = {
+							target = CZE
+							transfer_troops = no
+						}
+					}	
+				}
+				if = {
+					limit = {
+						NOT = {
+							any_country = {
+								has_cosmetic_tag = HUN_EMPIRE
+							}
+						}
+						GER = {
+							owns_state = 4
+						}
+					}
+					GER = {
+						transfer_state = 69
+						transfer_state = 74
+						transfer_state = 72
+						puppet = CZE
+					}
+					CZE = {
+						set_cosmetic_tag = BOH_KINGDOM
+						transfer_state = 9
+						transfer_state = 75
+					}
+					if = {
+						limit = {
+							HUN = {
+								is_in_faction_with = GER
+							}
+						}
+						HUN = {
+							transfer_state = 70
+							transfer_state = 71
+							transfer_state = 73
+							transfer_state = 664
+						}
+					}
+					if = {
+						limit = {
+							NOT = {
+								HUN = {
+									is_in_faction_with = GER
+								}
+							}
+						}
+						GER = {
+							puppet = SLO
+						}
+						SLO = {
+							transfer_state = 70
+							transfer_state = 71
+							transfer_state = 73
+							transfer_state = 664
+							add_state_core = 70
+							add_state_core = 71
+							add_state_core = 73
+							add_state_core = 664
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = AUS
+					is_historical_focus_on = yes
+					GER = {
+						has_war_with = AUS
+						has_completed_focus = GER_oppose_hitler
+						is_puppet = no
+					}
+				}
+				every_country = {
+					limit = {
+						OR = {
+							is_in_faction_with = GER
+							tag = GER
+						}
+					}
+					white_peace = AUS
+				}
+				if = {
+					limit = {
+						HUN = {
+							is_in_faction_with = GER
+						}
+					}
+					HUN = {
+						annex_country = {
+							target = AUS
+							transfer_troops = no
+						}
+						add_state_core = 4
+						add_state_core = 984
+						add_state_core = 986
+						add_state_core = 152
+						add_state_core = 153
+						add_state_core = 848
+						set_cosmetic_tag = HUN_EMPIRE
+						add_ideas = AUH_otto_von_habsburg
+					}	
+				}
+				if = {
+					limit = {	
+						NOT = {
+							HUN = {
+								is_in_faction_with = GER
+							}
+						}
+					}
+					GER = {
+						annex_country = {
+							target = AUS
+							transfer_troops = no
+						}
+					}	
+				}
+			}
+			if = {
+				limit = {
+					tag = HUN
+					is_historical_focus_on = yes
+					GER = {
+						has_war_with = HUN
+						has_completed_focus = GER_oppose_hitler
+						is_puppet = no
+					}
+				}
+				every_country = {
+					limit = {
+						OR = {
+							is_in_faction_with = GER
+							tag = GER
+						}
+					}
+					white_peace = HUN
+				}
+				if = {
+					limit = {
+						HUN = {
+							NOT = {
+								has_cosmetic_tag = HUN_EMPIRE
+							}
+						}
+					}
+					GER = {
+						puppet = HUN
+					}
+					HUN = {
+						set_cosmetic_tag = HUN_KINGDOM
+						add_ideas = AUH_otto_von_habsburg
+					}
+				}
+				if = {
+					limit = {
+						HUN = {
+							has_cosmetic_tag = HUN_EMPIRE
+						}
+					}
+					GER = {
+						puppet = HUN
+					}
+					HUN = {
+						add_ideas = AUH_otto_von_habsburg
+					}
+				}
+			}	
+			if = {
+				limit = {
+					tag = ROM
+					is_historical_focus_on = yes
+					GER = {
+						has_war_with = ROM
+						has_completed_focus = GER_oppose_hitler
+						is_puppet = no
+					}
+				}
+				every_country = {
+					limit = {
+						OR = {
+							is_in_faction_with = GER
+							tag = GER
+						}
+					}
+					white_peace = ROM
+				}
+				GER = {
+					puppet = ROM
+				}
+				ROM = {
+					set_cosmetic_tag = ROM_KINGDOM
+				}
+				if = {
+					limit = {
+						HUN = {
+							is_in_faction_with = GER
+						}
+					}
+					HUN = {
+						transfer_state = 76
+						transfer_state = 84
+						transfer_state = 83
+						transfer_state = 82
+						add_state_core = 76
+						add_state_core = 84
+						add_state_core = 83
+						add_state_core = 82
+					}
+					if = {
+						limit = {
+							ROM = {
+								owns_state = 80
+							}
+							HUN = {
+								has_cosmetic_tag = HUN_EMPIRE
+							}
+						}
+						HUN = {
+							transfer_state = 80
+						}	
+					}
+					if = {
+						limit = {
+							ROM = {
+								owns_state = 977
+							}
+							HUN = {
+								has_cosmetic_tag = HUN_EMPIRE
+							}
+						}
+						HUN = {
+							transfer_state = 977
+						}	
+					}
+				}
+				if = {
+					limit = {
+						BUL = {
+							is_in_faction_with = GER
+						}
+					}
+					BUL = {
+						transfer_state = 77
+						transfer_state = 987
+						add_state_core = 77
+						add_state_core = 987
+					}
+				}
+			}	
+			if = {
+				limit = {
+					tag = YUG
+					is_historical_focus_on = yes
+					GER = {
+						has_war_with = YUG
+						has_completed_focus = GER_oppose_hitler
+						is_puppet = no
+					}
+				}
+				every_country = {
+					limit = {
+						OR = {
+							is_in_faction_with = GER
+							tag = GER
+						}
+					}
+					white_peace = YUG
+				}
+				if = {
+					limit = {
+						HUN = {
+							NOT = {
+								has_cosmetic_tag = HUN_EMPIRE
+							}
+						}
+					}
+					GER = {
+						puppet = SER
+						puppet = MNT
+						puppet = CRO
+					}
+					every_country = {
+						limit = {
+							owns_state = 986
+						}
+						transfer_state = 102
+						transfer_state = 853
+						transfer_state = 1002
+					}
+					HUN = {
+						transfer_state = 45
+						transfer_state = 983
+					}
+					SER = {
+						transfer_state = 764
+						transfer_state = 107
+						transfer_state = 108
+						transfer_state = 802
+					}
+					BUL = {
+						transfer_state = 803
+						transfer_state = 106
+						transfer_state = 999
+					}	
+					MNT = {
+						transfer_state = 105
+						transfer_state = 1000
+					}
+					CRO = {
+						transfer_state = 109
+						transfer_state = 104
+						transfer_state = 103
+						transfer_state = 804
+						transfer_state = 981
+					}
+				}
+				if = {
+					limit = {
+						HUN = {
+							has_cosmetic_tag = HUN_EMPIRE
+						}
+					}
+					GER = {
+						puppet = SER
+					}
+					HUN = {
+						transfer_state = 983
+						transfer_state = 102
+						transfer_state = 45
+						transfer_state = 109
+						transfer_state = 104
+						transfer_state = 103
+						transfer_state = 804
+						transfer_state = 981
+						transfer_state = 853
+						transfer_state = 1002
+						transfer_state = 764
+					}
+					SER = {
+						transfer_state = 107
+						transfer_state = 108
+						transfer_state = 802
+					}
+					BUL = {
+						transfer_state = 803
+						transfer_state = 106
+						transfer_state = 999
+					}	
+					MNT = {
+						transfer_state = 105
+						transfer_state = 1000
+					}
+				}
+			}	
+			if = {
+				limit = {
+					tag = ITA
+					is_historical_focus_on = yes
+					GER = {
+						has_war_with = ITA
+						has_completed_focus = GER_oppose_hitler
+						is_puppet = no
+					}
+				}
+				every_country = {
+					limit = {
+						OR = {
+							is_in_faction_with = GER
+							tag = GER
+						}
+					}
+					white_peace = ITA
+				}
+				GER = {
+					puppet = ITA
+				}
+				every_country = {
+					limit = {
+						owns_state = 153
+					}
+					transfer_state = 39
+					transfer_state = 850
+					add_state_core = 39
+					add_state_core = 850
+					#	
+					transfer_state = 852
+					transfer_state = 736
+					add_state_core = 852
+					add_state_core = 736
+				}
+				every_country = {
+					limit = {
+						owns_state = 103
+					}
+					transfer_state = 163
+				}
+				every_state = {
+					limit = {
+						is_owned_by = ITA
+						NOT = {
+							is_core_of = ITA
+						}
+					}
+					set_state_owner_to = GER
+					transfer_state_to = GER
+				}
+				ITA = {
+					set_cosmetic_tag = ITA_KINGDOM
+				}	
+				GER = {
+					release_puppet = ETH
+				}
+			}		
+			if = {
+				limit = {
+					tag = BEL
+					is_historical_focus_on = yes
+					GER = {
+						has_war_with = BEL
+						has_completed_focus = GER_oppose_hitler
+						is_puppet = no
+					}
+				}
+				every_country = {
+					limit = {
+						OR = {
+							is_in_faction_with = GER
+							tag = GER
+						}
+					}
+					white_peace = BEL
+				}
+				every_state = {
+					limit = {
+						is_owned_by = BEL
+						NOT = {
+							is_core_of = BEL
+						}
+					}
+					set_state_owner_to = GER
+					transfer_state_to = GER
+				}
+				GER = {
+					transfer_state = 980
+					transfer_state = 34
+					puppet = BEL
+				}
+				BEL = {
+					set_cosmetic_tag = FLD_WAL_KINGDOM
+				}
+			}	
+			if = {
+				limit = {
+					tag = LUX
+					is_historical_focus_on = yes
+					GER = {
+						has_war_with = LUX
+						has_completed_focus = GER_oppose_hitler
+						is_puppet = no
+					}
+				}
+				every_country = {
+					limit = {
+						OR = {
+							is_in_faction_with = GER
+							tag = GER
+						}
+					}
+					white_peace = LUX
+				}
+				GER = {
+					transfer_state = 8
+					add_state_core = 8
+				}
+			}	
+			if = {
+				limit = {
+					tag = FRA
+					is_historical_focus_on = yes
+					GER = {
+						has_war_with = FRA
+						has_completed_focus = GER_oppose_hitler
+						is_puppet = no
+					}
+				}
+				every_country = {
+					limit = {
+						OR = {
+							is_in_faction_with = GER
+							tag = GER
+						}
+					}
+					white_peace = FRA
+				}
+				GER = {
+					puppet = FRS
+					transfer_state = 28
+					transfer_state = 985
+				}
+				every_state = {
+					limit = {
+						is_owned_by = FRA
+						NOT = {
+							is_core_of = FRA
+						}
+					}
+					set_state_owner_to = GER
+					transfer_state_to = GER
+				}
+				every_state = {
+					limit = {
+						is_owned_by = FRA
+						is_core_of = FRA
+					}
+					set_state_owner_to = FRS
+					transfer_state_to = FRS
+					add_core_of = FRS
+				}
+				FRS = {
+					set_cosmetic_tag = FRS_KINGDOM
+					add_ideas = FRS_henri_vi
+					transfer_state = 459
+					transfer_state = 460
+					transfer_state = 458
+					transfer_state = 665
+					transfer_state = 513
+					transfer_state = 514
+					annex_country = {
+						target = FRA
+						transfer_troops = yes
+					}
+				}
+				if = {
+					limit = {
+						KOR = {
+							has_completed_focus = kor_korean_lebensraum
+						}
+					}
+					KOR = {
+						transfer_state = 671
+						transfer_state = 286
+						transfer_state = 741
+						transfer_state = 995
+						transfer_state = 670
+						transfer_state = 994
+						transfer_state = 993
+					}	
+				}
+			}	
+			if = {
+				limit = {
+					tag = ENG
+					is_historical_focus_on = yes
+					GER = {
+						has_war_with = ENG
+						has_completed_focus = GER_oppose_hitler
+						is_puppet = no
+					}
+				}
+				every_country = {
+					limit = {
+						OR = {
+							is_in_faction_with = GER
+							tag = GER
+						}
+					}
+					white_peace = ENG
+				}
+				every_country = {
+					limit = {
+						is_puppet_of = ENG
+					}
+					white_peace = GER
+					end_puppet = ENG
+				}
+				every_state = {
+					limit = {
+						is_owned_by = ENG
+						NOT = {
+							is_core_of = ENG
+						}
+					}
+					set_state_owner_to = GER
+					transfer_state_to = GER
+				}
+				ENG = {
+					annex_country = {
+						target = ENG
+						transfer_troops = no
+					}
+				}	
+				GER = {
+					puppet = ENG
+				}
+				ENG = {
+					set_cosmetic_tag = ENG_KINGDOM
+				}
+				IRE = {
+					transfer_state = 119
+					transfer_state = 113
+					transfer_state = 134
+					transfer_state = 135
+				}
+				every_country = {
+					limit = {
+						owns_state = 169
+					}
+					transfer_state = 118
+				}
+			}	
+			if = {
+				limit = {
+					original_tag = POR
+					is_historical_focus_on = yes
+					has_war_with = GER
+					GER = {
+						has_completed_focus = GER_oppose_hitler
+						is_puppet = no
+					}
+				}
+				every_country = {
+					limit = {
+						OR = {
+							is_in_faction_with = GER
+							tag = GER
+						}
+					}
+					white_peace = POR
+				}
+				GER = {
+					puppet = POR
+				}	
+				POR = {
+					set_cosmetic_tag = KOP_kingdom_portugal
+					retire_character = POR_antonio_de_oliveira_salazar
+					add_country_leader_role = {
+						Character = PRT_duarte_ii
+						country_leader = {
+							expire = "1965.1.1"
+							ideology = despotism
+							traits = { }
+						}
+						promote_leader = yes
+					}	
+					remove_ideas = POR_unstable_republic
+						add_popularity = {
+							ideology = neutrality
+							popularity = 1
+						}
+					set_party_name = { 
+						ideology = neutrality
+						long_name = POR_monarchy_party_long
+						name = POR_monarchy_party
+					}
+				}
+				every_state = {
+					limit = {
+						is_owned_by = SPR
+						NOT = {
+							is_core_of = SPR
+						}
+					}
+					set_state_owner_to = GER
+					transfer_state_to = GER
+				}
+			}	
+			if = {
+				limit = {
+					original_tag = SPR
+					is_historical_focus_on = yes
+					has_war_with = GER
+					GER = {
+						has_completed_focus = GER_oppose_hitler
+						is_puppet = no
+					}
+				}
+				every_country = {
+					limit = {
+						OR = {
+							is_in_faction_with = GER
+							tag = GER
+						}
+					}
+					white_peace = SPR
+				}
+				GER = {
+					puppet = SPR
+				}	
+				SPR = {
+					set_cosmetic_tag = SPR_carlist_spain
+					if = {
+						limit = {
+							date < 1941.2.28
+						}
+						add_ideas = SPR_alfonso_xiii
+						add_country_leader_role = {
+							Character = SPR_jaime_de_borbon
+							country_leader = {
+								expire = "1965.1.1"
+								ideology = despotism
+								desc = POLITICS_JAIME_IV_DESC
+								traits = { the_legitimist }
+							}
+							promote_leader = yes
+						}	
+					}
+					if = {
+						limit = {
+							date > 1941.2.28
+						}
+						add_country_leader_role = {
+							Character = SPR_jaime_de_borbon
+							country_leader = {
+								expire = "1965.1.1"
+								ideology = despotism
+								desc = POLITICS_JAIME_IV_DESC
+								traits = { the_legitimist }
+							}
+							promote_leader = yes
+						}	
+					}
+					add_state_core = 790
+					add_state_core = 792
+					add_state_core = 793
+					add_state_core = 794
+					add_state_core = 41
+					add_state_core = 175
+					add_state_core = 165
+					add_state_core = 167
+					add_state_core = 168
+					add_state_core = 173
+					add_state_core = 118
+				}
+				every_state = {
+					limit = {
+						is_owned_by = SPR
+						NOT = {
+							is_core_of = SPR
+						}
+					}
+					set_state_owner_to = GER
+					transfer_state_to = GER
+				}
+			}	
+			if = {
+				limit = {
+					original_tag = SWI
+					is_historical_focus_on = yes
+					has_war_with = GER
+					GER = {
+						has_completed_focus = GER_oppose_hitler
+						is_puppet = no
+					}
+				}
+				every_country = {
+					limit = {
+						OR = {
+							is_in_faction_with = GER
+							tag = GER
+						}
+					}
+					white_peace = SWI
+				}
+				GER = {
+					puppet = SWI
+				}	
+			}	
+			if = {
+				limit = {
+					original_tag = DEN
+					is_historical_focus_on = yes
+					has_war_with = GER
+					GER = {
+						has_completed_focus = GER_oppose_hitler
+						is_puppet = no
+					}
+				}
+				every_country = {
+					limit = {
+						OR = {
+							is_in_faction_with = GER
+							tag = GER
+						}
+					}
+					white_peace = DEN
+				}
+				DEN = {
+					set_cosmetic_tag = DEN_KINGDOM
+				}
+				GER = {
+					puppet = DEN
+					transfer_state = 912
+				}	
+			}	
+			##########################
+		}	
+	}	
+}

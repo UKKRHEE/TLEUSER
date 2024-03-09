@@ -1,0 +1,1881 @@
+focus_tree = {
+	id = korean_socialist_empire_focus
+	country = {
+		factor = 0
+	}	
+	##################
+	################
+	############################
+	focus = {
+		id = KTL_newfocus_0
+		icon = GFX_goal_soviet_revolution
+		cost = 3.00
+		allow_branch = {
+			has_country_flag = TLE_EMPIRE_SOCIALIST_DD
+		}
+		available = {
+			or = {
+			has_country_flag = TLE_SUC_CHUNGCHEONG
+			has_country_flag = TLE_FAIL_CHUNGCHEONG
+			}
+			has_country_flag = TLE_SUC_FIND_HWANTAEJA
+		}
+		x = 34
+		y = 0
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			remove_ideas = KOR_the_korean_crisis
+			remove_ideas = KOR_failed_civilian_control_of_the_military
+			complete_national_focus = KOR_focus_see_the_hansung
+			complete_national_focus = kor_homeland_development
+			complete_national_focus = kor_military
+		}
+	}
+	focus = {
+		id = KTL_newfocus_1
+		icon = GFX_goal_anarcho_monarchism
+		cost = 4.30
+		prerequisite = {
+			focus = KTL_newfocus_0
+		}
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				tag = KOR
+			}
+		}
+		relative_position_id = KTL_newfocus_0
+		x = 13
+		y = 1
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			country_event = {
+				id = korea.156
+			}
+		}
+	}
+	focus = {
+		id = KTL_newfocus_2
+		icon = GFX_goal_generic_revolutionary_government
+		cost = 8.00
+		prerequisite = {
+			focus = KTL_newfocus_1
+		}
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				tag = KOR
+			}
+		}
+		relative_position_id = KTL_newfocus_0
+		x = 5
+		y = 2
+		completion_reward = {
+			country_event = {
+				id = korea.155
+			}
+		}
+
+	}
+	focus = {
+		id = KTL_newfocus_16
+		icon = GFX_goal_agricultural_policies
+		cost = 8.00
+		prerequisite = {
+			focus = KTL_newfocus_2
+		}
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				tag = KOR
+			}
+		}
+		relative_position_id = KTL_newfocus_0
+		x = 5
+		y = 3
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	focus = {
+		id = KTL_newfocus_13
+		icon = GFX_goal_foreign_diplomacy
+		cost = 8.00
+		prerequisite = {
+			focus = KTL_newfocus_16
+		}
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				tag = KOR
+			}
+		}
+		relative_position_id = KTL_newfocus_0
+		x = 5
+		y = 4
+		completion_reward = {
+			set_rule = {
+				can_create_factions = yes
+			}
+			remove_ideas = KOR_not_go_outside
+		}
+
+	}
+	focus = {
+		id = KTL_newfocus_14
+		icon = GFX_focus_KOR_peace_sov
+		cost = 8.00
+		prerequisite = {
+			focus = KTL_newfocus_13
+		}
+		mutually_exclusive = {
+			focus = KTL_newfocus_15
+		}
+		available = {
+			SOV = {
+				has_government = communism
+			}
+		}
+		bypass = {
+		}
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				tag = KOR
+			}
+		}
+		relative_position_id = KTL_newfocus_0
+		x = 4
+		y = 5
+		completion_reward = {
+			SOV = {
+			country_event = {
+				id = generic.2
+			}
+			}
+		}	
+
+	}
+	focus = {
+		id = KTL_newfocus_15
+		icon = GFX_focus_KOR_annex_another
+		cost = 8.00
+		prerequisite = {
+			focus = KTL_newfocus_13
+		}
+		mutually_exclusive = {
+			focus = KTL_newfocus_14
+		}
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				tag = KOR
+			}
+		}
+		relative_position_id = KTL_newfocus_0
+		x = 6
+		y = 5
+		completion_reward = {
+			create_faction = KOR_asia_union4
+		}
+
+	}
+	focus = {
+		id = KTL_newfocus_20
+		icon = GFX_goal_commune_politics
+		cost = 8.00
+		prerequisite = {
+			focus = KTL_newfocus_14
+			focus = KTL_newfocus_15
+		}
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				tag = KOR
+			}
+		}
+		relative_position_id = KTL_newfocus_0
+		x = 5
+		y = 6
+		completion_reward = {
+			add_stability = 0.05
+			add_popularity = {
+				ideology = communism
+				popularity = 0.25
+			}
+		}	
+
+	}
+	focus = {
+		id = KTL_newfocus_21
+		icon = YUN_GFX_Goal_Secure_Northern_China
+		cost = 8.00
+		prerequisite = {
+			focus = KTL_newfocus_20
+		}
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				tag = KOR
+			}
+		}
+		relative_position_id = KTL_newfocus_0
+		x = 3
+		y = 7
+		completion_reward = {
+			create_wargoal = {
+				target = KMN
+				type = annex_everything
+			}
+		}
+
+	}
+	focus = {
+		id = KTL_newfocus_22
+		icon = GFX_goal_china_MON_banner
+		cost = 8.00
+		prerequisite = {
+			focus = KTL_newfocus_20
+		}
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				tag = KOR
+			}
+		}
+		relative_position_id = KTL_newfocus_0
+		x = 5
+		y = 7
+		completion_reward = {
+			
+			create_wargoal = {
+				target = MEN
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = MON
+				type = annex_everything
+			}
+		}
+
+	}
+	focus = {
+		id = KTL_newfocus_23
+		icon = GFX_goal_generic_sea_of_japan
+		cost = 8.00
+		prerequisite = {
+			focus = KTL_newfocus_20
+		}
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				tag = KOR
+			}
+		}
+		relative_position_id = KTL_newfocus_0
+		x = 7
+		y = 7
+		completion_reward = {
+			
+			create_wargoal = {
+				target = KKS
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = KHK
+				type = annex_everything
+			}
+		}
+
+	}
+	focus = {
+		id = KTL_newfocus_24
+		icon = GFX_goal_revolution_tools
+		cost = 8.00
+		prerequisite = {
+			focus = KTL_newfocus_21
+		}
+		prerequisite = {
+			focus = KTL_newfocus_22
+		}
+		prerequisite = {
+			focus = KTL_newfocus_23
+		}
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				tag = KOR
+			}
+		}
+		relative_position_id = KTL_newfocus_0
+		x = 5
+		y = 8
+		completion_reward = {
+			create_wargoal = {
+				target = SIA
+				type = puppet_wargoal_focus
+			}
+			if = {
+				limit = {
+					KYH = {
+						exists = yes
+					}
+				}
+				create_wargoal = {
+					target = KYH
+					type = annex_everything
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = KTL_newfocus_4
+		icon = GFX_focus_hun_revolution
+		cost = 8.00
+		prerequisite = {
+			focus = KTL_newfocus_1
+		}
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				tag = KOR
+			}
+		}
+		available = {
+		}
+		relative_position_id = KTL_newfocus_0
+		x = 13
+		y = 2
+		completion_reward = {
+			add_research_slot = 1
+			remove_ideas = KOR_striked_factories
+		}
+
+	}
+	focus = {
+		id = KTL_newfocus_3
+		icon = GFX_goal_generic_socialist_army
+		cost = 8.00
+		prerequisite = {
+			focus = KTL_newfocus_4
+		}
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				tag = KOR
+			}
+		}
+		relative_position_id = KTL_newfocus_0
+		x = 11
+		y = 3
+		completion_reward = {
+			remove_ideas = KOR_political_officer
+		}
+
+	}
+	focus = {
+		id = KTL_newfocus_7
+		icon = GFX_goal_KOR_socialist_Navy
+		cost = 8.00
+		prerequisite = {
+			focus = KTL_newfocus_3
+		}
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				tag = KOR
+			}
+		}
+		relative_position_id = KTL_newfocus_0
+		x = 9
+		y = 4
+		completion_reward = {
+			custom_effect_tooltip = TOOLTIP_FIRST_KANTAI
+			hidden_effect = {
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				load_oob = "KOR_1936_first_kantai"
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_dlc = "Man the Guns"
+					}
+				}
+				load_oob = "KOR_1936_first_kantai_legacy"
+			}
+			}
+		}
+
+	}
+	focus = {
+		id = KTL_newfocus_18
+		icon = GFX_goal_officers
+		cost = 8.00
+		prerequisite = {
+			focus = KTL_newfocus_3
+		}
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				tag = KOR
+			}
+		}
+		relative_position_id = KTL_newfocus_0
+		x = 11
+		y = 4
+		completion_reward = {
+			create_corps_commander={
+				name = "조지혁"
+				traits = { politically_connected }
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
+			}
+			create_corps_commander={
+				name = "이철휘"
+				traits = { politically_connected }
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
+			}
+			create_corps_commander={
+				name = "김평오"
+				traits = { politically_connected }
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
+			}
+			create_navy_leader = {
+				name = "김선우"
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				maneuvering_skill = 1
+				coordination_skill = 1
+			}
+			create_navy_leader = {
+				name = "주정석"
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				maneuvering_skill = 1
+				coordination_skill = 1
+			}
+		}
+
+	}
+	focus = {
+		id = KTL_newfocus_19
+		icon = GFX_goal_generic_airports
+		cost = 8.00
+		prerequisite = {
+			focus = KTL_newfocus_3
+		}
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				tag = KOR
+			}
+		}
+		relative_position_id = KTL_newfocus_0
+		x = 13
+		y = 4
+		completion_reward = {
+			add_ace = {
+				name = "왈보"
+				surname = "서"
+				callsign = "Heaven Soldier"
+				type = fighter_genius
+				is_female = no
+			}
+			add_ace = {
+				name = "응호"
+				surname = "이"
+				callsign = "Teenager"
+				type = fighter_genius
+				is_female = no
+			}
+		}
+
+	}
+	focus = {
+		id = KTL_newfocus_10
+		icon = GFX_goal_KOR_socialist_Army
+		cost = 8.00
+		prerequisite = {
+			focus = KTL_newfocus_3
+		}
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				tag = KOR
+			}
+		}
+		relative_position_id = KTL_newfocus_0
+		x = 15
+		y = 4
+		completion_reward = {
+			army_experience = 100
+			air_experience = 100
+		}
+
+	}
+	focus = {
+		id = KTL_newfocus_11
+		icon = GFX_goal_KOR_Socialist_Coat_Of_Arms
+		cost = 8.00
+		prerequisite = {
+			focus = KTL_newfocus_18
+		}
+		prerequisite = {
+			focus = KTL_newfocus_19
+		}
+		prerequisite = {
+			focus = KTL_newfocus_10
+		}
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				tag = KOR
+			}
+		}
+		relative_position_id = KTL_newfocus_0
+		x = 13
+		y = 5
+		completion_reward = {
+			add_political_power = 300
+		}
+
+	}
+	focus = {
+		id = KTL_newfocus_6
+		icon = GFX_goal_generic_army_tanks3
+		cost = 8.00
+		prerequisite = {
+			focus = KTL_newfocus_11
+		}
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				tag = KOR
+			}
+		}
+		relative_position_id = KTL_newfocus_0
+		x = 12
+		y = 6
+		completion_reward = {
+			add_ideas = KOR_army_is_goingon
+		}
+
+	}
+	focus = {
+		id = KTL_newfocus_9
+		icon = GFX_goal_new_airforce
+		cost = 8.00
+		prerequisite = {
+			focus = KTL_newfocus_11
+		}
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				tag = KOR
+			}
+		}
+		relative_position_id = KTL_newfocus_0
+		x = 14
+		y = 6
+		completion_reward = {
+			add_ideas = KOR_air_is_goingon
+		}
+
+	}
+	focus = {
+		id = KTL_newfocus_5
+		icon = GFX_goal_red_star
+		cost = 8.00
+		prerequisite = {
+			focus = KTL_newfocus_4
+		}
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				tag = KOR
+			}
+		}
+		relative_position_id = KTL_newfocus_0
+		x = 17
+		y = 3
+		completion_reward = {
+			add_ideas = KOR_revolution_of_student
+		}
+
+	}
+	focus = {
+		id = KTL_newfocus_12
+		icon = GFX_goal_generic_red_guard
+		cost = 8.00
+		prerequisite = {
+			focus = KTL_newfocus_5
+		}
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				tag = KOR
+			}
+		}
+		relative_position_id = KTL_newfocus_0
+		x = 17
+		y = 5
+		completion_reward = {
+			swap_ideas = {
+				add_idea = KOR_communist_army
+				remove_idea = KOR_revolution_of_student
+			}
+		}
+
+	}
+	focus = {
+		id = KTL_newfocus_36
+		icon = GFX_focus_hun_red_guard
+		cost = 8.00
+		prerequisite = {
+			focus = KTL_newfocus_12
+		}
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				tag = KOR
+			}
+		}
+		relative_position_id = KTL_newfocus_0
+		x = 17
+		y = 6
+		completion_reward = {
+			swap_ideas = {
+				add_idea = KOR_all_people_revolutionary
+				remove_idea = KOR_communist_army
+			}
+		}
+
+	}
+	focus = {
+		id = KTL_newfocus_26
+		icon = GFX_focus_KOR_finally_get_to_the_top
+		cost = 8.00
+		prerequisite = {
+			focus = KTL_newfocus_1
+		}
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				tag = KOR
+			}
+		}
+		relative_position_id = KTL_newfocus_0
+		x = 20
+		y = 2
+		completion_reward = {
+			country_event = {
+				id = korea.158
+			}
+		}
+
+	}
+	focus = {
+		id = KTL_newfocus_28
+		icon = GFX_focus_befriend_with_korea
+		cost = 8.00
+		prerequisite = {
+			focus = KTL_newfocus_26
+		}
+		mutually_exclusive = {
+			focus = KTL_newfocus_27
+		}
+		available = {
+			always = no
+		}	
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				tag = KOR
+			}
+		}
+		relative_position_id = KTL_newfocus_0
+		x = 19
+		y = 3
+		completion_reward = {
+			add_stability = -0.05
+			add_political_power = 60
+		}
+
+	}
+	focus = {
+		id = KTL_newfocus_27
+		icon = GFX_focus_fight_with_korea
+		cost = 8.00
+		prerequisite = {
+			focus = KTL_newfocus_26
+		}
+		mutually_exclusive = {
+			focus = KTL_newfocus_28
+		}
+		available = {
+			always = no
+		}	
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				tag = KOR
+			}
+		}
+		relative_position_id = KTL_newfocus_0
+		x = 21
+		y = 3
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = -100
+		}
+
+	}
+	focus = {
+		id = KTL_newfocus_29
+		icon = GFX_focus_goal_KOR_patriotism
+		cost = 8.00
+		prerequisite = {
+			focus = KTL_newfocus_28
+			focus = KTL_newfocus_27
+		}
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				tag = KOR
+			}
+		}
+		relative_position_id = KTL_newfocus_0
+		x = 20
+		y = 4
+		completion_reward = {
+			add_ideas = KOR_god_save_the_king
+		}	
+
+	}
+	focus = {
+		id = KTL_newfocus_30
+		icon = GFX_goal_generic_puppet_monarch
+		cost = 8.00
+		prerequisite = {
+			focus = KTL_newfocus_29
+		}
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				tag = KOR
+			}
+		}
+		relative_position_id = KTL_newfocus_0
+		x = 20
+		y = 5
+		completion_reward = {
+			add_stability = 0.1
+		}
+
+	}
+	focus = {
+		id = KTL_newfocus_31
+		icon = GFX_goal_generic_officer
+		cost = 8.00
+		prerequisite = {
+			focus = KTL_newfocus_30
+		}
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				tag = KOR
+			}
+		}
+		relative_position_id = KTL_newfocus_0
+		x = 19
+		y = 6
+		completion_reward = {
+			remove_ideas = KOR_militarism
+		}
+
+	}
+	focus = {
+		id = KTL_newfocus_32
+		icon = GFX_goal_generic_enforce_labor_regulation
+		cost = 8.00
+		prerequisite = {
+			focus = KTL_newfocus_30
+		}
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				tag = KOR
+			}
+		}
+		relative_position_id = KTL_newfocus_0
+		x = 21
+		y = 6
+		completion_reward = {
+			add_political_power = 150
+		}
+
+	}
+	focus = {
+		id = KTL_newfocus_33
+		icon = GFX_focus_generic_female_rights
+		cost = 8.00
+		prerequisite = {
+			focus = KTL_newfocus_31
+		}
+		prerequisite = {
+			focus = KTL_newfocus_32
+		}
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				tag = KOR
+			}
+		}
+		relative_position_id = KTL_newfocus_0
+		x = 20
+		y = 7
+		completion_reward = {
+			add_ideas = KOR_communist_propaganda
+		}
+
+	}
+	focus = {
+		id = KTL_newfocus_34
+		icon = GFX_focus_generic_female_voting
+		cost = 8.00
+		prerequisite = {
+			focus = KTL_newfocus_33
+		}
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				tag = KOR
+			}
+		}
+		relative_position_id = KTL_newfocus_0
+		x = 20
+		y = 8
+		completion_reward = {
+			swap_ideas = {
+				add_idea = KOR_communist_propaganda_2
+				remove_idea = KOR_communist_propaganda
+			}
+		}
+
+	}
+	focus = {
+		id = KTL_newfocus_8
+		icon = GFX_goal_generic_naval_carrier2
+		cost = 8.00
+		prerequisite = {
+			focus = KTL_newfocus_7
+		}
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				tag = KOR
+			}
+		}
+		relative_position_id = KTL_newfocus_0
+		x = 9
+		y = 5
+		completion_reward = {
+			custom_effect_tooltip = TOOLTIP_FORTH_KANTAI
+			hidden_effect = {
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				load_oob = "KOR_1936_forth_kantai"
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_dlc = "Man the Guns"
+					}
+				}
+				load_oob = "KOR_1936_forth_kantai_legacy"
+			}
+			}
+		}	
+
+	}
+	focus = {
+		id = KTL_newfocus_17
+		icon = GFX_IRE_the_red_trinity
+		cost = 8.00
+		prerequisite = {
+			focus = KTL_newfocus_8
+		}
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				tag = KOR
+			}
+		}
+		relative_position_id = KTL_newfocus_0
+		x = 9
+		y = 6
+		available = {
+			OR = {
+				has_army_size = { size > 59 }
+				has_navy_size = { size > 79 }
+			}	
+		}
+		completion_reward = {
+			create_wargoal = {
+				target = EOK
+				type = annex_everything
+			}
+		}
+
+	}
+	focus = {
+		id = KTL_newfocus_25
+		icon = GFX_focus_KOR_oneman_dictatorship
+		cost = 3.00
+		prerequisite = {
+			focus = KTL_newfocus_24
+			focus = KTL_newfocus_37
+			focus = KTL_newfocus_34
+		}
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				tag = KOR
+			}
+		}
+		allow_branch = {
+			#has_completed_focus = KTL_newfocus_37
+			always = no
+		}
+		relative_position_id = KTL_newfocus_0
+		x = 13
+		y = 9
+		completion_reward = {
+			add_political_power = 100
+			set_major = yes
+		}
+
+	}
+	focus = {
+		id = KTL_newfocus_35
+		icon = GFX_goal_red_star_gold_wreath
+		cost = 8.00
+		prerequisite = {
+			focus = KTL_newfocus_6
+		}
+		prerequisite = {
+			focus = KTL_newfocus_17
+		}
+		prerequisite = {
+			focus = KTL_newfocus_9
+		}
+		prerequisite = {
+			focus = KTL_newfocus_36
+		}
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				tag = KOR
+			}
+		}
+		available = {
+			owns_state = 716
+			owns_state = 715
+			owns_state = 611
+			owns_state = 528
+			owns_state = 524
+		}
+		relative_position_id = KTL_newfocus_0
+		x = 13
+		y = 7
+		completion_reward = {
+			add_ideas = KOR_socialist_paradise
+		}
+
+	}
+	focus = {
+		id = KTL_newfocus_37
+		icon = GFX_focus_KOR_protect_asia
+		cost = 8.00
+		prerequisite = {
+			focus = KTL_newfocus_35
+		}
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				tag = KOR
+			}
+		}
+		relative_position_id = KTL_newfocus_0
+		x = 13
+		y = 8
+		completion_reward = {
+			country_event = {
+				id = korea.157
+			}
+		}
+
+	}
+	focus = {
+		id = KTL_newfocus_38
+		icon = GFX_goal_generic_sea_of_japan
+		cost = 8.00
+		prerequisite = {
+			focus = KTL_newfocus_25
+		}
+		offset = {
+			x = -14
+			y = 0
+			trigger = {
+				tag = KOR
+			}
+		}
+		relative_position_id = KTL_newfocus_0
+		x = 21
+		y = 10
+		completion_reward = {
+			add_ideas = KOR_war_japan_ai
+		}
+
+	}
+	focus = {
+		id = KTL_newfocus_39
+		icon = GFX_goal_chinese_instructors
+		cost = 8.00
+		prerequisite = {
+			focus = KTL_newfocus_25
+		}
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				tag = KOR
+			}
+		}
+		relative_position_id = KTL_newfocus_0
+		x = 5
+		y = 10
+		completion_reward = {
+			every_state = {
+				limit = {
+					is_core_of = MON
+				}
+				add_core_of = ROOT
+			}
+		}
+
+	}
+	focus = {
+		id = KTL_newfocus_40
+		icon = GFX_goal_align_japan
+		cost = 8.00
+		prerequisite = {
+			focus = KTL_newfocus_38
+		}
+		offset = {
+			x = -14
+			y = 0
+			trigger = {
+				tag = KOR
+			}
+		}
+		relative_position_id = KTL_newfocus_0
+		x = 18
+		y = 11
+		bypass = {
+			JAP = {
+				exists = no
+			}
+		}
+		completion_reward = {
+			JAP = {
+				if = {
+					limit = { ROOT = { has_government = fascism } }
+					add_timed_idea = { idea = fascist_influence days = 1095 }
+				}
+				if = {
+					limit = { ROOT = { has_government = democratic } }
+					add_timed_idea = { idea = democratic_influence days = 1095 }
+				}
+				if = {
+					limit = { ROOT = { has_government = communism } }
+					add_timed_idea = { idea = communist_influence days = 1095 }
+				}
+				hidden_effect = {
+					country_event = { id = generic.1 }
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = KTL_newfocus_41
+		icon = GFX_goal_
+		cost = 8.00
+		prerequisite = {
+			focus = KTL_newfocus_38
+		}
+		offset = {
+			x = -14
+			y = 0
+			trigger = {
+				tag = KOR
+			}
+		}
+		relative_position_id = KTL_newfocus_0
+		x = 21
+		y = 11
+
+	}
+	focus = {
+		id = KTL_newfocus_42
+		icon = GFX_goal_KOR_stand_with_japan
+		cost = 8.00
+		prerequisite = {
+			focus = KTL_newfocus_40
+		}
+		offset = {
+			x = -14
+			y = 0
+			trigger = {
+				tag = KOR
+			}
+		}
+		available = {
+			controls_state = 1064
+		}
+		relative_position_id = KTL_newfocus_0
+		x = 19
+		y = 12
+		completion_reward = {
+			add_state_core = 1064
+			add_stability = -0.05
+		}
+
+	}
+	focus = {
+		id = KTL_newfocus_43
+		icon = GFX_focus_JAP_hotkaido_partisan
+		cost = 8.00
+		prerequisite = {
+			focus = KTL_newfocus_40
+		}
+		offset = {
+			x = -14
+			y = 0
+			trigger = {
+				tag = KOR
+			}
+		}
+		available = {
+			controls_state = 536
+		}
+		relative_position_id = KTL_newfocus_0
+		x = 16
+		y = 12
+		completion_reward = {
+			KOR = {
+				puppet = KHK
+			}	
+			KHK = {
+				set_cosmetic_tag = KHK_INN
+				transfer_state = 536
+			}
+		}
+
+	}
+	focus = {
+		id = KTL_newfocus_44
+		icon = GFX_focus_attack_japan
+		cost = 8.00
+		prerequisite = {
+			focus = KTL_newfocus_42
+		}
+		mutually_exclusive = {
+			focus = KTL_newfocus_47
+		}
+		offset = {
+			x = -14
+			y = 0
+			trigger = {
+				tag = KOR
+			}
+		}
+		relative_position_id = KTL_newfocus_0
+		x = 18
+		y = 13
+		completion_reward = {
+			if = {
+				limit = {
+					JAP = {
+						exists = yes
+					}
+				}
+				create_wargoal = {
+					target = JAP
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					DKG = {
+						exists = yes
+					}
+				}
+				create_wargoal = {
+					target = DKG
+					type = annex_everything
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = KTL_newfocus_45
+		icon = GFX_goal_USA_troops
+		cost = 8.00
+		prerequisite = {
+			focus = KTL_newfocus_38
+		}
+		offset = {
+			x = -14
+			y = 0
+			trigger = {
+				tag = KOR
+			}
+		}
+		relative_position_id = KTL_newfocus_0
+		x = 24
+		y = 11
+		completion_reward = {
+			USA = {
+				if = {
+					limit = { ROOT = { has_government = fascism } }
+					add_timed_idea = { idea = fascist_influence days = 1095 }
+				}
+				if = {
+					limit = { ROOT = { has_government = democratic } }
+					add_timed_idea = { idea = democratic_influence days = 1095 }
+				}
+				if = {
+					limit = { ROOT = { has_government = communism } }
+					add_timed_idea = { idea = communist_influence days = 1095 }
+				}
+				hidden_effect = {
+					country_event = { id = generic.1 }
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = KTL_newfocus_46
+		icon = GFX_goal_FRA_World_Revolution
+		cost = 8.00
+		prerequisite = {
+			focus = KTL_newfocus_25
+		}
+		prerequisite = {
+			focus = KTL_newfocus_48
+		}
+		prerequisite = {
+			focus = KTL_newfocus_54
+		}
+		prerequisite = {
+			focus = KTL_newfocus_67
+		}
+		prerequisite = {
+			focus = KTL_newfocus_63
+		}
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				tag = KOR
+			}
+		}
+		relative_position_id = KTL_newfocus_0
+		x = 13
+		y = 15
+		available = {
+			OR = {
+				JAP = {
+					is_puppet_of = KOR
+				}
+				DKG = {
+					is_puppet_of = KOR
+				}
+			}
+			CHI = {
+				is_puppet_of = KOR
+			}
+			SOV = {
+				is_puppet_of = KOR
+			}
+		}
+		completion_reward = {
+			every_country = {
+				limit = {
+					NOT = {
+						has_government = communism 
+						is_puppet_of = KOR
+					}
+					is_puppet = no
+					has_civil_war = np
+					is_ai = yes
+				}
+				start_civil_war = {
+					ideology = communism
+					size = 0.7
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = KTL_newfocus_47
+		icon = GFX_goal_
+		cost = 8.00
+		prerequisite = {
+			focus = KTL_newfocus_42
+		}
+		mutually_exclusive = {
+			focus = KTL_newfocus_44
+		}
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				tag = KOR
+			}
+		}
+		relative_position_id = KTL_newfocus_0
+		x = 20
+		y = 13
+
+	}
+	focus = {
+		id = KTL_newfocus_48
+		icon = GFX_goal_
+		cost = 8.00
+		prerequisite = {
+			focus = KTL_newfocus_44
+			focus = KTL_newfocus_47
+		}
+		offset = {
+			x = -14
+			y = 0
+			trigger = {
+				tag = KOR
+			}
+		}
+		relative_position_id = KTL_newfocus_0
+		x = 19
+		y = 14
+
+	}
+	focus = {
+		id = KTL_newfocus_49
+		icon = GFX_goal_
+		cost = 8.00
+		prerequisite = {
+			focus = KTL_newfocus_45
+		}
+		offset = {
+			x = -14
+			y = 0
+			trigger = {
+				tag = KOR
+			}
+		}
+		relative_position_id = KTL_newfocus_0
+		x = 22
+		y = 12
+
+	}
+	focus = {
+		id = KTL_newfocus_50
+		icon = GFX_goal_
+		cost = 8.00
+		prerequisite = {
+			focus = KTL_newfocus_45
+		}
+		offset = {
+			x = -14
+			y = 0
+			trigger = {
+				tag = KOR
+			}
+		}
+		relative_position_id = KTL_newfocus_0
+		x = 24
+		y = 12
+
+	}
+	focus = {
+		id = KTL_newfocus_51
+		icon = GFX_goal_
+		cost = 8.00
+		prerequisite = {
+			focus = KTL_newfocus_45
+		}
+		offset = {
+			x = -14
+			y = 0
+			trigger = {
+				tag = KOR
+			}
+		}
+		relative_position_id = KTL_newfocus_0
+		x = 26
+		y = 12
+
+	}
+	focus = {
+		id = KTL_newfocus_52
+		icon = GFX_goal_
+		cost = 8.00
+		prerequisite = {
+			focus = KTL_newfocus_51
+		}
+		offset = {
+			x = -14
+			y = 0
+			trigger = {
+				tag = KOR
+			}
+		}
+		relative_position_id = KTL_newfocus_0
+		x = 26
+		y = 13
+
+	}
+	focus = {
+		id = KTL_newfocus_53
+		icon = GFX_goal_
+		cost = 8.00
+		prerequisite = {
+			focus = KTL_newfocus_49
+		}
+		prerequisite = {
+			focus = KTL_newfocus_50
+		}
+		offset = {
+			x = -14
+			y = 0
+			trigger = {
+				tag = KOR
+			}
+		}
+		relative_position_id = KTL_newfocus_0
+		x = 23
+		y = 13
+
+	}
+	focus = {
+		id = KTL_newfocus_54
+		icon = GFX_goal_
+		cost = 8.00
+		prerequisite = {
+			focus = KTL_newfocus_53
+		}
+		prerequisite = {
+			focus = KTL_newfocus_52
+		}
+		offset = {
+			x = -14
+			y = 0
+			trigger = {
+				tag = KOR
+			}
+		}
+		relative_position_id = KTL_newfocus_0
+		x = 24
+		y = 14
+
+	}
+	focus = {
+		id = KTL_newfocus_55
+		icon = GFX_goal_
+		cost = 8.00
+		prerequisite = {
+			focus = KTL_newfocus_39
+		}
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				tag = KOR
+			}
+		}
+		relative_position_id = KTL_newfocus_0
+		x = 9
+		y = 11
+
+	}
+	focus = {
+		id = KTL_newfocus_56
+		icon = GFX_goal_communist_world_revolution
+		cost = 8.00
+		prerequisite = {
+			focus = KTL_newfocus_46
+		}
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				tag = KOR
+			}
+		}
+		relative_position_id = KTL_newfocus_0
+		x = 13
+		y = 16
+		available = {
+			all_country = {
+				has_government = communism
+			}
+			always = no
+		}
+		completion_reward = {
+			KOR = {
+				annex_country = {
+					target = GER
+					transfer_troops = yes
+				}
+				annex_country = {
+					target = USA
+					transfer_troops = yes
+				}
+				annex_country = {
+					target = JAP
+					transfer_troops = yes
+				}
+				annex_country = {
+					target = CHI
+					transfer_troops = yes
+				}
+				annex_country = {
+					target = SOV
+					transfer_troops = yes
+				}
+				annex_country = {
+					target = FRA
+					transfer_troops = yes
+				}
+				annex_country = {
+					target = ENG
+					transfer_troops = yes
+				}
+				every_state = {
+					add_core_of = KOR
+				}
+				set_cosmetic_tag = UEG_unified
+			}
+		}
+
+	}
+	focus = {
+		id = KTL_newfocus_57
+		icon = GFX_goal_
+		cost = 8.00
+		prerequisite = {
+			focus = KTL_newfocus_55
+		}
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				tag = KOR
+			}
+		}
+		relative_position_id = KTL_newfocus_0
+		x = 11
+		y = 12
+		completion_reward = {
+			
+		}
+
+	}
+	focus = {
+		id = KTL_newfocus_58
+		icon = GFX_goal_
+		cost = 8.00
+		prerequisite = {
+			focus = KTL_newfocus_57
+		}
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				tag = KOR
+			}
+		}
+		relative_position_id = KTL_newfocus_0
+		x = 11
+		y = 13
+
+	}
+	focus = {
+		id = KTL_newfocus_59
+		icon = GFX_goal_
+		cost = 8.00
+		prerequisite = {
+			focus = KTL_newfocus_55
+		}
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				tag = KOR
+			}
+		}
+		relative_position_id = KTL_newfocus_0
+		x = 9
+		y = 12
+
+	}
+	focus = {
+		id = KTL_newfocus_60
+		icon = GFX_goal_
+		cost = 8.00
+		prerequisite = {
+			focus = KTL_newfocus_55
+		}
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				tag = KOR
+			}
+		}
+		relative_position_id = KTL_newfocus_0
+		x = 7
+		y = 12
+
+	}
+	focus = {
+		id = KTL_newfocus_61
+		icon = GFX_goal_
+		cost = 8.00
+		prerequisite = {
+			focus = KTL_newfocus_60
+		}
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				tag = KOR
+			}
+		}
+		relative_position_id = KTL_newfocus_0
+		x = 7
+		y = 13
+
+	}
+	focus = {
+		id = KTL_newfocus_62
+		icon = GFX_goal_
+		cost = 8.00
+		prerequisite = {
+			focus = KTL_newfocus_59
+		}
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				tag = KOR
+			}
+		}
+		relative_position_id = KTL_newfocus_0
+		x = 9
+		y = 13
+
+	}
+	focus = {
+		id = KTL_newfocus_63
+		icon = GFX_goal_
+		cost = 8.00
+		prerequisite = {
+			focus = KTL_newfocus_61
+		}
+		prerequisite = {
+			focus = KTL_newfocus_62
+		}
+		prerequisite = {
+			focus = KTL_newfocus_58
+		}
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				tag = KOR
+			}
+		}
+		relative_position_id = KTL_newfocus_0
+		x = 9
+		y = 14
+
+	}
+	focus = {
+		id = KTL_newfocus_64
+		icon = GFX_goal_QIE_purge_zhili
+		cost = 8.00
+		prerequisite = {
+			focus = KTL_newfocus_39
+		}
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				tag = KOR
+			}
+		}
+		relative_position_id = KTL_newfocus_0
+		x = 3
+		y = 11
+		bypass = {
+			ZLC = {
+				exists = no
+			}
+		}
+		completion_reward = {
+			ZLC = {
+				if = {
+					limit = { ROOT = { has_government = fascism } }
+					add_timed_idea = { idea = fascist_influence days = 1095 }
+				}
+				if = {
+					limit = { ROOT = { has_government = democratic } }
+					add_timed_idea = { idea = democratic_influence days = 1095 }
+				}
+				if = {
+					limit = { ROOT = { has_government = communism } }
+					add_timed_idea = { idea = communist_influence days = 1095 }
+				}
+				hidden_effect = {
+					country_event = { id = generic.1 }
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = KTL_newfocus_65
+		icon = GFX_goal_
+		cost = 8.00
+		prerequisite = {
+			focus = KTL_newfocus_64
+		}
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				tag = KOR
+			}
+		}
+		relative_position_id = KTL_newfocus_0
+		x = 3
+		y = 12
+
+	}
+	focus = {
+		id = KTL_newfocus_66
+		icon = GFX_goal_
+		cost = 8.00
+		prerequisite = {
+			focus = KTL_newfocus_65
+		}
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				tag = KOR
+			}
+		}
+		relative_position_id = KTL_newfocus_0
+		x = 3
+		y = 13
+
+	}
+	focus = {
+		id = KTL_newfocus_67
+		icon = GFX_goal_
+		cost = 8.00
+		prerequisite = {
+			focus = KTL_newfocus_66
+		}
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				tag = KOR
+			}
+		}
+		relative_position_id = KTL_newfocus_0
+		x = 3
+		y = 14
+
+	}
+}	

@@ -1,0 +1,32 @@
+
+state={
+	id=598
+	name="STATE_598"
+
+	history={
+		victory_points = {
+			1121 3
+		}
+		owner = WZC
+		add_core_of = WZC
+		add_core_of = CHI
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 1
+
+		}
+		1938.10.25 = {
+			controller = DKG
+
+		}
+
+	}
+
+	provinces={
+		1029 1076 1121 9995 11973 12055 13144 
+	}
+	manpower=3669300
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

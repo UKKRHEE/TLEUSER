@@ -1,0 +1,29 @@
+characters={
+	BRG_heinrich_himmler={
+		name="BRG_heinrich_himmler"
+		portraits={
+			civilian={
+				large="gfx/leaders/GER/Portrait_Germany_Heinrich_Himmler.dds"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			id=-1
+		}
+		country_leader={
+			ideology=nazism
+			traits={ }
+			id=-1
+		}
+		field_marshal={
+			traits = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+}

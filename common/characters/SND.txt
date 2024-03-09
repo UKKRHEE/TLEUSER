@@ -1,0 +1,25 @@
+characters={
+	SND_Zhang_Zongchang = {
+		name="SND_Zhang_Zongchang"
+		portraits={
+			civilian={
+				large="gfx/leaders/SND/Portrait_Shandong_Zhang_Zongchang.png"
+			}
+			army = {
+				large="gfx/leaders/SND/Portrait_Shandong_Zhang_Zongchang.png"
+				small="gfx/leaders/SND/Portrait_Shandong_Zhang_Zongchang.tga"
+			}
+		}
+		country_leader={
+			ideology=despotism
+		}
+		field_marshal={
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+
+}

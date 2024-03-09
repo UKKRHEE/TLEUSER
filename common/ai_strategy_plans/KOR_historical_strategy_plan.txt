@@ -1,0 +1,78 @@
+KOR_historical_plan = {
+	name = "The Last Empire" #황국협회의 개혁
+	desc = "Historical behavior for Korea"
+
+	allowed = {
+		original_tag = KOR
+	}
+	enable = {
+		OR = {
+			AND = {
+				is_historical_focus_on = yes
+				has_game_rule = {
+					rule = KOR_ai_behavior
+					option = FASCIST_HISTORICAL
+				}
+			}
+			has_game_rule = {
+				rule = KOR_ai_behavior
+				option = DEFAULT
+			}
+		}
+	}
+	abort = {
+	
+	}
+
+	ai_national_focuses = {
+		kor_reform_korea
+		KOR_refind_the_economic_crisis
+		KOR_fuck_pact
+		KOR_law_going
+		kor_monarchy
+		kor_korean_lebensraum
+		kor_homeland_development
+		KOR_side_in
+		kor_best_gangju_2
+		kor_puppet_king
+		KOR_the_day_which_very_long
+		kor_encouraging_patriotism_2
+		kor_forced_labor
+		kor_remove_strike
+		kor_military
+		kor_territory_expansion
+		KOR_plan_manchu
+		KOR_all_claim
+		kor_tsushima
+		KOR_last_say_of_russia
+		kor_add
+		KOR_dalian_attack
+		KOR_attack_colonial_territory
+		KOR_allied_with_russia
+		KOR_give_me_the_manchu
+		kor_threat_united_states
+		KOR_threat_up_of_east_asia
+		KOR_kyushu_colonism_up
+		KOR_attack_taiwan
+		kor_control_asia
+		KOR_indonesia_support
+	}				
+
+	research = {
+		
+	}
+
+	ideas = {
+		
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}

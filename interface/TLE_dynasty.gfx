@@ -1,0 +1,180 @@
+spriteTypes = {
+	corneredTileSpriteType = {
+		name = "GFX_tiled_window_thin_border2"
+		size= { x=192 y=192 }
+		textureFile = "gfx/interface/tiles/tiled_window_thin_border2.dds"
+		borderSize = { x=64 y=64 }
+		tilingCenter = yes
+	}
+	spriteType = {
+		name = "GFX_sup_KMT_chang" 
+		texturefile = "gfx/interface/bop/TLE_balance_chang.png" 
+	}
+	spriteType = {
+		name = "GFX_sup_KMT_wang" 
+		texturefile = "gfx/interface/bop/TLE_balance_wang.png" 
+	}
+	spriteType = { 
+		name = "GFX_sup_emp_kor"
+		texturefile = "gfx/interface/bop/fix_이진지지.png"
+	}  
+	spriteType = { 
+		name = "GFX_sup_mil_kor" 
+		texturefile = "gfx/interface/bop/fix_이강지지.png"
+	}   
+	spriteType = { 
+		name = "GFX_ZLC_wupeifu_side" 
+		texturefile = "gfx/interface/bop/TLE_balance_wupeifu.png"
+	}   
+	spriteType = { 
+		name = "GFX_ZLC_caokun_side" 
+		texturefile = "gfx/interface/bop/TLE_balance_caokun.png"
+	}   
+	spriteType = {
+		name = "GFX_imperial_korea_red"
+		texturefile = "gfx/레드이씨.png"
+	}  
+	spriteType = { 
+		name = "GFX_imperial_korea_red2"
+		texturefile = "gfx/fix_레드이씨.png"
+	}  
+	spriteType = {
+		name = "GFX_imperial_korea_red"
+		texturefile = "gfx/레드이씨.png"
+	}  
+	spriteType = {
+		name = "GFX_imperial_korea_white"
+		texturefile = "gfx/화이트이씨.png"
+	}  
+	spriteType = {
+		name = "GFX_imperial_korea_black"
+		texturefile = "gfx/블랙이씨.png"
+	}  
+	spriteType = {
+		name = "GFX_imperial_korea_redblue"
+		texturefile = "gfx/태극이씨.png"
+	}  
+	spriteType = {
+		name = "GFX_focus_completed_bg_2"
+		texturefile = "gfx/interface/shangus2.dds"
+	}  
+	spriteType = {
+		name = "GFX_focus_unavailable_bg" 
+		texturefile = "gfx/interface/focus_unavailable_bg.dds"
+	}
+	spriteType = { 
+		name = "GFX_focus_can_start_bg_2" 
+		texturefile = "gfx/interface/shangus.dds"
+		animation = {
+			animationmaskfile = "gfx/interface/shangus.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -100.0
+			animationlooping = yes
+			animationtime = 3.5
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_pol_leader_rank_frame"
+		texturefile = "gfx/interface/pol_leader_rank_frame.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Germany_Walter_Model"
+		texturefile = "gfx/interface/Portrait_Germany_Walter_Model.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Korea_Yi_Kang"
+		texturefile = "gfx/leaders/KOR/Portrait_Yi_Kang.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Korea_Yi_Kang_Emperor"
+		texturefile = "gfx/leaders/KOR/Portrait_Yi_Kang.dds"
+	}
+	spriteType = {
+		name = "GFX_button_reset_123x34"
+		texturefile = "gfx/interface/button_reset_123x34.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Korea_Yi_Geon"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_yi_geon.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Korea_Yi_Un"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_Yi_Un.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Korea_Yi_Wu"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_yi_wu.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Korea_Yi_Geon_heir"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_yi_geon.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Korea_Yi_Un_heir"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_Yi_Un.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Korea_Yi_Wu_heir"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_yi_wu.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_yi_jin_suyeom"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_yi_jin_old.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_yi_jin_suyeom_no"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_yi_jin.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_JAP_hirohito_emperor"
+		texturefile = "gfx/leaders/JAP/Portrait_JAP_hirohito.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_JAP_showa_locked"
+		texturefile = "gfx/leaders/HALLOWEEN/JAP/Portrait_JAP_showa_locked.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_yi_chinba"
+		texturefile = "gfx/leaders/HALLOWEEN/KOR/Portrait_KOR_yi_chinba.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_heonmoon_sidius"
+		texturefile = "gfx/leaders/HALLOWEEN/KOR/Portrait_KOR_heonmoon_sidius.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_yi_kang_vader"
+		texturefile = "gfx/leaders/HALLOWEEN/KOR/Portrait_KOR_yi_kang_vader.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_yi_wu_skywalker"
+		texturefile = "gfx/leaders/HALLOWEEN/KOR/Portrait_KOR_yi_wu_skywalker.png"
+	}
+	spriteType = {
+		name = "GFX_faction_daitoakyoeiken"
+		texturefile = "gfx/interface/bookmark/factions/daitoakyoeiken.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_faction_axis"
+		texturefile = "gfx/interface/bookmark/factions/axis.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_faction_allies"
+		texturefile = "gfx/interface/bookmark/factions/allies.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_faction_commintern"
+		texturefile = "gfx/interface/bookmark/factions/commintern.png"
+		legacy_lazy_load = no
+	}
+
+}

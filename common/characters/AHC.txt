@@ -1,0 +1,118 @@
+characters={
+	AHC_duan_qirui = {
+		name = "AHC_duan_qirui"
+		portraits={
+			civilian={
+				large="gfx/leaders/AHC/Portrait_AHC_duan_qirui.png"
+			}
+			army = {
+				large="gfx/leaders/AHC/Portrait_AHC_duan_qirui.png"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = AHC_duan_qirui
+			allowed  = {
+				original_tag = AHC
+			}
+			traits  = {
+				army_chief_defensive_1 
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits = {  }
+		}
+		field_marshal={
+			traits = {
+				politically_connected
+				old_guard
+				career_officer
+				infantry_officer
+			}
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	AHC_chen_tiao_yuan={
+		name="AHC_chen_tiao_yuan"
+		portraits={
+			civilian={
+				large="gfx/leaders/AHC/portrait_anc_chen_tiaoyuan.png"
+			}
+			army = {
+				large="gfx/leaders/AHC/portrait_anc_chen_tiaoyuan.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+		}
+		field_marshal={
+			traits = {
+				politically_connected
+				old_guard
+				artillery_officer
+			}
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	AHC_zhang_zuolin = {
+		name = AHC_zhang_zuolin
+		portraits = {
+			army = {
+				small = "gfx/interface/advisors/FNG/FNG_zhang_zuolin.png"
+			}
+			civilian = {
+				large = "gfx/leaders/FNG/Portrait_FNG_Zhang_Zuolin.tga"
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+		}
+		country_leader={
+			ideology=despotism
+		}
+		field_marshal = {
+			traits = { old_guard substance_abuser organizer skilled_staffer logistics_wizard }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 4
+		}
+	}
+	AHC_zhang_xueliang = {
+		name = FNG_zhang_xueliang
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FNG/Portrait_FNG_Zhang_Xueliang.png"
+			}
+			army = {
+				small = "gfx/interface/advisors/FNG/FNG_zhang_xueliang.png"
+				large = "gfx/leaders/FNG/Portrait_FNG_Zhang_Xueliang_Army.png"
+			}
+		}
+		corps_commander = {
+			traits = {
+				trait_engineer
+				politically_connected
+				substance_abuser
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+}

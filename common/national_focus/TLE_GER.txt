@@ -1,0 +1,647 @@
+focus_tree = {
+	id = TLE_GER
+	country = {
+		factor = 0
+		modifier = {
+			tag = GER
+			add = 0 
+		}
+	}
+	default = no
+	focus = {
+		id = end_of_war
+		icon = GFX_end_of_war
+		cost = 3
+		x = 9
+		y = 0
+		completion_reward = {
+			country_event = {
+				id = tle_ger.1
+				days = 1
+			}
+			#custom_effect_tooltip = end_of_war_tt
+			hidden_effect = {
+			}
+		}
+	}
+	focus = {
+		id = from_the_rhine
+		icon = GFX_from_the_rhine
+		cost = 3
+		prerequisite = {
+			focus = end_of_war
+		}
+		x = 7
+		y = 1
+		completion_reward = {
+			custom_effect_tooltip = from_the_rhine_tt
+			hidden_effect = {
+				add_state_core = 36
+				add_state_core = 7
+				add_state_core = 35
+				#
+				add_state_core = 6
+				add_state_core = 34
+				#
+				add_state_core = 8
+			}
+		}
+
+	}
+	focus = {
+		id = along_the_coast_of_Iberia
+		icon = GFX_along_the_coast_of_Iberia
+		cost = 3
+		prerequisite = {
+			focus = from_the_rhine
+		}
+		x = 5
+		y = 2
+		completion_reward = {
+			SPR = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = GER_IBR_TNO
+				}
+			}
+		}
+	}
+	focus = {
+		id = abundance_of_gaul
+		icon = GFX_abundance_of_gaul
+		cost = 3
+		prerequisite = {
+			focus = from_the_rhine
+		}
+		x = 7
+		y = 2
+		completion_reward = {
+			custom_effect_tooltip = abundance_of_gaul_tt
+			hidden_effect = {
+				FRS = {
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = GER_FRS_TNO
+					}
+				}
+				add_state_core = 29
+				add_state_core = 18
+				add_state_core = 985
+				add_state_core = 17
+				17 = {
+					set_state_name = "freigrafschaft"
+				}
+				18 = {
+					set_state_name = "ardenen_mas"
+				}
+				29 = {
+					set_state_name = "kalen"
+				}
+				set_province_name = {
+					id = 9642
+					name = "wisantz"
+				}
+				set_province_name = {
+					id = 13011
+					name = "reimz"
+				}
+				set_province_name = {
+					id = 11606
+					name = "lussel"
+				}
+				set_province_name = {
+					id = 11548
+					name = "kalen"
+				}
+				set_province_name = {
+					id = 575
+					name = "donkerhen"
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = toward_the_atlantic_ocean
+		icon = GFX_toward_the_atlantic_ocean
+		cost = 3
+		prerequisite = {
+			focus = abundance_of_gaul
+			focus = along_the_coast_of_Iberia
+		}
+		x = 7
+		y = 3
+		completion_reward = {
+			POR = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = GER_POR_TNO
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = past_Donau
+		icon = GFX_past_Donau
+		cost = 3
+		prerequisite = {
+			focus = end_of_war
+		}
+		x = 9
+		y = 1
+		completion_reward = {
+			custom_effect_tooltip = past_Donau_tt
+			hidden_effect = {
+				add_state_core = 10
+				add_state_core = 88
+				add_state_core = 89
+				add_state_core = 90
+				add_state_core = 91
+				add_state_core = 92
+				10 = {
+					set_state_name = "warsau"
+				}
+				88 = {
+					set_state_name = "krakau"
+				}
+				92 = {
+					set_state_name = "lublin"
+				}
+				91 = {
+					set_state_name = "lemberg"
+				}
+				89 = {
+					set_state_name = "schtanislau"
+				}
+				90 = {
+					set_state_name = "kyelci"
+				}
+				set_province_name = {
+					id = 3544
+					name = "warsau"
+				}
+				set_province_name = {
+					id = 9427
+					name = "krakau"
+				}
+				set_province_name = {
+					id = 442
+					name = "tarnau"
+				}
+				set_province_name = {
+					id = 11479
+					name = "lemberg"
+				}
+				set_province_name = {
+					id = 11411
+					name = "schtanislau"
+				}
+				set_province_name = {
+					id = 9494
+					name = "saroslau"
+				}
+				set_province_name = {
+					id = 11430
+					name = "kyelci"
+				}
+				set_province_name = {
+					id = 402
+					name = "sidlce"
+				}
+				set_province_name = {
+					id = 3458
+					name = "radom"
+				}
+				set_province_name = {
+					id = 11399
+					name = "lublin"
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = german_mechanical_sounds
+		icon = GFX_german_mechanical_sounds
+		cost = 3
+		prerequisite = {
+			focus = past_Donau
+		}
+		x = 9
+		y = 2
+		completion_reward = {
+			custom_effect_tooltip = german_mechanical_sounds_tt
+			hidden_effect = {
+				9 = {
+					set_state_name = "boemen"
+				}
+				set_province_name = {
+					id = 11542
+					name = "prag"
+				}
+				set_province_name = {
+					id = 6418
+					name = "pilsen"
+				}
+				set_province_name = {
+					id = 9569
+					name = "taboer"
+				}
+				add_state_core = 9
+			
+			}
+		}
+
+	}
+	focus = {
+		id = steel_belt
+		icon = GFX_steel_belt
+		cost = 3
+		prerequisite = {
+			focus = german_mechanical_sounds
+		}
+		x = 9
+		y = 3
+		completion_reward = {
+			custom_effect_tooltip = steel_belt_tt
+			hidden_effect = {
+				75 = {
+					set_state_name = "maaren"
+				}
+				set_province_name = {
+					id = 3569
+					name = "brvn"
+				}
+				set_province_name = {
+					id = 6562
+					name = "olmvtz"
+				}
+				add_state_core = 75
+			
+			}
+		}
+
+	}
+	focus = {
+		id = atlantic_trade
+		icon = GFX_atlantic_trade
+		cost = 3
+		prerequisite = {
+			focus = steel_belt
+		}
+		prerequisite = {
+			focus = toward_the_atlantic_ocean
+		}
+		x = 8
+		y = 4
+		completion_reward = {
+			58 = { 
+				if = {
+					limit = {
+						free_building_slots = {
+							building = dockyard
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = dockyard
+						level = 1
+						instant_build = yes
+					}
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build = yes
+					province = 3151
+				}
+				if = {
+					limit = {
+						ROOT = { has_tech = radio_detection }
+						radar_station < 1
+					}
+					add_building_construction = {
+						type = radar_station
+						level = 1
+						instant_build = yes
+					}
+				}
+				else = {
+					custom_effect_tooltip = SOV_reinforce_western_naval_bases_radar_tt
+				}
+			}
+		}
+	}
+	focus = {
+		id = self_sufficiency
+		icon = GFX_self_sufficiency
+		cost = 3
+		prerequisite = {
+			focus = atlantic_trade
+		}
+		x = 6
+		y = 5
+		completion_reward = {
+			custom_effect_tooltip = GER_new_categories_econ_tt
+		}
+	}
+	focus = {
+		id = second_four_year_plan
+		icon = GFX_second_four_year_plan
+		cost = 3
+		prerequisite = {
+			focus = self_sufficiency
+		}
+		x = 4
+		y = 6
+		completion_reward = {
+			custom_effect_tooltip = GER_second_four_year_plan_tt
+		}
+	}
+	focus = {
+		id = in_the_east
+		icon = GFX_in_the_east
+		cost = 3
+		prerequisite = {
+			focus = end_of_war
+		}
+		x = 11
+		y = 1
+		completion_reward = {
+			custom_effect_tooltip = in_the_east_tt
+			hidden_effect = {
+				98 = {
+					set_state_name = "sudpreussen"
+				}
+				978 = {
+					set_state_name = "wieletz"
+				}
+				87 = {
+					set_state_name = "warderland"
+				}
+				97 = {
+					set_state_name = "noiostpreussen"
+				}
+				976 = {
+					set_state_name = "grodno"
+				}
+				975 = {
+					set_state_name = "nordgrodno"
+				}
+				72 = {
+					set_state_name = "teschen"
+				}
+				set_province_name = {
+					id = 3230
+					name = "plotzk"
+				}
+				set_province_name = {
+					id = 9508
+					name = "lizmanstaat"
+				}
+				set_province_name = {
+					id = 3254
+					name = "sudauen"
+				}
+				set_province_name = {
+					id = 11301
+					name = "weissberg"
+				}
+				set_province_name = {
+					id = 9412
+					name = "wieletz"
+				}
+				add_state_core = 87
+				add_state_core = 978
+				add_state_core = 72
+				add_state_core = 98
+				add_state_core = 97
+				add_state_core = 976
+				add_state_core = 975
+			}
+		}
+
+	}
+	focus = {
+		id = resources_in_scandinavia
+		icon = GFX_resources_in_scandinavia
+		cost = 3
+		prerequisite = {
+			focus = in_the_east
+		}
+		x = 11
+		y = 2
+		completion_reward = {
+			SWE = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = GER_BLT_TNO
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = wood_of_the_baltic
+		icon = GFX_wood_of_the_baltic
+		cost = 3
+		prerequisite = {
+			focus = in_the_east
+		}
+		x = 13
+		y = 2
+		completion_reward = {
+			every_state = {
+				limit = {
+					is_core_of = LIT
+					is_owned_by = BLR
+				}
+				add_claim_by = LIT
+			}
+			every_state = {
+				limit = {
+					is_core_of = LAT
+					is_owned_by = BLR
+				}
+				add_claim_by = LAT
+			}
+			every_state = {
+				limit = {
+					is_core_of = EST
+					is_owned_by = BLR
+				}
+				add_claim_by = EST
+			}
+			every_state = {
+				limit = {
+					is_core_of = SOV
+					is_owned_by = BLR
+				}
+				add_claim_by = SOV
+			}
+			every_state = {
+				limit = {
+					is_core_of = POL
+					is_owned_by = BLR
+				}
+				add_claim_by = POL
+			}
+			every_state = {
+				limit = {
+					is_core_of = FER
+					is_owned_by = BLR
+				}
+				add_claim_by = FER
+			}
+			every_state = {
+				limit = {
+					is_owned_by = BLR
+					any_country = { BLR = { is_puppet_of = GER } }
+				}
+				remove_core_of = LIT
+				remove_core_of = LAT
+				remove_core_of = EST
+				remove_core_of = POL
+				remove_core_of = SOV
+				remove_core_of = FER
+			}	
+		}
+
+	}
+	focus = {
+		id = Pearl_of_the_Baltic_Sea
+		icon = GFX_goal_unknown
+		cost = 3
+		prerequisite = {
+			focus = resources_in_scandinavia
+			focus = wood_of_the_baltic
+		}
+		x = 11
+		y = 3
+		completion_reward = {
+			FIN = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = GER_ITA_TNO
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = eastbound_railway
+		icon = GFX_eastbound_railway
+		cost = 3
+		prerequisite = {
+			focus = Pearl_of_the_Baltic_Sea
+		}
+		prerequisite = {
+			focus = steel_belt
+		}
+		completion_reward = {
+			build_railway = {
+				path = { 6521 9428 478 11415 3572 3438 9470 3510 9570 }
+			}
+			custom_effect_tooltip = GER_eastbound_railway_tt
+		}
+		x = 10
+		y = 4
+		
+	}
+	focus = {
+		id = imperial_integration
+		icon = GFX_imperial_integration
+		cost = 3
+		prerequisite = {
+			focus = eastbound_railway
+			focus = atlantic_trade
+		}
+		x = 9
+		y = 5
+		available = {
+			KOR = {
+				NOT = {
+					has_country_flag = TLE_THE_WAR_IS_ENDED
+				}
+			}
+		}
+		bypass = {
+			KOR = {
+				has_country_flag = TLE_THE_WAR_IS_ENDED
+			}
+		}
+		completion_reward = {
+			KOR = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = GER_KOR
+				}
+			}
+			custom_effect_tooltip = GER_new_categories_dp_tt
+		}
+	}
+	focus = {
+		id = oil_flow
+		icon = GFX_oil_flow
+		cost = 3
+		prerequisite = {
+			focus = eastbound_railway
+		}
+		x = 12
+		y = 5
+		completion_reward = {
+			custom_effect_tooltip = GER_new_categories_econ_tt
+		}
+	}
+	focus = {
+		id = steel_reich
+		icon = GFX_steel_reich
+		cost = 3
+		prerequisite = {
+			focus = second_four_year_plan
+		}
+		prerequisite = {
+			focus = Breitspurbahn
+		}
+		prerequisite = {
+			focus = imperial_integration
+		}
+		x = 9
+		y = 7
+		completion_reward = {
+			custom_effect_tooltip = GER_steel_reich_tt
+			hidden_effect = {
+				swap_ideas = {
+					remove_idea = triumphant_will
+					add_idea = steel_reich_idea
+				}
+				country_event = {
+					id = TLE_Germany.5
+					days = 0
+				}
+			}
+		}
+		
+	}
+	focus = {
+		id = Breitspurbahn
+		icon = GFX_Breitspurbahn
+		cost = 3
+		prerequisite = {
+			focus = oil_flow
+		}
+		x = 14
+		y = 6
+		completion_reward = {
+			custom_effect_tooltip = GER_Breitspurbahn_tt
+		}
+	}
+}

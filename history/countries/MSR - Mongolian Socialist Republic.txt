@@ -1,0 +1,103 @@
+﻿capital = 330
+
+oob = "MSR_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+set_cosmetic_tag = MSR_WAR
+add_ideas = {
+	limited_conscription
+	MSR_revolitionary_frontline
+	MEN_final_attack
+	
+}
+add_manpower = 100000
+add_equipment_to_stockpile = {
+	type = infantry_equipment_0
+	amount = 11000
+	producer = SOV
+}
+1912.10.12 = {
+	declare_war_on = {
+		target = MON
+		type = annex_everything
+	}
+}
+
+recruit_character = MSR_anandyn_amar
+recruit_character = MSR_mingzhu_zhanshan
+recruit_character = MSR_fu_shangzhi
+recruit_character = MSR_songgotu_kangan
+recruit_character = MSR_haidav
+recruit_character = MSR_dagva
+recruit_character = MSR_chimid
+recruit_character = MSR_sukhbaataryn_yanjmaa
+recruit_character = MSR_ganbaatar
+recruit_character = MSR_ulanhu
+recruit_character = MSR_vg_pyrselov
+recruit_character = MSR_buyannmeh
+recruit_character = MSR_horloogiyn_choybalsan
+recruit_character = MSR_olziytrygyn_badrak
+recruit_character = MSR_dashdorj
+recruit_character = MSR_gomgchigryn_bumtsend
+recruit_character = MSR_dansrabilegyin_dogsam
+recruit_character = MSR_yundunwangcug
+recruit_character = MSR_pai_yun_ti
+
+1939.1.1 = {
+
+	add_political_power = 1198
+	add_command_power = 100
+	
+	#generic focuses
+	complete_national_focus = generic_army_effort
+	complete_national_focus = generic_equipment_effort
+	complete_national_focus = generic_motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = construction_effort_2
+	complete_national_focus = production_effort_2
+	complete_national_focus = infrastructure_effort
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+	
+	oob = "MSR_1939"
+	set_technology = {
+		support_weapons = 1
+		gw_artillery = 1
+		
+		#doctrines
+		air_superiority = 1
+		
+		mass_assault = 1
+		pocket_defence = 1
+		defence_in_depth = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		construction1 = 1
+		construction2 = 1
+		concentrated_industry = 1
+		concentrated_industry2 = 1
+	}
+}
+
+set_politics = {
+	ruling_party = communism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	communism = 100
+}

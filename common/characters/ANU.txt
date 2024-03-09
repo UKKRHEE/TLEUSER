@@ -1,0 +1,18 @@
+characters={
+	ANU_kawamura_kaneto = {
+		name = "ANU_kawamura_kaneto"
+		portraits={
+			civilian={
+				large="gfx/leaders/KHK/Portrait_KHK_kawamura_kaneto.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits = {  }
+		}
+		country_leader={
+			ideology=ultranationalism
+			traits = {  }
+		}
+	}
+}

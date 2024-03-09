@@ -1,0 +1,25 @@
+
+state={
+	id=1003
+	name="STATE_FRIULI_VENEZIA_GIULIA"
+
+	history={
+		owner = ITA
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+
+		}
+		add_core_of = ITA
+		add_core_of = LBV
+
+	}
+
+	provinces={
+		628 3657 6656 9613 
+	}
+	manpower=1429890
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

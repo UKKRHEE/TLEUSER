@@ -1,0 +1,487 @@
+ideas = {
+	
+	country = {
+		KMT_die_rich = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KMT_die_rich" }
+			picture = FRA_matignon_agreements
+			allowed = { always = no }
+			modifier = {
+				consumer_goods_expected_value = -0.1
+				political_power_gain = 0.1
+			}
+		}
+		KMT_commissars_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CHI_commissars_idea" }
+			picture = FRA_national_mobilization_focus
+			allowed = { always = no }
+			modifier = {
+				political_power_factor = -0.05
+				land_reinforce_rate = 0.15
+			}
+		}
+		KMT_dare_to_die_idea = { #Heroic Martyrdom
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KMT_dare_to_die_idea" }
+			picture = FRA_army_of_aggression_focus
+			allowed = { always = no }
+			modifier = {
+				command_abilities_cost_factor = -0.15
+				land_night_attack = 0.15
+				army_attack_factor = 0.1
+			}
+		}
+		KMT_nbs_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KMT_nbs_idea" }
+			picture = generic_spy_intel
+			research_bonus = {
+				decryption_tech = 0.10
+				encryption_tech = 0.10
+			}
+			modifier = {
+				decryption_factor = 0.20
+				encryption_factor = 0.20
+			}
+		}
+		KMT_night_attack = {
+			allowed = {
+				always = no
+			}
+			picture = idea_mex_politicised_army_2
+			modifier = {
+				land_night_attack = 0.15
+			
+			
+			}
+		}
+		KMT_war_of_resistance_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KMT_war_of_resistance_idea" }
+			picture = chi_war_of_resistance3
+			allowed = { always = no }
+			modifier = {
+				resistance_growth_on_our_occupied_states = 0.1
+				compliance_growth_on_our_occupied_states = -0.05
+				army_core_defence_factor = 0.05
+				weekly_casualties_war_support = 0.005
+
+			}
+		}
+		KMT_local_supply_corp = {
+			allowed = {
+				always = no
+			}
+			picture = idea_generic_supply_depot
+			modifier = {
+				supply_consumption_factor = -0.10
+				attrition = -0.1
+			
+			
+			}
+		}
+		CHI_national_revolution1 = {
+			allowed = {
+				always = no
+			}
+			picture = idea_ENG_the_war_to_end_all_wars
+			modifier = {
+				stability_factor = -0.20
+				war_support_factor = -0.20
+				conscription_factor = -0.20
+			
+			
+			}
+		}
+		CHI_national_revolution2 = {
+			allowed = {
+				always = no
+			}
+			picture = idea_ENG_the_war_to_end_all_wars
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.1
+				conscription_factor = -0.1
+			}
+		}
+		CHI_national_revolution3 = {
+			allowed = {
+				always = no
+			}
+			picture = idea_SPR_masters_of_our_own_fate
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = -0.05
+				conscription_factor = -0.05
+			
+			
+			}
+		}
+		CHI_national_revolution4 = {
+			allowed = {
+				always = no
+			}
+			picture = idea_SPR_masters_of_our_own_fate
+			modifier = {
+				political_power_gain = 0.15
+				stability_factor = 0.15
+			
+			
+			}
+		}
+		CHI_yunnan_money = {
+			allowed = {
+				always = no
+			}
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_expected_value = 0.15
+			
+			
+			}
+		}
+		CHI_economic_death = {
+			allowed = {
+				always = no
+			}
+			picture = idea_SPA_recovering_from_the_civil_war
+			modifier = {
+				production_speed_buildings_factor = -0.15
+				industrial_capacity_factory = -0.15
+				consumer_goods_expected_value = 0.05
+			
+			
+			}
+		}
+		KMT_march_of_volunteer = {
+
+			picture = air_war_plans_division_focus		
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			targeted_modifier = {
+				tag = KOR
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+		CHI_kuomintang_start = {
+			allowed = {
+				always = no
+			}
+			picture = YUN_huguojun
+			modifier = {
+				communism_acceptance = 50
+				fascism_acceptance = 3
+				stability_factor = -0.25
+				war_support_factor = -0.3
+				political_power_factor = -0.1
+				industrial_capacity_factory = -0.05
+				research_speed_factor = -0.2
+			
+			
+			}
+		}
+		CHI_kuomintang_spark = {
+			allowed = {
+				always = no
+			}
+			picture = chi_warlord_integration2
+			modifier = {
+				communism_acceptance = 35
+				fascism_acceptance = 10
+				stability_factor = -0.15
+				war_support_factor = -0.2
+				political_power_factor = -0.05
+				research_speed_factor = -0.1
+			}
+		}
+		CHI_kuomintang_rise = {
+			allowed = {
+				always = no
+			}
+			picture = chi_warlord_integration3
+			modifier = {
+				communism_acceptance = 20
+				democratic_acceptance = 10
+				fascism_acceptance = 5
+				stability_factor = -0.05
+				war_support_factor = -0.1
+				political_power_factor = -0.05
+				research_speed_factor = -0.05
+			}
+		}
+		CHI_kuomintang_resist = {
+			allowed = {
+				always = no
+			}
+			picture = chi_warlord_integration4
+			modifier = {
+				communism_acceptance = 50
+				democratic_acceptance = 5
+				fascism_acceptance = 20
+				stability_factor = -0.05
+				war_support_factor = 0.45
+				political_power_factor = 0.35
+				industrial_capacity_factory = -0.1
+				research_speed_factor = -0.15
+			}
+		}
+		CHI_kuomintang_victory = {
+			allowed = {
+				always = no
+			}
+			picture = chi_warlord_integration5
+			modifier = {
+				communism_acceptance = 25
+				democratic_acceptance = 25
+				stability_factor = 0.15
+				war_support_factor = 0.1
+				political_power_factor = -0.05
+				research_speed_factor = 0.03
+			}
+		}
+		CHI_kuomintang_central = {
+			allowed = {
+				always = no
+			}
+			picture = chi_warlord_integration5
+			modifier = {
+				democratic_acceptance = 70
+				stability_factor = 0.2
+				war_support_factor = 0.2
+				political_power_factor = 0.25
+				research_speed_factor = 0.03
+			}
+		}
+		CHI_kuomintang_central_demo = {
+			allowed = {
+				always = no
+			}
+			picture = chi_warlord_integration5
+			modifier = {
+				
+				democratic_acceptance = 70
+				stability_factor = 0.25
+				war_support_factor = 0.1
+				political_power_factor = 0.05
+				research_speed_factor = 0.1
+			}
+		}
+		CHI_kuomintang_reorg = {
+			allowed = {
+				always = no
+			}
+			picture = chi_warlord_integration5
+			modifier = {
+				communism_acceptance = 70
+				stability_factor = 0.15
+				war_support_factor = 0.15
+				political_power_factor = 0.25
+				research_speed_factor = 0.05
+			}
+		}
+		CHI_kuomintang_right = {
+			allowed = {
+				always = no
+			}
+			picture = chi_warlord_integration5
+			modifier = {
+				political_power_factor = 0.33
+				stability_factor = -0.25
+				war_support_factor = 0.45
+			}
+		}
+		CHI_right_NRA_idea = {
+			picture = chi_whampoa_military_academy
+			allowed = {
+				always = no
+			}
+			modifier = {
+				conscription_factor = -0.45
+				army_morale_factor = 0.1
+				army_attack_factor = 0.15
+				army_defence_factor = 0.15
+				experience_gain_army_factor = -0.55
+			}
+		}
+		CHI_NRA1_idea = {
+			picture = chi_whampoa_military_academy
+			allowed = {
+				always = no
+			}
+			modifier = {
+				conscription_factor = -0.15
+				army_morale_factor = 0.1
+				army_attack_factor = 0.25
+				army_defence_factor = 0.25
+				army_org_Factor = -0.1
+				experience_gain_army_factor = -0.15
+			}
+		}
+		CHI_NRA2_idea = {
+			picture = chi_whampoa_military_academy
+			allowed = {
+				always = no
+			}
+			modifier = {
+				war_support_factor = -0.2
+				army_org_factor = -0.15
+				land_reinforce_rate = -0.02
+			}
+		}
+		CHI_NRA3_idea = { ##비정규1
+			picture = chi_whampoa_military_academy
+			allowed = {
+				always = no
+			}
+			modifier = {
+				conscription_factor = 0.05
+				army_morale_factor = 0.05
+				army_core_attack_factor = 0.07
+				army_core_defence_factor = 0.05
+				army_org_Factor = -0.15
+				experience_gain_army_factor = 0.05
+			}
+		}
+		CHI_NRA4_idea = { ##비정규2
+			picture = chi_whampoa_military_academy
+			allowed = {
+				always = no
+			}
+			modifier = {
+				conscription_factor = 0.1
+				army_morale_factor = 0.1
+				army_core_attack_factor = 0.15
+				army_core_defence_factor = 0.15
+				army_org_Factor = -0.08
+				experience_gain_army_factor = 0.05
+			}
+		}
+		CHI_NRA5_idea = { ##비정규3
+			picture = chi_whampoa_military_academy
+			allowed = {
+				always = no
+			}
+			modifier = {
+				conscription_factor = 0.15
+				army_morale_factor = 0.15
+				army_core_attack_factor = 0.2
+				army_core_defence_factor = 0.2
+				army_org_Factor = 0.03
+				experience_gain_army_factor = 0.05
+			}
+		}
+		CHI_NRA6_idea = { ##정규1
+			picture = chi_whampoa_military_academy
+			allowed = {
+				always = no
+			}
+			modifier = {
+				army_org_factor = 0.05
+				training_time_army_factor = 0.10
+				experience_gain_army_unit_factor = -0.05
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				planning_speed = -0.05
+				max_planning_factor = -0.1
+			}
+		}
+		CHI_NRA7_idea = { ##정규2
+			picture = chi_whampoa_military_academy
+			allowed = {
+				always = no
+			}
+			modifier = {
+				army_org_factor = 0.1
+				training_time_army_factor = 0.10
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				planning_speed = 0.05
+				max_planning_factor = 0.05
+				army_artillery_attack_factor = 0.05
+				army_artillery_defence_factor = 0.05
+			}
+		}
+		CHI_NRA8_idea = { ##정규3
+			picture = chi_whampoa_military_academy
+			allowed = {
+				always = no
+			}
+			modifier = {
+				army_org_factor = 0.1
+				training_time_army_factor = 0.05
+				army_attack_factor = 0.15
+				army_defence_factor = 0.15
+				planning_speed = 0.1
+				max_planning_factor = 0.1
+				army_speed_factor = 0.05
+				army_artillery_attack_factor = 0.05
+				army_artillery_defence_factor = 0.05
+			}
+		}
+		CHI_AEP1 = {
+			allowed = {
+				always = no
+			}
+			picture = KOR_industry_reform
+			modifier = {
+				political_power_factor = 0.05
+				consumer_goods_expected_value = 0.05
+				stability_factor = 0.15
+				production_speed_industrial_complex_factor = 0.2
+				production_speed_arms_factory_factor = 0.15
+				production_speed_dockyard_factor = 0.1
+				custom_modifier_tooltip = CHI_AEP1_tt
+				
+			}
+		}
+		CHI_diplo_block = {
+			picture = JAP_paidorei
+			allowed = {
+				always = no
+			}
+			modifier = {
+				political_power_factor = -0.1
+				consumer_goods_expected_value = 0.05
+				production_speed_arms_factory_factor = -0.15
+				industrial_capacity_factory = -0.1
+				embargo_threshold_factor = 2.5
+				custom_modifier_tooltip = CHI_diplo_block_tt
+			}
+		}
+		vlasov_advisors = {
+		
+			allowed = {
+				always = no
+			}
+			picture = SOV_andrey_vlasov
+			allowed_civil_war = {
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				land_doctrine_cost_factor = -0.10
+			}
+		}
+		CHI_failed_north_attack1 = {
+			allowed = {
+				always = no
+			}
+			picture = JAP_chaguan_daoip
+			modifier = {
+				political_power_factor = -0.2
+				stability_factor = -0.25
+				conscription_factor = -0.25
+				consumer_goods_expected_value = 0.05
+				custom_modifier_tooltip = CHI_failed_north_attack1_tt
+			}
+		}
+	}
+
+}

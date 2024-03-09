@@ -1,0 +1,20 @@
+characters={
+	KTA_kim_sangok={
+		name="KTA_kim_sangok"
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/Portrait_KOR_kim_sangok.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			id=-1
+		}
+		country_leader={
+			ideology=ultranationalism
+			traits={ }
+			id=-1
+		}
+	}
+}

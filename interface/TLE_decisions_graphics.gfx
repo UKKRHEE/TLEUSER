@@ -1,0 +1,30 @@
+spriteTypes = {
+	spriteType = {
+		name = "TLE_germany_econ_bg"
+		texturefile = "gfx/interface/decisions/TLE_germany_econ_bg.png"
+	}
+	spriteType = {
+		name = "GFX_ger_menu_open_button"
+		texturefile = "gfx/interface/decisions/Breitspurbahn.png"
+	}
+	spriteType = {
+		name = "GFX_ger_econ_plan"
+		texturefile = "gfx/interface/decisions/GFX_ger_econ_plan.png"
+	}
+	spriteType = {
+		name = "GFX_ger_Breitspurbahn_background"
+		texturefile = "gfx/interface/decisions/GFX_ger_Breitspurbahn_background.png"
+	}
+	spriteType = {
+		name = "GFX_idea_steel_reich_idea" 
+		texturefile = "gfx/interface/ideas/GER/idea_GER_nazi_building.dds"
+	}
+	spriteType = {
+		name = "GFX_descision_KOR_plan_doryun" 
+		texturefile = "gfx/interface/decisions/descision_KOR_plan_doryun.png"
+	}
+	spriteType = {
+		name = "GFX_descision_KOR_plan_nakil" 
+		texturefile = "gfx/interface/decisions/descision_KOR_plan_nakil.png"
+	}
+}

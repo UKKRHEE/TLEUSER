@@ -1,0 +1,46 @@
+
+state={
+	id=716
+	name="STATE_SIMYOBUK"
+	resources={
+		steel=5.000
+	}
+
+	history={
+		owner = KOR
+		add_core_of = KOR
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+			air_base = 5
+			964 = {
+				naval_base = 3
+
+			}
+
+		}
+		1936.5.1 = {
+			owner = KOR
+
+		}
+		victory_points = {
+			11771 20 
+		}
+		victory_points = {
+			11764 5 
+		}
+		victory_points = {
+			987 5 
+		}
+
+	}
+
+	provinces={
+		887 892 916 964 987 3783 3849 6851 6918 9781 9885 11764 11771 11808 
+	}
+	manpower=2564620
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

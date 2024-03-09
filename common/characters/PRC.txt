@@ -1,0 +1,1153 @@
+characters={
+	PRC_mao_zedong={
+		name=PRC_mao_zedong
+		portraits={
+			army={
+				large="GFX_portrait_prc_mao_zedong"
+				small=GFX_portrait_PRC_mao_zedong_small
+			}
+			civilian={
+				large="GFX_portrait_prc_mao_zedong"
+				small=GFX_portrait_PRC_mao_zedong_small
+			}
+		}
+		corps_commander={ #광주정부에 연락책으로 가 있으니 원수에서 내렸음
+			traits={ trait_cautious politically_connected defensive_doctrine }
+			skill=4
+			attack_skill=2
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=4
+			visible = {
+				# 장제스가 지도자면 기용 가능
+				OR = {
+					has_government = communism
+					has_country_leader = {
+						character = CHI_chiang_kaishek
+						ruling_only = yes
+					}
+				}
+				# 공산당과 전쟁하면 관둠
+				NOT = {
+					has_war_with = PRC
+				}
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = PRC_mao_zedong
+			available = {
+				# 장제스가 지도자면 기용 가능
+				OR = {
+					has_government = communism
+					has_country_leader = {
+						character = CHI_chiang_kaishek
+						ruling_only = yes
+					}
+				}
+				# 공산당과 전쟁하면 관둠
+				NOT = {
+					has_war_with = PRC
+				}
+			}
+			traits  = {
+				agricultural_socialist
+			}
+		}
+		# country_leader={
+		# 	ideology=marxism
+		# 	traits={ cornered_fox }
+		# }
+	}
+
+	PRC_zhu_de={
+		name=PRC_zhu_de
+		portraits={
+			army={
+				large="GFX_portrait_prc_zhu_de"
+				small="GFX_idea_PRC_zhu_de"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = PRC_zhu_de
+			traits = {
+				army_chief_morale_3
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+			available = {
+				# 장제스가 지도자면 기용 가능
+				OR = {
+					has_government = communism
+					has_country_leader = {
+						character = CHI_chiang_kaishek
+						ruling_only = yes
+					}
+				}
+				# 공산당과 전쟁하면 관둠
+				NOT = {
+					has_war_with = PRC
+				}
+			}
+		}
+		
+		corps_commander={
+			traits={ infantry_officer organizer }
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=4
+			visible = {
+				# 장제스가 지도자면 기용 가능
+				OR = {
+					has_government = communism
+					has_country_leader = {
+						character = CHI_chiang_kaishek
+						ruling_only = yes
+					}
+				}
+				# 공산당과 전쟁하면 관둠
+				NOT = {
+					has_war_with = PRC
+				}
+			}
+		}
+	}
+
+	PRC_chen_yi={
+		name=PRC_chen_yi
+		portraits={
+			army={
+				large="GFX_portrait_prc_chen_yi"
+				small=GFX_portrait_PRC_chen_yi_small
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = PRC_chen_yi
+			ledger = army
+			traits = {
+				army_armored_2
+			}
+				cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+			available = {
+				# 장제스가 지도자면 기용 가능
+				OR = {
+					has_government = communism
+					has_country_leader = {
+						character = CHI_chiang_kaishek
+						ruling_only = yes
+					}
+				}
+				# 공산당과 전쟁하면 관둠
+				NOT = {
+					has_war_with = PRC
+				}
+			}
+		}
+
+		corps_commander={
+			traits={ infantry_officer }
+			skill=3
+			attack_skill=4
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			visible = {
+				# 장제스가 지도자면 기용 가능
+				OR = {
+					has_government = communism
+					has_country_leader = {
+						character = CHI_chiang_kaishek
+						ruling_only = yes
+					}
+				}
+				# 공산당과 전쟁하면 관둠
+				NOT = {
+					has_war_with = PRC
+				}
+			}
+		}
+	}
+
+	PRC_peng_dehuai={
+		name=PRC_peng_dehuai
+		portraits={
+			army={
+				large="GFX_portrait_prc_peng_dehuai"
+				small=GFX_portrait_PRC_peng_dehuai_small
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer trait_mountaineer }
+			skill=4
+			attack_skill=3
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=2
+			visible = {
+				# 장제스가 지도자면 기용 가능
+				OR = {
+					has_government = communism
+					has_country_leader = {
+						character = CHI_chiang_kaishek
+						ruling_only = yes
+					}
+				}
+				# 공산당과 전쟁하면 관둠
+				NOT = {
+					has_war_with = PRC
+				}
+			}
+		}
+	}
+
+	PRC_lin_biao={
+		name=PRC_lin_biao
+		portraits={
+			army={
+				large="gfx/leaders/CHI/Portrait_CHI_Lin_Biao.png"
+				small=GFX_portrait_PRC_lin_biao_small
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer brilliant_strategist irregulars_officer trait_mountaineer }
+			skill=3
+			attack_skill=3
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=3
+			visible = {
+				# 장제스가 지도자면 기용 가능
+				OR = {
+					has_government = communism
+					has_country_leader = {
+						character = CHI_chiang_kaishek
+						ruling_only = yes
+					}
+				}
+				# 공산당과 전쟁하면 관둠
+				NOT = {
+					has_war_with = PRC
+				}
+			}
+		}
+	}
+
+	PRC_kwong_hu={
+		name=PRC_kwong_hu
+		portraits={
+			civilian={
+				large=GFX_portrait_PRC_kwong_hu
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			traits={ hawk }
+		}
+	}
+
+	PRC_luo_zhao={
+		name=PRC_luo_zhao
+		portraits={
+			civilian={
+				large=GFX_portrait_PRC_luo_zhao
+			}
+		}
+		country_leader={
+			ideology=fascism_ideology
+			traits={ financial_expert armaments_organizer }
+		}
+	}
+	PRC_liang_ma={
+		name=PRC_liang_ma
+		portraits={
+			civilian={
+				large=GFX_portrait_PRC_liang_ma
+			}
+		}
+		country_leader={
+			ideology=oligarchism
+			traits={ financial_expert }
+		}
+	}
+
+
+	### THEORISTS ###
+
+	#Claire Lee Chennault in shared file
+
+	PRC_liu_bocheng={
+		name=PRC_liu_bocheng
+		portraits={
+			army={
+				small="GFX_idea_PRC_liu_bocheng"
+			}
+		}
+		advisor={
+			cost = 100
+
+			slot = theorist
+			idea_token = PRC_liu_bocheng
+			ledger = army
+
+			traits = {
+				military_theorist
+			}
+			available = {
+				# 장제스가 지도자면 기용 가능
+				OR = {
+					has_government = communism
+					has_country_leader = {
+						character = CHI_chiang_kaishek
+						ruling_only = yes
+					}
+				}
+				# 공산당과 전쟁하면 관둠
+				NOT = {
+					has_war_with = PRC
+				}
+			}
+		}
+	}
+
+	PRC_hsia_tian={
+		name=PRC_hsia_tian
+		portraits={
+			army={
+				small="GFX_idea_generic_air_asia_2"
+			}
+		}
+		advisor={
+			cost = 100
+
+			slot = theorist
+			idea_token = PRC_hsia_tian
+			ledger = air
+
+			traits = {
+				air_warfare_theorist
+			}
+			available = {
+				# 장제스가 지도자면 기용 가능
+				OR = {
+					has_government = communism
+					has_country_leader = {
+						character = CHI_chiang_kaishek
+						ruling_only = yes
+					}
+				}
+				# 공산당과 전쟁하면 관둠
+				NOT = {
+					has_war_with = PRC
+				}
+			}
+		}
+	}
+
+	PRC_zhang_wei={
+		name=PRC_zhang_wei
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_asia_2"
+			}
+		}
+		advisor={
+			cost = 100
+
+			slot = theorist
+			idea_token = PRC_zhang_wei
+			ledger = navy
+			
+			traits = {
+				naval_theorist
+			}
+			available = {
+				# 장제스가 지도자면 기용 가능
+				OR = {
+					has_government = communism
+					has_country_leader = {
+						character = CHI_chiang_kaishek
+						ruling_only = yes
+					}
+				}
+				# 공산당과 전쟁하면 관둠
+				NOT = {
+					has_war_with = PRC
+				}
+			}
+		}
+	}
+
+	### ARMY CHIEFS ###
+
+	# Alexander von Falkenhausen in shared file
+
+	# Zhu De up there in this file along with other Unit Leaders
+
+	PRC_su_yu={
+		name=PRC_su_yu
+		portraits={
+			army={
+				small="GFX_idea_PRC_su_yu"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = PRC_su_yu
+			traits = {
+				army_chief_reform_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+			available = {
+				# 장제스가 지도자면 기용 가능
+				OR = {
+					has_government = communism
+					has_country_leader = {
+						character = CHI_chiang_kaishek
+						ruling_only = yes
+					}
+				}
+				# 공산당과 전쟁하면 관둠
+				NOT = {
+					has_war_with = PRC
+				}
+			}
+		}
+	}
+
+	PRC_otto_braun={
+		name=PRC_otto_braun
+		portraits={
+			army={
+				small="GFX_idea_PRC_otto_braun"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = PRC_otto_braun
+			traits = {
+				army_chief_old_guard
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+			available = {
+				# 장제스가 지도자면 기용 가능
+				OR = {
+					has_government = communism
+					has_country_leader = {
+						character = CHI_chiang_kaishek
+						ruling_only = yes
+					}
+				}
+				# 공산당과 전쟁하면 관둠
+				NOT = {
+					has_war_with = PRC
+				}
+			}
+		}
+	}
+
+	PRC_ma_jin={
+		name=PRC_ma_jin
+		portraits={
+			army={
+				small="GFX_idea_generic_army_asia_5"
+			}
+		}
+		advisor={	
+			slot = army_chief
+			idea_token = PRC_ma_jin
+			traits = {
+				army_chief_defensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+			available = {
+				# 장제스가 지도자면 기용 가능
+				OR = {
+					has_government = communism
+					has_country_leader = {
+						character = CHI_chiang_kaishek
+						ruling_only = yes
+					}
+				}
+				# 공산당과 전쟁하면 관둠
+				NOT = {
+					has_war_with = PRC
+				}
+			}
+		}
+	}
+
+
+	### NAVY CHIEFS ###
+
+	PRC_ziao_jingguang={
+		name=PRC_ziao_jingguang
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_asia_1"
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = PRC_ziao_jingguang
+			traits = {
+				navy_chief_maneuver_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+			available = {
+				# 장제스가 지도자면 기용 가능
+				OR = {
+					has_government = communism
+					has_country_leader = {
+						character = CHI_chiang_kaishek
+						ruling_only = yes
+					}
+				}
+				# 공산당과 전쟁하면 관둠
+				NOT = {
+					has_war_with = PRC
+				}
+			}
+		}
+	}
+
+	PRC_gao_qiu={
+		name=PRC_gao_qiu
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_asia_2"
+			}
+		}
+		advisor={	
+			slot = navy_chief
+			idea_token = PRC_gao_qiu
+			traits = {
+				navy_chief_decisive_battle_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+			available = {
+				# 장제스가 지도자면 기용 가능
+				OR = {
+					has_government = communism
+					has_country_leader = {
+						character = CHI_chiang_kaishek
+						ruling_only = yes
+					}
+				}
+				# 공산당과 전쟁하면 관둠
+				NOT = {
+					has_war_with = PRC
+				}
+			}
+		}
+	}
+
+
+	### AIR CHIEFS ###
+
+	# Claire Lee Chennault in shared file
+
+	PRC_fang_zeyi={
+		name=PRC_fang_zeyi
+		portraits={
+			army={
+				small="GFX_idea_generic_air_asia_3"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = PRC_fang_zeyi
+			traits = {
+				air_chief_ground_support_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+			available = {
+				# 장제스가 지도자면 기용 가능
+				OR = {
+					has_government = communism
+					has_country_leader = {
+						character = CHI_chiang_kaishek
+						ruling_only = yes
+					}
+				}
+				# 공산당과 전쟁하면 관둠
+				NOT = {
+					has_war_with = PRC
+				}
+			}
+		}
+	}
+
+	PRC_gao_gang={
+		name=PRC_gao_gang
+		portraits={
+			army={
+				small="GFX_idea_generic_air_asia_2"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = PRC_gao_gang
+			traits = {
+				air_chief_safety_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+			available = {
+				# 장제스가 지도자면 기용 가능
+				OR = {
+					has_government = communism
+					has_country_leader = {
+						character = CHI_chiang_kaishek
+						ruling_only = yes
+					}
+				}
+				# 공산당과 전쟁하면 관둠
+				NOT = {
+					has_war_with = PRC
+				}
+			}
+		}
+	}
+
+
+	### MILITARY HIGH COMMAND ###
+
+	# Chen Yi up there in this file along with other Unit Leaders
+
+	PRC_xu_xiangqian={
+		name=PRC_xu_xiangqian
+		portraits={
+			army={
+				small="GFX_idea_PRC_xu_xiangqian"
+			}
+		}
+		advisor={	
+			slot = high_command
+			idea_token = PRC_xu_xiangqian
+			ledger = army
+			traits = {
+				army_infantry_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+			available = {
+				# 장제스가 지도자면 기용 가능
+				OR = {
+					has_government = communism
+					has_country_leader = {
+						character = CHI_chiang_kaishek
+						ruling_only = yes
+					}
+				}
+				# 공산당과 전쟁하면 관둠
+				NOT = {
+					has_war_with = PRC
+				}
+			}
+		}
+	}
+
+	PRC_nie_rongzhen={
+		name=PRC_nie_rongzhen
+		portraits={
+			army={
+				small="GFX_idea_generic_army_asia_1"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = PRC_nie_rongzhen
+			ledger = army
+			traits = {
+				army_regrouping_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+			available = {
+				# 장제스가 지도자면 기용 가능
+				OR = {
+					has_government = communism
+					has_country_leader = {
+						character = CHI_chiang_kaishek
+						ruling_only = yes
+					}
+				}
+				# 공산당과 전쟁하면 관둠
+				NOT = {
+					has_war_with = PRC
+				}
+			}
+		}
+	}
+
+	PRC_chen_geng={
+		name=PRC_chen_geng
+		portraits={
+			army={
+				small="GFX_idea_PRC_chen_geng"
+			}
+		}
+		advisor={	
+			slot = high_command
+			idea_token = PRC_chen_geng
+			ledger = army
+			traits = {
+				army_entrenchment_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+			available = {
+				# 장제스가 지도자면 기용 가능
+				OR = {
+					has_government = communism
+					has_country_leader = {
+						character = CHI_chiang_kaishek
+						ruling_only = yes
+					}
+				}
+				# 공산당과 전쟁하면 관둠
+				NOT = {
+					has_war_with = PRC
+				}
+			}
+		}
+	}
+	
+	PRC_ye_jianying={
+		name=PRC_ye_jianying
+		portraits={
+			army={
+				small="GFX_idea_generic_army_asia_2"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = PRC_ye_jianying
+			ledger = army
+			traits = {
+				army_logistics_2
+			}
+			cost = 100
+			available = {
+				# 장제스가 지도자면 기용 가능
+				OR = {
+					has_government = communism
+					has_country_leader = {
+						character = CHI_chiang_kaishek
+						ruling_only = yes
+					}
+				}
+				# 공산당과 전쟁하면 관둠
+				NOT = {
+					has_war_with = PRC
+				}
+			}
+		}
+	}
+
+	PRC_liang_shen={
+		name=PRC_liang_shen
+		portraits={
+			army={
+				small="GFX_idea_generic_air_asia_3"
+			}
+		}
+		advisor={	
+			slot = high_command
+			idea_token = PRC_liang_shen
+			ledger = air
+			traits = {
+				air_air_combat_training_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+			available = {
+				# 장제스가 지도자면 기용 가능
+				OR = {
+					has_government = communism
+					has_country_leader = {
+						character = CHI_chiang_kaishek
+						ruling_only = yes
+					}
+				}
+				# 공산당과 전쟁하면 관둠
+				NOT = {
+					has_war_with = PRC
+				}
+			}
+		}
+	}
+
+	PRC_deng_ye_peng={
+		name=PRC_deng_ye_peng
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_asia_1"
+			}
+		}
+		advisor={	
+			slot = high_command
+			idea_token = PRC_deng_ye_peng
+			ledger = army
+			traits = {
+				navy_amphibious_assault_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+			available = {
+				# 장제스가 지도자면 기용 가능
+				OR = {
+					has_government = communism
+					has_country_leader = {
+						character = CHI_chiang_kaishek
+						ruling_only = yes
+					}
+				}
+				# 공산당과 전쟁하면 관둠
+				NOT = {
+					has_war_with = PRC
+				}
+			}
+		}
+	}
+	
+
+	### POLITICAL ADVISOR ###
+
+	# Communist Revolutionary auto-generated
+
+	# Kang Sheng in shared file
+
+	# Deng Xiaoping in shared file
+
+	# Luo Ruiqing in shared file
+
+	PRC_lin_bojiu={
+		name=PRC_lin_bojiu
+		portraits={
+			civilian={
+				small="GFX_idea_generic_political_advisor_asia_1"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = PRC_lin_bojiu
+			allowed  = {
+				OR = { original_tag  = PRC original_tag  = CHI }
+			}
+			traits  = {
+				armaments_organizer 
+			}
+			available = {
+				# 장제스가 지도자면 기용 가능
+				OR = {
+					has_government = communism
+					has_country_leader = {
+						character = CHI_chiang_kaishek
+						ruling_only = yes
+					}
+				}
+				# 공산당과 전쟁하면 관둠
+				NOT = {
+					has_war_with = PRC
+				}
+			}
+		}
+	}
+
+	PRC_zhou_enlai={
+		name=PRC_zhou_enlai
+		portraits={
+			civilian={
+				small="GFX_idea_PRC_zhou_enlai"
+				large="gfx/leaders/CHI/Portrait_CHI_Zhou_Enlai.png"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = PRC_zhou_enlai
+			allowed  = {
+				OR = { original_tag  = PRC original_tag  = CHI }
+			}
+			traits  = {
+				ideological_crusader 
+			}
+			available = {
+				# 장제스가 지도자면 기용 가능
+				OR = {
+					has_government = communism
+					has_country_leader = {
+						character = CHI_chiang_kaishek
+						ruling_only = yes
+					}
+				}
+				# 공산당과 전쟁하면 관둠
+				NOT = {
+					has_war_with = PRC
+				}
+			}
+		}
+	}
+
+	PRC_liu_shaoqi={
+		name=PRC_liu_shaoqi
+		portraits={
+			civilian={
+				small="GFX_idea_PRC_liu_shaoqi"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = PRC_liu_shaoqi
+			allowed  = {
+				OR = { original_tag  = PRC original_tag  = CHI }
+			}
+			traits  = {
+				silent_workhorse 
+			}
+			available = {
+				# 장제스가 지도자면 기용 가능
+				OR = {
+					has_government = communism
+					has_country_leader = {
+						character = CHI_chiang_kaishek
+						ruling_only = yes
+					}
+				}
+				# 공산당과 전쟁하면 관둠
+				NOT = {
+					has_war_with = PRC
+				}
+			}
+		}
+	}
+
+	PRC_he_yuandang={
+		name=PRC_he_yuandang
+		portraits={
+			civilian={
+				small="GFX_idea_generic_political_advisor_asia_2"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = PRC_he_yuandang
+			allowed  = {
+				OR = { original_tag  = PRC original_tag  = CHI }
+			}
+			traits  = {
+				war_industrialist 
+			}
+			available = {
+				# 장제스가 지도자면 기용 가능
+				OR = {
+					has_government = communism
+					has_country_leader = {
+						character = CHI_chiang_kaishek
+						ruling_only = yes
+					}
+				}
+				# 공산당과 전쟁하면 관둠
+				NOT = {
+					has_war_with = PRC
+				}
+			}
+		}
+	}
+
+	PRC_dong_biwu={
+		name=PRC_dong_biwu
+		portraits={
+			civilian={
+				small="GFX_idea_PRC_dong_biwu"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = PRC_dong_biwu
+			allowed  = {
+				OR = { original_tag  = PRC original_tag  = CHI }
+				#has_dlc = "Waking the Tiger"
+			}
+			traits  = {
+				popular_figurehead 
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+			available = {
+				# 장제스가 지도자면 기용 가능
+				OR = {
+					has_government = communism
+					has_country_leader = {
+						character = CHI_chiang_kaishek
+						ruling_only = yes
+					}
+				}
+				# 공산당과 전쟁하면 관둠
+				NOT = {
+					has_war_with = PRC
+				}
+			}
+		}
+	}
+
+	PRC_peng_pai={
+		name=PRC_peng_pai
+		portraits={
+			civilian = {
+				large="gfx/leaders/PRC/PRC_peng_pai.png"
+				#small=GFX_portrait_PRC_peng_pai_small
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			traits = { peng_pai_trait }
+		}
+		field_marshal = {
+			traits={ politically_connected offensive_doctrine }
+			skill=3
+			attack_skill=4
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=2
+		}
+	}
+
+	PRC_he_long={
+		name=PRC_he_long
+		portraits={
+			civilian = {
+				large="gfx/leaders/PRC/PRC_he_long.png"
+				#small=GFX_portrait_PRC_he_long_small
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer trickster guerilla_fighter }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+
+	PRC_ye_ting={
+		name=PRC_ye_ting
+		portraits={
+			civilian = {
+				large="gfx/leaders/PRC/PRC_ye_ting.png"
+				small="gfx/interface/advisors/PRC/PRC_ye_ting.png"
+			}
+		}
+		corps_commander = {
+			traits = { irregulars_officer organizer commando }
+			visible = {
+				# 장제스가 지도자면 기용 가능
+				OR = {
+					has_government = communism
+					has_country_leader = {
+						character = CHI_chiang_kaishek
+						ruling_only = yes
+					}
+				}
+				# 공산당과 전쟁하면 관둠
+				NOT = {
+					has_war_with = PRC
+				}
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+		advisor = {
+			slot = high_command
+			idea_token = CHI_ye_ting
+			ledger = army
+			traits = { army_chief_entrenchment_2 }
+			cost = 100
+			available = {
+				# 장제스가 지도자면 기용 가능
+				OR = {
+					has_government = communism
+					has_country_leader = {
+						character = CHI_chiang_kaishek
+						ruling_only = yes
+					}
+				}
+				# 공산당과 전쟁하면 관둠
+				NOT = {
+					has_war_with = PRC
+				}
+			}
+		}
+	}
+
+	PRC_tan_pingshan={ #to do
+		name=PRC_tan_pingshan
+		portraits={
+			civilian = {
+				small="gfx/interface/advisors/PRC/PRC_tan_pingshan.png"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = PRC_tan_pingshan
+			traits = { communist_revolutionary }
+			available = {
+				# 장제스가 지도자면 기용 가능
+				OR = {
+					has_government = communism
+					has_country_leader = {
+						character = CHI_chiang_kaishek
+						ruling_only = yes
+					}
+				}
+				# 공산당과 전쟁하면 관둠
+				NOT = {
+					has_war_with = PRC
+				}
+			}
+		}
+	}
+}

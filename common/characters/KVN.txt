@@ -1,0 +1,33 @@
+characters={
+	KVN_jean_decoux = {
+		name = KVN_jean_decoux
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			desc = ""	
+			traits = {
+			}
+		}
+		country_leader={
+			ideology=rexism
+			desc = ""	
+			traits={ }
+		}
+		corps_commander = {
+			traits = {
+				trait_engineer
+				politically_connected
+				substance_abuser
+			}
+			skill = 4
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+}

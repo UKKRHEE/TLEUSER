@@ -1,0 +1,5 @@
+﻿
+focus = {
+    current = "ZLC_BEI_army_problem"
+    Progress = 0
+}   

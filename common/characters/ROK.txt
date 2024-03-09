@@ -1,0 +1,54 @@
+characters={
+	ROK_syngman_rhee={
+		name="ROK_syngman_rhee"
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/Portrait_KOR_syngman_rhee.png"
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			traits={ }
+			id=-1
+		}
+	}
+	ROK_kim_songsu={
+		name="ROK_kim_songsu"
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/Portrait_KOR_kim_songsu.dds"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			id=-1
+		}
+	}
+	ROK_kim_sungju={
+		name="ROK_kim_sungju"
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/Portrait_KOR_Kim_Il_sung.png"
+			}
+		}
+		country_leader={
+			ideology=ultranationalism
+			traits={ }
+			id=-1
+		}
+	}
+	ROK_yeo_woonhyung={
+		name="ROK_yeo_woonhyung"
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/Portrait_leader_yeo_woonhyung.png"
+			}
+		}
+		country_leader={
+			ideology=marxism
+			traits={ }
+			id=-1
+		}
+	}
+}

@@ -1,0 +1,9 @@
+AUH_diplomancy_TLE = {
+	allowed = {
+		original_tag = HUN
+	}
+	visible = {
+		original_tag = HUN
+	}
+	priority = 2
+}

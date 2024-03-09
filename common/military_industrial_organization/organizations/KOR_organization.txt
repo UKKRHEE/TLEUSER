@@ -1,0 +1,172 @@
+#####################
+
+###  ##  #  # # #  ## 
+ #  #  # ## # # # #   
+ #  #### # ## ##   #  
+ #  #  # #  # # #   # 
+ #  #  # #  # # # ## 
+
+ #################### 
+
+daeseon = {
+	include = generic_tank_organization
+	icon = GFX_idea_KOR_daeseon
+	allowed = {	
+		tag = KOR
+		has_dlc = "Arms Against Tyranny"
+	}
+} 
+yeomin = {
+	include = generic_heavy_tank_organization
+	icon = GFX_idea_KOR_yeomin
+	allowed = {	
+		tag = KOR
+		has_dlc = "Arms Against Tyranny"
+	}
+} 
+dusan = {
+	include = generic_medium_tank_organization
+	icon = GFX_idea_KOR_dusan
+	allowed = {	
+		tag = KOR
+		has_dlc = "Arms Against Tyranny"
+	}
+} 
+
+
+#####################
+
+ ## #  # ### ###   ## 
+#   #  #  #  #  # #   
+ #  ####  #  ###   #  
+  # #  #  #  #      # 
+##  #  # ### #    ##  
+ 
+#####################
+
+
+daehan_dockyard = {
+	include = generic_battle_line_ship_organization
+	icon = GFX_idea_KOR_daehan_dockyard
+	allowed = {	
+		tag = KOR 
+		has_dlc = "Arms Against Tyranny"
+	}
+}
+
+dongmyong = {
+	include = generic_task_force_ship_organization
+	icon = GFX_idea_KOR_dongmyong
+	allowed = {	
+		tag = KOR 
+		has_dlc = "Arms Against Tyranny"
+	}
+}
+
+pyoahm = {
+	include = generic_escort_ship_organization
+	icon = GFX_idea_KOR_pyoahm
+	
+	allowed = {	 
+		tag = KOR 
+		has_dlc = "Arms Against Tyranny"
+	}
+	
+}
+
+###########################
+
+###  #    ##  #  # ###  ## 
+#  # #   #  # ## # #   #   
+###  #   #### # ## ##   #  
+#    #   #  # #  # #     # 
+#    ### #  # #  # ### ##  
+
+###########################
+
+
+keumseong_af = {
+	include = generic_high_agility_fighter_aircraft_organization
+	icon = GFX_idea_KOR_keumseong_af
+	
+	allowed = {	 
+		tag = KOR 
+		has_dlc = "Arms Against Tyranny"
+	}
+	
+} 
+
+dusan_air = {
+	include = generic_range_focused_aircraft_organization
+	icon = GFX_idea_KOR_dusan_air
+	allowed = {	
+		tag = KOR 
+	}
+}
+
+haepyong_air = {
+	include = generic_heavy_aircraft_organization
+	icon = GFX_idea_KOR_haepyong_air
+	allowed = {	
+		tag = KOR 
+		has_dlc = "Arms Against Tyranny"
+	}
+}
+
+
+################################### 
+
+#   #  ##  ### ### ###  ### ### #   
+## ## #  #  #  #   #  #  #  #   #   
+# # # ####  #  ##  ###   #  ##  #   
+#   # #  #  #  #   #  #  #  #   #   
+#   # #  #  #  ### #  # ### ### ### 
+
+
+###################################
+
+busanchobyung = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_KOR_busanchobyung
+	allowed = {	
+		tag = KOR 
+		has_dlc = "Arms Against Tyranny"
+	}
+}
+
+samsung = {
+	include = generic_artillery_organization
+	icon = GFX_idea_KOR_samsung
+	allowed = {	
+		tag = KOR 
+		has_dlc = "Arms Against Tyranny"
+	}
+} 
+
+anheung = {
+	include = generic_motorized_mechanized_organization 
+	icon = GFX_idea_KOR_anheung
+	allowed = {	
+		tag = KOR 
+		has_dlc = "Arms Against Tyranny"
+	}
+	initial_trait = {
+		equipment_bonus = {
+			maximum_speed = 0.05
+		}
+	}
+}
+
+hwangseong_car = {
+	include = generic_motorized_mechanized_organization 
+	icon = GFX_idea_KOR_hwangseong_car
+	allowed = {	
+		tag = KOR 
+		has_dlc = "Arms Against Tyranny"
+	}
+	initial_trait = {
+		equipment_bonus = {
+			build_cost_ic = -0.05
+		}
+	}
+}

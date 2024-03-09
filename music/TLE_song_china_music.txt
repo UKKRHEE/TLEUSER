@@ -1,0 +1,174 @@
+music_station = "china_music"
+music = {
+	song = "chinese_internationale"
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+			is_chinese_clique = yes
+		}
+	}
+}
+music = {
+	song = "laobing"
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+			is_chinese_clique = yes
+		}
+	}
+}
+music = {
+	song = "shehuizhuyihao"
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+			is_chinese_clique = yes
+		}
+	}
+}
+music = {
+	song = "erquanyingyue"
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+			is_chinese_clique = yes
+		}
+	}
+}
+music = {
+	song = "yiyongjun"
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = yes
+			is_chinese_clique = yes
+		}
+	}
+}
+music = {
+	song = "changchengyao"
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+			is_chinese_clique = yes
+		}
+	}
+}
+music = {
+	song = "kmt_guoqige"
+	chance = {
+		modifier = {
+			factor = 2
+			tag = CHI
+		}
+	}
+}
+music = {
+	song = "dadaoxingjin"
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = yes
+			is_chinese_clique = yes
+		}
+	}
+}
+music = {
+	song = "fangongfuguoge"
+	chance = {
+		modifier = {
+			factor = 2
+			is_chinese_clique = yes
+		}
+	}
+}
+music = {
+	song = "xibulezhongguo"
+	chance = {
+		modifier = {
+			factor = 2
+			is_chinese_clique = yes
+		}
+	}
+}
+music = {
+	song = "yingsusong"
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+			is_chinese_clique = yes
+		}
+	}
+}
+music = {
+	song = "jcyj"
+	chance = {
+		modifier = {
+			factor = 2
+			is_chinese_clique = yes
+		}
+	}
+}
+music = {
+	song = "dangnayitianlaili"
+	chance = {
+		modifier = {
+			factor = 2
+			is_chinese_clique = yes
+		}
+	}
+}
+music = {
+	song = "defence_yellowriver"
+	chance = {
+		modifier = {
+			factor = 2
+			is_chinese_clique = yes
+		}
+	}
+}
+music = {
+	song = "ihaveagun"
+	chance = {
+		modifier = {
+			factor = 2
+			is_chinese_clique = yes
+		}
+	}
+}
+music = {
+	song = "woyouyizhiqiang"
+	chance = {
+		modifier = {
+			factor = 2
+			is_chinese_clique = yes
+		}
+	}
+}
+music = {
+	song = "nigthraid"
+	chance = {
+		modifier = {
+			factor = 2
+			is_chinese_clique = yes
+		}
+	}
+}
+music = {
+	song = "shengli"
+	chance = {
+		modifier = {
+			factor = 2
+			is_chinese_clique = yes
+			KOR = {
+				has_country_flag = TLE_THE_WAR_IS_ENDED
+			}
+		}
+	}
+}

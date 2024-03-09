@@ -1,0 +1,5 @@
+﻿
+focus = {
+    current = "KOR_side_in"
+    Progress = 0
+}   

@@ -1,0 +1,33 @@
+guiTypes = {
+	containerWindowType = {
+		name = "TLE_Germany_GUIs_Breitspurbahn"
+		size = { width = 480 height = 120 }
+		position = { x = 210 y = 200 }
+
+		iconType = {
+			name = "Background"
+			spriteType ="GFX_ger_Breitspurbahn_background"
+		}
+
+		buttonType = {
+			name = "ger_menu_open"
+			spriteType = "GFX_ger_menu_open_button"
+			position = { x = 238 y = 41 }
+			pdx_tooltip = "scripted_gui_open_tt_ger_Breitspurbahn"
+			scale = 0.65
+		}
+	}
+	containerWindowType = {
+		name = "decision_gfx"
+		size = { width = 480 height = 240 }
+		position = { x = 0 y = 0 }
+		orientation = center
+		origo = center
+
+		iconType = {
+			name = GFX_ger_econ_plan
+			spriteType = GFX_ger_econ_plan
+			position = { x= 50 y = 0 }
+		}
+	}
+}

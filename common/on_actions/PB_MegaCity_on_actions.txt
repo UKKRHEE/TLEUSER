@@ -1,0 +1,93 @@
+on_actions = {
+	on_startup = {
+		effect = {
+         # ENG = { 
+         #    set_country_flag = PB_Is_Allowed_To_Build_MegaCities
+         # }
+         # 126 = {
+         #    set_state_flag = PB_Mega_City_Gui_Visible 
+         # }
+
+         525 = {
+				set_state_flag = Megacity_State
+				set_state_flag = Megacity_Hanseong
+            # add_province_modifier = {
+            #    static_modifiers = { terrain_paris }
+				#    province = { id = 11506	}
+            # }
+			}
+
+         527 = {
+				set_state_flag = Megacity_State
+				set_state_flag = Megacity_Pyongyang
+            # add_province_modifier = {
+            #    static_modifiers = { terrain_paris }
+				#    province = { id = 11506	}
+            # }
+			}
+         
+         1016 = {
+				set_state_flag = Megacity_State
+				set_state_flag = Megacity_Busan
+            # add_province_modifier = {
+            #    static_modifiers = { terrain_paris }
+				#    province = { id = 11506	}
+            # }
+			}
+
+         716 = {
+				set_state_flag = Megacity_State
+				set_state_flag = Megacity_Simyang
+            # add_province_modifier = {
+            #    static_modifiers = { terrain_paris }
+				#    province = { id = 11506	}
+            # }
+			}
+
+         1070 = {
+				set_state_flag = Megacity_State
+				set_state_flag = Megacity_Kyoto
+            # add_province_modifier = {
+            #    static_modifiers = { terrain_paris }
+				#    province = { id = 11506	}
+            # }
+			}
+
+         282 = {
+				set_state_flag = Megacity_State
+				set_state_flag = Megacity_Edo
+            # add_province_modifier = {
+            #    static_modifiers = { terrain_paris }
+				#    province = { id = 11506	}
+            # }
+			}
+
+         608 = {
+				set_state_flag = Megacity_State
+				set_state_flag = Megacity_Beijing
+            # add_province_modifier = {
+            #    static_modifiers = { terrain_paris }
+				#    province = { id = 11506	}
+            # }
+			}
+
+         613 = {
+				set_state_flag = Megacity_State
+				set_state_flag = Megacity_Nanjing
+            # add_province_modifier = {
+            #    static_modifiers = { terrain_paris }
+				#    province = { id = 11506	}
+            # }
+			}
+
+         1048 = {
+				set_state_flag = Megacity_State
+				set_state_flag = Megacity_Wuhan
+            # add_province_modifier = {
+            #    static_modifiers = { terrain_paris }
+				#    province = { id = 11506	}
+            # }
+			}
+      }
+   }
+}

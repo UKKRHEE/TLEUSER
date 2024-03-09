@@ -1,0 +1,407 @@
+
+JAP_anti_yushin_level_up = { #유신 반대 증가
+	# level 5 not relevant. Cannot go above.
+	custom_effect_tooltip = JAP_anti_yushin_level_up_tt
+	if = {
+		limit = { has_idea = JAP_anti_yushin_level_4 }
+		country_event = {
+			id = japan.1029
+		}
+	}
+	else_if = {
+		limit = { has_idea = JAP_anti_yushin_level_3 }
+		swap_ideas = {
+			remove_idea = JAP_anti_yushin_level_3
+			add_idea = JAP_anti_yushin_level_4
+		}
+		country_event = {
+			id = japan.1034
+		}
+	}
+	else_if = {
+		limit = { has_idea = JAP_anti_yushin_level_2 }
+		swap_ideas = {
+			remove_idea = JAP_anti_yushin_level_2
+			add_idea = JAP_anti_yushin_level_3
+		}
+		country_event = {
+			id = japan.1034
+		}
+	}
+	else_if = {
+		limit = { has_idea = JAP_anti_yushin_level_1 }
+		swap_ideas = {
+			remove_idea = JAP_anti_yushin_level_1
+			add_idea = JAP_anti_yushin_level_2
+		}		
+		country_event = {
+			id = japan.1034
+		}
+	}
+	else_if = {
+		limit = { has_idea = JAP_anti_yushin_level_none }
+		swap_ideas = {
+			remove_idea = JAP_anti_yushin_level_none
+			add_idea = JAP_anti_yushin_level_1
+		}	
+		country_event = {
+			id = japan.1034
+		}	
+	}
+}
+
+
+JAP_anti_yushin_level_down = { #부패도 감소
+custom_effect_tooltip = JAP_anti_yushin_level_down_tt
+	if = {
+		limit = { has_idea = JAP_anti_yushin_level_none }
+		country_event = {
+			id = japan.1033
+		}
+	}
+	else_if = {
+		limit = { has_idea = JAP_anti_yushin_level_1 }
+		swap_ideas = {
+			remove_idea = JAP_anti_yushin_level_1
+			add_idea = JAP_anti_yushin_level_none
+		}
+	}
+	else_if = {
+		limit = { has_idea = JAP_anti_yushin_level_2 }
+		swap_ideas = {
+			remove_idea = JAP_anti_yushin_level_2
+			add_idea = JAP_anti_yushin_level_1
+		}
+	}
+	else_if = {
+		limit = { has_idea = JAP_anti_yushin_level_3 }
+		swap_ideas = {
+			remove_idea = JAP_anti_yushin_level_3
+			add_idea = JAP_anti_yushin_level_2
+		}
+	}
+	else_if = {
+		limit = { has_idea = JAP_anti_yushin_level_4 }
+		swap_ideas = {
+			remove_idea = JAP_anti_yushin_level_4
+			add_idea = JAP_anti_yushin_level_3
+		}
+	}
+}
+JAP_kyoto_collapse_infantry_set = {
+	hidden_effect = {
+			JAP = {
+				division_template = {
+					name = "전일본구국의용군"
+					is_locked = yes
+					division_names_group = JAP_INF_01
+					regiments = {
+						infantry = {
+							x = 0
+							y = 0
+						}
+						infantry = {
+							x = 0
+							y = 1
+						}
+						infantry = {
+							x = 0
+							y = 2
+						}
+						infantry = {
+							x = 0
+							y = 3
+						}
+						infantry = {
+							x = 1
+							y = 0
+						}
+						infantry = {
+							x = 1
+							y = 1
+						}
+						infantry = {
+							x = 1
+							y = 2
+						}
+						infantry = {
+							x = 1
+							y = 3
+						}
+						infantry = {
+							x = 2
+							y = 0
+						}
+						infantry = {
+							x = 2
+							y = 1
+						}
+						infantry = {
+							x = 2
+							y = 2
+						}
+						infantry = {
+							x = 2
+							y = 3
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_owned_by = JAP
+						is_controlled_by = JAP
+						state = 991
+					}
+					prioritize = { 991 }
+					create_unit = {
+						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						owner = JAP
+					}
+					create_unit = {
+						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						owner = JAP
+					}
+					create_unit = {
+						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						owner = JAP
+					}
+					create_unit = {
+						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						owner = JAP
+					}
+					create_unit = {
+						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						owner = JAP
+					}
+					create_unit = {
+						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						owner = JAP
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_owned_by = JAP
+						is_controlled_by = JAP
+						state = 531
+					}
+					prioritize = { 531 }
+					create_unit = {
+						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						owner = JAP
+					}
+					create_unit = {
+						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						owner = JAP
+					}
+					create_unit = {
+						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						owner = JAP
+					}
+					create_unit = {
+						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						owner = JAP
+					}
+					create_unit = {
+						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						owner = JAP
+					}
+					create_unit = {
+						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						owner = JAP
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_owned_by = JAP
+						is_controlled_by = JAP
+						state = 1069
+					}
+					prioritize = { 1069 }
+					create_unit = {
+						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						owner = JAP
+					}
+					create_unit = {
+						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						owner = JAP
+					}
+					create_unit = {
+						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						owner = JAP
+					}
+					create_unit = {
+						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						owner = JAP
+					}
+					create_unit = {
+						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						owner = JAP
+					}
+					create_unit = {
+						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						owner = JAP
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_owned_by = JAP
+						is_controlled_by = JAP
+						state = 535
+					}
+					prioritize = { 535 }
+					create_unit = {
+						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						owner = JAP
+					}
+					create_unit = {
+						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						owner = JAP
+					}
+					create_unit = {
+						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						owner = JAP
+					}
+					create_unit = {
+						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						owner = JAP
+					}
+					create_unit = {
+						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						owner = JAP
+					}
+					create_unit = {
+						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						owner = JAP
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_owned_by = JAP
+						is_controlled_by = JAP
+						state = 532
+					}
+					prioritize = { 532 }
+					create_unit = {
+						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						owner = JAP
+					}
+					create_unit = {
+						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						owner = JAP
+					}
+					create_unit = {
+						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						owner = JAP
+					}
+					create_unit = {
+						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						owner = JAP
+					}
+					create_unit = {
+						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						owner = JAP
+					}
+					create_unit = {
+						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						owner = JAP
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_owned_by = JAP
+						is_controlled_by = JAP
+						state = 990
+					}
+					prioritize = { 990 }
+					create_unit = {
+						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						owner = JAP
+					}
+					create_unit = {
+						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						owner = JAP
+					}
+					create_unit = {
+						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						owner = JAP
+					}
+					create_unit = {
+						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						owner = JAP
+					}
+					create_unit = {
+						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						owner = JAP
+					}
+					create_unit = {
+						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						owner = JAP
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_owned_by = JAP
+						is_controlled_by = JAP
+						state = 1072
+					}
+					prioritize = { 1072 }
+					create_unit = {
+						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						owner = JAP
+					}
+					create_unit = {
+						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						owner = JAP
+					}
+					create_unit = {
+						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						owner = JAP
+					}
+					create_unit = {
+						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						owner = JAP
+					}
+					create_unit = {
+						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						owner = JAP
+					}
+					create_unit = {
+						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						owner = JAP
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_owned_by = JAP
+						is_controlled_by = JAP
+						state = 282
+					}
+					prioritize = { 282 }
+					create_unit = {
+						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						owner = JAP
+					}
+					create_unit = {
+						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						owner = JAP
+					}
+					create_unit = {
+						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						owner = JAP
+					}
+					create_unit = {
+						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						owner = JAP
+					}
+					create_unit = {
+						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						owner = JAP
+					}
+					create_unit = {
+						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						owner = JAP
+					}
+				}
+			}
+	}
+}

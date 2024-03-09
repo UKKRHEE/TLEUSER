@@ -1,0 +1,133 @@
+focus_tree = {
+	id = TBJ_2th_civilwar_focus
+	country = {
+		factor = 0 
+		modifier = {
+			add = 9
+			tag = TBJ
+		}
+	}
+	default = no
+
+	focus = {
+		id = TBJ_tokugawa
+		icon = GFX_focus_SOV_mobilization_plan
+		cost = 4.40
+		x = 19
+		y = 1
+		completion_reward = {
+			custom_effect_tooltip = TBJ_WAR_TT
+		}
+	}
+	focus = {
+		id = TBJ_collecting_weapons
+		icon = GFX_focus_ETH_freedom_at_gunpoint
+		cost = 4.40
+		prerequisite = {
+			focus = TBJ_tokugawa
+		}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 2000
+			}
+		}
+		x = 19
+		y = 2
+
+	}
+	focus = {
+		id = TBJ_sendai
+		icon = GFX_focus_generic_monarchy_1
+		cost = 10.00
+		prerequisite = {
+			focus = TBJ_collecting_weapons
+		}
+		x = 17
+		y = 3
+		completion_reward = {
+			custom_effect_tooltip = TBJ_SENDAI_TT
+			hidden_effect = {
+				annex_country = {
+					target = SDJ
+					transfer_troops = no
+				}
+			}
+		}
+	}
+	focus = {
+		id = TBJ_zozai
+		icon = GFX_focus_BUL_condemn_macedonian_organizations
+		cost = 10.00
+		prerequisite = {
+			focus = TBJ_collecting_weapons
+		}
+		x = 19
+		y = 3
+		completion_reward = {
+			custom_effect_tooltip = TBJ_ZOZAI_TT
+			hidden_effect = {
+				annex_country = {
+					target = GJJ
+					transfer_troops = no
+				}
+			}
+		}
+	}
+	focus = {
+		id = TBJ_morioka
+		icon = GFX_focus_hol_the_foundations_of_defense
+		cost = 10.00
+		prerequisite = {
+			focus = TBJ_collecting_weapons
+		}
+		x = 21
+		y = 3
+		completion_reward = {
+			custom_effect_tooltip = TBJ_MORI_TT
+			hidden_effect = {
+				annex_country = {
+					target = NBJ
+					transfer_troops = no
+				}
+			}
+		}
+	}
+	focus = {
+		id = TBJ_sakusen
+		icon = GFX_focus_generic_little_entente
+		cost = 4.40
+		prerequisite = {
+			focus = TBJ_sendai
+		}
+		prerequisite = {
+			focus = TBJ_zozai
+		}
+		prerequisite = {
+			focus = TBJ_morioka
+		}
+		x = 19
+		y = 4
+		completion_reward = {
+			custom_effect_tooltip = TBJ_SAKUSEN_TT
+		}
+	}
+	focus = {
+		id = TBJ_last_war
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 2.40
+		prerequisite = {
+			focus = TBJ_sakusen
+		}
+		x = 19
+		y = 5
+		completion_reward = {
+			custom_effect_tooltip = TBJ_CIVILWAR_TT
+			hidden_effect = {
+				country_event = {
+					id = Civilwar_of_Japan.5
+				}
+			}
+		}
+	}
+}

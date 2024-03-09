@@ -1,0 +1,5 @@
+﻿
+focus = {
+    current = "ZLC_BEI_reorged_japan_connect"
+    Progress = 0
+}   

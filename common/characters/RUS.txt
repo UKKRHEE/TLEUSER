@@ -1,0 +1,90 @@
+characters={
+	RUS_Boris_Shepunov = {
+		name="RUS_Boris_Shepunov"
+		portraits={
+			civilian={
+				large="gfx/leaders/SV1/Boris_Shepunov.dds"
+			}
+		}
+		country_leader={
+			ideology=despotism
+		}
+	}
+	RUS_Pitirim_Sorokinv = {
+		name="RUS_Pitirim_Sorokin"
+		portraits={
+			civilian={
+				large="gfx/leaders/SV1/Pitirim_Sorokin.dds"
+			}
+		}
+		country_leader={
+			ideology=socialism
+		}
+	}
+	RUS_Pavel_Zhigarev = {
+		name="RUS_Pavel_Zhigarev"
+		portraits={
+			civilian={
+				large="gfx/leaders/SV1/Pavel_Zhigarev.dds"
+			}
+		}
+		country_leader={
+			ideology=stalinism
+		}
+	}
+	RUS_alexandr_kolchak = {
+		name="RUS_alexandr_kolchak"
+		portraits={
+			civilian={
+				large="gfx/leaders/RUS/Portrait_RUS_Aleksandr_Kolchak.tga"
+			}
+			army = {
+				large="gfx/leaders/RUS/Portrait_RUS_Aleksandr_Kolchak.tga"
+				small="gfx/leaders/RUS/Portrait_RUS_Aleksandr_Kolchak.tga"
+			}
+		}
+		navy_leader={
+			skill = 3
+			attack_skill = 5
+			defense_skill = 3
+			maneuvering_skill = 4
+			coordination_skill = 4
+		}
+	}
+	RUS_pyotr_wrangel = {
+	
+		name="RUS_pyotr_wrangel"
+		portraits={
+			civilian={
+				large="gfx/leaders/RUS/Portrait_RUS_Pyotr_Wrangel.tga"
+			}
+		}
+		field_marshal={
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	RUS_anton_denikin = {
+	
+		name="RUS_anton_denikin"
+		portraits={
+			civilian={
+				large="gfx/leaders/RUS/Portrait_RUS_Anton_Denikin.tga"
+			}
+			army = {
+				large="gfx/leaders/RUS/Portrait_RUS_Anton_Denikin.tga"
+				small="gfx/leaders/RUS/Portrait_RUS_Anton_Denikin.tga"
+			}
+		}
+		corps_commander={
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+}

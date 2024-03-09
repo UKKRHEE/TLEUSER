@@ -1,0 +1,903 @@
+on_actions = {
+	on_daily = {
+		effect = {
+			if = {
+				limit = { 
+					51 = {
+						is_owned_by = WGR
+						is_controlled_by = GER
+						is_capital = no
+					}
+				}
+				WGR = {
+					set_capital = { state = 51 }
+				}
+			}
+			if = {
+				limit = {
+					original_tag = LIT
+					owns_state = 784
+					NOT = {
+						owns_state = 975
+					}
+					NOT = {
+						GER = {
+							owns_state = 975
+						}
+						SOV = {
+							owns_state = 975
+						}
+					}
+				}
+				LIT = {
+					transfer_state = 975
+				}
+			}
+			if = {
+				limit = {
+					982 = {
+						NOT = {
+							is_core_of = DDR
+						}
+					}
+					51 = {
+						is_core_of = DDR
+					}
+				}
+				982 = {
+					add_core_of = DDR
+				}
+			}
+			if = {
+				limit = {
+					986 = {
+						NOT = {
+							is_core_of = HUN
+						}
+					}
+					4 = {
+						is_core_of = HUN
+					}
+				}
+				986 = {
+					add_core_of = HUN
+				}
+			}
+			if = {
+				limit = {
+					983 = {
+						NOT = {
+							is_core_of = HUN
+						}
+					}
+					76 = {
+						is_core_of = HUN
+					}
+				}
+				983 = {
+					add_core_of = HUN
+				}
+			}
+			if = {
+				limit = {
+					51 = {
+						is_demilitarized_zone = no
+					}
+					982 = {
+						is_demilitarized_zone = yes
+					}
+				}
+				982 = {
+					set_demilitarized_zone = no
+				}
+			}
+		}	
+	}
+	on_state_control_changed = { #내전	
+	    effect = {
+			if = {
+				limit = {
+					tag = WGR
+					FROM.FROM = { state = 51 }
+					NOT = {
+						has_country_flag = OST_RHEINLAND_FLAG
+					}
+					has_global_flag = TLE_germany_union_defeat
+				}
+				WGR = {
+					transfer_state = 982
+					add_state_core = 982
+					set_country_flag = OST_RHEINLAND_FLAG
+				}
+			}
+			if = {
+				limit = {
+					tag = GER #
+					FROM.FROM = { state = 188 } #
+				}
+                FROM.FROM = {
+					set_state_name = "memel"
+				}
+                set_province_name = {
+                    id = 3288
+                    name = "memel"
+                }
+				if = {
+					limit = {
+						NOT = {
+							188 = {
+								is_core_of = GER
+							}
+						}
+					}	
+					188 = {
+						add_core_of = GER
+					}
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						tag = POL
+						tag = SOV
+						tag = LIT
+						tag = LAT
+						tag = EST
+					}
+					FROM.FROM = { state = 188 } #
+				}
+                FROM.FROM = {
+					set_state_name = "klaipeda"
+				}
+                set_province_name = {
+                    id = 3288
+                    name = "klaipeda"
+                }
+				if = {
+					limit = {
+						188 = {
+							is_core_of = GER
+						}
+					}	
+					188 = {
+						remove_core_of = GER
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = GER #
+					FROM.FROM = { state = 848 } #
+				}
+				if = {
+					limit = {
+						NOT = {
+							848 = {
+								is_core_of = GER
+							}
+						}
+					}	
+					848 = {
+						add_core_of = GER
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = AUS #
+					FROM.FROM = { state = 848 } #
+				}
+				if = {
+					limit = {
+						848 = {
+							is_core_of = GER
+						}
+					}	
+					848 = {
+						remove_core_of = GER
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = GER #
+					FROM.FROM = { state = 153 } #
+				}
+				if = {
+					limit = {
+						NOT = {
+							153 = {
+								is_core_of = GER
+							}
+						}
+					}	
+					153 = {
+						add_core_of = GER
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = AUS #
+					FROM.FROM = { state = 153 } #
+				}
+				if = {
+					limit = {
+						153 = {
+							is_core_of = GER
+						}
+					}	
+					153 = {
+						remove_core_of = GER
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = GER #
+					FROM.FROM = { state = 986 } #
+				}
+				if = {
+					limit = {
+						NOT = {
+							986 = {
+								is_core_of = GER
+							}
+						}
+					}	
+					986 = {
+						add_core_of = GER
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = AUS #
+					FROM.FROM = { state = 986 } #
+				}
+				if = {
+					limit = {
+						986 = {
+							is_core_of = GER
+						}
+					}	
+					986 = {
+						remove_core_of = GER
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = GER #
+					FROM.FROM = { state = 4 } #
+				}
+				if = {
+					limit = {
+						NOT = {
+							4 = {
+								is_core_of = GER
+							}
+						}
+					}	
+					4 = {
+						add_core_of = GER
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = AUS #
+					FROM.FROM = { state = 4 } #
+				}
+				if = {
+					limit = {
+						4 = {
+							is_core_of = GER
+						}
+					}	
+					4 = {
+						remove_core_of = GER
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = GER #
+					FROM.FROM = { state = 152 } #
+				}
+				if = {
+					limit = {
+						NOT = {
+							152 = {
+								is_core_of = GER
+							}
+						}
+					}	
+					152 = {
+						add_core_of = GER
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = AUS #
+					FROM.FROM = { state = 152 } #
+				}
+				if = {
+					limit = {
+						152 = {
+							is_core_of = GER
+						}
+					}	
+					152 = {
+						remove_core_of = GER
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = GER #
+					FROM.FROM = { state = 984 } #
+				}
+				if = {
+					limit = {
+						NOT = {
+							984 = {
+								is_core_of = GER
+							}
+						}
+					}	
+					984 = {
+						add_core_of = GER
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = AUS #
+					FROM.FROM = { state = 984 } #
+				}
+				if = {
+					limit = {
+						984 = {
+							is_core_of = GER
+						}
+					}	
+					984 = {
+						remove_core_of = GER
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = GER #
+					FROM.FROM = { state = 34 } #
+				}
+                FROM.FROM = {
+					set_state_name = "walonien"
+				}
+			}
+			if = {
+				limit = {
+					original_tag = BEL
+					FROM.FROM = { state = 34 } #
+				}
+                FROM.FROM = {
+					set_state_name = "walony"
+				}
+			}
+			if = {
+				limit = {
+					tag = GER #
+					FROM.FROM = { state = 985 } #
+				}
+                FROM.FROM = {
+					set_state_name = "nanzig_sedan"
+				}
+                set_province_name = {
+                    id = 11516
+                    name = "nanzig"
+                }
+                set_province_name = {
+                    id = 3560
+                    name = "sedan"
+                }
+			}
+			if = {
+				limit = {
+					OR = {
+						original_tag = FRA
+						original_tag = FRS
+					} #
+					FROM.FROM = { state = 985 } #
+				}
+                FROM.FROM = {
+					set_state_name = "nancy_sedan"
+				}
+                set_province_name = {
+                    id = 11516
+                    name = "nancy"
+                }
+                set_province_name = {
+                    id = 3560
+                    name = "sedan_france"
+                }
+			}
+			if = {
+				limit = {
+					tag = GER #
+					FROM.FROM = { state = 85 } #
+				}
+                FROM.FROM = {
+					set_state_name = "danzig"
+				}
+                set_province_name = {
+                    id = 362
+                    name = "danzig"
+                }
+				if = {
+					limit = {
+						NOT = {
+							85 = {
+								is_core_of = GER
+							}
+						}
+					}	
+					85 = {
+						add_core_of = GER
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = POL #
+					FROM.FROM = { state = 85 } #
+				}
+                FROM.FROM = {
+					set_state_name = "gdansk"
+				}
+                set_province_name = {
+                    id = 362
+                    name = "gdansk"
+                }
+				if = {
+					limit = {
+						85 = {
+							is_core_of = GER
+						}
+					}	
+					85 = {
+						remove_core_of = GER
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = GER #
+					FROM.FROM = { state = 807 } #
+				}
+                FROM.FROM = {
+					set_state_name = "west_preussen"
+				}
+                set_province_name = {
+                    id = 3295
+                    name = "torn_german"
+                }
+                set_province_name = {
+                    id = 279
+                    name = "bromberg"
+                }
+                set_province_name = {
+                    id = 9263
+                    name = "gdingen"
+                }
+				if = {
+					limit = {
+						NOT = {
+							807 = {
+								is_core_of = GER
+							}
+						}
+					}	
+					807 = {
+						add_core_of = GER
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = POL #
+					FROM.FROM = { state = 807 } #
+				}
+                FROM.FROM = {
+					set_state_name = "gdinia"
+				}
+                set_province_name = {
+                    id = 3295
+                    name = "torn_poland"
+                }
+                set_province_name = {
+                    id = 279
+                    name = "bidgosch"
+                }
+                set_province_name = {
+                    id = 9263
+                    name = "gdinia"
+                }
+				if = {
+					limit = {
+						807 = {
+							is_core_of = GER
+						}
+					}	
+					807 = {
+						remove_core_of = GER
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = GER #
+					FROM.FROM = { state = 86 } #
+				}
+                FROM.FROM = {
+					set_state_name = "posen"
+				}
+                set_province_name = {
+                    id = 6558
+                    name = "posen"
+                }
+				if = {
+					limit = {
+						NOT = {
+							86 = {
+								is_core_of = GER
+							}
+						}
+					}	
+					86 = {
+						add_core_of = GER
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = POL #
+					FROM.FROM = { state = 86 } #
+				}
+                FROM.FROM = {
+					set_state_name = "poznan"
+				}
+                set_province_name = {
+                    id = 6558
+                    name = "poznan"
+                }
+				if = {
+					limit = {
+						86 = {
+							is_core_of = GER
+						}
+					}	
+					86 = {
+						remove_core_of = GER
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = GER #
+					FROM.FROM = { state = 762 } #
+				}
+                FROM.FROM = {
+					set_state_name = "katowitz"
+				}
+                set_province_name = {
+                    id = 6464
+                    name = "katowitz"
+                }
+				if = {
+					limit = {
+						NOT = {
+							762 = {
+								is_core_of = GER
+							}
+						}
+					}	
+					762 = {
+						add_core_of = GER
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = POL #
+					FROM.FROM = { state = 762 } #
+				}
+                FROM.FROM = {
+					set_state_name = "katowice"
+				}
+                set_province_name = {
+                    id = 6464
+                    name = "katowice"
+                }
+				if = {
+					limit = {
+						762 = {
+							is_core_of = GER
+						}
+					}	
+					762 = {
+						remove_core_of = GER
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					tag = GER #
+					FROM.FROM = { state = 912 } #
+				}
+                FROM.FROM = {
+					set_state_name = "nord_schlesswig"
+				}
+                set_province_name = {
+                    id = 13258
+                    name = "jonderburg"
+                }
+				if = {
+					limit = {
+						NOT = {
+							912 = {
+								is_core_of = GER
+							}
+						}
+					}	
+					912 = {
+						add_core_of = GER
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = DEN #
+					FROM.FROM = { state = 912 } #
+				}
+                FROM.FROM = {
+					set_state_name = "STATE_912"
+				}
+                set_province_name = {
+                    id = 13258
+                    name = "VICTORY_POINTS_13258"
+                }
+				if = {
+					limit = {
+						912 = {
+							is_core_of = GER
+						}
+					}	
+					912 = {
+						remove_core_of = GER
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = GER #
+					FROM.FROM = { state = 980 } #
+				}
+                FROM.FROM = {
+					set_state_name = "eupen"
+				}
+				GER = {
+					transfer_state = 980
+				}
+				if = {
+					limit = {
+						NOT = {
+							980 = {
+								is_core_of = GER
+							}
+						}
+					}	
+					980 = {
+						add_core_of = GER
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = BEL #
+					FROM.FROM = { state = 980 } #
+				}
+                FROM.FROM = {
+					set_state_name = "oepen"
+				}
+				BEL = {
+					transfer_state = 980
+				}
+				if = {
+					limit = {
+						980 = {
+							is_core_of = GER
+						}
+					}	
+					980 = {
+						remove_core_of = GER
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = GER #
+					FROM.FROM = { state = 28 } #
+				}
+                FROM.FROM = {
+					set_state_name = "Elsass_Lothringen"
+				}
+                set_province_name = {
+                    id = 9559
+                    name = "Metz_germany"
+                }
+                set_province_name = {
+                    id = 9503
+                    name = "Strassburg"
+                }
+                set_province_name = {
+                    id = 678
+                    name = "Mulhausen"
+                }
+				if = {
+					limit = {
+						NOT = {
+							28 = {
+								is_core_of = GER
+							}
+						}
+					}	
+					28 = {
+						add_core_of = GER
+					}
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						original_tag = FRA
+						original_tag = FRS
+					}
+					FROM.FROM = { state = 28 } #
+				}
+                FROM.FROM = {
+					set_state_name = "alsas_roraine"
+				}
+                set_province_name = {
+                    id = 9559
+                    name = "VICTORY_POINTS_9559"
+                }
+                set_province_name = {
+                    id = 9503
+                    name = "VICTORY_POINTS_9503"
+                }
+                set_province_name = {
+                    id = 678
+                    name = "VICTORY_POINTS_678"
+                }
+				if = {
+					limit = {
+						28 = {
+							is_core_of = GER
+						}
+					}	
+					28 = {
+						remove_core_of = GER
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					tag = GER #
+					FROM.FROM = { state = 69 } #
+				}
+                FROM.FROM = {
+					set_state_name = "sudetenland"
+				}
+                set_province_name = {
+                    id = 3585
+                    name = "karlsbatt"
+                }
+                set_province_name = {
+                    id = 11401
+                    name = "reihenberg"
+                }
+				if = {
+					limit = {
+						NOT = {
+							69 = {
+								is_core_of = GER
+							}
+						}
+					}	
+					69 = {
+						add_core_of = GER
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = CZE #
+					FROM.FROM = { state = 69 } #
+				}
+                FROM.FROM = {
+					set_state_name = "sudeti"
+				}
+                set_province_name = {
+                    id = 3585
+                    name = "calsbed"
+                }
+                set_province_name = {
+                    id = 11401
+                    name = "ribeletz"
+                }
+				if = {
+					limit = {
+						69 = {
+							is_core_of = GER
+						}
+					}	
+					69 = {
+						remove_core_of = GER
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = GER #
+					FROM.FROM = { state = 74 } #
+				}
+                FROM.FROM = {
+					set_state_name = "ost_sudetenland"
+				}
+                set_province_name = {
+                    id = 3583
+                    name = "ostlau"
+                }
+				if = {
+					limit = {
+						NOT = {
+							74 = {
+								is_core_of = GER
+							}
+						}
+					}	
+					74 = {
+						add_core_of = GER
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = CZE #
+					FROM.FROM = { state = 74 } #
+				}
+                FROM.FROM = {
+					set_state_name = "ost_sudeti"
+				}
+                set_province_name = {
+                    id = 3583
+                    name = "ostlava"
+                }
+				if = {
+					limit = {
+						74 = {
+							is_core_of = GER
+						}
+					}	
+					74 = {
+						remove_core_of = GER
+					}
+				}
+			}
+		}	
+	}		
+}

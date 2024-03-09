@@ -1,0 +1,248 @@
+
+ZLC_balance = {
+	initial_value = 0.25
+	left_side = ZLC_caokun_side
+	right_side = ZLC_wupeifu_side
+	decision_category = ZLC_balance_of_power_categories
+
+	range = {
+		id = ZLC_balance_range
+		min = -0.10
+		max = 0.10
+		modifier = {
+
+		}
+		on_activate = {
+
+		}
+		on_deactivate = {
+			
+		}
+	}
+
+	side = {
+		id = ZLC_wupeifu_side
+		icon = GFX_ZLC_wupeifu_side
+		range = {
+			id = ZLC_wupeifu_low
+			min = 0.1
+			max = 0.3
+			modifier = {
+				# if = {
+				# 	limit = {
+				# 		is_ai = no
+				# 		NOT = {
+				# 			has_country_flag = TLE_dont_want_to_balance
+				# 		}
+				# 	}
+					offensive_war_stability_factor = 0.1
+					political_advisor_cost_factor = 0.1
+					mobilization_laws_cost_factor = 0.1
+					trade_laws_cost_factor = 0.1
+				# }
+			}
+			on_activate = {
+				
+			}
+			on_deactivate = {
+				
+			}
+		}
+		range = {
+			id = ZLC_wupeifu_meidum
+			min = 0.3
+			max = 0.6
+			modifier = {
+				# if = {
+				# 	limit = {
+				# 		is_ai = no
+				# 		NOT = {
+				# 			has_country_flag = TLE_dont_want_to_balance
+				# 		}
+				# 	}
+					offensive_war_stability_factor = 0.15
+					war_support_factor = 0.05
+					political_advisor_cost_factor = 0.15
+					mobilization_laws_cost_factor = 0.15
+					trade_laws_cost_factor = 0.15
+				# }
+			}
+			on_activate = {
+				
+			}
+			on_deactivate = {
+				
+			}
+		}
+		range = {
+			id = ZLC_wupeifu_high
+			min = 0.6
+			max = 0.9
+			modifier = {
+				# if = {
+				# 	limit = {
+				# 		is_ai = no
+				# 		NOT = {
+				# 			has_country_flag = TLE_dont_want_to_balance
+				# 		}
+				# 	}
+					offensive_war_stability_factor = 0.2
+					war_support_factor = 0.1
+					political_advisor_cost_factor = 0.2
+					mobilization_laws_cost_factor = 0.2
+					trade_laws_cost_factor = 0.2
+				# }
+			}
+			on_activate = {
+				
+			}
+			on_deactivate = {
+				
+			}
+		}
+		range = {
+			id = ZLC_wupeifu_total
+			min = 0.9
+			max = 1
+			modifier = {
+				# if = {
+				# 	limit = {
+				# 		is_ai = no
+				# 		NOT = {
+				# 			has_country_flag = TLE_dont_want_to_balance
+				# 		}
+				# 	}
+					offensive_war_stability_factor = 0.25
+					war_support_factor = 0.15
+					political_advisor_cost_factor = 0.25
+					mobilization_laws_cost_factor = 0.25
+					trade_laws_cost_factor = 0.25
+					war_support_weekly = 0.001
+				# }
+			}
+			on_activate = {
+				
+			}
+			on_deactivate = {
+				
+			}
+		}
+	}
+	side = {
+		id = ZLC_caokun_side
+		icon = GFX_ZLC_caokun_side
+		range = {
+			id = ZLC_caokun_low
+			min = -0.3
+			max = -0.1
+			modifier = {
+				# if = {
+				# 	limit = {
+				# 		is_ai = no
+				# 		NOT = {
+				# 			has_country_flag = TLE_dont_want_to_balance
+				# 		}
+				# 	}
+					offensive_war_stability_factor = -0.05
+					political_advisor_cost_factor = -0.1
+					mobilization_laws_cost_factor = -0.1
+					trade_laws_cost_factor = -0.1
+				# }
+			}
+			on_activate = {
+				
+			}
+			on_deactivate = {
+				
+			}
+		}
+		range = {
+			id = ZLC_caokun_medium
+			min = -0.6
+			max = -0.3
+			modifier = {
+				# if = {
+				# 	limit = {
+				# 		is_ai = no
+				# 		NOT = {
+				# 			has_country_flag = TLE_dont_want_to_balance
+				# 		}
+				# 	}
+					offensive_war_stability_factor = -0.1
+					political_advisor_cost_factor = -0.15
+					mobilization_laws_cost_factor = -0.15
+					trade_laws_cost_factor = -0.15
+				# }
+			}
+			on_activate = {
+				
+			}
+			on_deactivate = {
+				
+			}
+		}
+		range = {
+			id = ZLC_caokun_high
+			min = -0.9
+			max = -0.6
+			modifier = {
+				# if = {
+				# 	limit = {
+				# 		is_ai = no
+				# 		NOT = {
+				# 			has_country_flag = TLE_dont_want_to_balance
+				# 		}
+				# 	}
+					offensive_war_stability_factor = -0.15
+					war_support_factor = -0.05
+					political_advisor_cost_factor = -0.2
+					mobilization_laws_cost_factor = -0.2
+					trade_laws_cost_factor = -0.2
+				# }
+			}
+			on_activate = {
+				
+			}
+			on_deactivate = {
+				
+			}
+		}
+		range = {
+			id = ZLC_caokun_total
+			min = -1
+			max = -0.9
+			modifier = {
+				# if = {
+				# 	limit = {
+				# 		is_ai = no
+				# 		NOT = {
+				# 			has_country_flag = TLE_dont_want_to_balance
+				# 		}
+				# 	}
+					offensive_war_stability_factor = -0.2
+					war_support_factor = -0.1
+					political_advisor_cost_factor = -0.25
+					mobilization_laws_cost_factor = -0.25
+					trade_laws_cost_factor = -0.25
+					stability_weekly = 0.001
+				# }
+			}
+			on_activate = {
+			
+				# if = {
+				# 	limit = {
+				# 		is_ai = no
+				# 		NOT = {
+				# 			has_country_flag = TLE_dont_want_to_balance
+				# 		}
+				# 	}
+				# }
+				
+			}
+			on_deactivate = {
+				
+			}
+		}
+	}
+}
+

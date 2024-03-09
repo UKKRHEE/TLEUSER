@@ -1,0 +1,28 @@
+characters={
+	GO1_german_goernment={
+		name="GO1_german_goernment"
+		portraits={
+			civilian={
+				large="gfx/leaders/GER/Portrait_GER_africa_government.png"
+			}
+		}
+	}
+	GO1_heinrich_schnee={
+		name="GO1_heinrich_schnee"
+		portraits={
+			civilian={
+				large="gfx/leaders/GER/Portrait_GER_heinrich_schnee.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			id=-1
+		}
+		country_leader={
+			ideology=nazism
+			traits={ }
+			id=-1
+		}
+	}
+}

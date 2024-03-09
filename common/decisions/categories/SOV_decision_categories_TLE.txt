@@ -1,0 +1,17 @@
+SOV_the_coring = {
+	allowed = {
+		original_tag = SOV
+	}
+	visible = {
+		original_tag = SOV
+	}
+}
+SOV_fareastern_partisans = {
+	allowed = {
+		original_tag = SOV
+	}
+	visible = {
+		original_tag = SOV
+	}
+	priority = 87
+}

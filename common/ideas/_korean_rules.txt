@@ -1,0 +1,471 @@
+ideas = {
+
+	kor_diplomatic_policy = {
+		law = yes
+		use_list_view = yes
+		kor_dip_none = {
+			cost = 0
+			removal_cost = -1
+			level = 7
+			allowed = {
+				NOT = { original_tag = KOR }
+			}
+			modifier = {
+			}
+			default = yes
+			cancel_if_invalid = no
+		}
+		kor_dip_ilsoism = {
+			cost = 0
+			removal_cost = -1
+			level = 6
+			allowed = {
+				original_tag = KOR always = no
+			}
+			available = {
+				has_idea = kor_dip_ilsoism
+			}
+			modifier = {
+				war_support_factor = 0.05
+				offensive_war_stability_factor = 0.1
+			}
+			cancel_if_invalid = no
+		}
+		kor_dip_managism = {
+			cost = 0
+			removal_cost = -1
+			level = 5
+			allowed = {
+				original_tag = KOR always = no
+			}
+			available = {
+				has_idea = kor_dip_managism
+			}
+			modifier = {
+				war_support_factor = -0.025
+				send_volunteer_size = 3
+				send_volunteers_tension = -0.1
+				send_volunteer_divisions_required = -0.1
+				embargo_threshold_factor = -0.15
+			}
+			cancel_if_invalid = no
+		}
+		kor_dip_givism = {
+			cost = 0
+			removal_cost = -1
+			level = 4
+			allowed = {
+				original_tag = KOR always = no
+			}
+			available = {
+				has_idea = kor_dip_givism
+			}
+			modifier = {
+				war_support_factor = -0.05
+				defensive_war_stability_factor = 0.1
+			}
+			cancel_if_invalid = no
+		}
+		kor_dip_breakism = {
+			cost = 0
+			removal_cost = -1
+			level = 3
+			allowed = {
+				original_tag = KOR always = no
+			}
+			available = {
+				has_idea = kor_dip_breakism
+			}
+			modifier = {
+				war_support_factor = 0.1
+				offensive_war_stability_factor = 0.2
+			}
+			cancel_if_invalid = no
+		}
+	}
+
+	kor_inner_policy = {
+		law = yes
+		use_list_view = yes
+		kor_inn_none = {
+			cost = 0
+			removal_cost = -1
+			level = 7
+			allowed = {
+				NOT = { original_tag = KOR }
+			}
+			modifier = {
+			}
+			default = yes
+			cancel_if_invalid = no
+		}
+		kor_inn_basism = {
+			cost = 0
+			removal_cost = -1
+			level = 6
+			allowed = {
+				original_tag = KOR always = no
+			}
+			available = {
+				has_idea = kor_inn_basism
+			}
+			modifier = {
+				stability_factor = -0.1
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.05
+			}
+			cancel_if_invalid = no
+		}
+		kor_inn_revolism = {
+			cost = 0
+			removal_cost = -1
+			level = 5
+			allowed = {
+				original_tag = KOR always = no
+			}
+			available = {
+				has_idea = kor_inn_revolism
+			}
+			modifier = {
+				stability_factor = 0.1
+				research_speed_factor = 0.15
+				consumer_goods_factor = 0.1
+				production_speed_buildings_factor = -0.1
+			}
+			cancel_if_invalid = no
+		}
+		kor_inn_charitism = {
+			cost = 0
+			removal_cost = -1
+			level = 4
+			allowed = {
+				original_tag = KOR always = no
+			}
+			available = {
+				has_idea = kor_inn_charitism
+			}
+			modifier = {
+				stability_factor = 0.05
+				consumer_goods_factor = 0.05
+				production_cost_arms_factory_factor = 0.05
+				production_cost_dockyard_factor = 0.05
+			}
+			cancel_if_invalid = no
+		}
+		kor_inn_totalism = {
+			cost = 0
+			removal_cost = -1
+			level = 3
+			allowed = {
+				original_tag = KOR always = no
+			}
+			available = {
+				has_idea = kor_inn_totalism
+			}
+			modifier = {
+				stability_factor = -0.2
+				war_support_factor = -0.1
+				research_speed_factor = -0.1
+				production_speed_buildings_factor = 0.1
+			}
+			cancel_if_invalid = no
+		}
+	}
+
+	kor_political_policy = {
+		law = yes
+		use_list_view = yes
+		kor_pol_none = {
+			cost = 0
+			removal_cost = -1
+			level = 1
+			allowed = {
+				NOT = { original_tag = KOR }
+			}
+			modifier = {
+			}
+			default = yes
+			cancel_if_invalid = no
+		}
+		kor_pol_leadism = {
+			cost = 0
+			removal_cost = -1
+			level = 2
+			allowed = {
+				original_tag = KOR always = no
+			}
+			available = {
+				has_idea = kor_pol_leadism
+			}
+			modifier = {
+				political_power_factor = 0.1
+				stability_factor = -0.05
+				research_speed_factor = -0.05
+			}
+			cancel_if_invalid = no
+		}
+		kor_pol_democratism = {
+			cost = 0
+			removal_cost = -1
+			level = 3
+			allowed = {
+				original_tag = KOR always = no
+			}
+			available = {
+				has_idea = kor_pol_democratism
+			}
+			modifier = {
+				research_speed_factor = 0.05
+			}
+			cancel_if_invalid = no
+		}
+		kor_pol_gradualism = {
+			cost = 0
+			removal_cost = -1
+			level = 4
+			allowed = {
+				original_tag = KOR always = no
+			}
+			available = {
+				has_idea = kor_pol_gradualism
+			}
+			modifier = {
+				stability_factor = 0.05
+			}
+			cancel_if_invalid = no
+		}
+	}
+
+	kor_military_loyalty = {
+		law = yes
+		use_list_view = yes
+		kor_mil_none = {
+			cost = 0
+			removal_cost = -1
+			level = 7
+			allowed = {
+				NOT = { original_tag = KOR }
+			}
+			modifier = {
+			}
+			default = yes
+			cancel_if_invalid = no
+		}
+		kor_mil_serve_to_emperor = {
+			cost = 0
+			removal_cost = -1
+			level = 6
+			allowed = {
+				original_tag = KOR always = no
+			}
+			available = {
+				has_idea = kor_mil_serve_to_emperor
+			}
+			modifier = {
+				war_support_factor = -0.1
+				drift_defence_factor = -0.5
+				army_core_attack_factor = 0.15
+				army_core_defence_factor = 0.15
+			}
+			cancel_if_invalid = no
+		}
+		kor_mil_serve_to_emp_and_gov = {
+			cost = 0
+			removal_cost = -1
+			level = 5
+			allowed = {
+				original_tag = KOR always = no
+			}
+			available = {
+				has_idea = kor_mil_serve_to_emp_and_gov
+			}
+			modifier = {
+				war_support_factor = -0.05
+				drift_defence_factor = -0.2
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+				non_core_manpower = 0.01
+			}
+			cancel_if_invalid = no
+		}
+		kor_mil_serve_to_government = {
+			cost = 0
+			removal_cost = -1
+			level = 4
+			allowed = {
+				original_tag = KOR always = no
+			}
+			available = {
+				has_idea = kor_mil_serve_to_government
+			}
+			modifier = {
+				drift_defence_factor = 0.1
+				non_core_manpower = 0.02
+			}
+			cancel_if_invalid = no
+		}
+		kor_mil_tongjepa = {
+			cost = 0
+			removal_cost = -1
+			level = 3
+			allowed = {
+				original_tag = KOR always = no
+				has_completed_focus = kor_korean_lebensraum
+			}
+			available = {
+				has_idea = kor_mil_tongjepa
+			}
+			modifier = {
+				war_support_factor = 0.05
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+			}
+			cancel_if_invalid = no
+		}
+	}
+	kor_elder_slot = {
+		KOR_park_yonghyo_elder = { #
+		    allowed = {
+		    	original_tag = KOR always = no
+		    }
+			available = {
+				has_idea = KOR_park_yonghyo_elder
+			}
+			cost = 0
+			removal_cost = -1
+			can_be_fired = no
+			
+		    traits = { seungjeongwon_trait park_yonghyo_trait }
+			cancel_if_invalid = no
+	    }
+		KOR_seo_jai_phil_elder = { #
+		    allowed = {
+		    	original_tag = KOR always = no
+		    }
+			available = {
+				has_idea = KOR_seo_jai_phil_elder
+			}
+			cost = 0
+			removal_cost = -1
+			can_be_fired = no
+			
+		    traits = { seungjeongwon_trait seo_jaiphil_trait }
+			cancel_if_invalid = no
+	    }
+		KOR_lee_kyuwan_elder = { #
+		    allowed = {
+		    	original_tag = KOR always = no
+		    }
+			available = {
+				has_idea = KOR_lee_kyuwan_elder
+			}
+			cost = 0
+			removal_cost = -1
+			can_be_fired = no
+			
+		    traits = { seungjeongwon_trait wonlo_trait }
+			cancel_if_invalid = no
+	    }
+	}
+	kor_heir_prince_slot = {
+		KOR_yi_hyul_heir_prince = { #
+		    allowed = {
+		    	original_tag = KOR always = no
+		    }
+			available = {
+				has_idea = KOR_yi_hyul_heir_prince
+			}
+			cost = 0
+			removal_cost = -1
+			can_be_fired = no
+			
+		    traits = { heir_prince_trait }
+			cancel_if_invalid = no
+	    }
+		KOR_yi_yul_prince_ui = { #
+		    allowed = {
+		    	original_tag = KOR always = no
+		    }
+			available = {
+				has_idea = KOR_yi_yul_prince_ui
+			}
+			cost = 0
+			removal_cost = -1
+			can_be_fired = no
+			
+		    traits = { prince_ui_trait }
+			cancel_if_invalid = no
+	    }
+		KOR_yi_won_prince_kyong = { #
+		    allowed = {
+		    	original_tag = KOR always = no
+		    }
+			available = {
+				has_idea = KOR_yi_won_prince_kyong
+			}
+			cost = 0
+			removal_cost = -1
+			can_be_fired = no
+			
+		    traits = { prince_kyong_trait }
+			cancel_if_invalid = no
+	    }
+		KOR_yi_yong_prince_jong = { #
+		    allowed = {
+		    	original_tag = KOR always = no
+		    }
+			available = {
+				has_idea = KOR_yi_yong_prince_jong
+			}
+			cost = 0
+			removal_cost = -1
+			can_be_fired = no
+			
+		    traits = { prince_jong_trait }
+			cancel_if_invalid = no
+	    }
+		KOR_yi_kiyong_prince_susong = { #
+		    allowed = {
+		    	original_tag = KOR always = no
+		    }
+			available = {
+				has_idea = KOR_yi_kiyong_prince_susong
+			}
+			cost = 0
+			removal_cost = -1
+			can_be_fired = no
+			
+		    traits = { prince_susong_trait }
+			cancel_if_invalid = no
+	    }
+		KOR_yi_jegak_prince_uiyang = { #
+		    allowed = {
+		    	original_tag = KOR always = no
+		    }
+			available = {
+				has_idea = KOR_yi_jegak_prince_uiyang
+			}
+			cost = 0
+			removal_cost = -1
+			can_be_fired = no
+			
+		    traits = { prince_uiyang_trait }
+			cancel_if_invalid = no
+	    }
+		KOR_yi_haesung_prince_chongpung = { #
+		    allowed = {
+		    	original_tag = KOR always = no
+		    }
+			available = {
+				has_idea = KOR_yi_haesung_prince_chongpung
+			}
+			cost = 0
+			removal_cost = -1
+			can_be_fired = no
+			
+		    traits = { prince_chongpung_trait }
+			cancel_if_invalid = no
+	    }
+	}
+
+}

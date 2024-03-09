@@ -1,0 +1,37 @@
+
+state={
+	id=974
+	name="STATE_SIJIAZHUANG"
+	resources={
+		steel=5.000
+	}
+	history={
+		victory_points = {
+			4190 3 
+		}
+		victory_points = {
+			4144 1 
+		}
+		owner = ZLC
+		add_core_of = ZLC
+		add_core_of = CHI
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 1
+
+		}
+		1938.10.25 = {
+			controller = DKG
+
+		}
+
+	}
+
+	provinces={
+		1169 1188 4058 4093 4114 4144 4190 4208 7000 7092 10053 12062 
+	}
+	manpower=8321378
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

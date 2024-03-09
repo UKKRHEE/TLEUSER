@@ -1,0 +1,99 @@
+﻿division_template = {
+	name = "Majo Shidan" 			# (Square) Infantry Division - 4 infantry regiments (3k men each), 1 field artillery regiment - abstracted into infantry,
+	division_names_group = JAP_INF_01
+									# 1 engineering regiment, 1 recon regiment
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		artillery_brigade = { x = 2 y = 0 }
+	}
+	support = {
+	}
+}
+division_template = {
+	name = "Majo Shidan-ni" 			# Cavalry Division - 2 Cavalry Division regiments (3k men); 1 mounted artillery regiment
+	division_names_group = JAP_CAV_01
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 0 y = 3 }
+	}
+}
+units = {
+
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		unique = {
+			"프랑"
+		}
+		portraits = {
+			army = {
+				large = "gfx/leaders/JAP/Portrait_JAP_renya_mudaguchi.png"
+				small = "gfx/interface/ideas/idea_JAP_renya_mudaguchi.png"
+			}
+		}
+		location = 10444
+		division_template = "Majo Shidan"
+		start_experience_factor = 0.5
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		unique = {
+			"암네시아"
+		}
+		portraits = {
+			army = {
+				large = "gfx/leaders/JAP/Portrait_JAP_kyoji_tominaga.png"
+				small = "gfx/interface/ideas/idea_JAP_kyoji_tominaga.png"
+			}
+		}
+		location = 10444
+		division_template = "Majo Shidan"
+		start_experience_factor = 0.5
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		unique = {
+			"사야"
+		}
+		portraits = {
+			army = {
+				large = "gfx/leaders/JAP/Portrait_JAP_hajime_tsugiyama.png"
+				small = "gfx/interface/ideas/idea_JAP_hajime_tsugiyama.png"
+			}
+		}
+		location = 10444
+		division_template = "Majo Shidan"
+		start_experience_factor = 0.5
+	}
+}
+#AIRCRAFT
+air_wings = {
+}
+instant_effect = 
+{
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "MJT"
+		}
+		requested_factories = 10
+		progress = 0.1
+		efficiency = 100
+	}
+
+}

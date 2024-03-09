@@ -1,0 +1,41 @@
+
+state={
+	id=328
+	name="STATE_HWANGILBUK"
+	resources={
+		oil=13.000
+		aluminium=26.000
+	}
+
+	history={
+		victory_points = {
+			10433 5 
+		}
+		victory_points = {
+			7663 3 
+		}
+		victory_points = {
+			4572 3 
+		}
+		owner = KOR
+		add_core_of = KOR
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+
+		}
+		1936.5.1 = {
+			owner = KOR
+
+		}
+
+	}
+
+	provinces={
+		1567 4503 4572 4642 7523 7591 7652 7663 9866 9913 10433 11744 11864 
+	}
+	manpower=1536266
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

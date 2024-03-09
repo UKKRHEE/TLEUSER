@@ -1,0 +1,18 @@
+KOR_propaganda_campaigns = {
+	priority = 100
+
+	icon = SOV_propaganda
+
+	scripted_gui = kor_propaganda_campaigns_ui
+
+	allowed = {
+		original_tag = KOR
+	}
+
+	visible = {
+		OR = {
+			# has_completed_focus = SOV_expand_the_agitprop
+			has_country_flag = KOR_debug_show_propaganda_system_flag #Debug
+		}
+	}
+}

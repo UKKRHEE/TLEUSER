@@ -1,0 +1,289 @@
+#	Example:
+# 
+#	example_trigger = {
+#		tag = GER
+#		is_ai = no
+#	}
+#
+#
+#	In a script file:
+#
+#	trigger = {
+#		example_trigger = yes
+#	}
+# 
+#	THIS FILE IS FOR TRIGGERS SPECIFICALLY FOR THE CHI TAG
+
+is_japan_clique = { #Does not include sinkiang
+	OR = {
+		tag = JAP
+		tag = DKG
+		tag = TBJ
+		tag = SDJ
+		tag = NBJ
+		tag = KGJ
+		tag = GJJ
+		tag = EJP
+		tag = FJP
+	}
+	exists = yes
+}
+ZLC_bop_decision_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = TOOLTIP_ZLC_BOP_NOT_SELECTED 
+		NOT = {
+			has_decision = ZLC_congrass_supporting_wupeifu_line
+			has_decision = ZLC_coring_army_wupeifu
+			has_decision = ZLC_meeting_the_shangren_wupeifu
+			has_decision = ZLC_congrass_supporting_caokun_line
+			has_decision = ZLC_coring_army_caokun
+			has_decision = ZLC_meeting_the_shangren_caokun
+		}
+	}
+}
+TLE_has_war_on_china = { #Does not include sinkiang
+	OR = {
+		has_war_with = CHI
+		has_war_with = PRC
+		has_war_with = GXC
+		has_war_with = YUN
+		has_war_with = SHX
+		has_war_with = XSM
+		has_war_with = SIK
+		has_war_with = WZC
+		has_war_with = SND
+		has_war_with = AHC
+		has_war_with = HNC
+		has_war_with = ZLC
+	}
+}
+is_chinese_clique = { #Does not include sinkiang
+	OR = {
+		tag = CHI
+		tag = PRC
+		tag = GXC
+		tag = YUN
+		tag = SHX
+		tag = XSM
+		tag = SIK
+		tag = SZC
+		tag = WZC
+		tag = SND
+		tag = AHC
+		tag = HNC
+		tag = ZLC
+		tag = SZY
+		tag = GZC
+		tag = XKC
+		tag = SCC
+		tag = CH1
+		tag = GZC
+		tag = QIN
+	}
+}
+is_independent_china_or_warlord = { #Does not include sinkiang
+	OR = {
+		tag = CHI
+		tag = PRC
+		tag = GXC
+		tag = YUN
+		tag = SHX
+		tag = XSM
+		tag = SIK
+		tag = WZC
+		tag = SND
+		tag = AHC
+		tag = SZC
+		tag = HNC
+		tag = ZLC
+		tag = SZY
+		tag = GZC
+		tag = XKC
+		tag = SCC
+		tag = CH1
+		tag = GZC
+		tag = QIN
+	}
+	is_puppet = no
+}
+
+has_hyper_inflation = {
+	if = {
+		limit = { has_idea = CHI_hyper_inflation_1 }
+		has_idea = CHI_hyper_inflation_1
+	}
+	if = {
+		limit = { has_idea = CHI_hyper_inflation_2 }
+		has_idea = CHI_hyper_inflation_2
+	}
+	if = {
+		limit = { has_idea = CHI_hyper_inflation_3 }
+		has_idea = CHI_hyper_inflation_3
+	}
+	if = {
+		limit = { has_idea = CHI_hyper_inflation_4 }
+		has_idea = CHI_hyper_inflation_4
+	}
+	if = {
+		limit = { has_idea = CHI_hyper_inflation_5 }
+		has_idea = CHI_hyper_inflation_5
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_idea = CHI_hyper_inflation_1
+				has_idea = CHI_hyper_inflation_2
+				has_idea = CHI_hyper_inflation_3
+				has_idea = CHI_hyper_inflation_4
+				has_idea = CHI_hyper_inflation_5
+			}
+		}
+		has_idea = CHI_hyper_inflation_1
+	}
+}
+
+is_literally_china = {
+	OR = {
+		original_tag = CHI
+		original_tag = PRC
+		original_tag = GXC
+		original_tag = YUN
+		original_tag = SHX
+		original_tag = XSM
+		original_tag = SIK
+		original_tag = WZC
+		original_tag = SND
+		original_tag = AHC
+		original_tag = HNC
+		original_tag = ZLC
+	}
+}
+
+is_chinese_warlord = {
+	OR = {		
+		original_tag = GXC
+		original_tag = YUN
+		original_tag = SHX
+		original_tag = XSM
+		original_tag = SIK
+		original_tag = WZC
+		original_tag = SND
+		original_tag = AHC
+		original_tag = HNC
+		original_tag = ZLC
+	}
+}
+
+GER_will_support = {
+	GER = {
+		exists = yes
+		has_capitulated = no
+		NOT = {
+			has_war_with = ROOT
+		}
+		OR = {
+			has_opinion = { target = ROOT value > 74 }
+			is_in_faction_with = ROOT
+			ROOT = {
+				is_subject_of = GER
+			}
+		}
+	}
+}
+
+SOV_will_support = {
+	SOV = {
+		exists = yes
+		has_capitulated = no
+		NOT = {
+			has_war_with = ROOT
+		}
+		OR = {
+			has_opinion = { target = ROOT value > 74 }
+			is_in_faction_with = ROOT
+			ROOT = {
+				is_subject_of = SOV
+			}
+		}
+	}
+}
+ENG_will_support = {
+	ENG = {
+		exists = yes
+		has_capitulated = no
+		NOT = {
+			has_war_with = ROOT
+		}
+		OR = {
+			has_opinion = { target = ROOT value > 74 }
+			is_in_faction_with = ROOT
+			ROOT = {
+				is_subject_of = ENG
+			}
+		}
+	}
+}
+FRA_will_support = {
+	FRA = {
+		exists = yes
+		has_capitulated = no
+		NOT = {
+			has_war_with = ROOT
+		}
+		OR = {
+			has_opinion = { target = ROOT value > 74 }
+			is_in_faction_with = ROOT
+			ROOT = {
+				is_subject_of = FRA
+			}
+		}
+	}
+}
+USA_will_support = {
+	USA = {
+		exists = yes
+		has_capitulated = no
+		NOT = {
+			has_war_with = ROOT
+		}
+		OR = {
+			has_opinion = { target = ROOT value > 74 }
+			is_in_faction_with = ROOT
+			ROOT = {
+				is_subject_of = USA
+			}
+		}
+	}
+}
+JAP_will_support = {
+	KOR = {
+		exists = yes
+		has_capitulated = no
+		NOT = {
+			has_war_with = ROOT
+		}
+		OR = {
+			has_opinion = { target = ROOT value > 74 }
+			is_in_faction_with = ROOT
+			ROOT = {
+				is_subject_of = KOR
+			}
+		}
+	}
+}
+KOR_will_support = {
+	KOR = {
+		exists = yes
+		has_capitulated = no
+		NOT = {
+			has_war_with = ROOT
+		}
+		OR = {
+			has_opinion = { target = ROOT value > 74 }
+			is_in_faction_with = ROOT
+			ROOT = {
+				is_subject_of = KOR
+			}
+		}
+	}
+}

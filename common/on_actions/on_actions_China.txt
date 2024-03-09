@@ -1,0 +1,196 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			#광동성
+			326 = { set_state_flag = guangdong_province_state } #홍콩
+			729 = { set_state_flag = guangdong_province_state } #마카오
+			1046 = { set_state_flag = guangdong_province_state } #광저우
+			593 = { set_state_flag = guangdong_province_state } #광둥
+			592 = { set_state_flag = guangdong_province_state } #포산
+			971 = { set_state_flag = guangdong_province_state } #친저우
+			1045 = { set_state_flag = guangdong_province_state } #잔장
+			728 = { set_state_flag = guangdong_province_state } #광저우만
+			591 = { set_state_flag = guangdong_province_state } #하이난
+			
+			#광서성
+			594 = { set_state_flag = guangxi_province_state } #난닝
+			599 = { set_state_flag = guangxi_province_state } #광시
+			
+			#귀주성
+			1058 = { set_state_flag = guizhou_province_state } #쳰난
+			603 = { set_state_flag = guizhou_province_state } #구이저우
+			1053 = { set_state_flag = guizhou_province_state } #비졔
+			
+			#운남성
+			325 = { set_state_flag = yunnan_province_state } #윈난
+			747 = { set_state_flag = yunnan_province_state } #다리
+			1010 = { set_state_flag = yunnan_province_state } #리장
+			1013 = { set_state_flag = yunnan_province_state } #징훙
+			
+			#서강성
+			752 = { set_state_flag = xikang_province_state } #간쯔
+			751 = { set_state_flag = xikang_province_state } #량산
+			601 = { set_state_flag = xikang_province_state } #시캉
+			
+			#사천성
+			753 = { set_state_flag = sichuan_province_state } #간난
+			1047 = { set_state_flag = sichuan_province_state } #쓰촨
+			605 = { set_state_flag = sichuan_province_state } #충칭
+			748 = { set_state_flag = sichuan_province_state } #루저우
+			1007 = { set_state_flag = sichuan_province_state } #다저우
+
+			#호남성
+			602 = { set_state_flag = hunan_province_state } #후난
+			1054 = { set_state_flag = hunan_province_state } #천저우
+			
+			#호북성
+			750 = { set_state_flag = hubei_province_state } #언스
+			1056 = { set_state_flag = hubei_province_state } #이창
+			620 = { set_state_flag = hubei_province_state } #쑤이저우
+			1048 = { set_state_flag = hubei_province_state } #우한
+			1009 = { set_state_flag = hubei_province_state } #샤오간
+			
+			#안휘성
+			606 = { set_state_flag = anhui_province_state } #안후이
+			749 = { set_state_flag = anhui_province_state } #황산
+			
+			#강소성
+			598 = { set_state_flag = jiangsu_province_state } #쑤첸
+			1051 = { set_state_flag = jiangsu_province_state } #옌청
+			1040 = { set_state_flag = jiangsu_province_state } #타이저우
+			979 = { set_state_flag = jiangsu_province_state } #난퉁
+			613 = { set_state_flag = jiangsu_province_state } #난징
+			1038 = { set_state_flag = jiangsu_province_state } #자싱
+			1037 = { set_state_flag = jiangsu_province_state } #쑤저우
+			1036 = { set_state_flag = jiangsu_province_state } #상하이
+			
+			#강서성
+			1061 = { set_state_flag = jiangxi_province_state } #간저우
+			1062 = { set_state_flag = jiangxi_province_state } #이춘
+			600 = { set_state_flag = jiangxi_province_state } #장시
+			
+			#복건성
+			595 = { set_state_flag = fujian_province_state } #푸젠
+			1043 = { set_state_flag = fujian_province_state } #푸저우
+			1055 = { set_state_flag = fujian_province_state } #룽옌
+			1044 = { set_state_flag = fujian_province_state } #샤먼
+			
+			#절강성
+			596 = { set_state_flag = zhejiang_province_state } #저장
+			1041 = { set_state_flag = zhejiang_province_state } #닝보
+			1042 = { set_state_flag = zhejiang_province_state } #항저우
+			
+			#하남성
+			1074 = { set_state_flag = henan_province_state } #허비
+			607 = { set_state_flag = henan_province_state } #카이펑
+			1057 = { set_state_flag = henan_province_state } #뤄양
+			1008 = { set_state_flag = henan_province_state } #신양
+			
+			#섬서성
+			622 = { set_state_flag = shaanxi_province_state } #산시
+			744 = { set_state_flag = shaanxi_province_state } #시안
+			
+			#산서성
+			1052 = { set_state_flag = shanxi_province_state } #뤼량
+			615 = { set_state_flag = shanxi_province_state } #타이위안
+			972 = { set_state_flag = shanxi_province_state } #양취안
+			
+			#산동성
+			973 = { set_state_flag = shandong_province_state } #랴오청
+			597 = { set_state_flag = shandong_province_state } #지난
+			1050 = { set_state_flag = shandong_province_state } #둥잉
+			1049 = { set_state_flag = shandong_province_state } #웨이팡
+			1035 = { set_state_flag = shandong_province_state } #옌타이
+			743 = { set_state_flag = shandong_province_state } #칭다오
+			1034 = { set_state_flag = shandong_province_state } #웨이하이
+			1004 = { set_state_flag = shandong_province_state } #원덩
+			
+			#수원성
+			746 = { set_state_flag = suiyuan_province_state } #이커자오
+			621 = { set_state_flag = suiyuan_province_state } #쑤이위안
+			
+			#직예성
+			974 = { set_state_flag = zhili_province_state } #스자좡
+			614 = { set_state_flag = zhili_province_state } #바오딩
+			608 = { set_state_flag = zhili_province_state } #베이징
+			1033 = { set_state_flag = zhili_province_state } #톈진
+			609 = { set_state_flag = zhili_province_state } #탕산
+			970 = { set_state_flag = zhili_province_state } #즈리
+			1012 = { set_state_flag = zhili_province_state } #후루다오
+			
+			#찰합이
+			611 = { set_state_flag = chahar_province_state } #시린궈러멍
+			612 = { set_state_flag = chahar_province_state } #시린하오터
+			1005 = { set_state_flag = chahar_province_state } #남더르너드
+			
+			#감숙성
+			283 = { set_state_flag = gansu_province_state } #간쑤
+			1063 = { set_state_flag = gansu_province_state } #장예
+			996 = { set_state_flag = gansu_province_state } #칭양
+			1011 = { set_state_flag = gansu_province_state } #루취
+			
+			#영하성
+			756 = { set_state_flag = ningxia_province_state } #주취안
+			616 = { set_state_flag = ningxia_province_state } #닝샤
+			
+			#청해성
+			755 = { set_state_flag = qinghai_province_state } #하이시
+			754 = { set_state_flag = qinghai_province_state } #칭하이
+			604 = { set_state_flag = qinghai_province_state } #위수
+			
+			#신강성
+			760 = { set_state_flag = xinjiang_province_state } #다반청
+			759 = { set_state_flag = xinjiang_province_state } #쿤룬산
+			619 = { set_state_flag = xinjiang_province_state } #야르칸드
+			287 = { set_state_flag = xinjiang_province_state } #타클라마칸
+			617 = { set_state_flag = xinjiang_province_state } #우루무치
+			618 = { set_state_flag = xinjiang_province_state } #중가리아
+			1039 = { set_state_flag = xinjiang_province_state } #중가리아
+			
+			#대만성
+			524 = { set_state_flag = taiwan_province_state } #타이완
+			
+			
+			#서장성
+			601 = { set_state_flag = xijiang_province_state } #시캉
+			322 = { set_state_flag = xijiang_province_state } #나그추
+			757 = { set_state_flag = xijiang_province_state } #시가체
+			758 = { set_state_flag = xijiang_province_state } #아리
+			
+			### 일본 ###
+			#주고쿠
+			1066 = { set_state_flag = chugoku_state } #산인
+			529 = { set_state_flag = chugoku_state } #산요
+			989 = { set_state_flag = chugoku_state } #구레
+			
+			#시고쿠
+			530 = { set_state_flag = shigoku_state } #고치
+			
+			#간사이
+			1070 = { set_state_flag = kansai_state } #교토
+			531 = { set_state_flag = kansai_state } #오사카
+			991 = { set_state_flag = kansai_state } #미나미킨키
+			988 = { set_state_flag = kansai_state } #마이즈루
+			1065 = { set_state_flag = kansai_state } #키타킨키
+			
+			#간토
+			1067 = { set_state_flag = kanto_state } #요코하마
+			282 = { set_state_flag = kanto_state } #에도/도쿄
+			990 = { set_state_flag = kanto_state } #키타칸토
+			1073 = { set_state_flag = kanto_state } #조자이/치바
+			
+			#주부
+			1069 = { set_state_flag = chufu_state } #카가
+			535 = { set_state_flag = chufu_state } #고신에쓰
+			532 = { set_state_flag = chufu_state } #도카이
+			534 = { set_state_flag = chufu_state } #니가타
+			
+			#도호쿠
+			1068 = { set_state_flag = tohoku_state } #모리오카
+			533 = { set_state_flag = tohoku_state } #아키타
+			1071 = { set_state_flag = tohoku_state } #센다이
+			1072 = { set_state_flag = tohoku_state } #고리야마
+		}
+	}
+}
+

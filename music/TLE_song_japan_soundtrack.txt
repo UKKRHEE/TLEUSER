@@ -1,0 +1,360 @@
+# japanese music
+
+music_station = "japan_radio"
+
+
+music = {
+	song = "battotai_2"
+	chance = {
+		modifier = {
+			factor = 8
+			tag = JAP
+		}
+	}
+}
+music = {
+	song = "donboh"
+	chance = {
+		modifier = {
+			factor = 2
+			is_japan_clique = yes
+			has_completed_focus = JAP_for_empreror
+		}
+	}
+}
+music = {
+	song = "goodbye_youthlife"
+	chance = {
+		modifier = {
+			factor = 5
+			is_japan_clique = yes
+			has_completed_focus = JAP_for_empreror
+		}
+	}
+}
+music = {
+	song = "sunyeonga"
+	chance = {
+		modifier = {
+			factor = 2
+			is_japan_clique = yes
+			has_completed_focus = JAP_for_empreror
+		}
+	}
+}
+music = {
+	song = "battotaiimperialjapanesearmymarch"
+	chance = {
+		modifier = {
+			factor = 5
+			is_japan_clique = yes
+		}
+	}
+}
+
+music = {
+	song = "japaneseimperialarmyvictorymarch"
+	chance = {
+		modifier = {
+			factor = 5
+			is_japan_clique = yes
+		}
+	}
+}
+
+music = {
+	song = "sakurasakura"
+	chance = {
+		modifier = {
+			factor = 5
+			is_japan_clique = yes
+		}
+	}
+}
+music = {
+	song = "yukinoshingunthesnowymarch"
+	chance = {
+		modifier = {
+			factor = 5
+			is_japan_clique = yes
+		}
+	}
+}
+
+music = {
+	song = "kamikaze"
+	chance = {
+		modifier = {
+			factor = 5
+			is_japan_clique = yes
+		}
+	}
+}
+
+music = {
+	song = "dokinosakuracherryblossomsofthesameperiod"
+	chance = {
+		modifier = {
+			factor = 5
+			is_japan_clique = yes
+		}
+	}
+}
+
+music = {
+	song = "japaneseempirenationalanthem"
+	chance = {
+		modifier = {
+			factor = 5
+			is_japan_clique = yes
+		}
+	}
+}
+
+music = {
+	song = "japanesegunkasongoftheyoungeagles"
+	chance = {
+		modifier = {
+			factor = 5
+			is_japan_clique = yes
+		}
+	}
+}
+
+music = {
+	song = "burningsky"
+	chance = {
+		modifier = {
+			factor = 5
+			is_japan_clique = yes
+		}
+	}
+}
+
+music = {
+	song = "rabaurukaigun"
+	chance = {
+		modifier = {
+			factor = 5
+			is_japan_clique = yes
+		}
+	}
+}
+
+music = {
+	song = "getsugetsu"
+	chance = {
+		modifier = {
+			factor = 5
+			is_japan_clique = yes
+		}
+	}
+}
+
+music = {
+	song = "japanesearmymarch"
+	chance = {
+		modifier = {
+			factor = 5
+			is_japan_clique = yes
+		}
+	}
+}
+
+music = {
+	song = "roeinouta"
+	chance = {
+		modifier = {
+			factor = 5
+			is_japan_clique = yes
+		}
+	}
+}
+
+music = {
+	song = "comradeinarms"
+	chance = {
+		modifier = {
+			factor = 5
+			is_japan_clique = yes
+		}
+	}
+}
+
+music = {
+	song = "senyu"
+	chance = {
+		modifier = {
+			factor = 5
+			is_japan_clique = yes
+		}
+	}
+}
+
+music = {
+	song = "nipponrikugun"
+	chance = {
+		modifier = {
+			factor = 5
+			is_japan_clique = yes
+		}
+	}
+}
+
+music = {
+	song = "hoheinohonryo"
+	chance = {
+		modifier = {
+			factor = 5
+			is_japan_clique = yes
+		}
+	}
+}
+
+music = {
+	song = "gunkanmaechi"
+	chance = {
+		modifier = {
+			factor = 5
+			is_japan_clique = yes
+		}
+	}
+}
+
+music = {
+	song = "shussei"
+	chance = {
+		modifier = {
+			factor = 5
+			is_japan_clique = yes
+		}
+	}
+}
+
+music = {
+	song = "kimigayomarch"
+	chance = {
+		modifier = {
+			factor = 5
+			is_japan_clique = yes
+		}
+	}
+}
+
+music = {
+	song = "goechin"
+	chance = {
+		modifier = {
+			factor = 5
+			is_japan_clique = yes
+		}
+	}
+}
+
+music = {
+	song = "taiheiyoe"
+	chance = {
+		modifier = {
+			factor = 5
+			is_japan_clique = yes
+		}
+	}
+}
+
+music = {
+	song = "RikugunKoshinkyokuSonoichi"
+	chance = {
+		modifier = {
+			factor = 5
+			is_japan_clique = yes
+		}
+	}
+}
+
+music = {
+	song = "KatoHayabusasentotai"
+	chance = {
+		modifier = {
+			factor = 5
+			is_japan_clique = yes
+		}
+	}
+}
+
+music = {
+	song = "Getsugetsukasuimokukinkin"
+	chance = {
+		modifier = {
+			factor = 5
+			is_japan_clique = yes
+		}
+	}
+}
+
+music = {
+	song = "UmiYukaba"
+	chance = {
+		modifier = {
+			factor = 5
+			is_japan_clique = yes
+		}
+	}
+}
+
+music = {
+	song = "SenjinKunnoUta"
+	chance = {
+		modifier = {
+			factor = 5
+			is_japan_clique = yes
+		}
+	}
+}
+
+music = {
+	song = "Nankofushi"
+	chance = {
+		modifier = {
+			factor = 5
+			is_japan_clique = yes
+		}
+	}
+}
+
+music = {
+	song = "ikotsu"
+	chance = {
+		modifier = {
+			factor = 5
+			is_japan_clique = yes
+		}
+	}
+}
+
+music = {
+	song = "KigenNisenRoppyakuNen"
+	chance = {
+		modifier = {
+			factor = 5
+			is_japan_clique = yes
+		}
+	}
+}
+
+music = {
+	song = "Daitakessennouta"
+	chance = {
+		modifier = {
+			factor = 5
+			is_japan_clique = yes
+		}
+	}
+}
+
+
+
+
+
+
+
+

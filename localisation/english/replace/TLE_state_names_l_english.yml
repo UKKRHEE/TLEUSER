@@ -1,0 +1,378 @@
+﻿l_english:
+ ###대한 본토###
+ STATE_GYEONGGI:0 "경기도"
+ STATE_PYONGNAM:0 "평안남도"
+ STATE_CHUNGBUK:0 "충청북도"
+ STATE_JEONBUK:0 "전라북도"
+ STATE_GYEONGNAM:0 "경상남도"
+ STATE_HAMNAM:0 "함경남도"
+ STATE_GANGWON:0 "강원도"
+ STATE_HWANGHAE:0 "황해도"
+ STATE_JEJU:0 "제주"
+ STATE_ULLEUNG:0 "울릉도"
+ STATE_CHUNGNAM:0 "충청남도"
+ STATE_JEONNAM:0 "전라남도"
+ STATE_HAMBUK:0 "함경북도"
+ STATE_PYONGBUK:0 "평안북도"
+ STATE_GYEONGBUK:0 "경상북도"
+ ###북부 영토###
+ STATE_HAESAMWUI:0 "해삼위"
+ STATE_HAESOL:0 "해솔도"
+ STATE_DAEMADO:0 "대마도"
+ STATE_YONGKYENAM:0 "용계남도"
+ STATE_HWANGILNAM:0 "환길남도"
+ STATE_SIMYONAM:0 "심요남도"
+ STATE_PISA:0 "비사"
+ STATE_SIMYOBUK:0 "심요북도"
+ STATE_YONGKYEBUK:0 "용계북도"
+ STATE_HWANGILBUK:0 "환길북도"
+ ###식민지###
+ STATE_CHEONGDO:0 "청도"
+ STATE_DAEMAN:0 "대만"
+ STATE_JANGKI:0 "장기"
+ ###보호령###
+ STATE_RYUKYU:0 "류큐"
+
+ ###중국###
+ STATE_TIANJIN:0 "톈진"
+ STATE_WIHAE:0 "위해" #웨이하이
+ STATE_YANTAI:0 "옌타이"
+ STATE_SHANGHAI:0 "상하이"
+ STATE_SUZHOU:0 "쑤저우"
+ STATE_CHANGZHOU:0 "창저우"
+ STATE_NANTONG:0 "난퉁"
+ STATE_YANGZHOU:0 "양저우"
+ STATE_NINGBO:0 "닝보"
+ STATE_HANGZHOU:0 "항저우"
+ STATE_FUZHOU:0 "푸저우"
+ STATE_XIAMEN:0 "샤먼"
+ STATE_ZHANJIANG:0 "잔장"
+ STATE_GUANGZHOU:0 "광저우"
+ STATE_CHENGDU:0 "청두"
+ STATE_WUHAN:0 "우한"
+ STATE_WEIFANG:0 "웨이팡"
+ STATE_DONGYING:0 "둥잉"
+ STATE_YANCHENG:0 "옌청"
+ STATE_LULIANG:0 "뤼량"
+ STATE_BIJIE:0 "비제"
+ STATE_CHENZHOU:0 "천저우"
+ STATE_LONGYEN:0 "룽옌"
+ STATE_YICHANG:0 "이창"
+ STATE_LUOYANG:0 "뤄양"
+ STATE_CHENNAN:0 "쳰난"
+ STATE_BUYEO:0 "부여"
+ STATE_GEUMJU:0 "금주"
+ STATE_GANZHOU:0 "간저우"
+ STATE_YICHUN:0 "이춘"
+ STATE_ZHANGYE:0 "장예"
+ STATE_HEBI:0 "허비"
+ STATE_YANQING:0 "옌칭"
+ STATE_QINZHOU:0 "친저우"
+ STATE_YANGQUAN:0 "양취안"
+ STATE_LIAOCHENG:0 "랴오청"
+ STATE_SIJIAZHUANG:0 "스자좡"
+ STATE_SOUTH_HURBUD:0 "남허브드"
+ STATE_WENDENG:0 "원덩"
+ STATE_SOUTH_DORNOD:0 "남더르너드"
+ STATE_EAST_GOBI:0 "동부 고비"
+ STATE_DAZHOU:0 "다저우"
+ STATE_SHENYANG:0 "신양"
+ STATE_XIAOGAN:0 "샤오간"
+ STATE_LIJIANG:0 "리장"
+ STATE_LUQU:0 "루취"
+ STATE_QINHUANGDAO:0 "친황다오"
+ STATE_JINGHONG:0 "징훙"
+ 
+ #중세잽랜드
+ STATE_KUJU:0 "구주"
+ STATE_KITAKINKI:0 "키타킨키"
+ STATE_SANIN_SANYO:0 "산인-산요"
+ STATE_YOKOHAMA:0 "요코하마"
+ STATE_MUKUO:0 "무쿠오"
+ STATE_HOKURIKU:0 "호쿠리쿠"
+ STATE_KYOTO:0 "쿄토"
+ STATE_RIKUSEN_RIKUCHU:0 "리쿠젠-리쿠츄" #이와테 + 미야기 #센다이
+ STATE_IWASHIRO_IWAKI:0 "이와시로-이와키" #후쿠시마
+ STATE_BOSOHANDO:0 "보소반도"
+ STATE_MAIZURU:0 "마이즈루"
+ STATE_KURE:0 "쿠레"
+ STATE_KITAKANTO:0 "키타칸토"
+ STATE_MINAMIKINKI:0 "미나미킨키"
+ 
+ #똥남아
+ STATE_KENGTUNG:0 "켕퉁"
+ STATE_SAINYABULI:0 "사이냐불리"
+ STATE_CHAMPASAK:0 "참파삭"
+ STATE_SIEMREAP:0 "씨엠립"
+ STATE_QINGYANG:0 "칭양"
+ 
+ #양키고홈
+ STATE_DRUSKININKAI:0 "드루스키닝카이"
+ STATE_GRODNO:0 "흐로드나"
+ STATE_SOUTH_BUKOWIEN:0 "남부 부코비나"
+ STATE_BIELSKO_BIAWA:0 "비엘스코비아와"
+ STATE_EUPEN:0 "오이펜"
+ STATE_BUDVA:0 "부드바"
+ STATE_OST_RHEINLAND:0 "동부 라인란트"
+ STATE_PREKMURJE:0 "프레크무레"
+ STATE_BURGENLAND:0 "부르겐란트"
+ STATE_NANCY_SEDAN:0 "낭시-스당"
+ STATE_KARNTEN_STEIERMARK:0 "케른텐-슈타이어마르크"
+ STATE_NORTH_DOBROGEA:0 "북부 도브루자"
+ STATE_WURTEMBERG:0 "뷔르템베르크"
+ STATE_TUBINGEN:0 "튀빙겐"
+ STATE_WEST_MAKEDONIA:0 "서마케도니아"
+ STATE_EAST_MONTENEGRO:0 "동몬테네그로"
+ STATE_CHARLUA:0 "샤를루아"
+ STATE_CERQUENIZZA:0 "치리크베니차"
+ STATE_FRIULI_VENEZIA_GIULIA:0 "프리울리베네치아줄리아"
+ 
+ #
+ STATE_746:0 "이커자오"
+ STATE_605:0 "충칭"
+ STATE_609:0 "탕산"
+ STATE_614:0 "바오딩"
+ STATE_592:0 "포산"
+ STATE_613:0 "난징"
+ STATE_748:0 "루저우"
+ STATE_754:0 "싱수하이"
+ STATE_604:0 "위수"
+ STATE_615:0 "타이위안"
+ STATE_597:0 "지난"
+ STATE_607:0 "카이펑"
+ STATE_750:0 "언스"
+ STATE_620:0 "쑤이저우"
+ STATE_598:0 "쑤첸"
+ STATE_622:0 "옌안"
+ STATE_325:0 "쿤밍"
+ STATE_602:0 "창더"
+ STATE_600:0 "난창"
+ STATE_595:0 "난핑"
+ STATE_596:0 "사오싱"
+ STATE_606:0 "허페이"
+ STATE_283:0 "톈수이"
+ STATE_616:0 "우하이"
+ STATE_601:0 "참도"
+ STATE_603:0 "구이양"
+ STATE_599:0 "류저우"
+ STATE_593:0 "선전"
+ 
+ STATE_537:0 "남부 고혈도"
+ STATE_655:0 "북부 고혈도"
+ 
+ STATE_409:0 "해백" #북연해주
+ STATE_408:0 "양안" #남연해주
+ STATE_536:0 "북이도"
+ STATE_533:0 "데와"
+ STATE_560:0 "서수"
+ STATE_561:0 "북강"
+ STATE_657:0 "숙신"
+
+ STATE_714:0 "흑룡"
+ STATE_715:0 "요령"
+ STATE_610:0 "열하"
+ STATE_761:0 "선비"
+ STATE_612:0 "시린하오터"
+ STATE_611:0 "시린궈러"
+ STATE_621:0 "바오터우"
+ STATE_756:0 "어지나"
+ 
+ STATE_529:0 "히로시마"
+ STATE_530:0 "이요-토사"
+ STATE_531:0 "오사카"
+ STATE_534:0 "니가타"
+ STATE_535:0 "츄오코치"
+ STATE_645:0 "황도"
+ STATE_648:0 "남조도"
+ STATE_68:0 "퀴스트린"
+ 
+ STATE_555:0 "천도 열도"
+ STATE_330:0 "후레"
+ 
+ STATE_154:0 "허이두비허르"
+ STATE_800:0 "반 지역"
+ STATE_20:0 "론알프"
+ 
+ STATE_638:0 "괌 섬"
+ 
+ STATE_87:0 "코닌"
+
+ STATE_282:0 "에도"
+ 
+ STATE_736:0 "트리에스테"
+ STATE_50:0 "바덴"
+ STATE_69:0 "수데티"
+ STATE_74:0 "수데티 동부"
+
+ STRATEGICREGION_250:0 "서강"
+ STRATEGICREGION_79:0 "한국해"
+ LOC_TLE_SEA_OF_KOREA_PROBLEM_1:0 "한국해"
+ LOC_TLE_SEA_OF_KOREA_PROBLEM_2:0 "동해"
+ STRATEGICREGION_77:0 "서해"
+ 
+ STRATEGICREGION_143:0 "화북"
+ STRATEGICREGION_245:0 "산서"
+ STRATEGICREGION_244:0 "내몽골"
+ STRATEGICREGION_243:0 "남만주"
+ STRATEGICREGION_247:0 "화동"
+ STRATEGICREGION_248:0 "양광"
+ STRATEGICREGION_249:0 "운남"
+ STRATEGICREGION_200:1 "청해"
+ STRATEGICREGION_252:0 "천산"
+ STRATEGICREGION_164:0 "강남"
+ STRATEGICREGION_165:0 "화남"
+ STRATEGICREGION_144:0 "화서"
+ 
+ 
+ #중점
+
+ #결정/디시전
+
+ #독일
+ Germania:0 "게르마니아"
+
+ #리투아니아
+ Vilnius:0 "빌뉴스" #빌노
+
+ #이벤트
+ #그리스/BFTB_Greece
+ #아르메니아어 번역 확실x
+ Trapizon:0 "트라피존" #트라브존
+ Gyumushkhana:0 "갸무샤네" #귀무샤네
+ Ghars:0 "칼스" #카르스
+
+ #루마니아/DOD_Romania
+ #부인 이름
+ Magdagrad:0 "마그다그라드" #스탈린그라드
+ Zizigrad:0 "지지그라드" #레닌그라드
+
+ #독일/Germany
+ Hindenburg:0 "힌덴부르크" #스탈린그라드
+ Ludendorff:0 "루덴도르프" #레닌그라드
+
+ #독일/WTT_Germany
+ Posen:0 "포젠"  #포즈난
+ Kattowitz:0 "카토비츠" #카토비체
+ Tsingtao:0 "칭다오"  #칭다오
+
+ #멕시코/Mexico
+ Belice:0 "벨리스" #벨리즈
+
+ #터키/BFTB_NewsEvents
+ Konstantiniyye:0 "콘스탄티니예" #이스탄불
+
+ #아일랜드/07_nsb_on_actions
+ Derry:0 "데리"
+ 
+ Gdańsk:0 "그단스크"
+ Gdansk:0 "그단스크"
+ 
+ West-Preussen:0 "서프로이센"
+ Bromberg:0 "브롬베르크"
+ Thorn:0 "토른"
+ Gdingen:0 "그딩겐"
+ 
+ 
+ #그리스-터키
+ Constantinople:0 "콘스탄티노플"
+ Thessalonica:0 "테살로니카"
+ Strymon:0 "스트리몬"
+ Thracia:0 "트라키아" #부르사
+ Prusa:0 "푸르사" #부르사
+ Samos:0 "사모스" #이즈미르
+ Smyrna:0 "스미르나" #이즈미르
+ Cibyrrhaeot:0 "키비레오테스" #안탈리아
+ Attaleia:0 "앗달리아" #안탈리아 Ἀττάλεια
+ Thrakesion:0 "트로키시온" #아피온
+ Nicopolis:0 "니코폴리스" #아피온
+ Attouda:0 "아뚜다" #데니즐리 #확실 X
+ Optimaton:0 "옵티마티" #이즈미트
+ Nikomedeia:0 "니코메디아" #이즈미트
+ Pontoheraclea:0 "포토이라키아" #아다파자리 #확실x
+ Bukellarion:0 "부켈라리온" #앙카라
+ Ancyra:0 "안키라" #앙카라
+ Dorylaion:0 "도릴레온" #에스키셰히르
+ Anatolikon:0 "아나톨리콘" #코니아
+ Ikonion:0 "이코니온" #승점 없음 #확실x 나무위키 코니온/ Ikónion=Kónio(n)
+ Seleucia:0 "셀레우키아" #메르신
+ Hadrianopolis:0 "하드리아노폴리스" #메르신
+ Paphlagonia:0 "파플라고니아" #카스타모누
+ Sinope:0 "시노페" #시노프
+ Kastamone:0 "카스타몬" #카스타모누 #확실x
+ Cappadocia:0 "카페도키아" #카이세리
+ Caesarea:0 "카이사레아" #카이세리
+ Cilicia:0 "킬리키아" #아다나
+ Tarsus:0 "타르수스" #아다나
+ Germanicia:0 "게르마니키아" #승점 없음 #확식x
+ Ravanda:0 "라벤더" #가지안테프 #확실x
+ Armeniakon:0 "아르메니아콘" #삼순
+ Amisos:0 "아미소스" #삼순
+ Koloneia:0 "콜로네이아" #시바스
+ Sebasteia:0 "세베스티아" #시바스
+ Carsiano:0 "카르시아노" #아마시아 #확실x
+ Amaseia:0 "아마세이아" #아마시아
+ Taouion:0 "타우이온" #요즈가트 #확실x
+ Melitene:0 "멜리티니" #말라티아
+ Justinopolis:0 "저스티노폴리스" #샨리우르파 #확실x
+ Amida:0 "아미다" #디야르바키르 #확실x
+ Chaldia:0 "칼디아" #트라브존
+ Trebizond:0 "트라페준타" #트라브존
+ Manzikert:0 "만지케르트" #툰젤리
+ Theodosiopolis:0 "테오도시오폴리스" #에르주룸
+ Hubushkia:0 "후우쉬키아" #하카리 #확실x
+ Kondylis:0 "콘딜리스" #하카리 #확실x
+ Vaspurakan:0 "바스푸라칸" #반
+ Eua:0 "에바" #반 #확실x
+ Antioch:0 "안티오크" #하타이
+ Antiochia:0 "안티오키아" #안타키아
+
+ #그리스-알바니아
+ Illyria:0 "일리리아" #알바니아
+ Kastrioti:0 "카스트이로티" #티라나
+ Aulon:0 "아울론" #블로러
+ Dyrrhachion:0 "뒤라키움" #몬테네그로
+ Dyrrhachium:0 "뒤라키움" #포드고리차 #Dyrrhachium(그리스어)=Dyrrhachion(고대그리스어)
+ Argyrokastro:0 "아르지로카스트로" #지로카스터르 #확실x
+
+ #그리스-루마니아
+ Pannonia:0 "판노니아" #파노니아
+ Wallachia:0 "왈라키아" #소피아
+ Pelendava:0 "펠렌다바" #크라이오바 #확실x
+ Paristrion:0 "파리스트리온" #문테니아 #확실x
+ Kosmidis:0 "코스미디스" #부쿠레슈티
+ Tarnovo:0 "터르노보" #문테니아
+ Anchialus:0 "앙키알로스" #도브루자
+ Mesembria:0 "메셈브리아" #도브리치
+ Silistra:0 "실리스트라" #남베사라비아
+ Velissarios:0 "벨리사리오스" #체타테아알버 #확실x
+
+ Gdańsk:0 "그단스크"
+ #그리스-불가리아
+ Philippopolis:0 "필리포폴리스"
+ Serdica:0 "세르디카" #소피아
+ Pyrgos:0 "피르고스" #부르가스
+ Poros:0 "포루스" #부르가스
+ Odessos:0 "오데소스" #바르나
+ Boulgarias:0 "불가리아스" #마케도니아 #확실x
+ Scupi:0 "스쿠피" #스코페
+ Macedonia:0 "마케도니아" #중앙 마케도니아
+
+ #그리스-유고슬라비아
+ Spalatum:0 "스팔라툼" #스플리트
+ Venizelos:0 "베니젤로스" #자그래브
+ Bosona:0 "보소나" #보스니아
+ Sirmium:0 "시르미움" #세르비아
+ Belograd:0 "벨로그라드" #베오그라드
+ Pizren:0 "피즈렌" #모라바 #확실x
+ Naissus:0 "나이수스" #니시
+
+ #그리스-터키
+ Prousa:0 "푸르사" #부르사
+ Palaeokastron:0 "팔레오카스트론" #부르사
+ Thrace:0 "트라키" #에디르네 Thrace=트라키=Thrake=트라케
+ Adrianople:0 "아드리아노플" #에디르네
+ Eastern Macedonia:0 "동 마케도니아" #트라키아
+ Smyrni:0 "스미르니" #이즈미르
+ Magnesia:0 "마그니시아" #마니사 #확실 x
+ Kieros:0 "키에로스" #아다파자리 #확실x
+ Attalis:0 "아탈리스" #안탈리아 #확실x

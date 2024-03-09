@@ -1,0 +1,132 @@
+﻿
+
+
+
+
+#AIRCRAFT
+air_wings = {
+	525 = { #서울
+		fighter_equipment_0 = {
+			owner = "KOR" 
+			amount = 150
+		}
+		CAS_equipment_1 = {
+			owner = "KOR" 
+			amount = 110
+		}
+		tac_bomber_equipment_0 = {
+			owner = "KOR" 
+			amount = 40
+		}
+	}
+	527 = { #평안
+		fighter_equipment_0 = {
+			owner = "KOR" 
+			amount = 125
+		}
+		fighter_equipment_0 = {
+			owner = "KOR" 
+			amount = 100
+		}
+		CAS_equipment_1 = {
+			owner = "KOR" 
+			amount = 20
+		}
+	}
+	911 = { #대구
+		fighter_equipment_0 = {
+			owner = "KOR" 
+			amount = 100
+		}
+		fighter_equipment_0 = {
+			owner = "KOR" 
+			amount = 100
+		}
+		CAS_equipment_1 = {
+			owner = "KOR" 
+			amount = 50
+		}
+		tac_bomber_equipment_0 = {
+			owner = "KOR" 
+			amount = 40
+		}
+	}
+	910 = { #대구
+		fighter_equipment_0 = {
+			owner = "KOR" 
+			amount = 100
+		}
+		tac_bomber_equipment_0 = {
+			owner = "KOR" 
+			amount = 40
+		}
+		CAS_equipment_1 = {
+			owner = "KOR" 
+			amount = 20
+		}
+	}
+	"IKN 충무공 이순신"  = { 
+		cv_fighter_equipment_0 =  { owner = "KOR" amount = 12 } 	
+		cv_CAS_equipment_1 = { owner = "KOR" amount = 12 } 			
+		cv_nav_bomber_equipment_1 =  { owner = "KOR" amount = 36 } 	
+	}
+			
+	"IKN 의민공 이억기"  = { 
+		cv_fighter_equipment_0 =  { owner = "KOR" amount = 12 } 	
+		cv_CAS_equipment_1 = { owner = "KOR" amount = 12 } 			
+		cv_nav_bomber_equipment_1 =  { owner = "KOR" amount = 36 } 	
+	}
+	"IKN 충장공 권율"  = { 
+		cv_fighter_equipment_0 =  { owner = "KOR" amount = 12 } 	
+		cv_CAS_equipment_1 = { owner = "KOR" amount = 12 } 			
+		cv_nav_bomber_equipment_1 =  { owner = "KOR" amount = 36 } 	
+	}
+	"IKN 충무공 김시민"  = { 
+		cv_fighter_equipment_0 =  { owner = "KOR" amount = 12 } 	
+		cv_CAS_equipment_1 = { owner = "KOR" amount = 12 } 			
+		cv_nav_bomber_equipment_1 =  { owner = "KOR" amount = 36 } 	
+	}
+	"IKN 충익공 곽재우"  = { 
+		cv_fighter_equipment_0 =  { owner = "KOR" amount = 12 } 	
+		cv_CAS_equipment_1 = { owner = "KOR" amount = 12 } 			
+		cv_nav_bomber_equipment_1 =  { owner = "KOR" amount = 36 } 	
+	}
+	"IKN 제주"  = { 
+		cv_fighter_equipment_0 =  { owner = "KOR" amount = 10 } 	
+		cv_CAS_equipment_1 = { owner = "KOR" amount = 10 } 			
+	}
+	"IKN 대마"  = { 
+		cv_fighter_equipment_0 =  { owner = "KOR" amount = 10 } 	
+		cv_CAS_equipment_1 = { owner = "KOR" amount = 10 } 			
+	}
+			
+}
+
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+instant_effect = 
+{
+	
+
+	add_equipment_production = {
+		equipment = {
+			type = fighter_equipment_0
+			creator = "KOR" 
+		}
+		requested_factories = 1
+		progress = 0.15
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = CAS_equipment_0
+			creator = "KOR" 
+		}
+		requested_factories = 1
+		progress = 0.2
+		efficiency = 50
+	}
+}

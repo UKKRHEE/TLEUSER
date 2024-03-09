@@ -1,0 +1,5 @@
+﻿
+focus = {
+    current = "kor_best_gangju_2"
+    Progress = 0
+}   

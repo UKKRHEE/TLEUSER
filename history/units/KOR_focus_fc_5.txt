@@ -1,0 +1,5 @@
+﻿
+focus = {
+    current = "KOR_all_claim"
+    Progress = 0
+}   

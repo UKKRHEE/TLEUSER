@@ -1,0 +1,41 @@
+#########################################################################
+
+
+opinion_modifiers = {
+	KMT_respect_diplo = {
+		value = 25
+	}
+	KMT_anti_diplo = {
+		trade = no
+		value = -25
+	}
+	KMT_pro_america = {
+		value = 50
+	}
+	KMT_pro_soviet = {
+		value = 50
+	}
+	KMT_anti_zlc = {
+		trade = no
+		value = -30
+	}
+	KMT_pro_zlc = {
+		value = 100
+	}
+	KMT_anti_america = {
+		trade = no
+		value = -50
+	}
+	KMT_anti_soviet = {
+		trade = no
+		value = -50
+	}
+	KMT_tibet_inv = {
+		trade = no
+		value = -25
+	}
+	KMT_opinion = { #국민당
+		value = 20
+	}
+}
+

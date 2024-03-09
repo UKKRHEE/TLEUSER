@@ -1,0 +1,5 @@
+﻿
+focus = {
+    current = "ZLC_BEI_wu_peifu_is_leader"
+    Progress = 0
+}   

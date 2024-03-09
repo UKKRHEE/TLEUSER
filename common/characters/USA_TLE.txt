@@ -1,0 +1,10 @@
+characters={
+	USA_harry_s_truman={
+		name="USA_harry_s_truman"
+		portraits={
+			civilian={
+				large="gfx/leaders/USA/Portrait_USA_Harry_Truman.dds"
+			}
+		}
+	}
+}

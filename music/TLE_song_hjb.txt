@@ -1,0 +1,583 @@
+music_station = "hjb"
+music = {
+	song = "6_25s_music"
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = yes
+		}
+	}
+}
+music = {
+	song = "go_to_the_frontline"
+	chance = {
+		modifier = {
+			factor = 5
+			has_war = yes
+		}
+	}
+}
+music = {
+	song = "The_Torch_of_Eradicating_Communism"
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = yes
+		}
+	}
+}
+
+music = {
+	song = "youthlife"
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+music = {
+	song = "paldo"
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+music = {
+	song = "when_the_crying_day"
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+music = {
+	song = "national_anthem"
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+music = {
+	song = "eokanthem"
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = "Seoul_Central_Radio_Station_1"
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+music = {
+	song = "Seoul_Central_Radio_Station_2"
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+music = {
+	song = "HLKA_jeongdong"
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+music = {
+	song = "masang_diary"
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = "KOR_National_anthem"
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+music = {
+	song = "eokanthemvol_2"
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = "Four_Seasons"
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = "aplok_river_marching"
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = yes
+		}
+	}
+}
+
+music = {
+	song = "beautiful_country"
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = "Good_night_comrade"
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = "anthem_fascism"
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = "Dont_worry"
+	
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = "Toyou_tome_tome_toyou"
+	
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = "To_you"
+	
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = "ah_Korea"
+	
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = "Mokpos_Tears"
+	
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = "coming_to_end_live"
+	
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = "arirang"
+	
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+music = {
+	song = "love_on_its_soltitude"
+	
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+music = {
+	song = "my_loness_call_you"
+	
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+music = {
+	song = "when_you_come_in_my_heart"
+	
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+music = {
+	song = "Sarabande"
+	
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = "TNO_SE_FALL_OF_KOREA"
+	
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "TLE_SE_JAPAN_CW"
+	
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "TNO_SE_KOREA_THE_YI_KANG"
+	
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "TNO_SE_KOREA_WAR_WITH_USA"
+	
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "TNO_SE_RUSSIA_ATTACK_KOREA"
+	
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "TNO_SE_SECOND_NORTHATTACK"
+	
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "TNO_SE_KOREA_WW_CHINA"
+	
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "TNO_SE_WON_IN_CHINA"
+	
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "TNO_SE_KANGMYONG_YUSHIN"
+
+	chance = {
+		factor = 0
+	}
+}
+
+music = {
+	song = "TNO_SE_WINTER_WAR"
+	
+	chance = {
+		factor = 0
+	}
+}
+
+music = {
+	song = "TNO_SE_RUSSIA_ATTACK_KOREA"
+	
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "TNO_SE_EMPIRE_OF_JAPAN"
+	
+	chance = {
+		factor = 0
+	}
+}
+
+music = {
+	song = "TNO_SE_FALL_OF_GERMANY"
+	
+	chance = {
+		factor = 0
+	}
+}
+
+music = {
+	song = "TNO_SE_FALL_OF_SOVIET"
+	
+	chance = {
+		factor = 0
+	}
+}
+
+music = {
+	song = "TNO_SE_GERMANY_WIN"
+	
+	chance = {
+		factor = 0
+	}
+}
+
+music = {
+	song = "TNO_SE_KOREAN_JAPANESE_WAR"
+	
+	chance = {
+		factor = 0
+	}
+}
+
+music = {
+	song = "TNO_SE_SURRENDER_OF_USA"
+	
+	chance = {
+		factor = 0
+	}
+}
+
+music = {
+	song = "TNO_SE_OPERATION_BARBAROSSA"
+	
+	chance = {
+		factor = 0
+	}
+}
+
+music = {
+	song = "TNO_SE_KOREAN_CIVIL_WAR"
+	
+	chance = {
+		factor = 0
+	}
+}
+
+music = {
+	song = "TNO_SE_WORLD_WAR_II"
+	
+	chance = {
+		factor = 0
+	}
+}
+
+music = {
+	song = "TNO_SE_KOREAN_STATE"
+	
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "TNO_SE_EMPIRE_OF_KOREA_JAPAN"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "TNO_SE_FALL_OF_JAPAN"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "TNO_SE_BEIYANG_CHINA"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "TNO_SE_KUOMINTANG_CHINA"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "TNO_SE_ITALY_CIVIL_WAR"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "TNO_SE_CHINESE_CIVIL_WAR"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "TNO_SE_UNITED_NATIONS"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "TNO_SE_WELTKRIEG"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "TNO_SE_GERMANY_CIVIL_WAR"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "TNO_SE_EAST_FRONT"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "TNO_SE_KAISER"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "TNO_SE_SPAINISH_CIVIL_WAR"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "TNO_SE_FALL_OF_FRANCE"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "TNO_SE_MALAYAN_CAMPAIGN"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "TNO_SE_FALL_OF_POLAND"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "TNO_SE_ICHI_GO"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "TNO_SE_FALL_OF_BRITAIN"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "TNO_SE_GREAT_ASIAN_WAR"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "TNO_SE_GREAT_ASIAN_WAR_ILSO"
+	chance = {
+		factor = 0
+	}
+}
+# Don't Put Roh's Fucking Song
+#music = {
+#	song = "asscity"
+#	chance = {
+#		factor = 0
+#	}
+#}
+#music = {
+#	song = "Badgers"
+#	chance = {
+#		factor = 0
+#	}
+#}

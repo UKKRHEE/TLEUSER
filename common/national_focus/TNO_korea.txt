@@ -1,0 +1,367 @@
+focus_tree = {
+	id = TNO_korea_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = TLE
+		}
+	}
+	continuous_focus_position = { x = 400 y = 1200 }
+	default = no
+	focus = {
+		id = KOR_TNO_0
+		icon = GFX_goal_KOR_TLE_0
+		cost = 2
+		x = 7
+		y = 0
+		available = {
+			JAP = {
+				exists = no
+			}
+			CHI = {
+				exists = no
+			}
+			ZLC = {
+				exists = no
+			}
+			has_war = no
+		}
+		select_effect = {
+			hidden_effect = {
+				if = {
+					limit = {					
+						GDC = {
+							exists = no
+						}
+					}
+					KOR_china_annex_effect = yes
+				}	
+				if = {
+					limit = {
+						KOR = {
+							is_ai = no
+						}
+					}
+					play_song = "when_you_come_in_my_heart"
+				}	
+				KOR = {
+					remove_ideas = KOR_the_chaebol
+					remove_ideas = KOR_none_attack_soviert
+					remove_ideas = SOV_none_attack_korea
+					remove_ideas = kor_han_river
+					remove_ideas = race_for_the_bomb
+					remove_ideas = race_for_the_bomb_outclassed
+					remove_ideas = KOR_taheop_zaeboel
+					remove_ideas = KOR_purged_government
+					remove_ideas = KOR_great_korea
+					remove_ideas = KOR_we_korean
+					remove_ideas = military_youth_focus
+					remove_ideas = KOR_the_first_army
+					remove_ideas = KOR_military_organization_youth
+					remove_ideas = KOR_Weakening_the_kingship
+					remove_ideas = KOR_militarism
+					remove_ideas = KOR_striked_factories
+					remove_ideas = KOR_not_go_outside
+					remove_ideas = KOR_divided_politics
+					remove_ideas = KOR_failed_civilian_control_of_the_military
+					remove_ideas = KOR_political_officer
+					remove_ideas = KOR_interservice_rivalry_army_dominant
+					remove_ideas = KOR_interservice_rivalry_navy_dominant
+					remove_ideas = KOR_interservice_rivalry_army_strengthened
+					remove_ideas = KOR_interservice_rivalry_navy_strengthened
+					remove_ideas = KOR_interservice_rivalry_army_strengthened
+					remove_ideas = MTG_naval_treaty_adherent
+					remove_ideas = KOR_not_go_outside_2
+					remove_ideas = KOR_militarism_2
+					remove_ideas = KOR_industry_reform
+					remove_ideas = KOR_great_Yi_kang
+					remove_ideas = KOR_new_history
+					remove_ideas = KOR_new_owner
+					remove_ideas = KOR_world_economic_block_korea
+					remove_ideas = KOR_daehan_ascendant
+					remove_ideas = KOR_chaebol_question
+					remove_ideas = KOR_kyoeiken
+					remove_ideas = SWE_ball_bearing_idea
+					remove_ideas = SWE_ball_bearing_idea_research_partner
+					remove_ideas = KOR_not_planed_attack
+					remove_ideas = JAP_prioritize_army_aircraft_construction
+					remove_ideas = KOR_political_officer_2
+					remove_ideas = KOR_weak_army_3
+				}
+			}
+		}	
+		completion_reward = {
+			country_event = {
+				id = korea.216
+			}
+		}
+	
+	}
+	focus = {
+		id = KOR_TNO_1
+		icon = GFX_goal_KOR_TLE_1
+		cost = 2
+		prerequisite = {
+			focus = KOR_TNO_0
+		}
+		x = 5
+		y = 1
+		completion_reward = {
+			country_event = {
+				id = korea.217
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_TNO_2
+		icon = GFX_goal_KOR_TLE_2
+		cost = 2
+		prerequisite = {
+			focus = KOR_TNO_0
+		}
+		x = 7
+		y = 1
+		completion_reward = {
+			country_event = {
+				id = korea.218
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_TNO_3
+		icon = GFX_goal_KOR_TLE_3
+		cost = 2
+		prerequisite = {
+			focus = KOR_TNO_0
+		}
+		x = 9
+		y = 1
+		completion_reward = {
+			country_event = {
+				id = korea.219
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_TNO_4
+		icon = GFX_goal_KOR_TLE_4
+		cost = 2
+		prerequisite = {
+			focus = KOR_TNO_1
+		}
+		prerequisite = {
+			focus = KOR_TNO_2
+		}
+		prerequisite = {
+			focus = KOR_TNO_3
+		}
+		x = 7
+		y = 2
+		completion_reward = {
+			country_event = {
+				id = korea.227
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_TNO_5
+		icon = GFX_goal_KOR_TLE_5
+		cost = 2
+		prerequisite = {
+			focus = KOR_TNO_4
+		}
+		x = 6
+		y = 3
+		completion_reward = {
+			country_event = {
+				id = korea.221
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_TNO_6
+		icon = GFX_goal_KOR_TLE_6
+		cost = 2
+		prerequisite = {
+			focus = KOR_TNO_4
+		}
+		x = 8
+		y = 3
+		completion_reward = {
+			country_event = {
+				id = korea.222
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_TNO_8
+		icon = GFX_goal_KOR_TLE_8
+		cost = 2
+		prerequisite = {
+			focus = KOR_TNO_5
+		}
+		prerequisite = {
+			focus = KOR_TNO_6
+		}
+		x = 7
+		y = 4
+		completion_reward = {
+			country_event = {
+				id = korea.224
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_TNO_7
+		icon = GFX_goal_KOR_TLE_7
+		cost = 2
+		prerequisite = {
+			focus = KOR_TNO_6
+		}
+		prerequisite = {
+			focus = KOR_TNO_5
+		}
+		x = 5
+		y = 4
+		completion_reward = {
+			country_event = {
+				id = korea.223
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_TNO_9
+		icon = GFX_goal_KOR_TLE_9
+		cost = 2
+		prerequisite = {
+			focus = KOR_TNO_6
+		}
+		prerequisite = {
+			focus = KOR_TNO_5
+		}
+		x = 9
+		y = 4
+		completion_reward = {
+			country_event = {
+				id = korea.225
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_TNO_11
+		icon = GFX_goal_KOR_TLE_11
+		cost = 2
+		prerequisite = {
+			focus = KOR_TNO_8
+		}
+		prerequisite = {
+			focus = KOR_TNO_7
+		}
+		prerequisite = {
+			focus = KOR_TNO_9
+		}
+		x = 8
+		y = 5
+		completion_reward = {
+			country_event = {
+				id = korea.220
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_TNO_10
+		icon = GFX_goal_KOR_TLE_10
+		cost = 2
+		prerequisite = {
+			focus = KOR_TNO_7
+		}
+		prerequisite = {
+			focus = KOR_TNO_8
+		}
+		prerequisite = {
+			focus = KOR_TNO_9
+		}
+		x = 6
+		y = 5
+		completion_reward = {
+			country_event = {
+				id = korea.226
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_TNO_12
+		icon = GFX_goal_KOR_TLE_12
+		cost = 2
+		prerequisite = {
+			focus = KOR_TNO_10
+		}
+		prerequisite = {
+			focus = KOR_TNO_11
+		}
+		x = 7
+		y = 6
+		completion_reward = {
+			country_event = {
+				id = korea.228
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_TNO_13
+		icon = GFX_goal_KOR_TLE_14
+		cost = 2
+		prerequisite = {
+			focus = KOR_TNO_12
+		}
+		x = 7
+		y = 7
+		completion_reward = {
+			country_event = {
+				id = korea.229
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_TNO_14 #엔딩
+		icon = GFX_focus_KOR_the_new_order
+		cost = 2
+		prerequisite = {
+			focus = KOR_TNO_13
+		}
+		x = 7
+		y = 8
+		select_effect = {
+			hidden_effect = {
+				if = {
+					limit = {
+						KOR = {
+							is_ai = no
+						}
+					}
+					play_song = "youthlife"
+				}	
+			}
+		} 	
+		completion_reward = {
+			country_event = {
+				id = korea.230
+			}
+		}
+
+	}
+}

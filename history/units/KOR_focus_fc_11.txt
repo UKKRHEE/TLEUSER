@@ -1,0 +1,5 @@
+﻿
+focus = {
+    current = "KOR_kyushu_colonism_up"
+    Progress = 0
+}   

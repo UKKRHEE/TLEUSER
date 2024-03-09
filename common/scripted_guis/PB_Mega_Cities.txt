@@ -1,0 +1,79 @@
+# This shit did my head in #
+# Credit to me, Bernie Fucking Sanders #
+
+scripted_gui = {
+	PB_Mega_Cities_scripted_gui = {
+		window_name = "PB_Mega_Cities_gui_window"
+		context_type = selected_state_context
+		parent_window_name = state_info_window
+
+		visible = {
+			has_state_flag = Megacity_State
+		}
+
+        effects = {
+			PB_Megacity_Help_Icon_click = {
+				if = {
+					limit = {
+						THIS = {
+							has_state_flag = Megacity_Hanseong
+						}
+					}
+					ROOT = {
+						country_event = Megacity.1
+					}
+				}
+				if = {
+					limit = {
+						THIS = {
+							has_state_flag = Megacity_Pyongyang
+						}
+					}
+					ROOT = {
+						country_event = Megacity.2
+					}
+				}
+				if = {
+					limit = {
+						THIS = {
+							has_state_flag = Megacity_Busan
+						}
+					}
+					ROOT = {
+						country_event = Megacity.3
+					}
+				}
+				if = {
+					limit = {
+						THIS = {
+							has_state_flag = Megacity_Simyang
+						}
+					}
+					ROOT = {
+						country_event = Megacity.4
+					}
+				}
+				if = {
+					limit = {
+						THIS = {
+							has_state_flag = Megacity_Kyoto
+						}
+					}
+					ROOT = {
+						country_event = Megacity.5
+					}
+				}
+				if = {
+					limit = {
+						THIS = {
+							has_state_flag = Megacity_Edo
+						}
+					}
+					ROOT = {
+						country_event = Megacity.6
+					}
+				}
+			}
+		}
+	}
+}

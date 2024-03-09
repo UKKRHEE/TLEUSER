@@ -1,0 +1,379 @@
+defined_text = {
+    name = get_Mega_City_Name
+
+    text = {
+        trigger = {
+            THIS = {
+                has_state_flag = Megacity_Hanseong
+            }
+        }
+        localization_key = "KOR_Hanseong_Mega_City_Name"
+    }
+
+    text = {
+        trigger = {
+            THIS = {
+                has_state_flag = Megacity_Pyongyang
+            }
+        }
+        localization_key = "KOR_Pyongyang_Mega_City_Name"
+    }
+
+    text = {
+        trigger = {
+            THIS = {
+                has_state_flag = Megacity_Busan
+            }
+        }
+        localization_key = "KOR_Busan_Mega_City_Name"
+    }
+
+    text = {
+        trigger = {
+            THIS = {
+                has_state_flag = Megacity_Simyang
+            }
+        }
+        localization_key = "KOR_Simyang_Mega_City_Name"
+    }
+
+    text = {
+        trigger = {
+            THIS = {
+                has_state_flag = Megacity_Kyoto
+            }
+        }
+        localization_key = "JAP_Kyoto_Mega_City_Name"
+    }
+
+    text = {
+        trigger = {
+            THIS = {
+                has_state_flag = Megacity_Edo
+            }
+        }
+        localization_key = "JAP_Edo_Mega_City_Name"
+    }
+
+    text = {
+        trigger = {
+            THIS = {
+                has_state_flag = Megacity_Beijing
+            }
+        }
+        localization_key = "CHI_Beijing_Mega_City_Name"
+    }
+
+    text = {
+        trigger = {
+            THIS = {
+                has_state_flag = Megacity_Nanjing
+            }
+        }
+        localization_key = "CHI_Nanjing_Mega_City_Name"
+    }
+
+    text = {
+        trigger = {
+            THIS = {
+                has_state_flag = Megacity_Wuhan
+            }
+        }
+        localization_key = "CHI_Wuhan_Mega_City_Name"
+    }
+}
+
+defined_text = {
+    name = get_City_type
+
+    text = {
+        trigger = {
+            THIS = {
+                has_state_flag = Megacity_Hanseong
+            }
+        }
+        localization_key = "Megacity_Hanseong"
+    }
+
+    text = {
+        trigger = {
+            THIS = {
+                has_state_flag = Megacity_Pyongyang
+            }
+        }
+        localization_key = "Megacity_Pyongyang"
+    }
+
+    text = {
+        trigger = {
+            THIS = {
+                has_state_flag = Megacity_Busan
+            }
+        }
+        localization_key = "Megacity_Busan"
+    }
+    
+    text = {
+        trigger = {
+            THIS = {
+                has_state_flag = Megacity_Simyang
+            }
+        }
+        localization_key = "Megacity_Simyang"
+    }
+
+    text = {
+        trigger = {
+            THIS = {
+                has_state_flag = Megacity_Kyoto
+            }
+        }
+        localization_key = "Megacity_Kyoto"
+    }
+
+    text = {
+        trigger = {
+            THIS = {
+                has_state_flag = Megacity_Edo
+            }
+        }
+        localization_key = "Megacity_Edo"
+    }
+
+    text = {
+        trigger = {
+            THIS = {
+                has_state_flag = Megacity_Beijing
+            }
+        }
+        localization_key = "Megacity_Beijing"
+    }
+
+    text = {
+        trigger = {
+            THIS = {
+                has_state_flag = Megacity_Nanjing
+            }
+        }
+        localization_key = "Megacity_Nanjing"
+    }
+
+    text = {
+        trigger = {
+            THIS = {
+                has_state_flag = Megacity_Wuhan
+            }
+        }
+        localization_key = "Megacity_Wuhan"
+    }
+}
+
+defined_text = {
+    name = get_City_gfx
+
+    text = {
+        trigger = {
+            THIS = {
+                has_state_flag = Megacity_Hanseong
+            }
+        }
+        localization_key = "KOR_HNS_World_City_gfx"
+    }
+
+    text = {
+        trigger = {
+            THIS = {
+                has_state_flag = Megacity_Pyongyang
+            }
+        }
+        localization_key = "KOR_PYG_World_City_gfx"
+    }
+
+    text = {
+        trigger = {
+            THIS = {
+                has_state_flag = Megacity_Busan
+            }
+        }
+        localization_key = "KOR_BUS_World_City_gfx"
+    }
+
+    text = {
+        trigger = {
+            THIS = {
+                has_state_flag = Megacity_Simyang
+            }
+        }
+        localization_key = "KOR_SIM_World_City_gfx"
+    }
+
+    text = {
+        trigger = {
+            THIS = {
+                has_state_flag = Megacity_Kyoto
+            }
+        }
+        localization_key = "ENG_World_City_gfx"
+    }
+
+    text = {
+        trigger = {
+            THIS = {
+                has_state_flag = Megacity_Edo
+            }
+        }
+        localization_key = "ENG_World_City_gfx"
+    }
+
+    text = {
+        trigger = {
+            THIS = {
+                has_state_flag = Megacity_Beijing
+            }
+        }
+        localization_key = "ENG_World_City_gfx"
+    }
+
+    text = {
+        trigger = {
+            THIS = {
+                has_state_flag = Megacity_Nanjing
+            }
+        }
+        localization_key = "ENG_World_City_gfx"
+    }
+
+    text = {
+        trigger = {
+            THIS = {
+                has_state_flag = Megacity_Wuhan
+            }
+        }
+        localization_key = "ENG_World_City_gfx"
+    }
+}
+
+defined_text = {
+    name = get_City_Benefits
+
+    text = {
+        trigger = {
+            THIS = {
+                has_state_flag = Megacity_Hanseong
+            }
+        }
+        localization_key = "KOR_Hanseong_Bonuses_1"
+    }
+
+    text = {
+        trigger = {
+            THIS = {
+                has_state_flag = Megacity_Pyongyang
+            }
+        }
+        localization_key = "KOR_Hanseong_Bonuses_1"
+    }
+
+    text = {
+        trigger = {
+            THIS = {
+                has_state_flag = Megacity_Busan
+            }
+        }
+        localization_key = "KOR_Hanseong_Bonuses_1"
+    }
+
+    text = {
+        trigger = {
+            THIS = {
+                has_state_flag = Megacity_Simyang
+            }
+        }
+        localization_key = "KOR_Hanseong_Bonuses_1"
+    }
+
+    text = {
+        trigger = {
+            THIS = {
+                has_state_flag = Megacity_Kyoto
+            }
+        }
+        localization_key = "KOR_Hanseong_Bonuses_1"
+    }
+
+    text = {
+        trigger = {
+            THIS = {
+                has_state_flag = Megacity_Edo
+            }
+        }
+        localization_key = "KOR_Hanseong_Bonuses_1"
+    }
+
+    text = {
+        trigger = {
+            THIS = {
+                has_state_flag = Megacity_Beijing
+            }
+        }
+        localization_key = "KOR_Hanseong_Bonuses_1"
+    }
+
+    text = {
+        trigger = {
+            THIS = {
+                has_state_flag = Megacity_Nanjing
+            }
+        }
+        localization_key = "KOR_Hanseong_Bonuses_1"
+    }
+
+    text = {
+        trigger = {
+            THIS = {
+                has_state_flag = Megacity_Wuhan
+            }
+        }
+        localization_key = "KOR_Hanseong_Bonuses_1"
+    }
+}
+
+defined_text = {
+    name = get_Mega_City_Desc
+
+    text = {
+        trigger = {
+            THIS = {
+                has_state_flag = Megacity_Hanseong
+            }
+        }
+        localization_key = "Megacity_Hanseong_desc"
+    }
+
+    text = {
+        trigger = {
+            THIS = {
+                has_state_flag = Megacity_Pyongyang
+            }
+        }
+        localization_key = "Megacity_Pyongyang_desc"
+    }
+
+    text = {
+        trigger = {
+            THIS = {
+                has_state_flag = Megacity_Busan
+            }
+        }
+        localization_key = "Megacity_Busan_desc"
+    }
+
+    text = {
+        trigger = {
+            THIS = {
+                has_state_flag = Megacity_Simyang
+            }
+        }
+        localization_key = "Megacity_Simyang_desc"
+    }
+}

@@ -1,0 +1,2 @@
+﻿
+recruit_character = SPR_jaime_de_borbon

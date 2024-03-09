@@ -1,0 +1,8 @@
+#막부 디시전 카테고리
+ZLC_balance_of_power_categories = {
+	#picture = GFX_decision_reitoku
+	visible = {
+		tag = ZLC
+	}
+	priority = 78
+}

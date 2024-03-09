@@ -1,0 +1,2713 @@
+###########################
+# JaPaN EVENTS #########
+###########################
+
+add_namespace = japan
+add_namespace = TLE_japan
+add_namespace = Civilwar_of_Japan
+add_namespace = TLE_Japan_warlord
+
+#  AnnexationofKorea
+news_event = {
+	id = japan.1000
+	title = { 
+	text = japan.1000.t
+	trigger = { tag = JAP }
+	}
+	title = { 
+	text = japan.1000.t_other
+	trigger = { NOT = { tag = JAP } }
+	}
+	desc = { 
+	text = japan.1000.d
+	trigger = { tag = JAP }
+	}
+	desc = { 
+	text = japan.1000.d_other
+	trigger = { NOT = { tag = JAP } }
+	}
+	picture = GFX_news_event_japan_annexes_korea
+
+	is_triggered_only = yes
+
+	option = {
+		name = japan.1000.a	
+		trigger = { tag = JAP }	
+  
+	}
+	option = {
+		name = japan.1000.b
+		trigger = { NOT = { tag = JAP } }		
+
+	}
+}	
+
+#EastHeibeiEvent
+country_event = {
+	id = japan.1001
+	title = japan.1001.t
+	desc = japan.1001.d
+	picture = GFX_report_event_JAP_east_heibei
+
+	is_triggered_only = yes
+
+	option = {
+		name = japan.1001.a	
+        ai_chance = { factor = 0.75  }
+        remove_ideas = JAP_east_heibei
+		MAN = { set_state_owner = 609 } 
+
+	}
+
+	option = {
+		name = japan.1001.b	
+		ai_chance = { factor = 0.25  }
+        add_political_power = -75
+
+	}
+}
+
+#조슈 번 통합/제국
+country_event = {
+	id = Civilwar_of_Japan.1
+	title = Civilwar_of_Japan.1.t
+	desc = Civilwar_of_Japan.1.d
+	picture = GFX_report_event_JAP_east_heibei
+
+	is_triggered_only = yes
+
+	option = {
+		name = Civilwar_of_Japan.1.a	
+        ai_chance = { factor = 1.0  }
+        annex_country = {
+			target = EJP
+			transfer_troops = yes
+		}
+	}
+}
+#도사 번 통합/제국
+country_event = {
+	id = Civilwar_of_Japan.2
+	title = Civilwar_of_Japan.2.t
+	desc = Civilwar_of_Japan.2.d
+	picture = GFX_report_event_JAP_east_heibei
+
+	is_triggered_only = yes
+
+	option = {
+		name = Civilwar_of_Japan.2.a	
+        ai_chance = { factor = 1.0  }
+        annex_country = {
+			target = FJP
+			transfer_troops = yes
+		}
+	}
+}
+#도쿄로 개칭
+country_event = {
+	id = Civilwar_of_Japan.3
+	title = Civilwar_of_Japan.3.t
+	desc = Civilwar_of_Japan.3.d
+	picture = GFX_report_event_JAP_east_heibei
+
+	is_triggered_only = yes
+	
+	option = {
+		name = Civilwar_of_Japan.3.b	
+        ai_chance = { factor = 100  }
+	}
+}
+#2차 내전 트리거
+country_event = {
+	id = Civilwar_of_Japan.4
+	title = Civilwar_of_Japan.4.t
+	desc = Civilwar_of_Japan.4.d
+	picture = GFX_report_event_JAP_east_heibei
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = Civilwar_of_Japan.4.a	
+        ai_chance = { factor = 0 }
+		custom_effect_tooltip = DKG_2th_civilwar_trigger
+		TBJ = {
+			load_focus_tree = TBJ_2th_civilwar_focus
+		}
+	}
+}
+country_event = {
+	id = Civilwar_of_Japan.5
+	title = Civilwar_of_Japan.5.t
+	desc = Civilwar_of_Japan.5.d
+	picture = GFX_report_event_JAP_east_heibei
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = Civilwar_of_Japan.5.a	
+        ai_chance = { factor = 0 }
+		custom_effect_tooltip = TBJ_LAST_WAR_TT
+		declare_war_on = {
+			target = JAP
+			type = annex_everything
+		}
+		hidden_effect = {
+			JAP = {
+				country_event = {
+					id = Civilwar_of_Japan.6
+					days = 1
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = Civilwar_of_Japan.6
+	title = Civilwar_of_Japan.6.t
+	desc = Civilwar_of_Japan.6.d
+	picture = GFX_report_event_JAP_east_heibei
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = Civilwar_of_Japan.6.a	
+        ai_chance = { factor = 0 }
+	}
+}
+country_event = {
+	id = Civilwar_of_Japan.7
+	title = Civilwar_of_Japan.7.t
+	desc = Civilwar_of_Japan.7.d
+	picture = GFX_report_event_JAP_east_heibei
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = Civilwar_of_Japan.7.a	
+        ai_chance = { factor = 0 }
+	}
+}
+
+#China-JapanWar
+news_event = {
+	id = japan.1002
+	title = { 
+	text = japan.1002.t
+	trigger = { tag = JAP }
+	}
+	title = { 
+	text = japan.1002.t_other
+	trigger = { NOT = { tag = JAP } }
+	}
+	desc = { 
+	text = japan.1002.d
+	trigger = { tag = JAP }
+	}
+	desc = { 
+	text = japan.1002.d_other
+	trigger = { NOT = { tag = JAP } }
+	}
+	picture = GFX_news_event_japan_attacks_china
+
+	trigger = { JAP = { has_offensive_war_with = CHI } }
+	fire_only_once = yes
+
+	option = {
+		name = japan.1002.a	
+		trigger = { tag = JAP }	
+  
+	}
+	option = {
+		name = japan.1002.b
+		trigger = { NOT = { tag = JAP } }		
+
+	}
+}	
+
+#Japan-WesternCoalitionWar
+news_event = {
+	id = japan.1003
+	title = { 
+	text = japan.1003.t
+	trigger = { tag = JAP }
+	}
+	title = { 
+	text = japan.1003.t_other
+	trigger = { NOT = { tag = JAP } }
+	}
+	desc = { 
+	text = japan.1003.d
+	trigger = { tag = JAP }
+	}
+	desc = { 
+	text = japan.1003.d_other
+	trigger = { NOT = { tag = JAP } }
+	}
+	picture = GFX_news_event_japan_attacks_allies
+
+	trigger = { JAP = { has_offensive_war_with = ENG } }
+	fire_only_once = yes
+
+	option = {
+		name = japan.1003.a	
+		trigger = { tag = JAP }	
+  
+	}
+	option = {
+		name = japan.1003.b
+		trigger = { NOT = { tag = JAP } }		
+
+	}
+}	
+
+#Japan-RussiaWar
+news_event = {
+	id = japan.1004
+	title = { 
+	text = japan.1004.t
+	trigger = { tag = JAP }
+	}
+	title = { 
+	text = japan.1004.t_other
+	trigger = { NOT = { tag = JAP } }
+	}
+	desc = { 
+	text = japan.1004.d
+	trigger = { tag = JAP }
+	}
+	desc = { 
+	text = japan.1004.d_other
+	trigger = { NOT = { tag = JAP } }
+	}
+	picture = GFX_news_event_japan_attacks_russia
+
+	trigger = { JAP = { has_offensive_war_with = RUS } }
+	fire_only_once = yes
+
+	option = {
+		name = japan.1004.a	
+		trigger = { tag = JAP }	
+  
+	}
+	option = {
+		name = japan.1004.b
+		trigger = { NOT = { tag = JAP } }		
+
+	}
+}
+
+#ARMYE
+country_event = {
+	id = japan.1005
+	title = japan.1005.t
+	desc = japan.1005.d
+	picture = GFX_report_event_jap_army
+
+	is_triggered_only = yes
+
+	option = {
+		name = japan.1005.a	
+        ai_chance = { factor = 0.5  }
+		add_ideas = JAP_sea_invasion
+
+	}
+
+	option = {
+		name = japan.1005.b	
+		ai_chance = { factor = 0.5  }
+        add_ideas = JAP_jungle_combat
+
+	}
+}
+
+#Emporer
+country_event = {
+	id = japan.1006
+	title = japan.1006.t
+	desc = japan.1006.d
+	picture = GFX_report_event_jap_hirohito
+
+	is_triggered_only = yes
+
+	option = {
+		name = japan.1006.a	
+        ai_chance = { factor = 0.5  }
+        add_political_power = -100
+        add_stability = 0.1
+		add_ideas = JAP_showa_hirohito_2
+	}
+
+	option = {
+		name = japan.1006.b	
+		ai_chance = { factor = 0.5  }
+        add_political_power = 300
+        add_stability = -0.05 
+		
+	}
+}
+news_event = {
+	id = japan.1007
+	title = japan.1007.t
+	desc = japan.1007.d
+	picture = GFX_news_event_jap_civil
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = japan.1007.a	
+		trigger = { is_japan_clique = yes }	
+  
+	}
+	option = {
+		name = japan.1007.b
+		trigger = { NOT = { is_japan_clique = yes } }		
+
+	}
+}
+
+#DemocraticTakeover
+
+#Chinawantojoinfaction?
+country_event = {
+	id = japan.1008
+	title = japan.1008.t
+	desc = japan.1008.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = {
+		name = japan.1008.a	
+        ai_chance = { factor = 0.75  }
+        add_political_power = 100
+        country_event = { days = 1 id = japan.1010 }
+	}
+
+	option = {
+		name = japan.1008.b	
+		ai_chance = { factor = 0.25  }
+        add_stability = -0.05 
+        country_event = { days = 1 id = japan.1011 }
+	}
+}
+
+#Chinaaccepts
+country_event = {
+	id = japan.1010
+	title = japan.1010.t
+	desc = japan.1010.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = {
+		name = japan.1010.a	
+        add_to_faction = CHI
+        add_ideas = JAP_influence_us
+        add_opinion_modifier = { target = JAP modifier = improved_good }
+	}
+}
+
+#Chinadeclines
+country_event = {
+	id = japan.1011
+	title = japan.1011.t
+	desc = japan.1011.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = {
+		name = japan.1011.a	
+	}
+}
+
+#Japanwantsindochina
+country_event = {
+	id = japan.1009
+	title = japan.1009.t
+	desc = japan.1009.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = {
+		name = japan.1009.a	
+        ai_chance = { 
+			base = 60 
+			modifier = {
+				add = 40
+				KOR = {
+					has_government = fascism
+				}
+			}
+		}
+        add_stability = -0.05 
+        KOR = { 
+			country_event = { days = 1 id = japan.1012 }
+		}
+	}
+
+	option = {
+		name = japan.1009.b	
+        ai_chance = { 
+			base = 40 
+			modifier = {
+				add = -40
+				KOR = {
+					has_government = fascism
+				}
+			}
+		}
+        add_stability = -0.05 
+        add_war_support = -0.15
+        KOR = { 
+			country_event = { days = 1 id = japan.1013 }
+		}
+	}
+}
+
+#Franceaccpets
+country_event = {
+	id = japan.1012
+	title = japan.1012.t
+	desc = japan.1012.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = {
+		name = japan.1012.a	
+        KOR = { 
+			transfer_state = 671
+			transfer_state = 670
+			transfer_state = 286
+			transfer_state = 741
+			transfer_state = 993
+			transfer_state = 994
+			transfer_state = 995
+		}
+	}
+}
+
+#Francedeclines
+country_event = {
+	id = japan.1013
+	title = japan.1013.t
+	desc = japan.1013.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = {
+		name = japan.1013.a	
+		create_wargoal = { target = FROM type = annex_everything } 
+	}
+}
+###############
+country_event = { #도쿠가와 독살
+	id = japan.1014 
+	title = japan.1014.t
+	desc = japan.1014.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		
+		hidden_effect = {
+			NBJ = {
+				transfer_state = 1068
+				load_oob = "NBJ"
+			}
+			1068 = {
+				set_demilitarized_zone = no
+			}
+			SDJ = {
+				transfer_state = 1071
+				transfer_state = 533
+				load_oob = "NBJ"
+			}
+			1071 = {
+				set_demilitarized_zone = no
+			}
+			533 = {
+				set_demilitarized_zone = no
+			}
+			DKG = {
+				set_capital = { state = 282 }
+				add_to_faction = NBJ
+				add_to_faction = SDJ
+			}
+		}
+	}
+
+	option = {
+		name = japan.1014.a	
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			country_event = { id = japan.1007 days = 1 }
+		}
+		set_country_flag = DEC_YOSHIHISA_DEAD
+		hidden_effect = { 
+			remove_ideas = JAP_showa_hirohito_2
+			country_event = {
+				id = japan.1015
+				hours = 3
+			}
+			1070 = {
+				set_demilitarized_zone = yes
+			}
+			532 = {
+				set_demilitarized_zone = yes
+			}
+			535 = {
+				set_demilitarized_zone = yes
+			}
+			530 = {
+				set_demilitarized_zone = yes
+			}
+			1065 = {
+				set_demilitarized_zone = yes
+			}
+			set_country_flag = japan_focus_start
+		}
+	}
+}
+country_event = { #쿄토의 가장 어두운 밤
+	id = japan.1015
+	title = japan.1015.t
+	desc = japan.1015.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		
+		hidden_effect = {
+			KGJ = {
+				transfer_state = 1069
+				load_oob = "KGJ"
+			}
+			1069 = {
+				set_demilitarized_zone = no
+			}
+		}
+	}
+
+	option = {
+		name = japan.1015.a	#일본 유신파로
+		custom_effect_tooltip = TOOLTIP_JAPAN_RIGHT
+		hidden_effect = {
+			set_country_flag = JAP_Empire
+			country_event = {
+					id = japan.1016
+					hours = 2
+				}
+		}	
+	}
+	option = {
+		name = japan.1015.b	#도쿠가와
+		custom_effect_tooltip = TOOLTIP_JAPAN_NOPE
+		hidden_effect = {	
+			set_country_flag = JAP_Shogunate
+			country_event = {
+					id = japan.1018
+					hours = 13
+				}
+			country_event = {
+					id = japan.1049
+					days = 6
+				}
+		}
+	}
+}
+country_event = { #천황의 운명
+	id = japan.1016
+	title = japan.1016.t
+	desc = japan.1016.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = japan.1016.a	#일본 유신파로
+		hidden_effect = {
+			country_event = {
+					id = japan.1017
+					hours = 11
+				}
+		}
+	}
+	#option = {
+	#	name = japan.1016.b	#도쿠가와
+	#	hidden_effect = {
+	#		
+	#	}
+	#}
+}
+country_event = { #쇼와 유신
+	id = japan.1017
+	title = japan.1017.t
+	desc = japan.1017.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = japan.1017.a	#덴노 헤이카 반자이!
+		hidden_effect = {
+			DKG = {
+				retire_character = DKG_dokugawa_yoshihisa
+				add_country_leader_role = {
+					Character = DKG_dokugawa_yoshimitsu
+					Promote_leader = yes
+					Country_leader = {
+						ideology = despotism
+						#expire = "1989.1.1"
+							traits={ warrior_code }
+					}
+				}
+			}
+			country_event = {
+					id = japan.1049
+					days = 1
+				}
+		}
+			JAP = {
+				set_country_flag = FLAG_CIVIL_WAR_JAP
+			}
+			set_country_flag = FLAG_CIVIL_WAR_JAP
+	}
+}
+country_event = { #신 쇼군의 등극
+	id = japan.1018
+	title = japan.1018.t
+	desc = japan.1018.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = japan.1018.a	#쇼군 만세!
+		hidden_effect = {
+			DKG = {
+				retire_character = DKG_dokugawa_yoshihisa
+				add_country_leader_role = {
+					Character = DKG_dokugawa_yoshimitsu
+					Promote_leader = yes
+					Country_leader = {
+						ideology = despotism
+						#expire = "1989.1.1"
+							traits={ warrior_code }
+					}
+				}
+			}	
+			country_event = {
+					id = japan.1049
+					days = 1
+				}
+		}
+			set_country_flag = FLAG_CIVIL_WAR_JAP
+	} 
+}
+##
+country_event = { #내전 발발
+	id = japan.1019
+	title = japan.1019.t
+	desc = japan.1019.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		
+		hidden_effect = {
+			FJP = {
+				transfer_state = 530
+				load_oob = "FJP"
+			}
+			530 = {
+				set_demilitarized_zone = no
+			}
+			1065 = {
+				set_demilitarized_zone = no
+			}
+			EJP = {
+				transfer_state = 529
+				transfer_state = 1066
+				add_state_core = 1066
+				load_oob = "EJP"
+			}
+			529 = {
+				set_demilitarized_zone = no
+			}
+			1066 = {
+				set_demilitarized_zone = no
+			}
+			GJJ = {
+				transfer_state = 1073
+				load_oob = "GJJ"
+			}
+			1073 = {
+				set_demilitarized_zone = no
+			}
+			TBJ = {
+				transfer_state = 534
+				transfer_state = 1072
+				load_oob = "TBJ"
+			}
+			534 = {
+				set_demilitarized_zone = no
+			}
+			1072 = {
+				set_demilitarized_zone = no
+			}
+			ENG = {
+				transfer_state = 989
+			}
+			FRA = {
+				transfer_state = 988
+			}
+			USA = {
+				transfer_state = 1067
+			}
+			532 = {
+				set_demilitarized_zone = no
+			}
+			535 = {
+				set_demilitarized_zone = no
+			}
+			989 = {
+				set_demilitarized_zone = no
+			}
+			988 = {
+				set_demilitarized_zone = no
+			}
+			1067 = {
+				set_demilitarized_zone = no
+			}
+			1070 = {
+				set_demilitarized_zone = no
+			}
+			531 = {
+				set_demilitarized_zone = no
+			}
+			991 = {
+				set_demilitarized_zone = no
+			}
+			1065 = {
+				set_demilitarized_zone = no
+			}
+		}
+	}
+	option = {
+		name = japan.1019.a	#유신파
+		trigger = {
+			has_country_flag = JAP_Empire
+		}
+			TBJ = {
+				declare_war_on = {
+					target = JAP
+					type = annex_everything
+				}
+				set_country_flag = FLAG_PEACE_CWJ
+			}
+			GJJ = {
+				declare_war_on = {
+					target = JAP
+					type = annex_everything
+				}
+				set_country_flag = FLAG_PEACE_CWJ
+			}
+		retire_character = JAP_yamato_junta
+		hidden_effect = {
+			DKG = {
+				transfer_navy = {
+					target = JAP
+				}
+			}
+			set_country_flag = JAP_superevent_of_cw
+			JAP = {
+				#create_faction = "유신파"
+				remove_ideas = JAP_showa_hirohito
+			}
+			DKG = {
+				#create_faction = "좌막파"
+			}
+			if = {
+				limit = {
+					tag = DKG
+				}
+				declare_war_on = {
+					target = JAP
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					tag = JAP
+				}
+				declare_war_on = {
+					target = DKG
+					type = annex_everything
+				}
+			}
+			JAP = { change_tag_from = DKG }		
+			1070 = {
+				set_demilitarized_zone = no
+			}
+			JAP = {
+				transfer_state = 1070
+				transfer_state = 531
+				transfer_state = 991
+				transfer_state = 1065
+				add_state_core = 528
+				add_state_core = 1064
+				add_state_core = 1066
+				add_state_core = 529
+				add_state_core = 530
+				add_state_core = 1065
+				add_state_core = 1069
+				add_state_core = 532
+				add_state_core = 535
+				add_state_core = 282
+				add_state_core = 1072
+				add_state_core = 534
+				add_state_core = 533
+				add_state_core = 1071
+				add_state_core = 1068
+				add_state_core = 1067
+				add_state_core = 988
+				add_state_core = 989
+				add_state_core = 990
+				add_state_core = 991
+				every_state = {
+					limit = {
+						is_core_of = DKG
+					}
+					add_core_of = JAP
+				}
+				load_oob = "JAP_1936"
+			}
+			JAP = {
+				complete_national_focus = JAP_rising_sun
+				add_country_leader_role = {
+					Character = JAP_emperor_hirohito
+					Promote_leader = yes
+					Country_leader = {
+						desc="SHOWA_TENNO_DESC"
+						ideology = showaism
+						#expire = "1989.1.1"
+							traits={ tenno_heikka showa_tenno }
+					}
+				}
+				add_country_leader_role = {
+					Character = JAP_emperor_hirohito
+					Promote_leader = yes
+					Country_leader = {
+						desc="SHOWA_TENNO_DESC"
+						ideology = rexism
+						#expire = "1989.1.1"
+							traits={ tenno_heikka showa_tenno }
+					}
+				}
+				complete_national_focus = JAP_economic_policy
+				set_country_flag = japan_focus_start
+			}
+			DKG = {
+				remove_ideas = JAP_showa_hirohito
+				dismantle_faction = yes
+				set_capital = 282
+				complete_national_focus = DKG_continuing_with_tokugawa
+				load_oob = "DKG_civilwar_1936"
+				load_focus_tree = DKG_Japan
+			}
+			if = {
+				limit = {
+					tag = DKG
+				}
+				declare_war_on = {
+					target = JAP
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					tag = JAP
+				}
+				declare_war_on = {
+					target = DKG
+					type = annex_everything
+				}
+			}
+			JAP = {
+				set_country_flag = Japanese_civil_war
+				load_focus_tree = japan_tenno
+				set_temp_variable = { TLE_temp_super_event = token:SE_JAPAN_CW }
+				TNO_fire_super_event_JAPAN_CW = yes
+			}
+			set_country_flag = Japanese_civil_war
+			every_country = {
+				limit = { is_ai = no }
+				set_temp_variable = { TLE_temp_super_event = token:SE_JAPAN_CW }
+				TNO_fire_super_event_JAPAN_CW = yes
+			}
+			TBJ = {
+				country_event = {
+					id = japan.1040
+					days = 15
+				}
+			}
+			GJJ = {
+				country_event = {
+					id = japan.1040
+					days = 15
+				}
+			}
+		}
+	}
+	option = {
+		name = japan.1019.b	#막부
+		trigger = {
+			has_country_flag = JAP_Shogunate
+		}
+		retire_character = JAP_yamato_junta
+		hidden_effect = {
+			DKG = {
+				transfer_navy = {
+					target = JAP
+				}
+			}
+			JAP = {
+				#create_faction = "유신파"
+				remove_ideas = JAP_showa_hirohito
+			}
+			DKG = {
+				#create_faction = "좌막파"
+			}
+			1070 = {
+				set_demilitarized_zone = no
+			}
+			JAP = {
+				transfer_state = 1070
+				transfer_state = 531
+				transfer_state = 991
+				add_state_core = 528
+				add_state_core = 1064
+				add_state_core = 1066
+				add_state_core = 529
+				add_state_core = 530
+				add_state_core = 1065
+				add_state_core = 1069
+				add_state_core = 532
+				add_state_core = 535
+				add_state_core = 282
+				add_state_core = 1072
+				add_state_core = 534
+				add_state_core = 533
+				add_state_core = 1071
+				add_state_core = 1068
+				add_state_core = 1067
+				add_state_core = 1067
+				add_state_core = 988
+				add_state_core = 989
+				add_state_core = 990
+				add_state_core = 991
+				every_state = {
+					limit = {
+						is_core_of = DKG
+					}
+					add_core_of = JAP
+				}
+				load_oob = "JAP_1936"
+			}
+			JAP = {
+				complete_national_focus = JAP_rising_sun
+				add_country_leader_role = {
+					Character = JAP_emperor_hirohito
+					Promote_leader = yes
+					Country_leader = {
+						desc="SHOWA_TENNO_DESC"
+						ideology = showaism
+						#expire = "1989.1.1"
+						traits={ tenno_heikka showa_tenno }
+					}
+				}
+				add_country_leader_role = {
+					Character = JAP_emperor_hirohito
+					Promote_leader = yes
+					Country_leader = {
+						desc="SHOWA_TENNO_DESC"
+						ideology = rexism
+						#expire = "1989.1.1"
+							traits={ tenno_heikka showa_tenno }
+					}
+				}
+			}	
+			DKG = {
+				remove_ideas = JAP_showa_hirohito
+				dismantle_faction = yes
+				set_capital = 282
+				complete_national_focus = DKG_continuing_with_tokugawa
+				load_oob = "DKG_civilwar_1936"
+				set_country_flag = japan_focus_start
+				load_focus_tree = DKG_Japan
+			}
+			if = {
+				limit = {
+					tag = DKG
+				}
+				declare_war_on = {
+					target = JAP
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					tag = JAP
+				}
+				declare_war_on = {
+					target = DKG
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = TBJ
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = GJJ
+					type = annex_everything
+				}
+			}
+			JAP = {
+				set_country_flag = Japanese_civil_war
+				load_focus_tree = japan_tenno
+				set_temp_variable = { TLE_temp_super_event = token:SE_JAPAN_CW }
+				TNO_fire_super_event_JAPAN_CW = yes
+			}
+			set_country_flag = Japanese_civil_war
+			every_country = {
+				limit =  { is_ai = no }
+				set_temp_variable = { TLE_temp_super_event = token:SE_JAPAN_CW }
+				TNO_fire_super_event_JAPAN_CW = yes
+			}
+			TBJ = {
+				country_event = {
+					id = japan.1040
+					days = 15
+				}
+			}
+			GJJ = {
+				country_event = {
+					id = japan.1040
+					days = 15
+				}
+			}
+		}
+	}
+}
+country_event = { #쇼와 유신
+	id = japan.1020
+	title = japan.1020.t
+	desc = japan.1020.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = japan.1020.a	#동의
+		ai_chance = {
+			factor = 100
+		}
+		JAP = {
+			annex_country = {
+				target = KGJ
+				transfer_troops = yes
+			}
+			country_event = {
+				id = japan.1021
+			}
+			set_country_flag = TLE_KGJ_ACCEPT
+		}
+	}
+	option = {
+		name = japan.1020.b
+		ai_chance = {
+			factor = 0
+		}
+		JAP = {
+			create_wargoal = {
+				target = KGJ
+				type = annex_everything
+			}
+			country_event = {
+				id = japan.1021
+			}
+			set_country_flag = TLE_KGJ_REFUSE
+		}
+	}
+}
+country_event = { #쇼와 유신
+	id = japan.1021
+	title = japan.1021.t
+	desc = japan.1021.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = japan.1021.a
+		trigger = {
+			has_country_flag = TLE_KGJ_ACCEPT
+		}
+	}
+	option = {
+		name = japan.1021.b
+		trigger = {
+			has_country_flag = TLE_KGJ_REFUSE
+		}
+	}
+}
+country_event = { #쇼와 유신
+	id = japan.1022
+	title = japan.1022.t
+	desc = japan.1022.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = japan.1022.a	#동의
+		ai_chance = {
+			factor = 100
+		}
+		JAP = {
+			annex_country = {
+				target = EJP
+				transfer_troops = yes
+			}
+			country_event = {
+				id = japan.1023
+			}
+			set_country_flag = TLE_EJP_ACCEPT
+		}
+		ENG = {
+			add_political_power = 30
+			add_stability = 0.02
+		}
+	}
+	option = {
+		name = japan.1022.b
+		ai_chance = {
+			factor = 0
+		}
+		JAP = {
+			create_wargoal = {
+				target = EJP
+				type = annex_everything
+			}
+			country_event = {
+				id = japan.1023
+			}
+			set_country_flag = TLE_EJP_REFUSE
+		}
+		ENG = {
+			add_political_power = -50
+			add_stability = -0.05
+		}
+	}
+}
+country_event = { #쇼와 유신
+	id = japan.1023
+	title = japan.1023.t
+	desc = japan.1023.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = japan.1023.a
+		trigger = {
+			has_country_flag = TLE_EJP_ACCEPT
+		}
+	}
+	option = {
+		name = japan.1023.b
+		trigger = {
+			has_country_flag = TLE_EJP_REFUSE
+		}
+	}
+}
+country_event = { #쇼와 유신
+	id = japan.1024
+	title = japan.1024.t
+	desc = japan.1024.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = {
+		name = japan.1024.a
+		1064 = {
+			remove_core_of = KOR
+			start_resistance = yes
+			set_compliance = 70
+			set_resistance = 15
+			set_garrison_strength = 1.0
+		}
+	}
+}
+country_event = { #쇼와 유신
+	id = japan.1025
+	title = japan.1025.t
+	desc = japan.1025.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = {
+		name = japan.1025.a
+		KOR = {
+			add_war_support = 0.05
+		}
+		
+	}
+}
+country_event = { #쇼와 유신
+	id = japan.1026
+	title = japan.1026.t
+	desc = japan.1026.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = {
+		name = japan.1026.a
+		JAP = {
+			add_stability = -0.02
+			add_war_support = 0.01
+		}
+		KOR = {
+			add_stability = -0.01
+			add_war_support = 0.02
+		}
+	}
+}
+country_event = { #쇼와 유신
+	id = japan.1027
+	title = japan.1027.t
+	desc = japan.1027.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = {
+		name = japan.1027.a
+		536 = {
+			remove_core_of = KOR
+			start_resistance = yes
+			set_compliance = 70
+			set_resistance = 15
+			set_garrison_strength = 1.0
+		}
+	}
+}
+country_event = { #쇼와 유신
+	id = japan.1028
+	title = japan.1028.t
+	desc = japan.1028.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = {
+		name = japan.1028.a
+		KOR = {
+ 			add_named_threat = { threat = 12 name = japan.1028.t }
+		}
+		add_war_support = 0.1
+	}
+}
+country_event = { #
+	id = japan.1029
+	title = japan.1029.t
+	desc = japan.1029.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = {
+		name = japan.1029.a
+			start_civil_war = {
+				ruling_party = fascism
+				ideology = rexism
+				size = 0.4
+				only_own_territory = no
+				capital = 282
+				states = { 
+					282 535
+				}
+			}
+			SDJ = {
+				declare_war_on = {
+					target = JAP
+					type = annex_everything
+				}
+			}
+			NBJ = {
+				declare_war_on = {
+					target = JAP
+					type = annex_everything
+				}
+			}
+			FJP = {
+				declare_war_on = {
+					target = JAP
+					type = annex_everything
+				}
+			}
+			EJP = {
+				declare_war_on = {
+					target = JAP
+					type = annex_everything
+				}
+			}
+			KGJ = {
+				declare_war_on = {
+					target = JAP
+					type = annex_everything
+				}
+			}
+			GJJ = {
+				declare_war_on = {
+					target = JAP
+					type = annex_everything
+				}
+			}
+			TBJ = {
+				declare_war_on = {
+					target = JAP
+					type = annex_everything
+				}
+			}
+	}
+}
+#####옥음방송
+country_event = { #
+	id = japan.1030
+	title = japan.1030.t
+	desc = japan.1030.d
+	picture = GFX_event_japan_1030
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = japan.1030.a
+	}
+}
+country_event = { #
+	id = japan.1031
+	title = japan.1031.t
+	desc = japan.1031.d
+	picture = GFX_event_japan_1030
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = japan.1031.a
+	}
+}
+country_event = { #
+	id = japan.1032
+	title = japan.1032.t
+	desc = japan.1032.d
+	picture = GFX_event_japan_1030
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = japan.1032.a
+	}
+}
+country_event = { #
+	id = japan.1033
+	title = japan.1033.t
+	desc = japan.1033.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = japan.1033.a
+		add_political_power = 80
+		add_stability = 0.015
+	}
+}
+country_event = { #
+	id = japan.1034
+	title = japan.1034.t
+	desc = japan.1034.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = {
+		name = japan.1034.a
+		custom_effect_tooltip = JAP_anti_yushin_level_up_tt
+	}
+}
+
+
+country_event = { #쇼와 헌법의 공표
+	id = japan.1035
+	title = japan.1035.t
+	desc = japan.1035.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = japan.1035.a
+		add_stability = 0.05
+	}
+}
+country_event = { #의회 재정비
+	id = japan.1036
+	title = japan.1036.t
+	desc = japan.1036.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = japan.1036.a
+		set_country_flag = FLAG_CONGRESS_TWO
+	}
+	option = {
+		name = japan.1036.b
+		set_country_flag = FLAG_CONGRESS_ONE
+	}
+}
+country_event = { #히라가나 사용 논쟁
+	id = japan.1037
+	title = japan.1037.t
+	desc = japan.1037.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = japan.1037.a #의무교육으로만 넣자
+		hidden_effect = {
+			add_stability = 0.05 
+		}
+	}
+	option = {
+		name = japan.1037.b #공문서에서까지 사용하자!
+		hidden_effect = {
+			add_stability = 0.1
+			add_war_support = -0.025
+		}
+	}
+}
+country_event = { #의회 조직의 완성
+	id = japan.1038
+	title = japan.1038.t
+	desc = japan.1038.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = japan.1038.a
+		if = {
+			limit = {
+				has_country_flag = FLAG_CONGRESS_TWO
+			}
+			add_political_power = 100
+		}
+		if = {
+			limit = {
+				has_country_flag = FLAG_CONGRESS_ONE
+			}
+			add_stability = 0.025
+		}
+	}
+}
+country_event = { #토지조사사업
+	id = japan.1039
+	title = japan.1039.t
+	desc = japan.1039.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = japan.1039.a
+		add_stability = 0.05
+	}
+}
+country_event = { #평화를 구하는 TBJ와 GJJ
+	id = japan.1040
+	title = japan.1040.t
+	desc = japan.1040.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+	#fire_only_once = yes
+	option = {
+		name = japan.1040.a
+		JAP = {
+			country_event = {
+				id = japan.1041
+				days = 1
+			}
+		}
+		set_country_flag = FLAG_ONCE_TWICE_FUCKING
+	}
+}
+country_event = { #평화를 구하는 TBJ와 GJJ
+	id = japan.1041
+	title = japan.1041.t
+	desc = japan.1041.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+	#fire_only_once = yes
+
+	option = {
+		name = japan.1040.a
+		white_peace = FROM
+	}
+}
+country_event = { #쇼와 유신
+	id = japan.1042
+	title = japan.1042.t
+	desc = japan.1042.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = japan.1042.a	#동의
+		ai_chance = {
+			factor = 100
+		}
+		JAP = {
+			transfer_state = 1067
+		}
+		USA = {
+			add_political_power = 30
+			add_stability = 0.02
+		}
+	}
+	option = {
+		name = japan.1042.b
+		ai_chance = {
+			factor = 0
+		}
+		JAP = {
+			create_wargoal = {
+				target = USA
+				type = annex_everything
+			}
+		}
+		USA = {
+			add_political_power = -50
+			add_stability = -0.05
+		}
+	}
+}
+country_event = { #쇼와 유신
+	id = japan.1043
+	title = japan.1043.t
+	desc = japan.1043.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = japan.1043.a	#동의
+		ai_chance = {
+			factor = 100
+		}
+		JAP = {
+			transfer_state = 988
+		}
+		FRA = {
+			add_political_power = 30
+			add_stability = 0.02
+		}
+	}
+	option = {
+		name = japan.1043.b
+		ai_chance = {
+			factor = 0
+		}
+		JAP = {
+			create_wargoal = {
+				target = FRA
+				type = annex_everything
+			}
+		}
+		FRA = {
+			add_political_power = -50
+			add_stability = -0.05
+		}
+	}
+}
+country_event = { #쇼와 유신
+	id = japan.1044
+	title = japan.1044.t
+	desc = japan.1044.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = japan.1044.a	#동의
+		ai_chance = {
+			factor = 100
+		}
+		JAP = {
+			transfer_state = 989
+		}
+		ENG = {
+			add_political_power = 30
+			add_stability = 0.02
+		}
+	}
+	option = {
+		name = japan.1043.b
+		ai_chance = {
+			factor = 0
+		}
+		JAP = {
+			create_wargoal = {
+				target = ENG
+				type = annex_everything
+			}
+		}
+		ENG = {
+			add_political_power = -50
+			add_stability = -0.05
+		}
+	}
+}
+country_event = { #쇼와 유신
+	id = japan.1045
+	title = japan.1045.t
+	desc = japan.1045.d
+	picture = GFX_TLE_korea_event_none
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = japan.1045.a	#동의
+		ai_chance = {
+			factor = 100
+		}
+		swap_ideas = {
+			add_idea = JAP_unorganized_government_2
+			remove_idea = JAP_unorganized_government
+		}
+	}
+}
+country_event = { #쇼와 유신
+	id = japan.1046
+	title = japan.1046.t
+	desc = japan.1046.d
+	picture = GFX_TLE_korea_event_none
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = japan.1046.a	
+		ai_chance = {
+			factor = 100
+		}
+		every_country = {
+			limit = {
+				is_japan_clique = yes
+				NOT = {
+					OR = {
+						original_tag = DKG
+						original_tag = JAP
+					}
+				}
+			}
+			add_ideas = JAP_surrender_or_war
+		}
+	}
+}
+country_event = { #쇼와 유신
+	id = japan.1047
+	title = japan.1047.t
+	desc = japan.1047.d
+	picture = GFX_TLE_korea_event_none
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = japan.1047.a	
+		ai_chance = {
+			factor = 100
+		}
+		add_ideas = JAP_slaves
+		add_political_power = -100
+	}
+}
+country_event = { #쇼와 유신
+	id = japan.1048
+	title = japan.1048.t
+	desc = japan.1048.d
+	picture = GFX_TLE_korea_event_none
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = japan.1047.a	
+		ai_chance = {
+			factor = 100
+		}
+		add_stability = 0.05
+		add_political_power = 60
+	}
+}
+country_event = { #
+	id = japan.1049
+	title = japan.1049.t
+	desc = japan.1049.d
+	picture = GFX_event_japan_1049
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = japan.1049.a	
+		ai_chance = {
+			factor = 100
+		}
+		custom_effect_tooltip = tooltip_kkukit
+	}
+}
+country_event = { #
+	id = japan.1050
+	title = japan.1050.t
+	desc = japan.1050.d
+	picture = GFX_TLE_korea_event_none
+
+	trigger = {
+		tag = JAP
+		has_war_with = KOR
+		NOT = {
+			has_country_flag = FLAG_JAPAN_1050
+		}
+	}
+
+	option = {
+		name = japan.1050.a	
+		ai_chance = {
+			factor = 100
+		}
+		set_country_flag = FLAG_JAPAN_1050
+		country_event = {
+			id = japan.1051
+		}
+	}
+}
+country_event = { #
+	id = japan.1051
+	title = japan.1051.t
+	desc = japan.1051.d
+	picture = GFX_TLE_korea_event_none
+
+	is_triggered_only = yes
+
+	option = {
+		name = japan.1051.a	
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+country_event = { #
+	id = japan.1052
+	title = japan.1052.t
+	desc = japan.1052.d
+	picture = GFX_TLE_korea_event_none
+
+	is_triggered_only = yes
+
+	option = {
+		name = japan.1052.a	
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+country_event = { #
+	id = japan.1053
+	title = japan.1053.t
+	desc = japan.1053.d
+	picture = GFX_TLE_korea_event_none
+
+	trigger = {
+		tag = JAP
+		has_war_with = KOR
+		date > 1942.6.18
+		NOT = {
+			has_country_flag = FLAG_JAPAN_1053
+		}
+	}
+
+	option = {
+		name = japan.1053.a	
+		ai_chance = {
+			factor = 100
+		}
+		set_country_flag = FLAG_JAPAN_1053
+	}
+}
+####
+country_event = { #규슈 폭동(일본)
+	id = japan.1061
+	title = japan.1061.t
+	desc = japan.1061.d
+	picture = GFX_TLE_korea_event_none
+
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = japan.1061.a	
+		ai_chance = {
+			factor = 100
+		}
+		hidden_effect = {
+
+			country_event = {
+				id = japan.1062
+				hours = 15
+			}
+			1064 = {
+				set_demilitarized_zone = yes
+			}
+		}	
+	}
+}
+country_event = { #붉은 바다
+	id = japan.1062
+	title = japan.1062.t
+	desc = japan.1062.d
+	picture = GFX_TLE_korea_event_none
+
+	is_triggered_only = yes
+
+	option = {
+		custom_effect_tooltip = DKG_kinki_tt
+		name = japan.1062.a	
+		ai_chance = {
+			factor = 100
+		}
+		country_event = {
+			id = japan.1063
+			hours = 5
+		}
+		hidden_effect = {
+			set_country_flag = DKG_dispatch_an_bakufu_army_on
+			activate_decision = DKG_dispatch_an_bakufu_army_Kinki
+		}
+		
+	}
+}
+country_event = { #신선조 동원
+	id = japan.1063
+	title = japan.1063.t
+	desc = japan.1063.d
+	picture = GFX_TLE_korea_event_none
+
+	is_triggered_only = yes
+
+	option = {
+		name = japan.1063.a	
+		ai_chance = {
+			factor = 100
+		}
+		hidden_effect = {
+			country_event = {
+				id = japan.1064
+				days = 3
+			}
+			531 = {
+				set_demilitarized_zone = yes
+			}
+			532 = {
+				set_demilitarized_zone = yes
+			}
+			991 = {
+				set_demilitarized_zone = yes
+			}
+			529 = {
+				set_demilitarized_zone = yes
+			}
+			1066 = {
+				set_demilitarized_zone = yes
+			}
+			1065 = {
+				set_demilitarized_zone = yes
+			}
+		}
+	}
+}
+country_event = { #유신회의 번뜩이는 눈빛
+	id = japan.1064
+	title = japan.1064.t
+	desc = japan.1064.d
+	picture = GFX_TLE_korea_event_none
+
+	is_triggered_only = yes
+
+	option = {
+		name = japan.1064.a	
+		ai_chance = {
+			factor = 100
+		}
+		hidden_effect = {
+			country_event = {
+				id = japan.1014
+				days = 2
+			}
+			535 = {
+				set_demilitarized_zone = yes
+			}
+			1069 = {
+				set_demilitarized_zone = yes
+			}
+			534 = {
+				set_demilitarized_zone = yes
+			}
+			1072 = {
+				set_demilitarized_zone = yes
+			}
+			1071	= {
+				set_demilitarized_zone = yes
+			}
+			533	= {
+				set_demilitarized_zone = yes
+			}
+			1068	= {
+				set_demilitarized_zone = yes
+			}
+		}
+	}
+}
+###
+country_event = { #쇼와 유신
+	id = japan.1100
+	title = japan.1100.t
+	desc = japan.1100.d
+	picture = GFX_event_japan_1100
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = japan.1100.a	#동의
+		ai_chance = {
+			factor = 100
+		}
+		set_cosmetic_tag = JAP_great_japan
+		custom_effect_tooltip = TOOLTIP_ENDING_JAPAN
+		set_global_flag = TLE_GREATER_JAPANESE_EMPIRE
+		hidden_effect = {
+			add_political_power = 200
+			if = {
+				limit = {
+					SOV = {
+						has_completed_focus = SOV_the_centre
+					}
+				}
+				SOV = {
+					set_cosmetic_tag = SOV_japan_win
+				}
+			}
+			news_event = {
+				id = eok_news.13
+			}
+			remove_country_leader_role = {
+				character = JAP_emperor_hirohito
+				ideology = showaism
+			}
+			remove_country_leader_role = {
+				character = JAP_emperor_hirohito
+				ideology = rexism	
+			}
+			add_country_leader_role = {
+				Character = JAP_emperor_hirohito
+				Promote_leader = yes
+				Country_leader = {
+					desc="SHOWA_TENNO_ENDING_DESC"
+					ideology = showaism
+					#expire = "1989.1.1"
+						traits={ tenno_heikka JAP_hirohito_ending_trait }
+				}
+			}
+			add_country_leader_role = {
+				Character = JAP_emperor_hirohito
+				Promote_leader = yes
+				Country_leader = {
+					desc="SHOWA_TENNO_ENDING_DESC"
+					ideology = rexism
+					#expire = "1989.1.1"
+						traits={ tenno_heikka JAP_hirohito_ending_trait }
+				}
+			}
+			set_portraits = {
+				character = JAP_emperor_hirohito
+				civilian = { 
+					large ="gfx/leaders/JAP/Portrait_Japan_Hirohito.dds"
+				}
+				army = { 
+					large ="gfx/leaders/JAP/Portrait_Japan_Hirohito.dds"
+				}
+			}
+			JAP = {
+				transfer_state = 526
+				remove_ideas = JAP_slaves
+				remove_ideas = JAP_jungle_combat
+				remove_ideas = JAP_sea_invasion
+				remove_ideas = JAP_the_japanese_infrastruction
+				remove_ideas = JAP_high_illiteracy_rate
+				remove_ideas = JAP_high_illiteracy_rate_2
+				remove_ideas = JAP_pre_modern_army
+				remove_ideas = JAP_poor_navy
+				remove_ideas = JAP_not_regulared_industry
+				remove_ideas = JAP_not_regulared_industry_2
+				remove_ideas = JAP_showa_military_school
+				remove_ideas = JAP_resource1
+				remove_ideas = JAP_democratic_popularity
+				remove_ideas = JAP_unorganized_government
+				remove_ideas = JAP_unorganized_government_2
+				remove_ideas = JAP_unorganized_government_3
+				remove_ideas = JAP_paidorei
+				remove_ideas = JAP_chaguan_daoip
+				remove_ideas = JAP_anti_yushin_level_none
+				remove_ideas = JAP_anti_yushin_level_1
+				remove_ideas = JAP_anti_yushin_level_2
+				remove_ideas = JAP_anti_yushin_level_3
+				remove_ideas = JAP_anti_yushin_level_4
+				add_ideas = JAP_the_great_homeland_of_sun
+			}
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = DKG
+					}
+				}
+				remove_core_of = DKG
+				remove_core_of = FJP
+				remove_core_of = EJP
+				remove_core_of = GJJ
+				remove_core_of = KGJ
+				remove_core_of = TBJ
+				remove_core_of = SDJ
+				remove_core_of = NBJ
+			}
+		}
+	}
+}
+country_event = { #쇼와 유신
+	id = japan.1101
+	title = japan.1101.t
+	desc = japan.1101.d
+	picture = GFX_event_japan_1101
+
+	is_triggered_only = yes
+
+	option = {
+		name = japan.1101.a	#동의
+		ai_chance = {
+			factor = 100
+		}
+		hidden_effect =	{
+			country_event = {
+				id = japan.1102
+			}
+		}
+	}
+}
+country_event = { #쇼와 유신
+	id = japan.1102
+	title = japan.1102.t
+	desc = japan.1102.d
+	picture = GFX_event_japan_1101
+
+	is_triggered_only = yes
+
+	option = {
+		name = japan.1102.a	#동의
+		ai_chance = {
+			factor = 100
+		}
+		hidden_effect =	{
+			country_event = {
+				id = japan.1103
+			}
+		}
+	}
+}
+country_event = { #쇼와 유신
+	id = japan.1103
+	title = japan.1103.t
+	desc = japan.1103.d
+	picture = GFX_event_japan_1101
+
+	is_triggered_only = yes
+
+	option = {
+		name = japan.1103.a	#동의
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+country_event = { #도조
+	id = japan.1104
+	title = japan.1104.t
+	desc = japan.1104.d
+	picture = GFX_TLE_korea_event_none
+
+	is_triggered_only = yes
+
+	option = {
+		name = japan.1104.a	#동의
+		ai_chance = {
+			factor = 100
+		}
+		hidden_effect =	{
+			country_event = {
+				id = japan.1105
+			}
+		}
+	}
+}
+country_event = { #도조
+	id = japan.1105
+	title = japan.1105.t
+	desc = japan.1105.d
+	picture = GFX_TLE_korea_event_none
+
+	is_triggered_only = yes
+
+	option = {
+		name = japan.1105.a	#동의
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+country_event = { #귀향
+	id = japan.1106
+	title = japan.1106.t
+	desc = japan.1106.d
+	picture = GFX_event_japan_1106
+
+	is_triggered_only = yes
+
+	option = {
+		name = japan.1106.a	#동의
+		ai_chance = {
+			factor = 100
+		}
+		hidden_effect =	{
+			country_event = {
+				id = japan.1107
+			}
+		}
+	}
+}
+country_event = { #귀향
+	id = japan.1107
+	title = japan.1107.t
+	desc = japan.1107.d
+	picture = GFX_event_japan_1106
+
+	is_triggered_only = yes
+
+	option = {
+		name = japan.1107.a	#동의
+		ai_chance = {
+			factor = 100
+		}
+		hidden_effect =	{
+			country_event = {
+				id = japan.1108
+			}
+		}
+	}
+}
+country_event = { #귀향
+	id = japan.1108
+	title = japan.1108.t
+	desc = japan.1108.d
+	picture = GFX_event_japan_1106
+
+	is_triggered_only = yes
+
+	option = {
+		name = japan.1108.a	#동의
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+country_event = { #고향 투 고향
+	id = japan.1109
+	title = japan.1109.t
+	desc = japan.1109.d
+	picture = GFX_event_japan_1109
+
+	is_triggered_only = yes
+
+	option = {
+		name = japan.1109.a	#동의
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+country_event = { #고향 투 고향
+	id = japan.1110
+	title = japan.1110.t
+	desc = japan.1110.d
+	picture = GFX_event_japan_1110
+
+	is_triggered_only = yes
+
+	option = {
+		name = japan.1110.a	#동의
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+country_event = { #고향 투 고향
+	id = japan.1111
+	title = japan.1111.t
+	desc = japan.1111.d
+	picture = GFX_event_japan_1111
+
+	is_triggered_only = yes
+
+	option = {
+		name = japan.1111.a	#동의
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+country_event = { #고향 투 고향
+	id = japan.1112
+	title = japan.1112.t
+	desc = japan.1112.d
+	picture = GFX_event_japan_1112
+
+	is_triggered_only = yes
+
+	option = {
+		name = japan.1112.a	#동의
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+country_event = { #고향 투 고향
+	id = japan.1113
+	title = japan.1113.t
+	desc = japan.1113.d
+	picture = GFX_event_japan_1113
+
+	is_triggered_only = yes
+
+	option = {
+		name = japan.1113.a	#동의
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+country_event = { #고향 투 고향
+	id = japan.1114
+	title = japan.1114.t
+	desc = japan.1114.d
+	picture = GFX_event_japan_1114
+
+	is_triggered_only = yes
+
+	option = {
+		name = japan.1114.a	#동의
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+country_event = { #
+	id = japan.1115
+	title = japan.1115.t
+	desc = japan.1115.d
+	picture = GFX_event_japan_1114
+
+	is_triggered_only = yes
+
+	option = {
+		name = japan.1115.a	#동의
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+country_event = { #
+	id = japan.1116
+	title = japan.1116.t
+	desc = japan.1116.d
+	picture = GFX_event_japan_1116
+
+	is_triggered_only = yes
+
+	option = {
+		name = japan.1116.a	#동의
+		ai_chance = {
+			factor = 100
+		}
+		add_war_support = 0.05
+		effect_tooltip = {
+			set_province_name = {
+				id = 1182
+				name = "tokyo"
+			}
+		}
+		hidden_effect = {
+			set_country_flag = TLE_JAP_SETTING_TOKYO_NAME
+			282 = {
+				set_state_name = "tokyo"
+			}
+			set_province_name = {
+				id = 1182
+				name = "tokyo"
+			}
+		}
+	}
+}
+### Yasuhito ###
+country_event = { #Chuhei
+	id = japan.1150
+	title = japan.1150.t
+	desc = japan.1150.d
+	picture = GFX_event_japan_1116
+
+	is_triggered_only = yes
+
+	option = {
+		name = japan.1150.a	#동의
+	}
+}
+country_event = { #Nagoya 1
+	id = japan.1151
+	title = japan.1151.t
+	desc = japan.1151.d
+	picture = GFX_event_japan_1151
+
+	is_triggered_only = yes
+
+	option = {
+		name = japan.1151.a	#동의
+		country_event = {
+			id = japan.1152
+		}
+	}
+}
+country_event = { #Nagoya 2
+	id = japan.1152
+	title = japan.1152.t
+	desc = japan.1152.d
+	picture = GFX_event_japan_1151
+
+	is_triggered_only = yes
+
+	option = {
+		name = japan.1152.a	#동의
+	}
+}
+country_event = { #Edo 1
+	id = japan.1153
+	title = japan.1153.t
+	desc = japan.1153.d
+	picture = GFX_event_japan_1153
+
+	is_triggered_only = yes
+
+	option = {
+		name = japan.1153.a	#동의
+		country_event = {
+			id = japan.1154
+		}
+	}
+}
+country_event = { #Edo 2
+	id = japan.1154
+	title = japan.1154.t
+	desc = japan.1154.d
+	picture = GFX_event_japan_1153
+
+	is_triggered_only = yes
+
+	option = {
+		name = japan.1153.a	#동의
+	}
+}
+country_event = { #Nigata 1
+	id = japan.1155
+	title = japan.1155.t
+	desc = japan.1155.d
+	picture = GFX_event_japan_1155
+
+	is_triggered_only = yes
+
+	option = {
+		name = japan.1155.a	#동의
+		country_event = {
+			id = japan.1156
+		}
+	}
+}
+country_event = { #Nigata 2
+	id = japan.1156
+	title = japan.1156.t
+	desc = japan.1156.d
+	picture = GFX_event_japan_1155
+
+	is_triggered_only = yes
+
+	option = {
+		name = japan.1156.a	#동의
+	}
+}
+country_event = { #Prince and Idiot 1
+	id = japan.1157
+	title = japan.1157.t
+	desc = japan.1157.d
+	picture = GFX_event_japan_1157
+
+	is_triggered_only = yes
+
+	option = {
+		name = japan.1157.a	#동의
+		country_event = {
+			id = japan.1158
+		}
+	}
+}
+country_event = { #Prince and Idiot 2
+	id = japan.1158
+	title = japan.1158.t
+	desc = japan.1158.d
+	picture = GFX_event_japan_1157
+
+	is_triggered_only = yes
+
+	option = {
+		name = japan.1158.a	#동의
+	}
+}
+#############
+country_event = { #윾자의 짐
+	id = japan.1200
+	title = japan.1200.t
+	desc = japan.1200.d
+	picture = GFX_event_japan_1200
+
+	is_triggered_only = yes
+
+	option = {
+		name = japan.1200.a	
+		country_event = {
+			id = japan.1201
+		}
+	}
+}
+country_event = { #윾자의 짐
+	id = japan.1201
+	title = japan.1201.t
+	desc = japan.1201.d
+	picture = GFX_event_japan_1200
+
+	is_triggered_only = yes
+
+	option = {
+		name = japan.1201.a	
+		country_event = {
+			id = japan.1202
+		}
+	}
+}
+country_event = { #윾자의 짐
+	id = japan.1202
+	title = japan.1202.t
+	desc = japan.1202.d
+	picture = GFX_event_japan_1200
+
+	is_triggered_only = yes
+
+	option = {
+		name = japan.1202.a
+		set_temp_variable = { TNO_temp_super_event = token:SE_FALL_OF_JAPAN }
+		TNO_fire_super_event = yes
+		set_global_flag = TLE_JAP_WAS_SURRENDER
+	}
+}
+####
+country_event = { #설정
+	id = TLE_japan.1
+	title = TLE_japan.1.title
+	desc = TLE_japan.1.desc
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = TLE_japan.1.a
+		country_event = {
+			id = TLE_japan.2
+		}
+	}
+}
+country_event = { #설정
+	id = TLE_japan.2
+	title = TLE_japan.2.title
+	desc = TLE_japan.2.desc
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = TLE_japan.2.a
+		country_event = {
+			id = TLE_japan.3
+		}
+	}
+}
+country_event = { #설정
+	id = TLE_japan.3
+	title = TLE_japan.3.title
+	desc = TLE_japan.3.desc
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = TLE_japan.3.a
+	}
+}
+country_event = { #설정
+	id = TLE_japan.4
+	title = TLE_japan.4.title
+	desc = TLE_japan.4.desc
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = TLE_japan.4.a
+	}
+}
+####일본 내전 군벌 점령 이벤트
+country_event = { #열번 동맹 점령
+	id = TLE_Japan_warlord.1
+	title = TLE_Japan_warlord.1.t
+	desc = TLE_Japan_warlord.1.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = TLE_Japan_warlord.1.a
+		add_political_power = 50
+		add_stability = 0.05
+	}
+}
+country_event = { #도사 점령
+	id = TLE_Japan_warlord.2
+	title = TLE_Japan_warlord.2.t
+	desc = TLE_Japan_warlord.2.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = TLE_Japan_warlord.2.a
+		add_political_power = 50
+		add_stability = 0.05
+	}
+}
+country_event = { #조자이 점령
+	id = TLE_Japan_warlord.3
+	title = TLE_Japan_warlord.3.t
+	desc = TLE_Japan_warlord.3.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = TLE_Japan_warlord.3.a
+		add_political_power = 50
+		add_stability = 0.05
+		set_province_name = {
+			id = 4188
+			name = "chiba"
+		}
+		1073 = {
+			set_state_name = "chiba"
+		}
+	}
+}
+
+
+

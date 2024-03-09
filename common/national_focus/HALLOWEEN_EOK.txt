@@ -1,0 +1,241 @@
+focus_tree = {
+	id = HALLOWEEN_EOK
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = TLE
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 1000 y = 1000 }
+
+	focus = {
+		id = KORHAL_sibal_muoya
+		icon = GFX_KOR_starwars
+		cost = 0.3
+		x = 5
+		y = 0
+		completion_reward = {
+			country_event = TLE_halloween_kor.1
+		}
+	}
+	focus = {
+		id = KORHAL_heir_the_empire
+		icon = GFX_KOR_starwars
+		cost = 4
+		prerequisite = {
+			focus = KORHAL_sibal_muoya
+		}
+		x = 3
+		y = 1
+		completion_reward = {
+			country_event = TLE_halloween_kor.2
+		}
+	}
+	focus = {
+		id = KORHAL_i_love_jongmyo
+		icon = GFX_KOR_starwars
+		cost = 4
+		prerequisite = {
+			focus = KORHAL_sibal_muoya
+		}
+		available = {
+			has_completed_focus = KORHAL_heir_the_empire
+		}
+		x = 5
+		y = 1
+		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = KRH
+				expire = 0
+			}
+			country_event = TLE_halloween_kor.3
+		}
+	}
+	focus = {
+		id = KORHAL_remove_clone
+		icon = GFX_KOR_starwars
+		cost = 4
+		prerequisite = {
+			focus = KORHAL_sibal_muoya
+		}
+		x = 7
+		y = 1
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = MCP
+				expire = 0
+			}
+		}
+	}
+	focus = {
+		id = KORHAL_and_i_love_democracy
+		icon = GFX_KOR_starwars
+		cost = 4
+		prerequisite = {
+			focus = KORHAL_i_love_jongmyo
+		}
+		prerequisite = {
+			focus = KORHAL_heir_the_empire
+		}
+		prerequisite = {
+			focus = KORHAL_remove_clone
+		}
+		x = 5
+		y = 2
+		completion_reward = {
+			country_event = TLE_halloween_kor.4
+		}
+	}
+	focus = {
+		id = KORHAL_the_new_hope
+		icon = GFX_KOR_starwars
+		cost = 4
+		prerequisite = {
+			focus = KORHAL_and_i_love_democracy
+		}
+		x = 5
+		y = 3
+		completion_reward = {
+			country_event = TLE_halloween_kor.5
+		}
+	}
+	focus = {
+		id = KORHAL_battle_of_av
+		icon = GFX_KOR_starwars
+		cost = 4
+		prerequisite = {
+			focus = KORHAL_the_new_hope
+		}
+		x = 3
+		y = 4
+		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = MJT
+				expire = 0
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = JAP
+				expire = 0
+			}
+		}
+	}
+	focus = {
+		id = KORHAL_empire_strikes_back
+		icon = GFX_KOR_starwars
+		cost = 4
+		prerequisite = {
+			focus = KORHAL_the_new_hope
+		}
+		x = 5
+		y = 4
+		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = DHD
+				expire = 0
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = TIB
+				expire = 0
+			}
+		}
+	}
+	focus = {
+		id = KORHAL_zombieda_meeting
+		icon = GFX_KOR_starwars
+		cost = 4
+		prerequisite = {
+			focus = KORHAL_the_new_hope
+		}
+		x = 7
+		y = 4
+		available = {
+			SAG = {
+				exists = no
+			}
+		}
+		completion_reward = {
+			country_event = TLE_halloween_kor.6
+			set_country_flag = KOR_TLE_EVENT_YODA_FUCKING
+		}
+	}
+	focus = {
+		id = KORHAL_return_of_the_jedi
+		icon = GFX_KOR_starwars
+		cost = 4
+		prerequisite = {
+			focus = KORHAL_battle_of_av
+		}
+		prerequisite = {
+			focus = KORHAL_empire_strikes_back
+		}
+		prerequisite = {
+			focus = KORHAL_zombieda_meeting
+		}
+		x = 5
+		y = 5
+		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = WUG
+				expire = 0
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = SHU
+				expire = 0
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = UMA
+				expire = 0
+			}
+		}
+	}
+	focus = {
+		id = KORHAL_waking_force
+		icon = GFX_KOR_starwars
+		cost = 4
+		prerequisite = {
+			focus = KORHAL_return_of_the_jedi
+		}
+		x = 5
+		y = 6
+		available = {
+			JAP = {
+				exists = no
+			}
+			MCP = {
+				exists = no
+			}
+			LMC = {
+				exists = no
+			}
+			KRH = {
+				exists = no
+			}
+			UMA = {
+				exists = no
+			}
+			TIB = {
+				exists = no
+			}
+			SAG = {
+				exists = no
+			}
+			MJT = {
+				exists = no
+			}
+		}
+		completion_reward = {
+			country_event = TLE_halloween_kor.7
+		}
+	}
+}

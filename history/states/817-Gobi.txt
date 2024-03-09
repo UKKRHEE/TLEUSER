@@ -1,0 +1,35 @@
+
+state={
+	id=817
+	name="STATE_817"
+
+	history={
+		owner = MON
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = MON
+		add_core_of = MSR
+		add_core_of = MEN
+		1935.12.6 = {
+			MSR = {
+				set_province_controller = 12544
+				set_province_controller = 10695
+				set_province_controller = 10634
+				set_province_controller = 12614
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		1725 1781 4729 4786 4858 7752 7806 7864 10560 10634 10689 10695 10704 12541 12544 12614 12686 
+	}
+	manpower=8000
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

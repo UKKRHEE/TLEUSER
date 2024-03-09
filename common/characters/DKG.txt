@@ -1,0 +1,575 @@
+characters={
+	DKG_emperor_hirohito = {
+		name = "DKG_emperor_hirohito"
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Portrait_JAP_showa_hirohito.png"
+				small="gfx/interface/ideas/JAP/idea_showa_hirohito.png"
+			}
+		}
+		country_leader={
+			ideology=rexism
+			desc="SHOWA_TENNO_DESC"
+			traits={ tenno_heikka showa_tenno }
+		}
+	}
+	DKG_dokugawa_yoshihisa = {
+		name = "DKG_dokugawa_yoshihisa"
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Portrait_DKG_dokugawa_yoshihisa.png"
+			}
+		}
+		country_leader={
+			desc = "POLITICS_Yoshihisa_DESC"
+			ideology = despotism
+			traits = {
+				the_shogun
+			}
+		}
+	}
+	DKG_dokugawa_yoshimitsu = {
+		name = "DKG_dokugawa_yoshimitsu"
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Portrait_JAP_Dokugawa_Yoshimitsu.png"
+			}
+		}
+		country_leader={
+			desc = "POLITICS_Yoshimitsu_DESC"
+			ideology = despotism
+			traits = {
+				DKG_yoshimitsu_trait
+			}
+		}
+	}
+	DKG_aizawa_saburou={
+		name= "DKG_aizawa_saburou"
+		portraits={
+			army={
+				large="gfx/leaders/JAP/DKG_aizawa_saburou.png"
+				small="gfx/leaders/JAP/DKG_aizawa_saburou.png"
+			}
+		}
+		corps_commander={
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	DKG_nagata_tetsuzan={
+		name= "DKG_nagata_tetsuzan"
+		portraits={
+			army={
+				large="gfx/leaders/JAP/DKG_nagata_tetsuzan.png"
+				small="gfx/leaders/JAP/DKG_nagata_tetsuzan.png"
+			}
+		}
+		corps_commander={
+			traits={ politically_connected }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 5
+			logistics_skill = 2
+		}
+	}
+	DKG_imamura_hitoshi={
+		name= "DKG_imamura_hitoshi"
+		portraits={
+			army={
+				large="gfx/leaders/JAP/DKG_imamura_hitoshi.png"
+				small="gfx/leaders/JAP/DKG_imamura_hitoshi.png"
+			}
+		}
+		corps_commander={
+			traits={ commando }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	DKG_suzuki_sosaku={
+		name= "DKG_suzuki_sosaku"
+		portraits={
+			army={
+				large="gfx/leaders/JAP/DKG_suzuki_sosaku.png"
+				small="gfx/leaders/JAP/DKG_suzuki_sosaku.png"
+			}
+		}
+		corps_commander={
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	DKG_Adachi_Hatazou={
+		name= "DKG_Adachi_Hatazou"
+		portraits={
+			army={
+				large="gfx/leaders/JAP/DKG_Adachi_Hatazou.png"
+				small="gfx/leaders/JAP/DKG_Adachi_Hatazou.png"
+			}
+		}
+		corps_commander={
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	DKG_shunroku_hata={
+		name="DKG_shunroku_hata"
+		portraits={
+			army={
+				small="GFX_idea_shunroku_hata"
+				large="gfx/leaders/JAP/Portrait_Japan_Shunroku_Hata.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = shunroku_hata
+			ledger = army
+			allowed = {
+				original_tag = DKG
+			}
+			traits = {
+				army_concealment_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			traits={ JAP_samurai_lineage offensive_doctrine }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	#
+	DKG_iesato_tokugawa={
+		name="DKG_iesato_tokugawa"
+		portraits={
+			army={
+				small="gfx/interface/ideas/DKG/advisors/idea_DKG_iesato_tokugawa.png"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = iesato_tokugawa
+			allowed = {
+				original_tag = DKG
+			}
+			traits = {
+				popular_figurehead
+			}
+			can_be_fired = no
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	DKG_yorinaga_matsudaira={
+		name="DKG_yorinaga_matsudaira"
+		portraits={
+			army={
+				small="gfx/interface/ideas/DKG/advisors/idea_DKG_yorinaga_matsudaira.png"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = yorinaga_matsudaira
+			allowed = {
+				original_tag = DKG
+			}
+			traits = {
+				backroom_backstabber
+			}
+			can_be_fired = no
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	DKG_makoto_tokugawa={
+		name="DKG_makoto_tokugawa"
+		portraits={
+			army={
+				small="gfx/interface/ideas/DKG/advisors/idea_DKG_makoto_tokugawa.png"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = makoto_tokugawa
+			allowed = {
+				original_tag = DKG
+			}
+			traits = {
+				captain_of_industry
+			}
+			can_be_fired = no
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	DKG_yorisada_tokugawa={
+		name="DKG_yorisada_tokugawa"
+		portraits={
+			army={
+				small="gfx/interface/ideas/DKG/advisors/idea_DKG_yorisada_tokugawa.png"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = yorisada_tokugawa
+			allowed = {
+				original_tag = DKG
+			}
+			traits = {
+				silent_workhorse
+			}
+			can_be_fired = no
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	DKG_iemasa_tokugawa={
+		name="DKG_iemasa_tokugawa"
+		portraits={
+			army={
+				small="gfx/interface/ideas/DKG/advisors/idea_DKG_iemasa_tokugawa.png"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = iemasa_tokugawa
+			allowed = {
+				original_tag = DKG
+			}
+			traits = {
+				smooth_talking_charmer
+			}
+			can_be_fired = no
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	DKG_kuniyuki_tokugawa={
+		name="DKG_kuniyuki_tokugawa"
+		portraits={
+			army={
+				small="gfx/interface/ideas/DKG/advisors/idea_DKG_kuniyuki_tokugawa.png"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = kuniyuki_tokugawa
+		    allowed = {
+		    	original_tag = DKG
+				has_dlc = "La Resistance" 
+		    }
+			available = {
+				has_intelligence_agency = yes
+			}
+			can_be_fired = no
+			
+			traits = { head_of_intelligence }
+			ai_will_do = {
+				factor = 0.000
+			}
+		}
+	}
+	#
+	DKG_yoshikumi_tokugawa={
+		name="DKG_yoshikumi_tokugawa"
+		portraits={
+			army={
+				small="gfx/interface/ideas/DKG/advisors/idea_DKG_yoshikumi_tokugawa.png"
+				large="gfx/leaders/JAP/Portrait_DKG_yoshikumi_tokugawa.png"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = yoshikumi_tokugawa
+			allowed = {
+				original_tag = DKG
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			can_be_fired = no
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		field_marshal={
+			traits={ politically_connected JAP_samurai_lineage }
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=2
+		}
+	}
+	DKG_takesada_tokugawa={
+		name="DKG_takesada_tokugawa"
+		portraits={
+			army={
+				small="gfx/interface/ideas/DKG/advisors/idea_DKG_takesada_tokugawa.png"
+				large="gfx/leaders/JAP/Portrait_DKG_takesada_tokugawa.png"
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = takesada_tokugawa
+			allowed = {
+				original_tag = DKG
+			}
+			traits = {
+				navy_chief_naval_aviation_2
+			}
+			can_be_fired = no
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		navy_leader={
+			traits={ bold aviation_enthusiast inflexible_strategist trait_reckless superior_tactician  }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			maneuvering_skill=2
+			coordination_skill=2
+		}
+	}
+	DKG_yoshichika_tokugawa={
+		name="DKG_yoshichika_tokugawa"
+		portraits={
+			army={
+				small="gfx/interface/ideas/DKG/advisors/idea_DKG_yoshichika_tokugawa.png"
+				large="gfx/leaders/JAP/Portrait_DKG_yoshichika_tokugawa.png"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = yoshichika_tokugawa
+			allowed = {
+				original_tag = DKG
+			}
+			traits = {
+				air_chief_ground_support_1
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			traits={ politically_connected JAP_samurai_lineage }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=3
+		}
+	}
+	############Clique################
+	EJP_soda_kaichi = {
+		name = "EJP_soda_kaichi"
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Portrait_JAP_soda_gaichi.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits = {  }
+		}
+		country_leader={
+			ideology=ultranationalism
+			traits = {  }
+		}
+	}
+	FJP_yamaguchi_toyokage = {
+		name = "FJP_yamaguchi_toyokage"
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Portrait_JAP_yamaguchi_toyokage.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits = {  }
+		}
+		country_leader={
+			ideology=ultranationalism
+			traits = {  }
+		}
+	}
+	GJJ_hayashi_tadataka = {
+		name = "GJJ_hayashi_tadataka"
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Portrait_JAP_hayashi_tadataka.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits = {  }
+		}
+		country_leader={
+			ideology=ultranationalism
+			traits = {  }
+		}
+	}
+	KGJ_maeda_toshinari = {
+		name = "KGJ_maeda_toshinari"
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Portrait_JAP_maeda_toshinari.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits = {  }
+		}
+		country_leader={
+			ideology=ultranationalism
+			traits = {  }
+		}
+	}
+	NBJ_nanbu_toshihide = {
+		name = "NBJ_nanbu_toshihide"
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Portrait_JAP_nanbu_toshihide.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits = {  }
+		}
+		country_leader={
+			ideology=ultranationalism
+			traits = {  }
+		}
+	}
+	SDJ_date_kunimune = {
+		name = "SDJ_date_kunimune"
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Portrait_JAP_date_kunimune.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits = {  }
+		}
+		country_leader={
+			ideology=ultranationalism
+			traits = {  }
+		}
+	}
+	TBJ_tokugawa_yorisada = {
+		name = "TBJ_tokugawa_yorisada"
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Portrait_JAP_tokugawa_yorisada.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits = {  }
+		}
+		country_leader={
+			ideology=ultranationalism
+			traits = {  }
+		}
+		corps_commander = {
+			skill = 4 
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	############Korea################
+	DK1_deokchon_kyongkwang = {
+		name = "DK1_deokchon_kyongkwang"
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Portrait_JAP_Dokugawa_Yoshimitsu.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits = {  }
+		}
+		country_leader={
+			ideology=ultranationalism
+			traits = {  }
+		}
+	}
+	DK2_deokchon_noejung = {
+		name = "DK2_deokchon_noejung"
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Portrait_JAP_tokugawa_yorisada.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits = {  }
+		}
+		country_leader={
+			ideology=ultranationalism
+			traits = {  }
+		}
+	}
+	DK3_kawamura_kaneto = {
+		name = "DK3_kawamura_kaneto"
+		portraits={
+			civilian={
+				large="gfx/leaders/KHK/Portrait_KHK_kawamura_kaneto.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits = {  }
+		}
+		country_leader={
+			ideology=ultranationalism
+			traits = {  }
+		}
+	}
+	DK4_kim_sukwon = {
+		name = "DK4_kim_sukwon"
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/Portrait_KOR_Kim_Suk_won.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits = {  }
+		}
+		country_leader={
+			ideology=ultranationalism
+			traits = {  }
+		}
+	}
+}

@@ -1,0 +1,37 @@
+characters={
+	KKS_yi_haeseung = {
+		name="KKS_yi_haeseung"
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/Portrait_KOR_yi_haeseung.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+		}
+		country_leader={
+			ideology=fascism_ideology
+		}
+		country_leader={
+			ideology=liberalism
+		}
+		country_leader={
+			ideology=marxism
+		}
+	}
+	KKS_yatsuhito = {
+		name="KKS_yatsuhito"
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Portrait_Japan_Yasuhito.dds"
+			}
+		}
+		country_leader={
+			ideology=despotism
+		}
+		country_leader={
+			ideology=fascism_ideology
+		}
+	}
+
+}

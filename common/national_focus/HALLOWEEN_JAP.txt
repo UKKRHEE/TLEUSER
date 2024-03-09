@@ -1,0 +1,337 @@
+focus_tree = {
+	id = HALLOWEEN_JAP
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = TLE
+		}
+	}
+	continuous_focus_position = { x = 1000 y = 1000 }
+	default = no
+	focus = {
+		id = JPN_fucking_glass
+		icon = GFX_JAP_1_focus
+		cost = 0.5
+		x = 6
+		y = 0
+		completion_reward = {
+			country_event = {
+				id = TLE_halloween_jap.1
+			}
+		}
+	}
+	focus = {
+		id = JPN_heikka_fucking_angry
+		icon = GFX_focus_JAP_1
+		cost = 2
+		prerequisite = {
+			focus = JPN_fucking_glass
+		}
+		x = 4
+		y = 1
+		completion_reward = {
+			country_event = {
+				id = TLE_halloween_jap.2
+			}
+		}
+
+	}
+	focus = {
+		id = JPN_guldari
+		icon = GFX_focus_JAP_1
+		cost = 2
+		prerequisite = {
+			focus = JPN_heikka_fucking_angry
+		}
+		x = 4
+		y = 2
+		completion_reward = {
+			country_event = {
+				id = TLE_halloween_jap.3
+			}
+		}
+
+	}
+	focus = {
+		id = JPN_try_to_break_lock
+		icon = GFX_focus_JAP_1
+		cost = 2
+		prerequisite = {
+			focus = JPN_fucking_glass
+		}
+		x = 6
+		y = 1
+
+		completion_reward = {
+			country_event = {
+				id = TLE_halloween_jap.4
+			}
+		}
+	}
+	focus = {
+		id = JPN_why_fucking_didnt
+		icon = GFX_focus_JAP_1
+		cost = 2
+		prerequisite = {
+			focus = JPN_try_to_break_lock
+		}
+		x = 6
+		y = 2
+		completion_reward = {
+			country_event = {
+				id = TLE_halloween_jap.5
+			}
+		}
+
+	}
+	focus = {
+		id = JPN_make_new_glass
+		icon = GFX_focus_JAP_1
+		cost = 2
+		prerequisite = {
+			focus = JPN_fucking_glass
+		}
+		x = 8
+		y = 1
+		completion_reward = {
+			country_event = {
+				id = TLE_halloween_jap.6
+			}
+		}
+
+	}
+	focus = {
+		id = JPN_no_any_glass
+		icon = GFX_focus_JAP_1
+		cost = 2
+		prerequisite = {
+			focus = JPN_make_new_glass
+		}
+		x = 8
+		y = 2
+		completion_reward = {
+			country_event = {
+				id = TLE_halloween_jap.7
+			}
+		}
+
+	}
+	focus = {
+		id = JPN_attack_korea
+		icon = GFX_focus_JAP_1
+		cost = 2
+		prerequisite = {
+			focus = JPN_fuck_zombies
+		}
+		prerequisite = {
+			focus = JPN_make_av_yeah
+		}
+		x = 6
+		y = 4
+		completion_reward = {
+			create_wargoal = {
+				target = KOR
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = KRH
+				type = annex_everything
+			}
+		}
+
+
+	}
+	focus = {
+		id = JPN_make_av_yeah
+		icon = GFX_focus_JAP_1
+		cost = 2
+		prerequisite = {
+			focus = JPN_why_fucking_didnt
+		}
+		prerequisite = {
+			focus = JPN_no_any_glass
+		}
+		prerequisite = {
+			focus = JPN_guldari
+		}
+		x = 7
+		y = 3
+		completion_reward = {
+			create_wargoal = {
+				target = MJT
+				type = annex_everything
+			}
+		}
+
+	}
+	focus = {
+		id = JPN_chinki_glass
+		icon = GFX_focus_JAP_1
+		cost = 2
+		prerequisite = {
+			focus = JPN_attack_korea
+		}
+		x = 6
+		y = 5
+		completion_reward = {
+			create_wargoal = {
+				target = SHU
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = WUG
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = DHD
+				type = annex_everything
+			}
+		}
+
+	}
+	focus = {
+		id = JPN_fuck_zombies
+		icon = GFX_focus_JAP_1
+		cost = 2
+		prerequisite = {
+			focus = JPN_guldari
+		}
+		prerequisite = {
+			focus = JPN_why_fucking_didnt
+		}
+		prerequisite = {
+			focus = JPN_no_any_glass
+		}
+		x = 5
+		y = 3
+		completion_reward = {
+			create_wargoal = {
+				target = SAG
+				type = annex_everything
+			}
+		}
+
+	}
+	focus = {
+		id = JPN_we_didit
+		icon = GFX_focus_JAP_1
+		cost = 2
+		prerequisite = {
+			focus = JPN_mongolian_glass
+		}
+		prerequisite = {
+			focus = JPN_renew_the_glass
+		}
+		x = 6
+		y = 7
+		available = {
+			KOR = {
+				exists = no
+			}
+			MCP = {
+				exists = no
+			}
+			LMC = {
+				exists = no
+			}
+			KRH = {
+				exists = no
+			}
+			UMA = {
+				exists = no
+			}
+			TIB = {
+				exists = no
+			}
+			SAG = {
+				exists = no
+			}
+			MJT = {
+				exists = no
+			}
+		}
+		completion_reward = {
+			country_event = {
+				id = TLE_halloween_jap.8
+			}
+		}
+
+	}
+	focus = {
+		id = JPN_great_glasses_home
+		icon = GFX_focus_JAP_1
+		cost = 0.3
+		prerequisite = {
+			focus = JPN_we_didit
+		}
+		x = 6
+		y = 8
+		available = {
+			KOR = {
+				exists = no
+			}
+			MCP = {
+				exists = no
+			}
+			LMC = {
+				exists = no
+			}
+			KRH = {
+				exists = no
+			}
+			UMA = {
+				exists = no
+			}
+			TIB = {
+				exists = no
+			}
+			SAG = {
+				exists = no
+			}
+			MJT = {
+				exists = no
+			}
+		}
+		completion_reward = {
+			country_event = {
+				id = TLE_halloween_jap.9
+			}
+		}
+
+	}
+	focus = {
+		id = JPN_mongolian_glass
+		icon = GFX_focus_JAP_1
+		cost = 2
+		prerequisite = {
+			focus = JPN_chinki_glass
+		}
+		x = 5
+		y = 6
+		completion_reward = {
+			create_wargoal = {
+				target = UMA
+				type = annex_everything
+			}
+		}
+
+	}
+	focus = {
+		id = JPN_renew_the_glass
+		icon = GFX_focus_JAP_1
+		cost = 2
+		prerequisite = {
+			focus = JPN_chinki_glass
+		}
+		x = 7
+		y = 6
+		completion_reward = {
+			create_wargoal = {
+				target = TIB
+				type = annex_everything
+			}
+		}
+
+	}
+}

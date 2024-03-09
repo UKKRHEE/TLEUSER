@@ -1,0 +1,196 @@
+characters={
+	WZC_sun_chuanfang = {
+		name="WZC_sun_chuanfang"
+		portraits={
+			civilian={
+				large="gfx/leaders/WZC/Portrait_LEP_Sun_Chuanfang.png"
+			}
+			army = {
+				large="gfx/leaders/WZC/Portrait_LEP_Sun_Chuanfang.png"
+				small="gfx/leaders/WZC/Portrait_LEP_Sun_Chuanfang.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ WZC_sun_chuanfang_trait }
+		}
+		field_marshal={
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	WZC_Chen_Tiaoyuan = {
+		name="WZC_Chen_Tiaoyuan"
+		portraits={
+			civilian={
+				large="gfx/leaders/ANC/portrait_anc_chen_tiaoyuan.png"
+			}
+			army = {
+				large="gfx/leaders/ANC/portrait_anc_chen_tiaoyuan.png"
+				small="gfx/leaders/ANC/portrait_anc_chen_tiaoyuan.png"
+			}
+		}
+		field_marshal={
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	WZC_qi_xieyuan = {
+		name="WZC_qi_xieyuan"
+		portraits={
+			civilian={
+				large="gfx/leaders/WZC/Portrait_LEP_Qi_Xieyuan.png"
+			}
+			army = {
+				large="gfx/leaders/WZC/Portrait_LEP_Qi_Xieyuan.png"
+				small="gfx/leaders/WZC/Portrait_LEP_Qi_Xieyuan.png"
+			}
+		}
+		field_marshal={
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	WZC_chen_yi = {
+		name="WZC_chen_yi"
+		portraits={
+			civilian={
+				large="gfx/leaders/WZC/Portrait_LEP_Chen_Yi.png"
+			}
+			army = {
+				large="gfx/leaders/WZC/Portrait_LEP_Chen_Yi.png"
+				small="gfx/leaders/WZC/Portrait_LEP_Chen_Yi.png"
+			}
+		}
+		corps_commander={
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	WZC_Zheng_Junyan = {
+		name="WZC_Zheng_Junyan"
+		portraits={
+			civilian={
+				large="gfx/leaders/WZC/Portrait_LEP_Chen_Yi.png"
+			}
+			army = {
+				large="gfx/leaders/WZC/Portrait_LEP_Chen_Yi.png"
+				small="gfx/leaders/WZC/Portrait_LEP_Chen_Yi.png"
+			}
+		}
+		corps_commander={
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	WZC_Deng_Ruzuo = {
+		name="WZC_Deng_Ruzuo"
+		portraits={
+			civilian={
+				large="gfx/leaders/WZC/Portrait_LEP_Deng_Ruzuo.png"
+			}
+			army = {
+				large="gfx/leaders/WZC/Portrait_LEP_Deng_Ruzuo.png"
+				small="gfx/leaders/WZC/Portrait_LEP_Deng_Ruzuo.png"
+			}
+		}
+		corps_commander={
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	WZC_Zhou_Yinren = {
+		name="WZC_Zhou_Yinren"
+		portraits={
+			civilian={
+				large="gfx/leaders/WZC/Portrait_LEP_Zhou_Yinren.png"
+			}
+			army = {
+				large="gfx/leaders/WZC/Portrait_LEP_Zhou_Yinren.png"
+				small="gfx/leaders/WZC/Portrait_LEP_Zhou_Yinren.png"
+			}
+		}
+		corps_commander={
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	WZC_Zhou_Fengqi = {
+		name="WZC_Zhou_Fengqi"
+		portraits={
+			civilian={
+				large="gfx/leaders/WZC/Portrait_LEP_Zhou_Fengqi.png"
+			}
+			army = {
+				large="gfx/leaders/WZC/Portrait_LEP_Zhou_Fengqi.png"
+				small="gfx/leaders/WZC/Portrait_LEP_Zhou_Fengqi.png"
+			}
+		}
+		corps_commander={
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	WZC_Tang_Enbo = {
+		name="WZC_Tang_Enbo"
+		portraits={
+			civilian={
+				large="gfx/leaders/WZC/Portrait_LEP_Tang_Enbo.png"
+			}
+			army = {
+				large="gfx/leaders/WZC/Portrait_LEP_Tang_Enbo.png"
+				small="gfx/leaders/WZC/Portrait_LEP_Tang_Enbo.png"
+			}
+		}
+		corps_commander={
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	WZC_Yang_Shuzhuang = {
+		name="WZC_Yang_Shuzhuang"
+		portraits={
+			civilian={
+				large="gfx/leaders/WZC/Portrait_LEP_Yang_Shuzhuang.png"
+			}
+			army = {
+				large="gfx/leaders/WZC/Portrait_LEP_Yang_Shuzhuang.png"
+				small="gfx/leaders/WZC/Portrait_LEP_Yang_Shuzhuang.png"
+			}
+		}
+		navy_leader={
+			skill = 3
+			attack_skill = 5
+			defense_skill = 3
+			maneuvering_skill = 4
+			coordination_skill = 4
+		}
+	}
+}	

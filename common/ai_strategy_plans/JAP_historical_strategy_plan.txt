@@ -1,0 +1,88 @@
+JAP_historical_plan = {
+	name = "역사적 일본" #황국협회의 개혁
+	desc = "Historical behavior for Japan"
+
+	allowed = {
+		original_tag = JAP
+	}
+	enable = {
+		OR = {
+			is_historical_focus_on = yes
+			has_game_rule = {
+				rule = JAP_ai_behavior
+				option = DEFAULT
+			}
+		}
+	}
+	abort = {
+	
+	}
+
+	ai_national_focuses = {
+		JAP_economic_policy
+		JAP_rising_sun
+		JAP_crush_demo
+		JAP_focus_yushinkai
+		JAP_focus_tennoheika_banzai
+		JAP_more_resource
+		JAP_focus_nomin_itki
+		JAP_focus_kolei_saikan
+		JAP_imperial_glory
+		JAP_gain_political_support
+		JAP_focus_sakusen_kantai
+		JAP_slave_workers
+		JAP_war_support
+		JAP_internal_state
+		JAP_expansionism
+		JAP_military
+		JAP_army_reform
+		JAP_showa_tenno_heil
+		JAP_focus_shinja
+		JAP_fighters_for_the_emporer
+		JAP_focus_kyoryo
+		JAP_focus_battotai_seili
+		JAP_focus_start_of_paifen
+		JAP_focus_waijiao
+		JAP_the_civilian_pact
+		JAP_southern_asia
+		JAP_the_safe_japan
+		JAP_war_Siam
+		JAP_strike_Malaya
+		JAP_indian_conquest
+		JAP_focus_asian_supporter
+		JAP_focus_war_for_korea
+		JAP_focus_support_with_china
+		JAP_focus_find_lomin
+		JAP_demand_Indochina
+		JAP_focus_tennos_empire
+		JAP_focus_shinto_kaisen
+		JAP_strike_USA
+		JAP_CHI_infra
+		JAP_rus_border
+		JAP_northern_asia
+		JAP_focus_kyoeiken
+		JAP_war_CHI
+		JAP_war_RUS
+		JAP_for_empreror
+		JAP_the_last_empire
+		
+	}				
+
+	research = {
+		
+	}
+
+	ideas = {
+		
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}

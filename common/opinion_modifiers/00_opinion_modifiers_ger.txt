@@ -1,0 +1,22 @@
+#########################################################################
+# OPINION MODIFIERS
+##########################################################################
+# value
+# min_trust
+# max_trust
+# decay
+# months/years/days = timer
+# trade = yes/no
+
+opinion_modifiers = {
+	GER_KOR = { value = 25 }
+	GER_IBR_TNO = { value = 30 }
+	GER_BLT_TNO = { value = 30 }
+	GER_FRS_TNO = { value = 30 }
+	GER_POR_TNO = { value = 30 }
+	GER_ITA_TNO = { value = 30 }
+	GER_BLR_TNO = { value = 30 }
+
+	# fix generic
+	opnion_democratic_influence = { value = 10 } #나중에 원하는 값으로 수정할 것
+}

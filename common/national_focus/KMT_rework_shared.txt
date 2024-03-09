@@ -1,0 +1,3262 @@
+shared_focus = {
+		id = KMT_conversion_of_1935
+		icon = GFX_goal_CHI_the_party_state
+		cost = 1.00
+		x = 7
+		y = 1
+		cancelable = no
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			country_event = {
+				id = KMT.1
+			}
+			set_country_flag = KMT_power_struggle
+			if = {
+					limit = {
+						is_ai = no
+					}
+					set_power_balance = {
+						id = KMT_balance
+						left_side = KMT_wang
+						right_side = KMT_chang
+						set_default = yes 
+						set_value = 0.05
+					}
+				}
+				if = {
+					limit = {
+						is_ai = yes
+					}
+					set_power_balance = {
+						id = KMT_balance
+						left_side = KMT_wang
+						right_side = KMT_chang
+						set_default = yes 
+						set_value = 0.25
+					}
+				}
+		}
+
+	}
+	shared_focus = {
+		id =  KMT_result_of_AEP
+		icon = GFX_goal_state_economy
+		cost = 1.00
+		prerequisite = {
+			focus = KMT_conversion_of_1935
+		}
+		x = 4
+		y = 2
+		cancelable = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			country_event = {
+				id = KMT.2
+			}
+			add_tech_bonus = {
+				name = CHI_unified_industrial_planning
+				bonus = 1.0
+				uses = 2
+				category = industry
+			}
+		
+		}
+	}
+	shared_focus = {
+		id =  KMT_stability_of_party
+		icon = GFX_goal_CHI_sun_legacy
+		cost = 1.00
+		prerequisite = {
+			focus = KMT_conversion_of_1935
+		}
+		cancelable = no
+		search_filters = { FOCUS_FILTER_STABILITY }
+		x = 6
+		y = 2
+completion_reward = {
+			country_event = {
+				id = KMT.3
+			}
+			add_stability = 0.10
+			add_war_support = 0.10
+		}
+	}
+	shared_focus = {
+		id = KMT_new_advisory_group
+		icon = GFX_goal_agrarian_socialism
+		cost = 1.00
+		prerequisite = {
+			focus = KMT_conversion_of_1935
+		}
+		cancelable = no
+		x = 8
+		y = 2
+completion_reward = {
+			
+			country_event = {
+				id = KMT.4
+			}
+			add_ideas = vlasov_advisors
+		}
+	}
+	shared_focus = {
+		id =  KMT_academy_division
+		icon = GFX_goal_CHI_peoples_army
+		cost = 1.00
+		prerequisite = {
+			focus = KMT_conversion_of_1935
+		}
+		x = 10
+		y = 2
+		cancelable = no
+completion_reward = {
+			country_event = {
+				id = KMT.5
+			}
+			division_template = {
+			name = "황포 교도사단"
+			division_names_group = CHI_INF_01
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 2 y = 0 }
+				infantry = { x = 2 y = 1 }
+				artillery_brigade = { x = 1 y = 2 }
+				artillery_brigade = { x = 2 y = 2 }
+			}
+		}
+		1046 = {
+			create_unit = {
+				division = "name = \"황포 교도사단\" division_template = \"황포 교도사단\" start_experience_factor = 1.0"
+				prioritize_location = 1047
+				owner = CHI
+			}
+		}
+		}
+	}
+	shared_focus = {
+		id = KMT_white_sun_of_china
+		icon = GFX_goal_CHI_choose_capital
+		cost = 2.00
+		prerequisite = {
+			focus =  KMT_academy_division
+		}
+		prerequisite = {
+			focus = KMT_new_advisory_group
+		}
+		prerequisite = {
+			focus =  KMT_stability_of_party
+		}
+		prerequisite = {
+			focus =  KMT_result_of_AEP
+		}
+		cancelable=no
+		x = 7
+		y = 3
+		available = {
+			has_country_flag = FLAG_WZC_WAS_COLLAPESED
+       	 }
+completion_reward = {
+			load_focus_tree = KMT_rework2
+			country_event = {
+				id = china.1105
+			}
+		}
+	}
+	
+
+
+
+
+
+
+
+
+
+
+###############
+	shared_focus = {
+		id = KMT_march_to_yangze
+		icon = GFX_focus_prc_infiltration
+		cost = 1.00
+		x = 10
+		y = 1
+completion_reward = {
+			add_political_power = 110
+			hidden_effect = {
+			country_event = {
+			id = KMT.6
+			days = 30
+			
+		}
+			country_event = {
+			id = KMT.9
+			days = 60
+			
+		}
+			}
+
+		}
+	}
+	shared_focus = {
+		id = KMT_NRA_mobilization
+		icon = GFX_focus_chi_army_reform
+		cost = 1.00
+		prerequisite = {
+			focus = KMT_march_to_yangze
+		}
+		x = 9
+		y = 2
+completion_reward = {
+		division_template = {
+			name = "국민군"
+			division_names_group = CHI_INF_01
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+				infantry = { x = 2 y = 1 }
+				infantry = { x = 2 y = 2 }
+				infantry = { x = 2 y = 3 }
+			}
+		}
+			1046 = { #광저우
+					create_unit = {
+						division = "division_template = \"국민군\" start_experience_factor = 0.1"
+						prioritize_location = 1047
+						owner = CHI
+					}
+					create_unit = {
+						division = "division_template = \"국민군\" start_experience_factor = 0.1"
+						prioritize_location = 1047
+						owner = CHI
+					}
+					create_unit = {
+						division = "division_template = \"국민군\" start_experience_factor = 0.1"
+						prioritize_location = 1047
+						owner = CHI
+					}
+				}
+				
+		}
+	}
+	shared_focus = {
+		id = KMT_strict_discipline
+		icon = GFX_focus_generic_military_mission
+		cost = 1.00
+		prerequisite = {
+			focus = KMT_NRA_mobilization
+		}
+		x = 7
+		y = 3
+completion_reward = {
+			add_manpower = 5000
+			add_stability = -0.05
+			add_war_support = 0.10
+		}
+	}
+	shared_focus = {
+		id = KMT_the_protection_war
+		icon = GFX_focus_generic_court
+		cost = 1.00
+		prerequisite = {
+			focus = KMT_strict_discipline
+		}
+		x = 7
+		y = 4
+completion_reward = {
+			army_experience = 25
+			add_command_power = 50
+		}
+	}
+	shared_focus = {
+		id = KMT_dadao_lieqiang
+		icon = GFX_goal_ARM_seize_stockpiles
+		cost = 2.00
+		prerequisite = {
+			focus = KMT_the_protection_war
+		}
+		mutually_exclusive = {
+			focus = KMT_respect_diplo
+		}
+		x = 6
+		y = 5
+completion_reward = {
+			add_power_balance_value = {
+					id = KMT_balance
+					value = -0.05
+				}
+			add_opinion_modifier = {
+				target = ENG
+				modifier = KMT_anti_diplo
+			}
+			add_opinion_modifier = {
+				target = FRA
+				modifier = KMT_anti_diplo
+			}
+			add_opinion_modifier = {
+				target = USA
+				modifier = KMT_anti_diplo
+			}
+			add_offsite_building = {
+				type = arms_factory
+				level = 1
+			}
+		}
+	}
+	shared_focus = {
+		id = KMT_respect_diplo
+		icon = GFX_focus_hol_the_foundations_of_defense
+		cost = 2.00
+		prerequisite = {
+			focus = KMT_the_protection_war
+		}
+		mutually_exclusive = {
+			focus = KMT_dadao_lieqiang
+		}
+		x = 8
+		y = 5
+completion_reward = {
+			add_power_balance_value = {
+					id = KMT_balance
+					value = 0.05
+				}
+			add_opinion_modifier = {
+				target = ENG
+				modifier = KMT_respect_diplo
+			}
+			add_opinion_modifier = {
+				target = FRA
+				modifier = KMT_respect_diplo
+			}
+			add_opinion_modifier = {
+				target = USA
+				modifier = KMT_respect_diplo
+			}
+			add_political_power = 100
+		}
+	}
+	shared_focus = {
+		id = KMT_extortion_of_warlord_assets
+		icon = GFX_focus_generic_annex_country
+		cost = 1.00
+		prerequisite = {
+			focus = KMT_march_to_yangze
+		}
+		x = 11
+		y = 2
+completion_reward = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = 1
+			}
+			add_offsite_building = {
+				type = arms_factory
+				level = 1
+			}
+		}
+	}
+	shared_focus = {
+		id = KMT_control_province
+		icon = GFX_focus_generic_improve_the_administration
+		cost = 1.00
+		prerequisite = {
+			focus = KMT_extortion_of_warlord_assets
+		}
+		prerequisite = {
+			focus = KMT_NRA_mobilization
+		}
+		x = 10
+		y = 3
+		available = {
+			OR = {
+				controls_state = 600
+				any_country = {
+					is_ally_with = CHI
+					controls_state = 600
+				}
+			}
+		}
+completion_reward = {
+			add_political_power = 50
+			add_stability = 0.05
+			hidden_effect = {
+			country_event = {
+			id = KMT.8
+			days = 30
+			
+		}
+			}
+		}
+	}
+	shared_focus = {
+		id = KMT_Infrastructure_control
+		icon = GFX_focus_generic_railroad
+		cost = 1.00
+		prerequisite = {
+			focus = KMT_control_province
+		}
+		prerequisite = {
+			focus = KMT_for_local_rev
+			focus = KMT_for_central
+		}
+		x = 0
+		y = 2
+		relative_position_id = KMT_control_province
+completion_reward = {
+			build_railway = {
+			start_province = 3992
+			target_province = 11913
+		}
+		}
+	}
+	shared_focus = {
+		id = KMT_for_local_rev
+		icon = GFX_focus_SOV_builder_of_the_red_army
+		cost = 2.00
+		prerequisite = {
+			focus = KMT_control_province
+		}
+		mutually_exclusive = {
+			focus = KMT_for_central
+		}
+		available = {
+			WZC = {
+				OR = {
+					exists = no
+					is_puppet_of = KOR
+				}
+			}
+		}
+		x = 9
+		y = 4
+completion_reward = {
+			add_power_balance_value = {
+					id = KMT_balance
+					value = -0.05
+				}
+			add_popularity = {
+			ideology = Communism
+			popularity = 0.03
+		}
+		add_popularity = {
+			ideology = Fascism
+			popularity = 0.01
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.01
+		}
+		}
+	}
+	shared_focus = {
+		id = KMT_for_central
+		icon = GFX_focus_generic_support_the_left_right
+		cost = 2.00
+		prerequisite = {
+			focus = KMT_control_province
+		}
+		mutually_exclusive = {
+			focus = KMT_for_local_rev
+		}
+		available = {
+			WZC = {
+				OR = {
+					exists = no
+					is_puppet_of = KOR
+				}
+			}
+		}
+		x = 11
+		y = 4
+completion_reward = {
+			add_power_balance_value = {
+					id = KMT_balance
+					value = 0.05
+				}
+			add_popularity = {
+			ideology = neutrality
+			popularity = 0.05
+		}
+		}
+	}
+	shared_focus = {
+		id = KMT_Deconstructing_the_old_system
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
+		cost = 1.00
+		prerequisite = {
+			focus = KMT_extortion_of_warlord_assets
+		}
+		x = 13
+		y = 3
+completion_reward = {
+			add_equipment_to_stockpile = {
+			type = infantry_equipment_0
+			amount = 2500
+				producer = CHI
+		}
+		}
+	}
+	shared_focus = {
+		id = KMT_power_of_worker
+		icon = GFX_focus_generic_conspiracy
+		cost = 1.00
+		prerequisite = {
+			focus = KMT_Deconstructing_the_old_system
+		}
+		x = 13
+		y = 4
+completion_reward = {
+			hidden_effect = {
+			country_event = {
+			id = KMT.7
+			days = 14
+			
+		}
+			}
+			613 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			1042 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		}
+	}
+}
+	shared_focus = {
+		id = KMT_Forfeit_on_demand
+		icon = GFX_focus_ITA_devaluate_the_lire
+		cost = 2.00
+		prerequisite = {
+			focus = KMT_power_of_worker
+		}
+		mutually_exclusive = {
+			focus = KMT_cooperation_and_readjustment
+		}
+		x = 12
+		y = 5
+completion_reward = {
+			add_power_balance_value = {
+					id = KMT_balance
+					value = -0.05
+				}
+			add_timed_idea = {
+				idea = KMT_die_rich
+				days = 120
+			}
+			
+		}
+	}
+	shared_focus = {
+		id = KMT_nuli_guomin_geming
+		icon = GFX_focus_generic_china1
+		cost = 1.00
+		prerequisite = {
+			focus = KMT_respect_diplo
+			focus = KMT_dadao_lieqiang
+		}
+		prerequisite = {
+			focus = KMT_Infrastructure_control
+		}
+		prerequisite = {
+			focus = KMT_Forfeit_on_demand
+			focus = KMT_cooperation_and_readjustment
+		
+		}
+		available = {
+			613 = {
+				is_owned_by = CHI
+			}	
+		}
+		x = 10
+		y = 6
+completion_reward = {
+			load_focus_tree = KMT_rework3
+			hidden_effect = {
+			country_event = {
+			id = KMT.10
+			
+		}
+			}
+		}
+	}
+	shared_focus = {
+		id = KMT_cooperation_and_readjustment
+		icon = GFX_focus_hol_abandon_the_gold_standard
+		cost = 2.00
+		prerequisite = {
+			focus = KMT_power_of_worker
+		}
+		mutually_exclusive = {
+			focus = KMT_Forfeit_on_demand
+		}
+		x = 14
+		y = 5
+completion_reward = {
+			add_power_balance_value = {
+					id = KMT_balance
+					value = 0.05
+				}
+			613 = {
+			
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+			1042 = {
+			
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+					}
+				}
+			}
+		}
+	}
+
+
+
+	shared_focus = {
+		id = KMT_six_party_congress
+		icon = GFX_focus_generic_china1
+		cost = 7.00
+		x = 17
+		y = 0
+		cancelable = no
+		select_effect = {
+			log = "[GetDateText]: [Root.GetName]: Select Focus KMT_six_party_congress"
+		swap_ideas = {
+				remove_idea = CHI_kuomintang_start
+				add_idea = CHI_kuomintang_spark
+				}
+			country_event = { id = KMT.11 }
+		}
+completion_reward = {
+			add_political_power = 120
+		}
+	}
+	shared_focus = {
+		id = KMT_national_defence_gov
+		icon = GFX_focus_chi_cooperation_with_the_nationalists
+		cost = 1.00
+		
+		mutually_exclusive = {
+			focus = KMT_national_unification
+		}
+		available = {
+			has_war_with = KOR
+			has_idea = CHI_kuomintang_rise
+		}
+		x = 34
+		y = 0
+completion_reward = {
+			swap_ideas = {
+				remove_idea = CHI_kuomintang_rise
+				add_idea = CHI_kuomintang_resist
+				}
+		}
+	}
+	
+	shared_focus = {
+		id = KMT_national_unification
+		icon = GFX_focus_generic_support_the_left_right
+		cost = 5.00
+		mutually_exclusive = {
+			focus = KMT_national_defence_gov
+		}
+		available = {
+			has_country_flag = kmt_war_ready
+		}
+		x = 46
+		y = 0
+completion_reward = {
+			add_political_power = 120
+		}
+	}
+	shared_focus = {
+		id = KMT_expend_nra
+		icon = GFX_goal_CHI_military_affairs_cmsn  
+		cost = 3.00
+		prerequisite = {
+			focus = KMT_six_party_congress
+		}
+		x = 7
+		y = 1
+completion_reward = {
+			add_doctrine_cost_reduction = {
+			name = KMT_NRA
+			cost_reduction = 0.5
+			uses = 1
+			category = land_doctrine
+		}
+		}
+	}
+	shared_focus = {
+		id = KMT_new_tactics
+		icon = GFX_focus_ETH_freedom_at_gunpoint
+		cost = 4.00
+		prerequisite = {
+			focus = KMT_expend_nra
+		}
+		mutually_exclusive = {
+			focus = KMT_sprit_of_whangpoa
+		}
+		available = {
+			GXC = {
+				exists = no
+			}
+		}
+		x = 2
+		y = 2
+completion_reward = {
+			
+			swap_ideas = {
+				remove_idea = CHI_NRA2_idea
+				add_idea = CHI_NRA3_idea
+				}
+			
+		}
+	}
+	shared_focus = {
+		id = KMT_night_attack
+		icon = GFX_goal_generic_major_war
+		cost = 3.00
+		prerequisite = {
+			focus = KMT_new_tactics
+		}
+		x = 1
+		y = 3
+completion_reward = {
+			add_ideas = KMT_night_attack
+		}
+	}
+	shared_focus = {
+		id = KMT_reorgazied_nra
+		icon = GFX_focus_SOV_penal_battalions
+		cost = 4.00
+		prerequisite = {
+			focus = KMT_new_tactics
+		}
+		x = 2
+		y = 4
+completion_reward = {
+			add_command_power = 25
+			every_unit_leader = {
+				add_attack = 1
+			}
+		}
+	}
+	shared_focus = {
+		id = KMT_new_env_train
+		icon = GFX_focus_generic_land_reclamation
+		cost = 4.00
+		prerequisite = {
+			focus = KMT_reorgazied_nra
+		}
+		x = 0
+		y = 5
+completion_reward = {
+			
+			
+			add_tech_bonus = {
+				name = CHI_masters_of_land
+				bonus = 0.5
+				uses = 2
+				category = mountaineers_tech
+			}
+		}
+	}
+	shared_focus = {
+		id = KMT_embrace_new_tactics
+		icon = GFX_focus_focus_fra_maquis
+		cost = 4.00
+		prerequisite = {
+			focus = KMT_reorgazied_nra
+		}
+		x = 2
+		y = 5
+completion_reward = {
+			add_tech_bonus = {
+				name = CHI_adopt_unconventional_means
+				bonus = 1
+				uses = 1
+				category = support_tech
+			}
+			set_technology = { bicycle_infantry = 1 popup = no }
+			
+			swap_ideas = {
+				remove_idea = CHI_NRA3_idea
+				add_idea = CHI_NRA4_idea
+				}
+			
+		}
+	}
+	shared_focus = {
+		id = KMT_hit_and_run
+		icon = GFX_focus_generic_manpower
+		cost = 4.00
+		prerequisite = {
+			focus = KMT_reorgazied_nra
+		}
+		x = 4
+		y = 5
+completion_reward = {
+			add_offsite_building = {
+				type = arms_factory
+				level = 1
+			}
+			add_tech_bonus = {
+				name = CHI_revolutionary_arms
+				bonus = 1
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+	}
+	shared_focus = {
+		id = KMT_for_revolution
+		icon = GFX_goal_CHI_peoples_army
+		cost = 4.00
+		prerequisite = {
+			focus = KMT_new_env_train
+		}
+		prerequisite = {
+			focus = KMT_embrace_new_tactics
+		}
+		prerequisite = {
+			focus = KMT_hit_and_run
+		}
+		x = 2
+		y = 6
+completion_reward = {
+			
+			swap_ideas = {
+				remove_idea = CHI_NRA4_idea
+				add_idea = CHI_NRA5_idea
+				}
+			
+		}
+	}
+	shared_focus = {
+		id = KMT_local_supply_corp
+		icon = GFX_focus_generic_truck
+		cost = 3.00
+		prerequisite = {
+			focus = KMT_new_tactics
+		}
+		x = 3
+		y = 3
+completion_reward = {
+			add_ideas = KMT_local_supply_corp
+		}
+	}
+	shared_focus = {
+		id = KMT_anti_tack_gun
+		icon = GFX_focus_generic_tankette
+		cost = 3.00
+		prerequisite = {
+			focus = KMT_Reactivation_military_factory
+		}
+		x = 6
+		y = 5
+completion_reward = {
+			set_technology = { interwar_antitank = 1 }
+			add_equipment_to_stockpile = {
+			type = anti_tank_equipment
+			amount = 300
+		}
+		}
+	}
+	shared_focus = {
+		id = KMT_sprit_of_whangpoa
+		icon = GFX_focus_chi_whampoa_military_academy
+		cost = 4.00
+		prerequisite = {
+			focus = KMT_expend_nra
+		}
+		mutually_exclusive = {
+			focus = KMT_new_tactics
+		}
+		available = {
+			GXC = {
+				exists = no
+			}
+		}
+		x = 12
+		y = 2
+completion_reward = {
+			
+			swap_ideas = {
+				remove_idea = CHI_NRA2_idea
+				add_idea = CHI_NRA6_idea
+				}
+			
+		}
+	}
+	shared_focus = {
+		id = KMT_department_of_arms
+		icon = GFX_focus_SOV_organize_wreckers
+		cost = 3.00
+		prerequisite = {
+			focus = KMT_new_tactics
+			focus = KMT_sprit_of_whangpoa
+		}
+		x = 7
+		y = 3
+completion_reward = {
+			592 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+		}
+	}
+	shared_focus = {
+		id = KMT_Reactivation_military_factory
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 3.00
+		prerequisite = {
+			focus = KMT_department_of_arms
+		}
+		x = 7
+		y = 4
+completion_reward = {
+			599 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	shared_focus = {
+		id = KMT_NRN
+		icon = GFX_focus_generic_refit_civilian_ships
+		cost = 4.00
+		prerequisite = {
+			focus = KMT_department_of_arms
+		}
+		x = 5
+		y = 4
+completion_reward = {
+			navy_experience = 50
+			add_tech_bonus = {
+				name = CHI_coastal_defense_stratagems
+				bonus = 1
+				uses = 1
+				category = dd_tech
+			}
+			if = {
+				limit = { has_dlc = "Man the Guns" }
+				add_tech_bonus = {
+					name = CHI_coastal_defense_stratagems
+					bonus = 1
+					uses = 1
+					category = naval_mines
+				}
+			}
+			else = {
+				add_doctrine_cost_reduction = {
+					name = CHI_coastal_defense_stratagems
+					cost_reduction = 0.5
+					uses = 1
+					category = naval_doctrine
+				}
+			}
+		}
+	}
+	shared_focus = {
+		id = KMT_anti_air_gun
+		icon = GFX_focus_generic_aircraft_production
+		cost = 3.00
+		prerequisite = {
+			focus = KMT_Reactivation_military_factory
+		}
+		x = 8
+		y = 5
+completion_reward = {
+			set_technology = { interwar_antiair = 1 }
+			add_equipment_to_stockpile = {
+			type = anti_air_equipment
+			amount = 300
+		}
+		}
+	}
+	shared_focus = {
+		id = KMT_heavy_equipment_manufacturer
+		icon = GFX_focus_generic_tank_air_support
+		cost = 5.00
+		prerequisite = {
+			focus = KMT_anti_air_gun
+		}
+		prerequisite = {
+			focus = KMT_anti_tack_gun
+		}
+		x = 7
+		y = 6
+completion_reward = {
+			594 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 150
+				producer = CHI
+			}
+			add_tech_bonus = {
+				name = CHI_inherit_comrades_arms
+				bonus = 0.5
+				uses = 2
+				category = artillery
+				category = rocketry
+			}
+		}
+	}
+	shared_focus = {
+		id = KMT_new_airforce
+		icon = GFX_focus_chi_flying_tigers
+		cost = 4.00
+		prerequisite = {
+			focus = KMT_department_of_arms
+		}
+		x = 9
+		y = 4
+completion_reward = {
+			if = {
+				limit = { has_dlc = "By Blood Alone" }
+				add_equipment_to_stockpile = {
+					type = small_plane_airframe_0
+					amount = 75
+					producer = SOV
+				}
+			}
+			else = {
+				add_equipment_to_stockpile = {
+					type = fighter_equipment_0
+					amount = 75
+					producer = SOV
+				}
+			}
+			add_doctrine_cost_reduction = {
+				name = CHI_study_european_air
+				cost_reduction = 0.25
+				uses = 2
+				category = air_doctrine
+			}
+		}
+	}
+	shared_focus = {
+		id = KMT_radio_warfare
+		icon = GFX_goal_generic_radar
+		cost = 4.00
+		prerequisite = {
+			focus = KMT_sprit_of_whangpoa
+		}
+		x = 11
+		y = 3
+completion_reward = {
+			add_tech_bonus = {
+				name = CHI_encourage_radio_use
+				bonus = 1
+				uses = 1
+				category = electronics
+			}
+		}
+	}
+	shared_focus = {
+		id = KMT_special_tech_corp
+		icon = GFX_goal_generic_air_production
+		cost = 4.00
+		prerequisite = {
+			focus = KMT_radio_warfare
+		}
+		x = 11
+		y = 5
+completion_reward = {
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = 100
+				producer = FRA
+			}
+			add_equipment_to_stockpile = {
+				type = train_equipment_1
+				amount = 50
+			}
+			add_tech_bonus = {
+				name = CHI_create_supply_corps
+				bonus = 1
+				uses = 1
+				category = support_tech
+			}
+		}
+	}
+	shared_focus = {
+		id = KMT_central_army
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		cost = 4.00
+		prerequisite = {
+			focus = KMT_sprit_of_whangpoa
+		}
+		x = 13
+		y = 3
+completion_reward = {
+			
+			swap_ideas = {
+				remove_idea = CHI_NRA6_idea
+				add_idea = CHI_NRA7_idea
+				}
+			
+		}
+	}
+	shared_focus = {
+		id = KMT_more_firepower
+		icon = GFX_goal_generic_army_artillery2
+		cost = 4.00
+		prerequisite = {
+			focus = KMT_central_army
+		}
+		x = 12
+		y = 4
+completion_reward = {
+			add_tech_bonus = {
+				name = CHI_inherit_comrades_arms
+				bonus = 0.5
+				uses = 2
+				category = artillery
+				category = rocketry
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 300
+				producer = CHI
+			}
+			
+		}
+	}
+	shared_focus = {
+		id = KMT_study_soviet_tactics
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		cost = 4.00
+		prerequisite = {
+			focus = KMT_central_army
+		}
+		x = 14
+		y = 4
+completion_reward = {
+			add_doctrine_cost_reduction = {
+			name = KMT_NRA_SOV
+			cost_reduction = 0.5
+			uses = 2
+			category = land_doctrine
+		}
+		}
+	}
+	shared_focus = {
+		id = KMT_reorganized_division
+		icon = GFX_focus_generic_infiltration
+		cost = 4.00
+		prerequisite = {
+			focus = KMT_more_firepower
+		}
+		prerequisite = {
+			focus = KMT_study_soviet_tactics
+		}
+		x = 13
+		y = 5
+completion_reward = {
+			division_template = {
+			name = "중앙군"
+			division_names_group = CHI_INF_01
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 2 y = 0 }
+				infantry = { x = 2 y = 1 }
+				infantry = { x = 2 y = 2 }
+				artillery_brigade = { x = 1 y = 3 }
+				
+			}
+		}
+		1046 = {
+			create_unit = {
+				division = "name = \"중앙군\" division_template = \"중앙군\" start_experience_factor = 1.0"
+				prioritize_location = 1047
+				owner = CHI
+			}
+		}
+			
+		}
+	}
+	shared_focus = {
+		id = KMT_army_of_modern
+		icon = GFX_goal_CHI_form_2nd_NRA
+		cost = 4.00
+		prerequisite = {
+			focus = KMT_reorganized_division
+		}
+		prerequisite = {
+			focus = KMT_special_tech_corp
+		}
+		x = 12
+		y = 6
+completion_reward = {
+			
+			swap_ideas = {
+				remove_idea = CHI_NRA7_idea
+				add_idea = CHI_NRA8_idea
+				
+			}
+			
+		}
+	}
+	shared_focus = {
+		id = KMT_diplo_tie
+		icon = GFX_focus_generic_league_of_nations
+		cost = 3.00
+		prerequisite = {
+			focus = KMT_six_party_congress
+		}
+		x = 15
+		y = 1
+completion_reward = {
+			remove_ideas = CHI_diplo_block
+			every_state = {
+				limit = {
+					is_core_of = ZLC
+					NOT = {
+						is_core_of = CHI
+						is_claimed_by = CHI
+					}
+					NOT = {
+						state = 325
+						state = 747
+						state = 599
+						state = 594
+						state = 603
+						state = 1053
+						state = 1058
+					}
+				}
+				add_claim_by = CHI
+			}
+		}
+	}
+	shared_focus = {
+		id = KMT_moscow_tie
+		icon = GFX_focus_generic_soviet_politics
+		cost = 3.00
+		prerequisite = {
+			focus = KMT_diplo_tie
+		}
+		x = 15
+		y = 2
+		completion_reward = {
+			add_popularity = {
+				ideology = Communism
+				popularity = 0.03
+			}
+			add_opinion_modifier = {
+				target = SOV
+				modifier = KMT_pro_soviet
+			}
+		}
+	}
+	shared_focus = {
+		id = KMT_restore_secret_depart
+		icon = GFX_focus_generic_secret_service_agency
+		cost = 4.00
+		prerequisite = {
+			focus = KMT_six_party_congress
+		}
+		x = 17
+		y = 1
+completion_reward = {
+		set_party_name = {
+				ideology = Fascism
+				long_name = KMT_Fascism_party_long
+				name = KMT_Fascism_party
+			}
+			add_popularity = {
+			ideology = Communism
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = Fascism
+			popularity = 0.05
+		}
+		}
+	}
+	shared_focus = {
+		id = KMT_deal_with_warlord
+		icon = GFX_focus_generic_concessions
+		cost = 4.00
+		prerequisite = {
+			focus = KMT_restore_secret_depart
+		}
+		available = {
+			GXC = {
+				exists = no
+			}
+		}
+		x = 17
+		y = 2
+completion_reward = {
+			add_state_core = 1058
+			add_state_core = 1053
+			add_state_core = 603
+			add_state_core = 325
+			add_state_core = 747
+			add_state_core = 1010
+			add_state_core = 1013
+			add_timed_idea = {
+				idea = CHI_yunnan_money
+				days = 120
+			}
+			YUN = {
+				country_event = {
+					id = china.1092
+					days = 1
+				}
+			}
+			GZC = {
+				country_event = {
+					id = china.1092
+					days = 1
+				}
+			}
+		}
+	}
+	shared_focus = {
+		id = KMT_colab_of_revol
+		icon = GFX_goal_revolution_arms
+		cost = 4.00
+		prerequisite = {
+			focus = KMT_deal_with_warlord
+		}
+		x = 16
+		y = 3
+completion_reward = {
+			create_intelligence_agency = yes
+			create_operative_leader = {
+				name = "장샤오셴"
+				GFX = GFX_portrait_jacques_duclos
+				traits = { operative_infiltrator operative_natural_orator }
+				bypass_recruitment = no
+				available_to_spy_master = yes
+				nationalities = { CHI ZLC }
+			}
+		}
+	}
+	shared_focus = {
+		id = KMT_politic_commisar
+		icon = GFX_goal_generic_police_state
+		cost = 3.00
+		prerequisite = {
+			focus = KMT_six_party_congress
+		}
+		x = 19
+		y = 1
+completion_reward = {
+			add_ideas = KMT_commissars_idea
+		}
+	}
+	shared_focus = {
+		id = KMT_NSB
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 3.00
+		prerequisite = {
+			focus = KMT_deal_with_warlord
+		}
+		prerequisite = {
+			focus = KMT_politic_commisar
+		}
+		x = 18
+		y = 3
+completion_reward = {
+			add_ideas = KMT_nbs_idea
+		}
+	}
+	shared_focus = {
+		id = KMT_shadow_revolution
+		icon = GFX_focus_SWI_embrace_rote_drei
+		cost = 5.00
+		prerequisite = {
+			focus = KMT_colab_of_revol
+		}
+		prerequisite = {
+			focus = KMT_NSB
+		}
+		prerequisite = {
+			focus = KMT_moscow_tie
+		}
+		x = 17
+		y = 4
+completion_reward = {
+			add_ideas = PRC_central_military_commission
+		}
+	}
+	shared_focus = {
+		id = KMT_new_bureaucracy
+		icon = GFX_focus_generic_improve_the_administration
+		cost = 4.00
+		prerequisite = {
+			focus = KMT_six_party_congress
+		}
+		x = 22
+		y = 1
+completion_reward = {
+			country_event = {
+				id = KMT.22
+			}
+		}
+	}
+	shared_focus = {
+		id = KMT_help_people
+		icon = GFX_focus_generic_self_management
+		cost = 4.00
+		prerequisite = {
+			focus = KMT_new_bureaucracy
+		}
+		x = 21
+		y = 3
+completion_reward = {
+			add_war_support = 0.1
+			add_stability = 0.1
+		}
+	}
+	shared_focus = {
+		id = KMT_grand_recon_plan
+		icon = GFX_goal_CHI_revive_china
+		cost = 4.00
+		prerequisite = {
+			focus = KMT_help_people
+		}
+		x = 21
+		y = 4
+completion_reward = {
+			custom_effect_tooltip = kmt_recon_plan
+			set_country_flag = kmt_south_china_eco
+		}
+	}
+	shared_focus = {
+		id = KMT_railway_national
+		icon = GFX_focus_generic_railroad
+		cost = 4.00
+		prerequisite = {
+			focus = KMT_grand_recon_plan
+		}
+		x = 19
+		y = 5
+completion_reward = {
+			custom_effect_tooltip = kmt_railway
+			set_country_flag = kmt_railway_construct
+			every_state = {
+				limit = {
+					is_in_home_area = yes
+					is_core_of = ROOT
+					is_owned_by = ROOT
+					free_building_slots = {
+						building = infrastructure
+						size < 4
+						include_locked = yes
+					}
+					OR = {
+						has_state_flag = guangdong_province_state
+						has_state_flag = guangxi_province_state
+						has_state_flag = jiangxi_province_state
+						has_state_flag = fujian_province_state
+						has_state_flag = zhejiang_province_state
+						has_state_flag = jiangsu_province_state
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	shared_focus = {
+		id = KMT_developed_core
+		icon = GFX_focus_SOV_merge_plants
+		cost = 4.00
+		prerequisite = {
+			focus = KMT_grand_recon_plan
+		}
+		x = 21
+		y = 5
+completion_reward = {
+			593 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			592 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			1038 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			749 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	shared_focus = {
+		id = KMT_communication_depart
+		icon = GFX_focus_generic_energy
+		cost = 4.00
+		prerequisite = {
+			focus = KMT_railway_national
+		}
+		prerequisite = {
+			focus = KMT_developed_core
+		}
+		x = 20
+		y = 6
+completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = electronics
+				name = CHI_ministry_of_communications
+			}
+		}
+	}
+	shared_focus = {
+		id = KMT_countryside_revive
+		icon = GFX_goal_generic_construct_civilian
+		cost = 4.00
+		prerequisite = {
+			focus = KMT_grand_recon_plan
+		}
+		x = 23
+		y = 5
+completion_reward = {
+			596 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			606 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	shared_focus = {
+		id = KMT_workshop_to_factory
+		icon = GFX_focus_POL_warsaw_main_station
+		cost = 4.00
+		prerequisite = {
+			focus = KMT_developed_core
+		}
+		prerequisite = {
+			focus = KMT_countryside_revive
+		}
+		x = 22
+		y = 6
+completion_reward = {
+			add_political_power = -50
+			random_owned_controlled_state = {  
+			add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			random_owned_controlled_state = {  
+			add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+		}
+	}
+	shared_focus = {
+		id = KMT_inland_industrial
+		icon = GFX_focus_generic_industry_3
+		cost = 4.00
+		prerequisite = {
+			focus = KMT_communication_depart
+		}
+		prerequisite = {
+			focus = KMT_workshop_to_factory
+		}
+		x = 21
+		y = 7
+completion_reward = {
+			remove_ideas = CHI_economic_death
+			594 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	shared_focus = {
+		id = KMT_new_life_revolution
+		icon = GFX_goal_generic_propaganda
+		cost = 4.00
+		prerequisite = {
+			focus = KMT_six_party_congress
+		}
+		x = 24
+		y = 1
+completion_reward = {
+			swap_ideas = {
+				remove_idea = CHI_national_revolution1
+				add_idea = CHI_national_revolution2
+				}
+			}
+		}
+	
+	shared_focus = {
+		id = KMT_pro_leg_yuan
+		icon = GFX_focus_chi_legislative_yuan
+		cost = 4.00
+		prerequisite = {
+			focus = KMT_new_life_revolution
+		}
+		prerequisite = {
+			focus = KMT_new_bureaucracy
+		}
+		x = 23
+		y = 2
+completion_reward = {
+			set_party_name = {
+				ideology = democratic
+				long_name = KMT_democratic_mid_party_long
+				name = KMT_democratic_mid_party
+			}
+			add_political_power = 100
+			add_ideas = CHI_inter_party_coordination_council
+		}
+	}
+	shared_focus = {
+		id = KMT_remove_old_custom
+		icon = GFX_focus_eng_move_to_secure_the_dominions
+		cost = 4.00
+		prerequisite = {
+			focus = KMT_new_life_revolution
+		}
+		x = 25
+		y = 2
+completion_reward = {	
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+	}
+	shared_focus = {
+		id = KMT_promote_local_edu
+		icon = GFX_goal_generic_scientific_exchange
+		cost = 4.00
+		prerequisite = {
+			focus = KMT_pro_leg_yuan
+		}
+		prerequisite = {
+			focus = KMT_remove_old_custom
+		}
+		x = 24
+		y = 3
+completion_reward = {
+			add_research_slot = 1
+			swap_ideas = {
+				remove_idea = CHI_national_revolution2
+				add_idea = CHI_national_revolution3
+				}
+		}
+	}
+	shared_focus = {
+		id = KMT_offical_land_reform
+		icon = GFX_goal_generic_neutrality_focus
+		cost = 4.00
+		prerequisite = {
+			focus = KMT_promote_local_edu
+		}
+		x = 24
+		y = 4
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = CHI_national_revolution3
+				add_idea = CHI_national_revolution4
+				}
+		}
+	}
+	shared_focus = {
+		id = KMT_mobilzation_or_death
+		icon = GFX_focus_spr_crush_the_revolution
+		cost = 5.00
+		prerequisite = {
+			focus = KMT_national_defence_gov
+		}
+		x = 31
+		y = 1
+		completion_reward = {
+			add_manpower = 350000
+			division_template = {
+			name = "광시군"
+			division_names_group = CHI_INF_01
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+				infantry = { x = 2 y = 0 }
+				infantry = { x = 2 y = 1 }
+				infantry = { x = 2 y = 2 }
+				
+			}
+		}
+		division_template = {
+			name = "보위군"
+			division_names_group = CHI_INF_01
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+				
+			}
+		}
+		594 = {
+			create_unit = {
+				division = "name = \"광시군\" division_template = \"광시군\" start_experience_factor = 1.0"
+				prioritize_location = 1047
+				owner = CHI
+			}
+		}
+		594 = {
+			create_unit = {
+				division = "name = \"광시군\" division_template = \"광시군\" start_experience_factor = 1.0"
+				prioritize_location = 1047
+				owner = CHI
+			}
+		}
+		594 = {
+			create_unit = {
+				division = "name = \"광시군\" division_template = \"광시군\" start_experience_factor = 1.0"
+				prioritize_location = 1047
+				owner = CHI
+			}
+		}
+		594 = {
+			create_unit = {
+				division = "name = \"광시군\" division_template = \"광시군\" start_experience_factor = 1.0"
+				prioritize_location = 1047
+				owner = CHI
+			}
+		}
+		594 = {
+			create_unit = {
+				division = "name = \"보위군\" division_template = \"보위군\" start_experience_factor = 0.5"
+				prioritize_location = 1047
+				owner = CHI
+			}
+		}
+		594 = {
+			create_unit = {
+				division = "name = \"보위군\" division_template = \"보위군\" start_experience_factor = 0.5"
+				prioritize_location = 1047
+				owner = CHI
+			}
+		}
+		594 = {
+			create_unit = {
+				division = "name = \"보위군\" division_template = \"보위군\" start_experience_factor = 0.5"
+				prioritize_location = 1047
+				owner = CHI
+			}
+		}
+		594 = {
+			create_unit = {
+				division = "name = \"보위군\" division_template = \"보위군\" start_experience_factor = 0.5"
+				prioritize_location = 1047
+				owner = CHI
+			}
+		}
+		594 = {
+			create_unit = {
+				division = "name = \"보위군\" division_template = \"보위군\" start_experience_factor = 0.5"
+				prioritize_location = 1047
+				owner = CHI
+			}
+		}
+		594 = {
+			create_unit = {
+				division = "name = \"보위군\" division_template = \"보위군\" start_experience_factor = 0.5"
+				prioritize_location = 1047
+				owner = CHI
+			}
+		}
+	}
+}
+	shared_focus = {
+		id = KMT_dare_to_die
+		icon = GFX_goal_generic_attack_allies
+		cost = 5.00
+		prerequisite = {
+			focus = KMT_mobilzation_or_death
+		}
+		x = 32
+		y = 2
+completion_reward = {
+			add_ideas = KMT_dare_to_die_idea
+		}
+	}
+	shared_focus = {
+		id = KMT_vlasov_line
+		icon = GFX_focus_generic_coastal_fort
+		cost = 1.00
+		prerequisite = {
+			focus = KMT_national_defence_gov
+		}
+		x = 35
+		y = 1
+completion_reward = {
+			1038 = {
+									set_building_level = {
+											type = bunker
+											province = {
+													id = 11982
+													id = 996
+													id = 7120
+													
+												}
+											level = 3
+											instant_build = yes
+										}
+						}
+			
+			1042 = {
+									set_building_level = {
+											type = bunker
+											province = {
+													id = 7191
+													
+													
+												}
+											level = 3
+											instant_build = yes
+										}
+						}
+			596 = {
+									set_building_level = {
+											type = bunker
+											province = {
+													id = 10101
+													id = 4042
+													
+												}
+											level = 3
+											instant_build = yes
+							}
+					}
+			}
+		
+	}
+		
+	
+	shared_focus = {
+		id = KMT_rise_up
+		icon = GFX_focus_generic_conspiracy
+		cost = 5.00
+		prerequisite = {
+			focus = KMT_vlasov_line
+		}
+		x = 34
+		y = 2
+completion_reward = {
+			add_ideas = PRC_peoples_war
+		}
+	}
+	shared_focus = {
+		id =  KMT_space_to_time
+		icon = GFX_focus_generic_provoke_border_clashes
+		cost = 5.00
+		prerequisite = {
+			focus = KMT_national_defence_gov
+		}
+		x = 37
+		y = 1
+completion_reward = {
+			add_ideas = CHI_construction_battalions
+		}
+	}
+	shared_focus = {
+		id = KMT_ex_peroid
+		icon = GFX_goal_generic_military_sphere
+		cost = 5.00
+		prerequisite = {
+			focus =  KMT_space_to_time
+		}
+		x = 37
+		y = 2
+completion_reward = {
+			custom_effect_tooltip = CHI_50_cheaper_force_attack
+		}
+	}
+	shared_focus = {
+		id = KMT_call_of_help
+		icon = GFX_focus_ITA_devaluate_the_lire
+		cost = 7.00
+		prerequisite = {
+			focus = KMT_dare_to_die
+		}
+		prerequisite = {
+			focus = KMT_rise_up
+		}
+		prerequisite = {
+			focus = KMT_ex_peroid
+		}
+		x = 33
+		y = 3
+completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 10000
+				producer = CHI
+			}
+		}
+	}
+	shared_focus = {
+		id = KMT_war_of_resistance
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
+		cost = 5.00
+		prerequisite = {
+			focus = KMT_call_of_help
+		}
+		x = 33
+		y = 4
+completion_reward = {
+			add_ideas = KMT_war_of_resistance_idea
+			country_event = {
+			id = KMT.30
+			days = 1
+			
+		}
+		}
+	}
+	shared_focus = {
+		id = KMT_all_in_the_same_boat
+		icon = GFX_focus_ITA_bersaglieri
+		cost = 3.00
+		prerequisite = {
+			focus = KMT_war_of_resistance
+		}
+		available = {
+			has_country_flag = KMT_for_party
+		}
+		mutually_exclusive = {
+			focus = KMT_the_guangzhou_goverment
+		}
+		x = 37
+		y = 5
+completion_reward = {
+			remove_ideas = CHI_failed_north_attack1
+		}
+	}
+	shared_focus = {
+		id = KMT_the_guangzhou_goverment
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 3.00
+		prerequisite = {
+			focus = KMT_war_of_resistance
+		}
+		available = {
+			has_country_flag = KMT_for_country
+		}
+		mutually_exclusive = {
+			focus = KMT_all_in_the_same_boat
+		}
+		x = 29
+		y = 5
+completion_reward = {
+			remove_ideas = CHI_failed_north_attack1
+		}
+	}
+	shared_focus = {
+		id = KMT_background_base
+		icon = GFX_focus_POL_beck_ribbentrop
+		cost = 5.00
+		prerequisite = {
+			focus = KMT_the_guangzhou_goverment
+		}
+		x = 27
+		y = 6
+completion_reward = {
+			add_political_power = 120
+		}
+	}
+	shared_focus = {
+		id = KMT_arrive_of_army_group_south
+		icon = GFX_focus_chi_army_reform
+		cost = 5.00
+		prerequisite = {
+			focus = KMT_the_guangzhou_goverment
+		}
+		x = 31
+		y = 6
+completion_reward = {
+			division_template = {
+			name = "남부집단군"
+			division_names_group = CHI_INF_01
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+				infantry = { x = 2 y = 0 }
+				infantry = { x = 2 y = 1 }
+				infantry = { x = 2 y = 2 }
+				artillery_brigade = { x = 1 y = 3 }
+				
+			}
+		}
+		1046 = {
+			create_unit = {
+				division = "name = \"남부집단군\" division_template = \"남부집단군\" start_experience_factor = 0.9"
+				prioritize_location = 1047
+				owner = CHI
+			}
+		}
+		1046 = {
+			create_unit = {
+				division = "name = \"남부집단군\" division_template = \"남부집단군\" start_experience_factor = 0.9"
+				prioritize_location = 1047
+				owner = CHI
+			}
+		}
+		1046 = {
+			create_unit = {
+				division = "name = \"남부집단군\" division_template = \"남부집단군\" start_experience_factor = 0.9"
+				prioritize_location = 1047
+				owner = CHI
+			}
+		}
+		1046 = {
+			create_unit = {
+				division = "name = \"남부집단군\" division_template = \"남부집단군\" start_experience_factor = 0.9"
+				prioritize_location = 1047
+				owner = CHI
+			}
+		}
+		}
+	}
+	shared_focus = {
+		id = KMT_free_loan
+		icon = GFX_focus_mex_privatisation
+		cost = 5.00
+		prerequisite = {
+			focus = KMT_arrive_of_army_group_south
+		}
+		x = 30
+		y = 7
+completion_reward = {
+			add_political_power = 120
+		}
+	}
+	shared_focus = {
+		id = KMT_forigen_advisor_group
+		icon = GFX_focus_eng_unite_the_anglosphere
+		cost = 5.00
+		prerequisite = {
+			focus = KMT_arrive_of_army_group_south
+		}
+		x = 32
+		y = 7
+completion_reward = {
+			add_political_power = 120
+		}
+	}
+	shared_focus = {
+		id = KMT_new_army_group
+		icon = GFX_focus_generic_little_entente
+		cost = 5.00
+		prerequisite = {
+			focus = KMT_all_in_the_same_boat
+		}
+		x = 35
+		y = 6
+completion_reward = {
+			add_political_power = 120
+		}
+	}
+	shared_focus = {
+		id = KMT_grain_tax
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 6.00
+		prerequisite = {
+			focus = KMT_all_in_the_same_boat
+		}
+		x = 37
+		y = 6
+completion_reward = {
+			add_ideas = CHI_grain_tax
+		}
+	}
+	shared_focus = {
+		id = KMT_guerrilla_group
+		icon = GFX_focus_focus_fra_maquis
+		cost = 6.00
+		prerequisite = {
+			focus = KMT_new_army_group
+		}
+		prerequisite = {
+			focus = KMT_grain_tax
+		}
+		x = 36
+		y = 7
+completion_reward = {
+			add_ideas = CHI_forced_conscription
+		}
+	}
+	shared_focus = {
+		id = KMT_encroachment
+		icon = GFX_goal_CHI_northern_expedition
+		cost = 6.00
+		prerequisite = {
+			focus = KMT_all_in_the_same_boat
+		}
+		x = 39
+		y = 6
+completion_reward = {
+			add_political_power = 120
+		}
+	}
+	shared_focus = {
+		id = KMT_thosand_workshop
+		icon = GFX_focus_spr_class_war
+		cost = 6.00
+		prerequisite = {
+			focus = KMT_grain_tax
+		}
+		prerequisite = {
+			focus = KMT_encroachment
+		}
+		x = 38
+		y = 7
+completion_reward = {
+			add_political_power = 120
+		}
+	}
+	shared_focus = {
+		id = KMT_for_liberation
+		icon = GFX_goal_LKMT_A_New_China
+		cost = 6.00
+		prerequisite = {
+			focus = KMT_guerrilla_group
+		}
+		prerequisite = {
+			focus = KMT_thosand_workshop
+		}
+		x = 37
+		y = 8
+completion_reward = {
+			add_political_power = 120
+		}
+	}
+	shared_focus = {
+		id = KMT_south_united_air_force
+		icon = GFX_focus_generic_multi_role_aircraft
+		cost = 5.00
+		prerequisite = {
+			focus = KMT_the_guangzhou_goverment
+		}
+		x = 29
+		y = 6
+completion_reward = {
+			add_political_power = 120
+		}
+	}
+	shared_focus = {
+		id = KMT_NMC
+		icon = GFX_focus_generic_truck
+		cost = 5.00
+		prerequisite = {
+			focus = KMT_south_united_air_force
+		}
+		prerequisite = {
+			focus = KMT_background_base
+		}
+		x = 28
+		y = 7
+completion_reward = {
+			add_political_power = 120
+		}
+	}
+	shared_focus = {
+		id = KMT_united_stuggle
+		icon = GFX_goal_CHI_YUN_reconcile
+		cost = 5.00
+		prerequisite = {
+			focus = KMT_NMC
+		}
+		prerequisite = {
+			focus = KMT_free_loan
+		}
+		prerequisite = {
+			focus = KMT_forigen_advisor_group
+		}
+		x = 29
+		y = 8
+completion_reward = {
+			add_ideas = CHI_military_affairs_commission
+		}
+	}
+	
+	shared_focus = {
+		id = KMT_long_war
+		icon = GFX_focus_KOR_manchu_plan
+		cost = 10.00
+		prerequisite = {
+			focus = KMT_for_liberation
+			focus = KMT_united_stuggle
+		}
+		x = 33
+		y = 9
+completion_reward = {
+			add_ideas = KMT_march_of_volunteer
+		}
+	}
+	shared_focus = {
+		id = KMT_success_of_revolution_way
+		icon = GFX_goal_generic_revolutionary_government
+		cost = 5.00
+		prerequisite = {
+			focus = KMT_national_unification
+		}
+		x = 43
+		y = 1
+completion_reward = {
+			add_political_power = 120
+		}
+	}
+	shared_focus = {
+		id = KMT_propaganda_machine
+		icon = GFX_goal_famine
+		cost = 5.00
+		prerequisite = {
+			focus = KMT_success_of_revolution_way
+		}
+		x = 43
+		y = 3
+completion_reward = {
+			add_political_power = 120
+		}
+	}
+	shared_focus = {
+		id = KMT_march_of_NRA
+		icon = GFX_goal_army_guy_2
+		cost = 5.00
+		prerequisite = {
+			focus = KMT_national_unification
+		}
+		x = 45
+		y = 1
+completion_reward = {
+			add_political_power = 120
+		}
+	}
+	shared_focus = {
+		id = KMT_expend_secret_org
+		icon = GFX_goal_generic_phone_crisis
+		cost = 5.00
+		prerequisite = {
+			focus = KMT_march_of_NRA
+		}
+		x = 45
+		y = 2
+completion_reward = {
+			add_political_power = 120
+		}
+	}
+	shared_focus = {
+		id = KMT_develop_heavy_industry
+		icon = GFX_goal_generic_heavy_armour_russian
+		cost = 5.00
+		prerequisite = {
+			focus = KMT_national_unification
+		}
+		x = 48
+		y = 1
+completion_reward = {
+			add_political_power = 120
+		}
+	}
+	shared_focus = {
+		id = KMT_Autarky
+		icon = GFX_focus_ger_autarky
+		cost = 5.00
+		prerequisite = {
+			focus = KMT_develop_heavy_industry
+		}
+		x = 47
+		y = 2
+completion_reward = {
+			add_political_power = 120
+		}
+	}
+	shared_focus = {
+		id = KMT_fire_spark
+		icon = GFX_goal_agrarian_socialism
+		cost = 5.00
+		prerequisite = {
+			focus = KMT_Autarky
+		}
+		prerequisite = {
+			focus = KMT_expend_secret_org
+		}
+		x = 46
+		y = 3
+completion_reward = {
+			add_political_power = 120
+		}
+	}
+	shared_focus = {
+		id = KMT_soviet_help
+		icon = GFX_goal_soviet_revolution
+		cost = 5.00
+		prerequisite = {
+			focus = KMT_develop_heavy_industry
+		}
+		x = 49
+		y = 2
+completion_reward = {
+			add_political_power = 120
+		}
+	}
+	shared_focus = {
+		id = KMT_preparing_strike
+		icon = GFX_focus_hun_youth
+		cost = 5.00
+		prerequisite = {
+			focus = KMT_Autarky
+		}
+		prerequisite = {
+			focus = KMT_soviet_help
+		}
+		x = 48
+		y = 3
+completion_reward = {
+			add_political_power = 120
+		}
+	}
+	shared_focus = {
+		id = KMT_second_northern_exp
+		icon = GFX_goal_KOR_TLE_1
+		cost = 5.00
+		prerequisite = {
+			focus = KMT_fire_spark
+		}
+		prerequisite = {
+			focus = KMT_preparing_strike
+		}
+		prerequisite = {
+			focus = KMT_propaganda_machine
+		}
+		x = 45
+		y = 4
+completion_reward = {
+			add_political_power = 120
+		}
+	}
+	
+
+
+
+
+
+
+
+
+##################
+	shared_focus = {
+		id = KMT_last_fight
+		icon = GFX_goal_LKMT_A_New_China
+		cost = 1.00
+		x = 8
+		y = 1
+		available = {
+			YUN = {
+				exists = no
+			}
+			GDC = {
+				exists = no
+			}
+			GXC = {
+				exists = no
+			}
+			AHC = {
+				exists = no
+			}
+			SZY = {
+				exists = no
+			}
+		}	
+completion_reward = {
+			unlock_decision_tooltip = CHI_plan_2nd_beifa
+			country_event = {
+				id = KMT.100
+			}	
+			hidden_effect = {
+				remove_ideas = KMT_local_supply_corp
+				remove_ideas = KMT_night_attack
+				remove_ideas = KMT_dare_to_die_idea
+				remove_ideas = KMT_war_of_resistance_idea
+			}
+		}
+	}
+	shared_focus = {
+		id = KMT_mao_ste
+		icon = GFX_focus_prc_maoism
+		cost = 4.00
+		prerequisite = {
+			focus = KMT_last_fight
+		}
+		mutually_exclusive = {
+			focus = KMT_sun_ste
+		}
+		available = {
+			has_war_with = ZLC
+		}	
+		bypass = {
+			OR = {
+				ZLC = {
+					exists = no
+				}
+				CHI = {
+					owns_state = 608
+				}
+			}
+		}
+		x = 5
+		y = 2
+completion_reward = {
+			country_event = {
+				id = KMT.101
+			}	
+		}
+	}
+	shared_focus = {
+		id = KMT_call_of_people
+		icon = GFX_goal_CHI_harness_peoples_will
+		cost = 4.00
+		prerequisite = {
+			focus = KMT_mao_ste
+		}
+		x = 3
+		y = 3
+completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 10000
+				producer = CHI
+			}
+		}
+	}
+	shared_focus = {
+		id = KMT_attack_hyper_inflation
+		icon = GFX_goal_ANQ_Dalu_Yinhang
+		cost = 4.00
+		prerequisite = {
+			focus = KMT_call_of_people
+		}
+		x = 3
+		y = 4
+completion_reward = {
+			ZLC = {
+				CHI_hyper_inflation_level_up = yes
+			}
+		}
+	}
+	shared_focus = {
+		id = KMT_the_grand_promise
+		icon = GFX_goal_ANQ_promote_nationalist_thought
+		cost = 4.00
+		prerequisite = {
+			focus = KMT_mao_ste
+		}
+		x = 5
+		y = 3
+completion_reward = {
+			country_event = {
+				id = KMT.102
+			}	
+		}
+	}
+	shared_focus = {
+		id = KMT_new_land_law
+		icon = GFX_goal_generic_landowner_tax_cuts
+		cost = 4.00
+		prerequisite = {
+			focus = KMT_call_of_people
+		}
+		prerequisite = {
+			focus = KMT_the_grand_promise
+		}
+		x = 5
+		y = 4
+completion_reward = {
+			add_stability = 0.1
+			ZLC = {
+				add_stability = -0.1
+			}
+		}
+	}
+	shared_focus = {
+		id = KMT_new_uprising
+		icon = GFX_focus_generic_conspiracy
+		cost = 4.00
+		prerequisite = {
+			focus = KMT_attack_hyper_inflation
+		}
+		prerequisite = {
+			focus = KMT_new_land_law
+		}
+		x = 4
+		y = 5
+completion_reward = {
+			hidden_effect={
+				division_template = {
+					name = "인민지원군"
+					regiments = {
+						infantry = {
+							x = 0
+							y = 0
+						}
+						infantry = {
+							x = 0
+							y = 1
+						}
+						infantry = {
+							x = 1
+							y = 0
+						}
+						infantry = {
+							x = 1
+							y = 1
+						}
+					}
+				}
+			}	
+			random_state = {
+				prioritize = { 1057 }
+				create_unit = {
+					division = "name = \"인민지원군\" division_template = \"인민지원군\" start_experience_factor = 0.6"
+					owner = CHI
+				}
+				create_unit = {
+					division = "name = \"인민지원군\" division_template = \"인민지원군\" start_experience_factor = 0.6"
+					owner = CHI
+				}
+				create_unit = {
+					division = "name = \"인민지원군\" division_template = \"인민지원군\" start_experience_factor = 0.6"
+					owner = CHI
+				}
+			}	
+			random_state = {
+				prioritize = { 597 }
+				create_unit = {
+					division = "name = \"인민지원군\" division_template = \"인민지원군\" start_experience_factor = 0.6"
+					owner = CHI
+				}
+				create_unit = {
+					division = "name = \"인민지원군\" division_template = \"인민지원군\" start_experience_factor = 0.6"
+					owner = CHI
+				}
+				create_unit = {
+					division = "name = \"인민지원군\" division_template = \"인민지원군\" start_experience_factor = 0.6"
+					owner = CHI
+				}
+			}	
+		}
+	}
+	shared_focus = {
+		id = KMT_behind_the_enemy
+		icon = GFX_focus_ETH_peacekeeping_forces
+		cost = 4.00
+		prerequisite = {
+			focus = KMT_mao_ste
+		}
+		x = 7
+		y = 3
+completion_reward = {
+			ZLC = {
+				add_timed_idea = {
+					idea = CHI_two_sided_enemy
+					days = 30
+				}
+			}
+		}
+	}
+	shared_focus = {
+		id = KMT_besige_city
+		icon = GFX_goal_ANQ_centralization
+		cost = 4.00
+		prerequisite = {
+			focus = KMT_behind_the_enemy
+		}
+		x = 7
+		y = 4
+		completion_reward = {
+			every_state = {
+				limit = {
+					OR = {
+						state = 608
+						state = 598
+						state = 1057
+						state = 1048
+						state = 1033
+						state = 1050
+					}
+					is_core_of = ZLC
+					is_owned_by = ZLC
+				}
+				add_dynamic_modifier = {
+					modifier = CHI_defence_the_korea_2
+					days = 730 
+				}
+			}	
+		}
+	}
+	shared_focus = {
+		id = KMT_forced_conversion
+		icon = GFX_goal_CHI_follow_lingxiu
+		cost = 4.00
+		prerequisite = {
+			focus = KMT_besige_city
+		}
+		x = 7
+		y = 5
+completion_reward = {
+			country_event = {
+				id = KMT.103
+			}
+		}
+	}
+	shared_focus = {
+		id = KMT_democrat_compromised
+		icon = GFX_focus_SWI_neutrality_on_the_move
+		cost = 4.00
+		prerequisite = {
+			focus = KMT_forced_conversion
+		}
+		prerequisite = {
+			focus = KMT_new_uprising
+		}
+		x = 5
+		y = 6
+completion_reward = {
+			add_political_power = 120
+		}
+	}
+	shared_focus = {
+		id = KMT_sun_ste
+		icon = GFX_focus_SOV_the_glory_of_the_red_army_alternative
+		cost = 4.00
+		prerequisite = {
+			focus = KMT_last_fight
+		}
+		mutually_exclusive = {
+			focus = KMT_mao_ste
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = TLE_will_be_updated_soon
+				always = no
+			}	
+		}
+		bypass = {
+			OR = {
+				ZLC = {
+					exists = no
+				}
+				CHI = {
+					owns_state = 608
+				}
+			}
+		}
+		x = 11
+		y = 2
+completion_reward = {
+			add_political_power = 120
+		}
+	}
+	shared_focus = {
+		id = KMT_Targeting_major_hubs
+		icon = GFX_focus_generic_provoke_border_clashes
+		cost = 4.00
+		prerequisite = {
+			focus = KMT_sun_ste
+		}
+		x = 10
+		y = 3
+completion_reward = {
+			add_political_power = 120
+		}
+	}
+	shared_focus = {
+		id = KMT_use_remnants
+		icon = GFX_focus_generic_annex_country_2
+		cost = 4.00
+		prerequisite = {
+			focus = KMT_Targeting_major_hubs
+		}
+		x = 9
+		y = 4
+completion_reward = {
+			add_political_power = 120
+		}
+	}
+	shared_focus = {
+		id = KMT_sprit_of_revolution
+		icon = GFX_focus_chi_whampoa_military_academy
+		cost = 4.00
+		prerequisite = {
+			focus = KMT_sun_ste
+		}
+		x = 12
+		y = 3
+completion_reward = {
+			add_political_power = 120
+		}
+	}
+	shared_focus = {
+		id = KMT_across_the_river
+		icon = GFX_focus_generic_tankette
+		cost = 4.00
+		prerequisite = {
+			focus = KMT_Targeting_major_hubs
+		}
+		prerequisite = {
+			focus = KMT_sprit_of_revolution
+		}
+		x = 11
+		y = 4
+completion_reward = {
+			add_political_power = 120
+		}
+	}
+	shared_focus = {
+		id = KMT_and_heavy_arms
+		icon = GFX_focus_generic_combined_arms
+		cost = 4.00
+		prerequisite = {
+			focus = KMT_across_the_river
+		}
+		x = 11
+		y = 5
+completion_reward = {
+			add_political_power = 120
+		}
+	}
+	shared_focus = {
+		id = KMT_no_blockade
+		icon = GFX_focus_focus_fra_maquis
+		cost = 4.00
+		prerequisite = {
+			focus = KMT_use_remnants
+		}
+		x = 9
+		y = 5
+completion_reward = {
+			add_political_power = 120
+		}
+	}
+	shared_focus = {
+		id = KMT_tactical_advance
+		icon = GFX_focus_generic_infiltration
+		cost = 4.00
+		prerequisite = {
+			focus = KMT_sprit_of_revolution
+		}
+		x = 13
+		y = 4
+completion_reward = {
+			add_political_power = 120
+		}
+	}
+	shared_focus = {
+		id = KMT_infantry_mobile_force
+		icon = GFX_focus_chi_army_reform
+		cost = 4.00
+		prerequisite = {
+			focus = KMT_tactical_advance
+		}
+		x = 13
+		y = 5
+completion_reward = {
+			add_political_power = 120
+		}
+	}
+	shared_focus = {
+		id = KMT_destory_warlord_regime
+		icon = GFX_goal_CHI_soul_of_whampoa
+		cost = 4.00
+		prerequisite = {
+			focus = KMT_no_blockade
+		}
+		prerequisite = {
+			focus = KMT_and_heavy_arms
+		}
+		prerequisite = {
+			focus = KMT_infantry_mobile_force
+		}
+		x = 11
+		y = 6
+completion_reward = {
+			add_political_power = 120
+		}
+	}
+	shared_focus = {
+		id = KMT_geming_chenggong
+		icon = GFX_goal_CHI_republic
+		cost = 4.00
+		prerequisite = {
+			focus = KMT_destory_warlord_regime
+			focus = KMT_democrat_compromised
+		}
+		x = 8
+		y = 7
+		select_effect = {
+				if = {
+					limit = {
+						CHI = {
+							is_ai = no
+						}
+					}
+					play_song = "changchengyao"
+				}	
+		}
+		available = {
+			ZLC = {
+				exists = no
+			}
+			owns_state = 608
+		}
+		completion_reward = {
+			country_event = {
+				id = KMT.1000
+			}
+		}
+	}
+
+
+#####################
+
+
+	shared_focus = {
+		id = KMT_final_victory
+		icon = GFX_focus_generic_china1
+		cost = 3.00
+		x = 13
+		y = 0
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = TLE_will_be_updated_soon
+				always = no
+			}	
+		}
+completion_reward = {
+			add_political_power = 120
+		}
+	}
+	shared_focus = {
+		id = KMT_nra_demobil
+		icon = GFX_focus_ETH_peacekeeping_forces
+		cost = 3.00
+		prerequisite = {
+			focus = KMT_final_victory
+		}
+		x = 10
+		y = 1
+completion_reward = {
+			add_political_power = 120
+		}
+	}
+	shared_focus = {
+		id = KMT_expeditionary_force
+		icon = GFX_focus_SOV_builder_of_the_red_army
+		cost = 3.00
+		prerequisite = {
+			focus = KMT_nra_demobil
+		}
+		x = 10
+		y = 2
+completion_reward = {
+			add_political_power = 120
+		}
+	}
+	shared_focus = {
+		id = KMT_anti_imperialism
+		icon = GFX_focus_AST_never_gallipoli
+		cost = 3.00
+		prerequisite = {
+			focus = KMT_expeditionary_force
+		}
+		x = 11
+		y = 3
+completion_reward = {
+			add_political_power = 120
+		}
+	}
+	shared_focus = {
+		id = KMT_revoluionary_reform
+		icon = GFX_focus_prc_agrarian_socialism
+		cost = 3.00
+		prerequisite = {
+			focus = KMT_final_victory
+		}
+		x = 12
+		y = 1
+completion_reward = {
+			add_political_power = 120
+		}
+	}
+	shared_focus = {
+		id = KMT_consolidate_regime
+		icon = GFX_focus_generic_court
+		cost = 3.00
+		prerequisite = {
+			focus = KMT_revoluionary_reform
+		}
+		x = 12
+		y = 2
+completion_reward = {
+			add_political_power = 120
+		}
+	}
+	shared_focus = {
+		id = KMT_national_assembly
+		icon = GFX_focus_generic_improve_the_administration
+		cost = 3.00
+		prerequisite = {
+			focus = KMT_final_victory
+		}
+		x = 15
+		y = 1
+completion_reward = {
+			add_political_power = 120
+		}
+	}
+	shared_focus = {
+		id = KMT_consit_conference
+		icon = GFX_focus_hol_the_foundations_of_defense
+		cost = 3.00
+		prerequisite = {
+			focus = KMT_national_assembly
+		}
+		mutually_exclusive = {
+			focus = KMT_red_napoleon
+		}
+		x = 14
+		y = 2
+completion_reward = {
+			add_political_power = 120
+		}
+	}
+	shared_focus = {
+		id = KMT_red_napoleon
+		icon = GFX_focus_generic_soviet_politics
+		cost = 3.00
+		prerequisite = {
+			focus = KMT_national_assembly
+		}
+		mutually_exclusive = {
+			focus = KMT_consit_conference
+		}
+		x = 16
+		y = 2
+completion_reward = {
+			add_political_power = 120
+		}
+	}
+	shared_focus = {
+		id = KMT_inte_cpc
+		icon = GFX_focus_prc_social_democracy
+		cost = 3.00
+		prerequisite = {
+			focus = KMT_consit_conference
+			focus = KMT_red_napoleon
+		}
+		x = 15
+		y = 3
+completion_reward = {
+			add_political_power = 120
+		}
+	}
+	shared_focus = {
+		id = KMT_future_of_system
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
+		cost = 3.00
+		prerequisite = {
+			focus = KMT_consolidate_regime
+			focus = KMT_consit_conference
+			focus = KMT_red_napoleon
+		}
+		x = 13
+		y = 3
+completion_reward = {
+			add_political_power = 120
+		}
+	}
+	shared_focus = {
+		id = KMT_state_of_party
+		icon = GFX_focus_usa_voter_registration_act
+		cost = 7.00
+		prerequisite = {
+			focus = KMT_anti_imperialism
+		}
+		prerequisite = {
+			focus = KMT_future_of_system
+		}
+		prerequisite = {
+			focus = KMT_inte_cpc
+		}
+		x = 13
+		y = 4
+completion_reward = {
+			add_political_power = 120
+		}
+	}
+	shared_focus = {
+		id = KMT_generalissimo_vision
+		icon = GFX_focus_prc_remove_chiang_kai_shek
+		cost = 4.00
+		prerequisite = {
+			focus = KMT_state_of_party
+		}
+		mutually_exclusive = {
+			focus = KMT_vangurad_party
+		}
+		x = 12
+		y = 5
+completion_reward = {
+			add_political_power = 120
+		}
+	}
+	shared_focus = {
+		id = KMT_vangurad_party
+		icon = GFX_focus_por_workers_of_iberia
+		cost = 4.00
+		prerequisite = {
+			focus = KMT_state_of_party
+		}
+		mutually_exclusive = {
+			focus = KMT_generalissimo_vision
+		}
+		x = 14
+		y = 5
+completion_reward = {
+			add_political_power = 120
+		}
+	}
+	shared_focus = {
+		id = KMT_usa_friendship
+		icon = GFX_focus_chi_mission_to_the_us
+		cost = 4.00
+		prerequisite = {
+			focus = KMT_generalissimo_vision
+		}
+		x = 10
+		y = 6
+completion_reward = {
+			add_political_power = 120
+		}
+	}
+	shared_focus = {
+		id = KMT_sun_dream
+		icon = GFX_focus_generic_the_giant_wakes
+		cost = 4.00
+		prerequisite = {
+			focus = KMT_generalissimo_vision
+		}
+		x = 12
+		y = 6
+completion_reward = {
+			add_political_power = 120
+		}
+	}
+	shared_focus = {
+		id = KMT_and_genralissimo_above_all
+		icon = GFX_focus_generic_support_the_left_right
+		cost = 4.00
+		prerequisite = {
+			focus = KMT_usa_friendship
+		}
+		prerequisite = {
+			focus = KMT_sun_dream
+		}
+		x = 12
+		y = 7
+completion_reward = {
+			add_political_power = 120
+		}
+	}
+	shared_focus = {
+		id = KMT_kominat_industrial
+		icon = GFX_focus_generic_industry_3
+		cost = 4.00
+		prerequisite = {
+			focus = KMT_vangurad_party
+		}
+		x = 14
+		y = 6
+completion_reward = {
+			add_political_power = 120
+		}
+	}
+	shared_focus = {
+		id = KMT_soviet_friendship
+		icon = GFX_focus_ETH_callout_to_the_world
+		cost = 4.00
+		prerequisite = {
+			focus = KMT_vangurad_party
+		}
+		x = 16
+		y = 6
+completion_reward = {
+			add_political_power = 120
+		}
+	}
+	shared_focus = {
+		id = KMT_party_and_masses
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 4.00
+		prerequisite = {
+			focus = KMT_kominat_industrial
+		}
+		prerequisite = {
+			focus = KMT_soviet_friendship
+		}
+		x = 14
+		y = 7
+completion_reward = {
+			add_political_power = 120
+		}
+	}
+	shared_focus = {
+		id = KMT_last_empire
+		icon = GFX_focus_rom_abdicate
+		cost = 10.00
+		prerequisite = {
+			focus = KMT_party_and_masses
+			focus = KMT_and_genralissimo_above_all
+		}
+		prerequisite = {
+		}
+		x = 13
+		y = 8
+completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+

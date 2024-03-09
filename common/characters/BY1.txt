@@ -1,0 +1,20 @@
+characters={
+	BY1_alexey_baksheev={
+		name="BY1_alexey_baksheev"
+		portraits={
+			civilian={
+				large="gfx/leaders/SV1/Alexey_Baksheev.dds"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			id=-1
+		}
+		country_leader={
+			ideology=nazism
+			traits={ }
+			id=-1
+		}
+	}
+}

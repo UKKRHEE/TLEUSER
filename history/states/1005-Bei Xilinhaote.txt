@@ -1,0 +1,26 @@
+state={
+	id=1005
+	name="STATE_SOUTH_DORNOD"
+	provinces={
+		4873 10575 12612 
+	}
+	history={
+		victory_points = {
+			12612 1 
+		}
+		owner = MON
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = MON
+		add_core_of = MSR
+		add_core_of = MEN
+		add_core_of = CHI
+		add_core_of = PRC
+		add_core_of = ZLC
+	}	
+	state_category=wasteland
+	manpower=19200
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

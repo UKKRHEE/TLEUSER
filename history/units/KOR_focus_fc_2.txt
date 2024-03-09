@@ -1,0 +1,5 @@
+﻿
+focus = {
+    current = "KOR_the_day_which_very_long"
+    Progress = 0
+}   

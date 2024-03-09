@@ -1,0 +1,20 @@
+characters={
+	OT1_Hinrich_Lohse={
+		name="OT1_Hinrich_Lohse"
+		portraits={
+			civilian={
+				large="gfx/leaders/SV1/Germany_NS_Hinrich_Lohse.dds"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			id=-1
+		}
+		country_leader={
+			ideology=nazism
+			traits={ }
+			id=-1
+		}
+	}
+}

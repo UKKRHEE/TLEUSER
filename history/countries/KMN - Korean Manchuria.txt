@@ -1,0 +1,36 @@
+﻿capital = 715
+OOB = "KMN"
+set_research_slots = 3
+set_cosmetic_tag = KMN_KOR
+set_technology = {
+	infantry_weapons = 1
+	tech_mountaineers = 1
+}
+add_opinion_modifier = {
+	target = KOR
+	modifier = TLE_general_government_opinion
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1934.6.15"
+	election_frequency = 48
+	elections_allowed = no
+}
+give_military_access = KOR
+
+set_popularities = {
+	neutrality = 100
+}
+
+add_ideas = {
+	KOR_yi_jin
+	KOR_the_country_of_korea
+}
+recruit_character = KMN_yi_cheok
+recruit_character = KMN_john_reed_hodge
+recruit_character = KMN_yeom_dongjin
+recruit_character = KMN_kim_philsun
+recruit_character = KMN_nam_il
+recruit_character = KMN_lee_beomseok
+

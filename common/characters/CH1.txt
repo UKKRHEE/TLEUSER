@@ -1,0 +1,18 @@
+characters={
+	CH1_gao_zongwu = {
+		name = "CH1_gao_zongwu"
+		portraits={
+			civilian={
+				large="gfx/leaders/CH1/Portrait_China_Gao_Zongwu_2.tga"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits = {  }
+		}
+		country_leader={
+			ideology=ultranationalism
+			traits = {  }
+		}
+	}
+}

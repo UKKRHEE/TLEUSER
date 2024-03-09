@@ -1,0 +1,155 @@
+defined_text = {
+	name = TNOGetSuperEventImage
+	### SUPERS WITH DYNAMIC GFX ###
+
+	### DEFAULT ###
+	text = {
+		localization_key = "GFX_[?TNO_super_event.GetTokenKey]"
+	}
+}
+
+defined_text = {
+	name = TNOGetSuperEventTitle
+	### SUPERS WITH DYNAMIC TITLES ###
+
+	### DEFAULT ###
+	text = {
+		localization_key = "[?TNO_super_event.GetTokenLocalizedKey]"
+	}
+}
+
+defined_text = {
+	name = TNOGetSuperEventOption
+	### SUPERS WITH DYNAMIC OPTIONS ###
+
+	### DEFAULT ###
+	text = {
+		trigger = {
+			meta_trigger = {
+				text = { set_temp_variable = { super_a_var = token:[SUPER]_A } }
+				SUPER = "[?TNO_super_event.GetTokenKey]"
+			}
+		}
+		localization_key = "[?super_a_var.GetTokenLocalizedKey]"
+	}
+}
+
+defined_text = {
+	name = TNOGetSuperEventDesc
+	### SUPERS WITH DYNAMIC DESCS ###
+
+	### DEFAULT ###
+	text = {
+		trigger = {
+			meta_trigger = {
+				text = { set_temp_variable = { super_d_var = token:[SUPER]_D } }
+				SUPER = "[?TNO_super_event.GetTokenKey]"
+			}
+		}
+		localization_key = "[?super_d_var.GetTokenLocalizedKey]"
+	}
+}
+
+
+## JAPAN CW ##
+
+defined_text = {
+	name = TLEGetSuperEventImage
+	### SUPERS WITH DYNAMIC GFX ###
+	text = {
+		trigger = { check_variable = { TLE_super_event = token:SE_JAPAN_CW } }
+		localization_key = "GFX_SE_JAPAN_CW"
+	}
+
+	### DEFAULT ###
+	text = {
+		localization_key = "GFX_[?TLE_super_event.GetTokenKey]"
+	}
+}
+
+defined_text = {
+	name = TLEGetSuperEventImage2
+	### SUPERS WITH DYNAMIC GFX ###
+	text = {
+		trigger = { check_variable = { TLE_super_event = token:SE_JAPAN_CW } }
+		localization_key = "GFX_SE_JAPAN_CW_2"
+	}
+}
+
+defined_text = {
+	name = TLEGetSuperEventImage3
+	### SUPERS WITH DYNAMIC GFX ###
+	text = {
+		trigger = { check_variable = { TLE_super_event = token:SE_JAPAN_CW } }
+		localization_key = "GFX_SE_JAPAN_CW_3"
+	}
+}
+
+defined_text = {
+	name = TLEGetSuperEventImage4
+	### SUPERS WITH DYNAMIC GFX ###
+	text = {
+		trigger = { check_variable = { TLE_super_event = token:SE_JAPAN_CW } }
+		localization_key = "GFX_SE_JAPAN_CW_4"
+	}
+}
+
+defined_text = {
+	name = TLEGetSuperEventImage5
+	### SUPERS WITH DYNAMIC GFX ###
+	text = {
+		trigger = { check_variable = { TLE_super_event = token:SE_JAPAN_CW } }
+		localization_key = "GFX_SE_JAPAN_CW_5"
+	}
+}
+
+defined_text = {
+	name = TLEGetSuperEventImage6
+	### SUPERS WITH DYNAMIC GFX ###
+	text = {
+		trigger = { check_variable = { TLE_super_event = token:SE_JAPAN_CW } }
+		localization_key = "GFX_SE_JAPAN_CW_6"
+	}
+}
+
+defined_text = {
+	name = TLEGetSuperEventTitle
+	### SUPERS WITH DYNAMIC TITLES ###
+
+	### DEFAULT ###
+	text = {
+		localization_key = "[?TLE_super_event.GetTokenLocalizedKey]"
+	}
+}
+
+defined_text = {
+	name = TLEGetSuperEventOption
+	### SUPERS WITH DYNAMIC OPTIONS ###
+
+	### DEFAULT ###
+	text = {
+		trigger = {
+			meta_trigger = {
+				text = { set_temp_variable = { super_a_var = token:[SUPER]_A } }
+				SUPER = "[?TLE_super_event.GetTokenKey]"
+			}
+		}
+		localization_key = "[?super_a_var.GetTokenLocalizedKey]"
+	}
+}
+
+defined_text = {
+	name = TLEGetSuperEventDesc
+	### SUPERS WITH DYNAMIC DESCS ###
+
+	### DEFAULT ###
+	text = {
+		trigger = {
+			meta_trigger = {
+				text = { set_temp_variable = { super_d_var = token:[SUPER]_D } }
+				SUPER = "[?TLE_super_event.GetTokenKey]"
+			}
+		}
+		localization_key = "[?super_d_var.GetTokenLocalizedKey]"
+	}
+}

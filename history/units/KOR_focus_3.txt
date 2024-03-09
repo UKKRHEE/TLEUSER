@@ -1,0 +1,5 @@
+﻿
+focus = {
+    current = "KOR_law_going"
+    Progress = 0
+}   

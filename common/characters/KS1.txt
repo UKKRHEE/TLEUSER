@@ -1,0 +1,20 @@
+characters={
+	KS1_georgy_zukov={
+		name="KS1_georgy_zukov"
+		portraits={
+			civilian={
+				large="gfx/leaders/SV1/Georgy_Zhukov_puppet.dds"
+			}
+		}
+		country_leader={
+			ideology=marxism
+			traits={ }
+			id=-1
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			id=-1
+		}
+	}
+}

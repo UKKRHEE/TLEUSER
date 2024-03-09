@@ -1,0 +1,34 @@
+
+state={
+	id=1031
+	name="STATE_HWANGILNAM"
+	resources={
+		aluminium=7.000
+	}
+
+	history={
+		victory_points = {
+			945 3 
+		}
+		victory_points = {
+			9803 1 
+		}
+		owner = KOR
+		add_core_of = KOR
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+
+		}
+
+	}
+
+	provinces={
+		800 861 945 3888 3932 3949 6868 6905 6947 9759 9803 9848 11781 
+	}
+	manpower=1101909
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

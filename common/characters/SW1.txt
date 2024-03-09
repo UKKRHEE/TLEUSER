@@ -1,0 +1,20 @@
+characters={
+	SW1_felix_steiner ={
+		name="SW1_felix_steiner"
+		portraits={
+			civilian={
+				large="gfx/leaders/GER/portrait_ger_felix_steiner.dds"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			id=-1
+		}
+		country_leader={
+			ideology=nazism
+			traits={ }
+			id=-1
+		}
+	}
+}

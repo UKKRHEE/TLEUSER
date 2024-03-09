@@ -1,0 +1,1087 @@
+﻿### Names generation for aces ###
+# Surnames can be male/female dependent or general. Fe. in Polish some surnames has different endings depending on the gender.
+# Names and Surnames are randomly picked and will sometimes repeat, but will never repeat in combinations for example there will never be generated another "John Smith".
+# Assigning the callsign is random - may be assigned or not. If we use the callsign, it will never be assigned to anyone again. Callsigns are not obligatory to script.
+# Picking up a gender is random, and is influenced by the amount of names scripted.
+
+EOK = {
+	male = {
+		names = { 
+			가 간 갈 감 강 강 강 강 강 개 견 경 계 고 곡 공 곽 구 국 군 권 금 기 길 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 나 나 나 남 남궁 낭 내 노 노 노 단 당 대 도 독고 돈 등 동방 두 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 반 방 배 백 범 변 복 봉 부 비 사 사공 상 서 서문 석 선 선우 설 섭 성 성 성 소 손 송 순 승 시 신 신 심 심 안 안 안 안 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 연 여 엄 연 영 예 용 왕 육 유 유 유 류 류 차 천 최 최 최 최 최 최 최 한 한 황 환 해 함 황보 홍 홍 홍 제 제갈 장 장 장 장 장
+		}
+		
+	}
+	female = {
+		names = { 
+			가 간 갈 감 강 강 강 강 강 개 견 경 계 고 곡 공 곽 구 국 군 권 금 기 길 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 나 나 나 남 남궁 낭 내 노 노 노 단 당 대 도 독고 돈 등 동방 두 박 박 박 박 박 박 박 박 박 반 방 배 백 범 변 복 봉 부 비 사 사공 상 서 서문 석 선 선우 설 섭 성 성 성 소 손 송 순 승 시 신 신 심 심 안 안 안 안 이 이 이 이 이 이 이 이 이 이 이 연 여 엄 연 영 예 용 왕 육 유 유 유 류 류 차 천 최 최 최 최 최 최 최 한 한 황 환 해 함 황보 홍 홍 홍 제 제갈 장 장 장 장 장
+		}	
+	}
+	surnames = { 민준 서준 예준 도윤 시우 주원 하준 지호 지후 준서 준우 현우 철욱 건우 우진 민재 현성 현철 민철 재협 영우 광준 혁원 재우 상옥 재상 이호 유준 정우 승우 승현 시윤 운혁 재안 덕성 만송 경원 철우 영수 재건 유문 이환 경석 은철 호석 몽영 규섬 당천 영표 준표 승녕 오환 예평 윤후 이학 대붕 기후 기재 윤휴 서연 서윤 지우 승자 승만 보선 정희 규하 두환 태우 영삼 대중 무현 명박 근혜 재인 석열 명복 태강 철호 만승 지원 한중 }
+	callsigns = { }
+}
+KOR = {
+	male = {
+		names = { 
+			가 간 갈 감 강 강 강 강 강 개 견 경 계 고 곡 공 곽 구 국 군 권 금 기 길 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 나 나 나 남 남궁 낭 내 노 노 노 단 당 대 도 독고 돈 등 동방 두 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 반 방 배 백 범 변 복 봉 부 비 사 사공 상 서 서문 석 선 선우 설 섭 성 성 성 소 손 송 순 승 시 신 신 심 심 안 안 안 안 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 연 여 엄 연 영 예 용 왕 육 유 유 유 류 류 차 천 최 최 최 최 최 최 최 한 한 황 환 해 함 황보 홍 홍 홍 제 제갈 장 장 장 장 장
+		}
+		
+	}
+	female = {
+		names = { 
+			가 간 갈 감 강 강 강 강 강 개 견 경 계 고 곡 공 곽 구 국 군 권 금 기 길 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 나 나 나 남 남궁 낭 내 노 노 노 단 당 대 도 독고 돈 등 동방 두 박 박 박 박 박 박 박 박 박 반 방 배 백 범 변 복 봉 부 비 사 사공 상 서 서문 석 선 선우 설 섭 성 성 성 소 손 송 순 승 시 신 신 심 심 안 안 안 안 이 이 이 이 이 이 이 이 이 이 이 연 여 엄 연 영 예 용 왕 육 유 유 유 류 류 차 천 최 최 최 최 최 최 최 한 한 황 환 해 함 황보 홍 홍 홍 제 제갈 장 장 장 장 장
+		}	
+	}
+	surnames = { 민준 서준 예준 도윤 시우 주원 하준 지호 지후 준서 준우 현우 철욱 건우 우진 민재 현성 현철 민철 재협 영우 광준 혁원 재우 상옥 재상 이호 유준 정우 승우 승현 시윤 운혁 재안 덕성 만송 경원 철우 영수 재건 유문 이환 경석 은철 호석 몽영 규섬 당천 영표 준표 승녕 오환 예평 윤후 이학 대붕 기후 기재 윤휴 서연 서윤 지우 승자 승만 보선 정희 규하 두환 태우 영삼 대중 무현 명박 근혜 재인 석열 명복 태강 철호 만승 지원 한중 }
+	callsigns = { }
+}
+MON = {
+	male = {
+		names = {  Ma Deng Zhao Tong Guan Oboi Sonin Songgotu Suksaha Mingzhu Nalan Fu Hesehn Changlin  }
+	}
+	female = {
+		names = { Mandukhai Samar Zaufishan Mulan Aigiarn Borte Chabi Conchaka Doquez-khatum Goland Khultulun Kokachin Mandughai Oghul Qamish Orqina Sorghaghtani Beki Toregene }
+	}
+	surnames = { Zhanshan Tiemei Shangzhi Linge Xiangying Xingde Kang'an Borjigin Tuliya }
+	callsigns = { }
+}
+MSR = {
+	male = {
+		names = {  Ma Deng Zhao Tong Guan Oboi Sonin Songgotu Suksaha Mingzhu Nalan Fu Hesehn Changlin  }
+	}
+	female = {
+		names = { Mandukhai Samar Zaufishan Mulan Aigiarn Borte Chabi Conchaka Doquez-khatum Goland Khultulun Kokachin Mandughai Oghul Qamish Orqina Sorghaghtani Beki Toregene }
+	}
+	surnames = { Zhanshan Tiemei Shangzhi Linge Xiangying Xingde Kang'an Borjigin Tuliya }
+	callsigns = { }
+}
+ROK = {
+	male = {
+		names = { 
+			가 간 갈 감 강 강 강 강 강 개 견 경 계 고 곡 공 곽 구 국 군 권 금 기 길 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 나 나 나 남 남궁 낭 내 노 노 노 단 당 대 도 독고 돈 등 동방 두 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 반 방 배 백 범 변 복 봉 부 비 사 사공 상 서 서문 석 선 선우 설 섭 성 성 성 소 손 송 순 승 시 신 신 심 심 안 안 안 안 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 연 여 엄 연 영 예 용 왕 육 유 유 유 류 류 차 천 최 최 최 최 최 최 최 한 한 황 환 해 함 황보 홍 홍 홍 제 제갈 장 장 장 장 장
+		}
+		
+	}
+	female = {
+		names = { 
+			가 간 갈 감 강 강 강 강 강 개 견 경 계 고 곡 공 곽 구 국 군 권 금 기 길 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 나 나 나 남 남궁 낭 내 노 노 노 단 당 대 도 독고 돈 등 동방 두 박 박 박 박 박 박 박 박 박 반 방 배 백 범 변 복 봉 부 비 사 사공 상 서 서문 석 선 선우 설 섭 성 성 성 소 손 송 순 승 시 신 신 심 심 안 안 안 안 이 이 이 이 이 이 이 이 이 이 이 연 여 엄 연 영 예 용 왕 육 유 유 유 류 류 차 천 최 최 최 최 최 최 최 한 한 황 환 해 함 황보 홍 홍 홍 제 제갈 장 장 장 장 장
+		}	
+	}
+	surnames = { 민준 서준 예준 도윤 시우 주원 하준 지호 지후 준서 준우 현우 철욱 건우 우진 민재 현성 현철 민철 재협 영우 광준 혁원 재우 상옥 재상 이호 유준 정우 승우 승현 시윤 운혁 재안 덕성 만송 윤휴 서연 서윤 지우 승자 승만 보선 정희 규하 두환 태우 영삼 대중 무현 명박 근혜 재인 명복 태강 철호 만승 한중 }
+	callsigns = { }
+}
+KHK = {
+	male = {
+		names = { 
+			가 간 갈 감 강 강 강 강 강 개 견 경 계 고 곡 공 곽 구 국 군 권 금 기 길 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 나 나 나 남 남궁 낭 내 노 노 노 단 당 대 도 독고 돈 등 동방 두 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 반 방 배 백 범 변 복 봉 부 비 사 사공 상 서 서문 석 선 선우 설 섭 성 성 성 소 손 송 순 승 시 신 신 심 심 안 안 안 안 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 연 여 엄 연 영 예 용 왕 육 유 유 유 류 류 차 천 최 최 최 최 최 최 최 한 한 황 환 해 함 황보 홍 홍 홍 제 제갈 장 장 장 장 장
+		}
+		
+	}
+	female = {
+		names = { 
+			가 간 갈 감 강 강 강 강 강 개 견 경 계 고 곡 공 곽 구 국 군 권 금 기 길 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 나 나 나 남 남궁 낭 내 노 노 노 단 당 대 도 독고 돈 등 동방 두 박 박 박 박 박 박 박 박 박 반 방 배 백 범 변 복 봉 부 비 사 사공 상 서 서문 석 선 선우 설 섭 성 성 성 소 손 송 순 승 시 신 신 심 심 안 안 안 안 이 이 이 이 이 이 이 이 이 이 이 연 여 엄 연 영 예 용 왕 육 유 유 유 류 류 차 천 최 최 최 최 최 최 최 한 한 황 환 해 함 황보 홍 홍 홍 제 제갈 장 장 장 장 장
+		}	
+	}
+	surnames = { 민준 서준 예준 도윤 시우 주원 하준 지호 지후 준서 준우 현우 철욱 건우 우진 민재 현성 현철 민철 재협 영우 광준 혁원 재우 상옥 재상 이호 유준 정우 승우 승현 시윤 운혁 재안 덕성 만송 윤휴 서연 서윤 지우 승자 승만 보선 정희 규하 두환 태우 영삼 대중 무현 명박 근혜 재인 명복 태강 철호 만승 한중 }
+	callsigns = { }
+}
+JNT = {
+	male = {
+		names = { 
+			가 간 갈 감 강 강 강 강 강 개 견 경 계 고 곡 공 곽 구 국 군 권 금 기 길 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 나 나 나 남 남궁 낭 내 노 노 노 단 당 대 도 독고 돈 등 동방 두 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 반 방 배 백 범 변 복 봉 부 비 사 사공 상 서 서문 석 선 선우 설 섭 성 성 성 소 손 송 순 승 시 신 신 심 심 안 안 안 안 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 연 여 엄 연 영 예 용 왕 육 유 유 유 류 류 차 천 최 최 최 최 최 최 최 한 한 황 환 해 함 황보 홍 홍 홍 제 제갈 장 장 장 장 장
+		}
+		
+	}
+	female = {
+		names = { 
+			가 간 갈 감 강 강 강 강 강 개 견 경 계 고 곡 공 곽 구 국 군 권 금 기 길 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 나 나 나 남 남궁 낭 내 노 노 노 단 당 대 도 독고 돈 등 동방 두 박 박 박 박 박 박 박 박 박 반 방 배 백 범 변 복 봉 부 비 사 사공 상 서 서문 석 선 선우 설 섭 성 성 성 소 손 송 순 승 시 신 신 심 심 안 안 안 안 이 이 이 이 이 이 이 이 이 이 이 연 여 엄 연 영 예 용 왕 육 유 유 유 류 류 차 천 최 최 최 최 최 최 최 한 한 황 환 해 함 황보 홍 홍 홍 제 제갈 장 장 장 장 장
+		}	
+	}
+	surnames = { 민준 서준 예준 도윤 시우 주원 하준 지호 지후 준서 준우 현우 철욱 건우 우진 민재 현성 현철 민철 재협 영우 광준 혁원 재우 상옥 재상 이호 유준 정우 승우 승현 시윤 운혁 재안 덕성 만송 윤휴 서연 서윤 지우 승자 승만 보선 정희 규하 두환 태우 영삼 대중 무현 명박 근혜 재인 명복 태강 철호 만승 한중 }
+	callsigns = { }
+}
+KTA = {
+	male = {
+		names = { 
+			가 간 갈 감 강 강 강 강 강 개 견 경 계 고 곡 공 곽 구 국 군 권 금 기 길 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 나 나 나 남 남궁 낭 내 노 노 노 단 당 대 도 독고 돈 등 동방 두 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 반 방 배 백 범 변 복 봉 부 비 사 사공 상 서 서문 석 선 선우 설 섭 성 성 성 소 손 송 순 승 시 신 신 심 심 안 안 안 안 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 연 여 엄 연 영 예 용 왕 육 유 유 유 류 류 차 천 최 최 최 최 최 최 최 한 한 황 환 해 함 황보 홍 홍 홍 제 제갈 장 장 장 장 장
+		}
+		
+	}
+	female = {
+		names = { 
+			가 간 갈 감 강 강 강 강 강 개 견 경 계 고 곡 공 곽 구 국 군 권 금 기 길 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 나 나 나 남 남궁 낭 내 노 노 노 단 당 대 도 독고 돈 등 동방 두 박 박 박 박 박 박 박 박 박 반 방 배 백 범 변 복 봉 부 비 사 사공 상 서 서문 석 선 선우 설 섭 성 성 성 소 손 송 순 승 시 신 신 심 심 안 안 안 안 이 이 이 이 이 이 이 이 이 이 이 연 여 엄 연 영 예 용 왕 육 유 유 유 류 류 차 천 최 최 최 최 최 최 최 한 한 황 환 해 함 황보 홍 홍 홍 제 제갈 장 장 장 장 장
+		}	
+	}
+	surnames = { 민준 서준 예준 도윤 시우 주원 하준 지호 지후 준서 준우 현우 철욱 건우 우진 민재 현성 현철 민철 재협 영우 광준 혁원 재우 상옥 재상 이호 유준 정우 승우 승현 시윤 운혁 재안 덕성 만송 윤휴 서연 서윤 지우 승자 승만 보선 정희 규하 두환 태우 영삼 대중 무현 명박 근혜 재인 명복 태강 철호 만승 한중 }
+	callsigns = { }
+}
+KKS = {
+	male = {
+		names = { 
+			가 간 갈 감 강 강 강 강 강 개 견 경 계 고 곡 공 곽 구 국 군 권 금 기 길 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 나 나 나 남 남궁 낭 내 노 노 노 단 당 대 도 독고 돈 등 동방 두 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 반 방 배 백 범 변 복 봉 부 비 사 사공 상 서 서문 석 선 선우 설 섭 성 성 성 소 손 송 순 승 시 신 신 심 심 안 안 안 안 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 연 여 엄 연 영 예 용 왕 육 유 유 유 류 류 차 천 최 최 최 최 최 최 최 한 한 황 환 해 함 황보 홍 홍 홍 제 제갈 장 장 장 장 장
+		}
+		
+	}
+	female = {
+		names = { 
+			가 간 갈 감 강 강 강 강 강 개 견 경 계 고 곡 공 곽 구 국 군 권 금 기 길 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 나 나 나 남 남궁 낭 내 노 노 노 단 당 대 도 독고 돈 등 동방 두 박 박 박 박 박 박 박 박 박 반 방 배 백 범 변 복 봉 부 비 사 사공 상 서 서문 석 선 선우 설 섭 성 성 성 소 손 송 순 승 시 신 신 심 심 안 안 안 안 이 이 이 이 이 이 이 이 이 이 이 연 여 엄 연 영 예 용 왕 육 유 유 유 류 류 차 천 최 최 최 최 최 최 최 한 한 황 환 해 함 황보 홍 홍 홍 제 제갈 장 장 장 장 장
+		}	
+	}
+	surnames = { 민준 서준 예준 도윤 시우 주원 하준 지호 지후 준서 준우 현우 철욱 건우 우진 민재 현성 현철 민철 재협 영우 광준 혁원 재우 상옥 재상 이호 유준 정우 승우 승현 시윤 운혁 재안 덕성 만송 윤휴 서연 서윤 지우 승자 승만 보선 정희 규하 두환 태우 영삼 대중 무현 명박 근혜 재인 명복 태강 철호 만승 한중 }
+	callsigns = { }
+}
+KPL = {
+	male = {
+		names = { 
+			가 간 갈 감 강 강 강 강 강 개 견 경 계 고 곡 공 곽 구 국 군 권 금 기 길 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 나 나 나 남 남궁 낭 내 노 노 노 단 당 대 도 독고 돈 등 동방 두 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 반 방 배 백 범 변 복 봉 부 비 사 사공 상 서 서문 석 선 선우 설 섭 성 성 성 소 손 송 순 승 시 신 신 심 심 안 안 안 안 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 연 여 엄 연 영 예 용 왕 육 유 유 유 류 류 차 천 최 최 최 최 최 최 최 한 한 황 환 해 함 황보 홍 홍 홍 제 제갈 장 장 장 장 장
+		}
+		
+	}
+	female = {
+		names = { 
+			가 간 갈 감 강 강 강 강 강 개 견 경 계 고 곡 공 곽 구 국 군 권 금 기 길 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 나 나 나 남 남궁 낭 내 노 노 노 단 당 대 도 독고 돈 등 동방 두 박 박 박 박 박 박 박 박 박 반 방 배 백 범 변 복 봉 부 비 사 사공 상 서 서문 석 선 선우 설 섭 성 성 성 소 손 송 순 승 시 신 신 심 심 안 안 안 안 이 이 이 이 이 이 이 이 이 이 이 연 여 엄 연 영 예 용 왕 육 유 유 유 류 류 차 천 최 최 최 최 최 최 최 한 한 황 환 해 함 황보 홍 홍 홍 제 제갈 장 장 장 장 장
+		}	
+	}
+	surnames = { 민준 서준 예준 도윤 시우 주원 하준 지호 지후 준서 준우 현우 철욱 건우 우진 민재 현성 현철 민철 재협 영우 광준 혁원 재우 상옥 재상 이호 유준 정우 승우 승현 시윤 운혁 재안 덕성 만송 윤휴 서연 서윤 지우 승자 승만 보선 정희 규하 두환 태우 영삼 대중 무현 명박 근혜 재인 명복 태강 철호 만승 한중 }
+	callsigns = { }
+}
+KMN = {
+	male = {
+		names = { 
+			가 간 갈 감 강 강 강 강 강 개 견 경 계 고 곡 공 곽 구 국 군 권 금 기 길 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 나 나 나 남 남궁 낭 내 노 노 노 단 당 대 도 독고 돈 등 동방 두 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 반 방 배 백 범 변 복 봉 부 비 사 사공 상 서 서문 석 선 선우 설 섭 성 성 성 소 손 송 순 승 시 신 신 심 심 안 안 안 안 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 연 여 엄 연 영 예 용 왕 육 유 유 유 류 류 차 천 최 최 최 최 최 최 최 한 한 황 환 해 함 황보 홍 홍 홍 제 제갈 장 장 장 장 장
+		}
+		
+	}
+	female = {
+		names = { 
+			가 간 갈 감 강 강 강 강 강 개 견 경 계 고 곡 공 곽 구 국 군 권 금 기 길 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 나 나 나 남 남궁 낭 내 노 노 노 단 당 대 도 독고 돈 등 동방 두 박 박 박 박 박 박 박 박 박 반 방 배 백 범 변 복 봉 부 비 사 사공 상 서 서문 석 선 선우 설 섭 성 성 성 소 손 송 순 승 시 신 신 심 심 안 안 안 안 이 이 이 이 이 이 이 이 이 이 이 연 여 엄 연 영 예 용 왕 육 유 유 유 류 류 차 천 최 최 최 최 최 최 최 한 한 황 환 해 함 황보 홍 홍 홍 제 제갈 장 장 장 장 장
+		}	
+	}
+	surnames = { 민준 서준 예준 도윤 시우 주원 하준 지호 지후 준서 준우 현우 철욱 건우 우진 민재 현성 현철 민철 재협 영우 광준 혁원 재우 상옥 재상 이호 유준 정우 승우 승현 시윤 운혁 재안 덕성 만송 윤휴 서연 서윤 지우 승자 승만 보선 정희 규하 두환 태우 영삼 대중 무현 명박 근혜 재인 명복 태강 철호 만승 한중 }
+	callsigns = { }
+}
+PRK = {
+	male = {
+		names = { 
+			가 간 갈 감 강 강 강 강 강 개 견 경 계 고 곡 공 곽 구 국 군 권 금 기 길 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 나 나 나 남 남궁 낭 내 노 노 노 단 당 대 도 독고 돈 등 동방 두 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 반 방 배 백 범 변 복 봉 부 비 사 사공 상 서 서문 석 선 선우 설 섭 성 성 성 소 손 송 순 승 시 신 신 심 심 안 안 안 안 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 연 여 엄 연 영 예 용 왕 육 유 유 유 류 류 차 천 최 최 최 최 최 최 최 한 한 황 환 해 함 황보 홍 홍 홍 제 제갈 장 장 장 장 장
+		}
+		
+	}
+	female = {
+		names = { 
+			가 간 갈 감 강 강 강 강 강 개 견 경 계 고 곡 공 곽 구 국 군 권 금 기 길 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 나 나 나 남 남궁 낭 내 노 노 노 단 당 대 도 독고 돈 등 동방 두 박 박 박 박 박 박 박 박 박 반 방 배 백 범 변 복 봉 부 비 사 사공 상 서 서문 석 선 선우 설 섭 성 성 성 소 손 송 순 승 시 신 신 심 심 안 안 안 안 이 이 이 이 이 이 이 이 이 이 이 연 여 엄 연 영 예 용 왕 육 유 유 유 류 류 차 천 최 최 최 최 최 최 최 한 한 황 환 해 함 황보 홍 홍 홍 제 제갈 장 장 장 장 장
+		}	
+	}
+	surnames = { 민준 서준 예준 도윤 시우 주원 하준 지호 지후 준서 준우 현우 철욱 건우 우진 민재 현성 현철 민철 재협 영우 광준 혁원 재우 상옥 재상 이호 유준 정우 승우 승현 시윤 운혁 재안 덕성 만송 윤휴 서연 서윤 지우 승자 승만 보선 정희 규하 두환 태우 영삼 대중 무현 명박 근혜 재인 명복 태강 철호 만승 한중 }
+	callsigns = { }
+}
+KYH = {
+	male = {
+		names = { 
+			가 간 갈 감 강 강 강 강 강 개 견 경 계 고 곡 공 곽 구 국 군 권 금 기 길 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 나 나 나 남 남궁 낭 내 노 노 노 단 당 대 도 독고 돈 등 동방 두 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 반 방 배 백 범 변 복 봉 부 비 사 사공 상 서 서문 석 선 선우 설 섭 성 성 성 소 손 송 순 승 시 신 신 심 심 안 안 안 안 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 연 여 엄 연 영 예 용 왕 육 유 유 유 류 류 차 천 최 최 최 최 최 최 최 한 한 황 환 해 함 황보 홍 홍 홍 제 제갈 장 장 장 장 장
+		}
+		
+	}
+	female = {
+		names = { 
+			가 간 갈 감 강 강 강 강 강 개 견 경 계 고 곡 공 곽 구 국 군 권 금 기 길 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 나 나 나 남 남궁 낭 내 노 노 노 단 당 대 도 독고 돈 등 동방 두 박 박 박 박 박 박 박 박 박 반 방 배 백 범 변 복 봉 부 비 사 사공 상 서 서문 석 선 선우 설 섭 성 성 성 소 손 송 순 승 시 신 신 심 심 안 안 안 안 이 이 이 이 이 이 이 이 이 이 이 연 여 엄 연 영 예 용 왕 육 유 유 유 류 류 차 천 최 최 최 최 최 최 최 한 한 황 환 해 함 황보 홍 홍 홍 제 제갈 장 장 장 장 장
+		}	
+	}
+	surnames = { 민준 서준 예준 도윤 시우 주원 하준 지호 지후 준서 준우 현우 철욱 건우 우진 민재 현성 현철 민철 재협 영우 광준 혁원 재우 상옥 재상 이호 유준 정우 승우 승현 시윤 운혁 재안 덕성 만송 윤휴 서연 서윤 지우 승자 승만 보선 정희 규하 두환 태우 영삼 대중 무현 명박 근혜 재인 명복 태강 철호 만승 한중 }
+	callsigns = { }
+}
+FNG = {
+	male = {
+		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
+	}
+	female = {
+		names = { }
+	}
+	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
+	callsigns = { }
+}
+QIN = {
+	male = {
+		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
+	}
+	female = {
+		names = { }
+	}
+	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
+	callsigns = { }
+}
+GDC = {
+	male = {
+		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
+	}
+	female = {
+		names = { }
+	}
+	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
+	callsigns = { }
+}
+SZC = {
+	male = {
+		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
+	}
+	female = {
+		names = { }
+	}
+	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
+	callsigns = { }
+}
+SCC = {
+	male = {
+		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
+	}
+	female = {
+		names = { }
+	}
+	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
+	callsigns = { }
+}
+AQC = {
+	male = {
+		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
+	}
+	female = {
+		names = { }
+	}
+	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
+	callsigns = { }
+}
+GZC = {
+	male = {
+		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
+	}
+	female = {
+		names = { }
+	}
+	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
+	callsigns = { }
+}
+XKC = {
+	male = {
+		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
+	}
+	female = {
+		names = { }
+	}
+	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
+	callsigns = { }
+}
+SZY = {
+	male = {
+		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
+	}
+	female = {
+		names = { }
+	}
+	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
+	callsigns = { }
+}
+KMK = {
+	male = {
+		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
+	}
+	female = {
+		names = { }
+	}
+	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
+}	
+ETS = {
+	male = {
+		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
+	}
+	female = {
+		names = { }
+	}
+	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
+}
+MHB = {
+	male = {
+		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
+	}
+	female = {
+		names = { }
+	}
+	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
+}	
+MHX = {
+	male = {
+		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
+	}
+	female = {
+		names = { }
+	}
+	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
+}	
+WZC = {
+	male = {
+		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
+	}
+	female = {
+		names = { }
+	}
+	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
+}	
+ZLC = {
+	male = {
+		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
+	}
+	female = {
+		names = { }
+	}
+	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
+}	
+HNC = {
+	male = {
+		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
+	}
+	female = {
+		names = { }
+	}
+	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
+}	
+SND = {
+	male = {
+		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
+	}
+	female = {
+		names = { }
+	}
+	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
+}	
+AHC = {
+	male = {
+		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
+	}
+	female = {
+		names = { }
+	}
+	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
+}	
+CH1 = {
+	male = {
+		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
+	}
+	female = {
+		names = { }
+	}
+	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
+}	
+EJP = {
+	male = {
+		names = { 
+			Aritomo
+			Goro Gentaro Gonnohyoe
+			Heihachiro Hiroshi Hikonojo Hyoe Hayao
+			Iwao
+			Jiro Jinzaburo
+			Kiyotaka Kuranosuke Kozo Kantaro Koichiro Kagenori Kageaki Kotohito Keisuke Kazushige Kenkichi
+			Maresuke Masujiro Michisura Masatake Mitsuomi Mitsue Mineo
+			Nariaki Nobuyoshi
+			Rokuro
+			Sukeyuki Sukenori Shoin Sumiyoshi Samata Soroku Shichiro Shigeto Sotokichi Shigeru Sadao Shinsaku
+			Takayoshi Takamori Toshimichi Tsugumichi Tadakuni Tomonosuke Taro Toshiyoshi Tetsutaro Taruhito Takeaki Tamemoto Tomasaburo
+			Yoshika Yoshinobu Yoshimichi Yoshida Yasukata Yahachi Yusaku Yoshifuru Yoshinori Yasuyoshi
+		}
+	}
+	female = {
+		names = { Aimi Asami Asuka Ai Aki Fujiko Kaori Kimiko Haruno Hanako Kotoe Masae Junko Itsumi Chie Chitose Chiyo Mai Maki Nodoka Ruri Sae Sachie Yae Nami Ritsuko }
+	}
+	surnames = { 
+		Arisugawa Arichi Akiyama Araki
+		Dewa
+		Enomoto
+		Hasegawa Honjo
+		Ito Inoue Ichinohe Itagaki
+		Kido Kuroda Katsura Kodama Kabayama Kawamura Kuroki Kawakami Kamimura Kataoka Kamio Kato Kanin Katsu
+		Makino Muto Minami Masaki Matsudaira
+		Nakamuta Nogi Nire Nozu
+		Okubo Oyama Omura Oku Okada Osumi
+		Saigo Suzuki Sato Sakura Shibayama Shimamura Shirakawa
+		Togo Takashima Tsuboi Tachibana Terauchi Tamon Takasugi Tokugawa
+		Uehara Uryu Ugaki Ueda
+		Yamagata Yamamoto Yamakawa Yashiro Yui Yamashita Yamaya
+	}
+	callsigns = { Viper Lightning Devil Dragon Fury Bat Beer Sake Demon Dirty Lance Panther Shogun Vampire "War Lord" }
+}
+FJP = {
+	male = {
+		names = { 
+			Aritomo
+			Goro Gentaro Gonnohyoe
+			Heihachiro Hiroshi Hikonojo Hyoe Hayao
+			Iwao
+			Jiro Jinzaburo
+			Kiyotaka Kuranosuke Kozo Kantaro Koichiro Kagenori Kageaki Kotohito Keisuke Kazushige Kenkichi
+			Maresuke Masujiro Michisura Masatake Mitsuomi Mitsue Mineo
+			Nariaki Nobuyoshi
+			Rokuro
+			Sukeyuki Sukenori Shoin Sumiyoshi Samata Soroku Shichiro Shigeto Sotokichi Shigeru Sadao Shinsaku
+			Takayoshi Takamori Toshimichi Tsugumichi Tadakuni Tomonosuke Taro Toshiyoshi Tetsutaro Taruhito Takeaki Tamemoto Tomasaburo
+			Yoshika Yoshinobu Yoshimichi Yoshida Yasukata Yahachi Yusaku Yoshifuru Yoshinori Yasuyoshi
+		}
+	}
+	female = {
+		names = { Aimi Asami Asuka Ai Aki Fujiko Kaori Kimiko Haruno Hanako Kotoe Masae Junko Itsumi Chie Chitose Chiyo Mai Maki Nodoka Ruri Sae Sachie Yae Nami Ritsuko }
+	}
+	surnames = { 
+		Arisugawa Arichi Akiyama Araki
+		Dewa
+		Enomoto
+		Hasegawa Honjo
+		Ito Inoue Ichinohe Itagaki
+		Kido Kuroda Katsura Kodama Kabayama Kawamura Kuroki Kawakami Kamimura Kataoka Kamio Kato Kanin Katsu
+		Makino Muto Minami Masaki Matsudaira
+		Nakamuta Nogi Nire Nozu
+		Okubo Oyama Omura Oku Okada Osumi
+		Saigo Suzuki Sato Sakura Shibayama Shimamura Shirakawa
+		Togo Takashima Tsuboi Tachibana Terauchi Tamon Takasugi Tokugawa
+		Uehara Uryu Ugaki Ueda
+		Yamagata Yamamoto Yamakawa Yashiro Yui Yamashita Yamaya
+	}
+	callsigns = { Viper Lightning Devil Dragon Fury Bat Beer Sake Demon Dirty Lance Panther Shogun Vampire "War Lord" }
+}
+ANU = {
+	male = {
+		names = { 
+			Aritomo
+			Goro Gentaro Gonnohyoe
+			Heihachiro Hiroshi Hikonojo Hyoe Hayao
+			Iwao
+			Jiro Jinzaburo
+			Kiyotaka Kuranosuke Kozo Kantaro Koichiro Kagenori Kageaki Kotohito Keisuke Kazushige Kenkichi
+			Maresuke Masujiro Michisura Masatake Mitsuomi Mitsue Mineo
+			Nariaki Nobuyoshi
+			Rokuro
+			Sukeyuki Sukenori Shoin Sumiyoshi Samata Soroku Shichiro Shigeto Sotokichi Shigeru Sadao Shinsaku
+			Takayoshi Takamori Toshimichi Tsugumichi Tadakuni Tomonosuke Taro Toshiyoshi Tetsutaro Taruhito Takeaki Tamemoto Tomasaburo
+			Yoshika Yoshinobu Yoshimichi Yoshida Yasukata Yahachi Yusaku Yoshifuru Yoshinori Yasuyoshi
+		}
+	}
+	female = {
+		names = { Aimi Asami Asuka Ai Aki Fujiko Kaori Kimiko Haruno Hanako Kotoe Masae Junko Itsumi Chie Chitose Chiyo Mai Maki Nodoka Ruri Sae Sachie Yae Nami Ritsuko }
+	}
+	surnames = { 
+		Arisugawa Arichi Akiyama Araki
+		Dewa
+		Enomoto
+		Hasegawa Honjo
+		Ito Inoue Ichinohe Itagaki
+		Kido Kuroda Katsura Kodama Kabayama Kawamura Kuroki Kawakami Kamimura Kataoka Kamio Kato Kanin Katsu
+		Makino Muto Minami Masaki Matsudaira
+		Nakamuta Nogi Nire Nozu
+		Okubo Oyama Omura Oku Okada Osumi
+		Saigo Suzuki Sato Sakura Shibayama Shimamura Shirakawa
+		Togo Takashima Tsuboi Tachibana Terauchi Tamon Takasugi Tokugawa
+		Uehara Uryu Ugaki Ueda
+		Yamagata Yamamoto Yamakawa Yashiro Yui Yamashita Yamaya
+	}
+	callsigns = { Viper Lightning Devil Dragon Fury Bat Beer Sake Demon Dirty Lance Panther Shogun Vampire "War Lord" }
+}
+RYU = {
+	male = {
+		names = { 
+			Aritomo
+			Goro Gentaro Gonnohyoe
+			Heihachiro Hiroshi Hikonojo Hyoe Hayao
+			Iwao
+			Jiro Jinzaburo
+			Kiyotaka Kuranosuke Kozo Kantaro Koichiro Kagenori Kageaki Kotohito Keisuke Kazushige Kenkichi
+			Maresuke Masujiro Michisura Masatake Mitsuomi Mitsue Mineo
+			Nariaki Nobuyoshi
+			Rokuro
+			Sukeyuki Sukenori Shoin Sumiyoshi Samata Soroku Shichiro Shigeto Sotokichi Shigeru Sadao Shinsaku
+			Takayoshi Takamori Toshimichi Tsugumichi Tadakuni Tomonosuke Taro Toshiyoshi Tetsutaro Taruhito Takeaki Tamemoto Tomasaburo
+			Yoshika Yoshinobu Yoshimichi Yoshida Yasukata Yahachi Yusaku Yoshifuru Yoshinori Yasuyoshi
+		}
+	}
+	female = {
+		names = { Aimi Asami Asuka Ai Aki Fujiko Kaori Kimiko Haruno Hanako Kotoe Masae Junko Itsumi Chie Chitose Chiyo Mai Maki Nodoka Ruri Sae Sachie Yae Nami Ritsuko }
+	}
+	surnames = { 
+		Arisugawa Arichi Akiyama Araki
+		Dewa
+		Enomoto
+		Hasegawa Honjo
+		Ito Inoue Ichinohe Itagaki
+		Kido Kuroda Katsura Kodama Kabayama Kawamura Kuroki Kawakami Kamimura Kataoka Kamio Kato Kanin Katsu
+		Makino Muto Minami Masaki Matsudaira
+		Nakamuta Nogi Nire Nozu
+		Okubo Oyama Omura Oku Okada Osumi
+		Saigo Suzuki Sato Sakura Shibayama Shimamura Shirakawa
+		Togo Takashima Tsuboi Tachibana Terauchi Tamon Takasugi Tokugawa
+		Uehara Uryu Ugaki Ueda
+		Yamagata Yamamoto Yamakawa Yashiro Yui Yamashita Yamaya
+	}
+	callsigns = { Viper Lightning Devil Dragon Fury Bat Beer Sake Demon Dirty Lance Panther Shogun Vampire "War Lord" }
+}
+DKG = {
+	male = {
+		names = { 
+			Aritomo
+			Goro Gentaro Gonnohyoe
+			Heihachiro Hiroshi Hikonojo Hyoe Hayao
+			Iwao
+			Jiro Jinzaburo
+			Kiyotaka Kuranosuke Kozo Kantaro Koichiro Kagenori Kageaki Kotohito Keisuke Kazushige Kenkichi
+			Maresuke Masujiro Michisura Masatake Mitsuomi Mitsue Mineo
+			Nariaki Nobuyoshi
+			Rokuro
+			Sukeyuki Sukenori Shoin Sumiyoshi Samata Soroku Shichiro Shigeto Sotokichi Shigeru Sadao Shinsaku
+			Takayoshi Takamori Toshimichi Tsugumichi Tadakuni Tomonosuke Taro Toshiyoshi Tetsutaro Taruhito Takeaki Tamemoto Tomasaburo
+			Yoshika Yoshinobu Yoshimichi Yoshida Yasukata Yahachi Yusaku Yoshifuru Yoshinori Yasuyoshi
+		}
+	}
+	female = {
+		names = { Aimi Asami Asuka Ai Aki Fujiko Kaori Kimiko Haruno Hanako Kotoe Masae Junko Itsumi Chie Chitose Chiyo Mai Maki Nodoka Ruri Sae Sachie Yae Nami Ritsuko }
+	}
+	surnames = { 
+		Arisugawa Arichi Akiyama Araki
+		Dewa
+		Enomoto
+		Hasegawa Honjo
+		Ito Inoue Ichinohe Itagaki
+		Kido Kuroda Katsura Kodama Kabayama Kawamura Kuroki Kawakami Kamimura Kataoka Kamio Kato Kanin Katsu
+		Makino Muto Minami Masaki Matsudaira
+		Nakamuta Nogi Nire Nozu
+		Okubo Oyama Omura Oku Okada Osumi
+		Saigo Suzuki Sato Sakura Shibayama Shimamura Shirakawa
+		Togo Takashima Tsuboi Tachibana Terauchi Tamon Takasugi Tokugawa
+		Uehara Uryu Ugaki Ueda
+		Yamagata Yamamoto Yamakawa Yashiro Yui Yamashita Yamaya
+	}
+	callsigns = { Viper Lightning Devil Dragon Fury Bat Beer Sake Demon Dirty Lance Panther Shogun Vampire "War Lord" }
+}
+NBJ = {
+	male = {
+		names = { 
+			Aritomo
+			Goro Gentaro Gonnohyoe
+			Heihachiro Hiroshi Hikonojo Hyoe Hayao
+			Iwao
+			Jiro Jinzaburo
+			Kiyotaka Kuranosuke Kozo Kantaro Koichiro Kagenori Kageaki Kotohito Keisuke Kazushige Kenkichi
+			Maresuke Masujiro Michisura Masatake Mitsuomi Mitsue Mineo
+			Nariaki Nobuyoshi
+			Rokuro
+			Sukeyuki Sukenori Shoin Sumiyoshi Samata Soroku Shichiro Shigeto Sotokichi Shigeru Sadao Shinsaku
+			Takayoshi Takamori Toshimichi Tsugumichi Tadakuni Tomonosuke Taro Toshiyoshi Tetsutaro Taruhito Takeaki Tamemoto Tomasaburo
+			Yoshika Yoshinobu Yoshimichi Yoshida Yasukata Yahachi Yusaku Yoshifuru Yoshinori Yasuyoshi
+		}
+	}
+	female = {
+		names = { Aimi Asami Asuka Ai Aki Fujiko Kaori Kimiko Haruno Hanako Kotoe Masae Junko Itsumi Chie Chitose Chiyo Mai Maki Nodoka Ruri Sae Sachie Yae Nami Ritsuko }
+	}
+	surnames = { 
+		Arisugawa Arichi Akiyama Araki
+		Dewa
+		Enomoto
+		Hasegawa Honjo
+		Ito Inoue Ichinohe Itagaki
+		Kido Kuroda Katsura Kodama Kabayama Kawamura Kuroki Kawakami Kamimura Kataoka Kamio Kato Kanin Katsu
+		Makino Muto Minami Masaki Matsudaira
+		Nakamuta Nogi Nire Nozu
+		Okubo Oyama Omura Oku Okada Osumi
+		Saigo Suzuki Sato Sakura Shibayama Shimamura Shirakawa
+		Togo Takashima Tsuboi Tachibana Terauchi Tamon Takasugi Tokugawa
+		Uehara Uryu Ugaki Ueda
+		Yamagata Yamamoto Yamakawa Yashiro Yui Yamashita Yamaya
+	}
+	callsigns = { Viper Lightning Devil Dragon Fury Bat Beer Sake Demon Dirty Lance Panther Shogun Vampire "War Lord" }
+}
+SDJ = {
+	male = {
+		names = { 
+			Aritomo
+			Goro Gentaro Gonnohyoe
+			Heihachiro Hiroshi Hikonojo Hyoe Hayao
+			Iwao
+			Jiro Jinzaburo
+			Kiyotaka Kuranosuke Kozo Kantaro Koichiro Kagenori Kageaki Kotohito Keisuke Kazushige Kenkichi
+			Maresuke Masujiro Michisura Masatake Mitsuomi Mitsue Mineo
+			Nariaki Nobuyoshi
+			Rokuro
+			Sukeyuki Sukenori Shoin Sumiyoshi Samata Soroku Shichiro Shigeto Sotokichi Shigeru Sadao Shinsaku
+			Takayoshi Takamori Toshimichi Tsugumichi Tadakuni Tomonosuke Taro Toshiyoshi Tetsutaro Taruhito Takeaki Tamemoto Tomasaburo
+			Yoshika Yoshinobu Yoshimichi Yoshida Yasukata Yahachi Yusaku Yoshifuru Yoshinori Yasuyoshi
+		}
+	}
+	female = {
+		names = { Aimi Asami Asuka Ai Aki Fujiko Kaori Kimiko Haruno Hanako Kotoe Masae Junko Itsumi Chie Chitose Chiyo Mai Maki Nodoka Ruri Sae Sachie Yae Nami Ritsuko }
+	}
+	surnames = { 
+		Arisugawa Arichi Akiyama Araki
+		Dewa
+		Enomoto
+		Hasegawa Honjo
+		Ito Inoue Ichinohe Itagaki
+		Kido Kuroda Katsura Kodama Kabayama Kawamura Kuroki Kawakami Kamimura Kataoka Kamio Kato Kanin Katsu
+		Makino Muto Minami Masaki Matsudaira
+		Nakamuta Nogi Nire Nozu
+		Okubo Oyama Omura Oku Okada Osumi
+		Saigo Suzuki Sato Sakura Shibayama Shimamura Shirakawa
+		Togo Takashima Tsuboi Tachibana Terauchi Tamon Takasugi Tokugawa
+		Uehara Uryu Ugaki Ueda
+		Yamagata Yamamoto Yamakawa Yashiro Yui Yamashita Yamaya
+	}
+	callsigns = { Viper Lightning Devil Dragon Fury Bat Beer Sake Demon Dirty Lance Panther Shogun Vampire "War Lord" }
+}
+KGJ = {
+	male = {
+		names = { 
+			Aritomo
+			Goro Gentaro Gonnohyoe
+			Heihachiro Hiroshi Hikonojo Hyoe Hayao
+			Iwao
+			Jiro Jinzaburo
+			Kiyotaka Kuranosuke Kozo Kantaro Koichiro Kagenori Kageaki Kotohito Keisuke Kazushige Kenkichi
+			Maresuke Masujiro Michisura Masatake Mitsuomi Mitsue Mineo
+			Nariaki Nobuyoshi
+			Rokuro
+			Sukeyuki Sukenori Shoin Sumiyoshi Samata Soroku Shichiro Shigeto Sotokichi Shigeru Sadao Shinsaku
+			Takayoshi Takamori Toshimichi Tsugumichi Tadakuni Tomonosuke Taro Toshiyoshi Tetsutaro Taruhito Takeaki Tamemoto Tomasaburo
+			Yoshika Yoshinobu Yoshimichi Yoshida Yasukata Yahachi Yusaku Yoshifuru Yoshinori Yasuyoshi
+		}
+	}
+	female = {
+		names = { Aimi Asami Asuka Ai Aki Fujiko Kaori Kimiko Haruno Hanako Kotoe Masae Junko Itsumi Chie Chitose Chiyo Mai Maki Nodoka Ruri Sae Sachie Yae Nami Ritsuko }
+	}
+	surnames = { 
+		Arisugawa Arichi Akiyama Araki
+		Dewa
+		Enomoto
+		Hasegawa Honjo
+		Ito Inoue Ichinohe Itagaki
+		Kido Kuroda Katsura Kodama Kabayama Kawamura Kuroki Kawakami Kamimura Kataoka Kamio Kato Kanin Katsu
+		Makino Muto Minami Masaki Matsudaira
+		Nakamuta Nogi Nire Nozu
+		Okubo Oyama Omura Oku Okada Osumi
+		Saigo Suzuki Sato Sakura Shibayama Shimamura Shirakawa
+		Togo Takashima Tsuboi Tachibana Terauchi Tamon Takasugi Tokugawa
+		Uehara Uryu Ugaki Ueda
+		Yamagata Yamamoto Yamakawa Yashiro Yui Yamashita Yamaya
+	}
+	callsigns = { Viper Lightning Devil Dragon Fury Bat Beer Sake Demon Dirty Lance Panther Shogun Vampire "War Lord" }
+}
+GJJ = {
+	male = {
+		names = { 
+			Aritomo
+			Goro Gentaro Gonnohyoe
+			Heihachiro Hiroshi Hikonojo Hyoe Hayao
+			Iwao
+			Jiro Jinzaburo
+			Kiyotaka Kuranosuke Kozo Kantaro Koichiro Kagenori Kageaki Kotohito Keisuke Kazushige Kenkichi
+			Maresuke Masujiro Michisura Masatake Mitsuomi Mitsue Mineo
+			Nariaki Nobuyoshi
+			Rokuro
+			Sukeyuki Sukenori Shoin Sumiyoshi Samata Soroku Shichiro Shigeto Sotokichi Shigeru Sadao Shinsaku
+			Takayoshi Takamori Toshimichi Tsugumichi Tadakuni Tomonosuke Taro Toshiyoshi Tetsutaro Taruhito Takeaki Tamemoto Tomasaburo
+			Yoshika Yoshinobu Yoshimichi Yoshida Yasukata Yahachi Yusaku Yoshifuru Yoshinori Yasuyoshi
+		}
+	}
+	female = {
+		names = { Aimi Asami Asuka Ai Aki Fujiko Kaori Kimiko Haruno Hanako Kotoe Masae Junko Itsumi Chie Chitose Chiyo Mai Maki Nodoka Ruri Sae Sachie Yae Nami Ritsuko }
+	}
+	surnames = { 
+		Arisugawa Arichi Akiyama Araki
+		Dewa
+		Enomoto
+		Hasegawa Honjo
+		Ito Inoue Ichinohe Itagaki
+		Kido Kuroda Katsura Kodama Kabayama Kawamura Kuroki Kawakami Kamimura Kataoka Kamio Kato Kanin Katsu
+		Makino Muto Minami Masaki Matsudaira
+		Nakamuta Nogi Nire Nozu
+		Okubo Oyama Omura Oku Okada Osumi
+		Saigo Suzuki Sato Sakura Shibayama Shimamura Shirakawa
+		Togo Takashima Tsuboi Tachibana Terauchi Tamon Takasugi Tokugawa
+		Uehara Uryu Ugaki Ueda
+		Yamagata Yamamoto Yamakawa Yashiro Yui Yamashita Yamaya
+	}
+	callsigns = { Viper Lightning Devil Dragon Fury Bat Beer Sake Demon Dirty Lance Panther Shogun Vampire "War Lord" }
+}
+DK1 = {
+	male = {
+		names = { 
+			Aritomo
+			Goro Gentaro Gonnohyoe
+			Heihachiro Hiroshi Hikonojo Hyoe Hayao
+			Iwao
+			Jiro Jinzaburo
+			Kiyotaka Kuranosuke Kozo Kantaro Koichiro Kagenori Kageaki Kotohito Keisuke Kazushige Kenkichi
+			Maresuke Masujiro Michisura Masatake Mitsuomi Mitsue Mineo
+			Nariaki Nobuyoshi
+			Rokuro
+			Sukeyuki Sukenori Shoin Sumiyoshi Samata Soroku Shichiro Shigeto Sotokichi Shigeru Sadao Shinsaku
+			Takayoshi Takamori Toshimichi Tsugumichi Tadakuni Tomonosuke Taro Toshiyoshi Tetsutaro Taruhito Takeaki Tamemoto Tomasaburo
+			Yoshika Yoshinobu Yoshimichi Yoshida Yasukata Yahachi Yusaku Yoshifuru Yoshinori Yasuyoshi
+		}
+	}
+	female = {
+		names = { Aimi Asami Asuka Ai Aki Fujiko Kaori Kimiko Haruno Hanako Kotoe Masae Junko Itsumi Chie Chitose Chiyo Mai Maki Nodoka Ruri Sae Sachie Yae Nami Ritsuko }
+	}
+	surnames = { 
+		Arisugawa Arichi Akiyama Araki
+		Dewa
+		Enomoto
+		Hasegawa Honjo
+		Ito Inoue Ichinohe Itagaki
+		Kido Kuroda Katsura Kodama Kabayama Kawamura Kuroki Kawakami Kamimura Kataoka Kamio Kato Kanin Katsu
+		Makino Muto Minami Masaki Matsudaira
+		Nakamuta Nogi Nire Nozu
+		Okubo Oyama Omura Oku Okada Osumi
+		Saigo Suzuki Sato Sakura Shibayama Shimamura Shirakawa
+		Togo Takashima Tsuboi Tachibana Terauchi Tamon Takasugi Tokugawa
+		Uehara Uryu Ugaki Ueda
+		Yamagata Yamamoto Yamakawa Yashiro Yui Yamashita Yamaya
+	}
+	callsigns = { Viper Lightning Devil Dragon Fury Bat Beer Sake Demon Dirty Lance Panther Shogun Vampire "War Lord" }
+}
+DK2 = {
+	male = {
+		names = { 
+			Aritomo
+			Goro Gentaro Gonnohyoe
+			Heihachiro Hiroshi Hikonojo Hyoe Hayao
+			Iwao
+			Jiro Jinzaburo
+			Kiyotaka Kuranosuke Kozo Kantaro Koichiro Kagenori Kageaki Kotohito Keisuke Kazushige Kenkichi
+			Maresuke Masujiro Michisura Masatake Mitsuomi Mitsue Mineo
+			Nariaki Nobuyoshi
+			Rokuro
+			Sukeyuki Sukenori Shoin Sumiyoshi Samata Soroku Shichiro Shigeto Sotokichi Shigeru Sadao Shinsaku
+			Takayoshi Takamori Toshimichi Tsugumichi Tadakuni Tomonosuke Taro Toshiyoshi Tetsutaro Taruhito Takeaki Tamemoto Tomasaburo
+			Yoshika Yoshinobu Yoshimichi Yoshida Yasukata Yahachi Yusaku Yoshifuru Yoshinori Yasuyoshi
+		}
+	}
+	female = {
+		names = { Aimi Asami Asuka Ai Aki Fujiko Kaori Kimiko Haruno Hanako Kotoe Masae Junko Itsumi Chie Chitose Chiyo Mai Maki Nodoka Ruri Sae Sachie Yae Nami Ritsuko }
+	}
+	surnames = { 
+		Arisugawa Arichi Akiyama Araki
+		Dewa
+		Enomoto
+		Hasegawa Honjo
+		Ito Inoue Ichinohe Itagaki
+		Kido Kuroda Katsura Kodama Kabayama Kawamura Kuroki Kawakami Kamimura Kataoka Kamio Kato Kanin Katsu
+		Makino Muto Minami Masaki Matsudaira
+		Nakamuta Nogi Nire Nozu
+		Okubo Oyama Omura Oku Okada Osumi
+		Saigo Suzuki Sato Sakura Shibayama Shimamura Shirakawa
+		Togo Takashima Tsuboi Tachibana Terauchi Tamon Takasugi Tokugawa
+		Uehara Uryu Ugaki Ueda
+		Yamagata Yamamoto Yamakawa Yashiro Yui Yamashita Yamaya
+	}
+	callsigns = { Viper Lightning Devil Dragon Fury Bat Beer Sake Demon Dirty Lance Panther Shogun Vampire "War Lord" }
+}
+DK3 = {
+	male = {
+		names = { 
+			Aritomo
+			Goro Gentaro Gonnohyoe
+			Heihachiro Hiroshi Hikonojo Hyoe Hayao
+			Iwao
+			Jiro Jinzaburo
+			Kiyotaka Kuranosuke Kozo Kantaro Koichiro Kagenori Kageaki Kotohito Keisuke Kazushige Kenkichi
+			Maresuke Masujiro Michisura Masatake Mitsuomi Mitsue Mineo
+			Nariaki Nobuyoshi
+			Rokuro
+			Sukeyuki Sukenori Shoin Sumiyoshi Samata Soroku Shichiro Shigeto Sotokichi Shigeru Sadao Shinsaku
+			Takayoshi Takamori Toshimichi Tsugumichi Tadakuni Tomonosuke Taro Toshiyoshi Tetsutaro Taruhito Takeaki Tamemoto Tomasaburo
+			Yoshika Yoshinobu Yoshimichi Yoshida Yasukata Yahachi Yusaku Yoshifuru Yoshinori Yasuyoshi
+		}
+	}
+	female = {
+		names = { Aimi Asami Asuka Ai Aki Fujiko Kaori Kimiko Haruno Hanako Kotoe Masae Junko Itsumi Chie Chitose Chiyo Mai Maki Nodoka Ruri Sae Sachie Yae Nami Ritsuko }
+	}
+	surnames = { 
+		Arisugawa Arichi Akiyama Araki
+		Dewa
+		Enomoto
+		Hasegawa Honjo
+		Ito Inoue Ichinohe Itagaki
+		Kido Kuroda Katsura Kodama Kabayama Kawamura Kuroki Kawakami Kamimura Kataoka Kamio Kato Kanin Katsu
+		Makino Muto Minami Masaki Matsudaira
+		Nakamuta Nogi Nire Nozu
+		Okubo Oyama Omura Oku Okada Osumi
+		Saigo Suzuki Sato Sakura Shibayama Shimamura Shirakawa
+		Togo Takashima Tsuboi Tachibana Terauchi Tamon Takasugi Tokugawa
+		Uehara Uryu Ugaki Ueda
+		Yamagata Yamamoto Yamakawa Yashiro Yui Yamashita Yamaya
+	}
+	callsigns = { Viper Lightning Devil Dragon Fury Bat Beer Sake Demon Dirty Lance Panther Shogun Vampire "War Lord" }
+}
+DK4 = {
+	male = {
+		names = { 
+			Aritomo
+			Goro Gentaro Gonnohyoe
+			Heihachiro Hiroshi Hikonojo Hyoe Hayao
+			Iwao
+			Jiro Jinzaburo
+			Kiyotaka Kuranosuke Kozo Kantaro Koichiro Kagenori Kageaki Kotohito Keisuke Kazushige Kenkichi
+			Maresuke Masujiro Michisura Masatake Mitsuomi Mitsue Mineo
+			Nariaki Nobuyoshi
+			Rokuro
+			Sukeyuki Sukenori Shoin Sumiyoshi Samata Soroku Shichiro Shigeto Sotokichi Shigeru Sadao Shinsaku
+			Takayoshi Takamori Toshimichi Tsugumichi Tadakuni Tomonosuke Taro Toshiyoshi Tetsutaro Taruhito Takeaki Tamemoto Tomasaburo
+			Yoshika Yoshinobu Yoshimichi Yoshida Yasukata Yahachi Yusaku Yoshifuru Yoshinori Yasuyoshi
+		}
+	}
+	female = {
+		names = { Aimi Asami Asuka Ai Aki Fujiko Kaori Kimiko Haruno Hanako Kotoe Masae Junko Itsumi Chie Chitose Chiyo Mai Maki Nodoka Ruri Sae Sachie Yae Nami Ritsuko }
+	}
+	surnames = { 
+		Arisugawa Arichi Akiyama Araki
+		Dewa
+		Enomoto
+		Hasegawa Honjo
+		Ito Inoue Ichinohe Itagaki
+		Kido Kuroda Katsura Kodama Kabayama Kawamura Kuroki Kawakami Kamimura Kataoka Kamio Kato Kanin Katsu
+		Makino Muto Minami Masaki Matsudaira
+		Nakamuta Nogi Nire Nozu
+		Okubo Oyama Omura Oku Okada Osumi
+		Saigo Suzuki Sato Sakura Shibayama Shimamura Shirakawa
+		Togo Takashima Tsuboi Tachibana Terauchi Tamon Takasugi Tokugawa
+		Uehara Uryu Ugaki Ueda
+		Yamagata Yamamoto Yamakawa Yashiro Yui Yamashita Yamaya
+	}
+	callsigns = { Viper Lightning Devil Dragon Fury Bat Beer Sake Demon Dirty Lance Panther Shogun Vampire "War Lord" }
+}
+TBJ = {
+	male = {
+		names = { 
+			Aritomo
+			Goro Gentaro Gonnohyoe
+			Heihachiro Hiroshi Hikonojo Hyoe Hayao
+			Iwao
+			Jiro Jinzaburo
+			Kiyotaka Kuranosuke Kozo Kantaro Koichiro Kagenori Kageaki Kotohito Keisuke Kazushige Kenkichi
+			Maresuke Masujiro Michisura Masatake Mitsuomi Mitsue Mineo
+			Nariaki Nobuyoshi
+			Rokuro
+			Sukeyuki Sukenori Shoin Sumiyoshi Samata Soroku Shichiro Shigeto Sotokichi Shigeru Sadao Shinsaku
+			Takayoshi Takamori Toshimichi Tsugumichi Tadakuni Tomonosuke Taro Toshiyoshi Tetsutaro Taruhito Takeaki Tamemoto Tomasaburo
+			Yoshika Yoshinobu Yoshimichi Yoshida Yasukata Yahachi Yusaku Yoshifuru Yoshinori Yasuyoshi
+		}
+	}
+	female = {
+		names = { Aimi Asami Asuka Ai Aki Fujiko Kaori Kimiko Haruno Hanako Kotoe Masae Junko Itsumi Chie Chitose Chiyo Mai Maki Nodoka Ruri Sae Sachie Yae Nami Ritsuko }
+	}
+	surnames = { 
+		Arisugawa Arichi Akiyama Araki
+		Dewa
+		Enomoto
+		Hasegawa Honjo
+		Ito Inoue Ichinohe Itagaki
+		Kido Kuroda Katsura Kodama Kabayama Kawamura Kuroki Kawakami Kamimura Kataoka Kamio Kato Kanin Katsu
+		Makino Muto Minami Masaki Matsudaira
+		Nakamuta Nogi Nire Nozu
+		Okubo Oyama Omura Oku Okada Osumi
+		Saigo Suzuki Sato Sakura Shibayama Shimamura Shirakawa
+		Togo Takashima Tsuboi Tachibana Terauchi Tamon Takasugi Tokugawa
+		Uehara Uryu Ugaki Ueda
+		Yamagata Yamamoto Yamakawa Yashiro Yui Yamashita Yamaya
+	}
+	callsigns = { Viper Lightning Devil Dragon Fury Bat Beer Sake Demon Dirty Lance Panther Shogun Vampire "War Lord" }
+}
+FRS = {
+	male = {
+		names = {  
+			Achille Adolphe Adrien Aimable Alphonse Amédée Antoine Armand August Augustin
+			Charles Daniel Denis Édouard Elie Éttiene Eugène Félicien Félix Fernand
+			François Frédéric Georges Guillaume Gustave Henri Hubert Hugo Jacques Jean
+			Joseph Jules Julien Lazare Léopold Leroy Louis Lucien Matthieu Michel
+			Napoléon Nicolas Patrice Paul Philippe Pierre Robert Thibaut Thierry Thomas
+		 }
+	}
+	female = {
+		names = { Anne Marie Françoise Gisèle Marguerite Marianne Simone Anaïs Irène Nathalie Elsa }
+	}
+	surnames = {
+		Anthoine "Baraguey d'Hilliers" Bazaine Billot Bosquet "Boué de Lapeyrère" Bouët-Willaumez Boulanger Bourbaki
+		Bugeaud Caillard Canrobert Courbet Cousin-Mountauban Davout "de Castellane" "de Castelnau" 
+		"de Langle de Cary" "de MacMahon" "de Montaignac" "de Saint Arnaud" d'Orleans Dubail Dubois Duchêne Dupetit-Thouars Exelmans
+		Foch Forey "Franchet d'Espèrey" Gallieni Gouraud Guillaumat Hamelin Harispe Hoche Humbert
+		Jaurès Joffre Lebouef Lyautey Murat "Ney d'Elchingen" Nivelle Péllissier Petain Vaillant
+	}
+	callsigns = { "Draco" "Fast" "Tiger" "Sparrow" "Ripper" "Sundance" "Toad" "Twitch" "Farmer" "Weasel" "Target Practice" "Invisible" "Beach Boy" "Princess" "The Mute" "Carpenter"}
+}
+
+BRG = {
+	male = {
+		names = {
+			Maximilian Felix Erich Gerhard Günther Otto Walter Wilhelm Heinz Hermann Heinrich
+			Theodor Hans Anton Joachim Emil Peter Fritz Adolf Tobias Staffan Marco Karl Kurt Ernst
+			Georg Siegfried Johann Werner Paul Friedrich Dieter Manfred Wolfgang Christian Martin
+			Albert Uwe Ulrich Reinhard Jürgen Jörg Volker Harald Ingo Lothar Rolf Friedhelm
+		}
+	}
+	female = {
+		names = {
+			Anna Elisabeth Emma Hanna Sofia Marie Hildegard Monika Heike Frieda Martha Margarethe
+			Gerda Ilse Ursula Lieselotte Erika Gisela Helga Ingrid Birgitte Anja Julia Heidi Eva
+		}
+	}
+	surnames = {
+		Müller Schmidt Schneider Fischer Meyer Weber Schulz Wagner Hartmann Rall Barkhorn
+		Becker Hoffmann Graf Erhler Hafner Lipfert Brendel Stotz Kirschner Lang Sturm Krellner
+		Beißwenger Duttmann Wilbs Berglen Behrmann Kreiswald Strecker Fuchs Teichmann Weißmann
+		Schröder Neumann Braun Werner Zimmermann Krüger Köhler Krause Huber Peters Jung Keller
+		Groß Hahn Schuster Lorenz Böhm Winter Vogt Ziegler Pfeiffer Pohl Wolff Sauer Vogel
+		Schäfer Seidel Augsberger Badenhorst
+	}
+	callsigns = { "Bubi" "Assi" "The Black Devil" "The Blond Knight Of Germany" "Dolfo" "Fighter of Libau" "Petit Rouge" "Pritzl" "The Red Baron" "The Red Battle-flyer" "The Red Knight" "Reeste" }
+}
+PG1 = {
+	male = {
+		names = {
+			Maximilian Felix Erich Gerhard Günther Otto Walter Wilhelm Heinz Hermann Heinrich
+			Theodor Hans Anton Joachim Emil Peter Fritz Adolf Tobias Staffan Marco Karl Kurt Ernst
+			Georg Siegfried Johann Werner Paul Friedrich Dieter Manfred Wolfgang Christian Martin
+			Albert Uwe Ulrich Reinhard Jürgen Jörg Volker Harald Ingo Lothar Rolf Friedhelm
+		}
+	}
+	female = {
+		names = {
+			Anna Elisabeth Emma Hanna Sofia Marie Hildegard Monika Heike Frieda Martha Margarethe
+			Gerda Ilse Ursula Lieselotte Erika Gisela Helga Ingrid Birgitte Anja Julia Heidi Eva
+		}
+	}
+	surnames = {
+		Müller Schmidt Schneider Fischer Meyer Weber Schulz Wagner Hartmann Rall Barkhorn
+		Becker Hoffmann Graf Erhler Hafner Lipfert Brendel Stotz Kirschner Lang Sturm Krellner
+		Beißwenger Duttmann Wilbs Berglen Behrmann Kreiswald Strecker Fuchs Teichmann Weißmann
+		Schröder Neumann Braun Werner Zimmermann Krüger Köhler Krause Huber Peters Jung Keller
+		Groß Hahn Schuster Lorenz Böhm Winter Vogt Ziegler Pfeiffer Pohl Wolff Sauer Vogel
+		Schäfer Seidel Augsberger Badenhorst
+	}
+	callsigns = { "Bubi" "Assi" "The Black Devil" "The Blond Knight Of Germany" "Dolfo" "Fighter of Libau" "Petit Rouge" "Pritzl" "The Red Baron" "The Red Battle-flyer" "The Red Knight" "Reeste" }
+}
+DM1 = {
+	male = {
+		names = {
+			Maximilian Felix Erich Gerhard Günther Otto Walter Wilhelm Heinz Hermann Heinrich
+			Theodor Hans Anton Joachim Emil Peter Fritz Adolf Tobias Staffan Marco Karl Kurt Ernst
+			Georg Siegfried Johann Werner Paul Friedrich Dieter Manfred Wolfgang Christian Martin
+			Albert Uwe Ulrich Reinhard Jürgen Jörg Volker Harald Ingo Lothar Rolf Friedhelm
+		}
+	}
+	female = {
+		names = {
+			Anna Elisabeth Emma Hanna Sofia Marie Hildegard Monika Heike Frieda Martha Margarethe
+			Gerda Ilse Ursula Lieselotte Erika Gisela Helga Ingrid Birgitte Anja Julia Heidi Eva
+		}
+	}
+	surnames = {
+		Müller Schmidt Schneider Fischer Meyer Weber Schulz Wagner Hartmann Rall Barkhorn
+		Becker Hoffmann Graf Erhler Hafner Lipfert Brendel Stotz Kirschner Lang Sturm Krellner
+		Beißwenger Duttmann Wilbs Berglen Behrmann Kreiswald Strecker Fuchs Teichmann Weißmann
+		Schröder Neumann Braun Werner Zimmermann Krüger Köhler Krause Huber Peters Jung Keller
+		Groß Hahn Schuster Lorenz Böhm Winter Vogt Ziegler Pfeiffer Pohl Wolff Sauer Vogel
+		Schäfer Seidel Augsberger Badenhorst
+	}
+	callsigns = { "Bubi" "Assi" "The Black Devil" "The Blond Knight Of Germany" "Dolfo" "Fighter of Libau" "Petit Rouge" "Pritzl" "The Red Baron" "The Red Battle-flyer" "The Red Knight" "Reeste" }
+}
+BT1 = {
+	male = {
+		names = {
+			Maximilian Felix Erich Gerhard Günther Otto Walter Wilhelm Heinz Hermann Heinrich
+			Theodor Hans Anton Joachim Emil Peter Fritz Adolf Tobias Staffan Marco Karl Kurt Ernst
+			Georg Siegfried Johann Werner Paul Friedrich Dieter Manfred Wolfgang Christian Martin
+			Albert Uwe Ulrich Reinhard Jürgen Jörg Volker Harald Ingo Lothar Rolf Friedhelm
+		}
+	}
+	female = {
+		names = {
+			Anna Elisabeth Emma Hanna Sofia Marie Hildegard Monika Heike Frieda Martha Margarethe
+			Gerda Ilse Ursula Lieselotte Erika Gisela Helga Ingrid Birgitte Anja Julia Heidi Eva
+		}
+	}
+	surnames = {
+		Müller Schmidt Schneider Fischer Meyer Weber Schulz Wagner Hartmann Rall Barkhorn
+		Becker Hoffmann Graf Erhler Hafner Lipfert Brendel Stotz Kirschner Lang Sturm Krellner
+		Beißwenger Duttmann Wilbs Berglen Behrmann Kreiswald Strecker Fuchs Teichmann Weißmann
+		Schröder Neumann Braun Werner Zimmermann Krüger Köhler Krause Huber Peters Jung Keller
+		Groß Hahn Schuster Lorenz Böhm Winter Vogt Ziegler Pfeiffer Pohl Wolff Sauer Vogel
+		Schäfer Seidel Augsberger Badenhorst
+	}
+	callsigns = { "Bubi" "Assi" "The Black Devil" "The Blond Knight Of Germany" "Dolfo" "Fighter of Libau" "Petit Rouge" "Pritzl" "The Red Baron" "The Red Battle-flyer" "The Red Knight" "Reeste" }
+}
+BG1 = {
+	male = {
+		names = {
+			Maximilian Felix Erich Gerhard Günther Otto Walter Wilhelm Heinz Hermann Heinrich
+			Theodor Hans Anton Joachim Emil Peter Fritz Adolf Tobias Staffan Marco Karl Kurt Ernst
+			Georg Siegfried Johann Werner Paul Friedrich Dieter Manfred Wolfgang Christian Martin
+			Albert Uwe Ulrich Reinhard Jürgen Jörg Volker Harald Ingo Lothar Rolf Friedhelm
+		}
+	}
+	female = {
+		names = {
+			Anna Elisabeth Emma Hanna Sofia Marie Hildegard Monika Heike Frieda Martha Margarethe
+			Gerda Ilse Ursula Lieselotte Erika Gisela Helga Ingrid Birgitte Anja Julia Heidi Eva
+		}
+	}
+	surnames = {
+		Müller Schmidt Schneider Fischer Meyer Weber Schulz Wagner Hartmann Rall Barkhorn
+		Becker Hoffmann Graf Erhler Hafner Lipfert Brendel Stotz Kirschner Lang Sturm Krellner
+		Beißwenger Duttmann Wilbs Berglen Behrmann Kreiswald Strecker Fuchs Teichmann Weißmann
+		Schröder Neumann Braun Werner Zimmermann Krüger Köhler Krause Huber Peters Jung Keller
+		Groß Hahn Schuster Lorenz Böhm Winter Vogt Ziegler Pfeiffer Pohl Wolff Sauer Vogel
+		Schäfer Seidel Augsberger Badenhorst
+	}
+	callsigns = { "Bubi" "Assi" "The Black Devil" "The Blond Knight Of Germany" "Dolfo" "Fighter of Libau" "Petit Rouge" "Pritzl" "The Red Baron" "The Red Battle-flyer" "The Red Knight" "Reeste" }
+}
+NT1 = {
+	male = {
+		names = {
+			Maximilian Felix Erich Gerhard Günther Otto Walter Wilhelm Heinz Hermann Heinrich
+			Theodor Hans Anton Joachim Emil Peter Fritz Adolf Tobias Staffan Marco Karl Kurt Ernst
+			Georg Siegfried Johann Werner Paul Friedrich Dieter Manfred Wolfgang Christian Martin
+			Albert Uwe Ulrich Reinhard Jürgen Jörg Volker Harald Ingo Lothar Rolf Friedhelm
+		}
+	}
+	female = {
+		names = {
+			Anna Elisabeth Emma Hanna Sofia Marie Hildegard Monika Heike Frieda Martha Margarethe
+			Gerda Ilse Ursula Lieselotte Erika Gisela Helga Ingrid Birgitte Anja Julia Heidi Eva
+		}
+	}
+	surnames = {
+		Müller Schmidt Schneider Fischer Meyer Weber Schulz Wagner Hartmann Rall Barkhorn
+		Becker Hoffmann Graf Erhler Hafner Lipfert Brendel Stotz Kirschner Lang Sturm Krellner
+		Beißwenger Duttmann Wilbs Berglen Behrmann Kreiswald Strecker Fuchs Teichmann Weißmann
+		Schröder Neumann Braun Werner Zimmermann Krüger Köhler Krause Huber Peters Jung Keller
+		Groß Hahn Schuster Lorenz Böhm Winter Vogt Ziegler Pfeiffer Pohl Wolff Sauer Vogel
+		Schäfer Seidel Augsberger Badenhorst
+	}
+	callsigns = { "Bubi" "Assi" "The Black Devil" "The Blond Knight Of Germany" "Dolfo" "Fighter of Libau" "Petit Rouge" "Pritzl" "The Red Baron" "The Red Battle-flyer" "The Red Knight" "Reeste" }
+}
+SW1 = {
+	male = {
+		names = {
+			Maximilian Felix Erich Gerhard Günther Otto Walter Wilhelm Heinz Hermann Heinrich
+			Theodor Hans Anton Joachim Emil Peter Fritz Adolf Tobias Staffan Marco Karl Kurt Ernst
+			Georg Siegfried Johann Werner Paul Friedrich Dieter Manfred Wolfgang Christian Martin
+			Albert Uwe Ulrich Reinhard Jürgen Jörg Volker Harald Ingo Lothar Rolf Friedhelm
+		}
+	}
+	female = {
+		names = {
+			Anna Elisabeth Emma Hanna Sofia Marie Hildegard Monika Heike Frieda Martha Margarethe
+			Gerda Ilse Ursula Lieselotte Erika Gisela Helga Ingrid Birgitte Anja Julia Heidi Eva
+		}
+	}
+	surnames = {
+		Müller Schmidt Schneider Fischer Meyer Weber Schulz Wagner Hartmann Rall Barkhorn
+		Becker Hoffmann Graf Erhler Hafner Lipfert Brendel Stotz Kirschner Lang Sturm Krellner
+		Beißwenger Duttmann Wilbs Berglen Behrmann Kreiswald Strecker Fuchs Teichmann Weißmann
+		Schröder Neumann Braun Werner Zimmermann Krüger Köhler Krause Huber Peters Jung Keller
+		Groß Hahn Schuster Lorenz Böhm Winter Vogt Ziegler Pfeiffer Pohl Wolff Sauer Vogel
+		Schäfer Seidel Augsberger Badenhorst
+	}
+	callsigns = { "Bubi" "Assi" "The Black Devil" "The Blond Knight Of Germany" "Dolfo" "Fighter of Libau" "Petit Rouge" "Pritzl" "The Red Baron" "The Red Battle-flyer" "The Red Knight" "Reeste" }
+}

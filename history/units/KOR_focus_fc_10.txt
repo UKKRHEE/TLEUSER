@@ -1,0 +1,5 @@
+﻿
+focus = {
+    current = "KOR_threat_up_of_east_asia"
+    Progress = 0
+}   

@@ -1,0 +1,232 @@
+
+KOR_balance = {
+	initial_value = 0.25
+	left_side = KOR_the_emperor
+	right_side = KOR_millitary
+	decision_category = KOR_interservice_rivalry
+
+	range = {
+		id = KOR_balance_range
+		min = -0.10
+		max = 0.10
+		modifier = {
+
+		}
+		on_activate = {
+
+		}
+		on_deactivate = {
+			
+		}
+	}
+
+	side = {
+		id = KOR_millitary
+		icon = GFX_sup_mil_kor
+		range = {
+			id = KOR_millitary_low
+			min = 0.1
+			max = 0.3
+			modifier = {
+				# if = {
+				# 	limit = {
+				# 		is_ai = no
+				# 		NOT = {
+				# 			has_country_flag = TLE_dont_want_to_balance
+				# 		}
+				# 	}
+					offensive_war_stability_factor = 0.1
+				# }
+			}
+			on_activate = {
+				
+			}
+			on_deactivate = {
+				
+			}
+		}
+		range = {
+			id = KOR_millitary_meidum
+			min = 0.3
+			max = 0.6
+			modifier = {
+				# if = {
+				# 	limit = {
+				# 		is_ai = no
+				# 		NOT = {
+				# 			has_country_flag = TLE_dont_want_to_balance
+				# 		}
+				# 	}
+					offensive_war_stability_factor = 0.15
+					war_support_factor = 0.05
+				# }
+			}
+			on_activate = {
+				
+			}
+			on_deactivate = {
+				
+			}
+		}
+		range = {
+			id = KOR_millitary_high
+			min = 0.6
+			max = 0.9
+			modifier = {
+				# if = {
+				# 	limit = {
+				# 		is_ai = no
+				# 		NOT = {
+				# 			has_country_flag = TLE_dont_want_to_balance
+				# 		}
+				# 	}
+					offensive_war_stability_factor = 0.2
+					war_support_factor = 0.1
+				# }
+			}
+			on_activate = {
+				
+			}
+			on_deactivate = {
+				
+			}
+		}
+		range = {
+			id = KOR_millitary_total
+			min = 0.9
+			max = 1
+			modifier = {
+				# if = {
+				# 	limit = {
+				# 		is_ai = no
+				# 		NOT = {
+				# 			has_country_flag = TLE_dont_want_to_balance
+				# 		}
+				# 	}
+					offensive_war_stability_factor = 0.25
+					war_support_factor = 0.15
+				# }
+			}
+			on_activate = {
+				
+			}
+			on_deactivate = {
+				
+			}
+		}
+	}
+	side = {
+		id = KOR_the_emperor
+		icon = GFX_sup_emp_kor
+		range = {
+			id = KOR_emperor_low
+			min = -0.3
+			max = -0.1
+			modifier = {
+				# if = {
+				# 	limit = {
+				# 		is_ai = no
+				# 		NOT = {
+				# 			has_country_flag = TLE_dont_want_to_balance
+				# 		}
+				# 	}
+					political_advisor_cost_factor = -0.1
+				# }
+			}
+			on_activate = {
+				
+			}
+			on_deactivate = {
+				
+			}
+		}
+		range = {
+			id = KOR_emperor_medium
+			min = -0.6
+			max = -0.3
+			modifier = {
+				# if = {
+				# 	limit = {
+				# 		is_ai = no
+				# 		NOT = {
+				# 			has_country_flag = TLE_dont_want_to_balance
+				# 		}
+				# 	}
+					political_advisor_cost_factor = -0.15
+					offensive_war_stability_factor = -0.1
+					war_support_factor = -0.05
+				# }
+			}
+			on_activate = {
+				
+			}
+			on_deactivate = {
+				
+			}
+		}
+		range = {
+			id = KOR_emperor_high
+			min = -0.9
+			max = -0.6
+			modifier = {
+				# if = {
+				# 	limit = {
+				# 		is_ai = no
+				# 		NOT = {
+				# 			has_country_flag = TLE_dont_want_to_balance
+				# 		}
+				# 	}
+					political_advisor_cost_factor = -0.2
+					offensive_war_stability_factor = -0.15
+					war_support_factor = -0.1
+				# }
+			}
+			on_activate = {
+				
+			}
+			on_deactivate = {
+				
+			}
+		}
+		range = {
+			id = KOR_emperor_total
+			min = -1
+			max = -0.9
+			modifier = {
+				# if = {
+				# 	limit = {
+				# 		is_ai = no
+				# 		NOT = {
+				# 			has_country_flag = TLE_dont_want_to_balance
+				# 		}
+				# 	}
+					political_advisor_cost_factor = -0.25
+					offensive_war_stability_factor = -0.2
+					war_support_factor = -0.15
+				# }
+			}
+			on_activate = {
+			
+				# if = {
+				# 	limit = {
+				# 		is_ai = no
+				# 		NOT = {
+				# 			has_country_flag = TLE_dont_want_to_balance
+				# 		}
+				# 	}
+					custom_effect_tooltip = TLE_game_over
+					hidden_effect = {
+						country_event = {
+							id = korbop.2
+						}
+					}
+				# }
+				
+			}
+			on_deactivate = {
+				
+			}
+		}
+	}
+}
+

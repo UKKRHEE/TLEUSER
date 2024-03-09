@@ -1,0 +1,5 @@
+﻿
+focus = {
+    current = "KOR_allied_with_russia"
+    Progress = 0
+}   

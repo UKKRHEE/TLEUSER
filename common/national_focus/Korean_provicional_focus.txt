@@ -1,0 +1,201 @@
+focus_tree = {
+	id = kor_kang_dead_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = TLE
+		}
+	}
+	default = no
+	focus = {
+		id = KSC_death_of_kangmyong
+		icon = GFX_focus_KOR_death_of_kangmyung
+		cost = 0.20
+		x = 8
+		y = 0
+		completion_reward = {
+			country_event = {
+				id = korea.135
+			}
+		}
+
+	}
+	focus = {
+		id = KSC_newfocus_2
+		icon = GFX_focus_KOR_ksc_2
+		cost = 0.20
+		prerequisite = {
+			focus = KSC_death_of_kangmyong
+		}
+		x = 8
+		y = 1
+		completion_reward = {
+			country_event = {
+				id = korea.136
+			}
+		}
+
+	}
+	focus = {
+		id = KSC_newfocus_3
+		icon = GFX_focus_KOR_ksc_3
+		cost = 0.20
+		prerequisite = {
+			focus = KSC_newfocus_2
+		}
+		x = 6
+		y = 2
+		completion_reward = {
+			country_event = {
+				id = korea.137
+			}
+		}
+
+	}
+	focus = {
+		id = KSC_newfocus_6
+		icon = GFX_focus_KOR_ksc_6
+		cost = 0.20
+		prerequisite = {
+			focus = KSC_newfocus_2
+		}
+		x = 8
+		y = 2
+		completion_reward = {
+			country_event = {
+				id = korea.138
+			}
+		}
+
+	}
+	focus = {
+		id = KSC_newfocus_7
+		icon = GFX_focus_KOR_ksc_4
+		cost = 0.20
+		prerequisite = {
+			focus = KSC_newfocus_2
+		}
+		x = 10
+		y = 2
+		completion_reward = {
+			country_event = {
+				id = korea.139
+			}
+		}
+
+	}
+	focus = {
+		id = KSC_newfocus_1
+		icon = GFX_focus_elimination_of_censorship
+		cost = 0.30
+		prerequisite = {
+			focus = KSC_newfocus_3
+		}
+		prerequisite = {
+			focus = KSC_newfocus_6
+		}
+		prerequisite = {
+			focus = KSC_newfocus_7
+		}
+		x = 7
+		y = 3
+		completion_reward = {
+			country_event = {
+				id = korea.140
+			}
+		}
+
+	}
+	focus = {
+		id = KSC_newfocus_5
+		icon = GFX_focus_information_warfare
+		cost = 0.30
+		prerequisite = {
+			focus = KSC_newfocus_7
+		}
+		prerequisite = {
+			focus = KSC_newfocus_6
+		}
+		prerequisite = {
+			focus = KSC_newfocus_3
+		}
+		x = 9
+		y = 3
+		completion_reward = {
+			country_event = {
+				id = korea.141
+			}
+		}
+
+	}
+	focus = {
+		id = KSC_newfocus_4
+		icon = GFX_focus_KOR_ksc_9
+		cost = 0.30
+		prerequisite = {
+			focus = KSC_newfocus_1
+		}
+		prerequisite = {
+			focus = KSC_newfocus_5
+		}
+		x = 8
+		y = 4
+		completion_reward = {
+			country_event = {
+				id = korea.142
+			}
+		}
+
+	}
+	focus = {
+		id = KSC_newfocus_8
+		icon = GFX_focus_KOR_ksc_8
+		cost = 1.50
+		prerequisite = {
+			focus = KSC_newfocus_4
+		}
+		x = 8
+		y = 5
+		completion_reward = {
+			country_event = {
+				id = korea.143
+			}
+			hidden_effect = {
+		KOR = {
+			527 = {
+				add_dynamic_modifier = { modifier = KOR_army_resistance_modifier }
+			}
+			1014 = {
+				add_dynamic_modifier = { modifier = KOR_army_resistance_modifier }
+			}
+			1015 = {
+				add_dynamic_modifier = { modifier = KOR_army_resistance_modifier }
+			}
+			1016 = {
+				add_dynamic_modifier = { modifier = KOR_army_resistance_modifier }
+			}
+			1017 = {
+				add_dynamic_modifier = { modifier = KOR_army_resistance_modifier }
+			}
+			1018 = {
+				add_dynamic_modifier = { modifier = KOR_army_resistance_modifier }
+			}
+			1019 = {
+				add_dynamic_modifier = { modifier = KOR_army_resistance_modifier }
+			}
+			1021 = {
+				add_dynamic_modifier = { modifier = KOR_army_resistance_modifier }
+			}
+			1024 = {
+				add_dynamic_modifier = { modifier = KOR_army_resistance_modifier }
+			}
+			1025 = {
+				add_dynamic_modifier = { modifier = KOR_army_resistance_modifier }
+			}
+		}
+		}
+		}
+
+	}
+}

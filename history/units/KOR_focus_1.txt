@@ -1,0 +1,5 @@
+﻿
+focus = {
+    current = "KOR_refind_the_economic_crisis"
+    Progress = 0
+}   

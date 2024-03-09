@@ -1,0 +1,30 @@
+characters={
+	ETS_alikhan_tura={
+		name="ETS_alikhan_tura"
+		portraits={
+			civilian={
+				large="gfx/leaders/ETS/Portrait_ETS_alikhan_tura.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			id=-1
+		}
+		country_leader={
+			ideology=ultranationalism
+			traits={ }
+			id=-1
+		}
+		country_leader={
+			ideology=marxism
+			traits={ }
+			id=-1
+		}
+		country_leader={
+			ideology=socialism
+			traits={ }
+			id=-1
+		}
+	}
+}

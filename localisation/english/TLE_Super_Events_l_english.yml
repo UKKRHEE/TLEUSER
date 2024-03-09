@@ -1,0 +1,162 @@
+﻿l_english:
+
+ superevent.1.t:0 "슈퍼이벤트 디버그 이벤트"
+ superevent.1.d:0 ""
+ superevent.1.a:0 "확인"
+
+ SE_KOREA_THE_YI_KANG:0 "2.26 사건"
+ SE_KOREA_THE_YI_KANG_D:0 "시대의 조류는 조만간 \n인간 세계의 여러 모순을 그대로 두지 않을 것이다.\n서둘러 이 과거의 껍데기를 벗지 못하면 \n국가도 개인도 이내 망하고 말 것이다.\n-여운형"
+ SE_KOREA_THE_YI_KANG_A:0 "빛이 보였다"
+
+ SE_JAPAN_CW:0 "일본 내전"
+ SE_JAPAN_CW_D:0 "세상을 잠시의 꿈이라고 들었지만\n생각하면 긴 세월이 되었도다.\n-토쿠가와 요시노부"
+ SE_JAPAN_CW_A:0 "또 한번의 내전"
+
+ SE_KOREA_WW_CHINA:0 "한중전쟁"
+ SE_KOREA_WW_CHINA_D:0 "다른 이들은 칼이며, 접시이다. \n우리들은 고기이며, 생선이다.\n-쑨원"
+ SE_KOREA_WW_CHINA_A:0 "전쟁의 시작"
+
+ SE_KOREA_WAR_WITH_USA:0 "태평양 전쟁"
+ SE_KOREA_WAR_WITH_USA_D:0 "사내 대장부는 집을 나가\n뜻을 이루기 전에는\n집에 돌아오지 않는다.\n-윤봉길"
+ SE_KOREA_WAR_WITH_USA_A:0 "폭주하는 호랑이"
+
+ SE_RUSSIA_ATTACK_KOREA:0 "태풍작전"
+ SE_RUSSIA_ATTACK_KOREA_D:0 "만약 적이 무장해제되면 \n그것은 매우 좋은 일이고\n만약 적이 끝까지 항복하지 않으면 \n우리의 힘으로 무장해제 시켜야 된다.\n-이오시프 스탈린"
+ SE_RUSSIA_ATTACK_KOREA_A:0 "곰과 호랑이의 싸움"
+
+ SE_FALL_OF_KOREA:0 "한국의 종말"
+ SE_FALL_OF_KOREA_D:0 "남을 너그럽게 받아들이는 사람은\n사람들의 마음을 얻고\n위엄과 무력으로 엄하게 다스리는 자는\n사람들의 노여움을 사게 된다.\n-조선 세종"
+ SE_FALL_OF_KOREA_A:0 "오, 대한이여"
+
+ SE_WON_IN_CHINA:0 "대아전쟁의 승리"
+ SE_WON_IN_CHINA_D:0 "백성에게 해가 된다면 공자가 돌아와도 용서치 않겠다.\n-흥선군 이하응"
+ SE_WON_IN_CHINA_A:0 "대한제국 만세!"
+
+ SE_SECOND_NORTHATTACK:0 "국민당의 2차 북벌"
+ SE_SECOND_NORTHATTACK_D:0 "혁명은 성공하지 못했다. 동지들이여 아직도 노력해야 한다.\n-쑨원"
+ SE_SECOND_NORTHATTACK_A:0 "노병은 죽지 않는다"
+
+ SE_EMPIRE_OF_JAPAN:0 "대일본제국 선포"
+ SE_EMPIRE_OF_JAPAN_D:0 "구름이 드리워 흐려보이던 달도\n마침내 맑게 개여서 서방정토를 향해 가는구나.\n-다케다 카츠요리"
+ SE_EMPIRE_OF_JAPAN_A:0 "태양이 뜨다"
+
+ SE_FALL_OF_GERMANY:0 "독일의 패망"
+ SE_FALL_OF_GERMANY_D:0 "인류 역사상 무적의 군대란 존재하지 않았으며\n앞으로도 결코 존재하지 않을 것이다.\n-이오시프 스탈린"
+ SE_FALL_OF_GERMANY_A:0 "독수리는 땅에 떨어졌다"
+
+ SE_FALL_OF_SOVIET:0 "소련의 패망"
+ SE_FALL_OF_SOVIET_D:0 "우리가 일단 문을 걷어차기만 하면\n이미 썩을 대로 썩은 러시아 체제는 폭삭 무너질 것이다.\n-요제프 괴벨스"
+ SE_FALL_OF_SOVIET_A:0 "인민은 저리 가네"
+
+ SE_GERMANY_WIN:0 "독일의 승전"
+ SE_GERMANY_WIN_D:0 "생명은 나약함을 용서하지 않는다.\n-아돌프 히틀러"
+ SE_GERMANY_WIN_A:0 "독일, 그 무엇보다 위에!"
+
+ SE_KANGMYONG_YUSHIN:0 "강명유신"
+ SE_KANGMYONG_YUSHIN_D:0 "임금과 신하는 백성을 위해 존재한다.\n-성종 이혈"
+ SE_KANGMYONG_YUSHIN_A:0 "한 걸음 더"
+
+ SE_KOREAN_JAPANESE_WAR:0 "한일전쟁"
+ SE_KOREAN_JAPANESE_WAR_D:0 "화살이 과녁을 찾아가는 것이 아니라\n활 쏘는 이가 과녁으로 화살을 보내야 한다.\n-태조 이성계"
+ SE_KOREAN_JAPANESE_WAR_A:0 "신고산에 올라라, 1208"
+
+ SE_SURRENDER_OF_USA:0 "한국의 승전" 
+ SE_SURRENDER_OF_USA_D:0 "우리 군에 대한 신뢰와 우리 국민들의 결연한 의지로\n 우리는 필연적으로 승리를 거둘 것입니다\n 그러니 신이여 우리를 도우소서.\n-프랭클린 D. 루스벨트"
+ SE_SURRENDER_OF_USA_A:0 "호랑이의 포효"
+
+ SE_OPERATION_BARBAROSSA:0 "바르바로사 작전" 
+ SE_OPERATION_BARBAROSSA_D:0 "우리의 목적은 정의롭고, 적은 패배할 것이며,\n승리는 우리의 것이 될 것이다.\n-뱌체슬라프 몰로토프"
+ SE_OPERATION_BARBAROSSA_A:0 "폭풍의 씨앗"
+
+ SE_KOREAN_CIVIL_WAR:0 "대한 혁명" 
+ SE_KOREAN_CIVIL_WAR_D:0 "사상은 인간의 풍격을 특정짓는 근본요인이며\n자주적인 인간의 풍모는 자주적인 사상의식에 의하여 담보된다."
+ SE_KOREAN_CIVIL_WAR_A:0 "혁명은 시작됐다"
+
+ SE_WORLD_WAR_II:0 "제2차 세계대전" 
+ SE_WORLD_WAR_II_D:0 "독일이여, 승리하라(Deutschland, Sieg Heil)!\n-아돌프 히틀러"
+ SE_WORLD_WAR_II_A:0 "전진!"
+
+ SE_KOREAN_STATE:0 "대한국의 수립" 
+ SE_KOREAN_STATE_D:0 "진실로 만국이 서로 통하여 한 집 같이 섞여 살며 형제같이 사랑하여 정의가 친밀하면 풍속이 스스로 같아지고 인물, 언어, 문자까지도 다 한결같이 될 것이다. 그렇게 지난 100년 동안에 세상이 변해 온 것을 보면 오는 100년에도 또 어떻게 변할지 짐작할 수 있다.\n-이승만"
+ SE_KOREAN_STATE_A:0 "봄 바람이 분다"
+
+ SE_EMPIRE_OF_KOREA_JAPAN:0 "대한-일본 이중제국"
+ SE_EMPIRE_OF_KOREA_JAPAN_D:0 "대한과 일본이 협력하여 뜻을 맞춘다면 세계의 승자가 될 것이다.\n-이용구"
+ SE_EMPIRE_OF_KOREA_JAPAN_A:0 "두개의 태양"
+
+ SE_FALL_OF_JAPAN:0 "낙일"
+ SE_FALL_OF_JAPAN_D:0 "허무하구나, 모든 것이 폭풍 앞의 벚꽃이로다. 흩날릴 때까지는 한낱 봄날의 꿈일 뿐임을.\n-다케다 노부카츠"
+ SE_FALL_OF_JAPAN_A:0 "벚꽃은 지고"
+
+ SE_BEIYANG_CHINA:0 "중국 통일"
+ SE_BEIYANG_CHINA_D:0 "평화, 분투, 중국을 구하자.\n-쑨원"
+ SE_BEIYANG_CHINA_A:0 "하늘이 불멸의 당신을 보우하네"
+
+ SE_KUOMINTANG_CHINA:0 "중국 통일"
+ SE_KUOMINTANG_CHINA_D:0 "중국 인민은 일어섰다.\n-마오쩌둥"
+ SE_KUOMINTANG_CHINA_A:0 "한마음 한뜻으로"
+
+ SE_ITALY_CIVIL_WAR:0 "이탈리아 내전"
+ SE_ITALY_CIVIL_WAR_D:0 "나를 파르티잔의 꽃이라고 말해주오. 자유를 위해 죽은 파르티잔의 꽃이라고.\n-파르티잔의 노래"
+ SE_ITALY_CIVIL_WAR_A:0 "운명의 시간이 우리 조국의 하늘을 때렸다"
+
+ SE_CHINESE_CIVIL_WAR:0 "중국 내전"
+ SE_CHINESE_CIVIL_WAR_D:0 "인간은 모두 죽는다. \n인간의 죽음은 태산보다 무거울 수도, 깃털보다 가벼울 수도 있다.\n인민을 위해 죽는다면, 이는 태산보다도 무거운 죽음이다\n-마오쩌둥"
+ SE_CHINESE_CIVIL_WAR_A:0 "불타는 대륙"
+
+ SE_UNITED_NATIONS:0 "국제연합의 창설"
+ SE_UNITED_NATIONS_D:0 "우리 각자의 정부는, 샌프란시스코에 모인, 유효하고 타당한 것으로 인정된 전권 위임장을 제시한 대표를 통하여, 이 유엔 헌장에 동의하고, 유엔이라는 국제 기구를 이에 설립한다.\n-UN 헌장"
+ SE_UNITED_NATIONS_A:0 "사필귀정"
+
+ SE_WINTER_WAR:0 "겨울전쟁"
+ SE_WINTER_WAR_D:0 "그냥 내놓으라고 해서 말을 안 들으면 목소리를 좀 높이면 될 것이고, 고함을 질러도 안 되면 총을 몇 발 쏘면 된다.\n그저 그뿐이다. 이건 무척 쉬운 일이다.\n-뱌체슬라프 몰로토프"
+ SE_WINTER_WAR_A:0 "매우 쉬운 일이지"
+
+ SE_WELTKRIEG:0 "2차 벨트크리크"
+ SE_WELTKRIEG_D:0 "세상에 이런 평화가 어디 있는가. 이것은 단지 20년간의 휴전 협정일 뿐이다.\n-페르디낭 포슈"
+ SE_WELTKRIEG_A:0 "두 번째 전쟁이군"
+
+ SE_GERMANY_CIVIL_WAR:0 "독일 내전"
+ SE_GERMANY_CIVIL_WAR_D:0 "우리가 실패할 것은 거의 확실하다. 그러나 소수의 남자들조차도 그 범죄자를 끝낼 용기가 없다면 미래의 역사는 독일 국민을 어떻게 심판할 것인가? \n-헤닝 폰 트레슈코프"
+ SE_GERMANY_CIVIL_WAR_A:0 "시작"
+
+ SE_EAST_FRONT:0 "동부전선의 개막"
+ SE_EAST_FRONT_D:0 "슬라브인들은 항상이 우리를 증오할것이고, 그리고 우리의 적으로 남을것이다. 그들은 우리를 증오할것이고, 우리가 놈들에게 쌔게 한방 먹여줄때만 비로소 존경을 표할것이다. \n-빌헬름 2세"
+ SE_EAST_FRONT_A:0 "이번엔 누가 이길까"
+
+ SE_KAISER:0 "카이저의 귀환"
+ SE_KAISER_D:0 "나는 더 이상 정당을 모른다, 나는 오직 독일인만 안다! \n-빌헬름 2세"
+ SE_KAISER_A:0 "금새 돌아왔다."
+
+ SE_SPAINISH_CIVIL_WAR:0 "스페인 내전"
+ SE_SPAINISH_CIVIL_WAR_D:0 "시체에게 누가 옳고 그름이 무슨 상관이란 말인가? \n-마누엘 아사냐"
+ SE_SPAINISH_CIVIL_WAR_A:0 "시작되었다"
+
+ SE_FALL_OF_FRANCE:0 "프랑스 항복"
+ SE_FALL_OF_FRANCE_D:0 "프랑스는 전투에서 졌습니다, 하지만 프랑스는 전쟁에서 지진 않았습니다. \n-샤를 드골"
+ SE_FALL_OF_FRANCE_A:0 "전투는 계속된다"
+
+ SE_MALAYAN_CAMPAIGN:0 "남방작전 개막"
+ SE_MALAYAN_CAMPAIGN_D:0 "1억의 대한인들은 이제 조국을 위해 자신을 온전히 바치고 희생해야 한다. \n세계의 평화라는 제국의 목적을 위해 이러한 우국충절을 유지하는 한 우리는 미국도 영국도 두렵지 않다.\n-이동휘"
+ SE_MALAYAN_CAMPAIGN_A:0 "전군돌격!"
+
+ SE_FALL_OF_POLAND:0 "폴란드 항복"
+ SE_FALL_OF_POLAND_D:0 "패배하고 복종하지 않는 것은 승리이다.\n승리하고 자신의 승리에 안주하는 것은 패배이다.\n-유제프 피우수트스키"
+ SE_FALL_OF_POLAND_A:0 "폴란드는 아직 지지 않았다"
+
+ SE_ICHI_GO:0 "대륙타통작전 개시"
+ SE_ICHI_GO_D:0 "항전 이래 최대의 위기다.\n-장제스"
+ SE_ICHI_GO_A:0 "전군 돌격!"
+
+ SE_FALL_OF_BRITAIN:0 "영국 항복"
+ SE_FALL_OF_BRITAIN_D:0 "성공은 영원하지 않고, 실패는 끝이 아니다.\n중요한 것은 굴복하지 않고 계속해나가는 용기이다.\n-윈스턴 처칠"
+ SE_FALL_OF_BRITAIN_A:0 "제국의 태양이 저물었다"
+
+ SE_GREAT_ASIAN_WAR:0 "대아시아 전쟁"
+ SE_GREAT_ASIAN_WAR_D:0 "정치는 유혈 없는 전쟁이고, 전쟁은 유혈 있는 정치다.\n-마오쩌둥"
+ SE_GREAT_ASIAN_WAR_A:0 "눈 내린 전선을 우리는 간다"
+
+ SE_GREAT_ASIAN_WAR_ILSO:0 "대아시아 전쟁"
+ SE_GREAT_ASIAN_WAR_ILSO_D:0 "정치는 유혈 없는 전쟁이고, 전쟁은 유혈 있는 정치다.\n-마오쩌둥"
+ SE_GREAT_ASIAN_WAR_ILSO_A:0 "눈 내린 전선을 우리는 간다"
+##USE SUPER_EVENT_MAKER_GUI IN USEFUL PYTHON PROGRAMS TO MAKE NEW SUPER EVENTS##

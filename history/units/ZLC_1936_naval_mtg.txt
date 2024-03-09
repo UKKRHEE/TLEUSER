@@ -1,0 +1,67 @@
+﻿units = {
+
+	##### ROCN #####
+	fleet = {
+		name = "발해함대"
+		naval_base = 10068 #Shanghai
+		task_force = {
+			name = "기동전단"
+			location = 10068
+			ship = { name = "신해" pride_of_the_fleet = yes definition = battle_cruiser equipment = { ship_hull_heavy_1 = { amount = 1 owner = ZLC version_name = "Salamis Class" } } }
+			ship = { name = "톈진" definition = light_cruiser equipment = { ship_hull_cruiser_1 = {amount = 1 owner = ZLC version_name = "Tianjin Class" } } }
+			ship = { name = "하이치" definition = light_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = {amount = 1 owner = CHI version_name = "Haiqi Class" } } }
+			ship = { name = "추호" definition = light_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = {amount = 1 owner = CHI version_name = "Haiqi Class" } } }
+			ship = { name = "잉쉐이" definition = light_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = {amount = 1 owner = CHI version_name = "Haiqi Class" } } }
+			ship = { name = "페이훙" definition = light_cruiser equipment = { ship_hull_light_1 = {amount = 1 owner = ZLC version_name = "Fei Hung Class" } } }
+			ship = { name = "하이룽" definition = light_cruiser equipment = { ship_hull_light_1 = {amount = 1 owner = ZLC version_name = "Fei Hung Class" } } }
+			ship = { name = "하오란" definition = light_cruiser equipment = { ship_hull_light_1 = {amount = 1 owner = ZLC version_name = "Fei Hung Class" } } }
+			ship = { name = "하이천" definition = light_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = {amount = 1 owner = CHI version_name = "Hairong Class" } } }
+			ship = { name = "하이처우" definition = light_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = {amount = 1 owner = CHI version_name = "Hairong Class" } } }
+			ship = { name = "자오허" definition = light_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = {amount = 1 owner = CHI version_name = "Hairong Class" } } }
+			ship = { name = "잉루이" definition = light_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = {amount = 1 owner = CHI version_name = "Hairong Class" } } }
+			ship = { name = "장헝" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = ZLC version_name = "Chu Class" } } }
+			ship = { name = "장전" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = ZLC version_name = "Chu Class" } } }
+			ship = { name = "장리" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = ZLC version_name = "Chu Class" } } }
+			ship = { name = "장위안" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = ZLC version_name = "Chu Class" } } }
+			ship = { name = "영샹" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = ZLC version_name = "Chu Class" } } }
+			ship = { name = "추첸" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = ZLC version_name = "Chu Class" } } }
+			ship = { name = "추타이" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = ZLC version_name = "Chu Class" } } }
+			ship = { name = "추퉁" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = ZLC version_name = "Chu Class" } } }
+			ship = { name = "다퉁" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = ZLC version_name = "Chu Class" } } }
+			ship = { name = "추유" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = ZLC version_name = "Chu Class" } } }
+			ship = { name = "쯔캉" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = ZLC version_name = "Chu Class" } } }
+			ship = { name = "우펑" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = ZLC version_name = "Hu Peng Class"} } }
+			ship = { name = "우하" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = ZLC version_name = "Hu Peng Class" } } }
+			ship = { name = "추콴" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = ZLC version_name = "Hu Peng Class" } } }
+			ship = { name = "추류" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = ZLC version_name = "Hu Peng Class" } } }
+			ship = { name = "리안징" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = ZLC version_name = "Hu Peng Class" } } }
+			ship = { name = "용지" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = ZLC version_name = "Yung Chien Class" } } }
+			ship = { name = "용장" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = ZLC version_name = "Yung Chien Class"} } }
+			ship = { name = "U-1" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ZLC version_name = "type 7" } } }
+			ship = { name = "U-2" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ZLC version_name = "type 7" } } }
+			ship = { name = "U-3" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ZLC version_name = "type 7" } } }
+			ship = { name = "U-4" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ZLC version_name = "type 7" } } }
+			ship = { name = "전하이" definition = light_cruiser equipment = { ship_hull_cruiser_1 = {amount = 1 owner = ZLC version_name = "Weisheng Class" } } }
+			ship = { name = "웨이성" definition = light_cruiser equipment = { ship_hull_cruiser_1 = {amount = 1 owner = ZLC version_name = "Weisheng Class" } } }
+			ship = { name = "더성" definition = light_cruiser equipment = { ship_hull_cruiser_1 = {amount = 1 owner = ZLC version_name = "Weisheng Class" } } }
+			
+		}
+	}
+}
+
+##### SHIP CONSTRUCTION #####
+instant_effect = {
+#Under Construction in Shanghai
+	# Light Cruiser 
+	add_equipment_production = { 		# "Pinghai"
+		equipment = {
+			type = ship_hull_cruiser_1
+			creator = "CHI" 
+			version_name = "Ninghai Class"
+		}
+		name = "Pinghai" 
+		requested_factories = 1
+		progress = 0.33
+		amount = 1
+	}
+}

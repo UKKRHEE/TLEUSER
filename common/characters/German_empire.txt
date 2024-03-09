@@ -1,0 +1,70 @@
+characters={
+	COG_adalbert_von_hohenzollern={
+		name="COG_adalbert_von_hohenzollern"
+		portraits={
+			civilian={
+				large="gfx/leaders/GER/Portrait_Belgium_Adalbert_I.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			id=-1
+		}
+	}
+	AUS_otto_von_habsburg={
+		name="AUS_otto_von_habsburg"
+		portraits={
+			civilian={
+				large="gfx/leaders/HUN/Portrait_otto_von_hapsburg.dds"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			id=-1
+		}
+	}
+	FRS_henry_vi={
+		name="FRS_henry_vi"
+		portraits={
+			civilian={
+				large="gfx/leaders/FRS/Portrait_NFA_Henri_D_Orleans.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			id=-1
+		}
+	}
+	FRS_maxime_weygand={
+		name="FRS_maxime_weygand"
+		portraits={
+			civilian={
+				large="gfx/leaders/FRA/Portrait_France_Maxime_Weygand.dds"
+			}
+		}
+		country_leader={
+			ideology=nazism
+			traits={ }
+			id=-1
+		}
+	}
+	PRT_duarte_ii={
+		name="PRT_duarte_ii"
+		portraits={
+			civilian={
+				large=GFX_portrait_Dom_Duarte_Nuno
+			}
+		}
+	}
+	SPR_jaime_de_borbon={
+		name="SPR_jaime_de_borbon"
+		portraits={
+			civilian={
+				large=GFX_portrait_fra_infante_jaime
+			}
+		}
+	}
+}

@@ -1,0 +1,31 @@
+characters={
+	FNG_joseph_warren_stilwell = { #
+		name="FNG_joseph_warren_stilwell"
+		portraits={
+			civilian={
+				large="gfx/leaders/USA/Portrait_USA_Joseph_Stilwell.dds"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			desc=""
+			traits={  }
+		}
+		country_leader={
+			ideology=fascism_ideology
+			desc=""
+			traits={  }
+		}
+		country_leader={
+			ideology=conservatism
+			desc=""
+			traits={  }
+		}
+		country_leader={
+			ideology=marxism
+			desc=""
+			traits={  }
+		}
+	}
+
+}

@@ -1,0 +1,28 @@
+characters={
+	EOK_ahn_junggeun={
+		name="KOR_an_jung_geun"
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/Portrait_KOR_ahn_junggeun.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			id=-1
+		}
+	}
+	EOK_lee_beomseok={
+		name="KOR_lee_beom_seok"
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/Portrait_KOR_Lee_Beom_seok.png"
+			}
+		}
+		country_leader={
+			ideology=ultranationalism
+			traits={ }
+			id=-1
+		}
+	}
+}

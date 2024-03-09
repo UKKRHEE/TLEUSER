@@ -1,0 +1,45 @@
+
+state={
+	id=602
+	name="STATE_602"
+	resources={
+		tungsten=6.000
+	}
+
+	history={
+		victory_points = {
+			7101 10 
+		}
+		owner = HNC
+		add_core_of = HNC
+		add_core_of = CHI
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+
+		}
+		1939.1.1 = {
+			buildings = {
+				industrial_complex = 2
+				infrastructure = 6
+				air_base = 1
+				arms_factory = 1
+
+			}
+
+		}
+		victory_points = {
+			7097 5 
+		}
+
+	}
+
+	provinces={
+		1640 4480 7097 7101 7279 7434 7665 9999 10006 10335 10517 12017 12053 12310 12483 13140 13143 
+	}
+	manpower=20293700
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

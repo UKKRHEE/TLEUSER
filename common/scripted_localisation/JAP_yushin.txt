@@ -1,0 +1,471 @@
+defined_text = {
+    name = JAP_YUSHIN_STATE
+    text = {
+        trigger = {
+            tag = JAP
+			has_idea = JAP_anti_yushin_level_none
+        }
+        localization_key = LOC_HAS_LEVEL_NONE
+    }
+    text = {
+        trigger = {
+            tag = JAP
+			has_idea = JAP_anti_yushin_level_1
+        }
+        localization_key = LOC_HAS_LEVEL_1
+    }
+    text = {
+        trigger = {
+            tag = JAP
+			has_idea = JAP_anti_yushin_level_2
+        }
+        localization_key = LOC_HAS_LEVEL_2
+    }
+    text = {
+        trigger = {
+            tag = JAP
+			has_idea = JAP_anti_yushin_level_3
+        }
+        localization_key = LOC_HAS_LEVEL_3
+    }
+    text = {
+        trigger = {
+            tag = JAP
+			has_idea = JAP_anti_yushin_level_4
+        }
+        localization_key = LOC_HAS_LEVEL_4
+    }
+    text = {
+        trigger = {
+            tag = JAP
+			NOT = {
+				OR = {
+					has_idea = JAP_anti_yushin_level_4
+					has_idea = JAP_anti_yushin_level_3
+					has_idea = JAP_anti_yushin_level_2
+					has_idea = JAP_anti_yushin_level_1
+					has_idea = JAP_anti_yushin_level_none
+				}
+			}
+			has_country_flag = FLAG_END_OF_NAISEN
+        }
+        localization_key = LOC_HAS_LEVEL_ZERO
+    }
+}
+defined_text = {
+    name = KOR_EMPEROR_KANGMYONG_TEXT
+    text = {
+        trigger = {
+            tag = KOR
+			NOT = {
+				has_country_flag = TLE_KANGMYONG_IS_DEAD
+			}
+        }
+        localization_key = LOC_TLE_EMPEROR_KANGMYONG
+    }
+    text = {
+        trigger = {
+            tag = KOR
+			has_country_flag = TLE_KANGMYONG_IS_DEAD
+        }
+        localization_key = LOC_TLE_EMPEROR_SEONGJO
+    }
+}
+defined_text = {
+    name = KOR_EMPEROR_KANGMYONG_TEXT_NAME
+    text = {
+        trigger = {
+            tag = KOR
+			NOT = {
+				has_country_flag = TLE_KANGMYONG_IS_DEAD
+			}
+        }
+        localization_key = KOR_EMPEROR_KANGMYONG_TEXT_NAME_1
+    }
+    text = {
+        trigger = {
+            tag = KOR
+			has_country_flag = TLE_KANGMYONG_IS_DEAD
+        }
+        localization_key = KOR_EMPEROR_KANGMYONG_TEXT_NAME_2
+    }
+}
+defined_text = {
+    name = KOR_EMPEROR_KANGMYONG_TEXT_DEC
+    text = {
+        trigger = {
+            tag = KOR
+			NOT = {
+				has_country_flag = TLE_KANGMYONG_IS_DEAD
+			}
+        }
+        localization_key = KOR_EMPEROR_KANGMYONG_TEXT_DEC_1
+    }
+    text = {
+        trigger = {
+            tag = KOR
+			has_country_flag = TLE_KANGMYONG_IS_DEAD
+        }
+        localization_key = KOR_EMPEROR_KANGMYONG_TEXT_DEC_2
+    }
+}
+defined_text = {
+    name = KOR_EMPEROR_HEONMUN_TEXT
+    text = {
+        trigger = {
+            tag = KOR
+			NOT = {
+				has_idea = KOR_yi_hyul
+			}
+        }
+        localization_key = LOC_TLE_EMPEROR_TAEJA_HYUL
+    }
+    text = {
+        trigger = {
+            tag = KOR
+			has_idea = KOR_yi_hyul
+			NOT = {
+				has_idea = KOR_yi_jin
+				has_idea = KOR_yi_jin_2
+			}
+        }
+        localization_key = LOC_TLE_EMPEROR_HEONMUN
+    }
+}
+defined_text = {
+    name = KOR_EMPEROR_HEONMUN_TAEJA
+    text = {
+        trigger = {
+            tag = KOR
+			NOT = {
+				has_idea = KOR_yi_hyul
+			}
+        }
+        localization_key = KOR_EMPEROR_HEONMUN_TAEJA_1
+    }
+    text = {
+        trigger = {
+            tag = KOR
+			has_idea = KOR_yi_hyul
+			NOT = {
+				has_idea = KOR_yi_jin
+				has_idea = KOR_yi_jin_2
+			}
+        }
+        localization_key = KOR_EMPEROR_HEONMUN_TAEJA_2
+    }
+}
+defined_text = {
+    name = KOR_EMP_HEONMUN_TEXT
+    text = {
+        trigger = {
+            tag = KOR
+			NOT = {
+				has_idea = KOR_yi_hyul
+			}
+        }
+        localization_key = KOR_EMP_HEONMUN_TEXT_1
+    }
+    text = {
+        trigger = {
+            tag = KOR
+			has_idea = KOR_yi_hyul
+			NOT = {
+				has_idea = KOR_yi_jin
+				has_idea = KOR_yi_jin_2
+			}
+        }
+        localization_key = KOR_EMP_HEONMUN_TEXT_2
+    }
+}
+defined_text = {
+    name = KOR_YIKANG_DESC_DESC
+    text = {
+        trigger = {
+			KOR = {
+				NOT = {
+					has_country_flag = KOR_fail_countryflag
+				}
+			}	
+        }
+        localization_key = KOR_YIKANG_NAME_TEXT_1
+    }
+    text = {
+        trigger = {
+			KOR = {
+				has_country_flag = KOR_fail_countryflag
+			}	
+        }
+        localization_key = KOR_YIKANG_NAME_TEXT_2
+    }
+}
+defined_text = {
+    name = KOR_YIKANG_NAME_TEXT
+    text = {
+        trigger = {
+			KOR = {
+				NOT = {
+					has_country_flag = TLE_THE_WAR_IS_ENDED
+				}
+			}	
+        }
+        localization_key = KOR_YIKANG_NAME_TEXT_3
+    }
+    text = { 
+        trigger = {
+			KOR = {
+				has_country_flag = TLE_THE_WAR_IS_ENDED
+			}	
+        }
+        localization_key = KOR_YIKANG_NAME_TEXT_4
+    }
+}
+
+defined_text = {
+    name = TLE_GetNewsIcon
+	text = {
+		trigger = {
+			TAG = GER
+			has_government = fascism
+		}
+		localization_key = TLE_NEWS_LOGO_GER
+	}
+	text = {
+		trigger = {
+			TAG = GER
+			has_government = neutrality
+		}
+		localization_key = TLE_NEWS_LOGO_KAS
+	}
+	text = {
+		trigger = {
+			OR = {
+				TAG = GER
+				TAG = DDR
+			}
+			has_government = communism
+		}
+		localization_key = TLE_NEWS_LOGO_DDR
+	}
+	text = {
+		trigger = {
+			OR = {
+				TAG = GER
+				TAG = WGR
+			}
+			has_government = democratic
+		}
+		localization_key = TLE_NEWS_LOGO_WGR
+	}
+	text = {
+		trigger = {
+			TAG = SOV
+		}
+		localization_key = TLE_NEWS_LOGO_SOV
+	}
+	text = {
+		trigger = {
+			TAG = SOV
+			NOT = {
+				has_government = communism
+			}
+		}
+		localization_key = TLE_NEWS_LOGO_RUS
+	}
+	text = {
+		trigger = {
+			TAG = USA
+		}
+		localization_key = TLE_NEWS_LOGO_USA
+	}
+	text = {
+		trigger = {
+			TAG = ENG
+		}
+		localization_key = TLE_NEWS_LOGO_ENG
+	}
+	text = {
+		trigger = {
+			TAG = FRA
+			NOT = {
+				has_government = fascism
+			}
+		}
+		localization_key = TLE_NEWS_LOGO_FRA
+	}
+	text = {
+		trigger = {
+			TAG = FRA
+			has_government = fascism
+		}
+		localization_key = TLE_NEWS_LOGO_VIC
+	}
+	# text = {
+	# 	trigger = {
+	# 		OR = {
+	# 			is_warlord = yes
+	# 			AND = {
+	# 				tag = MAN
+	# 				has_completed_focus = MAN_assertiveness
+	# 				is_puppet = no
+	# 			}
+	# 			tag = event_target:WTT_current_china_leader
+	# 		}
+	# 		NOT = {
+	# 			OR = {
+	# 				is_subject_of = JAP
+	# 				has_government = communism
+	# 			}
+	# 		}
+	# 	}
+	# 	localization_key = TLE_NEWS_LOGO_CHI
+	# }
+	# text = {
+	# 	trigger = {
+	# 		AND = {
+	# 			tag = MAN
+	# 			has_completed_focus = MAN_Manshu_Nippo_focus
+	# 		}
+	# 	}
+	# 	localization_key = TLE_NEWS_LOGO_MAN_NIP
+	# }
+	text = {
+		trigger = {
+			tag = MAN
+		}
+		localization_key = TLE_NEWS_LOGO_MAN_DN
+	}
+	# text = {
+	# 	trigger = {
+	# 		NOT = {
+	# 			tag = SIK
+	# 		}
+	# 		OR = {
+	# 			is_warlord = yes
+	# 			tag = event_target:WTT_communist_china
+	# 		}
+	# 		has_government = communism
+	# 	}
+	# 	localization_key = TLE_NEWS_LOGO_PRC
+	# }
+	text = {
+		trigger = {
+			tag = SIK
+		}
+		localization_key = TLE_NEWS_LOGO_SIK
+	}
+	text = {
+		trigger = {
+			TAG = KOR
+		}
+		localization_key = TLE_NEWS_LOGO_KOR
+	}
+	text = {
+		trigger = {
+			OR = {
+				TAG = JAP
+				AND = {
+					is_subject_of = JAP
+					any_owned_state = {
+						is_capital = yes
+						is_on_continent = asia
+					}
+				}
+			}
+		}
+		localization_key = TLE_NEWS_LOGO_JAP
+	}
+
+	text = {
+		trigger = {
+			TAG = ITA
+		}
+		localization_key = TLE_NEWS_LOGO_ITA
+	}
+	#text = {
+	#	trigger = {
+	#		TAG = SWE
+	#	}
+	#	localization_key = TLE_NEWS_LOGO_SWE
+	#}
+	#text = {
+	#	trigger = {
+	#		TAG = FIN
+	#	}
+	#	localization_key = TLE_NEWS_LOGO_FIN
+	#}
+	#text = {
+	#	trigger = {
+	#		TAG = SPA
+	#	}
+	#	localization_key = TLE_NEWS_LOGO_SPA
+	#}
+	#text = {
+	#	trigger = {
+	#		TAG = CAN
+	#	}
+	#	localization_key = TLE_NEWS_LOGO_CAN
+	#}
+	#text = {
+	#	trigger = {
+	#		TAG = ROM
+	#	}
+	#	localization_key = TLE_NEWS_LOGO_ROM
+	#}
+	#text = {
+	#	trigger = {
+	#		TAG = HUN
+	#	}
+	#	localization_key = TLE_NEWS_LOGO_HUN
+	#}
+	#text = {
+	#	trigger = {
+	#		TAG = BUL
+	#	}
+	#	localization_key = TLE_NEWS_LOGO_BUL
+	#}
+	#text = {
+	#	trigger = {
+	#		TAG = CRO
+	#	}
+	#	localization_key = TLE_NEWS_LOGO_CRO
+	#}
+	#text = {
+	#	trigger = {
+	#		TAG = GRE
+	#	}
+	#	localization_key = TLE_NEWS_LOGO_GRE
+	#}
+	#text = {
+	#	trigger = {
+	#		TAG = DEN
+	#	}
+	#	localization_key = TLE_NEWS_LOGO_DEN
+	#}
+	#text = {
+	#	trigger = {
+	#		TAG = NOR
+	#	}rc
+	#	localization_key = TLE_NEWS_LOGO_NOR
+	#}
+	#text = {
+	#	trigger = {
+	#		TAG = IRE
+	#	}
+	#	localization_key = TLE_NEWS_LOGO_IRE
+	#}
+	#text = {
+	#	trigger = {
+	#		TAG = POR
+	#	}
+	#	localization_key = TLE_NEWS_LOGO_POR
+	#}
+	text = {
+		trigger = {
+			#NOT = {
+			#	has_custom_newspaper = yes
+			#}
+		}
+		localization_key = TLE_NEWS_LOGO_GENERIC
+	}
+}

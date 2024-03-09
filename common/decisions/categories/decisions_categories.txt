@@ -1,0 +1,55 @@
+#####################################################################################################################
+# COMMENTS HAVE BEEN INCLUDED FOR SAKE OF EXPLANATION, CAN BE REMOVED #
+# ID's must not include spaces!
+#####################################################################################################################
+TLE_germany_econ_categories = {		#ID of category
+	priority = 9		#Determines the order of display in the decisions tab, the higher the number, the higher it will show up.
+	icon = GFX_category_icon
+	picture = GFX_ger_econ_plan
+
+	allowed = {
+		tag = GER
+	}
+	visible = {	
+		tag = GER
+		has_government = fascism
+	}
+	available = {	
+		has_completed_focus = german_mechanical_sounds
+	}
+	scripted_gui = decision_gfx
+}
+TLE_germany_Breitspurbahn_categories = {		
+	priority = 9	
+	icon = GFX_category_icon
+	picture = GFX_ger_Breitspurbahn_background
+
+	allowed = {
+		tag = GER
+	}
+	visible = {	
+		tag = GER
+		has_government = fascism
+	}
+	scripted_gui = TLE_Germany_GUIs_Breitspurbahn
+}
+GER_kaiser_win_at_war = {		
+	priority = 9	
+	icon = GFX_category_icon
+
+	allowed = {
+		tag = GER
+	}
+	visible = {	
+		tag = GER
+	}
+}
+TLE_divide_fucking_germany = {		
+	priority = 9	
+	icon = GFX_category_icon
+
+	allowed = {
+	}
+	visible = {	
+	}
+}

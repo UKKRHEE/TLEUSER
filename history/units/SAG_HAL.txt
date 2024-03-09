@@ -1,0 +1,59 @@
+﻿#편제
+division_template = {
+	name = "Saga Army"
+	division_names_group = JAP_INF_01
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 2 y = 0 }
+	}
+	support = {
+	}
+}
+
+units = {
+#국내군
+	#특수 사단
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9950
+		division_template = "Saga Army"
+		start_experience_factor = 1
+		start_equipment_factor = 0.6
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10011
+		division_template = "Saga Army"
+		start_experience_factor = 1
+		start_equipment_factor = 0.6
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1025
+		division_template = "Saga Army"
+		start_experience_factor = 1
+		start_equipment_factor = 0.6
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10092
+		division_template = "Saga Army"
+		start_experience_factor = 1
+		start_equipment_factor = 0.6
+	}
+}
+

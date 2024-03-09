@@ -1,0 +1,2 @@
+﻿
+recruit_character = PRT_duarte_ii

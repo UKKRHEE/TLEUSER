@@ -1,0 +1,20 @@
+characters={
+	JNT_shin_palkyun={
+		name="JNT_shin_palkyun"
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/Portrait_KOR_Shin_Pal_gyun.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			id=-1
+		}
+		country_leader={
+			ideology=ultranationalism
+			traits={ }
+			id=-1
+		}
+	}
+}

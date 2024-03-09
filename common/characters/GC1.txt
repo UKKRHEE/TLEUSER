@@ -1,0 +1,28 @@
+characters={
+	GC1_german_goernment={
+		name="GC1_german_goernment"
+		portraits={
+			civilian={
+				large="gfx/leaders/GER/Portrait_GER_africa_government.png"
+			}
+		}
+	}
+	GC1_bernhard_ruberg={
+		name="GC1_bernhard_ruberg"
+		portraits={
+			civilian={
+				large="gfx/leaders/GER/Portrait_GER_bernhard_ruberg.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			id=-1
+		}
+		country_leader={
+			ideology=nazism
+			traits={ }
+			id=-1
+		}
+	}
+}

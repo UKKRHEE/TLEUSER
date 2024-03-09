@@ -1,0 +1,8754 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			if = {
+				every_state = {
+					limit = {
+						is_core_of = PRC
+						OR = {
+							is_core_of = KOR
+							is_core_of = KMN
+						}
+						OR = {
+							is_owned_by = KOR
+							is_owned_by = KMN
+						}
+						NOT = {
+							state = 743
+						}
+					}
+					remove_core_of = ZLC
+					remove_core_of = QIN
+					remove_core_of = WZC
+					remove_core_of = CHI
+					remove_core_of = PRC
+					remove_core_of = FNG
+					add_claim_by = ZLC
+				}
+				every_state = {
+					limit = {
+						state = 524
+					}	
+					remove_core_of = KOR
+					add_claim_by = KOR
+				}
+				every_state = {
+					limit = {
+						is_core_of = SIL
+					}
+					remove_core_of = SIL
+				}
+				every_state = {
+					limit = {
+						is_core_of = KSH
+					}
+					remove_core_of = KSH
+				}
+				every_state = {
+					limit = {
+						is_core_of = SOV
+						OR = {
+							is_owned_by = KYH
+							is_owned_by = KKS
+							is_owned_by = KHK
+							is_owned_by = KMN
+							is_owned_by = KOR
+						}
+					}
+					remove_core_of = SOV
+				}
+				every_state = {
+					limit = {
+						is_claimed_by = SOV
+						OR = {
+							is_owned_by = KYH
+							is_owned_by = KKS
+							is_owned_by = KHK
+							is_owned_by = KMN
+							is_owned_by = KOR
+						}
+					}
+					remove_claim_by = SOV
+				}
+			}
+			WZC = {
+				country_event = {
+					id = china.1089
+					days = 38
+				}
+			}
+			ZLC = {
+				608 = {
+					add_dynamic_modifier = { modifier = QIN_qing_xiaozhaozheng }
+				}
+			}
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+                country_event = {
+                    id = korea.1
+      			}
+				country_event = {
+					id = korea.792
+				}
+			}
+			every_country = {
+				limit = {
+					is_chinese_clique = yes
+				}
+                country_event = {
+                    id = korea.787
+					days = 2
+      			}
+				if = {
+					limit = {
+						original_tag = ZLC
+					}
+					ZLC = {
+						add_ideas = wu_peifu_token
+					}
+				}
+				if = {
+					limit = {
+						original_tag = CHI
+					}	
+					CHI = {
+						activate_advisor = cks_tok_1
+					}
+				}
+			}
+			DKG = {
+				country_event = {
+					id = TLE_japan.4
+					hours = 5
+				}
+			}
+			KOR = {
+                country_event = {
+                    id = korea.1
+      			}
+                country_event = {
+                    id = korea.796
+      			}
+                country_event = {
+                    id = korea.49
+                    hours = 5
+      			}
+                country_event = {
+                    id = korea.354
+                    days = 2
+      			}
+			}
+			USA = {
+                country_event = {
+                    id = korea.788
+                    days = 0
+      			}
+			}
+			if = {
+				limit = {
+					OR = {
+						CHI = {
+							is_ai = yes
+						}
+						ZLC = {
+							is_ai = yes
+						}
+						PRC = {
+							is_ai = yes
+						}
+					}
+				}
+				every_country = {
+					limit = {
+						is_chinese_clique = yes
+					}
+					country_event = {
+						id = china.1108
+					}
+				}	
+			}
+			if = {
+				every_state = {
+					limit = {
+						is_core_of = PRC
+					}
+					add_core_of = ZLC
+					add_core_of = QIN
+					add_core_of = WZC
+					remove_core_of = PRC
+				}
+				every_state = {
+					limit = {
+						is_core_of = SIL
+					}
+					remove_core_of = SIL
+				}
+				every_state = {
+					limit = {
+						is_core_of = KSH
+					}
+					remove_core_of = KSH
+				}
+			}
+			if = {
+				every_state = {
+					limit = {
+						is_core_of = CHI
+						NOT = {
+							is_owned_by = CHI
+						}
+					}
+					remove_core_of = CHI
+				}
+			}
+			if = {
+				every_state = {
+					limit = {
+						is_core_of = KYH
+						is_core_of = FER
+						is_owned_by = KYH
+					}
+					remove_core_of = FER
+					add_claim_by = FER
+				}
+			}
+			if = {
+				limit = {
+					LIT = {
+						is_ai = yes
+					}
+					NOT = {
+						has_idea = KOR_neutrality_start
+					}
+				}
+				LIT = {
+					add_ideas = KOR_neutrality_start
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = TLE_YI_JIN_SUYEOM
+						option = TLE_YI_JIN_SUYEOM_YES
+					}
+				}
+				set_portraits = {
+					character = KOR_emperor_yi_jin
+					civilian = { 
+						large ="GFX_Portrait_KOR_yi_jin_suyeom"
+					}
+					army = { 
+						large ="GFX_Portrait_KOR_yi_jin_suyeom"
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = TLE_YI_JIN_SUYEOM
+						option = TLE_YI_JIN_SUYEOM_NO
+					}
+				}
+				set_portraits = {
+					character = KOR_emperor_yi_jin
+					civilian = { 
+						large ="GFX_Portrait_KOR_yi_jin_suyeom_no"
+					}
+					army = { 
+						large ="GFX_Portrait_KOR_yi_jin_suyeom_no"
+					}
+				}
+			}
+		}
+	}
+	on_capitulation = {
+	}
+	on_declare_war = {
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						original_tag = KOR
+						has_cosmetic_tag = KOR_STATE
+					}
+				}
+				FROM = {
+					country_lock_all_division_template = no
+				}
+			}
+			if = {
+				limit = {
+					is_historical_focus_on = yes
+					FROM = {
+						original_tag = POL
+					}
+					ROOT = {
+						original_tag = GER
+						has_government = fascism
+					}
+				}
+				hidden_effect = {
+					every_country = {
+						limit = { is_ai = no }
+						set_temp_variable = { TNO_temp_super_event = token:SE_WORLD_WAR_II }
+						TNO_fire_super_event = yes
+					}
+				}	
+			}
+			if = {
+				limit = {
+					is_historical_focus_on = yes
+					FROM = {
+						original_tag = SOV
+						has_government = communism
+					}
+					ROOT = {
+						original_tag = GER
+						has_government = fascism
+					}
+				}
+				hidden_effect = {
+					every_country = {
+						limit = { is_ai = no }
+						set_temp_variable = { TNO_temp_super_event = token:SE_OPERATION_BARBAROSSA }
+						TNO_fire_super_event = yes
+					}
+				}	
+				set_global_flag = operation_barbarossa_global_flag
+				if = {
+					limit = {
+						is_historical_focus_on = yes
+						LIT = {
+							is_ai = yes
+							exists = yes
+						}
+					}
+					SOV = {
+						annex_country = {
+							target = LIT
+							transfer_troops = yes
+						}
+					}
+				}
+				if = {
+					limit = {
+						is_historical_focus_on = yes
+						LAT = {
+							is_ai = yes
+							exists = yes
+						}
+					}
+					SOV = {
+						annex_country = {
+							target = LAT
+							transfer_troops = yes
+						}
+					}
+				}
+				if = {
+					limit = {
+						is_historical_focus_on = yes
+						EST = {
+							is_ai = yes
+							exists = yes
+						}
+					}
+					SOV = {
+						annex_country = {
+							target = EST
+							transfer_troops = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						original_tag = ZLC
+					}
+					ROOT = {
+						original_tag = CHI
+					}
+					KOR = {
+						has_country_flag = TLE_THE_WAR_IS_ENDED
+					}	
+				}
+				CHI = {
+					create_faction = "FACTION_CHI_KUOMINGEMINGJUN"
+					set_capital = { state = 613 }
+					transfer_state = 748
+					set_rule = {
+						can_create_faction = yes
+					}
+					set_country_flag = TLE_2nd_war_china_afterkorea
+					every_country = {
+						limit = {
+							is_ai = no
+						}
+						news_event = {
+							id = eok_news.23
+							days = 1
+						}
+					}
+				}
+				ZLC = {
+					create_faction = "FACTION_ZLC_BEIYANG_GOVERNMENT"
+					add_to_faction = XSM
+					if = {
+						limit = {
+							SZC = { 
+								exists = yes
+								NOT = {
+									is_puppet_of = CHI
+								}
+							}	
+						}
+						add_to_faction = SZC
+					}
+					if = {
+						limit = {
+							SHX = {
+								exists = yes
+								is_ai = no
+							}	
+						}
+						annex_country = {
+							target = SHX
+							transfer_troops = yes
+						}	
+					}
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						original_tag = ZLC
+					}
+					FROM = {
+						original_tag = CHI
+					}
+					KOR = {
+						has_country_flag = TLE_THE_WAR_IS_ENDED
+					}	
+				}
+				CHI = {
+					create_faction = "FACTION_CHI_KUOMINGEMINGJUN"
+					set_capital = { state = 613 }
+					transfer_state = 748
+					set_rule = {
+						can_create_faction = yes
+					}
+					set_country_flag = TLE_2nd_war_china_afterkorea
+				}
+				ZLC = {
+					create_faction = "FACTION_ZLC_BEIYANG_GOVERNMENT"
+					add_to_faction = XSM
+					if = {
+						limit = {
+							SZC = { 
+								exists = yes
+								NOT = {
+									is_puppet_of = CHI
+								}
+							}	
+						}
+						add_to_faction = SZC
+					}
+					if = {
+						limit = {
+							SHX = {
+								exists = yes
+								is_ai = no
+							}	
+						}
+						ZLC = {
+							change_tag_from = SHX
+						}
+						annex_country = {
+							target = SHX
+							transfer_troops = yes
+						}	
+					}
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						has_idea = KOR_anti_communism_pact_joincountry
+					}
+					ROOT = {
+						tag = SOV
+						has_government = communism
+					}
+				}
+				every_country = {
+					limit = {
+						NOT = {
+							original_tag = SOV
+						}	
+						has_idea = KOR_anti_communism_pact_joincountry
+					}
+					declare_war_on = {
+						target = SOV
+						type = annex_everything
+					}
+				}
+			}
+			if = {
+				limit = {
+					
+					FROM = {
+						original_tag = CHI
+					}
+					ROOT = {
+						original_tag = WZC
+					}
+					CHI = {
+						NOT = {
+							has_country_flag = TLE_has_supper_evented_beifa
+						}
+					}
+				}
+				news_event = {
+					id = eok_news.37
+					hours = 3
+				}
+				CHI = {
+					set_country_flag = TLE_has_supper_evented_beifa
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						original_tag = WZC
+					}
+					ROOT = {
+						original_tag = CHI
+					}
+					CHI = {
+						NOT = {
+							has_country_flag = TLE_has_supper_evented_beifa
+						}
+					}
+				}
+				news_event = {
+					id = eok_news.37
+					hours = 3
+				}
+				CHI = {
+					set_country_flag = TLE_has_supper_evented_beifa
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						original_tag = TBJ
+					}
+					ROOT = {
+						original_tag = JAP
+					}
+				}
+				if = {
+					limit = {
+						JAP = {
+							is_ai = yes
+						}
+					}
+					TBJ = {
+						add_ideas = JAP_shogunate_lose
+						country_lock_all_division_template = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						original_tag = FJP
+					}
+					ROOT = {
+						original_tag = JAP
+					}
+				}
+				if = {
+					limit = {
+						JAP = {
+							is_ai = yes
+						}
+					}
+					FJP = {
+						add_ideas = JAP_shogunate_lose
+						country_lock_all_division_template = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						original_tag = SDJ
+					}
+					ROOT = {
+						original_tag = JAP
+					}
+				}
+				if = {
+					limit = {
+						JAP = {
+							is_ai = yes
+						}
+					}
+					SDJ = {
+						add_ideas = JAP_shogunate_lose
+						country_lock_all_division_template = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						original_tag = NBJ
+					}
+					ROOT = {
+						original_tag = JAP
+					}
+				}
+				if = {
+					limit = {
+						JAP = {
+							is_ai = yes
+						}
+					}
+					NBJ = {
+						add_ideas = JAP_shogunate_lose
+						country_lock_all_division_template = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						original_tag = GJJ
+					}
+					ROOT = {
+						original_tag = JAP
+					}
+				}
+				if = {
+					limit = {
+						JAP = {
+							is_ai = yes
+						}
+					}
+					GJJ = {
+						add_ideas = JAP_shogunate_lose
+					}
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						original_tag = KOR
+					}
+					ROOT = {
+						original_tag = JAP
+					}
+				}
+				hidden_effect = {
+					every_country = {
+						limit = { is_ai = no }
+						set_temp_variable = { TNO_temp_super_event = token:SE_KOREAN_JAPANESE_WAR }
+						TNO_fire_super_event = yes
+					}
+					every_state = {
+						limit = {
+							is_core_of = JAP
+							NOT = {
+								is_owned_by = KOR
+								is_owned_by = KHK
+								is_owned_by = KKS
+							}
+						}
+						add_dynamic_modifier = { modifier = JAP_defence_the_korea }
+					}
+					1066 = {
+						set_demilitarized_zone = yes
+						set_demilitarized_zone = no
+					}
+					JAP = {
+						transfer_state = 989
+					}
+					989 = {
+						set_demilitarized_zone = yes
+						set_demilitarized_zone = no
+						set_state_controller_to = KOR
+					}
+					KOR = {
+						load_oob = "KOR_kure"
+						load_oob = "KOR_shimonoseki"
+					}
+
+				}
+				if = {
+					limit = {
+						KOR = {
+							is_ai = no
+						}
+						JAP = {
+							is_ai = yes
+						}
+					}
+					JAP = {
+						add_timed_idea = {
+							idea = JAP_war_japan_ai
+							days = 240
+						}
+					}
+					JAP = {
+						load_oob = "JAP_ai_units"
+					}
+					1068 = {
+						set_building_level = {
+							type = bunker
+							level = 8
+							province = 9859
+						}
+					}
+					1066 = {
+						set_building_level = {
+							type = bunker
+							level = 8
+							province = 11985
+						}
+					}
+					529 = {
+						set_building_level = {
+							type = bunker
+							level = 8
+							province = 1092
+						}
+					}
+					531 = {
+						set_building_level = {
+							type = bunker
+							level = 8
+							province = 7072
+						}
+					}
+					532 = {
+						set_building_level = {
+							type = bunker
+							level = 8
+							province = 10125
+						}
+						set_building_level = {
+							type = bunker
+							level = 8
+							province = 4172
+						}
+					}
+					1070 = {
+						set_building_level = {
+							type = bunker
+							level = 10
+							province = 11960
+						}
+						set_building_level = {
+							type = bunker
+							level = 8
+							province = 1067
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						original_tag = JAP
+					}
+					ROOT = {
+						original_tag = KOR
+					}
+				}
+				hidden_effect = {
+					every_country = {
+						limit = { is_ai = no }
+						set_temp_variable = { TNO_temp_super_event = token:SE_KOREAN_JAPANESE_WAR }
+						TNO_fire_super_event = yes
+					}
+					every_state = {
+						limit = {
+							is_core_of = JAP
+							NOT = {
+								is_owned_by = KOR
+								is_owned_by = KHK
+								is_owned_by = KKS
+							}
+						}
+						add_dynamic_modifier = { modifier = JAP_defence_the_korea }
+					}
+					1066 = {
+						set_demilitarized_zone = yes
+						set_demilitarized_zone = no
+					}
+					JAP = {
+						transfer_state = 989
+					}
+					989 = {
+						set_demilitarized_zone = yes
+						set_demilitarized_zone = no
+						set_state_controller_to = KOR
+					}
+					KOR = {
+						load_oob = "KOR_kure"
+						load_oob = "KOR_shimonoseki"
+					}
+				}
+				if = {
+					limit = {
+						KOR = {
+							is_ai = yes
+						}
+						JAP = {
+							is_ai = no
+						}
+					}
+					KOR = {
+						load_oob = "KOR_ai_Japan"
+						add_timed_idea = {
+							idea = KOR_war_japan_ai
+							days = 720
+						}
+					}
+					1064 = {
+						set_building_level = {
+							type = bunker
+							level = 8
+							province = 1025
+						}
+						set_building_level = {
+							type = bunker
+							level = 8
+							province = 10092
+						}
+					}
+					536 = {
+						set_building_level = {
+							type = bunker
+							level = 8
+							province = 3962
+						}
+					}
+					528 = {
+						set_building_level = {
+							type = bunker
+							level = 8
+							province = 7110
+						}
+					}
+					1029 = {
+						set_building_level = {
+							type = bunker
+							level = 8
+							province = 10011
+						}
+					}
+				}
+				if = {
+					limit = {
+						KOR = {
+							is_ai = yes
+						}
+						JAP = {
+							is_ai = yes
+						}
+					}	
+					KOR = {
+						load_oob = "KOR_ai_Japan"
+						add_timed_idea = {
+							idea = KOR_war_japan_ai
+							days = 100
+						}
+					}
+					JAP = {
+						load_oob = "JAP_ai_units"
+					}
+					1067 = {
+						set_building_level = {
+							type = bunker
+							level = 8
+							province = 9998
+						}
+					}
+					282 = {
+						set_building_level = {
+							type = bunker
+							level = 8
+							province = 1182
+						}
+					}
+					1068 = {
+						set_building_level = {
+							type = bunker
+							level = 8
+							province = 9859
+						}
+					}
+					1066 = {
+						set_building_level = {
+							type = bunker
+							level = 8
+							province = 11985
+						}
+					}
+					529 = {
+						set_building_level = {
+							type = bunker
+							level = 8
+							province = 1092
+						}
+					}
+					531 = {
+						set_building_level = {
+							type = bunker
+							level = 8
+							province = 7072
+						}
+					}
+					532 = {
+						set_building_level = {
+							type = bunker
+							level = 8
+							province = 10125
+						}
+						set_building_level = {
+							type = bunker
+							level = 8
+							province = 4172
+						}
+					}
+					1070 = {
+						set_building_level = {
+							type = bunker
+							level = 10
+							province = 11960
+						}
+						set_building_level = {
+							type = bunker
+							level = 8
+							province = 1067
+						}
+					}
+				}
+				if = {
+					limit = {
+						KOR = {
+							is_ai = no
+						}
+						JAP = {
+							is_ai = yes
+						}
+					}
+					JAP = {
+						add_timed_idea = {
+							idea = JAP_war_japan_ai
+							days = 240
+						}
+					}
+					JAP = {
+						load_oob = "JAP_ai_units"
+					}
+					1068 = {
+						set_building_level = {
+							type = bunker
+							level = 8
+							province = 9859
+						}
+					}
+					1066 = {
+						set_building_level = {
+							type = bunker
+							level = 8
+							province = 11985
+						}
+					}
+					529 = {
+						set_building_level = {
+							type = bunker
+							level = 8
+							province = 1092
+						}
+					}
+					531 = {
+						set_building_level = {
+							type = bunker
+							level = 8
+							province = 7072
+						}
+					}
+					532 = {
+						set_building_level = {
+							type = bunker
+							level = 8
+							province = 10125
+						}
+						set_building_level = {
+							type = bunker
+							level = 8
+							province = 4172
+						}
+					}
+					1070 = {
+						set_building_level = {
+							type = bunker
+							level = 10
+							province = 11960
+						}
+						set_building_level = {
+							type = bunker
+							level = 8
+							province = 1067
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						original_tag = KOR
+					}
+					ROOT = {
+						original_tag = SOV
+					}
+				}
+				hidden_effect = {
+					every_country = {
+						limit = { is_ai = no }
+						set_temp_variable = { TNO_temp_super_event = token:SE_RUSSIA_ATTACK_KOREA }
+						TNO_fire_super_event = yes
+					}
+				}
+				SOV = {
+					set_country_flag = FLAG_WAR_SOV_KOR_FASCISM
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						original_tag = SOV
+					}
+					ROOT = {
+						original_tag = KOR
+					}
+				}
+				hidden_effect = {
+					every_country = {
+						limit = { is_ai = no }
+						set_temp_variable = { TNO_temp_super_event = token:SE_RUSSIA_ATTACK_KOREA }
+						TNO_fire_super_event = yes
+					}
+				}
+				SOV = {
+					set_country_flag = FLAG_WAR_SOV_KOR_FASCISM
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						original_tag = KOR
+					}
+					ROOT = {
+						original_tag = USA
+					}
+				}
+				hidden_effect = {
+					every_country = {
+						limit = { is_ai = no }
+						set_temp_variable = { TNO_temp_super_event = token:SE_KOREA_WAR_WITH_USA }
+						TNO_fire_super_event = yes
+					}
+				}
+				KOR = {
+					set_country_flag = TLE_taepyong_war
+				}
+				if = {
+					limit = {
+						KOR = {
+							is_ai = yes
+						}
+					}
+					KOR = {
+						load_oob = "KOR_ai_start_war"
+						add_war_support = 0.6
+					}
+				}
+				if = {
+					limit = {
+						KOR = {
+							is_ai = no
+						}
+					}
+					KOR = {
+						if = {
+							limit = {
+								KOR = {
+									NOT = {
+										has_idea = KOR_embargo_us
+										has_idea = KOR_embargo_us_a
+										has_idea = KOR_embargo_us_b
+										has_idea = KOR_embargo_us_c
+										has_idea = KOR_embargo_us_d
+									}
+								}
+							}
+							add_ideas = KOR_embargo_us
+							add_war_support = -0.6
+						}
+					}
+				}
+				if = {
+					limit = {
+						USA = {
+							is_in_faction = no
+						}
+					}
+					USA = {
+						create_faction = FACTION_USA_PATO
+					}
+				}
+				if = {
+					limit = {
+						JAP = {
+							has_war_with = KOR
+							is_in_faction = no
+						}
+						USA = {
+							is_faction_leader = yes
+						}
+					}
+					USA = {
+						add_to_faction = JAP
+					}
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						original_tag = USA
+					}
+					ROOT = {
+						original_tag = KOR
+					}
+				}
+				hidden_effect = {
+					every_country = {
+						limit = { is_ai = no }
+						set_temp_variable = { TNO_temp_super_event = token:SE_KOREA_WAR_WITH_USA }
+						TNO_fire_super_event = yes
+					}
+				}
+				if = {
+					limit = {
+						USA = {
+							is_in_faction = no
+						}
+					}
+					USA = {
+						create_faction = FACTION_USA_PATO
+					}
+				}
+				if = {
+					limit = {
+						JAP = {
+							has_war_with = KOR
+							is_in_faction = no
+						}
+						USA = {
+							is_faction_leader = yes
+						}
+					}
+					USA = {
+						add_to_faction = JAP
+					}
+				}
+				if = {
+					limit = {
+						KOR = {
+							is_ai = yes
+						}
+					}
+					KOR = {
+						load_oob = "KOR_ai_start_war"
+						add_war_support = 0.6
+					}
+				}
+				if = {
+					limit = {
+						KOR = {
+							is_ai = no
+						}
+					}
+					KOR = {
+						if = {
+							limit = {
+								KOR = {
+									NOT = {
+										has_idea = KOR_embargo_us
+										has_idea = KOR_embargo_us_a
+										has_idea = KOR_embargo_us_b
+										has_idea = KOR_embargo_us_c
+										has_idea = KOR_embargo_us_d
+									}
+								}
+							}
+							add_ideas = KOR_embargo_us
+							add_war_support = -0.6
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						original_tag = WZC
+					}
+					ROOT = {
+						original_tag = KOR
+					}
+				}
+				KOR = {
+					country_event = {
+						id = korea.35
+					}
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						original_tag = ZLC
+					}
+					ROOT = {
+						original_tag = KOR
+						has_completed_focus = kor_korean_lebensraum
+					}
+				}
+				set_global_flag = TLE_5TH_SINO_KOREAN_WAR
+				if = {
+					limit = {
+						KOR = {
+							is_ai = yes
+						}
+					}
+					KOR = {
+						load_oob = "KOR_ai_start_war"
+					}
+				}
+				if = {
+					limit = {
+						KOR = {
+							is_ai = no
+						}
+						CHI = {
+							is_ai = yes
+						}
+					}
+					CHI = {
+						load_oob = "CHI_ai_war_start"
+					}
+					1046 = {
+						set_building_level = {
+							type = bunker
+							level = 5
+							province = 1047
+						}
+					}
+				}
+				609 = {
+					set_building_level = {
+						type = bunker
+						level = 8
+						province = 6999
+					}
+					set_building_level = {
+						type = bunker
+						level = 8
+						province = 7240
+					}
+				}
+				1047 = {
+					set_building_level = {
+						type = bunker
+						level = 8
+						province = 4925
+					}
+				}
+				748 = {
+					set_building_level = {
+						type = bunker
+						level = 8
+						province = 4431
+					}
+					set_building_level = {
+						type = bunker
+						level = 8
+						province = 4141
+					}
+				}
+				if = {
+					limit = {
+						KOR = {
+							is_ai = no
+						}
+						ZLC = {
+							is_ai = yes
+						}
+						CHI = {
+							is_ai = yes
+						}
+					}
+					ZLC = {
+						load_oob = "ZLC_ai_war"
+					}
+				}
+				every_country = {
+					limit = {
+						has_war_with = PRC
+						is_chinese_clique = yes
+					}
+					white_peace = PRC
+				}
+				KOR = {
+					country_event = {
+						id = korea.34
+						days = 2
+					}
+					set_country_flag = TLE_START_CHINESE_WAR
+				}	
+				every_country = {
+					limit = {
+						has_war_with = CHI
+						is_chinese_clique = yes
+					}
+					white_peace = CHI
+				}
+				every_country = {
+					limit = {
+						has_war_with = ZLC
+						is_chinese_clique = yes
+					}
+					white_peace = ZLC
+				}
+				if = {
+					limit = {
+						HNC = {
+							exists = yes
+						}
+					}
+					
+					ZLC = {
+						add_to_faction = HNC
+						puppet = HNC
+					}
+				}
+				if = {
+					limit = {
+						SND = {
+							exists = yes
+						}
+					}
+					
+					ZLC = {
+						add_to_faction = SND
+						puppet = SND
+					}
+				}
+				if = {
+					limit = {
+						FROM = {
+							NOT = {
+								tag = ZLC
+							}
+						}
+					}
+					FROM = {
+						add_ideas = CHI_fight_with_korea
+					}
+				}
+				if = {
+					limit = {
+						KOR = {
+							is_ai = yes
+							owns_state = 743
+						}
+					}
+					load_oob = "KOR_ai_qingdao"
+					
+				}
+				if = {
+					limit = {
+						original_tag = ZLC
+						NOT = {
+							has_country_flag = FLAG_UNITED_FRONT_ZLC
+						}
+					}
+					set_country_flag = FLAG_UNITED_FRONT_ZLC
+				}
+				if = {
+					limit = {
+						ZLC = {
+							is_in_faction = no
+						}
+					}
+					ZLC = {
+						create_faction = FACTION_ZLC_UNITED_FRONT
+						set_rule = {
+							can_create_faction = yes
+						}	
+						country_event = {
+							id = china.1093
+						}
+						country_lock_all_division_template = no
+					}
+				}
+				if = {
+					limit = {
+						ZLC = {
+							is_in_faction = yes
+						}
+					}
+					ZLC = {
+						set_rule = {
+							can_create_faction = yes
+						}	
+						country_event = {
+							id = china.1093
+						}
+						country_lock_all_division_template = no
+					}
+				}
+					hidden_effect = {
+						CHI = {
+							add_ideas = CHI_fight_with_korea
+						}
+						KOR = {
+							country_event = {
+								id = korea.35
+								days = 10
+							}
+						}
+						
+						if = {
+							limit = {
+								WZC = {
+									is_ai = yes
+									exists = yes
+								}
+							}
+							CHI = {
+								annex_country = {
+									target = WZC
+										transfer_troops = yes
+								}
+								set_cosmetic_tag = CHI_nanking
+								set_country_flag = FLAG_CHI_COSMETIC_NANKING
+								
+								set_capital = { state = 613 }
+							}
+						}
+						if = {
+							limit = {
+								AHC = {
+									exists = yes
+									is_ai = yes
+								}
+							}
+							CHI = {
+								annex_country = {
+									target = AHC
+									transfer_troops = yes
+								}
+							}
+						}
+						ZLC = {
+							set_major = yes
+						}
+						CHI = {
+							set_major = yes
+						}
+					}
+			}
+		}
+	}
+	on_state_control_changed = { #내전	
+	    effect = {
+			if = {
+				limit = {
+					FROM = {
+						original_tag = USA
+						is_ai = yes
+					}
+					FROM.FROM = {
+						is_core_of = USA
+						is_owned_by = USA
+					}
+					USA = {
+						has_war_with = KOR
+					}
+					tag = KOR
+				} 
+				USA = {
+					add_ideas = USA_the_hearts_of_iron
+				}
+			}
+			if = { #부산
+				limit = {
+					613 = { is_controlled_by = KOR }
+					613 = { 
+						OR = {
+							is_owned_by = CHI 
+							is_owned_by = ZLC
+							is_owned_by = WZC 
+							is_owned_by = AHC 
+							is_owned_by = AQC 
+						}	
+					}
+					KOR = { 
+						OR = {
+							has_war_with = CHI 
+							has_war_with = ZLC 
+							has_war_with = WZC 
+							has_war_with = AHC 
+							has_war_with = AQC 
+						}
+						divisions_in_state = { state = 613 size > 0 }
+						NOT = {
+							has_country_flag = FLAG_KOR_NANKING_KILL
+						}
+					}
+				} 
+				news_event = { id = eok_news.3 hours = 1 }
+				country_event = {
+					id = korea.84
+				}
+				KOR = {
+					set_country_flag = FLAG_KOR_NANKING_KILL
+				}
+				if = {
+					limit = {
+						ZLC = {
+							exists = yes
+						}
+						XSM = {
+							exists = yes
+							NOT = {
+								has_war_with = KOR
+							}
+						}
+					}
+					KOR = {
+						declare_war_on = {
+							target = XSM
+							type = annex_everything
+						}
+					}
+				}
+			} 
+		}
+		####중국 주 이름 변경######
+		effect = {
+			if = {
+				limit = {
+					tag = CHI #점령국 - 대한
+					FROM = { 	
+						is_chinese_clique = yes
+					} #피점령국 - 중국
+					FROM.FROM = { is_core_of = ZLC is_claimed_by = CHI NOT = { is_core_of = CHI } } #점령 주 - 북경
+				}
+                FROM.FROM = {
+					add_core_of = CHI
+				}
+			}
+			if = {
+				limit = {
+					is_korean_tag = yes #점령국 - 대한
+					FROM.FROM = { state = 613 } #점령 주 - 난징
+				}
+                FROM.FROM = {
+					set_state_name = "namkyung"
+					
+				}
+                set_province_name = {
+                    id = 11913
+                    name = "namkyung"
+                }
+			}
+			if = {
+				limit = {
+					OR = {
+						tag = KOR
+						tag = KMN
+						tag = KHK
+						tag = KKS
+						tag = MEN
+						tag = MSR
+					}
+					FROM = { OR = { tag = MON tag = MSR tag = MEN } } #피점령국 - 환계
+					FROM.FROM = { state = 330 } #점령 주 - 울란바토르
+				}
+				if = {
+					limit = {
+						tag = MEN
+					}
+					MEN = {
+						set_cosmetic_tag = MEN
+					}
+					FROM.FROM = {
+						set_state_name = "fure"
+						
+					}
+					set_province_name = {
+						id = 4801
+						name = "fure"
+					}
+				}
+				if = {
+					limit = {
+						tag = MON
+					}
+					MON = {
+						set_cosmetic_tag = MON
+					}
+					FROM.FROM = {
+						set_state_name = "fure"
+						
+					}
+					set_province_name = {
+						id = 4801
+						name = "fure"
+					}
+				}
+				if = {
+					limit = {
+						tag = MSR
+					}
+					MSR = {
+						set_cosmetic_tag = MSR
+					}
+					FROM.FROM = {
+						set_state_name = "ullanbataar"
+						
+					}
+					set_province_name = {
+						id = 4801
+						name = "ullanbataar"
+					}
+				}
+			}
+			if = {
+				limit = {
+						is_independent_china_or_warlord = yes #점령국 - 중국
+					FROM.FROM = { state = 613 } #점령 주 - 난징
+				}
+                FROM.FROM = {
+					set_state_name = "nanjing"
+					
+				}
+                set_province_name = {
+                    id = 11913
+                    name = "nanjing"
+                }
+			}
+			if = {
+				limit = {
+					tag = CHI
+					FROM = { OR = { tag = WZC tag = AHC } }
+					FROM.FROM = { state = 613 } #점령 주 - 난징
+					NOT = {
+						has_country_flag = CHI_NANKING_HAM
+					}
+				}
+				if = {
+					limit = {
+						AQC = {
+							exists = no
+						}
+						ZLC = {
+							exists = yes
+							NOT = {
+								owns_state = 606
+							}
+						}
+					}
+					ZLC = {
+						transfer_state = 1051
+						transfer_state = 979
+						transfer_state = 1040
+						transfer_state = 606
+						transfer_state = 598
+					}	
+				}
+				if = {
+					limit = {
+						WZC = {
+							exists = yes
+						}
+					}
+					if = {
+						limit = {
+							PRC = {
+								exists = no
+							}
+						}
+						transfer_state = 595
+					}
+					if = {
+						limit = {
+							WZC = {
+								NOT = {
+									has_war_with = CHI
+								}
+							}
+						}
+						transfer_state = 1062
+					}
+					if = {
+						limit = {
+							KPL = {
+								exists = no
+							}
+						}
+						transfer_state = 1036
+					}
+				}
+				CHI = {
+					news_event = { id = eok_news.41 days = 3 }
+					add_state_core = 1061
+					add_state_core = 1055
+					add_state_core = 1044
+					set_country_flag = CHI_NANKING_HAM
+					set_cosmetic_tag = CHI_nanking
+				}
+			}
+			if = {
+				limit = {
+					tag = MSR #점령국 - 대한
+					MSR = {
+						has_war_with = MON
+					}
+					FROM = {
+						tag = MON
+					}
+					FROM.FROM = { state = 330 } #후레
+					NOT = {
+						has_global_flag = globalflag_mon_defeat
+					}
+				}
+				set_global_flag = globalflag_mon_defeat
+                MON = {
+					white_peace = MSR
+				}
+				MSR = {
+					transfer_state = 330
+					transfer_state = 817
+					news_event = {
+						id = eok_news.39
+						hours = 4
+					}
+					recruit_character = MSR_khorloogiin_choibalsan
+					promote_character = MSR_khorloogiin_choibalsan
+					retire_character = MSR_anandyn_amar
+				}
+				SOV = {
+					puppet = TAN
+				}
+				TAN = {
+					transfer_state = 329
+				}
+				612 = {
+					set_demilitarized_zone = yes
+				}
+				611 = {
+					set_demilitarized_zone = yes
+				}
+				621 = {
+					set_demilitarized_zone = yes
+				}
+				1005 = {
+					set_demilitarized_zone = yes
+				}
+				
+				set_global_flag = show_peace_popup_alert
+				MSR = {
+					save_global_event_target_as = winning_country
+				}
+				MON = {
+					save_global_event_target_as = losing_country
+				}
+				if = {
+					limit = {
+						event_target:losing_country = {
+							any_allied_country = {
+								has_war_together_with = event_target:losing_country
+							}
+						}
+					}
+					set_global_flag = losing_country_multiple
+				}
+
+				if = {
+					limit = {
+						event_target:winning_country = {
+							any_allied_country = {
+								has_war_together_with = event_target:winning_country
+							}
+						}
+					}
+					set_global_flag = winning_country_multiple
+				}
+				every_country = {
+					limit = {
+						is_ai = no
+					}	
+					add_to_variable = { global.peace_popup_dirty = 1 }
+				}
+				log = "war_won"
+				set_global_flag = war_won
+			}
+			if = {
+				limit = {
+					is_korean_tag = yes #점령국 - 대한
+					FROM.FROM = { state = 743 } #점령 주 - 칭다오
+				}
+                FROM.FROM = {
+					set_state_name = "cheongdo"
+					
+				}
+                set_province_name = {
+                    id = 10000
+                    name = "cheongdo"
+                }
+			}
+			if = {
+				limit = {
+					is_chinese_clique = yes #점령국 - 중국
+					FROM.FROM = { state = 743 } #점령 주 - 청도
+				}
+                FROM.FROM = {
+					set_state_name = "qingdao"
+					
+				}
+                set_province_name = {
+                    id = 10000
+                    name = "qingdao"
+                }
+			}
+			if = {
+				limit = {
+					is_korean_tag = yes #점령국 - 대한
+					FROM.FROM = { state = 1034 } #점령 주 - 칭다오
+				}
+                FROM.FROM = {
+					set_state_name = "wihae"
+					
+				}
+                set_province_name = {
+                    id = 4205
+                    name = "wihae"
+                }
+			}
+			if = {
+				limit = {
+					is_chinese_clique = yes #점령국 - 중국
+					FROM.FROM = { state = 1034 } #점령 주 - 청도
+				}
+                FROM.FROM = {
+					set_state_name = "weihai"
+					
+				}
+                set_province_name = {
+                    id = 4205
+                    name = "weihai"
+                }
+			}
+			if = {
+				limit = {
+					is_korean_tag = yes #점령국 - 대한
+					FROM.FROM = { state = 1035 } #점령 주 - 연태
+				}
+                FROM.FROM = {
+					set_state_name = "yeontae"
+					
+				}
+                set_province_name = {
+                    id = 1200
+                    name = "yeontae"
+                }
+                set_province_name = {
+                    id = 13385
+                    name = "kyoju"
+                }
+			}
+			if = {
+				limit = {
+					is_chinese_clique = yes #점령국 - 중국
+					FROM.FROM = { state = 1035 } #점령 주 - 옌타이
+				}
+                FROM.FROM = {
+					set_state_name = "STATE_1035"
+					
+				}
+                set_province_name = {
+                    id = 1200
+                    name = "VICTORY_POINTS_1200"
+                }
+                set_province_name = {
+                    id = 13385
+                    name = "VICTORY_POINTS_13295"
+                }
+			}
+			if = {
+				limit = {
+					is_korean_tag = yes #점령국 - 대한
+					FROM.FROM = { state = 1004 } #점령 주 - 문등
+				}
+                FROM.FROM = {
+					set_state_name = "mundeung"
+					
+				}
+                set_province_name = {
+                    id = 13386
+                    name = "mundeung"
+                }
+			}
+			if = {
+				limit = {
+					is_chinese_clique = yes #점령국 - 중국
+					FROM.FROM = { state = 1004 } #점령 주 - 원덩
+				}
+                FROM.FROM = {
+					set_state_name = "STATE_1004"
+					
+				}
+                set_province_name = {
+                    id = 13386
+                    name = "VICTORY_POINTS_13296"
+                }
+			}
+			if = {
+				limit = {
+					is_korean_tag = yes #점령국 - 대한
+					FROM.FROM = { state = 1033 } #점령 주 - 톈진
+				}
+                FROM.FROM = {
+					set_state_name = "cheonjin"
+					
+				}
+                set_province_name = {
+                    id = 10068
+                    name = "cheonjin"
+                }
+			}
+			if = {
+				limit = {
+					is_chinese_clique = yes #점령국 - 중국
+					FROM.FROM = { state = 1033 } #점령 주 - 톈진
+				}
+                FROM.FROM = {
+					set_state_name = "tianjin"
+					
+				}
+                set_province_name = {
+                    id = 10068
+                    name = "tianjin"
+                }
+			}
+			if = {
+				limit = {
+					is_korean_tag = yes #점령국 - 대한
+					FROM.FROM = { state = 608 } #점령 주 - 북경
+				}
+                FROM.FROM = {
+					set_state_name = "bukkyung"
+					
+				}
+                set_province_name = {
+                    id = 9843
+                    name = "bukkyung"
+                }
+				if = {
+					limit = {
+						ZLC = {
+							owns_state = 608
+						}
+					}
+					ZLC = {
+						
+						set_capital = { state = 1057 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					FROM = { 	
+						is_chinese_clique = yes
+					} #피점령국 - 중국
+					FROM.FROM = { state = 608 } #점령 주 - 북경
+					KOR = {
+						NOT = {
+							has_country_flag = FLAG_HAS_BEEN_EVENTED_PEKING
+						}
+					}
+				}
+				KOR = {
+					set_country_flag = FLAG_HAS_BEEN_EVENTED_PEKING
+					country_event = {
+						id = korea.65
+						days = 3
+					}
+				}
+				news_event = {
+					id = eok_news.4
+					hours = 3
+				}
+				if = {
+					limit = {
+						ZLC = {
+							is_ai = yes
+						}
+					}
+					
+					ZLC = {
+						1048 = {
+							set_building_level = {
+								type = bunker
+								level = 6
+								province = 1036
+							}
+							set_building_level = {
+								type = bunker
+								level = 6
+								province = 12467
+							}
+							set_building_level = {
+								type = bunker
+								level = 3
+								province = 4619
+							}
+						}
+						1056 = {
+							set_building_level = {
+								type = bunker
+								level = 6
+								province = 4130
+							}
+							set_building_level = {
+								type = bunker
+								level = 7
+								province = 1612
+							}
+							set_building_level = {
+								type = bunker
+								level = 6
+								province = 7609
+							}
+							set_building_level = {
+								type = bunker
+								level = 6
+								province = 10474
+							}
+							set_building_level = {
+								type = bunker
+								level = 6
+								province = 7019
+							}
+							set_building_level = {
+								type = bunker
+								level = 6
+								province = 8072
+							}
+							set_building_level = {
+								type = bunker
+								level = 6
+								province = 7418
+							}
+							set_building_level = {
+								type = bunker
+								level = 6
+								province = 4167
+							}
+						}
+						add_to_faction = SCC
+						add_to_faction = SZC
+						add_to_faction = XKC
+						add_to_faction = GZC
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_chinese_clique = yes
+					#점령국 - 중국
+					FROM = { OR = { tag = KOR is_puppet_of = KOR  } } #피점령국 - 대한
+					FROM.FROM = { state = 608 } #점령 주 - 북경
+				}
+                FROM.FROM = {
+					set_state_name = "beijing"
+					
+				}
+                set_province_name = {
+                    id = 9843
+                    name = "beijing"
+                }
+				if = {
+					limit = {
+						ZLC = {
+							owns_state = 608
+						}
+					}
+					ZLC = {
+						set_capital = { state = 608 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_korean_tag = yes #점령국 - 대한
+					FROM = { 
+						
+						is_chinese_clique = yes
+					} #피점령국 - 중국
+					FROM.FROM = { state = 605 } #점령 주 - 중경
+				}
+                FROM.FROM = {
+					set_state_name = "junggyung"
+					
+				}
+                set_province_name = {
+                    id = 6999
+                    name = "junggyung"
+                }
+			}
+			if = {
+				limit = {
+					is_chinese_clique = yes
+					FROM = { OR = { tag = KOR is_puppet_of = KOR  } } #피점령국 - 대한
+					FROM.FROM = { state = 605 } #점령 주 - 중경
+				}
+                FROM.FROM = {
+					set_state_name = "chongqing"
+					
+				}
+                set_province_name = {
+                    id = 6999
+                    name = "chongqing"
+                }
+			}
+			if = {
+				limit = {
+					is_korean_tag = yes #점령국 - 대한
+					FROM = { 
+						OR = {
+							original_tag = ZLC
+							original_tag = CHI
+						}
+					} #피점령국 - 중국
+					FROM.FROM = { state = 605 } #점령 주 - 중경
+				}
+				if = {
+					limit = {
+						SZC = {
+							is_ai = yes
+						}
+					}
+					FROM = {
+						annex_country = {
+							target = SZC
+							transfer_troops = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_korean_tag = yes #점령국 - 대한
+					FROM = { 
+						is_chinese_clique = yes
+						
+					} #피점령국 - 중국
+					FROM.FROM = { state = 1048 } #점령 주 - 우한
+				}
+                FROM.FROM = {
+					set_state_name = "muhan"
+					
+				}
+                set_province_name = {
+                    id = 4619
+                    name = "muhan"
+                }
+				if = {
+					limit = {
+						KOR = {
+							controls_state = 608
+						}
+						ZLC = {
+							owns_state = 608
+							owns_state = 1048
+						}
+					}
+					ZLC = {
+						if = {
+							limit = {
+								ZLC = {
+									is_ai = yes
+									
+									NOT = {
+										has_country_flag = TLE_WUHAN_FIGHT_ZLC
+									}
+								}
+								KOR = {
+									is_ai = no
+								}
+							}
+							set_country_flag = TLE_WUHAN_FIGHT_ZLC
+							load_oob = "ZLC_Chongqing"
+							add_equipment_to_stockpile = {
+								type = infantry_equipment_0
+								amount = 85000
+								producer = USA
+							}
+							add_equipment_to_stockpile = {
+								type = support_equipment
+								amount = 3000
+								producer = USA
+							}
+
+							add_equipment_to_stockpile = {
+								type = artillery_equipment_1
+								amount = 2000
+								producer = USA
+							}
+						}
+						annex_country = {
+							target = HNC
+							transfer_troops = yes
+						}
+						if = {
+							limit = {
+								SZC = {
+									is_ai = yes
+								}
+							}
+							transfer_state = 1047
+							transfer_state = 1007
+							transfer_state = 605
+							transfer_state = 748
+							transfer_state = 753
+							XKC = {
+								set_cosmetic_tag = XKC
+							}
+						}
+					}	
+					CHI = {
+						transfer_state = 1054
+					}
+				}
+			}
+			if = {
+				limit = {
+						is_independent_china_or_warlord = yes
+					FROM = { OR = { tag = KOR is_puppet_of = KOR  } } #피점령국 - 대한
+					FROM.FROM = { state = 1048 } #점령 주 - 우한
+				}
+                FROM.FROM = {
+					set_state_name = "wuhan"
+					
+				}
+                set_province_name = {
+                    id = 4619
+                    name = "wuhan"
+                }
+			}
+			############ Manchurian Land ##############
+			if = {
+				limit = {
+					is_korean_tag = yes #점령국 - 대한
+					FROM.FROM = { state = 1060 } #점령 주 - 금주
+				}
+                FROM.FROM = {
+					set_state_name = "STATE_955"
+					clr_state_flag = fengtian_province_state
+					
+				}
+                set_province_name = {
+                    id = 6837
+                    name = "VICTORY_POINTS_6837"
+                }
+			}
+			if = {
+				limit = {
+					is_chinese_clique = yes #점령국 - 중국
+					FROM.FROM = { state = 1060 } #점령 주 - 금주
+				}
+                FROM.FROM = {
+					set_state_name = "jinzhou"
+					set_state_flag = fengtian_province_state
+				}
+                set_province_name = {
+                    id = 6837
+                    name = "huludao"
+                }
+			}
+			if = {
+				limit = {
+					is_korean_tag = yes #점령국 - 대한
+					FROM.FROM = { state = 610 } #점령 주 - 열하
+				}
+                FROM.FROM = {
+					set_state_name = "STATE_610"
+					clr_state_flag = jehol_province_state
+					
+				}
+                set_province_name = {
+                    id = 11801
+                    name = "VICTORY_POINTS_11801"
+                }
+			}
+			if = {
+				limit = {
+					is_chinese_clique = yes #점령국 - 중국
+					FROM.FROM = { state = 610 } #점령 주 - 열하
+				}
+                FROM.FROM = {
+					set_state_name = "rehe"
+					set_state_flag = jehol_province_state
+					
+				}
+                set_province_name = {
+                    id = 11801
+                    name = "cifeng"
+                }
+			}
+			if = {
+				limit = {
+					is_korean_tag = yes #점령국 - 대한
+					FROM.FROM = { state = 715 } #점령 주 - 요령
+				}
+                FROM.FROM = {
+					set_state_name = "STATE_715"
+					clr_state_flag = jehol_province_state
+					
+				}
+                set_province_name = {
+                    id = 1638
+                    name = "VICTORY_POINTS_1638"
+                }
+                set_province_name = {
+                    id = 1627
+                    name = "VICTORY_POINTS_1627"
+                }
+			}
+			if = {
+				limit = {
+					is_chinese_clique = yes #점령국 - 중국
+					FROM.FROM = { state = 715 } #점령 주 - 요령
+				}
+                FROM.FROM = {
+					set_state_name = "liaoning"
+					set_state_flag = jehol_province_state
+					
+				}
+                set_province_name = {
+                    id = 1638
+                    name = "tongliao"
+                }
+                set_province_name = {
+                    id = 1627
+                    name = "baicheng"
+                }
+			}
+			if = {
+				limit = {
+					is_korean_tag = yes #점령국 - 대한
+					FROM.FROM = { state = 761 } #점령 주 - 호륜패이
+				}
+                FROM.FROM = {
+					set_state_name = "STATE_761"
+					clr_state_flag = heilongjiang_province_state
+					
+				}
+			}
+			if = {
+				limit = {
+					is_chinese_clique = yes #점령국 - 중국
+					FROM.FROM = { state = 761 } #점령 주 - 호륜패이
+				}
+                FROM.FROM = {
+					set_state_name = "hulunbeier"
+					set_state_flag = heilongjiang_province_state
+					
+				}
+			}
+			if = {
+				limit = {
+					is_korean_tag = yes #점령국 - 대한
+					FROM.FROM = { state = 1059 } #점령 주 - 금산
+				}
+                FROM.FROM = {
+					set_state_name = "STATE_954"
+					clr_state_flag = heilongjiang_province_state
+					
+				}
+                set_province_name = {
+                    id = 1502
+                    name = "VICTORY_POINTS_1502"
+                }
+                set_province_name = {
+                    id = 1645
+                    name = "VICTORY_POINTS_1645"
+                }
+			}
+			if = {
+				limit = {
+					is_chinese_clique = yes #점령국 - 중국
+					FROM.FROM = { state = 1059 } #점령 주 - 금산
+				}
+                FROM.FROM = {
+					set_state_name = "xinganmeng"
+					set_state_flag = heilongjiang_province_state
+					
+				}
+                set_province_name = {
+                    id = 1502
+                    name = "xinganmeng"
+                }
+                set_province_name = {
+                    id = 1645
+                    name = "daqing"
+                }
+			}
+			if = {
+				limit = {
+					is_korean_tag = yes #점령국 - 대한
+					FROM.FROM = { state = 714 } #점령 주 - 흑룡
+				}
+                FROM.FROM = {
+					set_state_name = "STATE_714"
+					clr_state_flag = heilongjiang_province_state
+					
+				}
+			}
+			if = {
+				limit = {
+					is_chinese_clique = yes #점령국 - 중국
+					FROM.FROM = { state = 714 } #점령 주 - 흑룡
+				}
+                FROM.FROM = {
+					set_state_name = "heilongjiang"
+					set_state_flag = heilongjiang_province_state
+					
+				}
+			}
+			######## Southern Manchuria #########
+			if = {
+				limit = {
+					is_korean_tag = yes #점령국 - 대한
+					FROM.FROM = { state = 716 } #점령 주 - 심요북도
+				}
+                FROM.FROM = {
+					set_state_name = "STATE_716"
+					clr_state_flag = fengtian_province_state
+					
+				}
+                set_province_name = {
+                    id = 11771
+                    name = "VICTORY_POINTS_11771"
+                }
+                set_province_name = {
+                    id = 987
+                    name = "VICTORY_POINTS_987"
+                }
+                set_province_name = {
+                    id = 11764
+                    name = "VICTORY_POINTS_11764"
+                }
+			}
+			if = {
+				limit = {
+					is_chinese_clique = yes #점령국 - 중국
+					FROM.FROM = { state = 716 } #점령 주 - 심요북도
+				}
+                FROM.FROM = {
+					set_state_name = "liaodong"
+					set_state_flag = fengtian_province_state
+					
+				}
+                set_province_name = {
+                    id = 11771
+                    name = "shenyang"
+                }
+                set_province_name = {
+                    id = 987
+                    name = "liaoyang"
+                }
+                set_province_name = {
+                    id = 11764
+                    name = "yingkou"
+                }
+			}
+			if = {
+				limit = {
+					is_korean_tag = yes #점령국 - 대한
+					FROM.FROM = { state = 1032 } #점령 주 - 심요남도
+				}
+                FROM.FROM = {
+					set_state_name = "STATE_SIMYONAM"
+					clr_state_flag = fengtian_province_state
+					
+				}
+                set_province_name = {
+                    id = 836
+                    name = "VICTORY_POINTS_836"
+                }
+                set_province_name = {
+                    id = 6981
+                    name = "VICTORY_POINTS_6981"
+                }
+			}
+			if = {
+				limit = {
+					is_chinese_clique = yes #점령국 - 중국
+					FROM.FROM = { state = 1032 } #점령 주 - 심요남도
+				}
+                FROM.FROM = {
+					set_state_name = "andong"
+					set_state_flag = fengtian_province_state
+					
+				}
+                set_province_name = {
+                    id = 836
+                    name = "anshan"
+                }
+                set_province_name = {
+                    id = 6981
+                    name = "andong"
+                }
+			}
+			if = {
+				limit = {
+					is_korean_tag = yes #점령국 - 대한
+					FROM.FROM = { state = 745 } #점령 주 - 여순
+				}
+                FROM.FROM = {
+					set_state_name = "STATE_745"
+					clr_state_flag = fengtian_province_state
+					
+				}
+                set_province_name = {
+                    id = 1150
+                    name = "VICTORY_POINTS_1150"
+                }
+			}
+			if = {
+				limit = {
+					is_chinese_clique = yes #점령국 - 중국
+					FROM.FROM = { state = 745 } #점령 주 - 여순
+				}
+                FROM.FROM = {
+					set_state_name = "ninghai"
+					set_state_flag = fengtian_province_state
+					
+				}
+                set_province_name = {
+                    id = 1150
+                    name = "ninghai"
+                }
+			}
+			if = {
+				limit = {
+					is_korean_tag = yes #점령국 - 대한
+					FROM.FROM = { state = 328 } #점령 주 - 환길북도
+				}
+                FROM.FROM = {
+					set_state_name = "STATE_328"
+					clr_state_flag = jilin_province_state
+					
+				}
+                set_province_name = {
+                    id = 4572
+                    name = "VICTORY_POINTS_4572"
+                }
+                set_province_name = {
+                    id = 7663
+                    name = "VICTORY_POINTS_7663"
+                }
+                set_province_name = {
+                    id = 10433
+                    name = "VICTORY_POINTS_10433"
+                }
+			}
+			if = {
+				limit = {
+					is_chinese_clique = yes #점령국 - 중국
+					FROM.FROM = { state = 328 } #점령 주 - 환길북도
+				}
+                FROM.FROM = {
+					set_state_name = "jilin"
+					set_state_flag = jilin_province_state
+					
+				}
+                set_province_name = {
+                    id = 4572
+                    name = "changchun"
+                }
+                set_province_name = {
+                    id = 7663
+                    name = "jilin"
+                }
+                set_province_name = {
+                    id = 10433
+                    name = "haerbin"
+                }
+			}
+			if = {
+				limit = {
+					is_korean_tag = yes #점령국 - 대한
+					FROM.FROM = { state = 1031 } #점령 주 - 환길남도
+				}
+                FROM.FROM = {
+					set_state_name = "STATE_HWANGILNAM"
+					clr_state_flag = fengtian_province_state
+					
+				}
+                set_province_name = {
+                    id = 1050
+                    name = "VICTORY_POINTS_945"
+                }
+                set_province_name = {
+                    id = 9803
+                    name = "VICTORY_POINTS_9803"
+                }
+			}
+			if = {
+				limit = {
+					is_chinese_clique = yes #점령국 - 중국
+					FROM.FROM = { state = 1031 } #점령 주 - 환길남도
+				}
+                FROM.FROM = {
+					set_state_name = "baishan"
+					set_state_flag = fengtian_province_state
+					
+				}
+                set_province_name = {
+                    id = 1050
+                    name = "tonghua"
+                }
+                set_province_name = {
+                    id = 9803
+                    name = "baishan"
+                }
+			}
+			if = {
+				limit = {
+					is_korean_tag = yes #점령국 - 대한
+					FROM.FROM = { state = 717 } #점령 주 - 용계북도
+				}
+                FROM.FROM = {
+					set_state_name = "STATE_717"
+					clr_state_flag = jilin_province_state
+					
+				}
+                set_province_name = {
+                    id = 9623
+                    name = "VICTORY_POINTS_9623"
+                }
+                set_province_name = {
+                    id = 3815
+                    name = "VICTORY_POINTS_3815"
+                }
+                set_province_name = {
+                    id = 11906
+                    name = "VICTORY_POINTS_11906"
+                }
+			}
+			if = {
+				limit = {
+					is_chinese_clique = yes #점령국 - 중국
+					FROM.FROM = { state = 717 } #점령 주 - 용계북도
+				}
+                FROM.FROM = {
+					set_state_name = "songjiang"
+					set_state_flag = jilin_province_state
+					
+				}
+                set_province_name = {
+                    id = 9623
+                    name = "jiamushi"
+                }
+                set_province_name = {
+                    id = 3815
+                    name = "jixi"
+                }
+                set_province_name = {
+                    id = 11906
+                    name = "mudan"
+                }
+			}
+			if = {
+				limit = {
+					is_korean_tag = yes #점령국 - 대한
+					FROM.FROM = { state = 1030 } #점령 주 - 용계북도
+				}
+                FROM.FROM = {
+					set_state_name = "STATE_YONGKYENAM"
+					clr_state_flag = jilin_province_state
+					
+				}
+                set_province_name = {
+                    id = 3947
+                    name = "VICTORY_POINTS_3947"
+                }
+                set_province_name = {
+                    id = 1049
+                    name = "VICTORY_POINTS_944"
+                }
+			}
+			if = {
+				limit = {
+					is_chinese_clique = yes #점령국 - 중국
+					FROM.FROM = { state = 1030 } #점령 주 - 용계북도
+				}
+                FROM.FROM = {
+					set_state_name = "jiandao"
+					set_state_flag = jilin_province_state
+					
+				}
+                set_province_name = {
+                    id = 3947
+                    name = "dunhua"
+                }
+                set_province_name = {
+                    id = 1049
+                    name = "longjing"
+                }
+			}
+			####### Outer Manchuria #######
+			if = {
+				limit = {
+					is_chinese_clique = yes
+					FROM.FROM = { state = 1027 } #
+				}
+                FROM.FROM = {
+					set_state_name = "haisanwei"
+				}
+                set_province_name = {
+                    id = 1062
+                    name = "haisanwei"
+                }
+			}
+			if = {
+				limit = {
+					is_korean_tag = yes #점령국 - 대한
+					FROM.FROM = { state = 1028 } #점령 주 - 해성도
+				}
+                FROM.FROM = {
+					set_state_name = "STATE_HAESOL"
+					
+				}
+                set_province_name = {
+                    id = 3977
+                    name = "VICTORY_POINTS_3977"
+                }
+			}
+			if = {
+				limit = {
+					is_chinese_clique = yes #점령국 - 중국
+					FROM.FROM = { state = 1028 } #점령 주 - 해성도
+				}
+                FROM.FROM = {
+					set_state_name = "xuangchengjia"
+					
+				}
+                set_province_name = {
+                    id = 3977
+                    name = "xuangchengjia"
+                }
+			}
+			if = {
+				limit = {
+					tag = SOV #점령국 - 소련
+					FROM.FROM = { state = 1028 } #점령 주 - 해성도
+				}
+                FROM.FROM = {
+					set_state_name = "usurisk"
+					
+				}
+                set_province_name = {
+                    id = 3977
+                    name = "usurisk"
+                }
+			}
+			if = {
+				limit = {
+					is_korean_tag = yes #점령국 - 대한
+					FROM.FROM = { state = 408 } #점령 주 - 남부 연해주
+				}
+                FROM.FROM = {
+					set_state_name = "STATE_408"
+					
+				}
+                set_province_name = {
+                    id = 9639
+                    name = "VICTORY_POINTS_9639"
+                }
+                set_province_name = {
+                    id = 6961
+                    name = "VICTORY_POINTS_6961"
+                }
+			}
+			if = {
+				limit = {
+					is_chinese_clique = yes #점령국 - 중국
+					FROM.FROM = { state = 408 } #점령 주 - 남부 연해주
+				}
+                FROM.FROM = {
+					set_state_name = "STATE_408"
+					
+				}
+                set_province_name = {
+                    id = 9639
+                    name = "beihai"
+                }
+                set_province_name = {
+                    id = 6961
+                    name = "xinzhao"
+                }
+			}
+			if = {
+				limit = {
+					tag = SOV #점령국 - 소련
+					FROM.FROM = { state = 408 } #점령 주 - 남부 연해주
+				}
+                FROM.FROM = {
+					set_state_name = "primoriye"
+					
+				}
+                set_province_name = {
+                    id = 9639
+                    name = "novopokrovka"
+                }
+                set_province_name = {
+                    id = 6961
+                    name = "nahotka"
+                }
+			}
+			if = {
+				limit = {
+					is_korean_tag = yes #점령국 - 대한
+					FROM.FROM = { state = 409 } #점령 주 - 북부 연해주
+				}
+                FROM.FROM = {
+					set_state_name = "STATE_409"
+					
+				}
+                set_province_name = {
+                    id = 12189
+                    name = "VICTORY_POINTS_12189"
+                }
+			}
+			if = {
+				limit = {
+					is_chinese_clique = yes #점령국 - 중국
+					FROM.FROM = { state = 409 } #점령 주 - 북부 연해주
+				}
+                FROM.FROM = {
+					set_state_name = "STATE_409"
+					
+				}
+                set_province_name = {
+                    id = 12189
+                    name = "baili"
+                }
+			}
+			if = {
+				limit = {
+					tag = SOV #점령국 - 소련
+					FROM.FROM = { state = 409 } #점령 주 - 북부 연해주
+				}
+                FROM.FROM = {
+					set_state_name = "yuzunohavarobsk"
+					
+				}
+                set_province_name = {
+                    id = 12189
+                    name = "havarobsk"
+                }
+			}
+			if = {
+				limit = {
+					is_korean_tag = yes #점령국 - 대한
+					FROM.FROM = { state = 657 } #점령 주 - 동흑룡
+				}
+                FROM.FROM = {
+					set_state_name = "STATE_657"
+					
+				}
+			}
+			if = {
+				limit = {
+					is_chinese_clique = yes #점령국 - 중국
+					FROM.FROM = { state = 657 } #점령 주 - 동흑룡
+				}
+                FROM.FROM = {
+					set_state_name = "dongheilongjiang"
+					
+				}
+			}
+			if = {
+				limit = {
+					tag = SOV #점령국 - 소련
+					FROM.FROM = { state = 657 } #점령 주 - 동흑룡
+				}
+                FROM.FROM = {
+					set_state_name = "yuzunoamursk"
+					
+				}
+			}
+			if = {
+				limit = {
+					is_korean_tag = yes #점령국 - 대한
+					FROM.FROM = { state = 560 } #점령 주 - 묘가
+				}
+                FROM.FROM = {
+					set_state_name = "STATE_560"
+					
+				}
+			}
+			if = {
+				limit = {
+					is_chinese_clique = yes #점령국 - 중국
+					FROM.FROM = { state = 560 } #점령 주 - 묘가
+				}
+                FROM.FROM = {
+					set_state_name = "maojia"
+					
+				}
+			}
+			if = {
+				limit = {
+					tag = SOV #점령국 - 소련
+					FROM.FROM = { state = 560 } #점령 주 - 묘가
+				}
+                FROM.FROM = {
+					set_state_name = "severnohavarobsk"
+					
+				}
+			}
+			if = {
+				limit = {
+					is_korean_tag = yes #점령국 - 대한
+					FROM.FROM = { state = 561 } #점령 주 - 북흑룡
+				}
+                FROM.FROM = {
+					set_state_name = "STATE_561"
+					
+				}
+			}
+			if = {
+				limit = {
+					is_chinese_clique = yes #점령국 - 중국
+					FROM.FROM = { state = 561 } #점령 주 - 북흑룡
+				}
+                FROM.FROM = {
+					set_state_name = "beiheilongjiang"
+					
+				}
+			}
+			if = {
+				limit = {
+					tag = SOV #점령국 - 소련
+					FROM.FROM = { state = 561 } #점령 주 - 북흑룡
+				}
+                FROM.FROM = {
+					set_state_name = "severnoamursk"
+					
+				}
+			}
+			####### Sakhalin ########
+			if = {
+				limit = {
+					is_korean_tag = yes #점령국 - 대한
+					FROM.FROM = { state = 537 } #점령 주 - 남사할린
+				}
+                FROM.FROM = {
+					set_state_name = "STATE_537"
+					
+				}
+                set_province_name = {
+                    id = 12446
+                    name = "VICTORY_POINTS_12446"
+                }
+			}
+			if = {
+				limit = {
+					is_chinese_clique = yes #점령국 - 중국
+					FROM.FROM = { state = 537 } #점령 주 - 남사할린
+				}
+                FROM.FROM = {
+					set_state_name = "nanfushang"
+					
+				}
+                set_province_name = {
+                    id = 12446
+                    name = "fengyan"
+                }
+			}
+			if = {
+				limit = {
+					tag = SOV #점령국 - 소련
+					FROM.FROM = { state = 537 } #점령 주 - 남사할린
+				}
+                FROM.FROM = {
+					set_state_name = "yuzunosakalinsk"
+					
+				}
+                set_province_name = {
+                    id = 12446
+                    name = "yuzunosakalinsk_city"
+                }
+			}
+			if = {
+				limit = {
+					is_korean_tag = yes #점령국 - 대한
+					FROM.FROM = { state = 655 } #점령 주 - 북사할린
+				}
+                FROM.FROM = {
+					set_state_name = "STATE_655"
+					
+				}
+			}
+			if = {
+				limit = {
+					is_chinese_clique = yes #점령국 - 중국
+					FROM.FROM = { state = 655 } #점령 주 - 북사할린
+				}
+                FROM.FROM = {
+					set_state_name = "beifushang"
+					
+				}
+			}
+			if = {
+				limit = {
+					tag = SOV #점령국 - 소련
+					FROM.FROM = { state = 655 } #점령 주 - 북사할린
+				}
+                FROM.FROM = {
+					set_state_name = "severnosakalinsk"
+					
+				}
+			}
+		}
+		#####중국 이벤트#####
+		effect = {
+			if = {
+				limit = {
+					tag = KOR 
+					FROM = { 	
+						is_independent_china_or_warlord = yes
+					} 
+					FROM.FROM = { state = 614 }
+					KOR = {
+						NOT = {
+							has_cosmetic_tag = TLE_KOR_WIN_IN_CHINA_FUCKYEAH
+							has_cosmetic_tag = TLE_THE_WAR_IS_ENDED
+						}	
+					}
+				}
+				KOR = {
+					country_event = {
+						id = korea.75
+					}
+				}
+			}
+		}	
+		effect = {
+			if = {
+				limit = {
+					tag = KOR 
+					FROM = { 	
+						is_independent_china_or_warlord = yes
+					} 
+					FROM.FROM = { state = 597 }
+					KOR = {
+						NOT = {
+							has_cosmetic_tag = TLE_KOR_WIN_IN_CHINA_FUCKYEAH
+							has_cosmetic_tag = TLE_THE_WAR_IS_ENDED
+						}	
+					}
+				}
+				KOR = {
+					country_event = {
+						id = korea.76
+					}
+				}
+			}
+		}	
+		effect = {
+			if = {
+				limit = {
+					tag = KOR 
+					FROM = { 	
+						is_independent_china_or_warlord = yes
+					} 
+					FROM.FROM = { state = 607 }
+					KOR = {
+						NOT = {
+							has_cosmetic_tag = TLE_KOR_WIN_IN_CHINA_FUCKYEAH
+							has_cosmetic_tag = TLE_THE_WAR_IS_ENDED
+						}	
+					}
+				}
+				KOR = {
+					country_event = {
+						id = korea.77
+					}
+				}
+			}
+		}	
+		effect = {
+			if = {
+				limit = {
+					tag = KOR 
+					FROM = { 	
+						is_independent_china_or_warlord = yes
+					} 
+					FROM.FROM = { state = 1057 }
+					KOR = {
+						NOT = {
+							has_cosmetic_tag = TLE_KOR_WIN_IN_CHINA_FUCKYEAH
+							has_cosmetic_tag = TLE_THE_WAR_IS_ENDED
+						}	
+					}
+				}
+				KOR = {
+					country_event = {
+						id = korea.78
+					}
+				}
+			}
+		}	
+		effect = {
+			if = {
+				limit = {
+					tag = KOR 
+					FROM = { 	
+						is_independent_china_or_warlord = yes
+					} 
+					FROM.FROM = { state = 620 }
+					KOR = {
+						NOT = {
+							has_cosmetic_tag = TLE_KOR_WIN_IN_CHINA_FUCKYEAH
+							has_cosmetic_tag = TLE_THE_WAR_IS_ENDED
+						}	
+					}
+				}
+				KOR = {
+					country_event = {
+						id = korea.79
+					}
+				}
+			}
+		}	
+		effect = {
+			if = {
+				limit = {
+					tag = KOR 
+					FROM = { 	
+						is_independent_china_or_warlord = yes
+					} 
+					FROM.FROM = { state = 744 }
+					KOR = {
+						NOT = {
+							has_cosmetic_tag = TLE_KOR_WIN_IN_CHINA_FUCKYEAH
+							has_cosmetic_tag = TLE_THE_WAR_IS_ENDED
+						}	
+					}
+				}
+				KOR = {
+					country_event = {
+						id = korea.80
+					}
+				}
+			}
+		}	
+		effect = {
+			if = {
+				limit = {
+					tag = KOR 
+					FROM = { 	
+						is_independent_china_or_warlord = yes
+					} 
+					FROM.FROM = { state = 1048 }
+					KOR = {
+						NOT = {
+							has_cosmetic_tag = TLE_KOR_WIN_IN_CHINA_FUCKYEAH
+							has_cosmetic_tag = TLE_THE_WAR_IS_ENDED
+						}	
+					}
+				}
+				KOR = {
+					country_event = {
+						id = korea.81
+					}
+				}
+			}
+		}	
+		effect = {
+			if = {
+				limit = {
+					tag = KOR 
+					FROM = { 	
+						is_chinese_clique = yes
+					} 
+					FROM.FROM = { state = 605 }
+					KOR = {
+						NOT = {
+							has_cosmetic_tag = TLE_KOR_WIN_IN_CHINA_FUCKYEAH
+							has_cosmetic_tag = TLE_THE_WAR_IS_ENDED
+						}	
+					}
+				}
+				KOR = {
+					country_event = {
+						id = korea.82
+					}
+				}
+			}
+		}	
+		effect = {
+			if = {
+				limit = {
+					tag = KOR 
+					FROM = { 	
+						is_independent_china_or_warlord = yes
+					} 
+					FROM.FROM = { state = 1046 }
+					KOR = {
+						NOT = {
+							has_cosmetic_tag = TLE_KOR_WIN_IN_CHINA_FUCKYEAH
+							has_cosmetic_tag = TLE_THE_WAR_IS_ENDED
+						}	
+					}
+				}
+				KOR = {
+					country_event = {
+						id = korea.83
+					}
+				}
+				if = {
+					limit = {
+						GXC = {
+							is_ai = yes
+						}
+					}
+					CHI = {
+						annex_country = {
+							target = GXC
+							transfer_troops = yes
+						}
+					}	
+				}
+				if = {
+					limit = {
+						ZLC = {
+							is_ai = yes
+							NOT = {
+								has_country_flag = TLE_chong_1
+							}
+						}
+						KOR = {
+							is_ai = yes
+						}
+					}
+					ZLC = {
+						set_country_flag = TLE_chong_1
+						load_oob = "ZLC_Chongqing"
+						add_ideas = CHI_AI_WAR_BONUS_IDEA
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = CHI
+					has_war_with = GXC 
+					FROM.FROM = { state = 594 } #점령 주 - 규슈
+				}
+				white_peace = GXC
+				transfer_state = 599
+				transfer_state = 594
+				GZC = {
+					transfer_state = 603
+					transfer_state = 1053
+					transfer_state = 1058
+				}
+			}
+		}	
+		#####일본 이름 변경
+		effect = {
+			if = {
+				limit = {
+					is_korean_tag = yes #점령국 - 대한
+					FROM.FROM = { state = 528 } #점령 주 - 규슈
+				}
+                FROM.FROM = {
+					set_state_name = "jangki"
+					clr_state_flag = kyushu_state
+				}
+                set_province_name = {
+                    id = 9950
+                    name = "jangki"
+                }
+			}
+			if = {
+				limit = {
+					is_japan_clique = yes #점령국 - 일본
+					FROM.FROM = { state = 528 } #점령 주 - 규슈
+				}
+                FROM.FROM = {
+					set_state_name = "nagasaki"
+					set_state_flag = kyushu_state
+				}
+                set_province_name = {
+                    id = 9950
+                    name = "nagasaki"
+                }
+			}
+			if = {
+				limit = {
+					is_korean_tag = yes #점령국 - 대한
+					FROM.FROM = { state = 1064 } #점령 주 - 규슈
+				}
+                FROM.FROM = {
+					set_state_name = "kuju"
+					clr_state_flag = kyushu_state
+				}
+                set_province_name = {
+                    id = 1025
+                    name = "sochang"
+                }
+                set_province_name = {
+                    id = 4102
+                    name = "nokado"
+                }
+			}
+			if = {
+				limit = {
+					is_japan_clique = yes #점령국 - 일본
+					FROM.FROM = { state = 1064 } #점령 주 - 규슈
+				}
+                FROM.FROM = {
+					set_state_name = "kyushu"
+					set_state_flag = kyushu_state
+				}
+                set_province_name = {
+                    id = 1025
+                    name = "gokura"
+                }
+                set_province_name = {
+                    id = 4102
+                    name = "gagoshima"
+                }
+			}
+			if = {
+				limit = {
+					is_korean_tag = yes #점령국 - 대한
+					FROM.FROM = { state = 529 } #점령 주 - 주고쿠
+				}
+                FROM.FROM = {
+					set_state_name = "kwangdo"
+					
+				}
+                set_province_name = {
+                    id = 1092
+                    name = "kwangdo"
+                }
+                set_province_name = {
+                    id = 7145
+                    name = "togeun"
+                }
+                set_province_name = {
+                    id = 7212
+                    name = "kangsan"
+                }
+			}
+			if = {
+				limit = {
+					is_japan_clique = yes #점령국 - 일본
+					FROM.FROM = { state = 529 } #점령 주 - 주고쿠
+				}
+                FROM.FROM = {
+					set_state_name = "hiroshima"
+					
+				}
+                set_province_name = {
+                    id = 1092
+                    name = "hiroshima"
+                }
+			}
+			if = {
+				limit = {
+					is_korean_tag = yes #점령국 - 대한
+					FROM.FROM = { state = 1065 } #점령 주 - 고치
+				}
+                FROM.FROM = {
+					set_state_name = "bukoaekyung"
+				}
+                set_province_name = {
+                    id = 13389
+                    name = "shinho"
+                }
+                set_province_name = {
+                    id = 13390
+                    name = "damlo"
+                }
+			}
+			if = {
+				limit = {
+					is_japan_clique = yes #점령국 - 일본
+					FROM.FROM = { state = 1065 } #점령 주 - 고치
+				}
+                FROM.FROM = {
+					set_state_name = "kitakinki"
+				}
+                set_province_name = {
+                    id = 13389
+                    name = "kobe"
+                }
+                set_province_name = {
+                    id = 13390
+                    name = "awaji"
+                }
+			}
+			if = {
+				limit = {
+					is_korean_tag = yes #점령국 - 대한
+					FROM.FROM = { state = 991 } #점령 주 - 미에
+				}
+                FROM.FROM = {
+					set_state_name = "namoaekyung"
+					
+				}
+                set_province_name = {
+                    id = 4142
+                    name = "yeonglok"
+                }
+                set_province_name = {
+                    id = 1133
+                    name = "hwagasan"
+                }
+                set_province_name = {
+                    id = 13384
+                    name = "naeyang"
+                }
+			}
+			if = {
+				limit = {
+					is_japan_clique = yes #점령국 - 일본
+					FROM.FROM = { state = 991 } #점령 주 - 미에
+				}
+                FROM.FROM = {
+					set_state_name = "minamikinki"
+					
+				}
+                set_province_name = {
+                    id = 4142
+                    name = "sujuka"
+                }
+                set_province_name = {
+                    id = 1133
+                    name = "wakayama"
+                }
+                set_province_name = {
+                    id = 13384
+                    name = "nara"
+                }
+			}
+			if = {
+				limit = {
+					is_korean_tag = yes #점령국 - 대한
+					FROM.FROM = { state = 990 } #점령 주 - 간토
+				}
+                FROM.FROM = {
+					set_state_name = "kwandong"
+					
+				}
+                set_province_name = {
+                    id = 1097
+                    name = "kiok"
+                }
+                set_province_name = {
+                    id = 7016
+                    name = "jasung"
+                }
+			}
+			if = {
+				limit = {
+					is_japan_clique = yes #점령국 - 일본
+					FROM.FROM = { state = 990 } #점령 주 - 간토
+				}
+                FROM.FROM = {
+					set_state_name = "kanto"
+					
+				}
+                set_province_name = {
+                    id = 1097
+                    name = "saitama"
+                }
+                set_province_name = {
+                    id = 7016
+                    name = "yibaraki"
+                }
+			}
+			if = {
+				limit = {
+					is_korean_tag = yes #점령국 - 대한
+					FROM.FROM = { state = 989 } #점령 주 - 고치
+				}
+                FROM.FROM = {
+					set_state_name = "city_oh"
+					
+				}
+                set_province_name = {
+                    id = 13383
+                    name = "city_oh"
+                }
+			}
+			if = {
+				limit = {
+					is_japan_clique = yes #점령국 - 일본
+					FROM.FROM = { state = 989 } #점령 주 - 구레
+				}
+                FROM.FROM = {
+					set_state_name = "kure"
+					
+				}
+                set_province_name = {
+                    id = 13383
+                    name = "kure"
+                }
+			}
+			if = {
+				limit = {
+					is_korean_tag = yes #점령국 - 대한
+					FROM.FROM = { state = 988 } #점령 주 - 마이즈루
+				}
+                FROM.FROM = {
+					set_state_name = "muhak"
+					
+				}
+                set_province_name = {
+                    id = 1136
+                    name = "muhak"
+                }
+			}
+			if = {
+				limit = {
+					is_japan_clique = yes #점령국 - 일본
+					FROM.FROM = { state = 988 } #점령 주 - 마이즈루
+				}
+                FROM.FROM = {
+					set_state_name = "maisuru"
+					
+				}
+                set_province_name = {
+                    id = 1136
+                    name = "maisuru"
+                }
+			}
+			if = {
+				limit = {
+					is_korean_tag = yes #점령국 - 대한
+					FROM.FROM = { state = 530 } #점령 주 - 시고쿠
+				}
+                FROM.FROM = {
+					set_state_name = "saguk"
+					
+				}
+                set_province_name = {
+                    id = 4179
+                    name = "seojo"
+                }
+                set_province_name = {
+                    id = 7197
+                    name = "goji"
+                }
+			}
+			if = {
+				limit = {
+					is_japan_clique = yes #점령국 - 일본
+					FROM.FROM = { state = 530 } #점령 주 - 시고쿠
+				}
+                FROM.FROM = {
+					set_state_name = "yiyo_tosa"
+					
+				}
+                set_province_name = {
+                    id = 4179
+                    name = "saijo"
+                }
+                set_province_name = {
+                    id = 7197
+                    name = "gochi"
+                }
+			}
+			if = {
+				limit = {
+					is_korean_tag = yes #점령국 - 대한
+					FROM.FROM = { state = 531 } #점령 주 - 간사이
+				}
+                FROM.FROM = {
+					set_state_name = "daepan"
+					
+				}
+                set_province_name = {
+                    id = 7072
+                    name = "daepan"
+                }
+			}
+			if = {
+				limit = {
+					is_japan_clique = yes #점령국 - 일본
+					FROM.FROM = { state = 531 } #점령 주 - 시고쿠
+				}
+                FROM.FROM = {
+					set_state_name = "osaka"
+					
+				}
+                set_province_name = {
+                    id = 7072
+                    name = "osaka"
+                }
+                set_province_name = {
+                    id = 1133
+                    name = "wakayama"
+                }
+			}
+			if = {
+				limit = {
+					is_korean_tag = yes #점령국 - 대한
+					FROM.FROM = { state = 526 } #점령 주 - 오키나와
+				}
+                FROM.FROM = {
+					set_state_name = "yugu"
+					
+				}
+                set_province_name = {
+                    id = 11932
+                    name = "napae"
+                }
+			}
+			if = {
+				limit = {
+					is_japan_clique = yes #점령국 - 일본
+					FROM.FROM = { state = 526 } #점령 주 - 오키나와
+				}
+                FROM.FROM = {
+					set_state_name = "okinawa"
+					
+				}
+                set_province_name = {
+                    id = 11932
+                    name = "naha"
+                }
+			}
+			if = {
+				limit = {
+					tag = RYU #점령국 - 일본
+					FROM.FROM = { state = 526 } #점령 주 - 오키나와
+				}
+                FROM.FROM = {
+					set_state_name = "ryukyu_channal"
+					
+				}
+                set_province_name = {
+                    id = 11932
+                    name = "naha"
+                }
+			}
+			if = {
+				limit = {
+					is_korean_tag = yes #점령국 - 대한
+					FROM.FROM = { state = 532 } #점령 주 - 도카이
+				}
+                FROM.FROM = {
+					set_state_name = "tonghae"
+					
+				}
+                set_province_name = {
+                    id = 10125
+                    name = "myonggook"
+                }
+                set_province_name = {
+                    id = 7087
+                    name = "jeongkang"
+                }
+			}
+			if = {
+				limit = {
+					is_japan_clique = yes #점령국 - 일본
+					FROM.FROM = { state = 532 } #점령 주 - 도카이
+				}
+                FROM.FROM = {
+					set_state_name = "dokai"
+					
+				}
+                set_province_name = {
+                    id = 10125
+                    name = "nagoya"
+                }
+                set_province_name = {
+                    id = 7087
+                    name = "shizuoka"
+                }
+			}
+			if = {
+				limit = {
+					is_korean_tag = yes #점령국 - 대한
+					FROM.FROM = { state = 535 } #점령 주 - 고신에쓰
+				}
+                FROM.FROM = {
+					set_state_name = "junganggoji"
+					
+				}
+                set_province_name = {
+                    id = 4172
+                    name = "gibu"
+                }
+                set_province_name = {
+                    id = 13388
+                    name = "jangya"
+                }
+			}
+			if = {
+				limit = {
+					is_japan_clique = yes #점령국 - 일본
+					FROM.FROM = { state = 535 } #점령 주 - 고신에쓰
+				}
+                FROM.FROM = {
+					set_state_name = "chuokochi"
+					
+				}
+                set_province_name = {
+                    id = 4172
+                    name = "kifu"
+                }
+                set_province_name = {
+                    id = 13388
+                    name = "nagano"
+                }
+			}
+			if = {
+				limit = {
+					is_korean_tag = yes #점령국 - 대한
+					FROM.FROM = { state = 1069 } #점령 주 - 카가
+				}
+                FROM.FROM = {
+					set_state_name = "bukyuk"
+					
+				}
+                set_province_name = {
+                    id = 10032
+                    name = "geumtaek"
+                }
+                set_province_name = {
+                    id = 10128
+                    name = "buusan"
+                }
+			}
+			if = {
+				limit = {
+					is_japan_clique = yes #점령국 - 일본
+					FROM.FROM = { state = 1069 } #점령 주 - 카가
+				}
+                FROM.FROM = {
+					set_state_name = "hokuriku"
+					
+				}
+                set_province_name = {
+                    id = 10032
+                    name = "ganajawa"
+                }
+                set_province_name = {
+                    id = 10128
+                    name = "toyama"
+                }
+			}
+			if = {
+				limit = {
+					is_korean_tag = yes #점령국 - 대한
+					FROM.FROM = { state = 282 } #점령 주 - 간토
+				}
+                FROM.FROM = {
+					set_state_name = "gangho"
+					
+				}
+                set_province_name = {
+                    id = 1182
+                    name = "gangho"
+                }
+			}
+			if = {
+				limit = {
+					is_japan_clique = yes #점령국 - 일본
+					FROM.FROM = { state = 282 } #점령 주 - 에도
+				}
+				if = {
+					limit = {
+						tag = JAP
+						has_country_flag = TLE_JAP_SETTING_TOKYO_NAME
+					}
+					FROM.FROM = {
+						set_state_name = "tokyo"
+						
+					}
+					set_province_name = {
+						id = 1182
+						name = "tokyo"
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							AND = {
+								tag = JAP
+								NOT = {
+									JAP = {
+										has_country_flag = TLE_JAP_SETTING_TOKYO_NAME
+									}
+								}
+							}
+							NOT = {
+								tag = JAP
+							}
+						}
+					}
+					FROM.FROM = {
+						set_state_name = "edo"
+						
+					}
+					set_province_name = {
+						id = 1182
+						name = "edo"
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					is_korean_tag = yes #점령국 - 대한
+					FROM.FROM = { state = 1073 } #점령 주 - 조자이
+				}
+                FROM.FROM = {
+					set_state_name = "bangchongbando"
+					
+				}
+                set_province_name = {
+                    id = 4188
+                    name = "cheongseo"
+                }
+			}
+			if = {
+				limit = {
+					is_japan_clique = yes #점령국 - 일본
+					FROM.FROM = { state = 1073 } #점령 주 - 조자이
+				}
+				if = {
+					limit = {
+						tag = JAP
+						FROM = {
+							NOT = {
+								tag = GJJ
+							}
+						}
+					}
+					set_province_name = {
+						id = 4188
+						name = "chiba"
+					}
+					FROM.FROM = {
+						set_state_name = "bosohando"
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							tag = JAP
+						}
+					}
+					set_province_name = {
+						id = 4188
+						name = "jojai"
+					}
+					FROM.FROM = {
+						set_state_name = "bosohando"
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_korean_tag = yes #점령국 - 대한
+					FROM.FROM = { state = 534 } #점령 주 - 간토
+				}
+                FROM.FROM = {
+					set_state_name = "bukyuk"
+					
+				}
+                set_province_name = {
+                    id = 1117
+                    name = "shinseok"
+                }
+			}
+			if = {
+				limit = {
+					is_japan_clique = yes #점령국 - 일본
+					FROM.FROM = { state = 534 } #점령 주 - 간토
+				}
+                FROM.FROM = {
+					set_state_name = "hokuriku"
+					
+				}
+                set_province_name = {
+                    id = 1117
+                    name = "nigata"
+                }
+			}
+			if = {
+				limit = {
+					is_korean_tag = yes #점령국 - 대한
+					FROM.FROM = { state = 1070 } #점령 주 - 고치
+				}
+                FROM.FROM = {
+					set_state_name = "kyungdo"
+					
+				}
+                set_province_name = {
+                    id = 11960
+                    name = "kyungdo"
+                }
+			}
+			if = {
+				limit = {
+					is_japan_clique = yes #점령국 - 일본
+					FROM.FROM = { state = 1070 } #점령 주 - 고치
+				}
+                FROM.FROM = {
+					set_state_name = "kyoto"
+					
+				}
+                set_province_name = {
+                    id = 11960
+                    name = "kyoto"
+                }
+			}
+			if = {
+				limit = {
+					is_korean_tag = yes #점령국 - 대한
+					FROM.FROM = { state = 1072 } #점령 주 - 고리야마
+				}
+                FROM.FROM = {
+					set_state_name = "bokdo"
+					
+				}
+                set_province_name = {
+                    id = 4118
+                    name = "kunshan"
+                }
+                set_province_name = {
+                    id = 1024
+                    name = "bokdo"
+                }
+			}
+			if = {
+				limit = {
+					is_japan_clique = yes #점령국 - 일본
+					FROM.FROM = { state = 1072 } #점령 주 - 고리야마
+				}
+                FROM.FROM = {
+					set_state_name = "fukushima"
+				}
+                set_province_name = {
+                    id = 4118
+                    name = "goriyama"
+                }
+                set_province_name = {
+                    id = 1024
+                    name = "fukushima"
+                }
+			}
+			if = {
+				limit = {
+					is_korean_tag = yes #점령국 - 대한
+					FROM.FROM = { state = 533 } #점령 주 - 아키타
+				}
+                FROM.FROM = {
+					set_state_name = "chujeon"
+					
+				}
+                set_province_name = {
+                    id = 1063
+                    name = "chujeon"
+                }
+			}
+			if = {
+				limit = {
+					is_japan_clique = yes #점령국 - 일본
+					FROM.FROM = { state = 533 } #점령 주 - 아키타
+				}
+                FROM.FROM = {
+					set_state_name = "dewa"
+					
+				}
+                set_province_name = {
+                    id = 1063
+                    name = "akita"
+                }
+			}
+			if = {
+				limit = {
+					is_korean_tag = yes #점령국 - 대한
+					FROM.FROM = { state = 1071 } #점령 주 - 센다이
+				}
+                FROM.FROM = {
+					set_state_name = "seondae"
+					
+				}
+                set_province_name = {
+                    id = 7169
+                    name = "seondae"
+                }
+			}
+			if = {
+				limit = {
+					is_japan_clique = yes #점령국 - 일본
+					FROM.FROM = { state = 1071 } #점령 주 - 센다이
+				}
+                FROM.FROM = {
+					set_state_name = "rikusen_rikuchu"
+					
+				}
+                set_province_name = {
+                    id = 7169
+                    name = "sendai"
+                }
+			}
+			if = {
+				limit = {
+					is_korean_tag = yes #점령국 - 대한
+					FROM.FROM = { state = 1068 } #점령 주 - 모리오카
+				}
+                FROM.FROM = {
+					set_state_name = "seonggang"
+					
+				}
+                set_province_name = {
+                    id = 6994
+                    name = "cheongsam"
+                }
+			}
+			if = {
+				limit = {
+					is_japan_clique = yes #점령국 - 일본
+					FROM.FROM = { state = 1068 } #점령 주 - 센다이
+				}
+                FROM.FROM = {
+					set_state_name = "mukuo"
+					
+				}
+                set_province_name = {
+                    id = 6994
+                    name = "aomori"
+                }
+			}
+			if = {
+				limit = {
+					is_korean_tag = yes #점령국 - 대한
+					FROM.FROM = { state = 1066 } #점령 주 - 산인
+				}
+                FROM.FROM = {
+					set_state_name = "saneum_sanyang"
+					
+				}
+                set_province_name = {
+                    id = 11985
+                    name = "hakwan"
+                }
+                set_province_name = {
+                    id = 7145
+                    name = "togeun"
+                }
+                set_province_name = {
+                    id = 7212
+                    name = "kangsan"
+                }
+			}
+			if = {
+				limit = {
+					is_japan_clique = yes #점령국 - 일본
+					FROM.FROM = { state = 1066 } #점령 주 - 산인
+				}
+                FROM.FROM = {
+					set_state_name = "sanyin_sanyo"
+					
+				}
+                set_province_name = {
+                    id = 11985
+                    name = "shimonoseki"
+                }
+                set_province_name = {
+                    id = 7145
+                    name = "shimane"
+                }
+                set_province_name = {
+                    id = 7212
+                    name = "okayama"
+                }
+			}
+			if = {
+				limit = {
+					is_korean_tag = yes #점령국 - 대한
+					FROM.FROM = { state = 1067 } #점령 주 - 요코하마
+				}
+                FROM.FROM = {
+					set_state_name = "hoingpin"
+				}
+                set_province_name = {
+                    id = 9998
+                    name = "hoingpin"
+                }
+			}
+			if = {
+				limit = {
+					is_japan_clique = yes #점령국 - 일본
+					FROM.FROM = { state = 1067 } #점령 주 - 요코하마
+				}
+                FROM.FROM = {
+					set_state_name = "yokohama"
+				}
+                set_province_name = {
+                    id = 9998
+                    name = "yokohama"
+                }
+			}
+			if = {
+				limit = {
+					is_korean_tag = yes #점령국 - 대한
+					FROM.FROM = { state = 536 } #점령 주 - 도호쿠
+				}
+                FROM.FROM = {
+					set_state_name = "bukhaedo"
+					clr_state_flag = hokkaido_state
+				}
+                set_province_name = {
+                    id = 10444
+                    name = "chalhwang"
+                }
+                set_province_name = {
+                    id = 12421
+                    name = "ukcheon"
+                }
+			}
+			if = {
+				limit = {
+					is_japan_clique = yes #점령국 - 일본
+					FROM.FROM = { state = 536 } #점령 주 - 도호쿠
+				}
+                FROM.FROM = {
+					set_state_name = "hokkaido"
+					set_state_flag = hokkaido_state
+				}
+                set_province_name = {
+                    id = 10444
+                    name = "sapporo"
+                }
+                set_province_name = {
+                    id = 12421
+                    name = "asahikawa"
+                }
+			}
+		####일본령 한국
+			if = {
+				limit = {
+					tag = SOV #점령국 - 소련
+					FROM = { tag = KOR } #피점령국 - 대한
+					FROM.FROM = { state = 527 } #점령 주 - 평양
+				}
+				SOV = {
+					set_country_flag = TLE_THE_RULING_PYONGYANG
+				}
+			}
+			if = {
+				limit = {
+					tag = USA #점령국 - 한국
+					FROM = { tag = KOR } #피점령국 - 조선총독부
+					FROM.FROM = { 
+						OR = {
+							state = 1020 
+							state = 1015
+							state = 1016 
+							state = 1014 
+							state = 1018 
+							state = 1025 
+							state = 1026 
+							state = 1022 
+							state = 1021 
+							state = 1023 
+							state = 1019 
+							state = 1017 
+							state = 527 
+						}	
+					} #점령 주 - 장단
+				}
+				USA = {
+					set_country_flag = TLE_THE_RULING_KOREAN_STATE
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						has_war_with = KOR
+					}	
+					FROM = { tag = KOR NOT = { has_country_flag = TLE_EMPIRE_SOCIALIST_DD } } #피점령국 - 조선총독부
+					FROM.FROM = { 
+						OR = {
+							state = 525
+							state = 527
+							state = 1014
+							state = 1015
+							state = 1016
+							state = 1017
+							state = 1018
+							state = 1019
+							state = 1022
+							state = 1023
+							state = 1024
+							state = 1025
+							state = 1026
+						}	
+					} #점령 주 - 장단
+				}
+				KOR = {
+					country_event = {
+						id = korea.62
+					}
+				}
+			}
+		}	
+		####일
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						tag = KOR
+						tag = EOK
+					}
+					has_war_with = KOR
+					KOR = {
+						has_completed_focus = kor_korean_lebensraum
+						NOT = {
+							has_country_flag = TLE_THE_WAR_IS_ENDED
+						}	
+					}
+					FROM = { tag = KOR } #피점령국 - 조선총독부
+					FROM.FROM = { state = 525 } #점령 주 - 경기도
+				}
+				every_country = {
+					limit = {
+						has_country_flag = TLE_hansung_hamlak
+					}
+					clr_country_flag = TLE_hansung_hamlak
+				}
+				set_country_flag = TLE_hansung_hamlak
+				if = {
+					limit = {
+						KOR = {
+							is_ai = yes
+						}
+					}
+					KOR = {
+						puppet = EOK
+					}
+					EOK = {
+						transfer_state = 524
+						add_state_core = 524
+						set_major = yes
+					}
+				}
+			}
+        }
+		effect = {
+			if = {
+				limit = {
+					tag = KOR #점령국 - 한국
+					FROM.FROM = { state = 1027 } #점령 주 - 장단
+				}
+                FROM.FROM = {
+					set_state_name = "haesamwi"
+				}
+                set_province_name = {
+                    id = 1062
+                    name = "haesamwi"
+                }
+			}
+			if = {
+				limit = {
+					tag = SOV
+					FROM.FROM = { state = 1027 } #
+				}
+                FROM.FROM = {
+					set_state_name = "vladivostok"
+				}
+                set_province_name = {
+                    id = 1062
+                    name = "vladivostok"
+                }
+			}
+			if = {
+				limit = {
+					is_japan_clique = yes
+					FROM.FROM = { state = 1029 } #
+				}
+                FROM.FROM = {
+					set_state_name = "tsushima"
+					set_state_flag = kyushu_state
+				}
+                set_province_name = {
+                    id = 10011
+                    name = "tsushima"
+                }
+				JAP = {
+					add_state_core = 1029
+				}	
+				if = {
+					limit = {
+						FROM = { 
+							tag = KOR
+						} 
+						KOR = {
+							NOT = {
+								has_country_flag = TLE_FLAG_BUSAN
+							}
+						}	
+					}
+					KOR = {
+						set_country_flag = TLE_FLAG_BUSAN
+						load_oob = "KOR_busan"
+					}	
+				}
+			}
+			if = {
+				limit = {
+					tag = KOR
+					FROM.FROM = { state = 1029 } #
+				}
+                FROM.FROM = {
+					set_state_name = "daemado"
+					clr_state_flag = kyushu_state
+				}
+                set_province_name = {
+                    id = 10011
+                    name = "daemado"
+                }
+			}
+		}
+	}
+	on_weekly = {
+		effect = {
+		}
+	}
+	on_join_faction = {
+		effect = {
+			if = {
+				limit = {
+					is_historical_focus_on = yes
+					ROM = {
+						has_government = fascism
+						NOT = {
+							is_in_faction_with = GER
+						}
+					}
+					KOR = {
+						has_government = fascism
+						is_ai = yes
+					}
+					GER = {
+						is_puppet = no
+						has_government = fascism
+						is_faction_leader = yes
+					}
+				}
+				GER = {
+					add_to_faction = ROM
+				}
+			}
+		}	
+	}
+	on_daily = {
+		effect = {
+			KOR = {
+				unit_limit_calculation_effect = yes
+			}
+			if = {
+				limit = {
+					is_historical_focus_on = yes
+					HUN = {
+						is_ai = yes
+						has_completed_focus = HUN_strengthen_fascists
+						NOT = {
+							is_in_faction_with = GER
+						}
+						OR = {
+							has_government = fascism
+							has_government = neutrality
+						}
+						exists = yes
+					}
+					GER = {
+						is_ai = yes
+						has_government = fascism
+						exists = yes
+					}
+					date > 1941.5.10
+				}
+				GER = {
+					add_to_faction = HUN
+				}
+			}
+			if = {
+				limit = {
+					is_historical_focus_on = yes
+					784 = {
+						is_owned_by = LIT
+					}
+					975 = {
+						NOT = {
+							is_owned_by = LIT
+						}
+					}
+				}
+				LIT = {
+					transfer_state = 975
+				}
+			}
+			if = {
+				limit = {
+					is_historical_focus_on = yes
+					784 = {
+						is_owned_by = SOV
+					}
+					975 = {
+						NOT = {
+							is_owned_by = SOV
+						}
+					}
+					LIT = {
+						exists = no
+					}
+				}
+				SOV = {
+					transfer_state = 975
+				}
+			}
+			if = {
+				limit = {
+					is_historical_focus_on = yes
+					GER = {
+						has_wargoal_against = SOV
+						is_ai = yes
+						has_war_with = ENG
+						NOT = {
+							has_war_with = SOV
+						}
+					}
+					FRA = {
+						has_capitulated = yes
+					}
+					date > 1941.6.21
+					NOT = {
+						has_global_flag = operation_barbarossa_global_flag
+					}	
+				}
+				GER = {
+					declare_war_on = {
+						target = SOV
+						type = annex_everything
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_historical_focus_on = yes
+					KOR = {
+						is_ai = yes
+						has_country_flag = TLE_THE_WAR_IS_WIN
+						has_war_with = USA
+					}
+					GER = {
+						has_government = fascism
+						exists = yes
+					}
+					has_global_flag = TLE_soviet_union_defeat
+					OR = {
+						KOR = {
+							has_tech = nukes
+						}
+						GER = {
+							has_tech = nukes
+						}
+					}
+					CHI = {
+						exists = no
+					}
+					ZLC = {
+						exists = no
+					}
+					CH1 = {
+						exists = yes
+					}
+					date > 1945.9.1
+					USA = {
+						has_war_with = KOR
+					}
+					NOT = {
+						has_global_flag = TNO_NUKE_AI_USA_KOREA
+					}
+				}
+				set_global_flag = TNO_NUKE_AI_USA_KOREA
+				KOR = {
+					country_event = {
+						id = korea.355
+						days = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_historical_focus_on = yes
+					NOR = {
+						is_ai = yes
+						NOT = {
+							is_puppet_of = GER
+						}
+						is_in_faction_with = GER
+						has_cosmetic_tag = NOR_fascism
+						has_government = fascism
+					}
+					GER = {
+						has_completed_focus = GER_rhineland
+						has_government = fascism
+					}
+					NOT = {
+						has_global_flag = TLE_germany_union_defeat
+						has_global_flag = TLE_nor_puppet_flag
+					}
+				}
+				set_global_flag = TLE_nor_puppet_flag
+				GER = {
+					set_autonomy = {
+						target = NOR
+						autonomous_state = autonomy_reichskommissariat
+					}
+				}
+				if = {
+					limit = {
+						NOR = {
+							has_civil_war = yes
+						}
+						any_country = {
+							limit = {
+								original_tag = NOR
+								has_government = democratic
+							}
+							has_capitulated = yes
+						}
+					}
+					every_country = {
+						limit = {
+							original_tag = NOR
+							has_government = fascism
+						}
+						save_event_target_as = norway_kommissariat
+					}
+					every_state = {
+						limit = {
+							is_core_of = event_target:norway_kommissariat
+							NOT = {
+								state = 914
+							}
+						}
+						set_state_controller_to = event_target:norway_kommissariat
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_historical_focus_on = yes
+					DEN = {
+						is_ai = yes
+						is_puppet_of = GER
+						NOT = {
+							is_in_faction_with = GER
+						}
+					}
+					GER = {
+						has_completed_focus = GER_rhineland
+						has_government = fascism
+					}
+					NOT = {
+						has_global_flag = TLE_germany_union_defeat
+					}
+				}
+				GER = {
+					add_to_faction = DEN
+				}
+			}
+			if = {
+				limit = {
+					any_country = {
+						limit = {
+							original_tag = NOR 
+							has_government = democratic 
+						}
+						NOT = {
+							has_cosmetic_tag = NOR_provicional_gov
+						}
+					}
+				}
+				every_country = {
+					limit = {
+						original_tag = NOR 
+						has_government = democratic 
+					}
+					set_cosmetic_tag = NOR_provicional_gov
+				}
+			}
+			if = {
+				limit = {
+					tag = CHI
+					TIB = {
+						exists = no
+					}
+					has_cosmetic_tag = CHI
+					owns_state = 757
+					NOT = {
+						757 = {
+							is_core_of = CHI
+						}
+					}
+				}
+				add_state_core = 757
+				add_state_core = 758
+				add_state_core = 322
+			}
+			if = {
+				limit = {
+					tag = CHI
+					ZLC = {
+						exists = no
+					}
+					has_cosmetic_tag = CHI
+					owns_state = 524
+					NOT = {
+						524 = {
+							is_core_of = CHI
+						}
+					}
+				}
+				add_state_core = 524
+			}
+			if = {
+				limit = {
+					tag = CZE
+					CZE = {
+						is_puppet_of = GER
+						NOT = {
+							has_cosmetic_tag = BOH_KINGDOM
+						}
+					}
+					GER = {
+						has_completed_focus = GER_oppose_hitler
+						has_government = neutrality
+						is_puppet = no
+					}
+				}
+				CZE = {
+					set_cosmetic_tag = BOH_KINGDOM
+				}
+			}
+			if = {
+				limit = {
+					any_state = {
+						has_dynamic_modifier = { modifier = JAP_defence_the_korea }
+					}
+					KOR = {
+						NOT = {
+							has_war_with = JAP
+						}
+					}
+				}
+				every_state = {
+					remove_dynamic_modifier = { modifier = JAP_defence_the_korea }
+				}
+			}
+			if = {
+				limit = {
+					any_state = {
+						OR = {
+							has_dynamic_modifier = { modifier = CHI_defence_the_korea }
+							has_dynamic_modifier = { modifier = CHI_defence_the_korea_2 }
+							has_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
+						}
+					}
+					KOR = {
+						NOT = {
+							has_war_with = ZLC
+							has_war_with = CHI
+						}
+					}
+					CHI = {
+						NOT = {
+							has_war_with = ZLC
+						}
+					}
+				}
+				every_state = {
+					remove_dynamic_modifier = { modifier = CHI_defence_the_korea }
+					remove_dynamic_modifier = { modifier = CHI_defence_the_korea_2 }
+					remove_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
+				}
+			}
+			if = {
+				limit = {
+					ALB = {
+						exists = yes
+						is_puppet_of = ITA
+					}
+					ITA = {
+						owns_state = 1000
+						owns_state = 999
+					}
+				}
+				ALB = {
+					transfer_state = 1000
+					transfer_state = 999
+				}
+			}
+			if = {
+				limit = {
+					CRO = {
+						exists = yes
+						is_puppet = yes
+						is_in_faction_with = GER
+					}
+					ITA = {
+						owns_state = 103
+						owns_state = 981
+					}
+				}
+				CRO = {
+					transfer_state = 103
+					transfer_state = 981
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = TLE_CHINA_HARDCORE_RULE
+						option = TLE_CHINA_HARDCORE_DEFAULT
+					}
+					KOR = {
+						is_ai = yes
+						OR = {
+							has_war_with = ZLC
+							has_war_with = CHI
+						}
+						NOT = {
+							has_idea = KOR_not_planed_attack_ai_up
+						}
+					}
+					OR = {
+						ZLC = {
+							is_ai = no
+						}
+						CHI = {
+							is_ai = no
+						}
+					}
+				}
+				KOR = {
+					add_ideas = KOR_not_planed_attack_ai_up
+				}	
+			}
+			if = {
+				limit = {
+					KOR = {
+						OR = {
+							NOT = {
+								has_war_with = ZLC
+								has_war_with = CHI	
+							}
+							is_ai = no
+							date > 1944.12.31
+						}	
+						has_idea = KOR_not_planed_attack_ai_up					}
+				}
+				KOR = {
+					remove_ideas = KOR_not_planed_attack_ai_up
+				}	
+			}
+			if = {
+				limit = {
+					tag = ZLC
+					is_ai = yes
+					OR = {
+						has_war_with = SND
+						has_war_with = AHC
+						has_war_with = AQC
+						has_war_with = SZY
+					}
+					NOT = {
+						has_idea = ZLC_the_attack_of_clique
+					}
+				}
+				add_ideas = ZLC_the_attack_of_clique
+			}	
+			if = {
+				limit = {
+					tag = ZLC
+					is_ai = yes
+					has_idea = ZLC_the_attack_of_clique
+					NOT = {
+						has_war_with = SND
+						has_war_with = AHC
+						has_war_with = AQC
+						has_war_with = SZY
+					}
+				}
+				remove_ideas = ZLC_the_attack_of_clique
+			}	
+			if = {
+				limit = {
+					tag = CHI
+					is_ai = yes
+					KOR = {
+						has_country_flag = TLE_THE_WAR_IS_ENDED
+					}	
+					OR = {
+						has_war_with = GDC
+						has_war_with = GXC
+						has_war_with = YUN
+						has_war_with = HNC
+					}
+					NOT = {
+						has_idea = CHI_the_attack_of_clique
+					}
+				}
+				add_ideas = CHI_the_attack_of_clique
+			}	
+			if = {
+				limit = {
+					tag = CHI
+					is_ai = yes
+					has_idea = CHI_the_attack_of_clique
+					NOT = {
+						has_war_with = GDC
+						has_war_with = GXC
+						has_war_with = YUN
+						has_war_with = HNC
+					}
+				}
+				remove_ideas = CHI_the_attack_of_clique
+			}	
+			if = {
+				limit = {
+					original_tag = ITA
+					has_cosmetic_tag = ITA_KINGDOM
+					NOT = {
+						has_idea = vittorio_emanuele
+						has_idea = vittorio_emanuele_emperor_of_ethiopia
+						has_idea = vittorio_emanuele_king_of_albania
+						has_idea = vittorio_emanuele_albania_ethiopia
+						has_idea = ITA_umberto_ii_king_facsism
+					}	
+				}
+				ITA = {
+					add_ideas = ITA_umberto_ii_king_facsism
+				}
+			}
+			if = {
+				limit = {
+					SOV = {
+						owns_state = 97
+						owns_state = 95
+						owns_state = 94
+						NOT = {
+							owns_state = 976
+						}
+					}
+				}
+				SOV = {
+					transfer_state = 976
+				}
+			}
+			if = {
+				limit = {
+					tag = ROM 
+					OR = {
+						has_idea = ROM_figurehead_king_michael
+						has_idea = ROM_king_carol_ii_hedonist
+						has_idea = ROM_king_carol_ii_handled
+					}
+					has_government = communism
+				}
+				remove_ideas = ROM_figurehead_king_michael
+				remove_ideas = ROM_king_carol_ii_hedonist
+				remove_ideas = ROM_king_carol_ii_handled
+			}
+			if = {
+				limit = {
+					tag = ROM 
+					NOT = {
+						has_idea = ROM_figurehead_king_michael
+						has_idea = ROM_king_carol_ii_hedonist
+						has_idea = ROM_king_carol_ii_handled
+					}
+					NOT = {
+						has_government = communism
+					}
+				}
+				add_ideas = ROM_figurehead_king_michael
+			}
+			if = {
+				limit = {
+					tag = HUN
+					CZE = {
+						is_puppet_of = HUN
+					}
+					has_completed_focus = HUN_invite_the_habsburg_prince
+				}
+				CZE = {
+					every_unit_leader = {
+						set_nationality = HUN
+					}
+				}
+				HUN = {
+					annex_country = {
+						target = CZE
+						transfer_troops = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = HUN
+					has_cosmetic_tag = HUN_EMPIRE
+					NOT = {
+						has_idea = AUH_otto_von_habsburg
+					}
+					NOT = {
+						has_country_leader = {
+							character = HUN_otto_von_habsburg
+							ruling_only = yes
+						}
+						has_government = communism
+					}	
+				}
+				add_ideas = AUH_otto_von_habsburg
+			}
+			if = {
+				limit = {
+					tag = HUN
+					has_cosmetic_tag = HUN_EMPIRE
+					has_idea = AUH_otto_von_habsburg
+					has_country_leader = {
+						character = HUN_otto_von_habsburg
+						ruling_only = yes
+					}
+					NOT = {
+						has_government = communism
+					}	
+				}
+				remove_ideas = AUH_otto_von_habsburg
+			}
+			if = {
+				limit = {
+					tag = AUS
+					has_cosmetic_tag = HUN_EMPIRE
+					NOT = {
+						has_idea = AUH_otto_von_habsburg
+					}
+				}
+				add_ideas = AUH_otto_von_habsburg
+			}
+			if = {
+				limit = {
+					tag = KOR
+					date > 1936.10.11
+					has_idea = KOR_yi_jin
+					NOT = {
+						has_country_flag = FLAG_EVENT_KOREA_272_TRIGGER
+					}
+				}
+				KOR = {
+					set_country_flag = FLAG_EVENT_KOREA_272_TRIGGER
+					country_event = {
+						id = korea.272
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = KOR
+					date > 1936.6.29
+					has_idea = KOR_yi_jin
+					NOT = {
+						has_country_flag = FLAG_EVENT_KOREA_275_TRIGGER
+					}
+				}
+				KOR = {
+					set_country_flag = FLAG_EVENT_KOREA_275_TRIGGER
+					country_event = {
+						id = korea.275
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = KOR
+					date > 1936.8.7
+					has_idea = KOR_yi_jin
+					NOT = {
+						has_country_flag = FLAG_EVENT_KOREA_277_TRIGGER
+					}
+				}
+				KOR = {
+					set_country_flag = FLAG_EVENT_KOREA_277_TRIGGER
+					country_event = {
+						id = korea.277
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = KOR
+					date > 1967.1.4
+					has_idea = KOR_yi_jin_2
+					NOT = {
+						has_country_flag = FLAG_EVENT_KOREA_279_TRIGGER
+					}
+				}
+				KOR = {
+					set_country_flag = FLAG_EVENT_KOREA_279_TRIGGER
+					country_event = {
+						id = korea.279
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = ALB
+					is_puppet_of = ITA
+					exists = yes
+					has_global_flag = TLE_soviet_union_defeat
+					ITA = {
+						owns_state = 999
+					}
+					NOT = {
+						has_country_flag = ALB_TRS_YES
+					}
+				}	
+				ALB = {
+					set_country_flag = ALB_TRS_YES
+					transfer_state = 999
+					transfer_state = 802
+					transfer_state = 1000
+				}	
+			}
+			if = {
+				limit = {
+					tag = FRS 
+					has_global_flag = TLE_soviet_union_defeat
+					GER = {
+						owns_state = 28
+						owns_state = 978
+					}
+					NOT = {
+						owns_state = 16
+					}	
+				}	
+				FRS = {
+					transfer_state = 16
+					transfer_state = 27
+					transfer_state = 15
+					transfer_state = 24
+					transfer_state = 30
+					transfer_state = 14
+					transfer_state = 23
+					transfer_state = 19
+					transfer_state = 806
+				}
+			}
+			if = {
+				limit = {
+					tag = CRO
+					owns_state = 981
+					ITA = {
+						owns_state = 103
+					}
+					NOT = {
+						is_puppet_of = ITA
+					}
+				}
+				transfer_state = 103
+			}
+			if = {
+				limit = {
+					tag = YUG
+					has_war_with = GER
+					has_capitulated = yes
+					NOT = {
+						has_global_flag = YUG_SUR_HIST
+					}
+				}
+				set_global_flag = YUG_SUR_HIST
+				GER = {
+					transfer_state = 102
+					puppet = CRO
+					puppet = SER
+				}
+				SER = {
+					transfer_state = 764
+					transfer_state = 108
+					set_state_controller = 107
+					set_capital = { state = 107 }
+				}
+				HUN = {
+					transfer_state = 45
+					transfer_state = 983
+				}
+				CRO = {
+					transfer_state = 109
+					transfer_state = 104
+					transfer_state = 103
+					transfer_state = 804
+				}
+				ITA = {
+					transfer_state = 853
+					transfer_state = 1002
+					transfer_state = 105
+					transfer_state = 981
+				}
+				BUL = {
+					transfer_state = 803
+					transfer_state = 106
+				}
+				every_country = {
+					limit = {
+						owns_state = 44
+					}
+					transfer_state = 802
+					transfer_state = 1000
+					transfer_state = 999
+				}
+				
+			}
+			if = {
+				limit = {
+					tag = KOR 
+					has_idea = KOR_yi_jin_TNO
+					NOT = {
+						has_country_flag = TNO_idea_cutting
+					}
+				}
+				remove_ideas = KOR_interservice_rivalry_army_dominant
+				remove_ideas = KOR_interservice_rivalry_navy_dominant
+				remove_ideas = KOR_interservice_rivalry_army_strengthened
+				remove_ideas = KOR_interservice_rivalry_navy_strengthened
+				remove_ideas = KOR_interservice_rivalry_balanced
+				remove_ideas = JAP_prioritize_army_aircraft_construction
+				remove_ideas = JAP_prioritize_naval_aircraft_construction
+				remove_ideas = KOR_embargo_us
+				remove_ideas = KOR_embargo_us_a
+				remove_ideas = KOR_embargo_us_b
+				remove_ideas = KOR_embargo_us_c
+				remove_ideas = KOR_embargo_us_d
+				remove_ideas = KOR_embargo_us_2
+				remove_ideas = KOR_political_officer_2
+				set_country_flag = TNO_idea_cutting
+			}
+			if = {
+				limit = {
+					CHI = {
+						owns_state = 608
+						has_cosmetic_tag = CHI
+					}
+					USA = {
+						owns_state = 745
+					}
+				}
+				CHI = {
+					transfer_state = 745
+				}
+				745 = {
+					set_state_name = "lvsun"
+				}
+			}
+			if = {
+				limit = {
+					KOR = {
+						has_country_flag = TLE_THE_WAR_IS_ENDED 
+						is_in_faction = no
+					}
+					has_global_flag = TLE_soviet_union_defeat
+				}
+				USA = {
+					add_to_faction = KOR
+				}
+			}
+			if = {
+				limit = {
+					KOR = {
+						has_country_flag = TLE_THE_WAR_IS_ENDED 
+					}
+					JAP = {
+						is_in_faction = no
+					}
+					has_global_flag = TLE_soviet_union_defeat
+				}
+				USA = {
+					add_to_faction = JAP
+				}
+			}
+			if = {
+				limit = {
+					CHI = {
+						owns_state = 608
+						has_cosmetic_tag = CHI
+					}
+					TIB = {
+						is_puppet_of = CHI
+					}
+				}
+				CHI = {
+					annex_country = {
+						target = TIB
+						transfer_troops = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					CHI = {
+						owns_state = 608
+						has_cosmetic_tag = CHI
+					}
+					SIK = {
+						is_puppet_of = CHI
+					}
+				}
+				CHI = {
+					annex_country = {
+						target = SIK
+						transfer_troops = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					CHI = {
+						owns_state = 608
+						has_cosmetic_tag = CHI
+					}
+					MON = {
+						is_puppet_of = CHI
+					}
+				}
+				CHI = {
+					annex_country = {
+						target = MON
+						transfer_troops = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					CHI = {
+						owns_state = 608
+						has_cosmetic_tag = CHI
+					}
+					MSR = {
+						is_puppet_of = CHI
+					}
+				}
+				CHI = {
+					annex_country = {
+						target = MSR
+						transfer_troops = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					KOR = {
+						has_country_flag = TLE_THE_WAR_IS_ENDED
+					}
+					KVN = {
+						exists = yes
+					}
+					has_global_flag = TLE_soviet_union_defeat
+				}
+				KVN = {
+					release = VIN
+					release = LAO
+					release = CAM
+				}
+				LAO = {
+					set_politics = { 
+						ruling_party = neutrality 
+						elections_allowed = no
+					}
+					set_popularities = {
+						democratic = 23
+						neutrality = 47
+						fascism = 2
+						communism = 28
+					}
+					retire_character = LAO_sisavang_vong
+				}
+				VIN = {
+					set_politics = { 
+						ruling_party = neutrality 
+						elections_allowed = no
+					}
+					set_popularities = {
+						democratic = 18
+						neutrality = 38
+						fascism = 7
+						communism = 37
+					}		
+				}
+				CAM = {
+					set_politics = { 
+						ruling_party = neutrality 
+						elections_allowed = no
+					}
+					set_popularities = {
+						democratic = 34
+						neutrality = 50
+						fascism = 14
+						communism = 12
+					}		
+
+				}
+			}
+			if = {
+				limit = {
+					tag = USA
+					KOR = {
+						has_cosmetic_tag = KOR_STATE
+					}
+					KMN = {
+						exists = yes
+						is_puppet_of = USA
+						OR = {
+							has_cosmetic_tag = KMN_GHQ
+							has_cosmetic_tag = MAN_GHQ
+						}	
+					}
+					has_global_flag = TLE_germany_union_defeat
+					NOT = {
+						has_global_flag = TLE_manchuria_doklip
+					}
+				}
+				set_global_flag = TLE_manchuria_doklip
+				country_event = {
+					id = joseon.21
+					days = 15
+				}
+			}
+			if = {
+				limit = {
+					tag = USA
+					KOR = {
+						has_cosmetic_tag = KOR_STATE
+					}
+					KMN = {
+						exists = yes
+						is_puppet_of = USA
+						OR = {
+							has_cosmetic_tag = KMN_GHQ
+							has_cosmetic_tag = MAN_GHQ
+						}	
+					}
+					has_global_flag = TLE_soviet_union_defeat
+					NOT = {
+						has_global_flag = TLE_manchuria_doklip
+					}
+					CHI = {
+						NOT = {
+							has_war_with = ZLC
+						}
+					}
+					OR = {
+						AND = {
+							ZLC = {
+								exists = yes
+							}
+							CHI = {
+								exists = no
+							}
+						}
+						AND = {
+							ZLC = {
+								exists = no
+							}
+							CHI = {
+								exists = yes
+							}
+						}
+					}
+				}
+				set_global_flag = TLE_manchuria_doklip
+				every_country = {
+					limit = {
+						owns_state = 608
+					}
+					annex_country = {
+						target = KMN
+						transfer_troops = no
+					}
+				}
+				1060 = {
+					set_state_name = "jinzhou"
+				}
+				610 = {
+					set_state_name = "rehe"
+				}
+				715 = {
+					set_state_name = "liaoning"
+				}
+				716 = {
+					set_state_name = "liaodong"
+				}
+				1032 = {
+					set_state_name = "andong"
+				}
+				1031 = {
+					set_state_name = "baishan"
+				}
+				1030 = {
+					set_state_name = "jiandao"
+				}
+				328 = {
+					set_state_name = "jilin"
+				}
+				717 = {
+					set_state_name = "songjiang"
+				}
+				714 = {
+					set_state_name = "heilongjiang"
+				}
+				1059 = {
+					set_state_name = "xinganmeng"
+				}
+				761 = {
+					set_state_name = "hulunbeier"
+				}
+				##만주##
+				set_province_name = {
+					id = 1049
+					name = "longjing"
+				}
+				set_province_name = {
+					id = 9803
+					name = "baishan"
+				}
+				set_province_name = {
+					id = 1050
+					name = "tonghua"
+				}
+				set_province_name = {
+					id = 6981
+					name = "andong"
+				}
+				set_province_name = {
+					id = 836
+					name = "liaoxin"
+				}
+				set_province_name = {
+					id = 11764
+					name = "yingkou"
+				}
+				set_province_name = {
+					id = 1150
+					name = "lvsun"
+				}
+				set_province_name = {
+					id = 11771
+					name = "shenyang"
+				}
+				set_province_name = {
+					id = 4572
+					name = "changchun"
+				}
+				set_province_name = {
+					id = 10433
+					name = "haerbin"
+				}
+				set_province_name = {
+					id = 9623
+					name = "jiamushi"
+				}
+				set_province_name = {
+					id = 11906
+					name = "mudan"
+				}
+				set_province_name = {
+					id = 3815
+					name = "jixi"
+				}
+				set_province_name = {
+					id = 1645
+					name = "daqing"
+				}
+				set_province_name = {
+					id = 1638
+					name = "tongliao"
+				}
+				set_province_name = {
+					id = 1627
+					name = "baicheng"
+				}
+				set_province_name = {
+					id = 6837
+					name = "huludao"
+				}
+				set_province_name = {
+					id = 11801
+					name = "cifeng"
+				}
+				set_province_name = {
+					id = 1502
+					name = "xinganmeng"
+				}
+				set_province_name = {
+					id = 11752
+					name = "xilinguomeng"
+				}
+				set_province_name = {
+					id = 987
+					name = "liaoyang"
+				}
+				set_province_name = {
+					id = 7663
+					name = "jilin"
+				}
+				set_province_name = {
+					id = 3947
+					name = "dunhua"
+				}
+				KMN = {
+					set_cosmetic_tag = KMN_REP
+				}
+			}
+			if = {
+				limit = {
+					date > 1945.5.5
+					ETH = {
+						is_ai = yes
+					}
+					has_global_flag = TLE_germany_union_defeat
+					is_historical_focus_on = yes
+				}
+				ETH = {
+					load_focus_tree = korean_government
+					dismantle_faction = yes
+					set_rule = {
+						can_create_faction = no
+					}
+				}
+				ENG = {
+					transfer_state = 903
+					transfer_state = 269
+				}
+			}
+			if = {
+				limit = {
+					DK1 = {
+						exists = yes
+						has_capitulated = yes
+					}
+					JAP = {
+						exists = yes
+						has_war_with = DK1
+					}
+					is_historical_focus_on = yes
+				}
+				JAP = {
+					annex_country = {
+						target = DK1
+						transfer_troops = no
+					}
+				}
+				DK1 = {
+					remove_ideas = DK1_nobuhito
+				}
+				every_state = {
+					limit = {
+						is_core_of = DK1 
+					}
+					remove_core_of = DK1
+				}
+			}
+			if = {
+				limit = {
+					DK2 = {
+						exists = yes
+						has_capitulated = yes
+					}
+					JAP = {
+						exists = yes
+						has_war_with = DK2
+					}
+					is_historical_focus_on = yes
+				}
+				JAP = {
+					annex_country = {
+						target = DK2
+						transfer_troops = no
+					}
+				}
+				DK2 = {
+					remove_ideas = DK1_nobuhito
+				}
+				every_state = {
+					limit = {
+						is_core_of = DK2 
+					}
+					remove_core_of = DK2
+				}
+			}
+			if = {
+				limit = {
+					DK3 = {
+						exists = yes
+						has_capitulated = yes
+					}
+					JAP = {
+						exists = yes
+						has_war_with = DK3
+					}
+					is_historical_focus_on = yes
+				}
+				JAP = {
+					annex_country = {
+						target = DK3
+						transfer_troops = no
+					}
+				}
+				DK3 = {
+					remove_ideas = DK1_nobuhito
+				}
+				every_state = {
+					limit = {
+						is_core_of = DK3
+					}
+					remove_core_of = DK3
+				}
+			}
+			if = {
+				limit = {
+					DK4 = {
+						exists = yes
+						has_capitulated = yes
+					}
+					JAP = {
+						exists = yes
+						has_war_with = DK4
+					}
+					is_historical_focus_on = yes
+				}
+				JAP = {
+					annex_country = {
+						target = DK4
+						transfer_troops = no
+					}
+				}
+				DK4 = {
+					remove_ideas = DK1_nobuhito
+				}
+				every_state = {
+					limit = {
+						is_core_of = DK4
+					}
+					remove_core_of = DK4
+				}
+			}
+			if = {
+				limit = {
+					TUR = {
+						owns_state = 659
+						is_ai = yes
+					}
+					ENG = {
+						is_ai = yes
+					}
+					is_historical_focus_on = yes
+					1945.1.1 < date
+				}
+				YEM = {
+					transfer_state = 659
+				}
+			}
+			if = {
+				limit = {
+					TUR = {
+						owns_state = 658
+						is_ai = yes
+					}
+					ENG = {
+						is_ai = yes
+					}
+					is_historical_focus_on = yes
+					1945.1.1 < date
+					UAE = {
+						exists = no
+					}
+				}
+				UAE = {
+					transfer_state = 658
+				}
+			}
+			if = {
+				limit = {
+					TUR = {
+						owns_state = 765
+						is_ai = yes
+					}
+					ENG = {
+						is_ai = yes
+					}
+					is_historical_focus_on = yes
+					1945.1.1 < date
+					QAT = {
+						exists = no
+					}
+				}
+				QAT = {
+					transfer_state = 765
+				}
+			}
+			if = {
+				limit = {
+					TUR = {
+						owns_state = 656
+						is_ai = yes
+					}
+					ENG = {
+						is_ai = yes
+					}
+					is_historical_focus_on = yes
+					1945.1.1 < date
+					KUW = {
+						exists = no
+					}
+				}
+				KUW = {
+					transfer_state = 656
+				}
+			}
+			if = {
+				limit = {
+					TUR = {
+						owns_state = 455
+						is_ai = yes
+					}
+					ENG = {
+						is_ai = yes
+					}
+					is_historical_focus_on = yes
+					1945.1.1 < date
+					JOR = {
+						exists = no
+					}
+				}
+				JOR = {
+					transfer_state = 455
+				}
+			}
+			if = {
+				limit = {
+					TUR = {
+						owns_state = 454
+						is_ai = yes
+					}
+					ENG = {
+						is_ai = yes
+					}
+					is_historical_focus_on = yes
+					1945.1.1 < date
+					ISR = {
+						exists = no
+					}
+				}
+				ISR = {
+					transfer_state = 454
+				}
+			}
+			if = {
+				limit = {
+					TUR = {
+						owns_state = 453
+						is_ai = yes
+					}
+					ENG = {
+						is_ai = yes
+					}
+					is_historical_focus_on = yes
+					1945.1.1 < date
+				}
+				if = {
+					limit = {
+						EGY = {
+							exists = no
+						}
+					}
+					every_country = {
+						limit = {
+							owns_state = 907
+						}
+						transfer_state = 453
+					}
+				}
+				if = {
+					limit = {
+						EGY = {
+							exists = yes
+						}
+					}
+					EGY = {
+						transfer_state = 453
+					}
+				}
+			}
+			if = {
+				limit = {
+					FRA = {
+						owns_state = 670
+						NOT = {
+							owns_state = 993
+							owns_state = 994
+							owns_state = 995
+						}
+					}
+				}
+				FRA = {
+					transfer_state = 993
+					transfer_state = 994
+					transfer_state = 995
+				}
+			}
+			if = {
+				limit = {
+					SOV = {
+						is_ai = yes
+						NOT = {
+							has_idea = KOR_they_will_more_division
+							has_country_flag = TLE_SOV_DIV_BUFF
+						}
+					}
+					date > 1936.2.1
+				}
+				SOV = {
+					add_ideas = KOR_they_will_more_division
+					set_country_flag = TLE_SOV_DIV_BUFF
+					add_offsite_building = {
+						type = industrial_complex
+						level = 8
+					}
+				}
+			}
+			if = {
+				limit = {
+					SOV = {
+						has_idea = KOR_they_will_more_division
+						NOT = {
+							has_country_flag = TLE_SOV_DIV_BUFF_OUT
+						}
+					}
+					date > 1945.5.1
+				}
+				SOV = {
+					remove_ideas = KOR_they_will_more_division
+					set_country_flag = TLE_SOV_DIV_BUFF_OUT
+				}
+			}
+			if = {
+				limit = {
+					SOV = {
+						has_idea = SOV_defence_the_motherland
+						is_ai = no
+					}
+				}
+				SOV = {
+					remove_ideas = SOV_defence_the_motherland
+				}
+			}
+			if = {
+				limit = {
+					has_global_flag = operation_barbarossa_global_flag
+					date > 1941.6.22
+					SOV = {
+						is_ai = yes
+						has_war_with = GER
+						has_capitulated = no
+						NOT = {
+							has_country_flag = flag_bararossa_defence
+							has_idea = SOV_defence_the_motherland
+						}
+					}
+					always = no
+				}
+				if = {
+					limit = {
+						OR = {
+							KOR = {
+								is_ai = no
+							}
+							BHU = {
+								is_ai = no
+							}
+						}	
+						is_historical_focus_on = yes
+					}
+					SOV = {
+						set_country_flag = flag_bararossa_defence
+						add_timed_idea = {
+							idea = SOV_defence_the_motherland
+							days = 730
+						}
+						add_offsite_building = {
+							type = arms_factory
+							level = 10
+						}
+
+						add_offsite_building = {
+							type = industrial_complex
+							level = 6
+						}
+						add_equipment_to_stockpile = {
+							type = infantry_equipment_0
+							amount = 100000
+							producer = SOV
+						}
+						add_equipment_to_stockpile = {
+							type = support_equipment
+							amount = 1300
+							producer = SOV
+						}
+
+						add_equipment_to_stockpile = {
+							type = artillery_equipment_1
+							amount = 1500
+							producer = SOV
+						}
+					}
+				}	
+				if = {
+					limit = {
+						KOR = {
+							is_ai = yes
+						}
+						BHU = {
+							is_ai = yes
+						}
+					}
+					SOV = {
+						set_country_flag = flag_bararossa_defence
+						add_timed_idea = {
+							idea = SOV_defence_the_motherland
+							days = 360
+						}
+						add_offsite_building = {
+							type = arms_factory
+							level = 5
+						}
+
+						add_offsite_building = {
+							type = industrial_complex
+							level = 3
+						}
+						add_equipment_to_stockpile = {
+							type = infantry_equipment_0
+							amount = 40000
+							producer = SOV
+						}
+						add_equipment_to_stockpile = {
+							type = support_equipment
+							amount = 300
+							producer = SOV
+						}
+
+						add_equipment_to_stockpile = {
+							type = artillery_equipment_1
+							amount = 500
+							producer = SOV
+						}
+					}
+				}	
+			}
+			if = {
+				limit = {
+					SOV = {
+						has_war_with = GER
+						NOT = {
+							has_idea = SOV_west_russian_revolutionary_war_start
+						}
+					}
+					MK1 = {
+						exists = yes
+					}
+					GER = {
+						has_cosmetic_tag = GER_TLE_ggr
+					}
+					has_global_flag = TLE_soviet_union_defeat
+				}
+				SOV = {
+					add_ideas = SOV_west_russian_revolutionary_war_start
+				}
+			}
+			if = {
+				limit = {
+					SOV = {
+						has_war_with = GER
+						has_idea = SOV_west_russian_revolutionary_war_start
+					}
+					MK1 = {
+						exists = no
+					}
+					GER = {
+						has_cosmetic_tag = GER_TLE_ggr
+					}
+					has_global_flag = TLE_soviet_union_defeat
+				}
+				SOV = {
+					remove_ideas = SOV_west_russian_revolutionary_war_start
+				}
+			}
+			if = {
+				limit = {
+					has_global_flag = TLE_soviet_union_defeat
+					original_tag = BUL
+					OR = {
+						has_government = neutrality
+						has_government = fascism
+					}
+					has_idea = BUL_fatherland_front_positive
+				}
+				remove_ideas = BUL_fatherland_front_positive
+			}
+			if = {
+				limit = {
+					has_global_flag = GB_Germany_victory_at_ww2
+					original_tag = BUL
+					NOT = {
+						has_cosmetic_tag = BUL_TNO
+					}
+				}
+				BUL = {
+					set_cosmetic_tag = BUL_TNO
+				}
+			}
+			if = {
+				limit = {
+					has_global_flag = GB_Germany_victory_at_ww2
+					original_tag = ROM
+					NOT = {
+						has_cosmetic_tag = ROM_TNO
+					}
+				}
+				ROM = {
+					set_cosmetic_tag = ROM_TNO
+				}
+			}
+			if = {
+				limit = {
+					has_global_flag = GB_Germany_victory_at_ww2
+					original_tag = SER
+					OR = {
+						has_government = neutrality
+						has_government = fascism
+					}
+					NOT = {
+						has_cosmetic_tag = SER_TNO
+					}
+				}
+				SER = {
+					set_cosmetic_tag = SER_TNO
+				}
+			}
+			if = {
+				limit = {
+					has_idea = CHI_AI_WAR_BONUS_IDEA_2
+					OR = {
+						has_idea = CHI_AI_WAR_BONUS_IDEA 
+						KOR = {
+							is_ai = yes
+						}
+					}
+				}
+				remove_ideas = CHI_AI_WAR_BONUS_IDEA_2
+			}
+			if = {
+				limit = {
+					has_global_flag = TLE_germany_union_defeat
+					USA = {
+						is_faction_leader = yes
+						has_idea = TO_nato_ratified
+					}
+					NOT = {
+						has_global_flag = NATO_NAMESETTING
+					}
+				}
+				USA = {
+					set_faction_name = NATO
+					set_global_flag = NATO_NAMESETTING
+				}
+			}
+			if = {
+				limit = {
+					ITA = {
+						has_civil_war = yes
+						has_cosmetic_tag = ITA_rsi
+					}
+					has_global_flag = TLE_soviet_union_defeat
+				}
+				ITA = {
+					set_cosmetic_tag = ITA_EMPIRE
+					remove_power_balance = { id = ITA_power_balance }
+				}
+			}
+			if = {
+				limit = {
+					KOR = {
+						has_idea = KOR_seoul_not_hangbok
+					}
+					OR = {
+						is_ai = no
+						has_war = no
+					}
+				}
+				KOR = {
+					remove_ideas = KOR_seoul_not_hangbok
+				}
+			}
+			if = {
+				limit = {
+					901 = {
+						is_owned_by = LIT
+					}
+					LIT = {
+						is_ai = yes
+					}
+				}
+				ENG = {
+					transfer_state = 901
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = TLE_WRRF_SOV_WIN
+					}
+					tag = GER
+					has_global_flag = TLE_soviet_union_defeat
+					MK1 = {
+						exists = no
+					}
+					OT1 = {
+						exists = no
+					}
+					UK1 = {
+						exists = no
+					}
+					KA1 = {
+						exists = no
+					}
+				}
+				GER = {
+					country_event = {
+						id = korea.245
+					}
+					set_global_flag = TLE_WRRF_SOV_WIN
+				}
+			}
+			if = {
+				limit = {
+					has_global_flag = TLE_germany_union_defeat
+					YUG = {
+						is_ai = yes
+						NOT = {
+							has_government = communism
+						}
+						has_idea = king_peter_1
+						has_government = neutrality
+						NOT = {
+							has_country_flag = TLE_YUG_WW2_COM
+						}
+					}
+				}
+				YUG = {
+					country_event = {
+						id = joseon.18
+					}
+					set_country_flag = TLE_YUG_WW2_COM
+				}
+			}
+			if = {
+				limit = {
+					has_global_flag = TLE_germany_union_defeat
+					BUL = {
+						has_government = communism
+					}
+					803 = {
+						is_core_of = BUL
+					}
+					106 = {
+						is_core_of = BUL
+					}
+					184 = {
+						is_core_of = BUL
+					}
+					731 = {
+						is_core_of = BUL
+					}
+				}
+				803 = {
+					remove_core_of = BUL
+					add_core_of = YUG
+				}
+				106 = {
+					remove_core_of = BUL
+					add_core_of = YUG
+				}
+				184 = {
+					remove_core_of = BUL
+					add_core_of = GRE
+				}
+				731 = {
+					remove_core_of = BUL
+					add_core_of = GRE
+				}
+			}
+			if = {
+				limit = {
+					has_global_flag = TLE_germany_union_defeat
+					OR = {
+						WGR = {
+							owns_state = 677
+							owns_state = 680
+							owns_state = 554
+							owns_state = 553
+						}
+						GER = {
+							owns_state = 677
+							owns_state = 680
+							owns_state = 554
+							owns_state = 553
+						}
+					}
+				}
+				FRA = {
+					transfer_state = 677
+					transfer_state = 680
+					transfer_state = 554
+					transfer_state = 553
+				}
+			}
+			if = {
+				limit = {
+					JAP = {
+						exists = yes
+					}
+					DK1 = {
+						exists = yes
+					}
+					is_historical_focus_on = yes
+					KOR = {
+						has_country_flag = TLE_THE_WAR_IS_ENDED
+					}
+				}
+				JAP = {
+					annex_country = {
+						target = DK1
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = DK2
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = DK3
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = DK4
+						transfer_troops = yes
+					}
+					transfer_state = 1064
+					transfer_state = 528
+					transfer_state = 536
+					transfer_state = 1029
+				}
+			}
+			if = {
+				limit = {
+					RAJ = {
+						has_cosmetic_tag = RAJ_KOR
+						owns_state = 434
+					}
+				}
+				TIB = {
+					transfer_state = 434
+				}
+			}
+			if = {
+				limit = {
+					ITA = {
+						has_cosmetic_tag = ITA_EMPIRE
+						is_ai = yes
+					}
+					TUR = {
+						NOT = {
+							is_in_faction_with = ITA
+						}
+						is_ai = yes
+					}
+					ENG = {
+						has_cosmetic_tag = ENG_RK
+					}
+				}
+				ITA = {
+					add_to_faction = TUR
+				}
+			}
+			if = {
+				limit = {
+					ITA = {
+						has_cosmetic_tag = ITA_EMPIRE
+						is_ai = yes
+					}
+					SPR = {
+						NOT = {
+							is_in_faction_with = ITA
+						}
+						is_ai = yes
+					}
+					ENG = {
+						has_cosmetic_tag = ENG_RK
+					}
+				}
+				ITA = {
+					add_to_faction = SPR
+				}
+			}
+			if = {
+				limit = {
+					ITA = {
+						has_cosmetic_tag = ITA_EMPIRE
+						is_ai = yes
+					}
+					CRO = {
+						NOT = {
+							is_in_faction_with = ITA
+						}
+						is_ai = yes
+					}
+					ENG = {
+						has_cosmetic_tag = ENG_RK
+					}
+				}
+				ITA = {
+					add_to_faction = CRO
+				}
+			}
+			if = {
+				limit = {
+					GRE = {
+						NOT = {
+							has_cosmetic_tag = GRE_TNO
+						}
+						is_puppet_of = ITA
+					}
+					ITA = {
+						has_cosmetic_tag = ITA_EMPIRE
+					}
+				}
+				GRE = {
+					set_cosmetic_tag = GRE_TNO
+				}
+			}
+			if = {
+				limit = {
+					RAJ = {
+						NOT = {
+							has_cosmetic_tag = RAJ_KOR
+						}
+						is_puppet = no
+					}
+					KOR = {
+						NOT = {
+							has_war_with = USA
+						}
+						OR = {
+							has_completed_focus = KOR_TNO_0
+							has_idea = KOR_daehan_ascendant
+						}
+					}
+					CH1 = {
+						OR = {
+							has_cosmetic_tag = CHI_KOR
+							has_cosmetic_tag = CHI_KOR_2
+							has_cosmetic_tag = CHI_KOR_3
+						}	
+						is_puppet_of = KOR
+					}
+					CHI = {
+						exists = no
+					}
+					ZLC = {
+						exists = no
+					}
+				}
+				RAJ = {
+					set_cosmetic_tag = RAJ_KOR
+					if = {
+						limit = {
+							RAJ = {
+								is_in_faction_with = CAN
+							}
+						}
+						leave_faction = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					MAL = {
+						NOT = {
+							has_cosmetic_tag = MAL_KOR
+						}
+					}
+					KOR = {
+						NOT = {
+							has_war_with = USA
+						}
+						has_completed_focus = KOR_TNO_0
+					}
+					CH1 = {
+						OR = {
+							has_cosmetic_tag = CHI_KOR
+							has_cosmetic_tag = CHI_KOR_2
+							has_cosmetic_tag = CHI_KOR_3
+						}	
+						is_puppet_of = KOR
+					}
+					CHI = {
+						exists = no
+					}
+					ZLC = {
+						exists = no
+					}
+				}
+				MAL = {
+					set_cosmetic_tag = MAL_KOR
+				}
+			}
+			if = {
+				limit = {
+					INS = {
+						NOT = {
+							has_cosmetic_tag = INS_KOR
+						}
+					}
+					KOR = {
+						NOT = {
+							has_war_with = USA
+						}
+						has_completed_focus = KOR_TNO_0
+					}
+					CH1 = {
+						OR = {
+							has_cosmetic_tag = CHI_KOR
+							has_cosmetic_tag = CHI_KOR_2
+							has_cosmetic_tag = CHI_KOR_3
+						}	
+						is_puppet_of = KOR
+					}
+					CHI = {
+						exists = no
+					}
+					ZLC = {
+						exists = no
+					}
+				}
+				INS = {
+					set_cosmetic_tag = INS_KOR
+				}
+			}
+			if = {
+				limit = {
+					CAN = {
+						NOT = {
+							has_cosmetic_tag = CAN_TNO
+						}
+					}
+					ENG = {
+						has_cosmetic_tag = ENG_RK
+					}	
+				}
+				CAN = {
+					set_cosmetic_tag = CAN_TNO
+				}
+			}
+			if = {
+				limit = {
+					ZLC = {
+						owns_state = 1057
+						has_war_with = CHI
+						NOT = {
+							has_idea = ZLC_war_with_kuomintang
+						}
+					}
+					CHI = {
+						controls_state = 1057
+					}
+				}
+				ZLC = {
+					add_ideas = ZLC_war_with_kuomintang
+				}
+			}
+			if = {
+				limit = {
+					ZLC = {
+						owns_state = 1057
+						OR = {
+							controls_state = 1057
+							NOT = {
+								has_war_with = CHI
+							}
+						}
+						has_idea = ZLC_war_with_kuomintang
+					}
+				}
+				ZLC = {
+					remove_ideas = ZLC_war_with_kuomintang
+				}
+			}
+			if = {
+				limit = {
+					JAP = {
+						exists = yes
+					}
+					TBJ = {
+						exists = yes
+						has_cosmetic_tag = KOR_TBJ
+					}
+					KOR = {
+						has_country_flag = TLE_THE_WAR_IS_ENDED
+					}
+				}
+				JAP = {
+					annex_country = {
+						target = TBJ
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = DKG
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NBJ
+						transfer_troops = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					MEN = {
+						NOT = {
+							is_puppet_of = KOR
+						}
+						is_ai = no
+					}
+					KOR = {
+						has_idea = KOR_yi_jin
+						NOT = {
+							has_wargoal_against = MEN
+						}
+					}
+				}
+				KOR = {
+					create_wargoal = {
+						target = MEN
+						type = annex_everything
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_historical_focus_on = yes
+					has_global_flag = TLE_germany_union_defeat
+					GER = {
+						exists = yes
+					}
+				}
+				POL = {
+					transfer_state = 85
+					transfer_state = 807
+					transfer_state = 86
+					transfer_state = 762
+					transfer_state = 88
+					transfer_state = 90
+					transfer_state = 92
+					transfer_state = 98
+					transfer_state = 10
+					transfer_state = 87
+				}
+				SOV = {
+					transfer_state = 188
+				}
+			}
+			if = {
+				limit = {
+					is_historical_focus_on = yes
+					GER = {
+						is_ai = yes
+						has_war_with = SOV
+						has_war_with = ENG
+					}
+					ENG = {
+						is_ai = yes
+					}
+					SOV = {
+						is_ai = yes
+						NOT = {
+							has_country_flag = TLE_NONE_WAR_YEONHAP
+						}
+					}
+				}
+				SOV = {
+					set_country_flag = TLE_NONE_WAR_YEONHAP
+				}
+				USA = {
+					diplomatic_relation = {
+						country = SOV
+						relation = non_aggression_pact
+						active = yes
+					}
+				}
+				ENG = {
+					diplomatic_relation = {
+						country = SOV
+						relation = non_aggression_pact
+						active = yes
+					}
+				}
+				FRA = {
+					diplomatic_relation = {
+						country = SOV
+						relation = non_aggression_pact
+						active = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_historical_focus_on = yes
+					GER = {
+						is_ai = yes
+						has_war_with = SOV
+						has_war_with = ENG
+					}
+					ENG = {
+						is_ai = yes
+					}
+					SOV = {
+						is_ai = yes
+					}
+					date > 1945.1.1
+				}
+				every_country = {
+					limit = {
+						has_war_with = ENG
+						OR = {
+							is_in_faction_with = GER
+							original_tag = GER
+						}
+						NOT = {
+							has_idea = GER_the_night_of_soonmoo
+						}
+					}
+					add_ideas = GER_the_night_of_soonmoo
+				}
+				ENG = {
+					add_ideas = ENG_the_attack_to_germany
+				}
+				SOV = {
+					add_ideas = SOV_the_attack_to_germany
+				}
+			}
+			if = {
+				limit = {
+					has_idea = GER_the_night_of_soonmoo
+					has_war = no
+				}
+				remove_ideas = GER_the_night_of_soonmoo
+			}
+			if = {
+				limit = {
+					SOV = {
+						has_idea = SOV_the_attack_to_germany
+						has_war = no
+					}
+				}
+				SOV = {
+					remove_ideas = SOV_the_attack_to_germany
+				}
+			}
+			if = {
+				limit = {
+					ENG = {
+						has_idea = ENG_the_attack_to_germany
+						has_war = no
+					}
+				}
+				ENG = {
+					remove_ideas = ENG_the_attack_to_germany
+				}
+			}
+			if = {
+				limit = {
+					ZLC = {
+						has_war_with = KOR
+						is_ai = yes
+					}
+					CHI = {
+						has_war_with = KOR
+						is_ai = yes
+					}
+					OR = {
+						AND = {
+							NOT = {
+								CHI = {
+									is_in_faction_with = CHI
+								}
+							}
+							ZLC = {
+								is_faction_leader = yes
+							}
+						}	
+						AND = {
+							NOT = {
+								ZLC = {
+									is_in_faction_with = CHI
+								}
+							}
+							CHI = {
+								is_faction_leader = yes
+							}
+						}	
+					}
+				}
+				if = {
+					limit = {
+						ZLC = {
+							is_faction_leader = yes
+						}
+					}
+					ZLC = {
+						add_to_faction = CHI
+					}
+				}
+				if = {
+					limit = {
+						CHI = {
+							is_faction_leader = yes
+						}
+					}
+					CHI = {
+						add_to_faction = ZLC
+					}
+				}
+			}
+			if = {
+				limit = {
+					KOR = {
+						OR = {
+							has_idea = KOR_not_planed_attack
+							has_idea = KOR_ichigo_plan
+							date > 1945.1.1
+						}
+						has_war_with = JAP
+					}
+					JAP = {
+						is_ai = yes
+						NOT = {
+							has_idea = JAP_AI_WAR_BONUS_IDEA
+							controls_state = 1064
+							controls_state = 528
+							controls_state = 536
+						}
+					}	
+					has_game_rule = {
+						rule = TLE_JAP_HARDCORE_RULE
+						option = TLE_JAP_HARDCORE_DEFAULT
+					}
+				}
+				JAP = {
+					add_ideas = JAP_AI_WAR_BONUS_IDEA
+				}
+			}
+			if = {
+				limit = {
+					JAP = {
+						has_idea = JAP_AI_WAR_BONUS_IDEA
+					}
+					OR = {
+						AND = {
+							JAP = {
+								OR = {
+									controls_state = 1064
+									controls_state = 528
+									controls_state = 536
+								}
+							}
+							KOR = {
+								is_ai = yes
+							}
+						}
+						KOR = {
+							is_ai = yes
+							NOT = {
+								has_idea = KOR_not_planed_attack
+								has_idea = KOR_ichigo_plan
+								date < 1945.1.1
+							}
+						}
+					}
+				}
+				JAP = {
+					remove_ideas = JAP_AI_WAR_BONUS_IDEA
+				}
+			}	
+			if = {
+				limit = {
+					is_historical_focus_on = yes
+					has_global_flag = TLE_germany_union_defeat
+					KOR = {
+						has_country_flag = TLE_THE_WAR_IS_ENDED
+					}
+					KVN = {
+						exists = yes
+					}
+				}
+				FRA = {
+					annex_country = {
+						target = KVN
+						transfer_troops = no
+					}
+				}
+			}
+			if = {
+				limit = {
+					original_tag = EST
+					has_government = communism
+					is_puppet_of = SOV
+					is_ai = yes
+					is_historical_focus_on = yes
+					SOV = {
+						is_ai = yes
+					}
+				}
+				SOV = {
+					annex_country = {
+						target = EST
+						transfer_troops = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					original_tag = LIT
+					has_government = communism
+					is_puppet_of = SOV
+					is_ai = yes
+					is_historical_focus_on = yes
+					SOV = {
+						is_ai = yes
+					}
+				}
+				SOV = {
+					annex_country = {
+						target = LIT
+						transfer_troops = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					original_tag = LAT
+					has_government = communism
+					is_puppet_of = SOV
+					is_ai = yes
+					is_historical_focus_on = yes
+					SOV = {
+						is_ai = yes
+					}
+				}
+				SOV = {
+					annex_country = {
+						target = LAT
+						transfer_troops = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					MEN = {
+						has_war_with = MON
+						NOT = { 
+							has_idea = MEN_final_attack
+						}	
+					}
+				}
+				MEN = {
+					add_ideas = MEN_final_attack
+				}
+			}
+			if = {
+				limit = {
+					MEN = {
+						NOT = {
+							has_war_with = MON
+						}
+						has_idea = MEN_final_attack
+						has_cosmetic_tag = MEN
+					}
+				}
+				MEN = {
+					remove_ideas = MEN_final_attack
+				}
+			}
+			if = {
+				limit = {
+					original_tag = KOR 
+					is_ai = yes
+					OR = {
+						has_idea = mutiny_3
+						has_idea = mutiny_2
+						has_idea = mutiny_1
+					}
+				}
+				KOR = {
+					remove_ideas = mutiny_1
+					remove_ideas = mutiny_2
+					remove_ideas = mutiny_3
+				}
+			}
+			if = {
+				limit = {
+					date < 1944.1.4
+					KOR = {
+						has_war_with = USA
+						has_war_with = ZLC
+						NOT = {
+							has_idea = KOR_not_planed_attack
+						}
+						is_ai = yes
+					}
+					ZLC = {
+						is_ai = yes
+					}
+				}
+				KOR = {
+					add_ideas = KOR_not_planed_attack
+				}
+			}
+			if = {
+				limit = {
+					date > 1944.1.4
+					KOR = {
+						has_idea = KOR_not_planed_attack
+					}
+				}
+				KOR = {
+					remove_ideas = KOR_not_planed_attack
+				}
+			}
+			if = {
+				limit = {
+					is_historical_focus_on = yes
+					OR = {
+						KOR = {
+							has_completed_focus = kor_korean_lebensraum
+							has_war_with = USA
+							is_ai = no
+						}
+						if = {
+							limit = {
+								date > 1945.1.1
+								GER = {
+									has_war_with = USA
+								}
+							}
+						}
+					}
+					OR = {
+						has_game_rule = {
+							rule = TLE_KOREA_HARDCORE_RULE
+							option = TLE_VERY_HARD
+						}
+						date > 1943.12.1
+					}	
+					USA = {
+						is_ai = yes
+						NOT = {
+							has_idea = USA_the_hearts_of_iron
+						}
+						has_government = democratic
+					}
+				}	
+				USA = {
+					add_ideas = USA_the_hearts_of_iron
+				}
+			}
+			if = {
+				limit = {
+					USA = {
+						has_idea = USA_the_hearts_of_iron
+						has_war = no
+					}
+				}
+				USA = {
+					remove_ideas = USA_the_hearts_of_iron
+				}
+			}
+			if = {
+				limit = {
+					is_historical_focus_on = yes
+					is_chinese_clique = yes
+					has_war_with = KOR
+					is_ai = yes
+					has_game_rule = {
+						rule = TLE_KOREA_HARDCORE_RULE
+						option = TLE_VERY_HARD
+					}
+					NOT = {
+						has_idea = CHI_AI_WAR_BONUS_IDEA
+					}
+					KOR = {
+						is_ai = no
+					}
+				}	
+				every_country = {
+					limit = {
+						is_chinese_clique = yes
+						NOT = {
+							has_idea = CHI_AI_WAR_BONUS_IDEA
+						}	
+						has_war_with = KOR
+					}
+					add_ideas = CHI_AI_WAR_BONUS_IDEA
+				}
+			}
+			if = {
+				limit = {
+					has_idea = CHI_AI_WAR_BONUS_IDEA
+					NOT = {
+						has_war_with = KOR
+					}
+				}
+				remove_ideas = CHI_AI_WAR_BONUS_IDEA
+			}
+			if = {
+				limit = {
+					original_tag = USA
+					is_historical_focus_on = yes
+					KOR = {
+						has_country_flag = TLE_THE_WAR_IS_ENDED
+					}
+					is_in_faction_with = ENG
+					is_faction_leader = no
+				}
+				USA = {
+					set_faction_leader = yes
+				}
+			}
+			if = {
+				limit = {
+					SPR = {
+						has_war = no
+						is_ai = yes
+						not = {
+							has_idea = KOR_neutrality_start
+						}
+						has_government = fascism
+					}
+				}
+				SPR = {
+					add_ideas = KOR_neutrality_start
+				}
+			}
+			if = {
+				limit = {
+					original_tag = POL
+					has_cosmetic_tag = POL_prov
+					has_war = no
+				}
+				POL = {
+					set_cosmetic_tag = POL
+				}
+			}
+			if = {
+				limit = {
+					original_tag = KOR
+					has_idea = extensive_conscription
+					has_country_flag = TLE_NMO_law_idea_flag
+					is_ai = yes
+					has_war_with = USA
+					NOT = {
+						has_country_flag = TLE_NMO_law_idea_flag_2
+					}
+				}
+				KOR = {
+					add_ideas = service_by_requirement
+					set_country_flag = TLE_NMO_law_idea_flag_2
+				}
+			}
+			if = {
+				limit = {
+					original_tag = KOR
+					has_completed_focus = KOR_NMO_law
+					is_ai = yes
+					has_idea = limited_conscription
+					NOT = {
+						has_country_flag = TLE_NMO_law_idea_flag
+					}
+				}
+				KOR = {
+					set_country_flag = TLE_NMO_law_idea_flag
+					add_ideas = extensive_conscription
+				}
+			}
+			if = {
+				limit = {
+					original_tag = JAP
+					has_war_with = KOR
+					JAP = {
+						is_ai = yes
+						NOT = {
+							has_idea = JAP_AI_WAR_BONUS_IDEA
+						}
+					}
+					KOR = {
+						is_ai = no
+					}
+					has_game_rule = {
+						rule = TLE_JAP_HARDCORE_RULE
+						option = TLE_JAP_HARDCORE_DEFAULT
+					}
+				}
+				JAP = {
+					add_ideas = JAP_AI_WAR_BONUS_IDEA
+				}
+			}
+			if = {
+				limit = {
+					original_tag = JAP
+					OR = {
+						NOT = {
+							has_war_with = KOR
+						}
+						is_ai = no
+					}
+					has_idea = JAP_AI_WAR_BONUS_IDEA
+				}
+				JAP = {
+					remove_ideas = JAP_AI_WAR_BONUS_IDEA
+				}
+			}
+			if = {
+				limit = {
+					original_tag = SOV
+					has_idea = SOV_none_attack_korea
+					date > 1942.1.1
+				}
+				remove_ideas = SOV_none_attack_korea
+			}
+			if = {
+				limit = {
+					original_tag = KOR
+					has_idea = KOR_none_attack_soviert
+					date > 1942.1.1
+				}
+				remove_ideas = KOR_none_attack_soviert
+				remove_ideas = SOV_none_attack_korea
+			}
+			if = {
+				limit = {
+					KOR = {
+						is_ai = yes
+						has_government = fascism 
+						has_war_with = ZLC
+						NOT = {
+							has_country_flag = TLE_ichigo_flag
+						}
+					}	
+					date > 1944.2.16
+				}
+				KOR = {
+					set_country_flag = TLE_ichigo_flag
+					add_timed_idea = {
+						idea = KOR_ichigo_plan
+						days = 180
+					}
+				}	
+			}	
+			if = {
+				limit = {
+					is_historical_focus_on = yes
+					ROM = {
+						has_government = fascism
+						is_in_faction_with = KOR
+					}
+					KOR = {
+						has_government = fascism
+						is_ai = yes
+					}
+					GER = {
+						is_puppet = no
+						has_government = fascism
+						is_faction_leader = yes
+					}
+				}
+				ROM = {
+					leave_faction = yes
+				}
+				GER = {
+					add_to_faction = ROM
+				}
+			}	
+			if = {
+				limit = {
+					original_tag = KYH
+					OR = {
+						is_puppet_of = KOR
+						is_puppet_of = EOK
+					}
+					has_cosmetic_tag = KYH_IND
+				}	
+				KYH = {
+					set_cosmetic_tag = KYH
+					add_ideas = KOR_the_country_of_korea
+				}
+			}
+			if = {
+				limit = {
+					original_tag = KKS
+					OR = {
+						is_puppet_of = KOR
+						is_puppet_of = EOK
+					}
+					has_cosmetic_tag = KKS_IND
+				}	
+				KKS = {
+					set_cosmetic_tag = KKS
+					add_ideas = KOR_the_country_of_korea
+				}
+			}
+			if = {
+				limit = {
+					original_tag = KHK
+					OR = {
+						is_puppet_of = KOR
+						is_puppet_of = EOK
+					}
+					has_cosmetic_tag = KHK_IND
+				}	
+				KHK = {
+					set_cosmetic_tag = KHK
+					add_ideas = KOR_the_country_of_korea
+				}
+			}
+			if = {
+				limit = {
+					original_tag = KMN
+					OR = {
+						is_puppet_of = KOR
+						is_puppet_of = EOK
+					}
+					has_cosmetic_tag = KMN_IND
+				}	
+				KMN = {
+					set_cosmetic_tag = KMN
+					add_ideas = KOR_the_country_of_korea
+				}
+			}
+			if = {
+				limit = {
+					525 = {
+						NOT = {
+							is_core_of = KOR
+						}
+					}
+				}
+				every_state = {
+					limit = {
+						NOT = {
+							is_core_of = KOR
+						}
+						OR = {
+							state = 525
+							state = 527
+							state = 1014
+							state = 1015
+							state = 1016
+							state = 1017
+							state = 1018
+							state = 1019
+							state = 1020
+							state = 1021
+							state = 1022
+							state = 1023
+							state = 1024
+							state = 1025
+							state = 1026
+						}
+					}
+					add_core_of = KOR
+				}
+			}
+			if = {
+				limit = {
+					if = {
+						limit = {
+							KOR = {
+								is_ai = no
+							}
+						}
+						KOR = {
+							has_country_flag = TLE_THE_WAR_IS_ENDED
+						}
+					}
+					if = {
+						limit = {
+							KOR = {
+								is_ai = yes
+							}
+						}
+						KOR = {
+							has_war_with = USA
+						}
+						date > 1942.3.1
+					}
+					USA = {
+						is_ai = yes
+						NOT = {
+							has_wargoal_against = GER
+							has_war_with = GER
+						}
+					}
+					GER = {
+						exists = yes
+						has_government = fascism
+						is_puppet = no
+						has_war = yes
+					}
+					NOT = {
+						has_global_flag = TLE_soviet_union_defeat
+						USA = {
+							has_country_flag = TLE_wargoal_ger_once
+						}
+					}
+				}	
+				USA = {
+					set_country_flag = TLE_wargoal_ger_once
+					declare_war_on = {
+						target = GER
+						type = annex_everything
+					}
+				}
+			}
+			if = {
+				limit = {
+					KOR = {
+						NOT = {
+							OR = {
+								has_country_flag = TLE_THE_WAR_IS_ENDED
+								has_country_flag = won_in_china
+							}	
+						}
+					}
+					JAP = {
+						has_war_with = KOR
+						#is_in_faction_with = ZLC
+						is_ai = yes
+					}
+					USA = {
+						has_war_with =  KOR
+						is_faction_leader = yes
+						is_ai = yes
+					}
+				}
+				USA = {
+					add_to_faction = JAP
+				}
+			}
+			if = {
+				limit = {
+					original_tag = USA
+					KOR = {
+						has_war = yes
+						NOT = {
+							has_country_flag = TLE_THE_WAR_IS_ENDED
+						}
+						OR = {
+							has_war_with = USA
+							has_country_flag = TLE_taepyong_war
+						}
+						if = {
+							limit = {
+								NOT = {
+									has_game_rule = {
+										rule = TLE_KOREA_HARDCORE_RULE
+										option = TLE_VERY_HARD
+									}
+								}
+							}
+							if = {
+								limit = {
+									date > 1945.12.31
+									has_country_flag = won_in_china
+								}
+								JAP = {
+									has_capitulated = no
+								}
+							}
+							if = {
+								limit = {
+									date < 1945.12.31
+								}
+								NOT = {
+									has_country_flag = won_in_china
+								}
+							}
+						}
+					}
+					if = {
+						limit = {
+							NOT = {
+								has_game_rule = {
+									rule = TLE_KOREA_HARDCORE_RULE
+									option = TLE_VERY_HARD
+								}
+							}
+						}
+						date > 1945.8.5
+						USA = {
+							is_ai = yes
+						}
+						USA = {
+							has_tech = nukes
+						}
+						USA = {
+							NOT = {
+								has_country_flag = FLAG_AUTO_NUKE_1
+							}
+						}
+					}
+					if = {
+						limit = {
+							has_game_rule = {
+								rule = TLE_KOREA_HARDCORE_RULE
+								option = TLE_VERY_HARD
+							}
+						}
+						USA = {
+							NOT = {
+								has_country_flag = FLAG_AUTO_NUKE_1
+							}
+						}
+						date > 1943.1.1
+					}
+				}
+				USA = {
+					set_country_flag = FLAG_AUTO_NUKE
+					set_country_flag = FLAG_AUTO_NUKE_1
+					country_event = {
+						id = korea.164
+					}
+				}
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = TLE_KOREA_HARDCORE_RULE
+							option = TLE_VERY_HARD
+						}
+					}
+					KOR = {
+						activate_decision = KOR_sue_for_peace_nuke
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_wargoal_against = KOR
+					KOR = {
+						has_country_flag = TLE_THE_WAR_IS_ENDED
+					}
+				}
+				every_country = {
+					limit = {
+						has_wargoal_against = KOR
+					}
+					remove_wargoal = {
+						type = all
+						target = KOR
+					}
+					remove_wargoal = {
+						type = annex_everything
+						target = KOR
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_wargoal_against = YUG
+					has_global_flag = TLE_germany_union_defeat
+				}
+				every_country = {
+					limit = {
+						has_wargoal_against = YUG
+					}
+					remove_wargoal = {
+						type = all
+						target = YUG
+					}
+					remove_wargoal = {
+						type = annex_everything
+						target = YUG
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = KOR
+					has_government = fascism
+					has_country_leader = {
+						character = KOR_yi_kang
+					}
+					NOT = {
+						has_country_flag = FLAG_YI_KANG_WAR_PORTRAIT
+					}
+					has_war = yes
+				}
+				set_portraits = {
+					character = KOR_yi_kang
+					civilian = { 
+						large ="GFX_yi_kang_war_portrait"
+					}
+				}
+				set_country_flag = FLAG_YI_KANG_WAR_PORTRAIT
+				if = {
+					limit = {
+						has_country_flag = FLAG_YI_KANG_PEACE_PORTRAIT
+					}
+					clr_country_flag = FLAG_YI_KANG_PEACE_PORTRAIT
+				}
+			}	
+			if = {
+				limit = {
+					tag = KOR
+					has_government = fascism
+					has_country_leader = {
+						character = KOR_yi_kang
+					}
+					NOT = {
+						has_country_flag = FLAG_YI_KANG_PEACE_PORTRAIT
+					}
+					has_war = no
+				}
+				set_portraits = {
+					character = KOR_yi_kang
+					civilian = { 
+						large ="GFX_yi_kang_peace_portrait"
+					}
+				}
+				set_country_flag = FLAG_YI_KANG_PEACE_PORTRAIT
+				if = {
+					limit = {
+						has_country_flag = FLAG_YI_KANG_WAR_PORTRAIT
+					}
+					clr_country_flag = FLAG_YI_KANG_WAR_PORTRAIT
+				}
+			}
+			if = {
+				limit = {
+					original_tag = KOR
+					is_puppet = no
+					has_completed_focus = KOR_plan_manchu
+					has_completed_focus = KOR_all_claim
+					NOT = {
+						has_completed_focus = kor_tsushima
+						has_country_flag = FLAG_ATTACK_CHINA_FOCUS_KOR
+					}
+					date > 1937.9.1
+					is_ai = no
+				}
+				KOR = {
+					set_country_flag = FLAG_ATTACK_CHINA_FOCUS_KOR
+					country_event = {
+						id = korea.113
+					}
+				}
+			}	
+			if = {
+				limit = {
+					original_tag = KOR
+					is_puppet = no
+					has_completed_focus = KOR_kyushu_colonism_up
+					#has_completed_focus = KOR_attack_taiwan
+					NOT = {
+						has_country_flag = FLAG_ATTACK_JAPAN_DEC_KOR
+					}
+					date > 1941.6.25
+					is_ai = no
+				}
+				KOR = {
+					set_country_flag = FLAG_ATTACK_JAPAN_DEC_KOR
+					country_event = {
+						id = korea.183
+					}
+				}
+			}	
+			if = {
+				limit = {
+					KOR = {
+						OR = {
+							has_completed_focus = KOR_use_the_anti-armed
+							has_completed_focus = KOR_power_up_to_imperial
+							has_completed_focus = KSC_death_of_kangmyong
+						}
+						NOT = {
+							has_country_flag = TLE_KPL_ATTACK_ONE
+						}
+					}
+					KPL = {
+						exists = yes
+					}
+				}
+				KOR = {
+					set_country_flag = TLE_KPL_ATTACK_ONE
+				}
+				every_country = {
+					limit = {
+						owns_state = 613
+					}
+					annex_country = {
+						target = KPL
+						transfer_troops = no
+					}
+				}
+			}	
+			if = {
+				limit = {
+					original_tag = ITA
+					2 = {
+						is_controlled_by = ITA
+						is_capital = no
+					}
+				}
+				ITA = {
+					set_capital = { state = 2 }
+				}
+			}
+			if = {
+				limit = {
+					YUG = {
+						is_puppet_of = SOV
+						NOT = {
+							owns_state = 803
+							owns_state = 106
+						}
+						is_ai = yes
+					}
+					SOV = {
+						is_ai = yes
+					}
+					is_historical_focus_on = yes
+				}
+				YUG = {
+					transfer_state = 803
+					transfer_state = 106
+					transfer_state = 802
+					transfer_state = 105
+					transfer_state = 981
+					transfer_state = 804
+					transfer_state = 104
+					transfer_state = 109
+					transfer_state = 764
+					transfer_state = 45
+					transfer_state = 103
+					transfer_state = 163
+					transfer_state = 853
+					transfer_state = 102
+					transfer_state = 736
+					transfer_state = 852
+					transfer_state = 983
+					end_puppet = SOV
+					leave_faction = yes
+				}
+			}
+			if = {
+				limit = {
+					original_tag = KOR
+					525 = {
+						is_controlled_by = KOR
+						is_capital = no
+					}
+				}
+				KOR = {
+					set_capital = { state = 525 }
+				}
+			}
+			if = {
+				limit = {
+					ZLC = {
+						has_idea = CHI_AI_WAR_BONUS_IDEA
+					}
+					CHI = {
+						has_idea = CHI_AI_WAR_BONUS_IDEA
+					}
+					KOR = {
+						OR = {
+							AND = {
+								NOT = {
+									controls_state = 1057
+									controls_state = 1048
+								}
+								if = {
+									limit = {
+										KOR = {
+											is_ai = no
+										}
+									}
+									NOT = {
+										controls_state = 613
+										controls_state = 608
+										controls_state = 716
+									}
+								}
+								NOT = {
+									has_game_rule = {
+										rule = TLE_KOREA_HARDCORE_RULE
+										option = TLE_VERY_HARD
+									}
+								}
+							}
+							has_country_flag = TLE_KOR_WIN_IN_CHINA_FUCKYEAH
+						}
+					} 
+				}	
+				ZLC = {
+					remove_ideas = CHI_AI_WAR_BONUS_IDEA
+				}
+				CHI = {
+					remove_ideas = CHI_AI_WAR_BONUS_IDEA
+				}
+			}
+			if = {
+				limit = {
+					KOR = {
+						OR = {
+							is_ai = yes
+							is_ai = no
+						}	
+					}
+					OR = {
+						KOR = {
+							controls_state = 608
+						}
+						WZC = {
+							is_puppet_of = KOR
+							controls_state = 608
+						}
+					}
+					OR = {
+						KOR = {
+							controls_state = 613
+						}
+						WZC = {
+							is_puppet_of = KOR
+							controls_state = 613
+						}
+					}
+					OR = {
+						KOR = {
+							controls_state = 1048
+						}
+						WZC = {
+							is_puppet_of = KOR
+							controls_state = 1048
+						}
+					}
+				}	
+				if = {
+					limit = {
+						ZLC = {
+							is_ai = yes
+						}	
+					}
+					ZLC = {
+						add_ideas = CHI_AI_WAR_BONUS_IDEA
+					}	
+				}
+				if = {
+					limit = {
+						CHI = {
+							is_ai = yes
+						}	
+					}
+					CHI = {
+						add_ideas = CHI_AI_WAR_BONUS_IDEA
+					}	
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						original_tag = ZLC
+						original_tag = CHI
+					}
+					KOR = {
+						has_government = fascism
+						controls_state = 605
+					}
+					OR = {
+						ZLC = {
+							has_country_flag = FLAG_CHONGQING_COLLAPSED
+							surrender_progress < 0.03
+							owns_state = 605
+						}	
+						CHI = {
+							has_country_flag = FLAG_CHONGQING_COLLAPSED
+							surrender_progress < 0.03
+							owns_state = 605
+						}	
+					}
+					NOT = {
+						has_country_flag = FLAG_CHON_WAR_END
+					}
+				}	
+				every_country = {
+					limit = {
+						has_country_flag = FLAG_CHONGQING_COLLAPSED
+						owns_state = 605
+						has_war_with = KOR
+						surrender_progress < 0.03
+					}
+					country_event = {
+						id = korea.103
+					}
+				}
+				set_country_flag = FLAG_CHON_WAR_END
+			}	
+			if = {
+				limit = {
+					KOR = {
+						has_government = fascism
+						has_war_with = USA
+						NOT = {
+							has_idea = KOR_embargo_us
+							has_idea = KOR_embargo_us_a
+							has_idea = KOR_embargo_us_b
+							has_idea = KOR_embargo_us_c
+							has_idea = KOR_embargo_us_d
+						}
+					}
+				}
+				if = {
+					limit = {
+						KOR = {
+							NOT = {
+								has_country_flag = FLAG_PURGE_KOREAN_WAR_SUPPORT
+								has_country_flag = FLAG_DEC_CLEAR_EMBARGO
+								has_country_flag = won_in_china
+								has_country_flag = FLAG_THE_RULING_CHINA
+							}
+						}
+					}
+					KOR = {
+						set_country_flag = FLAG_PURGE_KOREAN_WAR_SUPPORT
+						country_event = {
+							days = 7
+							id = korea.112
+						}
+					}
+				}
+			}
+			if= {
+				limit = {
+					KOR = {
+						NOT = {
+							has_country_flag = TLE_THE_WAR_IS_ENDED
+						}
+					}
+					has_completed_focus = KOR_last_say_of_russia
+					NOT = {
+						330 = {
+							is_core_of = KOR
+						}
+					}
+				}
+				KOR = {
+					add_state_core = 612
+					add_state_core = 611
+					add_state_core = 621	
+					add_state_core = 329
+					add_state_core = 330	
+				}
+			}
+			if = {
+				limit = {
+					tag = PRC
+					NOT = {
+						has_country_flag = FLAG_CHINA_UNITED_FRONT_PRC
+					}
+					ZLC = {
+						has_war_with = KOR
+					}
+					NOT = {
+						has_war_with = SHX
+					}
+				}
+				ZLC = {
+					add_to_faction = PRC
+				}
+				PRC = {
+					set_country_flag = FLAG_CHINA_UNITED_FRONT_PRC
+				}
+			}
+			if = {
+				limit = {
+					tag = SHX
+					NOT = {
+						has_country_flag = FLAG_CHINA_UNITED_FRONT_SHX
+					}
+					ZLC = {
+						has_war_with = KOR
+					}
+					NOT = {
+						has_war_with = PRC
+					}
+				}
+				ZLC = {
+					add_to_faction = SHX
+				}
+				SHX = {
+					set_country_flag = FLAG_CHINA_UNITED_FRONT_SHX
+				}
+			}
+			if = {
+				limit = {
+					original_tag = KMN
+					OR = {
+						has_cosmetic_tag = KMN_REP
+						has_cosmetic_tag = KMN_GHQ
+						has_cosmetic_tag = MAN_GHQ
+					}
+					has_idea = KOR_yi_jin
+				}
+				remove_ideas = KOR_yi_jin
+			}
+			if = {
+				limit = {
+					original_tag = KMN
+					OR = {
+						has_cosmetic_tag = KMN_REP
+						has_cosmetic_tag = KMN_GHQ
+						has_cosmetic_tag = MAN_GHQ
+					}
+					has_idea = KOR_the_country_of_korea
+				}
+				remove_ideas = KOR_the_country_of_korea
+			}
+			if = {
+				limit = {
+					original_tag = JAP
+					has_war_with = KOR
+					is_ai = yes
+					has_idea = JAP_pre_modern_army
+				}
+				remove_ideas = JAP_pre_modern_army
+			}
+			if = {
+				limit = {
+					original_tag = JAP
+					has_war_with = KOR
+					has_war_with = FJP
+					is_ai = yes
+					FJP = {
+						exists = yes
+					}
+				}
+				JAP = {
+					annex_country = {
+						target = FJP
+						transfer_troops = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_chinese_clique = yes
+					has_war_with = KOR
+					is_ai = yes
+					KOR = {
+						is_ai = no
+					}
+					NOT = {
+						has_idea = CHI_fight_with_korea_ai
+					}
+				}
+				add_ideas = CHI_fight_with_korea_ai
+			}
+			if = {
+				limit = {
+					is_chinese_clique = yes
+					OR = {
+						NOT = { has_war_with = KOR }
+						KOR = {
+							is_ai = yes
+						}
+						is_ai = no
+					}
+					has_idea = CHI_fight_with_korea_ai
+				}
+				remove_ideas = CHI_fight_with_korea_ai
+			}
+			if = {
+				limit = {
+					is_chinese_clique = yes
+					NOT = { has_war_with = KOR }
+					has_idea = CHI_fight_with_korea
+				}
+				remove_ideas = CHI_fight_with_korea
+			}
+			if = {
+				limit = {
+					is_chinese_clique = yes
+					NOT = { has_war_with = KOR }
+					has_idea = CHI_chinese_unity_1
+				}
+				remove_ideas = CHI_chinese_unity_1
+			}
+			if = {
+				limit = {
+					is_chinese_clique = yes
+					NOT = { has_war_with = KOR }
+					has_idea = CHI_chinese_unity_2
+				}
+				remove_ideas = CHI_chinese_unity_2
+			}
+			if = {
+				limit = {
+					is_chinese_clique = yes
+					NOT = { has_war_with = KOR }
+					has_idea = CHI_chinese_unity_3
+				}
+				remove_ideas = CHI_chinese_unity_3
+			}
+			if = {
+				limit = {
+					has_idea = KOR_neutrality_start
+					OR = {
+						has_war = yes
+						is_ai = no
+					}
+				}
+				remove_ideas = KOR_neutrality_start
+			}
+			if = {
+				limit = {
+					date > 1937.3.4
+					original_tag = KOR
+					has_government = fascism
+					NOT = {
+						has_country_flag = FLAG_LEE_BYUNG_MU_DEAD
+					}
+				}	
+				KOR = {
+					set_country_flag = FLAG_LEE_BYUNG_MU_DEAD
+					country_event = {
+						id = korea.8
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_idea = CHI_embargo_korea
+					NOT = {
+						has_war_with = KOR
+					}
+				}
+				remove_ideas = CHI_embargo_korea
+			}
+			if = {
+				limit = {
+					NBJ = {
+						is_puppet_of = JAP
+						exists = yes
+					}
+				}
+				JAP = {
+					annex_country = {
+						target = NBJ
+						transfer_troops = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					SDJ = {
+						is_puppet_of = JAP
+						exists = yes
+					}
+				}
+				JAP = {
+					annex_country = {
+						target = SDJ
+						transfer_troops = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					TBJ = {
+						is_puppet_of = JAP
+						exists = yes
+					}
+				}
+				JAP = {
+					annex_country = {
+						target = TBJ
+						transfer_troops = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					GJJ = {
+						is_puppet_of = JAP
+						exists = yes
+					}
+				}
+				JAP = {
+					annex_country = {
+						target = GGJ
+						transfer_troops = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						tag = CHI
+						tag = PRC
+						tag = GXC
+						tag = YUN
+						tag = SHX
+						tag = XSM
+						tag = SIK
+						tag = WZC
+						tag = SND
+						tag = AHC
+						tag = AQC
+						tag = HNC
+						tag = ZLC
+					}
+					has_war_with = KOR
+					NOT = {
+						has_idea = CHI_fight_with_korea
+					}	
+				}
+				add_ideas = CHI_fight_with_korea
+			}
+			if = {
+				limit = {
+					KOR = {
+						has_country_flag = TLE_THE_WAR_IS_ENDED
+					}
+					KYH = {
+						exists = yes
+						NOT = {
+							has_war_with = SOV
+						}	
+					}
+				}
+				SOV = {
+					transfer_state = 409
+					transfer_state = 408
+				}
+			}
+			if = {
+				limit = {
+					date > 1938.1.1
+					has_idea = CHI_era_of_chinese_warlords_1
+				}
+				swap_ideas = {
+					add_idea = CHI_era_of_chinese_warlords_2
+					remove_idea = CHI_era_of_chinese_warlords_1
+				}
+			}
+			if = {
+				limit = {
+					date > 1941.1.1
+					has_idea = CHI_era_of_chinese_warlords_2
+				}
+				swap_ideas = {
+					add_idea = CHI_era_of_chinese_warlords_3
+					remove_idea = CHI_era_of_chinese_warlords_2
+				}
+			}
+			if = {
+				limit = {
+					date > 1943.1.1
+					has_idea = CHI_era_of_chinese_warlords_3
+				}
+				remove_ideas = CHI_era_of_chinese_warlords_3
+			}
+			if = {
+				limit = {
+					OR = {
+						original_tag = CHI
+						original_tag = ZLC
+						original_tag = WZC
+						original_tag = SND
+						original_tag = HNC
+						original_tag = XSM
+						original_tag = SHX
+						original_tag = PRC
+						original_tag = SZC
+						original_tag = YUN
+						original_tag = GXC
+						original_tag = AHC
+						original_tag = AQC
+						original_tag = SIK
+						original_tag = SCC
+						original_tag = XKC
+					}
+					NOT = {
+						has_country_flag = FLAG_CHINA_WARLORDS_FUCKING_IDEAS
+					}
+					
+				}	
+				add_ideas = CHI_era_of_chinese_warlords_1
+				set_country_flag = FLAG_CHINA_WARLORDS_FUCKING_IDEAS
+			}
+			if = {
+				limit = {
+					original_tag = CHI
+					owns_state = 613
+					owns_state = 608
+					NOT = {
+						has_country_flag = FLAG_CHI_COSMETIC_CHINA
+					}
+				}
+				CHI = {
+					set_country_flag = FLAG_CHI_COSMETIC_CHINA
+					save_global_event_target_as = WTT_current_china_leader
+				}
+				ZLC = {
+					clear_global_event_targets = yes
+				}
+			}
+			if = {
+				limit = {
+					original_tag = ZLC
+					owns_state = 613
+					owns_state = 608
+					owns_state = 1046
+					NOT = {
+						has_country_flag = FLAG_CHI_COSMETIC_CHINA
+					}
+				}
+				ZLC = {
+					set_cosmetic_tag = ZLC
+					set_country_flag = FLAG_CHI_COSMETIC_CHINA
+					annex_country = {
+						target = SZC
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = SHX
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = XSM
+						transfer_troops = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					original_tag = CHI
+					controls_state = 613
+					NOT = {
+						has_country_flag = FLAG_CHI_COSMETIC_NANKING
+					}
+				}
+				CHI = {
+					set_cosmetic_tag = CHI_nanking
+					set_country_flag = FLAG_CHI_COSMETIC_NANKING
+					transfer_state = 600
+					#transfer_state = 595
+					transfer_state = 596
+					transfer_state = 749
+					transfer_state = 613
+					transfer_state = 1043
+					transfer_state = 1044
+					transfer_state = 1041
+					transfer_state = 1042
+					transfer_state = 1037
+					transfer_state = 1038
+				}
+			}
+			if = {
+				limit = {
+					original_tag = KOR
+					has_idea = KOR_Weakening_the_kingship
+					NOT = {
+						has_completed_focus = kor_korean_lebensraum
+					}
+					NOT = {
+						has_government = neutrality
+					}		
+					neutrality > 0.4
+				}
+				country_event = {
+					id = korea.38
+					days = 25
+				}
+			}
+			if = {
+				limit = {
+					KPL = {
+						exists = no
+					}
+					1036 = {
+						is_core_of = KPL
+					}
+				}
+				KPL = {
+					remove_state_core = 1036
+				}
+			}
+			if = {
+				limit = {
+					KPL = {
+						exists = yes
+					}
+					1036 = {
+						is_owned_by = KPL
+					}
+				}
+				KPL = {
+					add_state_core = 1036
+				}
+			}
+			if = {
+				limit = {
+					original_tag = CHI
+					CHI = {
+						OR = {
+							has_war_with = GXC
+							if = {
+								limit = {
+									WZC = {
+										NOT = {
+											is_puppet_of = KOR
+										}
+									}
+								}
+								has_war_with = WZC
+							}
+							if = {
+								limit = {
+									AHC = {
+										exists = yes
+									}
+								}	
+								has_war_with = AHC
+							}
+						}
+					}
+					is_ai = yes
+				}
+				add_ideas = CHI_attack_with_clique_1
+			}
+			if = {
+				limit = {
+					original_tag = CHI
+					CHI = {
+						NOT = {
+							has_war_with = WZC
+							has_war_with = AHC
+							has_war_with = GXC
+						}
+					}
+				}
+				remove_ideas = CHI_attack_with_clique_1
+			}
+			if = {
+				limit = {
+					original_tag = CHI
+					CHI = {
+						has_war_with = ZLC
+					}
+					is_ai = yes
+				}
+				add_ideas = CHI_attack_with_clique_2
+			}
+			if = {
+				limit = {
+					original_tag = CHI
+					CHI = {
+						NOT = {
+							has_war_with = ZLC
+						}
+					}
+				}
+				remove_ideas = CHI_attack_with_clique_2
+			}
+			if = {
+				limit = {
+					tag = KOR
+					has_war_support > 0.85
+					is_independent_china_or_warlord = yes
+					has_idea = KOR_not_go_outside_2
+				}
+				remove_ideas = KOR_not_go_outside_2
+				
+			}
+			if = {
+				limit = {
+					tag = KOR
+					OR = {
+						has_government = fascism
+						has_government = neutrality
+						has_government = communism
+					}
+					has_idea = KOR_failed_civilian_control_of_the_military
+				}
+				remove_ideas = KOR_failed_civilian_control_of_the_military
+			}
+			if = {
+				limit = {
+					tag = KOR
+					has_government = democratic
+					has_idea = KOR_militarism
+					NOT = {
+						has_idea = KOR_failed_civilian_control_of_the_military
+					}
+				}
+				add_ideas = KOR_failed_civilian_control_of_the_military
+			}
+			if = {
+				limit = {
+					tag = KOR
+					has_government = democratic
+					NOT = {
+						has_idea = KOR_militarism
+					}
+					has_idea = KOR_failed_civilian_control_of_the_military
+				}
+				remove_ideas = KOR_failed_civilian_control_of_the_military
+			}
+			if = {
+				limit = {
+					is_chinese_clique = yes
+					NOT = {
+						original_tag = ZLC
+						original_tag = CHI
+					}
+					OR = {
+						NOT = {
+							has_war_with = KOR
+						}
+						KOR = {
+							AND = {
+								is_ai = yes
+								has_war_with = USA
+							}
+						}
+					}
+				}
+				remove_ideas = CHI_fight_with_korea
+			}	
+			if = {
+				limit = {
+					is_chinese_clique = yes
+					NOT = {
+						has_war_with = KOR
+					}
+					KOR = {
+						has_country_flag = TLE_THE_WAR_IS_ENDED
+					}
+					ZLC = {
+						NOT = {
+							has_country_flag = TLE_FIRE_ONCE_DISMANTLE_FAC
+						}
+					}
+				}
+				ZLC = {
+					set_country_flag = TLE_FIRE_ONCE_DISMANTLE_FAC
+					dismantle_faction = yes
+				}
+				CHI = {
+					annex_country = {
+						target = CHI
+						transfer_troops = yes
+					}	
+					annex_country = {
+						target = YUN
+						transfer_troops = yes
+					}	
+					annex_country = {
+						target = HNC
+						transfer_troops = yes
+					}	
+				}
+				every_country = {
+					limit = {
+						is_chinese_clique = yes
+					}
+					leave_faction = yes
+					dismantle_faction = yes
+					remove_ideas = TLE_afterwar_idea
+				}
+				SZC = {
+					dismantle_faction = yes
+					leave_faction = yes
+				}
+			}	
+			if = {
+				limit = {
+					original_tag = USA
+					is_historical_focus_on = yes
+					USA = {
+						is_faction_leader = yes
+						NOT = {
+							is_in_faction_with = ENG
+						}	
+						OR = {
+							has_war_with = KOR
+							KOR = {
+								has_country_flag = TLE_THE_WAR_IS_ENDED
+							}	
+						}
+					}
+					OR = {
+						ENG = {
+							has_war_with = KOR
+						}
+						AND = {
+							GER = {	
+								exists = no
+							}	
+							DDR = {
+								exists = yes
+							}
+							WGR = {
+								exists = yes
+							}
+						}
+						GER = {
+							has_cosmetic_tag = GER_TLE_ggr
+						}
+					}
+				}
+				every_country = {
+					limit = {
+						is_in_faction_with = USA
+					}	
+					leave_faction = yes
+					ENG = {
+						add_to_faction = ROOT
+					}
+				}
+				USA = {
+					dismantle_faction = yes
+				}
+				ENG = {
+					add_to_faction = USA
+					add_to_faction = JAP
+				}
+					if = {
+						limit = {
+							KMN = {
+								has_cosmetic_tag = KMN_REP
+							}
+						}
+						ENG = {
+						add_to_faction = KMN
+						}
+					}
+			}	
+			
+			if = {
+				limit = {
+						KOR = {	
+							AND = {
+								has_war_with = USA
+								OR = {
+									has_idea = KOR_embargo_us
+									has_idea = KOR_embargo_us_a
+									has_idea = KOR_embargo_us_b
+									has_idea = KOR_embargo_us_c
+									has_idea = KOR_embargo_us_d
+								}
+								is_ai = yes
+							}
+						}
+				}
+				KOR = {
+					remove_ideas = KOR_embargo_us
+					remove_ideas = KOR_embargo_us_a
+					remove_ideas = KOR_embargo_us_b
+					remove_ideas = KOR_embargo_us_c
+					remove_ideas = KOR_embargo_us_d
+				}
+			}
+			if = {
+				limit = {
+					KOR = {
+						NOT = {
+							has_war_with = USA
+						}
+						has_idea = KOR_embargo_us_3
+					}
+				}
+				remove_ideas = KOR_embargo_us_3
+			}
+			if = {
+				limit = {
+					ZLC = {
+						NOT = {
+							has_war_with = KOR
+						}
+					}	
+					CHI = {
+						NOT = {
+							has_war_with = KOR
+						}
+					}	
+					KOR = {
+						has_completed_focus = kor_tsushima
+						OR = {
+							has_idea = KOR_embargo_us
+							has_idea = KOR_embargo_us_a
+							has_idea = KOR_embargo_us_b
+							has_idea = KOR_embargo_us_c
+							has_idea = KOR_embargo_us_d
+						}
+						has_war_with = USA
+					}
+				}	
+				KOR = {
+					country_event = {
+						id = korea.43
+					}
+				}
+			}		
+			if = {
+				limit = {
+					original_tag = KOR
+					has_wargoal_against = USA
+					has_idea = KOR_militarism
+					has_country_flag = KOR_PANAI_PROBLEM
+					NOT = {
+						has_country_flag = FLAG_SAY_SORRY_TO_USA
+					}
+					NOT = {
+						has_country_flag = KOR_WAR_WITH_USA
+					}
+				}
+				country_event = {
+					id = korea.37
+					days = 15
+				}
+				KOR = {
+					set_country_flag = KOR_WAR_WITH_USA
+				}
+			}
+		}
+	}
+	on_nuke_drop = {
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						state = 64
+						is_core_of = GER
+						is_owned_by = GER
+					}
+					GER = {
+						has_war_with = ENG
+						has_war_with = SOV
+						has_government = fascism
+						has_completed_focus = GER_rhineland
+					}
+					is_historical_focus_on = yes
+					NOT = {
+						has_global_flag = TLE_germany_union_defeat
+						has_global_flag = TLE_soviet_union_defeat
+					}	
+					date > 1945.1.1
+				}
+				SOV = {
+					news_event = {
+						id = eok_news.18
+						days = 2
+					}	
+				}
+				if = {
+					limit = {
+						ENG = {
+							has_war_with = SOV
+						}
+					}
+					every_country = {
+						limit = {
+							has_war_with = SOV
+							NOT = {
+								original_tag = KOR
+							}
+						}
+						white_peace = SOV
+					}
+				}	
+				set_global_flag = TLE_germany_union_defeat
+				TLE_german_defeat_effect = yes
+			}
+		}
+	}
+}

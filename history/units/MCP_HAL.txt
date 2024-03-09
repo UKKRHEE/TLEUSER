@@ -1,0 +1,69 @@
+﻿#편제
+division_template = {
+	name = "Chunghee Army"
+	division_names_group = KOR_INF_01
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 2 y = 0 }
+	}
+	support = {
+	}
+}
+
+units = {
+#국내군
+	#특수 사단
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4086
+		division_template = "Chunghee Army"
+		start_experience_factor = 1
+		start_equipment_factor = 0.6
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12060
+		division_template = "Chunghee Army"
+		start_experience_factor = 1
+		start_equipment_factor = 0.6
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1054
+		division_template = "Chunghee Army"
+		start_experience_factor = 1
+		start_equipment_factor = 0.6
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12089
+		division_template = "Chunghee Army"
+		start_experience_factor = 1
+		start_equipment_factor = 0.6
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7121
+		division_template = "Chunghee Army"
+		start_experience_factor = 1
+		start_equipment_factor = 0.6
+	}
+}
+

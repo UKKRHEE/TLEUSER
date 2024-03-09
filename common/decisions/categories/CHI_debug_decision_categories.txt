@@ -1,0 +1,14 @@
+CHI_debug_category = {
+	icon = generic_independence
+
+
+	allowed = {
+		original_tag = CHI
+	}
+	visible = {
+		is_debug = yes
+		is_ai = no
+	}
+	priority = 9997
+}
+

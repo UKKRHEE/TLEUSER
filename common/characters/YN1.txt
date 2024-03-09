@@ -1,0 +1,28 @@
+characters={
+	YN1_Alexander_Sirotkin={
+		name="YN1_Alexander_Sirotkin"
+		portraits={
+			civilian={
+				large="gfx/leaders/SV1/Alexander_Sirotkin.dds"
+			}
+		}
+		country_leader={
+			ideology=marxism
+			traits={ }
+			id=-1
+		}
+	}
+	YN1_Vasily_Stalin={
+		name="YN1_Vasily_Stalin"
+		portraits={
+			civilian={
+				large="gfx/leaders/SV1/Vasily_Stalin_CIV.dds"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			id=-1
+		}
+	}
+}

@@ -1,0 +1,42 @@
+
+music = {
+	name = "idol"
+	file = "oshinoko/idol.ogg"
+}
+music = {
+	name = "mephisto"
+	file = "oshinoko/mephisto.ogg"
+}
+music = {
+	name = "star_t_rain"
+	file = "oshinoko/star_t_rain.ogg"
+}
+music = {
+	name = "hearts_kiss"
+	file = "oshinoko/hearts_kiss.ogg"
+}
+music = {
+	name = "sine_wa_b"
+	file = "oshinoko/sine_wa_b.ogg"
+}
+music = {
+	name = "full_moon"
+	file = "oshinoko/full_moon.ogg"
+}
+music = {
+	name = "pimang_daisuki"
+	file = "oshinoko/pimang_daisuki.ogg"
+}
+music = {
+	name = "star_t_rain_new"
+	file = "oshinoko/star_t_rain_new.ogg"
+}
+
+music = {
+	name = "sine_wa_b_new"
+	file = "oshinoko/sine_wa_b_new.ogg"
+}
+music = {
+	name = "hearts_kiss_new"
+	file = "oshinoko/hearts_kiss_new.ogg"
+}

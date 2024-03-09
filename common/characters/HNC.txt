@@ -1,0 +1,29 @@
+characters={
+	CHI_zhao_hengti={
+		name="CHI_zhao_hengti"
+		portraits={
+			civilian={
+				large="gfx/leaders/HNC/Portrait_Hunan_Zhao_Hengti_Civilian.png"
+			}
+			army = {
+				large="gfx/leaders/HNC/Portrait_Hunan_Zhao_Hengti_Civilian.png"
+				small="GFX_idea_CHI_zhao_hengti"
+			}
+		}
+		country_leader={
+			ideology=despotism
+		}
+		field_marshal={
+			traits = {
+				politically_connected
+				old_guard
+				artillery_officer
+			}
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+}

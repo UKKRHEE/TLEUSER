@@ -1,0 +1,516 @@
+﻿defined_text = {
+	name = GetLoserAllies
+	text = {
+		trigger = {
+			has_global_flag = losing_country_multiple
+		}
+		localization_key = TNO_PEACE_POPUP_COUNTRY_PLURAL
+	}
+	text = {
+		localization_key = TNO_PEACE_POPUP_COUNTRY_SINGULAR
+	}
+}
+
+defined_text = {
+	name = GetWinnerAllies
+	text = {
+		trigger = {
+			has_global_flag = winning_country_multiple
+		}
+		localization_key = TNO_PEACE_POPUP_COUNTRY_PLURAL
+	}
+	text = {
+		localization_key = TNO_PEACE_POPUP_COUNTRY_SINGULAR
+	}
+}
+
+defined_text = {
+	name = GetLoserAlliesWithHas
+	text = {
+		trigger = {
+			has_global_flag = losing_country_multiple
+		}
+		localization_key = TNO_PEACE_POPUP_COUNTRY_PLURAL_HAS
+	}
+	text = {
+		localization_key = TNO_PEACE_POPUP_COUNTRY_SINGULAR_HAS
+	}
+}
+
+defined_text = {
+	name = GetWinnerAlliesWithHas
+	text = {
+		trigger = {
+			has_global_flag = winning_country_multiple
+		}
+		localization_key = TNO_PEACE_POPUP_COUNTRY_PLURAL_HAS
+	}
+	text = {
+		localization_key = TNO_PEACE_POPUP_COUNTRY_SINGULAR_HAS
+	}
+}
+
+#defined_text = {
+	#	name = GetLoserFactionLeader
+	#	text = {
+		#		trigger = {
+			#			OR = {
+				#				global_event_target:losing_country = {
+					#					is_faction_leader = yes
+					#				}
+				#				any_country = {
+					#					limit = {
+						#						is_in_faction_with = global_event_target:losing_country
+						#						is_faction_leader = yes
+						#					}
+					#					has_war_with = global_event_target:winning_country
+					#				}
+				#			}
+			#		}
+		#		localization_key = TNO_PEACE_POPUP_LOSER_FACTION_LEADER
+		#	}
+	#	text = {
+		#		localization_key = TNO_PEACE_POPUP_LOSER_NOT_FACTION_LEADER
+		#	}
+	#}
+#
+#defined_text = {
+	#	name = GetWinnerFactionLeader
+	#	text = {
+		#		trigger = {
+			#			OR = {
+				#				global_event_target:winning_country = {
+					#					is_faction_leader = yes
+					#				}
+				#				any_country = {
+					#					limit = {
+						#						is_in_faction_with = global_event_target:winning_country
+						#						is_faction_leader = yes
+						#					}
+					#					has_war_with = global_event_target:losing_country
+					#				}
+				#			}
+			#		}
+		#		localization_key = TNO_PEACE_POPUP_WINNER_FACTION_LEADER
+		#	}
+	#	text = {
+		#		localization_key = TNO_PEACE_POPUP_WINNER_NOT_FACTION_LEADER
+		#	}
+	#}
+
+defined_text = {
+	name = GetWarStatus
+	text = {
+		trigger = {
+			has_global_flag = war_won
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION
+	}
+	text = {
+		trigger = {
+			has_global_flag = war_continuing
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONTINUING
+	}
+}
+
+
+#### PUT YOUR VARIOUS CATEGORIES/TRIGGERS IN HERE ###
+
+# Refer to the winning country's tag like so "global_event_target:winning_country"
+# and the losing country's tag like so "global_event_target:losing_country"
+
+defined_text = {
+	name = GetWarConclusionLoc
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = JAP
+			}
+			event_target:losing_country = {
+				OR = {
+					original_tag = TBJ
+					original_tag = FJP
+					original_tag = GJJ
+					original_tag = NBJ
+					original_tag = SDJ
+				}
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_JAPAN_ISHIN
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = JAP
+			}
+			event_target:losing_country = {
+				original_tag = DKG
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_JAP_DKG
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = SOV
+			}
+			event_target:losing_country = {
+				original_tag = GER
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_USA_GER
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = GER
+			}
+			event_target:losing_country = {
+				original_tag = SOV
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_GER_SOV
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = GER
+			}
+			event_target:losing_country = {
+				original_tag = ENG
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_GER_ENG
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = KOR
+			}
+			event_target:losing_country = {
+				original_tag = JAP
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_KOR_JAP
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = USA
+			}
+			event_target:losing_country = {
+				original_tag = KOR
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_USA_KOR
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = KOR
+			}
+			event_target:losing_country = {
+				is_chinese_clique = yes
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_KOR_ZLC
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = MSR
+			}
+			event_target:losing_country = {
+				original_tag = MON
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_MSR_MON
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = ZLC
+			}
+			event_target:losing_country = {
+				original_tag = CHI
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_ZLC_CHI
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = CHI
+			}
+			event_target:losing_country = {
+				original_tag = ZLC
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_CHI_ZLC
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = KOR
+			}
+			event_target:losing_country = {
+				original_tag = USA
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_KOR_USA
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = GER
+			}
+			event_target:losing_country = {
+				original_tag = POL
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_GER_POL
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = GER
+			}
+			event_target:losing_country = {
+				original_tag = FRA
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_GER_FRA
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = GER
+			}
+			event_target:losing_country = {
+				original_tag = BEL
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_GER_BEL
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				OR = {
+					original_tag = CHI
+					original_tag = AHC
+				}
+			}
+			event_target:losing_country = {
+				original_tag = WZC
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_CHI_WZC
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = CHI
+			}
+			event_target:losing_country = {
+				original_tag = AHC
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_CHI_AHC
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				OR = {
+					original_tag = KOR
+					original_tag = MEN
+				}
+			}
+			event_target:losing_country = {
+				original_tag = MON
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_KOR_MON
+	}
+	text = {
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_DEFAULT
+	}
+}
+
+
+
+defined_text = {
+	name = GetWarContinuationLoc
+	# we should probably add some stuff for this
+	text = {
+		localization_key = TNO_PEACE_POPUP_WAR_CONTINUING_DEFAULT
+	}
+}
+
+
+defined_text = {
+	name = GetFlavor
+	text = {
+		trigger = {
+			event_target:losing_country = {
+				OR = {
+					original_tag = TBJ
+					original_tag = FJP
+					original_tag = GJJ
+					original_tag = NBJ
+					original_tag = SDJ
+					original_tag = DKG
+				}
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_FLAVOR_JAPAN_ISHIN
+	}
+	text = {
+		trigger = {
+			event_target:losing_country = {
+				original_tag = GER
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_FLAVOR_GERMAN_LOSE
+	}
+	text = {
+		trigger = {
+			event_target:losing_country = {
+				original_tag = USA
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_FLAVOR_USA_LOSE
+	}
+	text = {
+		trigger = {
+			event_target:losing_country = {
+				original_tag = KOR
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_FLAVOR_KOREA_LOSE
+	}
+	text = {
+		trigger = {
+			event_target:losing_country = {
+				original_tag = SOV
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_FLAVOR_SOVIET_LOSE
+	}
+	text = {
+		trigger = {
+			event_target:losing_country = {
+				original_tag = ENG
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_FLAVOR_BRITAIN_LOSE
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = KOR
+			}
+			event_target:losing_country = {
+				is_chinese_clique = yes
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_FLAVOR_CHINESE_WAR
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = KOR
+			}
+			event_target:losing_country = {
+				original_tag = JAP
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_FLAVOR_KOREAN_JAPANESE_WAR
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = MSR
+			}
+			event_target:losing_country = {
+				original_tag = MON
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_FLAVOR_MON_REVOLUTIONARY_WAR
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = GER
+			}
+			event_target:losing_country = {
+				original_tag = POL
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_FLAVOR_POLAND_WAR
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = GER
+			}
+			event_target:losing_country = {
+				original_tag = FRA
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_FLAVOR_FRANCE_WAR
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = GER
+			}
+			event_target:losing_country = {
+				original_tag = BEL
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_FLAVOR_ARDEN_WAR
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				OR = {
+					original_tag = AHC
+					original_tag = CHI
+				}
+			}
+			event_target:losing_country = {
+				original_tag = WZC
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_FLAVOR_JIANGDONG_WAR
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = CHI
+			}
+			event_target:losing_country = {
+				original_tag = AHC
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_FLAVOR_AHC_WAR
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				OR = {
+					original_tag = KOR
+					original_tag = MEN
+				}
+			}
+			event_target:losing_country = {
+				original_tag = MON
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_FLAVOR_MONGOLIAN_OUTER_WAR
+	}
+	text = {
+		localization_key = TNO_PEACE_POPUP_FLAVOR_DEFAULT
+	}
+}

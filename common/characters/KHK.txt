@@ -1,0 +1,43 @@
+characters={
+	KHK_yi_jegak = {
+		name="KHK_yi_jegak"
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/Portrait_KOR_yi_jegak.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+		}
+		country_leader={
+			ideology=fascism_ideology
+		}
+		country_leader={
+			ideology=liberalism
+		}
+		country_leader={
+			ideology=marxism
+		}
+	}
+	KHK_tominaga_kyoji = {
+		name="KHK_tominaga_kyoji"
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Portrait_JAP_kyoji_tominaga.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+		}
+		country_leader={
+			ideology=fascism_ideology
+		}
+		country_leader={
+			ideology=liberalism
+		}
+		country_leader={
+			ideology=marxism
+		}
+	}
+
+}

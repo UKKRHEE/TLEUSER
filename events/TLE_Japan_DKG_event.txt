@@ -1,0 +1,158 @@
+######### 참고로 내전 전 막부 이벤트는 TLE_JAPAN에 있음
+add_namespace = TLE_DKG_event
+
+country_event = { #막부의 운명
+	id = TLE_DKG_event.1
+	title = TLE_DKG_event.1.t
+	desc = TLE_DKG_event.1.d
+	picture = GFX
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {#유신에 맞서다
+		name = TLE_DKG_event.1.a
+		add_stability = 0.05
+		set_country_flag = JAPAN_civilwar_end_flag
+		custom_effect_tooltip = DKG_never_tt
+		hidden_effect = {
+			complete_national_focus = DKG_never
+		}
+	}
+	#option = {#무혈개성
+	#	name = TLE_DKG_event.1.b
+	#	custom_effect_tooltip = TOKUGAWA_END_TT
+	#	add_stability = -1.0
+	#	add_war_support = -1.0
+	#	JAP = {
+	#		annex_country = {
+	#			target = DKG
+	#			transfer_troops = yes
+	#		}
+	#	}
+	#}
+}
+country_event = { #막부가 교토 점령
+	id = TLE_DKG_event.2
+	title = TLE_DKG_event.2.t
+	desc = TLE_DKG_event.2.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = TLE_DKG_event.2.a
+		add_political_power = 50
+		add_stability = 0.05
+		custom_effect_tooltip = DKG_win_TT
+		set_province_name = {
+			id = 1182
+			name = "keijo"
+		set_capital = { state = 282 }
+		set_country_flag = DKG_marching_to_kyoto_flag
+	}
+}
+}
+country_event = { #레이토쿠 개혁 시작
+	id = TLE_DKG_event.3
+	title = TLE_DKG_event.3.t
+	desc = TLE_DKG_event.3.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = TLE_DKG_event.3.a
+		add_political_power = 15
+		add_stability = 0.05
+		custom_effect_tooltip = DKG_reitoku_event_TT
+	}
+}
+country_event = { # 막부 멸망하면 열번동맹으로 변경
+	id = TLE_DKG_event.4
+	title = TLE_DKG_event.4.t
+	desc = TLE_DKG_event.4.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = TLE_DKG_event.4.a
+		
+	}
+}
+country_event = { #시스템 튜토리얼
+	id = TLE_DKG_event.5
+	title = TLE_DKG_event.5.t
+	desc = TLE_DKG_event.5.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+	fire_only_once = no
+
+	option = {
+		name = TLE_DKG_event.5.a
+		
+	}
+}
+country_event = { #대표단 파견
+	id = TLE_DKG_event.6
+	title = TLE_DKG_event.6.t
+	desc = TLE_DKG_event.6.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+	fire_only_once = no
+
+	option = {
+		name = TLE_DKG_event.6.a
+		
+	}
+}
+country_event = { #경제안정화
+	id = TLE_DKG_event.7
+	title = TLE_DKG_event.7.t
+	desc = TLE_DKG_event.7.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+	fire_only_once = no
+
+	option = {
+		name = TLE_DKG_event.7.a
+		
+	}
+}
+country_event = { #오우에츠
+	id = TLE_DKG_event.8
+	title = TLE_DKG_event.8.t
+	desc = TLE_DKG_event.8.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+	fire_only_once = no
+
+	option = {
+		name = TLE_DKG_event.8.a
+		
+	}
+}
+country_event = { #진압 실패-관서
+	id = TLE_DKG_event.9
+	title = TLE_DKG_event.9.t
+	desc = TLE_DKG_event.9.d
+	picture = GFX
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = TLE_DKG_event.9.a
+		1070 = {
+				set_demilitarized_zone = yes
+			}
+	}
+}

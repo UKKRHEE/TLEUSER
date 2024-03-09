@@ -1,0 +1,213 @@
+ZLC_balance_of_power_categories = {
+	##### WUPEIFU #####
+	ZLC_wupeifu_line_dec = {
+		icon = GFX_TLE_korea_event_none
+		allowed = {
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ZLC_wupeifu_line_dec_tt
+				always = no
+			}
+		}
+		visible = {
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		fire_only_once = no
+		modifier = {
+		}
+		complete_effect = {
+        }
+    }
+	##### Wu Peifu Line #####
+	ZLC_congrass_supporting_wupeifu_line = {
+		icon = generic_political_address
+		allowed = {
+		}
+		available = {
+			#is_debug = yes
+			ZLC_bop_decision_trigger = yes
+		}
+		visible = {
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		fire_only_once = no
+		days_remove = 10
+		modifier = {
+		}
+		complete_effect = {
+        }
+		remove_effect = {
+			add_power_balance_value = {
+				id = ZLC_balance
+				value = 0.025
+			}
+		}
+    }
+	ZLC_meeting_the_shangren_wupeifu = {
+		icon = gre_investment_decisions
+		allowed = {
+		}
+		available = {
+			#is_debug = yes
+			ZLC_bop_decision_trigger = yes
+		}
+		visible = {
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		fire_only_once = no
+		days_remove = 15
+		modifier = {
+		}
+		complete_effect = {
+        }
+		remove_effect = {
+			add_power_balance_value = {
+				id = ZLC_balance
+				value = 0.05
+			}
+		}
+    }
+	ZLC_coring_army_wupeifu = {
+		icon = generic_reorganize_irregulars
+		allowed = {
+		}
+		available = {
+			#is_debug = yes
+			ZLC_bop_decision_trigger = yes
+		}
+		visible = {
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		fire_only_once = no
+		days_remove = 20
+		modifier = {
+		}
+		complete_effect = {
+        }
+		remove_effect = {
+			add_power_balance_value = {
+				id = ZLC_balance
+				value = 0.1
+			}
+		}
+    }
+	
+	##### CAOKUN #####
+	ZLC_caokun_line_dec = {
+		icon = GFX_TLE_korea_event_none
+		allowed = {
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ZLC_caokun_line_dec_tt
+				always = no
+			}
+		}
+		visible = {
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		fire_only_once = no
+		modifier = {
+		}
+		complete_effect = {
+        }
+    }
+	##### Cao Kun Line #####
+	ZLC_congrass_supporting_caokun_line = {
+		icon = generic_political_address
+		allowed = {
+		}
+		available = {
+			#is_debug = yes
+			ZLC_bop_decision_trigger = yes
+		}
+		visible = {
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		fire_only_once = no
+		days_remove = 10
+		modifier = {
+		}
+		complete_effect = {
+        }
+		remove_effect = {
+			add_power_balance_value = {
+				id = ZLC_balance
+				value = -0.025
+			}
+		}
+    }
+	ZLC_meeting_the_shangren_caokun = {
+		icon = gre_investment_decisions
+		allowed = {
+		}
+		available = {
+			#is_debug = yes
+			ZLC_bop_decision_trigger = yes
+		}
+		visible = {
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		fire_only_once = no
+		days_remove = 15
+		modifier = { 
+		}
+		complete_effect = {
+        }
+		remove_effect = {
+			add_power_balance_value = {
+				id = ZLC_balance
+				value = -0.05
+			}
+		}
+    }
+	ZLC_coring_army_caokun = {
+		icon = generic_reorganize_irregulars
+		allowed = {
+		}
+		available = {
+			#is_debug = yes
+			ZLC_bop_decision_trigger = yes
+		}
+		visible = {
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		fire_only_once = no
+		days_remove = 20
+		modifier = {
+		}
+		complete_effect = {
+        }
+		remove_effect = {
+			add_power_balance_value = {
+				id = ZLC_balance
+				value = -0.1
+			}
+		}
+    }
+}

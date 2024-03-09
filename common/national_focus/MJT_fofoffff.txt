@@ -1,0 +1,14 @@
+focus_tree = {
+	id = MJT_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = MJT
+			
+		}
+	}
+	continuous_focus_position = { x = 300 y = 1600 }
+	default = no
+	shared_focus = MJT_1
+}

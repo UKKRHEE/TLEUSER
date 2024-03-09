@@ -1,0 +1,43 @@
+
+state={
+	id=750
+	name="STATE_750"
+
+	history={
+		victory_points = {
+			12414 3 
+		}
+		victory_points = {
+			7201 1 
+		}
+		owner = HNC
+		add_core_of = HNC
+		add_core_of = CHI
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			air_base = 2
+
+		}
+		1939.1.1 = {
+			buildings = {
+				industrial_complex = 2
+				infrastructure = 6
+				air_base = 3
+				arms_factory = 1
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		4896 5030 7201 10757 12086 12414 
+	}
+	manpower=8000000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

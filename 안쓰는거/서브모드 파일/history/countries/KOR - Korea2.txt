@@ -1,0 +1,7 @@
+﻿recruit_character = KOR_INE
+recruit_character = KOR_JING
+recruit_character = KOR_LILPA
+recruit_character = KOR_JURURU
+recruit_character = KOR_GOSEGU
+recruit_character = KOR_VIichan
+recruit_character = KOR_Test

@@ -1,0 +1,5 @@
+﻿
+focus = {
+    current = "KMT_white_sun_of_china"
+    Progress = 10
+}   

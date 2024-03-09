@@ -1,0 +1,267 @@
+KOR_debug_category = { 
+	debug_load_halloween_kor_focus = {
+		visible = {
+			is_ai = no
+			is_debug = yes
+		}
+			complete_effect = {
+				load_focus_tree = {
+					tree = HALLOWEEN_EOK
+					keep_completed = no
+				}
+			}
+	}
+	
+	debug_CHI_defence_the_korea_add = {
+		#icon = generic_tank
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+			
+		}
+		complete_effect = {
+			608 = {
+				add_dynamic_modifier = { modifier = CHI_defence_the_korea }
+			}
+        }
+	}	
+	debug_CHI_defence_the_korea_remove = {
+		#icon = generic_tank
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+			
+		}
+		complete_effect = {
+			608 = {
+				remove_dynamic_modifier = { modifier = CHI_defence_the_korea }
+			}
+        }
+	}	
+	debug_event_korea_170 = {
+		#icon = generic_tank
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+			
+		}
+		complete_effect = {
+			country_event = {
+				id = korea.170
+			}
+        }
+	}	
+	debug_event_korea_10000 = {
+		#icon = generic_tank
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+			
+		}
+		complete_effect = {
+			country_event = {
+				id = korea.10000
+			}
+        }
+	}	
+	debug_event_korea_10001 = {
+		#icon = generic_tank
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+			
+		}
+		complete_effect = {
+			country_event = {
+				id = korea.10001
+			}
+        }
+	}	
+	debug_event_korea_10002 = {
+		#icon = generic_tank
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+			
+		}
+		complete_effect = {
+			country_event = {
+				id = korea.10002
+			}
+        }
+	}	
+	debug_event_korea_10003 = {
+		#icon = generic_tank
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+			
+		}
+		complete_effect = {
+			country_event = {
+				id = korea.10003
+			}
+        }
+	}	
+	debug_event_korea_10004 = {
+		#icon = generic_tank
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+			
+		}
+		complete_effect = {
+			country_event = {
+				id = korea.10004
+			}
+        }
+	}	
+	debug_event_korea_10005 = {
+		#icon = generic_tank
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+			
+		}
+		complete_effect = {
+			country_event = {
+				id = korea.10005
+			}
+        }
+	}	
+	debug_event_korea_10006 = {
+		#icon = generic_tank
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+			
+		}
+		complete_effect = {
+			country_event = {
+				id = korea.10006
+			}
+        }
+	}	
+	debug_event_korea_10007 = {
+		#icon = generic_tank
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+			
+		}
+		complete_effect = {
+			country_event = {
+				id = korea.10007
+			}
+        }
+	}	
+	debug_event_korea_10008 = {
+		#icon = generic_tank
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+			
+		}
+		complete_effect = {
+			country_event = {
+				id = korea.10008
+			}
+        }
+	}	
+	debug_event_korea_10009 = {
+		#icon = generic_tank
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+			
+		}
+		complete_effect = {
+			country_event = {
+				id = korea.10009
+			}
+        }
+	}	
+	debug_event_korea_10010 = {
+		#icon = generic_tank
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+			
+		}
+		complete_effect = {
+			country_event = {
+				id = korea.10010
+			}
+        }
+	}	
+	debug_event_korea_10011= {
+		#icon = generic_tank
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+			
+		}
+		complete_effect = {
+			country_event = {
+				id = korea.10011
+			}
+        }
+	}	
+	debug_event_korea_10012 = {
+		#icon = generic_tank
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+			
+		}
+		complete_effect = {
+			country_event = {
+				id = korea.10012
+			}
+        }
+	}	
+	debug_event_korea_10013 = {
+		#icon = generic_tank
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+			
+		}
+		complete_effect = {
+			country_event = {
+				id = korea.10013
+			}
+        }
+	}	
+	debug_event_korea_10014 = {
+		#icon = generic_tank
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+			
+		}
+		complete_effect = {
+			country_event = {
+				id = korea.10014
+			}
+        }
+	}	
+}

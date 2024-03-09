@@ -1,0 +1,110 @@
+focus_tree = {
+	id = korean_government
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			OR = {
+				tag = KKS
+				tag = KYH
+				tag = KMN
+				tag = KHK
+				tag = EOK
+				tag = WZC
+				tag = MHB
+				tag = KTA
+				tag = GZC
+				tag = GDC
+				tag = JNT
+				tag = XKC
+				tag = SCC
+				tag = CH1
+				tag = DK1
+				tag = DK2
+				tag = DK3
+				tag = MEN
+				tag = ZZZ
+				tag = MSR
+				tag = MON
+				tag = TAN
+				tag = PAR
+			}
+		}
+		modifier = {
+			add = 10
+			NOT = {
+				has_dlc = "Together for Victory"
+			}
+			OR = {
+				tag = CAN
+				tag = AST
+				tag = NZL
+				tag = RAJ
+			}
+		}
+		modifier = {
+			add = 10
+			NOT = {
+				has_dlc = "Death or Dishonor"
+			}
+			OR = {
+				tag = HUN
+				tag = ROM
+				tag = YUG
+				tag = CZE
+			}
+		}
+		modifier = {
+			add = 10
+			NOT = {
+				has_dlc = "Man the Guns"
+			}
+			OR = {
+				tag = HOL
+				tag = MEX
+			}
+		}
+		modifier = {
+			add = 10
+			NOT = {
+				has_dlc = "La Resistance"
+			}
+			OR = {
+				tag = POR
+				tag = SPR
+			}
+		}
+		modifier = {
+			add = 10
+			NOT = {
+				has_dlc = "Battle for the Bosporus"
+			}
+			OR = {
+				tag = TUR
+				tag = GRE
+				tag = BUL
+			}
+		}
+		modifier = {
+			add = 10
+			NOT = {
+				has_dlc = "No Step Back"
+			}
+			OR = {
+				tag = LIT
+				tag = LAT
+				tag = EST
+			}
+		}
+		modifier = {
+			add = 10
+			NOT = {
+				has_dlc = "By Blood Alone"
+			}
+			OR = {
+				tag = SWI
+				tag = ETH
+			}
+		}
+	}
+}	

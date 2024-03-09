@@ -1,0 +1,61 @@
+##USE SUPER_EVENT_MAKER_GUI IN USEFUL PYTHON PROGRAMS TO MAKE NEW SUPER EVENTS##
+scripted_gui = {
+	TNO_super_events = {
+		context_type = player_context
+		window_name = "TNO_SG_Super_Event"
+		dirty = TNO_super_event
+
+		visible = {
+			is_ai = no
+			has_variable = TNO_super_event
+			NOT = {
+				has_country_flag = TLE_CANT_SEE_SP_EVENT
+			}
+		}
+		triggers = {
+			underlay_visible = {
+				NOT = { has_global_flag = TNO_my_world_is_on_fire_how_about_yours }
+			}
+		}
+		properties = {
+			SE_image = { image = "[TNOGetSuperEventImage]" }
+		}
+		effects = {
+			SE_option_click = {
+				clear_variable = TNO_super_event
+			}
+		}
+	}
+
+	TNO_super_events_JAPAN_CW = {
+		context_type = player_context
+		window_name = "TNO_SG_Super_Event_JAPAN_CW"
+		dirty = TLE_super_event
+
+		visible = {
+			is_ai = no
+			has_variable = TLE_super_event
+			NOT = {
+				has_country_flag = TLE_CANT_SEE_SP_EVENT
+			}
+		}
+		triggers = {
+			underlay_visible = {
+				NOT = { has_global_flag = TNO_my_world_is_on_fire_how_about_yours }
+			}
+		}
+		properties = {
+			SE_image = { image = "[TLEGetSuperEventImage]" x=5 y=5 }
+			SE_image_2 = { image = "[TLEGetSuperEventImage2]" x=105 y=5 }
+			SE_image_3 = { image = "[TLEGetSuperEventImage3]" x=205	y=5 }
+			SE_image_4 = { image = "[TLEGetSuperEventImage4]" x=305	y=5 }
+			SE_image_5 = { image = "[TLEGetSuperEventImage5]" x=405	y=5 }
+			SE_image_6 = { image = "[TLEGetSuperEventImage6]" x=505	y=5 }
+		}
+		effects = {
+			SE_option_click = {
+				clear_variable = TLE_super_event
+			}
+		}
+	}
+}

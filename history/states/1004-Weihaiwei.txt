@@ -1,0 +1,25 @@
+state={
+	id=1004
+	name="STATE_WENDENG"
+	provinces={
+		10018 13386
+	}
+	history={
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = {
+			13386 3 
+		}
+		owner = ZLC
+		add_core_of = SND
+		add_core_of = ZLC
+		add_core_of = CHI
+		add_core_of = PRC
+
+	}
+	manpower=373563
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

@@ -1,0 +1,270 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_PB_Mega_City_Main"
+		texturefile = "gfx/interface/MegaCities/PB_Mega_City_Main.dds"
+		legacy_lazy_load = no
+	}
+
+    spriteType = {
+		name = "GFX_PB_Mega_City_Slot"
+		texturefile = "gfx/interface/MegaCities/PB_Mega_City_Slot.dds"
+		legacy_lazy_load = no
+	}
+
+    spriteType = {
+		name = "GFX_PB_Mega_City_Slot_Locked"
+		texturefile = "gfx/interface/MegaCities/PB_Mega_City_Slot_Locked.dds"
+		legacy_lazy_load = no
+	}
+
+    spriteType = {
+		name = "GFX_PB_Mega_City_Open_Button"
+		texturefile = "gfx/interface/MegaCities/PB_Mega_City_Open_Button.dds"
+		legacy_lazy_load = no
+	}
+
+    spriteType = {
+		name = "GFX_PB_Mega_City_London"
+		texturefile = "gfx/interface/MegaCities/PB_Mega_City_London.dds"
+		legacy_lazy_load = no
+	}
+
+    spriteType = {
+		name = "GFX_PB_Mega_City_Paris"
+		texturefile = "gfx/interface/MegaCities/PB_Mega_City_Paris.dds"
+		legacy_lazy_load = no
+	}
+
+    spriteType = {
+		name = "GFX_PB_Mega_Cities_button_help"
+		texturefile = "gfx/interface/MegaCities/PB_Mega_Cities_button_help.dds"
+		legacy_lazy_load = no
+	}
+
+    spriteType = {
+		name = "GFX_PB_Mega_City_tiled_window"
+		texturefile = "gfx/interface/MegaCities/PB_Mega_City_tiled_window.dds"
+		legacy_lazy_load = no
+	}
+
+    spriteType = {
+		name = "GFX_PB_Mega_City_Idea_Test"
+		texturefile = "gfx/interface/MegaCities/PB_Mega_City_Idea_Test.dds"
+		legacy_lazy_load = no
+	}
+
+    spriteType = {
+		name = "GFX_PB_Mega_City_Idea_One"
+		texturefile = "gfx/interface/MegaCities/PB_Mega_City_Idea_One.dds"
+		legacy_lazy_load = no
+	}
+
+    spriteType = {
+		name = "GFX_PB_Mega_City_Idea_Two"
+		texturefile = "gfx/interface/MegaCities/PB_Mega_City_Idea_Two.dds"
+		legacy_lazy_load = no
+	}
+
+    spriteType = {
+		name = "GFX_PB_Mega_City_Idea_Three"
+		texturefile = "gfx/interface/MegaCities/PB_Mega_City_Idea_Three.dds"
+		legacy_lazy_load = no
+	}
+
+    spriteType = {
+		name = "GFX_PB_Mega_City_Idea_Four"
+		texturefile = "gfx/interface/MegaCities/PB_Mega_City_Idea_Four.dds"
+		legacy_lazy_load = no
+	}
+
+    spriteType = {
+		name = "GFX_PB_Mega_City_Idea_Five"
+		texturefile = "gfx/interface/MegaCities/PB_Mega_City_Idea_Five.dds"
+		legacy_lazy_load = no
+	}
+
+    spriteType = {
+		name = "GFX_PB_Mega_City_US_Gene_Clinic"
+		texturefile = "gfx/interface/MegaCities/PB_Mega_City_US_Gene_Clinic.dds"
+		legacy_lazy_load = no
+	}
+
+    spriteType = {
+		name = "GFX_PB_Mega_City_US_Sense_Theater"
+		texturefile = "gfx/interface/MegaCities/PB_Mega_City_US_Sense_Theater.dds"
+		legacy_lazy_load = no
+	}
+
+    spriteType = {
+		name = "GFX_PB_Mega_City_US_Libido_Dome"
+		texturefile = "gfx/interface/MegaCities/PB_Mega_City_US_Libido_Dome.dds"
+		legacy_lazy_load = no
+	}
+
+    spriteType = {
+		name = "GFX_PB_Mega_City_US_Oxygenation_Plant"
+		texturefile = "gfx/interface/MegaCities/PB_Mega_City_US_Oxygenation_Plant.dds"
+		legacy_lazy_load = no
+	}
+
+    spriteType = {
+		name = "GFX_PB_Mega_City_US_Interior_Nature_Preserve"
+		texturefile = "gfx/interface/MegaCities/PB_Mega_City_LS_Interior_Nature_Preserve.dds"
+		legacy_lazy_load = no
+	}
+
+    spriteType = {
+		name = "GFX_PB_Mega_City_LS_Recycler_Network"
+		texturefile = "gfx/interface/MegaCities/PB_Mega_City_LS_Recycler_Network.dds"
+		legacy_lazy_load = no
+	}
+
+    spriteType = {
+		name = "GFX_PB_Mega_City_LS_Business_District"
+		texturefile = "gfx/interface/MegaCities/PB_Mega_City_LS_Business_District.dds"
+		legacy_lazy_load = no
+	}
+
+    spriteType = {
+		name = "GFX_PB_Mega_City_LS_Research_Centre"
+		texturefile = "gfx/interface/MegaCities/PB_Mega_City_LS_Research_Centre.dds"
+		legacy_lazy_load = no
+	}
+
+    spriteType = {
+		name = "GFX_PB_Mega_City_GL_Constabulary"
+		texturefile = "gfx/interface/MegaCities/PB_Mega_City_GL_Constabulary.dds"
+		legacy_lazy_load = no
+	}
+
+    spriteType = {
+		name = "GFX_PB_Mega_City_GL_Telecade_Megaplex"
+		texturefile = "gfx/interface/MegaCities/PB_Mega_City_GL_Telecade_Megaplex.dds"
+		legacy_lazy_load = no
+	}
+	
+    #spriteType = { # Recreation Unit not found in gfx file, please input at your convenience, Grestin
+	#	name = "GFX_PB_Mega_City_GL_Simulation_Recreation_Unit"
+	#	texturefile = "gfx/interface/MegaCities/PB_Mega_City_GL_Simulation_Recreation_Unit.dds"
+	#	legacy_lazy_load = no
+	#}
+
+    spriteType = {
+		name = "GFX_PB_Mega_City_GL_Military_Recruitment_Center"
+		texturefile = "gfx/interface/MegaCities/PB_Mega_City_GL_Military_Recruitment_Center.dds"
+		legacy_lazy_load = no
+	}
+
+    spriteType = {
+		name = "GFX_PB_Mega_City_SUB_Vita_Center"
+		texturefile = "gfx/interface/MegaCities/PB_Mega_City_SUB_Vita_Center.dds"
+		legacy_lazy_load = no
+	}
+
+    spriteType = {
+		name = "GFX_PB_Mega_City_SUB_Homeless_Center"
+		texturefile = "gfx/interface/MegaCities/PB_Mega_City_SUB_Homeless_Center.dds"
+		legacy_lazy_load = no
+	}
+
+    spriteType = {
+		name = "GFX_PB_Mega_City_SUB_Red_Light_District"
+		texturefile = "gfx/interface/MegaCities/PB_Mega_City_SUB_Red_Light_District.dds"
+		legacy_lazy_load = no
+	}
+
+    spriteType = {
+		name = "GFX_PB_Mega_City_SUB_Waste_Processor"
+		texturefile = "gfx/interface/MegaCities/PB_Mega_City_SUB_Waste_Processor.dds"
+		legacy_lazy_load = no
+	}
+
+    spriteType = {
+		name = "GFX_PB_Mega_City_Occupied"
+		texturefile = "gfx/interface/MegaCities/PB_Mega_City_Occupied.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_idea_PB_London_Megacity"
+		texturefile = "gfx/interface/ideas/Megacities/PB_London_Megacity.dds"
+		#scale = 2.0
+	}	
+
+	spriteType = {
+		name = "GFX_idea_PB_Megacity_Name_BG"
+		texturefile = "gfx/interface/Megacities/PB_Megacity_Name_BG.dds"
+		#scale = 2.0
+	}	
+
+	spriteType = {
+		name = "GFX_idea_PB_Megacity_Help_Icon"
+		texturefile = "gfx/interface/Megacities/PB_Megacity_Name_BG.dds"
+		#scale = 2.0
+	}	
+
+	# texticon #
+	spriteType = {
+		name = "GFX_Megacity_Seoul"
+		texturefile = "gfx/texticons/TLE_Mega_City_Seoul.png" 
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Megacity_Pyongyang"
+		texturefile = "gfx/texticons/TLE_Mega_City_Pyongyang.png" 
+		legacy_lazy_load = no
+	}
+	spriteType = { 
+		name = "GFX_Megacity_Pusan"
+		texturefile = "gfx/texticons/TLE_Mega_City_Pusan.png" 
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Megacity_Simyang"
+		texturefile = "gfx/texticons/TLE_Mega_City_Simyang.png" 
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_Megacity_London"
+		texturefile = "gfx/texticons/Megacity_London.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_Megacity_Paris"
+		texturefile = "gfx/texticons/Megacity_Paris.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_Megacity_Paris2"
+		texturefile = "gfx/texticons/Megacity_Paris2.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_Megacity_Frankfurt"
+		texturefile = "gfx/texticons/Megacity_Frankfurt.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_Megacity_Petrograd"
+		texturefile = "gfx/texticons/Megacity_Petrograd.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_Megacity_Melbourne"
+		texturefile = "gfx/texticons/Megacity_Melbourne.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_Megacity_EmpCity"
+		texturefile = "gfx/texticons/Megacity_EmpCity.dds"
+		legacy_lazy_load = no
+	}
+}

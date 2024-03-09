@@ -1,0 +1,423 @@
+characters={
+	MSR_anandyn_amar={
+		name="MSR_anandyn_amar"
+		portraits={
+			civilian={
+				large="gfx/leaders/MON/portrait_mon_anandyn_amar.dds"
+			}
+		}
+		country_leader={
+			ideology=marxism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	MSR_mingzhu_zhanshan={
+		name="MSR_mingzhu_zhanshan"
+		portraits={
+			civilian={
+				large=GFX_portrait_Mingzhu_Zhanshan
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			traits={ silent_workhorse dealbroker }
+			expire="1945.1.1.12"
+			id=-1
+		}
+	}
+	MSR_fu_shangzhi={
+		name="MSR_fu_shangzhi"
+		portraits={
+			civilian={
+				large=GFX_portrait_Fu_Shangzhi
+			}
+		}
+		country_leader={
+			ideology=fascism_ideology
+			expire="1947.1.1.12"
+			id=-1
+		}
+	}
+	MSR_songgotu_kangan={
+		name="MSR_songgotu_kangan"
+		portraits={
+			civilian={
+				large=GFX_portrait_Songgotu_Kangan
+			}
+		}
+		country_leader={
+			ideology=oligarchism
+			traits={ armaments_organizer }
+			expire="1948.1.1.12"
+			id=-1
+		}
+	}
+	MSR_khorloogiin_choibalsan={
+		name="MSR_khorloogiin_choibalsan"
+		portraits={
+			civilian={
+				large=gfx/leaders/MON/Portrait_Khorloogiin_choibalsan.dds
+			}
+		}
+		country_leader={
+			ideology=stalinism
+			expire="1948.1.1.12"
+			id=-1
+		}
+	}
+	MSR_haidav={
+		advisor={
+			
+			
+			slot = high_command
+			idea_token = MSR_haidav
+			ledger = navy
+				allowed = {
+					original_tag = MSR
+				}
+				traits = {
+					navy_naval_air_defense_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		name="MSR_haidav"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_asia_1"
+			}
+		}
+	}
+	MSR_dagva={
+		advisor={
+			cost = 100
+			
+			slot = theorist
+			idea_token = MSR_dagva
+			ledger = army
+				allowed = {
+					original_tag = MSR
+				}
+				
+				traits = {
+					military_theorist
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		name="MSR_dagva"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_asia_5"
+			}
+		}
+	}
+	MSR_chimid={
+		advisor={
+			
+			
+			slot = high_command
+			idea_token = MSR_chimid
+			ledger = army
+				allowed = {
+					original_tag = MSR
+				}
+				traits = {
+					army_concealment_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		name="MSR_chimid"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_asia_1"
+			}
+		}
+	}
+	MSR_sukhbaataryn_yanjmaa={
+		advisor={
+			
+			
+			slot = air_chief
+			idea_token = MSR_sukhbaataryn_yanjmaa
+			allowed = {
+					original_tag = MSR
+				}
+				traits = {
+					air_chief_all_weather_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		name="MSR_sukhbaataryn_yanjmaa"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_asia_3"
+			}
+		}
+	}
+	MSR_ganbaatar={
+		advisor={
+			cost = 100
+			
+			slot = theorist
+			idea_token = MSR_ganbaatar
+			ledger = navy
+				allowed = {
+					original_tag = MSR
+				}
+				
+				traits = {
+					naval_theorist
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		name="MSR_ganbaatar"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_asia_3"
+			}
+		}
+	}
+	MSR_ulanhu={
+		advisor={
+			cost = 100
+			
+			slot = theorist
+			idea_token = MSR_ulanhu
+			ledger = air
+				allowed = {
+					original_tag = MSR
+				}
+				
+				traits = {
+					air_warfare_theorist
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		name="MSR_ulanhu"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_asia_2"
+			}
+		}
+	}
+	MSR_vg_pyrselov={
+		advisor={
+			
+			
+			slot = navy_chief
+			idea_token = MSR_vg_pyrselov
+			allowed = {
+					original_tag = MSR
+				}
+				traits = {
+					navy_chief_maneuver_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		name="MSR_vg_pyrselov"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_asia_1"
+			}
+		}
+	}
+	MSR_buyannmeh={
+		advisor={
+			
+			
+			slot = high_command
+			idea_token = MSR_buyannmeh
+			ledger = air
+				allowed = {
+					original_tag = MSR
+				}
+				traits = {
+					air_strategic_bombing_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		name="MSR_buyannmeh"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_asia_3"
+			}
+		}
+	}
+	MSR_horloogiyn_choybalsan={
+		advisor={
+			
+			
+			slot = army_chief
+			idea_token = MSR_horloogiyn_choybalsan
+			allowed = {
+					original_tag = MSR
+				}
+				traits = {
+					army_chief_morale_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		name="MSR_horloogiyn_choybalsan"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_asia_2"
+			}
+		}
+	}
+	MSR_olziytrygyn_badrak={
+		advisor={
+			
+			
+			slot = army_chief
+			idea_token = MSR_olziytrygyn_badrak
+			allowed = {
+					original_tag = MSR
+				}
+				traits = {
+					army_chief_defensive_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		name="MSR_olziytrygyn_badrak"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_asia_4"
+			}
+		}
+	}
+	MSR_dashdorj={
+		advisor={
+			
+			
+			slot = navy_chief
+			idea_token = MSR_dashdorj
+			allowed = {
+					original_tag = MSR
+				}
+				traits = {
+					navy_chief_commerce_raiding_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		name="MSR_dashdorj"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_asia_3"
+			}
+		}
+	}
+	MSR_gomgchigryn_bumtsend={
+		advisor={
+			
+			
+			slot = air_chief
+			idea_token = MSR_gomgchigryn_bumtsend
+			allowed = {
+					original_tag = MSR
+				}
+				traits = {
+					air_chief_reform_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		name="MSR_gomgchigryn_bumtsend"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_asia_2"
+			}
+		}
+	}
+	MSR_dansrabilegyin_dogsam={
+		advisor={
+			slot = political_advisor
+			idea_token = MSR_dansrabilegyin_dogsam
+			allowed  = {
+					original_tag  = MSR
+				}
+				traits  = {
+					compassionate_gentleman 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		name="MSR_dansrabilegyin_dogsam"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_asia_2"
+			}
+		}
+	}
+	MSR_yundunwangcug={
+		advisor={
+			slot = political_advisor
+			idea_token = MSR_yundunwangcug
+			allowed  = {
+					original_tag  = MSR
+				}
+				traits  = {
+					quartermaster_general 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		name="MSR_yundunwangcug"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_asia_3"
+			}
+		}
+	}
+	MSR_pai_yun_ti={
+		advisor={
+			slot = political_advisor
+			idea_token = MSR_pai_yun_ti
+			allowed  = {
+					original_tag  = MSR
+				}
+				traits  = {
+					war_industrialist 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		name="MSR_pai_yun_ti"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_asia_1"
+			}
+		}
+	}
+}

@@ -1,0 +1,41 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_korean_confederation_icon"
+		textureFile = "gfx/interface/autonomy/korean_confederation.png"
+	}
+	spriteType = {
+		name = "GFX_korean_general_government_icon"
+		textureFile = "gfx/interface/autonomy/korean_general_government.png"
+	}
+	spriteType = {
+		name = "GFX_korean_bunguk_icon"
+		textureFile = "gfx/interface/autonomy/autonomy_imperial_associate.dds"
+	}
+	spriteType = {
+		name = "GFX_TLE_release_button"
+		textureFile = "gfx/interface/TLE_release_button.png"
+	}
+	spriteType = {
+		name = "GFX_texticon_bookmark_ZLC"
+		textureFile = "gfx/texticons/bookmarks/texticon_bookmark_ZLC.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_texticon_bookmark_CHI"
+		textureFile = "gfx/texticons/bookmarks/texticon_bookmark_CHI.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_texticon_bookmark_KOR"
+		textureFile = "gfx/texticons/bookmarks/texticon_bookmark_KOR.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_texticon_nasang_logo"
+		textureFile = "gfx/texticons/bookmarks/texticon_nasang_logo.png"
+		legacy_lazy_load = no
+	}
+	
+}
+ 

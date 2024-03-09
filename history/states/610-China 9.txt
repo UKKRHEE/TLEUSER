@@ -1,0 +1,38 @@
+
+state={
+	id=610
+	name="STATE_610"
+
+	history={
+		victory_points = {
+			11801 1 
+		}
+		owner = KMN
+		add_core_of = CHI
+		add_core_of = KMN
+		add_core_of = KOR
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 2
+
+		}
+		1936.8.1 = {
+			owner = KOR
+
+		}
+		1939.1.1 = {
+			owner = MAN
+			add_core_of = MAN
+
+		}
+
+	}
+
+	provinces={
+		814 934 972 1508 3814 3828 3881 4514 6898 6937 7633 9873 10331 10426 11801 11855 12478 
+	}
+	manpower=1775377
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

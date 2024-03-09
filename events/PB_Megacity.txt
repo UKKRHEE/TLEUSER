@@ -1,0 +1,107 @@
+###################
+# Megacity Events
+###################
+
+add_namespace = Megacity
+add_namespace = MegacityTransfer
+
+country_event = { #Megacity Hansong Lore
+	id = Megacity.1
+	title = Megacity.1.t
+	desc = Megacity.1.d
+	picture = GFX_event_tle_city_seoul
+
+	is_triggered_only = yes
+
+	option = { #Not Applicable
+		name = Megacity.1.a
+
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+
+country_event = { #Megacity Pyongyang Lore
+	id = Megacity.2
+	title = Megacity.2.t
+	desc = Megacity.2.d
+	picture = GFX_event_tle_city_pyongyang
+
+	is_triggered_only = yes
+
+	option = { #Not Applicable
+		name = Megacity.2.a
+
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+
+country_event = { #Megacity Busan Lore
+	id = Megacity.3
+	title = Megacity.3.t
+	desc = Megacity.3.d
+	picture = GFX_event_tle_city_busan
+
+	is_triggered_only = yes
+
+	option = { #Not Applicable
+		name = Megacity.3.a
+
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+
+country_event = { #Megacity Simyang Lore
+	id = Megacity.4
+	title = Megacity.4.t
+	desc = Megacity.4.d
+	picture = GFX_event_tle_city_simyang
+
+	is_triggered_only = yes
+
+	option = { #Not Applicable
+		name = Megacity.4.a
+
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+
+country_event = { #Megacity Kyoto Lore
+	id = Megacity.5
+	title = Megacity.5.t
+	desc = Megacity.5.d
+	picture = GFX_event_tle_city_kyoto
+
+	is_triggered_only = yes
+
+	option = { #Not Applicable
+		name = Megacity.5.a
+
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+country_event = { #Megacity Tokyo Lore
+	id = Megacity.6
+	title = Megacity.6.t
+	desc = Megacity.6.d
+	picture = GFX_event_tle_city_tokyo
+
+	is_triggered_only = yes
+
+	option = { #Not Applicable
+		name = Megacity.6.a
+
+		ai_chance = {
+			factor = 50
+		}
+	}
+}

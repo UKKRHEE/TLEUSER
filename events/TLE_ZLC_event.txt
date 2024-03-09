@@ -1,0 +1,662 @@
+###########################
+# Chinese Events
+###########################
+
+add_namespace = ZLC
+add_namespace = ZLC_focus
+add_namespace = ZLC_hidden
+
+country_event = {
+	id = ZLC.1
+	title = ZLC.1.t
+	desc = ZLC.1.d
+	picture = GFX_event_zlc_1
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = ZLC_focus.1
+			}
+		}
+	}
+	is_triggered_only = yes
+	
+	option = {
+		name = ZLC.1.a
+		country_event = {
+			id = ZLC.2
+		}	
+	}
+}
+country_event = {
+	id = ZLC_focus.1
+	picture = GFX_TLE_korea_event_none
+	
+    is_triggered_only = yes
+	
+	fire_only_once = no
+	
+	hidden = yes
+	
+	option = { 
+		name = ZLC_focus.1.a
+		hidden_effect = {
+			load_oob = "ZLC_focus_1"
+		}
+	}
+}
+country_event = {
+	id = ZLC.2
+	title = ZLC.2.t
+	desc = ZLC.2.d
+	picture = GFX_event_zlc_1
+	immediate = {
+		hidden_effect = {
+			#load_oob=CHI_focus_a
+		}
+	}
+	is_triggered_only = yes
+	
+	option = {
+		name = ZLC.2.a
+	}
+}
+##########
+country_event = {
+	id = ZLC.3
+	title = ZLC.3.t
+	desc = ZLC.3.d
+	picture = GFX_event_zlc_3
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = ZLC_focus.3
+			}
+		}
+	}
+	is_triggered_only = yes
+	
+	option = {
+		name = ZLC.3.a
+		custom_effect_tooltip = EVENT_ZLC_3_TOOLTIP
+	}
+}
+country_event = {
+	id = ZLC_focus.3
+	picture = GFX_TLE_korea_event_none
+	
+    is_triggered_only = yes
+	
+	fire_only_once = no
+	
+	hidden = yes
+	
+	option = { 
+		name = ZLC_focus.1.a
+		hidden_effect = {
+			load_oob = "ZLC_focus_3"
+		}
+	}
+}
+country_event = {
+	id = ZLC.4
+	title = ZLC.4.t
+	desc = ZLC.4.d
+	picture = GFX_TLE_korea_event_none
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = ZLC_focus.4
+			}
+		}
+	}
+	is_triggered_only = yes
+	
+	option = {
+		name = ZLC.4.a
+	}
+}
+country_event = {
+	id = ZLC_focus.4
+	picture = GFX_TLE_korea_event_none
+	
+    is_triggered_only = yes
+	
+	fire_only_once = no
+	
+	hidden = yes
+	
+	option = { 
+		name = ZLC_focus.1.a
+		hidden_effect = {
+			load_oob = "ZLC_focus_4"
+		}
+	}
+}
+country_event = {
+	id = ZLC.5
+	title = ZLC.5.t
+	desc = ZLC.5.d
+	picture = GFX_event_zlc_5
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = ZLC_focus.5
+			}
+		}
+	}
+	is_triggered_only = yes
+	
+	option = {
+		name = ZLC.5.a
+	}
+}
+country_event = {
+	id = ZLC_focus.5
+	picture = GFX_TLE_korea_event_none
+	
+    is_triggered_only = yes
+	
+	fire_only_once = no
+	
+	hidden = yes
+	
+	option = { 
+		name = ZLC_focus.1.a
+		hidden_effect = {
+			load_oob = "ZLC_focus_2"
+		}
+	}
+}
+country_event = {
+	id = ZLC.6
+	title = ZLC.6.t
+	desc = ZLC.6.d
+	picture = GFX_TLE_korea_event_none
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = ZLC_focus.6
+			}
+		}
+	}
+	is_triggered_only = yes
+	
+	option = {
+		name = ZLC.6.a
+	}
+}
+country_event = {
+	id = ZLC_focus.6
+	picture = GFX_TLE_korea_event_none
+	
+    is_triggered_only = yes
+	
+	fire_only_once = no
+	
+	hidden = yes
+	
+	option = { 
+		name = ZLC_focus.1.a
+		hidden_effect = {
+			load_oob = "ZLC_focus_5"
+		}
+	}
+}
+country_event = {
+	id = ZLC.7
+	title = ZLC.7.t
+	desc = ZLC.7.d
+	picture = GFX_TLE_korea_event_none
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = ZLC_focus.7
+			}
+		}
+	}
+	is_triggered_only = yes
+	
+	option = {
+		name = ZLC.7.a
+	}
+}
+country_event = {
+	id = ZLC_focus.7
+	picture = GFX_TLE_korea_event_none
+	
+    is_triggered_only = yes
+	
+	fire_only_once = no
+	
+	hidden = yes
+	
+	option = { 
+		name = ZLC_focus.1.a
+		hidden_effect = {
+			load_oob = "ZLC_focus_6"
+		}
+	}
+}
+country_event = {
+	id = ZLC.8
+	title = ZLC.8.t
+	desc = ZLC.8.d
+	picture = GFX_event_zlc_8
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = ZLC_focus.8
+			}
+		}
+	}
+	is_triggered_only = yes
+	
+	option = {
+		name = ZLC.8.a
+		custom_effect_tooltip = EVENT_ZLC_8_TOOLTIP
+	}
+}
+country_event = {
+	id = ZLC_focus.8
+	picture = GFX_TLE_korea_event_none
+	
+    is_triggered_only = yes
+	
+	fire_only_once = no
+	
+	hidden = yes
+	
+	option = { 
+		name = ZLC_focus.1.a
+		hidden_effect = {
+			load_oob = "ZLC_focus_7"
+		}
+	}
+}
+country_event = {
+	id = ZLC.9
+	title = ZLC.9.t
+	desc = ZLC.9.d
+	picture = GFX_TLE_korea_event_none
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = ZLC_focus.9
+			}
+		}
+	}
+	is_triggered_only = yes
+	
+	option = {
+		name = ZLC.9.a
+	}
+}
+country_event = {
+	id = ZLC_focus.9
+	picture = GFX_TLE_korea_event_none
+	
+    is_triggered_only = yes
+	
+	fire_only_once = no
+	
+	hidden = yes
+	
+	option = { 
+		name = ZLC_focus.1.a
+		hidden_effect = {
+			load_oob = "ZLC_focus_8"
+		}
+	}
+}
+country_event = {
+	id = ZLC.10
+	title = ZLC.10.t
+	desc = ZLC.10.d
+	picture = GFX_event_zlc_10
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = ZLC_focus.10
+			}
+		}
+	}
+	is_triggered_only = yes
+	
+	option = {
+		name = ZLC.10.a
+		custom_effect_tooltip = EVENT_ZLC_10_TOOLTIP
+		set_country_flag = FLAG_WU_DAOSHI_IS_HEIR
+	}
+}
+country_event = {
+	id = ZLC_focus.10
+	picture = GFX_TLE_korea_event_none
+	
+    is_triggered_only = yes
+	
+	fire_only_once = no
+	
+	hidden = yes
+	
+	option = { 
+		name = ZLC_focus.1.a
+		hidden_effect = {
+			load_oob = "ZLC_focus_9"
+		}
+	}
+}
+country_event = {
+	id = ZLC.11
+	title = ZLC.11.t
+	desc = ZLC.11.d
+	picture = GFX_TLE_korea_event_none
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = ZLC_focus.11
+			}
+		}
+	}
+	is_triggered_only = yes
+	
+	option = {
+		name = ZLC.11.a
+	}
+}
+country_event = {
+	id = ZLC_focus.11
+	picture = GFX_TLE_korea_event_none
+	
+    is_triggered_only = yes
+	
+	fire_only_once = no
+	
+	hidden = yes
+	
+	option = { 
+		name = ZLC_focus.1.a
+		hidden_effect = {
+			load_oob = "ZLC_focus_10"
+		}
+	}
+}
+country_event = {
+	id = ZLC.12
+	title = ZLC.12.t
+	desc = ZLC.12.d
+	picture = GFX_TLE_korea_event_none
+	immediate = {
+		hidden_effect = {
+			#load_oob=CHI_focus_a
+		}
+	}
+	is_triggered_only = yes
+	
+	option = {
+		name = ZLC.12.a
+	}
+}
+country_event = {
+	id = ZLC.13
+	title = ZLC.13.t
+	desc = ZLC.13.d
+	picture = GFX_TLE_korea_event_none
+	immediate = {
+		hidden_effect = {
+			#load_oob=CHI_focus_a
+		}
+	}
+	is_triggered_only = yes
+	
+	option = {
+		name = ZLC.13.a
+	}
+}
+country_event = {
+	id = ZLC.14
+	title = ZLC.14.t
+	desc = ZLC.14.d
+	picture = GFX_TLE_korea_event_none
+	immediate = {
+		hidden_effect = {
+			#load_oob=CHI_focus_a
+		}
+	}
+	is_triggered_only = yes
+	
+	option = {
+		name = ZLC.14.a
+	}
+}
+# 북양의 총기 지원 요청 - 응답
+country_event = {
+	id = ZLC.15
+	title = ZLC.15.t
+	desc = ZLC.15.d
+	picture = GFX_TLE_korea_event_none
+	is_triggered_only = yes
+	option = {
+		name = ZLC.15.a
+		effect_tooltip = {
+			send_equipment = {
+				equipment = infantry_equipment
+				amount = 2000
+				target = FROM
+			}
+			send_equipment = {
+				equipment = support_equipment
+				amount = 500
+				target = FROM
+			}
+		}
+		hidden_effect = {
+			FROM = {
+				country_event = {
+					id = ZLC.16
+					hours = 3
+				}
+			}
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+	option = {
+		name = ZLC.15.b
+		hidden_effect = {
+			FROM = {
+				country_event = {
+					id = ZLC.17
+					hours = 3
+				}
+			}
+		}
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 1000
+				surrender_progress > 0.5
+			}
+			modifier = {
+				add = 1000
+				has_opinion = {
+					target = FROM
+					value < -50
+				}
+			}
+		}
+	}
+}
+# 총기 지원 동의
+country_event = {
+	id = ZLC.16
+	title = ZLC.16.t
+	desc = ZLC.16.d
+	picture = GFX_TLE_korea_event_none
+	is_triggered_only = yes
+	option = {
+		name = ZLC.16.a
+		FROM = {
+			send_equipment = {
+				equipment = infantry_equipment
+				amount = 2000
+				target = ROOT
+			}
+			send_equipment = {
+				equipment = support_equipment
+				amount = 500
+				target = ROOT
+			}
+		}
+	}
+}
+# 총기 지원 거부
+country_event = {
+	id = ZLC.17
+	title = ZLC.17.t
+	desc = ZLC.17.d
+	picture = GFX_TLE_korea_event_none
+	is_triggered_only = yes
+	option = {
+		name = ZLC.17.a
+		add_political_power = -25
+	}
+}
+# 항한무관 요청
+country_event = {
+	id = ZLC.18
+	title = ZLC.18.t
+	desc = ZLC.18.d
+	picture = GFX_TLE_korea_event_none
+	is_triggered_only = yes
+	option = {
+		name = ZLC.18.a
+		effect_tooltip = {
+			FROM = {
+				add_ideas = ZLC_japanese_advisers
+			}
+		}
+		hidden_effect = {
+			FROM = {
+				country_event = {
+					id = ZLC.19
+					hours = 3
+				}
+			}
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+	option = {
+		name = ZLC.18.b
+		hidden_effect = {
+			FROM = {
+				country_event = {
+					id = ZLC.20
+					hours = 3
+				}
+			}
+		}
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 1000
+				surrender_progress > 0.5
+			}
+			modifier = {
+				add = 1000
+				has_opinion = {
+					target = FROM
+					value < -50
+				}
+			}
+		}
+	}
+}
+# 항한무관 동의
+country_event = {
+	id = ZLC.19
+	title = ZLC.19.t
+	desc = ZLC.19.d
+	picture = GFX_TLE_korea_event_none
+	is_triggered_only = yes
+	option = {
+		name = ZLC.19.a
+		add_ideas = ZLC_japanese_advisers
+	}
+}
+# 항한무관 거부
+country_event = {
+	id = ZLC.20
+	title = ZLC.20.t
+	desc = ZLC.20.d
+	picture = GFX_TLE_korea_event_none
+	is_triggered_only = yes
+	option = {
+		name = ZLC.20.a
+		add_political_power = -25
+	}
+}
+############
+country_event = {
+	id = ZLC.100 #차오쿤의 죽음 - 정사
+	title = ZLC.100.t
+	desc = ZLC.100.d
+	picture = GFX_TLE_korea_event_none
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ZLC.100.a
+		if = {
+			limit = {
+				has_country_leader = {
+					character = ZLC_cao_kun
+					ruling_only = yes
+				}
+			}
+			kill_country_leader = yes
+			add_country_leader_role = {
+				Character = ZLC_wu_peifu
+				country_leader = {
+					#expire = "1965.1.1"
+					ideology = despotism
+					desc="POLITICS_WU_PEIFU_DESC"
+					traits = {
+						ZLC_dazongtong 
+						wupeifu_trait
+					}
+				}
+				promote_leader = yes
+			}	
+		}
+		news_event = {
+			id = eok_news.44
+		}
+	}
+}
+############
+country_event = {
+	id = ZLC_hidden.1
+	title = ZLC_hidden.1.t
+	desc = ZLC_hidden.1.d
+	picture = GFX_TLE_korea_event_none
+	hidden = yes
+	trigger = {
+		tag = ZLC
+		date > 1938.5.17
+		has_war_with = KOR
+		NOT = {
+			has_completed_focus = ZLC_BEI_caokun_lead
+			has_completed_focus = ZLC_BEI_wupeifu_lead
+		}
+	}
+	fire_only_once = yes
+	option = {
+		name = ZLC_hidden.1.a
+		country_event = {
+			id = ZLC.100 #Cao Kun's Death
+		}
+	}
+}

@@ -1,0 +1,93 @@
+###Korea###
+PRK	= "countries/Korea.txt" #북괴
+KPL	= "countries/Korea.txt" #국제련합
+KMN = "countries/Korea.txt" #대한령 북만주
+EOK = "countries/Korea.txt" #대한제국 황도파
+ROK = "countries/Korea.txt" #대한제국 황도파
+KVN = "countries/Korea.txt" #대한령 인도차이나
+KTA = "countries/Korea.txt" #대한제국 제24군 서북방면전구
+###Korean Outer Land###
+TWC = "countries/China.txt" #대만(테스트용)
+RYU = "countries/Japan.txt" #류큐
+JNT = "countries/Korea.txt" #진남도
+ANU = "countries/Japan.txt" #아이누
+###Chinese Clique###
+FNG = "countries/China.txt" #봉천 정부 #근데 뒤짐
+SND = "countries/China.txt" #산동 군벌
+SZC = "countries/China.txt" #사천 군벌
+GDC = "countries/China.txt" #광동 군벌
+ETS = "countries/China.txt" #동튀르케스탄 제1공화국
+MHB = "countries/China.txt" #마홍빈
+SZY = "countries/China.txt" #직예 군벌 반갈죽하는 숭저위안
+QIN = "countries/China.txt" #대청국 #대한령
+ZLC = "countries/China.txt" #직예군벌
+WZC = "countries/China.txt" #오성연군
+HNC = "countries/China.txt" #호남군벌
+AHC = "countries/China.txt" #안휘군벌
+XKC = "countries/China.txt" #서강군벌
+GZC = "countries/China.txt" #귀주군벌
+SCC = "countries/China.txt" #달주진수사부
+AQC = "countries/China.txt" #안경군벌
+CH1 = "countries/China.txt" #천하삼분지계 중국
+###Mongolian People's Republic###
+MSR = "countries/Mongolia.txt" #몽골인민공화국
+###Eastern Republic###
+KYH = "countries/Soviet Union.txt" #극동 공화국 #명복을 빌지.
+###Forigen Japanese Clique###
+KKS = "countries/Japan.txt" #구주통감부
+KHK = "countries/Japan.txt" #북해도
+EJP = "countries/Japan.txt" #영국령 일본
+FJP = "countries/Japan.txt" #프랑스령 일본
+###Dokugawa Japanese Clique###
+DKG = "countries/Japan.txt" #도쿠가와 막부(시작시점)
+###Honshu Japanese Cligue###
+TBJ = "countries/Japan.txt" #열번동맹
+NBJ = "countries/Japan.txt" #모리오카(난부 가문)
+SDJ = "countries/Japan.txt" #센다이
+KGJ = "countries/Japan.txt" #카가
+GJJ = "countries/Japan.txt" #조자이
+DK1 = "countries/Japan.txt" #조센징 괴뢰
+DK2 = "countries/Japan.txt" #조센징 괴뢰
+DK3 = "countries/Japan.txt" #조센징 괴뢰
+DK4 = "countries/Japan.txt" #조센징 괴뢰
+###Soviet Union's Clique###
+NV1 = "countries/Soviet Union.txt" #노보시비르스크
+YN1 = "countries/Soviet Union.txt" #예니세이스크 정부
+KS1 = "countries/Soviet Union.txt" #크라스노야르스크 소비에트 정부
+BY1 = "countries/Soviet Union.txt" #부랴트 군관구
+TV1 = "countries/Soviet Union.txt" #카잔 군관구
+RUS = "countries/Soviet Union.txt" #러시아 공화국
+###German R.K. Tag###
+DM1 = "countries/Denmark.txt" #덴마크 보호령
+BRG = "countries/Germany.txt" #부르군트
+BT1 = "countries/Germany.txt" #바나트
+PG1 = "countries/Germany.txt" #총독부
+BG1 = "countries/Germany.txt" #벨기엔 국가판무관부
+NT1 = "countries/Germany.txt" #니더란데 국가판무관부
+SW1 = "countries/Germany.txt" #슈바이츠 보호령
+MK1 = "countries/Germany.txt" #모스코비엔 국가판무관부
+OT1 = "countries/Germany.txt" #오스트란트 국가판무관부
+UK1 = "countries/Germany.txt" #우크라이네 국가판무관부
+NR1 = "countries/Germany.txt" #노르베겐 국가판무관부
+KA1 = "countries/Germany.txt" #카우카지엔 국가판무관부
+GC1 = "countries/Germany.txt" #첸트랄아프리카 국가판무관부
+GW1 = "countries/Germany.txt" #쥐트베스트아프리카 국가판무관부
+GO1 = "countries/Germany.txt" #오스트아프리카 국가판무관부
+GM1 = "countries/Germany.txt" #마다가스카르 국가판무관부
+FRS = "countries/France.txt" #프랑스
+###End of WW2(Allies Win)###
+AS1 = "countries/Germany.txt" #오스트리아인민
+#test tag
+TJP = "countries/Japan.txt" #중점 테스트용 일본 태그
+ZZZ = "countries/Germany.txt" #아나키
+ZZ2 = "countries/Soviet Union.txt" #아나키
+#이스터에그
+MJT = "countries/Japan.txt" #마녀 연방
+DHD = "countries/China.txt" #대한지
+SHU = "countries/China.txt" #촉
+WUG = "countries/China.txt" #오
+SAG = "countries/Japan.txt" #좀랜사
+MCP = "countries/Korea.txt" #메카박정희
+KRH = "countries/Korea.txt" #대한제국 호박정부
+LMC = "countries/Korea.txt" #슨상님
+UMA = "countries/Mongolia.txt" #우마무스메 칭기스칸국

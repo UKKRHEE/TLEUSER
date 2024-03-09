@@ -1,0 +1,40 @@
+#막부 디시전 카테고리
+DKG_dispatch_an_bakufu_army_category = {
+	visible = {
+		tag = DKG
+		has_completed_focus = DKG_tennouzansakusen
+	}
+	priority = 115
+}
+DKG_dispatch_an_bakufu_army_category = {
+	visible = {
+		tag = DKG
+		has_country_flag = DKG_dispatch_an_bakufu_army_on
+	}
+	priority = 110
+}
+DKG_reitoku_reform_categories = {
+	#picture = GFX_decision_reitoku
+	visible = {
+		tag = DKG
+		has_completed_focus = DKG_state_of_japan_new_law
+	}
+	priority = 100
+	visible_when_empty = yes
+}
+DKG_balance_of_power_categories = {
+	#picture = GFX_decision_reitoku
+	visible = {
+		tag = DKG
+		has_completed_focus = DKG_new_age
+	}
+	priority = 78
+}
+DKG_the_first_five_year_plan= {
+	visible = {
+		tag = DKG
+		has_country_flag = DKG_civilwar_end_flag
+	}
+	priority = 101
+	visible_when_empty = yes
+}

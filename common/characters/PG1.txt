@@ -1,0 +1,20 @@
+characters={
+	PG1_hans_frank={
+		name="PG1_hans_frank"
+		portraits={
+			civilian={
+				large="gfx/leaders/GER/Portrait_Germany_Generic_land_4.dds"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			id=-1
+		}
+		country_leader={
+			ideology=nazism
+			traits={ }
+			id=-1
+		}
+	}
+}

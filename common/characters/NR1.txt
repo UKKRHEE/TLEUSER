@@ -1,0 +1,20 @@
+characters={
+	NR1_Josef_Terboven={
+		name="NR1_Josef_Terboven"
+		portraits={
+			civilian={
+				large="gfx/leaders/SV1/Josef_Terboven.dds"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			id=-1
+		}
+		country_leader={
+			ideology=nazism
+			traits={ }
+			id=-1
+		}
+	}
+}

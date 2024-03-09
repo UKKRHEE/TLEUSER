@@ -1,0 +1,27 @@
+######### 참고로 내전 전 막부 이벤트는 TLE_JAPAN에 있음
+add_namespace = TLE_DKG_debug_event
+
+country_event = { #chikusho
+	id = TLE_DKG_debug_event.1
+	title = TLE_DKG_debug_event.1.t
+	desc = TLE_DKG_debug_event.1.d
+	picture = GFX
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {#내전 중점
+		name = TLE_DKG_debug_event.1.a
+		load_focus_tree = {
+			tree = DKG_Japan
+			keep_completed = no
+		}
+	}
+	option = {#전후 중점
+		name = TLE_DKG_debug_event.1.b
+		load_focus_tree = {
+			tree = DKG_Japan_war_af
+			keep_completed = no
+		}
+	}
+}

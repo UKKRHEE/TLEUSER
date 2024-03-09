@@ -1,0 +1,38 @@
+
+state={
+	id=532
+	name="STATE_532"
+
+	history={
+		owner = DKG
+		add_core_of = DKG
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		victory_points = {
+			7087 3 
+		}
+		victory_points = {
+			10125 15 
+		}
+		1939.1.1 = {
+			buildings = {
+				arms_factory = 2
+				industrial_complex = 3
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		7087 7157 10125 12097 
+	}
+	manpower=4174000
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

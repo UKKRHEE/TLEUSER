@@ -1,0 +1,85 @@
+# Empty file to overwrite vanilla.
+JAP_Sakusen_categories = {
+	available = {
+		tag = JAP
+	}
+	visible = {
+		tag = JAP
+	}
+	priority = 110
+}
+JAP_dec_civil_war = {
+	allowed = {
+		OR = {
+			original_tag = JAP
+			original_tag = DKG
+		}
+	}
+	visible = {
+		OR = {
+			original_tag = JAP
+			original_tag = DKG
+		}
+	}
+	priority = 101
+}
+DKG_control_domain_dec_categories = {
+	allowed = {
+		original_tag = DKG
+		has_country_flag = FLAG_CIVIL_WAR_JAP
+	}
+	visible = {
+		original_tag = DKG
+		has_country_flag = FLAG_CIVIL_WAR_JAP
+	}
+	priority = 100
+}
+JAP_control_domain_dec_categories = {
+	allowed = {
+		original_tag = JAP
+		has_country_flag = FLAG_CIVIL_WAR_JAP
+	}
+	visible = {
+		original_tag = JAP
+		has_country_flag = FLAG_CIVIL_WAR_JAP
+	}
+	priority = 100
+}
+JAP_the_plan_rework_japan = {
+	#picture = GFX_decision_showa_yushin
+	allowed = {
+		original_tag = JAP
+	}
+	visible = {
+		original_tag = JAP
+	}
+	priority = 98
+}
+JAP_closed_bunchi_county = {
+	#picture = GFX_decision_showa_yushin
+	allowed = {
+		original_tag = JAP
+	}
+	visible = {
+		original_tag = JAP
+	}
+	priority = 97
+}
+JAP_the_army = {
+	allowed = {
+		original_tag = JAP
+	}
+	visible = {
+		original_tag = JAP
+	}
+	priority = 96
+}
+JAP_defense_the_country = {
+	allowed = {
+		original_tag = JAP
+	}
+	visible = {
+		original_tag = JAP
+	}
+	priority = 95
+}

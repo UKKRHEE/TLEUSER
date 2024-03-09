@@ -1,0 +1,22 @@
+# frames: Frame numbers for ribbon sprite layers.
+# colors: Tint colors (R G B A) for ribbon sprite layers
+
+ribbons = {
+	the_last_empire = {
+		name = "CAREER_PROFILE_BEHIND_ENEMY_LINES"
+		description = "CAREER_PROFILE_BEHIND_ENEMY_LINES_DESCRIPTION"
+		quote_text = "CAREER_PROFILE_BEHIND_ENEMY_LINES_QUOTE"
+		frames = { 1 2 2 2 }
+		colors = {
+			{ 242.0 120.0 71.0 1.0 } # orange
+			{ 48.0 51.0 60.0 0.0 } # black
+			{ 238.0 189.0 96.0 1.0 } # yellow
+			{ 211.0 181.0 128.0 0.0 } # gold
+		}
+		happened = {
+			KOR = {
+				has_country_flag = TLE_THE_WAR_IS_ENDED
+			}
+		}
+	}
+}

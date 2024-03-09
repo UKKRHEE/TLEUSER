@@ -1,0 +1,28 @@
+﻿capital = 525
+
+oob = "LMC"
+set_research_slots = 5
+
+set_technology = {
+	infantry_weapons = 1
+	mass_assault = 1
+}
+
+
+recruit_character = LMC_alice_walker
+recruit_character = LMC_yi_hyung
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1930.11.9"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	neutrality = 100
+	fascism = 0
+	democratic = 0
+	communism = 0
+}
+
+set_stability = 0.50

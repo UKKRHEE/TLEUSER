@@ -1,0 +1,224 @@
+focus_tree = {
+	id = Alice
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = LMC
+		}
+	}
+	default = no
+	focus = {
+		id = LMC_EmpireofAlice
+		icon = GFX_goal_unknown
+		cost = 4.00
+		x = 3
+		y = 0
+			completion_reward = {
+				every_state = {
+					limit = { is_core_of = KOR }
+					add_core_of = LMC
+				}
+				add_political_power = -100
+				add_stability = -0.1
+			}
+
+	}
+	focus = {
+		id = LMC_FuckRepublicanism
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = LMC_EmpireofAlice
+		}
+		x = 1
+		y = 1
+			completion_reward = {
+				add_political_power = -200
+				add_stability = -0.2
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.5
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = -0.5
+			}
+				
+			}
+
+	}
+	focus = {
+		id = LMC_FuckConstitutionalism
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = LMC_EmpireofAlice
+		}
+		x = 3
+		y = 1
+			completion_reward = {
+				add_political_power = -100
+				add_stability = -0.1
+			add_popularity = {
+				ideology = democratic
+				popularity = -1
+			}
+				
+			}
+
+	}
+	focus = {
+		id = LMC_FuckSocialism
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = LMC_EmpireofAlice
+		}
+		x = 5
+		y = 1
+			completion_reward = {
+				add_political_power = -100
+				add_stability = -0.1
+			add_popularity = {
+				ideology = communism
+				popularity = -1
+			}
+				
+			}
+
+	}
+	focus = {
+		id = LMC_Queensdoubt
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = LMC_FuckRepublicanism
+		}
+		prerequisite = {
+			focus = LMC_FuckConstitutionalism
+		}
+		prerequisite = {
+			focus = LMC_FuckSocialism
+		}
+		x = 3
+		y = 2
+			completion_reward = {
+				add_political_power = -200
+				add_stability = -0.2
+				
+			}
+
+	}
+	focus = {
+		id = LMC_FarmerInvestigation
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = LMC_Queensdoubt
+		}
+		x = 3
+		y = 3
+			completion_reward = {
+				add_political_power = -200
+				add_stability = -0.2
+				
+			}
+
+	}
+	focus = {
+		id = LMC_songofgears
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = LMC_FarmerInvestigation
+		}
+		x = 2
+		y = 4
+			completion_reward = {
+				add_political_power = -300
+				add_stability = -0.3
+				add_war_support = -0.1
+				
+			}
+			select_effect = {
+				hidden_effect = {
+					if = {
+						limit = {
+							KOR = {
+								is_ai = no
+							}
+						}
+						play_song = "asscity"
+					}	
+				}
+			}
+
+	}
+	focus = {
+		id = LMC_StrangeGrain
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = LMC_FarmerInvestigation
+		}
+		x = 4
+		y = 4
+			completion_reward = {
+				add_political_power = -300
+				add_stability = -0.3
+				add_war_support = -0.1
+				
+			}
+			select_effect = {
+				hidden_effect = {
+					if = {
+						limit = {
+							KOR = {
+								is_ai = no
+							}
+						}
+						play_song = "Badgers"
+					}	
+				}
+			}
+
+	}
+	focus = {
+		id = LMC_EmpireonChaos
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = LMC_songofgears
+		}
+		prerequisite = {
+			focus = LMC_StrangeGrain
+		}
+		x = 3
+		y = 5
+			completion_reward = {
+				add_political_power = -400
+				add_stability = -0.4
+				add_war_support = -0.2
+				
+			}
+
+	}
+	focus = {
+		id = LMC_EndofQueen
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = LMC_EmpireonChaos
+		}
+		x = 3
+		y = 6
+			completion_reward = {
+				add_political_power = -500
+				add_stability = -0.5
+				add_war_support = -0.3
+				
+			}
+
+	}
+}

@@ -1,0 +1,46 @@
+
+state={
+	id=603
+	name="STATE_603"
+
+	history={
+		victory_points = {
+			4504 3 
+		}
+		owner = GXC
+		add_core_of = GXC
+		add_core_of = YUN
+		add_core_of = CHI
+		add_core_of = PRC
+		add_core_of = GZC
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			arms_factory = 2
+
+		}
+		1936.1.1 = {
+			set_demilitarized_zone = yes
+		}
+		1939.1.1 = {
+			set_demilitarized_zone = no
+			buildings = {
+				industrial_complex = 4
+				infrastructure = 4
+				air_base = 1
+				arms_factory = 2
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		1884 4192 4504 4532 8095 10616 
+	}
+	manpower=4543200
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

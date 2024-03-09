@@ -1,0 +1,141 @@
+characters={
+	####
+	VIN_ho_chi_minh = {
+		name = "VIN_ho_chi_minh"
+		portraits={
+			civilian={
+				large="gfx/leaders/VIN/Portrait_Vietnam_Ho_Chi_Minh.dds"
+			}
+		}
+		country_leader={
+			ideology=marxism
+			traits = {  }
+		}
+	}
+	VIN_phan_boi_chau = {
+		name = "VIN_phan_boi_chau"
+		portraits={
+			civilian={
+				large="gfx/leaders/VIN/Portrait_VIN_phan_boi_chau.png"
+			}
+		}
+		country_leader={
+			ideology=fascism_ideology
+			traits = {  }
+		}
+	}
+	VIN_ngo_dinh_diem = {
+		name = "VIN_ngo_dinh_diem"
+		portraits={
+			civilian={
+				large="gfx/leaders/VIN/Portrait_Vietnam_Ngo_Diem.dds"
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			traits = {  }
+		}
+	}
+	VIN_nguyen_baodai= {
+		name = "VIN_nguyen_baodai"
+		portraits={
+			civilian={
+				large="gfx/leaders/VIN/Portrait_Vietnam_Bao_Dai.dds"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits = {  }
+		}
+	}
+	VIN_nguyen_tuong_tam= {
+		name = "VIN_nguyen_tuong_tam"
+		portraits={
+			civilian={
+				large="gfx/leaders/VIN/Portrait_VIN_nguyen_tuong_tam.png"
+			}
+		}
+		#country_leader={
+		#	ideology=moderatism
+		#	traits = {  }
+		#}
+	}
+	####
+	CAM_pol_pot= {
+		name = "CAM_pol_pot"
+		portraits={
+			civilian={
+				large=GFX_portrait_Pol_Pot
+			}
+		}
+		country_leader={
+			ideology=anarchist_communism
+			traits = {  }
+		}
+	}
+	CAM_sisowath_Sirik_Matak = {
+		name = "CAM_sisowath_Sirik_Matak"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAM/Portrait_Cambodia_Sisowath_Sirik_Matak.dds"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			traits = {  }
+		}
+	}
+	CAM_norodom_sihanouk= {
+		name = "CAM_norodom_sihanouk"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAM/Portrait_Cambodia_Norodom_Sihanouk.dds"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits = {  }
+		}
+	}
+	###
+	LAO_sisavang_vong= {
+		name = "LAO_sisavang_vong"
+		portraits={
+			civilian={
+				large=GFX_portrait_Sisavang_Vong
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits = {  }
+		}
+	}
+	LAO_sisavang_vatthana= {
+		name = "LAO_sisavang_vatthana"
+		portraits={
+			civilian={
+				large="gfx/leaders/LAO/Portrait_Laos_Sisavang_Vatthana.dds"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits = {  }
+		}
+		country_leader={
+			ideology=conservatism
+			traits = {  }
+		}
+	}
+	LAO_souphanouvong= {
+		name = "LAO_souphanouvong"
+		portraits={
+			civilian={
+				large=GFX_portrait_Souphanouvong
+			}
+		}
+		country_leader={
+			ideology=marxism
+			traits = {  }
+		}
+	}
+}

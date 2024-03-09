@@ -1,0 +1,45 @@
+
+state={
+	id=282
+	name="STATE_282"
+	resources={
+	}
+
+	history={
+		owner = DKG
+		add_core_of = DKG
+		buildings = {
+			infrastructure = 3
+			air_base = 2
+			industrial_complex = 1
+			arms_factory = 1
+			dockyard = 1
+			9998 = {
+				naval_base = 6
+
+			}
+
+		}
+		victory_points = {
+			1182 30 
+		}
+		1939.1.1 = {
+			buildings = {
+				arms_factory = 4
+				dockyard = 4
+				industrial_complex = 6
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		1182
+	}
+	manpower=3319000
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

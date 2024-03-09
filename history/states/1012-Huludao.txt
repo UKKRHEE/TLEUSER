@@ -1,0 +1,26 @@
+state={
+	id=1012
+	name="STATE_QINHUANGDAO"
+	provinces={
+		3830 3900 9905 
+	}
+	history={
+		victory_points = {
+			3900 3 
+		}
+		owner = ZLC
+		add_core_of = ZLC
+		add_core_of = CHI
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+
+		}
+
+	}
+	manpower=2012390
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

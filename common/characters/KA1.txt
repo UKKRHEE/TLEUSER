@@ -1,0 +1,20 @@
+characters={
+	KA1_Josias_von_Waldeck_und_Pyrmont={
+		name="KA1_Josias_von_Waldeck_und_Pyrmont"
+		portraits={
+			civilian={
+				large="gfx/leaders/SV1/Josias_von_Waldeck_und_Pyrmont.dds"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			id=-1
+		}
+		country_leader={
+			ideology=nazism
+			traits={ }
+			id=-1
+		}
+	}
+}

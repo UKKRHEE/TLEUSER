@@ -1,0 +1,52 @@
+##USE SUPER_EVENT_MAKER_GUI IN USEFUL PYTHON PROGRAMS TO MAKE NEW SUPER EVENTS##
+TNO_fire_super_event = {
+	hidden_effect = {
+		if = {
+			limit = { check_variable = { TNO_temp_super_event = token:SE_NUCLEAR_WAR } }
+			ZZZ = {
+				set_variable = { TNO_super_event = TNO_temp_super_event }
+				play_song = "TNO_SE_NUCLEAR_WAR"
+			}
+		}
+		else_if = {
+			limit = { NOT = { has_country_flag = TLE_CANT_SEE_SP_EVENT } }
+			set_variable = { TNO_super_event = TNO_temp_super_event }
+			### SUPERS WITH DYNAMIC SFX ###
+
+			### DEFAULT ###
+			meta_effect = {
+				text = { scoped_play_song = "TNO_[SUPER]" }
+				SUPER = "[?TNO_super_event.GetTokenKey]"
+			}
+		}
+	}
+}
+
+TNO_fire_super_event_JAPAN_CW = {
+	hidden_effect = {
+		if = {
+			limit = { check_variable = { TLE_temp_super_event = token:SE_NUCLEAR_WAR } }
+			ZZZ = {
+				set_variable = { TLE_super_event = TLE_temp_super_event }
+				play_song = "TNO_SE_NUCLEAR_WAR"
+			}
+		}
+		else_if = {
+			limit = { NOT = { has_country_flag = TLE_CANT_SEE_SP_EVENT } }
+			set_variable = { TLE_super_event = TLE_temp_super_event }
+			### SUPERS WITH DYNAMIC SFX ###
+
+			### DEFAULT ###
+			meta_effect = {
+				text = { scoped_play_song = "TLE_[SUPER]" }
+				SUPER = "[?TLE_super_event.GetTokenKey]"
+			}
+		}
+	}
+}
+
+
+d_fire_super_event = {
+	set_temp_variable = { TNO_temp_super_event = args^0 }
+	TNO_fire_super_event = yes
+}

@@ -1,0 +1,153 @@
+
+
+
+music = {
+	name = "battotai_2"
+	file = "japan/battotai_2.ogg"
+}
+music = {
+	name = "donboh"
+	file = "japan/donboh.ogg"
+}
+music = {
+	name = "sunyeonga"
+	file = "japan/sunyeonga.ogg"
+}
+music = {
+	name = "goodbye_youthlife"
+	file = "japan/goodbye_youthlife.ogg"
+}
+music = {
+	name = "battotaiimperialjapanesearmymarch"
+	file = "japan/battotaiimperialjapanesearmymarch.ogg"
+}
+music = {
+	name = "sakurasakura"
+	file = "thelastempiremaintheme.ogg"
+}
+music = {
+	name = "japaneseimperialarmyvictorymarch"
+	file = "japan/japaneseimperialarmyvictorymarch.ogg"
+}
+music = {
+	name = "yukinoshingunthesnowymarch"
+	file = "japan/yukinoshingunthesnowymarch.ogg"
+}
+music = {
+	name = "kamikaze"
+	file = "japan/kamikaze.ogg"
+}
+
+music = {
+	name = "dokinosakuracherryblossomsofthesameperiod"
+	file = "japan/dokinosakuracherryblossomsofthesameperiod.ogg"
+}
+music = {
+	name = "japaneseempirenationalanthem"
+	file = "japan/japaneseempirenationalanthem.ogg"
+}
+music = {
+	name = "japanesegunkasongoftheyoungeagles"
+	file = "japan/japanesegunkasongoftheyoungeagles.ogg"
+}
+music = {
+	name = "burningsky"
+	file = "japan/burningsky.ogg"
+}
+music = {
+	name = "rabaurukaigun"
+	file = "japan/rabaurukaigun.ogg"
+}
+music = {
+	name = "getsugetsu"
+	file = "japan/getsugetsu.ogg"
+}
+music = {
+	name = "japanesearmymarch"
+	file = "japan/japanesearmymarch.ogg"
+}
+music = {
+	name = "roeinouta"
+	file = "japan/roeinouta.ogg"
+}
+music = {
+	name = "comradeinarms"
+	file = "japan/comradeinarms.ogg"
+}
+music = {
+	name = "senyu"
+	file = "japan/senyu.ogg"
+}
+music = {
+	name = "nipponrikugun"
+	file = "japan/nipponrikugun.ogg"
+}
+music = {
+	name = "hoheinohonryo"
+	file = "japan/hoheinohonryo.ogg"
+}
+music = {
+	name = "gunkanmaechi"
+	file = "japan/gunkanmaechi.ogg"
+}
+music = {
+	name = "shussei"
+	file = "japan/shussei.ogg"
+}
+music = {
+	name = "kimigayomarch"
+	file = "japan/kimigayomarch.ogg"
+}
+music = {
+	name = "goechin"
+	file = "japan/goechin.ogg"
+}
+music = {
+	name = "taiheiyoe"
+	file = "japan/taiheiyoe.ogg"
+}
+
+music = {
+	name = "RikugunKoshinkyokuSonoichi"
+	file = "japan/RikugunKoshinkyokuSonoichi.ogg"
+}
+
+music = {
+	name = "KatoHayabusasentotai"
+	file = "japan/KatoHayabusasentotai.ogg"
+}
+
+music = {
+	name = "Getsugetsukasuimokukinkin"
+	file = "japan/Getsugetsukasuimokukinkin.ogg"
+}
+
+music = {
+	name = "UmiYukaba"
+	file = "japan/UmiYukaba.ogg"
+}
+
+music = {
+	name = "SenjinKunnoUta"
+	file = "japan/SenjinKunnoUta.ogg"
+}
+
+music = {
+	name = "Nankofushi"
+	file = "japan/Nankofushi.ogg"
+}
+
+music = {
+	name = "ikotsu"
+	file = "japan/ikotsu.ogg"
+}
+
+music = {
+	name = "KigenNisenRoppyakuNen"
+	file = "japan/KigenNisenRoppyakuNen.ogg"
+}
+
+music = {
+	name = "Daitakessennouta"
+	file = "japan/Daitakessennouta.ogg"
+}

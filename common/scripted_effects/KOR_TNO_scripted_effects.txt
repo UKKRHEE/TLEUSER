@@ -1,0 +1,689 @@
+TNO_TLE_KOR_victory_effect = {
+	set_global_flag = show_peace_popup_alert
+	KOR = {
+		save_global_event_target_as = winning_country
+	}
+	USA = {
+		save_global_event_target_as = losing_country
+	}
+	if = {
+		limit = {
+			event_target:losing_country = {
+				any_allied_country = {
+					has_war_together_with = event_target:losing_country
+				}
+			}
+		}
+		set_global_flag = losing_country_multiple
+	}
+
+	if = {
+		limit = {
+			event_target:winning_country = {
+				any_allied_country = {
+					has_war_together_with = event_target:winning_country
+				}
+			}
+		}
+		set_global_flag = winning_country_multiple
+	}
+	every_country = {
+		limit = {
+			is_ai = no
+		}	
+		add_to_variable = { global.peace_popup_dirty = 1 }
+	}
+	log = "war_won"
+	set_global_flag = war_won
+		hidden_effect = {
+			RAJ = {
+				end_puppet = ENG
+			}
+			KOR = {
+				if = {
+					limit = {
+						or = {
+							AND = {
+								has_war_with = JAP
+								JAP = {
+									has_capitulated = yes
+								}
+							}
+							JAP = {
+								exists = no
+							}
+						}
+					}
+					annex_country = {
+						target = JAP
+						transfer_troops = no
+					}
+					
+					transfer_state = 988
+					transfer_state = 1073
+					transfer_state = 1067
+					transfer_state = 989
+					every_state = {
+						limit = {
+							is_core_of = JAP
+						}
+						remove_dynamic_modifier = { modifier = JAP_defence_the_korea }
+					}
+				}
+				if = {
+					limit = {
+						has_war_with = JAP
+						JAP = {
+							has_capitulated = no
+						}
+					}
+					set_global_flag = TNO_JAP_FIGHT_KOR
+					JAP = {
+						leave_faction = yes
+						create_faction = "HANGHANGUGUK"
+					}
+				}
+				add_to_faction = SIA
+				if = {
+					limit = {
+						INS = {
+							exists = no
+						}
+					}
+					INS = {
+						transfer_state = 672
+						transfer_state = 673
+						transfer_state = 738
+						transfer_state = 668
+						transfer_state = 667
+						transfer_state = 335
+						transfer_state = 334
+					}
+				}
+				puppet = MAL
+				puppet = INS
+				puppet = PHI
+				puppet = PNG
+				puppet = BAN
+				puppet = BRM
+				puppet = KVN
+				puppet = JNT
+				set_autonomy = { target = MAL autonomy_state = korean_bunguk }
+				set_autonomy = { target = INS autonomy_state = korean_bunguk }
+				set_autonomy = { target = PHI autonomy_state = korean_bunguk }
+				set_autonomy = { target = PNG autonomy_state = korean_bunguk }
+				set_autonomy = { target = BAN autonomy_state = korean_bunguk }
+				set_autonomy = { target = BRM autonomy_state = korean_bunguk }
+				set_autonomy = { target = KVN autonomy_state = korean_bunguk }
+				set_autonomy = { target = JNT autonomy_state = korean_bunguk }
+				transfer_state = 725
+				transfer_state = 726
+				transfer_state = 641
+				transfer_state = 643
+				transfer_state = 635
+				transfer_state = 734
+				transfer_state = 638
+				transfer_state = 636
+				transfer_state = 630
+				transfer_state = 632
+				transfer_state = 633
+				transfer_state = 629
+				transfer_state = 634
+				transfer_state = 727
+				transfer_state = 642
+				transfer_state = 639
+				transfer_state = 631
+				transfer_state = 422
+				transfer_state = 733
+				transfer_state = 710
+				transfer_state = 712
+				transfer_state = 711
+				
+				transfer_state = 326
+				transfer_state = 729
+				transfer_state = 728
+				
+				add_state_core = 631
+				add_state_core = 638
+				add_state_core = 636
+				add_state_core = 630
+				add_state_core = 632
+				add_state_core = 633
+				add_state_core = 629
+				add_state_core = 634
+				add_state_core = 727
+				add_state_core = 642
+				add_state_core = 639
+				add_state_core = 422
+				add_state_core = 733
+				add_state_core = 710
+				add_state_core = 712
+				add_state_core = 711
+			}
+			KVN = {
+				set_cosmetic_tag = VIE_KOR
+				transfer_state = 671
+				transfer_state = 670
+				transfer_state = 286
+				transfer_state = 741
+				transfer_state = 993
+				transfer_state = 994
+				transfer_state = 995
+				add_state_core = 671
+				add_state_core = 670
+				add_state_core = 286
+				add_state_core = 741
+				add_state_core = 993
+				add_state_core = 994
+				add_state_core = 995
+			}
+			PNG = {
+				transfer_state = 523
+				transfer_state = 737
+				transfer_state = 669
+				add_state_core = 669
+			}
+			BRM = {
+				set_cosmetic_tag = BRM_KOR
+				transfer_state = 640
+				transfer_state = 288
+				transfer_state = 992
+			}
+			BAN = {
+				set_cosmetic_tag = BAN_KOR
+				transfer_state = 430
+				transfer_state = 431
+				transfer_state = 432
+				transfer_state = 435
+				
+				add_state_core = 431
+				add_state_core = 432
+				add_state_core = 435
+
+				set_capital = {
+					state = 431
+				}
+			}
+			AFG = {
+				transfer_state = 445
+				transfer_state = 442
+				transfer_state = 444
+				
+				add_state_core = 445
+				add_state_core = 442
+				add_state_core = 444
+			}
+			TIB = {
+				transfer_state = 434
+			}
+			INS = {
+				set_cosmetic_tag = INS_KOR
+				transfer_state = 721
+			}
+			MAL = {
+				set_cosmetic_tag = MAL_KOR
+			}
+			JNT = {
+				transfer_state = 336
+				add_state_core = 336
+			}
+			if = {
+				limit = {
+					SIA = {
+						has_war_with = KOR
+					}
+				}
+				KOR = {
+					white_peace = SIA
+					puppet = SIA
+				}
+			}
+			if = {
+				limit = {
+					RAJ = {
+						has_war_with = KOR
+					}
+				}
+				RAJ = {
+					white_peace = KOR
+					leave_faction = yes
+				}
+				KOR = {
+					white_peace = RAJ
+					puppet = RAJ
+				}
+			}
+			RAJ = {
+				transfer_state = 320
+				transfer_state = 321
+				set_cosmetic_tag = RAJ_KOR
+			}
+			CAN = {
+				set_cosmetic_tag = CAN_TNO
+			}
+		}
+		every_country = {
+			limit = {
+				has_war_with = KOR
+					is_chinese_clique = no
+					NOT = {
+						original_tag = JAP
+					}
+			}	
+			white_peace = KOR
+			white_peace = DK1
+			white_peace = DK2
+			white_peace = DK3
+			white_peace = DK4
+			white_peace = CH1
+			white_peace = SZY
+			white_peace = SZC
+			white_peace = SHX
+			white_peace = KTA
+			white_peace = YUN
+			white_peace = GDC
+			white_peace = GXC
+			white_peace = MEN
+			white_peace = HNC
+			white_peace = SIK
+			white_peace = KVN
+			white_peace = XSM
+		}
+				every_country = {
+					limit = {
+						has_wargoal_against = KOR
+					}
+					remove_wargoal = {
+						type = all
+						target = GXC
+					}
+					remove_wargoal = {
+						type = all
+						target = YUN
+					}
+					remove_wargoal = {
+						type = all
+						target = MEN
+					}
+					remove_wargoal = {
+						type = all
+						target = KOR
+					}
+					remove_wargoal = {
+						type = annex_everything
+						target = KOR
+					}
+				}
+		605 = {
+			set_demilitarized_zone = yes
+		}
+		748 = {
+			set_demilitarized_zone = yes
+		}
+		1007 = {
+			set_demilitarized_zone = yes
+		}
+		1036 = {
+			set_demilitarized_zone = yes
+		}
+		1047 = {
+			set_demilitarized_zone = yes
+		}
+		753 = {
+			set_demilitarized_zone = yes
+		}
+}
+KOR_china_annex_effect = {
+		ZLC = {
+			remove_ideas = CHI_AI_WAR_BONUS_IDEA
+		}
+		CHI = {
+			remove_ideas = CHI_AI_WAR_BONUS_IDEA
+		}
+		release_puppet = SIK
+		puppet = GDC
+		puppet = YUN
+		puppet = SHX
+		puppet = HNC
+		puppet = CH1
+		puppet = GXC
+		puppet = SZC
+		puppet = SZY
+		puppet = KTA
+		puppet = GZC
+		KOR = {
+			set_autonomy = { target = GDC autonomy_state = korean_bunguk }
+			set_autonomy = { target = YUN autonomy_state = korean_bunguk }
+			set_autonomy = { target = SHX autonomy_state = korean_bunguk }
+			set_autonomy = { target = HNC autonomy_state = korean_bunguk }
+			set_autonomy = { target = CH1 autonomy_state = korean_bunguk }
+			set_autonomy = { target = GXC autonomy_state = korean_bunguk }
+			set_autonomy = { target = SZC autonomy_state = korean_bunguk }
+			set_autonomy = { target = SZY autonomy_state = korean_bunguk }
+			set_autonomy = { target = KTA autonomy_state = korean_bunguk }
+			set_autonomy = { target = GZC autonomy_state = korean_bunguk }
+		}
+		every_state = {
+			limit = {
+				is_core_of = ZLC
+			}
+			remove_dynamic_modifier = { modifier = CHI_defence_the_korea }
+			remove_dynamic_modifier = { modifier = CHI_defence_the_korea_2 }
+			remove_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
+			set_compliance = 90
+			set_resistance = 0
+			set_garrison_strength = 1.0
+			start_resistance = no
+		}
+		every_state = {
+			limit = {
+				is_core_of = WZC
+			}
+			add_core_of = CH1
+		}
+		KOR = {
+			set_country_flag = TLE_KOR_WIN_IN_CHINA_FUCKYEAH
+			end_puppet = SIK
+		}
+		SIK = {
+			load_focus_tree = korean_government
+			set_cosmetic_tag = SIK_KOR
+			leave_faction = yes
+		}
+		KTA = {
+			set_cosmetic_tag = XSM_KOR
+			transfer_state = 283
+			transfer_state = 996
+			transfer_state = 1063
+			transfer_state = 616
+			transfer_state = 756
+			add_state_core = 283
+			add_state_core = 996
+			add_state_core = 1063
+			add_state_core = 616
+			add_state_core = 756
+		}
+		XSM = {
+			load_focus_tree = korean_government
+			transfer_state = 755
+			transfer_state = 754
+			transfer_state = 1011
+		}
+		SZC = {
+			load_focus_tree = korean_government
+			set_cosmetic_tag = SZC_KOR
+			transfer_state = 1047
+			transfer_state = 605
+			transfer_state = 748
+			transfer_state = 1007
+			transfer_state = 753
+			add_state_core = 1047
+			add_state_core = 605
+			add_state_core = 748
+			add_state_core = 1007
+			add_state_core = 753
+			add_country_leader_role = {
+				Character = SZC_liu_xiang
+				country_leader = {
+					expire = "1965.1.1"
+					ideology = fascism_ideology
+					traits = { }
+					}
+				promote_leader = yes
+			}	
+		}
+		XKC = {
+			load_focus_tree = korean_government
+			set_cosmetic_tag = XKC_KOR
+			transfer_state = 751
+			transfer_state = 752
+			add_state_core = 751
+			add_state_core = 752
+		}
+		SZY = {
+			load_focus_tree = korean_government
+			transfer_state = 608
+			transfer_state = 614
+			transfer_state = 1074
+			transfer_state = 597
+			transfer_state = 1049
+			transfer_state = 1050
+			transfer_state = 973
+			transfer_state = 974
+			transfer_state = 1033
+			transfer_state = 609
+			transfer_state = 1012
+			transfer_state = 970
+			#
+			add_state_core = 608
+			add_state_core = 614
+			add_state_core = 1074
+			add_state_core = 615
+			add_state_core = 1052
+			add_state_core = 597
+			add_state_core = 1049
+			add_state_core = 1050
+			add_state_core = 972
+			add_state_core = 973
+			add_state_core = 974
+			add_state_core = 1033
+			add_state_core = 609
+			add_state_core = 1012
+			add_state_core = 970
+			set_cosmetic_tag = SZY_KOR
+		}
+		CH1 = {
+			set_capital = { state = 613 }
+			transfer_state = 607
+			transfer_state = 1057
+			transfer_state = 1008
+			transfer_state = 620
+			transfer_state = 1056	
+			transfer_state = 1009
+			transfer_state = 598	
+			transfer_state = 1051
+			transfer_state = 979
+			transfer_state = 1040
+			transfer_state = 606
+			transfer_state = 1048
+			transfer_state = 613
+			transfer_state = 1038
+			transfer_state = 1042
+			transfer_state = 749
+			transfer_state = 596
+			transfer_state = 1043
+			transfer_state = 1055
+			transfer_state = 1061
+			transfer_state = 595
+			transfer_state = 600
+			transfer_state = 1062
+			transfer_state = 1037
+			transfer_state = 1036
+			transfer_state = 1041
+			transfer_state = 1044
+			set_cosmetic_tag = CHI_KOR
+			add_ideas = CHI_slave_of_the_sonpi
+		}
+		GDC = {
+			load_focus_tree = korean_government
+			set_cosmetic_tag = GDC_KOR
+			transfer_state = 593
+			transfer_state = 1046
+			transfer_state = 592
+			add_state_core = 593
+			add_state_core = 1046
+			add_state_core = 592
+			add_state_core = 1045
+			add_state_core = 971
+		}
+		GXC = {
+			load_focus_tree = korean_government
+			set_cosmetic_tag = GXC_KOR
+			transfer_state = 594
+			transfer_state = 599
+		}
+		YUN = {
+			load_focus_tree = korean_government
+			set_cosmetic_tag = YUN_KOR
+			add_ideas = YUN_huguojun
+			transfer_state = 325
+			transfer_state = 747
+			transfer_state = 1010
+			transfer_state = 1013
+		}
+		GZC = {
+			load_focus_tree = korean_government
+			set_cosmetic_tag = GZC_KOR
+			transfer_state = 603
+			transfer_state = 1053
+			transfer_state = 1058
+			add_state_core = 603
+			add_state_core = 1053
+			add_state_core = 1058
+		}
+		SHX = {
+			load_focus_tree = korean_government
+			set_cosmetic_tag = SHX_KOR
+			transfer_state = 622
+			transfer_state = 744
+			transfer_state = 1052
+			transfer_state = 972
+			transfer_state = 615
+		}
+		HNC = {
+			load_focus_tree = korean_government
+			set_cosmetic_tag = HNC_KOR
+			transfer_state = 602
+			transfer_state = 1054
+			transfer_state = 750
+		}
+		1046 = {
+			set_demilitarized_zone = yes
+		}
+		if = {
+			limit = {
+				MEN = {
+					exists = yes
+				}
+			}
+			MEN = {
+				transfer_state = 329 #탄누투바 강탈
+				transfer_state = 746
+				add_state_core = 616
+				add_state_core = 756
+				add_state_core = 746
+				annex_country = {
+					target = MSR 
+					transfer_troops = no
+				}
+			}
+		}
+		if = {
+			limit = {
+				MEN = {
+					exists = no
+				}
+			}
+				transfer_state = 329
+				add_state_core = 970
+				add_state_core = 616
+				add_state_core = 756
+				add_state_core = 746
+				annex_country = {
+					target = MSR 
+					transfer_troops = no
+				}
+		}
+		329 = {
+			set_demilitarized_zone = yes
+		}
+		TIB = {
+			load_focus_tree = korean_government
+			set_cosmetic_tag = TIB_KOR
+			transfer_state = 604
+			transfer_state = 322
+			transfer_state = 757
+			transfer_state = 601
+			transfer_state = 758
+			add_state_core = 604
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					is_chinese_clique = yes
+					NOT = {
+						OR = {
+							original_tag = ZLC
+							original_tag = CHI
+						}
+					}
+				}
+				add_ideas = KOR_chinese_clique_puppet
+			}
+
+		}
+}
+KOR_japan_annex_effect = {
+				custom_effect_tooltip = TLE_TOOLTIP_BAEKJE
+				hidden_effect = {
+					puppet = DK4
+					DK4 = {
+							transfer_state = 530
+							add_state_core = 530
+							set_cosmetic_tag = KOR_FJP
+						}
+					puppet = DK1
+					KOR = {
+						set_autonomy = { target = DK1 autonomy_state = korean_general_government }
+						set_autonomy = { target = DK3 autonomy_state = korean_general_government }
+						set_autonomy = { target = DK4 autonomy_state = korean_general_government }
+						set_autonomy = { target = DK2 autonomy_state = korean_bunguk }
+					}
+					DK1 = {
+							transfer_state = 529
+							transfer_state = 531
+							transfer_state = 1070
+							transfer_state = 991
+							transfer_state = 1066
+							transfer_state = 1065
+							add_ideas = DK1_nobuhito
+							add_state_core = 529
+							add_state_core = 531
+							add_state_core = 1070
+							add_state_core = 991
+							add_state_core = 1066
+							add_state_core = 1065
+						}
+					puppet = DK2
+					DK2 = {
+							transfer_state = 1069
+							transfer_state = 535
+							transfer_state = 532
+							transfer_state = 1072
+							transfer_state = 534
+							transfer_state = 282
+							transfer_state = 990
+							add_ideas = DK1_nobuhito
+							add_ideas = JAP_pre_modern_army
+							add_state_core = 1069
+							add_state_core = 535
+							add_state_core = 532
+							add_state_core = 1072
+							add_state_core = 534
+							add_state_core = 282
+							add_state_core = 990
+							set_cosmetic_tag = KOR_TBJ
+						}
+					puppet = DK3
+					DK3 = {
+							transfer_state = 1071
+							transfer_state = 533
+							transfer_state = 1068
+							add_state_core = 1071
+							add_state_core = 533
+							add_state_core = 1068
+							set_cosmetic_tag = KOR_NBJ
+							add_ideas = DK1_nobuhito
+						}
+				}
+}

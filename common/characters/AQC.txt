@@ -1,0 +1,28 @@
+characters={
+	AQC_chen_tiao_yuan={
+		name="AHC_chen_tiao_yuan"
+		portraits={
+			civilian={
+				large="gfx/leaders/AHC/portrait_anc_chen_tiaoyuan.png"
+			}
+			army = {
+				large="gfx/leaders/AHC/portrait_anc_chen_tiaoyuan.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+		}
+		field_marshal={
+			traits = {
+				politically_connected
+				old_guard
+				artillery_officer
+			}
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+}

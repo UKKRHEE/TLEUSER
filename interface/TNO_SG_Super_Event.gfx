@@ -1,0 +1,300 @@
+spriteTypes = {
+	corneredTileSpriteType = {
+		name = "GFX_tiled_window_bigevent_border"
+		size= { x=192 y=243 }
+		textureFile = "gfx/interface/tiles/tiled_window_bigevent_border.dds"
+		borderSize = { x=64 y=71 }
+		tilingCenter = no
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	# spriteType = {
+	# 	name = "GFX_nuke_super_frame"
+	# 	textureFile = "gfx/interface/topbar/nuke_super_frame.dds"
+	# }
+	# spriteType = {
+	# 	name = "GFX_nuke_super_title"
+	# 	textureFile = "gfx/interface/topbar/nuke_super_title.dds"
+	# }
+	corneredTileSpriteType = {
+		name = "GFX_tiled_window_1b_no_border"
+		size= { x=192 y=192 }
+		textureFile = "gfx/interface/tiles/tiled_bg2.dds"
+		borderSize = { x=64 y=64 }
+		tilingCenter = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	spriteType = {
+		name = "GFX_superevent_text_underlay"
+		textureFile = "gfx/interface/superevent_text_underlay.dds"
+	}
+	FrameAnimatedSpriteType = {
+		name = "GFX_SE_NUCLEAR_WAR"
+		textureFile = "gfx/superevent_pictures/nuclearwar.dds"
+		noOfFrames = 28
+		loadType = "INGAME"
+		alwaystransparent = no
+		animation_rate_fps = 10
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+
+	# Images # 
+	frameAnimatedSpriteType = {
+        name = "GFX_SE_JAPAN_CW"
+        texturefile = "gfx/superevent_pictures/TLE_superevent_jap_1.dds"
+        noOfFrames = 112
+        loadType = "INGAME"
+        animation_rate_fps = 7
+        looping = yes
+        play_on_show = yes
+        pause_on_loop = 0.0
+        alwaystransparent = yes
+    }
+	frameAnimatedSpriteType = {
+        name = "GFX_SE_JAPAN_CW_2"
+        texturefile = "gfx/superevent_pictures/TLE_superevent_jap_2.dds"
+        noOfFrames = 112
+        loadType = "INGAME"
+        animation_rate_fps = 7
+        looping = yes
+        play_on_show = yes
+        pause_on_loop = 0.0
+        alwaystransparent = yes
+    }
+	frameAnimatedSpriteType = {
+        name = "GFX_SE_JAPAN_CW_3"
+        texturefile = "gfx/superevent_pictures/TLE_superevent_jap_3.dds"
+        noOfFrames = 112
+        loadType = "INGAME"
+        animation_rate_fps = 7
+        looping = yes
+        play_on_show = yes
+        pause_on_loop = 0.0
+        alwaystransparent = yes
+    }
+	frameAnimatedSpriteType = {
+        name = "GFX_SE_JAPAN_CW_4"
+        texturefile = "gfx/superevent_pictures/TLE_superevent_jap_4.dds"
+        noOfFrames = 112
+        loadType = "INGAME"
+        animation_rate_fps = 7
+        looping = yes
+        play_on_show = yes
+        pause_on_loop = 0.0
+        alwaystransparent = yes
+    }
+	frameAnimatedSpriteType = {
+        name = "GFX_SE_JAPAN_CW_5"
+        texturefile = "gfx/superevent_pictures/TLE_superevent_jap_5.dds"
+        noOfFrames = 112
+        loadType = "INGAME"
+        animation_rate_fps = 7
+        looping = yes
+        play_on_show = yes
+        pause_on_loop = 0.0
+        alwaystransparent = yes
+    }
+	frameAnimatedSpriteType = {
+        name = "GFX_SE_JAPAN_CW_6"
+        texturefile = "gfx/superevent_pictures/TLE_superevent_jap_6.dds"
+        noOfFrames = 112
+        loadType = "INGAME"
+        animation_rate_fps = 7
+        looping = yes
+        play_on_show = yes
+        pause_on_loop = 0.0
+        alwaystransparent = yes
+    } 
+
+	spriteType = {
+		name = "GFX_SE_KOREA_THE_YI_KANG"
+		textureFile = "gfx/superevent_pictures/yikangs_election.png"
+	}
+	spriteType = {
+		name = "GFX_SE_KOREA_WW_CHINA"
+		textureFile = "gfx/superevent_pictures/korea_ww_china.dds"
+	}
+	spriteType = {
+		name = "GFX_SE_EMPIRE_OF_JAPAN"
+		textureFile = "gfx/superevent_pictures/empire_of_japan.png"
+	}
+	spriteType = {
+		name = "GFX_SE_RUSSIA_ATTACK_KOREA"
+		textureFile = "gfx/superevent_pictures/russia_attack_korea.dds"
+	}
+	spriteType = {
+		name = "GFX_SE_KOREA_WAR_WITH_USA"
+		textureFile = "gfx/superevent_pictures/korea_war_with_usa.dds"
+	}
+	spriteType = {
+		name = "GFX_SE_FALL_OF_KOREA"
+		textureFile = "gfx/superevent_pictures/fall_of_korea.dds"
+	}
+	# spriteType = {
+	# 	name = "GFX_SE_JAPAN_CW"
+	# 	textureFile = "gfx/superevent_pictures/japan_cw.png"
+	# } 
+	spriteType = {
+		name = "GFX_SE_WON_IN_CHINA"
+		textureFile = "gfx/superevent_pictures/won_in_china.png"
+	}
+	spriteType = {
+		name = "GFX_SE_SECOND_NORTHATTACK"
+		textureFile = "gfx/superevent_pictures/2nd_northattack.png"
+	}
+	spriteType = {
+		name = "GFX_SE_FALL_OF_GERMANY"
+		textureFile = "gfx/superevent_pictures/fall_of_germany.png"
+	}
+	spriteType = {
+		name = "GFX_SE_FALL_OF_SOVIET"
+		textureFile = "gfx/superevent_pictures/fall_of_soviet.png"
+	}
+	spriteType = {
+		name = "GFX_SE_GERMANY_WIN"
+		textureFile = "gfx/superevent_pictures/germany_win.png"
+	}
+	spriteType = {
+		name = "GFX_SE_KANGMYONG_YUSHIN"
+		textureFile = "gfx/superevent_pictures/kangmyong_yushin.png"
+	}
+	spriteType = {
+		name = "GFX_SE_KOREAN_JAPANESE_WAR"
+		textureFile = "gfx/superevent_pictures/korean_japanese_war.png"
+	}
+	spriteType = {
+		name = "GFX_SE_SURRENDER_OF_USA"
+		textureFile = "gfx/superevent_pictures/surrender_of_usa.png"
+	}
+	spriteType = {
+		name = "GFX_SE_OPERATION_BARBAROSSA"
+		textureFile = "gfx/superevent_pictures/operation_barbarossa.png"
+	}
+	spriteType = {
+		name = "GFX_SE_KOREAN_CIVIL_WAR"
+		textureFile = "gfx/superevent_pictures/korean_civilwar.png"
+	}
+	spriteType = {
+		name = "GFX_SE_WORLD_WAR_II"
+		textureFile = "gfx/superevent_pictures/world_war_ii.png"
+	}
+	spriteType = {
+		name = "GFX_SE_KOREAN_STATE"
+		textureFile = "gfx/superevent_pictures/korean_state.png"
+	}
+	spriteType = {
+		name = "GFX_SE_MUNMIN_TONGJE"
+		textureFile = "gfx/superevent_pictures/munmin_tongje.png"
+	}
+	spriteType = {
+		name = "GFX_SE_EMPIRE_OF_KOREA_JAPAN"
+		textureFile = "gfx/superevent_pictures/korea_japan_empire.png"
+	}
+	spriteType = {
+		name = "GFX_SE_KOREA_HANGANG"
+		texturefile = "gfx/superevent_pictures/한강.png"
+	}
+	spriteType = {
+		name = "GFX_SE_FALL_OF_JAPAN"
+		texturefile = "gfx/superevent_pictures/fall_of_japan.png"
+	}
+	spriteType = {
+		name = "GFX_SE_BEIYANG_CHINA"
+		texturefile = "gfx/superevent_pictures/beiyang_unified_china.png"
+	}
+	spriteType = {
+		name = "GFX_SE_KUOMINTANG_CHINA"
+		texturefile = "gfx/superevent_pictures/kuomintang.png"
+	}
+	spriteType = {
+		name = "GFX_SE_ITALY_CIVIL_WAR"
+		texturefile = "gfx/superevent_pictures/italy_civil_war.png"
+	}
+	spriteType = {
+		name = "GFX_SE_ITALY_DEMOCRACY"
+		texturefile = "gfx/superevent_pictures/italia_democracy.png"
+	}
+	spriteType = {
+		name = "GFX_SE_ITALY_COMMUNISM"
+		texturefile = "gfx/superevent_pictures/italia_communism.png"
+	}
+	spriteType = {
+		name = "GFX_SE_CHINESE_CIVIL_WAR"
+		texturefile = "gfx/superevent_pictures/china_civil_war.png"
+	}
+	spriteType = {
+		name = "GFX_SE_UNITED_NATIONS"
+		texturefile = "gfx/superevent_pictures/united_nation.png"
+	}
+	spriteType = {
+		name = "GFX_SE_WINTER_WAR"
+		texturefile = "gfx/superevent_pictures/winter_war.png"
+	}
+	spriteType = {
+		name = "GFX_SE_WELTKRIEG"
+		texturefile = "gfx/superevent_pictures/weltkrieg.png"
+	}
+	spriteType = {
+		name = "GFX_SE_GERMANY_CIVIL_WAR"
+		texturefile = "gfx/superevent_pictures/germany_civil_war.png"
+	}
+	spriteType = {
+		name = "GFX_SE_EAST_FRONT"
+		texturefile = "gfx/superevent_pictures/east_front.png"
+	}
+	spriteType = {
+		name = "GFX_SE_KAISER"
+		texturefile = "gfx/superevent_pictures/return_to_kaiser.png"
+	}
+	spriteType = {
+		name = "GFX_SE_SPAINISH_CIVIL_WAR"
+		texturefile = "gfx/superevent_pictures/spanish_civil_war.png"
+	}
+	spriteType = {
+		name = "GFX_SE_FALL_OF_FRANCE"
+		texturefile = "gfx/superevent_pictures/fall_of_france.png"
+	}
+	spriteType = {
+		name = "GFX_SE_MALAYAN_CAMPAIGN"
+		texturefile = "gfx/superevent_pictures/malayan_campaign.png"
+	}
+	spriteType = {
+		name = "GFX_SE_TIBET_WON_QINGHAI"
+		texturefile = "gfx/superevent_pictures/tibet_won.png"
+	}
+	# spriteType = {
+	# 	name = "GFX_korea_attack_germany"
+	# 	texturefile = "gfx/superevent_pictures/korea_attack_germany.png"
+	# }
+	spriteType = {
+		name = "GFX_SE_FALL_OF_POLAND"
+		texturefile = "gfx/superevent_pictures/fall_of_poland.png"
+	}
+	spriteType = {
+		name = "GFX_SE_ICHI_GO"
+		texturefile = "gfx/superevent_pictures/ichi_go.png"
+	}
+	spriteType = {
+		name = "GFX_SE_FALL_OF_LOS_ANGELES"
+		texturefile = "gfx/superevent_pictures/fall_of_los_angeles.png"
+	}
+	spriteType = {
+		name = "GFX_SE_TOBURN_EMPIRE"
+		texturefile = "gfx/superevent_pictures/toburn_empire_picture.png"
+	}
+	spriteType = {
+		name = "GFX_SE_FALL_OF_BRITAIN"
+		texturefile = "gfx/superevent_pictures/fall_of_britain.png"
+	}
+	spriteType = {
+		name = "GFX_SE_GREAT_ASIAN_WAR"
+		texturefile = "gfx/superevent_pictures/great_asian_war.png"
+	}
+	spriteType = {
+		name = "GFX_SE_GREAT_ASIAN_WAR_ILSO"
+		texturefile = "gfx/superevent_pictures/great_asian_war_ilso.png"
+	}
+	##USE SUPER_EVENT_MAKER_GUI IN USEFUL PYTHON PROGRAMS TO MAKE NEW SUPER EVENTS##
+}
+

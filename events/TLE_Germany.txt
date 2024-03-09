@@ -1,0 +1,605 @@
+﻿
+add_namespace = TLE_Germany
+country_event = {
+	id = TLE_Germany.1 #독-소 평화협정
+	title = TLE_Germany.1.t
+	desc = TLE_Germany.t.d
+	picture = GFX_report_event_stalin_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = TLE_Germany.1.a
+	}
+	option = {
+		name = TLE_Germany.1.a
+	}
+}
+country_event = {
+	id = TLE_Germany.2 #독-소 평화협정
+	title = TLE_Germany.2.t
+	desc = TLE_Germany.2.d
+	picture = GFX_report_event_stalin_01
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = TLE_Germany.2.a #부르군트 좆까
+		ai_chance = { factor = 0 }
+	}
+	option = {
+		name = TLE_Germany.2.b #부르군트 ㅇㅋ
+		ai_chance = { factor = 100 }
+		GER = {
+			puppet = BRG
+			country_event = {
+				id = TLE_Germany.4
+				days = 5
+			} 
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = PRE_THE_NEW_ORDER_GBR
+					}
+				}
+				country_event = {
+					id = TLE_Germany.13
+					days = 2
+				}
+			}
+		}
+		BRG = {
+			transfer_state = 17
+			transfer_state = 18
+			transfer_state = 985
+			transfer_state = 29
+			add_state_core = 17
+			add_state_core = 18
+			add_state_core = 985
+			add_state_core = 29
+		}
+		if = {
+			limit = {
+				owns_state = 15
+			}
+			BRG = {
+				transfer_state = 15
+			}
+		}	
+		if = {
+			limit = {
+				owns_state = 16
+			}
+			BRG = {
+				transfer_state = 16
+			}
+		}	
+		if = {
+			limit = {
+				owns_state = 27
+			}
+			BRG = {
+				transfer_state = 27
+			}
+		}	
+		if = {
+			limit = {
+				owns_state = 20
+			}
+			BRG = {
+				transfer_state = 20
+			}
+		}	
+		if = {
+			limit = {
+				owns_state = 32
+			}
+			BRG = {
+				transfer_state = 32
+			}
+		}	
+		if = {
+			limit = {
+				owns_state = 735
+			}
+			BRG = {
+				transfer_state = 735
+			}
+		}	
+		if = {
+			limit = {
+				owns_state = 851
+			}
+			BRG = {
+				transfer_state = 851
+			}
+		}	
+		if = {
+			limit = {
+				owns_state = 22
+			}
+			BRG = {
+				transfer_state = 22
+			}
+		}	
+		if = {
+			limit = {
+				owns_state = 31
+			}
+			BRG = {
+				transfer_state = 31
+			}
+		}	
+		if = {
+			limit = {
+				owns_state = 19
+			}
+			BRG = {
+				transfer_state = 19
+			}
+		}	
+		if = {
+			limit = {
+				owns_state = 25
+			}
+			BRG = {
+				transfer_state = 25
+			}
+		}	
+		if = {
+			limit = {
+				owns_state = 23
+			}
+			BRG = {
+				transfer_state = 23
+			}
+		}	
+		if = {
+			limit = {
+				owns_state = 30
+			}
+			BRG = {
+				transfer_state = 30
+			}
+		}	
+		if = {
+			limit = {
+				owns_state = 14
+			}
+			BRG = {
+				transfer_state = 14
+			}
+		}	
+	}
+}
+country_event = {
+	id = TLE_Germany.3 #바나트기사단국
+	title = TLE_Germany.3.t
+	desc = TLE_Germany.3.d
+	picture = GFX_report_event_stalin_01
+	
+	fire_only_once = yes
+	trigger = {
+		tag = GER
+		has_global_flag = GB_Germany_victory_at_ww2
+		has_government = fascism
+		owns_state = 764
+	}
+	
+	option = {
+		name = TLE_Germany.3.a #바나트 좆까
+		ai_chance = { factor = 0 }
+	}
+	option = {
+		name = TLE_Germany.3.b #바나트 ㅇㅋ
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0
+				has_global_flag = PRE_THE_NEW_ORDER_GBR
+			}
+		}
+		GER = {
+			puppet = BT1
+		}
+		BT1 = {
+			transfer_state = 764
+			add_state_core = 764
+		}
+	}
+	option = {
+		name = TLE_Germany.3.c #헝가리 ㄱㄱ
+		ai_chance = { factor = 0 }
+		HUN = {
+			transfer_state = 764
+			add_state_core = 764
+		}
+	}
+	option = {
+		name = TLE_Germany.3.c #세르비아 ㄱㄱ
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 100
+				has_global_flag = PRE_THE_NEW_ORDER_GBR
+			}
+		}
+		SER = {
+			transfer_state = 764
+			add_state_core = 764
+		}
+	}
+}
+country_event = {
+	id = TLE_Germany.4 #바나트기사단국
+	title = TLE_Germany.4.t
+	desc = TLE_Germany.4.d
+	picture = GFX_report_event_stalin_01
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = TLE_Germany.4.c #벨기에 국판
+		trigger = {
+			NOT = {
+				has_global_flag = PRE_THE_NEW_ORDER_GBR
+			}
+		}
+		ai_chance = { factor = 90 }
+		GER = {
+			transfer_state = 980
+			puppet = BG1
+			country_event = {
+				id = TLE_Germany.11
+			}
+		}
+		BG1 = {
+			transfer_state = 6
+			transfer_state = 34
+			transfer_state = 1001
+			add_state_core = 6
+			add_state_core = 34
+			add_state_core = 1001
+		}
+	}
+	option = {
+		name = TLE_Germany.4.b #벨기에 부르군트
+		trigger = {
+			has_global_flag = PRE_THE_NEW_ORDER_GBR
+		}
+		ai_chance = { factor = 10 }
+		GER = {
+			
+			country_event = {
+				id = TLE_Germany.11
+			}
+		}
+		BRG = {
+			transfer_state = 6
+			transfer_state = 34
+			transfer_state = 1001
+			add_state_core = 6
+			add_state_core = 34
+			add_state_core = 1001
+		}
+	}
+	option = {
+		name = TLE_Germany.4.a #벨기에 ㄴㄴ
+		trigger = {
+			NOT = {
+				has_global_flag = PRE_THE_NEW_ORDER_GBR
+			}
+		}
+		ai_chance = { factor = 0 }
+	}
+}
+country_event = {
+	id = TLE_Germany.5 #바나트기사단국
+	title = TLE_Germany.5.t
+	desc = TLE_Germany.5.d
+	picture = GFX_event_TLE_Germany_5
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = TLE_Germany.5.a #
+		ai_chance = { factor = 100 }
+		custom_effect_tooltip = GERMANY_ENDING
+		set_portraits = {
+			character = GER_adolf_hitler
+			civilian = { 
+				large ="gfx/leaders/GER/Portrait_GER_adolf_hitler_old.dds"
+			}
+			army = { 
+				large ="gfx/leaders/GER/Portrait_GER_adolf_hitler_old.dds"
+			}
+		}
+		hidden_effect = {
+			set_province_name = {
+				id = 6521
+				name = "게르마니아"
+			}
+		}
+	}
+}
+country_event = {
+	id = TLE_Germany.11 #오스트리아중립
+	title = TLE_Germany.11.t
+	desc = TLE_Germany.11.d
+	picture = GFX_report_event_stalin_01
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = TLE_Germany.11.a #네덜란드 국판
+		ai_chance = { factor = 100 }
+		GER = {
+			puppet = NT1
+		}
+		NT1 = {
+			transfer_state = 36
+			transfer_state = 35
+			transfer_state = 7
+			add_state_core = 36
+			add_state_core = 35
+			add_state_core = 7
+		}
+	}
+}
+country_event = {
+	id = TLE_Germany.12 #오스트리아중립
+	title = TLE_Germany.12.t
+	desc = TLE_Germany.12.d
+	picture = GFX_report_event_stalin_01
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = TLE_Germany.12.a #네덜란드 국판
+		ai_chance = { factor = 100 }
+		GER = {
+			puppet = PG1
+		}
+		PG1 = {
+			transfer_state = 10
+			transfer_state = 90
+			transfer_state = 88
+			transfer_state = 92
+			transfer_state = 91
+			transfer_state = 89
+			add_state_core = 10
+			add_state_core = 90
+			add_state_core = 88
+			add_state_core = 92
+			add_state_core = 91
+			add_state_core = 89
+		}
+	}
+	
+	option = {
+		name = TLE_Germany.12.b #네덜란드 국판
+		ai_chance = { factor = 0 }
+	}
+}
+country_event = {
+	id = TLE_Germany.13 #오스트리아중립
+	title = TLE_Germany.13.t
+	desc = TLE_Germany.13.d
+	picture = GFX_report_event_stalin_01
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = TLE_Germany.13.a #네덜란드 국판
+		ai_chance = { factor = 100 }
+		GER = {
+			puppet = SW1
+		}
+		SW1 = {
+			transfer_state = 845
+			transfer_state = 3
+			transfer_state = 151
+			transfer_state = 847
+			add_state_core = 845
+			add_state_core = 3
+			add_state_core = 151
+			add_state_core = 847
+		}
+	}
+}
+####
+country_event = {
+	id = TLE_Germany.6 #오스트리아중립
+	title = TLE_Germany.6.t
+	desc = TLE_Germany.6.d
+	picture = GFX_report_event_stalin_01
+	
+	fire_only_once = yes
+	trigger = {
+		tag = USA
+		DDR = { exists = yes }
+		WGR = { exists = yes }
+		has_global_flag = TLE_germany_union_defeat
+		AUS = { exists = no }
+	}
+	
+	option = {
+		name = TLE_Germany.6.a #오스트리아 독립 제의
+		ai_chance = { factor = 100 }
+		SOV = {
+			country_event = {
+				id = TLE_Germany.7
+				days = 4
+			}
+		}
+	}
+}
+country_event = {
+	id = TLE_Germany.7 #오스트리아중립
+	title = TLE_Germany.7.t
+	desc = TLE_Germany.7.d
+	picture = GFX_report_event_stalin_01
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = TLE_Germany.7.a #오스트리아 동의
+		ai_chance = { factor = 100 }
+		USA = {
+			country_event = {
+				id = TLE_Germany.8
+				days = 3
+			}
+		}
+	}
+	option = {
+		name = TLE_Germany.7.a #오스트리아 거부
+		ai_chance = { factor = 0 }
+		USA = {
+			country_event = {
+				id = TLE_Germany.9
+				days = 3
+			}
+		}
+	}
+}
+country_event = {
+	id = TLE_Germany.8 #오스트리아중립 - 동의
+	title = TLE_Germany.8.t
+	desc = TLE_Germany.8.d
+	picture = GFX_report_event_stalin_01
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = TLE_Germany.8.a #오스트리아 동의
+		ai_chance = { factor = 100 }
+		AUS = {
+			transfer_state = 4
+			transfer_state = 152
+			transfer_state = 153
+			transfer_state = 848
+			transfer_state = 984
+			transfer_state = 986
+			set_politics = {
+				ruling_party = democratic
+				last_election = "1936.2.26"
+				election_frequency = 48
+				elections_allowed = yes
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 1
+			}
+			add_country_leader_role = {
+				Character = AUS_otto_von_habsburg
+				country_leader = {
+					#expire = "1965.1.1"
+					ideology = despotism
+					traits = { }
+				}
+				promote_leader = yes
+			}	
+		}
+	}
+}
+country_event = {
+	id = TLE_Germany.9 #오스트리아중립 - 거부
+	title = TLE_Germany.9.t
+	desc = TLE_Germany.9.d
+	picture = GFX_report_event_stalin_01
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = TLE_Germany.9.a #오스트리아 동의
+		ai_chance = { factor = 0 }
+		SOV = {
+			country_event = {
+				id = TLE_Germany.10
+				days = 5
+			}
+		}	
+		AUS = {
+			transfer_state = 152
+			transfer_state = 153
+			transfer_state = 848
+			transfer_state = 986
+			set_politics = {
+				ruling_party = democratic
+				last_election = "1936.2.26"
+				election_frequency = 48
+				elections_allowed = yes
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 1
+			}
+			add_country_leader_role = {
+				Character = AUS_otto_von_habsburg
+				country_leader = {
+					#expire = "1965.1.1"
+					ideology = despotism
+					traits = { }
+				}
+				promote_leader = yes
+			}	
+		}
+	}
+	
+	option = {
+		name = TLE_Germany.9.a #오스트리아 동의
+		ai_chance = { factor = 100 }
+		SOV = {
+			country_event = {
+				id = TLE_Germany.10
+				days = 5
+			}
+		}	
+		WGR = {
+			transfer_state = 152
+			transfer_state = 153
+			transfer_state = 848
+			transfer_state = 986
+			add_state_core = 152
+			add_state_core = 153
+			add_state_core = 848
+			add_state_core = 986
+			add_state_core = 984
+			add_state_core = 4
+		}
+	}
+}
+country_event = {
+	id = TLE_Germany.10 #오스트리아중립 - 거부
+	title = TLE_Germany.10.t
+	desc = TLE_Germany.10.d
+	picture = GFX_report_event_stalin_01
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = TLE_Germany.10.a #오스트리아 동의
+		ai_chance = { factor = 100 }
+		AS1 = { #오인공
+			transfer_state = 984
+			transfer_state = 4
+			add_state_core = 4
+			add_state_core = 152
+			add_state_core = 153
+			add_state_core = 848
+			add_state_core = 984
+			add_state_core = 986
+		}
+	}
+}

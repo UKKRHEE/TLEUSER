@@ -1,0 +1,5 @@
+﻿
+focus = {
+    current = "ZLC_BEI_zhengchu"
+    Progress = 0
+}   

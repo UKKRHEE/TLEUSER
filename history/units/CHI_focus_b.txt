@@ -1,0 +1,5 @@
+﻿
+focus = {
+    current = "KMT_stability_of_party"
+    Progress = 0
+}   

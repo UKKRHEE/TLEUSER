@@ -1,0 +1,30 @@
+state={
+	id=989
+	name="STATE_KURE"
+	provinces={
+		13383
+	}
+	history={
+		owner = DKG
+		add_core_of = DKG
+		buildings = {
+			infrastructure = 1
+			13367 = {
+				naval_base = 3
+
+			}
+
+		}
+		1882.3.19 = {
+			set_demilitarized_zone = yes
+		}
+		victory_points = {
+			13383 3 
+		}
+
+	}
+	state_category=rural
+	manpower=142390
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}
