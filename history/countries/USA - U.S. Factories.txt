@@ -1,0 +1,14 @@
+
+recruit_character = USA_harry_s_truman
+add_offsite_building = {
+	type = arms_factory
+	level = 20
+}
+add_offsite_building = {
+	type = dockyard
+	level = 10
+}
+add_offsite_building = {
+	type = industrial_complex
+	level = 100
+}
