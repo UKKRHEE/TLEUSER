@@ -159,7 +159,7 @@ spriteTypes = {
     }
     spriteType = {
 		name = "GFX_idea_kor_mil_tongjepa"
-		texturefile = "gfx/interface/ideas/LAWS/uujoongbooi.png"
+		texturefile = "gfx/interface/ideas/LAWS/LOALTY/tongjepa.png"
     }
 	####################
 	spriteType = {
@@ -224,11 +224,11 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_idea_MSR_revolitionary_frontline" 
-		texturefile = "gfx/interface/ideas/idea_jap_the_unthinkable_option.dds" 
+		texturefile = "gfx/interface/ideas/JAP/idea_jap_the_unthinkable_option.dds" 
 	}
 	spriteType = {
 		name = "GFX_idea_KOR_war_japan_ai" 
-		texturefile = "gfx/interface/ideas/idea_KOR_nations.png" 
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_nations.png" 
 	}
 	spriteType = {
 		name = "GFX_idea_KPL_is_cant_attack" 
@@ -504,11 +504,11 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_idea_JAP_unorganized_government_2"
-		texturefile = "gfx/interface/ideas/idea_JAP_unorganized_government.png"
+		texturefile = "gfx/interface/ideas/JAP/idea_JAP_unorganized_government.png"
 	}
 	spriteType = {
 		name = "GFX_idea_JAP_unorganized_government_3"
-		texturefile = "gfx/interface/ideas/idea_JAP_unorganized_government.png"
+		texturefile = "gfx/interface/ideas/JAP/idea_JAP_unorganized_government.png"
 	}
 	spriteType = {
 		name = "GFX_idea_TLE_afterwar_idea"
@@ -693,7 +693,7 @@ spriteTypes = {
 	}
 	SpriteType = { 
 		name = "GFX_idea_JAP_imperial_glory"  
-		texturefile = "gfx/interface/ideas/idea_JAP_imperial_glory.dds"
+		texturefile = "gfx/interface/ideas/JAP/idea_JAP_imperial_glory.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_JAP_not_regulared_industry"
