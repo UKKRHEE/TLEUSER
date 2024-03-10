@@ -4409,7 +4409,7 @@ on_actions = {
 					tag = SWE
 					NOT = {
 						has_government = communism 
-						has_idea = SWE_gustaf_v_king
+						has_idea = SWE_gustaf_v_idea
 					}
 				}
 				SWE = {
@@ -4421,7 +4421,7 @@ on_actions = {
 					tag = SWE
 					OR = {
 						has_government = communism 
-						has_idea = SWE_gustaf_v_king
+						has_idea = SWE_gustaf_v_idea
 					}
 				}
 				SWE = {
