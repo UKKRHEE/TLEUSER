@@ -407,6 +407,21 @@ ideas = {
 			removal_cost = -1
 			traits = { popular_figurehead }
 		}
+		SWE_gustaf_v_king_idea = {
+			allowed = {
+				original_tag = SWE
+				NOT = {
+					has_government = communism
+				}
+			}
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			removal_cost = -1
+			traits = { popular_figurehead }
+		}
 		YUG_communist_influence = {
 			allowed = {
 				original_tag = YUG

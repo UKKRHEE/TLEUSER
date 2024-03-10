@@ -372,7 +372,11 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_idea_BEL_leopold_iii"
-		texturefile = "gfx/interface/ideas/idea_BEL_leopold_iii.dds"
+		texturefile = "gfx/interface/ideas/King/idea_BEL_leopold_iii.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SWE_gustaf_v_king_idea"
+		texturefile = "gfx/interface/ideas/King/idea_SWE_gustaf_v.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_chi_kuomintang"

@@ -4406,6 +4406,30 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
+					tag = SWE
+					NOT = {
+						has_government = communism 
+						has_idea = SWE_gustaf_v_king
+					}
+				}
+				SWE = {
+					add_ideas = SWE_gustaf_v_king_idea
+				}
+			}
+			if = {
+				limit = {
+					tag = SWE
+					OR = {
+						has_government = communism 
+						has_idea = SWE_gustaf_v_king
+					}
+				}
+				SWE = {
+					remove_ideas = SWE_gustaf_v_king_idea
+				}
+			}
+			if = {
+				limit = {
 					has_global_flag = TLE_germany_union_defeat
 					any_country = {
 						original_tag = ITA
