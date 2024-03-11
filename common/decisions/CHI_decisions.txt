@@ -154,12 +154,12 @@ CHI_beifa_timeout = {
 					transfer_state = 752
 					transfer_state = 751
 					transfer_state = 605
-					transfer_state = 942
-					transfer_state = 953
+					transfer_state = 1047
+					transfer_state = 1058
 					transfer_state = 602
-					transfer_state = 949
+					transfer_state = 1054
 					transfer_state = 750
-					transfer_state = 943
+					transfer_state = 1048
 					set_faction_name = "FACTION_CHI_NANKING_GOV"
 				}	
 				TIB = {
@@ -272,7 +272,7 @@ CHI_beifa_timeout = {
 						set_cosmetic_tag = SIK_SOV_WW2
 					}
 				}
-				942 = {
+				1047 = {
 					set_demilitarized_zone = yes
 				}
 				751 = {
@@ -284,10 +284,10 @@ CHI_beifa_timeout = {
 				750 = {
 					set_demilitarized_zone = yes
 				}
-				943 = {
+				1048 = {
 					set_demilitarized_zone = yes
 				}
-				957 = {
+				1062 = {
 					set_demilitarized_zone = yes
 				}
 				749 = {
@@ -305,7 +305,7 @@ CHI_beifa_timeout = {
 				979 = {
 					set_demilitarized_zone = yes
 				}
-				935 = {
+				1040 = {
 					set_demilitarized_zone = yes
 				}
 				606 = {
@@ -314,7 +314,7 @@ CHI_beifa_timeout = {
 				620 = {
 					set_demilitarized_zone = yes
 				}
-				951 = {
+				1056 = {
 					set_demilitarized_zone = yes
 				}
 				744 = {
@@ -403,7 +403,7 @@ CHI_plan_2nd_beifa = {
 				limit = {
 					is_ai = no
 				}
-				date > 1945.12.31
+				date > 11050.12.31
 			}
 			NOT = {
 				has_war_with = KOR
@@ -467,7 +467,7 @@ CHI_fight_with_korea = {
 			KOR = {
 				controls_state = 613
 				controls_state = 608
-				controls_state = 943
+				controls_state = 1048
 			}
 		}
 		visible = {
@@ -7236,7 +7236,7 @@ CHI_occupation_actions = {
 			}
 			modifier = {
 				add = 25
-				NOT = { controls_state = 944 }
+				NOT = { controls_state = 1049 }
 			}
 			modifier = {
 				add = 25
@@ -7291,7 +7291,7 @@ CHI_sichuan_struggle = {
 			751
 			752
 			753
-			942
+			1047
 			1007
 		}
 		on_map_mode = map_and_decisions_view
@@ -7405,7 +7405,7 @@ CHI_sichuan_struggle = {
 				is_core_of = ROOT
 				is_owned_and_controlled_by = ROOT
 			}
-			942 = {
+			1047 = {
 				is_core_of = ROOT
 				is_owned_and_controlled_by = ROOT
 			}

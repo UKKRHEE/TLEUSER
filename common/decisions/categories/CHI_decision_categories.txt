@@ -384,7 +384,7 @@ CHI_sichuan_struggle = {
 					state = 751
 					state = 752
 					state = 753
-					state = 942
+					state = 1047
 					state = 1007
 				}
 			}

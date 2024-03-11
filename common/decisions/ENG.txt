@@ -1031,7 +1031,7 @@ ENG_organize_the_blackshirts = {
 			factor = 10
 			modifier = {
 				factor = 0
-				has_stability < 0.944
+				has_stability < 0.1049
 			}
 			modifier = {
 				factor = 0

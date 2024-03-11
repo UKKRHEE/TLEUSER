@@ -488,7 +488,7 @@ KOR_first_plan_lightning = {
 		}
 		visible = { tag = KOR has_war_with = ZLC has_global_flag = global_CHI_defence_the_korea } 
 		highlight_states = {
-			highlight_state_targets = { state = 952 } 
+			highlight_state_targets = { state = 1067 } 
 		}
 		
 		fire_only_once = yes
@@ -527,7 +527,7 @@ KOR_first_plan_lightning = {
 			has_country_flag = flag_KOR_henan_attack_2
 		} 
 		highlight_states = {
-			highlight_state_targets = { state = 952 } 
+			highlight_state_targets = { state = 1067 } 
 		}
 		
 		fire_only_once = yes
@@ -566,7 +566,7 @@ KOR_first_plan_lightning = {
 			has_country_flag = flag_KOR_henan_attack_3
 		} 
 		highlight_states = {
-			highlight_state_targets = { state = 952 } 
+			highlight_state_targets = { state = 1067 } 
 		}
 		
 		fire_only_once = no
@@ -1053,7 +1053,7 @@ KOR_first_plan_lightning = {
 		}
 		visible = { tag = KOR has_war_with = ZLC has_global_flag = global_CHI_defence_the_korea } 
 		highlight_states = {
-			highlight_state_targets = { state = 943 } 
+			highlight_state_targets = { state = 1048 } 
 		}
 		
 		fire_only_once = yes
@@ -1092,7 +1092,7 @@ KOR_first_plan_lightning = {
 			has_country_flag = flag_KOR_hubei_attack_2
 		} 
 		highlight_states = {
-			highlight_state_targets = { state = 943 } 
+			highlight_state_targets = { state = 1048 } 
 		}
 		
 		fire_only_once = yes
@@ -1131,7 +1131,7 @@ KOR_first_plan_lightning = {
 			has_country_flag = flag_KOR_hubei_attack_3
 		} 
 		highlight_states = {
-			highlight_state_targets = { state = 943 } 
+			highlight_state_targets = { state = 1048 } 
 		}
 		
 		fire_only_once = no
@@ -1279,7 +1279,7 @@ KOR_first_plan_lightning = {
 		}
 		visible = { tag = KOR has_war_with = ZLC has_global_flag = global_CHI_defence_the_korea } 
 		highlight_states = {
-			highlight_state_targets = { state = 941 } 
+			highlight_state_targets = { state = 1046 } 
 		}
 		
 		fire_only_once = yes
@@ -1328,7 +1328,7 @@ KOR_first_plan_lightning = {
 			has_country_flag = flag_KOR_guangdong_attack_2
 		} 
 		highlight_states = {
-			highlight_state_targets = { state = 941 } 
+			highlight_state_targets = { state = 1046 } 
 		}
 		
 		fire_only_once = yes
@@ -1377,7 +1377,7 @@ KOR_first_plan_lightning = {
 			has_country_flag = flag_KOR_guangdong_attack_3
 		} 
 		highlight_states = {
-			highlight_state_targets = { state = 941 } 
+			highlight_state_targets = { state = 1046 } 
 		}
 		
 		fire_only_once = no
@@ -1760,7 +1760,7 @@ KOR_forth_plan_nakil = {
 		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_jap = yes
 			has_war_with = JAP
 			OR = {
-				961 = {
+				1066 = {
 					OR = {
 						is_controlled_by = KOR
 						any_neighbor_state = {
@@ -1799,7 +1799,7 @@ KOR_forth_plan_nakil = {
 			529 = {
 				remove_dynamic_modifier = { modifier = JAP_defence_the_korea }
 			}
-			961 = {
+			1066 = {
 				remove_dynamic_modifier = { modifier = JAP_defence_the_korea }
 			}
 			989 = {
@@ -1810,7 +1810,7 @@ KOR_forth_plan_nakil = {
 			529 = {
 				add_dynamic_modifier = { modifier = JAP_defence_the_korea }
 			}
-			961 = {
+			1066 = {
 				add_dynamic_modifier = { modifier = JAP_defence_the_korea }
 			}
 			989 = {
@@ -1880,7 +1880,7 @@ KOR_forth_plan_nakil = {
 						}
 					}
 				}
-				965 = {
+				1070 = {
 					OR = {
 						is_controlled_by = KOR
 						any_neighbor_state = {
@@ -1896,7 +1896,7 @@ KOR_forth_plan_nakil = {
 						}
 					}
 				}
-				960 = {
+				1065 = {
 					OR = {
 						is_controlled_by = KOR
 						any_neighbor_state = {
@@ -1910,13 +1910,13 @@ KOR_forth_plan_nakil = {
 			tag = KOR has_war_with = JAP
 		} 
 		highlight_states = {
-			highlight_state_targets = { state = 965 } 
+			highlight_state_targets = { state = 1070 } 
 		}
 		
 		fire_only_once = no
 		days_remove = 20
 		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.266 } }
-			965 = {
+			1070 = {
 				remove_dynamic_modifier = { modifier = JAP_defence_the_korea }
 			}
 			531 = {
@@ -1928,12 +1928,12 @@ KOR_forth_plan_nakil = {
 			991 = {
 				remove_dynamic_modifier = { modifier = JAP_defence_the_korea }
 			}
-			960 = {
+			1065 = {
 				remove_dynamic_modifier = { modifier = JAP_defence_the_korea }
 			}
 		}	
 		remove_effect = {
-			965 = {
+			1070 = {
 				add_dynamic_modifier = { modifier = JAP_defence_the_korea }
 			}
 			531 = {
@@ -1945,7 +1945,7 @@ KOR_forth_plan_nakil = {
 			991 = {
 				add_dynamic_modifier = { modifier = JAP_defence_the_korea }
 			}
-			960 = {
+			1065 = {
 				add_dynamic_modifier = { modifier = JAP_defence_the_korea }
 			}
 		}
@@ -1959,7 +1959,7 @@ KOR_forth_plan_nakil = {
 		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_jap = yes
 			has_war_with = JAP
 			OR = {
-				964 = {
+				1069 = {
 					OR = {
 						is_controlled_by = KOR
 						any_neighbor_state = {
@@ -2012,7 +2012,7 @@ KOR_forth_plan_nakil = {
 			532 = {
 				remove_dynamic_modifier = { modifier = JAP_defence_the_korea }
 			}
-			964 = {
+			1069 = {
 				remove_dynamic_modifier = { modifier = JAP_defence_the_korea }
 			}
 		}	
@@ -2026,7 +2026,7 @@ KOR_forth_plan_nakil = {
 			532 = {
 				add_dynamic_modifier = { modifier = JAP_defence_the_korea }
 			}
-			964 = {
+			1069 = {
 				add_dynamic_modifier = { modifier = JAP_defence_the_korea }
 			}
 		}
@@ -2048,7 +2048,7 @@ KOR_forth_plan_nakil = {
 						}
 					}
 				}
-				962 = {
+				1067 = {
 					OR = {
 						is_controlled_by = KOR
 						any_neighbor_state = {
@@ -2064,7 +2064,7 @@ KOR_forth_plan_nakil = {
 						}
 					}
 				}
-				968 = {
+				1073 = {
 					OR = {
 						is_controlled_by = KOR
 						any_neighbor_state = {
@@ -2090,10 +2090,10 @@ KOR_forth_plan_nakil = {
 			282 = {
 				remove_dynamic_modifier = { modifier = JAP_defence_the_korea }
 			}
-			962 = {
+			1067 = {
 				remove_dynamic_modifier = { modifier = JAP_defence_the_korea }
 			}
-			968 = {
+			1073 = {
 				remove_dynamic_modifier = { modifier = JAP_defence_the_korea }
 			}
 		}	
@@ -2104,10 +2104,10 @@ KOR_forth_plan_nakil = {
 			282 = {
 				add_dynamic_modifier = { modifier = JAP_defence_the_korea }
 			}
-			962 = {
+			1067 = {
 				add_dynamic_modifier = { modifier = JAP_defence_the_korea }
 			}
-			968 = {
+			1073 = {
 				add_dynamic_modifier = { modifier = JAP_defence_the_korea }
 			}
 		}
@@ -2121,7 +2121,7 @@ KOR_forth_plan_nakil = {
 		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_jap = yes
 			has_war_with = JAP
 			OR = {
-				967 = {
+				1072 = {
 					OR = {
 						is_controlled_by = KOR
 						any_neighbor_state = {
@@ -2137,7 +2137,7 @@ KOR_forth_plan_nakil = {
 						}
 					}
 				}
-				966 = {
+				1071 = {
 					OR = {
 						is_controlled_by = KOR
 						any_neighbor_state = {
@@ -2145,7 +2145,7 @@ KOR_forth_plan_nakil = {
 						}
 					}
 				}
-				963 = {
+				1068 = {
 					OR = {
 						is_controlled_by = KOR
 						any_neighbor_state = {
@@ -2165,30 +2165,30 @@ KOR_forth_plan_nakil = {
 		fire_only_once = no
 		days_remove = 20
 		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.266 } }
-			967 = {
+			1072 = {
 				remove_dynamic_modifier = { modifier = JAP_defence_the_korea }
 			}
 			533 = {
 				remove_dynamic_modifier = { modifier = JAP_defence_the_korea }
 			}
-			966 = {
+			1071 = {
 				remove_dynamic_modifier = { modifier = JAP_defence_the_korea }
 			}
-			963 = {
+			1068 = {
 				remove_dynamic_modifier = { modifier = JAP_defence_the_korea }
 			}
 		}	
 		remove_effect = {
-			967 = {
+			1072 = {
 				add_dynamic_modifier = { modifier = JAP_defence_the_korea }
 			}
 			533 = {
 				add_dynamic_modifier = { modifier = JAP_defence_the_korea }
 			}
-			966 = {
+			1071 = {
 				add_dynamic_modifier = { modifier = JAP_defence_the_korea }
 			}
-			963 = {
+			1068 = {
 				add_dynamic_modifier = { modifier = JAP_defence_the_korea }
 			}
 		}
@@ -2626,7 +2626,7 @@ KOR_kill_the_usa_plan = {
 			}
 		}
 		highlight_states = {
-			highlight_state_targets = { state = 965 } 
+			highlight_state_targets = { state = 1070 } 
 		}
 
 		days_mission_timeout = 1800

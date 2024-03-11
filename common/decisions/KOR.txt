@@ -648,18 +648,18 @@ KOR_first_plan_lightning = {
 			if = { 
 				limit = {
 					ZLC = {
-						owns_state = 952 
+						owns_state = 1057 
 					}
 				}
 				has_war_with = ZLC
 			}
-			controls_state = 952
+			controls_state = 1057
 		}
 		visible = {
 			tag = KOR
 		} 
 		highlight_states = {
- 		highlight_state_targets = { state = 952 } 
+ 		highlight_state_targets = { state = 1057 } 
 		}
 		activation = {
 			KOR = {
@@ -670,7 +670,7 @@ KOR_first_plan_lightning = {
 					limit = {
 						ZLC = {
 							exists = yes
-							owns_state = 952
+							owns_state = 1057
 						}
 					}
 					has_war_with = ZLC
@@ -680,7 +680,7 @@ KOR_first_plan_lightning = {
 						NOT = {
 							ZLC = {
 								exists = yes
-								owns_state = 952
+								owns_state = 1057
 							}
 						}
 					}
@@ -723,18 +723,18 @@ KOR_first_plan_lightning = {
 			if = { 
 				limit = {
 					ZLC = {
-						owns_state = 943
+						owns_state = 1048
 					}
 				}
 				has_war_with = ZLC
 			}
-			controls_state = 943
+			controls_state = 1048
 		}
 		visible = {
 			tag = KOR
 		} 
 		highlight_states = {
- 		highlight_state_targets = { state = 943 } 
+ 		highlight_state_targets = { state = 1048 } 
 		}
 		activation = {
 			KOR = {
@@ -745,7 +745,7 @@ KOR_first_plan_lightning = {
 					limit = {
 						ZLC = {
 							exists = yes
-							owns_state = 943
+							owns_state = 1048
 						}
 					}
 					has_war_with = ZLC
@@ -755,7 +755,7 @@ KOR_first_plan_lightning = {
 						NOT = {
 							ZLC = {
 								exists = yes
-								owns_state = 943
+								owns_state = 1048
 							}
 						}
 					}
@@ -1027,8 +1027,8 @@ KOR_second_plan_tent = {
 						owns_state = 608
 						owns_state = 613
 						owns_state = 325
-						owns_state = 942
-						owns_state = 943
+						owns_state = 1047
+						owns_state = 1048
 					}	
 					AND = {
 						owns_state = 608
@@ -1129,10 +1129,10 @@ KOR_second_plan_tent = {
 			controls_state = 1037
 			controls_state = 1038
 			controls_state = 749
-			controls_state = 937
+			controls_state = 1042
 			controls_state = 596
 			or = {
-				controls_state = 943
+				controls_state = 1048
 				has_game_rule = {
 					rule = TLE_KOREA_HARDCORE_RULE
 					option = TLE_LIGHT
@@ -1639,7 +1639,7 @@ KOR_forth_plan_nakil = {
 						is_ai = yes
 					}
 				}
-				date > 1941.6.25
+				date > 11046.6.25
 				has_war_with = USA
 			}
         }
@@ -2616,15 +2616,15 @@ KOR_reichskommissariat = {
 	#			owns_state = 612
 	#			owns_state = 613
 	#			owns_state = 325
-	#			owns_state = 942
-	#			owns_state = 943
+	#			owns_state = 1047
+	#			owns_state = 1048
 	#			owns_state = 1036
 	#			owns_state = 1033
-	#			owns_state = 941
+	#			owns_state = 1046
 	#		}
 	#		custom_trigger_tooltip = {
 	#			tooltip = form_country_japan_tt
-	#			owns_state = 965
+	#			owns_state = 1070
 	#			owns_state = 282
 	#		}
 	#		custom_trigger_tooltip = {
@@ -2697,17 +2697,17 @@ KOR_reichskommissariat = {
 				owns_state = 608
 				owns_state = 613
 				owns_state = 325
-				owns_state = 942
-				owns_state = 943
+				owns_state = 1047
+				owns_state = 1048
 				owns_state = 1036
 				owns_state = 1033
-				owns_state = 941
+				owns_state = 1046
 			}
 			has_country_flag = won_in_china
 			}
 			#custom_trigger_tooltip = {
 			#	tooltip = form_country_japan_tt
-			#	owns_state = 965
+			#	owns_state = 1070
 			#	owns_state = 282
 			#}
 		}

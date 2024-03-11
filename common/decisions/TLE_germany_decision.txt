@@ -515,7 +515,7 @@ TLE_germany_Breitspurbahn_categories = {
 			set_country_flag = Breitspurbahn_plan_1_flag
 			build_railway = {
 				level = 3
-				path = { 6521 3499 9456 9375 526 6377 3395 405 11388 6535 495 6469 587 9522 11562 11519 3516 9536 3576 11483 6504 454 9561 11506 }
+				path = { 6521 3499 10506 10425 526 6377 3395 405 11388 6535 495 6469 587 9522 11562 11519 3516 9536 3576 11483 6504 454 9561 11506 }
 			}
 			custom_effect_tooltip = Breitspurbahn_plan_complete_tt
 		}
@@ -821,7 +821,7 @@ TLE_germany_Breitspurbahn_categories = {
 			set_country_flag = Breitspurbahn_plan_11_flag
 			build_railway = {
 				level = 3
-				path = { 6521 9428 478 11415 3572 3438 9470 3510 9570 }
+				path = { 6521 10478 478 11415 3572 3438 10520 3510 9570 }
 			}
 			custom_effect_tooltip = Breitspurbahn_plan_complete_tt
 		}
@@ -855,7 +855,7 @@ TLE_germany_Breitspurbahn_categories = {
 			set_country_flag = Breitspurbahn_plan_12_flag
 			build_railway = {
 				level = 3
-				path = { 9570 6512 9511 479 584 11428 9508 9400 3544 }
+				path = { 9570 6512 9511 479 584 11428 9508 10450 3544 }
 			}
 			custom_effect_tooltip = Breitspurbahn_plan_complete_tt
 		}
