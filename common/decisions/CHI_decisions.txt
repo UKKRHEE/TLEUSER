@@ -403,7 +403,7 @@ CHI_plan_2nd_beifa = {
 				limit = {
 					is_ai = no
 				}
-				date > 11050.12.31
+				date > 1945.12.31
 			}
 			NOT = {
 				has_war_with = KOR

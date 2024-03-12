@@ -89,7 +89,7 @@ SOV_fareastern_partisans = {
 				limit = {
 					is_ai = yes
 				}
-				date > 11050.8.6
+				date > 1945.8.6
 			}
 			has_country_flag = FLAG_SOV_yeonhae_coring_end
 			has_country_flag = FLAG_SOV_rising_anti_korea_end
