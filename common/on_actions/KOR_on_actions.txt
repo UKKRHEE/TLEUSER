@@ -2466,7 +2466,7 @@ on_actions = {
 					FROM.FROM = { state = 716 } #점령 주 - 심요북도
 				}
                 FROM.FROM = {
-					set_state_name = "STATE_716"
+					set_state_name = "STATE_SIMYOBUK"
 					clr_state_flag = fengtian_province_state
 					
 				}
@@ -2550,7 +2550,7 @@ on_actions = {
 					FROM.FROM = { state = 745 } #점령 주 - 여순
 				}
                 FROM.FROM = {
-					set_state_name = "STATE_745"
+					set_state_name = "STATE_PISA"
 					clr_state_flag = fengtian_province_state
 					
 				}
@@ -2580,7 +2580,7 @@ on_actions = {
 					FROM.FROM = { state = 328 } #점령 주 - 환길북도
 				}
                 FROM.FROM = {
-					set_state_name = "STATE_328"
+					set_state_name = "STATE_HWANGILBUK"
 					clr_state_flag = jilin_province_state
 					
 				}
@@ -2664,7 +2664,7 @@ on_actions = {
 					FROM.FROM = { state = 717 } #점령 주 - 용계북도
 				}
                 FROM.FROM = {
-					set_state_name = "STATE_717"
+					set_state_name = "STATE_YONGKYEBUK"
 					clr_state_flag = jilin_province_state
 					
 				}
@@ -3682,7 +3682,7 @@ on_actions = {
 				}
                 set_province_name = {
                     id = 11932
-                    name = "naha"
+                    name = "shuri"
                 }
 			}
 			if = {
@@ -4404,6 +4404,43 @@ on_actions = {
 	}
 	on_daily = {
 		effect = {
+			if = {
+				limit = {
+					USA = {
+						NOT = {
+							has_tech = nukes
+						}
+						has_war_with = KOR
+						is_ai = yes
+					}	
+					date > 1945.7.15
+				}
+				USA = {
+					set_technology = {
+						nukes = 1
+					}
+				}
+			}
+			if = {
+				limit ={
+					KOR = {
+						has_war_with = USA
+						has_war_with = ENG
+						has_war_with = MAL
+						has_completed_focus = kor_korean_lebensraum
+					}
+					NOT = {
+						has_global_flag = south_doryon_attack
+					}
+				}
+				KOR = {
+					set_global_flag = south_doryon_attack
+					news_event = {
+						id = eok_news.47
+						days = 1
+					}
+				}
+			}	
 			if = {
 				limit = {
 					tag = SWE
@@ -7598,6 +7635,27 @@ on_actions = {
 						target = KOR
 					}
 					remove_wargoal = {
+						type = annex_everything
+						target = KOR
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = CHL
+					has_wargoal_against = JAP
+					is_ai = yes
+				}
+				CHL = {
+					remove_wargoal = {
+						type = all
+						target = JAP
+					}
+					remove_wargoal = {
+						type = annex_everything
+						target = JAP
+					}
+					create_wargoal = {
 						type = annex_everything
 						target = KOR
 					}

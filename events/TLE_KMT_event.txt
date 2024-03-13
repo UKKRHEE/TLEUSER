@@ -140,9 +140,6 @@ country_event = { ##복건 국민당의 운명
 	option = {
 		name = KMT.8.a
 		PRC = {
-			every_character = {
-				set_nationality = CHI
-			}
 			every_unit_leader = {
 				set_nationality = CHI
 			}
