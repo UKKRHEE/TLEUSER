@@ -2088,10 +2088,38 @@ on_actions = {
 								province = 4167
 							}
 						}
-						add_to_faction = SCC
-						add_to_faction = SZC
-						add_to_faction = XKC
-						add_to_faction = GZC
+						if = {
+							limit = {
+								SCC = {
+									exists = yes
+								}
+							}
+							add_to_faction = SCC
+						}
+						if = {
+							limit = {
+								SZC = {
+									exists = yes
+								}
+							}
+							add_to_faction = SZC
+						}
+						if = {
+							limit = {
+								XKC = {
+									exists = yes
+								}
+							}
+							add_to_faction = XKC
+						}
+						if = {
+							limit = {
+								GZC = {
+									exists = yes
+								}
+							}
+							add_to_faction = GZC
+						}
 					}
 				}
 			}
@@ -2631,7 +2659,7 @@ on_actions = {
 					
 				}
                 set_province_name = {
-                    id = 1050
+                    id = 945
                     name = "VICTORY_POINTS_945"
                 }
                 set_province_name = {
@@ -2650,7 +2678,7 @@ on_actions = {
 					
 				}
                 set_province_name = {
-                    id = 1050
+                    id = 945
                     name = "tonghua"
                 }
                 set_province_name = {
@@ -2719,7 +2747,7 @@ on_actions = {
                     name = "VICTORY_POINTS_3947"
                 }
                 set_province_name = {
-                    id = 1049
+                    id = 944
                     name = "VICTORY_POINTS_944"
                 }
 			}
@@ -2738,7 +2766,7 @@ on_actions = {
                     name = "dunhua"
                 }
                 set_province_name = {
-                    id = 1049
+                    id = 944
                     name = "longjing"
                 }
 			}
@@ -2752,7 +2780,7 @@ on_actions = {
 					set_state_name = "haisanwei"
 				}
                 set_province_name = {
-                    id = 1062
+                    id = 957
                     name = "haisanwei"
                 }
 			}
@@ -2822,7 +2850,7 @@ on_actions = {
 					FROM.FROM = { state = 408 } #점령 주 - 남부 연해주
 				}
                 FROM.FROM = {
-					set_state_name = "STATE_408"
+					set_state_name = "beihai"
 					
 				}
                 set_province_name = {
@@ -2872,7 +2900,7 @@ on_actions = {
 					FROM.FROM = { state = 409 } #점령 주 - 북부 연해주
 				}
                 FROM.FROM = {
-					set_state_name = "STATE_409"
+					set_state_name = "baili"
 					
 				}
                 set_province_name = {
@@ -3029,6 +3057,20 @@ on_actions = {
 			}
 			if = {
 				limit = {
+					tag = JAP #점령국 - 소련
+					FROM.FROM = { state = 537 } #점령 주 - 남사할린
+				}
+                FROM.FROM = {
+					set_state_name = "south_garafuto"
+					
+				}
+                set_province_name = {
+                    id = 12446
+                    name = "toyohara"
+                }
+			}
+			if = {
+				limit = {
 					is_korean_tag = yes #점령국 - 대한
 					FROM.FROM = { state = 655 } #점령 주 - 북사할린
 				}
@@ -3054,6 +3096,16 @@ on_actions = {
 				}
                 FROM.FROM = {
 					set_state_name = "severnosakalinsk"
+					
+				}
+			}
+			if = {
+				limit = {
+					tag = JAP #점령국 - 소련
+					FROM.FROM = { state = 655 } #점령 주 - 북사할린
+				}
+                FROM.FROM = {
+					set_state_name = "north_garafuto"
 					
 				}
 			}
@@ -4305,7 +4357,7 @@ on_actions = {
 					set_state_name = "haesamwi"
 				}
                 set_province_name = {
-                    id = 1062
+                    id = 957
                     name = "haesamwi"
                 }
 			}
@@ -4318,7 +4370,7 @@ on_actions = {
 					set_state_name = "vladivostok"
 				}
                 set_province_name = {
-                    id = 1062
+                    id = 957
                     name = "vladivostok"
                 }
 			}
@@ -5574,7 +5626,7 @@ on_actions = {
 				}
 				##만주##
 				set_province_name = {
-					id = 1049
+					id = 944
 					name = "longjing"
 				}
 				set_province_name = {
@@ -5582,7 +5634,7 @@ on_actions = {
 					name = "baishan"
 				}
 				set_province_name = {
-					id = 1050
+					id = 945
 					name = "tonghua"
 				}
 				set_province_name = {

@@ -2988,7 +2988,7 @@ country_event = { #중국군의 승리
 			name = "baishan"
 		}
 		set_province_name = {
-			id = 1050
+			id = 945
 			name = "tonghua"
 		}
 		set_province_name = {
@@ -4316,6 +4316,10 @@ country_event = {
 			}
 			annex_country = {
 				target = SND
+				transfer_troops = no
+			}
+			annex_country = {
+				target = GZC
 				transfer_troops = no
 			}
 			
@@ -11196,8 +11200,8 @@ country_event = { #조기선거의 결과 친택
 			}
 		}
 		add_ideas = kor_dip_managism
-		add_ideas = kor_inn_charitism
-		add_ideas = kor_pol_gradualism
+		add_ideas = kor_inn_basism
+		add_ideas = kor_pol_leadism
 		add_ideas = kor_mil_serve_to_emp_and_gov
 		hidden_effect = {
 			remove_country_leader_role = {

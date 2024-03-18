@@ -339,7 +339,7 @@ on_actions = {
 				}
 				##만주##
 				set_province_name = {
-					id = 1049
+					id = 944
 					name = "longjing"
 				}
 				set_province_name = {
@@ -347,7 +347,7 @@ on_actions = {
 					name = "baishan"
 				}
 				set_province_name = {
-					id = 1050
+					id = 945
 					name = "tonghua"
 				}
 				set_province_name = {
@@ -1734,6 +1734,10 @@ on_actions = {
 						target = XKC
 						transfer_troops = no
 					}
+					annex_country = {
+						target = GZC
+						transfer_troops = no
+					}
 					country_event = {
 						id = korea.104
 					}
@@ -1951,6 +1955,8 @@ on_actions = {
 						limit = {
 							YUN = {
 								is_ai = yes
+								has_capitulated = no
+								exists = yes
 							}
 						}
 						transfer_state = 1058
@@ -1961,6 +1967,8 @@ on_actions = {
 						limit = {
 							SZC = {
 								is_ai = yes
+								has_capitulated = no
+								exists = yes
 							}
 						}
 						transfer_state = 1007
@@ -1972,6 +1980,8 @@ on_actions = {
 						limit = {
 							HNC = {
 								is_ai = yes
+								has_capitulated = no
+								exists = yes
 							}
 						}
 						annex_country = {
@@ -1983,6 +1993,8 @@ on_actions = {
 						limit = {
 							SND = {
 								is_ai = yes
+								has_capitulated = no
+								exists = yes
 							}
 						}
 						annex_country = {
