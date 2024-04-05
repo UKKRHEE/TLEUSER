@@ -7,7 +7,7 @@ every_possible_country = {
 			tag = MAN
 		}
 		NOT = {
-			tag = ZLC
+			tag = ZLC tag = CHI
 		}
 	}
 	
@@ -89,12 +89,14 @@ every_possible_country = {
 			slot = political_advisor
 			available  = {
 				has_completed_focus  = PRC_military_intelligence_department 
+				always = no
 			}
 			allowed  = {
 				OR = {
 					original_tag  = PRC
 					is_chinese_warlord = yes 
 				}
+				always = no
 			}
 			cost = 75
 			traits  = {
@@ -119,6 +121,7 @@ every_possible_country = {
 			available  = {
 				has_intelligence_agency  = yes 
 				has_focus_tree  = china_communist_focus
+				always = no
 			}
 			allowed  = {
 				OR = {
@@ -127,6 +130,7 @@ every_possible_country = {
 				}
 				has_dlc = "La Resistance"
 				NOT = { original_tag = MAN }
+				always = no
 			}
 			traits  = {
 				head_of_intelligence 
@@ -143,12 +147,14 @@ every_possible_country = {
 		advisor={
 			slot = political_advisor
 			available  = {
+				always = no
 			}
 			allowed  = {
 				OR = {
 					original_tag = CHI
 					is_chinese_warlord = yes 
 				}
+				always = no
 				
 			}
 			traits  = {
@@ -165,12 +171,14 @@ every_possible_country = {
 		advisor={
 			slot = political_advisor
 			available  = {
+				always = no
 			}
 			allowed  = {
 				OR = {
 					original_tag  = PRC
 					original_tag = CHI
 				}
+				always = no
 				
 			}
 			traits  = {
@@ -196,12 +204,14 @@ every_possible_country = {
 						has_autonomy_state  = autonomy_supervised_state
 					}
 				}
+				always = no
 			}
 			allowed = {
 				OR = {
 					original_tag = CHI
 					is_chinese_warlord = yes
 				}
+				always = no
 			}
 			traits  = {
 				democratic_reformer 
