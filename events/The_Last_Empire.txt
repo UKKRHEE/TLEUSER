@@ -282,7 +282,7 @@ country_event = { #박중양 루트
 	option = { #
 		name = thelastempire.10.a
 		country_event = {
-			id = thelastempire.9
+			id = thelastempire.11
 		}
 	}
 	
