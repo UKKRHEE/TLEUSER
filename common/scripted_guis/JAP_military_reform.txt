@@ -5,10 +5,10 @@ scripted_gui = {
 		parent_window_token = decision_tab
 		visible = { always = yes }
 
-		visible = {
-			tag = JAP
-			has_completed_focus = JAP_military
-		}
+		#visible = {
+		#	tag = JAP
+		#	has_completed_focus = JAP_military
+		#}
 
 		effects = {
 			

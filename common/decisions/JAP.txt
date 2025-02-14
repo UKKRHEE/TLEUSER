@@ -1452,7 +1452,7 @@ JAP_the_army = {
 		# }
 
 		visible = {
-			original_tag = JAP
+			has_completed_focus = JAP_military
         }	
 		complete_effect = { 
 			add_command_power = -30
@@ -1493,7 +1493,7 @@ JAP_the_army = {
 		# }
 
 		visible = {
-			original_tag = JAP
+			has_completed_focus = JAP_military
         }	
 		complete_effect = { 
 			army_experience = 60
@@ -1534,7 +1534,7 @@ JAP_the_army = {
 		# }
 
 		visible = {
-			original_tag = JAP
+			has_completed_focus = JAP_military
         }	
 		complete_effect = { 
 			navy_experience = -60
@@ -1574,7 +1574,7 @@ JAP_the_army = {
 		}
 
 		visible = {
-			original_tag = JAP
+			has_completed_focus = JAP_military
         }	
 		complete_effect = { 
 			add_political_power = -150
@@ -1611,7 +1611,7 @@ JAP_the_army = {
 		}
 
 		visible = {
-			original_tag = JAP
+			has_completed_focus = JAP_military
         }	
 		complete_effect = { 
 			add_political_power = -150
@@ -1619,7 +1619,7 @@ JAP_the_army = {
 		remove_effect = {
 			add_resource = {
 				type = steel
-				amount = 10
+				amount = 10 
 				state = 282
 			}
 			set_country_flag = FLAG_STEEL_PLAN_OPEN
@@ -1655,7 +1655,7 @@ JAP_the_army = {
 		}
 
 		visible = {
-			original_tag = JAP
+			has_completed_focus = JAP_military
         }	
 		complete_effect = { 
 			add_political_power = -200

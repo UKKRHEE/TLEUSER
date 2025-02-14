@@ -86,11 +86,9 @@ JAP_closed_bunchi_county = {
 JAP_the_army = {
 	allowed = {
 		original_tag = JAP
-		has_completed_focus = JAP_military
 	}
 	visible = {
 		original_tag = JAP
-		has_completed_focus = JAP_military
 	}
 	scripted_gui = JAP_military_reform_GUI
 	visible_when_empty = yes
