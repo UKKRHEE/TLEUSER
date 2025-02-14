@@ -187,7 +187,7 @@
 		}
 	}
 	fleet = {
-		name = "여순영전대"			
+		name = "비사영전대"			
 		naval_base = 1150
 		task_force = {
 			name = "제4초계위"

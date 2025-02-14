@@ -1,0 +1,76 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_decision_SIA_indochinesewar" 
+		texturefile = "gfx/interface/SIA/decisions/decision_indochinesewar.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_decision_SIA_newtown" 
+		texturefile = "gfx/interface/SIA/decisions/decision_newtown.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_decision_SIA_koreaninfluenceinsiam" 
+		texturefile = "gfx/interface/SIA/decisions/decision_koreaninfluenceinsiam.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_decision_SIA_resistance" 
+		texturefile = "gfx/interface/SIA/decisions/decision_resistance.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_decision_SIA_politics" 
+		texturefile = "gfx/interface/SIA/decisions/decision_politics.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_decision_SIA_khanaratsadon" 
+		texturefile = "gfx/interface/SIA/decisions/decision_inmindang.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_sup_SIA_para" 
+		texturefile = "gfx/interface/SIA/bop/SIA_balance_para.png" 
+	}
+	spriteType = {
+		name = "GFX_sup_SIA_king" 
+		texturefile = "gfx/interface/SIA/bop/SIA_balance_king.png" 
+	}
+	spriteType = {
+		name = "GFX_decision_SIA_governsupport" 
+		texturefile = "gfx/interface/SIA/decisions/decision_governsupport.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_decision_thainationalism" 
+		texturefile = "gfx/interface/SIA/decisions/decision_thainationalism.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_decision_siaarmy" 
+		texturefile = "gfx/interface/SIA/decisions/decision_siaarmy.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_decision_siameserural" 
+		texturefile = "gfx/interface/SIA/decisions/decision_siameserural.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_decision_faction_sia_kfac" 
+		texturefile = "gfx/interface/SIA/ideas/sia_decision_kfac.png" 
+	}
+	spriteType = {
+		name = "GFX_decision_faction_sia_pfac" 
+		texturefile = "gfx/interface/SIA/ideas/sia_decision_pfac.png" 
+	}
+	spriteType = {
+		name = "GFX_decision_faction_sia_mili" 
+		texturefile = "gfx/interface/SIA/ideas/sia_decision_mili.png" 
+	}
+	spriteType = {
+		name = "GFX_decision_faction_sia_peop" 
+		texturefile = "gfx/interface/SIA/ideas/sia_decision_peop.png" 
+	}
+}

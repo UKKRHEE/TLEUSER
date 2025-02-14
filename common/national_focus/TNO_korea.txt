@@ -31,7 +31,7 @@ focus_tree = {
 			hidden_effect = {
 				if = {
 					limit = {					
-						GDC = {
+						GNG = {
 							exists = no
 						}
 					}
@@ -44,7 +44,22 @@ focus_tree = {
 						}
 					}
 					play_song = "when_you_come_in_my_heart"
-				}	
+				}
+				1047 = {
+					set_demilitarized_zone = yes
+				}
+				753 = {
+					set_demilitarized_zone = yes
+				}
+				1007 = {
+					set_demilitarized_zone = yes
+				}
+				605 = {
+					set_demilitarized_zone = yes
+				}
+				748 = {
+					set_demilitarized_zone = yes
+				}
 				KOR = {
 					remove_ideas = KOR_the_chaebol
 					remove_ideas = KOR_none_attack_soviert
@@ -85,9 +100,17 @@ focus_tree = {
 					remove_ideas = SWE_ball_bearing_idea
 					remove_ideas = SWE_ball_bearing_idea_research_partner
 					remove_ideas = KOR_not_planed_attack
+					remove_ideas = KOR_not_planed_attack_HID
 					remove_ideas = JAP_prioritize_army_aircraft_construction
+					remove_ideas = KOR_prioritize_army_aircraft_construction_idea
+					remove_ideas = KOR_prioritize_naval_aircraft_construction_idea
+					remove_ideas = KOR_the_national_conscription_law
 					remove_ideas = KOR_political_officer_2
 					remove_ideas = KOR_weak_army_3
+					remove_ideas = SWE_ball_bearing_idea
+					remove_ideas = SWE_ball_bearing_idea_research_partner
+					remove_ideas = SWE_ball_bearing_idea_food_partner
+					remove_ideas = TLE_KOR_WIN_IDEA
 				}
 			}
 		}	

@@ -1,0 +1,26 @@
+state={
+	id=1091
+	name="STATE_SHAN"
+	resources={
+		tungsten=71.000
+	}
+	
+	history={
+		add_core_of = BRM
+		owner = RAJ
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			7603 3 
+		}
+
+	}
+	provinces={
+		1170 1566 1607 2061 4585 4654 7603 12363 
+	}
+	manpower=700000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

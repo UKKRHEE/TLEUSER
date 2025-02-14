@@ -1,4 +1,11 @@
 ﻿l_english:
  korean_confederation:0 "한몽 동군연합"
- korean_general_government:0 "제국 자치령"
+ korean_confederation_desc:0 "몽골울루스의 대칸은 본디 보르지긴씨이나, 명분을 따지는 것을 중시하는 동아시아인들을 위해 대한제국의 대황제가 칸으로 등극하는 것이 결정되었습니다. 청나라의 사례에서 따와 즉위하게 된 한국 황제는 대초원의 칸을 겸하고 있습니다."
+ korean_general_government:0 "제국령"
+ korean_general_government_desc:0 "대한제국의 본토가 아닌 외부의 영토로 통칭되는 제국령은 민간에서는 사용되지 않는 말입니다. 궁극적으로 내지인 대한반도와 남만주 지역으로의 편입을 목표로 하는 제국령은 강경책과 유화책을 섞는 문화통치를 행하고 있습니다."
  korean_bunguk:0 "번국"
+ korean_bunguk_desc:0 "동아시아에서 황제국의 봉신국이라는 의미의 번국은 원래는 큰 내정간섭 없이 사실상 타국임을 누리는 국가라는 의미였습니다. 허나 현대에 들어서 대한제국의 번국이라는 의미는 서양에서의 봉신국과 비슷한 의미로 전락하였습니다."
+ korean_puppet:0 "의존국"
+ korean_puppet_desc:0 ""
+ korean_military_admin:0 "군정부"
+ korean_military_admin_desc:0 ""

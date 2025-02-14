@@ -1,0 +1,84 @@
+setup_ilsoism_pos = {
+	hidden_effect = {
+		clear_array = ilsoism_array
+		clear_array = ilsoism_icon_x
+		clear_array = ilsoism_icon_y
+
+		add_to_array = { ilsoism_array = 1 }
+		add_to_array = { ilsoism_icon_x = 153 }
+		add_to_array = { ilsoism_icon_y = -19 }
+
+		add_to_array = { ilsoism_array = 2 }
+		add_to_array = { ilsoism_icon_x = 68 }
+		add_to_array = { ilsoism_icon_y = 36 }
+
+		add_to_array = { ilsoism_array = 3 }
+		add_to_array = { ilsoism_icon_x = 33 }
+		add_to_array = { ilsoism_icon_y = 99 }
+
+		add_to_array = { ilsoism_array = 4 }
+		add_to_array = { ilsoism_icon_x = 50 }
+		add_to_array = { ilsoism_icon_y = 219 }
+
+		add_to_array = { ilsoism_array = 5 }
+		add_to_array = { ilsoism_icon_x = 183 }
+		add_to_array = { ilsoism_icon_y = 258 }
+
+		add_to_array = { ilsoism_array = 6 }
+		add_to_array = { ilsoism_icon_x = 304 }
+		add_to_array = { ilsoism_icon_y = 217 }
+
+		add_to_array = { ilsoism_array = 7 }
+		add_to_array = { ilsoism_icon_x = 338 }
+		add_to_array = { ilsoism_icon_y = 158 }
+
+		add_to_array = { ilsoism_array = 8 }
+		add_to_array = { ilsoism_icon_x = 305 }
+		add_to_array = { ilsoism_icon_y = 15 }
+	}
+}
+
+
+ilsoism_test = {
+	set_variable = { 1:ilsoism_icon_frame_v = 3 }
+	set_variable = { 2:ilsoism_icon_frame_v = 3 }
+	set_variable = { 3:ilsoism_icon_frame_v = 3 }
+	set_variable = { 4:ilsoism_icon_frame_v = 2 }
+	set_variable = { 5:ilsoism_icon_frame_v = 1 }
+	set_variable = { 6:ilsoism_icon_frame_v = 1 }
+	set_variable = { 7:ilsoism_icon_frame_v = 1 }
+	set_variable = { 8:ilsoism_icon_frame_v = 1 }
+}
+
+ilsoism_test_1 = {
+	set_variable = { 1:ilsoism_icon_frame_v = 1 }
+	set_variable = { 2:ilsoism_icon_frame_v = 1 }
+	set_variable = { 3:ilsoism_icon_frame_v = 1 }
+	set_variable = { 4:ilsoism_icon_frame_v = 1 }
+	set_variable = { 5:ilsoism_icon_frame_v = 1 }
+	set_variable = { 6:ilsoism_icon_frame_v = 1 }
+	set_variable = { 7:ilsoism_icon_frame_v = 1 }
+	set_variable = { 8:ilsoism_icon_frame_v = 1 }
+}
+
+ilsoism_test_2 = {
+	set_variable = { 1:ilsoism_icon_frame_v = 2 }
+	set_variable = { 2:ilsoism_icon_frame_v = 2 }
+	set_variable = { 3:ilsoism_icon_frame_v = 2 }
+	set_variable = { 4:ilsoism_icon_frame_v = 2 }
+	set_variable = { 5:ilsoism_icon_frame_v = 2 }
+	set_variable = { 6:ilsoism_icon_frame_v = 2 }
+	set_variable = { 7:ilsoism_icon_frame_v = 2 }
+	set_variable = { 8:ilsoism_icon_frame_v = 2 }
+}
+
+ilsoism_test_3 = {
+	set_variable = { 1:ilsoism_icon_frame_v = 3 }
+	set_variable = { 2:ilsoism_icon_frame_v = 3 }
+	set_variable = { 3:ilsoism_icon_frame_v = 3 }
+	set_variable = { 4:ilsoism_icon_frame_v = 3 }
+	set_variable = { 5:ilsoism_icon_frame_v = 3 }
+	set_variable = { 6:ilsoism_icon_frame_v = 3 }
+	set_variable = { 7:ilsoism_icon_frame_v = 3 }
+	set_variable = { 8:ilsoism_icon_frame_v = 3 }
+}

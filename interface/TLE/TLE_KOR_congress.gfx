@@ -1,0 +1,124 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_congress_title_icon"
+		texturefile = "gfx/interface/KOR_GUI/congress/title_icon.png"
+	}
+	spriteType = {
+		name = "GFX_congress_main_background"
+		texturefile = "gfx/interface/KOR_GUI/congress/main_background.png"
+	}
+	spriteType = {
+		name = "GFX_parliament_party_icon"
+		texturefile = "gfx/interface/KOR_GUI/congress/parliament_parties.dds"
+		noOfFrames = 9
+	}
+	spriteType = {
+		name = "GFX_parliament_empty_button"
+		texturefile = "gfx/interface/KOR_GUI/congress/parliament_empty_button.dds"
+	}
+	spriteType = {
+		name = "GFX_parliament_member_icon_replacer"
+		texturefile = "gfx/interface/KOR_GUI/congress/parliament_member_icon_replacer.png"
+	}
+	
+	spriteType = {
+		name = "GFX_CongressLeader_yoon_deokyong"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_yoon_dokyong.png"
+	}
+	spriteType = {
+		name = "GFX_CongressLeader_an_changho"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_an_changho.png"
+	}
+	spriteType = {
+		name = "GFX_CongressLeader_kim_kyusik"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_kim_kyusik.png"
+	}
+	spriteType = {
+		name = "GFX_CongressLeader_seo_jae_pil"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_seo_jae_pil.png"
+	}
+	spriteType = {
+		name = "GFX_CongressLeader_yi_siyeong"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_yi_siyeong.png"
+	}
+	spriteType = {
+		name = "GFX_CongressLeader_park_chunghee"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_park_chunghee_army.png"
+	}
+	spriteType = {
+		name = "GFX_CongressLeader_park_chunghee_kks_bad"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_park_chunghee_army.png"
+	}
+	spriteType = {
+		name = "GFX_CongressLeader_kim_sukwon_kks_bad"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_Kim_Suk_won.png"
+	}
+	spriteType = {
+		name = "GFX_CongressLeader_lee_injae_kks_bad"
+		texturefile = "gfx/leaders/KOR/easteregg/Portrait_KOR_lee_injae.png"
+	}
+	
+	spriteType = {
+		name = "GFX_CongressPartyLeader_yi_won"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_yi_won.png"
+	}
+	spriteType = {
+		name = "GFX_CongressPartyLeader_yi_gon"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_yi_gon.png"
+	}
+	spriteType = {
+		name = "GFX_CongressPartyLeader_lee_jaemyong"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_lee_jaemyong.png"
+	}
+	
+	spriteType = {
+		name = "GFX_party_minju"
+		texturefile = "gfx/interface/KOR_GUI/congress/party_minju.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_party_daehan"
+		texturefile = "gfx/interface/KOR_GUI/congress/party_daehan.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_party_bibyunsa"
+		texturefile = "gfx/interface/KOR_GUI/congress/party_bibyunsa.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_party_shinhan"
+		texturefile = "gfx/interface/KOR_GUI/congress/party_shinhan.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_party_sahyuk"
+		texturefile = "gfx/interface/KOR_GUI/congress/party_sahyuk.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_party_hwangguk"
+		texturefile = "gfx/interface/KOR_GUI/congress/party_hwangguk.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_party_minhyuk"
+		texturefile = "gfx/interface/KOR_GUI/congress/party_minhyuk.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_party_handok"
+		texturefile = "gfx/interface/KOR_GUI/congress/party_handok.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_party_jogong"
+		texturefile = "gfx/interface/KOR_GUI/congress/party_jogong.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_party_none"
+		texturefile = "gfx/interface/KOR_GUI/congress/party_none.png"
+		legacy_lazy_load = no
+	}
+}

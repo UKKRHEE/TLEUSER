@@ -246,6 +246,7 @@ USA_gang_up_GER_with_ENG = {
 		date > 1940.6.6
 		is_in_faction_with = ENG
 	}
+	abort_when_not_enabled = yes
 
 	# help fronts in europe & africa
 	ai_strategy = {
@@ -272,6 +273,8 @@ build_patrol_bombers = {
 		date > 1940.6.6
 		is_in_faction_with = ENG
 	}
+	
+	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = unit_ratio
@@ -588,6 +591,7 @@ USA_template_design_2 = {
 	enable = {
 		date > 1940.1.1
 	}
+	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = template_prio
@@ -725,6 +729,8 @@ USA_naval_role_ratios_historical = {
 	enable = {
 		always = yes
 	}
+	
+	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = role_ratio
@@ -1221,6 +1227,8 @@ USA_start_buffering_in_pacific = {
 	enable = {
 		date > 1942.6.3
 	}
+	
+	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = put_unit_buffers
@@ -1282,6 +1290,8 @@ USA_start_buffering_in_australia = {
 	enable = {
 		date > 1943.1.1
 	}
+	
+	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = put_unit_buffers
@@ -1320,6 +1330,9 @@ USA_send_lend_lease_to_china = {
 			surrender_progress < 0.7
 		}
 	}
+	
+	abort_when_not_enabled = yes
+	
 	ai_strategy = {
 		type = send_lend_lease_desire
 		id = ZLC

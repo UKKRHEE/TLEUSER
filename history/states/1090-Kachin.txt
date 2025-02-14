@@ -1,0 +1,26 @@
+state={
+	id=1090
+	name="STATE_KACHIN"
+	resources={
+		tungsten=45.000
+	}
+	
+	history={
+		add_core_of = BRM
+		owner = RAJ
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			4425 1 
+		}
+
+	}
+	provinces={
+		1082 1197 1934 4087 4318 4425 4588 4996 8063 10920 
+	}
+	manpower=610000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

@@ -1,18 +1,18 @@
 ﻿units = {
 	fleet = {
-		name = "제1해상기동전투전단"			
-		naval_base = 7221
+		name = "제1함대"			
+		naval_base = 4056
 		task_force = {
-			name = "제1기동전대"
-			location = 7221
+			name = "제1해상전투전단"
+			location = 4056
 			##################
 			###개장항모###
-			ship = { name = "IKN 충무공 이순신"  pride_of_the_fleet = yes definition = carrier start_experience_factor = 0.7 equipment = { ship_hull_carrier_conversion_bb = {amount = 1 owner = KOR version_name = "충무공 이순신급"} } }			
+			ship = { name = "IKN 충무공 이순신"  definition = carrier start_experience_factor = 0.7 equipment = { ship_hull_carrier_conversion_bb = {amount = 1 owner = KOR version_name = "충무공 이순신급"} } }			
 			ship = { name = "IKN 의민공 이억기"  definition = carrier start_experience_factor = 0.5 equipment = { ship_hull_carrier_conversion_bb = {amount = 1 owner = KOR version_name = "충무공 이순신급"} } }
 			ship = { name = "IKN 충익공 곽재우"  definition = carrier start_experience_factor = 0.5 equipment = { ship_hull_carrier_conversion_bb = {amount = 1 owner = KOR version_name = "충무공 이순신급"} } }
 			
 			###전함###
-			ship = { name = "IKN 백두"  definition = battleship start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = {amount = 1 owner = KOR version_name = "백두급" } } }
+			
 			###순전###
 			ship = { name = "IKN 을지문덕" definition = battle_cruiser start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = { amount = 1 owner = KOR version_name = "을지문덕급"} } } 
 			ship = { name = "IKN 연개소문" definition = battle_cruiser start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = { amount = 1 owner = KOR version_name = "을지문덕급"} } } 	
@@ -46,25 +46,56 @@
 			ship = { name = "IKN 촉대" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = {amount = 1 owner = KOR version_name = "국망급"} } }
 			ship = { name = "IKN 보현" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = {amount = 1 owner = KOR version_name = "국망급"} } }
 			ship = { name = "IKN 용인등" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = {amount = 1 owner = KOR version_name = "국망급"} } }
-			
+			ship = { name = "IKN 가리" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = {amount = 1 owner = KOR version_name = "국망급"} } }
+			ship = { name = "IKN 광덕" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = {amount = 1 owner = KOR version_name = "국망급"} } }
+			ship = { name = "IKN 우두" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = {amount = 1 owner = KOR version_name = "국망급"} } }
+			ship = { name = "IKN 의상" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = {amount = 1 owner = KOR version_name = "국망급"} } }
+			ship = { name = "IKN 향로" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = {amount = 1 owner = KOR version_name = "국망급"} } }
 			##################
 		}	
+		task_force = {
+			name = "제11초계전대"
+			location = 4056
+			##################
+			###경순양함###
+			ship = { name = "IKN 흥양" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = {amount = 1 owner = KOR version_name = "목포급"} } }
+
+			###구축함###
+			ship = { name = "IKN 귀목" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = {amount = 1 owner = KOR version_name = "국망급"} } }
+			ship = { name = "IKN 두무" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = {amount = 1 owner = KOR version_name = "국망급"} } }
+			ship = { name = "IKN 고현" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = {amount = 1 owner = KOR version_name = "국망급"} } }
+			ship = { name = "IKN 사향" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = {amount = 1 owner = KOR version_name = "국망급"} } }
+			ship = { name = "IKN 고두" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = {amount = 1 owner = KOR version_name = "국망급"} } }
+			##################
+		}
+		task_force = {
+			name = "제12초계전대"
+			location = 4056
+			##################
+			
+			###구축함###
+			ship = { name = "IKN 적상" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = KOR version_name = "오봉급"} } }
+			ship = { name = "IKN 하설" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = KOR version_name = "오봉급"} } }
+			ship = { name = "IKN 회목" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = KOR version_name = "오봉급"} } }
+			ship = { name = "IKN 조령" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = KOR version_name = "오봉급"} } }
+			ship = { name = "IKN 간월" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = KOR version_name = "오봉급"} } }
+			##################
+		}
 	}
 	fleet = {
-		name = "제2해상기동전투전단"			
-		naval_base = 3981
+		name = "제2함대"			
+		naval_base = 11948
 		task_force = {
-			name = "제2기동전대"
-			location = 3981
+			name = "제2해상전투전단"
+			location = 11948
 			##################
-			###정규항모###
-			ship = { name = "IKN 충장공 권율"  definition = carrier start_experience_factor = 0.5 equipment = { ship_hull_carrier_1 = {amount = 1 owner = KOR version_name = "충장공 권율급"} } }	
-			ship = { name = "IKN 충무공 김시민"  definition = carrier start_experience_factor = 0.5 equipment = { ship_hull_carrier_1 = {amount = 1 owner = KOR version_name = "충장공 권율급"} } } 	
 
 			###경항모###
 			ship = { name = "IKN 제주"  definition = carrier start_experience_factor = 0.5 equipment = { ship_hull_carrier_conversion_ca = {amount = 1 owner = KOR version_name = "제주급"} } } 	
-			
+			ship = { name = "IKN 대마"  definition = carrier start_experience_factor = 0.5 equipment = { ship_hull_carrier_conversion_ca = {amount = 1 owner = KOR version_name = "제주급"} } } 	
+		
 			###전함###
+			ship = { name = "IKN 백두" definition = battleship start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = {amount = 1 owner = KOR version_name = "백두급" } } }
 			ship = { name = "IKN 한라" definition = battleship start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = {amount = 1 owner = KOR version_name = "백두급" } } }
 			
 			###순전###
@@ -84,9 +115,9 @@
 			ship = { name = "IKN 목포" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = {amount = 1 owner = KOR version_name = "목포급"} } }
 			ship = { name = "IKN 하동" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = {amount = 1 owner = KOR version_name = "목포급"} } }
 			ship = { name = "IKN 여수" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = {amount = 1 owner = KOR version_name = "목포급"} } }
-			ship = { name = "IKN 의주" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = {amount = 1 owner = KOR version_name = "의주급"} } }
-			ship = { name = "IKN 무안" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = {amount = 1 owner = KOR version_name = "의주급"} } }
-			ship = { name = "IKN 강진" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = {amount = 1 owner = KOR version_name = "의주급"} } }
+			ship = { name = "IKN 의주" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = {amount = 1 owner = KOR version_name = "목포급"} } }
+			ship = { name = "IKN 무안" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = {amount = 1 owner = KOR version_name = "목포급"} } }
+			ship = { name = "IKN 강진" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = {amount = 1 owner = KOR version_name = "목포급"} } }
 			
 			###구축함###
 			ship = { name = "IKN 황악" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = {amount = 1 owner = KOR version_name = "국망급"} } }
@@ -102,31 +133,56 @@
 			ship = { name = "IKN 복계" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = {amount = 1 owner = KOR version_name = "국망급"} } }
 			ship = { name = "IKN 석병" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = {amount = 1 owner = KOR version_name = "국망급"} } }
 			ship = { name = "IKN 마대" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = {amount = 1 owner = KOR version_name = "국망급"} } }
-			ship = { name = "IKN 가리" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = {amount = 1 owner = KOR version_name = "국망급"} } }
-			ship = { name = "IKN 광덕" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = {amount = 1 owner = KOR version_name = "국망급"} } }
-			ship = { name = "IKN 우두" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = {amount = 1 owner = KOR version_name = "국망급"} } }
-			ship = { name = "IKN 의상" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = {amount = 1 owner = KOR version_name = "국망급"} } }
-			ship = { name = "IKN 향로" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = {amount = 1 owner = KOR version_name = "국망급"} } }
-			
-			
+			##################
+		}
+		task_force = {
+			name = "제21초계전대"
+			location = 11948
+			##################
+			###경순양함###
+			ship = { name = "IKN 안산" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = {amount = 1 owner = KOR version_name = "목포급"} } }
+
+			###구축함###
+			ship = { name = "IKN 황장" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = {amount = 1 owner = KOR version_name = "국망급"} } }
+			ship = { name = "IKN 문복" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = {amount = 1 owner = KOR version_name = "국망급"} } }
+			ship = { name = "IKN 덕황" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = {amount = 1 owner = KOR version_name = "국망급"} } }
+			ship = { name = "IKN 화란" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = {amount = 1 owner = KOR version_name = "국망급"} } }
+			ship = { name = "IKN 연인" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = {amount = 1 owner = KOR version_name = "국망급"} } }
+			##################
+		}
+		task_force = {
+			name = "제22초계전대"
+			location = 11948
+			##################
+			###구축함###
+			ship = { name = "IKN 통고" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = KOR version_name = "오봉급"} } }
+			ship = { name = "IKN 목우" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = KOR version_name = "오봉급"} } }
+			ship = { name = "IKN 어래" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = KOR version_name = "오봉급"} } }
+			ship = { name = "IKN 백화" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = KOR version_name = "오봉급"} } }
+			ship = { name = "IKN 취서" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = KOR version_name = "오봉급"} } }
 			##################
 		}
 	}
 	fleet = {
-		name = "고속항모전투단"			
-		naval_base = 11948
+		name = "특별기동함대"			
+		naval_base = 7221
 		task_force = {
-			name = "제1고속기동전대"
-			location = 11948
+			name = "제14해상기동전단"
+			location = 7221
 			##################
-			
-			###경항모###
-			ship = { name = "IKN 대마"  definition = carrier start_experience_factor = 0.5 equipment = { ship_hull_carrier_conversion_ca = {amount = 1 owner = KOR version_name = "제주급"} } } 	
-			
+						###정규항모###
+			ship = { name = "IKN 충장공 권율"  definition = carrier start_experience_factor = 0.5 equipment = { ship_hull_carrier_1 = {amount = 1 owner = KOR version_name = "충장공 권율급"} } }	
+			ship = { name = "IKN 충무공 김시민"  definition = carrier start_experience_factor = 0.5 equipment = { ship_hull_carrier_1 = {amount = 1 owner = KOR version_name = "충장공 권율급"} } } 	
+	
 			###순전###
 			ship = { name = "IKN 덕유" definition = battle_cruiser start_experience_factor = 0.5 equipment = { ship_hull_heavy_2 = { amount = 1 owner = KOR version_name = "덕유급"} } } 
 			ship = { name = "IKN 계방" definition = battle_cruiser start_experience_factor = 0.5 equipment = { ship_hull_heavy_2 = { amount = 1 owner = KOR version_name = "덕유급"} } } 
 			
+			###경순양함###
+			ship = { name = "IKN 기장" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = {amount = 1 owner = KOR version_name = "의주급"} } }
+			ship = { name = "IKN 달성" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = {amount = 1 owner = KOR version_name = "의주급"} } }
+			ship = { name = "IKN 현풍" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = {amount = 1 owner = KOR version_name = "의주급"} } }
+
 			###구축함###
 			ship = { name = "IKN 은양" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = {amount = 1 owner = KOR version_name = "국망급"} } }
 			ship = { name = "IKN 무두" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = {amount = 1 owner = KOR version_name = "국망급"} } }
@@ -145,87 +201,45 @@
 			ship = { name = "IKN 부수" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = {amount = 1 owner = KOR version_name = "국망급"} } }
 			##################
 		}
-	}
-	fleet = {
-		name = "전라영전대"			
-		naval_base = 11948
 		task_force = {
-			name = "제1초계위"
-			location = 11948
+			name = "제141초계전대"
+			location = 7221
 			##################
 			###경순양함###
-			ship = { name = "IKN 흥양" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = {amount = 1 owner = KOR version_name = "목포급"} } }
-
-			###구축함###
-			ship = { name = "IKN 귀목" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = KOR version_name = "오봉급"} } }
-			ship = { name = "IKN 두무" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = KOR version_name = "오봉급"} } }
-			ship = { name = "IKN 고현" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = KOR version_name = "오봉급"} } }
-			ship = { name = "IKN 사향" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = KOR version_name = "오봉급"} } }
-			ship = { name = "IKN 고두" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = KOR version_name = "오봉급"} } }
-			ship = { name = "IKN 적상" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = KOR version_name = "오봉급"} } }
-			ship = { name = "IKN 하설" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = KOR version_name = "오봉급"} } }
-			ship = { name = "IKN 회목" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = KOR version_name = "오봉급"} } }
-			ship = { name = "IKN 조령" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = KOR version_name = "오봉급"} } }
-			ship = { name = "IKN 간월" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = {amount = 1 owner = KOR version_name = "국망급"} } }
-			##################
-		}
-	}
-	fleet = {
-		name = "경상영전대"			
-		naval_base = 4056
-		task_force = {
-			name = "제2초계위"
-			location = 4056
-			##################
-			###경순양함###
-			ship = { name = "IKN 안산" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = {amount = 1 owner = KOR version_name = "목포급"} } }
-
-			###구축함###
-			ship = { name = "IKN 황장" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = {amount = 1 owner = KOR version_name = "국망급"} } }
-			ship = { name = "IKN 문복" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = {amount = 1 owner = KOR version_name = "국망급"} } }
-			ship = { name = "IKN 덕황" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = {amount = 1 owner = KOR version_name = "국망급"} } }
-			ship = { name = "IKN 화란" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = {amount = 1 owner = KOR version_name = "국망급"} } }
-			ship = { name = "IKN 연인" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = {amount = 1 owner = KOR version_name = "국망급"} } }
-			ship = { name = "IKN 통고" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = KOR version_name = "오봉급"} } }
-			ship = { name = "IKN 목우" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = KOR version_name = "오봉급"} } }
-			ship = { name = "IKN 어래" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = KOR version_name = "오봉급"} } }
-			ship = { name = "IKN 백화" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = KOR version_name = "오봉급"} } }
-			ship = { name = "IKN 취서" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = KOR version_name = "오봉급"} } }
-			##################
-		}
-	}
-	fleet = {
-		name = "함흥영전대"			
-		naval_base = 3981
-		task_force = {
-			name = "제3초계위"
-			location = 3981
-			##################
-			###경순양함###
-			ship = { name = "IKN 경성" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = {amount = 1 owner = KOR version_name = "목포급"} } }
+			ship = { name = "IKN 경성" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = {amount = 1 owner = KOR version_name = "의주급"} } }
 
 			###구축함###
 			ship = { name = "IKN 국망" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = {amount = 1 owner = KOR version_name = "국망급"} } }
 			ship = { name = "IKN 가칠" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = {amount = 1 owner = KOR version_name = "국망급"} } }
 			ship = { name = "IKN 바래" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = {amount = 1 owner = KOR version_name = "국망급"} } }
 			ship = { name = "IKN 문수" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = {amount = 1 owner = KOR version_name = "국망급"} } }
-			ship = { name = "IKN 선자" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = KOR version_name = "오봉급"} } }
-			ship = { name = "IKN 응복" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = KOR version_name = "오봉급"} } }
-			ship = { name = "IKN 고양" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = KOR version_name = "오봉급"} } }
-			ship = { name = "IKN 팔공" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = KOR version_name = "오봉급"} } }
-			ship = { name = "IKN 남병" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = KOR version_name = "오봉급"} } }
+			##################
+		}
+		task_force = {
+			name = "제142초계전대"
+			location = 7221
+			##################
+			###경순양함###
+			ship = { name = "IKN 웅진" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = {amount = 1 owner = KOR version_name = "의주급"} } }
+			###구축함###
+			ship = { name = "IKN 선자" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = {amount = 1 owner = KOR version_name = "국망급"} } }
+			ship = { name = "IKN 응복" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = {amount = 1 owner = KOR version_name = "국망급"} } }
+			ship = { name = "IKN 고양" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = {amount = 1 owner = KOR version_name = "국망급"} } }
+			ship = { name = "IKN 팔공" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = {amount = 1 owner = KOR version_name = "국망급"} } }
+			
 			##################
 		}
 	}
+
 	fleet = {
-		name = "여순영전대"			
+		name = "비사방면함대"			
 		naval_base = 1150
 		task_force = {
-			name = "제4초계위"
+			name = "제1비사전단"
 			location = 1150
 			##################
 			###경순양함###
-			ship = { name = "IKN 영구" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = {amount = 1 owner = KOR version_name = "의주급"} } }
+			ship = { name = "IKN 영구" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = KOR version_name = "원산급"} } }
 
 			###구축함###
 			ship = { name = "IKN 보석" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = KOR version_name = "오봉급"} } }
@@ -242,11 +256,11 @@
 		}
 	}
 	fleet = {
-		name = "구주영전대"			
-		naval_base = 9950
+		name = "구주방면함대"			
+		naval_base = 10011
 		task_force = {
-			name = "제5초계위"
-			location = 9950
+			name = "제1구주전단"
+			location = 10011
 			##################
 			###경순양함###
 			ship = { name = "IKN 원산" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = KOR version_name = "원산급"} } }
@@ -265,32 +279,32 @@
 			##################
 		}
 		task_force = {
-			name = "제6초계위"
-			location = 1150
+			name = "제2구주전단"
+			location = 10011
 			##################
 			###경순양함###
-			ship = { name = "IKN 안평" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = {amount = 1 owner = KOR version_name = "의주급"} } }
+			ship = { name = "IKN 안평" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = KOR version_name = "원산급"} } }
 
 			###구축함###
-			ship = { name = "IKN 능경" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = {amount = 1 owner = KOR version_name = "국망급"} } }
-			ship = { name = "IKN 견치" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = {amount = 1 owner = KOR version_name = "국망급"} } }
-			ship = { name = "IKN 민둥" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = {amount = 1 owner = KOR version_name = "국망급"} } }
-			ship = { name = "IKN 상운" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = {amount = 1 owner = KOR version_name = "국망급"} } }
-			ship = { name = "IKN 지억" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = {amount = 1 owner = KOR version_name = "국망급"} } }
-			ship = { name = "IKN 수미" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = {amount = 1 owner = KOR version_name = "국망급"} } }
-			ship = { name = "IKN 대미" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = {amount = 1 owner = KOR version_name = "국망급"} } }
-			ship = { name = "IKN 성제" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = {amount = 1 owner = KOR version_name = "국망급"} } }
-			ship = { name = "IKN 형제" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = {amount = 1 owner = KOR version_name = "국망급"} } }
+			ship = { name = "IKN 능경" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = KOR version_name = "오봉급"} } }
+			ship = { name = "IKN 견치" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = KOR version_name = "오봉급"} } }
+			ship = { name = "IKN 민둥" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = KOR version_name = "오봉급"} } }
+			ship = { name = "IKN 상운" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = KOR version_name = "오봉급"} } }
+			ship = { name = "IKN 지억" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = KOR version_name = "오봉급"} } }
+			ship = { name = "IKN 수미" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = KOR version_name = "오봉급"} } }
+			ship = { name = "IKN 대미" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = KOR version_name = "오봉급"} } }
+			ship = { name = "IKN 성제" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = KOR version_name = "오봉급"} } }
+			ship = { name = "IKN 형제" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = KOR version_name = "오봉급"} } }
 			ship = { name = "IKN 덕태" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = KOR version_name = "오봉급"} } }
 			##################
 		}
 	}
 	fleet = {
-		name = "훈련위"			
-		naval_base = 13370
+		name = "북해방면함대"			
+		naval_base = 957
 		task_force = {
-			name = "해상기동전단"
-			location = 13370
+			name = "제1북해해상전단"
+			location = 957
 			##################
 			ship = { name = "IKN 배내" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = KOR version_name = "오봉급"} } }
 			ship = { name = "IKN 용산" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = KOR version_name = "오봉급"} } }
@@ -299,8 +313,8 @@
 			##################
 		}
 		task_force = {
-			name = "수륙잠수전단"
-			location = 13370
+			name = "제2북해잠수전대"
+			location = 957
 			##################
 			ship = { name = "IKN 잠-44" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "청새치급" } } }
 			ship = { name = "IKN 잠-45" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "청새치급" } } }
@@ -309,10 +323,10 @@
 		}
 	}
 	fleet = {
-		name = "잠수통영"			
+		name = "잠수함대"			
 		naval_base = 1177
 		task_force = {
-			name = "제1잠수전단"
+			name = "제1잠수전대"
 			location = 1177
 			ship = { name = "IKN 잠-1" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "청새치급" } } }
 			ship = { name = "IKN 잠-2" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "청새치급" } } }
@@ -328,7 +342,7 @@
 			##################
 		}
 		task_force = {
-			name = "제2잠수전단"
+			name = "제2잠수전대"
 			location = 1177
 			ship = { name = "IKN 잠-12" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "청새치급" } } }
 			ship = { name = "IKN 잠-13" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "청새치급" } } }
@@ -344,7 +358,7 @@
 			##################
 		}
 		task_force = {
-			name = "제3잠수전단"
+			name = "제3잠수전대"
 			location = 1177
 			ship = { name = "IKN 잠-23" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "청새치급" } } }
 			ship = { name = "IKN 잠-24" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "청새치급" } } }
@@ -360,7 +374,7 @@
 			##################
 		}
 		task_force = {
-			name = "제4잠수전단"
+			name = "제4잠수전대"
 			location = 1177
 			ship = { name = "IKN 잠-34" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "청새치급" } } }
 			ship = { name = "IKN 잠-35" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "청새치급" } } }
@@ -387,7 +401,7 @@ instant_effect =
 				version_name = "금강급"
 			}
 			requested_factories = 3
-			progress = 0.4
+			progress = 0.9
 			amount = 1
 		}
 		add_equipment_production = {				
@@ -397,8 +411,28 @@ instant_effect =
 				version_name = "금강급"
 			}
 			requested_factories = 2
-			progress = 0.2
+			progress = 0.8
 			amount = 1
+		}
+		add_equipment_production = {				
+			equipment = {
+				type = ship_hull_cruiser_2
+				creator = "KOR" 
+				version_name = "의주급"
+			}
+			requested_factories = 1
+			progress = 0.5
+			amount = 3
+		}
+		add_equipment_production = {				
+			equipment = {
+				type = ship_hull_cruiser_2
+				creator = "KOR" 
+				version_name = "의주급"
+			}
+			requested_factories = 1
+			progress = 0.5
+			amount = 3
 		}
 		add_equipment_production = {				
 			equipment = {

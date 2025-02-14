@@ -1,0 +1,67 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_yokusankai_party_icon"
+		texturefile = "gfx/interface/JAP_GUI/yokusankai/yokusankai_party_icon.dds"
+		noOfFrames = 3
+	}
+	spriteType = {
+		name = "GFX_itsekikai"
+		texturefile = "gfx/interface/JAP_GUI/itsekikai.png"
+	}
+	spriteType = {
+		name = "GFX_showa_kenkyuukai"
+		texturefile = "gfx/interface/JAP_GUI/showa.png"
+	}
+	spriteType = {
+		name = "GFX_koku"
+		texturefile = "gfx/interface/JAP_GUI/koku.png"
+	}
+	spriteType = {
+		name = "GFX_yokusankai_info_text"
+		texturefile = "gfx/interface/JAP_GUI/yokusankai_info_text.png"
+	}
+	spriteType = {
+		name = "GFX_yokusankai_info_big"
+		texturefile = "gfx/interface/JAP_GUI/yokusankai_info_big.png"
+	}
+	spriteType = {
+		name = "GFX_yokusankai_icon"
+		texturefile = "gfx/interface/JAP_GUI/yokusankai_icon.png"
+	}
+	spriteType = {
+		name = "GFX_tenno_inf_back"
+		texturefile = "gfx/interface/JAP_GUI/tenno_inf_back.png"
+	}
+	spriteType = {
+		name = "GFX_tenno_inf_color1"
+		texturefile = "gfx/interface/JAP_GUI/tenno_inf_color1.png"
+	}
+	spriteType = {
+		name = "GFX_tenno_inf_color2"
+		texturefile = "gfx/interface/JAP_GUI/tenno_inf_color2.png"
+	}
+	spriteType = {
+		name = "GFX_tenno_inf_color3"
+		texturefile = "gfx/interface/JAP_GUI/tenno_inf_color3.png"
+	}
+	spriteType = {
+		name = "GFX_tenno_inf_color4"
+		texturefile = "gfx/interface/JAP_GUI/tenno_inf_color4.png"
+	}
+	spriteType = {
+		name = "GFX_tenno_inf_color5"
+		texturefile = "gfx/interface/JAP_GUI/tenno_inf_color5.png"
+	}
+	spriteType = {
+		name = "GFX_Ichiki_Kitokuro"
+		texturefile = "gfx/interface/JAP_GUI/Ichiki_Kitokuro.png"
+	}
+	spriteType = {
+		name = "GFX_yokusankai_empty"
+		texturefile = "gfx/interface/JAP_GUI/yokusankai_empty.png"
+	}
+	spriteType = {
+		name = "GFX_yokusankai_empty"
+		texturefile = "gfx/interface/JAP_GUI/yokusankai_empty.png"
+	}
+}

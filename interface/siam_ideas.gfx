@@ -1,0 +1,146 @@
+spriteTypes = {	
+	SpriteType = {
+		name = "GFX_idea_aftermath_of_siam_revoulution"
+		texturefile = "gfx/interface/SIA/ideas/election.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_itasiam"
+		texturefile = "gfx/interface/SIA/ideas/itasiam.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_sia_net"
+		texturefile = "gfx/interface/SIA/ideas/sia_net.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_sia_resistance"
+		texturefile = "gfx/interface/SIA/ideas/sia_resistance.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_sia_economy"
+		texturefile = "gfx/interface/SIA/ideas/sia_economy.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_sia_boost"
+		texturefile = "gfx/interface/SIA/ideas/sia_boost.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_french_indochina"
+		texturefile = "gfx/interface/SIA/ideas/french_indochina.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_vietnam_communists"
+		texturefile = "gfx/interface/SIA/ideas/vietnam_communists.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_us_philippines"
+		texturefile = "gfx/interface/SIA/ideas/us_philippines.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_ast_threat"
+		texturefile = "gfx/interface/SIA/ideas/ast_threat.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_sst_pearl"
+		texturefile = "gfx/interface/SIA/ideas/Easternpearl.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_east_indies"
+		texturefile = "gfx/interface/SIA/ideas/east_indies.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_siaarmy_a"
+		texturefile = "gfx/interface/SIA/ideas/siaarmy_a.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_siaarmy_b"
+		texturefile = "gfx/interface/SIA/ideas/siaarmy_b.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_rama_ix"
+		texturefile = "gfx/interface/ideas/SIA/idea_SIA_rama_ix.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_uk_federated_states"
+		texturefile = "gfx/interface/SIA/ideas/uk_federated_states.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_SIA_pridi_banomyong"
+		texturefile = "gfx/interface/ideas/SIA/idea_SIA_pridi_panomyong.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_SIA_plaek_phibunsongkhram"
+		texturefile = "gfx/interface/ideas/SIA/idea_SIA_plaek_phibunsongkhram.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_SIA_khuang_aphaiwong"
+		texturefile = "gfx/interface/ideas/SIA/idea_SIA_khuang_aphaiwong.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_SIA_adul_adulyadejchrat"
+		texturefile = "gfx/interface/ideas/SIA/idea_SIA_adul_adulyadejchrat.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_SIA_phraya_songsuradet"
+		texturefile = "gfx/interface/ideas/SIA/idea_SIA_phraya_songsuradet.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_SIA_bunchai_sawathasuk"
+		texturefile = "gfx/interface/ideas/SIA/idea_SIA_bunchai_sawathasuk.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_SIA_luang_seriroengrit"
+		texturefile = "gfx/interface/ideas/SIA/idea_SIA_luang_seriroengrit.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_SIA_luang_wichitwathakan"
+		texturefile = "gfx/interface/ideas/SIA/idea_SIA_luang_wichitwathakan.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_SIA_pao_pienlert_boripanyutakit"
+		texturefile = "gfx/interface/ideas/SIA/idea_SIA_pao_pienlert_boripanyutakit.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_SIA_phin_choonhavan"
+		texturefile = "gfx/interface/ideas/SIA/idea_SIA_phin_choonhavan.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_SIA_pichit_kriengsakpichit"
+		texturefile = "gfx/interface/ideas/SIA/idea_SIA_pichit_kriengsakpichit.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_SIA_army_ars"
+		texturefile = "gfx/interface/SIA/ideas/SIA_army_ars.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_SIA_navy_ars"
+		texturefile = "gfx/interface/SIA/ideas/SIA_navy_ars.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_SIA_air_ars"
+		texturefile = "gfx/interface/SIA/ideas/SIA_air_ars.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_sia_rural"
+		texturefile = "gfx/interface/SIA/ideas/sia_rural.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_SIA_CN"
+		texturefile = "gfx/interface/SIA/ideas/SIA_CN.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_SIA_CP"
+		texturefile = "gfx/interface/SIA/ideas/SIA_CP.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_SIA_IEC"
+		texturefile = "gfx/interface/SIA/ideas/SIA_IEC.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_raj_buff"
+		texturefile = "gfx/interface/ideas/TLE/TLE_raj_buff.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_egypt_moon"
+		texturefile = "gfx/interface/ideas/Moon.png"
+	}
+}

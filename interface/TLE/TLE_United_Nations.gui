@@ -1,0 +1,342 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "United_Nations_fisc_container"
+		position = { x = 1210 y = 5 }
+		
+		iconType ={
+			name ="Background"
+			spriteType = "GFX_generic_box_small"
+			position = { x=0 y=0 }
+		}
+		
+		iconType = {
+			name ="UN_Icon_2"
+			spriteType = "GFX_United_Nations_Icon_Mini"
+			position = { x = 3 y = 3 }
+			scale = 0.5
+			alwaystransparent = yes
+		}
+		
+		instantTextBoxType = {
+			name ="UN_fisc_text"
+			position = { x = 26 y = 4 }
+			font = "hoi_18mbs"
+			text = "UN"
+			format = center
+			maxWidth = 50
+			maxHeight = 24
+			fixedsize = yes
+			alwaystransparent = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "UN_Agenda_History_grid"
+		position = { x = 0 y = 0 }
+		size = { width = 216 height = 62 }
+
+		instantTextboxType = {
+			name = "ordinance_name"
+			position = { x = 25 y = 8 }
+			font = "hoi_18mbs"
+			text = [GetAgendaHistory]
+			maxWidth = 164
+			format = center
+			alwaystransparent = yes
+			multiline = yes
+
+			maxHeight = 40
+			vertical_alignment = center
+		}
+		
+		iconType = {
+			name = "history_bg"
+			spriteType = "GFX_GNG_LegCo_Ordinance_History_Background"
+			position = { x = 0 y = 0 }
+			pdx_tooltip = "UN_Agenda_Histoy_Tooltip"
+		}
+	}
+
+	containerWindowType = {
+		name = "United_Nations_GUI"
+		size = { width = 900 height = 650 }
+		position = { x= -20 y= -6000 }
+		show_position = { x = 500 y = 200 }
+		hide_position = { x= -20 y= -6000 }
+		animation_time = 1
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		moveable = yes
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_tiled_bg"
+		}
+
+		iconType = {
+			name ="UN_Icon"
+			spriteType = "GFX_United_Nations_Icon"
+			position = { x = 275 y = 20 }
+			scale = 0.85
+		}
+
+		buttonType = {
+			name = "UN_Agenda_Close"
+			spriteType = "GFX_button_148x34"
+			position = { x = 375 y = 590 }
+			text = "UN_Agenda_CLOSE_TEXT"
+			font = "hoi_18"
+			shortcut = "ESCAPE"
+		}
+
+		instantTextBoxType = {
+			name = "SC_Member_text"
+			position = { x= 300 y = 303 }
+			font = "Bomb_24"
+			text = "UN_SC_MEMBER_TEXT"
+			maxWidth = 300
+			maxHeight = 24
+			format = center
+		}
+
+		instantTextBoxType = {
+			name = "Member_text"
+			position = { x= 400 y = 410 }
+			font = "Bomb_20"
+			text = "UN_MEMBER_TEXT"
+			maxWidth = 100
+			maxHeight = 24
+			format = center
+		}
+
+		containerWindowType = {
+			name = "UN_Contenders"
+			position = { x = 0 y = 0 }
+			containerWindowType = {
+				name = "SC_Contenders_List_Container"
+				size = { width = 568 height = 90 }
+				position = { x = 155 y = 330 }
+				clipping = yes
+				horizontalScrollbar = "bottom_horizontal_slider"
+				margin = { top = 0 left = 0 bottom = 0 right = 0 }
+	
+				background = {
+					name = "SC_Contanders_List_Background"
+					quadTextureSprite = "GFX_tiled_window_transparent"
+				}
+	
+				gridboxtype = {
+					name = "SC_Contenders_List"
+					position = { x = 0 y = -15 }
+					size = { width = 110 height = 100 }
+					slotsize = { width = 110 height = 100 }
+					max_slots_vertical = 1
+					add_horizontal = yes
+				}
+			}
+			containerWindowType = {
+				name = "Contenders_List_Container"
+				size = { width = 710 height = 145 }
+				position = { x = 100 y = 435 }
+				verticalScrollbar = "right_vertical_slider"
+				scroll_wheel_factor = 50
+				clipping = yes
+				margin = { top = 0 left = 0 bottom = 0 right = 0 }
+	
+				background = {
+					name = "Contanders_List_Background"
+					quadTextureSprite = "GFX_tiled_window_transparent"
+				}
+	
+				gridboxtype = {
+					name = "Contenders_List"
+					position = { x = -12 y = -12 }
+					size = { width = 68 height = 47 }
+					slotsize = { width = 68 height = 47 }
+					max_slots_vertical = 10
+					max_slots_horizontal = 10
+					add_horizontal = yes
+				}
+			}
+		}
+
+	}
+
+	containerWindowType = {
+		name = "United_Nations_Agenda_desc"
+		size = { width = 300 height = 400 }
+		position = { x = 892 y = 0 }
+		click_to_front = yes
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_tiled_bg"
+		}
+
+		instantTextBoxType = {
+			name ="Current_Agenda"
+			position = { x = 50 y = 30 }
+			font = "hoi_24header"
+			text = "Currnet_Agenda_TEXT"
+			format = center
+			maxWidth = 200
+			maxHeight = 24
+			fixedsize = yes
+		}
+
+		instantTextBoxType = {
+			name ="Current_Agenda_title"
+			position = { x = 25 y = 60 }
+			font = "hoi_18mbs"
+			text = [GetUNAgenda]
+			format = center
+			maxWidth = 250
+			maxHeight = 50
+			fixedsize = yes
+		}
+
+		instantTextBoxType = {
+			name ="Current_Agenda_desc"
+			position = { x = 25 y = 110 }
+			font = "hoi_18mbs"
+			text = [GetUNAgendaDesc]
+			format = center
+			maxWidth = 250
+			maxHeight = 250
+			fixedsize = yes
+		}
+
+		instantTextBoxType = {
+			name = "UN_Agenda_Days"
+			position = { x = 130 y = 240 }
+			font = "hoi_18"
+			text = "UN_Agenda_Days_TEXT"
+			format = center
+			maxWidth = 40
+		}
+
+		containerWindowType = {
+			name = "UN_Agenda_Buttons"
+			position = { x = 60 y = 270 }
+			buttonType = {
+				name = "UN_Agenda_Accpet"
+				spriteType = "GFX_UN_Button_Mini"
+				position = { x = 0 y = 0 }
+				text = "UN_Agenda_APPROVE_TEXT"
+				font = "hoi_18"
+			}
+	
+			buttonType = {
+				name = "UN_Agenda_Reject"
+				spriteType = "GFX_UN_Button_Mini"
+				position = { x = 0 y = 33 }
+				text = "UN_Agenda_AGAINST_TEXT"
+				font = "hoi_18"
+			}
+	
+			buttonType = {
+				name = "UN_Agenda_Abstention"
+				spriteType = "GFX_UN_Button_Mini"
+				position = { x = 0 y = 66 }
+				text = "UN_Agenda_ABSTAIN_TEXT"
+				font = "hoi_18"
+			}
+		}
+	}
+
+	containerWindowType = {
+		name = "United_Nations_Agenda_history"
+		size = { width = 300 height = 258 }
+		position = { x = 892 y = 392 }
+		click_to_front = yes
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_tiled_bg"
+		}
+
+		instantTextBoxType = {
+			name = "History"
+			position = { x = 100 y = 23 }
+			font = "hoi_24header"
+			text = "history_text"
+			format = center
+			maxWidth = 100
+			maxHeight = 24
+			fixedsize = yes
+		}
+
+		containerWindowType = {
+			name = "past_ordinance_list_container"
+			size = { width = 260 height = 190 }
+
+			verticalScrollbar = "right_vertical_slider"
+			position = { x = 30 y = 50 }
+
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window_transparent"
+			}
+
+			gridboxtype = {
+				name = "past_ordinance_list"
+				position = { x = 5 y = 5 }
+				size = { width = 216 height = 240 }
+				slotsize = { width = 216 height = 62 }
+				max_slots_horizontal = 1
+				add_horizontal = no
+			}
+		}
+	}
+
+	containerWindowType = {
+		name = "TLE_UN_SC_Contenders_Entry"
+		position = { x = 0 y = 0 }
+		size = { width = 120 height = 100 }
+
+		iconType = {
+			name = "Contenders_Entry_Flag"
+			position = { x = 21 y = 17 }
+			quadTextureSprite = "GFX_flag_large"
+		}
+
+		iconType = {
+			name = "Frame"
+			position = { x = 13 y = 17 }
+			quadTextureSprite = "GFX_large_flag_frame"
+			scale = 1.25
+			pdx_tooltip = "UN_SC_Contenders_Entry_Desc"
+		}
+
+		iconType = {
+			name = "Agenda_Check"
+			quadTextureSprite = "GFX_checkbox_small_red_green"
+			position = { x = 15 y = 55 }
+			pdx_tooltip = "UN_SC_Agenda_Check_Desc"
+		}
+	}
+
+	containerWindowType = {
+		name = "TLE_UN_Contenders_Entry"
+		position = { x = 0 y = 0 }
+		size = { width = 70 height = 58 }
+
+		iconType = {
+			name = "Contenders_Entry_Flag"
+			position = { x = 21 y = 17 }
+			quadTextureSprite = "GFX_flag_medium"
+		}
+
+		iconType = {
+			name = "Frame"
+			position = { x = 15 y = 12 }
+			quadTextureSprite = "GFX_small_flag_frame_thin2"
+			scale = 1.45
+			pdx_tooltip = "UN_SC_Contenders_Entry_Desc"
+		}
+	}
+}

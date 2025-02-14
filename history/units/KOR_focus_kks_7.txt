@@ -1,0 +1,5 @@
+﻿
+focus = {
+    current = "KOR_kim_death_conservative_economy_contact"
+    Progress = 0
+}   

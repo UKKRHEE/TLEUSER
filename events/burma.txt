@@ -1,0 +1,208 @@
+﻿
+add_namespace = burma
+
+country_event = {
+	id = burma.1
+	title = burma.1.t
+	desc = burma.1.d
+	picture = gfx
+	
+	trigger = {
+		TAG = RAJ
+		date > 1937.4.1
+		date < 1939.1.1
+        country_exists = RAJ
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	fire_only_once = yes
+	
+	option = {
+		name = burma.1.a
+		hidden_effect = {
+			news_event = {
+				id = siam_news.15
+			}
+			if = {
+				limit = {
+					288 = {
+						is_owned_by = RAJ
+					}
+				}
+				BUR = { transfer_state = 288 }
+			}
+			if = {
+				limit = {
+					640 = {
+						is_owned_by = RAJ
+					}
+				}
+				BUR = { transfer_state = 640 }
+			}
+			if = {
+				limit = {
+					992 = {
+						is_owned_by = RAJ
+					}
+				}
+				BUR = { transfer_state = 992 }
+			}
+            if = {
+				limit = {
+					1076 = {
+						is_owned_by = RAJ
+					}
+				}
+				BUR = { transfer_state = 1076 }
+			}
+            if = {
+				limit = {
+					1090 = {
+						is_owned_by = RAJ
+					}
+				}
+				BUR = { transfer_state = 1090 }
+			}
+            if = {
+				limit = {
+					1091 = {
+						is_owned_by = RAJ
+					}
+				}
+				BUR = { transfer_state = 1091 }
+			}
+            if = {
+				limit = {
+					1092 = {
+						is_owned_by = RAJ
+					}
+				}
+				BUR = { transfer_state = 1092 }
+			}
+			ENG = {
+				puppet = BUR
+			}
+			BUR = { set_cosmetic_tag = BUR_UK }
+			BUR = { add_state_core = 288 }
+			BUR = { add_state_core = 640 }
+			BUR = { add_state_core = 992 }
+    		BUR = { add_state_core = 1076 }
+    		BUR = { add_state_core = 1090 }
+    		BUR = { add_state_core = 1091 }
+    		BUR = { add_state_core = 1092 }
+			BUR = { 
+				set_politics = { 
+					ruling_party = neutrality
+					last_election = "1936.11.26"
+					election_frequency = 48
+					elections_allowed = no
+				}
+				set_political_party = {
+					ideology = democratic popularity = 0
+					ideology = fascism popularity = 0
+					ideology = communism popularity = 0
+					ideology = neutrality popularity = 100
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = burma.2
+	title = burma.2.t
+	desc = burma.2.d
+	picture = gfx
+	
+	trigger = {
+		TAG = BUR
+		date > 1947.1.1
+		date < 1948.1.1
+        country_exists = BUR
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	fire_only_once = yes
+	
+	option = {
+		name = burma.2.a
+		hidden_effect = {
+			news_event = {
+				id = siam_news.16
+			}
+			if = {
+				limit = {
+					288 = {
+						is_owned_by = BUR
+					}
+				}
+				BRM = { transfer_state = 288 }
+			}
+			if = {
+				limit = {
+					640 = {
+						is_owned_by = BUR
+					}
+				}
+				BRM = { transfer_state = 640 }
+			}
+			if = {
+				limit = {
+					992 = {
+						is_owned_by = BUR
+					}
+				}
+				BRM = { transfer_state = 992 }
+			}
+            if = {
+				limit = {
+					1076 = {
+						is_owned_by = BUR
+					}
+				}
+				BRM = { transfer_state = 1076 }
+			}
+			if = {
+				limit = {
+					1090 = {
+						is_owned_by = BUR
+					}
+				}
+				BRM = { transfer_state = 1090 }
+			}
+			if = {
+				limit = {
+					1091 = {
+						is_owned_by = BUR
+					}
+				}
+				BRM = { transfer_state = 1091 }
+			}
+			if = {
+				limit = {
+					1092 = {
+						is_owned_by = BUR
+					}
+				}
+				BRM = { transfer_state = 1092 }
+			}
+			BUR = { 
+				set_politics = { 
+					ruling_party = democratic
+					last_election = "1936.1.1"
+					election_frequency = 48
+					elections_allowed = no
+				}
+				set_political_party = {
+					ideology = democratic popularity = 70
+					ideology = fascism popularity = 10
+					ideology = communism popularity = 10
+					ideology = neutrality popularity = 10
+				}
+			}
+		}
+	}
+}

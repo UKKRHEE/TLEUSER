@@ -95,7 +95,7 @@ if = {
 		basic_torpedo = 1
 	}
 }
-recruit_character = LAO_sisavang_vong
+
 recruit_character = LAO_sisavang_vatthana
 recruit_character = LAO_souphanouvong
 

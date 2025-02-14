@@ -8,7 +8,7 @@ ideas = {
 			removal_cost = -1
 			level = 7
 			allowed = {
-				NOT = { original_tag = KOR }
+				NOT = { original_tag = KOR original_tag = CHI original_tag = ZLC original_tag = JAP original_tag = SIA }
 			}
 			modifier = {
 			}
@@ -20,7 +20,7 @@ ideas = {
 			removal_cost = -1
 			level = 6
 			allowed = {
-				original_tag = KOR always = no
+				original_tag = KOR
 			}
 			available = {
 				has_idea = kor_dip_ilsoism
@@ -36,7 +36,7 @@ ideas = {
 			removal_cost = -1
 			level = 5
 			allowed = {
-				original_tag = KOR always = no
+				original_tag = KOR
 			}
 			available = {
 				has_idea = kor_dip_managism
@@ -55,7 +55,7 @@ ideas = {
 			removal_cost = -1
 			level = 4
 			allowed = {
-				original_tag = KOR always = no
+				original_tag = KOR
 			}
 			available = {
 				has_idea = kor_dip_givism
@@ -71,7 +71,7 @@ ideas = {
 			removal_cost = -1
 			level = 3
 			allowed = {
-				original_tag = KOR always = no
+				original_tag = KOR
 			}
 			available = {
 				has_idea = kor_dip_breakism
@@ -79,6 +79,131 @@ ideas = {
 			modifier = {
 				war_support_factor = 0.1
 				offensive_war_stability_factor = 0.2
+			}
+			cancel_if_invalid = no
+		}
+		####
+		chi_dip_pre_communism = {
+			cost = 0
+			removal_cost = -1
+			level = 6
+			allowed = {
+				original_tag = CHI
+			}
+			available = {
+				has_idea = chi_dip_pre_communism
+			}
+			modifier = {
+			}
+			cancel_if_invalid = no
+		}
+		chi_dip_pre_capitalism = {
+			cost = 0
+			removal_cost = -1
+			level = 5
+			allowed = {
+				original_tag = CHI
+			}
+			available = {
+				has_idea = chi_dip_pre_capitalism
+			}
+			modifier = {
+			}
+			cancel_if_invalid = no
+		}
+		###
+		zlc_dip_pre_koreanism = {
+			cost = 0
+			removal_cost = -1
+			level = 6
+			allowed = {
+				original_tag = ZLC
+			}
+			available = {
+				has_idea = zlc_dip_pre_koreanism
+			}
+			modifier = {
+			}
+			cancel_if_invalid = no
+		}
+		zlc_dip_pre_japanism = {
+			cost = 0
+			removal_cost = -1
+			level = 5
+			allowed = {
+				original_tag = ZLC
+			}
+			available = {
+				has_idea = zlc_dip_pre_japanism
+			}
+			modifier = {
+			}
+			cancel_if_invalid = no
+		}
+		zlc_dip_pre_germanism = {
+			cost = 0
+			removal_cost = -1
+			level = 4
+			allowed = {
+				original_tag = ZLC
+			}
+			available = {
+				has_idea = zlc_dip_pre_germanism
+			}
+			modifier = {
+			}
+			cancel_if_invalid = no
+		}
+		#
+		jap_dip_far_friendship_close_attack = {
+			cost = 0
+			removal_cost = -1
+			level = 6
+			allowed = {
+				original_tag = JAP
+			}
+			available = {
+				has_idea = jap_dip_far_friendship_close_attack
+			}
+			modifier = {
+			}
+			cancel_if_invalid = no
+		}
+		##
+		sia_neutral = {
+			cost = 0
+			removal_cost = -1
+			level = 6
+			allowed = {
+				original_tag = SIA
+			}
+			available = {
+				has_idea = sia_neutral
+			}
+			rule = {
+					can_join_factions = no
+				}
+			modifier = {
+				war_support_factor = -0.1
+				enemy_declare_war_tension = 0.5
+				enemy_justify_war_goal_time = 0.5
+				generate_wargoal_tension = 0.3
+				guarantee_cost = 0.3
+			}
+			cancel_if_invalid = no
+		}
+		sia_expand = {
+			cost = 0
+			removal_cost = -1
+			level = 5
+			allowed = {
+				original_tag = SIA
+			}
+			available = {
+				has_idea = sia_expand
+			}
+			modifier = {
+				war_support_factor = 0.1
 			}
 			cancel_if_invalid = no
 		}
@@ -92,7 +217,7 @@ ideas = {
 			removal_cost = -1
 			level = 7
 			allowed = {
-				NOT = { original_tag = KOR }
+				NOT = { original_tag = KOR original_tag = CHI original_tag = ZLC original_tag = JAP original_tag = SIA }
 			}
 			modifier = {
 			}
@@ -104,7 +229,7 @@ ideas = {
 			removal_cost = -1
 			level = 6
 			allowed = {
-				original_tag = KOR always = no
+				original_tag = KOR
 			}
 			available = {
 				has_idea = kor_inn_basism
@@ -121,7 +246,7 @@ ideas = {
 			removal_cost = -1
 			level = 5
 			allowed = {
-				original_tag = KOR always = no
+				original_tag = KOR
 			}
 			available = {
 				has_idea = kor_inn_revolism
@@ -139,7 +264,7 @@ ideas = {
 			removal_cost = -1
 			level = 4
 			allowed = {
-				original_tag = KOR always = no
+				original_tag = KOR
 			}
 			available = {
 				has_idea = kor_inn_charitism
@@ -147,8 +272,7 @@ ideas = {
 			modifier = {
 				stability_factor = 0.05
 				consumer_goods_factor = 0.05
-				production_cost_arms_factory_factor = 0.05
-				production_cost_dockyard_factor = 0.05
+				production_speed_buildings_factor = -0.05
 			}
 			cancel_if_invalid = no
 		}
@@ -157,7 +281,7 @@ ideas = {
 			removal_cost = -1
 			level = 3
 			allowed = {
-				original_tag = KOR always = no
+				original_tag = KOR
 			}
 			available = {
 				has_idea = kor_inn_totalism
@@ -165,8 +289,126 @@ ideas = {
 			modifier = {
 				stability_factor = -0.2
 				war_support_factor = -0.1
-				research_speed_factor = -0.1
+				research_speed_factor = -0.05
 				production_speed_buildings_factor = 0.1
+			}
+			cancel_if_invalid = no
+		}
+		###
+		chi_inn_beifa = {
+			cost = 0
+			removal_cost = -1
+			level = 6
+			allowed = {
+				original_tag = CHI
+				always = no
+			}
+			available = {
+				has_idea = chi_inn_beifa
+			}
+			modifier = {
+			}
+			cancel_if_invalid = no
+		}
+		chi_inn_xinshenghuo = {
+			cost = 0
+			removal_cost = -1
+			level = 5
+			allowed = {
+				original_tag = CHI
+			}
+			available = {
+				has_idea = chi_inn_xinshenghuo
+			}
+			modifier = {
+			}
+			cancel_if_invalid = no
+		}
+		chi_inn_wugainian = {
+			cost = 0
+			removal_cost = -1
+			level = 4
+			allowed = {
+				original_tag = CHI
+			}
+			available = {
+				has_idea = chi_inn_wugainian
+			}
+			modifier = {
+			}
+			cancel_if_invalid = no
+		}
+		chi_inn_guofangguojia = {
+			cost = 0
+			removal_cost = -1
+			level = 4
+			allowed = {
+				original_tag = CHI
+			}
+			available = {
+				has_idea = chi_inn_guofangguojia
+			}
+			modifier = {
+			}
+			cancel_if_invalid = no
+		}
+		###
+		zlc_inn_dongdaoxiqi = {
+			cost = 0
+			removal_cost = -1
+			level = 6
+			allowed = {
+				original_tag = ZLC
+			}
+			available = {
+				has_idea = zlc_inn_dongdaoxiqi
+			}
+			modifier = {
+			}
+			cancel_if_invalid = no
+		}
+		zlc_inn_mingdingguoshi = {
+			cost = 0
+			removal_cost = -1
+			level = 5
+			allowed = {
+				original_tag = ZLC
+			}
+			available = {
+				has_idea = zlc_inn_mingdingguoshi
+			}
+			modifier = {
+			}
+			cancel_if_invalid = no
+		}
+		###
+		jap_inn_fatherland_civilization = {
+			cost = 0
+			removal_cost = -1
+			level = 6
+			allowed = {
+				original_tag = JAP
+			}
+			available = {
+				has_idea = jap_inn_fatherland_civilization
+			}
+			modifier = {
+			}
+			cancel_if_invalid = no
+		}
+		###
+		sia_revolutionary_nation = {
+			cost = 0
+			removal_cost = -1
+			level = 6
+			allowed = {
+				original_tag = SIA
+			}
+			available = {
+				has_idea = sia_revolutionary_nation
+			}
+			modifier = {
+				stability_factor = -0.1
 			}
 			cancel_if_invalid = no
 		}
@@ -180,7 +422,7 @@ ideas = {
 			removal_cost = -1
 			level = 1
 			allowed = {
-				NOT = { original_tag = KOR }
+				NOT = { original_tag = KOR original_tag = CHI original_tag = ZLC original_tag = JAP original_tag = SIA }
 			}
 			modifier = {
 			}
@@ -192,7 +434,7 @@ ideas = {
 			removal_cost = -1
 			level = 2
 			allowed = {
-				original_tag = KOR always = no
+				original_tag = KOR
 			}
 			available = {
 				has_idea = kor_pol_leadism
@@ -209,7 +451,7 @@ ideas = {
 			removal_cost = -1
 			level = 3
 			allowed = {
-				original_tag = KOR always = no
+				original_tag = KOR
 			}
 			available = {
 				has_idea = kor_pol_democratism
@@ -224,13 +466,117 @@ ideas = {
 			removal_cost = -1
 			level = 4
 			allowed = {
-				original_tag = KOR always = no
+				original_tag = KOR
 			}
 			available = {
 				has_idea = kor_pol_gradualism
 			}
 			modifier = {
 				stability_factor = 0.05
+			}
+			cancel_if_invalid = no
+		}
+		###
+		chi_pol_junzheng = {
+			cost = 0
+			removal_cost = -1
+			level = 2
+			allowed = {
+				original_tag = CHI
+			}
+			available = {
+				has_idea = chi_pol_junzheng
+			}
+			modifier = {
+			}
+			cancel_if_invalid = no
+		}
+		chi_pol_xunzheng = {
+			cost = 0
+			removal_cost = -1
+			level = 3
+			allowed = {
+				original_tag = CHI
+			}
+			available = {
+				has_idea = chi_pol_xunzheng
+			}
+			modifier = {
+			}
+			cancel_if_invalid = no
+		}
+		chi_pol_xianzheng = {
+			cost = 0
+			removal_cost = -1
+			level = 4
+			allowed = {
+				original_tag = CHI
+			}
+			available = {
+				has_idea = chi_pol_xianzheng
+			}
+			modifier = {
+			}
+			cancel_if_invalid = no
+		}
+		#
+		zlc_pol_oligarchism = {
+			cost = 0
+			removal_cost = -1
+			level = 2
+			allowed = {
+				original_tag = ZLC
+			}
+			available = {
+				has_idea = zlc_pol_oligarchism
+			}
+			modifier = {
+			}
+			cancel_if_invalid = no
+		}
+		zlc_pol_democratism = {
+			cost = 0
+			removal_cost = -1
+			level = 3
+			allowed = {
+				original_tag = ZLC
+			}
+			available = {
+				has_idea = zlc_pol_democratism
+			}
+			modifier = {
+			}
+			cancel_if_invalid = no
+		}
+		###
+		jap_pol_showa_newdeal = {
+			cost = 0
+			removal_cost = -1
+			level = 2
+			allowed = {
+				original_tag = JAP
+			}
+			available = {
+				has_idea = jap_pol_showa_newdeal
+			}
+			modifier = {
+			}
+			cancel_if_invalid = no
+		}
+		##
+		sia_socialist_nation = {
+			cost = 0
+			removal_cost = -1
+			level = 2
+			allowed = {
+				original_tag = SIA
+			}
+			available = {
+				has_idea = sia_socialist_nation
+			}
+			modifier = {
+				stability_factor = 0.05
+				consumer_goods_factor = 0.05
 			}
 			cancel_if_invalid = no
 		}
@@ -244,7 +590,7 @@ ideas = {
 			removal_cost = -1
 			level = 7
 			allowed = {
-				NOT = { original_tag = KOR }
+				NOT = { original_tag = KOR original_tag = CHI original_tag = ZLC original_tag = JAP original_tag = SIA }
 			}
 			modifier = {
 			}
@@ -256,7 +602,7 @@ ideas = {
 			removal_cost = -1
 			level = 6
 			allowed = {
-				original_tag = KOR always = no
+				original_tag = KOR
 			}
 			available = {
 				has_idea = kor_mil_serve_to_emperor
@@ -274,7 +620,7 @@ ideas = {
 			removal_cost = -1
 			level = 5
 			allowed = {
-				original_tag = KOR always = no
+				original_tag = KOR
 			}
 			available = {
 				has_idea = kor_mil_serve_to_emp_and_gov
@@ -293,7 +639,7 @@ ideas = {
 			removal_cost = -1
 			level = 4
 			allowed = {
-				original_tag = KOR always = no
+				original_tag = KOR
 			}
 			available = {
 				has_idea = kor_mil_serve_to_government
@@ -309,8 +655,8 @@ ideas = {
 			removal_cost = -1
 			level = 3
 			allowed = {
-				original_tag = KOR always = no
-				has_completed_focus = kor_korean_lebensraum
+				original_tag = KOR
+				has_country_flag = FLAG_KOR_FASCIST_ROUTE
 			}
 			available = {
 				has_idea = kor_mil_tongjepa
@@ -322,148 +668,554 @@ ideas = {
 			}
 			cancel_if_invalid = no
 		}
+		#
+		chi_mil_guominzhengfujun = {
+			cost = 0
+			removal_cost = -1
+			level = 6
+			allowed = {
+				original_tag = CHI
+			}
+			available = {
+				has_idea = chi_mil_guominzhengfujun
+			}
+			modifier = {
+			}
+			cancel_if_invalid = no
+		}
+		#
+		zlc_mil_hezongjun = {
+			cost = 0
+			removal_cost = -1
+			level = 6
+			allowed = {
+				original_tag = ZLC
+			}
+			available = {
+				has_idea = zlc_mil_hezongjun
+			}
+			modifier = {
+			}
+			cancel_if_invalid = no
+		}
+		zlc_mil_zhengfujun = {
+			cost = 0
+			removal_cost = -1
+			level = 5
+			allowed = {
+				original_tag = ZLC
+			}
+			available = {
+				has_idea = zlc_mil_zhengfujun
+			}
+			modifier = {
+			}
+			cancel_if_invalid = no
+		}
+		#
+		jap_mil_tennous_military = {
+			cost = 0
+			removal_cost = -1
+			level = 5
+			allowed = {
+				original_tag = JAP
+			}
+			available = {
+				has_idea = jap_mil_tennous_military
+			}
+			modifier = {
+			}
+			cancel_if_invalid = no
+		}
+		##
+		sia_political_military = {
+			cost = 0
+			removal_cost = -1
+			level = 5
+			allowed = {
+				original_tag = SIA
+			}
+			available = {
+				has_idea = sia_political_military
+			}
+			modifier = {
+				political_power_cost = 0.1
+				war_support_factor = -0.1
+			}
+			cancel_if_invalid = no
+		}
 	}
 	kor_elder_slot = {
 		KOR_park_yonghyo_elder = { #
 		    allowed = {
-		    	original_tag = KOR always = no
+		    	original_tag = KOR
 		    }
 			available = {
 				has_idea = KOR_park_yonghyo_elder
 			}
 			cost = 0
 			removal_cost = -1
-			can_be_fired = no
+			#can_be_fired = no
 			
 		    traits = { seungjeongwon_trait park_yonghyo_trait }
 			cancel_if_invalid = no
 	    }
 		KOR_seo_jai_phil_elder = { #
 		    allowed = {
-		    	original_tag = KOR always = no
+		    	original_tag = KOR
 		    }
 			available = {
 				has_idea = KOR_seo_jai_phil_elder
 			}
 			cost = 0
 			removal_cost = -1
-			can_be_fired = no
+			#can_be_fired = no
 			
 		    traits = { seungjeongwon_trait seo_jaiphil_trait }
 			cancel_if_invalid = no
 	    }
 		KOR_lee_kyuwan_elder = { #
 		    allowed = {
-		    	original_tag = KOR always = no
+		    	original_tag = KOR
 		    }
 			available = {
 				has_idea = KOR_lee_kyuwan_elder
 			}
 			cost = 0
 			removal_cost = -1
-			can_be_fired = no
+			#can_be_fired = no
 			
 		    traits = { seungjeongwon_trait wonlo_trait }
+			cancel_if_invalid = no
+	    }
+		#
+		CHI_hu_hanmin_elder = { #
+		    allowed = {
+		    	original_tag = CHI
+		    }
+			available = {
+				has_idea = CHI_hu_hanmin_elder
+			}
+			cost = 0
+			removal_cost = -1
+			#can_be_fired = no
+			
+		    traits = { wonlo_trait }
+			cancel_if_invalid = no
+	    }
+		CHI_wang_jingwei_elder = { #
+		    allowed = {
+		    	original_tag = CHI
+		    }
+			available = {
+				has_idea = CHI_wang_jingwei_elder
+			}
+			cost = 0
+			removal_cost = -1
+			#can_be_fired = no
+			
+		    traits = { wonlo_trait }
+			cancel_if_invalid = no
+	    }
+		#
+		ZLC_yan_huiqing_elder = { #
+		    allowed = {
+		    	original_tag = ZLC
+		    }
+			available = {
+				has_idea = ZLC_yan_huiqing_elder
+			}
+			cost = 0
+			removal_cost = -1
+			#can_be_fired = no
+			
+		    traits = { wonlo_trait }
+			cancel_if_invalid = no
+	    }
+		ZLC_wu_peifu_elder = { #
+		    allowed = {
+		    	original_tag = ZLC
+		    }
+			available = {
+				has_idea = ZLC_wu_peifu_elder
+			}
+			cost = 0
+			removal_cost = -1
+			#can_be_fired = no
+			
+		    traits = { wonlo_trait }
+			cancel_if_invalid = no
+	    }
+		ZLC_yan_xishan_elder = { #
+		    allowed = {
+		    	original_tag = ZLC
+		    }
+			available = {
+				has_idea = ZLC_yan_xishan_elder
+			}
+			cost = 0
+			removal_cost = -1
+			#can_be_fired = no
+			
+		    traits = { wonlo_trait }
+			cancel_if_invalid = no
+	    }
+		#
+		JAP_ugaki_kazushige_elder = { #
+		    allowed = {
+		    	original_tag = JAP
+		    }
+			available = {
+				has_idea = JAP_yan_xishan_elder
+			}
+			cost = 0
+			removal_cost = -1
+			#can_be_fired = no
+			
+		    traits = { wonlo_trait }
+			cancel_if_invalid = no
+	    }
+		JAP_kita_ikki_elder = { #
+		    allowed = {
+		    	original_tag = JAP
+		    }
+			available = {
+				has_idea = JAP_kita_ikki_elder
+			}
+			cost = 0
+			removal_cost = -1
+			#can_be_fired = no
+			
+		    traits = { wonlo_trait }
+			cancel_if_invalid = no
+	    }
+		SIA_prince_aditya = { #
+		    allowed = {
+		    	original_tag = SIA
+		    }
+			available = {
+				has_idea = SIA_prince_aditya
+			}
+			cost = 0
+			removal_cost = -1
+			#can_be_fired = no
+			
+		    traits = { SIA_prince_aditya_trait }
 			cancel_if_invalid = no
 	    }
 	}
 	kor_heir_prince_slot = {
 		KOR_yi_hyul_heir_prince = { #
 		    allowed = {
-		    	original_tag = KOR always = no
+		    	original_tag = KOR
 		    }
 			available = {
 				has_idea = KOR_yi_hyul_heir_prince
 			}
 			cost = 0
 			removal_cost = -1
-			can_be_fired = no
+			#can_be_fired = no
+			
+		    traits = { heir_prince_trait }
+			cancel_if_invalid = no
+	    }
+		KOR_yi_heon_heir_prince = { #
+		    allowed = {
+		    	#original_tag = KOR
+				always = no
+		    }
+			available = {
+				has_idea = KOR_yi_heon_heir_prince
+			}
+			cost = 0
+			removal_cost = -1
+			#can_be_fired = no
+			
+		    traits = { heir_prince_trait }
+			cancel_if_invalid = no
+	    }
+		KOR_yi_gon_heir_prince = { #
+		    allowed = {
+		    	#original_tag = KOR
+				always = no
+		    }
+			available = {
+				has_idea = KOR_yi_gon_heir_prince
+			}
+			cost = 0
+			removal_cost = -1
+			#can_be_fired = no
 			
 		    traits = { heir_prince_trait }
 			cancel_if_invalid = no
 	    }
 		KOR_yi_yul_prince_ui = { #
 		    allowed = {
-		    	original_tag = KOR always = no
+		    	original_tag = KOR
 		    }
 			available = {
 				has_idea = KOR_yi_yul_prince_ui
 			}
 			cost = 0
 			removal_cost = -1
-			can_be_fired = no
+			#can_be_fired = no
 			
 		    traits = { prince_ui_trait }
 			cancel_if_invalid = no
 	    }
 		KOR_yi_won_prince_kyong = { #
 		    allowed = {
-		    	original_tag = KOR always = no
+		    	original_tag = KOR
 		    }
 			available = {
 				has_idea = KOR_yi_won_prince_kyong
 			}
 			cost = 0
 			removal_cost = -1
-			can_be_fired = no
+			#can_be_fired = no
 			
 		    traits = { prince_kyong_trait }
 			cancel_if_invalid = no
 	    }
 		KOR_yi_yong_prince_jong = { #
 		    allowed = {
-		    	original_tag = KOR always = no
+		    	original_tag = KOR
 		    }
 			available = {
 				has_idea = KOR_yi_yong_prince_jong
 			}
 			cost = 0
 			removal_cost = -1
-			can_be_fired = no
+			#can_be_fired = no
 			
 		    traits = { prince_jong_trait }
 			cancel_if_invalid = no
 	    }
 		KOR_yi_kiyong_prince_susong = { #
 		    allowed = {
-		    	original_tag = KOR always = no
+		    	original_tag = KOR
 		    }
 			available = {
 				has_idea = KOR_yi_kiyong_prince_susong
 			}
 			cost = 0
 			removal_cost = -1
-			can_be_fired = no
+			#can_be_fired = no
 			
 		    traits = { prince_susong_trait }
 			cancel_if_invalid = no
 	    }
 		KOR_yi_jegak_prince_uiyang = { #
 		    allowed = {
-		    	original_tag = KOR always = no
+		    	original_tag = KOR
 		    }
 			available = {
 				has_idea = KOR_yi_jegak_prince_uiyang
 			}
 			cost = 0
 			removal_cost = -1
-			can_be_fired = no
+			#can_be_fired = no
 			
 		    traits = { prince_uiyang_trait }
 			cancel_if_invalid = no
 	    }
 		KOR_yi_haesung_prince_chongpung = { #
 		    allowed = {
-		    	original_tag = KOR always = no
+		    	original_tag = KOR
 		    }
 			available = {
 				has_idea = KOR_yi_haesung_prince_chongpung
 			}
 			cost = 0
 			removal_cost = -1
-			can_be_fired = no
+			#can_be_fired = no
 			
 		    traits = { prince_chongpung_trait }
+			cancel_if_invalid = no
+	    }
+		#
+		CHI_chiang_kaishek_prince = { #
+		    allowed = {
+		    	original_tag = CHI
+		    }
+			available = {
+				has_idea = CHI_chiang_kaishek_prince
+			}
+			cost = 0
+			removal_cost = -1
+			#can_be_fired = no
+			
+		    traits = { xingzhengyuan_trait }
+			cancel_if_invalid = no
+	    }
+		CHI_chen_gongbo_prince = { #
+		    allowed = {
+		    	original_tag = CHI
+		    }
+			available = {
+				has_idea = CHI_chen_gongbo_prince
+			}
+			cost = 0
+			removal_cost = -1
+			#can_be_fired = no
+			
+		    traits = { xingzhengyuan_trait }
+			cancel_if_invalid = no
+	    }
+		CHI_zhou_enlai_prince = { #
+		    allowed = {
+		    	original_tag = CHI
+		    }
+			available = {
+				has_idea = CHI_zhou_enlai_prince
+			}
+			cost = 0
+			removal_cost = -1
+			#can_be_fired = no
+			
+		    traits = { xingzhengyuan_trait }
+			cancel_if_invalid = no
+	    }
+		#
+		ZLC_yan_huiqing_prince = { #
+		    allowed = {
+		    	original_tag = ZLC
+		    }
+			available = {
+				has_idea = ZLC_yan_huiqing_prince
+			}
+			cost = 0
+			removal_cost = -1
+			#can_be_fired = no
+			
+		    traits = { sub_zongtong_trait }
+			cancel_if_invalid = no
+	    }
+		ZLC_wu_peifu_prince = { #
+		    allowed = {
+		    	original_tag = ZLC
+		    }
+			available = {
+				has_idea = ZLC_wu_peifu_prince
+			}
+			cost = 0
+			removal_cost = -1
+			#can_be_fired = no
+			
+		    traits = { sub_zongtong_trait }
+			cancel_if_invalid = no
+	    }
+		ZLC_wu_daoshi_prince = { #
+		    allowed = {
+		    	original_tag = ZLC
+		    }
+			available = {
+				has_idea = ZLC_wu_daoshi_prince
+			}
+			cost = 0
+			removal_cost = -1
+			#can_be_fired = no
+			
+		    traits = { sub_zongtong_trait }
+			cancel_if_invalid = no
+	    }
+		ZLC_jin_yunpeng_prince = { #
+		    allowed = {
+		    	original_tag = ZLC
+		    }
+			available = {
+				has_idea = ZLC_jin_yunpeng_prince
+			}
+			cost = 0
+			removal_cost = -1
+			#can_be_fired = no
+			
+		    traits = { sub_zongtong_trait }
+			cancel_if_invalid = no
+	    }
+		#
+		JAP_akihito_heir_prince = { #
+		    allowed = {
+		    	original_tag = JAP
+		    }
+			available = {
+				has_idea = JAP_akihito_heir_prince
+			}
+			cost = 0
+			removal_cost = -1
+			#can_be_fired = no
+			
+		    traits = { heir_prince_jap_trait }
+			cancel_if_invalid = no
+	    }
+		JAP_masahito_prince_hitachinomiya = { #
+		    allowed = {
+		    	original_tag = JAP
+		    }
+			available = {
+				has_idea = JAP_masahito_prince_hitachinomiya
+			}
+			cost = 0
+			removal_cost = -1
+			#can_be_fired = no
+			
+		    traits = { prince_hitachinomiya_trait }
+			cancel_if_invalid = no
+	    }
+		JAP_yasuhito_prince_chichibunomiya = { #
+		    allowed = {
+		    	original_tag = JAP
+		    }
+			available = {
+				has_idea = JAP_yasuhito_prince_chichibunomiya
+			}
+			cost = 0
+			removal_cost = -1
+			#can_be_fired = no
+			
+		    traits = { prince_chichibunomiya_trait }
+			cancel_if_invalid = no
+	    }
+		JAP_nobuhito_prince_takamatsumiya = { #
+		    allowed = {
+		    	original_tag = JAP
+		    }
+			available = {
+				has_idea = JAP_nobuhito_prince_takamatsumiya
+			}
+			cost = 0
+			removal_cost = -1
+			#can_be_fired = no
+			
+		    traits = { prince_takamatsumiya_trait }
+			cancel_if_invalid = no
+	    }
+		JAP_takahito_prince_mikasanomiya = { #
+		    allowed = {
+		    	original_tag = JAP
+		    }
+			available = {
+				has_idea = JAP_takahito_prince_mikasanomiya
+			}
+			cost = 0
+			removal_cost = -1
+			#can_be_fired = no
+			
+		    traits = { prince_mikasanomiya_trait }
+			cancel_if_invalid = no
+	    }
+		SIA_prince_bhumibol = { #
+		    allowed = {
+		    	original_tag = SIA
+		    }
+			available = {
+				has_idea = SIA_prince_bhumibol
+			}
+			cost = 0
+			removal_cost = -1
+			#can_be_fired = no
+			
+		    traits = { SIA_prince_bhumibol_trait }
 			cancel_if_invalid = no
 	    }
 	}

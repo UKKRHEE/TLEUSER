@@ -1,4 +1,56 @@
 #일본 내전
+JAP_yokusankai_GUI = {
+	JAP_yokusankai_debug_inf_1 = {
+		icon = GFX_decision_icon_default
+		allowed = {
+		}
+		visible = {
+			is_ai = no
+			is_debug = yes
+		}
+		available = {
+			tag = JAP
+		}
+
+		days_remove = 0
+
+		fire_only_once = no
+
+		complete_effect = {
+		}
+	
+		remove_effect = {
+			add_to_variable = { 
+				JAP_tenno_inf_var = 1
+			}
+		}
+	}
+	JAP_yokusankai_debug_inf_2 = {
+		icon = GFX_decision_icon_default
+		allowed = {
+		}
+		visible = {
+			is_ai = no
+			is_debug = yes
+		}
+		available = {
+			tag = JAP
+		}
+
+		days_remove = 0
+
+		fire_only_once = no
+
+		complete_effect = {
+		}
+	
+		remove_effect = {
+			add_to_variable = { 
+				JAP_tenno_inf_var = -1
+			}
+		}
+	}
+}
 JAP_dec_civil_war = {
 	#일본 내전 소요 시간 디시전
 	JAP_the_time_limit = {
@@ -1786,8 +1838,1382 @@ JAP_defense_the_country = {
 		}
 	}
 }
+#계획경제 디시전
+JAP_five_years_plan_category={
+	JAP_fyp_debug1 = {
+		icon = GFX_decision_icon_default
+		allowed = {
+		}
+		visible = {
+			is_ai = no
+			is_debug = yes
+		}
+		available = {
+			tag = JAP
+		}
+
+		days_remove = 0
+
+		fire_only_once = no
+
+		complete_effect = {
+		}
+	
+		remove_effect = {
+			add_to_variable = { 
+				JAP_five_years_plan_1_bar_var = 30 
+				tooltip = JAP_FYP_5_TT
+			}
+			JAP_fyp_clamp = yes
+		}
+	}
+	JAP_fyp_debug2 = {
+		icon = GFX_decision_icon_default
+		allowed = {
+			
+		}
+		visible = {
+			is_ai = no
+			is_debug = yes
+		}
+		available = {
+			tag = JAP
+		}
+
+		days_remove = 0
+
+		fire_only_once = no
+
+		complete_effect = {
+		}
+	
+		remove_effect = {
+			subtract_from_variable = { JAP.five_year_plan_total = 5 }
+			custom_effect_tooltip = JAP_30_TT
+		}
+	}
+	JAP_fyp_debug3 = {
+		icon = GFX_decision_icon_default
+		allowed = {
+			
+		}
+		visible = {
+			is_ai = no
+			is_debug = yes
+		}
+		available = {
+			tag = JAP
+		}
+
+		days_remove = 0
+
+		fire_only_once = no
+
+		complete_effect = {
+		}
+	
+		remove_effect = {
+			add_to_variable = { JAP_debt_var = 10 }
+			custom_effect_tooltip = JAP_debt_10_TT
+		}
+	}
+	JAP_the_time_limit_factory = {
+		icon = generic_form_nation
+		allowed = {
+			tag = JAP
+			has_completed_focus = JAP_new_rework
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			has_completed_focus = JAP_new_rework
+			has_country_flag = itsumo_uso
+		}
+		visible = {
+			NOT = {
+				has_country_flag = JAP_FYP_END
+			}
+			JAP = {
+				has_completed_focus = JAP_new_rework
+			}
+		} 
+		activation = {
+			has_completed_focus = JAP_new_rework
+			NOT = {
+				has_country_flag = JAP_FYP_END
+			}
+		}
+		days_mission_timeout = 180
+		
+		fixed_random_seed = no
+
+		fire_only_once = no
+		is_good = yes
+		timeout_effect = {
+			custom_effect_tooltip = JAP_okane_TT
+			add_to_variable = { JAP.five_year_plan_total = 5 }
+		}
+	}
+	JAP_debt_decrease = {
+		icon = generic_form_nation
+		allowed = {
+			tag = JAP
+			has_completed_focus = JAP_new_rework
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			has_completed_focus = JAP_new_rework
+			has_country_flag = itsumo_uso
+		}
+		visible = {
+			NOT = {
+				has_country_flag = JAP_FYP_END
+			}
+			JAP = {
+				has_completed_focus = JAP_new_rework
+			}
+		} 
+		activation = {
+			has_completed_focus = JAP_new_rework
+			NOT = {
+				has_country_flag = JAP_FYP_END
+			}
+		}
+		days_mission_timeout = 180
+		
+		fixed_random_seed = no
+
+		fire_only_once = no
+		is_good = yes
+		timeout_effect = {
+			custom_effect_tooltip = JAP_debt_decrease_TT
+			add_to_variable = { JAP_debt_var = -10 }
+		}
+	}
+	JAP_debt_fuck = {
+		icon = generic_form_nation
+		allowed = {
+			tag = JAP
+			has_completed_focus = JAP_new_rework
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			has_country_flag = itsumo_uso
+		}
+		visible = {
+			NOT = {
+				has_country_flag = JAP_FYP_END
+			}
+			JAP = {
+				check_variable = {	JAP_debt_var > 150	}
+			}
+		} 
+		activation = {
+			JAP = {
+				check_variable = {	JAP_debt_var > 150	}
+			}
+			NOT = {
+				has_country_flag = JAP_FYP_END
+			}
+		}
+		days_mission_timeout = 60
+		
+		fixed_random_seed = no
+
+		fire_only_once = yes
+		is_good = yes
+		timeout_effect = {
+			custom_effect_tooltip = JAP_debt_decrease_warning_TT
+		}
+	}
+	#케이힌 공업지대
+	JAP_factory_plan = {
+		icon = GFX_decision_icon_default
+		allowed = {
+			
+		}
+		visible = {
+			tag = JAP
+			has_completed_focus = JAP_new_rework
+		}
+		available = {
+			tag = JAP
+			OR = {
+				check_variable = {
+					JAP.five_year_plan_total > 5
+					tooltip = JAP_5_trigger_TT
+				}
+				check_variable = {
+					JAP_debt_var < 150
+					tooltip = JAP_debt_10_trigger_TT
+				}
+			}
+		}
+
+		days_remove = 180
+
+		fire_only_once = yes
+
+		complete_effect = {
+			#예산이 있음
+			if = {
+				limit = {
+					check_variable = {
+						JAP.five_year_plan_total > 5
+					}
+				}
+				subtract_from_variable = { JAP.five_year_plan_total = 5 }
+				custom_effect_tooltip = JAP_30_TT
+			}
+			#채권 발행해야함
+			if = {
+				limit = {
+					check_variable = {
+						JAP.five_year_plan_total < 5
+					}
+				}
+				add_to_variable = { JAP_debt_var = 10 }
+				custom_effect_tooltip = JAP_debt_10_TT
+			}
+		}
+	
+		remove_effect = {
+			add_to_variable = { 
+				JAP_five_years_plan_1_bar_var = 5 
+				tooltip = JAP_FYP_5_TT
+			}
+			JAP_fyp_clamp = yes
+			282 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	JAP_factory_plan2 = {
+		icon = GFX_decision_icon_default
+		allowed = {
+			
+		}
+		visible = {
+			tag = JAP
+			has_completed_focus = JAP_new_rework
+		}
+		available = {
+			OR = {
+				check_variable = {
+					JAP.five_year_plan_total > 5
+					tooltip = JAP_5_trigger_TT
+				}
+				check_variable = {
+					JAP_debt_var < 150
+					tooltip = JAP_debt_10_trigger_TT
+				}
+			}
+		}
+
+		days_remove = 180
+
+		fire_only_once = yes
+
+		complete_effect = {
+			#예산이 있음
+			if = {
+				limit = {
+					check_variable = {
+						JAP.five_year_plan_total > 5
+					}
+				}
+				subtract_from_variable = { JAP.five_year_plan_total = 5 }
+				custom_effect_tooltip = JAP_30_TT
+			}
+			#채권 발행해야함
+			if = {
+				limit = {
+					check_variable = {
+						JAP.five_year_plan_total < 5
+					}
+				}
+				add_to_variable = { JAP_debt_var = 10 }
+				custom_effect_tooltip = JAP_debt_10_TT
+			}
+		}
+	
+		remove_effect = {
+			add_to_variable = { 
+				JAP_five_years_plan_1_bar_var = 5 
+				tooltip = JAP_FYP_5_TT
+			}
+			JAP_fyp_clamp = yes
+			1071 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			533 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	#한신지역 개발
+	JAP_factory_plan3 = {
+		icon = GFX_decision_icon_default
+		allowed = {
+			
+		}
+		visible = {
+			tag = JAP
+			has_completed_focus = JAP_new_rework
+		}
+		available = {
+			tag = JAP
+			OR = {
+				check_variable = {
+					JAP.five_year_plan_total > 5
+					tooltip = JAP_5_trigger_TT
+				}
+				check_variable = {
+					JAP_debt_var < 150
+					tooltip = JAP_debt_10_trigger_TT
+				}
+			}
+		}
+
+		days_remove = 180
+
+		fire_only_once = yes
+
+		complete_effect = {
+			#예산이 있음
+			if = {
+				limit = {
+					check_variable = {
+						JAP.five_year_plan_total > 5
+					}
+				}
+				subtract_from_variable = { JAP.five_year_plan_total = 5 }
+				custom_effect_tooltip = JAP_30_TT
+			}
+			#채권 발행해야함
+			if = {
+				limit = {
+					check_variable = {
+						JAP.five_year_plan_total < 5
+					}
+				}
+				add_to_variable = { JAP_debt_var = 10 }
+				custom_effect_tooltip = JAP_debt_10_TT
+			}
+		}
+	
+		remove_effect = {
+			add_to_variable = { 
+				JAP_five_years_plan_1_bar_var = 5 
+				tooltip = JAP_FYP_5_TT
+			}
+			JAP_fyp_clamp = yes
+			531 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			1065 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	JAP_factory_plan_tokai = {
+		icon = GFX_decision_icon_default
+		allowed = {
+			
+		}
+		visible = {
+			tag = JAP
+			has_completed_focus = JAP_new_rework
+		}
+		available = {
+			tag = JAP
+			OR = {
+				check_variable = {
+					JAP.five_year_plan_total > 5
+					tooltip = JAP_5_trigger_TT
+				}
+				check_variable = {
+					JAP_debt_var < 150
+					tooltip = JAP_debt_10_trigger_TT
+				}
+			}
+		}
+
+		days_remove = 180
+
+		fire_only_once = yes
+
+		complete_effect = {
+			#예산이 있음
+			if = {
+				limit = {
+					check_variable = {
+						JAP.five_year_plan_total > 5
+					}
+				}
+				subtract_from_variable = { JAP.five_year_plan_total = 5 }
+				custom_effect_tooltip = JAP_30_TT
+			}
+			#채권 발행해야함
+			if = {
+				limit = {
+					check_variable = {
+						JAP.five_year_plan_total < 5
+					}
+				}
+				add_to_variable = { JAP_debt_var = 10 }
+				custom_effect_tooltip = JAP_debt_10_TT
+			}
+		}
+	
+		remove_effect = {
+			add_to_variable = { 
+				JAP_five_years_plan_1_bar_var = 5 
+				tooltip = JAP_FYP_5_TT
+			}
+			JAP_fyp_clamp = yes
+			532 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	JAP_factory_plan_kyushu = {
+		icon = GFX_decision_icon_default
+		allowed = {
+			
+		}
+		visible = {
+			tag = JAP
+			has_completed_focus = JAP_new_rework
+		}
+		available = {
+			tag = JAP
+			OR = {
+				check_variable = {
+					JAP.five_year_plan_total > 5
+					tooltip = JAP_5_trigger_TT
+				}
+				check_variable = {
+					JAP_debt_var < 150
+					tooltip = JAP_debt_10_trigger_TT
+				}
+			}
+		}
+
+		days_remove = 180
+
+		fire_only_once = yes
+
+		complete_effect = {
+			#예산이 있음
+			if = {
+				limit = {
+					check_variable = {
+						JAP.five_year_plan_total > 5
+					}
+				}
+				subtract_from_variable = { JAP.five_year_plan_total = 5 }
+				custom_effect_tooltip = JAP_30_TT
+			}
+			#채권 발행해야함
+			if = {
+				limit = {
+					check_variable = {
+						JAP.five_year_plan_total < 5
+					}
+				}
+				add_to_variable = { JAP_debt_var = 10 }
+				custom_effect_tooltip = JAP_debt_10_TT
+			}
+		}
+	
+		remove_effect = {
+			add_to_variable = { 
+				JAP_five_years_plan_1_bar_var = 5 
+				tooltip = JAP_FYP_5_TT
+			}
+			JAP_fyp_clamp = yes
+			530 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	JAP_factory_plan4 = {
+		icon = GFX_decision_icon_default
+		allowed = {
+			
+		}
+		visible = {
+			tag = JAP
+			has_completed_focus = JAP_new_rework
+		}
+		available = {
+			tag = JAP
+			OR = {
+				check_variable = {
+					JAP.five_year_plan_total > 5
+					tooltip = JAP_5_trigger_TT
+				}
+				check_variable = {
+					JAP_debt_var < 150
+					tooltip = JAP_debt_10_trigger_TT
+				}
+			}
+		}
+
+		days_remove = 540
+
+		fire_only_once = yes
+
+		complete_effect = {
+			#예산이 있음
+			if = {
+				limit = {
+					check_variable = {
+						JAP.five_year_plan_total > 5
+					}
+				}
+				subtract_from_variable = { JAP.five_year_plan_total = 5 }
+				custom_effect_tooltip = JAP_30_TT
+			}
+			#채권 발행해야함
+			if = {
+				limit = {
+					check_variable = {
+						JAP.five_year_plan_total < 5
+					}
+				}
+				add_to_variable = { JAP_debt_var = 10 }
+				custom_effect_tooltip = JAP_debt_10_TT
+			}
+		}
+	
+		remove_effect = {
+			add_to_variable = { 
+				JAP_five_years_plan_1_bar_var = 5 
+				tooltip = JAP_FYP_5_TT
+			}
+			JAP_fyp_clamp = yes
+			add_research_slot = 1
+			add_tech_bonus = {
+				name = SOV_no_time_for_peace
+				bonus = 0.75
+				uses = 2
+				category = nuclear
+				category = rocketry
+			}
+			531 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	JAP_factory_plan5 = {
+		icon = GFX_decision_icon_default
+		allowed = {
+			
+		}
+		visible = {
+			tag = JAP
+			has_completed_focus = JAP_new_rework
+		}
+		available = {
+			tag = JAP
+			OR = {
+				check_variable = {
+					JAP.five_year_plan_total > 5
+					tooltip = JAP_5_trigger_TT
+				}
+				check_variable = {
+					JAP_debt_var < 150
+					tooltip = JAP_debt_10_trigger_TT
+				}
+			}
+		}
+
+		days_remove = 210
+
+		fire_only_once = yes
+
+		complete_effect = {
+			#예산이 있음
+			if = {
+				limit = {
+					check_variable = {
+						JAP.five_year_plan_total > 5
+					}
+				}
+				subtract_from_variable = { JAP.five_year_plan_total = 5 }
+				custom_effect_tooltip = JAP_30_TT
+			}
+			#채권 발행해야함
+			if = {
+				limit = {
+					check_variable = {
+						JAP.five_year_plan_total < 5
+					}
+				}
+				add_to_variable = { JAP_debt_var = 10 }
+				custom_effect_tooltip = JAP_debt_10_TT
+			}
+		}
+	
+		remove_effect = {
+			add_to_variable = { 
+				JAP_five_years_plan_1_bar_var = 5 
+				tooltip = JAP_FYP_5_TT
+			}
+			1071 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_resource = {
+					type = steel
+					amount = 5
+				}
+			}
+		}
+	}
+	#군수공장 설립
+	JAP_arms_factory_plan = {
+		icon = GFX_decision_icon_default
+		allowed = {
+			
+		}
+		visible = {
+			tag = JAP
+			has_completed_focus = JAP_new_rework
+		}
+		available = {
+			tag = JAP
+			OR = {
+				check_variable = {
+					JAP.five_year_plan_total > 5
+					tooltip = JAP_5_trigger_TT
+				}
+				check_variable = {
+					JAP_debt_var < 150
+					tooltip = JAP_debt_10_trigger_TT
+				}
+			}
+		}
+
+		days_remove = 180
+
+		fire_only_once = yes
+
+		complete_effect = {
+			#예산이 있음
+			if = {
+				limit = {
+					check_variable = {
+						JAP.five_year_plan_total > 5
+					}
+				}
+				subtract_from_variable = { JAP.five_year_plan_total = 5 }
+				custom_effect_tooltip = JAP_30_TT
+			}
+			#채권 발행해야함
+			if = {
+				limit = {
+					check_variable = {
+						JAP.five_year_plan_total < 5
+					}
+				}
+				add_to_variable = { JAP_debt_var = 10 }
+				custom_effect_tooltip = JAP_debt_10_TT
+			}
+		}
+	
+		remove_effect = {
+			add_to_variable = { 
+				JAP_five_years_plan_1_bar_var = 5 
+				tooltip = JAP_FYP_5_TT
+			}
+			JAP_fyp_clamp = yes
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	#기반시설
+	JAP_infra_plan = {
+		icon = GFX_decision_icon_default
+		allowed = {
+			
+		}
+		visible = {
+			tag = JAP
+			has_completed_focus = JAP_new_rework
+		}
+		available = {
+			tag = JAP
+			OR = {
+				check_variable = {
+					JAP.five_year_plan_total > 5
+					tooltip = JAP_5_trigger_TT
+				}
+				check_variable = {
+					JAP_debt_var < 150
+					tooltip = JAP_debt_10_trigger_TT
+				}
+			}
+		}
+
+		days_remove = 180
+
+		fire_only_once = yes
+
+		complete_effect = {
+			#예산이 있음
+			if = {
+				limit = {
+					check_variable = {
+						JAP.five_year_plan_total > 5
+					}
+				}
+				subtract_from_variable = { JAP.five_year_plan_total = 5 }
+				custom_effect_tooltip = JAP_30_TT
+			}
+			#채권 발행해야함
+			if = {
+				limit = {
+					check_variable = {
+						JAP.five_year_plan_total < 5
+					}
+				}
+				add_to_variable = { JAP_debt_var = 10 }
+				custom_effect_tooltip = JAP_debt_10_TT
+			}
+		}
+	
+		remove_effect = {
+			add_to_variable = { 
+				JAP_five_years_plan_1_bar_var = 5 
+				tooltip = JAP_FYP_5_TT
+			}
+			JAP_fyp_clamp = yes
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	JAP_infra_plan2 = {
+		icon = GFX_decision_icon_default
+		allowed = {
+			
+		}
+		visible = {
+			tag = JAP
+			has_completed_focus = JAP_new_rework
+		}
+		available = {
+			tag = JAP
+			OR = {
+				check_variable = {
+					JAP.five_year_plan_total > 5
+					tooltip = JAP_5_trigger_TT
+				}
+				check_variable = {
+					JAP_debt_var < 150
+					tooltip = JAP_debt_10_trigger_TT
+				}
+			}
+		}
+
+		days_remove = 180
+
+		fire_only_once = yes
+
+		complete_effect = {
+			#예산이 있음
+			if = {
+				limit = {
+					check_variable = {
+						JAP.five_year_plan_total > 5
+					}
+				}
+				subtract_from_variable = { JAP.five_year_plan_total = 5 }
+				custom_effect_tooltip = JAP_30_TT
+			}
+			#채권 발행해야함
+			if = {
+				limit = {
+					check_variable = {
+						JAP.five_year_plan_total < 5
+					}
+				}
+				add_to_variable = { JAP_debt_var = 10 }
+				custom_effect_tooltip = JAP_debt_10_TT
+			}
+		}
+	
+		remove_effect = {
+			add_to_variable = { 
+				JAP_five_years_plan_1_bar_var = 5 
+				tooltip = JAP_FYP_5_TT
+			}
+			JAP_fyp_clamp = yes
+			1069 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			533 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			1072 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			535 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	JAP_dockyard_plan = {
+		icon = GFX_decision_icon_default
+		allowed = {
+			
+		}
+		visible = {
+			tag = JAP
+			has_completed_focus = JAP_new_rework
+		}
+		available = {
+			tag = JAP
+			OR = {
+				check_variable = {
+					JAP.five_year_plan_total > 5
+					tooltip = JAP_5_trigger_TT
+				}
+				check_variable = {
+					JAP_debt_var < 150
+					tooltip = JAP_debt_10_trigger_TT
+				}
+			}
+		}
+
+		days_remove = 180
+
+		fire_only_once = yes
+
+		complete_effect = {
+			#예산이 있음
+			if = {
+				limit = {
+					check_variable = {
+						JAP.five_year_plan_total > 5
+					}
+				}
+				subtract_from_variable = { JAP.five_year_plan_total = 5 }
+				custom_effect_tooltip = JAP_30_TT
+			}
+			#채권 발행해야함
+			if = {
+				limit = {
+					check_variable = {
+						JAP.five_year_plan_total < 5
+					}
+				}
+				add_to_variable = { JAP_debt_var = 10 }
+				custom_effect_tooltip = JAP_debt_10_TT
+			}
+		}
+	
+		remove_effect = {
+			add_to_variable = { 
+				JAP_five_years_plan_1_bar_var = 5 
+				tooltip = JAP_FYP_5_TT
+			}
+			JAP_fyp_clamp = yes
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+}
 #작전 계획
 JAP_Sakusen_categories = {
+	JAP_debug_division = {
+		icon = generic_form_nation
+			available = {
+				has_war_with = KOR
+			}
+			visible = {
+				has_war_with = KOR
+			} 
+			fire_only_once = no
+			# is_good = no
+			complete_effect = {
+				hidden_effect = {
+					load_oob = JAP_hiroshima
+				}
+			}
+	}
+	JAP_us_comes_to_japan = {
+		icon = GFX_decision_icon_default
+		allowed = {
+			tag = JAP
+		}
+		visible = {
+			tag = JAP
+			has_war_with = KOR
+		}
+		activation = {
+			tag = JAP
+			has_war_with = KOR
+		}
+		available = {
+			tag = JAP
+			has_war_with = KOR
+			has_country_flag = battle_of_pacific_ocean_end
+		}
+
+		days_mission_timeout = 850
+		fixed_random_seed = no
+		fire_only_once = yes
+		timeout_effect = {
+			custom_effect_tooltip = JAP_us_comes_to_japan_TT
+			hidden_effect = {
+				country_event = JAP_war_of_yashima.1
+			}
+		}
+	}
+	JAP_us_support_to_japan = {
+		icon = GFX_decision_icon_default
+		allowed = {
+			tag = JAP
+		}
+		visible = {
+			tag = JAP
+			has_war_with = KOR
+		}
+		activation = {
+			tag = JAP
+			has_war_with = KOR
+		}
+		available = {
+			tag = JAP
+			has_war_with = KOR
+			has_country_flag = us_support_1_flag
+		}
+
+		days_mission_timeout = 90
+		fixed_random_seed = no
+		fire_only_once = yes
+		timeout_effect = {
+			custom_effect_tooltip = Yankees_support_TT
+			hidden_effect = {
+				country_event = JAP_war_of_yashima.2
+			}
+		}
+	}
+	JAP_defence_of_hiroshima = {
+		icon = GFX_decision_icon_default
+		allowed = {
+			tag = JAP
+		}
+		visible = {
+			tag = JAP
+			has_war_with = KOR
+		}
+		activation = {
+			tag = JAP
+			has_war_with = KOR
+		}
+		available = {
+			tag = JAP
+			has_war_with = KOR
+			NOT = {
+				JAP = {
+					controls_state = 529
+				}
+			}
+		}
+
+		days_mission_timeout = 15
+		fixed_random_seed = no
+		fire_only_once = yes
+		timeout_effect = {
+			custom_effect_tooltip = JAP_army_buff_TT
+			add_to_variable = {
+				JAP_army_attack_factor_modifier = 0.05
+			}
+			add_to_variable = {
+				JAP_army_defence_factor_modifier = 0.05
+			}
+			add_to_variable = {
+				JAP_army_org_factor_modifier = 0.05
+			}
+		}
+	}
+	JAP_defence_of_chugoku = {
+		icon = GFX_decision_icon_default
+		allowed = {
+			tag = JAP
+		}
+		visible = {
+			tag = JAP
+			has_war_with = KOR
+		}
+		activation = {
+			tag = JAP
+			has_war_with = KOR
+		}
+		available = {
+			tag = JAP
+			has_war_with = KOR
+			NOT = {
+				JAP = {
+					controls_state = 1066
+				}
+			}
+		}
+
+		days_mission_timeout = 30
+		fixed_random_seed = no
+		fire_only_once = yes
+		timeout_effect = {
+			custom_effect_tooltip = JAP_army_buff_TT
+			add_to_variable = {
+				JAP_army_attack_factor_modifier = 0.05
+			}
+			add_to_variable = {
+				JAP_army_defence_factor_modifier = 0.05
+			}
+			add_to_variable = {
+				JAP_army_org_factor_modifier = 0.05
+			}
+		}
+	}
+	JAP_defence_of_kobe = {
+		icon = GFX_decision_icon_default
+		allowed = {
+			tag = JAP
+		}
+		visible = {
+			tag = JAP
+			has_war_with = KOR
+		}
+		activation = {
+			tag = JAP
+			has_war_with = KOR
+		}
+		available = {
+			tag = JAP
+			has_war_with = KOR
+			NOT = {
+				JAP = {
+					controls_state = 1065
+				}
+			}
+		}
+
+		days_mission_timeout = 90
+		fixed_random_seed = no
+		fire_only_once = yes
+		timeout_effect = {
+			custom_effect_tooltip = JAP_army_buff_TT
+			add_to_variable = {
+				JAP_army_attack_factor_modifier = 0.05
+			}
+			add_to_variable = {
+				JAP_army_defence_factor_modifier = 0.05
+			}
+			add_to_variable = {
+				JAP_army_org_factor_modifier = 0.05
+			}
+		}
+	}
+	JAP_defence_of_shigoku = {
+		icon = GFX_decision_icon_default
+		allowed = {
+			tag = JAP
+		}
+		visible = {
+			tag = JAP
+			has_war_with = KOR
+		}
+		activation = {
+			tag = JAP
+			has_war_with = KOR
+		}
+		available = {
+			tag = JAP
+			has_war_with = KOR
+			NOT = {
+				JAP = {
+					controls_state = 530
+				}
+			}
+		}
+
+		days_mission_timeout = 45
+		fixed_random_seed = no
+		fire_only_once = yes
+		timeout_effect = {
+			custom_effect_tooltip = JAP_army_buff_TT
+			add_to_variable = {
+				JAP_army_attack_factor_modifier = 0.05
+			}
+			add_to_variable = {
+				JAP_army_defence_factor_modifier = 0.05
+			}
+			add_to_variable = {
+				JAP_army_org_factor_modifier = 0.05
+			}
+		}
+	}
+	JAP_defence_of_osaka = {
+		icon = GFX_decision_icon_default
+		allowed = {
+			tag = JAP
+		}
+		visible = {
+			tag = JAP
+			has_war_with = KOR
+		}
+		activation = {
+			tag = JAP
+			has_war_with = KOR
+		}
+		available = {
+			tag = JAP
+			has_war_with = KOR
+			NOT = {
+				JAP = {
+					controls_state = 531
+				}
+			}
+		}
+
+		days_mission_timeout = 180
+		fixed_random_seed = no
+		fire_only_once = yes
+		timeout_effect = {
+			custom_effect_tooltip = JAP_army_buff_TT
+			add_to_variable = {
+				JAP_army_attack_factor_modifier = 0.05
+			}
+			add_to_variable = {
+				JAP_army_defence_factor_modifier = 0.05
+			}
+			add_to_variable = {
+				JAP_army_org_factor_modifier = 0.05
+			}
+		}
+	}
+	JAP_defence_of_sendai = {
+		icon = GFX_decision_icon_default
+		allowed = {
+			tag = JAP
+		}
+		visible = {
+			tag = JAP
+			has_war_with = KOR
+		}
+		activation = {
+			tag = JAP
+			has_war_with = KOR
+		}
+		available = {
+			tag = JAP
+			has_war_with = KOR
+			NOT = {
+				JAP = {
+					controls_state = 1071
+				}
+			}
+		}
+
+		days_mission_timeout = 120
+		fixed_random_seed = no
+		fire_only_once = yes
+		timeout_effect = {
+			custom_effect_tooltip = JAP_army_buff_TT
+			add_to_variable = {
+				JAP_army_attack_factor_modifier = 0.05
+			}
+			add_to_variable = {
+				JAP_army_defence_factor_modifier = 0.05
+			}
+			add_to_variable = {
+				JAP_army_org_factor_modifier = 0.05
+			}
+		}
+	}
+	JAP_defence_of_edo = {
+		icon = GFX_decision_icon_default
+		allowed = {
+			tag = JAP
+		}
+		visible = {
+			tag = JAP
+			has_war_with = KOR
+		}
+		activation = {
+			tag = JAP
+			has_war_with = KOR
+		}
+		available = {
+			tag = JAP
+			has_war_with = KOR
+			NOT = {
+				JAP = {
+					controls_state = 282
+				}
+			}
+		}
+
+		days_mission_timeout = 365
+		fixed_random_seed = no
+		fire_only_once = yes
+		timeout_effect = {
+			custom_effect_tooltip = JAP_army_buff_TT
+			add_to_variable = {
+				JAP_army_attack_factor_modifier = 0.05
+			}
+			add_to_variable = {
+				JAP_army_defence_factor_modifier = 0.05
+			}
+			add_to_variable = {
+				JAP_army_org_factor_modifier = 0.05
+			}
+		}
+	}
+	JAP_defence_of_kyoto = {
+		icon = GFX_decision_icon_default
+		allowed = {
+			tag = JAP
+		}
+		visible = {
+			tag = JAP
+			has_war_with = KOR
+		}
+		activation = {
+			tag = JAP
+			has_war_with = KOR
+		}
+		available = {
+			tag = JAP
+			has_war_with = KOR
+			NOT = {
+				JAP = {
+					controls_state = 1070
+				}
+			}
+		}
+		days_mission_timeout = 1000
+		fixed_random_seed = no
+		fire_only_once = yes
+		timeout_effect = {
+			custom_effect_tooltip = JAP_zetaini
+		}
+	}
 	JAP_sakusen_blank = {
 		icon = generic_form_nation
 		available = {
@@ -1829,17 +3255,20 @@ JAP_Sakusen_categories = {
 		icon = generic_form_nation
 			available = {
 				has_war_with = KOR
+				KOR = {
+					controls_state = 1066
+				}
 			}
 			visible = {
 				has_war_with = KOR
 			} 
-			days_remove = 30
+			days_remove = 100
 			fire_only_once = yes
 			# is_good = no
 			complete_effect = {
 				add_timed_idea = {
 					idea = JAP_ichigo_sakusen_spirit
-					days = 30
+					days = 100
 				}
 				set_country_flag = JAP_ichigo_sakusen_flag
 				}
@@ -1854,13 +3283,13 @@ JAP_Sakusen_categories = {
 				has_war_with = KOR
 				has_country_flag = {
 					flag = JAP_ichigo_sakusen_complete
-					days > 395
+					days > 200
 				}
 				custom_trigger_tooltip ={
 					tooltip = JAP_ichigo_days_trigger
 					has_country_flag = {
 						flag = JAP_ichigo_sakusen_complete
-						days > 395
+						days > 200
 					}
 				}
 			}
@@ -1873,7 +3302,7 @@ JAP_Sakusen_categories = {
 			complete_effect = {
 				add_timed_idea = {
 					idea = JAP_nigo_sakusen_spirit
-					days = 30
+					days = 100
 				}
 			}
 			remove_effect = {
@@ -1887,13 +3316,13 @@ JAP_Sakusen_categories = {
 				has_war_with = KOR
 				has_country_flag = {
 					flag = JAP_nigo_sakusen_complete
-					days > 395
+					days > 200
 				}
 				custom_trigger_tooltip ={
 					tooltip = JAP_nigo_days_trigger
 					has_country_flag = {
 						flag = JAP_nigo_sakusen_complete
-						days > 395
+						days > 200
 					}
 				}
 			}
@@ -1906,7 +3335,7 @@ JAP_Sakusen_categories = {
 			complete_effect = {
 				add_timed_idea = {
 					idea = JAP_sango_sakusen_spirit
-					days = 30
+					days = 100
 				}
 			}
 			remove_effect = {
@@ -1920,13 +3349,13 @@ JAP_Sakusen_categories = {
 				has_war_with = KOR
 				has_country_flag = {
 					flag = JAP_sango_sakusen_complete
-					days > 395
+					days > 200
 				}
 				custom_trigger_tooltip ={
 					tooltip = JAP_nigo_days_trigger
 					has_country_flag = {
 						flag = JAP_sango_sakusen_complete
-						days > 395
+						days > 200
 					}
 				}
 			}
@@ -1938,7 +3367,25 @@ JAP_Sakusen_categories = {
 			complete_effect = {
 				add_timed_idea = {
 					idea = JAP_yongo_sakusen_spirit
-					days = 30
+					days = 100
+				}
+			}
+	}
+	JAP_chugoku_conscription = {
+		icon = generic_form_nation
+			available = {
+				has_war_with = KOR
+			}
+			visible = {
+				has_war_with = KOR
+			} 
+			days_remove = 180
+			fire_only_once = no
+			# is_good = no
+			complete_effect = {
+				custom_effect_tooltip = JAP_minpeitai_TT
+				hidden_effect = {
+					load_oob = JAP_minpeitai
 				}
 			}
 	}

@@ -1,0 +1,206 @@
+defined_text = {
+	name = Get_selected_state
+
+	text = {
+		trigger = {
+			check_variable = { selected_state = 1 }
+		}
+		localization_key = "manchuria_map_text"
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_state = 2 }
+		}
+		localization_key = "south_manchuria_map_text"
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_state = 3 }
+		}
+		localization_key = "primorsky_map_text"
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_state = 4 }
+		}
+		localization_key = "north_primorsky_map_text"
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_state = 5 }
+		}
+		localization_key = "kyushu_map_text"
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_state = 6 }
+		}
+		localization_key = "hokkaido_map_text"
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_state = 7 }
+		}
+		localization_key = "taiwan_map_text"
+	}
+
+	text = {
+		localization_key = "ERROR"
+	}
+}
+
+defined_text = {
+	name = Get_major_state
+
+	text = {
+		trigger = {
+			OR = {
+				check_variable = { selected_state = 1 }
+				check_variable = { selected_state = 2 }
+				check_variable = { selected_state = 3 }
+				check_variable = { selected_state = 4 }
+			}
+		}
+		localization_key = "korean_manchuria_text"
+	}
+
+	text = {
+		trigger = {
+			check_variable = { selected_state = 5 }
+		}
+		localization_key = "korean_kyushu_text"
+	}
+
+	text = {
+		trigger = {
+			check_variable = { selected_state = 6 }
+		}
+		localization_key = "korean_hokkaido_text"
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_state = 7 }
+		}
+		localization_key = "korean_taiwan_text"
+	}
+
+	text = {
+		localization_key = "ERROR"
+	}
+}
+
+defined_text = {
+	name = Get_selected_state_temp
+
+	text = {
+		trigger = {
+			check_variable = { selected_state_temp_var = 1 }
+		}
+		localization_key = "manchuria_map_text"
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_state_temp_var = 2 }
+		}
+		localization_key = "south_manchuria_map_text"
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_state_temp_var = 3 }
+		}
+		localization_key = "primorsky_map_text"
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_state_temp_var = 4 }
+		}
+		localization_key = "north_primorsky_map_text"
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_state_temp_var = 5 }
+		}
+		localization_key = "kyushu_map_text"
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_state_temp_var = 6 }
+		}
+		localization_key = "hokkaido_map_text"
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_state_temp_var = 7 }
+		}
+		localization_key = "taiwan_map_text"
+	}
+
+	text = {
+		localization_key = "ERROR"
+	}
+}
+
+defined_text = {
+	name = Get_nd_alert_normal
+
+	text = {
+		trigger = {
+			AND = {
+				OR = {
+					check_variable = { ND_Graphs_array^selected_state_temp_var > 40 }
+					check_variable = { ND_Graphs_array^selected_state_temp_var = 40 }
+				}
+				NOT = {
+					OR = {
+						check_variable = { ND_Graphs_array^selected_state_temp_var > 70 }
+						check_variable = { ND_Graphs_array^selected_state_temp_var = 70 }
+					}
+				}
+			}
+		}
+		localization_key = "nd_alert_normal"
+	}
+
+	text = {
+		localization_key = ""
+	}
+}
+
+defined_text = {
+	name = Get_nd_alert_warning
+
+	text = {
+		trigger = {
+			OR = {
+				check_variable = { ND_Graphs_array^selected_state_temp_var > 70 }
+				check_variable = { ND_Graphs_array^selected_state_temp_var = 70 }
+			}
+		}
+		localization_key = "nd_alert_warning"
+	}
+
+	text = {
+		localization_key = ""
+	}
+}
+
+defined_text = {
+	name = Get_nd_gui_enable
+
+	text = {
+		trigger = {
+			OR = {
+				check_variable = { ND_Graphs_array^selected_state_temp_var > 40 }
+				check_variable = { ND_Graphs_array^selected_state_temp_var = 40 }
+			}
+			NOT = {
+				has_country_flag = side_gui_visible
+			}
+		}
+		localization_key = "nd_gui_enable"
+	}
+
+	text = {
+		localization_key = ""
+	}
+}

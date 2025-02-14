@@ -1,0 +1,771 @@
+KOR_government_stablity_var_clamp = {
+	clamp_variable = {
+		var = KOR_government_stablity_emperor_var
+		min = 0
+		max = 10
+	}
+	clamp_variable = {
+		var = KOR_government_stablity_ilso_var
+		min = 0
+		max = 10
+	}
+	clamp_variable = {
+		var = KOR_government_stablity_ahn_var
+		min = 0
+		max = 10
+	}
+	clamp_variable = {
+		var = KOR_government_stablity_hwa_var
+		min = 0
+		max = 10
+	}
+	clamp_variable = {
+		var = KOR_government_stablity_army_var
+		min = 0
+		max = 10
+	}
+	clamp_variable = {
+		var = KOR_government_stablity_chaebeol_var
+		min = 0
+		max = 10
+	}
+	clamp_variable = {
+		var = KOR_government_stablity_cityzen_var
+		min = 0
+		max = 10
+	}
+	clamp_variable = {
+		var = KOR_government_stablity_rural_var
+		min = 0
+		max = 10
+	}
+}
+
+KOR_government_stablity_setup = {
+	clear_array = pabeol_grid_array
+	add_to_array = { pabeol_grid_array = 0 }
+	add_to_array = { pabeol_grid_array = 0 }
+	add_to_array = { pabeol_grid_array = 0 }
+	add_to_array = { pabeol_grid_array = 0 }
+	add_to_array = { pabeol_grid_array = 0 }
+	add_to_array = { pabeol_grid_array = 0 }
+	add_to_array = { pabeol_grid_array = 0 }
+	add_to_array = { pabeol_grid_array = 0 }
+	KOR_government_stablity_update = yes
+}
+
+KOR_government_stablity_update = {
+	if = {
+		limit = {
+			check_variable = { KOR_government_stablity_emperor_var = 10 }
+		}
+		set_temp_variable = { emperor_temp = 4 }
+	}
+	else_if = {
+		limit = {
+			AND = {
+				check_variable = { KOR_government_stablity_emperor_var > 6 }
+			}	check_variable = { KOR_government_stablity_emperor_var < 10 }
+		}
+		set_temp_variable = { emperor_temp = 3 }
+	}
+	else_if = {
+		limit = { 
+			AND = {
+				check_variable = { KOR_government_stablity_emperor_var > 3 }
+				check_variable = { KOR_government_stablity_emperor_var < 7 }
+			}
+		}
+		set_temp_variable = { emperor_temp = 2 }
+	}
+	else_if = {
+		limit = { 
+			check_variable = { KOR_government_stablity_emperor_var < 4 }
+		}
+		set_temp_variable = { emperor_temp = 1 }
+	}
+
+	if = {
+		limit = {
+			check_variable = { KOR_government_stablity_ilso_var = 10 }
+		}
+		set_temp_variable = { ilso_temp = 4 }
+	}
+	else_if = {
+		limit = {
+			AND = {
+				check_variable = { KOR_government_stablity_ilso_var > 6 }
+			}	check_variable = { KOR_government_stablity_ilso_var < 10 }
+		}
+		set_temp_variable = { ilso_temp = 3 }
+	}
+	else_if = {
+		limit = { 
+			AND = {
+				check_variable = { KOR_government_stablity_ilso_var > 3 }
+				check_variable = { KOR_government_stablity_ilso_var < 7 }
+			}
+		}
+		set_temp_variable = { ilso_temp = 2 }
+	}
+	else_if = {
+		limit = { 
+			check_variable = { KOR_government_stablity_ilso_var < 4 }
+		}
+		set_temp_variable = { ilso_temp = 1 }
+	}
+
+	if = {
+		limit = {
+			check_variable = { KOR_government_stablity_ahn_var = 10 }
+		}
+		set_temp_variable = { ahn_temp = 4 }
+	}
+	else_if = {
+		limit = {
+			AND = {
+				check_variable = { KOR_government_stablity_ahn_var > 6 }
+			}	check_variable = { KOR_government_stablity_ahn_var < 10 }
+		}
+		set_temp_variable = { ahn_temp = 3 }
+	}
+	else_if = {
+		limit = { 
+			AND = {
+				check_variable = { KOR_government_stablity_ahn_var > 3 }
+				check_variable = { KOR_government_stablity_ahn_var < 7 }
+			}
+		}
+		set_temp_variable = { ahn_temp = 2 }
+	}
+	else_if = {
+		limit = { 
+			check_variable = { KOR_government_stablity_ahn_var < 4 }
+		}
+		set_temp_variable = { ahn_temp = 1 }
+	}
+
+	if = {
+		limit = {
+			check_variable = { KOR_government_stablity_hwa_var = 10 }
+		}
+		set_temp_variable = { hwa_temp = 4 }
+	}
+	else_if = {
+		limit = {
+			AND = {
+				check_variable = { KOR_government_stablity_hwa_var > 6 }
+			}	check_variable = { KOR_government_stablity_hwa_var < 10 }
+		}
+		set_temp_variable = { hwa_temp = 3 }
+	}
+	else_if = {
+		limit = { 
+			AND = {
+				check_variable = { KOR_government_stablity_hwa_var > 3 }
+				check_variable = { KOR_government_stablity_hwa_var < 7 }
+			}
+		}
+		set_temp_variable = { hwa_temp = 2 }
+	}
+	else_if = {
+		limit = { 
+			check_variable = { KOR_government_stablity_hwa_var < 4 }
+		}
+		set_temp_variable = { hwa_temp = 1 }
+	}
+	
+	if = {
+		limit = {
+			check_variable = { KOR_government_stablity_army_var = 10 }
+		}
+		set_temp_variable = { army_temp = 4 }
+	}
+	else_if = {
+		limit = {
+			AND = {
+				check_variable = { KOR_government_stablity_army_var > 6 }
+			}	check_variable = { KOR_government_stablity_army_var < 10 }
+		}
+		set_temp_variable = { army_temp = 3 }
+	}
+	else_if = {
+		limit = { 
+			AND = {
+				check_variable = { KOR_government_stablity_army_var > 3 }
+				check_variable = { KOR_government_stablity_army_var < 7 }
+			}
+		}
+		set_temp_variable = { army_temp = 2 }
+	}
+	else_if = {
+		limit = { 
+			check_variable = { KOR_government_stablity_army_var < 4 }
+		}
+		set_temp_variable = { army_temp = 1 }
+	}
+
+	if = {
+		limit = {
+			check_variable = { KOR_government_stablity_chaebeol_var = 10 }
+		}
+		set_temp_variable = { chaebeol_temp = 4 }
+	}
+	else_if = {
+		limit = {
+			AND = {
+				check_variable = { KOR_government_stablity_chaebeol_var > 6 }
+			}	check_variable = { KOR_government_stablity_chaebeol_var < 10 }
+		}
+		set_temp_variable = { chaebeol_temp = 3 }
+	}
+	else_if = {
+		limit = { 
+			AND = {
+				check_variable = { KOR_government_stablity_chaebeol_var > 3 }
+				check_variable = { KOR_government_stablity_chaebeol_var < 7 }
+			}
+		}
+		set_temp_variable = { chaebeol_temp = 2 }
+	}
+	else_if = {
+		limit = { 
+			check_variable = { KOR_government_stablity_chaebeol_var < 4 }
+		}
+		set_temp_variable = { chaebeol_temp = 1 }
+	}
+
+	if = {
+		limit = {
+			check_variable = { KOR_government_stablity_cityzen_var = 10 }
+		}
+		set_temp_variable = { cityzen_temp = 4 }
+	}
+	else_if = {
+		limit = {
+			AND = {
+				check_variable = { KOR_government_stablity_cityzen_var > 6 }
+			}	check_variable = { KOR_government_stablity_cityzen_var < 10 }
+		}
+		set_temp_variable = { cityzen_temp = 3 }
+	}
+	else_if = {
+		limit = { 
+			AND = {
+				check_variable = { KOR_government_stablity_cityzen_var > 3 }
+				check_variable = { KOR_government_stablity_cityzen_var < 7 }
+			}
+		}
+		set_temp_variable = { cityzen_temp = 2 }
+	}
+	else_if = {
+		limit = { 
+			check_variable = { KOR_government_stablity_cityzen_var < 4 }
+		}	
+		set_temp_variable = { cityzen_temp = 1 }
+	}
+
+	if = {
+		limit = {
+			check_variable = { KOR_government_stablity_rural_var = 10 }
+		}
+		set_temp_variable = { rural_temp = 4 }
+	}
+	else_if = {
+		limit = {
+			AND = {
+				check_variable = { KOR_government_stablity_rural_var > 6 }
+			}	check_variable = { KOR_government_stablity_rural_var < 10 }
+		}
+		set_temp_variable = { rural_temp = 3 }
+	}
+	else_if = {
+		limit = { 
+			AND = {
+				check_variable = { KOR_government_stablity_rural_var > 3 }
+				check_variable = { KOR_government_stablity_rural_var < 7 }
+			}
+		}
+		set_temp_variable = { rural_temp = 2 }
+	}
+	else_if = {
+		limit = { 
+			check_variable = { KOR_government_stablity_rural_var < 4 }
+		}
+		set_temp_variable = { rural_temp = 1 }
+	}
+
+	set_variable = { pabeol_grid_array^0 = emperor_temp }
+	set_variable = { pabeol_grid_array^1 = ilso_temp }
+	set_variable = { pabeol_grid_array^2 = ahn_temp }
+	set_variable = { pabeol_grid_array^3 = hwa_temp }
+	set_variable = { pabeol_grid_array^4 = army_temp }
+	set_variable = { pabeol_grid_array^5 = chaebeol_temp }
+	set_variable = { pabeol_grid_array^6 = cityzen_temp }
+	set_variable = { pabeol_grid_array^7 = rural_temp }
+}
+
+KOR_government_stablity_check_progressbar = {
+	set_variable = { KOR_government_stablity_check_progressbar_var = 0 }
+	add_to_temp_variable = { KOR_government_stablity_check_progressbar_var = KOR_government_stablity_emperor_var }
+	add_to_temp_variable = { KOR_government_stablity_check_progressbar_var = KOR_government_stablity_ilso_var }
+	add_to_temp_variable = { KOR_government_stablity_check_progressbar_var = KOR_government_stablity_ahn_var }
+	add_to_temp_variable = { KOR_government_stablity_check_progressbar_var = KOR_government_stablity_hwa_var }
+	add_to_temp_variable = { KOR_government_stablity_check_progressbar_var = KOR_government_stablity_army_var }
+	add_to_temp_variable = { KOR_government_stablity_check_progressbar_var = KOR_government_stablity_chaebeol_var }
+	add_to_temp_variable = { KOR_government_stablity_check_progressbar_var = KOR_government_stablity_cityzen_var }
+	add_to_temp_variable = { KOR_government_stablity_check_progressbar_var = KOR_government_stablity_rural_var }
+	multiply_temp_variable = { KOR_government_stablity_check_progressbar_var = 1.25 }
+	round_temp_variable = KOR_government_stablity_check_progressbar_var
+	clamp_temp_variable = { var = KOR_government_stablity_check_progressbar_var min = 0 max = 100 }
+	set_variable = { KOR_government_stablity_var = KOR_government_stablity_check_progressbar_var }
+}
+
+KOR_imperial_var_up = {
+	hidden_effect = {
+		if = {
+			limit = {
+				NOT = {
+					check_variable = { KOR_government_stablity_emperor_var = 10 }
+				}
+			}
+			add_to_variable = { 
+				KOR_kks_government_idea_imperial_var = 0.03
+			}
+		}
+		if = {
+			limit = {
+				check_variable = { KOR_government_stablity_emperor_var = 10 }
+			}
+			country_event = {
+				id = korea.1407
+			}
+		}
+		add_to_variable = { 
+			KOR_government_stablity_emperor_var = 1 
+		}
+		KOR_government_stablity_var_clamp = yes
+		KOR_government_stablity_update = yes
+	}
+	custom_effect_tooltip = KOR_imperial_var_up_tt
+}
+KOR_imperial_var_down = {
+	hidden_effect = {
+		if = {
+			limit = {
+				NOT = {
+					check_variable = { KOR_government_stablity_emperor_var = 0 }
+				}
+			}
+			subtract_from_variable = { 
+				KOR_kks_government_idea_imperial_var = 0.03
+			}
+		}
+		if = {
+			limit = {
+				check_variable = { KOR_government_stablity_emperor_var = 0 }
+			}
+			country_event = {
+				id = korea.1408
+			}
+		}
+		subtract_from_variable = { 
+			KOR_government_stablity_emperor_var = 1 
+		}
+		KOR_government_stablity_var_clamp = yes
+		KOR_government_stablity_update = yes
+	}
+	custom_effect_tooltip = KOR_imperial_var_down_tt
+}
+KOR_ilso_var_up = {
+	hidden_effect = {
+		if = {
+			limit = {
+				NOT = {
+					check_variable = { KOR_government_stablity_ilso_var = 10 }
+				}
+			}
+			add_to_variable = { 
+				KOR_kks_government_idea_ilso_var = 0.03
+			}
+		}
+		if = {
+			limit = {
+				check_variable = { KOR_government_stablity_ilso_var = 10 }
+			}
+			country_event = {
+				id = korea.1409
+			}
+		}
+		add_to_variable = { 
+			KOR_government_stablity_ilso_var = 1 
+		}
+		KOR_government_stablity_var_clamp = yes
+		KOR_government_stablity_update = yes
+	}
+	custom_effect_tooltip = KOR_ilso_var_up_tt
+}
+KOR_ilso_var_down = {
+	hidden_effect = {
+		if = {
+			limit = {
+				NOT = {
+					check_variable = { KOR_government_stablity_ilso_var = 0 }
+				}
+			}
+			subtract_from_variable = { 
+				KOR_kks_government_idea_ilso_var = 0.03
+			}
+		}
+		if = {
+			limit = {
+				check_variable = { KOR_government_stablity_ilso_var = 0 }
+			}
+			country_event = {
+				id = korea.1410
+			}
+		}
+		subtract_from_variable = { 
+			KOR_government_stablity_ilso_var = 1 
+		}
+		KOR_government_stablity_var_clamp = yes
+		KOR_government_stablity_update = yes
+	}
+	custom_effect_tooltip = KOR_ilso_var_down_tt
+}
+KOR_ahn_var_up = {
+	hidden_effect = {
+		if = {
+			limit = {
+				NOT = {
+					check_variable = { KOR_government_stablity_ahn_var = 10 }
+				}
+			}
+			add_to_variable = { 
+				KOR_kks_government_idea_ahn_var = 0.02
+			}
+		}
+		if = {
+			limit = {
+				check_variable = { KOR_government_stablity_ahn_var = 10 }
+			}
+			country_event = {
+				id = korea.1411
+			}
+		}
+		add_to_variable = { 
+			KOR_government_stablity_ahn_var = 1 
+		}
+		KOR_government_stablity_var_clamp = yes
+		KOR_government_stablity_update = yes
+	}
+	custom_effect_tooltip = KOR_ahn_var_up_tt
+}
+KOR_ahn_var_down = {
+	hidden_effect = {
+		if = {
+			limit = {
+				NOT = {
+					check_variable = { KOR_government_stablity_ahn_var = 0 }
+				}
+			}
+			subtract_from_variable = { 
+				KOR_kks_government_idea_ahn_var = 0.02
+			}
+		}
+		if = {
+			limit = {
+				check_variable = { KOR_government_stablity_ahn_var = 0 }
+			}
+			country_event = {
+				id = korea.1412
+			}
+		}
+		subtract_from_variable = { 
+			KOR_government_stablity_ahn_var = 1 
+		}
+		KOR_government_stablity_var_clamp = yes
+		KOR_government_stablity_update = yes
+	}
+	custom_effect_tooltip = KOR_ahn_var_down_tt
+}
+KOR_hwa_var_up = {
+	hidden_effect = {
+		if = {
+			limit = {
+				NOT = {
+					check_variable = { KOR_government_stablity_hwa_var = 10 }
+				}
+			}
+			add_to_variable = { 
+				KOR_kks_government_idea_hwapyong_var = 0.01
+			}
+		}
+		if = {	
+			limit = {
+				check_variable = { KOR_government_stablity_hwa_var = 10 }
+			}
+			country_event = {
+				id = korea.1413
+			}
+		}
+		add_to_variable = { 
+			KOR_government_stablity_hwa_var = 1 
+		}
+		KOR_government_stablity_var_clamp = yes
+		KOR_government_stablity_update = yes
+	}
+	custom_effect_tooltip = KOR_hwa_var_up_tt
+}
+KOR_hwa_var_down = {
+	hidden_effect = {
+		if = {
+			limit = {
+				NOT = {
+					check_variable = { KOR_government_stablity_hwa_var = 0 }
+				}
+			}
+			subtract_from_variable = { 
+				KOR_kks_government_idea_hwapyong_var = 0.01
+			}
+		}
+		if = {
+			limit = {
+				check_variable = { KOR_government_stablity_hwa_var = 0 }
+			}
+			country_event = {
+				id = korea.1414
+			}
+		}
+		subtract_from_variable = { 
+			KOR_government_stablity_hwa_var = 1 
+		}
+		KOR_government_stablity_var_clamp = yes
+		KOR_government_stablity_update = yes
+	}
+	custom_effect_tooltip = KOR_hwa_var_down_tt
+}
+KOR_army_var_up = {
+	hidden_effect = {
+		if = {
+			limit = {
+				NOT = {
+					check_variable = { KOR_government_stablity_army_var = 10 }
+				}
+			}
+			add_to_variable = { 
+				KOR_kks_government_idea_army_var = 0.02
+			}
+		}
+		if = {
+			limit = {
+				check_variable = { KOR_government_stablity_army_var = 10 }
+			}
+			country_event = {
+				id = korea.1415
+			}
+		}
+		add_to_variable = { 
+			KOR_government_stablity_army_var = 1 
+		}
+		KOR_government_stablity_var_clamp = yes
+		KOR_government_stablity_update = yes
+	}
+	custom_effect_tooltip = KOR_army_var_up_tt
+}
+KOR_army_var_down = {
+	hidden_effect = {
+		if = {
+			limit = {
+				NOT = {
+					check_variable = { KOR_government_stablity_army_var = 0 }
+				}
+			}
+			subtract_from_variable = { 
+				KOR_kks_government_idea_army_var = 0.02
+			}
+		}
+		if = {
+			limit = {
+				check_variable = { KOR_government_stablity_army_var = 0 }
+			}
+			country_event = {
+				id = korea.1416
+			}
+		}
+		subtract_from_variable = { 
+			KOR_government_stablity_army_var = 1 
+		}
+		KOR_government_stablity_var_clamp = yes
+		KOR_government_stablity_update = yes
+	}
+	custom_effect_tooltip = KOR_army_var_down_tt
+}
+KOR_chaebeol_var_up = {
+	hidden_effect = {
+		if = {
+			limit = {
+				NOT = {
+					check_variable = { KOR_government_stablity_chaebeol_var = 10 }
+				}
+			}
+			add_to_variable = { 
+				KOR_kks_government_idea_chaebeol_var = -0.03
+			}
+		}
+		if = {
+			limit = {
+				check_variable = { KOR_government_stablity_chaebeol_var = 10 }
+			}
+			country_event = {
+				id = korea.1417
+			}
+		}
+		add_to_variable = { 
+			KOR_government_stablity_chaebeol_var = 1 
+		}
+		KOR_government_stablity_var_clamp = yes
+		KOR_government_stablity_update = yes
+	}
+	custom_effect_tooltip = KOR_chaebeol_var_up_tt
+}
+KOR_chaebeol_var_down = {
+	hidden_effect = {
+		if = {
+			limit = {
+				NOT = {
+					check_variable = { KOR_government_stablity_chaebeol_var = 0 }
+				}
+			}
+			subtract_from_variable = { 
+				KOR_kks_government_idea_chaebeol_var = -0.03
+			}
+		}
+		if = {
+			limit = {
+				check_variable = { KOR_government_stablity_chaebeol_var = 0 }
+			}
+			country_event = {
+				id = korea.1418
+			}
+		}
+		subtract_from_variable = { 
+			KOR_government_stablity_chaebeol_var = 1 
+		}
+		KOR_government_stablity_var_clamp = yes
+		KOR_government_stablity_update = yes
+	}
+	custom_effect_tooltip = KOR_chaebeol_var_down_tt
+}
+KOR_cityzen_var_up = {
+	hidden_effect = {
+		if = {
+			limit = {
+				NOT = {
+					check_variable = { KOR_government_stablity_cityzen_var = 10 }
+				}
+			}
+			add_to_variable = { 
+				KOR_kks_government_idea_cityzen_var = 0.01
+			}
+		}
+		if = {
+			limit = {
+				check_variable = { KOR_government_stablity_cityzen_var = 10 }
+			}
+			country_event = {
+				id = korea.1419
+			}
+		}
+		add_to_variable = { 
+			KOR_government_stablity_cityzen_var = 1 
+		}
+		KOR_government_stablity_var_clamp = yes
+		KOR_government_stablity_update = yes
+	}
+	custom_effect_tooltip = KOR_cityzen_var_up_tt
+}
+KOR_cityzen_var_down = {
+	hidden_effect = {
+		if = {
+			limit = {
+				NOT = {
+					check_variable = { KOR_government_stablity_cityzen_var = 0 }
+				}
+			}
+			subtract_from_variable = { 
+				KOR_kks_government_idea_cityzen_var = 0.01
+			}
+		}
+		if = {
+			limit = {
+				check_variable = { KOR_government_stablity_cityzen_var = 0 }
+			}
+			country_event = {
+				id = korea.1420
+			}
+		}
+		subtract_from_variable = { 
+			KOR_government_stablity_cityzen_var = 1 
+		}
+		KOR_government_stablity_var_clamp = yes
+		KOR_government_stablity_update = yes
+	}
+	custom_effect_tooltip = KOR_cityzen_var_down_tt
+}
+KOR_rural_var_up = {
+	hidden_effect = {
+		if = {
+			limit = {
+				NOT = {
+					check_variable = { KOR_government_stablity_rural_var = 10 }
+				}
+			}
+			add_to_variable = { 
+				KOR_kks_government_idea_rural_var = 0.06
+			}
+		}
+		if = {
+			limit = {
+				check_variable = { KOR_government_stablity_rural_var = 10 }
+			}
+			country_event = {
+				id = korea.1421
+			}
+		}
+		add_to_variable = { 
+			KOR_government_stablity_rural_var = 1 
+		}
+		KOR_government_stablity_var_clamp = yes
+		KOR_government_stablity_update = yes
+	}
+	custom_effect_tooltip = KOR_rural_var_up_tt
+}
+KOR_rural_var_down = {
+	hidden_effect = {
+		if = {
+			limit = {
+				NOT = {
+					check_variable = { KOR_government_stablity_rural_var = 0 }
+				}
+			}
+			subtract_from_variable = { 
+				KOR_kks_government_idea_rural_var = 0.06
+			}
+		}
+		if = {
+			limit = {
+				check_variable = { KOR_government_stablity_rural_var = 0 }
+			}
+			country_event = {
+				id = korea.1422
+			}
+		}
+		subtract_from_variable = { 
+			KOR_government_stablity_rural_var = 1 
+		}
+		KOR_government_stablity_var_clamp = yes
+		KOR_government_stablity_update = yes
+	}
+	custom_effect_tooltip = KOR_rural_var_down_tt
+}

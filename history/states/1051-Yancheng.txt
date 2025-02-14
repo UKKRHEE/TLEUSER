@@ -10,7 +10,9 @@ state={
 		}
 		buildings = {
 			infrastructure = 3
-
+			4031 = {
+				naval_base = 1
+			}
 		}
 		owner = WZC
 		add_core_of = WZC

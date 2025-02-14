@@ -1,0 +1,584 @@
+add_namespace = siam_news
+
+news_event = {
+	id = siam_news.1
+	title = siam_news.1.t
+	desc = siam_news.1.d
+	picture = GFX_news_event_black
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = siam_news.1.a
+	}
+} 
+news_event = {
+	id = siam_news.2
+	title = siam_news.2.t
+	desc = siam_news.2.d
+	picture = GFX_news_event_thainame
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = siam_news.2.a
+	}
+}
+
+news_event = {
+	id = siam_news.3
+	title = siam_news.3.t
+	desc = siam_news.3.d
+	picture = GFX_news_event_indochinesewar
+	
+	major = yes
+    is_triggered_only = yes
+	
+	
+	option = {
+		name = siam_news.3.a
+		hidden_effect = {
+			if = {
+				limit = {
+					SIA = {
+						is_ai = no
+					}
+				}
+				set_temp_variable = { TNO_temp_super_event = token:SE_FRANCO_THAI_WAR }
+				TNO_fire_super_event = yes
+			}
+		}
+	}
+}
+news_event = {
+	id = siam_news.4
+	title = siam_news.4.t
+	desc = siam_news.4.d
+	picture = GFX_news_event_koreanintervention
+	
+	major = yes
+    is_triggered_only = yes
+	
+	
+	option = {
+		name = siam_news.4.a
+		trigger = {
+			NOT = {
+				OR = {
+					TAG = KOR
+					TAG = CHI
+					TAG = ZLC
+					TAG = JAP
+					TAG = SIA
+				}
+			}			
+		}
+	}
+	option = {
+		name = siam_news.4.b
+		trigger = {
+			OR = {
+				TAG = CHI
+				TAG = ZLC
+				TAG = JAP
+			}
+		}
+	}
+	option = {
+		name = siam_news.4.c
+		trigger = {
+			TAG = SIA
+		}
+	}
+	option = {
+		name = siam_news.4.e
+		trigger = {
+			TAG = KOR
+		}
+	}
+}
+news_event = {
+	id = siam_news.5
+	title = siam_news.5.t
+	desc = siam_news.5.d
+	picture = GFX_news_event_korea_army
+	
+	major = yes
+    is_triggered_only = yes
+	
+	
+	option = {
+		name = siam_news.5.a
+		trigger = {
+			NOT = {
+				OR = {
+					TAG = KOR
+					TAG = SIA
+				}
+			}			
+		}
+	}
+	option = {
+		name = siam_news.5.b
+		trigger = {
+			TAG = KOR
+		}
+	}
+	option = {
+		name = siam_news.5.c
+		trigger = {
+			TAG = SIA
+		}
+	}
+}
+news_event = {
+	id = siam_news.6 #1차인도차이나전쟁
+	title = siam_news.6.t
+	desc = siam_news.6.d
+	picture = GFX_news_event_indochinesewar2
+	
+	major = yes
+    is_triggered_only = yes
+	
+	
+	option = {
+		name = siam_news.6.a
+	}
+}
+news_event = {
+	id = siam_news.7 #피분
+	title = siam_news.7.t
+	desc = siam_news.7.d
+	picture = GFX_news_event_plaekcoup
+	
+	major = yes
+    is_triggered_only = yes
+	
+	
+	option = {
+		name = siam_news.7.a
+	}
+}
+news_event = {
+	id = siam_news.8 #피분
+	title = siam_news.8.t
+	desc = siam_news.8.d
+	picture = GFX_news_event_plaekcoup
+	
+	fire_only_once = yes
+	major = yes
+    is_triggered_only = yes
+	
+	
+	option = {
+		name = siam_news.8.a
+		hidden_effect = {
+			SIA = {
+				set_cosmetic_tag = SIA_end
+				country_event = {
+					id = siam.53
+				}
+				add_country_leader_role = {
+					character = SIA_plaek_phibunsongkhram_old
+					country_leader = {
+						expire = "1965.1.1"
+						ideology = despotism
+						desc="SIA_plaek_phibunsongkhram_lost_desc"
+						traits = {
+							plack_trait_3
+						}
+					}
+					promote_leader = yes
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = 1.0
+				}
+				set_party_name = {
+					ideology = neutrality
+					long_name =  SIA_neutrality_party_black_long
+					name =  SIA_neutrality_party_black
+				}
+				set_politics = {
+					ruling_party = neutrality
+					last_election = "1936.1.1"
+					election_frequency = 60
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+news_event = {
+	id = siam_news.9 #시암 내전
+	title = siam_news.9.t
+	desc = siam_news.9.d
+	picture = GFX_news_event_siam_civilwar
+	
+	fire_only_once = yes
+	major = yes
+    is_triggered_only = yes
+	
+	
+	option = {
+		name = siam_news.9.a
+		hidden_effect = {
+			KSI = {
+				transfer_state = 289
+				transfer_state = 868
+				declare_war_on = {
+					target = SIA
+					type = annex_everything
+				}
+				load_oob = "SIA_civilwar"
+				add_ideas = {
+					sia_civilwar
+				}
+			}
+			289 = {
+				add_core_of = KSI
+			}
+			868 = {
+				add_core_of = KSI
+			}
+			869 = {
+				add_core_of = KSI
+			}
+			724 = {
+				add_core_of = KSI
+			}
+			993 = {
+				add_core_of = KSI
+			}
+			1088 = {
+				add_core_of = KSI
+			}
+			SIA = {
+				set_cosmetic_tag = SIA_rep
+				remove_ideas = { SIA_rama_viii sia_free_movement itasiam }
+				set_capital = {
+					state = 869
+					remember_old_capital = yes
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = -1.0
+				}
+				add_popularity = {
+					ideology = democratic
+					popularity = -1.0
+				}
+				add_ideas = {
+					sia_civilwar
+				}
+				load_focus_tree = siam_focus_r
+				retire_character = SIA_plaek_phibunsongkhram
+				retire_character = SIA_khuang_aphaiwong
+				add_country_leader_role = {
+					character = SIA_plaek_phibunsongkhram_old
+					country_leader = {
+						expire = "1965.1.1"
+						ideology = fascism_ideology
+						desc="SIA_plaek_phibunsongkhram_lost_desc"
+						traits = {
+							plack_trait
+						}
+					}
+					promote_leader = yes
+				}
+			}
+			FRI = {
+				transfer_state = 994
+				transfer_state = 995
+			}
+			NML = {
+				load_focus_tree = siam_focus_4
+				transfer_state = 724
+				724 = {
+					add_core_of = NML
+				}
+			}
+		}
+	}
+}
+news_event = {
+	id = siam_news.10 #시암 내전의 종식
+	title = siam_news.10.t
+	desc = siam_news.10.d
+	picture = GFX_news_event_siam_civilwarend
+	
+	major = yes
+    is_triggered_only = yes
+	
+	
+	option = {
+		name = siam_news.10.a
+		hidden_effect = {
+			KSI = {
+				set_cosmetic_tag = KSI_end
+				set_party_name = {
+					ideology = democratic
+					long_name =  KSI_democratic_party_end_long
+					name =  KSI_democratic_party_end
+				}
+				remove_ideas = { sia_civilwar }
+				annex_country = { target = NML transfer_troops = yes }
+			}
+			SIA = {
+				remove_state_core = 289
+				remove_state_core = 868
+				remove_state_core = 869
+				remove_state_core = 724
+				remove_state_core = 993
+				remove_state_core = 1088
+			}
+			NML = {
+				remove_state_core = 724
+			}
+		}
+	}
+}
+news_event = {
+	id = siam_news.11 #타이 내전의 종식
+	title = siam_news.11.t
+	desc = siam_news.11.d
+	picture = GFX_news_event_rsicivilwar
+	
+	major = yes
+    is_triggered_only = yes
+	
+	
+	option = {
+		name = siam_news.11.a
+		hidden_effect = {
+			SIA = {
+				remove_ideas = { sia_civilwar }
+				annex_country = { target = NML transfer_troops = yes }
+			}
+			KSI = {
+				remove_state_core = 289
+				remove_state_core = 868
+				remove_state_core = 869
+				remove_state_core = 724
+				remove_state_core = 993
+				remove_state_core = 1088
+			}
+			NML = {
+				remove_state_core = 724
+			}
+		}
+	}
+}
+news_event = {
+	id = siam_news.12 #버마 전쟁
+	title = siam_news.12.t
+	desc = siam_news.12.d
+	picture = GFX_news_event_sia_burmawar
+	
+	major = yes
+    is_triggered_only = yes
+	
+	
+	option = {
+		name = siam_news.11.a
+		hidden_effect = {
+			SIA = {
+				country_event = { id = siam.60 days = 100 }
+			}
+		}
+	}
+}
+news_event = {
+	id = siam_news.13 #인도차이나 분단
+	title = siam_news.13.t
+	desc = siam_news.13.d
+	picture = GFX_news_event_indochinesedivision
+	
+	major = yes
+    is_triggered_only = yes
+	
+	
+	option = {
+		name = siam_news.13.a
+		hidden_effect = {
+			set_global_flag = TLE_indochina_divided
+		}
+	}
+}
+news_event = {
+	id = siam_news.14 #인도차이나 붕괴
+	title = siam_news.14.t
+	desc = siam_news.14.d
+	picture = GFX_news_event_indochinesecollapse
+	
+	major = yes
+    is_triggered_only = yes
+	
+	
+	option = {
+		name = siam_news.14.a
+	}
+}
+news_event = {
+	id = siam_news.15 #버마 분리
+	title = siam_news.15.t
+	desc = siam_news.15.d
+	picture = GFX_news_event_separ_burma
+	
+	major = yes
+    is_triggered_only = yes
+	
+	
+	option = {
+		name = siam_news.15.a
+	}
+}
+news_event = {
+	id = siam_news.16 #버마 독립
+	title = siam_news.16.t
+	desc = siam_news.16.d
+	picture = GFX_news_event_indpe_burma
+	
+	major = yes
+    is_triggered_only = yes
+	
+	
+	option = {
+		name = siam_news.16.a
+	}
+}
+news_event = {
+	id = siam_news.17 #제2비율빈
+	title = siam_news.17.t
+	desc = siam_news.17.d
+	picture = GFX_news_event_secondphi
+	
+	major = yes
+    is_triggered_only = yes
+	
+	
+	option = {
+		name = siam_news.17.a
+		trigger = {
+			NOT = {
+				TAG = KOR
+			}			
+		}
+	}
+	option = {
+		name = siam_news.17.b
+		trigger = {
+			TAG = KOR
+		}
+	}
+}
+news_event = {
+	id = siam_news.18 #
+	title = siam_news.18.t
+	desc = siam_news.18.d
+	picture = GFX_news_event_indonesiawar
+	
+	major = yes
+    is_triggered_only = yes
+	
+	
+	option = {
+		name = siam_news.18.a
+		hidden_effect = {
+			672 = {
+				set_demilitarized_zone = yes
+			}
+			335 = {
+				set_demilitarized_zone = yes
+			}
+		}
+	}
+}
+news_event = {
+	id = siam_news.19 #
+	title = siam_news.19.t
+	desc = siam_news.19.d
+	picture = GFX_news_event_indonesia_independence
+	
+	major = yes
+    is_triggered_only = yes
+	
+	
+	option = {
+		name = siam_news.19.a
+	}
+}
+news_event = {
+	id = siam_news.20 #
+	title = siam_news.20.t
+	desc = siam_news.20.d
+	picture = GFX_news_event_indian_independence
+	
+	major = yes
+    is_triggered_only = yes
+	
+	
+	option = {
+		name = siam_news.20.a
+	}
+}
+news_event = {
+	id = siam_news.21 #
+	title = siam_news.21.t
+	desc = siam_news.21.d
+	picture = GFX_news_event_SIA_britaininwar
+	
+	major = yes
+    is_triggered_only = yes
+	
+	
+	option = {
+		name = siam_news.21.a
+	}
+}
+news_event = {
+	id = siam_news.22 #
+	title = siam_news.22.t
+	desc = siam_news.22.d
+	picture = GFX_news_event_SIA_allcivilwar
+	
+	major = yes
+    is_triggered_only = yes
+	
+	
+	option = {
+		name = siam_news.22.a
+	}
+}
+news_event = {
+	id = siam_news.23 #인도차이나 붕괴
+	title = siam_news.23.t
+	desc = siam_news.23.d
+	picture = GFX_news_event_indochinesecollapse
+	
+	major = yes
+    is_triggered_only = yes
+	
+	
+	option = {
+		name = siam_news.23.a
+	}
+}
+news_event = {
+	id = siam_news.24 #버마 전쟁
+	title = siam_news.24.t
+	desc = siam_news.24.d
+	picture = GFX_news_event_sia_burmawar
+	
+	major = yes
+    is_triggered_only = yes
+	
+	
+	option = {
+		name = siam_news.24.a
+	}
+}

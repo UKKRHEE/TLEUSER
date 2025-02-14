@@ -1,7 +1,7 @@
 state=
 {
 	id=743
-	name="STATE_CHEONGDO"
+	name="STATE_QINGDAO"
 	local_supplies=0.0 
 	manpower = 385000
 	state_category = large_town
@@ -9,11 +9,10 @@ state=
 	
 	history=
 	{
-		owner = KOR
+		owner = ZLC
 		add_core_of = ZLC
 		add_core_of = CHI
 		add_core_of = PRC
-		add_claim_by = KOR
 		victory_points = {
 			10000 5 
 		}

@@ -1,6 +1,6 @@
 ﻿l_english:
- kor_reform_korea:0 "을해 제국법안"
- kor_reform_korea_desc:0 "수십년 전, 조선의 24대 국왕이신 고조께서 세도문을 쓸어버리시고 제국을 개국하시옵고, 익평군의 아들로 한때 경은군에 봉해지셨던 고종께서 제국을 이어받아 만방에 제국의 위광을 떨치셨으나, 두 대제의 위업을 이어받은 위정자들이 실책을 계속하여, 작금의 대한은 위기에 쳐해있습니다. 을해 제국법안은, 대한을 위기에서 벗어나게 해줄 개혁의 신호탄이 될 것입니다."
+ kor_reform_korea:0 "을해년 제4호 오개통합법안 발의"
+ kor_reform_korea_desc:0 "김희선 내각의 여러 정책들은 외부적 요인으로 인해 큰 실패를 보았습니다. 이를 수습하기 위해 오개통합법안을 제시했으나, 기존에는 대한당의 반대로 상원에서 심의를 통과할 수 없었습니다. 내각은 이번 법안의 통과에 대황제 폐하, 그리고 개국귀족들을 설득하며 사력을 기울일 것입니다."
  kor_politics:0 "정치 개혁"
  kor_politics_desc:0 "현재 제국의 정치는 혼란스럽습니다. 우리는 선택을 해야합니다."
  kor_monarchy:0 "궐기"
@@ -13,8 +13,8 @@
  kor_parliamentary_dissolution_desc:0 "우리는 저들을 전부 끌어내릴 것입니다."
  kor_emperor_empowerment:0 "국내 안정화 작업"
  kor_emperor_empowerment_desc:0 "황실의 주도하에, 현재 혼란스러운 제국 내부의 상황을 안정시킬 때 입니다."
- kor_remove_strike:0 "정권 강화"
- kor_remove_strike_desc:0 "신한청년당과의 연합을 통하여, 이강은 대한제국의 정권을 합법적으로 장악할 수 있는 방안을 찾아내었습니다. 신한청년당. 예전에 이강의 동생인 이은을 비롯하여 박상진, 여운형, 조소앙 등이 만든 민족정당으로, 군의 실세인 이강을 총리로 하여 새로이 선거를 실시하면 제국의 모든 권력을 장악하면서 이강의 집권에 정당성을 부여할 수 있을 것입니다.\n이미 대한당과 민주당 등의 기성세력은 힘을 잃었으니까."
+ kor_remove_strike:0 "정권창출"
+ kor_remove_strike_desc:0 "제12대 총선은 민중의 실수였습니다. 민주당 정권은 돌이킬 수 없는 실수를 반복하였고, 외부와 내부를 가리지 않고 제국의 상황은 무너지고 있습니다. 대한당과 신한청년당의 연정을 통해 우리는 민주당이 저지른 모든 실책을 되돌릴 것입니다."
  kor_best_gangju:0 "황실 우상화"
  kor_best_gangju_desc:0 ""
  kor_fuck_corruption:0 "부패 관료 처벌"
@@ -31,18 +31,18 @@
  kor_constitutional_monarch_desc:0 "국가의 한 사람의 의해 돌아가는 전제군주제는 구시대적 발상입니다. 우리는 입헌군주제를 도입하여야 합니다."
  kor_monarch_fascism:0 "군부의 정권 장악"
  kor_monarch_fascism_desc:0 "군부가 쿠데타를 일으켜 정권을 장악했습니다. 그들은 대체 무슨 생각일까요?"
- kor_best_gangju_2:0 "근황파 숙청"
- kor_best_gangju_2_desc:0 "지금까지의 여러 돌발행동은, 황도파라는 이들이 거짓된 근황을 명분으로 한 것입니다. 제국의 미래를 저 스스로 깎아내는 자들이 근황을 어찌 할 것이며 선대의 종묘를 어찌 바라볼 수 있을 것입니까. 저들은 미래를 위해서라도 조용해주는 것이 낫습니다."
- kor_puppet_king:0 "황제 제어"
- kor_puppet_king_desc:0 "대한 육천만 신민의 어버이시자 대한의 전제군주이신 강명황제 폐하, 제국을 위하여 신등이 총궐기 하였으니, 가엾이 여겨주시옵소서. "
+ kor_best_gangju_2:0 "숙군"
+ kor_best_gangju_2_desc:0 "국가와 황제의 명령조차 제멋대로 의심하고 사견을 다는 것은 군이 해서 되는 일이 아닙니다. 한 차례의 숙군을 통해 군의 기강을 바로 잡을 것입니다."
+ kor_puppet_king:0 "황명 이행"
+ kor_puppet_king_desc:0 "대황제 폐하께옵서는 그 성정이 변칙스러우시나, 이를 덮고도 남을 정도로 많은 치정극을 겪으셨나이다. 그 분께서 지금 바라심이 질서의 재건이니 신등은 이를 따를 것이나이다."
  kor_ethnicity:0 "한민족"
  kor_ethnicity_desc:0 "단군조선부터 이어져 고구려, 백제, 신라의 통합을 거쳐 1392년 개국된 조선을 이은 현재의 대한까지. 그 오랜 시간동안 우리는 하나였습니다. 임진과 정유년에도, 정묘와 병자년에도, 그리고.. 이 제국을 만드신 영락제 고조와 완성시킨 광무제 고종폐하의 시절에도, 우리는 하나로 뭉쳐 역경을 극복해냈습니다. \n\n대한이여, 단결합니다. 오랜 세월 이어져 온 한 민족, 한 핏줄을 계속 지켜나갑시다. 그 어떤 어려움이 있어도 우리는 견뎌낼 것입니다. 끝까지 싸웁시다."
  kor_take_over_parliament:0 "정당 해산"
  kor_take_over_parliament_desc:0 "우리가 좀 더 쉽게 이 나라를 다스릴려면 우리들의 반대 의견을 가진 정당들을 모두 불법으로 규정하고 해산해야합니다."
  kor_korean_lebensraum:0 "치국평천하"
  kor_korean_lebensraum_desc:0 "자신이 수양된 이후에 집안이 잘 다스려지고\n백가를 정돈한 이후에 나라가 잘 다스려진다.\n나라가 잘 다스려진 이후에 천하가 평화롭게 된다."
- FLAG_the_fascist_is_won_in_pact:0 "군국주의자들이 쿠데타를 진압함"
- FLAG_the_monarchist_is_won_in_pact:0 "근황파들이 쿠데타를 성공시킴"
+ FLAG_the_fascist_is_won_in_pact:0 "정부가 쿠데타를 진압함"
+ FLAG_the_monarchist_is_won_in_pact:0 "황도파들이 쿠데타를 성공시킴"
  kor_encouraging_patriotism_2:0 "청도 사건"
  kor_encouraging_patriotism_2_desc:0 ""
  kor_best_of_korea:0 "위대한 한국"
@@ -141,8 +141,8 @@
  kor_fascism_desc:0 "현재 한국은 내전이 막 끝난 혼란스러운 상태입니다. 이 때 우리가 한성으로 진군한다면 빠르게 정부를 장악 가능할 것입니다."
  kor_republic_maintenance:0 "공화국 유지"
  kor_republic_maintenance_desc:0 "지금 상황에서는 공화국을 유지하는게 최선입니다."
- kor_military_organization_youth:0 "유소년 군사 조직"
- kor_military_organization_youth_desc:0 "우리도 독일처럼 유소년 군사조직을 조직하여 우리들의 사상을 청소년들에게 주입시켜야합니다."
+ kor_military_organization_youth:0 "국민징용령 시행"
+ kor_military_organization_youth_desc:0 ""우리들 대화협력의 힘이 전쟁에 이겨내는 원동력이다. 한 알의 쌀이라도 더 많이 나라에 바쳐 귀축미영을 때려부숴버리자!"\n-1942년 대한제국 정부."
  kor_national_fascist_agitation:0 "국민주의 광풍"
  kor_national_fascist_agitation_desc:0 ""
  kor_rok_lebensraum:0 "대한 인민의 생활권"
@@ -222,11 +222,12 @@
  kor_make_roket:0 "현대의 신기전"
  kor_make_roket_desc:0 "신기전, 혹은 로켓은 최근에 나온 개념의 무기인데, 포탄을 길게 만들어 적국에 날려 제공권을 잡지 않아도 적의 본토를 타격할 수 있게 만드는 것입니다. 우리의 항공 기술은 다른 기술에 비해 뛰어나니, 이러한 기술적 우월성을 이용하여 신기전 개발에 박차를 가하는 것은 충분히 이점이 있을 것입니다."
  kor_miracle_hangang:0 "한강의 기적"
- kor_miracle_hangang_desc:0 "옛 조선부터 신대한에 이르기까지, 대한인은 항상 약자로 중화나 만족들에게 굴복하였습니다. 시계추는 계속 흔들리고, 강산이 수백, 수천번 바뀌면서 질서가 바뀌었습니다. 약한 민족은 제국의 중심이 되었으며, 동아의 질서가 되었으며, 나아가 전 아주의 기적이 되었습니다. \n\n우리는 대한입니다. 기적은, 이미 일어났습니다."
+ kor_miracle_hangang_desc:0 ""
  kor_hansung_university:0 "연구인력 확충"
  kor_hansung_university_desc:0 "한성, 평양, 부산, 군산, 함흥, 원산 등에 있는 여러 대학교들에서 인재들을 불러와 제국을 위해 일할 수 있게 하면 우리는 더욱 빠른 신기술 연구를 이뤄낼 수 있을 것입니다."
  kor_make_nuke:0 "무궁화 꽃이 피었습니다"
  kor_make_nuke_desc:0 "많은 제국의 석학들은 최근까지 발표된 가설에 관해 상당한 의심을 품었었습니다. 그러나, 최근 입증된 여러 증거는, 소량의 무기로 도시를 잿더미로 만들어버릴 수 있는 '무기'를 개발할 수 있다고 합니다. 반대로 말하자면, 다른 국가들도 이 무기를 개발할 수 있다는 것입니다. 뒤쳐져서는 안됩니다. 앞으로 나아갑시다."
+ TLE_kor_make_nuke:0 "\n이 §R기적의 무기§!로 @USA§Y미합중국§!을 강타할 수 있다면, 그들의 §Y항복§!을 이끌어 낼 것입니다."
  kor_military:0 "군대 개혁"
  kor_military_desc:0 "조선 초, 강성한 군으로 북방 사군과 육진을 개척한 세종대왕의 치세 이후, 지속적으로 군이 약해졌으나 고조 대제께서 위엄을 보이시어 군의 기강은 정예라고 칭할만 하였습니다. 그러나 수 십년 동안의 평화는 군을 나약하게 만들었으니, 우리는 군에 새로운 활기를 불어넣을 것입니다."
  kor_add:0 "국방과학연구소 설립"
@@ -274,7 +275,7 @@
  kor_aircraft_carrier:0 "항공모함 주력"
  kor_aircraft_carrier_desc:0 "본토가 반도라는 지형의 한계로, 많은 군 예산이 육군으로 가는 탓에, 육주해종의 교리로 어쩔 수 없이 선회할 수 밖에 없던 제국 해군은 1910년대부터 항공기가 점차 개발됨에 따라 "항공"과 그의 "모함"에 관심을 가지기 시작하였습니다. 거기에 청년학파가 해군의 주력을 차지함에 따라, 제국 내에서는 불침항모-섬과 항공모함이 주목받게 되었습니다."
  kor_air_reform:0 "항공대 개혁"
- kor_air_reform_desc:0 "대한군이 해군에 투입할 예산이 없어 다른 열강들과의 식민쟁탈전에서, 그리고 훗날 있을 전쟁의 해전이 패배로 점철될 것을 우려한 제국의 총리들과 군인들은 세계대전에서 주목받은 항공기라는 개념에 집중하였습니다. 이것에 폭탄을 장착하여, 바다에서 비행기를 띄우면 해군의 취약함을 충분히 보충할 수 있지 않을까. 그리하여 융희 9년(1919년) 창설된 최초의 항공부대는 현재까지 발전하여 육군항공대, 해군항공대가 되었습니다."
+ kor_air_reform_desc:0 "대한군이 해군에 투입할 예산이 없어 다른 열강들과의 식민쟁탈전에서, 그리고 훗날 있을 전쟁의 해전이 패배로 점철될 것을 우려한 제국의 총리들과 군인들은 세계대전에서 주목받은 항공기라는 개념에 집중하였습니다. 이것에 폭탄을 장착하여, 바다에서 비행기를 띄우면 해군의 취약함을 충분히 보충할 수 있지 않을까. 그리하여 융희 9년(1919) 창설된 최초의 항공부대는 현재까지 발전하여 육군항공대, 해군항공대가 되었습니다."
  kor_new_air_gospel:0 "새로운 공군 교리"
  kor_new_air_gospel_desc:0 ""
  kor_airborne_force:0 "공수부대 창설"
@@ -383,10 +384,10 @@
  kor_far_east_desc:0 "극동은 우리와 관련은 없지만 소련을 견제하기 위해 필요한 영토입니다."
  kor_control_asia:0 "동아신질서"
  kor_control_asia_desc:0 "옛 청조, 그 이전 중화 질서라고 일컬어졌던 질서부터, 금권과 무력이 곧 질서가 된 이 시점에 이르기까지, 여러가지의 질서가 난립하고, 또 만들어지고 사그라들기를 반복하였습니다. 어떤 질서가 난립했던 동안, 대한은 그저 그 질서에 편입되어 시류에 몸을 맡기던 신세였습니다. 화약과 총칼, 그리고 영광스러운 우리의 깃발이 이 땅에 꽃혔고, 새로운 질서가 세워졌습니다. 이제의 대한은 질서를 세우는 자입니다."
- KOR_use_the_anti-armed:0 "문민정부"
- KOR_use_the_anti-armed_desc:0 "정부는 모든 역경을 이겨냈습니다. 이번의 쿠데타도, 그 어떤 것도 우리 정부를 무너뜨릴 수 없습니다."
+ KOR_the_democracy_route:0 "문민정부"
+ KOR_the_democracy_route_desc:0 ""반란군들은 즉각 투항하라. 지금 천병에 다시 오면 죄를 크게 묻지 않겠다. 그대들의 부모들은 자녀가 역적이 된 것에 눈물 흘리고 있다."\n\nㅡ강명 14년(1936) 2월 28일, 김광서"
  KOR_fuck_pact:0 "군부"
- KOR_fuck_pact_desc:0 "군 또한, 지금 사태에 대하여 매우 큰 역정을 내고 있습니다. \n'감히 저 비충만도 못한 것들이 우리 제국의 황상폐하를 습격하다니. 당장 계엄을 선포하고 전 빨갱이들을 소탕해야 합니다.'\n\n아무래도, 저들을 좀 달래기 위해 접근할 필요가 있겠습니다."
+ KOR_fuck_pact_desc:0 "내각총리대신이 군 출신이긴 하다만, 최근의 군과 척을 질만한 정책을 몇 개 이행하면서 그 사이가 틀어졌습니다. 민주당이 살아남기 위해서는 지금의 국난을 이겨내야 합니다. 그렇기에 이병무 참모총장께 부탁하여 군을 진정시킴이 유일한 활로입니다."
  KOR_gold_collecting_exercise:0 "금 모으기 운동"
  KOR_gold_collecting_exercise_desc:0 "비록 베르사유의 멍에는 떨쳐냈다 한들, 지속된 배상금 상환과 여러 부채를 갚기 위해 우리 재정 상황은 가히 나락이라고 표현해도 과언이 아닙니다. 신민들의 힘이 필요합니다. 가족을 위해, 나라를 위해, 민족을 위해 자신의 영달을 대신하여 국가에게 금품을 모으자는 운동을 펼칩시다."
  KOR_Basic_Welfare_Policy:0 "경제정책 재확인"
@@ -401,22 +402,22 @@
  KOR_women_suffrage_desc:0 ""
  KOR_industrial_collectivization:0 "산업 집단화"
  KOR_industrial_collectivization_desc:0 ""
- KOR_all_claim:0 "천명 주장"
- KOR_all_claim_desc:0 "이제 천명이 대한으로 넘어왔다는 것이 기정사실화 되었습니다. 중국은 분열되어 있고, 한때 천자였던 자는 동화북 임시정부에 머무르고 있습니다.\n\n주명을 계승한 대한이 어찌 천자국이 아니겠습니까? 이제 우리 제국은 더욱 크고, 밝은 미래를 향해 나갈 것입니다."
+ KOR_all_claim:0 "선도론 확대"
+ KOR_all_claim_desc:0 "국가 내부에서의 발전을 꾀하기 위해 채택하였던 '선도론'을 외교정책의 일부분으로 수립할 여지는 충분합니다. 대한제국의 아시아에서의 우위와 이를 뒤따라 오는 후발주자들을 적절하게 이용한다면, 아국의 아시아에 대한 영역권의 확립을 명분삼는데 도움이 될 것입니다."
  KOR_plan_manchu:0 "만주 계획"
  KOR_plan_manchu_desc:0 "아라사와의 일전 이후 제국이 북만주의 통치권을 가져오면서 우리는 대아주의 부정할 수 없는 패자가 되었습니다. 당시에 설치된 북만주 자치령은 아라사와 만청이 지배하였던 기간에서의 민족적, 문화적 차이가 존재하는 것을 잠정적으로 제국과 일통시키기 위해 만들어졌습니다. 지금, 제국의 품 안에 만주를 온전히 가져올 때입니다."
  KOR_kwangtungjun:0 "천하삼분지계"
  KOR_kwangtungjun_desc:0 "중원이라 불리우는 저 땅을 우리 제국이 흡수하려다가는 역으로 흡수당할 수 있습니다. 오래된 역사 속 제갈공명이 주창했던 삼분의 계략을 이용하여, 중원을 쉽고 안전하게 통치할 것입니다."
- KOR_last_say_of_russia:0 "몽골 통일"
- KOR_last_say_of_russia_desc:0 "대조선국의 대군주 폐하이시자 예케 몽골 울루스의 적법한 칸, 만주의 한이자 대한의 천자이신 강명황제 폐하 아래에 단결하여 다시 하나된 제국을 만들어야 합니다."
+ KOR_last_say_of_russia:0 "몽골 통일전쟁"
+ KOR_last_say_of_russia_desc:0 "서부 몽골은 사회주의 세력이 점거하고 있습니다. 우리의 동아시아 패권의 확립을 위해서는 충분한 완충지대를 확보해야 하고, 몽골은 북방의 요새지대 중 하나입니다. 수십 년이 지나 적들의 통제가 확고해지기 전에, 하루 빨리 이들을 점거해야 합니다."
  KOR_dalian_attack:0 "군벌 정리"
  KOR_dalian_attack_desc:0 "중원 전선을 완전히 정리하기 위해, 저 한족들의 영 내에서 난립하는 군벌을 완전히 정리할 것입니다."
  KOR_attack_yeonhaeju:0 "연해주 공략"
  KOR_attack_yeonhaeju_desc:0 "그때는, 조금만 더 달린다면, 한 발자국이라도 더 갈 수 있다면 이 세상이 끝나는 곳까지 갈 수 있으리라고 생각했습니다.\n그때 우리는 세상을 움켜쥘 수 있을 줄 알았습니다."
  KOR_chulbyong:0 "출병"
  KOR_chulbyong_desc:0 "연해주는 응당 적법한 주인이자 지배자인 대한의 품 안으로 다시 돌아올 것이며, 그래야만 합니다."
- KOR_attack_colonial_territory:0 "아시아 보호"
- KOR_attack_colonial_territory_desc:0 "식민영토라니, 저급한 말이군요. 우리는 저 서양 제국주의자들과 다릅니다. \n대한은 아주의 등불로서, 큰형님으로서 문명의 등불을 비춰주려는 것인데 어찌 그런 망언을 할 수 있습니까? 이것은 어디까지나 보호를 위한 일입니다."
+ KOR_attack_colonial_territory:0 "화북분리공작"
+ KOR_attack_colonial_territory_desc:0 "중화민국 정부가 위치하여 있는 화북지방에 대한 통제권을 확립하는 것이 한국의 대중 외교 첫번째 전략이었습니다. 융희 시기에 확립한 이러한 기조는 꾸준히 유지되어왔고, 혹여나 있을 중국의 통일 시점에서 가장 크고 강할 가상 적국의 힘을 약화하는 것에는 효율적입니다."
  KOR_attack_tsingdao:0 "광동 보호"
  KOR_attack_tsingdao_desc:0 "야만의 땅인 광동지역을 보호하기 위하여, 대한은 문명의 등불을 들고 찾아갈 것입니다."
  KOR_attack_shanghai:0 "상하이 보호"
@@ -425,7 +426,7 @@
  KOR_attack_taiwan_desc:0 "전조 고려 시절, 그 한참 전으로 가면 김씨 신라 시절부터 왜구와 저 대화인들은 반도인들에게 골칫덩이였습니다. 선묘(선조) 시절에는 대대적으로 조선을 침공하였으니, 어찌 그 기억을 잊겠습니까. 대한은, 이제 지지 않을 것입니다. \n\n일몰이 다가오고 있습니다."
  KOR_allied_with_russia:0 "소련과 접촉"
  KOR_allied_with_russia_desc:0 "북적이라고도 불렀던 러시아, 지금의 소비에트 정권은 우리와 일시적인 휴전을 하고 있을 뿐, 언제든지 우리 쪽의 힘이 약해진다면 전쟁을 걸 호전적인 놈들입니다. 우리는 이들의 위협을 덜기 위해, 소비에트 정권과의 불가침 조약을 맺어 서로 잠시간의 휴식을 누리게 할 것입니다."
- KOR_give_me_the_manchu:0 "관외주-북해도 통합"
+ KOR_give_me_the_manchu:0 "동북 행정 통합"
  KOR_give_me_the_manchu_desc:0 ""
  KOR_allied_with_japan:0 "일본과의 동맹"
  KOR_allied_with_japan_desc:0 ""
@@ -442,7 +443,7 @@
  KOR_New_Deal:0 "뉴딜"
  KOR_New_Deal_desc:0 ""
  KOR_asian_democracy:0 "조기선거 실시"
- KOR_asian_democracy_desc:0 ""
+ KOR_asian_democracy_desc:0 ""강명 14년 2월 26일 반정이 있었다. 홍종갑 비서관이 궐로 향해 급보를 알렸고, 황제가 이에 크게 노하여 반정을 진압하였다. 2월 29일, 모든 반정군이 진압되었다. 주모가 김중석은 자살하였다. (중략)...황제가 조칙을 내려 김희선을 책망하고 그를 내쫒았다. 그리고 곧 9월에 예정된 선거를 앞세운다 하였다."\n\nㅡ성조실록"
  KOR_air_production:0 "항공산업 개편"
  KOR_air_production_desc:0 ""
  KOR_national_arms:0 "국가 조병창 개발"
@@ -479,18 +480,18 @@
  Kuomindang:0 "국민정부"
  SOV_war_with_japan:0 "극동 수복"
  
- FOCUS_WILL_BE_COUPDETA:0 "중점이 완료된 이후, 군부 내 근황파에서 쿠데타를 일으킬 것입니다."
+ FOCUS_WILL_BE_COUPDETA:0 "중점이 완료된 이후, 군부 내 황도파에서 쿠데타를 일으킬 것입니다."
  FOCUS_RULE_IS_CHANGED:0 "§Y모든 민주주의 국가의 패널티를 제거합니다§!.\n§C아시아 문명개화의 큰형님으로서, 대한제국의 위엄을 전 아주에 널리 퍼뜨릴 것입니다.§!"
  TOOLTIP_KOREA_RULING_CHINA:0 "§Y대한제국§!이나 그 §Y괴뢰국§!들이 §Y중국§!을 지배하고 있다."
  
  KOR_the_plan_south:0 "남방작전"
  KOR_kyushu_colonism_up:0 "내화일체 강화"
  KOR_kyushu_colonism_up_desc:0 "내지(조선)과 강화(야마토)는 예로부터 한 몸이었습니다. 백제의 부여씨의 후예들이 저들의 군주이며, 그 백제 유민들의 후예들이 바로 이 구주에 사는 사람들입니다. 우리는 구주의 사람들에게 그들이 우리 대한의 자랑스런 신민이라는 것을 깨우치게 해줄 필요가 있습니다."
- KOR_the_malay_focus:0 "말레이 중점"
- KOR_the_malay_focus_desc:0 "말레이, 대영제국 배불뚝이들의 제일의 고무생산지인 이곳은 옛 아주의 독립적인 민족의 강역이었습니다. 서역 코쟁이들의 위협이 이곳까지 다가왔습니다. 저들의 전초기지를 박살낼 때입니다."
- KOR_the_ins_focus:0 "인도네시아 중점"
- KOR_the_ins_focus_desc:0 "인도네시아, 네덜란드 깍쟁이들의 제일의 고무생산지인 이곳은 옛 아주의 독립적인 민족의 강역이었습니다. 서역 코쟁이들의 위협이 이곳까지 다가왔습니다. 저들의 전초기지를 박살낼 때입니다."
- KOR_the_philiphine_focus:0 "필리핀 중점"
+ KOR_the_malay_focus:0 "인도 해방"
+ KOR_the_malay_focus_desc:0 "인도, 대영제국 배불뚝이들의 제일의 자원생산지인 이곳은 옛 아주의 독립적인 민족의 강역이었습니다. 서역 코쟁이들의 위협이 이곳까지 다가왔습니다. 우리는 마땅히 그들을 해방할 필요가 있습니다."
+ KOR_the_ins_focus:0 "호주 압박"
+ KOR_the_ins_focus_desc:0 "호주, 태평양의 최남단에 위치한 이 거대한 섬은 그야말로 서양 침략자들의 소굴 그 자체가 되었습니다. 서역 코쟁이들의 위협이 이곳까지 다가왔습니다. 저들의 전초기지를 박살낼 때입니다."
+ KOR_the_philiphine_focus:0 "필리핀 확보"
  KOR_the_philiphine_focus_desc:0 "필리핀, 미 제국주의자들과 에스파냐 반동주의자들의 식민피해자들은 끝까지 독립을, 아주인들만의 나라를 원하고 있습니다.. 서역 코쟁이들의 위협이 이곳까지 다가왔습니다. 필리핀 민초들의 요구에 부응해줄 시간이 왔습니다."
  KOR_indonesia_support:0 "인도차이나 반도 요구"
  KOR_indonesia_support_desc:0 "인도차이나의 프랑스 식민지는 현지 황인종들을 핍박하고, 모멸하며, 무시하였습니다. 우리 제국은 전 아주자결주의의 원칙에 따라 이들을 해방할 것을 프랑스 정부에 요청할 것입니다."
@@ -501,19 +502,19 @@
  KOR_the_rising_empire:0 "하늘에 뜨는 태양"
  KOR_the_rising_empire_desc:0 "제국은 하늘에 드높이 떠있습니다. 중국에서의 작전은 순조롭게 진행되었고, 산업이 다시 호황을 맞이하기 시작하면서 신민들의 얼굴도 주름이 있는 날이 없어졌습니다."
  KOR_oneman_dictatorship:0 "충실한 신하"
- KOR_oneman_dictatorship_desc:0 "이강 총리는 대한 황상의 명을 '충실히' 받드는 만고의 충신입니다. 그는 제국의 썩어빠진 위정자들을 뽑아내었으며, 제국을 넘보는 이들에게 이 나라의 힘을 보여주고, 신민들의 빈궁한 삶을 되살려주었습니다."
- KOR_with_he:0 "그와 함께하라"
- KOR_with_he_desc:0 "그는, 우리와 함께하고 있습니다. 우리는, 그와 함께할 것입니다."
- KOR_trust_him:0 "그를 믿으라"
- KOR_trust_him_desc:0 "그는, 우리에게 믿음을 주었습니다. 우리도, 그에게 믿음을 바쳐야 할 것입니다."
+ KOR_oneman_dictatorship_desc:0 "충신이란 천자를 익찬하여 그 성총을 받들며 나라를 융성케하는 신하를 의미합니다. 그런 의미에서 신한청년당 정부와 대한제국 황군의 통제파는 제국에 다시 없을 충신임이 분명합니다."
+ KOR_with_he:0 "전시통제 강화"
+ KOR_with_he_desc:0 "대한제국은 중국전선, 태평양전선 등지에서 승리를 거듭하고 있습니다. 민족의 운명이 경각에 달린 시점에서 패배를 논함은 곧 역적이며 사직을 끊으려 드는 이입니다. 모두가 일치단결하여 한 마음 한 뜻으로 승리를 위한 발걸음에 함께하여야 합니다."
+ KOR_trust_him:0 "무신 내각"
+ KOR_trust_him_desc:0 ""통제파의 세가 정치권에 널리 퍼졌고, 성조가 침묵하고 있는 가운데 이들의 권세는 전시상황에서 하늘을 찔렀다. 초기에 무신 내각은 민정의 형태를 띄었으나, 갈 수록 형식조차 깨부수더니 정부의 얼굴 역을 하던 조소앙을 치워버린 후에는 박용만과 최진동이 이강마저 허수아비로 만든 후 실권을 좌지우지하였다."\n-대동아전쟁 평전, 1993년."
  KOR_GEACP_zone:0 "대동아 공영권"
- KOR_GEACP_zone_desc:0 "우리의 공영권은 전 대아주에 걸쳐서 넓게 퍼졌고, 비로소 이 땅에 모든 황인들은 저마다의 자주권을 되찾았습니다. 우리는 함께 영원토록 번영할 것이며, 반드시 그러할 것입니다."
+ KOR_GEACP_zone_desc:0 "우리의 공영권은 전 대아주에 걸쳐서 넓게 퍼졌고, 비로소 이 땅에 모든 황인들은 저마다의 자주권을 되찾았습니다. 황상 폐하께서 인도하시는 황국은 아시아의 열국들을 이끌면서 만세토록 번영할 것입니다!"
  KOR_baekje_kisadan:0 "도래인 구별법"
  KOR_baekje_kisadan_desc:0 "이 왜 땅을 정복하였으니 이 땅을 통치할 기관을 설립하여야 하는데, 이를 우리 민족에게 온전히 맡기기에는 많은 위협이 있을 것입니다. 우리는 소위 '도래인'이라고 불리는, 옛 백제로부터 넘어온 이들과 '본토인'이라고 불리는 일본인들을 구분하여 '분열하고, 지배하라.'를 철저히 따를 것입니다."
  KOR_giving_guidance_to_chaebol:0 "재벌에 지침하달"
  KOR_giving_guidance_to_chaebol_desc:0 "막강한 위세를 자랑하며 제국의 정계를 장악하던 재벌은 이제 없습니다. 이제는 재벌 또한 나라와 한 몸이 되어 다 같이 성전에 참여해야 합니다."
- KOR_take_control_of_the_party:0 "당 회의 장악"
- KOR_take_control_of_the_party_desc:0 "사실, 지금까지 외부의 정적을 제거하였다고 한들 이강에게는 신한청년당이라는 정치적 동반자이자 잠재적인 정적이 존재하고 있습니다. 예를들어, 한창 이강과 더불어서 인기를 끌고 있는 '박상진'과 같이 말입니다. 계획을 위하여, 신한청년당을 완전한 일인의 통제 하에 놓이게 하는 것은 유일한 제국의 미래입니다."
+ KOR_take_control_of_the_party:0 "대동아전쟁을 위한 총선"
+ KOR_take_control_of_the_party_desc:0 "후일 예정된 총선에서는 꽤나 큰 난관이 있을 것이 분명합니다. 참의원 선거에서 합법적인 집권을 행하기 위해 몇 정당들에게 출마 '자제 권고'를 내리는 것이 옳습니다. 다행스럽게도 전시상황이라는 점에서 이는 넘어가질 수 있을 것입니다. \n\n황상만 설득해보면요."
  KOR_the_power_of_kang:0 "선군정치"
  KOR_the_power_of_kang_desc:0 "군대가 정치에 개입하지 말라는 것은 지금처럼 긴박한 상황에서는 불가능한 이야기입니다. 군이 국정운영에 깊이 관여를 해야지만이 다같이 이 위기를 해쳐나갈 수 있습니다."
  KOR_the_last_empire_ending:0 "마지막 제국"
@@ -658,9 +659,9 @@
  KOR_focus_end_up_at_the_top_desc:0 "우리는 다시 하늘 위 별에 닿게 되었습니다. 수 백년 동안이나 그리워하던 그 별은, 한 때 이 제국에 찾아온 것만 같았었습니다. 그러나, 나약한 이들과 비열한 이들은 우리 손으로 얻은 별을 내던졌습니다. 앞으로는, 그러한 일은 없을 것입니다.\n\n대한 만세. 황상폐하 만세. "
  KOR_focus_end_of_korea_desc:0 "이제 대한은 다시금 황제폐하와 황실이 주도하는 올바른 구조로 돌아왔습니다. 폐하께서는 언제까지나 이 제국을 통치하실 것이며, 불멸하실 것입니다. 대한이여, 영원하리!"
  KOR_refind_the_economic_crisis:0 "진상 조사"
- KOR_refind_the_economic_crisis_desc:0 "사악하고, 혐오스럽고, 저 비충만도 못한 끔찍한 역도들이 우리 황상폐하를 습격하였습니다!\n천운이 따랐는지 황상폐하께서는 무사하십니다. 그러나, 이 일에 대한 조사는 반드시, 철저하게 이뤄져야 합니다."
+ KOR_refind_the_economic_crisis_desc:0 "총리의 모든 노력은 허사가 되었습니다. 국부께서 변을 당하셨는데 어떻게 민주당이 다음 선거를 노릴 수 있겠습니까? 내각이 즉시 붕괴하지 않은 까닭은 온전히 책임을 질 이가 총리이고, 지금은 사태 수습이 급박하기 때문입니다. 최대한 빠르고, 철저하고, 정확하게 이번 파고다 참변의 조사가 진행될 것입니다."
  KOR_law_going:0 "결과"
- KOR_law_going_desc:0 ""
+ KOR_law_going_desc:0 "민주당의 치세는 평탄하진 않습니다. 특히 이번 파고다 참변 탓에 정권 교체는 필연입니다. 그러나 내각은 역적을 추포하고 내란을 평정하는데 성공하였습니다. 다음은 무리겠지만, 다다음 선거 때는 대권을 노릴 수 있을 것입니다!"
  KOR_side_in:0 "내치"
  KOR_side_in_desc:0 "혼란스럽기 그지 없는 상황입니다. 황성 내에서도 총소리가 들리고, 고함지르는 이들이 널려 있습니다. \n\n소리가 잦아들기 시작했습니다. 아직 전등은 켜지지 않았으나, 저 멀리서 자그맣게 켜진 등불이 이쪽으로 다가오고 있습니다."
  KOR_the_day_which_very_long:0 "가장 긴 밤"
@@ -671,6 +672,7 @@
  KOR_appease_the_emperor:0 "성심을 돌리기"
  KOR_appease_the_emperor_desc:0 "폐하의 성심을 잘 헤아리지 못하여 우리 내각 관료들이 그분을 구중궁궐 깊은 곳에서 은거토록 만들었습니다. 다행스럽게도, 아직 기회는 남아있는 것으로 보입니다."
  KOR_putting_aside_the_military:0 "군부 단도리하기"
+ KOR_putting_aside_the_military_desc:0 "지금까지 우리는 군에 대한 많은 자율권을 주고 있었습니다. 그러나 그들이 한 것이라고는 한성에서 총격전을 벌이게 만든 것입니다. 임자사화를 마지막으로 꺼내지 않았던 대출척이 예고될 것입니다."
  KOR_outer_side_plan:0 "외무"
  KOR_inner_problem:0 "내무"
  KOR_kimkyusik_plan:0 "김규식의 내치"
@@ -687,7 +689,7 @@
  KOR_kim_dip_chi_manchurian_setting:0 "만주인 분리주의자 포섭"
  KOR_kim_dip_chi_aisingioro_palace:0 "소조정 협조요청"
  KOR_kim_dip_chi_caokun:0 "조곤계 포섭"
- KOR_kim_dip_chi_special_military_operation:0 "화북특별군사작전"
+ KOR_kim_dip_chi_special_military_operation:0 "을호특별군사작전"
  KOR_kim_dip_chi_man2:0 "산해관을 넘어라"
  KOR_kim_dip_chi_ending_of_zhili:0 "직예 세력권 확보"
  KOR_kim_dip_chi_attack_qingdao:0 "청도 영유권 확보"
@@ -697,7 +699,7 @@
  KOR_kim_dip_jap_economical_attack:0 "대일농산품 관세장벽"
  KOR_kim_dip_jap_kyushu_annex:0 "큐슈병합조약"
  KOR_kim_dip_jap_nanyang_puppet:0 "남양군도 독립지원"
- KOR_kim_dip_jap_war_with_japan:0 "신고산을 올라라 1208"
+ KOR_kim_dip_jap_war_with_japan:0 "갑호특별군사작전"
  KOR_kim_dip_jap_chugoku_plan:0 "유신회 무용론 설파"
  KOR_kim_dip_pan_support_to_usa:0 "대미협력 강화"
  KOR_kim_dip_pan_navy_under_pact:0 "한미해군기본협정"
@@ -707,7 +709,7 @@
  KOR_kim_dip_jap_divide_and_rule:0 "분리하여, 통치하라"
  KOR_kim_dip_pan_britain_diplo:0 "한영동맹을 다시 한번"
  KOR_kim_dip_pan_chinese_economy_accept:0 "중국 이권보장"
- KOR_kim_dip_pan_china_asian_pact:0 "중국을 대가로 한 거래"
+ KOR_kim_dip_solve_the_problem:0 "무역분쟁 해결"
  KOR_inner_army_control:0 "군부 문제 대두"
  KOR_kim_inner_elite_setting:0 "엘리트주의 고수"
  KOR_kim_inner_kp_cleanning:0 "대한당 내부파벌 개혁"
@@ -719,7 +721,7 @@
  KOR_kim_dip_pan_nonattack_pact:0 "남방 불가침 맹약"
  KOR_kim_dip_pan_god_save_the_empire:0 "상제는 우리 조국을 도우소서"
  KOR_kim_dip_pan_establish_un:0 "국제연합 창설 참여"
- KOR_kim_dip_pan_panzer_allies:0 "병기를 대가로 한 군사원조"
+ KOR_kim_dip_pan_panzer_allies:0 "군수물자 계약"
  KOR_kim_death_after_the_end:0 "그의 삶이 끝난 후"
  KOR_kim_death_changsuk_cabinet:0 "김창숙 내각 출범"
  KOR_kim_death_army_saving:0 "군부 권한 강화"
@@ -736,7 +738,7 @@
  KOR_kim_death_governmental_royal_family:0 "황족 각료 의무제 발의"
  KOR_kim_death_emperors_administration:0 "폐하의 정부"
  KOR_kim_inner_kangmyong_shoke_study:0 "강명 쇼크에서 분석"
- KOR_kim_inner_support_middle_industry:0 "중화학공업 전폭지원"
+ KOR_kim_inner_support_middle_industry:0 "이화학공업 전폭지원"
  KOR_kim_inner_new_life_streatagy:0 "신생활4개전략"
  KOR_kim_inner_save_the_north:0 "북방자원 탐사"
  KOR_kim_inner_nkyp_absorption:0 "신한청년당 흡수"
@@ -752,6 +754,495 @@
  KOR_inner_army_conscription_law_fix:0 "징병법 개정안 발의"
  KOR_inner_army_kyolyeon_make:0 "교련수업 창설"
  KOR_kim_inner_end_of_the_reform:0 "개혁의 끝, 현상유지의 시작"
+ KOR_kim_inner_save_the_daldongnae:0 "달동네 거주문제 해결"
+ KOR_kim_inner_busan_greating:0 "부산항 확장"
+ KOR_kim_inner_wonsan_problem:0 "두 번의 원산 파업은 없다"
+ KOR_kim_inner_simyang_attack:0 "심양 거주문제"
+ KOR_kim_inner_save_our_emperor:0 "황제시여, 우리를 도우소서"
+ KOR_kim_inner_manchu_railway_rework:0 "만주철도 중심 개발"
+ KOR_an_inner_line_setting:0 "선을 정리하다"
+ KOR_an_inner_shinmin_reform:0 "신민회 개편"
+ KOR_an_inner_ii_fuck_you:0 "황국협회 억제"
+ KOR_an_inner_sangmuyong_set:0 "상무영 산하기관 개편"
+ KOR_an_inner_army_corruption_result:0 "군대는 뒷편으로"
+ KOR_an_inner_focus_1:0 "일소계 타파"
+ KOR_an_inner_focus_3:0 "황제를 회유하기"
+ KOR_an_inner_focus_4:0 "경친왕 전하께 아뢰기"
+ KOR_inner_natinal_np:0 "관영언론 지원"
+ KOR_an_inner_focus_2:0 "박중양 사냥"
+ KOR_an_inner_focus_6:0 "김희선 사면"
+ KOR_an_inner_focus_5:0 "화평계 흡수"
+ KOR_an_inner_focus_9:0 "대한당 단일화"
+ KOR_an_inner_focus_7:0 "외교의 선택"
+ KOR_an_inner_focus_10:0 "대영외교 전환"
+ KOR_an_inner_focus_8:0 "극단주의 분쇄"
+ KOR_an_inner_focus_11:0 "민본주의 설파"
+ KOR_an_inner_focus_12:0 "외교정책 선회"
+ KOR_an_inner_focus_13:0 "반파시즘 국민동맹"
+ KOR_an_inner_focus_14:0 "재벌 문제"
+ KOR_an_inner_focus_15:0 "거대한 계획"
+ KOR_an_inner_focus_16:0 "입헌주의 입각"
+ KOR_an_inner_focus_17:0 "국민계몽운동"
+ KOR_an_inner_focus_18:0 "대동아기구설립 추진"
+ KOR_an_inner_focus_19:0 "외교정책 확립"
+ KOR_an_inner_focus_20:0 "소학교령 개정"
+ KOR_an_inner_focus_21:0 "새마을운동"
+ KOR_an_inner_focus_22:0 "대일 정책"
+ KOR_an_inner_focus_23:0 "간접개입"
+ KOR_an_inner_focus_24:0 "직접개입"
+ KOR_an_inner_focus_25:0 "관세장벽 형성"
+ KOR_an_inner_focus_28:0 "큐슈 문제"
+ KOR_an_inner_focus_27:0 "토호쿠 투자 증대"
+ KOR_an_inner_focus_26:0 "대화공세 준비"
+ KOR_an_inner_focus_29:0 "신고산을 올라라 1208"
+ KOR_an_inner_focus_30:0 "한일재수교"
+ KOR_an_inner_focus_31:0 "천황 교체"
+ KOR_an_inner_focus_32:0 "일본통감부 설치"
+ KOR_an_inner_focus_33:0 "한일경제군사협력조약"
+ KOR_an_inner_focus_34:0 "유신회 지한파 접촉"
+ KOR_an_inner_focus_36:0 "나가사키 방위군 증강"
+ KOR_an_inner_focus_35:0 "대중 정책"
+ KOR_an_inner_focus_37:0 "조차지 문제"
+ KOR_an_inner_focus_38:0 "양보론 추종"
+ KOR_an_inner_focus_39:0 "관리론 유지"
+ KOR_an_inner_focus_40:0 "서북차별 완화"
+ KOR_an_inner_focus_41:0 "서북지방 검열제"
+ KOR_an_inner_focus_42:0 "상해 방비 강화"
+ KOR_an_inner_focus_43:0 "국민당 저격"
+ KOR_an_inner_focus_44:0 "반왕전쟁 지원"
+ KOR_an_inner_focus_45:0 "오성연군 포기"
+ KOR_an_inner_focus_46:0 "한미-중 협력 유도"
+ KOR_an_inner_focus_47:0 "안창호 독트린 발표"
+ KOR_an_inner_focus_48:0 "강경대응 준비"
+ KOR_an_inner_focus_49:0 "전시동원법 제정"
+ KOR_an_inner_focus_50:0 "정적"
+ KOR_an_inner_focus_51:0 "진황도 접전"
+ KOR_an_inner_focus_52:0 "전운이 감돌며"
+ KOR_an_inner_focus_53:0 "패권의 재확인"
+ KOR_an_inner_focus_55:0 "세계에 호소"
+ KOR_an_inner_focus_56:0 "국민에 호소"
+ KOR_an_inner_focus_57:0 "폐하께 아뢰다"
+ KOR_an_inner_focus_58:0 "부분 동원령 공표"
+ KOR_an_inner_focus_59:0 "만주방면 방비 강화"
+ KOR_an_inner_focus_60:0 "대아시아 전쟁"
+ KOR_an_inner_focus_61:0 "평화의 길"
+ KOR_an_inner_focus_62:0 "계몽의 길"
+ KOR_an_inner_focus_63:0 "법치의 길"
+ KOR_an_inner_focus_65:0 "미몽의 끝"
+ KOR_an_inner_focus_64:0 "정도"
+ KOR_an_inner_focus_66:0 "질서"
+ KOR_an_inner_focus_67:0 "미래를 향한 발걸음"
+ KOR_an_inner_focus_68:0 "새마을노래 보급"
+ KOR_an_inner_focus_69:0 "지역균형개발 추진"
+ KOR_an_inner_focus_70:0 "새마을지도자 파견"
+ KOR_an_inner_focus_71:0 "한미기술협력 추진"
+ KOR_an_inner_focus_72:0 "전신주 설치"
+ KOR_an_inner_focus_73:0 "브나로드 운동 되새기기"
+ KOR_an_inner_focus_74:0 "추곡수매제도 제정"
+ KOR_an_inner_focus_75:0 "여학생 의무교육령 실시"
+ KOR_an_inner_focus_77:0 "남학생 중등교육 지원"
+ KOR_an_inner_focus_76:0 "평등권 주창"
+ KOR_an_inner_focus_78:0 "권리 향상"
+ KOR_an_inner_focus_79:0 "마지막 걸림돌"
+ KOR_an_inner_focus_80:0 "융희시대의 전례"
+ KOR_an_inner_focus_81:0 "요임금과 순임금을 따르자"
+ KOR_an_inner_focus_84:0 "홍종갑의 진심"
+ KOR_an_inner_focus_87:0 "인정"
+ KOR_an_inner_focus_82:0 "계몽 이후의 나라"
+ KOR_an_inner_focus_85:0 "황제의 사색"
+ KOR_an_inner_focus_88:0 "결정"
+ KOR_an_inner_focus_89:0 "권력의 민주적 이양"
+ KOR_an_inner_focus_83:0 "농촌 순회"
+ KOR_an_inner_focus_86:0 "대학가 순회"
+
+ KOR_pak_inner_1:0 "황도파 숙청"
+ KOR_pak_inner_8:0 "통제파 목줄채우기"
+ KOR_pak_inner_5:0 "이규완 영향력 거세"
+ KOR_pak_inner_2:0 "혁신계 분열"
+ KOR_pak_inner_9:0 "화평계 흡수"
+ KOR_pak_inner_6:0 "과두정 지속"
+ KOR_pak_inner_3:0 "외교론 선회"
+ KOR_pak_inner_10:0 "일소론 제시"
+ KOR_pak_inner_7:0 "전임자 지우기"
+ KOR_pak_inner_end_of_the_war:0 "시산 위에 올려진 왕관"
+ KOR_pak_inner_12:0 "일소계의 지도"
+ KOR_pak_inner_13:0 "외교해법 제시"
+ KOR_pak_inner_14:0 "내정해법 제시"
+ KOR_pak_inner_15:0 "중화다분지계 확립"
+ KOR_pak_inner_11:0 "일본 침공"
+ KOR_pak_inner_4:0 "토쿠가와 지지"
+ KOR_pak_inner_31:0 "박중양 2기 내각"
+ KOR_pak_inner_21:0 "연미공영"
+ KOR_pak_inner_22:0 "세계대전 지원 확약"
+ KOR_pak_inner_23:0 "유럽원정군 창설"
+ KOR_pak_inner_24:0 "공영의 기치"
+ KOR_pak_inner_25:0 "중공업 지휘"
+ KOR_pak_inner_26:0 "대학가 잠입"
+ KOR_pak_inner_27:0 "불순분자 색출"
+ KOR_pak_inner_29:0 "스탈린에게 배울 점"
+ KOR_pak_inner_16:0 "만주 검열 강화"
+ KOR_pak_inner_18:0 "선도민족 대한"
+ KOR_pak_inner_17:0 "동양평화론 응용"
+ KOR_pak_inner_19:0 "국민당 지원"
+ KOR_pak_inner_20:0 "필연적인 전쟁"
+ KOR_pak_inner_28:0 "강력한 지도력"
+ KOR_pak_inner_30:0 "한국식 민주주의 유지"
+ KOR_pak_inner_32:0 "황실 권위 존중"
+ KOR_pak_inner_33:0 "정부 달래기"
+ KOR_pak_inner_34:0 "후궁제 존치 확약"
+ KOR_pak_inner_35:0 "안창호 기용"
+ KOR_pak_inner_36:0 "조소앙 포섭"
+ KOR_pak_inner_37:0 "부분동원령 하달"
+ KOR_pak_inner_38:0 "재벌 동원"
+ KOR_pak_inner_the_great_asian_war:0 "동양평화전쟁"
+ KOR_pak_inner_39:0 "학생훈련제도 마련"
+ KOR_pak_inner_40:0 "군대 훈련제도 개편"
+ KOR_pak_inner_41:0 "방산업체 문제"
+ KOR_pak_inner_42:0 "대구 노동운동 분쇄"
+ KOR_pak_inner_43:0 "입 좀 다물어!"
+ KOR_pak_inner_44:0 "빨갱이 처단"
+ KOR_pak_inner_45:0 "일본 착취 가속화"
+ KOR_pak_inner_46:0 "국민징용령 실시"
+ KOR_pak_gaw_1:0 "화북전략공세작전"
+ KOR_pak_gaw_8:0 "화중타통작계"
+ KOR_pak_gaw_5:0 "동계전 장비 지급"
+ KOR_pak_gaw_2:0 "향토예비군 결성"
+ KOR_pak_gaw_9:0 "국민징용령"
+ KOR_pak_gaw_6:0 "국가총동원법 제정"
+ KOR_pak_gaw_3:0 "전시경제 전환"
+ KOR_pak_gaw_10:0 "군수공업 강화"
+ KOR_pak_gaw_4:0 "서양 이권 보장"
+ KOR_pak_gaw_11:0 "유럽파병군 유지"
+ KOR_pak_gaw_7:0 "대동아회의 개최"
+ 
+ KOR_focus_khs_1:0 "김희선 내각 출범"
+ KOR_focus_khs_2:0 "유연히 대처하기"
+ KOR_focus_khs_3:0 "완고함이 해답이다"
+ KOR_focus_khs_24:0 "궁내부대신 유임"
+ KOR_focus_khs_25:0 "황제폐하 다루기"
+ KOR_focus_khs_26:0 "개화당의 유산"
+ KOR_focus_khs_27:0 "대한당의 침묵"
+ KOR_focus_khs_28:0 "일 할 시간"
+ KOR_focus_khs_4:0 "대마불사"
+ KOR_focus_khs_14:0 "유화책 제시"
+ KOR_focus_khs_17:0 "농촌 불만 잠재우기"
+ KOR_focus_khs_15:0 "관계악화 감수"
+ KOR_focus_khs_6:0 "브나로드 운동 완전 폐지"
+ KOR_focus_khs_5:0 "사회당 용인"
+ KOR_focus_khs_7:0 "빈민 구제 우선시"
+ KOR_focus_khs_8:0 "제12대 민의원 총선거"
+ KOR_focus_khs_11:0 "스탠더드오일 초청"
+ KOR_focus_khs_13:0 "구밀복검"
+ KOR_focus_khs_9:0 "치안유지법 강화"
+ KOR_focus_khs_10:0 "안중근 좌천"
+ KOR_focus_khs_12:0 "군 충성심 확인"
+ KOR_focus_khs_16:0 "군축은 필수"
+ KOR_focus_khs_18:0 "탕산 격전"
+ KOR_focus_khs_19:0 "농촌 불만 탄압하기"
+ KOR_focus_khs_22:0 "한미태평양협정"
+ KOR_focus_khs_20:0 "수신제가"
+ KOR_focus_khs_21:0 "부수청령"
+ KOR_focus_khs_23:0 "면종복배"
+ 
+ 
+ KOR_outer_side_plan_desc:0 "" #외무
+ KOR_inner_problem_desc:0 "" #내무
+ KOR_kimkyusik_plan_desc:0 "" #김규식의 내치
+ KOR_anchangho_plan_desc:0 "" #안창호의 번영
+ KOR_parkjungyang_plan_desc:0 "" #박중양의 지도
+ KOR_kyushu_rising_attack_desc:0 "" #큐슈 유화책 제시
+ KOR_kimkyusik_outer_resetting_desc:0 "" #외교관계 재설정
+ KOR_kimkyusik_hand_to_army_desc:0 "" #현역대신무관제 유지
+ KOR_anchangho_fuck_the_army_desc:0 "" #현역대신관제 폐지
+ KOR_kimkyusik_asian_diplomancy_desc:0 "" #대동아 외교
+ KOR_kimkyusik_diplo_chinese_plan_desc:0 "" #대 중국 포위망
+ KOR_kimkyusik_diplo_pan_asian_plan_desc:0 "" #태평양 관계
+ KOR_kim_dip_chi_hebei_divide_plan_desc:0 "" #화북분리공작
+ KOR_kim_dip_chi_manchurian_setting_desc:0 "" #만주인 분리주의자 포섭
+ KOR_kim_dip_chi_aisingioro_palace_desc:0 "" #소조정 협조요청
+ KOR_kim_dip_chi_caokun_desc:0 "" #조곤계 포섭
+ KOR_kim_dip_chi_special_military_operation_desc:0 "" #화북특별군사작전
+ KOR_kim_dip_chi_man2_desc:0 "" #산해관을 넘어라
+ KOR_kim_dip_chi_ending_of_zhili_desc:0 "" #직예 세력권 확보
+ KOR_kim_dip_chi_attack_qingdao_desc:0 "" #청도 영유권 확보
+ KOR_kim_dip_chi_economy_attack_desc:0 "" #차관 공격
+ KOR_kimkyusik_diplomancy_japan_desc:0 "" #대화공세작전 수립
+ KOR_kim_dip_jap_tokugawa_support_desc:0 "" #덕천 복권준비
+ KOR_kim_dip_jap_economical_attack_desc:0 "" #대일농산품 관세장벽
+ KOR_kim_dip_jap_kyushu_annex_desc:0 "" #큐슈병합조약
+ KOR_kim_dip_jap_nanyang_puppet_desc:0 "" #남양군도 독립지원
+ KOR_kim_dip_jap_war_with_japan_desc:0 "" #신고산을 올라라 1208
+ KOR_kim_dip_jap_chugoku_plan_desc:0 "" #유신회 무용론 설파
+ KOR_kim_dip_pan_support_to_usa_desc:0 "" #대미협력 강화
+ KOR_kim_dip_pan_navy_under_pact_desc:0 "" #한미해군기본협정
+ KOR_kim_dip_pan_economy_resetting_desc:0 "" #한미상호무역절차 간소화
+ KOR_kim_dip_pan_trust_allies_desc:0 "" #대기업간 기술공조
+ KOR_kim_dip_pan_america_support_to_ww2_desc:0 "" #연합군 군사의용단 파견
+ KOR_kim_dip_jap_divide_and_rule_desc:0 "" #분리하여, 통치하라
+ KOR_kim_dip_pan_britain_diplo_desc:0 "" #한영동맹을 다시 한번
+ KOR_kim_dip_pan_chinese_economy_accept_desc:0 "" #중국 이권보장
+ KOR_kim_dip_solve_the_problem_desc:0 "" #무역분쟁 해결
+ KOR_inner_army_control_desc:0 "" #군부 문제 대두
+ KOR_kim_inner_elite_setting_desc:0 "" #엘리트주의 고수
+ KOR_kim_inner_kp_cleanning_desc:0 "" #대한당 내부파벌 개혁
+ KOR_kim_inner_dp_kill_desc:0 "" #민주당 지탄
+ KOR_kim_inner_attract_to_zaibatsu_desc:0 "" #재벌 경제에 타협
+ KOR_kim_inner_nongmin_save_desc:0 "" #농업진흥법 추진
+ KOR_kim_inner_vnaroad_retry_desc:0 "" #브나로드 운동에서 차용
+ KOR_inner_the_first_and_last_empire_desc:0 "" #최초이자 최후의 제국
+ KOR_kim_dip_pan_nonattack_pact_desc:0 "" #남방 불가침 맹약
+ KOR_kim_dip_pan_god_save_the_empire_desc:0 "" #상제는 우리 조국을 도우소서
+ KOR_kim_dip_pan_establish_un_desc:0 "" #국제연합 창설 참여
+ KOR_kim_dip_pan_panzer_allies_desc:0 "" #병기를 대가로 한 군사원조
+ KOR_kim_death_after_the_end_desc:0 "" #그의 삶이 끝난 후
+ KOR_kim_death_changsuk_cabinet_desc:0 "" #김창숙 내각 출범
+ KOR_kim_death_army_saving_desc:0 "" #군부 권한 강화
+ KOR_kim_death_emperor_power_strong_desc:0 "" #황실 권한 강화
+ KOR_kim_death_conservative_economy_contact_desc:0 "" #보수적인 경제 접근
+ KOR_kim_death_Ignoring_defense_industry_corruption_desc:0 "" #방산비리 묵인
+ KOR_kim_death_request_for_support_gov_desc:0 "" #정권지지 요청
+ KOR_kim_death_our_real_life_desc:0 "" #우리의 진정한 상황
+ KOR_kim_death_go_to_the_chaebol_desc:0 "" #재벌에 굴종
+ KOR_kim_death_imperial_army_desc:0 "" #황군의 정신
+ KOR_kim_death_governmental_royal_family_desc:0 "" #황족 각료 의무제 발의
+ KOR_kim_death_emperors_administration_desc:0 "" #폐하의 정부
+ KOR_kim_inner_kangmyong_shoke_study_desc:0 "" #강명 쇼크에서 분석
+ KOR_kim_inner_support_middle_industry_desc:0 "" #중화학공업 전폭지원
+ KOR_kim_inner_new_life_streatagy_desc:0 "" #신생활4개전략
+ KOR_kim_inner_save_the_north_desc:0 "" #북방자원 탐사
+ KOR_kim_inner_nkyp_absorption_desc:0 "" #신한청년당 흡수
+ KOR_kim_gaw_win_at_war_desc:0 "" #승리만이 있으리
+ KOR_kim_gaw_sunset_desc:0 "" #황혼의 제국
+ KOR_kim_gaw_death_of_china_desc:0 "" #중화의 종막
+ KOR_kim_gaw_waltz_and_music_desc:0 "" #왈츠와 노래, 그리고 꿈
+ KOR_kim_gaw_ofn_and_un_kill_desc:0 "" #범 아주 조약기구 출범
+ KOR_kim_gaw_the_manchurian_koreans_desc:0 "" #만주의 한국인들
+ KOR_kim_gaw_4th_is_banned_desc:0 "" #사방으로 틀어막혀서
+ KOR_kim_gaw_end_of_imperialism_desc:0 "" #새벽녘의 미몽
+ KOR_kim_death_imperialland_institude_is_strong_desc:0 "" #황국협회의 강권
+ KOR_inner_army_conscription_law_fix_desc:0 "" #징병법 개정안 발의
+ KOR_inner_army_kyolyeon_make_desc:0 "" #교련수업 창설
+ KOR_kim_inner_end_of_the_reform_desc:0 "" #개혁의 끝, 현상유지의 시작
+ KOR_kim_inner_save_the_daldongnae_desc:0 "" #달동네 거주문제 해결
+ KOR_kim_inner_busan_greating_desc:0 "" #부산항 확장
+ KOR_kim_inner_wonsan_problem_desc:0 "" #두 번의 원산 파업은 없다
+ KOR_kim_inner_simyang_attack_desc:0 "" #심양 거주문제
+ KOR_kim_inner_save_our_emperor_desc:0 "" #황제시여, 우리를 도우소서
+ KOR_kim_inner_manchu_railway_rework_desc:0 "" #만주철도 중심 개발
+ KOR_an_inner_line_setting_desc:0 "" #선을 정리하다
+ KOR_an_inner_shinmin_reform_desc:0 "" #신민회 개편
+ KOR_an_inner_ii_fuck_you_desc:0 "" #황국협회 억제
+ KOR_an_inner_sangmuyong_set_desc:0 "" #상무영 산하기관 개편
+ KOR_an_inner_army_corruption_result_desc:0 "" #군 정치적 중립 의무화
+ KOR_an_inner_focus_1_desc:0 "" #일소계 타파
+ KOR_an_inner_focus_3_desc:0 "" #황제를 회유하기
+ KOR_an_inner_focus_4_desc:0 "" #경친왕 전하께 아뢰기
+ KOR_inner_natinal_np_desc:0 "" #관영언론 지원
+ KOR_an_inner_focus_2_desc:0 "" #박중양 사냥
+ KOR_an_inner_focus_6_desc:0 "" #김희선 사면
+ KOR_an_inner_focus_5_desc:0 "" #화평계 흡수
+ KOR_an_inner_focus_9_desc:0 "" #대한당 단일화
+ KOR_an_inner_focus_7_desc:0 "" #헌법개정위원회
+ KOR_an_inner_focus_10_desc:0 "" #흠정대한국헌법의 종결
+ KOR_an_inner_focus_8_desc:0 "" #극단주의 분쇄
+ KOR_an_inner_focus_11_desc:0 "" #민본주의 설파
+ KOR_an_inner_focus_12_desc:0 "" #외교정책 선회
+ KOR_an_inner_focus_13_desc:0 "" #유럽 불간섭원칙 확립
+ KOR_an_inner_focus_14_desc:0 "" #재벌경제 개혁
+ KOR_an_inner_focus_15_desc:0 "" #국정감사 예고
+ KOR_an_inner_focus_16_desc:0 "" #입헌주의 입각
+ KOR_an_inner_focus_17_desc:0 "" #국민계몽운동
+ KOR_an_inner_focus_18_desc:0 "" #대동아기구설립 추진
+ KOR_an_inner_focus_19_desc:0 "" #외교정책 확립
+ KOR_an_inner_focus_20_desc:0 "" #소학교령 개정
+ KOR_an_inner_focus_21_desc:0 "" #재벌경제 타파
+ KOR_an_inner_focus_22_desc:0 "" #대일 정책
+ KOR_an_inner_focus_23_desc:0 "" #간접개입
+ KOR_an_inner_focus_24_desc:0 "" #직접개입
+ KOR_an_inner_focus_25_desc:0 "" #관세장벽 형성
+ KOR_an_inner_focus_28_desc:0 "" #한국인민지원군
+ KOR_an_inner_focus_27_desc:0 "" #큐슈 통감 종료
+ KOR_an_inner_focus_26_desc:0 "" #대화공세 준비
+ KOR_an_inner_focus_29_desc:0 "" #신고산을 올라라 1208
+ KOR_an_inner_focus_30_desc:0 "" #제3차 일본내전 사주
+ KOR_an_inner_focus_31_desc:0 "" #천황 교체
+ KOR_an_inner_focus_32_desc:0 "" #일본통감부 설치
+ KOR_an_inner_focus_33_desc:0 "" #한일경제군사협력조약
+ KOR_an_inner_focus_34_desc:0 "" #유신회 지한파 접촉
+ KOR_an_inner_focus_36_desc:0 "" #나가사키 방위군 증강
+ KOR_an_inner_focus_35_desc:0 "" #대중 정책
+ KOR_an_inner_focus_37_desc:0 "" #조차지 문제
+ KOR_an_inner_focus_38_desc:0 "" #양보론 추종
+ KOR_an_inner_focus_39_desc:0 "" #관리론 유지
+ KOR_an_inner_focus_40_desc:0 "" #서북차별 완화
+ KOR_an_inner_focus_41_desc:0 "" #서북지방 검열제
+ KOR_an_inner_focus_42_desc:0 "" #상해 방비 강화
+ KOR_an_inner_focus_43_desc:0 "" #국민당 저격
+ KOR_an_inner_focus_44_desc:0 "" #반왕전쟁 지원
+ KOR_an_inner_focus_45_desc:0 "" #오성연군 포기
+ KOR_an_inner_focus_46_desc:0 "" #한미-중 협력 유도
+ KOR_an_inner_focus_47_desc:0 "" #안창호 독트린 발표
+ KOR_an_inner_focus_48_desc:0 "" #강경대응 준비
+ KOR_an_inner_focus_49_desc:0 "" #전시동원법 제정
+ KOR_an_inner_focus_50_desc:0 "" #정적
+ KOR_an_inner_focus_51_desc:0 "" #진황도 접전
+ KOR_an_inner_focus_52_desc:0 "" #전운이 감돌며
+ KOR_an_inner_focus_53_desc:0 "" #패권의 재확인
+ KOR_an_inner_focus_55_desc:0 "" #세계에 호소
+ KOR_an_inner_focus_56_desc:0 "" #국민에 호소
+ KOR_an_inner_focus_57_desc:0 "" #폐하께 아뢰다
+ KOR_an_inner_focus_58_desc:0 "" #부분 동원령 공표
+ KOR_an_inner_focus_59_desc:0 "" #만주방면 방비 강화
+ KOR_an_inner_focus_60_desc:0 "" #대아시아 전쟁
+ KOR_an_inner_focus_61_desc:0 "" #평화의 길
+ KOR_an_inner_focus_62_desc:0 "" #계몽의 길
+ KOR_an_inner_focus_63_desc:0 "" #법치의 길
+ KOR_an_inner_focus_65_desc:0 "" #미몽의 끝
+ KOR_an_inner_focus_64_desc:0 "" #정도
+ KOR_an_inner_focus_66_desc:0 "" #질서
+ KOR_an_inner_focus_67_desc:0 "" #미래를 향한 발걸음
+ KOR_an_inner_focus_68_desc:0 "" #통폐합 추진
+ KOR_an_inner_focus_69_desc:0 "" #지역균형개발 추진
+ KOR_an_inner_focus_70_desc:0 "" #추곡수매제도 제정
+ KOR_an_inner_focus_71_desc:0 "" #한미기술협력 추진
+ KOR_an_inner_focus_72_desc:0 "" #새마을 운동
+ KOR_an_inner_focus_73_desc:0 "" #지원을 대가로 한 중공업
+ KOR_an_inner_focus_74_desc:0 "" #한미합작유전개발
+ KOR_an_inner_focus_75_desc:0 "" #여학생 의무교육령 실시
+ KOR_an_inner_focus_77_desc:0 "" #남학생 중등교육 지원
+ KOR_an_inner_focus_76_desc:0 "" #평등권 주창
+ KOR_an_inner_focus_78_desc:0 "" #권리 향상
+ KOR_an_inner_focus_79_desc:0 "" #황실과의 충돌
+ KOR_an_inner_focus_80_desc:0 "" #융희시대의 전례
+ KOR_an_inner_focus_81_desc:0 "" #요임금과 순임금을 따르자
+ KOR_an_inner_focus_84_desc:0 "" #홍종갑의 진심
+ KOR_an_inner_focus_87_desc:0 "" #인정
+ KOR_an_inner_focus_82_desc:0 "" #계몽 이후의 나라
+ KOR_an_inner_focus_85_desc:0 "" #황제의 사색
+ KOR_an_inner_focus_88_desc:0 "" #결정
+ KOR_an_inner_focus_89_desc:0 "" #권력의 민주적 이양
+ KOR_an_inner_focus_83_desc:0 "" #농촌 선회
+ KOR_an_inner_focus_86_desc:0 "" #대학가 선회
+
+ KOR_pak_inner_1_desc:0 "" #황도파 숙청
+ KOR_pak_inner_8_desc:0 "" #통제파 목줄채우기
+ KOR_pak_inner_5_desc:0 "" #이규완 영향력 거세
+ KOR_pak_inner_2_desc:0 "" #혁신계 분열
+ KOR_pak_inner_9_desc:0 "" #화평계 흡수
+ KOR_pak_inner_6_desc:0 "" #과두정 지속
+ KOR_pak_inner_3_desc:0 "" #외교론 선회
+ KOR_pak_inner_10_desc:0 "" #타파론 제시
+ KOR_pak_inner_7_desc:0 "" #전임자 지우기
+ KOR_pak_inner_end_of_the_war_desc:0 "더 이상 황국에 대적할 적들은 존재하지 않습니다. 감히 한성 쪽으로 손가락질을 할 용자들도 없습니다. 오직 우리 황국만이 천년토록 이어질 대동아의 유일한 제국이고, 앞으로의 마지막 제국일 것입니다!" #시산 위에 올려진 왕관
+ KOR_pak_inner_12_desc:0 "" #일소계의 지도
+ KOR_pak_inner_13_desc:0 "" #외교해법 제시
+ KOR_pak_inner_14_desc:0 "" #내정해법 제시
+ KOR_pak_inner_15_desc:0 "" #중화다분지계 확립
+ KOR_pak_inner_11_desc:0 "" #일본 침공
+ KOR_pak_inner_4_desc:0 "" #토쿠가와 지지
+ KOR_pak_inner_31_desc:0 "" #박중양 2기 내각
+ KOR_pak_inner_21_desc:0 "" #연미공영
+ KOR_pak_inner_22_desc:0 "" #세계대전 지원 확약
+ KOR_pak_inner_23_desc:0 "" #유럽원정군 창설
+ KOR_pak_inner_24_desc:0 "" #공영의 기치
+ KOR_pak_inner_25_desc:0 "" #중공업 지휘
+ KOR_pak_inner_26_desc:0 "" #대학가 잠입
+ KOR_pak_inner_27_desc:0 "" #불순분자 색출
+ KOR_pak_inner_29_desc:0 "" #스탈린에게 배울 점
+ KOR_pak_inner_16_desc:0 "" #만주 검열 강화
+ KOR_pak_inner_18_desc:0 "" #선도민족 대한
+ KOR_pak_inner_17_desc:0 "" #동양평화론 응용
+ KOR_pak_inner_19_desc:0 "" #국민당 지원
+ KOR_pak_inner_20_desc:0 "" #필연적인 전쟁
+ KOR_pak_inner_28_desc:0 "" #강력한 지도력
+ KOR_pak_inner_30_desc:0 "" #한국식 민주주의 유지
+ KOR_pak_inner_32_desc:0 "" #황실 권위 존중
+ KOR_pak_inner_33_desc:0 "" #정부 달래기
+ KOR_pak_inner_34_desc:0 "" #후궁제 존치 확약
+ KOR_pak_inner_35_desc:0 "" #안창호 기용
+ KOR_pak_inner_36_desc:0 "" #조소앙 포섭
+ KOR_pak_inner_37_desc:0 "" #부분동원령 하달
+ KOR_pak_inner_38_desc:0 "" #재벌 동원
+ KOR_pak_inner_the_great_asian_war_desc:0 "" #대아시아 전쟁 개막
+ KOR_pak_inner_39_desc:0 "" #학생훈련제도 마련
+ KOR_pak_inner_40_desc:0 "" #군대 훈련제도 개편
+ KOR_pak_inner_41_desc:0 "" #방산업체 문제
+ KOR_pak_inner_42_desc:0 "" #대구 노동운동 분쇄
+ KOR_pak_inner_43_desc:0 "" #입 좀 다물어!
+ KOR_pak_inner_44_desc:0 "" #빨갱이 처단
+ KOR_pak_inner_45_desc:0 "" #일본 착취 가속화
+ KOR_pak_inner_46_desc:0 "" #국민징용령 실시
+ KOR_pak_gaw_1_desc:0 "" #화북전략공세작전
+ KOR_pak_gaw_8_desc:0 "" #화중타통작계
+ KOR_pak_gaw_5_desc:0 "" #동계전 장비 지급
+ KOR_pak_gaw_2_desc:0 "" #향토예비군 결성
+ KOR_pak_gaw_9_desc:0 "" #국민징용령
+ KOR_pak_gaw_6_desc:0 "" #국가총동원법 제정
+ KOR_pak_gaw_3_desc:0 "" #전시경제 전환
+ KOR_pak_gaw_10_desc:0 "" #군수공업 강화
+ KOR_pak_gaw_4_desc:0 "" #서양 이권 보장
+ KOR_pak_gaw_11_desc:0 "" #유럽파병군 유지
+ KOR_pak_gaw_7_desc:0 "" #대동아회의 개최
+ 
+ KOR_focus_khs_1_desc:0 "" #김희선 내각 출범
+ KOR_focus_khs_2_desc:0 "" #유연히 대처하기
+ KOR_focus_khs_3_desc:0 "" #완고함이 해답이다
+ KOR_focus_khs_24_desc:0 "" #궁내부대신 유임
+ KOR_focus_khs_25_desc:0 "황제폐하께옵서는 선제 폐하의 아우로써, 황태제에서 즉위하시었습니다. 그러나 폐하께옵서는 정무에 크게 능숙하지 못하십니다. 그 분께서 거하시고자 하는 길은 외람되지만 가서는 아니 되는 길입니다. 그 분이 거하시고자 의지함을 되돌리어, 군주로써 군림하시게 해야 합니다." #황제폐하 다루기
+ KOR_focus_khs_26_desc:0 "" #개화당의 유산
+ KOR_focus_khs_27_desc:0 "" #대한당의 침묵
+ KOR_focus_khs_28_desc:0 "" #일 할 시간
+ KOR_focus_khs_4_desc:0 "" #대마불사
+ KOR_focus_khs_14_desc:0 "" #유화책 제시
+ KOR_focus_khs_17_desc:0 "" #농촌 불만 잠재우기
+ KOR_focus_khs_15_desc:0 "" #관계악화 감수
+ KOR_focus_khs_6_desc:0 "" #브나로드 운동 완전 폐지
+ KOR_focus_khs_5_desc:0 "" #사회당 용인
+ KOR_focus_khs_7_desc:0 "" #빈민 구제 우선시
+ KOR_focus_khs_8_desc:0 "" #제12대 민의원 총선거
+ KOR_focus_khs_11_desc:0 "" #스탠더드오일 초청
+ KOR_focus_khs_13_desc:0 "" #구밀복검
+ KOR_focus_khs_9_desc:0 "" #치안유지법 강화
+ KOR_focus_khs_10_desc:0 "" #안중근 좌천
+ KOR_focus_khs_12_desc:0 "" #군 충성심 확인
+ KOR_focus_khs_16_desc:0 "" #군축은 필수
+ KOR_focus_khs_18_desc:0 "" #탕산 격전
+ KOR_focus_khs_19_desc:0 "" #농촌 불만 탄압하기
+ KOR_focus_khs_22_desc:0 "" #한미태평양협정
+ KOR_focus_khs_20_desc:0 "" #수신제가
+ KOR_focus_khs_21_desc:0 "" #부수청령
+ KOR_focus_khs_23_desc:0 "" #면종복배
+ 
+ KOR_focus_khs_1_tt:0 "§Y김희선§! 총리대신은 임기를 다 지내지 못한 §Y이진호§! 총리대신의 뒤를 이어서 정부를 운영할 것입니다."
+ KOR_focus_khs_3_tt:0 "§Y내치에 필요한 것은 소나무처럼 꿈쩍 않는 인내심입니다.§!"
+ KOR_focus_khs_4_tt:0 "§Y재벌§!들은 정부의 지원을 받을 것입니다."
+ KOR_focus_khs_5_tt:0 "§Y한국사회당§!의 정계 활동이 공식적으로 허용됩니다. \n§R폐하께서 이것을 바라실까요?§!"
+ KOR_focus_khs_6_tt:0 "§Y브나로드 운동§!은 칙명으로써 §R분쇄될 것§!입니다. \n§C폐하께서 흡족해 하십니다.§!"
+ KOR_focus_khs_7_tt:0 "정부 재정을 쥐어짜내어 구휼책이 구비됩니다. \n§R폐하께서 이것을 바라실까요?§!"
+ KOR_focus_khs_8_tt:0 "§Y총선에서 우리 당은 대승을 거머쥐었습니다.§!"
+ KOR_focus_khs_9_tt:0 "§Y치안유지법§!은 더 §R철저하게§! 개정됩니다."
+ KOR_focus_khs_11_tt:0 "§Y대경§!에 묻혀있다고 추정되는 §Y유전§!을 조사합니다."
+ KOR_focus_khs_12_tt:0 "§Y군의 충성심이 재확인됩니다.§!"
+ KOR_focus_khs_10_tt:0 "§R어쩌면 눈가리고 아웅 아닐까요?§!"
+ KOR_focus_khs_13_tt:0 "§Y아무 문제도 없습니다.§!\n§R적어도 지금은요.§!"
+
+ KOR_focus_khs_24_tt:0 "§Y서재필§! 궁내부대신은 그 직책을 유지할 것입니다."
+ KOR_focus_khs_25_tt:0 "§R대체 그 변덕스러운 분을 어떻게 다룰 수 있단 말입니까? 말이 되는 소리를 해야지.§!"
+ KOR_focus_khs_26_tt:0 "과거에서 배울 점은 항상 존재합니다."
+ KOR_focus_khs_27_tt:0 "도대체 왜 침묵을 하는지 모르겠다만..."
+ KOR_focus_khs_28_tt:0 "§Y마지막까지 책무를 다하는 것이 신자된 도리지요.§!"
+
+ KOR_focus_khs_2_tt:0 "§Y외치에 남은 것은 유연한 사고방식입니다.§!"
+ KOR_focus_khs_14_tt:0 "곤난을 해결하려면 모두가 합심해야 합니다.\n§R그러나 저들이 우리의 도움을 필요로 할까요?§!"
+ KOR_focus_khs_15_tt:0 "§R남아있는 유일한 길입니다. 연옥 끝까지 걸어가야 할 것입니다.§!"
+ KOR_focus_khs_16_tt:0 "§Y대한제국군§!의 예산이 §R대폭 삭감§!됩니다."
+ KOR_focus_khs_17_tt:0 "§Y농자천하지대본§!, 농촌을 살릴 대비책이 마련될 것입니다."
+ KOR_focus_khs_18_tt:0 "§R제기랄, 내가 진작에 동평파 그 개새끼들 짤라버리자고 했잖아!§!"
+ KOR_focus_khs_19_tt:0 "§R언제부터 백성 따위가 고개 추켜들 수 있었나?§!"
+ KOR_focus_khs_20_tt:0 "§Y경기가 회복되고 있습니다.§!"
+ KOR_focus_khs_21_tt:0 "모든 것이 괜찮습니다."
+ KOR_focus_khs_22_tt:0 "§Y대한제국§!과 §Y미합중국§!은 태평양 무역에 관해 재협상을 할 것입니다."
+ KOR_focus_khs_23_tt:0 "§Y무슨 문제가 있을까요?§!\n§R있어도 어쩔 수 없습니다.§!"
 
  
  KSC_death_of_kangmyong:0 "강명제의 죽음"
@@ -965,6 +1456,109 @@
  KOR_TNO_13_desc:0 ""
  KOR_TNO_14_desc:0 ""
  
+ ########
+ korea_kks_bad:0 "우사 김규식 패전"
+ KOR_ahn_end_1:0 "푸른 하늘"
+ KOR_ahn_end_2:0 "마지막에 이르러서"
+ KOR_ahn_end_3:0 "되찾은 꿈"
+ KOR_ahn_end_12:0 "광야에서"
+ KOR_ahn_end_5:0 "후학을 바라보면"
+ KOR_ahn_end_6:0 "다툼 대신 화합"
+ KOR_ahn_end_7:0 "증오 대신 용서"
+ KOR_ahn_end_11:0 "유지경성"
+ KOR_ahn_end_4:0 "축하해요"
+ KOR_ahn_end_8:0 "국가의 제일 시민"
+ KOR_ahn_end_9:0 "의무의 계승"
+ KOR_ahn_end_10:0 "자유, 평등, 연대"
+ KOR_kks_bad_1:0 "혁명일심회"
+ KOR_kks_bad_2:0 "사법권 장악"
+ KOR_kks_bad_3:0 "중추원 정지"
+ KOR_kks_bad_4:0 "강명 유신"
+ KOR_kks_bad_5:0 "권력의 전당"
+ KOR_kks_bad_6:0 "만인지상"
+ KOR_kks_bad_9:0 "완숙한 화가"
+ KOR_kks_bad_10:0 "장기말"
+ KOR_kks_bad_14:0 "부치지 못한 편지"
+ KOR_kks_bad_13:0 "캔버스 위 그림의 완성"
+ KOR_kks_bad_7:0 "상시 계엄"
+ KOR_kks_bad_8:0 "국가 통제"
+ KOR_kks_bad_12:0 "외통수"
+ KOR_kks_bad_11:0 "군상대권"
+ #####
+ KOR_ahn_end_1_desc:0 "" #푸른 하늘
+ KOR_ahn_end_2_desc:0 "" #마지막에 이르러서
+ KOR_ahn_end_3_desc:0 "" #되찾은 꿈
+ KOR_ahn_end_12_desc:0 "" #광야에서
+ KOR_ahn_end_5_desc:0 "" #후학을 바라보면
+ KOR_ahn_end_6_desc:0 "" #다툼 대신 화합
+ KOR_ahn_end_7_desc:0 "" #증오 대신 용서
+ KOR_ahn_end_11_desc:0 "" #유지경성
+ KOR_ahn_end_4_desc:0 "" #축하해요
+ KOR_ahn_end_8_desc:0 "" #국가의 제일 시민
+ KOR_ahn_end_9_desc:0 "" #의무의 계승
+ KOR_ahn_end_10_desc:0 "" #자유, 평등, 연대
+ KOR_kks_bad_1_desc:0 "" #혁명일심회
+ KOR_kks_bad_2_desc:0 "" #사법권 장악
+ KOR_kks_bad_3_desc:0 "" #중추원 정지
+ KOR_kks_bad_4_desc:0 "" #강명 유신
+ KOR_kks_bad_5_desc:0 "" #권력의 전당
+ KOR_kks_bad_6_desc:0 "" #만인지상
+ KOR_kks_bad_9_desc:0 "" #완숙한 화가
+ KOR_kks_bad_10_desc:0 "" #장기말
+ KOR_kks_bad_14_desc:0 "" #먼지가 되어
+ KOR_kks_bad_13_desc:0 "" #캔버스 위 그림의 완성
+ KOR_kks_bad_7_desc:0 "" #상시 계엄
+ KOR_kks_bad_8_desc:0 "" #국가 통제
+ KOR_kks_bad_12_desc:0 "" #외통수
+ KOR_kks_bad_11_desc:0 "" #군상대권
+ 
+ ####
+ korea_kks_happy:0 "우사 김규식 승전"
+ KOR_kks_happy_1:0 "찢기는 가슴 안고 사라졌던"
+ KOR_kks_happy_2:0 "피울음"
+ KOR_kks_happy_3:0 "영원한 고통"
+ KOR_kks_happy_5:0 "영원한 황제"
+ KOR_kks_happy_4:0 "맑은 웃음"
+ KOR_kks_happy_6:0 "핏줄기"
+ KOR_kks_happy_7:0 "영원한 침몰"
+ KOR_kks_happy_8:0 "민족"
+ KOR_kks_happy_9:0 "민생"
+ KOR_kks_happy_10:0 "그리고 황국"
+ KOR_kks_happy_11:0 "끝"
+ 
+ KOR_kks_happy_1_desc:0 "" #찢기는 가슴 안고 사라졌던
+ KOR_kks_happy_2_desc:0 "" #피울음
+ KOR_kks_happy_3_desc:0 "" #영원한 고통
+ KOR_kks_happy_5_desc:0 "" #영원한 제국
+ KOR_kks_happy_4_desc:0 "" #맑은 웃음
+ KOR_kks_happy_6_desc:0 "" #핏줄기
+ KOR_kks_happy_7_desc:0 "" #영원한 침몰
+ KOR_kks_happy_8_desc:0 "" #민족
+ KOR_kks_happy_9_desc:0 "" #민생
+ KOR_kks_happy_10_desc:0 "" #그리고 황제
+ KOR_kks_happy_11_desc:0 "" #끝
+ 
+ ### 일소 박중양 승전 ###
+ korea_pcy_happy:0 "일소 박중양 승전"
+ KOR_pcy_happy_1:0 "그녀의 웃음소리뿐"
+ KOR_pcy_happy_2:0 "그 이후의 역사"
+ KOR_pcy_happy_3:0 "그 이후의 세계"
+ KOR_pcy_happy_5:0 "까마귀떼"
+ KOR_pcy_happy_4:0 "이리떼"
+ KOR_pcy_happy_6:0 "호랑이떼"
+ KOR_pcy_happy_7:0 "동물농장의 주인"
+ KOR_pcy_happy_8:0 "지금에 이르러선"
+ KOR_pcy_happy_9:0 "하얀 느낌"
+ 
+ KOR_pcy_happy_1_desc:0 "" #그녀의 웃음소리뿐
+ KOR_pcy_happy_2_desc:0 "" #그 이후의 역사
+ KOR_pcy_happy_3_desc:0 "" #그 이후의 세계
+ KOR_pcy_happy_5_desc:0 "" #까마귀떼
+ KOR_pcy_happy_4_desc:0 "" #이리떼
+ KOR_pcy_happy_6_desc:0 "" #호랑이떼
+ KOR_pcy_happy_7_desc:0 "" #동물농장의 주인
+ KOR_pcy_happy_8_desc:0 "" #지금에 이르러선
+ KOR_pcy_happy_9_desc:0 "" #하얀 느낌
  
  KRH_new_empire:0 "호박 쓴 황제"
  KRH_fucking_family:0 "약과 내놔라!"
@@ -1069,263 +1663,4 @@
  MCP_chunghee_chakyuer_desc:0 "너 이새끼 건방져"
  
  WHILE_FOCUSING:0 "중점을 두면, 다음 효과가 발생합니다:\n$EFF$"
- generic_focus:0 "국가적 중점"
- army_effort:0 "육군 주력"
- army_effort_desc:0 "우리는 우리 육군을 증강시킬 필요가 있습니다."
- doctrine_effort:0 "교리 주력"
- doctrine_effort_desc:0 "우리 육군은 구식 교리에서 벗어날 필요가 있습니다."
- equipment_effort_2:0 "장비 주력 II"
- equipment_effort_2_desc:0 "이제 우리는 우리만의 교리를 만들 차례입니다"
- mechanization_effort:0 "기계화 주력"
- mechanization_effort_desc:0 "우리는 기계화 장비라는 새로운 발명품을 사용할 수 있습니다."
- doctrine_effort_2:0 "교리 주력 II"
- doctrine_effort_2_desc:0 "우리 육군은 구식 교리에서 벗어날 필요가 있습니다."
- doctrine_effort_3:0 "교리 주력 III"
- doctrine_effort_3_desc:0 "우리는 이 시대에 가능한 최고의 장비로 우리 보병과 지원부대가 무장할 수 있도록 끊임없이 노력할 것입니다."
- doctrine_effort_4:0 "교리 주력 IV"
- doctrine_effort_4_desc:0 "우리는 이 시대에 가능한 최고의 장비로 우리 보병과 지원부대가 무장할 수 있도록 끊임없이 노력할 것입니다."
- equipment_effort_3:0 "장비 주력 III"
- equipment_effort_3_desc:0 "이제 우리는 우리만의 교리를 만들 차례입니다"
- armor_effort:0 "기갑 주력"
- armor_effort_desc:0 "보병의 기계화를 통해 배운 것을 적용함으로써, 우리는 기갑 차량 또한 개선할 수 있습니다."
- special_forces:0 "특수 부대"
- special_forces_desc:0 "우리는 정예부대가 필요합니다; 산악부대와 공수부대가 우리의 최우선이 되어야 합니다."
- aviation_effort:0 "공군 주력"
- aviation_effort_tt:0 "§Y공군기지§! 건설을 위한 건설 슬롯이 충분하지 않습니다!"
- aviation_effort_desc:0 "공중전보다 기술적 진보가 빠른 영역은 없습니다. 항공기 기술은 어떠한 현대 국가라도 정통해야 하는 분야입니다."
- fighter_focus:0 "전투기 중점"
- fighter_focus_desc:0 "우리는 세계대전에서 공중전의 끝이 어떤 것인지 보지 못했습니다. 전투기의 개발에서 선두를 유지하는 것은 우리에게 미래의 우선권을 부여할 것입니다."
- fighter_focus_2:0 "전투기 중점 I"
- fighter_focus_2_desc:0 "전투기는 이제 하늘을 지배하는 비행기입니다!"
- fighter_focus_3:0 "전투기 중점 II"
- fighter_focus_3_desc:0 "전투기는 이제 하늘을 지배하는 비행기입니다!"
- fighter_focus_4:0 "전투기 중점 III"
- fighter_focus_4_desc:0 "전투기는 이제 하늘을 지배하는 비행기입니다!"
- fighter_focus_5:0 "전투기 중점 IV"
- fighter_focus_5_desc:0 "전투기는 이제 하늘을 지배하는 비행기입니다!"
- bomber_focus:0 "폭격기 중점"
- bomber_focus_desc:0 "후대에 오늘날의  끔찍한 전쟁을 언급할 때, 하늘에서 쏟아지는 불소나기는 인상적인 소재일 것입니다. 우리는 적들의 입에서 이 이야기가 나오는 것을 확실히 하기 위해 최선을 다할 것입니다."
- bomber_focus_2:0 "폭격기 중점 I"
- bomber_focus_2_desc:0 "폭격기 강화"
- bomber_focus_3:0 "폭격기 중점 II"
- bomber_focus_3_desc:0 "폭격기 강화"
- bomber_focus_4:0 "폭격기 중점 III"
- bomber_focus_4_desc:0 "폭격기 강화"
- bomber_focus_5:0 "폭격기 중점 IV"
- bomber_focus_5_desc:0 "폭격기 강화"
- ideas_bomber_boost_1:0 "폭격기 강화 I"
- ideas_bomber_boost_2:0 "폭격기 강화 II"
- ideas_bomber_boost_3:0 "폭격기 강화 III"
- ideas_bomber_boost_4:0 "폭격기 강화 IV"
- aviation_effort_2:0 "공군 주력 II"
- aviation_effort_2_desc:0 "진보된 항공기술은 우리의 공군력을 다른 육군 구성원들과 잘 맞물리도록 하는 데 필요할 것입니다."
- CAS_effort:0 "근접항공지원기 주력"
- CAS_effort_desc:0 "현대 육군은 지상에서의 차량 지원만이 아닌, 공중에서의 지원도 필요로 합니다."
- rocket_effort:0 "로켓 주력"
- rocket_effort_desc:0 "로켓과 제트 엔진은 유인기과 무인기를 막론하고 전례없는 속도를 허용했습니다. 이 기술의 선구자는 적을 깜작 놀라게 만들것입니다."
- NAV_effort:0 "해군 주력"
- NAV_effort_desc:0 "새로운 해전은 해상은 물론 공중에 수면 아래에도 그 자리를 넓혀가는 것입니다."
- naval_effort:0 "해군 주력"
- naval_effort_tt:0 "§Y해군 조선소§!에 충분한 건설 슬롯이 없습니다"
- naval_effort_desc:0 "우리 해군을 확충하는 것이 최우선입니다. 가용할 수 있는 모든 자원을 신규 조선소 건설과 경함선 연구에 할당해야 합니다."
- flexible_navy:0 "유연한 해군"
- flexible_navy_desc:0 "잠수함 기술 진보를 위해 해전 방식을 개혁하여 우리는앞으로 적의 수송선단을 효율적으로 격멸 할 수있게 될 것입니다."
- large_navy:0 "대규모 해군"
- large_navy_desc:0 "대형 함선을 수용하고 수송선단의 안전을 확보하기 위한 해군 교리 조정을 통해 앞으로 어떠한 함정을 필요로 할지에 대해 알게 될 것입니다."
- submarine_effort:0 "잠수함 주력"
- submarine_effort_desc:0 "잠수함을 이용한 전투는 어뢰정의 개발 이래로 가장 놀라운 해군의 발전입니다. 우리는 단지 상대방의 잠수함을 방어해야 할 뿐만 아니라 적군의 해상운송을 막는데도 잠수함을 활용할 수 있습니다."
- cruiser_effort:0 "순양함 주력"
- cruiser_effort_desc:0 "첨단 전함의 연구에 손을 대기 전에, 소형의 순양함이 대안으로 필요합니다."
- destroyer_effort:0 "구축함 주력"
- destroyer_effort_desc:0 "잠수함의 설계와 전략적 운용법을 연구하면서, 우리는 이 전략을 상대하기 위한 방책도 습득하게 되었습니다. 구축함이 이 방책의 핵심적인 역할을 할 것입니다."
- capital_ships_effort:0 "주력함 주력"
- capital_ships_effort_desc:0 "전함이 있는 국가는 대양을 지배할 것입니다. 전함과 항공모함은 제해권의 구세대와 신세대를 나타냅니다."
- tewfv_fascism_influence:0 "파시스트 영향"
- generic_factory_1:0 "민간 산업 주력 I"
- generic_factory_1_desc:0 "민간 산업 주력"
- generic_factory_2:0 "민간 산업 주력 II"
- generic_factory_2_desc:0 "민간 산업 주력"
- generic_factory_3:0 "민간 산업 주력 III"
- generic_factory_3_desc:0 "민간 산업 주력"
- generic_factory_4:0 "민간 산업 주력 IV"
- generic_factory_4_desc:0 "민간 산업 주력"
- generic_factory_5:0 "민간 산업 주력 V"
- generic_factory_5_desc:0 "민간 산업 주력"
- generic_factory_6:0 "민간 산업 주력 VI"
- generic_factory_6_desc:0 "민간 산업 주력"
- generic_factory_7:0 "민간 산업 주력 VII"
- generic_factory_7_desc:0 "민간 산업 주력"
- generic_idea_industrial_1:0 "기술 개발 주력 I"
- generic_idea_industrial_2:0 "기술 개발 주력 II"
- generic_idea_industrial_3:0 "기술 개발 주력 III"
- generic_idea_industrial_4:0 "기술 개발 주력 IV"
- generic_idea_industrial_5:0 "기술 개발 주력 V"
- generic_idea_industrial_6:0 "기술 개발 주력 VI"
- generic_idea_industrial_7:0 "기술 개발 주력 VII"
- generic_resources_1:0 "자원 개발 I"
- generic_resources_1_desc:0 "자원 개발"
- generic_resources_2:0 "자원 개발 II"
- generic_resources_2_desc:0 "자원 개발"
- generic_resources_3:0 "자원 개발 III"
- generic_resources_3_desc:0 "자원 개발"
- generic_resources_4:0 "자원 개발 IV"
- generic_resources_4_desc:0 "자원 개발"
- generic_resources_5:0 "자원 개발 V"
- generic_resources_5_desc:0 "자원 개발"
- generic_resources_6:0 "자원 개발 VI"
- generic_resources_6_desc:0 "자원 개발"
- generic_resources_7:0 "자원 개발 VII"
- generic_resources_7_desc:0 "자원 개발"
- generic_idea_resources_1:0 "자원 개발 I"
- generic_idea_resources_2:0 "자원 개발 II"
- generic_idea_resources_3:0 "자원 개발 III"
- generic_idea_resources_4:0 "자원 개발 IV"
- generic_idea_resources_5:0 "자원 개발 V"
- generic_idea_resources_6:0 "자원 개발 VI"
- generic_idea_resources_7:0 "자원 개발 VII"
- generic_state_focus:0 "중앙 집중"
- generic_state_focus_desc:0 "중앙 집중"
- generic_military_school:0 "장교학교"
- generic_military_school_desc:0 "장교학교"
- generic_faction_create:0 "세력 창설"
- generic_faction_create_desc:0 "이제 우리는 세력을 창설하고 여러 국가들의 이익을 도모할 것입니다"
- generic_war_justify:0 "전쟁을 위한 모든 것"
- generic_war_justify_desc:0 "전쟁에 대한 모든 것."
- generic_militar_school:0 "군사 학교"
- generic_justify_war_general:0 "전쟁을 위해"
- generic_ethics_for_war:0 "전시 상황"
- generic_ethics_for_war_desc:0 "전쟁 시간이 다가왔습니다"
- ethics_for_war_generic:0 "전쟁 시간"
- generic_civil_factory_idea:0 "산업의 힘"
- generic_civil_factory:0 "산업의 힘"
- generic_civil_factory_desc:0 "산업의 힘"
- generic_union_country:0 "연합국"
- generic_union_country_desc:0 "연합국"
- generic_national_unity:0 "평화주의"
- generic_national_unity_desc:0 "평화주의를 지향합니다"
- generic_political_pression:0 "민주주의"
- generic_political_pression_desc:0 "민주주의는 과거 프랑스 혁명부터 이어져 내려온 인류의 위대한 유산입니다"
- generic_political_option:0 "민주주의"
- generic_influence_france:0 "프랑스의 영향"
- generic_influence_france_desc:0 "우리는 프랑스의 영향을 받아들였습니다"
- generic_influence_uk:0 "영국의 영향"
- generic_influence_uk_desc:0 "우리는 영국의 영향을 받아들였습니다"
- generic_military_exp:0 "육군 훈련 I"
- generic_military_exp_desc:0 "육군 훈련 I"
- generic_military_exp_2:0 "육군 훈련 II"
- generic_military_exp_2_desc:0 "육군 훈련 II"
- generic_military_exp_3:0 "육군 훈련 III"
- generic_military_exp_3_desc:0 "육군 훈련 III"
- generic_military_exp_4:0 "육군 훈련 IV"
- generic_military_exp_4_desc:0 "육군 훈련 IV"
- generic_army_effort_idea:0 "육군 훈련 I"
- generic_army_effort_idea_2:0 "육군 훈련 II"
- generic_army_effort_idea_3:0 "육군 훈련 III"
- generic_army_effort_idea_4:0 "육군 훈련 IV"
- opnion_democratic_influence:0 "민주주의의 영향"
- industrial_effort:0 "산업 주력"
- industrial_effort_desc:0 "민간 산업의 도약을 이룩하기 위해 우리의 모든 정치적 노력을 투자하십시오."
- industrial_effort_2:0 "산업 주력 II"
- industrial_effort_2_desc:0 "강철같은 의지와 엄격한 노동 윤리를 통해, 우리는 국민을 다른 위대한 산업 개발에 동원할 수 있습니다."
- construction_effort:0 "건설 주력"
- construction_effort_tt:0 "§Y민간 공장§!을 위한 건설 슬롯이 부족함"
- construction_effort_desc:0 "비록 전쟁이 전 세계에 어둠을 떨어 뜨려도 민간의 산업 능력을 과소 평가해서는 안됩니다."
- production_effort:0 "군비 주력"
- production_effort_tt:0 "§Y군수 공장§!을 위한 건설 슬롯이 부족함"
- production_effort_desc:0 "트랙터를 만들 수 있다면, 전차를 만들 수도 있습니다! 우리의 군수 생산력이 뒤쳐지는 것은 용납할 수 없습니다."
- construction_effort_2:0 "건설 주력 II"
- construction_effort_2_desc:0 "우리의 공장을 계속 확충하면 무역 상품의 생산과 향후 건설 작업의 속도가 빨라질 것입니다."
- construction_effort_3:0 "건설 주력 III"
- construction_effort_3_desc:0 "우리의 공장을 계속 확충하면 무역 상품의 생산과 향후 건설 작업의 속도가 빨라질 것입니다."
- construction_effort_4:0 "건설 주력 IV"
- construction_effort_4_desc:0 "우리의 공장을 계속 확충하면 무역 상품의 생산과 향후 건설 작업의 속도가 빨라질 것입니다."
- construction_effort_5:0 "건설 주력 V"
- construction_effort_5_desc:0 "우리의 공장을 계속 확충하면 무역 상품의 생산과 향후 건설 작업의 속도가 빨라질 것입니다."
- construction_effort_6:0 "건설 주력 VI"
- construction_effort_6_desc:0 "우리의 공장을 계속 확충하면 무역 상품의 생산과 향후 건설 작업의 속도가 빨라질 것입니다."
- construction_effort_7:0 "건설 주력 VII"
- construction_effort_7_desc:0 "우리의 공장을 계속 확충하면 무역 상품의 생산과 향후 건설 작업의 속도가 빨라질 것입니다."
- production_effort_2:0 "군비 주력 II"
- production_effort_2_desc:0 "민간 공장을 군사 장비를 생산하도록 개조하는 것은 비효율적입니다.우리는 지금 군사 생산 준비에 집중해야 합니다."
- production_effort_3:0 "군비 주력 III"
- production_effort_3_desc:0 "민간 공장을 군사 장비를 생산하도록 개조하는 것은 비효율적입니다.우리는 지금 군사 생산 준비에 집중해야 합니다."
- production_effort_4:0 "군비 주력 IV"
- production_effort_4_desc:0 "민간 공장을 군사 장비를 생산하도록 개조하는 것은 비효율적입니다.우리는 지금 군사 생산 준비에 집중해야 합니다."
- production_effort_5:0 "군비 주력 V"
- production_effort_5_desc:0 "민간 공장을 군사 장비를 생산하도록 개조하는 것은 비효율적입니다.우리는 지금 군사 생산 준비에 집중해야 합니다."
- production_effort_6:0 "군비 주력 VI"
- production_effort_6_desc:0 "민간 공장을 군사 장비를 생산하도록 개조하는 것은 비효율적입니다.우리는 지금 군사 생산 준비에 집중해야 합니다."
- production_effort_7:0 "군비 주력 VII"
- production_effort_7_desc:0 "민간 공장을 군사 장비를 생산하도록 개조하는 것은 비효율적입니다.우리는 지금 군사 생산 준비에 집중해야 합니다."
- infrastructure_effort:0 "기반시설 주력"
- infrastructure_effort_desc:0 "충분한 기반시설이 없는 국가는 진보된 사업 계획도 건축도 불가능합니다."
- infrastructure_effort_tt:0 "§Y기반시설§!을 위한 건설 슬롯이 부족"
- synth_oil_effort_tt:0 "$Y합성 정제 공장$!를 위한 건설 슬롯이 부족합니다"
- infrastructure_effort_2:0 "기반시설 주력 II"
- infrastructure_effort_2_desc:0 "우리의 기반시설을 확장하는 것은 최첨단 비밀 계획에 필수적인 운송과 통신을 가능하게 할 것입니다."
- infrastructure_effort_3:0 "기반시설 주력 III"
- infrastructure_effort_3_desc:0 "충분한 기반시설이 없는 국가는 진보된 사업 계획도 건축도 불가능합니다."
- infrastructure_effort_4:0 "기반시설 주력 IV"
- infrastructure_effort_4_desc:0 "충분한 기반시설이 없는 국가는 진보된 사업 계획도 건축도 불가능합니다."
- infrastructure_effort_5:0 "기반시설 주력 V"
- infrastructure_effort_5_desc:0 "충분한 기반시설이 없는 국가는 진보된 사업 계획도 건축도 불가능합니다."
- infrastructure_effort_6:0 "기반시설 주력 VI"
- infrastructure_effort_6_desc:0 "충분한 기반시설이 없는 국가는 진보된 사업 계획도 건축도 불가능합니다."
- infrastructure_effort_7:0 "기반시설 주력 VII"
- infrastructure_effort_7_desc:0 "충분한 기반시설이 없는 국가는 진보된 사업 계획도 건축도 불가능합니다."
- construction_effort_3:0 "건설 주력 III"
- construction_effort_3_desc:0 "Expansion of our infrastructure network has significantly improved our capacity for construction."
- nuclear_effort:0 "핵 주력"
- nuclear_effort_desc:0 "Standing on the edge of a world-changing discovery, we cannot let others light the fire that may one day consume the Earth."
- extra_tech_slot:0 "추가 연구 슬롯"
- extra_tech_slot_desc:0 "우리의 산업적 팽창과 최근까지의 여러 발전은 또 다른 연구개발을 가능하게 해주었습니다."
- extra_tech_slot_2:0 "추가 연구 슬롯 II"
- extra_tech_slot_2_desc:0 "국가의 빠른 산업화는 우리가 추구하는 연구개발에 새로운 기회를 열어주었습니다."
- technology_sharing:0 "기술 공유"
- technology_sharing_desc:0 "우리의 동맹국과 우위에 있는 기술을 공유함으로써 동맹국은 전시 연구를 보다 효율적으로 수행 할 수 있도록 될 것입니다."
- secret_weapons:0 "비밀 무기"
- secret_weapons_desc:0 "모든 잉여 자원을 전차와 항공기 개발에 부어 넣는 것은 매력적인 제안이지만, 전쟁 승리의 비결은 새로운 과학의 영역 - 전자 공학, 로켓 공학, 핵 연구 - 에 달려 있습니다."
- political_effort:0 "정치 주력"
- political_effort_desc:0 "세계를 변화시키기 위해 우리나라에 변화를 일으킬 필요가 있습니다. 정치적 지위를 강화하는 것부터 시작해야 할 것입니다."
- collectivist_ethos:0 "집산주의 기풍"
- collectivist_ethos_desc:0 "우리의 적이 약소 국가들을 분할하고 정복하고 있습니다. 그러나 우리 인민들은 단결할 것입니다. 한 사람은 모두를 위해, 모두는 한 사람을 위해."
- liberty_ethos:0 "자유주의 기풍"
- liberty_ethos_desc:0 "이념 광신도들이 사람의 정신을 사냥하려고하는 지금, 우리는 개인의 해방과 자유를 보장해야 합니다."
- militarism:0 "군국주의"
- militarism_desc:0 "군대를 필요악으로 간주하는 이는 전쟁에 직면하면 파멸하게 될 것입니다. 우리는 사람들의 마음을 군국주의로 물들여 그들을 병사로 태어나게끔 할 것입니다."
- political_correctness:0 "정치적 올바름"
- political_correctness_desc:0 "논쟁의 여지가 있는, 혹은 비트는 주장을 하고 있는 사람들은 다양한 음모에 가담 한 것으로 간주될 것입니다. 이를 이용하는 것은 좋은 생각 같습니다."
- neutrality_focus:0 "중립주의 중점"
- neutrality_focus_desc:0 "다른 국가는 국제적인 마찰에서 한쪽 편을 가질 용기를 가지는 것이 현명한 것이라고 간주하는것 같지만, 우리는 그것을 거부하는 것이 더 좋은 일이라고 알고 있습니다."
- interventionism_focus:0 "간섭주의 중점"
- interventionism_focus_desc:0 "우리는 자국의 국민뿐 아니라 전 인류의 자유를 중요하게 생각합니다. 만약 폭정을 막는 수단이 전쟁이라면 그것도 괜찮습니다."
- military_youth:0 "유소년 군사조직"
- military_youth_desc:0 "우리 나라에서 청소년의 올바른 정치 교육과 훈육 장려를 조직화 하는 것은 국가에 대한 충성과 자기 희생 정신을 조기에 길러줄 것입니다."
- deterrence:0 "전쟁 억제"
- deterrence_desc:0 "고립 된 탓에 우리는 전쟁에서 가장 이익을 얻을 수 없습니다. 다행히 우리는 잘 알려진 가장 효과적인 방어 방법은 전쟁을하지 않는 것이라고 알고 있습니다."
- volunteer_corps:0 "의용대"
- volunteer_corps_desc:0 "우리 국민을 자유사상을 위해 순국시키는 것은 아이러니하게도 훈련이 될 것이지만, 외국 사람들을 돕고자하는 사람을 위한 수단을 구축하는 것은 아닙니다."
- paramilitarism:0 "준군사주의"
- paramilitarism_desc:0 "군국주의는 군대 이외의 곳에 응용 됩니다. 준 군국주의적인 사람을 우리 군에 추가하여 더 많은 국민이 군대의 훈련을 받게 될 것입니다."
- indoctrination_focus:0 "사상 주입"
- indoctrination_focus_desc:0 "우리의 이념이 진실에 근거하기 때문에, 그것은 진실이라고 가르칠 수 있습니다. 교육과 언론은 이 역할을 맡아야만 합니다."
- foreign_expeditions:0 "외국 자원병"
- foreign_expeditions_desc:0 "우리의 적들이 세계 분쟁에서 자신들의 이상을 위해 개입할 준비가 되어있는 것처럼 우리도 우리의 이상을 위해 같은 행동을 할 준비가 되어있어야만 합니다."
- why_we_fight:0 "우리는 왜 싸우는가"
- why_we_fight_effect:0 "§Y중립 외교 정책§! 정신이 없다면 우리는 세력을 만들 수 있을 것입니다.\n"
- why_we_fight_desc:0 "세계는 더욱 불안해지고 있습니다. 우리 국민은 힘을 갈망하는 자들이 저지른 잔학 행위를 알 필요가 있습니다. 우리의 의도를 국민에게 알릴 때가 되었으며 우리의 자유를 위해 모든 이들이 싸울 준비가 되었음을 확실히 알릴 때입니다."
- political_commissars:0 "정치 장교"
- political_commissars_desc:0 "정치 군사 행동이 수반되는 것을 확실한 것으로 하기 위해 군 상층부에 정치 장교를 배속 시킬 것입니다."
- internationalism_focus:0 "국제주의 중점"
- internationalism_focus_desc:0 "이념은 국경을 모릅니다. 다른 국가가 스스로에 대한 주권을 주장할 수 있을 지 몰라도 우리의  신념은 주권 이상의 것입니다."
- nationalism_focus:0 "국민주의 중점"
- nationalism_focus_desc:0 "우리의 국가는 고유한 것이며, 우리가 이룬 정치적 업적은 오직 우리이기에 가능한 것입니다. 무슨 수를 써서라도 싸워야만 합니다."
- ideological_fanaticism:0 "이념적 광신"
- ideological_fanaticism_desc:0 "우리가 세운 정치적인 가치와 목표는 과거의 신념처럼 목숨을 바칠만 한 것입니다. 추종자들은 모두 목숨 바칠 각오를 해야 하며  불신자들은 목숨을 내놓을 준비를 해야 할 것입니다."
- industry_derived_fascism:0 "군부 주도 산업"
- industry_derived_fascism_desc:0 군부 주도 산업"
- industry_derived:0 "국민 주도 산업"
- industry_derived_desc:0 "국민 주도 산업"
- industry_derived_democratic:0 "외국인 투자자"
- industry_derived_democratic_desc:0 "외국인 투자자들을 모집해 우리 산업에 투자를 하도록 만들어야 합니다"
 

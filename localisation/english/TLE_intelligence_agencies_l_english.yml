@@ -1,0 +1,33 @@
+﻿ l_english:
+ Agency_KOR:0 "상무영" #상무영 商務營
+ Agency_JAP:0 "참모본부" #Sanbō Honbu 參謀本部
+ Agency_DKG:0 "신선조" #Shinsenguim 新選組(しんせん)
+ Agency_USA:0 "전략사무국" #Office of Strategic Services
+ Agency_ENG:0 "비밀정보국" #MI6-SIS
+ Agency_SOV:0 "내무인민위원부" #NKVD
+ Agency_FRA:0 "제2국" #Deuxième Bureau
+ Agency_GER:0 "방첩국" #Abwehr
+ Agency_ITA:0 "군사정보국" #Servizio Informazioni Militare
+ Agency_SWE:0 "C국" #C-byrån
+ Agency_BEL:0 "일반정보보안국" #SGRS
+ Agency_NOR:0 "E국" #E-tjenesten
+ Agency_HOL:0 "정보국" #Bureau Inlichtingen
+ Agency_ROM:0 "특수정보국" #Serviciul Special de Informatii
+ Agency_PRC:0 "중앙군사위 합동참모부" #Intelligence Department Central Military Commission 中央军委联合参谋部
+ Agency_CHI:0 "조사통계국" #NBIS 調査統計局
+ Agency_YUG:0 "인민수호부" #OZNA
+ Agency_SPR:0 "군사정보국" #SIM
+ Agency_SPA:0 "정보헌병국" #SIPM
+ Agency_POL:0 "참모부 제2부서" #Dwójka
+ Agency_MAN:0 "보안국" #Hoankyoku 
+ Agency_POR:0 "국제국가방위경찰" #PIDE
+ Agency_FIN:0 "방위사령부 정보사단" #PE TIEDOS
+ Agency_TUR:0 "국가안보국" #Millî Emniyet Hizmeti
+ Agency_GRE:0 "국가특수보안국" #Diéfthynsi Eidikís Asfaleías tou Krátous
+ Agency_BUL:0 "국가정보국" #Natsionalnata Razuznavatelna Sluzhba
+ Agency_SWI_BH:0 "하국" #Buero Ha
+ Agency_SWI_FP:0 "연방경찰실" #Federal Police
+ Agency_DEN:0 "보안경찰" #Sikkerhedspolitiet
+ Agency_ICE:0 "국방보안청" #Lögreglan -> Greiningardeild Varnarmálastofnunar Íslands
+ Agency_CAN:0 "캐나다 왕립기마경찰" #Royal Canadian Mounted Police
+ Agency_CHL:0 "칠레 조사경찰" #Policía de Investigaciones de Chile

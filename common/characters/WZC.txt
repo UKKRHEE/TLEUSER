@@ -26,10 +26,10 @@ characters={
 		name="WZC_Chen_Tiaoyuan"
 		portraits={
 			civilian={
-				large="gfx/leaders/ANC/portrait_anc_chen_tiaoyuan.png"
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
 			}
 			army = {
-				large="gfx/leaders/ANC/portrait_anc_chen_tiaoyuan.png"
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
 				small="gfx/leaders/ANC/portrait_anc_chen_tiaoyuan.png"
 			}
 		}

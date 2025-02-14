@@ -1,9 +1,22 @@
 characters={
+	KVN_cho_jongdae = {
+		name = "KVN_cho_jongdae"
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/Portrait_KOR_cho_jongdae.png"
+			}
+		}
+		country_leader={
+			ideology=ultranationalism
+			desc = ""	
+			traits={ }
+		}
+	}
 	KVN_jean_decoux = {
-		name = KVN_jean_decoux
+		name = "KVN_jean_decoux"
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
+				large = "gfx/leaders/FRI/Portrait_FRI_jean_decoux.png"
 			}
 		}
 		country_leader={
@@ -13,7 +26,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=rexism
+			ideology=conservatism
 			desc = ""	
 			traits={ }
 		}
@@ -28,6 +41,18 @@ characters={
 			defense_skill = 3
 			planning_skill = 3
 			logistics_skill = 3
+		}
+	}
+	KVN_ho_chi_minh = {
+		name = "VIN_ho_chi_minh"
+		portraits={
+			civilian={
+				large="gfx/leaders/VIN/Portrait_Vietnam_Ho_Chi_Minh.dds"
+			}
+		}
+		country_leader={
+			ideology=marxism
+			traits = { leader_of_vienmin }
 		}
 	}
 }

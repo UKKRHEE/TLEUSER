@@ -1,0 +1,865 @@
+﻿
+add_namespace = south
+
+country_event = {
+	id = south.1
+	title = south.1.t
+	desc = south.1.d
+	picture = GFX_event_south_aus1
+	
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	fire_only_once = yes
+	
+	option = {
+		name = south.1.a
+		custom_effect_tooltip = TOOLTIP_SOUTHAUS
+	}
+}
+country_event = {
+	id = south.2
+	title = south.2.t
+	desc = south.2.d
+	picture = GFX_event_south_aus1
+	
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	fire_only_once = yes
+	
+	option = {
+		name = south.2.a
+		custom_effect_tooltip = TOOLTIP_KORNZL
+		hidden_effect = {
+			load_oob = "KOR_NZL"
+			set_province_controller = 4543
+			set_province_controller = 10373
+			set_province_controller = 12362
+			set_province_controller = 12604
+			set_province_controller = 4615
+			set_province_controller = 710710
+		}
+	}
+}
+country_event = {
+	id = south.3 #임시
+	title = south.3.t
+	desc = south.3.d
+	picture = GFX_event_south_aus1
+	
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	fire_only_once = yes
+	
+	option = {
+		name = south.3.a
+		custom_effect_tooltip = TOOLTIP_KORPHI
+		hidden_effect = {
+			set_country_flag = KOR_won_in_phi
+			KPH = {
+				declare_war_on = {
+					target = PHI
+					type = annex_everything
+				}
+				transfer_state = 623
+				transfer_state = 327
+				transfer_state = 624
+				transfer_state = 625
+				transfer_state = 626
+				transfer_state = 627
+				transfer_state = 628
+			}
+			KOR = {
+				puppet = KPH
+			}
+			set_autonomy = { target = KPH autonomy_state = korean_military_admin }
+			set_global_flag = PHI_capitulated
+		}
+	}
+}
+country_event = {
+	id = south.4
+	title = south.4.t
+	desc = south.4.d
+	picture = gfx
+	
+	trigger = {
+		TAG = KOR
+		has_completed_focus = KOR_the_plan_south
+		is_ai = yes
+		date > 1941.12.12
+	}
+
+	fire_only_once = yes
+	
+	option = {
+		name = south.4.a
+		hidden_effect = {
+			news_event = {
+				id = eok_news.47
+			}
+			set_state_controller = 336
+			set_state_controller = 1077
+			set_state_controller = 1208
+			set_state_controller = 1316
+			set_province_controller = 1351
+			set_province_controller = 1648
+			set_province_controller = 4412
+			set_province_controller = 4608
+			set_province_controller = 4652
+			set_province_controller = 7329
+			set_province_controller = 7371
+			set_province_controller = 7381
+			set_province_controller = 10153
+			set_province_controller = 10175
+			set_province_controller = 10199
+			set_province_controller = 10263
+			set_province_controller = 10237
+			set_province_controller = 10325
+			set_province_controller = 10175
+			set_province_controller = 12113
+			set_province_controller = 12115
+			set_province_controller = 12268
+			set_province_controller = 12299
+			set_province_controller = 12905
+			set_province_controller = 13298
+			load_oob = "KOR_JNT"
+		}
+	}
+}
+country_event = {
+	id = south.10
+	title = south.10.t
+	desc = south.10.d
+	picture = gfx
+	
+	trigger = {
+		TAG = KOR
+		NZL = {
+			has_capitulated = yes
+		}
+		has_completed_focus = KOR_the_ins_focus
+        country_exists = AST
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	fire_only_once = yes
+	
+	option = {
+		name = south.10.a
+		AST = {
+			country_event = {
+				id = south.11
+			}
+		}
+	}
+}
+country_event = {
+	id = south.11
+	title = south.11.t
+	desc = south.11.d
+	picture = gfx
+	
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	fire_only_once = yes
+	
+	option = {
+		name = south.11.a
+		KOR = {
+			country_event = {
+				id = south.12
+			}
+		}
+		AST = {
+			set_cosmetic_tag = AST_REP
+			remove_ideas = { AST_standard_gauge_railway  AST_great_depression_1  AST_great_depression_2  AST_great_depression_3  AST_all_in  AST_invest_in_victory  AST_invest_in_victory_2  AST_australian_womens_army_service  AST_naval_auxiliary_patrol  AST_australian_arms_production  AST_volunteer_defence_corps  AST_citizen_military_forces  AST_classify_aliens  AST_empire_air_training_scheme  AST_central_bureau_idea }
+			add_ideas = { ast_threat }
+			load_focus_tree = korean_government
+			leave_faction = yes
+		}
+		ENG = {
+			end_puppet = AST
+		}
+		every_country = {
+			limit = {
+				has_war_with = AST
+			}
+			white_peace = AST
+		}
+	}
+}
+country_event = {
+	id = south.12
+	title = south.12.t
+	desc = south.12.d
+	picture = gfx
+	
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	fire_only_once = yes
+	
+	option = {
+		name = south.12.a
+		KOR = {
+			transfer_state = 284
+			transfer_state = 523
+			transfer_state = 634
+			transfer_state = 635
+			transfer_state = 723
+			transfer_state = 737
+			transfer_state = 1093
+			transfer_state = 1096
+		}
+		518 = {
+			set_demilitarized_zone = yes
+		}
+	}
+}
+country_event = {
+	id = south.13 #대동아회의
+	title = south.13.t
+	desc = south.13.d
+	picture = GFX_GEA_conference
+	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+	option = {
+		name = south.13.a
+		custom_effect_tooltip = TOOLTIP_GEAC
+		SIA = {
+			country_event = {
+				id = south.14
+				days = 5
+			}
+		}
+	}
+}
+country_event = {
+	id = south.14 #테나세림 - 건의
+	title = south.14.t
+	desc = south.14.d
+	picture = GFX_GEA_conference
+	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+	option = {
+		name = south.14.a
+		KOR = {
+			country_event = {
+				id = south.15
+				days = 5
+			}
+		}
+	}
+}
+country_event = {
+	id = south.15 #테나세림 - 논의
+	title = south.15.t
+	desc = south.15.d
+	picture = GFX_GEA_conference
+	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+	option = {
+		name = south.15.a
+		ai_chance = { factor = 100 }
+		custom_effect_tooltip = TOOLTIP_GEACSIAA
+		hidden_effect = {
+			set_global_flag = TNO_GEACSIAA
+			SIA = {
+				country_event = {
+					id = south.16
+					days = 5
+				}
+			}
+		}
+	}
+	option = {
+		name = south.15.b
+		ai_chance = { factor = 0 }
+		custom_effect_tooltip = TOOLTIP_GEACSIAB
+		hidden_effect = {
+			set_global_flag = TNO_GEACSIAB
+			SIA = {
+				country_event = {
+					id = south.17
+					days = 5
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = south.16 #테나세림 - 시암
+	title = south.16.t
+	desc = south.16.d
+	picture = GFX_GEA_conference
+	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+	option = {
+		name = south.16.a
+		custom_effect_tooltip = TOOLTIP_GEACSIAA
+		hidden_effect = {
+			KOR = {
+				country_event = {
+					id = south.18
+					days = 5
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = south.17 #테나세림 - 버마
+	title = south.17.t
+	desc = south.17.d
+	picture = GFX_GEA_conference
+	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+	option = {
+		name = south.17.a
+		custom_effect_tooltip = TOOLTIP_GEACSIAB
+		hidden_effect = {
+			KOR = {
+				country_event = {
+					id = south.18
+					days = 5
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = south.18 #안다만
+	title = south.18.t
+	desc = south.18.d
+	picture = GFX_GEA_conference
+	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+	option = {
+		name = south.18.a
+		ai_chance = {
+			factor = 100
+		}
+		custom_effect_tooltip = TOOLTIP_GEACBANA
+		hidden_effect = {
+			set_global_flag = TNO_GEACBANA
+			KOR = {
+				country_event = {
+					id = south.19
+					days = 5
+				}
+			}
+		}
+	}
+	option = {
+		name = south.18.b
+		ai_chance = { factor = 0 }
+		custom_effect_tooltip = TOOLTIP_GEACBANB
+		hidden_effect = {
+			set_global_flag = TNO_GEACBANB
+			KOR = {
+				country_event = {
+					id = south.19
+					days = 5
+				}
+			}
+		}
+	}
+	option = {
+		name = south.18.c
+		ai_chance = { factor = 0 }
+		custom_effect_tooltip = TOOLTIP_GEACBANC
+		hidden_effect = {
+			set_global_flag = TNO_GEACBANC
+			KOR = {
+				country_event = {
+					id = south.19
+					days = 5
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = south.19 #리아우
+	title = south.19.t
+	desc = south.19.d
+	picture = GFX_GEA_conference
+	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+	option = {
+		name = south.19.a
+		ai_chance = {
+			factor = 100
+		}
+		custom_effect_tooltip = TOOLTIP_GEACINSB
+		hidden_effect = {
+			set_global_flag = TNO_GEACINSB
+			KOR = {
+				country_event = {
+					id = south.20
+					days = 5
+				}
+			}
+		}
+	}
+	option = {
+		name = south.19.b
+		ai_chance = { factor = 0 }
+		custom_effect_tooltip = TOOLTIP_GEACINSA
+		hidden_effect = {
+			set_global_flag = TNO_GEACINSA
+			KOR = {
+				country_event = {
+					id = south.20
+					days = 5
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = south.20 #뉴기니
+	title = south.20.t
+	desc = south.20.d
+	picture = GFX_GEA_conference
+	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+	option = {
+		name = south.20.a
+		ai_chance = {
+			factor = 100
+		}
+		custom_effect_tooltip = TOOLTIP_GEACPAPA
+		hidden_effect = {
+			set_global_flag = TNO_GEACPAPA
+			KOR = {
+				country_event = {
+					id = south.21
+					days = 5
+				}
+			}
+		}
+	}
+	option = {
+		name = south.20.b
+		ai_chance = { factor = 0 }
+		custom_effect_tooltip = TOOLTIP_GEACPAPB
+		hidden_effect = {
+			set_global_flag = TNO_GEACPAPB
+			KOR = {
+				country_event = {
+					id = south.21
+					days = 5
+				}
+			}
+		}
+	}
+	option = {
+		name = south.20.c
+		ai_chance = { factor = 0 }
+		custom_effect_tooltip = TOOLTIP_GEACPAPC
+		hidden_effect = {
+			set_global_flag = TNO_GEACPAPC
+			KOR = {
+				country_event = {
+					id = south.21
+					days = 5
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = south.21 #폐회
+	title = south.21.t
+	desc = south.21.d
+	picture = GFX_GEA_conference
+	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+	option = {
+		name = south.21.a
+		add_political_power = 100
+	}
+}
+country_event = {
+	id = south.22 #작계가 종말점에 도달하다
+	title = south.22.t
+	desc = south.22.d
+	picture = GFX_event_south_aus1
+	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+	option = {
+		name = south.22.a
+		custom_effect_tooltip = KOR_tooltip_doryun_end
+		KOR_embargo_level_up = yes
+		set_country_flag = KOR_doryun_end
+	}
+}
+
+country_event = {
+	id = south.23 #말레이에서의 승리
+	title = south.23.t
+	desc = south.23.d
+	picture = GFX_event_south_aus1
+	
+	trigger = {
+		TAG = KOR
+		MAL = {
+			has_capitulated = yes
+		}
+		SST = {
+			has_capitulated = yes
+		}
+		KOR = {
+			has_completed_focus = KOR_the_plan_south
+		}
+	}
+
+	fire_only_once = yes
+	
+	option = {
+		name = south.23.a
+		custom_effect_tooltip = KOR_next_south_decision
+		set_country_flag = KOR_won_in_malay
+	}
+}
+country_event = {
+	id = south.24 #남방설명문
+	title = south.24.t
+	desc = south.24.d
+	picture = GFX_event_south_aus1
+	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+	option = {
+		name = south.24.a
+		custom_effect_tooltip = KOR_we_are_going_to_south
+	}
+}
+country_event = {
+	id = south.25 #보르네오에서의 승리
+	title = south.25.t
+	desc = south.25.d
+	picture = GFX_event_south_aus1
+	
+	trigger = {
+		TAG = KOR
+		KOR = {
+			controls_state = 334
+			controls_state = 333
+			controls_state = 1079
+			controls_state = 1081
+			controls_state = 1080
+			has_completed_focus = KOR_the_plan_south
+		}
+	}
+
+	fire_only_once = yes
+	
+	option = {
+		name = south.25.a
+		custom_effect_tooltip = KOR_next_south_decision
+		set_country_flag = KOR_won_in_borneo
+	}
+}
+country_event = {
+	id = south.26 #총체적 승리
+	title = south.26.t
+	desc = south.26.d
+	picture = GFX_event_south_aus1
+	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+	option = {
+		name = south.26.a
+		custom_effect_tooltip = KOR_no_more_embargo
+		hidden_effect = {
+			remove_ideas = KOR_embargo_us
+			remove_ideas = KOR_embargo_us_a
+			remove_ideas = KOR_embargo_us_b
+			remove_ideas = KOR_embargo_us_c
+			remove_ideas = KOR_embargo_us_d
+		}
+		add_timed_idea = {
+			idea = KOR_embargo_us_2
+			days = 360
+		}
+	}
+}
+country_event = {
+	id = south.27 #티모르 점령
+	title = south.27.t
+	desc = south.27.d
+	picture = GFX_event_south_aus1
+	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+	option = {
+		name = south.27.a
+		news_event = {
+			id = south_news.8
+		}
+	}
+}
+country_event = {
+	id = south.28 #슬라웨시에서의 승리
+	title = south.28.t
+	desc = south.28.d
+	picture = GFX_event_south_aus1
+	
+	trigger = {
+		TAG = KOR
+		KOR = {
+			controls_state = 668
+			controls_state = 673
+			has_completed_focus = KOR_the_plan_south
+		}
+	}
+
+	fire_only_once = yes
+	
+	option = {
+		name = south.28.a
+		custom_effect_tooltip = KOR_next_south_decision
+		set_country_flag = KOR_won_in_celebes
+	}
+}
+country_event = {
+	id = south.29 #자바에서의 승리
+	title = south.29.t
+	desc = south.29.d
+	picture = GFX_event_south_aus1
+	
+	trigger = {
+		TAG = KOR
+		KOR = {
+			controls_state = 335
+			controls_state = 667
+			has_completed_focus = KOR_the_plan_south
+		}
+	}
+
+	fire_only_once = yes
+	
+	option = {
+		name = south.29.a
+		custom_effect_tooltip = KOR_next_south_decision
+		set_country_flag = KOR_won_in_java
+	}
+}
+country_event = {
+	id = south.30 #파푸아에서의 승리
+	title = south.30.t
+	desc = south.30.d
+	picture = GFX_event_south_aus1
+	
+	trigger = {
+		TAG = KOR
+		KOR = {
+			controls_state = 669
+			controls_state = 524
+			controls_state = 979
+			has_completed_focus = KOR_the_plan_south
+		}
+	}
+
+	fire_only_once = yes
+	
+	option = {
+		name = south.30.a
+		custom_effect_tooltip = KOR_next_south_decision
+		set_country_flag = KOR_won_in_papua
+	}
+}
+country_event = {
+	id = south.31 #수마트라에서의 승리
+	title = south.31.t
+	desc = south.31.d
+	picture = GFX_event_south_aus1
+	
+	trigger = {
+		TAG = KOR
+		KOR = {
+			controls_state = 672
+			has_completed_focus = KOR_the_plan_south
+		}
+	}
+
+	fire_only_once = yes
+	
+	option = {
+		name = south.31.a
+		custom_effect_tooltip = KOR_next_south_decision
+		set_country_flag = KOR_won_in_sumatra
+	}
+}
+country_event = {
+	id = south.32 #인도 버프
+	title = south.32.t
+	desc = south.32.d
+	picture = GFX_event_south_aus1
+	
+	trigger = {
+		TAG = RAJ
+		BUR = {
+			has_capitulated = yes
+		}
+		KOR = {
+			has_completed_focus = KOR_the_plan_south
+			has_war_with = RAJ
+		}
+	}
+	fire_only_once = yes
+	
+	option = {
+		name = south.32.a
+		RAJ = {
+			add_ideas = TLE_raj_buff
+			load_oob = "RAJ_KOR"
+		}
+	}
+}
+country_event = {
+	id = south.33 #인도 침공
+	title = south.33.t
+	desc = south.33.d
+	picture = GFX_event_south_aus1
+	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+	option = {
+		name = south.33.a
+		custom_effect_tooltip = TOOLTIP_SOUTHRAJ
+		set_country_flag = KOR_invade_delhi
+	}
+	option = {
+		name = south.33.b
+		custom_effect_tooltip = TOOLTIP_SOUTHCYL
+		set_country_flag = KOR_invade_ceylon
+	}
+}
+country_event = {
+	id = south.34 #인도 침공
+	title = south.34.t
+	desc = south.34.d
+	picture = GFX_event_south_aus1
+	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+	option = {
+		name = south.34.a
+		custom_effect_tooltip = TOOLTIP_SOUTHCAL
+	}
+}
+country_event = {
+	id = south.35 #인도 침공
+	title = south.35.t
+	desc = south.35.d
+	picture = GFX_event_south_aus1
+	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+	option = {
+		name = south.35.a
+		custom_effect_tooltip = TOOLTIP_SOUTHCYL
+	}
+}
+country_event = {
+	id = south.36 #tag감지
+	title = south.36.t
+	desc = south.36.d
+	picture = GFX_event_korea_777
+	
+	trigger = {
+		TAG = KOR
+		KOR = {
+			is_ai = no
+		}
+		INS = {
+			NOT = {
+				has_idea = east_indies_ai
+				has_idea = east_indies_user
+				has_idea = east_indies_user_2
+			}
+		}
+	}
+	
+	fire_only_once = yes
+	
+	immediate = {
+		hidden_effect = { 
+			INS = {
+				remove_ideas = east_indies_ai
+				remove_ideas = east_indies_user
+				add_ideas = east_indies_user_2
+			}
+		}
+	}
+	
+	option = {
+		name = south.36.a
+	}
+	
+	option = {
+		name = south.36.b
+		custom_effect_tooltip = TOOLTIP_STOPTAG
+	}
+}

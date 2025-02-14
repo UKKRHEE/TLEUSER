@@ -1,0 +1,30 @@
+characters={
+	IT1_palmiro_togliatti={
+		name="IT1_palmiro_togliatti"
+		portraits={
+			civilian={
+				large="gfx/leaders/IT1/Portrait_IT1_palmiro_togliatti.png"
+			}
+		}
+		country_leader={
+			ideology=socialism
+			traits={ }
+			id=-1
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			id=-1
+		}
+		country_leader={
+			ideology=marxism
+			traits={ }
+			id=-1
+		}
+		country_leader={
+			ideology=rexism
+			traits={ }
+			id=-1
+		}
+	}
+}

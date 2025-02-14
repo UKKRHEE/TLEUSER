@@ -1,0 +1,38 @@
+guiTypes = {
+	containerWindowType = {
+		name = "KOR_ilsoism_GUI"
+		position = { x = 0 y = 0 }
+		size = { width = 400 height = 370 }
+
+		gridboxtype = {
+			name = "ilsoism_gridbox"
+			position = { x = 0 y = 0 }
+		}
+
+		buttonType = {
+			name = "ilsoism_button"
+			spriteType = "GFX_ilsoism_taeguk_circle"
+			position = { x = 145 y = 70 }
+			size = { width = 60%% height = 60%% }
+			pdx_tooltip = "KOR_ilsoism_GUI_Button_TT"
+		}
+
+		iconType = {
+			name = "gui_alert"
+			spriteType = "GFX_gui_alert"
+			position = { x = 165 y = 94 }
+		}
+	}
+
+	containerWindowType = {
+		name = "KOR_ilsoism_GUI_entry"
+		position = { x = 0 y = 0 }
+
+		iconType = {
+			name = "ilsoism_icon"
+			spriteType = "GFX_KOR_ilsoism_icon_1"
+			position = { x = 0 y = 0 }
+			pdx_tooltip = "KOR_ilsoism_GUI_TT"
+		}
+	}
+}

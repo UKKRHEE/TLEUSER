@@ -11,12 +11,12 @@ music = {
 }
 music = {
 	name = "not_posted_letter_2"
-	file = "not_posted_letter_2.ogg"
+	file = "kim_kwang_seok/not_posted_letter_2.ogg"
 	volume = 1
 }
 music = {
 	name = "not_posted_letter"
-	file = "not_posted_letter.ogg"
+	file = "kim_kwang_seok/not_posted_letter.ogg"
 	volume = 1
 }
 music = {

@@ -1,0 +1,38 @@
+characters={
+	PHI_jose_paciano_laurel = {
+		name = "PHI_jose_paciano_laurel"
+		portraits={
+			civilian={
+				large="gfx/leaders/PHI/Jose_Paciano_Laurel.png"
+			}
+		}
+		country_leader={
+			ideology = fascism_ideology
+			desc = "PHI_jose_paciano_laurel_desc"
+		}
+	}
+	PHI_manuel_luis_quezon={
+		name="PHI_manuel_luis_quezon"
+		portraits={
+			civilian={
+				large="gfx/leaders/PHI/Manuel_Luis_Quezon.dds"
+			}
+		}
+		country_leader={
+			ideology = liberalism
+			desc = "PHI_manuel_luis_quezon_desc"
+		}
+	}
+	PHI_united_front={
+		name="PHI_united_front"
+		portraits={
+			civilian={
+				large="gfx/leaders/PHI/PHI_RESG.png"
+			}
+		}
+		country_leader={
+			ideology = oligarchism
+			desc = "PHI_united_front_desc"
+		}
+	}
+}

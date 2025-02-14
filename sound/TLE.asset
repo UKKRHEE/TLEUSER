@@ -3,10 +3,6 @@ category =
 {
  name = "Voices"
  soundeffects = {
-	PRC_infantry_neutral_combat
-	PRC_infantry_positive_combat
-	PRC_infantry_retreat
-	PRC_infantry_move_out
 	YUN_infantry_idle
 	YUN_infantry_neutral_combat
 	YUN_infantry_positive_combat
@@ -22,7 +18,6 @@ category =
 	SIK_infantry_positive_combat
 	SIK_infantry_retreat
 	SIK_infantry_move_out
-	GXC_infantry_idle
 	GXC_infantry_neutral_combat
 	GXC_infantry_positive_combat
 	GXC_infantry_retreat
@@ -42,6 +37,11 @@ category =
 	MEN_infantry_positive_combat
 	MEN_infantry_retreat
 	MEN_infantry_move_out
+	HNC_infantry_retreat
+	HNC_infantry_idle
+	HNC_infantry_neutral_combat
+	HNC_infantry_positive_combat
+	HNC_infantry_move_out
 	ZLC_infantry_idle
 	ZLC_infantry_neutral_combat
 	ZLC_infantry_positive_combat
@@ -57,16 +57,6 @@ category =
 	SND_infantry_positive_combat
 	SND_infantry_retreat
 	SND_infantry_move_out
-	KMN_infantry_idle
-	KMN_infantry_neutral_combat
-	KMN_infantry_positive_combat
-	KMN_infantry_retreat
-	KMN_infantry_move_out
-	MON_infantry_idle
-	MON_infantry_neutral_combat
-	MON_infantry_positive_combat
-	MON_infantry_retreat
-	MON_infantry_move_out
 	QIN_infantry_idle
 	QIN_infantry_neutral_combat
 	QIN_infantry_positive_combat

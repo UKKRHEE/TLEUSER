@@ -1,7 +1,7 @@
 
 state={
 	id=536
-	name="STATE_536"
+	name="STATE_PUGIDO"
 	manpower = 2812000
 	
 	local_supplies=0.0 
@@ -12,7 +12,7 @@ state={
 		add_claim_by = KOR
 		add_core_of = KHK
 		add_core_of = ANU
-		add_core_of = DKG
+		add_claim_by = DKG
 		buildings = {
 			infrastructure = 1
 			3962 = {

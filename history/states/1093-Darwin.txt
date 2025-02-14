@@ -1,0 +1,24 @@
+
+state={
+	id=1093
+	name="STATE_DARWIN"
+
+	history={
+		owner = AST
+		buildings = {
+			infrastructure = 3
+			7669 = {
+				naval_base = 5
+			}
+		}
+		add_core_of = AST
+	}
+
+	provinces={
+		7669 10276 
+	}
+	manpower=83000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

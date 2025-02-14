@@ -1,0 +1,225 @@
+ideas = {
+
+	country = {
+		french_indochina = {
+			picture = GFX_idea_french_indochina
+			
+			allowed = {
+				tag = FRI
+			}
+			
+			cancel = {}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			rule = {
+					can_join_factions = no
+				}
+			modifier = {
+				ai_call_ally_desire_factor = -10000
+				ai_join_ally_desire_factor = -10000
+				ai_desired_divisions_factor = 100
+				army_core_defence_factor = 1.5
+				surrender_limit = 3
+				custom_modifier_tooltip = TOOLTIP_IDEA_KOR_THE_COUNTRY_OF_KOREA
+			}
+		}
+		korean_indochina = {
+			picture = GFX_idea_korean_indochina
+			
+			allowed = {
+				tag = KVN
+			}
+			
+			cancel = {}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_org_Factor = 1.0
+				army_core_defence_factor = 8.0
+				surrender_limit = 3
+			}
+		}
+		indo_french = {
+			picture = GFX_idea_indo_french
+			
+			allowed = {
+				tag = KVN
+			}
+			
+			cancel = {}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.1
+			}
+		}
+		sleeping_giants_of_asia = {
+			picture = GFX_idea_french_indochina
+			
+			allowed = {
+				tag = BUR
+			}
+			
+			cancel = {}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			rule = {
+				can_join_factions = no
+			}
+			modifier = {
+				ai_call_ally_desire_factor = -10000
+				ai_join_ally_desire_factor = -10000
+			}
+		}
+		TLE_raj_buff = {
+			picture = GFX_idea_french_indochina
+			
+			allowed = {
+				tag = RAJ
+			}
+			
+			cancel = {}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_org_factor = 0.5
+				army_morale_factor = 0.5
+				army_core_attack_factor = 0.5
+				army_core_defence_factor = 2.0
+				surrender_limit = 1
+			}
+		}
+		vietnam_communists = {
+			picture = GFX_idea_vietnam_communists
+			
+			allowed = {
+				tag = FRI
+			}
+			
+			cancel = {}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.1
+			}
+		}
+		vietnam_communists_of_real = {
+			picture = GFX_idea_vietnam_communists
+			
+			allowed = {
+				tag = VTC
+			}
+			
+			cancel = {}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			rule = {
+				can_join_factions = no
+			}
+			modifier = {
+				army_core_attack_factor = 0.2
+				army_core_defence_factor = 0.2
+				surrender_limit = 1
+			}
+		}
+		us_philippines = {
+			picture = GFX_idea_us_philippines
+			
+			allowed = {
+				tag = PHI
+			}
+			
+			cancel = {}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.1
+				democratic_drift = 0.01
+			}
+		}
+		uk_federated_states = {
+			picture = uk_federated_states
+			
+			allowed = {
+				tag = MAL
+			}
+			
+			cancel = {	}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.3
+			}
+		}
+		uk_egypt_moon = {
+			picture = egypt_moon
+			
+			allowed = {
+				tag = EGY
+			}
+			
+			cancel = {
+				NOT = {
+					MAL = {
+						is_puppet_of = ENG
+					}
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				surrender_limit = 10
+			}
+		}
+	}
+}

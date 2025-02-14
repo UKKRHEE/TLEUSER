@@ -8,7 +8,7 @@ characters={
 		}
 	}
 	GW1_franz_ritter_von_epp={
-		name="GW1_german_goernment"
+		name="GW1_franz_ritter_von_epp"
 		portraits={
 			civilian={
 				large="gfx/leaders/GER/Portrait_GER_franz_ritter_von_epp.png"
@@ -17,12 +17,10 @@ characters={
 		country_leader={
 			ideology=despotism
 			traits={ }
-			id=-1
 		}
 		country_leader={
 			ideology=nazism
 			traits={ }
-			id=-1
 		}
 	}
 }

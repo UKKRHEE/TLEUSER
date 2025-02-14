@@ -350,6 +350,24 @@ music = {
 		}
 	}
 }
+music = {
+	song = "aikoku_koshinkyoku"
+	chance = {
+		modifier = {
+			factor = 5
+			is_japan_clique = yes
+		}
+	}
+}
+music = {
+	song = "independent_song_japan"
+	chance = {
+		modifier = {
+			factor = 5
+			is_japan_clique = yes
+		}
+	}
+}
 
 
 

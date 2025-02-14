@@ -5,7 +5,7 @@ state={
 
 	history={
 		victory_points = {
-			4086 10 
+			13396 10 
 		}
 		victory_points = {
 			7121 5 
@@ -29,7 +29,7 @@ state={
 	}
 
 	provinces={
-		1081 4086 4103 7121 10115 12089 13378 
+		1081 4086 4103 7121 10115 12089 13378 13396 
 	}
 	manpower=3732400
 	buildings_max_level_factor=1.000

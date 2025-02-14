@@ -1,3 +1,4 @@
+NDefines.NGame.END_DATE = "1951.12.31.1";
 NDefines.NMilitary.MAX_ARMY_EXPERIENCE = 10000
 NDefines.NMilitary.MAX_NAVY_EXPERIENCE = 10000
 NDefines.NMilitary.MAX_AIR_EXPERIENCE = 10000

@@ -28,14 +28,17 @@
  STATE_HWANGILBUK:0 "환길북도"
  ###식민지###
  STATE_CHEONGDO:0 "청도"
+ STATE_QINGDAO:0 "칭다오"
  STATE_DAEMAN:0 "대만"
  STATE_JANGKI:0 "장기"
+ STATE_PUGIDO:0 "북이도"
  ###보호령###
  STATE_RYUKYU:0 "류큐"
 
  ###중국###
  STATE_TIANJIN:0 "톈진"
  STATE_WIHAE:0 "위해" #웨이하이
+ STATE_WEIHAI:0 "웨이하이" #웨이하이
  STATE_YANTAI:0 "옌타이"
  STATE_SHANGHAI:0 "상하이"
  STATE_SUZHOU:0 "쑤저우"
@@ -98,6 +101,13 @@
  STATE_KURE:0 "쿠레"
  STATE_KITAKANTO:0 "키타칸토"
  STATE_MINAMIKINKI:0 "미나미킨키"
+ STATE_HIROSHIMA:0 "히로시마"
+ STATE_TOKAI:0 "토카이"
+ STATE_DEWA:0 "데와"
+ STATE_OSAKA:0 "오사카"
+ STATE_IYO_TOSA:0 "이요-토사"
+ STATE_NIIGATA:0 "니가타"
+ STATE_CHUOKOCHI:0 "츄오코치"
  
  #똥남아
  STATE_KENGTUNG:0 "켕퉁"
@@ -113,7 +123,7 @@
  STATE_BIELSKO_BIAWA:0 "비엘스코비아와"
  STATE_EUPEN:0 "오이펜"
  STATE_BUDVA:0 "부드바"
- STATE_OST_RHEINLAND:0 "동부 라인란트"
+ STATE_OST_RHEINLAND:0 "오스트라인란트"
  STATE_PREKMURJE:0 "프레크무레"
  STATE_BURGENLAND:0 "부르겐란트"
  STATE_NANCY_SEDAN:0 "낭시-스당"
@@ -126,6 +136,37 @@
  STATE_CHARLUA:0 "샤를루아"
  STATE_CERQUENIZZA:0 "치리크베니차"
  STATE_FRIULI_VENEZIA_GIULIA:0 "프리울리베네치아줄리아"
+ 
+ #응우옌
+ STATE_288:0 "페구"
+ STATE_640:0 "상부 버마"
+ STATE_KOTABARU:0 "케다-클란탄트렝가누"
+ STATE_TANINTHARYI:0 "테나세림"
+ STATE_PINANG:0 "페낭"
+ STATE_MALAYA:0 "말라야"
+ STATE_BRUNEI:0 "브루나이"
+ STATE_SARAWAK:0 "사라왁"
+ STATE_KUCHING:0 "쿠칭"
+ STATE_CAOBANG:0 "까오방"
+ STATE_MONGCAI:0 "몽까이"
+ STATE_THAINGUYENI:0 "타이응우옌"
+ STATE_DIENCHAU:0 "디엔쩌우"
+ STATE_COCHINCHINA:0 "안남"
+ STATE_CANTHO:0 "껀토"
+ STATE_SAIGON:0 "사이공"
+ STATE_HANOI:0 "하노이"
+ STATE_PHATTHAWANXXK:0 "라용"
+ STATE_PHIBUN:0 "피분송크람" #변경시
+ STATE_SOUTHLAOS:0 "라오스 남부"
+ STATE_KACHIN:0 "카친"
+ STATE_SHAN:0 "샨"
+ STATE_CHINRAKHAING:0 "아라칸"
+ STATE_DARWIN:0 "다윈"
+ STATE_BOTANY:0 "보타니 만"
+ STATE_RIAU:0 "리아우 제도"
+ STATE_MALACCA:0 "말라카"
+ STATE_741:0 "프놈펜"
+ STATE_1103:0 "동부 캄보디아"
  
  #
  STATE_746:0 "이커자오"
@@ -164,7 +205,7 @@
  STATE_408:0 "양안" #남연해주
  STATE_536:0 "북이도"
  STATE_533:0 "데와"
- STATE_560:0 "서수"
+ STATE_560:0 "동수"
  STATE_561:0 "북강"
  STATE_657:0 "숙신"
 
@@ -200,7 +241,6 @@
  STATE_282:0 "에도"
  
  STATE_736:0 "트리에스테"
- STATE_50:0 "바덴"
  STATE_69:0 "수데티"
  STATE_74:0 "수데티 동부"
 
@@ -217,11 +257,17 @@
  STRATEGICREGION_247:0 "화동"
  STRATEGICREGION_248:0 "양광"
  STRATEGICREGION_249:0 "운남"
- STRATEGICREGION_200:1 "청해"
+ STRATEGICREGION_200:0 "청해"
  STRATEGICREGION_252:0 "천산"
  STRATEGICREGION_164:0 "강남"
  STRATEGICREGION_165:0 "화남"
  STRATEGICREGION_144:0 "화서"
+ 
+ KOREA_STRAIT:0 "대한해협"
+ KOREA_STRAIT_FAKE_2:0 "$KOREA_STRAIT$"
+ KOREA_STRAIT_FAKE:0 "$KOREA_STRAIT$"
+ JEJU_STRAIT_FAKE:0 "제주해협"
+ ULLENG_STRAIT_FAKE:0 "울릉분지"
  
  
  #중점
@@ -264,7 +310,6 @@
  #아일랜드/07_nsb_on_actions
  Derry:0 "데리"
  
- Gdańsk:0 "그단스크"
  Gdansk:0 "그단스크"
  
  West-Preussen:0 "서프로이센"
@@ -346,7 +391,6 @@
  Silistra:0 "실리스트라" #남베사라비아
  Velissarios:0 "벨리사리오스" #체타테아알버 #확실x
 
- Gdańsk:0 "그단스크"
  #그리스-불가리아
  Philippopolis:0 "필리포폴리스"
  Serdica:0 "세르디카" #소피아
@@ -371,7 +415,7 @@
  Palaeokastron:0 "팔레오카스트론" #부르사
  Thrace:0 "트라키" #에디르네 Thrace=트라키=Thrake=트라케
  Adrianople:0 "아드리아노플" #에디르네
- Eastern Macedonia:0 "동 마케도니아" #트라키아
+ Eastern_Macedonia:0 "동 마케도니아" #트라키아
  Smyrni:0 "스미르니" #이즈미르
  Magnesia:0 "마그니시아" #마니사 #확실 x
  Kieros:0 "키에로스" #아다파자리 #확실x

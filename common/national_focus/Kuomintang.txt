@@ -1474,7 +1474,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_the_last_empire
-		icon = GFX_focus_국민주의광풍
+		icon = GFX_focus_KOR_another_the_last_empire
 		cost = 10.00
 		prerequisite = {
 			focus = CHI_kangqian
@@ -1493,7 +1493,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			country_event = {
-				id = korea.782
+				id = thelastempire.5000
 			}
 			add_stability = 0.15
 		}

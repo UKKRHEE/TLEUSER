@@ -1,0 +1,117 @@
+SIA_power_supports = {
+
+	#picture = GFX_decision_cat_picture_faction_management_bulgaria
+
+	scripted_gui = sia_regime_decision_ui
+
+	available = {
+		tag = SIA
+	}
+	visible = {
+		has_country_leader = {
+			character = SIA_plaek_phibunsongkhram
+			ruling_only = yes
+		}
+		NOT = {
+			has_country_flag = SIA_power_supports_claimed
+		}
+	}
+	priority = 100
+}
+SIA_indochinesewar_category = {
+
+	#picture = GFX_category_indochinesewar
+	
+	available = {
+		tag = SIA
+	}
+	visible = {
+		tag = SIA
+	}
+	priority = 100
+}
+
+SIA_lebensraum_category = {
+
+	#picture = GFX_decision_cat_generic_rattanakosin_kingdom
+	
+	available = {
+		tag = SIA
+	}
+	visible = {
+		tag = SIA
+	}
+	priority = 100
+}
+
+SIA_siaarmy_category = {
+
+	#picture = GFX_category_newtown
+	
+	available = {
+		tag = SIA
+	}
+	visible = {
+		tag = SIA
+	}
+	priority = 100
+}
+
+SIA_siarural_category = {
+
+	#picture = GFX_category_newtown
+	
+	available = {
+		tag = SIA
+	}
+	visible = {
+		tag = SIA
+	}
+	priority = 100
+}
+
+SIA_newtownmovement_category = {
+
+	#picture = GFX_category_newtown
+	
+	available = {
+		tag = SIA
+	}
+	visible = {
+		tag = SIA
+	}
+	priority = 100
+}
+
+SIA_koreaninfluence_category = {
+	
+	available = {
+		tag = SIA
+	}
+	visible = {
+		tag = SIA
+	}
+	priority = 100
+}
+
+SIA_resistance_category = {
+	
+	available = {
+		tag = SIA
+	}
+	visible = {
+		has_country_flag = SIA_resistance_problem
+	}
+	priority = 100
+}
+
+SIA_politics_category = {
+	
+	available = {
+		tag = SIA
+	}
+	visible = {
+		NOT = { has_country_flag = SIA_phibun_in_power }
+	}
+	priority = 100
+}

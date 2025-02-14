@@ -1,0 +1,477 @@
+scripted_gui = {
+
+	TLE_Side_GUI_Opener = {
+		context_type = player_context
+		parent_window_name = raid_filter
+		window_name = "TLE_Side_GUI_Opener"
+
+		visible = {
+			AND = {
+				original_tag = KOR
+				OR = {
+					is_debug = yes
+					has_country_flag = FLAG_ACH_ROUTE
+				}
+			}
+		}
+
+		triggers = {
+			crt_button_click_enabled = {
+				original_tag = KOR
+			}
+		}
+
+		effects = {
+			crt_button_click = {
+				if = {
+					limit = {
+						has_country_flag = side_gui_visible
+					}
+					close_side_gui = yes
+					update_total_side_gui_tab = yes
+				}
+				else = {
+					open_side_gui = yes
+					update_total_side_gui_tab = yes
+				}
+			}
+		}
+	}
+
+	TLE_Side_GUI = {
+		window_name = "TLE_Side_GUI"
+		context_type = player_context
+		parent_window_token = top_bar
+
+		visible = {
+			has_country_flag = side_gui_visible
+			NOT = { has_country_flag = side_gui_dis_visible }
+		}
+
+		effects = {
+			close_click = {
+				close_side_gui = yes
+				update_total_side_gui_tab = yes
+			}
+		}
+	}
+
+	TLE_Side_Dis_GUI = {
+		window_name = "TLE_Side_Dis_GUI"
+		context_type = player_context
+		parent_window_token = top_bar
+
+		visible = {
+			has_country_flag = side_gui_dis_visible
+		}
+	}
+
+	national_dissatisfaction_GUI = {
+		window_name = "national_dissatisfaction_GUI"
+		context_type = player_context
+		parent_window_name = main_guis
+
+		visible = {
+			# has_country_flag = side_gui_visible
+			# has_country_flag = side_gui_dis_visible
+		}
+
+		properties = {
+			Graphs_progbar = {
+				frame = ND_Graphs_array^selected_state
+			}
+		}
+
+		triggers = {
+			Prev_visible = {
+				OR = {
+					check_variable = { current_state = 2 }
+					check_variable = { current_state = 3 }
+					check_variable = { current_state = 4 }
+				}
+			}
+			Next_visible = {
+				OR = {
+					check_variable = { current_state = 1 }
+					check_variable = { current_state = 2 }
+					check_variable = { current_state = 3 }
+				}
+			}
+		}
+
+		effects = {
+			Prev_click = {
+				if = {
+					limit = {
+						check_variable = { current_state = 2 }
+					}
+					set_variable = { current_state = 1 }
+					set_variable = { selected_state = 1 }
+				}
+				if = {
+					limit = {
+						check_variable = { current_state = 3 }
+					}
+					set_variable = { current_state = 2 }
+					set_variable = { selected_state = 5 }
+				}
+				if = {
+					limit = {
+						check_variable = { current_state = 4 }
+					}
+					set_variable = { current_state = 3 }
+					set_variable = { selected_state = 6 }
+				}
+			}
+			Next_click = {
+				if = {
+					limit = {
+						check_variable = { current_state = 1 }
+					}
+					set_variable = { current_state = 2 }
+					set_variable = { selected_state = 5 }
+				}
+				else_if = {
+					limit = {
+						check_variable = { current_state = 2 }
+					}
+					set_variable = { current_state = 3 }
+					set_variable = { selected_state = 6 }
+				}
+				else_if = {
+					limit = {
+						check_variable = { current_state = 3 }
+					}
+					set_variable = { current_state = 4 }
+					set_variable = { selected_state = 7 }
+				}
+			}
+		}
+	}
+
+	national_dissatisfaction_dis_GUI = {
+		window_name = "national_dissatisfaction_GUI"
+		context_type = player_context
+		parent_window_name = main_dis_guis
+
+		visible = {
+			# has_country_flag = side_gui_visible
+			# has_country_flag = side_gui_dis_visible
+		}
+
+		properties = {
+			Graphs_progbar = {
+				frame = ND_Graphs_array^selected_state
+			}
+		}
+
+		triggers = {
+			Prev_visible = {
+				OR = {
+					check_variable = { current_state = 2 }
+					check_variable = { current_state = 3 }
+					check_variable = { current_state = 4 }
+				}
+			}
+			Next_visible = {
+				OR = {
+					check_variable = { current_state = 1 }
+					check_variable = { current_state = 2 }
+					check_variable = { current_state = 3 }
+				}
+			}
+		}
+
+		effects = {
+			Prev_click = {
+				if = {
+					limit = {
+						check_variable = { current_state = 2 }
+					}
+					set_variable = { current_state = 1 }
+					set_variable = { selected_state = 1 }
+				}
+				if = {
+					limit = {
+						check_variable = { current_state = 3 }
+					}
+					set_variable = { current_state = 2 }
+					set_variable = { selected_state = 5 }
+				}
+				if = {
+					limit = {
+						check_variable = { current_state = 4 }
+					}
+					set_variable = { current_state = 3 }
+					set_variable = { selected_state = 6 }
+				}
+			}
+			Next_click = {
+				if = {
+					limit = {
+						check_variable = { current_state = 1 }
+					}
+					set_variable = { current_state = 2 }
+					set_variable = { selected_state = 5 }
+				}
+				else_if = {
+					limit = {
+						check_variable = { current_state = 2 }
+					}
+					set_variable = { current_state = 3 }
+					set_variable = { selected_state = 6 }
+				}
+				else_if = {
+					limit = {
+						check_variable = { current_state = 3 }
+					}
+					set_variable = { current_state = 4 }
+					set_variable = { selected_state = 7 }
+				}
+			}
+		}
+	}
+
+	ND_board_GUI = {
+		window_name = "ND_board_GUI"
+		context_type = player_context
+		parent_window_name = sub_guis
+
+		properties = {
+			manchuria_graph_progbar = {
+				frame = ND_Graphs_array^1
+			}
+			south_manchuria_progbar = {
+				frame = ND_Graphs_array^2
+			}
+			primorsky_progbar = {
+				frame = ND_Graphs_array^3
+			}
+			north_primorsky_progbar = {
+				frame =ND_Graphs_array^4
+			}
+			kyushu_progbar = {
+				frame = ND_Graphs_array^5
+			}
+			hokkaido_progbar = {
+				frame = ND_Graphs_array^6
+			}
+			taiwan_progbar = {
+				frame = ND_Graphs_array^7
+			}
+			total_graph_progbar = {
+				frame = ND_Graphs_array_total
+			}
+		}
+	}
+
+	ND_board_dis_GUI = {
+		window_name = "ND_board_GUI"
+		context_type = player_context
+		parent_window_name = sub_dis_guis
+
+		properties = {
+			manchuria_graph_progbar = {
+				frame = ND_Graphs_array^1
+			}
+			south_manchuria_progbar = {
+				frame = ND_Graphs_array^2
+			}
+			primorsky_progbar = {
+				frame = ND_Graphs_array^3
+			}
+			north_primorsky_progbar = {
+				frame =ND_Graphs_array^4
+			}
+			kyushu_progbar = {
+				frame = ND_Graphs_array^5
+			}
+			hokkaido_progbar = {
+				frame = ND_Graphs_array^6
+			}
+			taiwan_progbar = {
+				frame = ND_Graphs_array^7
+			}
+		}
+	}
+
+	Manchuria_Maps_GUI = {
+		window_name = "Manchuria_Maps_GUI"
+		context_type = player_context
+		parent_window_name = map_guis
+
+		visible = {
+			check_variable = { current_state = 1 }
+		}
+
+		triggers = {
+			manchuria_map_outline_visible = {
+				check_variable = { selected_state = 1 }
+			}
+			south_manchuria_map_outline_visible = {
+				check_variable = { selected_state = 2 }
+			}
+			primorsky_map_outline_visible = {
+				check_variable = { selected_state = 3 }
+			}
+			north_primorsky_map_outline_visible = {
+				check_variable = { selected_state = 4 }
+			}
+		}
+
+		effects = {
+			manchuria_map_click = {
+				set_variable = { selected_state = 1 }
+			}
+			south_manchuria_map_click = {
+				set_variable = { selected_state = 2 }
+			}
+			primorsky_map_click = {
+				set_variable = { selected_state = 3 }
+			}
+			north_primorsky_map_click = {
+				set_variable = { selected_state = 4 }
+			}
+		}
+	}
+
+	Manchuria_Maps_dis_GUI = {
+		window_name = "Manchuria_Maps_GUI"
+		context_type = player_context
+		parent_window_name = map_dis_guis
+
+		triggers = {
+			manchuria_map_outline_visible = {
+				check_variable = { selected_state = 1 }
+			}
+			south_manchuria_map_outline_visible = {
+				check_variable = { selected_state = 2 }
+			}
+			primorsky_map_outline_visible = {
+				check_variable = { selected_state = 3 }
+			}
+			north_primorsky_map_outline_visible = {
+				check_variable = { selected_state = 4 }
+			}
+		}
+
+
+		visible = {
+			check_variable = { current_state = 1 }
+		}
+	}
+
+	Kyushu_Maps_GUI = {
+		window_name = "Kyushu_Maps_GUI"
+		context_type = player_context
+		parent_window_name = map_guis
+
+		visible = {
+			check_variable = { current_state = 2 }
+		}
+
+		triggers = {
+			kyushu_map_outline_visible = {
+				check_variable = { selected_state = 5 }
+			}
+		}
+
+		effects = {
+			kyushu_map_click = {
+				set_variable = { selected_state = 5 }
+			}
+		}
+	}
+
+	Kyushu_Maps_dis_GUI = {
+		window_name = "Kyushu_Maps_dis_GUI"
+		context_type = player_context
+		parent_window_name = map_dis_guis
+
+		triggers = {
+			kyushu_map_outline_visible = {
+				check_variable = { selected_state = 5 }
+			}
+		}
+
+		visible = {
+			check_variable = { current_state = 2 }
+		}
+	}
+
+	Hokkaido_Maps_GUI = {
+		window_name = "Hokkaido_Maps_GUI"
+		context_type = player_context
+		parent_window_name = map_guis
+
+		visible = {
+			check_variable = { current_state = 3 }
+		}
+
+		triggers = {
+			hokkaido_map_outline_visible = {
+				check_variable = { selected_state = 6 }
+			}
+		}
+
+		effects = {
+			hokkaido_map_click = {
+				set_variable = { selected_state = 6 }
+			}
+		}
+	}
+
+	Hokkaido_Maps_dis_GUI = {
+		window_name = "Hokkaido_Maps_dis_GUI"
+		context_type = player_context
+		parent_window_name = map_dis_guis
+
+		triggers = {
+			hokkaido_map_outline_visible = {
+				check_variable = { selected_state = 6 }
+			}
+		}
+
+		visible = {
+			check_variable = { current_state = 3 }
+		}
+	}
+
+	Taiwan_Maps_GUI = {
+		window_name = "Taiwan_Maps_GUI"
+		context_type = player_context
+		parent_window_name = map_guis
+
+		visible = {
+			check_variable = { current_state = 4 }
+		}
+
+		triggers = {
+			taiwan_map_outline_visible = {
+				check_variable = { selected_state = 7 }
+			}
+		}
+
+		effects = {
+			taiwan_map_click = {
+				set_variable = { selected_state = 7 }
+			}
+		}
+	}
+
+	Taiwan_Maps_dis_GUI = {
+		window_name = "Taiwan_Maps_dis_GUI"
+		context_type = player_context
+		parent_window_name = map_dis_guis
+
+		triggers = {
+			taiwan_map_outline_visible = {
+				check_variable = { selected_state = 7 }
+			}
+		}
+
+		visible = {
+			check_variable = { current_state = 4 }
+		}
+	}
+}

@@ -87,7 +87,13 @@ set_technology = {
 	### 공군 ###
 	
 	### 육군 교리 ###
-	superior_firepower = 1
+	superior_firepower = 1 #화력우세
+	
+	### 해군 교리 ### 
+	base_strike = 1 #기지타격
+	
+	### 공군 교리 ###
+	formation_flying = 1 #전장 지원
 	
 	### 산업/공학 ###
 	fuel_silos = 1
@@ -184,7 +190,7 @@ show_ideas_tooltip = {
 }
 
 add_ideas = {
-	KOR_yi_won_emperor
+	KOR_yi_jin
 	#####게임 시작시 국민정신 ㅅㄱ#####
 	KOR_Weakening_the_kingship #근황파
 	KOR_militarism #군국주의
@@ -209,7 +215,7 @@ set_politics = {
 	ruling_party = neutrality
 	last_election = "1932.3.8"
 	election_frequency = 60
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
 	democratic = 0 #liberalism

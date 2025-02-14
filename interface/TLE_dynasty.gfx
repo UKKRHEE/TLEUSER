@@ -16,11 +16,11 @@ spriteTypes = {
 	}
 	spriteType = { 
 		name = "GFX_sup_emp_kor"
-		texturefile = "gfx/interface/bop/fix_이진지지.png"
+		texturefile = "gfx/interface/bop/TLE_balance_KOR_the_emperor.png"
 	}  
 	spriteType = { 
 		name = "GFX_sup_mil_kor" 
-		texturefile = "gfx/interface/bop/fix_이강지지.png"
+		texturefile = "gfx/interface/bop/TLE_balance_KOR_military.png"
 	}   
 	spriteType = { 
 		name = "GFX_ZLC_wupeifu_side" 

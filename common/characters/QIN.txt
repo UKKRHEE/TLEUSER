@@ -3,14 +3,11 @@ characters={
 		name="QIN_puyi"
 		portraits={
 			civilian={
-				large="gfx/leaders/QIN/Portrait_QIE_Puyi_Uniform.png"
-			}
-			army = {
-				large="gfx/leaders/QIN/Portrait_QIE_Puyi_Uniform.png"
+				large="gfx/leaders/QIN/Portrait_QIN_pu_yi.png"
 			}
 		}
 		country_leader={
-			ideology=despotism
+			ideology=monarchism
 		}
 		field_marshal={
 			traits = { politically_connected media_personality }

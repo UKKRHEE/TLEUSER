@@ -1,6 +1,55 @@
 on_actions = {
+	#일한전쟁 시스템
+	on_daily = {
+		effect = {
+			if = {
+				limit = {
+					JAP = {
+						has_war_with = KOR
+					}
+				}
+				JAP = {
+					country_event = JAP_war_of_yashima.3
+				}	
+			}
+			if = {
+				limit = {
+					JAP = {
+						has_war_with = KOR
+					}
+					KOR = {
+						controls_state = 529
+					}
+				}
+				JAP = {
+					country_event = JAP_war_of_yashima.4
+				}	
+			}
+			if = {
+				limit = {
+					JAP = {
+						has_war_with = KOR
+					}
+					KOR = {
+						controls_state = 1066
+					}
+				}
+				JAP = {
+					country_event = JAP_war_of_yashima.5
+				}	
+			}
+		}
+	}
 	on_startup = {
 		effect = {
+			if = {
+				limit = {
+					DKG = { is_ai = no } 
+				}
+				DKG = {
+					country_event = TLE_Japan_on_action.1
+				}
+			}
 			if = {
 				limit = { 
 					DKG = { is_ai = no } 
@@ -14,7 +63,7 @@ on_actions = {
 					KOR = { is_ai = no } 
 				} 
 				KOR = { 
-					play_song = "on_the_street" 
+					play_song = "youth_class" #원래 on_the_street
 				} 
 			} 
 			if = {
@@ -83,32 +132,12 @@ on_actions = {
 				} 
 			} 
 			if = {
-				limit = {
-					has_game_rule = {
-						rule = TLE_YI_JIN_SUYEOM
-						option = TLE_YI_JIN_SUYEOM_YES
-					}
-				}
-				set_portraits = {
-					character = KOR_emperor_yi_jin
-					civilian = { 
-						large ="GFX_Portrait_KOR_yi_jin_suyeom"
-					}
-				}
-			}
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = TLE_YI_JIN_SUYEOM
-						option = TLE_YI_JIN_SUYEOM_NO
-					}
-				}
-				set_portraits = {
-					character = KOR_emperor_yi_jin
-					civilian = { 
-						large ="GFX_Portrait_KOR_yi_jin_suyeom_no"
-					}
-				}
+				limit = { 
+					SIA = { is_ai = no } 
+				} 
+				SIA = { 
+					play_song = "buraphacounty" 
+				} 
 			}
 			if = {
 				limit = {
@@ -206,7 +235,7 @@ on_actions = {
 					}
 					transfer_state = 606
 					transfer_state = 1040
-					transfer_state = 979
+					transfer_state = 997
 					transfer_state = 1051
 					transfer_state = 598
 					transfer_state = 1034
@@ -279,10 +308,6 @@ on_actions = {
 						has_game_rule = {
 							rule = TLE_KOREA_WANT_TO_SEE_MEIWANCHENG
 							option = TLE_NOPE
-						}
-						has_game_rule = {
-							rule = TLE_HISTORICAL_USA_ATTACK_USER
-							option = TLE_HISTORICAL_USA_ATTACK_1940
 						}
 					}
 					LMC = {
@@ -449,7 +474,6 @@ on_actions = {
 					}
 					add_country_leader_role = {
 						character = KOR_emperor_yi_jin
-						desc="KOR_yi_jin_desc"
 						country_leader = {
 							expire = "1965.1.1"
 							ideology = despotism
@@ -972,45 +996,6 @@ on_actions = {
 						}
 					}
 					add_ideas = TLE_fucking_idea
-				}
-			}
-		}
-	}
-	on_daily = {
-		effect = {
-			if = {
-				limit = {
-					tag = JAP
-					JAP = {
-						OR = {
-							has_war_with = DKG
-							has_war_with = TBJ
-							has_war_with = FJP
-						}	
-						NOT = {
-							has_idea = JAP_the_dokugawa_attack
-						}
-						is_ai = yes
-					}
-				}
-				JAP = {
-					add_ideas = JAP_the_dokugawa_attack
-				}
-			}
-			if = {
-				limit = {
-					tag = JAP
-					JAP = {
-						has_idea = JAP_the_dokugawa_attack
-						NOT = {
-							has_war_with = DKG
-							has_war_with = TBJ
-							has_war_with = FJP
-						}
-					}
-				}
-				JAP = {
-					remove_ideas = JAP_the_dokugawa_attack
 				}
 			}
 		}

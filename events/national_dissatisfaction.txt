@@ -1,0 +1,77 @@
+add_namespace = national_dissatisfaction
+
+country_event = { #임시
+	id = national_dissatisfaction.1
+	title = national_dissatisfaction.1.t
+	desc = national_dissatisfaction.1.d
+	is_triggered_only = yes
+
+	option = { #
+		setup_side_gui_tab = yes
+	}
+}	
+
+country_event = { #임시
+	id = national_dissatisfaction.2
+	title = national_dissatisfaction.2.t
+	desc = national_dissatisfaction.2.d
+
+	is_triggered_only = yes
+
+	option = {
+		add_10_manchuria_nd = yes
+	}
+	option = {
+		sub_10_manchuria_nd = yes
+	}
+	option = {
+		add_10_manchuria_nd = yes
+		add_10_south_manchuria_nd = yes
+		add_10_primorsky_nd = yes
+		add_10_north_primorsky_nd = yes
+		add_10_kyushu_nd = yes
+		add_10_hokkaido_nd = yes
+		add_10_taiwan_nd = yes
+
+		add_20_manchuria_nd = yes
+		add_20_south_manchuria_nd = yes
+		add_20_primorsky_nd = yes
+		add_20_north_primorsky_nd = yes
+		add_20_kyushu_nd = yes
+		add_20_hokkaido_nd = yes
+		add_20_taiwan_nd = yes
+
+		add_30_manchuria_nd = yes
+		add_30_south_manchuria_nd = yes
+		add_30_primorsky_nd = yes
+		add_30_north_primorsky_nd = yes
+		add_30_kyushu_nd = yes
+		add_30_hokkaido_nd = yes
+		add_30_taiwan_nd = yes
+	}
+	option = {
+		sub_10_manchuria_nd = yes
+		sub_10_south_manchuria_nd = yes
+		sub_10_primorsky_nd = yes
+		sub_10_north_primorsky_nd = yes
+		sub_10_kyushu_nd = yes
+		sub_10_hokkaido_nd = yes
+		sub_10_taiwan_nd = yes
+
+		sub_20_manchuria_nd = yes
+		sub_20_south_manchuria_nd = yes
+		sub_20_primorsky_nd = yes
+		sub_20_north_primorsky_nd = yes
+		sub_20_kyushu_nd = yes
+		sub_20_hokkaido_nd = yes
+		sub_20_taiwan_nd = yes
+
+		sub_30_manchuria_nd = yes
+		sub_30_south_manchuria_nd = yes
+		sub_30_primorsky_nd = yes
+		sub_30_north_primorsky_nd = yes
+		sub_30_kyushu_nd = yes
+		sub_30_hokkaido_nd = yes
+		sub_30_taiwan_nd = yes
+	}
+}

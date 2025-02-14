@@ -1,0 +1,71 @@
+scripted_gui = {
+	KOR_ilsoism_GUI = {
+		context_type = decision_category
+		window_name = "KOR_ilsoism_GUI"
+
+		visible = {
+			original_tag = KOR
+		}
+
+		dynamic_lists = {
+			ilsoism_gridbox = {
+				array = ilsoism_array
+				entry_container = KOR_ilsoism_GUI_entry
+				value = ilsoism_v
+				index = ilsoism_i
+			}
+		}
+
+		properties = {
+			ilsoism_icon = {
+				frame = ilsoism_v:ilsoism_icon_frame_v
+				image = "GFX_KOR_ilsoism_icon_[?ilsoism_v]"
+				x = ilsoism_icon_x^ilsoism_i
+				y = ilsoism_icon_y^ilsoism_i
+			}
+		}
+
+		triggers = {
+			ilsoism_button_visible = {
+				AND = {
+					check_variable = { 1:ilsoism_icon_frame_v = 3 }
+					check_variable = { 2:ilsoism_icon_frame_v = 3 }
+					check_variable = { 3:ilsoism_icon_frame_v = 3 }
+					check_variable = { 4:ilsoism_icon_frame_v = 3 }
+					check_variable = { 5:ilsoism_icon_frame_v = 3 }
+					check_variable = { 6:ilsoism_icon_frame_v = 3 }
+					check_variable = { 7:ilsoism_icon_frame_v = 3 }
+					check_variable = { 8:ilsoism_icon_frame_v = 3 }
+				}
+			}
+			ilsoism_button_click_enabled = {
+				NOT = {
+					has_variable = ilsoism_dummy_var
+				}
+			}
+			gui_alert_visible = { 
+				AND = {
+					NOT = { has_variable = ilsoism_dummy_var }	
+					check_variable = { 1:ilsoism_icon_frame_v = 3 }
+					check_variable = { 2:ilsoism_icon_frame_v = 3 }
+					check_variable = { 3:ilsoism_icon_frame_v = 3 }
+					check_variable = { 4:ilsoism_icon_frame_v = 3 }
+					check_variable = { 5:ilsoism_icon_frame_v = 3 }
+					check_variable = { 6:ilsoism_icon_frame_v = 3 }
+					check_variable = { 7:ilsoism_icon_frame_v = 3 }
+					check_variable = { 8:ilsoism_icon_frame_v = 3 }
+				}
+			}
+		}
+
+		effects = {
+			ilsoism_button_click = {
+				add_to_variable = { ilsoism_dummy_var = 1 }
+				KOR = {
+					GAW_PCY_win_effect = yes	
+				}
+				clr_country_flag = gui_alert_visible
+			}
+		}
+	}
+}

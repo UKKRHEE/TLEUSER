@@ -2,7 +2,7 @@
 
 DKG_the_first_five_year_plan={
 	DKG_factory_plan = {
-		icon = GFX
+		icon = generic_form_nation
 		allowed = {
 			
 		}
@@ -56,7 +56,7 @@ DKG_the_first_five_year_plan={
 	
 DKG_dispatch_an_bakufu_army_category ={
 	DKG_dispatch_an_bakufu_army_Kinki = {
-		icon = GFX
+		icon = generic_form_nation
 		allowed = {
 			
 		}
@@ -83,7 +83,7 @@ DKG_dispatch_an_bakufu_army_category ={
 
 DKG_reitoku_reform_categories = {
 	DKG_tutorial_reitoku = {
-		icon = GFX
+		icon = generic_form_nation
 		allowed = {
 			
 		}
@@ -107,7 +107,7 @@ DKG_reitoku_reform_categories = {
 	}
 	#천황의 운명
 	DKG_koubukactai = {
-		icon = GFX
+		icon = generic_form_nation
 		allowed = {
 			
 		}
@@ -142,7 +142,7 @@ DKG_reitoku_reform_categories = {
 	}
 	#일본국 헌법
 	DKG_japanese_law = {
-		icon = GFX
+		icon = generic_form_nation
 		allowed = {
 			
 		}
@@ -178,7 +178,7 @@ DKG_reitoku_reform_categories = {
 }
 DKG_the_first_five_year_plan = {
 	DKG_tokyo_civilan_factory_plan = {
-		icon = GFX
+		icon = generic_form_nation
 		allowed = {
 
 		}

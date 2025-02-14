@@ -1,0 +1,239 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_news_event_black"
+		texturefile = "gfx/event_pictures/news_event_black.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_thainame"
+		texturefile = "gfx/event_pictures/news_event_thainame.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_indochinesewar"
+		texturefile = "gfx/event_pictures/news_event_indochinesewar.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_koreanintervention"
+		texturefile = "gfx/event_pictures/news_event_koreanintervention.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_korea_army"
+		texturefile = "gfx/event_pictures/news_event_korea_army.dds"
+	}
+	spriteType = {
+		name = "GFX_event_siam_king"
+		texturefile = "gfx/event_pictures/event_siam_king.png"
+	}
+	spriteType = {
+		name = "GFX_event_siam_flag"
+		texturefile = "gfx/event_pictures/event_siam_flag.png"
+	}
+	spriteType = {
+		name = "GFX_event_siam_nation"
+		texturefile = "gfx/event_pictures/event_siam_nation.png"
+	}
+	spriteType = {
+		name = "GFX_event_siam_culture"
+		texturefile = "gfx/event_pictures/event_siam_culture.png"
+	}
+	spriteType = {
+		name = "GFX_event_siam_korea"
+		texturefile = "gfx/event_pictures/event_siam_korea.png"
+	}
+	spriteType = {
+		name = "GFX_event_siam_leader1"
+		texturefile = "gfx/event_pictures/event_siam_leader1.png"
+	}
+	spriteType = {
+		name = "GFX_event_siam_leader2"
+		texturefile = "gfx/event_pictures/event_siam_leader2.png"
+	}
+	spriteType = {
+		name = "GFX_event_siam_fuckers"
+		texturefile = "gfx/event_pictures/event_siam_fuckers.png"
+	}
+	spriteType = {
+		name = "GFX_event_siam_radio"
+		texturefile = "gfx/event_pictures/event_siam_radio.png"
+	}
+	spriteType = {
+		name = "GFX_event_siam_palace"
+		texturefile = "gfx/event_pictures/event_siam_palace.png"
+	}
+	spriteType = {
+		name = "GFX_event_siam_railway"
+		texturefile = "gfx/event_pictures/event_siam_railway.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_indochinesewar2"
+		texturefile = "gfx/event_pictures/news_event_indochinesewar2.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_siam_civilwar"
+		texturefile = "gfx/event_pictures/news_event_siam_civilwar.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_siam_civilwarend"
+		texturefile = "gfx/event_pictures/news_event_siam_civilwarend.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_rsicivilwar"
+		texturefile = "gfx/event_pictures/news_event_rsicivilwar.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_sia_burmawar"
+		texturefile = "gfx/event_pictures/news_event_sia_burmawar.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_plaekcoup"
+		texturefile = "gfx/event_pictures/news_event_plaekcoup.png"
+	}
+	spriteType = {
+		name = "GFX_event_south_aus1"
+		texturefile = "gfx/event_pictures/event_south_aus1.png"
+	}
+	spriteType = {
+		name = "GFX_event_my_boyhood_in_siam"
+		texturefile = "gfx/event_pictures/my_boyhood_in_siam.png"
+	}
+	spriteType = {
+		name = "GFX_event_siamese_tractor"
+		texturefile = "gfx/event_pictures/siamese_tractor.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_indochinesedivision"
+		texturefile = "gfx/event_pictures/news_event_indochinesedivision.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_SIA_allcivilwar"
+		texturefile = "gfx/event_pictures/news_event_SIA_allcivilwar.png"
+	}
+	spriteType = {
+		name = "GFX_king_of_the_white_elephant"
+		texturefile = "gfx/event_pictures/king_of_the_white_elephant.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_indochinesecollapse"
+		texturefile = "gfx/event_pictures/news_event_indochinesecollapse.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_SIA_britaininwar"
+		texturefile = "gfx/event_pictures/news_event_SIA_britaininwar.png"
+	}
+	spriteType = {
+		name = "GFX_siam_king_2"
+		texturefile = "gfx/event_pictures/siam_king_2.png"
+	}
+	spriteType = {
+		name = "GFX_siam_king_3"
+		texturefile = "gfx/event_pictures/siam_king_3.png"
+	}
+	spriteType = {
+		name = "GFX_siam_king_gun"
+		texturefile = "gfx/event_pictures/siam_king_gun.png"
+	}
+	spriteType = {
+		name = "GFX_pridi_is_fucking_communist"
+		texturefile = "gfx/event_pictures/pridi_is_fucking_communist.png"
+	}
+	spriteType = {
+		name = "GFX_siam_ship"
+		texturefile = "gfx/event_pictures/siam_ship.png"
+	}
+	spriteType = {
+		name = "GFX_siam_flood"
+		texturefile = "gfx/event_pictures/siam_flood.png"
+	}
+	spriteType = {
+		name = "GFX_siam_street"
+		texturefile = "gfx/event_pictures/siam_street.png"
+	}
+	spriteType = {
+		name = "GFX_siam_march"
+		texturefile = "gfx/event_pictures/siam_march.png"
+	}
+	spriteType = {
+		name = "GFX_bangkok_bombing"
+		texturefile = "gfx/event_pictures/bangkok_bombing.png"
+	}
+	spriteType = {
+		name = "GFX_free_thai_movement"
+		texturefile = "gfx/event_pictures/free_thai_movement.png"
+	}
+	spriteType = {
+		name = "GFX_korea_in_indochina"
+		texturefile = "gfx/event_pictures/korea_in_indochina.png"
+	}
+	spriteType = {
+		name = "GFX_songsuradet_rebel"
+		texturefile = "gfx/event_pictures/songsuradet_rebel.png"
+	}
+	spriteType = {
+		name = "GFX_siam_phibun"
+		texturefile = "gfx/event_pictures/siam_phibun.png"
+	}
+	spriteType = {
+		name = "GFX_siamese_fighter"
+		texturefile = "gfx/event_pictures/siamese_fighter.png"
+	}
+	spriteType = {
+		name = "GFX_siam_phone"
+		texturefile = "gfx/event_pictures/siam_phone.png"
+	}
+	spriteType = {
+		name = "GFX_siam_coup"
+		texturefile = "gfx/event_pictures/siam_coup.png"
+	}
+	spriteType = {
+		name = "GFX_siam_nap"
+		texturefile = "gfx/event_pictures/siam_nap.png"
+	}
+	spriteType = {
+		name = "GFX_siam_pridi"
+		texturefile = "gfx/event_pictures/siam_pridi.png"
+	}
+	spriteType = {
+		name = "GFX_siam_rama_ix"
+		texturefile = "gfx/event_pictures/siam_rama_ix.png"
+	}
+	spriteType = {
+		name = "GFX_GEA_conference"
+		texturefile = "gfx/event_pictures/GEA_conference.png"
+	}
+	spriteType = {
+		name = "GFX_sakon_nakhon"
+		texturefile = "gfx/event_pictures/sakon_nakhon.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_fall_of_batavia"
+		texturefile = "gfx/event_pictures/news_event_fall_of_batavia.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_separ_burma"
+		texturefile = "gfx/event_pictures/news_event_separ_burma.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_indpe_burma"
+		texturefile = "gfx/event_pictures/news_event_indpe_burma.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_secondphi"
+		texturefile = "gfx/event_pictures/news_event_secondphi.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_indonesiawar"
+		texturefile = "gfx/event_pictures/news_event_indonesiawar.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_indonesia_independence"
+		texturefile = "gfx/event_pictures/news_event_indonesia_independence.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_indian_independence"
+		texturefile = "gfx/event_pictures/news_event_indian_independence.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_battle_of_timor"
+		texturefile = "gfx/event_pictures/news_event_battle_of_timor.png"
+	}
+}

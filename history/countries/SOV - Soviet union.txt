@@ -1235,9 +1235,9 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 10
-	fascism = 2
-	communism = 88
+	democratic = 0
+	fascism = 0
+	communism = 100
 }
 
 create_faction = Comintern

@@ -104,6 +104,9 @@ guiTypes = {
 			maxwidth = 545
 			maxheight = 377
 			format = left
+			#maxwidth = 536
+			#maxheight = 372
+			#scrollbartype = standardtext_slider
 		}
 
 		### First screen ###
@@ -139,40 +142,22 @@ guiTypes = {
 
 		### Social Media Links ###
 		buttonType = {
-			name = "TNO_discord_button"
+			name = "TLE_discord_button"
 			quadTextureSprite = "GFX_discord_button"
 			position = { x = 207 y = 180 }
 			web_link = "https://discord.gg/KfWPUTgqGz"
 		}
 		buttonType = {
-			name = "TNO_reddit_button"
-			quadTextureSprite = "GFX_reddit_button"
+			name = "TLE_novelpia_button"
+			quadTextureSprite = "GFX_novelpia_button"
 			position = { x = 385 y = 180 }
-			web_link = ""
+			web_link = "https://novelpia.com/viewer/4216315"
 		}
 		buttonType = {
-			name = "TNO_youtube_button"
+			name = "TLE_youtube_button"
 			quadTextureSprite = "GFX_youtube_button"
 			position = { x = 563 y = 180 }
 			web_link = "https://www.youtube.com/channel/UCd95MTGaqCDrk9vz8WS11BQ"
-		}
-		buttonType = {
-			name = "TNO_twitter_button"
-			quadTextureSprite = "GFX_twitter_button"
-			position = { x = 207 y = 230 }
-			web_link = ""
-		}
-		buttonType = {
-			name = "TNO_twitch_button"
-			quadTextureSprite = "GFX_twitch_button"
-			position = { x = 385 y = 230 }
-			web_link = ""
-		}
-		buttonType = {
-			name = "TNO_tvtropes_button"
-			quadTextureSprite = "GFX_tvtropes_button"
-			position = { x = 563 y = 230 }
-			web_link = "https://jwiki.kr/wiki/index.php/%EB%A7%88%EC%A7%80%EB%A7%89_%EC%A0%9C%EA%B5%AD"
 		}
 	}
 

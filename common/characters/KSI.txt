@@ -1,0 +1,31 @@
+characters={
+	KSI_pridi_banomyong={
+		name="SIA_pridi_banomyong"
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/SIA/idea_SIA_pridi_panomyong.dds"
+				large="gfx/leaders/SIA/Pridi_Banomyong.png"
+			}
+		}
+		country_leader={
+			ideology=socialism
+			desc = "SIA_pridi_banomyong_desc"
+			traits={ financial_expert }
+			id=-1
+		}
+	}
+	KSI_ananda_mahidol={
+		name="SIA_ananda_mahidol"
+		portraits={
+			civilian={
+				small="#"
+				large="gfx/leaders/SIA/Rama_VIII.png"
+			}
+		}
+		country_leader={
+			ideology=monarchism
+			desc = "KSI_ananda_mahidol_desc"
+			traits = { siamking_trait }
+		}
+	}
+}

@@ -591,16 +591,16 @@ KMT.1000.a:0 ""이곳에는 나의 모든 것이 있다네""
 #####툴팁
 
 kmt_intro_victory:0 "2차 북벌의 성공으로 국민혁명의 성공이 다시 한발짝 다가와졌지만, §R적법한 정부로서 그동안 책임지지 못했던 일들을 감당해야합니다.§!"
-kmt_recon_plan:0 "파괴된 국가를 재건하는 일련의 디시전이 추가됩니다!"
+kmt_recon_plan:0 "파괴된 국가를 재건하는 일련의 결정이 추가됩니다!"
 kmt_war_ready:0 "국민정부는 충분한 준비를 갖추었습니다."
-kmt_railway:0 "철도를 건설하는 일련의 디시전이 추가됩니다."
-###디시전
+kmt_railway:0 "철도를 건설하는 일련의 결정이 추가됩니다."
+###결정
 KMT_rework:0 "인트로"
 KMT_rework2:0 "2차 북벌"
 KMT_rework3:0 "국민정부"
 KMT_rework4:0 "중국 내전"
 KMT_rework5:0 "국민혁명"
-CHI_debug_category:0 "중국 국민당 디버그 디시전"
+CHI_debug_category:0 "중국 국민당 디버그 결정"
 CHI_debug_category_desc:0 "삼민주의 때려치우고 연성주의나 합시다!"
 CHI_DEV_tree:0 "인트로 포커스 로드"
 CHI_DEV_tree2:0 "2차 북벌 포커스 로드"

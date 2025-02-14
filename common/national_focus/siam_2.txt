@@ -1,0 +1,1078 @@
+﻿focus_tree = {
+	id = siam_focus_2
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = SIA
+		}
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 1000 }
+
+	focus = {
+		id = siam_16
+		icon = GFX_goal_theleader
+		x = 20
+		y = 0
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 100
+			hidden_effect = {
+				news_event = {
+					id = siam_news.1
+				}
+			}
+		}
+	}
+	focus = {
+		id = siam_17
+		icon = GFX_goal_theking
+		x = 18
+		y = 1
+		cost = 10
+		prerequisite = { focus = siam_16 }
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = siam.5
+			}
+		}
+	}
+	focus = {
+		id = siam_18
+		icon = GFX_goal_sia_propaganda
+		x = 20
+		y = 1
+		cost = 10
+		prerequisite = { focus = siam_16 }
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = siam.33
+			}
+			add_stability = 0.1
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = siam_19
+		icon = GFX_goal_sia_recruit
+		x = 22
+		y = 1
+		cost = 10
+		prerequisite = { focus = siam_16 }
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = {
+					OR = {
+						has_idea = disarmed_nation
+						has_idea = volunteer_only
+					}
+				}
+				add_ideas = limited_conscription
+			}
+			else = {
+				add_manpower = 182700
+			}
+		}
+	}
+	focus = {
+		id = siam_20
+		icon = GFX_goal_siamculter
+		x = 20
+		y = 2
+		cost = 10
+		prerequisite = {
+			focus = siam_17
+		}
+		prerequisite = {
+			focus = siam_18
+		}
+		prerequisite = {
+			focus = siam_19
+		}
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			set_cosmetic_tag = SIA_black
+			country_event = {
+				id = siam.6
+			}
+			hidden_effect = {
+				news_event = {
+					id = siam_news.2
+				}
+			}	
+		}
+	}
+	focus = {
+		id = siam_21
+		icon = GFX_goal_dictatorship
+		x = 20
+		y = 3
+		cost = 10
+		prerequisite = { focus = siam_20 }
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = siam.29
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.1
+			}
+		}
+		
+	}
+	focus = {
+		id = siam_22
+		icon = GFX_goal_sia_rattana
+		x = 20
+		y = 5
+		cost = 10
+		prerequisite = {  }
+		available = {
+			has_completed_focus = siam_21
+		}
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = TOOLTIP_RATTHANIYOM
+			add_state_claim = 992
+			add_state_claim = 993
+			add_state_claim = 994
+			add_state_claim = 995
+			add_state_claim = 1075
+			add_state_claim = 1076
+		}
+	}
+	focus = {
+		id = siam_23
+		icon = GFX_goal_indochina
+		x = 20
+		y = 6
+		cost = 19
+		prerequisite = { focus = siam_22 }
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+		
+		available = {
+			FRI = {
+				is_subject = no
+			}
+		}
+		bypass = {
+			FRI = {
+				exists = no
+			}
+		}
+		completion_reward = {
+			declare_war_on = {
+				target = FRI
+				type = annex_everything
+			}
+			hidden_effect = {
+				news_event = {
+					id = siam_news.3
+				}
+				clr_country_flag = SIA_global_investment
+			}
+			custom_effect_tooltip = TOOLTIP_INDOCHINESE_WAR
+		}
+	}
+	focus = {
+		id = siam_28
+		icon = GFX_goal_sia_westernization
+		x = 20
+		y = 7
+		cost = 10
+		prerequisite = { focus = siam_23 }
+		available = {
+			has_war = no
+		}
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = TOOLTIP_MODERNSIA
+		}
+	}
+	focus = {
+		id = siam_27
+		icon = GFX_SIA_PHIBUNSONGKHRAM_NF
+		x = 18
+		y = 7
+		cost = 10
+		prerequisite = { focus = siam_23 }
+		available = {
+			has_war = no
+		}
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			swap_ruler_traits = { remove = dictator add = plack_trait }
+		}
+	}
+	focus = {
+		id = siam_41
+		icon = GFX_goal_sia_imprison_people
+		x = 22
+		y = 7
+		cost = 10
+		prerequisite = { focus = siam_23 }
+		available = {
+			has_war = no
+		}
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 50
+			add_ideas = war_economy
+		}
+	}
+	focus = {
+		id = siam_42
+		icon = GFX_focus_SIA_national_arsenal
+		x = 19
+		y = 8
+		cost = 10
+		prerequisite = {
+			focus = siam_28
+		}
+		prerequisite = {
+			focus = siam_27
+		}
+		prerequisite = {
+			focus = siam_41
+		}
+		
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			289 = {
+				if = {
+					limit = {
+						is_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 7408
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 1
+						province = 1427
+						instant_build = yes
+					}
+				}
+			}
+			724 = {
+				if = {
+					limit = {
+						is_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 2
+						province = 7236
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 2
+						province = 12230
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 1
+						province = 4312
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 1
+						province = 1337
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = siam_29
+		icon = GFX_goal_fate_of_pridi
+		x = 20
+		y = 9
+		cost = 10
+		prerequisite = {
+			focus = siam_24
+		}
+		prerequisite = {
+			focus = siam_42
+		}
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = siam.34
+			}
+		}
+	}
+	focus = {
+		id = siam_24
+		icon = GFX_goal_sia_declaration
+		x = 21
+		y = 8
+		cost = 10
+		prerequisite = {
+			focus = siam_28
+		}
+		prerequisite = {
+			focus = siam_27
+		}
+		prerequisite = {
+			focus = siam_41
+		}
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = siam.54
+			}
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = siam_25
+		icon = GFX_goal_sia_neutrality
+		mutually_exclusive = { focus = siam_26 }
+		x = 18
+		y = 10
+		cost = 19
+		prerequisite = {
+			focus = siam_29
+		}
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					KOR = {
+						has_country_flag = FLAG_KOR_FASCIST_ROUTE
+					}
+				}
+				KOR = {
+					country_event = {
+						id = siam.7
+					}
+				}
+			}
+			custom_effect_tooltip = TOOLTIP_SIAMNET
+		}
+	}
+	focus = {
+		id = siam_26
+		icon = GFX_goal_focus_befriend_with_korea
+		mutually_exclusive = { focus = siam_25 }
+		x = 22
+		y = 10
+		cost = 20
+		prerequisite = {
+			focus = siam_29
+		}
+		available = {
+			KOR = {
+				has_country_flag = FLAG_KOR_FASCIST_ROUTE
+			}
+		}
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			KOR = {
+				country_event = {
+					id = siam.8
+				}
+			}
+			remove_ideas = sia_neutral
+			add_ideas = sia_expand
+			custom_effect_tooltip = TOOLTIP_SIAMINKOREA
+		}
+	}
+	focus = {
+		id = siam_30
+		icon = GFX_goal_SIAM_ARMY
+		x = 15
+		y = 11
+		cost = 5
+		prerequisite = {
+			focus = siam_25
+			focus = siam_26
+		}
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 50
+		}
+	}
+	focus = {
+		id = SIA_equipment
+		icon = GFX_goal_sia_gun
+		cost = 5
+		prerequisite = {
+			focus = siam_30
+		}
+		x = 14
+		y = 12
+			completion_reward = {
+					add_tech_bonus = {
+							name = infantry_weapons_bonus
+							bonus = 1.0
+							uses = 2
+							category = infantry_weapons
+						}
+				}
+
+	}
+	focus = {
+		id = SIA_artillery
+		icon = GFX_goal_sia_artillery
+		cost = 5
+		prerequisite = {
+			focus = siam_30
+		}
+		x = 16
+		y = 12
+		completion_reward = {
+			add_tech_bonus = {
+				name = USA_support_rock_island
+				uses = 2
+				bonus = 1.0
+				category = artillery
+				category = support_tech
+			}
+		}
+	}
+	focus = {
+		id = SIA_tanks
+		icon = GFX_goal_siam_tank
+		cost = 5
+		prerequisite = {
+			focus = SIA_equipment
+			focus = SIA_artillery
+		}
+		x = 14
+		y = 13
+			completion_reward = {
+					add_tech_bonus = {
+							name = kor_guksan_tank
+							bonus = 1
+							ahead_reduction = 1
+							category = cat_light_armor
+						}
+				}
+
+	}
+	focus = {
+		id = SIA_modernize_army
+		icon = GFX_goal_sia_ldoctrine
+		cost = 10
+		prerequisite = {
+			focus = SIA_equipment
+			focus = SIA_motorized
+		}
+		x = 16
+		y = 13
+		completion_reward = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 1.0
+				technology = motorised_infantry
+			}
+			hidden_effect = {
+				set_country_flag = completed_SIA_modernize_army
+			}
+		}
+	}
+	focus = {
+		id = siam_31
+		icon = GFX_goal_SIAM_NAVY
+		x = 20
+		y = 11
+		cost = 5
+		prerequisite = {
+			focus = siam_25
+			focus = siam_26
+		}
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			navy_experience = 50
+		}
+	}
+	focus = {
+		id = siam_destroyers
+		icon = GFX_goal_sia_cruiser
+		cost = 5
+		prerequisite = {
+			focus = siam_31
+		}
+		x = 19
+		y = 12
+			completion_reward = {
+					add_tech_bonus = {
+							name = dd_bonus
+							bonus = 1.0
+							uses = 1
+							technology = early_destroyer
+							technology = basic_destroyer
+							technology = improved_destroyer
+							technology = advanced_destroyer
+						}
+				}
+
+	}
+	focus = {
+		id = siam_submarines
+		icon = GFX_goal_sia_submarine
+		cost = 5
+		prerequisite = {
+			focus = siam_31
+		}
+		x = 21
+		y = 12
+			completion_reward = {
+					add_tech_bonus = {
+							name = ss_bonus
+							bonus = 1.0
+							ahead_reduction = 1
+							uses = 1
+							technology = early_submarine
+							technology = basic_submarine
+							technology = improved_submarine
+							technology = advanced_submarine
+						}
+				}
+
+	}
+	focus = {
+		id = siam_battleships
+		icon = GFX_goal_sia_battleship
+		cost = 5
+		prerequisite = {
+			focus = siam_destroyers
+			focus = siam_submarines
+		}
+		x = 19
+		y = 13
+			completion_reward = {
+					add_tech_bonus = {
+							name = capital_ships_bonus
+							bonus = 1.0
+							ahead_reduction = 1
+							uses = 1
+							technology = basic_battlecruiser
+							technology = basic_battleship
+							technology = improved_battleship
+							technology = advanced_battleship
+							technology = heavy_battleship
+							technology = heavy_battleship2
+						}
+				}
+
+	}
+	focus = {
+		id = siam_more_advanced_naval
+		icon = GFX_goal_sia_ndoctrine
+		cost = 5
+		prerequisite = {
+			focus = siam_destroyers
+			focus = siam_submarines
+		}
+		x = 21
+		y = 13
+			completion_reward = {
+					navy_experience = 25
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 1.0
+							uses = 2
+							category = naval_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = siam_32
+		icon = GFX_goal_SIAM_AIRCORPS
+		x = 25
+		y = 11
+		cost = 5
+		prerequisite = {
+			focus = siam_25
+			focus = siam_26
+		}
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			air_experience = 50
+		}
+	}
+	focus = {
+		id = siam_fighter
+		icon = GFX_goal_sia_fighter
+		cost = 5
+		prerequisite = {
+			focus = siam_32
+		}
+		x = 24
+		y = 12
+			completion_reward = {
+					add_tech_bonus = {
+							name = fighter_bonus
+							bonus = 1.0
+							uses = 2
+							technology = early_fighter
+							technology = fighter1
+							technology = fighter2
+							technology = fighter3
+							technology = heavy_fighter1
+							technology = heavy_fighter2
+							technology = heavy_fighter3
+						}
+						add_tech_bonus = {
+							name = CAS_bonus
+							bonus = 1.0
+							ahead_reduction = 1
+							uses = 1
+							category = cas_bomber
+						}
+				}
+
+	}
+	focus = {
+		id = siam_bomber
+		icon = GFX_goal_sia_bomber
+		cost = 5
+		prerequisite = {
+			focus = siam_32
+		}
+		x = 26
+		y = 12
+			completion_reward = {
+					add_tech_bonus = {
+							name = bomber_bonus
+							bonus = 1.0
+							uses = 2
+							technology = strategic_bomber1
+							technology = strategic_bomber2
+							technology = strategic_bomber3
+							category = tactical_bomber
+						}
+				}
+
+	}
+	focus = {
+		id = siam_airbase
+		icon = GFX_goal_sia_airfield
+		cost = 5
+		prerequisite = {
+			focus = siam_fighter
+			focus = siam_bomber
+		}
+		x = 24
+		y = 13
+			completion_reward = {
+			random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = air_base
+											size > 0
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = air_base
+																			size > 0
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = air_base
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+	}
+	focus = {
+		id = siam_more_advanced_air
+		icon = GFX_goal_sia_adoctrine
+		cost = 5
+		prerequisite = {
+			focus = siam_fighter
+			focus = siam_bomber
+		}
+		x = 26
+		y = 13
+			completion_reward = {
+					air_experience = 25
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 1.0
+							uses = 2
+							category = air_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = siam_33
+		icon = GFX_goal_sia_korea
+		x = 29
+		y = 11
+		cost = 10
+		prerequisite = {
+			focus = siam_26
+		}
+		available = {
+			has_war = yes
+		}
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = TOOLTIP_SIAMDANGER
+			289 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+			hidden_effect = {
+				add_days_mission_timeout = {
+					mission = SIA_koreaninfluence
+					days = -30
+				}
+			}
+		}
+	}
+	focus = {
+		id = siam_34
+		icon = GFX_goal_sia_koreamore
+		x = 29
+		y = 12
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = siam_33
+		}
+		available = {
+			AND = {
+				has_war_with = ENG
+				has_war_with = USA
+			}
+		}
+		bypass = {
+			has_war = no
+		}
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_timed_idea = { idea = sia_southern_operation  days = 180 }
+		}
+	
+	}
+	focus = {
+		id = siam_35
+		icon = GFX_goal_sia_koreapal
+		x = 29
+		y = 13
+		cost = 10
+		prerequisite = {
+			focus = siam_34
+		}
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = TOOLTIP_SIAMSAFE
+			hidden_effect = {
+				add_days_mission_timeout = {
+					mission = SIA_koreaninfluence
+					days = 50
+				}
+			}
+		}
+	}
+	focus = {
+		id = siam_40
+		icon = GFX_goal_sia_attackbritain
+		x = 9
+		y = 11
+		cost = 20
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = siam_25
+		}
+		available = {
+			NOT = {
+				has_completed_focus = siam_26
+			}
+		}
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = TOOLTIP_SIAUK
+			if = {
+				limit = {
+					KOR = {
+						has_country_flag = FLAG_PCY_ROUTE
+					}
+				}
+				hidden_effect = {
+					set_global_flag = SIA_attacked_burma
+					BUR = {
+						end_puppet = ENG
+						leave_faction = yes
+					}
+					SIA = {
+						declare_war_on = {
+							target = BUR
+							type = annex_everything
+						}
+					}
+					1075 = {
+						set_demilitarized_zone = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						KOR = {
+							has_country_flag = FLAG_PCY_ROUTE
+						}
+					}
+				}
+				hidden_effect = {
+					country_event = {
+						id = siam.22
+					}
+					start_border_war = {
+						change_state_after_war = no
+						attacker = {
+							state = 289
+							num_provinces = 5
+							on_win = siam_news.12
+							on_lose = siam_news.12
+							on_cancel = siam_news.12
+						}	
+						defender = {
+							state = 1076
+							num_provinces = 5
+						}
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = siam_36
+		icon = GFX_goal_sia_autonomy
+		x = 11
+		y = 11
+		cost = 10
+		prerequisite = {
+			focus = siam_25
+			focus = siam_26
+		}
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_country_leader_trait = plack_trait_2
+		}
+	}
+	focus = {
+		id = siam_38
+		icon = GFX_goal_sia_troops
+		x = 11
+		y = 12
+		cost = 10
+		prerequisite = {
+			focus = siam_36
+		}
+		available = {
+			has_completed_focus = siam_26
+		}
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 100
+			country_event = {
+				id = siam.48
+			}
+		}
+	}
+	focus = {
+		id = siam_37
+		icon = GFX_goal_newcapital
+		x = 11
+		y = 13
+		cost = 10
+		prerequisite = {
+			focus = siam_38
+		}
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_political_power = 100
+			country_event = {
+				id = siam.49
+			}
+		}
+	}
+	focus = {
+		id = siam_39
+		icon = GFX_goal_sia_new_world
+		x = 20
+		y = 14
+		cost = 2
+		available = {
+			has_war = no
+		}
+		prerequisite = {
+			focus = siam_37
+		}
+		prerequisite = {
+			focus = SIA_tank
+		}
+		prerequisite = {
+			focus = SIA_modernize_army
+		}
+		prerequisite = {
+			focus = siam_battleships
+		}
+		prerequisite = {
+			focus = siam_more_advanced_naval
+		}
+		prerequisite = {
+			focus = siam_airbase
+		}
+		prerequisite = {
+			focus = siam_more_advanced_air
+		}
+		prerequisite = {
+			focus = siam_35
+		}
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+		
+		select_effect = {
+			hidden_effect = {
+				if = {
+					limit = {
+						SIA = {
+							is_ai = no
+						}
+					}
+					play_song = "youthlife"
+				}	
+			}
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = TOOLTIP_SIANEWWORLD
+			hidden_effect = {
+				country_event = {
+					id = siam.18
+				}
+			}	
+		}
+	}
+	
+	

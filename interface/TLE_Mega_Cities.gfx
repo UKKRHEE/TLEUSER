@@ -225,46 +225,30 @@ spriteTypes = {
 		texturefile = "gfx/texticons/TLE_Mega_City_Simyang.png" 
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_Megacity_Kyoto"
+		texturefile = "gfx/texticons/TLE_Mega_City_Kyoto.png" 
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Megacity_Edo"
+		texturefile = "gfx/texticons/TLE_Mega_City_Edo.png" 
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Megacity_Beijing"
+		texturefile = "gfx/texticons/TLE_Mega_City_Beijing.png" 
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Megacity_Nanjing"
+		texturefile = "gfx/texticons/TLE_Mega_City_Nanjing.png" 
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Megacity_Wuhan"
+		texturefile = "gfx/texticons/TLE_Mega_City_Wuhan.png" 
+		legacy_lazy_load = no
+	}
 	
-	spriteType = {
-		name = "GFX_Megacity_London"
-		texturefile = "gfx/texticons/Megacity_London.dds"
-		legacy_lazy_load = no
-	}
-
-	spriteType = {
-		name = "GFX_Megacity_Paris"
-		texturefile = "gfx/texticons/Megacity_Paris.dds"
-		legacy_lazy_load = no
-	}
-
-	spriteType = {
-		name = "GFX_Megacity_Paris2"
-		texturefile = "gfx/texticons/Megacity_Paris2.dds"
-		legacy_lazy_load = no
-	}
-
-	spriteType = {
-		name = "GFX_Megacity_Frankfurt"
-		texturefile = "gfx/texticons/Megacity_Frankfurt.dds"
-		legacy_lazy_load = no
-	}
-
-	spriteType = {
-		name = "GFX_Megacity_Petrograd"
-		texturefile = "gfx/texticons/Megacity_Petrograd.dds"
-		legacy_lazy_load = no
-	}
-
-	spriteType = {
-		name = "GFX_Megacity_Melbourne"
-		texturefile = "gfx/texticons/Megacity_Melbourne.dds"
-		legacy_lazy_load = no
-	}
-
-	spriteType = {
-		name = "GFX_Megacity_EmpCity"
-		texturefile = "gfx/texticons/Megacity_EmpCity.dds"
-		legacy_lazy_load = no
-	}
 }

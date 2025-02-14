@@ -1,17 +1,25 @@
 
 state={
 	id=671
-	name="STATE_671"
+	name="STATE_HANOI"
 	resources={
 		chromium=6.000
-		tungsten=27.000
 	}
 
 	history={
 		add_core_of = VIN
-		owner = FRA
+		add_core_of = VTC
+		add_core_of = FRI
+		add_core_of = TNK
+		owner = FRI
 		victory_points = {
-			4075 1 
+			4075 10 
+		}
+		victory_points = {
+			12319 3 
+		}
+		victory_points = {
+			4529 5 
 		}
 		buildings = {
 			infrastructure = 2
@@ -27,9 +35,9 @@ state={
 	}
 
 	provinces={
-		1073 1157 1185 4075 4119 4397 4529 7015 7093 7280 7518 9948 9988 10016 10075 10103 10129 11909 11936 12008 12048 12065 12075 12297 12319 
+		1185 4075 4529 10075 10103 10129 11909 11936 12075 12319 
 	}
-	manpower=11528000
+	manpower=4528000
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

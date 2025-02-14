@@ -1,0 +1,261 @@
+guiTypes = {
+	containerWindowType = {
+		name = "KOR_decision_eulhae_goonchuk_GUI"
+		position = { x = 0 y = 0 }
+		size = { width = 510 height = 454 }
+
+		containerWindowType = {
+			name = "top"
+			position = { x = 0 y = -3 }
+
+			iconType = {
+				name = "top_icon"
+				spriteType = "GFX_decision_KOR_eulhae_law"
+				position = { x = 180 y = -10 }
+				scale = 0.85
+				pdx_tooltip = eulhae_tt
+			}
+
+			instantTextBoxType = {
+				name = "law_status"
+				position = { x = 100 y = 132 }
+				text = "eulhae_law_status"
+				font = "Bomb_28"
+				maxwidth = 300
+				maxheight = 36
+				format = center
+				pdx_tooltip = eulhae_law_tt
+			}
+		}
+
+		iconType = {
+			name = "faction_border"
+			spriteType = "GFX_eulhae_GUI_border"
+			position = { x = 1 y = 167 }
+		}
+
+		instantTextBoxType = {
+			name = "faction_title"
+			position = { x = 464 y = 225 }
+			text = "eulhae_faction_title"
+			font = "Bomb_28"
+			maxwidth = 10
+			maxheight = 36
+			format = center
+		}
+
+		containerWindowType = {
+			name = "faction"
+			position = { x = -10 y = 17 }
+
+			instantTextBoxType = {
+				name = "left_title"
+				position = { x = 70 y = 160 }
+				text = "eulhae_congress"
+				font = "Bomb_28"
+				maxwidth = 80
+				maxheight = 36
+				format = center
+			}
+
+			containerWindowType = {
+				name = "left_progbar"
+				position = { x = 20 y = 0 }
+
+				iconType = {
+					name = "minjudang_progbar"
+					spriteType = "GFX_eulhae_GUI_Progressbar_green"
+					position = { x = 25 y = 200 }
+					pdx_tooltip = eulhae_progbar_tt
+				}
+	
+				iconType = {
+					name = "minjudang_progbar_frame"
+					spriteType = "GFX_eulhae_GUI_Progressbar_Frame"
+					position = { x = 25 y = 200 }
+					pdx_tooltip = eulhae_progbar_tt
+				}
+	
+				iconType = {
+					name = "daehandang_progbar"
+					spriteType = "GFX_eulhae_GUI_Progressbar"
+					position = { x = 70 y = 200 }
+					pdx_tooltip = eulhae_progbar_low_tt
+				}
+	
+				iconType = {
+					name = "daehandang_progbar_frame"
+					spriteType = "GFX_eulhae_GUI_Progressbar_Frame"
+					position = { x = 70 y = 200 }
+					pdx_tooltip = eulhae_progbar_low_tt
+				}
+	
+				iconType = {
+					name = "sinhandang_progbar"
+					spriteType = "GFX_eulhae_GUI_Progressbar"
+					position = { x = 115 y = 200 }
+					pdx_tooltip = eulhae_progbar_high_tt
+				}
+	
+				iconType = {
+					name = "sinhandang_progbar_frame"
+					spriteType = "GFX_eulhae_GUI_Progressbar_Frame"
+					position = { x = 115 y = 200 }
+					pdx_tooltip = eulhae_progbar_high_tt
+				}
+			}
+
+			instantTextBoxType = {
+				name = "minjudang_text"
+				position = { x = -1 y = 400 }
+				text = "eulhae_minjudang"
+				font = "Bomb_16"
+				maxwidth = 130
+				maxheight = 36
+				format = center
+			}
+
+			instantTextBoxType = {
+				name = "daehandang_text"
+				position = { x = 44 y = 400 }
+				text = "eulhae_daehandang"
+				font = "Bomb_16"
+				maxwidth = 130
+				maxheight = 36
+				format = center
+			}
+
+			instantTextBoxType = {
+				name = "eulhae_sinhandang_text"
+				position = { x = 94 y = 400 }
+				text = "eulhae_sinhandang"
+				font = "Bomb_16"
+				maxwidth = 130
+				maxheight = 36
+				format = center
+			}
+	
+			instantTextBoxType = {
+				name = "center_title"
+				position = { x = 231 y = 160 }
+				text = "eulhae_military"
+				font = "Bomb_28"
+				maxwidth = 60
+				maxheight = 36
+				format = center
+			}
+
+			containerWindowType = {
+				name = "center_progbar"
+				position = { x = 40 y = 0 }
+
+				iconType = {
+					name = "control_progbar"
+					spriteType = "GFX_eulhae_GUI_Progressbar"
+					position = { x = 180 y = 200 }
+					pdx_tooltip = eulhae_progbar_high_tt
+				}
+				iconType = {
+					name = "control_progbar_frame"
+					spriteType = "GFX_eulhae_GUI_Progressbar_Frame"
+					position = { x = 180 y = 200 }
+					pdx_tooltip = eulhae_progbar_high_tt
+				}
+
+				iconType = {
+					name = "imperial_progbar"
+					spriteType = "GFX_eulhae_GUI_Progressbar"
+					position = { x = 225 y = 200 }
+					pdx_tooltip = eulhae_progbar_middle_tt
+				}
+				iconType = {
+					name = "imperial_progbar_frame"
+					spriteType = "GFX_eulhae_GUI_Progressbar_Frame"
+					position = { x = 225 y = 200 }
+					pdx_tooltip = eulhae_progbar_middle_tt
+				}
+			}
+
+			instantTextBoxType = {
+				name = "eulhae_control_text"
+				position = { x = 173 y = 400 }
+				text = "eulhae_control"
+				font = "Bomb_16"
+				maxwidth = 130
+				maxheight = 36
+				format = center
+			}
+
+			instantTextBoxType = {
+				name = "eulhae_imperial_text"
+				position = { x = 218 y = 400 }
+				text = "eulhae_imperial"
+				font = "Bomb_16"
+				maxwidth = 130
+				maxheight = 36
+				format = center
+			}
+
+			instantTextBoxType = {
+				name = "right_title"
+				position = { x = 325 y = 160 }
+				text = "eulhae_politics"
+				font = "Bomb_28"
+				maxwidth = 130
+				maxheight = 36
+				format = center
+			}
+
+			containerWindowType = {
+				name = "right_progbar"
+				position = { x = 0 y = 0 }
+
+				iconType = {
+					name = "communist_progbar"
+					spriteType = "GFX_eulhae_GUI_Progressbar"
+					position = { x = 350 y = 200 }
+					pdx_tooltip = eulhae_progbar_low_tt
+				}
+				iconType = {
+					name = "communist_progbar_frame"
+					spriteType = "GFX_eulhae_GUI_Progressbar_Frame"
+					position = { x = 350 y = 200 }
+					pdx_tooltip = eulhae_progbar_low_tt
+				}
+
+				iconType = {
+					name = "reactionary_progbar"
+					spriteType = "GFX_eulhae_GUI_Progressbar"
+					position = { x = 395 y = 200 }
+					pdx_tooltip = eulhae_progbar_low_tt
+				}
+				iconType = {
+					name = "reactionary_progbar_frame"
+					spriteType = "GFX_eulhae_GUI_Progressbar_Frame"
+					position = { x = 395 y = 200 }
+					pdx_tooltip = eulhae_progbar_low_tt
+				}
+			}
+
+			instantTextBoxType = {
+				name = "eulhae_communist_text"
+				position = { x = 300 y = 400 }
+				text = "eulhae_communist"
+				font = "Bomb_16"
+				maxwidth = 130
+				maxheight = 36
+				format = center
+			}
+
+			instantTextBoxType = {
+				name = "eulhae_reactionary_text"
+				position = { x = 355 y = 400 }
+				text = "eulhae_reactionary"
+				font = "Bomb_16"
+				maxwidth = 130
+				maxheight = 36
+				format = center
+			}
+		}
+	}
+}

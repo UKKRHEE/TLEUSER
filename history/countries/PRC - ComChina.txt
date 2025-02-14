@@ -1,4 +1,4 @@
-﻿capital = 608
+﻿capital = 595
 
 oob = "PRC_fujian"
 
@@ -21,15 +21,11 @@ add_opinion_modifier = {
 	target = CHI
 	modifier = KMT_opinion
 }
-diplomatic_relation = {
-	country = CHI
-	relation = non_aggression_pact
-}
+
 # recruit_character = PRC_mao_zedong #광저우에 연락책으로 가 있음
 recruit_character = PRC_peng_pai
 
 recruit_character = PRC_zhou_enlai
-recruit_character = PRC_tan_pingshan
 recruit_character = PRC_ye_ting
 recruit_character = PRC_he_long
 recruit_character = PRC_liu_bocheng

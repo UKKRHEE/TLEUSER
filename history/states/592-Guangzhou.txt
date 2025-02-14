@@ -20,12 +20,6 @@ state={
 			infrastructure = 2
 			industrial_complex = 2
 			air_base = 3
-			1047 = {
-				naval_base = 5
-				coastal_bunker = 1
-				bunker = 1
-
-			}
 
 		}
 		1938.10.25 = {
@@ -41,13 +35,6 @@ state={
 					transfer_state = PREV
 
 				}
-
-			}
-			DKG = {
-				set_province_controller = 1047
-				set_province_controller = 7152
-				set_province_controller = 11938
-				set_province_controller = 11941
 
 			}
 

@@ -1,0 +1,27 @@
+characters = {
+	XKC_liu_wenhui = {
+		name="XKC_liu_wenhui"
+		portraits={
+			civilian={
+				large="gfx/leaders/SZC/Portrait_SZC_Liu_Wenhui.png"
+			}
+			army = {
+				large="gfx/leaders/SZC/Portrait_SZC_Liu_Wenhui.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+		}
+		country_leader={
+			ideology=fascism_ideology
+		}
+		field_marshal={
+			traits = { inflexible_strategist trait_cautious infantry_officer skilled_staffer unyielding_defender }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+}	

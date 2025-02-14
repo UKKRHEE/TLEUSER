@@ -42,6 +42,54 @@ characters={
 			#legacy_id=20100
 		}
 	}
+	KOR_emperor_yi_hyul={
+		name=KOR_emperor_yi_hyul
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_KOR_yi_hyul.png"
+				small="gfx/interface/ideas/KOR/advisors/idea_KOR_emperor_yi_hyul_advisor.png"
+			}
+		}
+		#country_leader={
+		#	ideology=despotism
+		#	desc = "KOR_yi_hyul_DESC"
+		#	traits = {
+		#		leader_of_despotism
+		#	}
+		#}
+		corps_commander={
+			visible = {
+				has_game_rule = {
+					rule = TLE_HALLOWEEN_RULE
+					option = TLE_HALLOWEEN_RULE_YES
+				}
+			}
+			traits={ KOR_imperial_family politically_connected media_personality infantry_officer trait_cautious }
+			desc = "KOR_emperor_yi_hyul_commander_desc"
+			skill = 3
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+			#legacy_id=20102
+		}
+	}
+	KOR_emperor_yi_heon={
+		name=KOR_emperor_yi_heon
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_KOR_yi_heon.png"
+			}
+		}
+	}
+	KOR_emperor_yi_gon={
+		name=KOR_emperor_yi_gon
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_KOR_yi_gon.png"
+			}
+		}
+	}
 	
 	KOR_yi_won={
 		name=KOR_yi_won_chinwang
@@ -66,10 +114,10 @@ characters={
 			}
 			visible = {
 				NOT = {
-					has_completed_focus = kor_korean_lebensraum
+					has_country_flag = FLAG_KOR_FASCIST_ROUTE
 				}
 			}
-		    traits = { popular_figurehead }
+		    traits = { popular_figurehead imperial_member_of_korea_trait }
 		
 			ai_will_do = {
 				factor = 0.000
@@ -113,44 +161,62 @@ characters={
 			#legacy_id=20102
 		}
 	}
-	KOR_emperor_yi_hyul={
-		name=KOR_emperor_yi_hyul
-		portraits={
-			army={
-				large="gfx/leaders/KOR/Portrait_KOR_yi_hyul.png"
-				small="gfx/interface/ideas/KOR/advisors/idea_KOR_emperor_yi_hyul_advisor.png"
-			}
-		}
-		#country_leader={
-		#	ideology=despotism
-		#	desc = "KOR_yi_hyul_DESC"
-		#	traits = {
-		#		leader_of_despotism
-		#	}
-		#}
-		corps_commander={
-			visible = {
-				has_game_rule = {
-					rule = TLE_HALLOWEEN_RULE
-					option = TLE_HALLOWEEN_RULE_YES
-				}
-			}
-			traits={ KOR_imperial_family politically_connected media_personality infantry_officer trait_cautious }
-			desc = "KOR_emperor_yi_hyul_commander_desc"
-			skill = 3
-			attack_skill = 1
-			defense_skill = 2
-			planning_skill = 2
-			logistics_skill = 1
-			#legacy_id=20102
-		}
-	}
 	KOR_yi_jegak = {
 		name=KOR_yi_jegak_gun
 		portraits={
 			army={
 				large="gfx/leaders/KOR/Portrait_KOR_yi_jegak.png"
 				small="gfx/interface/ideas/KOR/advisors/idea_KOR_yi_jegak.png"
+			}
+		}
+		corps_commander={
+			visible = {
+				KHK = {
+					exists = no
+				}
+				KOR = {
+					has_idea = KOR_yi_jin
+				}
+			}
+			traits = { KOR_imperial_family KOR_tongjepa politically_connected infantry_officer media_personality inflexible_strategist }
+			skill = 4
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	KOR_yi_kiyong = {
+		name=KOR_yi_kiyong_gun
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_KOR_yi_kiyong.png"
+				small="gfx/interface/ideas/KOR/advisors/idea_KOR_yi_kiyong.png"
+			}
+		}
+		corps_commander={
+			visible = {
+				KYH = {
+					exists = no
+				}
+				KOR = {
+					has_idea = KOR_yi_jin
+				}
+			}
+			traits = { KOR_imperial_family KOR_tongjepa politically_connected infantry_officer media_personality inflexible_strategist }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	KOR_yi_haeseung = {
+		name=KOR_yi_haeseung_gun
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_KOR_yi_haeseung.png"
+				small="gfx/interface/ideas/KOR/advisors/idea_KOR_yi_haeseung.png"
 			}
 		}
 		corps_commander={
@@ -162,62 +228,31 @@ characters={
 					has_idea = KOR_yi_jin
 				}
 			}
-			traits = { KOR_tongjepa politically_connected infantry_officer media_personality inflexible_strategist }
-			skill = 4
+			traits = { KOR_imperial_family KOR_tongjepa politically_connected infantry_officer media_personality inflexible_strategist }
+			skill = 3
 			attack_skill = 2
-			defense_skill = 3
-			planning_skill = 2
+			defense_skill = 2
+			planning_skill = 3
 			logistics_skill = 3
 		}
 	}
-	KOR_yi_kiyong = {
-		name=KOR_yi_kiyong
+	KOR_yi_haechang = {
+		name=KOR_yi_haechang_gun
 		portraits={
 			army={
-				large="gfx/leaders/KOR/Portrait_KOR_yi_kiyong.png"
-				small="gfx/interface/ideas/KOR/advisors/idea_KOR_yi_kiyong.png"
+				large="gfx/leaders/KOR/Portrait_KOR_yi_haechang.png"
+				small="gfx/interface/ideas/KOR/advisors/idea_KOR_yi_haechang.png"
 			}
 		}
 		navy_leader={
 			visible = {
-				KHK = {
-					exists = no
-				}
-				KOR = {
-					has_idea = KOR_yi_jin
-				}
 			}
-			traits = { KOR_imperial_family politically_connected battleship_adherent gunnery_expert }
-			skill = 2
-			attack_skill = 2
-			defense_skill = 2
+			traits = { KOR_imperial_family politically_connected battleship_adherent }
+			skill = 5
+			attack_skill = 3
+			defense_skill = 4
 			maneuvering_skill = 2
-			coordination_skill = 2
-		}
-	}
-	KOR_yi_haeseung = {
-		name=KOR_yi_haeseung_gun
-		portraits={
-			army={
-				large="gfx/leaders/KOR/Portrait_KOR_yi_haeseung.png"
-				small="gfx/interface/ideas/KOR/advisors/idea_KOR_yi_haeseung.png"
-			}
-		}
-		navy_leader={
-			visible = {
-				KHK = {
-					exists = no
-				}
-				KOR = {
-					has_idea = KOR_yi_jin
-				}
-			}
-			traits = { KOR_imperial_family politically_connected battleship_adherent ironside }
-			skill = 2
-			attack_skill = 2
-			defense_skill = 1
-			maneuvering_skill = 3
-			coordination_skill = 2
+			coordination_skill = 3
 		}
 	}
 	
@@ -233,7 +268,7 @@ characters={
 		country_leader={
 			desc = "KIM_HUI_SUN_DESC"
 			ideology=korean_democracy
-			traits={ the_democratist }
+			traits={ prime_minister_of_eok the_democratist }
 		}
 	}
 	KOR_lee_dong_nyung = {
@@ -272,6 +307,15 @@ characters={
 			}
 		}
 	}
+	KOR_yi_siyeong = {
+		name=KOR_yi_siyeong
+		portraits = {
+			civilian = {
+				large="gfx/leaders/KOR/Portrait_KOR_yi_siyeong.png"
+				small="gfx/interface/ideas/KOR/advisors/idea_KOR_yi_siyeong.png"
+			}
+		}
+	}
 	KOR_douglas_mcarthur = {
 		name=KOR_douglas_mcarthur
 		portraits = {
@@ -303,23 +347,322 @@ characters={
 		    	original_tag = KOR
 		    }
 			available = {
+				if = {
+					limit = {
+						NOT = {
+							has_completed_focus = KOR_asian_democracy
+						}
+					}
+					has_completed_focus = KOR_asian_democracy
+				}
+				if = {
+					limit = {
+						has_completed_focus = KOR_asian_democracy
+						NOT = {
+							has_country_flag = FLAG_PCY_ROUTE
+							has_country_flag = FLAG_KKS_ROUTE
+							has_country_flag = FLAG_ACH_ROUTE
+						}
+					}
+					OR = {
+						has_country_flag = FLAG_PCY_ROUTE 
+						has_country_flag = FLAG_KKS_ROUTE 
+						has_country_flag = FLAG_ACH_ROUTE 
+					}
+				}
+				if = {
+					limit = {
+						has_country_flag = FLAG_KKS_ROUTE
+					}	
+					has_country_flag = FLAG_KKS_CAN_USE_POLITICAL_ADVISOR
+				}
 			}
 			visible = {
 				NOT = {
-					has_completed_focus = kor_korean_lebensraum
+					has_country_flag = FLAG_KOR_FASCIST_ROUTE
 					has_country_leader = {
 						character = KOR_park_jungyang
 						ruling_only = yes
 					}
 				}
 			}
+			on_add = {
+				if = {
+					limit = {
+						has_country_flag = FLAG_KKS_ROUTE
+					}
+					KOR_ilso_var_up = yes
+					KOR_government_stablity_check_progressbar = yes
+				}
+			}
+			on_remove = {
+				if = {
+					limit = {
+						has_country_flag = FLAG_KKS_ROUTE
+					}
+					KOR_ilso_var_down = yes
+					KOR_government_stablity_check_progressbar = yes
+				}
+			}
 		
-		    traits = { propaganda_expert }
+		    traits = { KOR_the_ilso_advisor kp_ilso_trait }
 			ai_will_do = {
 				factor = 0.000
 			}
 		}
 	}
+	KOR_syngman_rhee = {
+		name=KOR_syngman_rhee
+		portraits={
+			army={
+				small="gfx/interface/ideas/KOR/advisors/idea_KOR_syngman_rhee.png"
+				large = "gfx/leaders/KOR/Portrait_KOR_syngman_rhee.png"
+			}
+			civilian = {
+				small="gfx/interface/ideas/KOR/advisors/grey/idea_KOR_syngman_rhee_grey.png"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = syngman_rhee
+		    allowed = {
+		    	original_tag = KOR
+		    }
+			available = {
+				if = {
+					limit = {
+						NOT = {
+							has_completed_focus = KOR_asian_democracy
+						}
+					}
+					has_completed_focus = KOR_asian_democracy
+				}
+				if = {
+					limit = {
+						has_completed_focus = KOR_asian_democracy
+						NOT = {
+							has_country_flag = FLAG_PCY_ROUTE
+							has_country_flag = FLAG_KKS_ROUTE
+							has_country_flag = FLAG_ACH_ROUTE
+						}
+					}
+					OR = {
+						has_country_flag = FLAG_PCY_ROUTE 
+						has_country_flag = FLAG_KKS_ROUTE 
+						has_country_flag = FLAG_ACH_ROUTE 
+					}
+				}
+				if = {
+					limit = {
+						has_country_flag = FLAG_PCY_ROUTE
+					}	
+					has_country_flag = FLAG_KKS_CAN_USE_POLITICAL_ADVISOR
+				}
+			}
+			visible = {
+		    	NOT = { has_country_flag = FLAG_KOR_FASCIST_ROUTE }
+			}
+			on_add = {
+				if = {
+					limit = {
+						has_country_flag = FLAG_KKS_ROUTE
+					}
+					KOR_ilso_var_up = yes
+					KOR_government_stablity_check_progressbar = yes
+				}
+			}
+			on_remove = {
+				if = {
+					limit = {
+						has_country_flag = FLAG_KKS_ROUTE
+					}
+					KOR_ilso_var_down = yes
+					KOR_government_stablity_check_progressbar = yes
+				}
+			}
+		
+		    traits = { smooth_talking_charmer kp_ilso_trait }
+			ai_will_do = {
+				factor = 0.000
+			}
+		}
+	}
+	KOR_won_eungsang = {
+		name=KOR_won_eungsang
+		portraits={
+			army={
+				small="gfx/interface/ideas/KOR/advisors/grey/idea_KOR_won_eungsang.png"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = won_eungsang
+		    allowed = {
+		    	original_tag = KOR
+		    }
+		    available = {
+				if = {
+					limit = {
+						NOT = {
+							has_completed_focus = KOR_asian_democracy
+						}
+					}
+					has_completed_focus = KOR_asian_democracy
+				}
+				if = {
+					limit = {
+						has_completed_focus = KOR_asian_democracy
+						NOT = {
+							has_country_flag = FLAG_PCY_ROUTE
+							has_country_flag = FLAG_KKS_ROUTE
+							has_country_flag = FLAG_ACH_ROUTE
+						}
+					}
+					OR = {
+						has_country_flag = FLAG_PCY_ROUTE 
+						has_country_flag = FLAG_KKS_ROUTE 
+						has_country_flag = FLAG_ACH_ROUTE 
+					}
+				}
+				if = {
+					limit = {
+						has_country_flag = FLAG_PCY_ROUTE
+					}	
+				}
+				if = {
+					limit = {
+						has_country_flag = FLAG_KKS_ROUTE
+					}	
+					has_country_flag = FLAG_KKS_CAN_USE_POLITICAL_ADVISOR
+				}
+				if = {
+					limit = {
+						has_country_flag = FLAG_ACH_ROUTE
+					}	
+					NOT = { 
+						has_country_flag = FLAG_ACH_ROUTE 
+					}
+				}
+			}	
+			visible = {
+				NOT = {
+					has_country_flag = FLAG_KOR_FASCIST_ROUTE
+				}
+			}
+			on_add = {
+				if = {
+					limit = {
+						has_country_flag = FLAG_KKS_ROUTE
+					}
+					KOR_ilso_var_up = yes
+					KOR_government_stablity_check_progressbar = yes
+				}
+			}
+			on_remove = {
+				if = {
+					limit = {
+						has_country_flag = FLAG_KKS_ROUTE
+					}
+					KOR_ilso_var_down = yes
+					KOR_government_stablity_check_progressbar = yes
+				}
+			}
+		
+	    	traits = { economist kp_ilso_trait }
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	KOR_lee_hanggoo = {
+		name=KOR_lee_hanggoo
+		portraits={
+			army={
+				small="gfx/interface/ideas/KOR/advisors/grey/idea_KOR_lee_hanggoo.png"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = lee_hanggoo
+		    allowed = {
+		    	original_tag = KOR
+		    }
+		    available = {
+				if = {
+					limit = {
+						NOT = {
+							has_completed_focus = KOR_asian_democracy
+						}
+					}
+					has_completed_focus = KOR_asian_democracy
+				}
+				if = {
+					limit = {
+						has_completed_focus = KOR_asian_democracy
+						NOT = {
+							has_country_flag = FLAG_PCY_ROUTE
+							has_country_flag = FLAG_KKS_ROUTE
+							has_country_flag = FLAG_ACH_ROUTE
+						}
+					}
+					OR = {
+						has_country_flag = FLAG_PCY_ROUTE 
+						has_country_flag = FLAG_KKS_ROUTE 
+						has_country_flag = FLAG_ACH_ROUTE 
+					}
+				}
+				if = {
+					limit = {
+						has_country_flag = FLAG_PCY_ROUTE
+					}	
+				}
+				if = {
+					limit = {
+						has_country_flag = FLAG_KKS_ROUTE
+					}	
+					has_country_flag = FLAG_KKS_CAN_USE_POLITICAL_ADVISOR
+				}
+				if = {
+					limit = {
+						has_country_flag = FLAG_ACH_ROUTE
+					}	
+					NOT = { 
+						has_country_flag = FLAG_ACH_ROUTE 
+					}
+				}
+			}	
+			visible = {
+				NOT = {
+					has_country_flag = FLAG_KOR_FASCIST_ROUTE
+				}
+			}
+			on_add = {
+				if = {
+					limit = {
+						has_country_flag = FLAG_KKS_ROUTE
+					}
+					KOR_ilso_var_up = yes
+					KOR_government_stablity_check_progressbar = yes
+				}
+			}
+			on_remove = {
+				if = {
+					limit = {
+						has_country_flag = FLAG_KKS_ROUTE
+					}
+					KOR_ilso_var_down = yes
+					KOR_government_stablity_check_progressbar = yes
+				}
+			}
+		
+	    	traits = { compassionate_gentleman kp_ilso_trait }
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	
 	KOR_ahn_chang_ho = {
 		name=KOR_ahn_chang_ho
 		portraits={
@@ -335,11 +678,47 @@ characters={
 			slot = political_advisor
 			idea_token = ahn_chang_ho
 			available = {
+				if = {
+					limit = {
+						NOT = {
+							has_completed_focus = KOR_asian_democracy
+						}
+					}
+					has_completed_focus = KOR_asian_democracy
+				}
+				if = {
+					limit = {
+						has_completed_focus = KOR_asian_democracy
+						NOT = {
+							has_country_flag = FLAG_PCY_ROUTE
+							has_country_flag = FLAG_KKS_ROUTE
+							has_country_flag = FLAG_ACH_ROUTE
+						}
+					}
+					OR = {
+						has_country_flag = FLAG_PCY_ROUTE 
+						has_country_flag = FLAG_KKS_ROUTE 
+						has_country_flag = FLAG_ACH_ROUTE 
+					}
+				}
+				if = {
+					limit = {
+						has_country_flag = FLAG_PCY_ROUTE
+					}	
+					has_country_flag = FLAG_CAN_USE_AHN_CHANGHO
+				}
+				if = {
+					limit = {
+						has_country_flag = FLAG_KKS_ROUTE
+					}	
+					has_country_flag = FLAG_KKS_CAN_USE_POLITICAL_ADVISOR
+				}
 			}
 			visible = {
 		    	NOT = {
-					has_completed_focus = KOR_the_day_which_very_long
+					has_country_flag = FLAG_ACH_ROUTE
 				}
+		    	NOT = { has_country_flag = FLAG_KOR_FASCIST_ROUTE }
 		    	NOT = {
 					has_country_leader = {
 						character = KOR_ahn_chang_ho
@@ -350,13 +729,301 @@ characters={
 			allowed = {
 				original_tag = KOR
 			}
+			on_add = {
+				if = {
+					limit = {
+						has_country_flag = FLAG_KKS_ROUTE
+					}
+					KOR_ahn_var_up = yes
+					KOR_government_stablity_check_progressbar = yes
+				}
+			}
+			on_remove = {
+				if = {
+					limit = {
+						has_country_flag = FLAG_KKS_ROUTE
+					}
+					KOR_ahn_var_down = yes
+					KOR_government_stablity_check_progressbar = yes
+				}
+			}
 			
-			traits = { education_reformer }
+			traits = { KOR_the_dosan_advisor kp_hyokshin_trait }
 			ai_will_do = {
 				factor = 1.000
 			}
 		}
 	}
+	KOR_cho_mansik = {
+		name=KOR_cho_mansik
+		portraits={
+			army={
+				small="gfx/interface/ideas/KOR/advisors/grey/idea_KOR_cho_mansik.png"
+				large = "gfx/leaders/KOR/Portrait_KOR_cho_mansik.png"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = cho_mansik
+		    allowed = {
+		    	original_tag = KOR
+		    }
+		    available = {
+				if = {
+					limit = {
+						NOT = {
+							has_completed_focus = KOR_asian_democracy
+						}
+					}
+					has_completed_focus = KOR_asian_democracy
+				}
+				if = {
+					limit = {
+						has_completed_focus = KOR_asian_democracy
+						NOT = {
+							has_country_flag = FLAG_PCY_ROUTE
+							has_country_flag = FLAG_KKS_ROUTE
+							has_country_flag = FLAG_ACH_ROUTE
+						}
+					}
+					OR = {
+						has_country_flag = FLAG_PCY_ROUTE 
+						has_country_flag = FLAG_KKS_ROUTE 
+						has_country_flag = FLAG_ACH_ROUTE 
+					}
+				}
+				if = {
+					limit = {
+						has_country_flag = FLAG_PCY_ROUTE
+					}	
+					NOT = { 
+						has_country_flag = FLAG_PCY_ROUTE 
+					}
+				}
+				if = {
+					limit = {
+						has_country_flag = FLAG_KKS_ROUTE
+					}	
+					has_country_flag = FLAG_KKS_CAN_USE_POLITICAL_ADVISOR
+				}
+				if = {
+					limit = {
+						has_country_flag = FLAG_ACH_ROUTE
+					}	
+				}
+			}	
+			visible = {
+				NOT = {
+					has_country_flag = FLAG_KOR_FASCIST_ROUTE
+				}
+			}
+			on_add = {
+				if = {
+					limit = {
+						has_country_flag = FLAG_KKS_ROUTE
+					}
+					KOR_ahn_var_up = yes
+					KOR_government_stablity_check_progressbar = yes
+				}
+			}
+			on_remove = {
+				if = {
+					limit = {
+						has_country_flag = FLAG_KKS_ROUTE
+					}
+					KOR_ahn_var_down = yes
+					KOR_government_stablity_check_progressbar = yes
+				}
+			}
+		
+	    	traits = { tenacious_negotiator kp_hyokshin_trait }
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	KOR_lee_gap = {
+		name=KOR_lee_gap
+		portraits={
+			army={
+				small="gfx/interface/ideas/KOR/advisors/grey/idea_KOR_lee_gap.png"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = lee_gap
+		    allowed = {
+		    	original_tag = KOR
+		    }
+		    available = {
+				if = {
+					limit = {
+						NOT = {
+							has_completed_focus = KOR_asian_democracy
+						}
+					}
+					has_completed_focus = KOR_asian_democracy
+				}
+				if = {
+					limit = {
+						has_completed_focus = KOR_asian_democracy
+						NOT = {
+							has_country_flag = FLAG_PCY_ROUTE
+							has_country_flag = FLAG_KKS_ROUTE
+							has_country_flag = FLAG_ACH_ROUTE
+						}
+					}
+					OR = {
+						has_country_flag = FLAG_PCY_ROUTE 
+						has_country_flag = FLAG_KKS_ROUTE 
+						has_country_flag = FLAG_ACH_ROUTE 
+					}
+				}
+				if = {
+					limit = {
+						has_country_flag = FLAG_PCY_ROUTE
+					}	
+					has_country_flag = TLE_PAK_AHN_FIRED 
+				}
+				if = {
+					limit = {
+						has_country_flag = FLAG_KKS_ROUTE
+					}	
+					has_country_flag = FLAG_KKS_CAN_USE_POLITICAL_ADVISOR
+				}
+				if = {
+					limit = {
+						has_country_flag = FLAG_ACH_ROUTE
+					}	
+				}
+			}	
+			visible = {
+				NOT = {
+					has_country_flag = FLAG_KOR_FASCIST_ROUTE
+				}
+			}
+			on_add = {
+				if = {
+					limit = {
+						has_country_flag = FLAG_KKS_ROUTE
+					}
+					KOR_ahn_var_up = yes
+					KOR_government_stablity_check_progressbar = yes
+				}
+			}
+			on_remove = {
+				if = {
+					limit = {
+						has_country_flag = FLAG_KKS_ROUTE
+					}
+					KOR_ahn_var_down = yes
+					KOR_government_stablity_check_progressbar = yes
+				}
+			}
+		
+	    	traits = { appeasing_technocrat kp_hyokshin_trait }
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	KOR_yang_gitak = {
+		name=KOR_yang_gitak
+		portraits={
+			army={
+				small="gfx/interface/ideas/KOR/advisors/grey/idea_KOR_yang_gitak.png"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = yang_gitak
+		    allowed = {
+		    	original_tag = KOR
+		    }
+		    available = {
+				if = {
+					limit = {
+						NOT = {
+							has_completed_focus = KOR_asian_democracy
+						}
+					}
+					has_completed_focus = KOR_asian_democracy
+				}
+				if = {
+					limit = {
+						has_completed_focus = KOR_asian_democracy
+						NOT = {
+							has_country_flag = FLAG_PCY_ROUTE
+							has_country_flag = FLAG_KKS_ROUTE
+							has_country_flag = FLAG_ACH_ROUTE
+						}
+					}
+					OR = {
+						has_country_flag = FLAG_PCY_ROUTE 
+						has_country_flag = FLAG_KKS_ROUTE 
+						has_country_flag = FLAG_ACH_ROUTE 
+					}
+				}
+				if = {
+					limit = {
+						has_country_flag = FLAG_PCY_ROUTE
+					}	
+					has_country_flag = TLE_PAK_AHN_FIRED 
+				}
+				if = {
+					limit = {
+						has_country_flag = FLAG_KKS_ROUTE
+					}	
+					has_country_flag = FLAG_KKS_CAN_USE_POLITICAL_ADVISOR
+				}
+				if = {
+					limit = {
+						has_country_flag = FLAG_ACH_ROUTE
+					}	
+				}
+			}	
+			visible = {
+				NOT = {
+					has_country_flag = FLAG_KOR_FASCIST_ROUTE
+				}
+			}
+			on_add = {
+				if = {
+					limit = {
+						has_country_flag = FLAG_KKS_ROUTE
+					}
+					KOR_ahn_var_up = yes
+					KOR_government_stablity_check_progressbar = yes
+				}
+			}
+			on_remove = {
+				if = {
+					limit = {
+						has_country_flag = FLAG_KKS_ROUTE
+					}
+					KOR_ahn_var_down = yes
+					KOR_government_stablity_check_progressbar = yes
+				}
+			}
+		
+	    	traits = { backroom_backstabber kp_hyokshin_trait }
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	KOR_hong_jonggap = {
+		name=KOR_hong_jonggap
+		portraits={
+			army={
+				small="gfx/interface/ideas/KOR/advisors/grey/idea_KOR_hong_jonggap.png"
+				large="gfx/leaders/KOR/Portrait_KOR_hong_jonggap.png"
+			}
+		}
+	}
+	
+	
 	KOR_kim_gyu_sik = {
 		name=KOR_kim_gyu_sik
 		portraits={
@@ -375,10 +1042,41 @@ characters={
 		    	original_tag = KOR
 		    }
 			available = {
+				if = {
+					limit = {
+						NOT = {
+							has_completed_focus = KOR_asian_democracy
+						}
+					}
+					has_completed_focus = KOR_asian_democracy
+				}
+				if = {
+					limit = {
+						has_completed_focus = KOR_asian_democracy
+						NOT = {
+							has_country_flag = FLAG_PCY_ROUTE
+							has_country_flag = FLAG_KKS_ROUTE
+							has_country_flag = FLAG_ACH_ROUTE
+						}
+					}
+					OR = {
+						has_country_flag = FLAG_PCY_ROUTE 
+						has_country_flag = FLAG_KKS_ROUTE 
+						has_country_flag = FLAG_ACH_ROUTE 
+					}
+				}
+				if = {
+					limit = {
+						has_country_flag = FLAG_PCY_ROUTE
+					}	
+				}
 			}
 			visible = {
 				NOT = {
-					has_completed_focus = kor_korean_lebensraum
+					has_country_flag = FLAG_KKS_ROUTE
+				}
+				NOT = {
+					has_country_flag = FLAG_KOR_FASCIST_ROUTE
 					has_country_leader = {
 						character = KOR_kim_gyu_sik
 						ruling_only = yes
@@ -386,12 +1084,209 @@ characters={
 				}
 			}
 		
-		    traits = { silent_workhorse }
+		    traits = { KOR_the_woosa_advisor kp_hwapyong_trait }
 			ai_will_do = {
 				factor = 0.000
 			}
 		}
 	}
+	KOR_ahn_jaehong = {
+		name=KOR_ahn_jaehong
+		portraits={
+			army={
+				small="gfx/interface/ideas/KOR/advisors/grey/idea_KOR_ahn_jaehong.png"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ahn_jaehong
+		    allowed = {
+		    	original_tag = KOR
+		    }
+		    available = {
+				if = {
+					limit = {
+						NOT = {
+							has_completed_focus = KOR_asian_democracy
+						}
+					}
+					has_completed_focus = KOR_asian_democracy
+				}
+				if = {
+					limit = {
+						has_completed_focus = KOR_asian_democracy
+						NOT = {
+							has_country_flag = FLAG_PCY_ROUTE
+							has_country_flag = FLAG_KKS_ROUTE
+							has_country_flag = FLAG_ACH_ROUTE
+						}
+					}
+					OR = {
+						has_country_flag = FLAG_PCY_ROUTE 
+						has_country_flag = FLAG_KKS_ROUTE 
+						has_country_flag = FLAG_ACH_ROUTE 
+					}
+				}
+				if = {
+					limit = {
+						has_country_flag = FLAG_PCY_ROUTE
+					}	
+				}
+				if = {
+					limit = {
+						has_country_flag = FLAG_KKS_ROUTE
+					}	
+				}
+				if = {
+					limit = {
+						has_country_flag = FLAG_ACH_ROUTE
+					}	
+				}
+			}	
+			visible = {
+				NOT = {
+					has_country_flag = FLAG_KOR_FASCIST_ROUTE
+				}
+			}
+		
+	    	traits = { editor kp_hwapyong_trait }
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	KOR_han_sangryong = {
+		name=KOR_han_sangryong
+		portraits={
+			army={
+				small="gfx/interface/ideas/KOR/advisors/grey/idea_KOR_han_sangryong.png"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = han_sangryong
+		    allowed = {
+		    	original_tag = KOR
+		    }
+		    available = {
+				if = {
+					limit = {
+						NOT = {
+							has_completed_focus = KOR_asian_democracy
+						}
+					}
+					has_completed_focus = KOR_asian_democracy
+				}
+				if = {
+					limit = {
+						has_completed_focus = KOR_asian_democracy
+						NOT = {
+							has_country_flag = FLAG_PCY_ROUTE
+							has_country_flag = FLAG_KKS_ROUTE
+							has_country_flag = FLAG_ACH_ROUTE
+						}
+					}
+					OR = {
+						has_country_flag = FLAG_PCY_ROUTE 
+						has_country_flag = FLAG_KKS_ROUTE 
+						has_country_flag = FLAG_ACH_ROUTE 
+					}
+				}
+				if = {
+					limit = {
+						has_country_flag = FLAG_PCY_ROUTE
+					}	
+				}
+				if = {
+					limit = {
+						has_country_flag = FLAG_KKS_ROUTE
+					}	
+				}
+				if = {
+					limit = {
+						has_country_flag = FLAG_ACH_ROUTE
+					}	
+				}
+			}	
+			visible = {
+				NOT = {
+					has_country_flag = FLAG_KOR_FASCIST_ROUTE
+				}
+			}
+		
+	    	traits = { lieutenant_of_industry kp_hwapyong_trait }
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	KOR_won_saehoon = {
+		name=KOR_won_saehoon
+		portraits={
+			army={
+				small="gfx/interface/ideas/KOR/advisors/grey/idea_KOR_won_saehoon.png"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = won_saehoon
+		    allowed = {
+		    	original_tag = KOR
+		    }
+		    available = {
+				if = {
+					limit = {
+						NOT = {
+							has_completed_focus = KOR_asian_democracy
+						}
+					}
+					has_completed_focus = KOR_asian_democracy
+				}
+				if = {
+					limit = {
+						has_completed_focus = KOR_asian_democracy
+						NOT = {
+							has_country_flag = FLAG_PCY_ROUTE
+							has_country_flag = FLAG_KKS_ROUTE
+							has_country_flag = FLAG_ACH_ROUTE
+						}
+					}
+					OR = {
+						has_country_flag = FLAG_PCY_ROUTE 
+						has_country_flag = FLAG_KKS_ROUTE 
+						has_country_flag = FLAG_ACH_ROUTE 
+					}
+				}
+				if = {
+					limit = {
+						has_country_flag = FLAG_PCY_ROUTE
+					}	
+				}
+				if = {
+					limit = {
+						has_country_flag = FLAG_KKS_ROUTE
+					}	
+				}
+				if = {
+					limit = {
+						has_country_flag = FLAG_ACH_ROUTE
+					}	
+				}
+			}	
+			visible = {
+				NOT = {
+					has_country_flag = FLAG_KOR_FASCIST_ROUTE
+				}
+			}
+		
+	    	traits = { silent_workhorse kp_hwapyong_trait }
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	
 	KOR_jung_inboh={
 		name=KOR_jung_inboh
 		portraits={
@@ -404,7 +1299,7 @@ characters={
 		name=KOR_kim_changsuk
 		portraits={
 			civilian={
-				large="gfx/leaders/KOR/Portrait_KOR_provicional_government.png"
+				large="gfx/leaders/KOR/Portrait_KOR_kim_changsuk.png"
 			}
 		}
 	}
@@ -412,7 +1307,7 @@ characters={
 		name="KOR_kim_songsu"
 		portraits={
 			civilian={
-				large="gfx/leaders/KOR/Portrait_KOR_kim_songsu.dds"
+				large="gfx/leaders/KOR/Portrait_KOR_kim_songsu.png"
 				small="gfx/interface/ideas/KOR/advisors/grey/idea_KOR_kim_songsu.png"
 			}
 		}
@@ -425,13 +1320,40 @@ characters={
 		    available = {
 			}	
 			visible = {
-				has_completed_focus = kor_korean_lebensraum
+				has_country_flag = FLAG_KOR_FASCIST_ROUTE
 			}
 		
 	    	traits = { backroom_backstabber  }
 			ai_will_do = {
 				factor = 1.000
 			}
+		}
+	}
+	KOR_jang_sedong={
+		name=KOR_jang_sedong
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/Portrait_KOR_jang_sedong.png"
+				small="gfx/interface/ideas/KOR/advisors/idea_Portrait_KOR_jang_sedong.png"
+			}
+		}
+		field_marshal={
+			traits = { #트레잇
+				KOR_hwangdopa #황도파
+				old_guard #ㅄ파
+				inflexible_strategist #확고한 전략가(방어/보급)
+				politically_connected #정계와의 연줄(장군 경험치 얻음/진급 비용)
+				career_officer #직업 장교(진급 비용)
+				organisational_leader #조직 우선주의(충원률)
+			}
+			visible = {
+				has_country_flag = TLE_JANG_SEDONG_LEADER
+			}
+			skill = 5 #레벨
+			attack_skill = 4 #공 
+			defense_skill = 4 #방
+			planning_skill = 3 #작전
+			logistics_skill = 4 #보급
 		}
 	}
 
@@ -455,7 +1377,7 @@ characters={
 		#}
 		field_marshal={
 			traits = { #트레잇
-				KOR_hwangdopa #황도파
+				KOR_tongjepa #통제파
 				old_guard #ㅄ파
 				inflexible_strategist #확고한 전략가(방어/보급)
 		#		politically_connected #정계와의 연줄(장군 경험치 얻음/진급 비용)
@@ -493,7 +1415,31 @@ characters={
 			ideology=ultranationalism #소이념
 			desc = "YI_KANG_DESC" #설명
 			traits = { #인물 트레잇
+				prime_minister_of_eok
 				dictator_kor
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = yi_kang_chief
+			allowed = {
+				original_tag = KOR
+			}
+			available = {
+			}
+			visible = {
+				NOT = {
+					has_country_flag = FLAG_KOR_FASCIST_ROUTE
+				}
+			}	
+			on_add = {
+			}
+			traits = {
+				army_chief_planning_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 8.000
 			}
 		}
 		advisor={
@@ -508,6 +1454,16 @@ characters={
 			}
 			visible = {
 		    	has_completed_focus = KOR_the_day_which_very_long #국가에서 보이는 조건
+				NOT = {
+					has_country_leader = {
+						character = KOR_yi_kang
+						ruling_only = yes
+					}
+					has_country_leader = {
+						character = KOR_jo_so_ang
+						ruling_only = yes
+					}
+				}	
 			}
 		    traits = { general_of_korea } #효과
 
@@ -594,11 +1550,6 @@ characters={
 				}
 			}
 			on_add = {
-				if = {
-					limit = {
-						has_government = neutrality
-					}
-				}
 			}
 			traits = {
 				army_chief_offensive_2
@@ -776,8 +1727,8 @@ characters={
 		name=KOR_yujin_kim
 		portraits={
 			army={
-				large="gfx/leaders/KOR/easteregg/Portrait_USA_yujin_kim.png"
-				small="gfx/interface/ideas/KOR/advisors/ideas_USA_yujin_kim.dds"
+				large="gfx/leaders/USA/Portrait_USA_eugene_kim.png"
+				small="gfx/interface/ideas/KOR/advisors/idea_USA_eugene_kim.png"
 			}
 		}
 		advisor={
@@ -1089,7 +2040,7 @@ characters={
 			}
 		}
 		navy_leader={
-			traits = { naval_lineage spotter ironside }
+			traits = { naval_lineage ironside }
 			skill = 3
 			attack_skill = 3
 			defense_skill = 3
@@ -1141,8 +2092,8 @@ characters={
 		name=KOR_no_baeg_lin
 		portraits={
 			army={
-				small="gfx/interface/ideas/KOR/advisors/idea_KOR_no_baeg_lin.dds"
-				#large="gfx/leaders/KOR/Portrait_KOR_no_baeg_lin.png"
+				small="gfx/interface/ideas/KOR/advisors/idea_KOR_no_baeg_lin.png"
+				large="gfx/leaders/KOR/Portrait_KOR_no_baeg_lin.png"
 			}
 		}
 		advisor={
@@ -1161,6 +2112,21 @@ characters={
 			ai_will_do = {
 				factor = 0.100
 			}
+		}
+		corps_commander={
+			traits={
+				KOR_tongjepa
+				politically_connected
+				war_hero
+				infantry_leader
+				infantry_expert
+			}
+			skill=4
+			attack_skill=3
+			defense_skill=4
+			planning_skill=5
+			logistics_skill=3
+			desc="KOR_No_Baek_Lin_desc"
 		}
 	}
 	KOR_jang_deokchang={
@@ -1263,7 +2229,7 @@ characters={
 		
 		navy_leader={
 			#legacy_id = 19372
-			traits = { navy_career_officer aviation_enthusiast naval_lineage }
+			traits = { navy_career_officer chief_engineer spotter naval_lineage }
 			skill = 2
 			attack_skill = 2
 			defense_skill = 3
@@ -1280,7 +2246,7 @@ characters={
 			}
 		}
 		navy_leader={
-			traits = { bold superior_tactician spotter air_controller flight_deck_manager }
+			traits = { bold superior_tactician air_controller flight_deck_manager }
 			skill = 4
 			attack_skill = 4
 			defense_skill = 3
@@ -1343,6 +2309,13 @@ characters={
 		
 		    traits = { rocket_scientist }
 		}
+
+		scientist = {
+			traits = { scientist_trait_rocketry_specialist scientist_trait_brilliant_theorist }
+			skills = {
+				specialization_air = 2
+			}
+		}
 	}
 	KOR_do_sang_log = {
 		name = KOR_do_sang_log
@@ -1366,6 +2339,29 @@ characters={
 		    }
 	    	
 	    	traits = { nuclear_scientist }
+		}
+
+		scientist = {
+			traits = { scientist_trait_nuclear_specialist scientist_trait_bright }
+			skills = {
+				specialization_nuclear = 2
+			}
+		}
+	}
+	KOR_lee_won_chol = {
+		name = KOR_lee_won_chol
+		portraits = {
+			army = {
+				small="gfx/interface/ideas/KOR/advisors/idea_KOR_lee_won_chol.png"
+				large="gfx/leaders/KOR/Portrait_KOR_lee_won_chol.png"
+			}
+		}
+
+		scientist = {
+			traits = { scientist_trait_guidance_systems_expert }
+			skills = {
+				specialization_air = 2
+			}
 		}
 	}
 	KOR_kim_suk_won = {
@@ -1435,7 +2431,7 @@ characters={
 		portraits={
 			army={
 				large="gfx/leaders/KOR/Portrait_KOR_hwang_byunggil.png"
-				small = "gfx/interface/ideas/KOR/idea_KOR_hwang_byunggil.png"
+				small = "gfx/interface/ideas/KOR/advisors/idea_KOR_hwang_byunggil.png"
 			}
 		}
 		corps_commander={
@@ -1470,6 +2466,30 @@ characters={
 			attack_skill = 2
 			defense_skill = 1
 			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+	KOR_park_chunghee = {
+		name=KOR_park_chunghee
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/Portrait_KOR_park_chunghee.png"
+				small="gfx/interface/ideas/KOR/advisors/idea_KOR_park_chunghee.png"
+			}
+			army={
+				large="gfx/leaders/KOR/Portrait_KOR_park_chunghee_army.png"
+				small="gfx/interface/ideas/KOR/advisors/idea_KOR_park_chunghee_army.png"
+			}
+		}
+		corps_commander={
+			traits = { KOR_tongjepa inflexible_strategist bearer_of_artillery career_officer }
+			visible = {
+				has_country_flag = FLAG_PARK_CHUNGHEE_GENERAL
+			}
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
 			logistics_skill = 2
 		}
 	}
@@ -1910,7 +2930,7 @@ characters={
 			}
 		}
 		navy_leader={
-			traits={ navy_career_officer aviation_enthusiast }
+			traits={ navy_career_officer spotter blockade_runner }
 			skill=1
 			attack_skill=2
 			defense_skill=1
@@ -2292,42 +3312,11 @@ characters={
 				}
 			}
 			visible = {
-				has_completed_focus = kor_korean_lebensraum
+				has_country_flag = FLAG_KOR_FASCIST_ROUTE
 			}
 			
 		    traits = { propaganda_expert }
 			
-			ai_will_do = {
-				factor = 0.000
-			}
-		}
-	}
-	KOR_syngman_rhee = {
-		name=KOR_syngman_rhee
-		portraits={
-			army={
-				small="gfx/interface/ideas/KOR/advisors/idea_KOR_syngman_rhee.png"
-				large = "gfx/leaders/KOR/Portrait_KOR_syngman_rhee.png"
-			}
-			civilian = {
-				small="gfx/interface/ideas/KOR/advisors/grey/idea_KOR_syngman_rhee_grey.png"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = syngman_rhee
-		    allowed = {
-		    	original_tag = KOR
-		    }
-			available = {
-			}
-			visible = {
-		    	NOT = {
-					has_completed_focus = KOR_the_day_which_very_long
-				}
-			}
-		
-		    traits = { smooth_talking_charmer  }
 			ai_will_do = {
 				factor = 0.000
 			}
@@ -2358,12 +3347,12 @@ characters={
 				}
 			}
 			visible = {
-				has_completed_focus = kor_korean_lebensraum
+				has_country_flag = FLAG_KOR_FASCIST_ROUTE
 			}
 			on_add = {
 				if = {
 					limit = {
-						has_completed_focus = kor_korean_lebensraum
+						has_country_flag = FLAG_KOR_FASCIST_ROUTE
 						NOT = {
 							has_country_flag = TLE_YWH_CEV
 						}
@@ -2439,12 +3428,7 @@ characters={
 				
 			}
 			on_remove = {
-				hidden_effect = {
-					add_political_power = 300
-					army_experience = 50
-					air_experience = 50
-					navy_experience = 50
-				}
+				
 			}
 			
 			available = {
@@ -2485,9 +3469,7 @@ characters={
 			available = {
 			}
 			visible = {
-				NOT = {
-					has_completed_focus = kor_korean_lebensraum
-				}
+				has_country_flag = FLAG_KOR_FASCIST_ROUTE
 			}
 		    
 		    traits = { compassionate_gentleman }
@@ -2501,6 +3483,7 @@ characters={
 		portraits={
 			civilian={
 				small="gfx/interface/ideas/KOR/advisors/grey/idea_KOR_yoon_dokyong.png"
+				large="gfx/leaders/KOR/Portrait_KOR_yoon_dokyong.png"
 			}
 		}
 		advisor={
@@ -2512,10 +3495,33 @@ characters={
 		    }
 			
 			available = {
+				if = {
+					limit = {
+						NOT = {
+							has_completed_focus = KOR_asian_democracy
+						}
+					}
+					has_completed_focus = KOR_asian_democracy
+				}
+				if = {
+					limit = {
+						has_completed_focus = KOR_asian_democracy
+						NOT = {
+							has_country_flag = FLAG_PCY_ROUTE
+							has_country_flag = FLAG_KKS_ROUTE
+							has_country_flag = FLAG_ACH_ROUTE
+						}
+					}
+					OR = {
+						has_country_flag = FLAG_PCY_ROUTE 
+						has_country_flag = FLAG_KKS_ROUTE 
+						has_country_flag = FLAG_ACH_ROUTE 
+					}
+				}
 			}
 			visible = {
 				NOT = {
-					has_completed_focus = kor_korean_lebensraum
+					has_country_flag = FLAG_KOR_FASCIST_ROUTE
 				}
 			}
 		    
@@ -2608,7 +3614,7 @@ characters={
 		    available = {
 			}	
 			visible = {
-				has_completed_focus = kor_korean_lebensraum
+				has_country_flag = FLAG_KOR_FASCIST_ROUTE
 			}
 		
 	    	traits = { popular_figurehead }
@@ -2633,7 +3639,7 @@ characters={
 		    available = {
 			}	
 			visible = {
-				has_completed_focus = kor_korean_lebensraum
+				has_country_flag = FLAG_KOR_FASCIST_ROUTE
 			}
 		
 	    	traits = { smooth_talking_charmer }
@@ -2642,6 +3648,8 @@ characters={
 			}
 		}
 	}
+	###
+	###
 	KOR_chang_myon = {
 		name=KOR_chang_myon
 		portraits={
@@ -2659,7 +3667,7 @@ characters={
 			available = {
 			}
 			visible = {
-				has_completed_focus = kor_korean_lebensraum
+				has_country_flag = FLAG_KOR_FASCIST_ROUTE
 			}
 			
 			allowed = {
@@ -2680,7 +3688,6 @@ characters={
 			}
 			desc = ""
 			traits = {
-				KOR_imperial_family
 		#뒷배경
 				bearer_of_artillery #대포 운반자(야포 공격력)
 				old_guard #보수파(최대 참호/장군 경험치 얻음)
@@ -2771,7 +3778,18 @@ characters={
 			available = {
 			}
 			visible = {
-				has_completed_focus = kor_korean_lebensraum
+				OR = {
+					AND = {
+						has_country_flag = FLAG_KOR_FASCIST_ROUTE
+						NOT = {
+							has_country_leader = {
+								character = KOR_jo_so_ang
+								ruling_only = yes
+							}
+						}
+					}
+					has_country_flag = FLAG_CAN_USE_JO_SO_ANG
+				}
 			}
 			traits = {
 				national_integralist

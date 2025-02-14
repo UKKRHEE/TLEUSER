@@ -1,0 +1,8 @@
+scripted_gui = {
+
+	sia_regime_decision_ui = {
+		context_type = decision_category
+		window_name = "sia_regime_decision_ui_window"
+	}
+	
+}

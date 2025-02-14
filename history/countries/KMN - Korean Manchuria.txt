@@ -1,5 +1,5 @@
 ﻿capital = 715
-OOB = "KMN"
+#OOB = "KMN"
 set_research_slots = 3
 set_cosmetic_tag = KMN_KOR
 set_technology = {

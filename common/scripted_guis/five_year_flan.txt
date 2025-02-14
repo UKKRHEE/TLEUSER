@@ -1,0 +1,26 @@
+scripted_gui = {
+	JAP_five_years_plan_GUI = {
+		context_type = decision_category
+		window_name = "JAP_five_years_plan_GUI"
+		parent_window_token = decision_tab
+		visible = { always = yes }
+
+		visible = {
+			tag = JAP
+			has_completed_focus = JAP_new_rework
+		}
+
+		effects = {
+			
+		}
+
+		triggers = {
+
+		}
+		properties = {
+			JAP_Five_Year_Flan_Progressbar1 = {
+				frame = JAP_five_years_plan_1_bar_var
+			}
+		}
+	}
+}

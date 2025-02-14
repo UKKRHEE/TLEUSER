@@ -1,13 +1,8 @@
 
 music = {
 	name = "maintheme"
-	file = "Lee_Moon_Sae1/Gwanghwamun_love_song.ogg"
+	file = "blue_sky/when_the_crying_day.ogg"
 	volume = 1.3
-}
-music = {
-	name = "sakkijarven_polkka"
-	file = "sakkijarven_polkka.ogg"
-	volume = 1
 }
 music = {
 	name = "hoi4mainthemeallies"

@@ -323,27 +323,6 @@ southern_expansion = {
 	}
 }
 
-northern_expansion = {
-	allowed = {
-		original_tag = KOR
-	}
-	enable = {
-		has_completed_focus = KOR_prepare_for_war_with_the_soviet_union
-		country_exists = SOV
-	}
-	abort = {
-		NOT = {
-			country_exists = SOV
-		}
-	}
-
-	ai_strategy = {
-		type = antagonize
-		id = "SOV"
-		value = 200
-	}
-}
-
 chinese_war = {
 	allowed = {
 		original_tag = KOR
@@ -413,7 +392,6 @@ KOR_hush_yamamoto_its_gonna_be_ok = {
 		original_tag = KOR
 	}
 	enable = {
-		has_completed_focus = KOR_secure_the_philippines
 		has_war_with = USA
 	}
 
@@ -1268,7 +1246,7 @@ KOR_early_part_beware_allies = {
 	enable = {
 		USA = { is_in_faction = no }
 		focus_progress = {
-			focus = KOR_secure_the_philippines
+			focus = kor_threat_united_states
 			progress > 0
 		}
 		PHI = {	is_subject_of = USA }

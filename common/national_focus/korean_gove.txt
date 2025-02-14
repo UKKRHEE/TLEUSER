@@ -15,6 +15,7 @@ focus_tree = {
 				tag = KTA
 				tag = GZC
 				tag = GDC
+				tag = GNG
 				tag = JNT
 				tag = XKC
 				tag = SCC
@@ -27,6 +28,19 @@ focus_tree = {
 				tag = MSR
 				tag = MON
 				tag = TAN
+				tag = PRC
+				tag = YUN
+				tag = SIK
+				tag = GXC
+				tag = SHX
+				tag = SZC
+				tag = SCC
+				tag = XKC
+				tag = XSM
+				tag = SND
+				tag = AHC
+				tag = HNC
+				tag = TIB
 			}
 		}
 		modifier = {

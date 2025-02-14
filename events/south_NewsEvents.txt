@@ -1,0 +1,283 @@
+﻿
+add_namespace = south_news
+
+news_event = {
+	id = south_news.1 #싱가포르 함락
+	title = south_news.1.t
+	desc = south_news.1.d
+	picture = GFX_news_event_038
+	
+	major = yes
+	trigger = {
+		336 = { is_controlled_by = KOR }
+		336 = { is_owned_by = SST }
+		KOR = { has_war_with = SST }
+		NOT = { has_global_flag = fall_of_singapore }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_singapore
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = south_news.1.a
+		trigger = {
+			NOT = {
+				TAG = KOR
+				TAG = ENG
+			}
+		}
+	}
+	option = {
+		name = south_news.1.b
+		trigger = { TAG = KOR }
+	}
+	option = {
+		name = south_news.1.c
+		trigger = { TAG = ENG }
+	}
+}
+news_event = { #마닐라 함락
+	id = south_news.2
+	title = south_news.2.t
+	desc = south_news.2.d
+	picture = GFX_news_event_039
+	
+	major = yes
+	
+	trigger = {
+		327 = { is_controlled_by = KOR }
+		327 = { is_owned_by = PHI }
+		KOR = { has_war_with = PHI }
+		NOT = { has_global_flag = fall_of_manila }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_manila
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = south_news.2.a
+		trigger = {
+			NOT = {
+				TAG = KOR
+			}
+		}
+	}
+	option = {
+		name = south_news.2.b
+		trigger = { TAG = KOR }
+	}
+}
+news_event = {
+	id = south_news.3 #홍콩 함락
+	title = south_news.3.t
+	desc = south_news.3.d
+	picture = GFX_news_event_040
+	
+	major = yes
+	trigger = {
+		326 = { is_controlled_by = KOR }
+		326 = { is_owned_by = ENG }
+		KOR = { has_war_with = ENG }
+		NOT = { has_global_flag = fall_of_hongkong }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_hongkong
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = south_news.3.a
+		trigger = {
+			TAG = KOR
+		}
+	}
+	option = {
+		name = south_news.3.b
+		trigger = {
+			NOT = {
+				TAG = KOR
+			}
+		}
+	}
+}
+news_event = {
+	id = south_news.4
+	title = south_news.4.t
+	desc = south_news.4.d
+	picture = GFX_news_event_046
+	
+	major = yes
+	
+	trigger = {
+		431 = { is_controlled_by = KOR }
+		431 = { is_owned_by = RAJ }
+		KOR = { has_war_with = RAJ }
+		NOT = { has_global_flag = fall_of_calcutta }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_calcutta
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = south_news.4.a
+		trigger = {
+			TAG = KOR
+		}
+	}
+	option = {
+		name = south_news.4.b
+		trigger = {
+			NOT = {
+				TAG = KOR
+			}
+		}
+	}
+}
+news_event = {
+	id = south_news.5
+	title = south_news.5.t
+	desc = south_news.5.d
+	picture = GFX_news_event_delhi_fall
+	
+	major = yes
+	
+	trigger = {
+		439 = { is_controlled_by = KOR }
+		439 = { is_owned_by = RAJ }
+		KOR = { has_war_with = RAJ }
+		NOT = { has_global_flag = fall_of_new_delhi }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_new_delhi
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = south_news.5.a
+		trigger = {
+			TAG = KOR
+		}
+	}
+	option = {
+		name = south_news.5.b
+		trigger = {
+			NOT = {
+				TAG = KOR
+			}
+		}
+	}
+}
+news_event = {
+	id = south_news.6
+	title = south_news.6.t
+	desc = south_news.6.d
+	picture = GFX_news_event_fall_of_batavia
+	
+	major = yes
+	
+	trigger = {
+		335 = { is_controlled_by = KOR }
+		335 = { is_owned_by = INS }
+		KOR = { has_war_with = INS }
+		NOT = { has_global_flag = fall_of_batavia }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_batavia
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = south_news.6.a
+		trigger = {
+			TAG = KOR
+		}
+	}
+	option = {
+		name = south_news.6.b
+		trigger = {
+			NOT = {
+				TAG = KOR
+			}
+		}
+	}
+}
+news_event = {
+	id = south_news.7
+	title = south_news.7.t
+	desc = south_news.7.d
+	picture = GFX_news_event_fall_of_batavia
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		set_global_flag = #
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = south_news.7.a
+	}
+}
+news_event = {
+	id = south_news.8
+	title = south_news.8.t
+	desc = south_news.8.d
+	picture = GFX_news_event_battle_of_timor
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = south_news.8.a
+		trigger = {
+			NOT = {
+				TAG = KOR
+			}
+		}
+	}
+	option = {
+		name = south_news.8.b
+		trigger = {
+			TAG = KOR
+		}
+	}
+}

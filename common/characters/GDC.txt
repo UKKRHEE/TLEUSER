@@ -1,9 +1,9 @@
 characters={
-	GDC_song_hoseong={
-		name="GDC_song_hoseong"
+	GDC_chen_jitang={
+		name="GDC_chen_jitang"
 		portraits={
 			civilian={
-				large="gfx/leaders/KOR/Portrait_KOR_song_hoseong.png"
+				large="gfx/leaders/GDC/Portrait_GDC_Chen_Jitang.png"
 			}
 		}
 		country_leader={
@@ -12,17 +12,9 @@ characters={
 			id=-1
 		}
 		country_leader={
-			ideology=fascism_ideology
+			ideology=ultranationalism
 			traits={ }
 			id=-1
-		}
-	}
-	GDC_chen_jitang={
-		name="GDC_chen_jitang"
-		portraits={
-			civilian={
-				large="gfx/leaders/GDC/Portrait_GDC_Chen_Jitang.png"
-			}
 		}
 	}
 }

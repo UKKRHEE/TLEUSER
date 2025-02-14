@@ -76,6 +76,19 @@ ideas = {
 			
 			}
 		}
+		KMT_kks_the_time_out = {
+			allowed = {
+				always = no
+			}
+			picture = idea_generic_supply_depot
+			modifier = {
+				stability_factor = 0.4
+				war_support_factor = 0.4
+				conscription_factor = 0.5
+				army_core_attack_factor = 15
+				army_core_defence_factor = 15
+			}
+		}
 		CHI_national_revolution1 = {
 			allowed = {
 				always = no
@@ -174,6 +187,9 @@ ideas = {
 				always = no
 			}
 			picture = YUN_huguojun
+			rule = { 
+				can_join_factions = no
+			}
 			modifier = {
 				communism_acceptance = 50
 				fascism_acceptance = 3
@@ -191,6 +207,9 @@ ideas = {
 				always = no
 			}
 			picture = chi_warlord_integration2
+			rule = { 
+				can_join_factions = no
+			}
 			modifier = {
 				communism_acceptance = 35
 				fascism_acceptance = 10
@@ -205,6 +224,9 @@ ideas = {
 				always = no
 			}
 			picture = chi_warlord_integration3
+			rule = { 
+				can_join_factions = no
+			}
 			modifier = {
 				communism_acceptance = 20
 				democratic_acceptance = 10
@@ -220,6 +242,9 @@ ideas = {
 				always = no
 			}
 			picture = chi_warlord_integration4
+			rule = { 
+				can_join_factions = no
+			}
 			modifier = {
 				communism_acceptance = 50
 				democratic_acceptance = 5
@@ -236,6 +261,9 @@ ideas = {
 				always = no
 			}
 			picture = chi_warlord_integration5
+			rule = { 
+				can_join_factions = no
+			}
 			modifier = {
 				communism_acceptance = 25
 				democratic_acceptance = 25
@@ -250,6 +278,9 @@ ideas = {
 				always = no
 			}
 			picture = chi_warlord_integration5
+			rule = { 
+				can_join_factions = no
+			}
 			modifier = {
 				democratic_acceptance = 70
 				stability_factor = 0.2
@@ -263,6 +294,9 @@ ideas = {
 				always = no
 			}
 			picture = chi_warlord_integration5
+			rule = { 
+				can_join_factions = no
+			}
 			modifier = {
 				
 				democratic_acceptance = 70
@@ -277,6 +311,9 @@ ideas = {
 				always = no
 			}
 			picture = chi_warlord_integration5
+			rule = { 
+				can_join_factions = no
+			}
 			modifier = {
 				communism_acceptance = 70
 				stability_factor = 0.15
@@ -290,6 +327,9 @@ ideas = {
 				always = no
 			}
 			picture = chi_warlord_integration5
+			rule = { 
+				can_join_factions = no
+			}
 			modifier = {
 				political_power_factor = 0.33
 				stability_factor = -0.25

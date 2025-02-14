@@ -27,6 +27,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_texticon_bookmark_JAP"
+		texturefile = "gfx/interface/JAP_GUI/JAP_bookmark_texticon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_texticon_bookmark_KOR"
 		textureFile = "gfx/texticons/bookmarks/texticon_bookmark_KOR.png"
 		legacy_lazy_load = no
@@ -36,6 +41,18 @@ spriteTypes = {
 		textureFile = "gfx/texticons/bookmarks/texticon_nasang_logo.png"
 		legacy_lazy_load = no
 	}
-	
+	spriteType = {
+		name = "GFX_korean_puppet_icon"
+		textureFile = "gfx/interface/autonomy/korean_puppet.png"
+	}
+	spriteType = {
+		name = "GFX_korean_military_admin_icon"
+		textureFile = "gfx/interface/autonomy/korean_military_admin.png"
+	}
+	spriteType = {
+		name = "GFX_texticon_southasia"
+		textureFile = "gfx/texticons/texticon_southasia.png"
+		legacy_lazy_load = no
+	}
 }
  

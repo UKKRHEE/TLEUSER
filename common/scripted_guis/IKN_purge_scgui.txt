@@ -1,0 +1,25 @@
+scripted_gui = {
+	KOR_IKN_purge_GUI = {
+		context_type = decision_category
+		window_name = "KOR_IKN_purge_GUI"
+		parent_window_token = decision_tab
+		visible = { always = yes }
+
+		visible = {
+			tag = KOR
+		}
+
+		effects = {
+			
+		}
+
+		triggers = {
+
+		}
+		properties = {
+			KOR_IKN_purge_Progressbar = {
+				frame = KOR_ikn_purge_bar_var
+			}
+		}
+	}
+}

@@ -18,7 +18,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_frontend_TLE_GAME_VERSION" 
-		textureFile = "gfx/interface/version/TLE_GAME_VERSION.png"
+		textureFile = "gfx/interface/version/TLE_GAME_VERSION_0_2_1.png"
 	}
 	spriteType = {
 		name = "GFX_bookmark_TLE_logo" 
@@ -30,11 +30,11 @@ spriteTypes = {
 	}	
 	spriteType = {
 		name = "GFX_ideology_KOR_neutrality_group"
-		texturefile = "gfx/yi_dynasties.dds"
+		texturefile = "gfx/interface/ideologies/KOR_imperial.png"
 	}	
 	spriteType = {
 		name = "GFX_ideology_KOR_fascism_group"
-		texturefile = "gfx/yi_dynasties.dds"
+		texturefile = "gfx/interface/ideologies/KOR_imperial.png"
 	}	
 	
 	spriteType = {
@@ -136,51 +136,51 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_ideology_KOR_fascism_ideology"
-		texturefile = "gfx/yi_dynasties.dds"
+		texturefile = "gfx/interface/ideologies/KOR_imperial.png"
 	}
 	spriteType = {
 		name = "GFX_ideology_KOR_nazism"
-		texturefile = "gfx/yi_dynasties.dds"
+		texturefile = "gfx/interface/ideologies/KOR_imperial.png"
 	}
 	spriteType = {
 		name = "GFX_ideology_KOR_rexism"
-		texturefile = "gfx/yi_dynasties.dds"
+		texturefile = "gfx/interface/ideologies/KOR_imperial.png"
 	}
 	spriteType = {
 		name = "GFX_ideology_KOR_socialism"
-		texturefile = "gfx/yi_dynasties.dds"
+		texturefile = "gfx/interface/ideologies/KOR_imperial.png"
 	}
 	spriteType = {
 		name = "GFX_ideology_KOR_centrism"
-		texturefile = "gfx/yi_dynasties.dds"
+		texturefile = "gfx/interface/ideologies/KOR_imperial.png"
 	}
 	spriteType = {
 		name = "GFX_ideology_KOR_despotism"
-		texturefile = "gfx/yi_dynasties.dds"
+		texturefile = "gfx/interface/ideologies/KOR_imperial.png"
 	}
 	spriteType = {
 		name = "GFX_ideology_KOR_liberalism"
-		texturefile = "gfx/yi_dynasties.dds" 
+		texturefile = "gfx/interface/ideologies/KOR_imperial.png" 
 	}
 	spriteType = {
 		name = "GFX_ideology_KOR_conservatism"
-		texturefile = "gfx/yi_dynasties.dds"
+		texturefile = "gfx/interface/ideologies/KOR_imperial.png"
 	}
 	spriteType = {
 		name = "GFX_ideology_JAP_centrism" 
-		texturefile = "gfx/interface/ideologies/fix_JAP_neutrality_showa.png"
+		texturefile = "gfx/interface/ideologies/JAP_imperial.png"
 	}
 	spriteType = {
 		name = "GFX_ideology_JAP_despotism"
-		texturefile = "gfx/interface/ideologies/fix_JAP_neutrality_showa.png"
+		texturefile = "gfx/interface/ideologies/JAP_imperial.png"
 	}
 	spriteType = {
 		name = "GFX_ideology_JAP_showaism" 
-		texturefile = "gfx/interface/ideologies/fix_JAP_neutrality_showa.png"
+		texturefile = "gfx/interface/ideologies/JAP_imperial.png"
 	}
 	spriteType = {
 		name = "GFX_ideology_JAP_fascism_ideology"
-		texturefile = "gfx/interface/ideologies/fix_JAP_neutrality_showa.png"
+		texturefile = "gfx/interface/ideologies/JAP_imperial.png"
 	}
 	
 	spriteType = {
@@ -229,7 +229,11 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_ideology_korean_democracy"
-		texturefile = "gfx/yi_dynasties.dds"
+		texturefile = "gfx/interface/ideologies/KOR_imperial.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_korean_oligarchism"
+		texturefile = "gfx/interface/ideologies/KOR_imperial.png"
 	}
 
 	spriteType = {

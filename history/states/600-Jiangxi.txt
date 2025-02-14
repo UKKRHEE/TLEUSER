@@ -8,7 +8,7 @@ state={
 			1066 3 
 		}
 		victory_points = {
-			3992 3 
+			3992 5 
 		}
 		owner = WZC
 		add_core_of = CHI

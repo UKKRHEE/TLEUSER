@@ -1,0 +1,360 @@
+defined_text = {
+	name = SIA_kfac_loyalty_status
+	text = {
+		trigger = { 
+			OR = {
+				check_variable = { SIA_kfac_loyalty > 80 }
+				check_variable = { SIA_kfac_loyalty = 100 }
+			}
+		}
+		localization_key = SIA_kfac_loyalty_status_very_high
+	}
+	text = {
+		trigger = { 			
+			AND = {
+				check_variable = { SIA_kfac_loyalty > 60 }
+				check_variable = { SIA_kfac_loyalty < 81 }
+			}
+		}
+		localization_key = SIA_kfac_loyalty_status_high
+	}
+	text = {
+		trigger = { 
+			AND = {
+				check_variable = { SIA_kfac_loyalty > 40 }
+				check_variable = { SIA_kfac_loyalty < 61 }
+			}
+		}
+		localization_key = SIA_kfac_loyalty_status_middle
+	}
+	text = {
+		trigger = { 
+			AND = {
+				check_variable = { SIA_kfac_loyalty > 20 }
+				check_variable = { SIA_kfac_loyalty < 41 }
+			}
+		}
+		localization_key = SIA_kfac_loyalty_status_low
+	}
+	text = {
+		trigger = { 
+			check_variable = { SIA_kfac_loyalty < 21 }
+		}
+		localization_key = SIA_kfac_loyalty_status_very_low
+	}
+}
+defined_text = {
+	name = SIA_pfac_loyalty_status
+	text = {
+		trigger = { 
+			OR = {
+				check_variable = { SIA_pfac_loyalty > 80 }
+				check_variable = { SIA_pfac_loyalty = 100 }
+			}
+		}
+		localization_key = SIA_pfac_loyalty_status_very_high
+	}
+	text = {
+		trigger = { 			
+			AND = {
+				check_variable = { SIA_pfac_loyalty > 60 }
+				check_variable = { SIA_pfac_loyalty < 81 }
+			}
+		}
+		localization_key = SIA_pfac_loyalty_status_high
+	}
+	text = {
+		trigger = { 
+			AND = {
+				check_variable = { SIA_pfac_loyalty > 40 }
+				check_variable = { SIA_pfac_loyalty < 61 }
+			}
+		}
+		localization_key = SIA_pfac_loyalty_status_middle
+	}
+	text = {
+		trigger = { 
+			AND = {
+				check_variable = { SIA_pfac_loyalty > 20 }
+				check_variable = { SIA_pfac_loyalty < 41 }
+			}
+		}
+		localization_key = SIA_pfac_loyalty_status_low
+	}
+	text = {
+		trigger = { 
+			check_variable = { SIA_pfac_loyalty < 21 }
+		}
+		localization_key = SIA_pfac_loyalty_status_very_low
+	}
+}
+defined_text = {
+	name = SIA_mili_loyalty_status
+	text = {
+		trigger = { 
+			OR = {
+				check_variable = { SIA_mili_loyalty > 80 }
+				check_variable = { SIA_mili_loyalty = 100 }
+			}
+		}
+		localization_key = SIA_mili_loyalty_status_very_high
+	}
+	text = {
+		trigger = { 			
+			AND = {
+				check_variable = { SIA_mili_loyalty > 60 }
+				check_variable = { SIA_mili_loyalty < 81 }
+			}
+		}
+		localization_key = SIA_mili_loyalty_status_high
+	}
+	text = {
+		trigger = { 
+			AND = {
+				check_variable = { SIA_mili_loyalty > 40 }
+				check_variable = { SIA_mili_loyalty < 61 }
+			}
+		}
+		localization_key = SIA_mili_loyalty_status_middle
+	}
+	text = {
+		trigger = { 
+			AND = {
+				check_variable = { SIA_mili_loyalty > 20 }
+				check_variable = { SIA_mili_loyalty < 41 }
+			}
+		}
+		localization_key = SIA_mili_loyalty_status_low
+	}
+	text = {
+		trigger = { 
+			check_variable = { SIA_mili_loyalty < 21 }
+		}
+		localization_key = SIA_mili_loyalty_status_very_low
+	}
+}
+defined_text = {
+	name = SIA_peop_loyalty_status
+	text = {
+		trigger = { 
+			OR = {
+				check_variable = { SIA_peop_loyalty > 80 }
+				check_variable = { SIA_peop_loyalty = 100 }
+			}
+		}
+		localization_key = SIA_peop_loyalty_status_very_high
+	}
+	text = {
+		trigger = { 			
+			AND = {
+				check_variable = { SIA_peop_loyalty > 60 }
+				check_variable = { SIA_peop_loyalty < 81 }
+			}
+		}
+		localization_key = SIA_peop_loyalty_status_high
+	}
+	text = {
+		trigger = { 
+			AND = {
+				check_variable = { SIA_peop_loyalty > 40 }
+				check_variable = { SIA_peop_loyalty < 61 }
+			}
+		}
+		localization_key = SIA_peop_loyalty_status_middle
+	}
+	text = {
+		trigger = { 
+			AND = {
+				check_variable = { SIA_peop_loyalty > 20 }
+				check_variable = { SIA_peop_loyalty < 41 }
+			}
+		}
+		localization_key = SIA_peop_loyalty_status_low
+	}
+	text = {
+		trigger = { 
+			check_variable = { SIA_peop_loyalty < 21 }
+		}
+		localization_key = SIA_peop_loyalty_status_very_low
+	}
+}
+defined_text = {
+	name = SIA_kfac_popularity_status
+	text = {
+		trigger = { 
+			OR = {
+				check_variable = { SIA_kfac_popularity > 80 }
+				check_variable = { SIA_kfac_popularity = 100 }
+			}
+		}
+		localization_key = SIA_kfac_popularity_status_very_high
+	}
+	text = {
+		trigger = { 			
+			AND = {
+				check_variable = { SIA_kfac_popularity > 60 }
+				check_variable = { SIA_kfac_popularity < 81 }
+			}
+		}
+		localization_key = SIA_kfac_popularity_status_high
+	}
+	text = {
+		trigger = { 
+			AND = {
+				check_variable = { SIA_kfac_popularity > 40 }
+				check_variable = { SIA_kfac_popularity < 61 }
+			}
+		}
+		localization_key = SIA_kfac_popularity_status_middle
+	}
+	text = {
+		trigger = { 
+			AND = {
+				check_variable = { SIA_kfac_popularity > 20 }
+				check_variable = { SIA_kfac_popularity < 41 }
+			}
+		}
+		localization_key = SIA_kfac_popularity_status_low
+	}
+	text = {
+		trigger = { 
+			check_variable = { SIA_kfac_popularity < 21 }
+		}
+		localization_key = SIA_kfac_popularity_status_very_low
+	}
+}
+defined_text = {
+	name = SIA_pfac_popularity_status
+	text = {
+		trigger = { 
+			OR = {
+				check_variable = { SIA_pfac_popularity > 80 }
+				check_variable = { SIA_pfac_popularity = 100 }
+			}
+		}
+		localization_key = SIA_pfac_popularity_status_very_high
+	}
+	text = {
+		trigger = { 			
+			AND = {
+				check_variable = { SIA_pfac_popularity > 60 }
+				check_variable = { SIA_pfac_popularity < 81 }
+			}
+		}
+		localization_key = SIA_pfac_popularity_status_high
+	}
+	text = {
+		trigger = { 
+			AND = {
+				check_variable = { SIA_pfac_popularity > 40 }
+				check_variable = { SIA_pfac_popularity < 61 }
+			}
+		}
+		localization_key = SIA_pfac_popularity_status_middle
+	}
+	text = {
+		trigger = { 
+			AND = {
+				check_variable = { SIA_pfac_popularity > 20 }
+				check_variable = { SIA_pfac_popularity < 41 }
+			}
+		}
+		localization_key = SIA_pfac_popularity_status_low
+	}
+	text = {
+		trigger = { 
+			check_variable = { SIA_pfac_popularity < 21 }
+		}
+		localization_key = SIA_pfac_popularity_status_very_low
+	}
+}
+defined_text = {
+	name = SIA_mili_popularity_status
+	text = {
+		trigger = { 
+			OR = {
+				check_variable = { SIA_mili_popularity > 80 }
+				check_variable = { SIA_mili_popularity = 100 }
+			}
+		}
+		localization_key = SIA_mili_popularity_status_very_high
+	}
+	text = {
+		trigger = { 			
+			AND = {
+				check_variable = { SIA_mili_popularity > 60 }
+				check_variable = { SIA_mili_popularity < 81 }
+			}
+		}
+		localization_key = SIA_mili_popularity_status_high
+	}
+	text = {
+		trigger = { 
+			AND = {
+				check_variable = { SIA_mili_popularity > 40 }
+				check_variable = { SIA_mili_popularity < 61 }
+			}
+		}
+		localization_key = SIA_mili_popularity_status_middle
+	}
+	text = {
+		trigger = { 
+			AND = {
+				check_variable = { SIA_mili_popularity > 20 }
+				check_variable = { SIA_mili_popularity < 41 }
+			}
+		}
+		localization_key = SIA_mili_popularity_status_low
+	}
+	text = {
+		trigger = { 
+			check_variable = { SIA_mili_popularity < 21 }
+		}
+		localization_key = SIA_mili_popularity_status_very_low
+	}
+}
+defined_text = {
+	name = SIA_peop_popularity_status
+	text = {
+		trigger = { 
+			OR = {
+				check_variable = { SIA_peop_popularity > 80 }
+				check_variable = { SIA_peop_popularity = 100 }
+			}
+		}
+		localization_key = SIA_peop_popularity_status_very_high
+	}
+	text = {
+		trigger = { 			
+			AND = {
+				check_variable = { SIA_peop_popularity > 60 }
+				check_variable = { SIA_peop_popularity < 81 }
+			}
+		}
+		localization_key = SIA_peop_popularity_status_high
+	}
+	text = {
+		trigger = { 
+			AND = {
+				check_variable = { SIA_peop_popularity > 40 }
+				check_variable = { SIA_peop_popularity < 61 }
+			}
+		}
+		localization_key = SIA_peop_popularity_status_middle
+	}
+	text = {
+		trigger = { 
+			AND = {
+				check_variable = { SIA_peop_popularity > 20 }
+				check_variable = { SIA_peop_popularity < 41 }
+			}
+		}
+		localization_key = SIA_peop_popularity_status_low
+	}
+	text = {
+		trigger = { 
+			check_variable = { SIA_peop_popularity < 21 }
+		}
+		localization_key = SIA_peop_popularity_status_very_low
+	}
+}

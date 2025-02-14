@@ -15,3 +15,11 @@ SOV_fareastern_partisans = {
 	}
 	priority = 87
 }
+SOV_surrender = {
+	allowed = {
+		original_tag = SOV
+	}
+	visible = {
+		original_tag = SOV
+	}
+}

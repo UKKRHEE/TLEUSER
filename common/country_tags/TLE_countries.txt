@@ -6,6 +6,15 @@ EOK = "countries/Korea.txt" #대한제국 황도파
 ROK = "countries/Korea.txt" #대한제국 황도파
 KVN = "countries/Korea.txt" #대한령 인도차이나
 KTA = "countries/Korea.txt" #대한제국 제24군 서북방면전구
+###Korean Chinese Kingdoms###
+MNG = "countries/China.txt" #명나라 #KCG
+WEI = "countries/China.txt" #위나라 #KWG
+KRU = "countries/China.txt" #노나라 #KJG
+ROC = "countries/China.txt" #중화공화국 #KYG
+SNJ = "countries/China.txt" #삼진군무위원회 #KQG
+KJX = "countries/China.txt" #강서정무위원회
+KJU = "countries/China.txt" #장 공화국
+GNG = "countries/China.txt" #광동국
 ###Korean Outer Land###
 TWC = "countries/China.txt" #대만(테스트용)
 RYU = "countries/Japan.txt" #류큐
@@ -21,6 +30,7 @@ MHB = "countries/China.txt" #마홍빈
 SZY = "countries/China.txt" #직예 군벌 반갈죽하는 숭저위안
 QIN = "countries/China.txt" #대청국 #대한령
 ZLC = "countries/China.txt" #직예군벌
+LYC = "countries/China.txt" #낙양군벌 #직예군벌 후신
 WZC = "countries/China.txt" #오성연군
 HNC = "countries/China.txt" #호남군벌
 AHC = "countries/China.txt" #안휘군벌
@@ -50,6 +60,20 @@ DK1 = "countries/Japan.txt" #조센징 괴뢰
 DK2 = "countries/Japan.txt" #조센징 괴뢰
 DK3 = "countries/Japan.txt" #조센징 괴뢰
 DK4 = "countries/Japan.txt" #조센징 괴뢰
+###Southern Expantion Country###
+BUR	= "countries/Burma.txt"
+FRI	= "countries/Vietnam.txt"
+SST = "countries/Indonesia.txt"
+BOR = "countries/Indonesia.txt"
+SAR = "countries/Indonesia.txt"
+BRU = "countries/Indonesia.txt"
+VTC = "countries/Vietnam.txt"
+KSI = "countries/Siam.txt"
+NML = "countries/Siam.txt"
+KPH = "countries/Philippines.txt"
+TNK = "countries/Vietnam.txt"
+ANM = "countries/Vietnam.txt"
+CCH = "countries/Vietnam.txt"
 ###Soviet Union's Clique###
 NV1 = "countries/Soviet Union.txt" #노보시비르스크
 YN1 = "countries/Soviet Union.txt" #예니세이스크 정부
@@ -77,6 +101,9 @@ GM1 = "countries/Germany.txt" #마다가스카르 국가판무관부
 FRS = "countries/France.txt" #프랑스
 ###End of WW2(Allies Win)###
 AS1 = "countries/Germany.txt" #오스트리아인민
+###End of WW2(Reds Win)###
+RL1 = "countries/Germany.txt" #라인란트
+IT1 = "countries/Italy.txt" #빨갱이탈리아
 #test tag
 TJP = "countries/Japan.txt" #중점 테스트용 일본 태그
 ZZZ = "countries/Germany.txt" #아나키

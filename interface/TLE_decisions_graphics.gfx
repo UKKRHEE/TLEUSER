@@ -27,4 +27,59 @@ spriteTypes = {
 		name = "GFX_descision_KOR_plan_nakil" 
 		texturefile = "gfx/interface/decisions/descision_KOR_plan_nakil.png"
 	}
+	spriteType = {
+		name = "GFX_decision_KOR_IKN_purge" 
+		texturefile = "gfx/interface/decisions/decision_KOR_IKN_purge.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_decision_KOR_newlife_four" 
+		texturefile = "gfx/interface/decisions/decision_KOR_newlife_four.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_decision_KOR_flames_of_war" 
+		texturefile = "gfx/interface/decisions/decision_KOR_flames_of_war.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_decision_KOR_first_plan_lightning" 
+		texturefile = "gfx/interface/decisions/decision_KOR_first_plan_lightning.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_decision_KOR_second_plan_tent" 
+		texturefile = "gfx/interface/decisions/decision_KOR_second_plan_tent.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_decision_KOR_third_plan_doryun" 
+		texturefile = "gfx/interface/decisions/decision_KOR_third_plan_doryun.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_decision_KOR_forth_plan_nakil" 
+		texturefile = "gfx/interface/decisions/decision_KOR_forth_plan_nakil.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_decision_KOR_reichskommissariatt" 
+		texturefile = "gfx/interface/decisions/decision_KOR_reichskommissariatt.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_decision_KOR_kks_clear_the_communist_category" 
+		texturefile = "gfx/interface/decisions/decision_KOR_kks_clear_the_communist_category.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_decision_KOR_mongolian_attack" 
+		texturefile = "gfx/interface/decisions/decision_KOR_mongolian_attack.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_decision_KOR_anti_hwakyo_movement" 
+		texturefile = "gfx/interface/decisions/decision_KOR_anti_hwakyo_movement.png"
+		legacy_lazy_load = no
+	}
 }

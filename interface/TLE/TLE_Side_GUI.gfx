@@ -1,0 +1,118 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Side_GUI_Opener"
+		texturefile = "gfx/interface/KOR_GUI/National_Dissatisfaction/open_crt_button.png"
+		transparencecheck = yes
+	}
+
+	## Outline ##
+	spriteType = {
+		name = "GFX_Side_GUI_manchuria_Map_Outline"
+		texturefile = "gfx/interface/KOR_GUI/National_Dissatisfaction/map/manchuria_outline.png"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_Side_GUI_south_manchuria_Map_Outline"
+		texturefile = "gfx/interface/KOR_GUI/National_Dissatisfaction/map/south_manchuria_outline.png"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_Side_GUI_primorsky_Map_Outline"
+		texturefile = "gfx/interface/KOR_GUI/National_Dissatisfaction/map/primorsky_outline.png"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_Side_GUI_north_primorsky_Map_Outline"
+		texturefile = "gfx/interface/KOR_GUI/National_Dissatisfaction/map/north_primorsky_outline.png"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_Side_GUI_kyushu_Map_Outline"
+		texturefile = "gfx/interface/KOR_GUI/National_Dissatisfaction/map/kyushu_outline.png"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_Side_GUI_hokkaido_Map_Outline"
+		texturefile = "gfx/interface/KOR_GUI/National_Dissatisfaction/map/hokkaido_outline.png"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_Side_GUI_taiwan_Map_Outline"
+		texturefile = "gfx/interface/KOR_GUI/National_Dissatisfaction/map/taiwan_outline.png"
+		alwaystransparent = yes
+	}
+
+	## Maps ##
+	spriteType = {
+		name = "GFX_Side_GUI_manchuria_Map"
+		texturefile = "gfx/interface/KOR_GUI/National_Dissatisfaction/map/manchuria.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_Side_GUI_south_manchuria_Map"
+		texturefile = "gfx/interface/KOR_GUI/National_Dissatisfaction/map/south_manchuria.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_Side_GUI_primorsky_Map"
+		texturefile = "gfx/interface/KOR_GUI/National_Dissatisfaction/map/primorsky.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_Side_GUI_north_primorsky_Map"
+		texturefile = "gfx/interface/KOR_GUI/National_Dissatisfaction/map/north_primorsky.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_Side_GUI_kyushu_Map"
+		texturefile = "gfx/interface/KOR_GUI/National_Dissatisfaction/map/kyushu.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_Side_GUI_hokkaido_Map"
+		texturefile = "gfx/interface/KOR_GUI/National_Dissatisfaction/map/hokkaido.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_Side_GUI_taiwan_Map"
+		texturefile = "gfx/interface/KOR_GUI/National_Dissatisfaction/map/taiwan.png"
+		transparencecheck = yes
+	}
+
+	## Progressbar #
+
+	progressbartype = {
+		name = "GFX_Side_GUI_Progressbar"
+		texturefile1 = "gfx/interface/KOR_GUI/National_Dissatisfaction/progbar_full.png"
+		texturefile2 = "gfx/interface/blank.dds"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 0.0 0.0 0.0 }
+		size = {
+			x = 180
+			y = 33
+		}
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = yes
+	}
+
+	progressbartype = {
+		name = "GFX_Side_GUI_Progressbar_small"
+		texturefile1 =  "gfx/interface/KOR_GUI/National_Dissatisfaction/small_progbar_full.png"
+		texturefile2 = "gfx/interface/blank.dds"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 0.0 0.0 0.0 }
+		size = {
+			x = 180
+			y = 11
+		}
+		effectFile = "gfx/FX/progress_reverse.lua"
+		horizontal = yes
+	}
+
+	spriteType = {
+		name = "GFX_Side_GUI_Progressbar_Frame"
+		texturefile = "gfx/interface/KOR_GUI/National_Dissatisfaction/progbar_frame.png"
+		alwaystransparent = yes
+	}
+}

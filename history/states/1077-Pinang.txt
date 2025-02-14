@@ -1,0 +1,26 @@
+state={
+	id=1077
+	name="STATE_PINANG"
+	provinces={
+		12215 
+	}
+	history={
+		victory_points = {
+			12215 1
+		}
+		owner = SST
+		add_core_of = SST
+		add_core_of = MAL
+		buildings = {
+			infrastructure = 2
+			12215 = {
+				naval_base = 1
+
+			}
+		}
+	}
+	manpower=100000
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

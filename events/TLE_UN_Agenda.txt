@@ -1,0 +1,180 @@
+add_namespace = un_agenda
+add_namespace = un_agenda_vote
+add_namespace = un_agenda_effect
+add_namespace = un_agenda_hidden
+
+country_event = {
+	id = un_agenda.1
+	title = un_agenda.1.t
+	desc = un_agenda.1.d
+	picture = GFX_report_event_european_union
+
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {	#Okay
+		name = un_agenda.1.A
+		ai_chance = {
+			factor = 0
+		}
+
+		hidden_effect = {
+			every_country = {
+				clr_country_flag = UN_Agenda_Voted
+				clr_global_flag = UN_Agenda_Enable
+				clear_variable = global.UN_Agenda_Vote_Yes
+				clear_variable = global.UN_Agenda_Vote_No
+				clear_variable = GetAgendaFrame
+				clear_variable = UN_Agenda_v
+			}
+		}
+	}
+}
+
+country_event = {
+	id = un_agenda.2
+	title = un_agenda.2.t
+	desc = un_agenda.2.d
+	picture = GFX_report_event_european_union
+
+	is_triggered_only = yes
+	fire_only_once = no
+
+	option = {	#Okay
+		name = un_agenda.2.A
+		ai_chance = {
+			factor = 0
+		}
+		
+		hidden_effect = {
+			every_country = {
+				clr_country_flag = UN_Agenda_Voted
+				clr_global_flag = UN_Agenda_Enable
+				clear_variable = global.UN_Agenda_Vote_Yes
+				clear_variable = global.UN_Agenda_Vote_No
+				clear_variable = GetAgendaFrame
+				clear_variable = UN_Agenda_v
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = un_agenda.3
+	title = un_agenda.3.t
+	desc = un_agenda.3.d
+	picture = GFX_report_event_european_union
+
+	is_triggered_only = yes
+	fire_only_once = no
+
+	option = {	#Okay
+		name = un_agenda.3.A
+		ai_chance = {
+			factor = 0
+		}
+		UN_Agenda_Setup = yes
+		set_variable = {
+			UN_Agenda_v = 1
+		}
+	}
+}
+
+country_event = {
+	id = un_agenda.4
+	title = un_agenda.4.t
+	desc = un_agenda.4.d
+	picture = GFX_report_event_european_union
+
+	is_triggered_only = yes
+	fire_only_once = no
+
+	option = {	#Okay
+		name = un_agenda.4.A
+		ai_chance = {
+			factor = 0
+		}
+		UN_Agenda_Setup = yes
+		set_variable = {
+			UN_Agenda_v = 2
+		}
+	}
+}
+
+country_event = {
+	id = un_agenda_effect.1
+	title = un_agenda_effct.1.t
+	desc = un_agenda_effect.1.d
+	picture = GFX_report_event_european_union
+
+	is_triggered_only = yes
+	fire_only_once = no
+
+	option = {	#Okay
+		name = un_agenda_effect.1.A
+		KOR = {
+			annex_country = {
+				target = USA
+			}
+		}
+	}
+}
+
+country_event = {
+	id = un_agenda_effect.2
+	title = un_agenda_effct.2.t
+	desc = un_agenda_effect.2.d
+	picture = GFX_report_event_european_union
+
+	is_triggered_only = yes
+	fire_only_once = no
+
+	option = {	#Okay
+		name = un_agenda_effect.2.A
+		ai_chance = {
+			factor = 0
+		}
+		KOR = {
+			annex_country = {
+				target = PRK
+			}
+		}
+	}
+}
+
+country_event = {
+	id = un_agenda_vote.1
+	title = un_agenda_vote.1.t
+	desc = un_agenda_vote.1.d
+	picture = GFX_report_event_european_union
+
+	is_triggered_only = yes
+	fire_only_once = no
+
+	option = {
+		name = un_agenda_vote.1.A
+		ai_chance = {
+			factor = 100
+		}
+		UN_Agenda_Vote_Yes_effect = yes
+	}
+}
+
+country_event = {
+	id = un_agenda_vote.2
+	title = un_agenda_vote.1.t
+	desc = un_agenda_vote.1.d
+	picture = GFX_report_event_european_union
+
+	is_triggered_only = yes
+	fire_only_once = no
+
+	option = {
+		name = un_agenda_vote.1.A
+		ai_chance = {
+			factor = 100
+		}
+		UN_Agenda_Vote_No_effect = yes
+	}
+}

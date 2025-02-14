@@ -4,36 +4,6 @@
 # Assigning the callsign is random - may be assigned or not. If we use the callsign, it will never be assigned to anyone again. Callsigns are not obligatory to script.
 # Picking up a gender is random, and is influenced by the amount of names scripted.
 
-EOK = {
-	male = {
-		names = { 
-			가 간 갈 감 강 강 강 강 강 개 견 경 계 고 곡 공 곽 구 국 군 권 금 기 길 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 나 나 나 남 남궁 낭 내 노 노 노 단 당 대 도 독고 돈 등 동방 두 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 반 방 배 백 범 변 복 봉 부 비 사 사공 상 서 서문 석 선 선우 설 섭 성 성 성 소 손 송 순 승 시 신 신 심 심 안 안 안 안 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 연 여 엄 연 영 예 용 왕 육 유 유 유 류 류 차 천 최 최 최 최 최 최 최 한 한 황 환 해 함 황보 홍 홍 홍 제 제갈 장 장 장 장 장
-		}
-		
-	}
-	female = {
-		names = { 
-			가 간 갈 감 강 강 강 강 강 개 견 경 계 고 곡 공 곽 구 국 군 권 금 기 길 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 나 나 나 남 남궁 낭 내 노 노 노 단 당 대 도 독고 돈 등 동방 두 박 박 박 박 박 박 박 박 박 반 방 배 백 범 변 복 봉 부 비 사 사공 상 서 서문 석 선 선우 설 섭 성 성 성 소 손 송 순 승 시 신 신 심 심 안 안 안 안 이 이 이 이 이 이 이 이 이 이 이 연 여 엄 연 영 예 용 왕 육 유 유 유 류 류 차 천 최 최 최 최 최 최 최 한 한 황 환 해 함 황보 홍 홍 홍 제 제갈 장 장 장 장 장
-		}	
-	}
-	surnames = { 민준 서준 예준 도윤 시우 주원 하준 지호 지후 준서 준우 현우 철욱 건우 우진 민재 현성 현철 민철 재협 영우 광준 혁원 재우 상옥 재상 이호 유준 정우 승우 승현 시윤 운혁 재안 덕성 만송 경원 철우 영수 재건 유문 이환 경석 은철 호석 몽영 규섬 당천 영표 준표 승녕 오환 예평 윤후 이학 대붕 기후 기재 윤휴 서연 서윤 지우 승자 승만 보선 정희 규하 두환 태우 영삼 대중 무현 명박 근혜 재인 석열 명복 태강 철호 만승 지원 한중 }
-	callsigns = { }
-}
-KOR = {
-	male = {
-		names = { 
-			가 간 갈 감 강 강 강 강 강 개 견 경 계 고 곡 공 곽 구 국 군 권 금 기 길 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 나 나 나 남 남궁 낭 내 노 노 노 단 당 대 도 독고 돈 등 동방 두 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 반 방 배 백 범 변 복 봉 부 비 사 사공 상 서 서문 석 선 선우 설 섭 성 성 성 소 손 송 순 승 시 신 신 심 심 안 안 안 안 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 연 여 엄 연 영 예 용 왕 육 유 유 유 류 류 차 천 최 최 최 최 최 최 최 한 한 황 환 해 함 황보 홍 홍 홍 제 제갈 장 장 장 장 장
-		}
-		
-	}
-	female = {
-		names = { 
-			가 간 갈 감 강 강 강 강 강 개 견 경 계 고 곡 공 곽 구 국 군 권 금 기 길 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 나 나 나 남 남궁 낭 내 노 노 노 단 당 대 도 독고 돈 등 동방 두 박 박 박 박 박 박 박 박 박 반 방 배 백 범 변 복 봉 부 비 사 사공 상 서 서문 석 선 선우 설 섭 성 성 성 소 손 송 순 승 시 신 신 심 심 안 안 안 안 이 이 이 이 이 이 이 이 이 이 이 연 여 엄 연 영 예 용 왕 육 유 유 유 류 류 차 천 최 최 최 최 최 최 최 한 한 황 환 해 함 황보 홍 홍 홍 제 제갈 장 장 장 장 장
-		}	
-	}
-	surnames = { 민준 서준 예준 도윤 시우 주원 하준 지호 지후 준서 준우 현우 철욱 건우 우진 민재 현성 현철 민철 재협 영우 광준 혁원 재우 상옥 재상 이호 유준 정우 승우 승현 시윤 운혁 재안 덕성 만송 경원 철우 영수 재건 유문 이환 경석 은철 호석 몽영 규섬 당천 영표 준표 승녕 오환 예평 윤후 이학 대붕 기후 기재 윤휴 서연 서윤 지우 승자 승만 보선 정희 규하 두환 태우 영삼 대중 무현 명박 근혜 재인 석열 명복 태강 철호 만승 지원 한중 }
-	callsigns = { }
-}
 MON = {
 	male = {
 		names = {  Ma Deng Zhao Tong Guan Oboi Sonin Songgotu Suksaha Mingzhu Nalan Fu Hesehn Changlin  }
@@ -54,147 +24,12 @@ MSR = {
 	surnames = { Zhanshan Tiemei Shangzhi Linge Xiangying Xingde Kang'an Borjigin Tuliya }
 	callsigns = { }
 }
-ROK = {
-	male = {
-		names = { 
-			가 간 갈 감 강 강 강 강 강 개 견 경 계 고 곡 공 곽 구 국 군 권 금 기 길 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 나 나 나 남 남궁 낭 내 노 노 노 단 당 대 도 독고 돈 등 동방 두 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 반 방 배 백 범 변 복 봉 부 비 사 사공 상 서 서문 석 선 선우 설 섭 성 성 성 소 손 송 순 승 시 신 신 심 심 안 안 안 안 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 연 여 엄 연 영 예 용 왕 육 유 유 유 류 류 차 천 최 최 최 최 최 최 최 한 한 황 환 해 함 황보 홍 홍 홍 제 제갈 장 장 장 장 장
-		}
-		
-	}
-	female = {
-		names = { 
-			가 간 갈 감 강 강 강 강 강 개 견 경 계 고 곡 공 곽 구 국 군 권 금 기 길 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 나 나 나 남 남궁 낭 내 노 노 노 단 당 대 도 독고 돈 등 동방 두 박 박 박 박 박 박 박 박 박 반 방 배 백 범 변 복 봉 부 비 사 사공 상 서 서문 석 선 선우 설 섭 성 성 성 소 손 송 순 승 시 신 신 심 심 안 안 안 안 이 이 이 이 이 이 이 이 이 이 이 연 여 엄 연 영 예 용 왕 육 유 유 유 류 류 차 천 최 최 최 최 최 최 최 한 한 황 환 해 함 황보 홍 홍 홍 제 제갈 장 장 장 장 장
-		}	
-	}
-	surnames = { 민준 서준 예준 도윤 시우 주원 하준 지호 지후 준서 준우 현우 철욱 건우 우진 민재 현성 현철 민철 재협 영우 광준 혁원 재우 상옥 재상 이호 유준 정우 승우 승현 시윤 운혁 재안 덕성 만송 윤휴 서연 서윤 지우 승자 승만 보선 정희 규하 두환 태우 영삼 대중 무현 명박 근혜 재인 명복 태강 철호 만승 한중 }
-	callsigns = { }
-}
-KHK = {
-	male = {
-		names = { 
-			가 간 갈 감 강 강 강 강 강 개 견 경 계 고 곡 공 곽 구 국 군 권 금 기 길 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 나 나 나 남 남궁 낭 내 노 노 노 단 당 대 도 독고 돈 등 동방 두 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 반 방 배 백 범 변 복 봉 부 비 사 사공 상 서 서문 석 선 선우 설 섭 성 성 성 소 손 송 순 승 시 신 신 심 심 안 안 안 안 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 연 여 엄 연 영 예 용 왕 육 유 유 유 류 류 차 천 최 최 최 최 최 최 최 한 한 황 환 해 함 황보 홍 홍 홍 제 제갈 장 장 장 장 장
-		}
-		
-	}
-	female = {
-		names = { 
-			가 간 갈 감 강 강 강 강 강 개 견 경 계 고 곡 공 곽 구 국 군 권 금 기 길 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 나 나 나 남 남궁 낭 내 노 노 노 단 당 대 도 독고 돈 등 동방 두 박 박 박 박 박 박 박 박 박 반 방 배 백 범 변 복 봉 부 비 사 사공 상 서 서문 석 선 선우 설 섭 성 성 성 소 손 송 순 승 시 신 신 심 심 안 안 안 안 이 이 이 이 이 이 이 이 이 이 이 연 여 엄 연 영 예 용 왕 육 유 유 유 류 류 차 천 최 최 최 최 최 최 최 한 한 황 환 해 함 황보 홍 홍 홍 제 제갈 장 장 장 장 장
-		}	
-	}
-	surnames = { 민준 서준 예준 도윤 시우 주원 하준 지호 지후 준서 준우 현우 철욱 건우 우진 민재 현성 현철 민철 재협 영우 광준 혁원 재우 상옥 재상 이호 유준 정우 승우 승현 시윤 운혁 재안 덕성 만송 윤휴 서연 서윤 지우 승자 승만 보선 정희 규하 두환 태우 영삼 대중 무현 명박 근혜 재인 명복 태강 철호 만승 한중 }
-	callsigns = { }
-}
-JNT = {
-	male = {
-		names = { 
-			가 간 갈 감 강 강 강 강 강 개 견 경 계 고 곡 공 곽 구 국 군 권 금 기 길 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 나 나 나 남 남궁 낭 내 노 노 노 단 당 대 도 독고 돈 등 동방 두 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 반 방 배 백 범 변 복 봉 부 비 사 사공 상 서 서문 석 선 선우 설 섭 성 성 성 소 손 송 순 승 시 신 신 심 심 안 안 안 안 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 연 여 엄 연 영 예 용 왕 육 유 유 유 류 류 차 천 최 최 최 최 최 최 최 한 한 황 환 해 함 황보 홍 홍 홍 제 제갈 장 장 장 장 장
-		}
-		
-	}
-	female = {
-		names = { 
-			가 간 갈 감 강 강 강 강 강 개 견 경 계 고 곡 공 곽 구 국 군 권 금 기 길 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 나 나 나 남 남궁 낭 내 노 노 노 단 당 대 도 독고 돈 등 동방 두 박 박 박 박 박 박 박 박 박 반 방 배 백 범 변 복 봉 부 비 사 사공 상 서 서문 석 선 선우 설 섭 성 성 성 소 손 송 순 승 시 신 신 심 심 안 안 안 안 이 이 이 이 이 이 이 이 이 이 이 연 여 엄 연 영 예 용 왕 육 유 유 유 류 류 차 천 최 최 최 최 최 최 최 한 한 황 환 해 함 황보 홍 홍 홍 제 제갈 장 장 장 장 장
-		}	
-	}
-	surnames = { 민준 서준 예준 도윤 시우 주원 하준 지호 지후 준서 준우 현우 철욱 건우 우진 민재 현성 현철 민철 재협 영우 광준 혁원 재우 상옥 재상 이호 유준 정우 승우 승현 시윤 운혁 재안 덕성 만송 윤휴 서연 서윤 지우 승자 승만 보선 정희 규하 두환 태우 영삼 대중 무현 명박 근혜 재인 명복 태강 철호 만승 한중 }
-	callsigns = { }
-}
-KTA = {
-	male = {
-		names = { 
-			가 간 갈 감 강 강 강 강 강 개 견 경 계 고 곡 공 곽 구 국 군 권 금 기 길 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 나 나 나 남 남궁 낭 내 노 노 노 단 당 대 도 독고 돈 등 동방 두 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 반 방 배 백 범 변 복 봉 부 비 사 사공 상 서 서문 석 선 선우 설 섭 성 성 성 소 손 송 순 승 시 신 신 심 심 안 안 안 안 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 연 여 엄 연 영 예 용 왕 육 유 유 유 류 류 차 천 최 최 최 최 최 최 최 한 한 황 환 해 함 황보 홍 홍 홍 제 제갈 장 장 장 장 장
-		}
-		
-	}
-	female = {
-		names = { 
-			가 간 갈 감 강 강 강 강 강 개 견 경 계 고 곡 공 곽 구 국 군 권 금 기 길 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 나 나 나 남 남궁 낭 내 노 노 노 단 당 대 도 독고 돈 등 동방 두 박 박 박 박 박 박 박 박 박 반 방 배 백 범 변 복 봉 부 비 사 사공 상 서 서문 석 선 선우 설 섭 성 성 성 소 손 송 순 승 시 신 신 심 심 안 안 안 안 이 이 이 이 이 이 이 이 이 이 이 연 여 엄 연 영 예 용 왕 육 유 유 유 류 류 차 천 최 최 최 최 최 최 최 한 한 황 환 해 함 황보 홍 홍 홍 제 제갈 장 장 장 장 장
-		}	
-	}
-	surnames = { 민준 서준 예준 도윤 시우 주원 하준 지호 지후 준서 준우 현우 철욱 건우 우진 민재 현성 현철 민철 재협 영우 광준 혁원 재우 상옥 재상 이호 유준 정우 승우 승현 시윤 운혁 재안 덕성 만송 윤휴 서연 서윤 지우 승자 승만 보선 정희 규하 두환 태우 영삼 대중 무현 명박 근혜 재인 명복 태강 철호 만승 한중 }
-	callsigns = { }
-}
-KKS = {
-	male = {
-		names = { 
-			가 간 갈 감 강 강 강 강 강 개 견 경 계 고 곡 공 곽 구 국 군 권 금 기 길 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 나 나 나 남 남궁 낭 내 노 노 노 단 당 대 도 독고 돈 등 동방 두 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 반 방 배 백 범 변 복 봉 부 비 사 사공 상 서 서문 석 선 선우 설 섭 성 성 성 소 손 송 순 승 시 신 신 심 심 안 안 안 안 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 연 여 엄 연 영 예 용 왕 육 유 유 유 류 류 차 천 최 최 최 최 최 최 최 한 한 황 환 해 함 황보 홍 홍 홍 제 제갈 장 장 장 장 장
-		}
-		
-	}
-	female = {
-		names = { 
-			가 간 갈 감 강 강 강 강 강 개 견 경 계 고 곡 공 곽 구 국 군 권 금 기 길 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 나 나 나 남 남궁 낭 내 노 노 노 단 당 대 도 독고 돈 등 동방 두 박 박 박 박 박 박 박 박 박 반 방 배 백 범 변 복 봉 부 비 사 사공 상 서 서문 석 선 선우 설 섭 성 성 성 소 손 송 순 승 시 신 신 심 심 안 안 안 안 이 이 이 이 이 이 이 이 이 이 이 연 여 엄 연 영 예 용 왕 육 유 유 유 류 류 차 천 최 최 최 최 최 최 최 한 한 황 환 해 함 황보 홍 홍 홍 제 제갈 장 장 장 장 장
-		}	
-	}
-	surnames = { 민준 서준 예준 도윤 시우 주원 하준 지호 지후 준서 준우 현우 철욱 건우 우진 민재 현성 현철 민철 재협 영우 광준 혁원 재우 상옥 재상 이호 유준 정우 승우 승현 시윤 운혁 재안 덕성 만송 윤휴 서연 서윤 지우 승자 승만 보선 정희 규하 두환 태우 영삼 대중 무현 명박 근혜 재인 명복 태강 철호 만승 한중 }
-	callsigns = { }
-}
-KPL = {
-	male = {
-		names = { 
-			가 간 갈 감 강 강 강 강 강 개 견 경 계 고 곡 공 곽 구 국 군 권 금 기 길 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 나 나 나 남 남궁 낭 내 노 노 노 단 당 대 도 독고 돈 등 동방 두 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 반 방 배 백 범 변 복 봉 부 비 사 사공 상 서 서문 석 선 선우 설 섭 성 성 성 소 손 송 순 승 시 신 신 심 심 안 안 안 안 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 연 여 엄 연 영 예 용 왕 육 유 유 유 류 류 차 천 최 최 최 최 최 최 최 한 한 황 환 해 함 황보 홍 홍 홍 제 제갈 장 장 장 장 장
-		}
-		
-	}
-	female = {
-		names = { 
-			가 간 갈 감 강 강 강 강 강 개 견 경 계 고 곡 공 곽 구 국 군 권 금 기 길 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 나 나 나 남 남궁 낭 내 노 노 노 단 당 대 도 독고 돈 등 동방 두 박 박 박 박 박 박 박 박 박 반 방 배 백 범 변 복 봉 부 비 사 사공 상 서 서문 석 선 선우 설 섭 성 성 성 소 손 송 순 승 시 신 신 심 심 안 안 안 안 이 이 이 이 이 이 이 이 이 이 이 연 여 엄 연 영 예 용 왕 육 유 유 유 류 류 차 천 최 최 최 최 최 최 최 한 한 황 환 해 함 황보 홍 홍 홍 제 제갈 장 장 장 장 장
-		}	
-	}
-	surnames = { 민준 서준 예준 도윤 시우 주원 하준 지호 지후 준서 준우 현우 철욱 건우 우진 민재 현성 현철 민철 재협 영우 광준 혁원 재우 상옥 재상 이호 유준 정우 승우 승현 시윤 운혁 재안 덕성 만송 윤휴 서연 서윤 지우 승자 승만 보선 정희 규하 두환 태우 영삼 대중 무현 명박 근혜 재인 명복 태강 철호 만승 한중 }
-	callsigns = { }
-}
-KMN = {
-	male = {
-		names = { 
-			가 간 갈 감 강 강 강 강 강 개 견 경 계 고 곡 공 곽 구 국 군 권 금 기 길 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 나 나 나 남 남궁 낭 내 노 노 노 단 당 대 도 독고 돈 등 동방 두 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 반 방 배 백 범 변 복 봉 부 비 사 사공 상 서 서문 석 선 선우 설 섭 성 성 성 소 손 송 순 승 시 신 신 심 심 안 안 안 안 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 연 여 엄 연 영 예 용 왕 육 유 유 유 류 류 차 천 최 최 최 최 최 최 최 한 한 황 환 해 함 황보 홍 홍 홍 제 제갈 장 장 장 장 장
-		}
-		
-	}
-	female = {
-		names = { 
-			가 간 갈 감 강 강 강 강 강 개 견 경 계 고 곡 공 곽 구 국 군 권 금 기 길 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 나 나 나 남 남궁 낭 내 노 노 노 단 당 대 도 독고 돈 등 동방 두 박 박 박 박 박 박 박 박 박 반 방 배 백 범 변 복 봉 부 비 사 사공 상 서 서문 석 선 선우 설 섭 성 성 성 소 손 송 순 승 시 신 신 심 심 안 안 안 안 이 이 이 이 이 이 이 이 이 이 이 연 여 엄 연 영 예 용 왕 육 유 유 유 류 류 차 천 최 최 최 최 최 최 최 한 한 황 환 해 함 황보 홍 홍 홍 제 제갈 장 장 장 장 장
-		}	
-	}
-	surnames = { 민준 서준 예준 도윤 시우 주원 하준 지호 지후 준서 준우 현우 철욱 건우 우진 민재 현성 현철 민철 재협 영우 광준 혁원 재우 상옥 재상 이호 유준 정우 승우 승현 시윤 운혁 재안 덕성 만송 윤휴 서연 서윤 지우 승자 승만 보선 정희 규하 두환 태우 영삼 대중 무현 명박 근혜 재인 명복 태강 철호 만승 한중 }
-	callsigns = { }
-}
-PRK = {
-	male = {
-		names = { 
-			가 간 갈 감 강 강 강 강 강 개 견 경 계 고 곡 공 곽 구 국 군 권 금 기 길 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 나 나 나 남 남궁 낭 내 노 노 노 단 당 대 도 독고 돈 등 동방 두 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 반 방 배 백 범 변 복 봉 부 비 사 사공 상 서 서문 석 선 선우 설 섭 성 성 성 소 손 송 순 승 시 신 신 심 심 안 안 안 안 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 연 여 엄 연 영 예 용 왕 육 유 유 유 류 류 차 천 최 최 최 최 최 최 최 한 한 황 환 해 함 황보 홍 홍 홍 제 제갈 장 장 장 장 장
-		}
-		
-	}
-	female = {
-		names = { 
-			가 간 갈 감 강 강 강 강 강 개 견 경 계 고 곡 공 곽 구 국 군 권 금 기 길 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 나 나 나 남 남궁 낭 내 노 노 노 단 당 대 도 독고 돈 등 동방 두 박 박 박 박 박 박 박 박 박 반 방 배 백 범 변 복 봉 부 비 사 사공 상 서 서문 석 선 선우 설 섭 성 성 성 소 손 송 순 승 시 신 신 심 심 안 안 안 안 이 이 이 이 이 이 이 이 이 이 이 연 여 엄 연 영 예 용 왕 육 유 유 유 류 류 차 천 최 최 최 최 최 최 최 한 한 황 환 해 함 황보 홍 홍 홍 제 제갈 장 장 장 장 장
-		}	
-	}
-	surnames = { 민준 서준 예준 도윤 시우 주원 하준 지호 지후 준서 준우 현우 철욱 건우 우진 민재 현성 현철 민철 재협 영우 광준 혁원 재우 상옥 재상 이호 유준 정우 승우 승현 시윤 운혁 재안 덕성 만송 윤휴 서연 서윤 지우 승자 승만 보선 정희 규하 두환 태우 영삼 대중 무현 명박 근혜 재인 명복 태강 철호 만승 한중 }
-	callsigns = { }
-}
-KYH = {
-	male = {
-		names = { 
-			가 간 갈 감 강 강 강 강 강 개 견 경 계 고 곡 공 곽 구 국 군 권 금 기 길 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 나 나 나 남 남궁 낭 내 노 노 노 단 당 대 도 독고 돈 등 동방 두 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 박 반 방 배 백 범 변 복 봉 부 비 사 사공 상 서 서문 석 선 선우 설 섭 성 성 성 소 손 송 순 승 시 신 신 심 심 안 안 안 안 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 이 연 여 엄 연 영 예 용 왕 육 유 유 유 류 류 차 천 최 최 최 최 최 최 최 한 한 황 환 해 함 황보 홍 홍 홍 제 제갈 장 장 장 장 장
-		}
-		
-	}
-	female = {
-		names = { 
-			가 간 갈 감 강 강 강 강 강 개 견 경 계 고 곡 공 곽 구 국 군 권 금 기 길 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 김 나 나 나 남 남궁 낭 내 노 노 노 단 당 대 도 독고 돈 등 동방 두 박 박 박 박 박 박 박 박 박 반 방 배 백 범 변 복 봉 부 비 사 사공 상 서 서문 석 선 선우 설 섭 성 성 성 소 손 송 순 승 시 신 신 심 심 안 안 안 안 이 이 이 이 이 이 이 이 이 이 이 연 여 엄 연 영 예 용 왕 육 유 유 유 류 류 차 천 최 최 최 최 최 최 최 한 한 황 환 해 함 황보 홍 홍 홍 제 제갈 장 장 장 장 장
-		}	
-	}
-	surnames = { 민준 서준 예준 도윤 시우 주원 하준 지호 지후 준서 준우 현우 철욱 건우 우진 민재 현성 현철 민철 재협 영우 광준 혁원 재우 상옥 재상 이호 유준 정우 승우 승현 시윤 운혁 재안 덕성 만송 윤휴 서연 서윤 지우 승자 승만 보선 정희 규하 두환 태우 영삼 대중 무현 명박 근혜 재인 명복 태강 철호 만승 한중 }
-	callsigns = { }
-}
 FNG = {
 	male = {
 		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
 	}
 	female = {
-		names = { }
+		names = { Li Bao Mulan Lanfen Mingzhu Qingling Mei Yingtai Feng "Zhi Ruo" Fei "Ru Shi" Yuying Yuantong Yanxiang Xiurong Shouying Fuyuan Luzhen Ruirong Suzhen Xiaoying Xiaoyuan Xiaoji Xiaolou }
 	}
 	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
 	callsigns = { }
@@ -204,7 +39,7 @@ QIN = {
 		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
 	}
 	female = {
-		names = { }
+		names = { Li Bao Mulan Lanfen Mingzhu Qingling Mei Yingtai Feng "Zhi Ruo" Fei "Ru Shi" Yuying Yuantong Yanxiang Xiurong Shouying Fuyuan Luzhen Ruirong Suzhen Xiaoying Xiaoyuan Xiaoji Xiaolou }
 	}
 	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
 	callsigns = { }
@@ -214,7 +49,7 @@ GDC = {
 		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
 	}
 	female = {
-		names = { }
+		names = { Li Bao Mulan Lanfen Mingzhu Qingling Mei Yingtai Feng "Zhi Ruo" Fei "Ru Shi" Yuying Yuantong Yanxiang Xiurong Shouying Fuyuan Luzhen Ruirong Suzhen Xiaoying Xiaoyuan Xiaoji Xiaolou }
 	}
 	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
 	callsigns = { }
@@ -224,7 +59,7 @@ SZC = {
 		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
 	}
 	female = {
-		names = { }
+		names = { Li Bao Mulan Lanfen Mingzhu Qingling Mei Yingtai Feng "Zhi Ruo" Fei "Ru Shi" Yuying Yuantong Yanxiang Xiurong Shouying Fuyuan Luzhen Ruirong Suzhen Xiaoying Xiaoyuan Xiaoji Xiaolou }
 	}
 	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
 	callsigns = { }
@@ -234,7 +69,7 @@ SCC = {
 		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
 	}
 	female = {
-		names = { }
+		names = { Li Bao Mulan Lanfen Mingzhu Qingling Mei Yingtai Feng "Zhi Ruo" Fei "Ru Shi" Yuying Yuantong Yanxiang Xiurong Shouying Fuyuan Luzhen Ruirong Suzhen Xiaoying Xiaoyuan Xiaoji Xiaolou }
 	}
 	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
 	callsigns = { }
@@ -244,7 +79,7 @@ AQC = {
 		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
 	}
 	female = {
-		names = { }
+		names = { Li Bao Mulan Lanfen Mingzhu Qingling Mei Yingtai Feng "Zhi Ruo" Fei "Ru Shi" Yuying Yuantong Yanxiang Xiurong Shouying Fuyuan Luzhen Ruirong Suzhen Xiaoying Xiaoyuan Xiaoji Xiaolou }
 	}
 	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
 	callsigns = { }
@@ -254,7 +89,7 @@ GZC = {
 		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
 	}
 	female = {
-		names = { }
+		names = { Li Bao Mulan Lanfen Mingzhu Qingling Mei Yingtai Feng "Zhi Ruo" Fei "Ru Shi" Yuying Yuantong Yanxiang Xiurong Shouying Fuyuan Luzhen Ruirong Suzhen Xiaoying Xiaoyuan Xiaoji Xiaolou }
 	}
 	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
 	callsigns = { }
@@ -264,7 +99,7 @@ XKC = {
 		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
 	}
 	female = {
-		names = { }
+		names = { Li Bao Mulan Lanfen Mingzhu Qingling Mei Yingtai Feng "Zhi Ruo" Fei "Ru Shi" Yuying Yuantong Yanxiang Xiurong Shouying Fuyuan Luzhen Ruirong Suzhen Xiaoying Xiaoyuan Xiaoji Xiaolou }
 	}
 	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
 	callsigns = { }
@@ -274,7 +109,7 @@ SZY = {
 		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
 	}
 	female = {
-		names = { }
+		names = { Li Bao Mulan Lanfen Mingzhu Qingling Mei Yingtai Feng "Zhi Ruo" Fei "Ru Shi" Yuying Yuantong Yanxiang Xiurong Shouying Fuyuan Luzhen Ruirong Suzhen Xiaoying Xiaoyuan Xiaoji Xiaolou }
 	}
 	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
 	callsigns = { }
@@ -284,91 +119,161 @@ KMK = {
 		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
 	}
 	female = {
-		names = { }
+		names = { Li Bao Mulan Lanfen Mingzhu Qingling Mei Yingtai Feng "Zhi Ruo" Fei "Ru Shi" Yuying Yuantong Yanxiang Xiurong Shouying Fuyuan Luzhen Ruirong Suzhen Xiaoying Xiaoyuan Xiaoji Xiaolou }
 	}
 	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
-}	
+	callsigns = { }
+}
 ETS = {
 	male = {
 		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
 	}
 	female = {
-		names = { }
+		names = { Li Bao Mulan Lanfen Mingzhu Qingling Mei Yingtai Feng "Zhi Ruo" Fei "Ru Shi" Yuying Yuantong Yanxiang Xiurong Shouying Fuyuan Luzhen Ruirong Suzhen Xiaoying Xiaoyuan Xiaoji Xiaolou }
 	}
 	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
+	callsigns = { }
 }
 MHB = {
 	male = {
 		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
 	}
 	female = {
-		names = { }
+		names = { Li Bao Mulan Lanfen Mingzhu Qingling Mei Yingtai Feng "Zhi Ruo" Fei "Ru Shi" Yuying Yuantong Yanxiang Xiurong Shouying Fuyuan Luzhen Ruirong Suzhen Xiaoying Xiaoyuan Xiaoji Xiaolou }
 	}
 	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
-}	
+	callsigns = { }
+}
 MHX = {
 	male = {
 		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
 	}
 	female = {
-		names = { }
+		names = { Li Bao Mulan Lanfen Mingzhu Qingling Mei Yingtai Feng "Zhi Ruo" Fei "Ru Shi" Yuying Yuantong Yanxiang Xiurong Shouying Fuyuan Luzhen Ruirong Suzhen Xiaoying Xiaoyuan Xiaoji Xiaolou }
 	}
 	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
-}	
+	callsigns = { }
+}
 WZC = {
 	male = {
 		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
 	}
 	female = {
-		names = { }
+		names = { Li Bao Mulan Lanfen Mingzhu Qingling Mei Yingtai Feng "Zhi Ruo" Fei "Ru Shi" Yuying Yuantong Yanxiang Xiurong Shouying Fuyuan Luzhen Ruirong Suzhen Xiaoying Xiaoyuan Xiaoji Xiaolou }
 	}
 	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
-}	
+	callsigns = { }
+}
 ZLC = {
 	male = {
 		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
 	}
 	female = {
-		names = { }
+		names = { Li Bao Mulan Lanfen Mingzhu Qingling Mei Yingtai Feng "Zhi Ruo" Fei "Ru Shi" Yuying Yuantong Yanxiang Xiurong Shouying Fuyuan Luzhen Ruirong Suzhen Xiaoying Xiaoyuan Xiaoji Xiaolou }
 	}
 	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
-}	
+	callsigns = { }
+}
 HNC = {
 	male = {
 		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
 	}
 	female = {
-		names = { }
+		names = { Li Bao Mulan Lanfen Mingzhu Qingling Mei Yingtai Feng "Zhi Ruo" Fei "Ru Shi" Yuying Yuantong Yanxiang Xiurong Shouying Fuyuan Luzhen Ruirong Suzhen Xiaoying Xiaoyuan Xiaoji Xiaolou }
 	}
 	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
-}	
+	callsigns = { }
+}
 SND = {
 	male = {
 		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
 	}
 	female = {
-		names = { }
+		names = { Li Bao Mulan Lanfen Mingzhu Qingling Mei Yingtai Feng "Zhi Ruo" Fei "Ru Shi" Yuying Yuantong Yanxiang Xiurong Shouying Fuyuan Luzhen Ruirong Suzhen Xiaoying Xiaoyuan Xiaoji Xiaolou }
 	}
 	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
-}	
+	callsigns = { }
+}
 AHC = {
 	male = {
 		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
 	}
 	female = {
-		names = { }
+		names = { Li Bao Mulan Lanfen Mingzhu Qingling Mei Yingtai Feng "Zhi Ruo" Fei "Ru Shi" Yuying Yuantong Yanxiang Xiurong Shouying Fuyuan Luzhen Ruirong Suzhen Xiaoying Xiaoyuan Xiaoji Xiaolou }
 	}
 	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
-}	
+	callsigns = { }
+}
 CH1 = {
 	male = {
 		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
 	}
 	female = {
-		names = { }
+		names = { Li Bao Mulan Lanfen Mingzhu Qingling Mei Yingtai Feng "Zhi Ruo" Fei "Ru Shi" Yuying Yuantong Yanxiang Xiurong Shouying Fuyuan Luzhen Ruirong Suzhen Xiaoying Xiaoyuan Xiaoji Xiaolou }
 	}
 	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
-}	
+	callsigns = { }
+}
+KWG = {
+	male = {
+		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
+	}
+	female = {
+		names = { Li Bao Mulan Lanfen Mingzhu Qingling Mei Yingtai Feng "Zhi Ruo" Fei "Ru Shi" Yuying Yuantong Yanxiang Xiurong Shouying Fuyuan Luzhen Ruirong Suzhen Xiaoying Xiaoyuan Xiaoji Xiaolou }
+	}
+	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
+	callsigns = { }
+}
+KYG = {
+	male = {
+		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
+	}
+	female = {
+		names = { Li Bao Mulan Lanfen Mingzhu Qingling Mei Yingtai Feng "Zhi Ruo" Fei "Ru Shi" Yuying Yuantong Yanxiang Xiurong Shouying Fuyuan Luzhen Ruirong Suzhen Xiaoying Xiaoyuan Xiaoji Xiaolou }
+	}
+	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
+	callsigns = { }
+}
+KJG = {
+	male = {
+		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
+	}
+	female = {
+		names = { Li Bao Mulan Lanfen Mingzhu Qingling Mei Yingtai Feng "Zhi Ruo" Fei "Ru Shi" Yuying Yuantong Yanxiang Xiurong Shouying Fuyuan Luzhen Ruirong Suzhen Xiaoying Xiaoyuan Xiaoji Xiaolou }
+	}
+	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
+	callsigns = { }
+}
+KQG = {
+	male = {
+		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
+	}
+	female = {
+		names = { Li Bao Mulan Lanfen Mingzhu Qingling Mei Yingtai Feng "Zhi Ruo" Fei "Ru Shi" Yuying Yuantong Yanxiang Xiurong Shouying Fuyuan Luzhen Ruirong Suzhen Xiaoying Xiaoyuan Xiaoji Xiaolou }
+	}
+	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
+	callsigns = { }
+}
+KJX = {
+	male = {
+		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
+	}
+	female = {
+		names = { Li Bao Mulan Lanfen Mingzhu Qingling Mei Yingtai Feng "Zhi Ruo" Fei "Ru Shi" Yuying Yuantong Yanxiang Xiurong Shouying Fuyuan Luzhen Ruirong Suzhen Xiaoying Xiaoyuan Xiaoji Xiaolou }
+	}
+	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
+	callsigns = { }
+}
+KCG = {
+	male = {
+		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
+	}
+	female = {
+		names = { Li Bao Mulan Lanfen Mingzhu Qingling Mei Yingtai Feng "Zhi Ruo" Fei "Ru Shi" Yuying Yuantong Yanxiang Xiurong Shouying Fuyuan Luzhen Ruirong Suzhen Xiaoying Xiaoyuan Xiaoji Xiaolou }
+	}
+	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
+	callsigns = { }
+}
 EJP = {
 	male = {
 		names = { 
@@ -1084,4 +989,205 @@ SW1 = {
 		Schäfer Seidel Augsberger Badenhorst
 	}
 	callsigns = { "Bubi" "Assi" "The Black Devil" "The Blond Knight Of Germany" "Dolfo" "Fighter of Libau" "Petit Rouge" "Pritzl" "The Red Baron" "The Red Battle-flyer" "The Red Knight" "Reeste" }
+}
+RL1 = {
+	male = {
+		names = {
+			Maximilian Felix Erich Gerhard Günther Otto Walter Wilhelm Heinz Hermann Heinrich
+			Theodor Hans Anton Joachim Emil Peter Fritz Adolf Tobias Staffan Marco Karl Kurt Ernst
+			Georg Siegfried Johann Werner Paul Friedrich Dieter Manfred Wolfgang Christian Martin
+			Albert Uwe Ulrich Reinhard Jürgen Jörg Volker Harald Ingo Lothar Rolf Friedhelm
+		}
+	}
+	female = {
+		names = {
+			Anna Elisabeth Emma Hanna Sofia Marie Hildegard Monika Heike Frieda Martha Margarethe
+			Gerda Ilse Ursula Lieselotte Erika Gisela Helga Ingrid Birgitte Anja Julia Heidi Eva
+		}
+	}
+	surnames = {
+		Müller Schmidt Schneider Fischer Meyer Weber Schulz Wagner Hartmann Rall Barkhorn
+		Becker Hoffmann Graf Erhler Hafner Lipfert Brendel Stotz Kirschner Lang Sturm Krellner
+		Beißwenger Duttmann Wilbs Berglen Behrmann Kreiswald Strecker Fuchs Teichmann Weißmann
+		Schröder Neumann Braun Werner Zimmermann Krüger Köhler Krause Huber Peters Jung Keller
+		Groß Hahn Schuster Lorenz Böhm Winter Vogt Ziegler Pfeiffer Pohl Wolff Sauer Vogel
+		Schäfer Seidel Augsberger Badenhorst
+	}
+	callsigns = { "Bubi" "Assi" "The Black Devil" "The Blond Knight Of Germany" "Dolfo" "Fighter of Libau" "Petit Rouge" "Pritzl" "The Red Baron" "The Red Battle-flyer" "The Red Knight" "Reeste" }
+}
+
+IT1 = {
+	male = {
+		names = { 
+			Alessandro Alfonso Ambrogio Amedeo Andrea Angelo Antonio Arturo Benito Camillo
+			Carlo Cesare Costanzo Davide Emilio Enrico Ettore Fabrizio Faustino Federico
+			Felice Ferdinando Fiorenzo Francesco Gaetano Gennaro Girolamo Giulio Giuseppe
+			Guglielmo Innocenzo Leopoldo Lorenzo Luigi Marco Mario Massimo Matteo Nicola
+			Oreste Paolo Pasquale Pietro Prospero Raffaele Roberto Ruggiero Silvio Simone
+			Tancredi Ugo Umberto Vincenzo Vittorio
+		  }
+	}
+	female = {
+		names = { Maria Anna Sara Laura Sofia Stella Angela Giovanna Guiseppina Gianna Giulia Valentina }
+	}
+	surnames = {
+		Acton Albricci Badoglio Baldissera Baratieri Bava-Beccaris Cadorna Cagni Canevaro
+		Capello Caramore Caviglia Ceccherini Cialdini Cusani Dezza "di Robilant" "di Savoia" Emo
+		Fanti Fara Filomarino Garibaldi Giardino Giuriato Govone "La Màrmora" Lussu
+		Mambretti  Menabrea Orengo Pallavicino Pecori-Giraldi  Pelloux Perruchetti
+		Pianelli Porro Presbitero Ramorino Ricotti-Magnani Rigoni Sacchi Saletta
+		Sanna Solari Stern Vaccari Zupelli
+	
+	 }
+	callsigns = { Buzzard Dusty Falcon Hawk Hammer Viper Banshee "The Baron" Lightning Duce Raven "Two Shot" Rosso Robur Gino Giri }
+}
+VTC = {
+	male = {
+		names = { 
+			Lợi Ánh Thuyết Dũng Giáp Xuân Vinh Tuân Văn Toàn Quang Liêm Ngọc Trường Sơn Thuyết Quốc 
+		}
+	}
+	female = {
+		names = { Trần Kim Thị Ánh Viên Liễu Ninh }
+	}
+	surnames = {
+		Nguyễn Trần Lê Phạm Hoàng Huỳnh Vũ Võ Phan Trương Bùi Đặng Đỗ Ngô Hồ Dương Đinh Lý Kiều Lục Đái Mao Khổng Tôn Nữ
+	}
+	callsigns = { }
+}
+FRI = {
+	male = {
+		names = { 
+			Lợi Ánh Thuyết Dũng Giáp Xuân Vinh Tuân Văn Toàn Quang Liêm Ngọc Trường Sơn Thuyết Quốc 
+		}
+	}
+	female = {
+		names = { Trần Kim Thị Ánh Viên Liễu Ninh }
+	}
+	surnames = {
+		Nguyễn Trần Lê Phạm Hoàng Huỳnh Vũ Võ Phan Trương Bùi Đặng Đỗ Ngô Hồ Dương Đinh Lý Kiều Lục Đái Mao Khổng Tôn Nữ
+	}
+	callsigns = { }
+}
+
+BUR = {
+	male = {
+		names = { 
+			Abraham Alexander Aung Aye Ba Binnya Chan Eike Hla Hsinbyushin Hso Htay Htein Htin Ka Kan Kawleikgyin Khun Kin Kyaw Lu Luda Ludu Lun Lwin Maha Mahn Maung May Min Mindon Moe Moethee Mun Mya Myawaddy Myo Myoma Nanda 
+			Nandawshay Narameikhla Nay Ne Ngwe Nyi Ohn Pakokku Paw Peter Pe Po Sanda Sao Saw Saya Sein Shwebomin Sin Sitt Soe Tabinshwehti Taw Than Tharyarwaddy Thaung Thein Thibaw Thu Tin Tun U Wareru Win Ye Yei Zaw Zayar
+			
+		}
+	}
+	female = {
+		names = { 
+			Aung Aye Charm Cynthia Dagon Khet Khin Kyi Ludu Minfong Ma May "Ma Ma" Mi "Mi Mi" Mie Mo "Mo Mo" Myint "Myint Myint" Nilar Rebecca San Su "Su Su" Swe Wai Wendy Yan "Yan Yan" Zoya
+		}
+	}
+	surnames = {
+		Amar Aris Aung Awng Aye Bandoola Bayinnaung Bedu Chan Chit Chun Dala Gaing Gambira Gordeno Gyan Gyaw Gyi Gywe Han Hein Hla Hlaing Ho HHtaik Htay Htoo Htoon Htun Khaing Khin Ko Koko Kyi Kyi Kywe Lai Latt "Law-Yone" Lay
+		Loo Lwin Lin Mar Maung May Mg Mie Min Mindon Moe Myint Naing Naung Nu Nway Nyan Nyein Nyunt Ohmar Oo Pe Pha Phan Pu Pwint Sa San Sein Shin Shwe Soe Sofaer Suukyi Swe Sweet Tein Thaik Than Thant Thaung Thaw Thein Thet
+		Tin Thon Thu Thura Tin Toe Tong Tun U Uttla Wa Win Yin Yoe Yu Zarni Zaw Zun
+	}
+	callsigns = { }
+}
+
+SST = {
+	male = {
+		names = {
+			Albert Alexander Alfred Archibald Arthur Benjamin Bernard Bradley Charles Colbert
+			Colin Cyril Dara David Donald Douglas Edmund Edward Fairfax Francis Geoffrey
+			George Graham Henrey Herbert Horatio Hubert Hugh Ian Jack Jake James Jeremy John
+			Leopold Lester Martin Max Nigel Oswald Percy Peter Reginald Richard Robert
+			Russell Stanley Stephen Thomas Wallace William Winston Zachary
+		  }
+	}
+	female = {
+		names = { Elizabeth Anne Mary Nancy Sophie Sarah Deborah Helen Alice Monica Kathleen Edith Caroline Victoria }
+	}
+	surnames = {
+		Allenby Battemberg Beatty Beresford Black Brown Buller Butler Campbell Cardigan
+		Churchill Cochrane Cockburn Collin Darling Dundas Faithfull Fisher French
+		Golightly Gough Grant Grenfell Haig Hamilton Hardinge Havelock Hope Irons
+		Jellicoe Kitchener Leiper Lyons Madden Milne Montgomery Moresby Mundy Murphy
+		Napier Nicholson Nicholson Plummer Ragland Roberts Roberts Seaton Seymour Shapley
+		Smith Spring Steele Stewart Sutherland Thesiger Tyron Tyrwhitt Wilde Williams
+		Windsor Wolseley Wood Wright
+		}
+	callsigns = { Stubborn Arrow "The King" Eagle Hangover Striker Chase "One Wing" Pickle Thief Thunder Lightning Storm Target Hawk Fox Dog Sparrow Sunrise "Night Owl" Butcher Cocky Hawkeye Killer Mick Brandy "The Baron" }
+	
+}
+BOR = {
+	male = {
+		names = {
+			Albert Alexander Alfred Archibald Arthur Benjamin Bernard Bradley Charles Colbert
+			Colin Cyril Dara David Donald Douglas Edmund Edward Fairfax Francis Geoffrey
+			George Graham Henrey Herbert Horatio Hubert Hugh Ian Jack Jake James Jeremy John
+			Leopold Lester Martin Max Nigel Oswald Percy Peter Reginald Richard Robert
+			Russell Stanley Stephen Thomas Wallace William Winston Zachary
+		  }
+	}
+	female = {
+		names = { Elizabeth Anne Mary Nancy Sophie Sarah Deborah Helen Alice Monica Kathleen Edith Caroline Victoria }
+	}
+	surnames = {
+		Allenby Battemberg Beatty Beresford Black Brown Buller Butler Campbell Cardigan
+		Churchill Cochrane Cockburn Collin Darling Dundas Faithfull Fisher French
+		Golightly Gough Grant Grenfell Haig Hamilton Hardinge Havelock Hope Irons
+		Jellicoe Kitchener Leiper Lyons Madden Milne Montgomery Moresby Mundy Murphy
+		Napier Nicholson Nicholson Plummer Ragland Roberts Roberts Seaton Seymour Shapley
+		Smith Spring Steele Stewart Sutherland Thesiger Tyron Tyrwhitt Wilde Williams
+		Windsor Wolseley Wood Wright
+		}
+	callsigns = { Stubborn Arrow "The King" Eagle Hangover Striker Chase "One Wing" Pickle Thief Thunder Lightning Storm Target Hawk Fox Dog Sparrow Sunrise "Night Owl" Butcher Cocky Hawkeye Killer Mick Brandy "The Baron" }
+	
+}
+SAR = {
+	male = {
+		names = {
+			Albert Alexander Alfred Archibald Arthur Benjamin Bernard Bradley Charles Colbert
+			Colin Cyril Dara David Donald Douglas Edmund Edward Fairfax Francis Geoffrey
+			George Graham Henrey Herbert Horatio Hubert Hugh Ian Jack Jake James Jeremy John
+			Leopold Lester Martin Max Nigel Oswald Percy Peter Reginald Richard Robert
+			Russell Stanley Stephen Thomas Wallace William Winston Zachary
+		  }
+	}
+	female = {
+		names = { Elizabeth Anne Mary Nancy Sophie Sarah Deborah Helen Alice Monica Kathleen Edith Caroline Victoria }
+	}
+	surnames = {
+		Allenby Battemberg Beatty Beresford Black Brown Buller Butler Campbell Cardigan
+		Churchill Cochrane Cockburn Collin Darling Dundas Faithfull Fisher French
+		Golightly Gough Grant Grenfell Haig Hamilton Hardinge Havelock Hope Irons
+		Jellicoe Kitchener Leiper Lyons Madden Milne Montgomery Moresby Mundy Murphy
+		Napier Nicholson Nicholson Plummer Ragland Roberts Roberts Seaton Seymour Shapley
+		Smith Spring Steele Stewart Sutherland Thesiger Tyron Tyrwhitt Wilde Williams
+		Windsor Wolseley Wood Wright
+		}
+	callsigns = { Stubborn Arrow "The King" Eagle Hangover Striker Chase "One Wing" Pickle Thief Thunder Lightning Storm Target Hawk Fox Dog Sparrow Sunrise "Night Owl" Butcher Cocky Hawkeye Killer Mick Brandy "The Baron" }
+	
+}
+BRU = {
+	male = {
+		names = {
+			Albert Alexander Alfred Archibald Arthur Benjamin Bernard Bradley Charles Colbert
+			Colin Cyril Dara David Donald Douglas Edmund Edward Fairfax Francis Geoffrey
+			George Graham Henrey Herbert Horatio Hubert Hugh Ian Jack Jake James Jeremy John
+			Leopold Lester Martin Max Nigel Oswald Percy Peter Reginald Richard Robert
+			Russell Stanley Stephen Thomas Wallace William Winston Zachary
+		  }
+	}
+	female = {
+		names = { Elizabeth Anne Mary Nancy Sophie Sarah Deborah Helen Alice Monica Kathleen Edith Caroline Victoria }
+	}
+	surnames = {
+		Allenby Battemberg Beatty Beresford Black Brown Buller Butler Campbell Cardigan
+		Churchill Cochrane Cockburn Collin Darling Dundas Faithfull Fisher French
+		Golightly Gough Grant Grenfell Haig Hamilton Hardinge Havelock Hope Irons
+		Jellicoe Kitchener Leiper Lyons Madden Milne Montgomery Moresby Mundy Murphy
+		Napier Nicholson Nicholson Plummer Ragland Roberts Roberts Seaton Seymour Shapley
+		Smith Spring Steele Stewart Sutherland Thesiger Tyron Tyrwhitt Wilde Williams
+		Windsor Wolseley Wood Wright
+		}
+	callsigns = { Stubborn Arrow "The King" Eagle Hangover Striker Chase "One Wing" Pickle Thief Thunder Lightning Storm Target Hawk Fox Dog Sparrow Sunrise "Night Owl" Butcher Cocky Hawkeye Killer Mick Brandy "The Baron" }
+	
 }

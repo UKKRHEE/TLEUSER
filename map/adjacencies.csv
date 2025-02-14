@@ -26,7 +26,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 9793;9845;sea;8871;-1;-1;-1;-1;;Menorca-Mallorca
 12299;12113;sea;5539;-1;-1;-1;-1;;Singapore-Batam
 7396;1401;sea;5615;-1;-1;-1;-1;;Bangka Belitung-Sumatra
-1342;10279;sea;2737;-1;-1;-1;-1;;Java-Sumatra
 7396;4211;sea;4225;-1;-1;-1;-1;;Bangka-Belitung
 1460;12126;sea;812;-1;-1;-1;-1;;Tanahbala-Sumatra
 12126;1428;sea;812;-1;-1;-1;-1;;Tanahbala-Siberut
@@ -49,7 +48,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 10342;1437;sea;4899;-1;-1;-1;-1;;Obi-Bacan
 7413;1437;sea;4899;-1;-1;-1;-1;;Halmahera-Bacan
 4509;7542;sea;2585;-1;-1;-1;-1;;Papua-Japen
-10251;1329;sea;430;5112;550;5122;559;;Papua-New Britain
 7251;4421;sea;7010;-1;-1;-1;-1;;New Britain-Latangai
 13021;13022;sea;8673;-1;-1;-1;-1;;Gilbert Islands
 4268;4231;sea;5741;-1;-1;-1;-1;;New Caledonia 1
@@ -73,7 +71,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 9952;1117;sea;2658;-1;-1;-1;-1;;Niigata-Sado
 10092;7046;sea;8791;-1;-1;-1;-1;;Kyushu-Shikoku
 4198;12032;sea;8472;-1;-1;-1;-1;;Kanoya-Yokushima
-11948;1177;sea;2708;-1;-1;-1;-1;;Jeju-Korea
 10124;1123;sea;8499;-1;-1;-1;-1;;Okinawa 1
 1123;7115;sea;8318;-1;-1;-1;-1;;Okinawa 2
 3995;13024;sea;2855;-1;-1;-1;-1;;Saipan-Tinian
@@ -117,7 +114,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 9833;11829;sea;5412;-1;-1;-1;-1;;Bosphorus
 9680;6741;sea;8282;-1;-1;-1;-1;;Kerch Strait
 9859;3962;sea;5946;-1;-1;-1;-1;;Tsugaru Strait
-10011;7110;sea;2708;4825;1219;-1;-1;;Tushima-Kyushu
 4160;1070;sea;5244;-1;-1;-1;-1;;Hainan-Strait
 1712;12147;sea;8978;-1;-1;-1;-1;;Quebec-Strait
 3691;7813;sea;6261;-1;-1;-1;-1;;Cold Ass-Strait
@@ -195,6 +191,8 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 6675;9633;impassable;-1;-1;-1;-1;-1;;eastern alps
 9633;9630;impassable;-1;-1;-1;-1;-1;;eastern alps
 9630;11618;impassable;-1;-1;-1;-1;-1;;eastern alps
+11615;11618;impassable;-1;-1;-1;-1;-1;;eastern alps
+671;11618;impassable;-1;-1;-1;-1;-1;;eastern alps
 671;11634;impassable;-1;-1;-1;-1;-1;;austrian alps
 671;3675;impassable;-1;-1;-1;-1;-1;;austrian alps
 3675;668;impassable;-1;-1;-1;-1;-1;;austrian alps
@@ -221,7 +219,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 13058;10636;impassable;-1;-1;-1;-1;-1;;Greenland Glacier
 13058;13066;impassable;-1;-1;-1;-1;-1;;Greenland Glacier
 
-4056;10011;sea;7932;-1;-1;-1;-1;;Busan-Tsushima
 9965;13390;sea;8791;-1;-1;-1;-1;;Shikoku-KitaKinki
 13390;7072;sea;8791;-1;-1;-1;-1;;KitaKinki-Kansai
 13387;11932;sea;8499;-1;-1;-1;-1;;Okinawa 3
@@ -255,6 +252,14 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 4656;7518;impassable;-1;-1;-1;-1;-1;;Yunnan-Vietnam
 4656;12065;impassable;-1;-1;-1;-1;-1;;Yunnan-Vietnam
 1469;12065;impassable;-1;-1;-1;-1;-1;;Yunnan-Vietnam
+4121;12065;impassable;-1;-1;-1;-1;-1;;Yunnan-Vietnam
+4121;9948;impassable;-1;-1;-1;-1;-1;;Yunnan-Vietnam
+1522;12392;impassable;-1;-1;-1;-1;-1;;Yunnan-Vietnam
+1522;12319;impassable;-1;-1;-1;-1;-1;;Yunnan-Vietnam
+12433;10776;impassable;-1;-1;-1;-1;-1;;Yunnan-Vietnam
+10776;12392;impassable;-1;-1;-1;-1;-1;;Yunnan-Vietnam
+4121;7093;impassable;-1;-1;-1;-1;-1;;Yunnan-Vietnam
+10004;7093;impassable;-1;-1;-1;-1;-1;;Yunnan-Vietnam
 
 7909;10776;impassable;-1;-1;-1;-1;-1;;Yunnan-Burma
 7909;10413;impassable;-1;-1;-1;-1;-1;;Yunnan-Burma
@@ -262,4 +267,37 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 4210;10413;impassable;-1;-1;-1;-1;-1;;Yunnan-Burma
 4210;5009;impassable;-1;-1;-1;-1;-1;;Yunnan-Burma
 4210;7976;impassable;-1;-1;-1;-1;-1;;Yunnan-Burma
+4210;10863;impassable;-1;-1;-1;-1;-1;;Yunnan-Burma
+12363;10863;impassable;-1;-1;-1;-1;-1;;Yunnan-Burma
+10920;10863;impassable;-1;-1;-1;-1;-1;;Yunnan-Burma
+4425;10863;impassable;-1;-1;-1;-1;-1;;Yunnan-Burma
+4996;10863;impassable;-1;-1;-1;-1;-1;;Yunnan-Burma
+4996;12898;impassable;-1;-1;-1;-1;-1;;Yunnan-Burma
+4996;12789;impassable;-1;-1;-1;-1;-1;;Yunnan-Burma
+4318;12789;impassable;-1;-1;-1;-1;-1;;Yunnan-Burma
+12085;1158;sea;10011;1;1;1;1;KOREA_STRAIT_FAKE;For Country Name
+10011;1158;sea;2708;1;1;1;1;KOREA_STRAIT_FAKE_2;For Country Name
+11948;1177;sea;2708;1;1;1;1;JEJU_STRAIT_FAKE;For Country Name
+11912;13372;sea;7932;1;1;1;1;ULLENG_STRAIT_FAKE;For Country Name
+13037;4646;sea;4465;1;1;1;1;KURIL_STRAIT_FAKE;For Country Name
+12446;4576;sea;4465;1;1;1;1;SAHALIN_STRAIT_FAKE;For Country Name
+4211;4409;sea;4465;1;1;1;1;INDONESIA_STRAIT_FAKE;For Country Name
+10181;1098;sea;8822;1;1;1;1;INDONESIA_STRAIT_FAKE_2;For Country Name
+10409;12386;sea;5320;1;1;1;1;INDONESIA_STRAIT_FAKE_3;For Country Name
+4579;10219;sea;5238;1;1;1;1;INDONESIA_STRAIT_FAKE_4;For Country Name
+9957;10099;sea;5388;1;1;1;1;SUEZ_STRAIT_FAKE;For Country Name
+3379;6350;sea;8340;1;1;1;1;BRIT_STRAIT_FAKE;For Country Name
+3311;6350;sea;8340;1;1;1;1;BRIT_STRAIT_FAKE_2;For Country Name
+7423;10272;sea;2876;-1;-1;-1;-1;;NPHI-Sebu Strait
+12118;1224;sea;8751;-1;-1;-1;-1;;CPHI-Sebu Strait
+10186;7360;sea;5641;-1;-1;-1;-1;;SPHI-Sebu Strait
+7419;10272;sea;2971;-1;-1;-1;-1;;NPHI-Palawan Strait
+10184;1421;sea;2899;-1;-1;-1;-1;;SPHI Strait
+4493;7369;sea;5343;-1;-1;-1;-1;;Sulawesi-Maluku Strait
+7369;10342;sea;4899;-1;-1;-1;-1;;Maluku
+12162;12219;sea;2291;-1;-1;-1;-1;;Sunda
+1339;10219;sea;5414;-1;-1;-1;-1;;Sunda
+855;12559;sea;2510;-1;-1;-1;-1;;Sakhalin
+1342;10279;sea;2737;1;1;1;1;;SUM_STRAIT_FAKE_1;For Country Name
+1399;4728;sea;5488;1;1;1;1;;KURIL_STRAIT_FAKE_1;For Country Name
 -1;-1;;-1;-1;-1;-1;-1;-1 

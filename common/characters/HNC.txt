@@ -26,4 +26,15 @@ characters={
 			logistics_skill = 2
 		}
 	}
+	CHI_zhao_hengti_2={
+		name="CHI_zhao_hengti"
+		portraits={
+			civilian={
+				large="gfx/leaders/HNC/Portrait_Hunan_Zhao_Hengti_Civilian.png"
+			}
+		}
+		country_leader={
+			ideology=ultranationalism
+		}
+	}
 }

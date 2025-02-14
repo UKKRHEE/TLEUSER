@@ -6,7 +6,8 @@ state={
 	manpower = 1802132
 
 	history = {
-		owner = ENG
+		owner = EGY
+		add_claim_by = EGY
 		add_core_of = SUD
 		buildings = {
 			infrastructure = 2

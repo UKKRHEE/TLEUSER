@@ -1,0 +1,5 @@
+﻿
+focus = {
+    current = "KOR_kim_death_Ignoring_defense_industry_corruption"
+    Progress = 0
+}   

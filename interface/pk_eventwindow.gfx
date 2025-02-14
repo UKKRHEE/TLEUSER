@@ -218,6 +218,11 @@ spriteType = {
 		texturefile = "gfx/texticons/italian_news.dds"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_siam_news"
+		texturefile = "gfx/texticons/siam_news.dds"
+		legacy_lazy_load = no
+	}
 	#spriteType = {
 	#	name = "GFX_swedish_news"
 	#	texturefile = "gfx/texticons/swedish_news.dds"

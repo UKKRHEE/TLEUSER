@@ -1,0 +1,1610 @@
+focus_tree = {
+	id = korea_old_kyodoha
+	country = {
+		factor = 0
+	}
+	default = no
+	focus = {
+		id = KOR_power_up_to_imperial
+		icon = GFX_focus_power_to_imperial
+		cost = 8.00
+		x = 103
+		y = 10
+			allow_branch = {
+					always = no
+				}
+			available = {
+					has_country_flag = FLAG_the_monarchist_is_won_in_pact
+				}
+			completion_reward = {
+					add_stability = 0.05
+					add_popularity = {
+							ideology = neutrality
+							popularity = 0.05
+						}
+					set_politics = {
+							ruling_party = neutrality
+							elections_allowed = no
+						}
+					swap_ideas = {
+							remove_idea = KOR_Weakening_the_kingship
+							add_idea = KOR_emperors_country
+						}
+					set_party_name = {
+							ideology = fascism
+							long_name = "KOR_military_gov_party_long"
+							name = "KOR_military_gov_party"
+						}
+					set_party_name = {
+							ideology = neutrality
+							long_name = "KOR_military_gov_party_long"
+							name = "KOR_military_gov_party"
+						}
+				}
+
+	}
+	focus = {
+		id = KOR_up-coupdetat
+		icon = GFX_focus_chi_socialist_purge
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_power_up_to_imperial
+		}
+		x = 101
+		y = 11
+			available = {
+
+}
+			completion_reward = {
+					country_event = {
+							id = korea.95
+						}
+				}
+
+	}
+	focus = {
+		id = kor_lifeguard_extension
+		icon = GFX_goal_generic_political_purge
+		cost = 8.00
+		prerequisite = {
+			focus = KOR_up-coupdetat
+		}
+		x = 100
+		y = 12
+			completion_reward = {
+					country_event = {
+							id = korea.96
+						}
+				}
+
+	}
+	focus = {
+		id = KOR_focus_zhilseo_uprising
+		icon = GFX_goal_generic_martial_law
+		cost = 8.00
+		prerequisite = {
+			focus = kor_lifeguard_extension
+		}
+		x = 100
+		y = 13
+			completion_reward = {
+					country_event = {
+							id = korea.97
+						}
+				}
+
+	}
+	focus = {
+		id = KOR_focus_fascist_attack
+		icon = GFX_goal_ANQ_undermine_anticoncessionists
+		cost = 8.00
+		prerequisite = {
+			focus = KOR_up-coupdetat
+		}
+		x = 102
+		y = 12
+			completion_reward = {
+					country_event = {
+							id = korea.98
+						}
+				}
+
+	}
+	focus = {
+		id = KOR_focus_industy_kill
+		icon = GFX_goal_generic_takeover_industries
+		cost = 8.00
+		prerequisite = {
+			focus = KOR_focus_fascist_attack
+		}
+		x = 102
+		y = 13
+			completion_reward = {
+					add_stability = -0.15
+					if = {
+							limit = {
+									has_idea = KOR_taheop_zaeboel
+								}
+							remove_ideas = KOR_taheop_zaeboel
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+					remove_ideas = KOR_striked_factories
+				}
+
+	}
+	focus = {
+		id = KOR_focus_bangjeonghwan_sup
+		icon = GFX_focus_chi_support_socialist_democracy
+		cost = 8.00
+		prerequisite = {
+			focus = KOR_focus_industy_kill
+		}
+		prerequisite = {
+			focus = KOR_focus_zhilseo_uprising
+		}
+		x = 101
+		y = 14
+			completion_reward = {
+					country_event = {
+							id = korea.99
+						}
+				}
+
+	}
+	focus = {
+		id = kor_a_stronger_country
+		icon = GFX_goal_generic_army_high_command
+		cost = 8.00
+		prerequisite = {
+			focus = KOR_power_up_to_imperial
+		}
+		x = 107
+		y = 11
+			available = {
+					has_completed_focus = KOR_focus_bangjeonghwan_sup
+				}
+			completion_reward = {
+					custom_effect_tooltip = TOOLTIP_JUNTA_WILL_BE_LEADER
+					hidden_effect = {
+
+}
+				}
+
+	}
+	focus = {
+		id = KOR_focus_zaebeol_kill
+		icon = GFX_goal_syndicalist_industry
+		cost = 8.00
+		prerequisite = {
+			focus = kor_a_stronger_country
+		}
+		x = 105
+		y = 12
+			completion_reward = {
+					country_event = {
+							id = korea.100
+						}
+				}
+
+	}
+	focus = {
+		id = KOR_focus_rural_support
+		icon = GFX_focus_KOR_fight_industry
+		cost = 8.00
+		prerequisite = {
+			focus = KOR_focus_zaebeol_kill
+		}
+		x = 104
+		y = 13
+			completion_reward = {
+					add_stability = 0.05
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = KOR_focus_the_empires_economy_plan
+		icon = GFX_focus_KOR_restore_the_chonlima
+		cost = 8.00
+		prerequisite = {
+			focus = KOR_focus_zaebeol_kill
+		}
+		x = 106
+		y = 13
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = KOR_focus_kangseong_daeguk
+		icon = focus_KOR_kangsong_daeguk
+		cost = 8.00
+		prerequisite = {
+			focus = KOR_focus_rural_support
+		}
+		prerequisite = {
+			focus = KOR_focus_the_empires_economy_plan
+		}
+		x = 105
+		y = 14
+			completion_reward = {
+					add_ideas = KOR_gangseong_daeguk
+					add_stability = -0.1
+				}
+
+	}
+	focus = {
+		id = kor_best_gangju
+		icon = GFX_focus_kor_ihwa
+		cost = 8.00
+		prerequisite = {
+			focus = KOR_focus_kangseong_daeguk
+		}
+		x = 105
+		y = 15
+			completion_reward = {
+					add_stability = 0.1
+					add_popularity = {
+							ideology = neutrality
+							popularity = 0.05
+						}
+				}
+
+	}
+	focus = {
+		id = kor_god_save_the_king
+		icon = GFX_focus_goal_KOR_patriotism
+		cost = 4.00
+		prerequisite = {
+			focus = kor_a_stronger_country
+		}
+		x = 109
+		y = 12
+			available = {
+
+}
+			completion_reward = {
+					add_ideas = KOR_god_save_the_king
+				}
+
+	}
+	focus = {
+		id = KOR_focus_yiwon_support
+		icon = GFX_focus_KOR_old_kyongchin
+		cost = 8.00
+		prerequisite = {
+			focus = kor_god_save_the_king
+		}
+		x = 108
+		y = 13
+			completion_reward = {
+					country_event = {
+							id = korea.101
+						}
+				}
+
+	}
+	focus = {
+		id = KOR_focus_god_save_kangmyong
+		icon = GFX_focus_KOR_myonryu
+		cost = 8.00
+		prerequisite = {
+			focus = KOR_focus_yiwon_support
+		}
+		x = 108
+		y = 14
+			completion_reward = {
+					add_political_power = 50
+					add_stability = 0.05
+				}
+
+	}
+	focus = {
+		id = KOR_focus_private_support
+		icon = GFX_focus_KOR_imperial_section
+		cost = 8.00
+		prerequisite = {
+			focus = kor_god_save_the_king
+		}
+		x = 110
+		y = 13
+			completion_reward = {
+					country_event = {
+							id = korea.102
+						}
+				}
+
+	}
+	focus = {
+		id = KOR_focus_great_korean_emperor
+		icon = GFX_focus_goal_KOR_eagle
+		cost = 8.00
+		prerequisite = {
+			focus = KOR_focus_private_support
+		}
+		x = 110
+		y = 14
+			completion_reward = {
+					swap_ideas = {
+							add_idea = KOR_god_save_the_king_2
+							remove_idea = KOR_god_save_the_king
+						}
+				}
+
+	}
+	focus = {
+		id = KOR_focus_neutrality_imperial
+		icon = GFX_goal_KOR_strong_hand
+		cost = 8.00
+		prerequisite = {
+			focus = KOR_focus_god_save_kangmyong
+		}
+		prerequisite = {
+			focus = KOR_focus_great_korean_emperor
+		}
+		x = 109
+		y = 15
+			completion_reward = {
+					custom_effect_tooltip = TOOLTIP_EMPEROR_WILL_BE_LEADER
+					set_party_name = {
+							ideology = fascism
+							long_name = "KOR_sugu_gov_party_long"
+							name = "KOR_sugu_gov_party"
+						}
+					set_party_name = {
+							ideology = neutrality
+							long_name = "KOR_korean_imperial_party_long"
+							name = "KOR_korean_imperial_party"
+						}
+					hidden_effect = {
+							set_party_name = {
+									ideology = democratic
+									long_name = "KOR_hwangguk_party_long"
+									name = "KOR_hwangguk_party"
+								}
+							set_party_name = {
+									ideology = communism
+									long_name = "KOR_communism_party_2_long"
+									name = "KOR_communism_party_2"
+								}
+							add_country_leader_role = {
+									Character = KOR_emperor_yi_jin
+									country_leader = {
+											ideology = despotism
+											traits = { emperor_of_korea  han_of_manchuria  khan_of_mongolia  protecter_of_asia  korea_emperor }
+										}
+									promote_leader = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = KOR_focus_cheondo_using
+		icon = GFX_focus_KOR_sopa_bang
+		cost = 8.00
+		prerequisite = {
+			focus = kor_a_stronger_country
+		}
+		x = 113
+		y = 12
+			available = {
+					OR = {
+							has_idea = KOR_god_save_the_king_2
+							has_idea = KOR_god_save_the_king
+						}
+				}
+			completion_reward = {
+					add_ideas = KOR_cheondogyo
+				}
+
+	}
+	focus = {
+		id = KOR_focus_national_spirit_ideology
+		icon = GFX_goal_generic_join_faction
+		cost = 8.00
+		prerequisite = {
+			focus = KOR_focus_cheondo_using
+		}
+		x = 112
+		y = 13
+			completion_reward = {
+					add_war_support = 0.1
+				}
+
+	}
+	focus = {
+		id = KOR_focus_jeongshin_of_korean
+		icon = GFX_goal_KOR_secret_agency
+		cost = 8.00
+		prerequisite = {
+			focus = KOR_focus_cheondo_using
+		}
+		x = 113
+		y = 14
+			available = {
+
+}
+			completion_reward = {
+					add_ideas = KOR_focus_jeongshin_of_korean
+				}
+
+	}
+	focus = {
+		id = KOR_focus_great_state_of_korea
+		icon = GFX_goal_generic_lightbulb
+		cost = 8.00
+		prerequisite = {
+			focus = KOR_focus_jeongshin_of_korean
+		}
+		x = 113
+		y = 15
+			available = {
+					num_of_factories > 82
+					has_stability > 0.89
+				}
+			completion_reward = {
+					add_research_slot = 1
+				}
+
+	}
+	focus = {
+		id = KOR_focus_confucians_duty
+		icon = GFX_goal_generic_join_faction
+		cost = 8.00
+		prerequisite = {
+			focus = KOR_focus_cheondo_using
+		}
+		x = 114
+		y = 13
+			completion_reward = {
+					remove_ideas = KOR_not_go_outside
+				}
+
+	}
+	focus = {
+		id = KOR_focus_east_asian_peace
+		icon = GFX_focus_mkr_victory_in_the_civil_war
+		cost = 5.00
+		prerequisite = {
+			focus = kor_a_stronger_country
+		}
+		x = 118
+		y = 12
+			available = {
+					has_completed_focus = KOR_focus_neutrality_imperial
+				}
+			completion_reward = {
+					set_rule = {
+							can_create_factions = yes
+						}
+				}
+
+	}
+	focus = {
+		id = KOR_focus_peace_for_china
+		icon = GFX_goal_china_deal
+		cost = 8.00
+		prerequisite = {
+			focus = KOR_focus_east_asian_peace
+		}
+		x = 118
+		y = 13
+			available = {
+					NOT = {
+							has_war_with = ZLC
+						}
+				}
+			bypass = {
+					has_war_with = ZLC
+				}
+			completion_reward = {
+					ZLC = {
+							add_opinion_modifier = {
+									target = KOR
+									modifier = TLE_general_government_opinion
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = KOR_focus_none_attack_pact
+		icon = GFX_goal_chinese_instructors
+		cost = 8.00
+		prerequisite = {
+			focus = KOR_focus_peace_for_china
+		}
+		x = 117
+		y = 14
+			completion_reward = {
+					ZLC = {
+							country_event = {
+									id = korea.105
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = KOR_focus_south_kuomintang_attack
+		icon = GFX_goal_LKMT_A_New_China
+		cost = 8.00
+		prerequisite = {
+			focus = KOR_focus_peace_for_china
+		}
+		x = 119
+		y = 14
+			completion_reward = {
+					every_country = {
+							limit = {
+									owns_state = 613
+								}
+							add_timed_idea = {
+									idea = CHI_embargo_korea
+									days = 360
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = KOR_focus_china_join_korea
+		icon = GFX_goal_chinese_investment
+		cost = 8.00
+		prerequisite = {
+			focus = KOR_focus_south_kuomintang_attack
+		}
+		prerequisite = {
+			focus = KOR_focus_none_attack_pact
+		}
+		x = 118
+		y = 15
+			available = {
+					ZLC = {
+							is_in_faction = no
+						}
+					KOR = {
+							is_faction_leader = yes
+						}
+				}
+			bypass = {
+					ZLC = {
+							is_in_faction = yes
+						}
+				}
+			completion_reward = {
+					ZLC = {
+							country_event = {
+									id = generic.5
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = KOR_focus_economic_support_china
+		icon = GFX_goal_china_split_helmet
+		cost = 8.00
+		prerequisite = {
+			focus = KOR_focus_china_join_korea
+		}
+		x = 119
+		y = 16
+			available = {
+					ZLC = {
+							is_ally_with = KOR
+						}
+					KOR = {
+							is_faction_leader = yes
+						}
+				}
+			bypass = {
+					ZLC = {
+							exists = no
+						}
+				}
+			completion_reward = {
+					every_country = {
+							limit = {
+									OR = {
+											original_tag = KOR
+											original_tag = ZLC
+										}
+								}
+							add_timed_idea = {
+									idea = KOR_economic_effect
+									days = 1350
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = KOR_focus_peace_for_england
+		icon = GFX_GBR_five_eyes
+		cost = 8.00
+		prerequisite = {
+			focus = KOR_focus_east_asian_peace
+		}
+		x = 124
+		y = 13
+			available = {
+					NOT = {
+							has_war_with = ENG
+						}
+				}
+			bypass = {
+					has_war_with = ENG
+				}
+			completion_reward = {
+					ENG = {
+							add_opinion_modifier = {
+									target = KOR
+									modifier = TLE_general_government_opinion
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = KOR_focus_qingdao_return
+		icon = GFX_goal_ANQ_qing_loyalty
+		cost = 8.00
+		prerequisite = {
+			focus = KOR_focus_peace_for_china
+			focus = KOR_focus_peace_for_england
+		}
+		x = 121
+		y = 14
+			available = {
+					owns_state = 743
+					NOT = {
+							has_completed_focus = KOR_focus_betray_the_west
+						}
+				}
+			bypass = {
+					has_completed_focus = KOR_focus_betray_the_west
+				}
+			completion_reward = {
+					every_country = {
+							limit = {
+									is_chinese_clique = yes
+									owns_state = 597
+								}
+							transfer_state = 743
+						}
+				}
+
+	}
+	focus = {
+		id = KOR_focus_the_empire_strikes_back
+		icon = GFX_GBR_big_ben
+		cost = 8.00
+		prerequisite = {
+			focus = KOR_focus_peace_for_england
+		}
+		x = 123
+		y = 14
+			available = {
+					NOT = {
+							has_war_with = ENG
+						}
+				}
+			bypass = {
+					has_war_with = ENG
+				}
+			completion_reward = {
+					ENG = {
+							country_event = {
+									id = korea.105
+									days = 2
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = KOR_focus_asian_korea
+		icon = GFX_GBR_westerminster_dec
+		cost = 8.00
+		prerequisite = {
+			focus = KOR_focus_peace_for_england
+		}
+		x = 125
+		y = 14
+			available = {
+					NOT = {
+							has_war_with = ENG
+						}
+				}
+			bypass = {
+					has_war_with = ENG
+				}
+			completion_reward = {
+					ENG = {
+							give_guarantee = KOR
+							give_military_access = KOR
+							add_relation_modifier = {
+									target = KOR
+									modifier = HUN_dynastic_ties_license
+								}
+						}
+					KOR = {
+							add_relation_modifier = {
+									target = ENG
+									modifier = HUN_dynastic_ties_license
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = KOR_focus_with_britain
+		icon = GFX_GBR_britannia
+		cost = 8.00
+		prerequisite = {
+			focus = KOR_focus_the_empire_strikes_back
+		}
+		prerequisite = {
+			focus = KOR_focus_asian_korea
+		}
+		x = 124
+		y = 15
+			available = {
+					ENG = {
+							is_faction_leader = yes
+						}
+					KOR = {
+							is_in_faction = no
+						}
+				}
+			bypass = {
+					ENG = {
+							is_faction_leader = no
+						}
+					KOR = {
+							is_in_faction = yes
+						}
+				}
+			completion_reward = {
+					ENG = {
+							country_event = {
+									id = generic.2
+									days = 1
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = KOR_focus_we_will_peace
+		icon = GFX_HON_peace_in_our_time
+		cost = 8.00
+		prerequisite = {
+			focus = KOR_focus_china_join_korea
+			focus = KOR_focus_with_britain
+		}
+		prerequisite = {
+			focus = KOR_focus_qingdao_return
+		}
+		x = 121
+		y = 16
+			available = {
+					NOT = {
+							has_completed_focus = KOR_focus_betray_the_west
+						}
+				}
+			completion_reward = {
+					set_rule = {
+							can_declare_war_without_wargoal_when_in_war = yes
+							can_send_volunteers = yes
+							can_puppet = yes
+							can_only_justify_war_on_threat_country = no
+							can_create_collaboration_government = yes
+							can_declare_war_on_same_ideology = yes
+						}
+				}
+
+	}
+	focus = {
+		id = KOR_focus_betray_the_west
+		icon = GFX_goal_HOL_policy_south_africa
+		cost = 8.00
+		prerequisite = {
+			focus = KOR_focus_with_britain
+		}
+		mutually_exclusive = {
+			focus = KOR_focus_diplomatic_genius
+		}
+		x = 123
+		y = 16
+			available = {
+					NOT = {
+							has_completed_focus = KOR_focus_qingdao_return
+						}
+				}
+			bypass = {
+					KOR = {
+							has_completed_focus = KOR_focus_qingdao_return
+						}
+				}
+			completion_reward = {
+					transfer_state = 1035
+					transfer_state = 1034
+				}
+
+	}
+	focus = {
+		id = KOR_focus_diplomatic_genius
+		icon = GFX_goal_champagne_diplomacy
+		cost = 8.00
+		prerequisite = {
+			focus = KOR_focus_with_britain
+		}
+		mutually_exclusive = {
+			focus = KOR_focus_betray_the_west
+		}
+		x = 125
+		y = 16
+			available = {
+					is_ally_with = ENG
+				}
+			bypass = {
+					OR = {
+							ENG = {
+									exists = no
+								}
+							NOT = {
+									is_ally_with = ENG
+								}
+							ENG = {
+									NOT = {
+											controls_state = 988
+										}
+								}
+						}
+				}
+			completion_reward = {
+					transfer_state = 988
+				}
+
+	}
+	focus = {
+		id = KOR_focus_sword_outside
+		icon = GFX_SIA_Urban_Warfare_NF
+		cost = 8.00
+		prerequisite = {
+			focus = KOR_focus_east_asian_peace
+		}
+		x = 129
+		y = 13
+			completion_reward = {
+					remove_ideas = KOR_political_officer
+					add_threat = 3
+					annex_country = {
+							target = KMN
+							transfer_troops = no
+						}
+					annex_country = {
+							target = KYH
+							transfer_troops = no
+						}
+				}
+
+	}
+	focus = {
+		id = KOR_focus_japanese_attack
+		icon = GFX_goal_japan_helmet
+		cost = 8.00
+		prerequisite = {
+			focus = KOR_focus_sword_outside
+		}
+		x = 128
+		y = 14
+			completion_reward = {
+					create_wargoal = {
+							target = JAP
+							type = annex_everything
+						}
+					annex_country = {
+							target = KHK
+							transfer_troops = yes
+						}
+					annex_country = {
+							target = KKS
+							transfer_troops = yes
+						}
+				}
+
+	}
+	focus = {
+		id = KOR_focus_dual_empire
+		icon = GFX_focus_KOR_found_the_duel_empire
+		cost = 8.00
+		prerequisite = {
+			focus = KOR_focus_japanese_attack
+		}
+		mutually_exclusive = {
+			focus = KOR_focus_japanese_partner_country
+		}
+		x = 127
+		y = 15
+			available = {
+					owns_state = 282
+				}
+			completion_reward = {
+					country_event = {
+							id = korea.108
+						}
+				}
+
+	}
+	focus = {
+		id = KOR_focus_japanese_partner_country
+		icon = GFX_goal_generic_sea_of_japan
+		cost = 8.00
+		prerequisite = {
+			focus = KOR_focus_japanese_attack
+		}
+		mutually_exclusive = {
+			focus = KOR_focus_dual_empire
+		}
+		x = 129
+		y = 15
+			available = {
+					owns_state = 529
+					owns_state = 530
+					owns_state = 531
+					owns_state = 1069
+					owns_state = 1070
+					owns_state = 1073
+					owns_state = 1072
+					owns_state = 1071
+					owns_state = 532
+					owns_state = 535
+					owns_state = 533
+					owns_state = 534
+					owns_state = 282
+					owns_state = 1068
+				}
+			completion_reward = {
+					JAP = {
+							transfer_state = 529
+							transfer_state = 530
+							transfer_state = 531
+							transfer_state = 1069
+							transfer_state = 1070
+							transfer_state = 1073
+							transfer_state = 1072
+							transfer_state = 1071
+							transfer_state = 532
+							transfer_state = 535
+							transfer_state = 533
+							transfer_state = 534
+							transfer_state = 282
+							transfer_state = 1068
+						}
+					KOR = {
+							puppet = JAP
+						}
+				}
+
+	}
+	focus = {
+		id = KOR_focus_aju_pact
+		icon = GFX_SIA_ratthaniyom
+		cost = 8.00
+		prerequisite = {
+			focus = KOR_focus_sword_outside
+		}
+		x = 132
+		y = 14
+			available = {
+					NOT = {
+							is_in_faction = yes
+						}
+				}
+			completion_reward = {
+					create_faction = "PAN_ASIAN_PACT"
+				}
+
+	}
+	focus = {
+		id = KOR_focus_siam_attack
+		icon = GFX_SIA_siamese_rifles
+		cost = 8.00
+		prerequisite = {
+			focus = KOR_focus_aju_pact
+		}
+		mutually_exclusive = {
+			focus = KOR_focus_siam_support
+		}
+		x = 131
+		y = 15
+			available = {
+					NOT = {
+							is_ally_with = SIA
+						}
+				}
+			bypass = {
+					SIA = {
+							exists = no
+						}
+				}
+			completion_reward = {
+					create_wargoal = {
+							target = SIA
+							type = annex_everything
+						}
+				}
+
+	}
+	focus = {
+		id = KOR_focus_imperial_return
+		icon = GFX_SIA_constitution
+		cost = 8.00
+		prerequisite = {
+			focus = KOR_focus_siam_attack
+		}
+		x = 131
+		y = 16
+			available = {
+					owns_state = 289
+					owns_state = 724
+				}
+			bypass = {
+					SIA = {
+							is_puppet_of = KOR
+						}
+				}
+			completion_reward = {
+					release_puppet_on_controlled = SIA
+				}
+
+	}
+	focus = {
+		id = KOR_focus_siam_support
+		icon = GFX_goal_JAP_target_siam
+		cost = 8.00
+		prerequisite = {
+			focus = KOR_focus_aju_pact
+		}
+		mutually_exclusive = {
+			focus = KOR_focus_siam_attack
+		}
+		x = 133
+		y = 15
+			available = {
+					is_faction_leader = yes
+				}
+			completion_reward = {
+					SIA = {
+							country_event = {
+									id = generic.5
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = KOR_focus_anti_communist_pact
+		icon = GFX_HOL_crackdown_syndie
+		cost = 8.00
+		prerequisite = {
+			focus = KOR_focus_sword_outside
+		}
+		x = 136
+		y = 14
+			completion_reward = {
+					every_country = {
+							limit = {
+									OR = {
+											original_tag = AFG
+											original_tag = PER
+											original_tag = IRQ
+											original_tag = TUR
+											original_tag = SIA
+											is_chinese_clique = yes
+										}
+									exists = yes
+									is_puppet = no
+								}
+							country_event = {
+									id = korea.109
+									days = 5
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = KOR_focus_siberial_rising
+		icon = GFX_goal_generic_cold_training
+		cost = 8.00
+		prerequisite = {
+			focus = KOR_focus_anti_communist_pact
+		}
+		x = 135
+		y = 15
+			completion_reward = {
+					custom_effect_tooltip = TOOLTIP_DEC_UNLOCK_SIBER
+					hidden_effect = {
+
+}
+				}
+
+	}
+	focus = {
+		id = KOR_focus_sinkiang_civilwar
+		icon = GFX_goal_KUM_fan_yaonan
+		cost = 8.00
+		prerequisite = {
+			focus = KOR_focus_siberial_rising
+		}
+		x = 135
+		y = 16
+			completion_reward = {
+					SIK = {
+							start_civil_war = {
+									ruling_party = communism
+									ideology = neutrality
+									size = 0.65
+									capital = 617
+									states = { 617  287  759 }
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = KOR_focus_warlords_theorem
+		icon = GFX_YUN_Goal_Secure_Western_China
+		cost = 8.00
+		prerequisite = {
+			focus = KOR_focus_china_join_korea
+		}
+		x = 117
+		y = 16
+			available = {
+					ZLC = {
+							is_ally_with = KOR
+						}
+					KOR = {
+							is_faction_leader = yes
+						}
+				}
+			bypass = {
+					ZLC = {
+							exists = no
+						}
+				}
+			completion_reward = {
+					ZLC = {
+							create_wargoal = {
+									type = annex_everything
+									target = SHX
+								}
+							create_wargoal = {
+									type = annex_everything
+									target = XSM
+								}
+							create_wargoal = {
+									type = annex_everything
+									target = SIK
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = KOR_focus_chinese_unification_war
+		icon = GFX_goal_QIE_zhili_unite_china
+		cost = 8.00
+		prerequisite = {
+			focus = KOR_focus_warlords_theorem
+		}
+		prerequisite = {
+			focus = KOR_focus_economic_support_china
+		}
+		x = 118
+		y = 17
+			available = {
+					ZLC = {
+							is_ally_with = KOR
+						}
+					KOR = {
+							is_faction_leader = yes
+						}
+				}
+			bypass = {
+					ZLC = {
+							exists = no
+						}
+				}
+			completion_reward = {
+					ZLC = {
+							create_wargoal = {
+									type = annex_everything
+									target = CHI
+								}
+							create_wargoal = {
+									type = annex_everything
+									target = YUN
+								}
+							create_wargoal = {
+									type = annex_everything
+									target = SZC
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = KOR_focus_war_with_axis
+		icon = GFX_goal_GER_Man_in_the_High_Castle
+		cost = 8.00
+		prerequisite = {
+			focus = KOR_focus_diplomatic_genius
+		}
+		x = 125
+		y = 17
+			available = {
+					NOT = {
+							is_ally_with = GER
+						}
+				}
+			bypass = {
+					is_ally_with = GER
+				}
+			completion_reward = {
+					create_wargoal = {
+							target = GER
+							type = annex_everything
+						}
+				}
+
+	}
+	focus = {
+		id = KOR_focus_the_last_war
+		icon = GFX_focus_SOV_support_spanish_poum
+		cost = 8.00
+		prerequisite = {
+			focus = KOR_focus_sinkiang_civilwar
+		}
+		prerequisite = {
+			focus = KOR_focus_soviet_spy_search
+		}
+		x = 136
+		y = 17
+			completion_reward = {
+					create_wargoal = {
+							type = annex_everything
+							target = SOV
+						}
+				}
+
+	}
+	focus = {
+		id = KOR_focus_soviet_spy_search
+		icon = GFX_focus_SOV_international_union_of_soviet_republics
+		cost = 8.00
+		prerequisite = {
+			focus = KOR_focus_strengthening_the_military_intelligence_service
+		}
+		x = 137
+		y = 16
+			completion_reward = {
+					add_intel = {
+							target = SOV
+							civilian_intel = 10
+							army_intel = 20
+							navy_intel = 10
+							airforce_intel = 20
+						}
+					create_operative_leader = {
+							name = "알렉산드라 킴"
+							female = yes
+							traits = { operative_infiltrator  operative_natural_orator }
+							bypass_recruitment = no
+							available_to_spy_master = yes
+							nationalities = { SOV  KOR }
+						}
+					create_operative_leader = {
+							name = "니콜라이 초이"
+							female = yes
+							traits = { operative_infiltrator  operative_natural_orator }
+							bypass_recruitment = no
+							available_to_spy_master = yes
+							nationalities = { SOV  KOR }
+						}
+				}
+
+	}
+	focus = {
+		id = KOR_focus_strengthening_the_military_intelligence_service
+		icon = GFX_goal_ANQ_convince_intellectuals
+		cost = 8.00
+		prerequisite = {
+			focus = KOR_focus_anti_communist_pact
+		}
+		x = 137
+		y = 15
+			completion_reward = {
+					upgrade_intelligence_agency = upgrade_form_department
+				}
+
+	}
+	focus = {
+		id = KOR_focus_attack_south
+		icon = GFX_focus_jap_strike_south
+		cost = 8.00
+		prerequisite = {
+			focus = KOR_focus_betray_the_west
+		}
+		x = 123
+		y = 17
+			available = {
+					OR = {
+							NOT = {
+									is_ally_with = INS
+								}
+							is_faction_leader = yes
+						}
+				}
+			bypass = {
+					INS = {
+							exists = no
+						}
+				}
+			completion_reward = {
+					if = {
+							limit = {
+									is_ally_with = INS
+								}
+							HOL = {
+									leave_faction = yes
+								}
+							INS = {
+									leave_faction = yes
+								}
+						}
+					create_wargoal = {
+							target = INS
+							type = annex_everything
+						}
+				}
+
+	}
+	focus = {
+		id = KOR_focus_end_up_at_the_top
+		icon = GFX_focus_goal_KOR_hegemony
+		cost = 8.00
+		prerequisite = {
+			focus = KOR_focus_neutrality_imperial
+		}
+		prerequisite = {
+			focus = kor_best_gangju
+		}
+		prerequisite = {
+			focus = KOR_focus_great_state_of_korea
+		}
+		x = 109
+		y = 16
+			available = {
+					OR = {
+							is_in_faction = no
+							is_faction_leader = yes
+						}
+					num_of_factories > 200
+				}
+			completion_reward = {
+					swap_ideas = {
+							add_idea = KOR_gangseong_daeguk_2
+							remove_idea = KOR_gangseong_daeguk
+						}
+				}
+
+	}
+	focus = {
+		id = KOR_focus_end_of_korea
+		icon = GFX_focus_KOR_age_of_imperialism
+		cost = 8.00
+		prerequisite = {
+			focus = KOR_focus_end_up_at_the_top
+		}
+		x = 109
+		y = 17
+			available = {
+					custom_trigger_tooltip = {
+							tooltip = TOOLTIP_IDEA_GSK_2
+							has_idea = KOR_god_save_the_king_2
+						}
+				}
+			completion_reward = {
+					swap_ideas = {
+							add_idea = KOR_god_save_the_king_3
+							remove_idea = KOR_god_save_the_king_2
+						}
+				}
+
+	}
+}

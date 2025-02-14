@@ -1,7 +1,4 @@
-﻿
-
-
-##### OOB #####
+﻿##### OOB #####
 units = {
 ### IJN ###
 	#Yokosuka (Tokyo)
@@ -12,42 +9,33 @@ units = {
 			name = "1 Kantai"
 			location = 7072  #Yokosuka
 			#Dai 1 Sentai
-			ship = { name = "Yamato"  pride_of_the_fleet = yes definition = battleship start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = { amount = 1 owner = JAP version_name = "Nagato Class" } } }
-			ship = { name = "Ieyasu" definition = battleship start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = { amount = 1 owner = JAP version_name = "Nagato Class" } } }
-			ship = { name = "Chikuma" definition = heavy_cruiser start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = { amount = 1 owner = JAP version_name = "Chikuma Class" } } }
-			ship = { name = "Fukushima" definition = heavy_cruiser start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = { amount = 1 owner = JAP version_name = "Chikuma Class" } } }
-			ship = { name = "Kyoto" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Mutsuki Class"} } }
-			ship = { name = "Nagatsuki" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Mutsuki Class"} } }
-			# Dai 23 Kuchikutai 
-			ship = { name = "Kikuzuki" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Mutsuki Class"} } }
-			ship = { name = "Mikazuki" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Mutsuki Class"} } }
-			ship = { name = "Mochizuki" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Mutsuki Class"} } }
-			ship = { name = "Yuzuki" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Mutsuki Class"} } }
-		}
-		task_force = {
-			name = "1 Suirai Sentai" #A part of "Dai 1 Kantai"
-			location = 7072  #Yokosuka
-			#Flagship
-			ship = { name = "Edo" definition = light_cruiser start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = { amount = 1 owner = JAP version_name = "Okinoshima Class" } } }
-			ship = { name = "Naka" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = JAP version_name = "Okinoshima Class"} } }
-			#Dai 6 Kuchikutai, Type III Fubuki-class destroyers
-			ship = { name = "Akatsuki" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Mutsuki Class"} } }
-			ship = { name = "Hatsushimo" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Mutsuki Class"} } }
-			ship = { name = "Hibiki" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Mutsuki Class"} } }		
-			ship = { name = "Ikazuchi" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Mutsuki Class"} } }	
-			ship = { name = "Inazuma" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Mutsuki Class"} } }		
-			#Dai 8 Kuchikutai
-			ship = { name = "Amagiri" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Mutsuki Class"} } }			
-			ship = { name = "Asagiri" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Mutsuki Class"} } }	
-			#Dai 30 Kuchikutai
-			ship = { name = "Mutsuki" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Katsuriki Class"} } }
-			ship = { name = "Kisaragi" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Katsuriki Class"} } }
-			ship = { name = "Yayoi" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Katsuriki Class"} } }
-			ship = { name = "Uzuki" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Katsuriki Class"} } }
-			ship = { name = "Gyorai-tei-1" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Katsuriki Class"} } }
-			ship = { name = "Gyorai-tei-2" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Katsuriki Class"} } }
-			ship = { name = "Gyorai-tei-3" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Katsuriki Class"} } }
-			ship = { name = "Gyorai-tei-4" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Katsuriki Class"} } }
+			#Battleship
+			ship = { name = "Yamato"  pride_of_the_fleet = yes definition = battleship start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = { amount = 1 owner = JAP version_name = "Yamato Class" } } }
+			ship = { name = "Nagato" definition = battleship start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = { amount = 1 owner = JAP version_name = "Nagato Class" } } }
+			
+			#Heavy Cruiser
+			ship = { name = "Sikishima" definition = heavy_cruiser start_experience_factor = 0.5 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = JAP version_name = "Sikishima Class"} } }
+			
+			ship = { name = "Akitsushima" definition = heavy_cruiser start_experience_factor = 0.5 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = JAP version_name = "Sikishima Class"} } }
+			
+			#Light Cruiser
+			ship = { name = "Matsushima" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = JAP version_name = "Matsushima Class"} } }
+			ship = { name = "Hashidate" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = JAP version_name = "Matsushima Class"} } }
+			
+			#Destroyer
+			ship = { name = "Kamikaze" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Kamikaze Class"} } }
+			ship = { name = "Asakaze" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Kamikaze Class"} } }
+			ship = { name = "Yukikaze" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Kamikaze Class"} } }
+			ship = { name = "Matsukaze" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Kamikaze Class"} } }
+			ship = { name = "Harukaze" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Kamikaze Class"} } }
+			ship = { name = "Hatakaze" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Kamikaze Class"} } }
+			
+			ship = { name = "Mutsuki" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Mutsuki Class"} } }
+			ship = { name = "Kisaragi" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Mutsuki Class"} } }
+			ship = { name = "Yayoi" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Mutsuki Class"} } }
+			ship = { name = "Mikatsuki" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Mutsuki Class"} } }
+			ship = { name = "Mochitsuki" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Mutsuki Class"} } }
+			ship = { name = "Akitsuki" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Mutsuki Class"} } }
 		}
 		task_force = {
 			name = "1 Sensui Sentai" # A part of "Dai 1 Kantai"
@@ -76,35 +64,15 @@ units = {
 #########################
 instant_effect = 
 {
-	
-		add_equipment_production = {				
-			equipment = {
-				type = ship_hull_submarine_1
-				creator = "JAP" 
-				version_name = "Ro-26 Class"
-			}
-			requested_factories = 1
-			progress = 0.80
-			amount = 1
+
+	add_equipment_production = {				
+		equipment = {
+			type = ship_hull_submarine_1
+			creator = "JAP" 
+			version_name = "Ro-26 Class"
 		}
-		add_equipment_production = {				
-			equipment = {
-				type = ship_hull_submarine_1
-				creator = "JAP" 
-				version_name = "Ro-26 Class"
-			}
-			requested_factories = 1
-			progress = 0.71
-			amount = 1
-		}
-		add_equipment_production = {				
-			equipment = {
-				type = ship_hull_submarine_1
-				creator = "JAP" 
-				version_name = "Ro-26 Class"
-			}
-			requested_factories = 1
-			progress = 0.64
-			amount = 1
-		}
+		requested_factories = 1
+		progress = 0.80
+		amount = 1
+	}
 }

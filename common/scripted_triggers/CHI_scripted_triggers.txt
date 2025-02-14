@@ -77,7 +77,6 @@ is_chinese_clique = { #Does not include sinkiang
 		tag = XKC
 		tag = SCC
 		tag = CH1
-		tag = GZC
 		tag = QIN
 	}
 }
@@ -101,7 +100,6 @@ is_independent_china_or_warlord = { #Does not include sinkiang
 		tag = XKC
 		tag = SCC
 		tag = CH1
-		tag = GZC
 		tag = QIN
 	}
 	is_puppet = no

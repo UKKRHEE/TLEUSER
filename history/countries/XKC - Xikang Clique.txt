@@ -2,7 +2,7 @@
 
 oob = "XKC_1936"
 
-recruit_character = SZC_liu_wenhui
+recruit_character = XKC_liu_wenhui
 
 set_cosmetic_tag = SZC_clique #default
 

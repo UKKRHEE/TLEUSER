@@ -69,23 +69,6 @@ country_event = {
 		ai_chance = {
 			factor = 50
 			modifier = {
-				factor = 0
-				OR = {
-					is_historical_focus_on = yes
-					has_country_flag = CHI_AI_RANDOM_HISTORICAL
-					has_game_rule = {
-						rule = CHI_ai_behavior
-						option = HISTORICAL
-					}
-				}
-				NOT = {
-					has_game_rule = { #used here instead of checking for default because people might not have WTT
-						rule = CHI_ai_behavior
-						option = ALTERNATE
-					}
-				}
-			}
-			modifier = {
 				factor = 0.5
 				KOR = {
 					has_war = yes

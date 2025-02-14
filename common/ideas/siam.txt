@@ -1,0 +1,641 @@
+ideas = {
+
+	country = {
+		aftermath_of_siam_revoulution = {
+			picture = aftermath_of_siam_revoulution
+			
+			allowed = {
+				tag = SIA
+			}
+			
+			#availabe = {}
+			
+			cancel = {}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.3
+				political_power_cost = 2
+				democratic_acceptance = 30
+			}
+		}
+		itasiam = {
+			picture = itasiam
+			
+			allowed = {
+				tag = SIA
+			}
+			
+			#availabe = {}
+			
+			cancel = {}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				fascism_drift = 0.01
+				war_support_factor = 0.1
+				fascism_acceptance = 50
+				army_core_defence_factor = 3.0
+			}
+		}
+		sia_net= {
+			picture = sia_net
+			
+			allowed = {
+				tag = SIA
+			}
+			
+			#availabe = {}
+			
+			cancel = {}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			rule = {
+					can_join_factions = no
+				}
+			modifier = {
+				war_support_factor = -0.1
+				enemy_declare_war_tension = 0.5
+				enemy_justify_war_goal_time = 0.5
+				generate_wargoal_tension = 0.3
+				guarantee_cost = 0.3
+			}
+		}
+		sia_great_depression= {
+			picture = sia_economy
+			
+			allowed = {
+				tag = SIA
+			}
+			
+			#availabe = {}
+			
+			cancel = {}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.1
+				industrial_capacity_factory = -0.1
+				production_speed_buildings_factor = -0.1
+			}
+		}
+		sia_ruralcountry= {
+			picture = sia_rural
+			
+			allowed = {
+				tag = SIA
+			}
+			
+			#availabe = {}
+			
+			cancel = {}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				monthly_population = 0.2
+				stability_factor = 0.1
+				conscription_factor = -0.25
+				industrial_capacity_factory = -0.1
+				production_speed_buildings_factor = -0.1
+			}
+		}
+		sia_ruralcountry_2= {
+			picture = sia_rural
+			
+			allowed = {
+				tag = SIA
+			}
+			
+			#availabe = {}
+			
+			cancel = {}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				monthly_population = 0.2
+				stability_factor = 0.1
+				conscription_factor = -0.1
+				industrial_capacity_factory = -0.05
+			}
+		}
+		sia_bad_army= {
+			picture = siaarmy_b
+			
+			allowed = {
+				tag = SIA
+			}
+			
+			#availabe = {}
+			
+			cancel = {}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.1
+				planning_speed = -0.1
+				army_defence_factor = -0.2
+				army_attack_factor = -0.2
+				army_morale_factor = -0.1
+				supply_consumption_factor = 0.2
+			}
+		}
+		sia_little_bad_army= {
+			picture = siaarmy_a
+			
+			allowed = {
+				tag = SIA
+			}
+			
+			#availabe = {}
+			
+			cancel = {}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_defence_factor = -0.15
+				army_attack_factor = -0.15
+				army_morale_factor = -0.1
+				supply_consumption_factor = 0.1
+			}
+		}
+		sia_southern_operation= {
+			picture = sia_boost
+			
+			allowed = {
+				tag = SIA
+			}
+			
+			#availabe = {}
+			
+			cancel = {}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_defence_factor = 0.1
+				army_attack_factor = 0.1
+				army_morale_factor = 0.1
+				planning_speed = 0.1
+				supply_consumption_factor = -0.1
+			}
+		}
+		sia_free_movement= {
+			picture = sia_resistance
+			
+			allowed = {
+				tag = SIA
+			}
+			
+			#availabe = {}
+			
+			cancel = {}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 0.1
+				stability_factor = -0.1
+				war_support_factor = -0.1
+				democratic_drift = 0.05
+			}
+		}
+		sia_manpower= {
+			picture = generic_manpower_bonus
+			
+			allowed = {
+				tag = SIA
+			}
+			
+			#availabe = {}
+			
+			cancel = {}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.02
+			}
+		}
+		ast_threat= {
+			picture = ast_threat
+			
+			allowed = {
+				tag = AST
+			}
+			
+			#availabe = {}
+			
+			cancel = {}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.2
+				stability_factor = -0.1
+				conscription = 0.03
+				army_core_defence_factor = 0.1
+				political_power_cost = 0.1
+				war_support_factor = 0.2
+				drift_defence_factor = 0.1
+			}
+		}
+		sst_defence= {
+			picture = sst_pearl
+			
+			allowed = {
+				tag = SST
+			}
+			
+			#availabe = {}
+			
+			cancel = {}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 0.1
+				army_defence_factor = 0.1
+				planning_speed = 0.1
+			}
+		}
+		sia_civilwar= {
+			picture = sia_boost
+			
+			allowed = {
+				tag = SIA
+				tag = KSI
+			}
+			
+			#availabe = {}
+			
+			cancel = {}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_org_factor = -0.1
+				army_morale_factor = -0.1
+				surrender_limit = 0.5
+			}
+		}
+		east_indies_ai= {
+			picture = east_indies
+			
+			allowed = {
+				tag = INS
+			}
+			
+			#availabe = {}
+			
+			cancel = {
+				KOR = {
+					is_ai = no
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.1
+				surrender_limit = -0.20
+				supply_consumption_factor = -0.2
+			}
+		}
+		east_indies_user= {
+			picture = east_indies
+			
+			allowed = {
+				tag = INS
+			}
+			
+			#availabe = {}
+			
+			cancel = {
+				KOR = {
+					is_ai = yes
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.1
+				surrender_limit = 10
+				supply_consumption_factor = -0.2
+			}
+		}
+		east_indies_user_2= {
+			picture = east_indies
+			
+			allowed = {
+				tag = INS
+			}
+			
+			#availabe = {}
+			
+			cancel = {}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.1
+				surrender_limit = 10
+				supply_consumption_factor = -0.2
+			}
+		}
+		rama_ix= {
+			picture = rama_ix
+			
+			allowed = {
+				tag = SIA
+			}
+			
+			#availabe = {}
+			
+			cancel = {}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.1
+			}
+		}
+	}
+	
+	tank_manufacturer = {
+	
+		designer = yes
+		
+		SIA_army_ars_d = { #
+			
+		    picture = SIA_army_ars
+
+		    allowed = {
+		    	original_tag = SIA
+		    }
+
+			cost = 150
+			removal_cost = 10
+			
+		    research_bonus = {
+		    	armor = 0.10
+		    }
+			
+		    traits = { fast_tank_manufacturer }
+	    }
+		
+	}
+	
+	naval_manufacturer = {
+	
+		designer = yes
+	
+		SIA_navy_ars = { #
+			
+		    picture = SIA_navy_ars
+		
+		    allowed = {
+		    	original_tag = SIA
+		    }
+				
+			cost = 150
+			removal_cost = 10
+			
+		    research_bonus = {
+		    	naval_equipment = 0.10
+		    }
+			
+		    traits = { coastal_defence_naval_manufacturer }
+    	}
+		
+	}
+	
+	aircraft_manufacturer = {
+	
+		designer = yes
+	
+		SIA_air_ars = { #
+			
+		    picture = SIA_air_ars
+				
+		    allowed = {
+		    	original_tag = SIA
+		    }
+			
+		    research_bonus = {
+		    	air_equipment = 0.05
+		    }
+
+			cost = 150
+			removal_cost = 10
+			
+		    traits = { light_aircraft_manufacturer }
+	    }
+		
+	}
+	
+	materiel_manufacturer = { 
+	
+		designer = yes
+	
+		SIA_army_ars_a = {
+
+	    	picture = SIA_army_ars
+            
+		    allowed = {
+		    	original_tag = SIA
+		    }
+	    		
+			cost = 150
+			removal_cost = 10
+			
+		    research_bonus = {
+		    	infantry_weapons = 0.1
+	    	}
+			
+		    traits = { infantry_equipment_manufacturer }
+	    }
+		
+		SIA_army_ars_b = { #
+
+	    	picture = SIA_army_ars
+            
+		    allowed = {
+		    	original_tag = SIA
+		    }
+	    		
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				artillery = 0.15
+			}
+			
+			traits = { artillery_manufacturer }
+	    }
+		
+		SIA_army_ars_c = { #
+		
+			picture = SIA_army_ars
+			
+			allowed = {
+				original_tag = SIA
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				motorized_equipment = 0.1
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+		}
+	}
+	
+	industrial_concern = {
+	
+		designer = yes
+	
+		SIA_CN = { #크리스타니&넬슨
+
+		    picture = SIA_CN
+			
+		    allowed = {
+		    	original_tag = SIA
+		    }
+			
+			cost = 150
+			removal_cost = 10
+			
+		    research_bonus = {
+		    	industry = 0.05
+				synth_resources = 0.05
+		    }
+			
+		    traits = { industrial_concern }
+	    }
+		SIA_CP = { #CP그룹
+
+		    picture = SIA_CP
+			
+		    allowed = {
+		    	original_tag = SIA
+		    }
+			
+			cost = 150
+			removal_cost = 10
+			
+		    research_bonus = {
+		    	industry = -0.05
+		    }
+			modifier = {
+				consumer_goods_expected_value = -0.1
+			}
+			
+		    traits = { industrial_concern }
+	    }
+		SIA_IEC = { #인터네셔널엔지니어링컴퍼니
+					
+		    picture = SIA_IEC
+				
+		    allowed = {
+				original_tag = SIA
+		    }
+			
+		    research_bonus = {
+		    	electronics = 0.15
+		    }
+
+			cost = 150
+			removal_cost = 10
+			
+		    traits = { electronics_developer }
+	    }
+	}
+}	

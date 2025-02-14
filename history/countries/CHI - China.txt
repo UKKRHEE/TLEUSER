@@ -44,15 +44,30 @@ diplomatic_relation = {
 }
 activate_advisor = cks_tok_1
 add_ideas = {
-	limited_conscription
-	closed_economy
-	civilian_economy
+	#국민정신
 	CHI_kuomintang_start
 	CHI_AEP1
 	CHI_failed_north_attack1
 	CHI_diplo_block
 	CHI_NRA1_idea
 	CHI_era_of_chinese_warlords_1
+	
+	#법
+	limited_conscription
+	closed_economy
+	civilian_economy
+	
+	#법률 및 정책
+	chi_dip_pre_communism
+	chi_inn_xinshenghuo
+	chi_pol_xunzheng
+	chi_mil_guominzhengfujun
+	
+	#원로
+	CHI_hu_hanmin_elder
+	
+	#부원수
+	CHI_chiang_kaishek_prince
 }
 add_offsite_building = {
 	type = arms_factory
@@ -97,9 +112,8 @@ set_convoys = 40
 
 recruit_character = CHI_wang_jingwei
 recruit_character = CHI_chiang_kaishek
+recruit_character = CHI_sun_fo
 recruit_character = CHI_zhang_guotao
-recruit_character = CHI_dai_li
-recruit_character = CHI_weng_wenhao
 recruit_character = CHI_tu_yuming
 recruit_character = CHI_hsueh_yueh
 recruit_character = CHI_tai_anlan
@@ -142,8 +156,20 @@ recruit_character = CHI_zhang_zhizhong
 recruit_character = CHI_deng_yanda
 recruit_character = CHI_fang_zhimin
 recruit_character = CHI_li_jishen
+#
+recruit_character = CHI_chen_youren
+recruit_character = CHI_soong_qingling
+recruit_character = CHI_li_shizeng
+recruit_character = CHI_chen_lifu
+recruit_character = CHI_du_yuesheng
+recruit_character = CHI_kong_xiangxi
+recruit_character = CHI_weng_wenhao
+recruit_character = CHI_chen_gongbo
+recruit_character = CHI_wu_tiecheng
+recruit_character = CHI_dai_li
+recruit_character = CHI_wang_zhengting
 
-recruit_character = PRC_mao_zedong #소비에트 특구 연락책
+recruit_character = CHI_mao_zedong #소비에트 특구 연락책
 
 #
 recruit_character = CHI_fubao #Easteregg

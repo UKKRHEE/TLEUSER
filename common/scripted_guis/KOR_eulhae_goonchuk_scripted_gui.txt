@@ -1,0 +1,33 @@
+scripted_gui = {
+	KOR_decision_eulhae_goonchuk_GUI = {
+		context_type = decision_category
+		window_name = "KOR_decision_eulhae_goonchuk_GUI"
+		parent_window_token = decision_tab
+
+		visible = { original_tag = KOR }
+
+		properties = {
+			minjudang_progbar = {
+				frame = 100
+			}
+			daehandang_progbar = {
+				frame = 30
+			}
+			sinhandang_progbar = {
+				frame = 80
+			}
+			control_progbar = {
+				frame = 75
+			}
+			imperial_progbar = {
+				frame = 55
+			}
+			communist_progbar = {
+				frame = 10
+			}
+			reactionary_progbar = {
+				frame = 20
+			}
+		}
+	}
+}

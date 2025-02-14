@@ -1,0 +1,144 @@
+defined_text = {
+	name = TLE_government_stablity
+	text = {
+		trigger = { 
+			OR = {
+				check_variable = { KOR_government_stablity_var > 80 }
+				check_variable = { KOR_government_stablity_var = 100 }
+			}
+		}
+		localization_key = KOR_government_stablity_super_high_LOC
+	}
+	text = {
+		trigger = { 			
+			AND = {
+				check_variable = { KOR_government_stablity_var > 60 }
+				check_variable = { KOR_government_stablity_var < 81 }
+			}
+		}
+		localization_key = KOR_government_stablity_high_LOC
+	}
+	text = {
+		trigger = { 
+			AND = {
+				check_variable = { KOR_government_stablity_var > 40 }
+				check_variable = { KOR_government_stablity_var < 61 }
+			}
+		}
+		localization_key = KOR_government_stablity_middle_LOC
+	}
+	text = {
+		trigger = { 
+			AND = {
+				check_variable = { KOR_government_stablity_var > 20 }
+				check_variable = { KOR_government_stablity_var < 41 }
+			}
+		}
+		localization_key = KOR_government_stablity_low_LOC
+	}
+	text = {
+		trigger = { 
+			check_variable = { KOR_government_stablity_var < 21 }
+		}
+		localization_key = KOR_governmnet_stablity_super_low_LOC
+	}
+}
+
+defined_text = {
+	name = TLE_government_stablity_pabeol_name
+	text = {
+		trigger = { check_variable = { pabeol_grid_i = 0 } }
+		localization_key = KOR_KIM_Empire
+	}
+	text = {
+		trigger = { check_variable = { pabeol_grid_i = 1 } }
+		localization_key = KOR_KIM_ILSO
+	}
+	text = {
+		trigger = { check_variable = { pabeol_grid_i = 2 } }
+		localization_key = KOR_KIM_Ahn
+	}
+	text = {
+		trigger = { check_variable = { pabeol_grid_i = 3 } }
+		localization_key = KOR_KIM_Hwa
+	}
+	text = {
+		trigger = { check_variable = { pabeol_grid_i = 4 } }
+		localization_key = KOR_KIM_Army
+	}
+	text = {
+		trigger = { check_variable = { pabeol_grid_i = 5 } }
+		localization_key = KOR_KIM_Chaebeol
+	}
+	text = {
+		trigger = { check_variable = { pabeol_grid_i = 6 } }
+		localization_key = KOR_KIM_cityzen
+	}
+	text = {
+		trigger = { check_variable = { pabeol_grid_i = 7 } }
+		localization_key = KOR_KIM_rural
+	}
+	text = {
+		localization_key = KOR_KIM_error
+	}
+}
+
+
+defined_text = {
+	name = TLE_government_stablity_pabeol_rating_var
+	text = {
+		trigger = { check_variable = { pabeol_grid_i = 0 } }
+		localization_key = KOR_KIM_Empire_var
+	}
+	text = {
+		trigger = { check_variable = { pabeol_grid_i = 1 } }
+		localization_key = KOR_KIM_ILSO_var
+	}
+	text = {
+		trigger = { check_variable = { pabeol_grid_i = 2 } }
+		localization_key = KOR_KIM_Ahn_var		
+	}
+	text = {
+		trigger = { check_variable = { pabeol_grid_i = 3 } }
+		localization_key = KOR_KIM_Hwa_var
+	}
+	text = {
+		trigger = { check_variable = { pabeol_grid_i = 4 } }
+		localization_key = KOR_KIM_Army_var
+	}
+	text = {
+		trigger = { check_variable = { pabeol_grid_i = 5 } }
+		localization_key = KOR_KIM_Chaebeol_var
+	}
+	text = {
+		trigger = { check_variable = { pabeol_grid_i = 6 } }
+		localization_key = KOR_KIM_cityzen_var
+	}
+	text = {
+		trigger = { check_variable = { pabeol_grid_i = 7 } }
+		localization_key = KOR_KIM_rural_var
+	}
+	text = {
+		localization_key = KOR_KIM_error
+	}
+}
+
+defined_text = {
+	name = TLE_government_stablity_pabeol_level
+	text = {
+		trigger = { check_variable = { pabeol_grid_v = 1 } }
+		localization_key = KOR_KIM_level_low
+	}
+	text = {
+		trigger = { check_variable = { pabeol_grid_v = 2 } }
+		localization_key = KOR_KIM_level_middle
+	}
+	text = {
+		trigger = { check_variable = { pabeol_grid_v = 3 } }
+		localization_key = KOR_KIM_level_high
+	}
+	text = {
+		trigger = { check_variable = { pabeol_grid_v = 4 } }
+		localization_key = KOR_KIM_level_super
+	}
+}

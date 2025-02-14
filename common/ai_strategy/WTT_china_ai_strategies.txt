@@ -12,11 +12,7 @@
 
 WTT_add_infiltration_save_equipment = {
 	enable = {
-		OR = {
-			has_completed_focus = PRC_infiltration
-			has_completed_focus = PRC_anti_KORanese_expedition
-		}
-
+		has_completed_focus = PRC_infiltration
 	}
 	abort = {
 		OR = {

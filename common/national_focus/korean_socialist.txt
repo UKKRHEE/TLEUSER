@@ -1383,7 +1383,7 @@ focus_tree = {
 						is_puppet_of = KOR
 					}
 					is_puppet = no
-					has_civil_war = np
+					has_civil_war = no
 					is_ai = yes
 				}
 				start_civil_war = {

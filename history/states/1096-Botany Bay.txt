@@ -1,0 +1,24 @@
+state={
+	id=1096
+	name="STATE_BOTANY"
+	
+	history={
+		owner = AST
+		buildings = {
+			dockyard = 2
+			4864 = {
+				naval_base = 6
+				coastal_bunker = 2
+			}
+		}
+		add_core_of = AST
+	}
+	
+	provinces={
+		4864 
+	}
+	manpower=1235
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

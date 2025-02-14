@@ -5,16 +5,16 @@ defined_text = {
 		trigger = {
 			check_variable = { num_actual_divisions > max_divisions }
 		}
-		localization_key = "[?num_actual_divisions|R0]"
+		localization_key = "unit_limit_count_loc_limited"
 	}
 	text = {
 		trigger = {
 			check_variable = { num_actual_divisions = max_divisions }
 		}
-		localization_key = "[?num_actual_divisions|H0]"
+		localization_key = "unit_limit_count_loc_normal"
 	}
 	text = {
-		localization_key = "[?num_actual_divisions|G0]"
+		localization_key = "unit_limit_count_loc_unlimited"
 	}
 }
 

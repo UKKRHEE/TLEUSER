@@ -1,0 +1,27 @@
+state={
+	id=1082
+	name="STATE_CAOBANG"
+	resources={
+		tungsten=22.000
+	}
+	provinces={
+		7015 7518 12065 
+	}
+	history={
+		add_core_of = VIN
+		add_core_of = VTC
+		add_core_of = FRI
+		add_core_of = TNK
+		owner = FRI
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = {
+			12065 1 
+		}
+	}
+	manpower=1124329
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

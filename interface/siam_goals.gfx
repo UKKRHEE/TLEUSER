@@ -1,0 +1,242 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_goal_siam_first"
+		texturefile = "gfx/interface/goals/SIA/SIA_flag.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_siam_navy"
+		texturefile = "gfx/interface/goals/SIA/military.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_theleader"
+		texturefile = "gfx/interface/goals/SIA/theleader.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_siamculter"
+		texturefile = "gfx/interface/goals/SIA/siamculter.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_dictatorship"
+		texturefile = "gfx/interface/goals/SIA/dictatorship.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_theking"
+		texturefile = "gfx/interface/goals/SIA/theking.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_focus_befriend_with_korea"
+		texturefile = "gfx/interface/goals/SIA/focus_befriend_with_korea.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_indochina"
+		texturefile = "gfx/interface/goals/SIA/indochina.png"
+	}
+	SpriteType = {
+		name = "GFX_SIA_parliment"
+		texturefile = "gfx/interface/goals/SIA/SIA_parliment.png"
+	}
+	SpriteType = {
+		name = "GFX_SIA_PHIBUNSONGKHRAM_NF"
+		texturefile = "gfx/interface/goals/SIA/SIA_PHIBUNSONGKHRAM_NF.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_SIAM_AIRCORPS"
+		texturefile = "gfx/interface/goals/SIA/SIAM_AIRCORPS.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_SIAM_NAVY"
+		texturefile = "gfx/interface/goals/SIA/SIAM_NAVY.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_SIAM_ARMY"
+		texturefile = "gfx/interface/goals/SIA/SIAM_ARMY.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_fate_of_pridi"
+		texturefile = "gfx/interface/goals/SIA/fate_of_pridi.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_sia_new_world"
+		texturefile = "gfx/interface/goals/SIA/aftermath.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_sia_flag_siam"
+		texturefile = "gfx/interface/goals/SIA/flag_siam.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_sia_defenses"
+		texturefile = "gfx/interface/goals/SIA/sia_defense.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_sia_rat"
+		texturefile = "gfx/interface/goals/SIA/sia_rat.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_sia_troops"
+		texturefile = "gfx/interface/goals/SIA/sia_troops.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_newcapital"
+		texturefile = "gfx/interface/goals/SIA/newcapital_siam.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_phahon"
+		texturefile = "gfx/interface/goals/SIA/SIA_PHAHON_NF.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_siam_tank"
+		texturefile = "gfx/interface/goals/SIA/SIA_tank.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_siam_rifle"
+		texturefile = "gfx/interface/goals/SIA/focus_rifle.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_sia_airfield"
+		texturefile = "gfx/interface/goals/SIA/sia_airfield.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_sia_adoctrine"
+		texturefile = "gfx/interface/goals/SIA/sia_adoctrine.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_sia_artillery"
+		texturefile = "gfx/interface/goals/SIA/sia_artillery.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_sia_armory"
+		texturefile = "gfx/interface/goals/SIA/sia_armory.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_sia_attackbritain"
+		texturefile = "gfx/interface/goals/SIA/sia_attackbritain.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_sia_battleship"
+		texturefile = "gfx/interface/goals/SIA/sia_battleship.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_sia_bomber"
+		texturefile = "gfx/interface/goals/SIA/sia_bomber.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_sia_civil"
+		texturefile = "gfx/interface/goals/SIA/sia_civil.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_sia_constitution"
+		texturefile = "gfx/interface/goals/SIA/sia_constitution.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_sia_cruiser"
+		texturefile = "gfx/interface/goals/SIA/sia_cruiser.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_sia_declaration"
+		texturefile = "gfx/interface/goals/SIA/sia_declaration.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_sia_fascism"
+		texturefile = "gfx/interface/goals/SIA/sia_fascism.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_sia_fighter"
+		texturefile = "gfx/interface/goals/SIA/sia_fighter.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_sia_global"
+		texturefile = "gfx/interface/goals/SIA/sia_global.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_sia_gun"
+		texturefile = "gfx/interface/goals/SIA/sia_gun.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_sia_korea"
+		texturefile = "gfx/interface/goals/SIA/sia_korea.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_sia_industry"
+		texturefile = "gfx/interface/goals/SIA/sia_industry.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_sia_koreamore"
+		texturefile = "gfx/interface/goals/SIA/sia_koreamore.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_sia_koreapal"
+		texturefile = "gfx/interface/goals/SIA/sia_koreapal.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_sia_ldoctrine"
+		texturefile = "gfx/interface/goals/SIA/sia_ldoctrine.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_sia_autonomy"
+		texturefile = "gfx/interface/goals/SIA/sia_autonomy.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_sia_monarchy"
+		texturefile = "gfx/interface/goals/SIA/sia_monarchy.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_sia_money"
+		texturefile = "gfx/interface/goals/SIA/sia_money.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_sia_ndoctrine"
+		texturefile = "gfx/interface/goals/SIA/sia_ndoctrine.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_sia_neutrality"
+		texturefile = "gfx/interface/goals/SIA/sia_neutrality.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_sia_propaganda"
+		texturefile = "gfx/interface/goals/SIA/SIA_propaganda.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_sia_punish"
+		texturefile = "gfx/interface/goals/SIA/sia_punish.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_sia_rattana"
+		texturefile = "gfx/interface/goals/SIA/sia_rattana.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_sia_recruit"
+		texturefile = "gfx/interface/goals/SIA/sia_recruit.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_sia_submarine"
+		texturefile = "gfx/interface/goals/SIA/sia_submarine.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_sia_unified"
+		texturefile = "gfx/interface/goals/SIA/sia_unified.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_sia_westernization"
+		texturefile = "gfx/interface/goals/SIA/sia_westernization.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_sia_fucked"
+		texturefile = "gfx/interface/goals/SIA/sia_fucked.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_sia_shit"
+		texturefile = "gfx/interface/goals/SIA/sia_shit.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_sia_kinda"
+		texturefile = "gfx/interface/goals/SIA/sia_kinda.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_sia_imprison_people"
+		texturefile = "gfx/interface/goals/SIA/sia_imprison_people.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_SIA_national_arsenal"
+		texturefile = "gfx/interface/goals/SIA/focus_SIA_national_arsenal.png"
+	}
+}

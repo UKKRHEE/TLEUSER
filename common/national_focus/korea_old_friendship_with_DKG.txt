@@ -1,0 +1,363 @@
+focus_tree = {
+	id = korea_old_frindship_with_DKG
+	country = {
+		factor = 0
+	}
+	default = no
+	focus = {
+		id = kor_friendship_with_japan
+		icon = GFX_focus_KOR_dkg_focustree
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_give_me_the_manchu
+		}
+		prerequisite = {
+			focus = KOR_attack_colonial_territory
+		}
+		mutually_exclusive = {
+			focus = KOR_threat_up_of_east_asia
+		}
+		x = 65
+		y = 14
+			available = {
+					has_completed_focus = kor_tsushima
+				}
+			available = {
+					DKG = {
+							exists = yes
+							controls_state = 282
+						}
+					JAP = {
+							exists = no
+						}
+				}
+			bypass = {
+
+}
+			completion_reward = {
+					if = {
+							limit = {
+									KOR = {
+											is_faction_leader = no
+										}
+								}
+							create_faction = KOR_DEFENCE_FACTION
+						}
+				}
+
+	}
+	focus = {
+		id = kor_korea_japan_military_agreement
+		icon = GFX_focus_KOR_save_dokugawa
+		cost = 8.00
+		prerequisite = {
+			focus = kor_friendship_with_japan
+		}
+		x = 64
+		y = 15
+			available = {
+					DKG = {
+							exists = yes
+							controls_state = 282
+						}
+				}
+			completion_reward = {
+					KOR = {
+							give_military_access = DKG
+						}
+					DKG = {
+							give_military_access = KOR
+						}
+				}
+
+	}
+	focus = {
+		id = kor_erection_fortress
+		icon = GFX_goal_generic_construct_military
+		cost = 8.00
+		prerequisite = {
+			focus = kor_korea_japan_military_agreement
+		}
+		x = 64
+		y = 16
+			completion_reward = {
+					1028 = {
+							add_building_construction = {
+									type = bunker
+									level = 3
+									province = 1069
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = bunker
+									level = 3
+									province = 1071
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = bunker
+									level = 3
+									province = 3895
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = bunker
+									level = 3
+									province = 6804
+									instant_build = yes
+								}
+						}
+					1031 = {
+							add_building_construction = {
+									type = bunker
+									level = 3
+									province = 6868
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = bunker
+									level = 3
+									province = 3888
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = bunker
+									level = 3
+									province = 9866
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = bunker
+									level = 3
+									province = 3932
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = bunker
+									level = 3
+									province = 6947
+									instant_build = yes
+								}
+						}
+					1030 = {
+							add_building_construction = {
+									type = bunker
+									level = 3
+									province = 9913
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = bunker
+									level = 3
+									province = 9928
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = bunker
+									level = 3
+									province = 11893
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = bunker
+									level = 3
+									province = 3791
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = bunker
+									level = 3
+									province = 11906
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = bunker
+									level = 3
+									province = 6839
+									instant_build = yes
+								}
+						}
+					527 = {
+							add_building_construction = {
+									type = bunker
+									level = 3
+									province = 11863
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = bunker
+									level = 3
+									province = 906
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = bunker
+									level = 3
+									province = 6963
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = bunker
+									level = 3
+									province = 11856
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = bunker
+									level = 3
+									province = 9795
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = bunker
+									level = 3
+									province = 9918
+									instant_build = yes
+								}
+						}
+					1017 = {
+							add_building_construction = {
+									type = bunker
+									level = 3
+									province = 9899
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = bunker
+									level = 3
+									province = 3803
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = bunker
+									level = 3
+									province = 3888
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = bunker
+									level = 3
+									province = 972
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = bunker
+									level = 3
+									province = 6944
+									instant_build = yes
+								}
+						}
+					1027 = {
+							add_building_construction = {
+									type = bunker
+									level = 3
+									province = 957
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = kor_strengthening_cooperation_japan
+		icon = GFX_focus_KOR_strength_dokugawa
+		cost = 8.00
+		prerequisite = {
+			focus = kor_friendship_with_japan
+		}
+		x = 66
+		y = 15
+			available = {
+					DKG = {
+							exists = yes
+							controls_state = 282
+						}
+				}
+			completion_reward = {
+					DKG = {
+							give_guarantee = KOR
+						}
+				}
+
+	}
+	focus = {
+		id = kor_join_japan
+		icon = GFX_goal_generic_alliance
+		cost = 8.00
+		prerequisite = {
+			focus = kor_korea_japan_military_agreement
+		}
+		prerequisite = {
+			focus = kor_strengthening_cooperation_japan
+		}
+		x = 66
+		y = 16
+			available = {
+					is_faction_leader = yes
+					DKG = {
+							exists = yes
+							controls_state = 282
+						}
+				}
+			available = {
+
+}
+			bypass = {
+
+}
+			completion_reward = {
+					DKG = {
+							country_event = {
+									id = generic.5
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = kor_Imperialism
+		icon = GFX_focus_KOR_imperialism
+		cost = 5.00
+		prerequisite = {
+			focus = kor_erection_fortress
+		}
+		prerequisite = {
+			focus = kor_join_japan
+		}
+		x = 65
+		y = 17
+			available = {
+					if = {
+							limit = {
+									KOR = {
+											is_ai = no
+										}
+								}
+							CHI = {
+									is_ai = yes
+								}
+							JAP = {
+									is_ai = yes
+								}
+							ZLC = {
+									is_ai = yes
+								}
+							WZC = {
+									is_ai = yes
+								}
+							SOV = {
+									is_ai = yes
+								}
+							GER = {
+									is_ai = yes
+								}
+						}
+				}
+			completion_reward = {
+					set_rule = {
+							can_create_factions = yes
+						}
+				}
+
+	}
+}

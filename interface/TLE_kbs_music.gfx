@@ -11,7 +11,6 @@ spriteTypes = {
 		texturefile = "gfx/KOR_kim_kwang_seok_album_art.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_KOR_Lee_Moon_Sae1_album_art"
 		texturefile = "gfx/KOR_Lee_Moon_Sae1_album_art.dds"
@@ -36,6 +35,18 @@ spriteTypes = {
 		name = "GFX_UKKRHEE_personal_art"
 		texturefile = "gfx/UKKRHEE_personal_album_art.png"
 		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_blue_sky_album_art"
+		texturefile = "gfx/blue_sky_album_art.png"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_TLE_superevent_station_album_art"
+		texturefile = "gfx/TLE_superevent_station_album_art.png"
+		noOfFrames = 2
+		alwaystransparent = yes
 	}
 
 }

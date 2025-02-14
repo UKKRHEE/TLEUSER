@@ -1075,7 +1075,6 @@ characters={
 		portraits={
 			civilian = {
 				large="gfx/leaders/PRC/PRC_ye_ting.png"
-				small="gfx/interface/advisors/PRC/PRC_ye_ting.png"
 			}
 		}
 		corps_commander = {
@@ -1099,55 +1098,6 @@ characters={
 			defense_skill = 3
 			planning_skill = 3
 			logistics_skill = 2
-		}
-		advisor = {
-			slot = high_command
-			idea_token = CHI_ye_ting
-			ledger = army
-			traits = { army_chief_entrenchment_2 }
-			cost = 100
-			available = {
-				# 장제스가 지도자면 기용 가능
-				OR = {
-					has_government = communism
-					has_country_leader = {
-						character = CHI_chiang_kaishek
-						ruling_only = yes
-					}
-				}
-				# 공산당과 전쟁하면 관둠
-				NOT = {
-					has_war_with = PRC
-				}
-			}
-		}
-	}
-
-	PRC_tan_pingshan={ #to do
-		name=PRC_tan_pingshan
-		portraits={
-			civilian = {
-				small="gfx/interface/advisors/PRC/PRC_tan_pingshan.png"
-			}
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = PRC_tan_pingshan
-			traits = { communist_revolutionary }
-			available = {
-				# 장제스가 지도자면 기용 가능
-				OR = {
-					has_government = communism
-					has_country_leader = {
-						character = CHI_chiang_kaishek
-						ruling_only = yes
-					}
-				}
-				# 공산당과 전쟁하면 관둠
-				NOT = {
-					has_war_with = PRC
-				}
-			}
 		}
 	}
 }

@@ -37,7 +37,7 @@
  SE_SECOND_NORTHATTACK_A:0 "노병은 죽지 않는다"
 
  SE_EMPIRE_OF_JAPAN:0 "대일본제국 선포"
- SE_EMPIRE_OF_JAPAN_D:0 "구름이 드리워 흐려보이던 달도\n마침내 맑게 개여서 서방정토를 향해 가는구나.\n-다케다 카츠요리"
+ SE_EMPIRE_OF_JAPAN_D:0 "구름이 드리워 흐려보이던 달도\n마침내 맑게 개여서 서방정토를 향해 가는구나.\n-타케다 카츠요리"
  SE_EMPIRE_OF_JAPAN_A:0 "태양이 뜨다"
 
  SE_FALL_OF_GERMANY:0 "독일의 패망"
@@ -98,7 +98,7 @@
 
  SE_ITALY_CIVIL_WAR:0 "이탈리아 내전"
  SE_ITALY_CIVIL_WAR_D:0 "나를 파르티잔의 꽃이라고 말해주오. 자유를 위해 죽은 파르티잔의 꽃이라고.\n-파르티잔의 노래"
- SE_ITALY_CIVIL_WAR_A:0 "운명의 시간이 우리 조국의 하늘을 때렸다"
+ SE_ITALY_CIVIL_WAR_A:0 "운명의 시간이다"
 
  SE_CHINESE_CIVIL_WAR:0 "중국 내전"
  SE_CHINESE_CIVIL_WAR_D:0 "인간은 모두 죽는다. \n인간의 죽음은 태산보다 무거울 수도, 깃털보다 가벼울 수도 있다.\n인민을 위해 죽는다면, 이는 태산보다도 무거운 죽음이다\n-마오쩌둥"
@@ -151,6 +151,14 @@
  SE_FALL_OF_BRITAIN:0 "영국 항복"
  SE_FALL_OF_BRITAIN_D:0 "성공은 영원하지 않고, 실패는 끝이 아니다.\n중요한 것은 굴복하지 않고 계속해나가는 용기이다.\n-윈스턴 처칠"
  SE_FALL_OF_BRITAIN_A:0 "제국의 태양이 저물었다"
+ 
+ SE_NORMANDY_INVASION:0 "노르망디 상륙 작전"
+ SE_NORMANDY_INVASION_D:0 "자유를 사랑하는 사람들의 희망과 기도가 어디서든지 함께 할 것입니다.\n-드와이트 D. 아이젠하워"
+ SE_NORMANDY_INVASION_A:0 "가장 긴 하루"
+ 
+ SE_FRANCO_THAI_WAR:0 "프랑스-타이 전쟁"
+ SE_FRANCO_THAI_WAR_D:0 "이대로라면 타이 역시도 식민지가 되고 말 것이다. 그러나, 충분한 문명화가 이루어진다면 우리의 주권과 독립은 물론이고, 우리가 빼앗긴 모든 것들을 되찾을 수 있을 것이다.\n-쁠랙 피분송크람"
+ SE_FRANCO_THAI_WAR_A:0 "새로운 반향"
 
  SE_GREAT_ASIAN_WAR:0 "대아시아 전쟁"
  SE_GREAT_ASIAN_WAR_D:0 "정치는 유혈 없는 전쟁이고, 전쟁은 유혈 있는 정치다.\n-마오쩌둥"
@@ -159,4 +167,32 @@
  SE_GREAT_ASIAN_WAR_ILSO:0 "대아시아 전쟁"
  SE_GREAT_ASIAN_WAR_ILSO_D:0 "정치는 유혈 없는 전쟁이고, 전쟁은 유혈 있는 정치다.\n-마오쩌둥"
  SE_GREAT_ASIAN_WAR_ILSO_A:0 "눈 내린 전선을 우리는 간다"
+
+ SE_FIGHT_OF_QINHUANGDAO:0 "서만주 사변"
+ SE_FIGHT_OF_QINHUANGDAO_D:0 "한 명의 장군이 공을 세우니, 일만 명의 백골이 쌓이는구나!\n-조송"
+ SE_FIGHT_OF_QINHUANGDAO_A:0 "용호상박"
+
+ SE_GREAT_ASIAN_WAR_DOSAN:0 "대아시아 전쟁"
+ SE_GREAT_ASIAN_WAR_DOSAN_D:0 "무기는 100년 동안 쓸 일이 없다 해도, 단 하루도 갖추지 않을 수 없다.\n-정약용"
+ SE_GREAT_ASIAN_WAR_DOSAN_A:0 "천명이란"
+
+ SE_CONSTITUTION_DOSAN:0 "신헌법공표"
+ SE_CONSTITUTION_DOSAN_D:0 "진리는 반드시 따르는 자가 있고, 정의는 반드시 이루는 날이 있다.\n-안창호"
+ SE_CONSTITUTION_DOSAN_A:0 "끝내 이루어지다"
+
+ SE_JAPAN_ATTACK_WOOSA:0 "갑호작전"
+ SE_JAPAN_ATTACK_WOOSA_D:0 "이슬로 와서 이슬로서 떠나는 이 내 몸이여, 나니와의 영화도 꿈속의 꿈이련가.\n-토요토미 히데요시"
+ SE_JAPAN_ATTACK_WOOSA_A:0 "예견된 전쟁"
+
+ SE_CHINA_ATTACK_WOOSA:0 "을호작전"
+ SE_CHINA_ATTACK_WOOSA_D:0 "장안 한 조각 달 집집마다 다듬이 소리\n가을바람 불어불어 그치지 않으니 모두 옥관의 임 그리는 마음\n언제나 오랑캐 쳐부수고 임은 원정에서 돌아올까.\n-이백, 자야오가"
+ SE_CHINA_ATTACK_WOOSA_A:0 "필연에 가까웠다"
+
+ SE_JAPAN_ATTACK_ILSO:0 "한일전쟁"
+ SE_JAPAN_ATTACK_ILSO_D:0 "불지 않아도 꽃은 질 것을, 마음 조급한 봄 바람이여.\n-카모 우지사토"
+ SE_JAPAN_ATTACK_ILSO_A:0 "흩날리는 벚꽃"
+
+ SE_TIANMING_DIVIDE_ILSO:0 "천하다분"
+ SE_TIANMING_DIVIDE_ILSO_D:0 "꽃 속의 대와 버들에 싸인 정자는 마치 그림 같은데\n때때로 들리는 꾀꼬리 소리는 주인을 부르는구나.\n-조선 효종"
+ SE_TIANMING_DIVIDE_ILSO_A:0 "오래된 꿈"
 ##USE SUPER_EVENT_MAKER_GUI IN USEFUL PYTHON PROGRAMS TO MAKE NEW SUPER EVENTS##

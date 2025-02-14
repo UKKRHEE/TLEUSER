@@ -58,7 +58,31 @@ spriteTypes = {
 		texturefile = "gfx/interface/country_closing_screen/picture/korea_neworder.png"
 	}
 	spriteType = {
+		name = "GFX_TLE_CountryClosing_epilogue_KOR_kim_failed"
+		texturefile = "gfx/interface/country_closing_screen/picture/korea_kim_failed.png"
+	}
+	spriteType = {
+		name = "GFX_TLE_CountryClosing_epilogue_KOR_kim_victory"
+		texturefile = "gfx/interface/country_closing_screen/picture/korea_kim_victory.png"
+	}
+	spriteType = {
+		name = "GFX_TLE_CountryClosing_epilogue_KOR_an_none_victory"
+		texturefile = "gfx/interface/country_closing_screen/picture/korea_an_none_victory.png"
+	}
+	spriteType = {
+		name = "GFX_TLE_CountryClosing_epilogue_KOR_pak_victory"
+		texturefile = "gfx/interface/country_closing_screen/picture/korea_pak_victory.png"
+	}
+	spriteType = {
 		name = "GFX_TLE_CountryClosing_epilogue_JAP_the_last_empire"
 		texturefile = "gfx/interface/country_closing_screen/picture/japan_lastempire.png"
+	}
+	spriteType = {
+		name = "GFX_TLE_CountryClosing_epilogue_SIA_the_last_empire"
+		texturefile = "gfx/interface/country_closing_screen/picture/siam_lastempire.png"
+	}
+	spriteType = {
+		name = "GFX_TLE_CountryClosing_epilogue_SIA_new_order"
+		texturefile = "gfx/interface/country_closing_screen/picture/siam_neworder.png"
 	}
 }

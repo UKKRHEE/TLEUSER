@@ -1,0 +1,78 @@
+﻿##### OOB #####
+units = {
+### IJN ###
+	#Yokosuka (Tokyo)
+	fleet = {
+		name = "Dai 1 Kantai"			
+		naval_base = 7072  #Yokosuka
+		task_force = {
+			name = "1 Kantai"
+			location = 7072  #Yokosuka
+			#Dai 1 Sentai
+			#Battleship
+			ship = { name = "Kawachimaru"  pride_of_the_fleet = yes definition = battleship start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = { amount = 1 owner = DKG version_name = "Kawachimaru Class" } } }
+			ship = { name = "Ieyasu" definition = battleship start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = { amount = 1 owner = DKG version_name = "Ieyasu Class" } } }
+			
+			#Heavy Cruiser
+			ship = { name = "Sikishima" definition = heavy_cruiser start_experience_factor = 0.5 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = DKG version_name = "Sikishima Class"} } }
+			
+			ship = { name = "Akitsushima" definition = heavy_cruiser start_experience_factor = 0.5 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = DKG version_name = "Sikishima Class"} } }
+			
+			#Light Cruiser
+			ship = { name = "Matsushima" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = DKG version_name = "Matsushima Class"} } }
+			ship = { name = "Hashidate" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = {amount = 1 owner = DKG version_name = "Matsushima Class"} } }
+			
+			#Destroyer
+			ship = { name = "Kamikaze" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = DKG version_name = "Kamikaze Class"} } }
+			ship = { name = "Asakaze" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = DKG version_name = "Kamikaze Class"} } }
+			ship = { name = "Yukikaze" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = DKG version_name = "Kamikaze Class"} } }
+			ship = { name = "Matsukaze" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = DKG version_name = "Kamikaze Class"} } }
+			ship = { name = "Harukaze" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = DKG version_name = "Kamikaze Class"} } }
+			ship = { name = "Hatakaze" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = DKG version_name = "Kamikaze Class"} } }
+			
+			ship = { name = "Mutsuki" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = DKG version_name = "Mutsuki Class"} } }
+			ship = { name = "Kisaragi" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = DKG version_name = "Mutsuki Class"} } }
+			ship = { name = "Yayoi" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = DKG version_name = "Mutsuki Class"} } }
+			ship = { name = "Mikatsuki" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = DKG version_name = "Mutsuki Class"} } }
+			ship = { name = "Mochitsuki" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = DKG version_name = "Mutsuki Class"} } }
+			ship = { name = "Akitsuki" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = {amount = 1 owner = DKG version_name = "Mutsuki Class"} } }
+		}
+		task_force = {
+			name = "1 Sensui Sentai" # A part of "Dai 1 Kantai"
+			location = 7072  #Yokosuka
+			#Kaidai-class Submarines
+			ship = { name = "Ro-26" definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = DKG version_name = "Ro-26 Class"} } }
+			ship = { name = "Ro-27" definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = DKG version_name = "Ro-26 Class"} } }
+			ship = { name = "Ro-28" definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = DKG version_name = "Ro-26 Class"} } }
+			ship = { name = "Ro-30" definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = DKG version_name = "Ro-26 Class"} } }
+			ship = { name = "Ro-31" definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = DKG version_name = "Ro-26 Class"} } }
+			ship = { name = "Ro-32" definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = DKG version_name = "Ro-26 Class"} } }
+			ship = { name = "Ro-33" definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = DKG version_name = "Ro-26 Class"} } }
+			#Type L-class Submarines
+			ship = { name = "Ro-51" definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = DKG version_name = "Ro-26 Class"} } }
+			ship = { name = "Ro-56" definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = DKG version_name = "Ro-26 Class"} } }
+			ship = { name = "Ro-57" definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = DKG version_name = "Ro-26 Class"} } }
+			ship = { name = "Ro-58" definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = DKG version_name = "Ro-26 Class"} } }
+			ship = { name = "Ro-59" definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = DKG version_name = "Ro-26 Class"} } }
+		}
+	}
+}
+
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+instant_effect = 
+{
+
+	add_equipment_production = {				
+		equipment = {
+			type = ship_hull_submarine_1
+			creator = "DKG" 
+			version_name = "Ro-26 Class"
+		}
+		requested_factories = 1
+		progress = 0.80
+		amount = 1
+	}
+}

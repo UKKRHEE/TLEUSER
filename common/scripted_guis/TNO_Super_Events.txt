@@ -9,7 +9,7 @@ scripted_gui = {
 			is_ai = no
 			has_variable = TNO_super_event
 			NOT = {
-				has_country_flag = TLE_CANT_SEE_SP_EVENT
+				has_global_flag = TLE_CANT_SEE_SP_EVENT
 			}
 		}
 		triggers = {
@@ -22,6 +22,17 @@ scripted_gui = {
 		}
 		effects = {
 			SE_option_click = {
+				if = {
+					limit = {
+						tag = KOR
+						is_ai = no
+						has_global_flag = TLE_KOR_ENDINGSCREEN_FLAG_USING_KST
+					}
+					KOR_remove_ending_flag_effect = yes
+					clr_global_flag = TLE_KOR_ENDINGSCREEN_FLAG_USING_KST 
+					set_country_flag = TLE_THE_LAST_EMPIRE
+					TNO_Country_Closing_Screen_Show = yes
+				}
 				clear_variable = TNO_super_event
 			}
 		}
@@ -36,7 +47,7 @@ scripted_gui = {
 			is_ai = no
 			has_variable = TLE_super_event
 			NOT = {
-				has_country_flag = TLE_CANT_SEE_SP_EVENT
+				has_global_flag = TLE_CANT_SEE_SP_EVENT
 			}
 		}
 		triggers = {

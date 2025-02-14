@@ -1,0 +1,12 @@
+JAP_nikansenso_hajimeru_modifier = {
+	enable = { always = yes }
+
+	icon = GFX_idea_JAP_Dainipponteikokugun
+
+	army_attack_factor = JAP_army_attack_factor_modifier
+	army_defence_factor = JAP_army_defence_factor_modifier
+	army_org_factor = JAP_army_org_factor_modifier
+	army_speed_factor = JAP_army_speed_factor_modifier
+	stability_weekly = JAP_stability_weekly_modifier
+	war_support_factor  = JAP_war_support_factor_modifier
+}

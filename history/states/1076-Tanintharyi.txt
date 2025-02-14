@@ -1,0 +1,24 @@
+state={
+	id=1076
+	name="STATE_TANINTHARYI"
+	
+	history={
+		add_core_of = BRM
+		owner = RAJ
+		victory_points = {
+			1403 3
+		}
+		buildings = {
+			infrastructure = 1
+		}
+
+	}
+	provinces={
+		1296 1315 1385 1403 4275 4408 7295 10217 12125 12238 12292 
+	}
+
+	manpower=720000
+	state_category=town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

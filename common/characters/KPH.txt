@@ -1,0 +1,30 @@
+characters={
+	KPH_jose_paciano_laurel = {
+		name = "PHI_jose_paciano_laurel"
+		portraits={
+			civilian={
+				large="gfx/leaders/PHI/Jose_Paciano_Laurel.png"
+			}
+		}
+	}
+	KPH_jorge_vargas = {
+		name = "PHI_jorge_vargas"
+		portraits={
+			civilian={
+				large="gfx/leaders/PHI/Jorge_Vargas.dds"
+			}
+		}
+		country_leader={
+			ideology = ultranationalism
+			desc = "PHI_jorge_vargas_desc"
+		}
+	}
+	KPH_hong_sa_ik={
+		name="KOR_hong_sa_ik"
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/Portrait_KOR_Hong_Sa_ik.png"
+			}
+		}
+	}
+}

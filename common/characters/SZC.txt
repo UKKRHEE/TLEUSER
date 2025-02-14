@@ -21,31 +21,6 @@ characters={
 			logistics_skill = 1
 		}
 	}
-	SZC_liu_wenhui = {
-		name="SZC_liu_wenhui"
-		portraits={
-			civilian={
-				large="gfx/leaders/SZC/Portrait_SZC_Liu_Wenhui.png"
-			}
-			army = {
-				large="gfx/leaders/SZC/Portrait_SZC_Liu_Wenhui.png"
-			}
-		}
-		country_leader={
-			ideology=despotism
-		}
-		country_leader={
-			ideology=fascism_ideology
-		}
-		field_marshal={
-			traits = { inflexible_strategist trait_cautious infantry_officer skilled_staffer unyielding_defender }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
-		}
-	}
 	SZC_deng_xihou = {
 		name="SZC_deng_xihou"
 		portraits={
@@ -61,28 +36,6 @@ characters={
 			attack_skill = 1
 			defense_skill = 1
 			planning_skill = 1
-			logistics_skill = 1
-		}
-	}
-	SZC_yang_sen = {
-		name = "SZC_yang_sen"
-		portraits={
-			civilian={
-				large="gfx/leaders/SZC/Portrait_SZC_Yang_Sen.png"
-			}
-			army = {
-				large="gfx/leaders/SZC/Portrait_SZC_Yang_Sen.png"
-			}
-		}
-		country_leader={
-			ideology=oligarchism
-		}
-		field_marshal={
-			traits = { politically_connected career_officer offensive_doctrine }
-			skill = 2
-			attack_skill = 1
-			defense_skill = 2
-			planning_skill = 2
 			logistics_skill = 1
 		}
 	}

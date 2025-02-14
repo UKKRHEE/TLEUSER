@@ -1,0 +1,202 @@
+characters={
+	WEI_yi_kang = {
+		name = "WEI_yi_kang"
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/Portrait_KOR_yi_kang_general.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits = {  }
+		}
+		country_leader={
+			ideology=ultranationalism
+			traits = {  }
+		}
+		country_leader={
+			ideology=korean_democracy
+			traits = {  }
+		}
+		country_leader={
+			ideology=marxism
+			traits = {  }
+		}
+	}
+	WEI_yi_geon = {
+		name = "WEI_yi_geon"
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/Portrait_KOR_yi_geon.png"
+			}
+		}
+	}
+	ROC_li_hanhun = {
+		name = "ROC_li_hanhun"
+		portraits={
+			civilian={
+				large="gfx/leaders/KORCHI/Portrait_ROC_li_hanhun.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits = {  }
+		}
+		country_leader={
+			ideology=ultranationalism
+			traits = {  }
+		}
+		country_leader={
+			ideology=korean_democracy
+			traits = {  }
+		}
+		country_leader={
+			ideology=marxism
+			traits = {  }
+		}
+	}
+	MNG_zhu_yuxun = {
+		name = "MNG_zhu_yuxun"
+		portraits={
+			civilian={
+				large="gfx/leaders/KORCHI/Portrait_MNG_zhu_yuxun.png"
+			}
+		}
+		country_leader={
+			ideology=monarchism
+			traits = {  }
+		}
+		country_leader={
+			ideology=ultranationalism
+			traits = {  }
+		}
+		country_leader={
+			ideology=korean_democracy
+			traits = {  }
+		}
+		country_leader={
+			ideology=marxism
+			traits = {  }
+		}
+	}
+	KRU_kong_decheng = {
+		name = "KRU_kong_decheng"
+		portraits={
+			civilian={
+				large="gfx/leaders/KORCHI/Portrait_KRU_kong_decheng.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits = {  }
+		}
+		country_leader={
+			ideology=ultranationalism
+			traits = {  }
+		}
+		country_leader={
+			ideology=korean_democracy
+			traits = {  }
+		}
+		country_leader={
+			ideology=marxism
+			traits = {  }
+		}
+	}
+	SNJ_su_tiren = {
+		name = "SNJ_su_tiren"
+		portraits={
+			civilian={
+				large="gfx/leaders/KORCHI/Portrait_SNJ_su_tiren.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits = {  }
+		}
+		country_leader={
+			ideology=ultranationalism
+			traits = {  }
+		}
+		country_leader={
+			ideology=korean_democracy
+			traits = {  }
+		}
+		country_leader={
+			ideology=marxism
+			traits = {  }
+		}
+	}
+	HNC_zhou_fohai = {
+		name = "HNC_zhou_fohai"
+		portraits={
+			civilian={
+				large="gfx/leaders/KORCHI/Portrait_HNC_zhou_fohai.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits = {  }
+		}
+		country_leader={
+			ideology=ultranationalism
+			traits = {  }
+		}
+		country_leader={
+			ideology=korean_democracy
+			traits = {  }
+		}
+		country_leader={
+			ideology=marxism
+			traits = {  }
+		}
+	}
+	KJX_deng_ruzhuo = {
+		name = "KJX_deng_ruzhuo"
+		portraits={
+			civilian={
+				large="gfx/leaders/KORCHI/Portrait_KJX_deng_ruzhuo.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits = {  }
+		}
+		country_leader={
+			ideology=ultranationalism
+			traits = {  }
+		}
+		country_leader={
+			ideology=korean_democracy
+			traits = {  }
+		}
+		country_leader={
+			ideology=marxism
+			traits = {  }
+		}
+	}
+	KJU_huang_xianfan = {
+		name = "KJU_huang_xianfan"
+		portraits={
+			civilian={
+				large="gfx/leaders/KORCHI/Portrait_KJU_huang_xianfan.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits = {  }
+		}
+		country_leader={
+			ideology=ultranationalism
+			traits = {  }
+		}
+		country_leader={
+			ideology=korean_democracy
+			traits = {  }
+		}
+		country_leader={
+			ideology=marxism
+			traits = {  }
+		}
+	}
+}

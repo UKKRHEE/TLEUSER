@@ -3,7 +3,7 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 10
+			add = 0
 			tag = ZLC
 		}
 	}
@@ -12,7 +12,7 @@ focus_tree = {
 	default = no
 	focus = {
 		id = CHI_three_principles_of_the_people
-		icon = GFX_focus_goal_조곤
+		icon = GFX_focus_ZLC_old_cao_kun
 		cost = 8.00
 		mutually_exclusive = {
 			focus = ZLC_wu_peifu_support
@@ -99,7 +99,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ZLC_wu_peifu_support
-		icon = GFX_focus_goal_오패부
+		icon = GFX_focus_ZLC_old_wu_peifu
 		cost = 8.00
 		mutually_exclusive = {
 			focus = CHI_three_principles_of_the_people
@@ -2467,7 +2467,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ZLC_the_last_empire
-		icon = GFX_focus_국민주의광풍
+		icon = GFX_focus_KOR_another_the_last_empire
 		cost = 8.00
 		prerequisite = {
 			focus = ZLC_attack_sik
@@ -2493,7 +2493,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			country_event = {
-				id = korea.782
+				id = thelastempire.5000
 			}
 			add_stability = 0.15
 		}

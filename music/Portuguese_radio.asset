@@ -94,3 +94,8 @@ music = {
 	file = "christmars/rudolf.ogg"
 	volume = 1.0
 }
+music = {
+	name = "POR20"
+	file = "christmars/anatakara_merry_christmars.ogg"
+	volume = 1.0
+}

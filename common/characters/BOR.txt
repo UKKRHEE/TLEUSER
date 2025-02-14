@@ -1,0 +1,30 @@
+characters={
+	BOR_Douglas_James_Jardine={
+		name="BOR_Douglas_James_Jardine"
+		portraits={
+			civilian={
+				large="gfx/leaders/BOR/Portrait_Borneo_Douglas_James_Jardine.dds"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			desc = "BOR_Douglas_James_Jardine_desc"
+			traits = {
+			}
+		}
+	}
+	BOR_Hong_Sa_ik={
+		name="KOR_kim_hong_il"
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/Portrait_KOR_Kim_Hong_il.png"
+			}
+		}
+		country_leader={
+			ideology=ultranationalism
+			desc = "KOR_kim_hong_il_desc"
+			traits = {
+			}
+		}
+	}
+]

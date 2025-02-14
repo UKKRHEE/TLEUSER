@@ -1,0 +1,5 @@
+﻿
+focus = {
+    current = "KOR_kim_death_governmental_royal_family"
+    Progress = 0
+}   

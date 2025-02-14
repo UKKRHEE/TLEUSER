@@ -25,7 +25,13 @@ set_technology = {
 	### 공군 ###
 	
 	### 육군 교리 ###
-	superior_firepower = 1
+	superior_firepower = 1 #화력우세
+	
+	### 해군 교리 ### 
+	base_strike = 1 #기지타격
+	
+	### 공군 교리 ###
+	formation_flying = 1 #전장 지원
 	
 	### 산업/공학 ###
 	fuel_silos = 1
@@ -119,6 +125,7 @@ if = {
 
 set_convoys = 120
 recruit_character = ROK_syngman_rhee
+recruit_character = ROK_yi_sungjun
 recruit_character = ROK_kim_sungju
 recruit_character = ROK_kim_songsu
 recruit_character = ROK_yeo_woonhyung

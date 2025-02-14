@@ -12,18 +12,31 @@
  prince_uiyang_trait:0 "의양군"
  prince_susong_trait:0 "수성군"
  prince_chongpung_trait:0 "청풍군"
+ #
+ xingzhengyuan_trait:0 "행정원장"
+ #
+ sub_zongtong_trait:0 "부총통"
+ #
+ heir_prince_jap_trait:0 "황태자"
+ prince_hitachinomiya_trait:0 "히타치노미야"
+ prince_chichibunomiya_trait:0 "치치부노미야"
+ prince_takamatsumiya_trait:0 "타카마츠노미야"
+ prince_mikasanomiya_trait:0 "미카사노미야"
  
  yicheok_trait:0 "인정많은 도독"
  korea_emperor:0 "강명황제"
+ korea_emperor_2:0 "헌문황제"
+ korea_emperor_3:0 "건흥황제"
+ korea_emperor_4:0 "광영황제"
  kanmei_tenno:0 "칸메이 덴노"
  emperor_yi:0 "황실 출신"
  korea_other_nations_king:0 "타 민족의 왕"
  korea_four_star:0 "군인 출신 지도자"
- dictator_kor:0 "피로 물든 등불"
+ dictator_kor:0 "기회를 잡은 이"
  korean_military_junta:0 "군사정부"
  the_democratist:0 "기회를 놓친 이"
  leader_of_despotism:0 "대전쟁의 영웅"
- the_shogun:0 "마지막 수상"
+ the_shogun:0 "너구리의 아들"
  tennoheika:0 "쇼와 덴노"
  tenno_heikka:0 "천황"
  longyun_the_general:0 "호국군"
@@ -33,9 +46,49 @@
  great_gwangmu:0 "광무대제"
  great_yunghee:0 "융희대제"
  young_monarchist:0 "예술적인 전제주의자"
+ realistic_monarchist:0 "현실적인 전제주의자"
+ expired_monarchy:0 "장막 뒤의 군주"
+ constitutional_monarchist:0 "미래를 그리는 화가"
+ realistic_monarchy:0 "현실 위에 선 군주"
+ authoritarian_emperor:0 "자유를 연기하는 배우"
+ truly_supreme:0 "진실로 으뜸되는"
+ coldest_winter:0 "차가운 겨울"
+ the_idiot_machoist:0 "인정 못하는 패배자"
+ cheater_of_ministor:0 "멍청한 배신자"
+ kcia_leader:0 "대한제국 중앙정보부장"
+ militarian_ministor_of_emperor_trait:0 "인형극의 꼭두각시"
  
+ the_jungsoo:0 "삼림의 가운데에서"
+ 
+ the_none_popular:0 "인기없는 지도자"
+ the_president_of_japan:0 "일본국 통령"
+ the_v_president_of_japan:0 "일본국 통령 대행"
+ 
+ prime_minister_of_eok:0 "대한제국 내각총리대신"
+ prime_minister_of_kor:0 "대한국 내각총리대신"
+ 
+ suprime_council_of_korea_leader:0 "대한제국 국가재건최고회의 의장"
+ 
+ president_of_korea:0 "대한민국 대통령"
+ prime_minister_of_korea:0 "대한민국 국무총리"
+ lee_sungjun_trait:0 "겨레의 국부"
+ 
+ #
+ JAP_sholi_trait:0 "대일본제국 내각총리대신"
+ ishiin_leader:0 "유신의 지휘자"
+ 
+ #
+ trait_drunked:0 "술고래"
+ trait_the_tool:0 "꼭두각시"
+ 
+ #
  KOR_yi_won_puppet_trait:0 "꼭두각시 친왕"
  KOR_yi_won_puppet_2_trait:0 "과묵한 황자"
+ 
+ end_of_the_government:0 "종말의 시작"
+ imperial_dictator:0 "황제의 장기말"
+ 
+ doll_of_emperor:0 "망인의 그림자"
  
  CHI_chiang_kaishek_trait:0 "가면 쓴 연기자"
  CHI_wang_jingwei_trait:0 "국민혁명의 영웅"
@@ -50,28 +103,48 @@
  cornered_fox:0 "교활한 여우" #국민당이 좌경화돼서 궁지에 몰린 적이 없음
  yunnan_king:0 "운남왕"
  KOR_the_woosa:0 "더욱이 필요한 역사"
+ KOR_the_woosa_advisor:0 "냉소적인 관찰가"
  KOR_the_ilso:0 "고고한 웃음"
+ KOR_the_ilso_advisor:0 "일소론 주창자"
+ KOR_shut_the_mouth_ilso:0 "연극의 지휘자"
+ KOR_kill_the_communist_ilso:0 "잔혹한 결단자"
  KOR_the_dosan:0 "외딴 섬처럼 올곧게"
+ KOR_the_dosan_advisor:0 "민족 계몽가"
+ KOR_the_simsan:0 "마음은 산처럼 굳세어라"
  ethnical_revolutionist:0 "민족 개혁가"
+ leader_of_vienmin:0 "베트남 민족혁명가"
  
  musashino_tenka:0 "무사시의 천하"
  
  ZLC_chaokun_jie:0 "중산계"
  ZLC_wu_peifu_jie:0 "자옥계"
  ZLC_xiaozhang:0 "소장파"
- ZLC_chaokun_jie_desc:0 "중화민국 북양정부의 차오쿤을 중심으로 한 파벌"
- ZLC_wu_peifu_jie_desc:0 "중화민국 북양정부의 우페이푸를 중심으로 한 파벌"
- ZLC_xiaozhang_desc:0 "중화민국 북양정부 군 내 젊은 장군들의 모임"
+ ZLC_chaokun_jie_desc:0 "§L중화민국 북양정부의 차오쿤을 중심으로 한 파벌.§!"
+ ZLC_wu_peifu_jie_desc:0 "§L중화민국 북양정부의 우페이푸를 중심으로 한 파벌.§!"
+ ZLC_xiaozhang_desc:0 "§L중화민국 북양정부의 중립적인 파벌.§!"
  
  JAP_imperial_family:0 "일본 황실 장교"
- JAP_imperial_family_desc:0 "만세일계의 천황가는 군대에 입대하는 것이 관례입니다. 일본 황실의 일부 남성은 해외 사관학교 유학을 다녀오기도 합니다."
+ JAP_imperial_family_desc:0 "§L만세일계의 천황가는 군대에 입대하는 것이 관례입니다. 일본 황실의 일부 남성은 해외 사관학교 유학을 다녀오기도 합니다.§!"
  
  emperor_of_korea:0 "§t대한제국 대황제§!"
  emperor_of_korea_state:0 "§t대한국 대황제§!"
  the_emperor_of_asia:0 "제국의 심장\n§R그 누구도 폐하의 치세를 부정할 수 없습니다. 황제폐하 만세.§!"
+ samjong_bloodline:0 "삼종지맥의 적통"
+ tired_idealist:0 "노곤한 이상주의자"
+ vigoroyal_lecher:0 "호탕한 호색가"
+ trusted_sponsor:0 "신뢰하는 후원가"
  han_of_manchuria:0 "만주의 한"
  khan_of_mongolia:0 "예케몽골울루스의 카칸"
  protecter_of_asia:0 "전 아주의 수호자"
+ 
+ three_equalism_ideologist:0 "삼균주의 이론가"
+ 
+ pcy_the_pure_blood:0 "순수한 이상가"
+ 
+ imperial_member_of_korea_trait:0 "§H대한제국 황족§!"
+ kp_ilso_trait:0 "§1대한당 일소계§!"
+ kp_hyokshin_trait:0 "§2대한당 혁신계§!"
+ kp_hwapyong_trait:0 "§3대한당 화평계§!"
  
  
  cheats_trait_genera:0 "제작자"
@@ -86,14 +159,14 @@
  KOR_independent_army:0 "대원수"
  KOR_independent_army_desc:0 "충군애국\n민족자주\n한인불사\n대한불멸"
  KOR_imperial_family:0 "제국 황실"
- KOR_imperial_family_desc:0 "이 인물은 대한국 황제의 혈통을 잇고 있습니다."
+ KOR_imperial_family_desc:0 "§L이 인물은 대한국 황제의 혈통을 잇고 있습니다.§!"
  KOR_emperor:0 "대한국 대황제"
- KOR_emperor_desc:0 "반천년 간 이어온 사직의 계승자, 적법한 대한의 군주입니다."
+ KOR_emperor_desc:0 "§L반천년 간 이어온 사직의 계승자, 적법한 대한의 군주입니다.§!"
  jungihboh_trait:0 "민족개혁가"
  
  hangan:0 "한간"
  hero_of_korea:0 "영웅"
- general_of_korea:0 "내무대신"
+ general_of_korea:0 "계엄사 조사위원장"
  failer_of_history:0 "역사의 패배자"
  KOR_not_safed_political_trt:0 "회광반조"
  KOR_park_sangjin_trait_fuck:0 "그림자의 저편"
@@ -101,12 +174,22 @@
 
  president_of_examination_yuan:0 "고시원장"
  
- KOR_emperor_yi_jin:0 "이진"
+ plack_trait:0 "인민의 영도자"
+ plack_trait_2:0 "모든 것의 책임자"
+ plack_trait_3:0 "시대의 잔재"
+ pridi_trait:0 "반제국주의 개혁가"
+ khuang_trait:0 "타협자"
+ siamking_trait:0 "라마 8세"
+ siamkingb_trait:0 "라마 9세"
+ SIA_prince_aditya_trait:0 "섭정위원회 의장"
+ SIA_prince_bhumibol_trait:0 "국왕의 동생"
  
  KOR_lee_dong_nyung_trait:0 "대들보"
  provicional_government_leader:0 "임시거국내각"
  
  the_mango_chungshin:0 "그 믿음에 보답하리다"
+ 
+ empires_support:0 "황제의 정부 신임"
  
  kim_sung_ju_trait:0 "빛나는 별"
  syngman_rhee_trait:0 "책임을 지는 이"
@@ -117,6 +200,8 @@
  KOR_yi_dong_hwi_trait:0 "대전쟁의 영웅"
  KOR_yeounhyeong_trait:0 "호쾌한 상남자"
  popular_yicheok:0 "온화한 사회자"
+ 
+ leader_of_yugo:0 "파르티잔 지도자"
  
  wupeifu_trait:0 "유학자 장군"
  agricultural_socialist:0 "농본사회주의자" #마오쩌둥
@@ -137,18 +222,11 @@
  USA_hst_trait_1:0 "신질서의 설립자"
  
  KOR_hwangdopa:0 "황도파"
- KOR_hwangdopa_desc:0 "황도파는 재벌의 해체, 친서방, 반공, 그리고 대황제 폐하의 친정을 목적으로 하여 동아의 절대적인 천명질서의 회복을 목적으로 하는 군 내 세력입니다. 주로 통제파와 노선상 대립을 빚고 있습니다."
+ KOR_hwangdopa_desc:0 "§L황도파는 재벌의 해체, 친서방, 반공, 그리고 대황제 폐하의 친정을 목적으로 하여 동아의 절대적인 천명질서의 회복을 목적으로 하는 군 내 세력입니다. 주로 통제파와 노선상 대립을 빚고 있습니다.§!"
  KOR_dongpyeong:0 "동평파"
- KOR_dongpyeong_desc:0 "동양평화론파, 줄여서 동평파는 안중근 원수의 저서 "동양평화론"에 기초하여 제국이 동아의 형님으로 대한-지나-일본의 연합을 통해 서양 제국주의를 몰아내는 것에 주력해야 한다고 믿는 이들이 꾸린 군 내 세력입니다. "
+ KOR_dongpyeong_desc:0 "§L동양평화론파, 줄여서 동평파는 안중근 원수의 저서 "동양평화론"에 기초하여 제국이 동아의 형님으로 대한-지나-일본의 연합을 통해 서양 제국주의를 몰아내는 것에 주력해야 한다고 믿는 이들이 꾸린 군 내 세력입니다.§!"
  KOR_tongjepa:0 "통제파"
- KOR_tongjepa_desc:0 "통제파는 군이 대황제 폐하께서 신임하신 정부의 통제를 받으며 국가의 균형 수호, 고도국방국가 건설이라는 대의에 협력해야 한다고 하는 군 내 세력입니다. 주로 황도파와 노선상 대립을 빚고 있습니다."
- 
- artillery_officer:0 "포병 장교"
- artillery_officer_desc:0 "§L포병장교로 훈련받았습니다.§!"
- artillery_specialist:0 "포병 전문가"
- artillery_specialist_desc:0 "§L전투에서 포병을 지휘하는 데 능숙합니다.§!"
- artillery_expert:0 "포병 전문가"
- artillery_expert_desc:0 "포병 지휘의 진정한 전문가입니다."
+ KOR_tongjepa_desc:0 "§L통제파는 군이 대황제 폐하께서 신임하신 정부의 통제를 받으며 국가의 균형 수호, 고도국방국가 건설이라는 대의에 협력해야 한다고 하는 군 내 세력입니다. 주로 황도파와 노선상 대립을 빚고 있습니다.§!"
 
  debug_event_scopes:0 "누가 칼 들고 디버그 모드 키라고 협박함?"
  MJT_Elaina_trait:0 "재의 마녀"

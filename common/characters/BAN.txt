@@ -1,0 +1,16 @@
+characters={
+	BAN_sarat_chandra_bose={
+		name="BAN_sarat_chandra_bose"
+		portraits={
+			civilian={
+				large="gfx/leaders/RAJ/Sarat_Chandra_Bose.png"
+			}
+		}
+		country_leader={
+			ideology=fascism_ideology
+			desc = "BAN_sarat_chandra_bose_desc"
+			traits = {
+			}
+		}
+	}
+]

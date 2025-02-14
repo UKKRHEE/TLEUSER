@@ -1,0 +1,31 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_United_Nations_Icon"
+		texturefile = "gfx/interface/united_nations/un_icon.png"
+	}
+
+	spriteType = {
+		name = "GFX_United_Nations_Icon_Mini"
+		texturefile = "gfx/interface/united_nations/un_icon_mini.png"
+	}
+
+	spriteType = {
+		name = "GFX_United_Nations_Main_Background"
+		texturefile = "gfx/interface/united_nations/un_main_background.png"
+	}
+
+	spriteType = {
+		name = "GFX_UN_Flag_Overlay"
+		textureFile = "gfx/interface/flag_overlay_large.png"
+	}
+
+	spriteType = {
+		name = "GFX_UN_Button_Mini"
+		textureFile = "gfx/interface/united_nations/un_button_mini.png"
+	}
+	
+	spriteType = {
+		name = "GFX_GNG_LegCo_Ordinance_History_Background"
+		textureFile = "gfx/interface/united_nations/ordinance_history_bg.dds"
+	}
+}

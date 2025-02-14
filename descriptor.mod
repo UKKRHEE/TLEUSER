@@ -1,4 +1,4 @@
-version="WAY BACK HOME"
+version="NASANG"
 tags={
 	"Alternative History"
 	"Events"
@@ -12,5 +12,5 @@ dependencies={
 }
 name="THE LAST EMPIRE"
 picture="thumbnail.png"
-supported_version="1.14.*"
+supported_version="1.15.*"
 remote_file_id="2263813821"

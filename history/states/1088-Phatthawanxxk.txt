@@ -1,0 +1,23 @@
+state={
+	id=1088
+	name="STATE_PHATTHAWANXXK"
+	history={
+		buildings = {
+			dockyard = 1
+			infrastructure = 1
+
+		}
+		owner = SIA
+		add_core_of = SIA
+		victory_points = {
+			4433 1 
+		}
+	}
+	provinces={
+		1244 4433 7225 7292 10293 12224 
+	}
+	manpower=560000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

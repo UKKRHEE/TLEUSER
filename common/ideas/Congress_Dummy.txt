@@ -1,0 +1,19 @@
+ideas = {
+	hidden_ideas = {
+		## 의장
+		CongressLeader_Empty = {}
+		CongressLeader_yoon_deokyong = {}
+		CongressLeader_an_changho = {}
+		CongressLeader_kim_kyusik = {}
+		CongressLeader_seo_jae_pil = {}
+		CongressLeader_yi_siyeong = {}
+		CongressLeader_park_chunghee_kks_bad = {}
+		CongressLeader_kim_sukwon_kks_bad = {}
+		CongressLeader_lee_injae_kks_bad = {}
+
+		## 참의
+		CongressPartyLeader_yi_won = {}
+		CongressPartyLeader_yi_gon = {}
+		CongressPartyLeader_lee_jaemyong = {}
+	}
+}

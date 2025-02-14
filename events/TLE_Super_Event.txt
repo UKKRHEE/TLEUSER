@@ -15,20 +15,20 @@ country_event = {	#일본 함락
 	
 	trigger = {
 		JAP = {
-			exists = NO
+			exists = no
 		}
 		DKG = {
-			exists = NO
+			exists = no
 		}	
+		KOR = {
+			NOT = {
+				has_country_flag = FLAG_KOR_DEMOCRACY_ROUTE
+			}
+		}
 	}
 	
 	option = {
 		name = super.1.a
-		KOR = {
-			country_event = {
-				id = japan.1200
-			}
-		}
 	}
 }
 country_event = {
@@ -515,6 +515,15 @@ country_event = {
 		name = superevent.1.a
 		every_country = { limit = { is_ai = no } set_temp_variable = { TNO_temp_super_event = token:SE_ITALY_CIVIL_WAR }
 		TNO_fire_super_event = yes }
+		GER = {
+			transfer_state = 39
+			transfer_state = 850
+			transfer_state = 1003
+			transfer_state = 736
+			transfer_state = 852
+			transfer_state = 853
+			transfer_state = 1002
+		}
 	}
 }
 
@@ -745,15 +754,11 @@ country_event = {
 	desc = superevent.1.d
 	picture = GFX_report_event_diplomatic_message
 
-	is_triggered_only = no
+	is_triggered_only = yes
 	
 	fire_only_once = yes
 	
 	hidden = yes
-	
-	trigger = {
-		any_country = { has_idea = KOR_ichigo_plan }
-	}
 	
 	option = {
 		name = superevent.1.a
@@ -875,7 +880,7 @@ country_event = {
 	
 	trigger = {
 		KOR = { 
-			has_completed_focus = KOR_use_the_anti-armed
+			has_completed_focus = KOR_the_democracy_route
 			has_war_with = CHI
 		}
 		always = no
@@ -902,7 +907,7 @@ country_event = {
 	
 	trigger = {
 		KOR = { 
-			has_completed_focus = KOR_use_the_anti-armed
+			has_completed_focus = KOR_the_democracy_route
 			has_war_with = CHI
 		}
 		always = no
@@ -911,6 +916,153 @@ country_event = {
 	option = {
 		name = superevent.1.a
 		every_country = { limit = { is_ai = no } set_temp_variable = { TNO_temp_super_event = token:SE_GREAT_ASIAN_WAR_ILSO }
+		TNO_fire_super_event = yes }
+	}
+}
+country_event = {
+	id = superevent.40
+	title = superevent.1.t
+	desc = superevent.1.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+	}
+	
+	option = {
+		name = superevent.1.a
+		every_country = { limit = { is_ai = no } set_temp_variable = { TNO_temp_super_event = token:SE_FIGHT_OF_QINHUANGDAO }
+		TNO_fire_super_event = yes }
+	}
+}
+country_event = {
+	id = superevent.41
+	title = superevent.1.t
+	desc = superevent.1.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+	}
+	
+	option = {
+		name = superevent.1.a
+		every_country = { limit = { is_ai = no } set_temp_variable = { TNO_temp_super_event = token:SE_GREAT_ASIAN_WAR_DOSAN }
+		TNO_fire_super_event = yes }
+	}
+}
+country_event = {
+	id = superevent.42
+	title = superevent.1.t
+	desc = superevent.1.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+	}
+	
+	option = {
+		name = superevent.1.a
+		every_country = { limit = { is_ai = no } set_temp_variable = { TNO_temp_super_event = token:SE_CONSTITUTION_DOSAN }
+		TNO_fire_super_event = yes }
+	}
+}
+country_event = {
+	id = superevent.43
+	title = superevent.1.t
+	desc = superevent.1.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+	}
+	
+	option = {
+		name = superevent.1.a
+		every_country = { limit = { is_ai = no } set_temp_variable = { TNO_temp_super_event = token:SE_JAPAN_ATTACK_ILSO }
+		TNO_fire_super_event = yes }
+	}
+}
+country_event = {
+	id = superevent.44
+	title = superevent.1.t
+	desc = superevent.1.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+	}
+	
+	option = {
+		name = superevent.1.a
+		every_country = { limit = { is_ai = no } set_temp_variable = { TNO_temp_super_event = token:SE_TIANMING_DIVIDE_ILSO	 }
+		TNO_fire_super_event = yes }
+	}
+}
+country_event = {
+	id = superevent.45
+	title = superevent.1.t
+	desc = superevent.1.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+	}
+	
+	option = {
+		name = superevent.1.a
+		every_country = { limit = { is_ai = no } set_temp_variable = { TNO_temp_super_event = token:SE_JAPAN_ATTACK_WOOSA	 }
+		TNO_fire_super_event = yes }
+	}
+}
+country_event = {
+	id = superevent.46
+	title = superevent.1.t
+	desc = superevent.1.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+	}
+	
+	option = {
+		name = superevent.1.a
+		every_country = { limit = { is_ai = no } set_temp_variable = { TNO_temp_super_event = token:SE_CHINA_ATTACK_WOOSA	 }
 		TNO_fire_super_event = yes }
 	}
 }

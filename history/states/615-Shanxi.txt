@@ -16,10 +16,6 @@ state={
 			infrastructure = 2
 			arms_factory = 1
 			industrial_complex = 3
-			10480 = {
-				bunker = 7
-
-			}
 
 		}
 		1938.10.25 = {

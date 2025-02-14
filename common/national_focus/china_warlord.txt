@@ -3,24 +3,6 @@
 	
 	country = {
 		factor = 0
-		
-		modifier = {
-			add = 10
-			OR = {
-				tag = YUN
-				tag = SIK
-				tag = GXC
-				tag = SHX
-				tag = SZC
-				tag = SCC
-				tag = XKC
-				tag = XSM
-				tag = SND
-				tag = AHC
-				tag = HNC
-			}
-			
-		}
 	}
 	
 	default = no
@@ -100,7 +82,7 @@
 
 	focus = {
 		id = CHI_cooperation_with_the_nationalists
-		icon = GFX_focus_북양정부화해
+		icon = GFX_focus_befriend_with_beiyang_old
 		prerequisite = { focus = CHI_secure_internal_politics }
 		mutually_exclusive = { focus = CHI_cooperation_with_the_communists focus = CHI_opposition }
 		x = -5

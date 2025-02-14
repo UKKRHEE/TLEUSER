@@ -5,5 +5,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/operatives/agencies/agency_logo_kor.png"
 		noOfFrames = 2
 	}
+	spriteType = {
+		name = "GFX_intelligence_agency_logo_dkg"
+		texturefile = "gfx/interface/operatives/agencies/agency_logo_dkg.png"
+		noOfFrames = 2
+	}
 
 }

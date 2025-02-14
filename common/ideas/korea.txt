@@ -1,5 +1,33 @@
 ideas = {
 	hidden_ideas = {
+		KOR_not_planed_attack_ai_up_HID = {
+			picture = KOR_not_planed_attack
+			modifier = {
+				max_dig_in = 10
+				army_attack_factor = 0.1
+				army_defence_factor = 1.0
+				army_org_factor = 0.1
+				army_morale_factor = 0.1
+				submarine_attack = 20
+				resistance_growth = -1
+				resistance_target = -1
+				resistance_decay = 1
+			}
+		}
+		KOR_not_planed_attack_HID = {
+			picture = chi_warlord_integration5
+			modifier = {
+				custom_modifier_tooltip = TOOLTIP_ATTACK_CHINA_REMOVE
+				max_dig_in = 10
+				army_org_factor = 0.1
+				army_defence_factor = 1.0
+				army_morale_factor = 0.1
+				submarine_attack = 20
+				resistance_growth = -1
+				resistance_target = -1
+				resistance_decay = 1
+			}
+		}
 		KOR_they_will_more_division = {
 			picture = KOR_militarism
 			modifier = {
@@ -109,7 +137,7 @@ ideas = {
 				army_core_defence_factor = 3.5
 				production_speed_industrial_complex_factor = 1.5
 				production_speed_arms_factory_factor = 1.5
-				army_org_Factor = 0.6
+				army_org_factor = 0.6
 				army_morale_factor = 0.5
 				naval_morale_factor = 1.5
 				naval_night_attack = 1.5
@@ -189,7 +217,7 @@ ideas = {
 				army_core_defence_factor = 3.5
 				production_speed_industrial_complex_factor = 1.5
 				production_speed_arms_factory_factor = 1.5
-				army_org_Factor = 0.6
+				army_org_factor = 0.6
 				army_morale_factor = 0.5
 				naval_morale_factor = 1.5
 				naval_night_attack = 1.5
@@ -422,6 +450,21 @@ ideas = {
 			removal_cost = -1
 			traits = { popular_figurehead }
 		}
+		BUL_simeon_ii_tsar = {
+			allowed = {
+				original_tag = BUL
+				NOT = {
+					has_government = communism
+				}
+			}
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			removal_cost = -1
+			traits = { popular_figurehead }
+		}
 		YUG_communist_influence = {
 			allowed = {
 				original_tag = YUG
@@ -577,16 +620,23 @@ ideas = {
 			targeted_modifier = {
                 tag = ENG
 				attack_bonus_against = -0.3
+				defense_bonus_against = -0.3
+			}
+			targeted_modifier = {
+                tag = USA
+				attack_bonus_against = -0.3
+				defense_bonus_against = -0.3
 			}
 			targeted_modifier = {
                 tag = SOV
-				attack_bonus_against = -0.5
+				attack_bonus_against = -0.99
+				defense_bonus_against = -0.99
 			}
 			modifier = {
-				army_org_Factor = -0.3
-				army_morale_factor = -0.25
-				army_attack_factor = -0.25
-				army_defence_factor = -0.25
+				army_org_factor = -0.5
+				army_morale_factor = -0.5
+				army_attack_factor = -0.5
+				army_defence_factor = -0.5
 			}
 		}
 		ENG_the_attack_to_germany = {
@@ -600,7 +650,7 @@ ideas = {
 				attack_bonus_against = 0.15
 			}
 			modifier = {
-				army_org_Factor = 0.1
+				army_org_factor = 0.1
 				army_attack_factor = 0.1
 				army_defence_factor = 0.1
 			}
@@ -614,9 +664,22 @@ ideas = {
 			modifier = {
 				army_core_attack_factor = 0.5
 				army_core_defence_factor = 0.5
-				army_org_Factor = 0.2
+				army_org_factor = 0.2
 				supply_consumption_factor = -0.5
 			}	
+		}
+		SOV_the_defense_against_germany = {
+			picture = generic_communism_drift_bonus
+			modifier = {
+				army_core_defence_factor = 30
+				army_org_factor = 10
+				army_morale_factor = 10
+				max_dig_in = 30
+				supply_consumption_factor = -1.0
+				war_support_factor = 10
+				planning_speed = 10
+				ai_desired_divisions_factor = 10
+			}
 		}
 		USA_the_hearts_of_iron = {
 			allowed = {
@@ -637,7 +700,7 @@ ideas = {
 				army_core_defence_factor = 3.5
 				production_speed_industrial_complex_factor = 1.5
 				production_speed_arms_factory_factor = 1.5
-				army_org_Factor = 0.6
+				army_org_factor = 0.6
 				army_morale_factor = 0.5
 				naval_morale_factor = 1.5
 				naval_night_attack = 1.5
@@ -758,16 +821,8 @@ ideas = {
 				original_tag = KOR
 			}
 			on_add = {
-				set_relation_rule = {
-					target = SOV
-					can_not_declare_war = yes
-				}
 			}
 			on_remove = {
-				set_relation_rule = {
-					target = SOV
-					can_not_declare_war = no
-				}
 			}
 			targeted_modifier = {
 				tag = SOV
@@ -920,6 +975,72 @@ ideas = {
 				custom_modifier_tooltip = TOOLTIP_IDEA_KOR_THE_COUNTRY_OF_KOREA
 			}
 		}
+		KOR_prioritize_army_aircraft_construction_idea = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_air_research
+			
+			
+
+			equipment_bonus = {
+				small_plane_cas_airframe = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				medium_plane_airframe = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+		KOR_prioritize_naval_aircraft_construction_idea = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_air_research
+			
+			
+
+			equipment_bonus = {
+				cv_small_plane_airframe = {
+					build_cost_ic = -0.2 instant = yes
+				}
+				cv_small_plane_cas_airframe = {
+					build_cost_ic = -0.2 instant = yes
+				}
+				cv_small_plane_naval_bomber_airframe = {
+					build_cost_ic = -0.2 instant = yes
+				}
+				small_plane_naval_bomber_airframe = {
+					build_cost_ic = -0.2 instant = yes
+				}
+			}
+		}
+		KOR_the_national_conscription_law = {
+			 
+			allowed = {
+				original_tag = KOR
+			}
+			
+			modifier = {
+				conscription = 0.01
+				conscription_factor = 0.3
+			}
+			
+		}
 		KOR_the_first_army = {
 			 
 			allowed = {
@@ -993,13 +1114,31 @@ ideas = {
 			}
 			
 			modifier = {
-				stability_factor = 0.05
-				war_support_factor = -10
-				custom_modifier_tooltip = tooltip_bersaju_pact
+				stability_factor = 0.1
+				war_support_factor = -0.4
+				democratic_drift = 0.15
+				drift_defence_factor = 0.3
 			}
 			rule = {
 				can_not_declare_war = yes
 				can_join_factions = no
+			}
+			
+		}
+		KOR_jeonkyong = {
+			
+			allowed = {
+				original_tag = KOR
+			}
+			
+			modifier = {
+				army_attack_factor = -0.15
+				army_defence_factor = -0.15
+				army_morale_factor = -0.25
+				army_org_factor = -0.3
+				army_core_attack_factor = 0.15
+				army_core_defence_factor = 0.15
+				custom_modifier_tooltip = tooltip_bersaju_pact
 			}
 			on_remove = {
 				country_lock_all_division_template = no
@@ -1009,6 +1148,20 @@ ideas = {
 				country_lock_all_division_template = yes
 			}
 			
+		}
+		KOR_rebuiling_economy = {
+			
+			allowed = {
+				original_tag = KOR
+			}
+			
+			modifier = {
+				stability_factor = -0.05
+				consumer_goods_expected_value = 0.1
+				production_speed_industrial_complex_factor = 0.15
+				production_speed_arms_factory_factor = -0.1
+				production_speed_dockyard_factor = -0.1
+			}
 		}
 		MEN_demchugdongrub_king = {
 			
@@ -1297,6 +1450,12 @@ ideas = {
 				license_armor_purchase_cost = 1.0
 				improve_relations_maintain_cost_factor = 9.99
 			}
+			targeted_modifier = {
+				tag = SOV
+				trade_opinion_factor = -1.0
+				license_armor_purchase_cost = 1.0
+				improve_relations_maintain_cost_factor = 9.99
+			}
 		}
 		KOR_embargo_us_a = {
 			picture = generic_economic_increase
@@ -1308,7 +1467,7 @@ ideas = {
 				war_support_factor = -0.1
 				industrial_capacity_factory = -0.15
 				industrial_capacity_dockyard = -0.15
-				army_org_Factor = -0.15
+				army_org_factor = -0.15
 				army_morale_factor = -0.15
 				fuel_gain_factor = -0.15
 				supply_consumption_factor = 0.05
@@ -1357,7 +1516,7 @@ ideas = {
 				war_support_factor = -0.15
 				industrial_capacity_factory = -0.15
 				industrial_capacity_dockyard = -0.15
-				army_org_Factor = -0.2
+				army_org_factor = -0.2
 				army_morale_factor = -0.2
 				fuel_gain_factor = -0.2
 				supply_consumption_factor = 0.1
@@ -1393,6 +1552,12 @@ ideas = {
 				license_armor_purchase_cost = 1.0
 				improve_relations_maintain_cost_factor = 9.99
 			}
+			targeted_modifier = {
+				tag = SOV
+				trade_opinion_factor = -1.0
+				license_armor_purchase_cost = 1.0
+				improve_relations_maintain_cost_factor = 9.99
+			}
 		}
 		KOR_embargo_us_c = {
 			picture = generic_economic_increase
@@ -1400,7 +1565,7 @@ ideas = {
 				production_speed_industrial_complex_factor = -0.2
 				production_speed_arms_factory_factor = -0.2
 				fuel_gain_factor = -0.25
-				army_org_Factor = -0.25
+				army_org_factor = -0.25
 				army_morale_factor = -0.25
 				naval_morale_factor = -0.2
 				naval_night_attack = -0.2
@@ -1466,7 +1631,7 @@ ideas = {
 				production_speed_industrial_complex_factor = -0.35
 				production_speed_arms_factory_factor = -0.35
 				fuel_gain_factor = -0.6
-				army_org_Factor = -0.3
+				army_org_factor = -0.3
 				army_morale_factor = -0.3
 				naval_morale_factor = -0.3
 				naval_night_attack = -0.3
@@ -1542,121 +1707,51 @@ ideas = {
 		}
 	    KOR_war_japan_ai = {
 			picture = chi_warlord_integration5
-			modifier = {
-				army_org_Factor = 0.15
-				army_morale_factor = 0.15
-				planning_speed = 0.15
-			}
 			targeted_modifier = {
                 tag = JAP
-				attack_bonus_against = 0.5
+				attack_bonus_against = 0.2
 			}
 		}
-	    KOR_ichigo_plan = {
+		KOR_war_china_ai = {
 			picture = chi_warlord_integration5
-			on_remove = {
-				if = {
-					limit = {
-						KOR = {
-							is_ai = yes
-							NOT = {
-								has_country_flag = KOR_ichigo_plan_first
-							}
-						}
-						OR = {
-						
-							ZLC = {
-								is_ai = yes
-							}	
-							CHI = {
-								is_ai = no
-							}
-						}
-					}
-					add_timed_idea = {
-						idea = KOR_ichigo_plan 
-						days = 180
-					}
-					KOR = {
-						set_country_flag = KOR_ichigo_plan_first
-					}	
+			
+			cancel = {
+				KOR = {
+					controls_state = 608
+					controls_state = 607
+					controls_state = 613
+					controls_state = 1057
 				}
 			}
-			modifier = {
-				custom_modifier_tooltip = TOOLTIP_ATTACK_CHINA_REMOVE
-				army_org_Factor = 0.3
-				army_morale_factor = 0.35
-				planning_speed = 0.2
-				army_attack_factor = 0.3
-				supply_consumption_factor = -0.4
-				air_bombing_targetting = 0.15
-				air_strategic_bomber_bombing_factor = 0.15
-				air_close_air_support_org_damage_factor = 0.15
-				resistance_activity = -1
-				root_out_resistance_effectiveness_factor = 0.7
-				resistance_growth = -0.9
-				resistance_target = -0.8
-				resistance_decay = 0.8
-			}
+			
 			targeted_modifier = {
                 tag = ZLC
-				attack_bonus_against = 0.25
+				attack_bonus_against = 0.5
 			}
 			targeted_modifier = {
                 tag = CHI
-				attack_bonus_against = 0.25
+				attack_bonus_against = 0.5
+			}
+			modifier = {
+				army_defence_factor = 0.5
+				planning_speed = 0.5
+				supply_consumption_factor = -0.5
 			}
 		}
 	    KOR_not_planed_attack = {
 			on_remove = {
-				if = {
-					limit = {
-						KOR = {
-							is_ai = yes
-							NOT = {
-								has_country_flag = KNPA_first
-							}
-						}
-						OR = {
-						
-							ZLC = {
-								is_ai = yes
-							}	
-							CHI = {
-								is_ai = no
-							}
-						}
-					}
-					add_timed_idea = {
-						idea = KOR_not_planed_attack 
-						days = 400
-					}
-					KOR = {
-						set_country_flag = KNPA_first
-					}	
-				}
 			}
 			picture = chi_warlord_integration5
 			modifier = {
 				custom_modifier_tooltip = TOOLTIP_ATTACK_CHINA_REMOVE
-				army_org_Factor = 0.3
-				army_morale_factor = 0.3
-				planning_speed = 0.2
-				army_attack_factor = 0.3
-				supply_consumption_factor = -0.3
-				resistance_activity = -1
-				root_out_resistance_effectiveness_factor = 0.5
-				resistance_growth = -0.7
-				resistance_target = -0.5
-				resistance_decay = 0.5
 			}
 			targeted_modifier = {
                 tag = ZLC
-				attack_bonus_against = 0.2
+				attack_bonus_against = 0.1
 			}
 			targeted_modifier = {
                 tag = CHI
-				attack_bonus_against = 0.2
+				attack_bonus_against = 0.1
 			}
 		}
 		
@@ -1664,7 +1759,7 @@ ideas = {
 			picture = chi_warlord_integration5
 			modifier = {
 				custom_modifier_tooltip = IDEA_WILL_REMOVE_IN_DECISION
-				army_org_Factor = -0.2
+				army_org_factor = -0.2
 				army_morale_factor = -0.2
 				supply_consumption_factor = 0.4
 				production_speed_supply_node_factor = -0.6
@@ -1730,7 +1825,7 @@ ideas = {
 			picture = chi_warlord_integration5
 			modifier = {
 				custom_modifier_tooltip = IDEA_WILL_REMOVE_IN_DECISION
-				army_org_Factor = -0.15
+				army_org_factor = -0.15
 				army_morale_factor = -0.15
 				supply_consumption_factor = 0.35
 				production_speed_supply_node_factor = -0.5
@@ -1857,25 +1952,14 @@ ideas = {
 			picture = KOR_not_planed_attack
 			modifier = {
 				custom_modifier_tooltip = TOOLTIP_ATTACK_CHINA_REMOVE
-				supply_consumption_factor = -0.3
-				max_dig_in = 10
-				army_attack_factor = 0.2
-				army_org_Factor = 0.35
-				army_morale_factor = 0.35
-				submarine_attack = 20
-				stability_factor = 10
-				war_support_factor = 10
-				resistance_growth = -1
-				resistance_target = -1
-				resistance_decay = 1
 			}
 			targeted_modifier = {
                 tag = CHI
-				attack_bonus_against = 1.5
+				attack_bonus_against = 0.5
 			}
 			targeted_modifier = {
                 tag = ZLC
-				attack_bonus_against = 0.4
+				attack_bonus_against = 0.5
 			}
 		}
 		KOR_failed_civilian_control_of_the_military = {
@@ -1883,7 +1967,7 @@ ideas = {
 				war_support_factor = 0.05
 				stability_factor = -0.1
 				political_power_factor = -0.1
-				democratic_drift = -0.05
+				surrender_limit = -0.1
 				custom_modifier_tooltip = tooltip_failed_civilian_control
 			}
 		}
@@ -1893,6 +1977,7 @@ ideas = {
 				war_support_factor = 0.05
 				stability_factor = -0.1
 				political_power_factor = 0.05
+				surrender_limit = -0.05
 				custom_modifier_tooltip = tooltip_failed_civilian_control
 			}
 		}
@@ -2085,9 +2170,10 @@ ideas = {
 			removal_cost = 0
 			
 			modifier = {
-				stability_factor = -0.05
+				stability_factor = -0.1
 				political_power_factor = -0.15
-				neutrality_drift = 0.1
+				surrender_limit = -0.05
+				drift_defence_factor = -0.1
 				custom_modifier_tooltip = tooltip_civilwar_willbe_WTK
 			}
 		}
@@ -2415,6 +2501,10 @@ ideas = {
 					has_government = communism
 				}
 			}
+			rule = { 
+				can_force_government = yes
+				can_send_volunteers = yes
+			}
 			
 			picture = death_before_surrender
 			
@@ -2425,6 +2515,7 @@ ideas = {
 				army_defence_factor = 0.05
 				war_support_factor = 0.1
 				stability_factor = -0.05
+				send_volunteer_size = 4
 			}
 		}
 		
@@ -2795,7 +2886,6 @@ ideas = {
 				training_time_army_factor = -0.05
 				war_support_factor = 0.05
 				stability_factor = -0.1
-				fascism_drift = 0.1
 			}
 		}
 		
@@ -2935,7 +3025,7 @@ ideas = {
 				political_power_cost = -0.1
 			}
 		}
-		KOR_yi_hwan = { #꼭두각시 황제
+		KOR_yi_hwan = { #영락황제 이환
 		
 			allowed = {
 				original_tag = KOR
@@ -2943,8 +3033,6 @@ ideas = {
 			
 			allowed_civil_war = {
 			}
-			
-			picture = Yi_Kang
 			
 			removal_cost = 0
 			
@@ -2959,7 +3047,7 @@ ideas = {
 				great_yeonglak
 			}
 		}
-		KOR_yi_cheon = { #꼭두각시 황제
+		KOR_yi_cheon = { #광무황제 이천
 		
 			allowed = {
 				original_tag = KOR
@@ -2967,9 +3055,7 @@ ideas = {
 			
 			allowed_civil_war = {
 			}
-			
-			picture = Yi_Kang
-			
+
 			removal_cost = 0
 			
 			modifier = {
@@ -2983,7 +3069,7 @@ ideas = {
 				great_gwangmu
 			}
 		}
-		KOR_yi_taek = { #꼭두각시 황제
+		KOR_yi_taek = { #융희황제 이택
 		
 			allowed = {
 				original_tag = KOR
@@ -2991,8 +3077,6 @@ ideas = {
 			
 			allowed_civil_war = {
 			}
-			
-			picture = Yi_Kang
 			
 			removal_cost = 0
 			
@@ -3007,19 +3091,14 @@ ideas = {
 				great_yunghee
 			}
 		}
-		KOR_yi_jin = { #꼭두각시 황제
+		KOR_yi_jin = { #강명황제 이진
 		
 			allowed = {
 			original_tag = KOR
 			}
 			
 			allowed_civil_war = {
-				NOT ={
-					has_government = communism
-				}
 			}
-			
-			picture = Yi_Kang
 			
 			removal_cost = 0
 			
@@ -3028,53 +3107,49 @@ ideas = {
 			}
 			traits = {
 				emperor_of_korea
-				han_of_manchuria
-				khan_of_mongolia
+				#han_of_manchuria
+				#khan_of_mongolia
+				samjong_bloodline
+				tired_idealist
+				vigoroyal_lecher
 				protecter_of_asia
 				young_monarchist
 			}
 		}
-		KOR_yi_jin_2 = { #꼭두각시 황제
+		KOR_yi_jin_2 = { #강명황제 이진 - 패전
 		
 			allowed = {
 			original_tag = KOR
 			}
 			
 			allowed_civil_war = {
-				NOT ={
-					has_government = communism
-				}
 			}
-			
-			picture = Yi_Kang
 			
 			removal_cost = 0
 			
 			modifier = {
-				stability_factor = 0.15
 			}
 			traits = {
 				emperor_of_korea_state
 				#emperor_of_korea
 				#khan_of_mongolia
 				#han_of_manchuria
+				samjong_bloodline
+				#tired_idealist
+				#vigoroyal_lecher
 				#protecter_of_asia
 				#young_monarchist
+				expired_monarchy
 			}
 		} 
-		KOR_yi_jin_TNO = { #TNO
+		KOR_yi_jin_TNO = { #강명황제 이진 - TNO
 		
 			allowed = {
 			original_tag = KOR
 			}
 			
 			allowed_civil_war = {
-				NOT ={
-					has_government = communism
-				}
 			}
-			
-			picture = Yi_Kang
 			
 			removal_cost = 0
 			
@@ -3085,10 +3160,64 @@ ideas = {
 				emperor_of_korea
 				han_of_manchuria
 				khan_of_mongolia
+				samjong_bloodline
+				tired_idealist
+				vigoroyal_lecher
 				protecter_of_asia
 				the_emperor_of_asia
 			}
 		}
+		KOR_yi_jin_ahn = { #강명황제 이진 - 안창호 개혁 성공
+		
+			allowed = {
+			original_tag = KOR
+			}
+			
+			allowed_civil_war = {
+			}
+			
+			removal_cost = 0
+			
+			modifier = {
+				#stability_factor = 0.15
+			}
+			traits = {
+				emperor_of_korea
+				#han_of_manchuria
+				#khan_of_mongolia
+				samjong_bloodline
+				trusted_sponsor
+				vigoroyal_lecher
+				protecter_of_asia
+				constitutional_monarchist
+			}
+		}
+		KOR_yi_jin_pak = { #강명황제 이진
+		
+			allowed = {
+			original_tag = KOR
+			}
+			
+			allowed_civil_war = {
+			}
+			
+			removal_cost = 0
+			
+			modifier = {
+				#stability_factor = 0.15
+			}
+			traits = {
+				emperor_of_korea
+				#han_of_manchuria
+				#khan_of_mongolia
+				samjong_bloodline
+				coldest_winter
+				vigoroyal_lecher
+				protecter_of_asia
+				realistic_monarchist
+			}
+		}
+		###
 		KOR_yi_hyul = { #헌문제 이휼
 		
 			allowed = {
@@ -3096,20 +3225,39 @@ ideas = {
 			}
 			
 			allowed_civil_war = {
-				NOT ={
-					has_government = communism
-				}
 			}
-			
-			picture = Yi_Kang
 			
 			removal_cost = 0
 			
 			modifier = {
-				stability_factor = 0.15
 			}
 			traits = {
 				emperor_of_korea
+				samjong_bloodline
+				realistic_monarchy
+				#khan_of_mongolia
+				#han_of_manchuria
+				#protecter_of_asia
+				#young_monarchist
+			}
+		}
+		KOR_yi_heon = { #건흥제 이헌(정사에서는 즉위 전 사망)
+		
+			allowed = {
+				original_tag = KOR
+			}
+			
+			allowed_civil_war = {
+			}
+			
+			removal_cost = 0
+			
+			modifier = {
+			}
+			traits = {
+				emperor_of_korea
+				samjong_bloodline
+				authoritarian_emperor
 				#khan_of_mongolia
 				#han_of_manchuria
 				#protecter_of_asia
@@ -3119,6 +3267,26 @@ ideas = {
 		KOR_yi_gon = { #광영제 이곤
 		
 			allowed = {
+				original_tag = KOR
+			}
+			
+			allowed_civil_war = {
+			}
+			
+			removal_cost = 0
+			
+			modifier = {
+			}
+			traits = {
+				emperor_of_korea_state
+				samjong_bloodline
+				truly_supreme
+			}
+		}
+		#
+		KOR_yi_yul_emperor = { #의친왕 이율
+		
+			allowed = {
 			original_tag = KOR
 			}
 			
@@ -3127,8 +3295,6 @@ ideas = {
 					has_government = communism
 				}
 			}
-			
-			picture = KOR_yi_jin
 			
 			removal_cost = 0
 			
@@ -3155,8 +3321,6 @@ ideas = {
 				}
 			}
 			
-			picture = KOR_yi_jin
-			
 			removal_cost = 0
 			
 			modifier = {
@@ -3181,8 +3345,6 @@ ideas = {
 					has_government = communism
 				}
 			}
-			
-			picture = KOR_yi_jin
 			
 			removal_cost = 0
 			
@@ -3290,6 +3452,522 @@ ideas = {
 				stability_factor = 0.05
 				communism_drift = 0.05
 			}
+		}
+		###
+		KOR_kks_social_reform_idea_1 = { #신생활4개전략
+				
+			allowed = {
+				original_tag = KOR
+			}
+			
+			removal_cost = 0
+			
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = -0.1
+				consumer_goods_expected_value = 0.05
+			}
+		}
+		KOR_kks_social_reform_idea_2 = { #신생활4개전략
+				
+			allowed = {
+				original_tag = KOR
+			}
+			
+			removal_cost = 0
+			
+			modifier = {
+				political_power_factor = 0.05
+				stability_factor = 0.1
+				research_speed_factor = 0.05
+				war_support_factor = -0.1
+				consumer_goods_expected_value = 0.1
+			}
+		}
+		KOR_kks_social_reform_idea_3 = { #신생활4개전략
+				
+			allowed = {
+				original_tag = KOR
+			}
+			
+			removal_cost = 0
+			
+			modifier = {
+				political_power_factor = 0.1
+				stability_factor = 0.1
+				research_speed_factor = 0.1
+				war_support_factor = -0.15
+				consumer_goods_expected_value = 0.15
+			}
+		}
+		KOR_kks_social_reform_idea_4 = { #신생활4개전략
+				
+			allowed = {
+				original_tag = KOR
+			}
+			
+			removal_cost = 0
+			
+			modifier = {
+				political_power_factor = 0.15
+				stability_factor = 0.15
+				research_speed_factor = 0.15
+				war_support_factor = -0.2
+				consumer_goods_expected_value = 0.15
+			}
+		}
+		KOR_kks_arms_industory_britain_idea = { #군수물자
+				
+			allowed = {
+				original_tag = KOR
+			}
+			
+			removal_cost = 0
+			
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1 
+					instant = yes
+				}
+			}
+			research_bonus = {
+				infantry_weapons = 0.1
+				armor = 0.1
+			}
+			
+			modifier = {
+				research_speed_factor = 0.1
+				consumer_goods_expected_value = -0.1
+			}
+		}
+		KOR_kks_korean_economic_block_idea = { #뒤져라 일본 경제
+				
+			allowed = {
+				original_tag = KOR
+			}
+			
+			removal_cost = 0
+			
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.2
+				research_speed_factor = -0.1
+				consumer_goods_expected_value = 0.25
+			}
+		}
+		KOR_kks_korean_economic_block_idea_2 = { #뒤져라 일본 경제
+			
+			picture = KOR_kks_korean_economic_block_idea
+			
+			allowed = {
+				original_tag = KOR
+			}
+			
+			removal_cost = 0
+			
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.2
+				research_speed_factor = -0.1
+				consumer_goods_expected_value = 0.25
+				army_attack_factor = -0.15
+				army_org_factor = -0.15
+				army_morale_factor = -0.15
+			}
+		}
+		KOR_kks_volunteers_of_united_nations_idea = { #앙 의용군띠
+				
+			allowed = {
+				original_tag = KOR
+			}
+			
+			removal_cost = 0
+			rule = { 
+				can_send_volunteers = yes
+			}
+			
+			modifier = {
+				training_time_army_factor = -0.05
+				war_support_factor = 0.1
+				stability_factor = -0.05
+				conscription_factor = 0.05
+				send_volunteer_size = 10
+				send_volunteers_tension = -1
+			}
+		}
+		KOR_kks_navy_low_idea = { #앙 해군약화띠
+				
+			allowed = {
+				original_tag = KOR
+			}
+			
+			removal_cost = 0
+			
+			modifier = {
+				production_cost_max_ship_hull_cruiser = 7000
+				production_cost_max_ship_hull_heavy = 14500
+				production_cost_max_ship_hull_carrier = 13500
+			}	
+			
+			modifier = {
+				stability_factor = 0.15
+				consumer_goods_expected_value = -0.1
+				industrial_capacity_dockyard = -0.15
+				naval_damage_factor = -0.1
+			}
+		}
+		#
+		KOR_kks_government_idea_1 = { #정권 안정도 매우 낮음
+				
+			allowed = {
+				original_tag = KOR
+			}
+			
+			removal_cost = 0
+			
+			modifier = {
+				political_power_factor = 0.25
+				stability_factor = -0.05
+				war_support_factor = -0.05
+				consumer_goods_expected_value = 0.05
+				production_factory_max_efficiency_factor = -0.05
+				research_speed_factor = -0.05
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
+			}
+		}
+		KOR_kks_government_idea_2 = { #정권 안정도 낮음
+				
+			allowed = {
+				original_tag = KOR
+			}
+			
+			removal_cost = 0
+			
+			modifier = {
+				political_power_factor = 0.15
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				consumer_goods_expected_value = -0.05
+				production_factory_max_efficiency_factor = 0.05
+				research_speed_factor = 0.05
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+			}
+		}
+		KOR_kks_government_idea_3 = { #정권 안정도 보통
+				
+			allowed = {
+				original_tag = KOR
+			}
+			
+			removal_cost = 0
+			
+			modifier = {
+				political_power_factor = 0.05
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				consumer_goods_expected_value = -0.1
+				production_factory_max_efficiency_factor = 0.1
+				research_speed_factor = 0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+			}
+		}
+		KOR_kks_government_idea_4 = { #정권 안정도 높음
+				
+			allowed = {
+				original_tag = KOR
+			}
+			
+			removal_cost = 0
+			
+			modifier = {
+				#political_power_factor = 0.05
+				stability_factor = 0.15
+				war_support_factor = 0.15
+				consumer_goods_expected_value = -0.1
+				production_factory_max_efficiency_factor = 0.15
+				research_speed_factor = 0.1
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+			}
+		}
+		KOR_kks_government_idea_5 = { #정권 안정도 존나씨발높음
+				
+			allowed = {
+				original_tag = KOR
+			}
+			
+			removal_cost = 0
+			
+			modifier = {
+				#political_power_factor = 0.05
+				stability_factor = 0.2
+				war_support_factor = 0.2
+				consumer_goods_expected_value = -0.15
+				production_factory_max_efficiency_factor = 0.25
+				research_speed_factor = 0.15
+				industrial_capacity_factory = 0.2
+				industrial_capacity_dockyard = 0.2
+			}
+		}
+		KOR_kks_garbage_army_factor = { #정권 안정도 존나씨발높음
+				
+			allowed = {
+				original_tag = KOR
+			}
+			
+			removal_cost = 0
+			
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.15
+				army_attack_factor = -0.1
+				army_defence_factor = -0.1
+				army_org_factor = -0.1
+				army_morale_factor = -0.1
+			}
+		}
+		KOR_pcy_korean_democracy = { #정권 안정도 존나씨발높음
+				
+			allowed = {
+				original_tag = KOR
+			}
+			
+			removal_cost = 0
+			
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = 0.05
+				democratic_drift = 0.1
+				army_attack_factor = 0.05
+				research_speed_factor = 0.05
+				consumer_goods_expected_value = -0.05
+			}
+		}
+		KOR_pcy_ilso_hegemony = { #정권 안정도 존나씨발높음
+				
+			allowed = {
+				original_tag = KOR
+			}
+			
+			removal_cost = 0
+			
+			modifier = {
+				political_power_factor = 0.05
+				stability_factor = -0.05
+				war_support_factor = 0.1
+				production_speed_arms_factory_factor = 0.05
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+			}
+		}
+		KOR_pcy_daihan_hegemony = { #
+				
+			allowed = {
+				original_tag = KOR
+			}
+			
+			removal_cost = 0
+			
+			modifier = {
+				political_power_factor = 0.15
+				stability_factor = -0.1
+				war_support_factor = 0.15
+				production_speed_arms_factory_factor = 0.1
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+				research_speed_factor = 0.1
+			}
+		}
+		KOR_pcy_control_the_colony = { #
+				
+			allowed = {
+				original_tag = KOR
+			}
+			
+			removal_cost = 0
+			
+			modifier = {
+				stability_factor = 0.05
+				resistance_target = -0.1
+				resistance_activity = -0.1
+				required_garrison_factor = -0.1
+				resistance_growth = -0.1
+				resistance_target = -0.1
+				resistance_decay = 0.1
+			}
+		}
+		KOR_pcy_control_the_colony_2 = { #
+				
+			allowed = {
+				original_tag = KOR
+			}
+			
+			removal_cost = 0
+			
+			modifier = {
+				stability_factor = 0.1
+				resistance_target = -0.2
+				resistance_activity = -0.2
+				required_garrison_factor = -0.15
+				resistance_growth = -0.15
+				resistance_target = -0.15
+				resistance_decay = 0.15
+				conscription_factor = 0.35
+				conscription = 0.001
+			}
+		}
+		KOR_pcy_asian_cooperative_organization = { #
+				
+			allowed = {
+				original_tag = KOR
+			}
+			
+			removal_cost = 0
+			rule = { 
+				can_create_factions = yes
+			}
+
+			modifier = {
+				political_power_factor = -0.1
+				war_support_factor = 0.15
+				faction_trade_opinion_factor = 0.5
+				guarantee_cost = -0.1
+				lend_lease_tension = -0.1
+				puppet_cost_factor = -0.2
+				annex_cost_factor = -0.2
+				send_volunteer_divisions_required = -0.3
+			}
+		}
+		KOR_pcy_volunteers_of_united_nations_idea = { #앙 의용군띠
+				
+			allowed = {
+				original_tag = KOR
+			}
+			
+			removal_cost = 0
+			rule = { 
+				can_send_volunteers = yes
+			}
+			
+			modifier = {
+				training_time_army_factor = -0.05
+				war_support_factor = 0.1
+				stability_factor = -0.1
+				conscription_factor = 0.1
+				send_volunteer_size = 15
+				send_volunteers_tension = -1
+			}
+		}
+		KOR_pcy_volunteers_of_united_nations_idea_2 = { #앙 의용군띠
+				
+			allowed = {
+				original_tag = KOR
+			}
+			
+			removal_cost = 0
+			rule = { 
+				can_send_volunteers = yes
+			}
+			
+			modifier = {
+				training_time_army_factor = -0.05
+				war_support_factor = 0.15
+				stability_factor = 0.05
+				conscription_factor = 0.05
+				send_volunteer_size = 20
+				send_volunteers_tension = -1
+			}
+		}
+		KOR_pcy_arms_industory_britain_idea = { #군수물자
+				
+			allowed = {
+				original_tag = KOR
+			}
+			
+			removal_cost = 0
+			
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.15
+					instant = yes
+				}
+			}
+			research_bonus = {
+				infantry_weapons = 0.05
+			}
+			
+			modifier = {
+				research_speed_factor = 0.05
+				consumer_goods_expected_value = 0.1
+			}
+		}
+		KOR_pcy_attack_north = {
+			picture = USA_the_hearts_of_iron
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				supply_consumption_factor = -0.1
+			}	
+			targeted_modifier = {
+                tag = CH1
+				attack_bonus_against = 0.1
+			}
+		}
+		KOR_pcy_attack_south = {
+			picture = USA_the_hearts_of_iron
+			modifier = {
+				supply_consumption_factor = -0.2
+			}	
+			targeted_modifier = {
+                tag = CHI
+				attack_bonus_against = 0.1
+			}
+			targeted_modifier = {
+                tag = PRC
+				attack_bonus_against = 0.1
+			}
+			targeted_modifier = {
+                tag = GDC
+				attack_bonus_against = 0.1
+			}
+			targeted_modifier = {
+                tag = HNC
+				attack_bonus_against = 0.1
+			}
+			targeted_modifier = {
+                tag = SZC
+				attack_bonus_against = 0.1
+			}
+			targeted_modifier = {
+                tag = XKC
+				attack_bonus_against = 0.1
+			}
+			targeted_modifier = {
+                tag = GZC
+				attack_bonus_against = 0.1
+			}
+			targeted_modifier = {
+                tag = YUN
+				attack_bonus_against = 0.1
+			}
+		}
+		KOR_pcy_national_conscription = {
+			picture = USA_the_hearts_of_iron
+			modifier = {
+				consumer_goods_expected_value = -0.15
+				war_support_factor = 0.1
+				conscription_factor = 0.35
+			}	
+		}
+		KOR_pcy_cold_war_supply = {
+			picture = USA_the_hearts_of_iron
+			modifier = {
+				army_org_factor = 0.01
+				army_morale_factor = 0.01
+			}	
 		}
 	}
 	

@@ -31,7 +31,7 @@
 #		}
 
 # This specifically overrides the rule check as to whether or not you can guarantee other ideologies
-DIPLOMACY_GUARANTEE_ENABLE_TRIGGER_OVERRIDES_GAME = {
+DIPLOMACY_GUARANTEE_ENABLE_TRIGGER_OVERRIDES_GAME_TRIGGER = {
 	NOT = {
 		has_game_rule = {
 			rule = allow_guarantees
@@ -136,64 +136,11 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 	}
 	if = {
 		limit = {
-			OR = {
-				has_game_rule = {
-					rule = allow_release_nations
-					option = FREE
-				}
-				has_game_rule = {
-					rule = allow_release_nations
-					option = PEACE_ONLY
-				}
-			}
-			has_dlc = "Trial of Allegiance"
-			original_tag = CHL
 			NOT = { 
-				OR = {
-					has_completed_focus = CHL_crusade_against_imperialism 
-					has_completed_focus = CHL_endorse_the_constitution
-				}
-			}
-		}
-		custom_trigger_tooltip = {
-			tooltip = RULE_ALLOW_RELEASE_NATIONS_NOT_CHILE_TOOLTIP
-			NOT = { FROM = { tag = RAP } }
-		}
-	}
-	if = {
-		limit = {
-			OR = {
 				has_game_rule = {
 					rule = allow_release_nations
-					option = FREE
+					option = BLOCKED
 				}
-				has_game_rule = {
-					rule = allow_release_nations
-					option = PEACE_ONLY
-				}
-			}
-			has_dlc = "Trial of Allegiance"
-			original_tag = CAN
-			NOT = { 
-				OR = {
-					has_completed_focus = CAN_forced_quebec_conscription 
-					has_completed_focus = CAN_compromise_with_quebec
-				}
-			}
-		}
-		custom_trigger_tooltip = {
-			tooltip = RULE_ALLOW_RELEASE_NATIONS_NOT_QUEBEC_TOOLTIP
-			OR = {
-				has_completed_focus = CAN_forced_quebec_conscription
-				has_completed_focus = CAN_compromise_with_quebec
-			}
-		}
-	}
-	if = {
-		limit = {
-			has_game_rule = {
-				rule = allow_release_nations
-				option = FREE
 			}
 			OR = {
 				NOT = { has_dlc = "Man the Guns" }
@@ -210,15 +157,21 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 					NOT = { original_tag = YUG }
 				}
 			}
+			OR = {
+				NOT = { has_dlc = "Trial of Allegiance" }
+				NOT = { original_tag = CHL }
+			}
 			NOT = { original_tag = SOV }
 		}
 		always = yes
 	}
 	if = {
 		limit = {
-			has_game_rule = {
-				rule = allow_release_nations
-				option = FREE
+			NOT = { 
+				has_game_rule = {
+					rule = allow_release_nations
+					option = BLOCKED
+				}
 			}
 			has_dlc = "Man the Guns"
 			original_tag = ENG
@@ -266,9 +219,11 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 	}
 	if = {
 		limit = {
-			has_game_rule = {
-				rule = allow_release_nations
-				option = FREE
+			NOT = { 
+				has_game_rule = {
+					rule = allow_release_nations
+					option = BLOCKED
+				}
 			}
 			has_dlc = "Death or Dishonor"
 			original_tag = YUG
@@ -289,14 +244,10 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 	}
 	if = {
 		limit = {
-			OR = {
+			NOT = { 
 				has_game_rule = {
 					rule = allow_release_nations
-					option = FREE
-				}
-				has_game_rule = {
-					rule = allow_release_nations
-					option = PEACE_ONLY
+					option = BLOCKED
 				}
 			}
 			has_dlc = "By Blood Alone"
@@ -318,14 +269,87 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 	}
 	if = {
 		limit = {
-			OR = {
+			NOT = { 
 				has_game_rule = {
 					rule = allow_release_nations
-					option = FREE
+					option = BLOCKED
 				}
+			}
+			has_dlc = "Trial of Allegiance"
+			original_tag = CHL
+			NOT = { 
+				OR = {
+					has_completed_focus = CHL_crusade_against_imperialism 
+					has_completed_focus = CHL_endorse_the_constitution
+				}
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_RELEASE_NATIONS_NOT_CHILE_TOOLTIP
+			NOT = { FROM = { tag = RAP } }
+		}
+	}
+	IF = {
+		limit = {
+			NOT = { 
 				has_game_rule = {
 					rule = allow_release_nations
-					option = PEACE_ONLY
+					option = BLOCKED
+				}
+			}
+			has_dlc = "Trial of Allegiance"
+			original_tag = CAN
+			NOT = { 
+				OR = {
+					has_completed_focus = CAN_forced_quebec_conscription 
+					has_completed_focus = CAN_compromise_with_quebec
+				}
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_RELEASE_NATIONS_NOT_QUEBEC_TOOLTIP
+			OR = {
+				has_completed_focus = CAN_forced_quebec_conscription
+				has_completed_focus = CAN_compromise_with_quebec
+			}
+		}
+	}
+	if = {
+		limit = {
+			NOT = { 
+				has_game_rule = {
+					rule = allow_release_nations
+					option = BLOCKED
+				}
+			}
+			original_tag = GER
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_RELEASE_NATIONS_NOT_GERMAN_CONSTITUENT_STATES_TOOLTIP
+			NOT = { 
+				FROM = {
+					OR = {
+						tag = PRE 
+						tag = MEK
+						tag = BAY
+						tag = SAX
+						tag = HAN
+						tag = WUR
+						tag = SHL
+						tag = THU
+						tag = HES
+						tag = RHI
+					}
+				} 
+			}
+		}
+	}
+	if = {
+		limit = {
+			NOT = { 
+				has_game_rule = {
+					rule = allow_release_nations
+					option = BLOCKED
 				}
 			}
 			OR = {
@@ -338,16 +362,30 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 			NOT = { FROM = { tag = TRA } }
 		}
 	}
+	IF = {
+		limit = {
+			NOT = { 
+				has_game_rule = {
+					rule = allow_release_nations
+					option = BLOCKED
+				}
+			}
+			OR = {
+				original_tag = HUN
+				original_tag = CZE
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_RELEASE_NATIONS_NO_SLOVAKIA_TOOLTIP
+			NOT = { FROM = { tag = SLO } }
+		}
+	}
 	if = {
 		limit = {
-			OR = {
+			NOT = { 
 				has_game_rule = {
 					rule = allow_release_nations
-					option = FREE
-				}
-				has_game_rule = {
-					rule = allow_release_nations
-					option = PEACE_ONLY
+					option = BLOCKED
 				}
 			}
 			FROM = { tag = DNZ }
@@ -359,14 +397,10 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 	}
 	if = {
 		limit = {
-			OR = {
+			NOT = { 
 				has_game_rule = {
 					rule = allow_release_nations
-					option = FREE
-				}
-				has_game_rule = {
-					rule = allow_release_nations
-					option = PEACE_ONLY
+					option = BLOCKED
 				}
 			}
 			OR = {
@@ -384,14 +418,10 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 	}
 	if = {
 		limit = {
-			OR = {
+			NOT = { 
 				has_game_rule = {
 					rule = allow_release_nations
-					option = FREE
-				}
-				has_game_rule = {
-					rule = allow_release_nations
-					option = PEACE_ONLY
+					option = BLOCKED
 				}
 			}
 			OR = {
@@ -406,14 +436,10 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 	}
 	if = {
 		limit = {
-			OR = {
+			NOT = { 
 				has_game_rule = {
 					rule = allow_release_nations
-					option = FREE
-				}
-				has_game_rule = {
-					rule = allow_release_nations
-					option = PEACE_ONLY
+					option = BLOCKED
 				}
 			}
 			OR = {
@@ -428,14 +454,10 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 	}
 	if = {
 		limit = {
-			OR = {
+			NOT = { 
 				has_game_rule = {
 					rule = allow_release_nations
-					option = FREE
-				}
-				has_game_rule = {
-					rule = allow_release_nations
-					option = PEACE_ONLY
+					option = BLOCKED
 				}
 			}
 			has_dlc = "Death or Dishonor"
@@ -449,14 +471,10 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 	}
 	if = {
 		limit = {
-			OR = {
+			NOT = { 
 				has_game_rule = {
 					rule = allow_release_nations
-					option = FREE
-				}
-				has_game_rule = {
-					rule = allow_release_nations
-					option = PEACE_ONLY
+					option = BLOCKED
 				}
 			}
 			original_tag = ITA
@@ -493,14 +511,10 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 	}
 	if = {
 		limit = {
-			OR = {
+			NOT = { 
 				has_game_rule = {
 					rule = allow_release_nations
-					option = FREE
-				}
-				has_game_rule = {
-					rule = allow_release_nations
-					option = PEACE_ONLY
+					option = BLOCKED
 				}
 			}
 			has_dlc = "By Blood Alone"
@@ -515,9 +529,11 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 	}
 	if = {
 		limit = {
-			has_game_rule = {
-				rule = allow_release_nations
-				option = FREE
+			NOT = { 
+				has_game_rule = {
+					rule = allow_release_nations
+					option = BLOCKED
+				}
 			}
 			has_dlc = "La Resistance"
 			original_tag = SPR
@@ -529,13 +545,18 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 	}
 	if = {
 		limit = {
-			has_game_rule = {
-				rule = allow_release_nations
-				option = FREE
+			NOT = { 
+				has_game_rule = {
+					rule = allow_release_nations
+					option = BLOCKED
+				}
 			}
 			has_dlc = "La Resistance"
 			original_tag = SPR
 			has_completed_focus = SPR_masters_of_our_own_fate
+			NOT = {
+				has_completed_focus = SPR_the_anti_fascist_workers_revolution
+			}
 		}
 		custom_trigger_tooltip = {
 			tooltip = RULE_ALLOW_RELEASE_NATIONS_ANARCHIST_SPAIN_TOOLTIP
@@ -544,22 +565,29 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 	}
 	if = {
 		limit = {
-			has_game_rule = {
-				rule = allow_release_nations
-				option = FREE
+			NOT = { 
+				has_game_rule = {
+					rule = allow_release_nations
+					option = BLOCKED
+				}
 			}
 			original_tag = SOV
 		}
 		custom_trigger_tooltip = {
 			tooltip = RULE_ALLOW_RELEASE_NATIONS_SOVIET_TOOLTIP
-			has_completed_focus = SOV_autonomous_soviet_republics
+			OR = {
+				has_completed_focus = SOV_autonomous_soviet_republics
+				has_completed_focus = SOV_reconvene_the_zemsky_sobor
+			}
 		}
 	}
 	if = {
 		limit = {
-			has_game_rule = {
-				rule = allow_release_nations
-				option = PEACE_ONLY
+			NOT = { 
+				has_game_rule = {
+					rule = allow_release_nations
+					option = BLOCKED
+				}
 			}
 			OR = {
 				NOT = { has_dlc = "Man the Guns" }
@@ -577,9 +605,11 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 	}
 	if = {
 		limit = {
-			has_game_rule = {
-				rule = allow_release_nations
-				option = PEACE_ONLY
+			NOT = { 
+				has_game_rule = {
+					rule = allow_release_nations
+					option = BLOCKED
+				}
 			}
 			has_dlc = "Man the Guns"
 			original_tag = ENG
@@ -626,9 +656,11 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 	}
 	if = {
 		limit = {
-			has_game_rule = {
-				rule = allow_release_nations
-				option = PEACE_ONLY
+			NOT = { 
+				has_game_rule = {
+					rule = allow_release_nations
+					option = BLOCKED
+				}
 			}
 			has_dlc = "La Resistance"
 			original_tag = SPR
@@ -644,9 +676,11 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 	}
 	if = {
 		limit = {
-			has_game_rule = {
-				rule = allow_release_nations
-				option = PEACE_ONLY
+			NOT = { 
+				has_game_rule = {
+					rule = allow_release_nations
+					option = BLOCKED
+				}
 			}
 			original_tag = SOV
 		}
@@ -656,14 +690,19 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 		}
 		custom_trigger_tooltip = {
 			tooltip = RULE_ALLOW_RELEASE_NATIONS_SOVIET_TOOLTIP
-			has_completed_focus = SOV_autonomous_soviet_republics
+			OR = {
+				has_completed_focus = SOV_autonomous_soviet_republics
+				has_completed_focus = SOV_reconvene_the_zemsky_sobor
+			}
 		}
 	}
 	if = {
 		limit = {
-			has_game_rule = {
-				rule = allow_release_nations
-				option = FREE
+			NOT = { 
+				has_game_rule = {
+					rule = allow_release_nations
+					option = BLOCKED
+				}
 			}
 			has_dlc = "Battle for the Bosporus"
 			OR = { 
@@ -1003,10 +1042,6 @@ DIPLOMACY_GENERATE_WARGOAL_ENABLE_TRIGGER = {
 	}
 	if = {
 		limit = {
-			has_game_rule = {
-				rule = allow_wargoals
-				option = ALWAYS_FREE
-			}
 			NOT = {
 				has_game_rule = {
 					rule = TLE_HALLOWEEN_RULE
@@ -1014,68 +1049,32 @@ DIPLOMACY_GENERATE_WARGOAL_ENABLE_TRIGGER = {
 				}
 			}
 		}
-		if = {
-			limit = {
-				GER = {
-					has_completed_focus = GER_oppose_hitler
-				}	
-			}
-			always = yes
-		}
-		if = {
-			limit = {
-				GER = {
-					NOT = {
-						has_completed_focus = GER_oppose_hitler
-					}
-				}	
-			}
-			custom_trigger_tooltip = {
-				tooltip = RULE_WARGOAL_BLOCKED_HISTORICAL_TT
-				always = no
-			}
+		custom_trigger_tooltip = {
+			tooltip = RULE_WARGOAL_BLOCKED_HISTORICAL_TT
+			always = no
 		}
 	}
 	if = {
 		limit = {
-			has_game_rule = {
-				rule = allow_wargoals
-				option = LIMITED
-			}
-			NOT = {
+			NOT = { 
 				has_game_rule = {
-					rule = TLE_HALLOWEEN_RULE
-					option = TLE_HALLOWEEN_RULE_YES
+					rule = allow_wargoals
+					option = FOCUSES_ONLY
 				}
 			}
 		}
-		if = {
-			limit = {
-				GER = {
-					has_completed_focus = GER_oppose_hitler
-				}	
-			}
-			always = yes
-		}
-		if = {
-			limit = {
-				GER = {
-					NOT = {
-						has_completed_focus = GER_oppose_hitler
-					}
-				}	
-			}
-			custom_trigger_tooltip = {
-				tooltip = RULE_WARGOAL_BLOCKED_HISTORICAL_TT
-				always = no
-			}
+		custom_trigger_tooltip = {
+			tooltip = RULE_WARGOAL_BLOCKED_HISTORICAL_TT
+			always = no
 		}
 	}
 	if = {
 		limit = {
-			has_game_rule = {
-				rule = allow_wargoals
-				option = FREE_25
+			NOT = { 
+				has_game_rule = {
+					rule = allow_wargoals
+					option = FOCUSES_ONLY
+				}
 			}
 			NOT = {
 				has_game_rule = {
@@ -1087,7 +1086,7 @@ DIPLOMACY_GENERATE_WARGOAL_ENABLE_TRIGGER = {
 		if = {
 			limit = {
 				GER = {
-					has_completed_focus = GER_oppose_hitler
+					has_completed_focus = GER_oppose_hitler_ww
 				}	
 			}
 			threat>0.24
@@ -1096,7 +1095,7 @@ DIPLOMACY_GENERATE_WARGOAL_ENABLE_TRIGGER = {
 			limit = {
 				GER = {
 					NOT = {
-						has_completed_focus = GER_oppose_hitler
+						has_completed_focus = GER_oppose_hitler_ww
 					}
 				}	
 			}
@@ -1104,13 +1103,15 @@ DIPLOMACY_GENERATE_WARGOAL_ENABLE_TRIGGER = {
 				tooltip = RULE_WARGOAL_BLOCKED_HISTORICAL_TT
 				always = no
 			}
-		}
+		}	
 	}
 	if = {
 		limit = {
-			has_game_rule = {
-				rule = allow_wargoals
-				option = FREE_50
+			NOT = { 
+				has_game_rule = {
+					rule = allow_wargoals
+					option = FOCUSES_ONLY
+				}
 			}
 			NOT = {
 				has_game_rule = {
@@ -1122,7 +1123,7 @@ DIPLOMACY_GENERATE_WARGOAL_ENABLE_TRIGGER = {
 		if = {
 			limit = {
 				GER = {
-					has_completed_focus = GER_oppose_hitler
+					has_completed_focus = GER_oppose_hitler_ww
 				}	
 			}
 			threat>0.49
@@ -1131,7 +1132,7 @@ DIPLOMACY_GENERATE_WARGOAL_ENABLE_TRIGGER = {
 			limit = {
 				GER = {
 					NOT = {
-						has_completed_focus = GER_oppose_hitler
+						has_completed_focus = GER_oppose_hitler_ww
 					}
 				}	
 			}
@@ -1143,9 +1144,11 @@ DIPLOMACY_GENERATE_WARGOAL_ENABLE_TRIGGER = {
 	}
 	if = {
 		limit = {
-			has_game_rule = {
-				rule = allow_wargoals
-				option = FREE_75
+			NOT = { 
+				has_game_rule = {
+					rule = allow_wargoals
+					option = FOCUSES_ONLY
+				}
 			}
 			NOT = {
 				has_game_rule = {
@@ -1157,7 +1160,7 @@ DIPLOMACY_GENERATE_WARGOAL_ENABLE_TRIGGER = {
 		if = {
 			limit = {
 				GER = {
-					has_completed_focus = GER_oppose_hitler
+					has_completed_focus = GER_oppose_hitler_ww
 				}	
 			}
 			threat>0.74
@@ -1166,7 +1169,7 @@ DIPLOMACY_GENERATE_WARGOAL_ENABLE_TRIGGER = {
 			limit = {
 				GER = {
 					NOT = {
-						has_completed_focus = GER_oppose_hitler
+						has_completed_focus = GER_oppose_hitler_ww
 					}
 				}	
 			}
@@ -1178,9 +1181,11 @@ DIPLOMACY_GENERATE_WARGOAL_ENABLE_TRIGGER = {
 	}
 	if = {
 		limit = {
-			has_game_rule = {
-				rule = allow_wargoals
-				option = FREE_100
+			NOT = { 
+				has_game_rule = {
+					rule = allow_wargoals
+					option = FOCUSES_ONLY
+				}
 			}
 			NOT = {
 				has_game_rule = {
@@ -1192,7 +1197,7 @@ DIPLOMACY_GENERATE_WARGOAL_ENABLE_TRIGGER = {
 		if = {
 			limit = {
 				GER = {
-					has_completed_focus = GER_oppose_hitler
+					has_completed_focus = GER_oppose_hitler_ww
 				}	
 			}
 			threat>0.99
@@ -1201,7 +1206,7 @@ DIPLOMACY_GENERATE_WARGOAL_ENABLE_TRIGGER = {
 			limit = {
 				GER = {
 					NOT = {
-						has_completed_focus = GER_oppose_hitler
+						has_completed_focus = GER_oppose_hitler_ww
 					}
 				}	
 			}
@@ -1213,9 +1218,11 @@ DIPLOMACY_GENERATE_WARGOAL_ENABLE_TRIGGER = {
 	}
 	if = {
 		limit = {
-			has_game_rule = {
-				rule = allow_wargoals
-				option = FOCUSES_ONLY
+			NOT = { 
+				has_game_rule = {
+					rule = allow_wargoals
+					option = FOCUSES_ONLY
+				}
 			}
 			NOT = {
 				has_game_rule = {
@@ -1225,15 +1232,21 @@ DIPLOMACY_GENERATE_WARGOAL_ENABLE_TRIGGER = {
 			}
 		}
 		custom_trigger_tooltip = {
+			tooltip = RULE_WARGOAL_BLOCKED_HISTORICAL_TT
+			always = no
+		}
+		custom_trigger_tooltip = {
 			tooltip = RULE_WARGOALS_BLOCKED_TT
 			always = no
 		}
 	}
 	if = {
 		limit = {
-			has_game_rule = {
-				rule = allow_wargoals
-				option = FOCUSES_ONLY_UNTIL_38
+			NOT = { 
+				has_game_rule = {
+					rule = allow_wargoals
+					option = FOCUSES_ONLY
+				}
 			}
 			NOT = {
 				has_game_rule = {
@@ -1245,7 +1258,7 @@ DIPLOMACY_GENERATE_WARGOAL_ENABLE_TRIGGER = {
 		if = {
 			limit = {
 				GER = {
-					has_completed_focus = GER_oppose_hitler
+					has_completed_focus = GER_oppose_hitler_ww
 				}	
 			}
 			custom_trigger_tooltip = {
@@ -1257,7 +1270,7 @@ DIPLOMACY_GENERATE_WARGOAL_ENABLE_TRIGGER = {
 			limit = {
 				GER = {
 					NOT = {
-						has_completed_focus = GER_oppose_hitler
+						has_completed_focus = GER_oppose_hitler_ww
 					}
 				}	
 			}
@@ -1265,13 +1278,15 @@ DIPLOMACY_GENERATE_WARGOAL_ENABLE_TRIGGER = {
 				tooltip = RULE_WARGOAL_BLOCKED_HISTORICAL_TT
 				always = no
 			}
-		}
+		}	
 	}
 	if = {
 		limit = {
-			has_game_rule = {
-				rule = allow_wargoals
-				option = FOCUSES_ONLY_UNTIL_39
+			NOT = { 
+				has_game_rule = {
+					rule = allow_wargoals
+					option = FOCUSES_ONLY
+				}
 			}
 			NOT = {
 				has_game_rule = {
@@ -1283,7 +1298,7 @@ DIPLOMACY_GENERATE_WARGOAL_ENABLE_TRIGGER = {
 		if = {
 			limit = {
 				GER = {
-					has_completed_focus = GER_oppose_hitler
+					has_completed_focus = GER_oppose_hitler_ww
 				}	
 			}
 			custom_trigger_tooltip = {
@@ -1295,7 +1310,7 @@ DIPLOMACY_GENERATE_WARGOAL_ENABLE_TRIGGER = {
 			limit = {
 				GER = {
 					NOT = {
-						has_completed_focus = GER_oppose_hitler
+						has_completed_focus = GER_oppose_hitler_ww
 					}
 				}	
 			}
@@ -1307,9 +1322,11 @@ DIPLOMACY_GENERATE_WARGOAL_ENABLE_TRIGGER = {
 	}
 	if = {
 		limit = {
-			has_game_rule = {
-				rule = allow_wargoals
-				option = FOCUSES_ONLY_UNTIL_40
+			NOT = { 
+				has_game_rule = {
+					rule = allow_wargoals
+					option = FOCUSES_ONLY
+				}
 			}
 			NOT = {
 				has_game_rule = {
@@ -1321,7 +1338,7 @@ DIPLOMACY_GENERATE_WARGOAL_ENABLE_TRIGGER = {
 		if = {
 			limit = {
 				GER = {
-					has_completed_focus = GER_oppose_hitler
+					has_completed_focus = GER_oppose_hitler_ww
 				}	
 			}
 			custom_trigger_tooltip = {
@@ -1333,7 +1350,7 @@ DIPLOMACY_GENERATE_WARGOAL_ENABLE_TRIGGER = {
 			limit = {
 				GER = {
 					NOT = {
-						has_completed_focus = GER_oppose_hitler
+						has_completed_focus = GER_oppose_hitler_ww
 					}
 				}	
 			}
@@ -1347,18 +1364,22 @@ DIPLOMACY_GENERATE_WARGOAL_ENABLE_TRIGGER = {
 DIPLOMACY_BOOST_PARTY_POPULARITY_ENABLE_TRIGGER = {
 	if = {
 		limit = {
-			has_game_rule = {
-				rule = allow_party_boosting
-				option = FREE
+			NOT = { 
+				has_game_rule = {
+					rule = allow_party_boosting
+					option = BLOCKED
+				}
 			}
 		}
 		always = yes
 	}
 	if = {
 		limit = {
-			has_game_rule = {
-				rule = allow_party_boosting
-				option = AI_ONLY
+			NOT = { 
+				has_game_rule = {
+					rule = allow_party_boosting
+					option = BLOCKED
+				}
 			}
 		}
 		custom_trigger_tooltip = {
@@ -1368,9 +1389,11 @@ DIPLOMACY_BOOST_PARTY_POPULARITY_ENABLE_TRIGGER = {
 	}
 	if = {
 		limit = {
-			has_game_rule = {
-				rule = allow_party_boosting
-				option = PLAYER_ONLY
+			NOT = { 
+				has_game_rule = {
+					rule = allow_party_boosting
+					option = BLOCKED
+				}
 			}
 		}
 		custom_trigger_tooltip = {
@@ -1380,9 +1403,11 @@ DIPLOMACY_BOOST_PARTY_POPULARITY_ENABLE_TRIGGER = {
 	}
 	if = {
 		limit = {
-			has_game_rule = {
-				rule = allow_party_boosting
-				option = BLOCKED
+			NOT = { 
+				has_game_rule = {
+					rule = allow_party_boosting
+					option = BLOCKED
+				}
 			}
 		}
 		custom_trigger_tooltip = {
@@ -1394,18 +1419,22 @@ DIPLOMACY_BOOST_PARTY_POPULARITY_ENABLE_TRIGGER = {
 DIPLOMACY_STAGE_COUP_ENABLE_TRIGGER = {
 	if = {
 		limit = {
-			has_game_rule = {
-				rule = allow_coups
-				option = FREE
+			NOT = { 
+				has_game_rule = {
+					rule = allow_coups
+					option = BLOCKED
+				}
 			}
 		}
 		always = yes
 	}
 	if = {
 		limit = {
-			has_game_rule = {
-				rule = allow_coups
-				option = AI_ONLY
+			NOT = { 
+				has_game_rule = {
+					rule = allow_coups
+					option = BLOCKED
+				}
 			}
 		}
 		custom_trigger_tooltip = {
@@ -1415,9 +1444,11 @@ DIPLOMACY_STAGE_COUP_ENABLE_TRIGGER = {
 	}
 	if = {
 		limit = {
-			has_game_rule = {
-				rule = allow_coups
-				option = BLOCKED
+			NOT = { 
+				has_game_rule = {
+					rule = allow_coups
+					option = BLOCKED
+				}
 			}
 		}
 		custom_trigger_tooltip = {
@@ -1873,34 +1904,6 @@ DIPLOMACY_SEND_VOLUNTEERS_ENABLE_TRIGGER = {
 			always = no
 		}
 	}
-	if = { 
-		limit = {
-			has_dlc = "Arms Against Tyranny"
-			ROOT = {
-				original_tag = ICE
-				has_idea = neutrality_idea
-				is_subject = yes 
-			}
-		}
-		custom_trigger_tooltip = {
-			tooltip = ICELAND_HAS_DECLARED_NEUTRALITY_JOIN
-			always = no
-		}
-	}
-	if = { 
-		limit = {
-			has_dlc = "Arms Against Tyranny"
-			ROOT = {
-				original_tag = DEN
-				has_country_flag = DEN_has_occupation_flag
-				is_subject = yes 
-			}
-		}
-		custom_trigger_tooltip = {
-			tooltip = DENMARK_IS_A_PUPPET_JOIN
-			always = no
-		}
-	}
 }
 
 game_weight_can_add_fascist = {
@@ -1996,11 +1999,16 @@ game_weight_can_add_communist = {
 }
 
 DIPLOMACY_JOIN_ALLY_ENABLE_TRIGGER = {
-	if = { # TODO_TA make more generic trigger
+	if = { 
 		limit = {
 			NOT = { has_global_flag = ethiopia_recognized_flag }
-			FROM = {
-				tag = ETH 
+			OR = {
+				ROOT = {
+					tag = ETH
+				}
+				FROM = {
+					tag = ETH
+				}
 			}
 			
 		}
@@ -2042,8 +2050,13 @@ DIPLOMACY_CALL_ALLY_ENABLE_TRIGGER = {
 	if = { 
 		limit = {
 			NOT = { has_global_flag = ethiopia_recognized_flag }
-			ROOT = {
-				tag = ETH
+			OR = {
+				ROOT = {
+					tag = ETH
+				}
+				FROM = {
+					tag = ETH
+				}
 			}
 			
 		}
@@ -2081,7 +2094,6 @@ DIPLOMACY_CALL_ALLY_ENABLE_TRIGGER = {
 		}
 	}
 }
-
 DIPLOMACY_JOIN_FACTION_ENABLE_TRIGGER = {
 	if = { 
 		limit = {
@@ -2093,6 +2105,15 @@ DIPLOMACY_JOIN_FACTION_ENABLE_TRIGGER = {
 		}
 		custom_trigger_tooltip = {
 			tooltip = DENMARK_IS_A_PUPPET_FACTION
+			always = no
+		}
+	}
+	if = {
+		limit = {
+			is_historical_focus_on = yes
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_FACTION_BLOCKED_HISTORICAL_TT
 			always = no
 		}
 	}
@@ -2113,3 +2134,5 @@ DIPLOMACY_OFFER_JOIN_FACTION_ENABLE_TRIGGER = {
 		}
 	}
 }
+
+

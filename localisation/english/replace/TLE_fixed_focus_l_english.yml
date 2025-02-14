@@ -11,6 +11,10 @@
  SOV_end_the_khalkhin_gol_conflict_desc:0 "연해주에서의 오래된 국경분쟁은 충분히, 오래 지속되었습니다. 만약 한국정부가 적법한 소련의 국경을 인정할 것인지를 충분의 믿을 수 없다면, 우리는 저들의 정부를 바꿔야 할 것입니다."
  SOV_soviet_japanese_pact_against_usa_focus:0 "소련-대한 반미 협정"
  SOV_soviet_japanese_pact_against_usa_focus_desc:0 "한국인들은 성장하는 경제에 활력을 불어넣기 위해 더 많은 확장을 원할 것입니다. 우리로부터 가능한 멀리 떨어진 곳에서 확장을 하고 강력한 해군력의 지지를 얻는 것이 우리의 최대 관심사입니다. 함께라면, 우리는 미국을 세계 무대에서 제거할 수 있습니다!"
+ SOV_two_red_flags:0 "북양정부 지원"
+ SOV_two_red_flags_desc:0 "중국 국민당은 군사력이 약하고 더 큰 군대를 만들 수 있는 산업 기반이 없습니다. 북양정부가 중국을 통제하고 성공적인 공산주의 혁명의 선행조건으로 필요한 일종의 부르주아 사회를 만들기에 가장 적합하다는 것은 분명합니다."
+ SOV_support_the_kuomintang_desc:0 "중국에서 혁명이 성공하지는 못했지만, 이것은 예상 밖의 일이 아닙니다. 중국은 아직 참된 사회주의 혁명에 필요한 산업사회가 아닙니다. 그런데도 국민당은 중국인들에게 공산주의 미래를 달성할 수 있는 최고의 기회입니다."
+ 
  MTG_naval_treaty.9.t:0 "제2차 런던 해군군축조약 서명"
  MTG_naval_treaty.9.desc:0 "1935년 12월 영국, 프랑스, 이탈리아, 한국, 미국 대표단은 순양함과 잠수함의 수와 크기를 제한하는 최초의 런던 해군 조약의 갱신을 논의하기 위하여 만났습니다. 에티오피아에서의 이탈리아의 전쟁과 한국이 영국, 미국과 동등한 수준이 되는 희망에 대해서는 협상이 상당히 뜨거웠습니다.\n\n이제 협상이 끝나가며, 서명국들은 또 다른 파멸적인 군비 경쟁을 막기 위하여 전함과 항공모함의 크기에 대한 제한에 합의하였습니다."
  
@@ -21,6 +25,8 @@
  NZL_technology_sharing_with_japan:0 "한국과의 기술공유"
  NZL_befriend_japan:0 "한국과의 친선"
  GER_japan_friend:0 "한국과의 친선"
+ GER_japanese_naval_cooperation:0 "한국 해군과의 협력"
+ GER_JAP_naval_tech_sharing_name:0 "독일-한국 해군 기술 교환"
  ENG_war_with_japan:0 "한국과의 전쟁"
  AST_a_deal_with_japan:0 "한국과의 거래"
  AST_japan_tech_sharing:0 "한국과의 기술공유"
@@ -59,8 +65,11 @@
  TRIGGER_IS_NOT_FRIEND:0 "@$TAG$$OTHER|H$ 측과 동맹이 아님\n"
  EFFECT_SET_RULE:0 "규칙 설정:\n"
  
- STRATEGICREGION_148:0 "연해주 지역"
+ STRATEGICREGION_148:0 "연해주"
  STRATEGICREGION_186:0 "한반도"
+ STRATEGICREGION_189:0 "버마"
+ STRATEGICREGION_154:0 "일본 열도"
+ STRATEGICREGION_73:0 "시암만"
  
  CHI_cooperation_with_the_communists:0 "국민당과의 협력"
  
@@ -264,11 +273,12 @@
  portugal_guarantees_freedom_tt:0 "유럽 내 모든 §Y민주주의§! 또는 §Y권위주의§! 약소국들을 독립 보장합니다."
  POR_the_empire_of_brazil_potential_civil_war_tt:0 "§R만약 §Y브라질§R이 §Y권위주의§R가 아니고 이 중점이 완료될 때 §Y50%의 안정도§R 혹은 §Y70%의 권위주의§R 지지도를 가지고 있지 않으면 브라질의 군주주의자들이 내전을 시작하여 우리를 참전시킬 것입니다!§!§!§!§!§!§!§!§!§!§!"
  neutrality_acceptance:0 "권위주의 외교 수용"
- neutrality_drift:0 "매일 권위주의 지지율"
+ neutrality_drift:0 "매일 권위주의 지지도"
  neutrality:0 "권위주의"
  neutrality_noun:0 "권위주의"
  BUL_bogdan_filov_ideology_fascism_tt:1 "(불가리아가 권위주의를 수용한다면 권위주의에 대한 일일 지지도로 대체될 것입니다.)\n$BUL_bogdan_filov_negotiations_tt$"
  attache_neutrality_tt:0 "§Y권위주의§! 지지도가 충분할 때 나타날 효과:\n"
+ CHL_protect_the_easter_island_tt: "그들이 §Y파시즘§! 또는 §Y비동맹주의§!일 경우 §Y[KOR.GetName]§!, §Y[NZL.GetName]§!, §Y[AST.GetName]§!에 대한 §Y괴뢰화§! 전쟁 명분을 얻습니다."
  
  FE_HISTORICAL:0 "역사적 AI 중점 §R(필수)§!"
  
@@ -282,6 +292,8 @@
  POR_deal_with_the_japanese_threat:0 "한국의 위협 처리"
  POR_deal_with_the_japanese_threat_desc:0 "한국은 인근 영토를 점령하고 우리의 식민지를 고립시켜 우리의 소유물을 위협하고 있습니다. 그들이 생각지도 않는 지금 그들의 본토로 전쟁을 가져와 잠재적인 위협을 제거해야 합니다."
  POR_expand_the_chinese_territories_desc:0 "전쟁으로 아시아 국가들이 약화된 이때가 마카우에서 중국 전체로 우리의 영토를 확장할 때입니다. 기진매진한 중국군과 한국군은 우리를 막을 수 없습니다!"
+  
+ kamikaze_focus_tooltip:1 "공군 임무에 §Y자살특공전략§!을 허용해, 적 함선에 자살 공격을 가할 것입니다.\n"
   
  LOADING_GUI:0 "장동 김문을 속이는 중"
  LOADING_MAP_SPRITES:0 "임자사화를 일으키는 중"

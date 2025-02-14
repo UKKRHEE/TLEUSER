@@ -1,0 +1,187 @@
+scripted_gui = {
+
+	United_Nation_fisc = {
+		window_name = "United_Nations_fisc_container"
+		parent_window_token = top_bar
+		context_type = player_context
+		
+		visible = {
+			has_country_flag = United_Nations_GUI_enable
+		}
+		
+		effects = {
+			Background_click = {
+				if = {
+					limit = {
+						has_country_flag = United_Nations_GUI_visible
+					}
+					clr_country_flag = United_Nations_GUI_visible
+				}
+				else = {
+					set_country_flag = United_Nations_GUI_visible
+				}
+			}
+		}
+	}
+
+	United_Nations_GUI = {
+		context_type = player_context
+		window_name = "United_Nations_GUI"
+		# dirty = United_Nations_GUI_dirty
+
+		visible = {
+			has_country_flag = United_Nations_GUI_visible
+		}
+	
+		triggers = {
+			Agenda_Check_visible = {
+				AND = {
+					OR = {
+						has_variable = global.UN_Agenda_Vote_Yes
+						has_variable = global.UN_Agenda_Vote_No
+						# has_variable = UN_Agenda_Vote_Abstain
+					}
+					has_country_flag = UN_Agenda_Voted
+				}
+			}
+		}
+
+		effects = {
+			UN_Agenda_Close_click = {
+				clr_country_flag = United_Nations_GUI_visible
+			}
+	  	}
+
+		dynamic_lists = {
+			SC_Contenders_List = {
+				array = UN_SC_Contenders
+				index = i
+				change_scope = yes
+
+				entry_container = TLE_UN_SC_Contenders_Entry
+			}
+			Contenders_List = {
+				array = UN_Contenders
+				index = i
+				change_scope = yes
+
+				entry_container = TLE_UN_Contenders_Entry
+			}
+		}
+
+		properties = {
+			Contenders_Entry_Flag = { image = "[This.GetFlag]" }
+			Agenda_Check = { frame = GetAgendaFrame }
+		}
+  	}
+
+	United_Nations_Agenda_desc_GUI = {
+		context_type = player_context
+		parent_window_name = "United_Nations_GUI"
+		window_name = "United_Nations_Agenda_desc"
+
+		visible = {
+			has_country_flag = United_Nations_GUI_visible
+		}
+
+		effects = {
+			UN_Agenda_Accpet_click = {
+				UN_Agenda_Vote_Yes_effect = yes
+			}
+			UN_Agenda_Reject_click = {
+				UN_Agenda_Vote_No_effect = yes
+			}
+			UN_Agenda_Abstention_click = {
+				UN_Agenda_Vote_Yes_effect = yes
+			}
+		}
+
+		triggers = {
+			UN_Agenda_Accpet_click_enabled = {
+				is_in_array = {
+					array = global.UN_SC_member
+					value = THIS
+				}
+				has_global_flag = UN_Agenda_Enable
+				NOT = {
+					has_country_flag = UN_Agenda_Voted
+				}
+			}
+			UN_Agenda_Reject_click_enabled = {
+				is_in_array = {
+					array = global.UN_SC_member
+					value = THIS
+				}
+				has_global_flag = UN_Agenda_Enable
+				NOT = {
+					has_country_flag = UN_Agenda_Voted
+				}
+			}
+			UN_Agenda_Abstention_click_enabled = {
+				is_in_array = {
+					array = global.UN_SC_member
+					value = THIS
+				}
+				has_global_flag = UN_Agenda_Enable
+				NOT = {
+					has_country_flag = UN_Agenda_Voted
+				}
+			}
+			UN_Agenda_Abstention_visible = {
+				is_in_array = {
+					array = global.UN_SC_member
+					value = THIS
+				}
+				has_global_flag = UN_Agenda_Enable
+				NOT = {
+					has_country_flag = UN_Agenda_Voted
+				}
+			}
+			UN_Agenda_Accpet_visible = {
+				is_in_array = {
+					array = global.UN_SC_member
+					value = THIS
+				}
+				has_global_flag = UN_Agenda_Enable
+				NOT = {
+					has_country_flag = UN_Agenda_Voted
+				}
+			}
+			UN_Agenda_Reject_visible = {
+				is_in_array = {
+					array = global.UN_SC_member
+					value = THIS
+				}
+				has_global_flag = UN_Agenda_Enable
+				NOT = {
+					has_country_flag = UN_Agenda_Voted
+				}
+			}
+			UN_Agenda_Days_visible = {
+				check_variable = { global.UN_vote_time > 0 }
+			}
+			UN_Agenda_Pass_visible = {
+				has_global_flag = UN_Agenda_Pass_enable
+			}
+		}
+	}
+
+	United_Nations_Agenda_history_GUI = {
+		context_type = player_context
+		parent_window_name = "United_Nations_GUI"
+		window_name = "United_Nations_Agenda_history"
+
+		visible = {
+			has_country_flag = United_Nations_GUI_visible
+		}
+
+		dynamic_lists = {
+			past_ordinance_list = {
+				array = GNG_legco_history
+				index = GNG_legco_history_i
+				entry_container = UN_Agenda_History_grid
+				value = global.GNG_legco_ordinance_id
+			}
+		}
+	}
+}

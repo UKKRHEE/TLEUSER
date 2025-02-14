@@ -18,19 +18,19 @@ on_actions = {
 					original_tag = LIT
 					owns_state = 784
 					NOT = {
-						owns_state = 975
+						owns_state = 1102
 					}
 					NOT = {
 						GER = {
-							owns_state = 975
+							owns_state = 1102
 						}
 						SOV = {
-							owns_state = 975
+							owns_state = 1102
 						}
 					}
 				}
 				LIT = {
-					transfer_state = 975
+					transfer_state = 1102
 				}
 			}
 			if = {
@@ -50,7 +50,7 @@ on_actions = {
 			}
 			if = {
 				limit = {
-					986 = {
+					976 = {
 						NOT = {
 							is_core_of = HUN
 						}
@@ -59,7 +59,7 @@ on_actions = {
 						is_core_of = HUN
 					}
 				}
-				986 = {
+				976 = {
 					add_core_of = HUN
 				}
 			}
@@ -235,17 +235,17 @@ on_actions = {
 			if = {
 				limit = {
 					tag = GER #
-					FROM.FROM = { state = 986 } #
+					FROM.FROM = { state = 976 } #
 				}
 				if = {
 					limit = {
 						NOT = {
-							986 = {
+							976 = {
 								is_core_of = GER
 							}
 						}
 					}	
-					986 = {
+					976 = {
 						add_core_of = GER
 					}
 				}
@@ -253,15 +253,15 @@ on_actions = {
 			if = {
 				limit = {
 					tag = AUS #
-					FROM.FROM = { state = 986 } #
+					FROM.FROM = { state = 976 } #
 				}
 				if = {
 					limit = {
-						986 = {
+						976 = {
 							is_core_of = GER
 						}
 					}	
-					986 = {
+					976 = {
 						remove_core_of = GER
 					}
 				}
@@ -337,17 +337,17 @@ on_actions = {
 			if = {
 				limit = {
 					tag = GER #
-					FROM.FROM = { state = 984 } #
+					FROM.FROM = { state = 975 } #
 				}
 				if = {
 					limit = {
 						NOT = {
-							984 = {
+							975 = {
 								is_core_of = GER
 							}
 						}
 					}	
-					984 = {
+					975 = {
 						add_core_of = GER
 					}
 				}
@@ -355,15 +355,15 @@ on_actions = {
 			if = {
 				limit = {
 					tag = AUS #
-					FROM.FROM = { state = 984 } #
+					FROM.FROM = { state = 975 } #
 				}
 				if = {
 					limit = {
-						984 = {
+						975 = {
 							is_core_of = GER
 						}
 					}	
-					984 = {
+					975 = {
 						remove_core_of = GER
 					}
 				}
@@ -371,7 +371,7 @@ on_actions = {
 			if = {
 				limit = {
 					tag = GER #
-					FROM.FROM = { state = 34 } #
+					FROM.FROM = { state = 980 } #
 				}
                 FROM.FROM = {
 					set_state_name = "walonien"
@@ -380,7 +380,7 @@ on_actions = {
 			if = {
 				limit = {
 					original_tag = BEL
-					FROM.FROM = { state = 34 } #
+					FROM.FROM = { state = 980 } #
 				}
                 FROM.FROM = {
 					set_state_name = "walony"
@@ -683,23 +683,23 @@ on_actions = {
 			if = {
 				limit = {
 					tag = GER #
-					FROM.FROM = { state = 980 } #
+					FROM.FROM = { state = 999 } #
 				}
                 FROM.FROM = {
 					set_state_name = "eupen"
 				}
 				GER = {
-					transfer_state = 980
+					transfer_state = 999
 				}
 				if = {
 					limit = {
 						NOT = {
-							980 = {
+							999 = {
 								is_core_of = GER
 							}
 						}
 					}	
-					980 = {
+					999 = {
 						add_core_of = GER
 					}
 				}
@@ -707,21 +707,21 @@ on_actions = {
 			if = {
 				limit = {
 					tag = BEL #
-					FROM.FROM = { state = 980 } #
+					FROM.FROM = { state = 999 } #
 				}
                 FROM.FROM = {
 					set_state_name = "oepen"
 				}
 				BEL = {
-					transfer_state = 980
+					transfer_state = 999
 				}
 				if = {
 					limit = {
-						980 = {
+						999 = {
 							is_core_of = GER
 						}
 					}	
-					980 = {
+					999 = {
 						remove_core_of = GER
 					}
 				}

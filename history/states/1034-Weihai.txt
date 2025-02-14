@@ -1,6 +1,6 @@
 state={
 	id=1034
-	name="STATE_WIHAE"
+	name="STATE_WEIHAI"
 	provinces={
 		4205
 	}
@@ -21,9 +21,8 @@ state={
 		victory_points = {
 			4205 5 
 		}
-		owner = KOR
+		owner = ZLC
 		add_core_of = SND
-		add_claim_by = KOR
 		add_core_of = ZLC
 		add_core_of = CHI
 		add_core_of = PRC

@@ -1,0 +1,39 @@
+
+state={
+	id=1075
+	name="STATE_KOTABARU"
+	resources={
+		rubber=130.000
+		steel=3.000
+		tungsten=62.000
+	}
+	
+	history={
+		owner = MAL
+		add_core_of = MAL
+		victory_points = {
+			7329 3 
+		}
+		victory_points = {
+			4355 1 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			air_base = 6
+			7329 = {
+				naval_base = 1
+			}
+
+		}
+
+	}
+	
+	provinces={
+		1291 1348 4310 4355 7329 7342 12144 12199 
+	}
+	manpower=550000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

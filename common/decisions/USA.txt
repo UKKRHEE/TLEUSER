@@ -2036,7 +2036,7 @@ USA_intervention_mandate = {
 			modifier = {
 				OR = {
 					GER = { has_completed_focus = GER_danzig_or_war }
-					KOR = { has_completed_focus = KOR_intervene_in_china }
+					KOR = { has_completed_focus = kor_tsushima }
 				}
 				factor = 10
 			}

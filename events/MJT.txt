@@ -4,7 +4,7 @@ country_event = { #일레이나님저희를지배하여주세요
 	id = TLE_MJT_event.1
 	title = TLE_MJT_event.1.t
 	desc = TLE_MJT_event.1.d
-	picture = GFX
+	picture = GFX_report_event_vienna_award_hungary
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -18,7 +18,7 @@ country_event = { #엔딩
 	id = TLE_MJT_event.2
 	title = TLE_MJT_event.2.t
 	desc = TLE_MJT_event.2.d
-	picture = GFX
+	picture = GFX_report_event_vienna_award_hungary
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -32,7 +32,7 @@ country_event = { #마녀군 입대
 	id = TLE_MJT_event.3
 	title = TLE_MJT_event.3.t
 	desc = TLE_MJT_event.3.d
-	picture = GFX
+	picture = GFX_report_event_vienna_award_hungary
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -45,7 +45,7 @@ country_event = { #똥게이합법화
 	id = TLE_MJT_event.4
 	title = TLE_MJT_event.4.t
 	desc = TLE_MJT_event.4.d
-	picture = GFX
+	picture = GFX_report_event_vienna_award_hungary
 
 	is_triggered_only = yes
 	fire_only_once = yes

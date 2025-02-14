@@ -1,6 +1,6 @@
 characters={
-	KOR_lee_seungman = {
-		name=KOR_lee_seungman
+	KOR_est_lee_seungman = {
+		name=KOR_est_lee_seungman
 		portraits={
 			civilian={
 				large = "gfx/leaders/KOR/easteregg/Portrait_KOR_lee_seungman.png"	
@@ -86,8 +86,8 @@ characters={
 			logistics_skill = 10
 		}
 	}
-	KOR_lee_jaemyeong = {
-		name=KOR_lee_jaemyeong
+	KOR_est_lee_jaemyeong = {
+		name=KOR_est_lee_jaemyeong
 		portraits={
 			civilian={
 				large="gfx/leaders/KOR/easteregg/Portrait_KOR_lee_jaemyeong.png"
@@ -114,8 +114,8 @@ characters={
 			logistics_skill = 4
 		}
 	}
-	KOR_jaemaiham={
-		name=KOR_jaemaiham
+	KOR_est_jaemaiham={
+		name=KOR_est_jaemaiham
 		portraits={
 			civilian={
 				large="gfx/leaders/KOR/easteregg/Portrait_KOR_jjit_chila.png"
@@ -201,8 +201,8 @@ characters={
 			logistics_skill = 10
 		}
 	}
-	KOR_kim_du_han = {
-		name=KOR_kim_du_han
+	KOR_est_kim_du_han = {
+		name=KOR_est_kim_du_han
 		portraits={
 			army={
 				large="gfx/leaders/KOR/easteregg/Portrait_KOR_kim_du_han.png"
@@ -224,8 +224,8 @@ characters={
 			logistics_skill = 1
 		}
 	}
-	KOR_shovel_official={
-		name=KOR_shovel_official
+	KOR_est_shovel_official={
+		name=KOR_est_shovel_official
 		portraits={
 			civilian={
 				large="gfx/leaders/KOR/easteregg/Portrait_KOR_shovel.png"
@@ -314,8 +314,8 @@ characters={
 			logistics_skill = 10
 		}
 	}
-	KOR_roh_moohyun = {
-		name=KOR_roh_moohyun
+	KOR_est_roh_moohyun = {
+		name=KOR_est_roh_moohyun
 		portraits={
 			army={
 				large="gfx/leaders/KOR/easteregg/Portrait_KOR_roh_moohyun.png"
@@ -401,8 +401,8 @@ characters={
 			logistics_skill = 10
 		}
 	}
-	KOR_lee_jieun = {
-		name=KOR_lee_jieun
+	KOR_est_lee_jieun = {
+		name=KOR_est_lee_jieun
 		portraits={
 			army={
 				large="gfx/leaders/KOR/easteregg/portrait_kor_lee_jieun.png"
@@ -489,8 +489,8 @@ characters={
 		}
 		gender = female
 	}
-	KOR_chun_doohwan = {
-		name=KOR_chun_doohwan
+	KOR_est_chun_doohwan = {
+		name=KOR_est_chun_doohwan
 		portraits={
 			army={
 				large="gfx/leaders/KOR/easteregg/Portrait_KOR_chun_doohwan.png"
@@ -576,8 +576,8 @@ characters={
 			logistics_skill = 10
 		}
 	}
-	KOR_lee_myungbak = {
-		name=KOR_lee_myungbak
+	KOR_est_lee_myungbak = {
+		name=KOR_est_lee_myungbak
 		portraits={
 			army={
 				large="gfx/leaders/KOR/easteregg/Portrait_KOR_lee_myungbak.png"
@@ -663,8 +663,8 @@ characters={
 			logistics_skill = 10
 		}
 	}
-	KOR_park_geunhye = {
-		name=KOR_park_geunhye
+	KOR_est_park_geunhye = {
+		name=KOR_est_park_geunhye
 		portraits={
 			army={
 				large="gfx/leaders/KOR/easteregg/Portrait_KOR_park_geunhye.png"
@@ -750,12 +750,12 @@ characters={
 			logistics_skill = 10
 		}
 	}
-	KOR_park_chunghee = {
-		name=KOR_park_chunghee
+	KOR_est_park_chunghee = {
+		name=KOR_est_park_chunghee
 		portraits={
 			army={
 				large="gfx/leaders/KOR/easteregg/Portrait_KOR_park_chunghee.png"
-				small="gfx/interface/ideas/KOR/easteregg/idea_KOR_park_geunhye.png"
+				small="gfx/interface/ideas/KOR/easteregg/idea_KOR_park_chunghee.png"
 			}
 		}
 		field_marshal={
@@ -837,8 +837,8 @@ characters={
 			logistics_skill = 10
 		}
 	}
-	KOR_yoon_seokyeol = {
-		name=KOR_yoon_seokyeol
+	KOR_est_yoon_seokyeol = {
+		name=KOR_est_yoon_seokyeol
 		portraits={
 			army={
 				large="gfx/leaders/KOR/easteregg/Portrait_KOR_yoon_seokyeol.png"
@@ -924,8 +924,8 @@ characters={
 			logistics_skill = 10
 		}
 	}
-	KOR_kim_dae_jung = {
-		name=KOR_kim_dae_jung
+	KOR_est_kim_dae_jung = {
+		name=KOR_est_kim_dae_jung
 		portraits={
 			army={
 				large="gfx/leaders/KOR/easteregg/Portrait_KOR_kim_dae_jung.png"
@@ -1011,8 +1011,8 @@ characters={
 			logistics_skill = 10
 		}
 	}
-	KOR_moon_jaein = {
-		name=KOR_moon_jaein
+	KOR_est_moon_jaein = {
+		name=KOR_est_moon_jaein
 		portraits={
 			army={
 				large="gfx/leaders/KOR/easteregg/Portrait_KOR_moon_jaein.png"
@@ -1098,8 +1098,8 @@ characters={
 			logistics_skill = 10
 		}
 	}
-	KOR_UKKRHEE = {
-		name=KOR_UKKRHEE
+	KOR_est_UKKRHEE = {
+		name=KOR_est_UKKRHEE
 		portraits={
 			army={
 				large="gfx/leaders/KOR/easteregg/Portrait_KOR_UKKRHEE.png"
@@ -1185,8 +1185,8 @@ characters={
 			logistics_skill = 10
 		}
 	}
-	KOR_hwang_geunchul = {
-		name=KOR_hwang_geunchul
+	KOR_est_hwang_geunchul = {
+		name=KOR_est_hwang_geunchul
 		portraits={
 			army={
 				large="gfx/leaders/KOR/easteregg/Portrait_KOR_hwang_geunchul.png"
@@ -1209,8 +1209,8 @@ characters={
 			logistics_skill = 10
 		}
 	}
-	KOR_cho_jiwon = {
-		name=KOR_cho_jiwon
+	KOR_est_cho_jiwon = {
+		name=KOR_est_cho_jiwon
 		portraits={
 			army={
 				large="gfx/leaders/KOR/easteregg/Portrait_KOR_cho_jiwon.png"
@@ -2632,7 +2632,7 @@ characters={
 		}
 	}
 	#
-	KOR_mutaguchi_yoda = {
+	KOR_est_mutaguchi_yoda = {
 		name = "KOR_mutaguchi_yoda"
 		portraits={
 			civilian={

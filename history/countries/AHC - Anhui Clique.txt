@@ -18,10 +18,6 @@ recruit_character = AHC_zhang_zuolin
 recruit_character = AHC_zhang_xueliang
 
 1936.1.1 = {
-	diplomatic_relation = {
-		country = MON
-		relation = non_aggression_pact
-	}
 	add_opinion_modifier = {
 		target = MON
 		modifier = TLE_anhui_clique_opinion

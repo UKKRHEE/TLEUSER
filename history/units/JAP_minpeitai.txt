@@ -1,0 +1,53 @@
+﻿division_template = {
+	name = "구국민병대" 			# (Square) Infantry Division - 4 infantry regiments (3k men each), 1 field artillery regiment - abstracted into infantry,
+	division_names_group = JAP_INF_01
+									# 1 engineering regiment, 1 recon regiment
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+	}
+}
+units = {
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 68
+		}
+		location = 11960
+		division_template = "구국민병대"
+		start_experience_factor = 0.2
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 69
+		}
+		location = 11960
+		division_template = "구국민병대"
+		start_experience_factor = 0.2
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 70
+		}
+		location = 11960
+		division_template = "구국민병대"
+		start_experience_factor = 0.2
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 71
+		}
+		location = 11960
+		division_template = "구국민병대"
+		start_experience_factor = 0.2
+	}
+}

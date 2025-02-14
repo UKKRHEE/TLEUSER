@@ -87,6 +87,12 @@ defined_text = {
 		localization_key = PK_NEWS.VIC
 	}
 	text = {
+		trigger = {
+			TAG = SIA
+		}
+		localization_key = PK_NEWS.SIA
+	}
+	text = {
 	 	trigger = {
 	 		is_chinese_clique = yes
 	 	}

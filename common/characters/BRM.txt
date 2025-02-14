@@ -1,0 +1,44 @@
+characters={
+	BRM_aung_san={
+		name="BRM_aung_san"
+		portraits={
+			civilian={
+				large="gfx/leaders/BUR/aung_san.png"
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			desc = "BRM_aung_san_desc"
+			traits = {
+			}
+		}
+	}
+	BRM_aung_san_2={
+		name="BRM_aung_san"
+		portraits={
+			civilian={
+				large="gfx/leaders/BUR/aung_san.png"
+			}
+		}
+		country_leader={
+			ideology=fascism_ideology
+			desc = "BRM_aung_san_desc"
+			traits = {
+			}
+		}
+	}
+	BUR_aung_san={
+		name="BUR_aung_san"
+		portraits={
+			civilian={
+				large="gfx/leaders/BUR/aung_san.png"
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			desc = "BRM_aung_san_desc"
+			traits = {
+			}
+		}
+	}
+}

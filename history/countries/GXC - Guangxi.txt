@@ -35,10 +35,6 @@ add_opinion_modifier = {
 	target = CHI
 	modifier = KMT_opinion
 }
-diplomatic_relation = {
-	country = CHI
-	relation = non_aggression_pact
-}
 
 if = {
 	limit = {

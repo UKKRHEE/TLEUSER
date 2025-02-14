@@ -1,0 +1,12 @@
+units = {
+	fleet = {
+		name = "Royal Siamese Navy"		
+		naval_base = 7408 # Bangkok
+		task_force = {				
+			name = "Royal Fleet"			
+			location = 7408 # Bangkok
+			ship = { name = "HTMS Sri Ayuthia" pride_of_the_fleet = yes definition = heavy_cruiser equipment = { heavy_cruiser_2 = { amount = 1 owner = KOR } } }		
+			ship = { name = "HTMS Dhonburi" definition = heavy_cruiser equipment = { heavy_cruiser_2 = { amount = 1 owner = KOR } } }		
+		}	
+	}
+}

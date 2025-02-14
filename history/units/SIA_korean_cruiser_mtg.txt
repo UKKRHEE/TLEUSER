@@ -1,0 +1,12 @@
+units = {
+	fleet = {
+		name = "Royal Siamese Navy"		
+		naval_base = 7408 # Bangkok
+		task_force = {				
+			name = "Royal Fleet"			
+			location = 7408 # Bangkok
+			ship = { name = "HTMS Sri Ayuthia" pride_of_the_fleet = yes definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = KOR version_name = "Sri Ayuthia Class" } } }		
+			ship = { name = "HTMS Dhonburi" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = KOR version_name = "Sri Ayuthia Class" } } }		
+		}	
+	}
+}

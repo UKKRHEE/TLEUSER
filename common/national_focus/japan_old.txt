@@ -175,10 +175,13 @@
 		completion_reward = {
 			add_stability = 0.1
 			MAN = {
-				country_event = wtt_japan.21
+				country_event = {
+					id = wtt_japan.21
+					hours = 6
+				}
 				custom_effect_tooltip = JAP_if_man_accepts
 				effect_tooltip = {
-					global_every_army_leader = {
+					every_character = {
 						limit = {
 							OWNER = { tag = ROOT }
 							has_trait = JAP_samurai_lineage
@@ -261,6 +264,7 @@
 			}
 			remove_ideas = JAP_the_unthinkable_option
 			set_capital = { state = 532 }
+			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = {
 					MEN = { is_subject_of = ROOT }
@@ -810,6 +814,7 @@
 					instant_build = yes
 				}
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = JAP_zaibatsus
 				add_idea = JAP_nationalize_the_zaibatsus				
@@ -842,6 +847,7 @@
 				}
 				set_state_flag = JAP_zaibatsus_factories
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = JAP_zaibatsus
 				add_idea = JAP_nationalize_the_zaibatsus				
@@ -1113,6 +1119,12 @@
 		completion_reward = {
 			set_rule = { can_create_factions = yes }
 			create_faction = JAP_greater_east_asian_co_prosperity_sphere
+			IF = {
+				limit = {
+					has_dlc = "La Resistance"
+				}
+				JAP_create_ignatius_lincoln_operative = yes
+			}
 		}
 	}
 
@@ -1120,7 +1132,7 @@
 		id = JAP_intervene_in_china
 		icon = GFX_goal_generic_occupy_states_ongoing_war
 		prerequisite = { focus = JAP_greater_east_asian_co_prosperity_sphere }
-		will_lead_to_war_with = CHI
+
 		x = -1
 		y = 1
 		relative_position_id = JAP_greater_east_asian_co_prosperity_sphere
@@ -1128,9 +1140,10 @@
 		cost = 10
 
 		available = { 
-			is_puppet = no 
+			is_subject = no 
 			NOT = { has_war_with = CHI }
 		}
+
 		bypass = {
 			OR = {
 				AND = {
@@ -1161,6 +1174,7 @@
 		}
 
 		will_lead_to_war_with = CHI
+		will_lead_to_war_with = SHX
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1175,6 +1189,7 @@
 		}
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
+
 		completion_reward = {
 			if = {
 				limit = {
@@ -1356,6 +1371,12 @@
 				uses = 2
 				category = naval_doctrine	
 			}
+			IF = {
+				limit = {
+					has_dlc = "La Resistance"
+				}
+				JAP_create_patrick_heenan_operative = yes
+			}
 			unlock_decision_tooltip = JAP_pressure_france
 		}
 	}
@@ -1369,7 +1390,7 @@
 		relative_position_id = JAP_strike_south_doctrine
 		dynamic = yes  
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 2
@@ -1447,10 +1468,10 @@
 		cost = 10
 
 		ai_will_do = {
-			factor = 1
+			base = 1
 			modifier = {
 				factor = 10
-				"PHI" = {
+				PHI = {
 					has_war = yes
 					NOT = { has_war_with = JAP }
 				}
@@ -1469,7 +1490,7 @@
 		}
 
 		available = {
-
+			is_subject = no
 		}
 
 		bypass = {
@@ -1515,7 +1536,7 @@
 		cost = 10
 
 		ai_will_do = {
-			factor = 10
+			base = 10
 			modifier = {
 				factor = 0
 				date < 1940.1.1
@@ -1532,7 +1553,7 @@
 		}
 
 		available = {
-
+			is_subject = no
 		}
 
 		bypass = {
@@ -1758,12 +1779,16 @@
 
 		available = {
 			is_faction_leader = yes
+			is_subject = no
 			country_exists = SIA
+			NOT = {
+				has_war_with = SIA
+			}
 		}
 
-		bypass = {
-			is_in_faction_with = SIA
-		}
+		#bypass = {
+		#	is_in_faction_with = SIA
+		#}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1771,7 +1796,9 @@
 
 
 		completion_reward = {
-			SIA = { country_event = generic.5 }
+			SIA = { 
+				country_event = generic.5 
+			}
 			add_ai_strategy = {
 				type = protect
 				id = "SIA"
@@ -1889,6 +1916,7 @@
 		}
 
 		available = {
+			is_subject = no
 			any_country = {
 				original_tag = GER
 				has_government = fascism
@@ -2010,6 +2038,7 @@
 					instant_build = yes
 				}
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = JAP_zaibatsus
 				add_idea = JAP_guide_the_zaibatsus				
@@ -2042,6 +2071,7 @@
 				}
 				set_state_flag = JAP_zaibatsus_factories
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = JAP_zaibatsus
 				add_idea = JAP_guide_the_zaibatsus
@@ -2624,7 +2654,7 @@
 		}
 
 		available = {
-			has_tech = rocket_engines
+			is_special_project_completed = sp:sp_rocket_interceptor
 		}
 
 		bypass = {
@@ -2775,6 +2805,7 @@
 					instant_build = yes
 				}
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = JAP_zaibatsus
 				add_idea = JAP_zaibatsus_challenged			
@@ -2807,6 +2838,7 @@
 				}
 				set_state_flag = JAP_zaibatsus_factories
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = JAP_zaibatsus
 				add_idea = JAP_zaibatsus_challenged
@@ -3138,6 +3170,10 @@
 		completion_reward = {
 			air_experience = 25
 			MAN = {
+				add_breakthrough_progress = {
+					specialization = specialization_air
+					value = 0.5
+				}
 				add_tech_bonus = {
 					name = JAP_create_a_manchurian_imperial_air_force
 					bonus = 1.0
@@ -3387,7 +3423,7 @@
 			IF = {
 				limit = {
 					ROOT = { is_in_faction_with = GER }
-					GER = { has_completed_focus = GER_mol_rib_pact }
+					GER = { has_completed_focus = GER_molotov_ribbentrop_pact }
 					GER = { NOT = { has_war_with = SOV } }
 					NOT = { has_war_with = SOV }
 				}
@@ -4309,6 +4345,11 @@
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			add_breakthrough_progress = {
+				specialization = specialization_nuclear
+				value = 0.75
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_to_tech_sharing_group = JAP_ultimate_deterrence
 			every_country = {
 				limit = { is_in_faction_with = ROOT }				
@@ -4609,7 +4650,7 @@
 					}
 					build_railway = { #Mukden - Dalian
 						path = {
-							11771 987 9781 11764 1069 3783 6851 1150
+							11771 987 9781 11764 964 3783 6851 1150
 						}
 					}
 				}
@@ -4790,9 +4831,10 @@
 							is_controlled_by = SOV
 						}
 					}
-					set_building_level = {
+					add_building_construction = {
 						type = bunker
 						level = 2
+						instant_build = yes
 						province = {
 							all_provinces = yes
 							limit_to_border = yes
@@ -4984,8 +5026,8 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_armored_divisions
-				bonus = 1.0
-				uses = 1
+				bonus = 0.75
+				uses = 2
 				category = armor	
 			}
 		}
@@ -4999,7 +5041,7 @@
 		y = 1
 		relative_position_id = JAP_supremacy_of_technology
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -5222,6 +5264,7 @@
 
 
 		completion_reward = {
+
 			IF = {
 				limit = {
 					has_dlc = "Arms Against Tyranny"
@@ -5231,10 +5274,17 @@
 				mio:JAP_mitsubishi_organization = {
 					add_mio_funds = 1500
 				}
+				custom_effect_tooltip = generic_skip_one_line_tt
 			}
 			ELSE = {
 				custom_effect_tooltip = available_designer
 				show_ideas_tooltip = mitsubishi
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+
+			custom_effect_tooltip = {
+				localization_key = available_scientist_one_line_tt
+				CHARACTER = JAP_jiro_horikoshi
 			}
 		}
 	}
@@ -5286,6 +5336,7 @@
 					create_equipment_variant = {
 						name = "A6M Zero-Sen"
 						type = cv_small_plane_airframe_2
+						design_team = mio:JAP_mitsubishi_organization
 						allow_without_tech = yes #Makes no difference since focus grants appropriate tech (above), but it improves tooltip
 						modules = {
 							fixed_main_weapon_slot = light_mg_2x
@@ -5438,12 +5489,19 @@
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+
+			add_breakthrough_progress = {
+				specialization = specialization_air
+				value = 1
+			}
+
 			add_tech_bonus = {
 				name = JAP_jet_prototypes
 				bonus = 1.0
-				uses = 2
+				uses = 1 # was 2
 				category = jet_technology
 			}
+
 		}
 	}
 
@@ -5768,12 +5826,14 @@
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			add_ideas = JAP_supremacy_of_the_battlefleet	
 			add_tech_bonus = {
 				name = JAP_supremacy_of_the_battlefleet
 				bonus = 1.0
 				uses = 1
 				category = bb_tech
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			IF = {
 				limit = {
 					has_dlc = "Arms Against Tyranny"
@@ -5806,7 +5866,7 @@
 		}
 
 		available = {
-
+			is_special_project_completed = sp:sp_naval_super_heavy_battleship
 		}
 
 		bypass = {
@@ -5822,6 +5882,12 @@
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			
+			add_breakthrough_progress = {
+				specialization = specialization_naval
+				value = 0.5
+			}
+
 			IF = {
 				limit = {
 					has_dlc = "Arms Against Tyranny"
@@ -5836,20 +5902,20 @@
 				}
 				add_tech_bonus = {
 					name = JAP_the_ultimate_battleship
-					bonus = 3.0
+					bonus = 2.0
 					uses = 1
 					category = shbb_tech	
 				}
 			}
 			else = {
-				if = {
-					limit = {
-						not = { has_tech = ship_hull_super_heavy }
-					}
-					set_technology = {
-						ship_hull_super_heavy = 1
-					}
-				}
+				#if = {
+					#limit = {
+						#not = { has_tech = ship_hull_super_heavy }
+					#}
+					#set_technology = {
+						#ship_hull_super_heavy = 1
+					#}
+				#}
 				create_equipment_variant = {
 					name = "Yamato Class"
 					type = ship_hull_super_heavy_1
@@ -5932,7 +5998,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_cruiser_modernization
-				bonus = 3.0
+				bonus = 2.0
 				uses = 1
 				category = cl_tech	
 				category = ca_tech	
@@ -5970,12 +6036,16 @@
 		completion_reward = {
 			add_ideas = the_long_lance
 		}
+
 	}
 
 	focus = {
 		id = JAP_torpedo_cruisers
+
 		icon = GFX_goal_generic_navy_cruiser
+
 		prerequisite = { focus = JAP_long_lance_torpedoes }
+
 		x = 0
 		y = 1
 		relative_position_id = JAP_long_lance_torpedoes
@@ -5999,16 +6069,27 @@
 		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
+
 		completion_reward = {
-			if = {
+
+			add_breakthrough_progress = {
+				specialization = specialization_naval
+				value = 0.75
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			IF = {
 				limit = {
-					not = { has_dlc = "Man the Guns" }
+					has_dlc = "Man the Guns"
 				}
-				set_technology = { torpedo_cruiser = 1 }
+				add_ideas = torpedo_cruisers_ns_mtg
 			}
-			else = {
-				set_technology = { torpedo_cruiser_mtg = 1 }
+			ELSE = {
+				add_ideas = torpedo_cruisers_ns
 			}
+			
 		}
 	}
+
 }

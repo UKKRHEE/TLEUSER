@@ -1,0 +1,37 @@
+characters={
+	DDR_wilhelm_pieck={
+		name="DDR_wilhelm_pieck"
+		portraits={
+			civilian={
+				large=GFX_portrait_Wilhelm_Pieck
+			}
+		}
+		country_leader={
+			ideology=stalinism
+			desc="POLITICS_WILHELM_PIECK_DESC"
+			traits={ stalins_puppet }
+			id=-1
+		}
+	}
+	DDR_otto_grotewohl={
+		name="DDR_otto_grotewohl"
+		portraits={
+			civilian={
+				large="gfx/leaders/DDR/Portrait_DDR_Otto_Grotewohl.png"
+			}
+		}
+	}
+	DDR_jake_richter={
+		name="DDR_jake_richter"
+		portraits={
+			civilian={
+				large=GFX_portrait_Jake_Richter
+			}
+		}
+		country_leader={
+			ideology=fascism_ideology
+			traits={ political_dancer }
+			id=-1
+		}
+	}
+}

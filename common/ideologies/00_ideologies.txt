@@ -5,10 +5,11 @@ ideologies = {
 		types = {
 
 			conservatism = {
+				color = { 62 66 220 }
 			}
 
 			liberalism = {
-				color = { 246 139 31 }
+				color = { 246 139 60 }
 			}
 
 			socialism = {
@@ -81,25 +82,27 @@ ideologies = {
 		types = {
 
 			marxism = {
-				color = { 127 0 0 }
 			}
 
 			leninism = {
-				color = { 160 0 0 }
+				can_be_randomly_selected = no
 			}
 
 			stalinism = {
+				can_be_randomly_selected = no
 			}
 
 			anti_revisionism = {
+				can_be_randomly_selected = no
 			}
 
 			anarchist_communism = {
+				can_be_randomly_selected = no
 			}
 			
 			sanminzhuyi_communism = {
 				can_be_randomly_selected = no
-				color = { 201 56 96 }
+				color = { 150 7 15 }
 			}
 		}
 
@@ -111,7 +114,7 @@ ideologies = {
 			"FACTION_NAME_COMMUNIST_5"
 		}
 
-		color = { 255 0 0 }
+		color = { 127 0 0 }
 
 		war_impact_on_world_tension = 0.75		#Commie less threatening
 		faction_impact_on_world_tension = 0.5
@@ -151,23 +154,34 @@ ideologies = {
 		types = {
 
 			nazism = {
+				color = { 20 20 20 }
+				can_be_randomly_selected = no
 			}
 
 			gen_nazism = {
+				color = { 20 20 20 }
+				can_be_randomly_selected = no
 			}
 
 			fascism_ideology = {
 			}
 
 			falangism = {
+				can_be_randomly_selected = no
 			}
 
 			rexism = {
+				can_be_randomly_selected = no
 			}
 
 			ultranationalism = {
 				can_be_randomly_selected = no
 				#color = { 96 71 68 }
+				color = { 45 45 45 }
+			}
+			
+			korean_war_regime  = {
+				can_be_randomly_selected = no
 				color = { 45 45 45 }
 			}
 		}
@@ -228,6 +242,9 @@ ideologies = {
 
 			moderatism = {
 			}
+			
+			monarchism = {
+			}
 
 			centrism = {
 			}
@@ -243,8 +260,13 @@ ideologies = {
 			
 			xunzheng = {
 				can_be_randomly_selected = no
-				color = { 34 68 102 }
+				color = { 110 110 135 }
 			}
+			
+			korean_oligarchism  = {
+				can_be_randomly_selected = no
+			}
+			
 		}
 
 		dynamic_faction_names = {

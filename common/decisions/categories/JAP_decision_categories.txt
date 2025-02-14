@@ -8,6 +8,24 @@ JAP_Sakusen_categories = {
 	}
 	priority = 110
 }
+JAP_Gikai_category = {
+	visible = {
+		tag = JAP
+		has_completed_focus = JAP_war_support
+	}
+	visible_when_empty = yes
+	scripted_gui = JAP_Gikai_GUI
+	priority = 110
+}
+JAP_five_years_plan_category = {
+	visible = {
+		tag = JAP
+		has_completed_focus = JAP_war_support
+	}
+	visible_when_empty = yes
+	scripted_gui = JAP_five_years_plan_GUI
+	priority = 109
+}
 JAP_dec_civil_war = {
 	allowed = {
 		OR = {
@@ -26,22 +44,22 @@ JAP_dec_civil_war = {
 DKG_control_domain_dec_categories = {
 	allowed = {
 		original_tag = DKG
-		has_country_flag = FLAG_CIVIL_WAR_JAP
+		has_country_flag = THIS_IS_NOT_USED
 	}
 	visible = {
 		original_tag = DKG
-		has_country_flag = FLAG_CIVIL_WAR_JAP
+		has_country_flag = THIS_IS_NOT_USED
 	}
 	priority = 100
 }
 JAP_control_domain_dec_categories = {
 	allowed = {
 		original_tag = JAP
-		has_country_flag = FLAG_CIVIL_WAR_JAP
+		has_country_flag = THIS_IS_NOT_USED
 	}
 	visible = {
 		original_tag = JAP
-		has_country_flag = FLAG_CIVIL_WAR_JAP
+		has_country_flag = THIS_IS_NOT_USED
 	}
 	priority = 100
 }
@@ -68,10 +86,14 @@ JAP_closed_bunchi_county = {
 JAP_the_army = {
 	allowed = {
 		original_tag = JAP
+		has_completed_focus = JAP_military
 	}
 	visible = {
 		original_tag = JAP
+		has_completed_focus = JAP_military
 	}
+	scripted_gui = JAP_military_reform_GUI
+	visible_when_empty = yes
 	priority = 96
 }
 JAP_defense_the_country = {
@@ -82,4 +104,15 @@ JAP_defense_the_country = {
 		original_tag = JAP
 	}
 	priority = 95
+}
+JAP_yokusankai_GUI = {
+	allowed = {
+		original_tag = JAP
+	}
+	visible = {
+		original_tag = JAP
+	}
+	scripted_gui = JAP_yokusankai_GUI
+	visible_when_empty = yes
+	priority = 9999
 }

@@ -7,6 +7,25 @@ KOR_army_resistance_modifier = {
 	state_production_speed_buildings_factor = -0.33
 	army_speed_factor_for_controller = -0.33
 }	
+JAP_hiroshima_defence = {
+	enable = { always = yes }
+	icon = GFX_unplanned_offensive
+	army_defence_factor = -0.15
+	army_speed_factor = 0.1	
+	compliance_growth = -0.15
+	resistance_growth = 0.1
+	resistance_target = 0.1
+	resistance_decay = -0.1
+	state_resources_factor = -0.2
+	local_manpower = -0.3
+}	
+JAP_aomori_defence = {
+	enable = { always = yes }
+	icon = GFX_unplanned_offensive
+	army_defence_factor = -0.5
+	army_morale_factor = -0.3
+	army_speed_factor = 0.2
+}	
 CHI_defence_the_korea = {
 	enable = { always = yes }
 	icon = GFX_unplanned_offensive
@@ -18,7 +37,6 @@ CHI_defence_the_korea = {
 	
 	compliance_growth = -0.15
 	resistance_growth = 0.5
-	resistance_target = 0.5
 	resistance_decay = -0.5
 	state_resources_factor = -0.5
 	local_manpower = -0.6
@@ -36,7 +54,6 @@ CHI_defence_the_korea_2 = {
 	
 	compliance_growth = -0.10
 	resistance_growth = 0.4
-	resistance_target = 0.4
 	resistance_decay = -0.4
 	local_manpower = -0.4
 	local_non_core_supply_impact_factor = 0.8
@@ -54,7 +71,6 @@ CHI_defence_the_korea_3 = {
 	
 	compliance_growth = -0.05
 	resistance_growth = 0.3
-	resistance_target = 0.3
 	resistance_decay = -0.3
 	local_manpower = -0.2
 	local_non_core_supply_impact_factor = 0.7
@@ -83,4 +99,34 @@ JAP_defence_the_korea = {
 QIN_qing_xiaozhaozheng = {
 	enable = { always = yes }
 	icon = GFX_qing_xiaozhaozheng
+}	
+KOR_sphere_of_influence_korea = {
+	enable = { always = yes }
+	icon = GFX_sphere_of_influence_korea
+}	
+KOR_will_be_independent_korea = {
+	enable = { always = yes }
+	icon = GFX_will_be_independent_korea
+}	
+
+KOR_kks_government_idea = {
+	enable = { always = yes }
+	icon = GFX_idea_KOR_kks_government_idea_5
+	war_support_factor = KOR_kks_government_idea_imperial_var
+	political_power_factor = KOR_kks_government_idea_ilso_var
+	research_speed_factor = KOR_kks_government_idea_ahn_var
+	stability_factor = KOR_kks_government_idea_hwapyong_var
+	army_morale_factor = KOR_kks_government_idea_army_var
+	consumer_goods_expected_value = KOR_kks_government_idea_chaebeol_var
+	industrial_capacity_factory = KOR_kks_government_idea_cityzen_var
+	conscription_factor = KOR_kks_government_idea_rural_var
+}	
+KOR_pcy_economical_problem = {
+	enable = { always = yes }
+	icon = GFX_idea_KOR_pcy_economical_problem
+	custom_modifier_tooltip = KOR_pcy_economical_problem_tt
+	consumer_goods_expected_value = KOR_pcy_economical_problem_consumer_var
+	production_speed_buildings_factor = KOR_pcy_economical_problem_industrial_capacity_var
+	research_speed_factor = KOR_pcy_economical_problem_research_var
+	stability_factor = KOR_pcy_economical_problem_stability_var
 }	

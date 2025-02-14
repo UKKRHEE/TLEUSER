@@ -9,14 +9,14 @@ characters={
 		}
 		country_leader={
 			ideology=marxism
-			traits = {  }
+			traits = { leader_of_vienmin }
 		}
 	}
 	VIN_phan_boi_chau = {
 		name = "VIN_phan_boi_chau"
 		portraits={
 			civilian={
-				large="gfx/leaders/VIN/Portrait_VIN_phan_boi_chau.png"
+				large="gfx/leaders/VIN/Portrait_Vietnam_Phan_Boi.dds"
 			}
 		}
 		country_leader={
@@ -44,7 +44,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=despotism
+			ideology=monarchism
 			traits = {  }
 		}
 	}
@@ -52,7 +52,7 @@ characters={
 		name = "VIN_nguyen_tuong_tam"
 		portraits={
 			civilian={
-				large="gfx/leaders/VIN/Portrait_VIN_nguyen_tuong_tam.png"
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
 			}
 		}
 		#country_leader={
@@ -60,16 +60,49 @@ characters={
 		#	traits = {  }
 		#}
 	}
+	#
+	VTC_ho_chi_minh = {
+		name = "VTC_ho_chi_minh"
+		portraits={
+			civilian={
+				large="gfx/leaders/VIN/Portrait_Vietnam_Ho_Chi_Minh.dds"
+			}
+		}
+		country_leader={
+			ideology=marxism
+			traits = { leader_of_vienmin }
+		}
+	}
+	VTC_phan_boi_chau = {
+		name = "VTC_phan_boi_chau"
+		portraits={
+			civilian={
+				large="gfx/leaders/VIN/Portrait_Vietnam_Phan_Boi.dds"
+			}
+		}
+	}
+	VTC_lu_han = {
+		name = "VTC_lu_han"
+		portraits={
+			civilian={
+				large="gfx/leaders/VIN/Portrait_Vietnam_Lu_Han.dds"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits = {  }
+		}
+	}
 	####
 	CAM_pol_pot= {
 		name = "CAM_pol_pot"
 		portraits={
 			civilian={
-				large=GFX_portrait_Pol_Pot
+				large="gfx/leaders/CAM/CAM_vietcommunists.png"
 			}
 		}
 		country_leader={
-			ideology=anarchist_communism
+			ideology=marxism
 			traits = {  }
 		}
 	}
@@ -93,23 +126,11 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=despotism
+			ideology=monarchism
 			traits = {  }
 		}
 	}
 	###
-	LAO_sisavang_vong= {
-		name = "LAO_sisavang_vong"
-		portraits={
-			civilian={
-				large=GFX_portrait_Sisavang_Vong
-			}
-		}
-		country_leader={
-			ideology=despotism
-			traits = {  }
-		}
-	}
 	LAO_sisavang_vatthana= {
 		name = "LAO_sisavang_vatthana"
 		portraits={
@@ -118,7 +139,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=despotism
+			ideology=monarchism
 			traits = {  }
 		}
 		country_leader={
@@ -130,7 +151,7 @@ characters={
 		name = "LAO_souphanouvong"
 		portraits={
 			civilian={
-				large=GFX_portrait_Souphanouvong
+				large="gfx/leaders/LAO/Souphanouvong.png"
 			}
 		}
 		country_leader={

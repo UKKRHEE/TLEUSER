@@ -336,7 +336,13 @@ calculate_mobilisation_penalty = {
 	}
 
 	set_variable = { mobilisation_penalty_var_positive = mobilisation_penalty_var }
-	set_variable = { mobilisation_penalty_var_consumer_goods = 0.4 }
+
+	# Cunsumer Goods
+	set_variable = { mobilisation_penalty_var_consumer_goods_cac = num_actual_divisions }
+	subtract_from_variable = { mobilisation_penalty_var_consumer_goods_cac = max_divisions }
+	divide_variable = { mobilisation_penalty_var_consumer_goods_cac = 100 }
+
+	set_variable = { mobilisation_penalty_var_consumer_goods = mobilisation_penalty_var_consumer_goods_cac }
 	
 	#for negative effects
 	multiply_variable = { mobilisation_penalty_var = -1 }

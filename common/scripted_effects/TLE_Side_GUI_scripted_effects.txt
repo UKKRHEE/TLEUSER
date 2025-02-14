@@ -1,0 +1,337 @@
+setup_side_gui_tab = {
+	# Set Default Selected State #
+	set_variable = { current_state = 1 }
+	set_variable = { selected_state = 1 }
+
+	# Set Graphs Variable per States #
+	clear_array = ND_Graphs_array
+	add_to_array = { ND_Graphs_array = 0 }
+	add_to_array = { ND_Graphs_array = 0 }
+	add_to_array = { ND_Graphs_array = 0 }
+	add_to_array = { ND_Graphs_array = 0 }
+	add_to_array = { ND_Graphs_array = 0 }
+	add_to_array = { ND_Graphs_array = 0 }
+	add_to_array = { ND_Graphs_array = 0 }
+
+	set_variable = { ND_Graphs_array^1 = 20 } # manchuria 
+	set_variable = { ND_Graphs_array^2 = 0 } # south manchuria
+	set_variable = { ND_Graphs_array^3 = 20 } # primorsky
+	set_variable = { ND_Graphs_array^4 = 30 } # north primorsky
+	set_variable = { ND_Graphs_array^5 = 40 } # kyushu
+	set_variable = { ND_Graphs_array^6 = 10 } # hokkaido
+	set_variable = { ND_Graphs_array^7 = 10 } # taiwan
+	set_variable = { ND_Graphs_array_total = 100 } # total
+
+	update_total_side_gui_tab = yes
+	open_side_gui = yes
+
+	custom_effect_tooltip = setup_side_gui_tab_tooltip
+}
+
+update_total_side_gui_tab = {
+	clear_variable = ND_Graphs_array_total
+	add_to_variable = { ND_Graphs_array_total = ND_Graphs_array^1 }
+	add_to_variable = { ND_Graphs_array_total = ND_Graphs_array^2 }
+	add_to_variable = { ND_Graphs_array_total = ND_Graphs_array^3 }
+	add_to_variable = { ND_Graphs_array_total = ND_Graphs_array^4 }
+	add_to_variable = { ND_Graphs_array_total = ND_Graphs_array^5 }
+	add_to_variable = { ND_Graphs_array_total = ND_Graphs_array^6 }
+	add_to_variable = { ND_Graphs_array_total = ND_Graphs_array^7 }
+	divide_variable = { ND_Graphs_array_total = 7 }
+	round_variable = ND_Graphs_array_total
+	clamp_variable = { var = ND_Graphs_array_total max = 100 min = 0 }
+}
+
+open_side_gui = {
+	set_country_flag = side_gui_visible
+	clr_country_flag = side_gui_dis_visible
+}
+
+close_side_gui = {
+	clr_country_flag = side_gui_visible
+	set_country_flag = side_gui_dis_visible
+}
+
+add_national_dissatisfaction = {
+	add_to_variable = { ND_Graphs_array^selected_state_temp_var = nd_add_var }
+	clamp_variable = {
+		var = ND_Graphs_array^selected_state_temp_var
+		max = 100
+		min = 0
+	}
+	if = {
+		limit = {
+			OR = {
+				check_variable = { ND_Graphs_array^selected_state_temp_var > 50 }
+				check_variable = { ND_Graphs_array^selected_state_temp_var = 50 }
+			}
+			NOT = {
+				has_country_flag = side_gui_visible
+			}
+		}
+		open_side_gui = yes
+	}
+	custom_effect_tooltip = national_dissatisfaction_add_tooltip
+	update_total_side_gui_tab = yes
+}
+
+subtract_national_dissatisfaction = {
+	subtract_from_variable = { ND_Graphs_array^selected_state_temp_var = nd_sub_var }
+	clamp_variable = {
+		var = ND_Graphs_array^selected_state_temp_var
+		max = 100
+		min = 0
+	}
+	if = {
+		limit = {
+			OR = {
+				check_variable = { ND_Graphs_array^selected_state_temp_var > 50 }
+				check_variable = { ND_Graphs_array^selected_state_temp_var = 50 }
+			}
+			NOT = {
+				has_country_flag = side_gui_visible
+			}
+		}
+		open_side_gui = yes
+	}
+	custom_effect_tooltip = national_dissatisfaction_subtract_tooltip
+	update_total_side_gui_tab = yes
+}
+
+## manchuria (북만주) ##
+ # 추가 #
+add_10_manchuria_nd = {
+	set_temp_variable = { selected_state_temp_var = 1 }
+	set_temp_variable = { nd_add_var = 10 }
+	add_national_dissatisfaction = yes
+}
+add_20_manchuria_nd = {
+	set_temp_variable = { selected_state_temp_var = 1 }
+	set_temp_variable = { nd_add_var = 20 }
+	add_national_dissatisfaction = yes
+}
+add_30_manchuria_nd = {
+	set_temp_variable = { selected_state_temp_var = 1 }
+	set_temp_variable = { nd_add_var = 30 }
+	add_national_dissatisfaction = yes
+}
+ # 감소 #
+sub_10_manchuria_nd = {
+	set_temp_variable = { selected_state_temp_var = 1 }
+	set_temp_variable = { nd_sub_var = 10 }
+	subtract_national_dissatisfaction = yes
+}
+sub_20_manchuria_nd = {
+	set_temp_variable = { selected_state_temp_var = 1 }
+	set_temp_variable = { nd_sub_var = 20 }
+	subtract_national_dissatisfaction = yes
+}
+sub_30_manchuria_nd = {
+	set_temp_variable = { selected_state_temp_var = 1 }
+	set_temp_variable = { nd_sub_var = 30 }
+	subtract_national_dissatisfaction = yes
+}
+
+## south_manchuria (남만주) ##
+ # 추가 #
+add_10_south_manchuria_nd = {
+	set_temp_variable = { selected_state_temp_var = 2 }
+	set_temp_variable = { nd_add_var = 10 }
+	add_national_dissatisfaction = yes
+}
+add_20_south_manchuria_nd = {
+	set_temp_variable = { selected_state_temp_var = 2 }
+	set_temp_variable = { nd_add_var = 20 }
+	add_national_dissatisfaction = yes
+}
+add_30_south_manchuria_nd = {
+	set_temp_variable = { selected_state_temp_var = 2 }
+	set_temp_variable = { nd_add_var = 30 }
+	add_national_dissatisfaction = yes
+}
+ # 감소 #
+sub_10_south_manchuria_nd = {
+	set_temp_variable = { selected_state_temp_var = 2 }
+	set_temp_variable = { nd_sub_var = 10 }
+	subtract_national_dissatisfaction = yes
+}
+sub_20_south_manchuria_nd = {
+	set_temp_variable = { selected_state_temp_var = 2 }
+	set_temp_variable = { nd_sub_var = 20 }
+	subtract_national_dissatisfaction = yes
+}
+sub_30_south_manchuria_nd = {
+	set_temp_variable = { selected_state_temp_var = 2 }
+	set_temp_variable = { nd_sub_var = 30 }
+	subtract_national_dissatisfaction = yes
+}
+
+## primorsky (연해주) ##
+ # 추가 #
+ add_10_primorsky_nd = {
+	set_temp_variable = { selected_state_temp_var = 3 }
+	set_temp_variable = { nd_add_var = 10 }
+	add_national_dissatisfaction = yes
+}
+add_20_primorsky_nd = {
+	set_temp_variable = { selected_state_temp_var = 3 }
+	set_temp_variable = { nd_add_var = 20 }
+	add_national_dissatisfaction = yes
+}
+add_30_primorsky_nd = {
+	set_temp_variable = { selected_state_temp_var = 3 }
+	set_temp_variable = { nd_add_var = 30 }
+	add_national_dissatisfaction = yes
+}
+ # 감소 #
+sub_10_primorsky_nd = {
+	set_temp_variable = { selected_state_temp_var = 3 }
+	set_temp_variable = { nd_sub_var = 10 }
+	subtract_national_dissatisfaction = yes
+}
+sub_20_primorsky_nd = {
+	set_temp_variable = { selected_state_temp_var = 3 }
+	set_temp_variable = { nd_sub_var = 20 }
+	subtract_national_dissatisfaction = yes
+}
+sub_30_primorsky_nd = {
+	set_temp_variable = { selected_state_temp_var = 3 }
+	set_temp_variable = { nd_sub_var = 30 }
+	subtract_national_dissatisfaction = yes
+}
+
+## north_primorsky (연해주 북부) ##
+ # 추가 #
+add_10_north_primorsky_nd = {
+	set_temp_variable = { selected_state_temp_var = 4 }
+	set_temp_variable = { nd_add_var = 10 }
+	add_national_dissatisfaction = yes
+}
+add_20_north_primorsky_nd = {
+	set_temp_variable = { selected_state_temp_var = 4 }
+	set_temp_variable = { nd_add_var = 20 }
+	add_national_dissatisfaction = yes
+}
+add_30_north_primorsky_nd = {
+	set_temp_variable = { selected_state_temp_var = 4 }
+	set_temp_variable = { nd_add_var = 30 }
+	add_national_dissatisfaction = yes
+}
+ # 감소 #
+sub_10_north_primorsky_nd = {
+	set_temp_variable = { selected_state_temp_var = 4 }
+	set_temp_variable = { nd_sub_var = 10 }
+	subtract_national_dissatisfaction = yes
+}
+sub_20_north_primorsky_nd = {
+	set_temp_variable = { selected_state_temp_var = 4 }
+	set_temp_variable = { nd_sub_var = 20 }
+	subtract_national_dissatisfaction = yes
+}
+sub_30_north_primorsky_nd = {
+	set_temp_variable = { selected_state_temp_var = 4 }
+	set_temp_variable = { nd_sub_var = 30 }
+	subtract_national_dissatisfaction = yes
+}
+
+## kyushu (구주) ##
+ # 추가 #
+add_10_kyushu_nd = {
+	set_temp_variable = { selected_state_temp_var = 5 }
+	set_temp_variable = { nd_add_var = 10 }
+	add_national_dissatisfaction = yes
+}
+add_20_kyushu_nd = {
+	set_temp_variable = { selected_state_temp_var = 5 }
+	set_temp_variable = { nd_add_var = 20 }
+	add_national_dissatisfaction = yes
+}
+add_30_kyushu_nd = {
+	set_temp_variable = { selected_state_temp_var = 5 }
+	set_temp_variable = { nd_add_var = 30 }
+	add_national_dissatisfaction = yes
+}
+ # 감소 #
+sub_10_kyushu_nd = {
+	set_temp_variable = { selected_state_temp_var = 5 }
+	set_temp_variable = { nd_sub_var = 10 }
+	subtract_national_dissatisfaction = yes
+}
+sub_20_kyushu_nd = {
+	set_temp_variable = { selected_state_temp_var = 5 }
+	set_temp_variable = { nd_sub_var = 20 }
+	subtract_national_dissatisfaction = yes
+}
+sub_30_kyushu_nd = {
+	set_temp_variable = { selected_state_temp_var = 5 }
+	set_temp_variable = { nd_sub_var = 30 }
+	subtract_national_dissatisfaction = yes
+}
+
+## hokkaido (북이도) ##
+ # 추가 #
+add_10_hokkaido_nd = {
+	set_temp_variable = { selected_state_temp_var = 6 }
+	set_temp_variable = { nd_add_var = 10 }
+	add_national_dissatisfaction = yes
+}
+add_20_hokkaido_nd = {
+	set_temp_variable = { selected_state_temp_var = 6 }
+	set_temp_variable = { nd_add_var = 20 }
+	add_national_dissatisfaction = yes
+}
+add_30_hokkaido_nd = {
+	set_temp_variable = { selected_state_temp_var = 6 }
+	set_temp_variable = { nd_add_var = 30 }
+	add_national_dissatisfaction = yes
+}
+ # 감소 #
+sub_10_hokkaido_nd = {
+	set_temp_variable = { selected_state_temp_var = 6 }
+	set_temp_variable = { nd_sub_var = 10 }
+	subtract_national_dissatisfaction = yes
+}
+sub_20_hokkaido_nd = {
+	set_temp_variable = { selected_state_temp_var = 6 }
+	set_temp_variable = { nd_sub_var = 20 }
+	subtract_national_dissatisfaction = yes
+}
+sub_30_hokkaido_nd = {
+	set_temp_variable = { selected_state_temp_var = 6 }
+	set_temp_variable = { nd_sub_var = 30 }
+	subtract_national_dissatisfaction = yes
+}
+
+## taiwan (대만) ##
+ # 추가 #
+ add_10_taiwan_nd = {
+	set_temp_variable = { selected_state_temp_var = 7 }
+	set_temp_variable = { nd_add_var = 10 }
+	add_national_dissatisfaction = yes
+}
+add_20_taiwan_nd = {
+	set_temp_variable = { selected_state_temp_var = 7 }
+	set_temp_variable = { nd_add_var = 20 }
+	add_national_dissatisfaction = yes
+}
+add_30_taiwan_nd = {
+	set_temp_variable = { selected_state_temp_var = 7 }
+	set_temp_variable = { nd_add_var = 30 }
+	add_national_dissatisfaction = yes
+}
+ # 감소 #
+sub_10_taiwan_nd = {
+	set_temp_variable = { selected_state_temp_var = 7 }
+	set_temp_variable = { nd_sub_var = 10 }
+	subtract_national_dissatisfaction = yes
+}
+sub_20_taiwan_nd = {
+	set_temp_variable = { selected_state_temp_var = 7 }
+	set_temp_variable = { nd_sub_var = 20 }
+	subtract_national_dissatisfaction = yes
+}
+sub_30_taiwan_nd = {
+	set_temp_variable = { selected_state_temp_var = 7 }
+	set_temp_variable = { nd_sub_var = 30 }
+	subtract_national_dissatisfaction = yes
+}

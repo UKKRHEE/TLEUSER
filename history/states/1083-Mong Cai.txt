@@ -1,0 +1,24 @@
+state={
+	id=1083
+	name="STATE_MONGCAI"
+	provinces={
+		1157 7093 9948 
+	}
+	history={
+		add_core_of = VIN
+		add_core_of = VTC
+		add_core_of = FRI
+		add_core_of = TNK
+		owner = FRI
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = {
+			7093 3 
+		}
+	}
+	manpower=1978320
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

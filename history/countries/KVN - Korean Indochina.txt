@@ -1,4 +1,4 @@
-﻿capital = 282 #South Korea - Seoul or Busan
+﻿capital = 671
 
 oob = "KVN_1936"
 
@@ -14,12 +14,15 @@ add_opinion_modifier = {
 }
 set_convoys = 5
 
+recruit_character = KVN_cho_jongdae
 recruit_character = KVN_jean_decoux
+recruit_character = KVN_ho_chi_minh
+
 set_politics = {
 	ruling_party = fascism
 	last_election = "1936.1.1"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
 	democratic = 0
@@ -29,4 +32,6 @@ set_popularities = {
 }
 
 add_ideas = {
+	korean_indochina
+	indo_french
 }

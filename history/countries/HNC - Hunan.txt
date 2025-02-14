@@ -1,6 +1,8 @@
 ﻿capital = 602
 
 recruit_character = CHI_zhao_hengti
+recruit_character = CHI_zhao_hengti_2
+recruit_character = HNC_zhou_fohai
 #recruit_character = CHI_tan_yankai - todo
 
 oob = "HNC_Collapse"

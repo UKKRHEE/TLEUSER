@@ -7,9 +7,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=marxism
-			expire="1965.1.1.1"
-			id=-1
+			ideology=stalinism
 		}
 	}
 	MSR_mingzhu_zhanshan={
@@ -59,11 +57,6 @@ characters={
 			civilian={
 				large=gfx/leaders/MON/Portrait_Khorloogiin_choibalsan.dds
 			}
-		}
-		country_leader={
-			ideology=stalinism
-			expire="1948.1.1.12"
-			id=-1
 		}
 	}
 	MSR_haidav={

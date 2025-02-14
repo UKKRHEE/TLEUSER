@@ -151,3 +151,11 @@ music = {
 	name = "Daitakessennouta"
 	file = "japan/Daitakessennouta.ogg"
 }
+music = {
+	name = "aikoku_koshinkyoku"
+	file = "japan/aikoku_koshinkyoku.ogg"
+}
+music = {
+	name = "independent_song_japan"
+	file = "japan/independent_song_japan.ogg"
+}

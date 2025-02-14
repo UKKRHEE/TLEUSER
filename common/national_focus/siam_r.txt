@@ -1,0 +1,88 @@
+﻿focus_tree = {
+	id = siam_focus_r
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SIA
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 50 y = 1000 }
+
+	focus = {
+		id = siarep_1
+		icon = GFX_goal_sia_fucked
+		x = 20
+		y = 1
+		cost = 5
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = TOOLTIP_RSIA
+		}
+	}
+	focus = {
+		id = siarep_2
+		icon = GFX_goal_sia_shit
+		mutually_exclusive = { focus = siarep_3 }
+		x = 18
+		y = 2
+		cost = 5
+		prerequisite = { focus = siarep_1 }
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = TOOLTIP_RSIB
+		}
+	}
+	focus = {
+		id = siarep_3
+		icon = GFX_goal_sia_kinda
+		mutually_exclusive = { focus = siarep_2 }
+		x = 22
+		y = 2
+		cost = 5
+		prerequisite = { focus = siarep_1 }
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = TOOLTIP_RSIC
+		}
+	}
+	focus = {
+		id = siarep_4
+		icon = GFX_goal_theleader
+		x = 20
+		y = 4
+		cost = 5
+		prerequisite = { 
+			focus = siarep_2
+			focus = siarep_3
+		}
+		available = {
+			has_war = no
+		}
+		
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			news_event = {
+				id = siam_news.11
+			}
+			custom_effect_tooltip = TOOLTIP_RSID
+		}
+	}
+}

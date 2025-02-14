@@ -1,0 +1,177 @@
+focus_tree = {
+	id = korea_pcy_happy
+	country = {
+		factor = 0
+		modifier = {
+			add = 0
+			tag = KOR
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 50 y = 5000 }
+	focus = {
+		id = KOR_pcy_happy_1
+		icon = GFX_focus_KOR_pcy_happy_1
+		cost = 1
+		x = 8
+		y = 0
+		select_effect = {
+			play_song = "only_her_laughter"
+		}	
+		completion_reward = {
+			country_event = {
+				id = korea.2800
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_pcy_happy_2
+		icon = GFX_focus_KOR_pcy_happy_2
+		cost = 1
+		prerequisite = {
+			focus = KOR_pcy_happy_1
+		}
+		x = 7
+		y = 1
+		completion_reward = {
+			country_event = {
+				id = korea.2801
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_pcy_happy_4
+		icon = GFX_focus_KOR_pcy_happy_4
+		cost = 1
+		prerequisite = {
+			focus = KOR_pcy_happy_2
+		}
+		x = 6
+		y = 2
+		available = {
+			has_completed_focus = KOR_pcy_happy_2
+			has_completed_focus = KOR_pcy_happy_3
+		}
+		completion_reward = {
+			country_event = {
+				id = korea.2803
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_pcy_happy_3
+		icon = GFX_focus_KOR_pcy_happy_3
+		cost = 1
+		prerequisite = {
+			focus = KOR_pcy_happy_1
+		}
+		x = 9
+		y = 1
+		completion_reward = {
+			country_event = {
+				id = korea.2802
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_pcy_happy_5
+		icon = GFX_focus_KOR_pcy_happy_5
+		cost = 1
+		prerequisite = {
+			focus = KOR_pcy_happy_2
+		}
+		prerequisite = {
+			focus = KOR_pcy_happy_3
+		}
+		x = 8
+		y = 2
+		available = {
+			has_completed_focus = KOR_pcy_happy_4
+		}
+		completion_reward = {
+			country_event = {
+				id = korea.2804
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_pcy_happy_6
+		icon = GFX_focus_KOR_pcy_happy_6
+		cost = 1
+		prerequisite = {
+			focus = KOR_pcy_happy_3
+		}
+		x = 10
+		y = 2
+		available = {
+			has_completed_focus = KOR_pcy_happy_5
+		}
+		completion_reward = {
+			country_event = {
+				id = korea.2805
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_pcy_happy_7
+		icon = GFX_focus_KOR_pcy_happy_7
+		cost = 1
+		prerequisite = {
+			focus = KOR_pcy_happy_4
+		}
+		prerequisite = {
+			focus = KOR_pcy_happy_5
+		}
+		prerequisite = {
+			focus = KOR_pcy_happy_6
+		}
+		x = 8
+		y = 3
+		completion_reward = {
+			country_event = {
+				id = korea.2806
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_pcy_happy_8
+		icon = GFX_focus_KOR_pcy_happy_8
+		cost = 1
+		prerequisite = {
+			focus = KOR_pcy_happy_7
+		}
+		x = 8
+		y = 4
+		completion_reward = {
+			country_event = {
+				id = korea.2807
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_pcy_happy_9
+		icon = GFX_focus_KOR_pcy_happy_9
+		cost = 1
+		prerequisite = {
+			focus = KOR_pcy_happy_8
+		}
+		x = 8
+		y = 5
+		select_effect = {
+			play_song = "white_feeling"
+		}	
+		completion_reward = {
+			country_event = {
+				id = korea.3007
+			}
+		}
+	}
+}

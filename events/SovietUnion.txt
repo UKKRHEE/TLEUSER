@@ -203,7 +203,6 @@ country_event = {
 			SOV = {
 				country_event = { days = 1 id = news.10 }
 			}
-			news_event = { id = news.199 }
 		}
 	}
 }

@@ -101,27 +101,15 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_discord_button"
-		textureFile = "gfx/interface/country_info_screen/socmed/discord_button.dds"
+		textureFile = "gfx/interface/country_info_screen/socmed/discord_button.png"
 	}
 	spriteType = {
-		name = "GFX_reddit_button"
-		textureFile = "gfx/interface/country_info_screen/socmed/reddit_button.dds"
+		name = "GFX_novelpia_button"
+		textureFile = "gfx/interface/country_info_screen/socmed/novelpia_button.png"
 	}
 	spriteType = {
 		name = "GFX_youtube_button"
-		textureFile = "gfx/interface/country_info_screen/socmed/youtube_button.dds"
-	}
-	spriteType = {
-		name = "GFX_twitter_button"
-		textureFile = "gfx/interface/country_info_screen/socmed/twitter_button.dds"
-	}
-	spriteType = {
-		name = "GFX_twitch_button"
-		textureFile = "gfx/interface/country_info_screen/socmed/twitch_button.dds"
-	}
-	spriteType = {
-		name = "GFX_tvtropes_button"
-		textureFile = "gfx/interface/country_info_screen/socmed/tvtropes_button.dds"
+		textureFile = "gfx/interface/country_info_screen/socmed/youtube_button.png"
 	}
 
 	# Posters
@@ -164,5 +152,18 @@ spriteTypes = {
 	spriteType = { 
 		name = "GFX_TNO_OpeningScreen_Poster_italy"
 		textureFile = "gfx/interface/opening_screen/TNO_OpeningScreen_Poster_italy.png" 
+	}
+	spriteType = { 
+		name = "GFX_TNO_OpeningScreen_Poster_siam"
+		textureFile = "gfx/interface/opening_screen/TNO_OpeningScreen_Poster_siam.png" 
+	}
+	###
+	spriteType = { 
+		name = "GFX_Point_UKKRHEE"
+		textureFile = "gfx/interface/Countryinfo_User/Point_UKKRHEE.png" 
+	}
+	spriteType = { 
+		name = "GFX_Point_jkkacchi"
+		textureFile = "gfx/interface/Countryinfo_User/Point_jkkacchi.png" 
 	}
 }

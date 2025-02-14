@@ -91,7 +91,7 @@ static const float WATER_COLOR_LIGHTNESS = 0.4;
 static const float WATER_RIPPLE_EFFECT = 0.0025;
 
 static const float COLORMAP_OVERLAY_STRENGTH 	= 0.65f; //0.6f;
-static const float COLORMAP_MUD_OVERLAY_STRENGTH = 0.5f;
+static const float COLORMAP_MUD_OVERLAY_STRENGTH = 0.0f;
 
 static const float3 FAKE_CUBEMAP_COLOR 			= float3(0.0f, 0.0f, 0.0f);
 

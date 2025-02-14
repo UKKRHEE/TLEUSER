@@ -1,0 +1,48 @@
+scripted_gui = {
+	KOR_congress_GUI = {
+		context_type = decision_category
+		window_name = "KOR_congress_GUI"
+
+		visible = {
+			original_tag = KOR
+		}
+
+		dynamic_lists = {
+			congress_main_grid = {
+				array = parliament_main_array
+				index = parliament_main_index
+				change_scope = no
+				entry_container = parliament_semicircle_main_entry
+			}
+			parliament_member_grid = {
+				array = parliament_member_array
+				index = parliament_member_index
+				change_scope = no
+				entry_container = parliament_member_entry
+			}
+		}
+
+		triggers = {
+			parliament_member_icon_replacer_visible = {
+				NOT = { check_variable = { parliament_seat_array^parliament_member_index > 0 } }
+			}
+		}
+
+		properties = {
+			parliament_semicircle_main_icon = {
+				frame = v
+				x = parliament_x_array^parliament_main_index
+				y = parliament_y_array^parliament_main_index
+			}
+			parliament_member_icon = {
+				frame = v
+			}
+			congress_leader = {
+				image = [GetCongressLeaderGFX]
+			}
+			congress_party_leader = {
+				image = [GetCongressPartyLeaderGFX]
+			}
+		}
+	}
+}

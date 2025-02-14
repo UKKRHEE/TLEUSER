@@ -25,6 +25,11 @@ music = {
 	volume = 1.2
 }
 music = {
+	name = "yiyongjun_jinxingqu" #의용군진행곡
+	file = "china_music/yiyongjun_jinxingqu.ogg"
+	volume = 1.2
+}
+music = {
 	name = "changchengyao" #장성요
 	file = "china_music/changchengyao.ogg"
 	volume = 1.2

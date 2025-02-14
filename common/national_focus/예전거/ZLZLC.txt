@@ -2077,7 +2077,7 @@ focus_tree = {
 		}
 		completion_reward = {
 		FRA = {
-		country_event = { days = 1 id = china.1001 }
+		country_event = { days = 1 id = china.34 }
 		}
 		
 		}

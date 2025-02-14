@@ -1,5 +1,71 @@
 ideas = {
 	country = {
+		TLE_KOR_WIN_IDEA = {
+			picture = KOR_militarism
+			modifier = {
+				army_org_Factor = 0.5
+				army_morale_factor = 0.5
+				supply_consumption_factor = -0.6
+				production_speed_supply_node_factor = 0.6
+				air_attack_factor = 0.4
+				air_defence_factor = 0.4
+				air_cas_present_factor = 0.8
+				air_bombing_targetting = 0.8
+				air_strategic_bomber_bombing_factor = 0.4
+				air_close_air_support_org_damage_factor = 0.4
+				land_doctrine_cost_factor = -0.7
+				naval_doctrine_cost_factor = -0.7
+				air_doctrine_cost_factor = -0.7
+				resistance_target = -0.7
+				resistance_activity = -0.7
+				required_garrison_factor = -0.5
+				resistance_growth = -0.3
+				resistance_target = -0.3
+				resistance_decay = 0.3	
+			}	
+			targeted_modifier = {
+                tag = ZLC
+				attack_bonus_against = 14
+			}
+			targeted_modifier = {
+                tag = CHI
+				attack_bonus_against = 14
+			}
+			targeted_modifier = {
+                tag = JAP
+				attack_bonus_against = 14
+			}
+		}
+		TLE_GER_WIN_IDEA = {
+			picture = KOR_militarism
+			modifier = {
+				army_core_attack_factor = 0.5
+				army_core_defence_factor = 0.5
+				supply_consumption_factor = -0.6
+				ai_desired_divisions_factor = 10
+				surrender_limit = 100
+			}	
+			targeted_modifier = {
+                tag = SOV
+				attack_bonus_against = 2
+			}
+			targeted_modifier = {
+                tag = POL
+				attack_bonus_against = 0.3
+			}
+			targeted_modifier = {
+                tag = BEL
+				attack_bonus_against = 0.3
+			}
+			targeted_modifier = {
+                tag = ENG
+				attack_bonus_against = 0.4
+			}
+			targeted_modifier = {
+                tag = FRA
+				attack_bonus_against = 0.4
+			}
+		}
 		steel_reich_idea = {
 			allowed = {
 				always = no

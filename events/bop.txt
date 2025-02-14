@@ -82,7 +82,6 @@ country_event = {
 				limit = {
 					is_controlled_by = KOR
 				}
-				controller = EOK
 			}
 			EOK = {
 				create_faction = "TLE_COPERATION"

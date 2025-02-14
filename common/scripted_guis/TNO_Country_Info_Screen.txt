@@ -18,6 +18,7 @@ scripted_gui = {
 				tag = ENG
 				tag = FRA
 				tag = ITA
+				tag = SIA
 			}
 		}
 
@@ -57,6 +58,7 @@ scripted_gui = {
 				tag = ENG
 				tag = FRA
 				tag = ITA
+				tag = SIA
 			}
 		}
 		dynamic_lists = {
@@ -371,27 +373,15 @@ scripted_gui = {
 				NOT = { has_variable = CountryInfo_Selected }
 			}
 			
-			TNO_discord_button_visible = {
+			TLE_discord_button_visible = {
 				check_variable = { CountryInfo_Selected = 1 }
 				check_variable = { CountryInfo_tab = 4 }
 			}
-			TNO_reddit_button_visible = {
+			TLE_novelpia_button_visible = {
 				check_variable = { CountryInfo_Selected = 1 }
 				check_variable = { CountryInfo_tab = 4 }
 			}
-			TNO_youtube_button_visible = {
-				check_variable = { CountryInfo_Selected = 1 }
-				check_variable = { CountryInfo_tab = 4 }
-			}
-			TNO_twitter_button_visible = {
-				check_variable = { CountryInfo_Selected = 1 }
-				check_variable = { CountryInfo_tab = 4 }
-			}
-			TNO_twitch_button_visible = {
-				check_variable = { CountryInfo_Selected = 1 }
-				check_variable = { CountryInfo_tab = 4 }
-			}
-			TNO_tvtropes_button_visible = {
+			TLE_youtube_button_visible = {
 				check_variable = { CountryInfo_Selected = 1 }
 				check_variable = { CountryInfo_tab = 4 }
 			}

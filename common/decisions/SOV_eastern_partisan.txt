@@ -1,3 +1,47 @@
+SOV_surrender = {
+	SOV_surrender_req = {
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		available = {
+			GER = {
+				is_ai = yes
+			}
+			SOV = {
+				surrender_progress > 0.7
+			}
+		}
+		
+		fire_only_once = yes
+
+		visible = {
+			SOV = {
+				is_ai = yes
+			}
+			SOV = {
+				surrender_progress > 0.7
+			}
+		}
+		
+		days_remove = 5
+
+		complete_effect = {
+			GER = {
+				country_event = {
+					id = TLE_Germany.1
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 200
+		}
+	}
+}
+
 SOV_the_coring = {
 
 }
@@ -82,6 +126,7 @@ SOV_fareastern_partisans = {
 				has_government = fascism
 				NOT = {
 					has_country_flag = TLE_THE_WAR_IS_ENDED
+					has_country_flag = TLE_KOR_WIN_IN_CHINA_FUCKYEAH
 				}
 			}
 			has_global_flag = TLE_germany_union_defeat
@@ -89,10 +134,15 @@ SOV_fareastern_partisans = {
 				limit = {
 					is_ai = yes
 				}
-				date > 1945.8.6
+				date > 1945.7.31
 			}
-			has_country_flag = FLAG_SOV_yeonhae_coring_end
-			has_country_flag = FLAG_SOV_rising_anti_korea_end
+			if = {
+				limit = {
+					is_ai = no
+				}
+				has_country_flag = FLAG_SOV_yeonhae_coring_end
+				has_country_flag = FLAG_SOV_rising_anti_korea_end
+			}
 		}
 		visible = {
 			KOR = {
@@ -101,14 +151,10 @@ SOV_fareastern_partisans = {
 		}
 		days_remove = 30
 		ai_will_do = {
-			base = 0
-			modifier = {
-				date < 1945.8.7
-				factor = 100
-			}
+			factor = 200
 		}
 		fire_only_once = yes
-		cost = 10
+
 		complete_effect = {
 			if = {
 				limit = {

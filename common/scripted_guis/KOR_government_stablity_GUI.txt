@@ -1,0 +1,64 @@
+scripted_gui = {
+	KOR_government_stablity_GUI = {
+		context_type = decision_category
+		window_name = "KOR_government_stablity_GUI"
+		parent_window_token = decision_tab
+		visible = { always = yes }
+
+		visible = {
+			original_tag = KOR
+		}
+
+		dynamic_lists = {
+			pabeol_grid = {
+				array = pabeol_grid_array
+				value = pabeol_grid_v
+				index = pabeol_grid_i
+				change_scope = no
+				entry_container = pabeol_grid_entry
+			}
+		}
+		
+		properties = {
+			KOR_government_stablity_Progressbar = {
+				frame = KOR_government_stablity_var
+			}
+		}
+
+		triggers = {
+			politic_button_click_enabled = {
+				NOT = {
+					has_country_flag = KOR_government_stablity_politic_button_flag
+				}
+			}
+			military_button_click_enabled = {
+				NOT = {
+					has_country_flag = KOR_government_stablity_military_button_flag
+				}
+			}
+			civil_button_click_enabled = {
+				NOT = {
+					has_country_flag = KOR_government_stablity_civil_button_flag
+				}
+			}
+		}
+
+		effects = {
+			politic_button_click = {
+				set_country_flag = KOR_government_stablity_politic_button_flag
+				clr_country_flag = KOR_government_stablity_military_button_flag
+				clr_country_flag = KOR_government_stablity_civil_button_flag
+			}
+			military_button_click = {
+				set_country_flag = KOR_government_stablity_military_button_flag
+				clr_country_flag = KOR_government_stablity_politic_button_flag
+				clr_country_flag = KOR_government_stablity_civil_button_flag
+			}
+			civil_button_click = {
+				set_country_flag = KOR_government_stablity_civil_button_flag
+				clr_country_flag = KOR_government_stablity_politic_button_flag
+				clr_country_flag = KOR_government_stablity_military_button_flag
+			}
+		}
+	}
+}

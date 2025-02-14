@@ -90,9 +90,18 @@ custom_effect_tooltip = JAP_anti_yushin_level_down_tt
 }
 JAP_kyoto_collapse_infantry_set = {
 	hidden_effect = {
-			JAP = {
+		JAP = {
+			if = {
+				limit = {
+					NOT = {
+						has_game_rule = {
+							rule = TLE_JAP_HARDCORE_RULE
+							option = TLE_JAP_HARDCORE_EASY
+						}
+					}
+				}
 				division_template = {
-					name = "전일본구국의용군"
+					name = "Zen Nihon Giyugun"
 					is_locked = yes
 					division_names_group = JAP_INF_01
 					regiments = {
@@ -154,27 +163,27 @@ JAP_kyoto_collapse_infantry_set = {
 					}
 					prioritize = { 991 }
 					create_unit = {
-						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						division = "name = \"Zen Nihon Giyugun\" division_template = \"Zen Nihon Giyugun\" start_experience_factor = 0.6"
 						owner = JAP
 					}
 					create_unit = {
-						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						division = "name = \"Zen Nihon Giyugun\" division_template = \"Zen Nihon Giyugun\" start_experience_factor = 0.6"
 						owner = JAP
 					}
 					create_unit = {
-						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						division = "name = \"Zen Nihon Giyugun\" division_template = \"Zen Nihon Giyugun\" start_experience_factor = 0.6"
 						owner = JAP
 					}
 					create_unit = {
-						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						division = "name = \"Zen Nihon Giyugun\" division_template = \"Zen Nihon Giyugun\" start_experience_factor = 0.6"
 						owner = JAP
 					}
 					create_unit = {
-						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						division = "name = \"Zen Nihon Giyugun\" division_template = \"Zen Nihon Giyugun\" start_experience_factor = 0.6"
 						owner = JAP
 					}
 					create_unit = {
-						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						division = "name = \"Zen Nihon Giyugun\" division_template = \"Zen Nihon Giyugun\" start_experience_factor = 0.6"
 						owner = JAP
 					}
 				}
@@ -186,27 +195,27 @@ JAP_kyoto_collapse_infantry_set = {
 					}
 					prioritize = { 531 }
 					create_unit = {
-						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						division = "name = \"Zen Nihon Giyugun\" division_template = \"Zen Nihon Giyugun\" start_experience_factor = 0.6"
 						owner = JAP
 					}
 					create_unit = {
-						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						division = "name = \"Zen Nihon Giyugun\" division_template = \"Zen Nihon Giyugun\" start_experience_factor = 0.6"
 						owner = JAP
 					}
 					create_unit = {
-						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						division = "name = \"Zen Nihon Giyugun\" division_template = \"Zen Nihon Giyugun\" start_experience_factor = 0.6"
 						owner = JAP
 					}
 					create_unit = {
-						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						division = "name = \"Zen Nihon Giyugun\" division_template = \"Zen Nihon Giyugun\" start_experience_factor = 0.6"
 						owner = JAP
 					}
 					create_unit = {
-						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						division = "name = \"Zen Nihon Giyugun\" division_template = \"Zen Nihon Giyugun\" start_experience_factor = 0.6"
 						owner = JAP
 					}
 					create_unit = {
-						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						division = "name = \"Zen Nihon Giyugun\" division_template = \"Zen Nihon Giyugun\" start_experience_factor = 0.6"
 						owner = JAP
 					}
 				}
@@ -218,27 +227,27 @@ JAP_kyoto_collapse_infantry_set = {
 					}
 					prioritize = { 1069 }
 					create_unit = {
-						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						division = "name = \"Zen Nihon Giyugun\" division_template = \"Zen Nihon Giyugun\" start_experience_factor = 0.6"
 						owner = JAP
 					}
 					create_unit = {
-						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						division = "name = \"Zen Nihon Giyugun\" division_template = \"Zen Nihon Giyugun\" start_experience_factor = 0.6"
 						owner = JAP
 					}
 					create_unit = {
-						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						division = "name = \"Zen Nihon Giyugun\" division_template = \"Zen Nihon Giyugun\" start_experience_factor = 0.6"
 						owner = JAP
 					}
 					create_unit = {
-						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						division = "name = \"Zen Nihon Giyugun\" division_template = \"Zen Nihon Giyugun\" start_experience_factor = 0.6"
 						owner = JAP
 					}
 					create_unit = {
-						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						division = "name = \"Zen Nihon Giyugun\" division_template = \"Zen Nihon Giyugun\" start_experience_factor = 0.6"
 						owner = JAP
 					}
 					create_unit = {
-						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						division = "name = \"Zen Nihon Giyugun\" division_template = \"Zen Nihon Giyugun\" start_experience_factor = 0.6"
 						owner = JAP
 					}
 				}
@@ -250,27 +259,27 @@ JAP_kyoto_collapse_infantry_set = {
 					}
 					prioritize = { 535 }
 					create_unit = {
-						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						division = "name = \"Zen Nihon Giyugun\" division_template = \"Zen Nihon Giyugun\" start_experience_factor = 0.6"
 						owner = JAP
 					}
 					create_unit = {
-						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						division = "name = \"Zen Nihon Giyugun\" division_template = \"Zen Nihon Giyugun\" start_experience_factor = 0.6"
 						owner = JAP
 					}
 					create_unit = {
-						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						division = "name = \"Zen Nihon Giyugun\" division_template = \"Zen Nihon Giyugun\" start_experience_factor = 0.6"
 						owner = JAP
 					}
 					create_unit = {
-						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						division = "name = \"Zen Nihon Giyugun\" division_template = \"Zen Nihon Giyugun\" start_experience_factor = 0.6"
 						owner = JAP
 					}
 					create_unit = {
-						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						division = "name = \"Zen Nihon Giyugun\" division_template = \"Zen Nihon Giyugun\" start_experience_factor = 0.6"
 						owner = JAP
 					}
 					create_unit = {
-						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						division = "name = \"Zen Nihon Giyugun\" division_template = \"Zen Nihon Giyugun\" start_experience_factor = 0.6"
 						owner = JAP
 					}
 				}
@@ -282,27 +291,27 @@ JAP_kyoto_collapse_infantry_set = {
 					}
 					prioritize = { 532 }
 					create_unit = {
-						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						division = "name = \"Zen Nihon Giyugun\" division_template = \"Zen Nihon Giyugun\" start_experience_factor = 0.6"
 						owner = JAP
 					}
 					create_unit = {
-						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						division = "name = \"Zen Nihon Giyugun\" division_template = \"Zen Nihon Giyugun\" start_experience_factor = 0.6"
 						owner = JAP
 					}
 					create_unit = {
-						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						division = "name = \"Zen Nihon Giyugun\" division_template = \"Zen Nihon Giyugun\" start_experience_factor = 0.6"
 						owner = JAP
 					}
 					create_unit = {
-						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						division = "name = \"Zen Nihon Giyugun\" division_template = \"Zen Nihon Giyugun\" start_experience_factor = 0.6"
 						owner = JAP
 					}
 					create_unit = {
-						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						division = "name = \"Zen Nihon Giyugun\" division_template = \"Zen Nihon Giyugun\" start_experience_factor = 0.6"
 						owner = JAP
 					}
 					create_unit = {
-						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						division = "name = \"Zen Nihon Giyugun\" division_template = \"Zen Nihon Giyugun\" start_experience_factor = 0.6"
 						owner = JAP
 					}
 				}
@@ -314,27 +323,27 @@ JAP_kyoto_collapse_infantry_set = {
 					}
 					prioritize = { 990 }
 					create_unit = {
-						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						division = "name = \"Zen Nihon Giyugun\" division_template = \"Zen Nihon Giyugun\" start_experience_factor = 0.6"
 						owner = JAP
 					}
 					create_unit = {
-						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						division = "name = \"Zen Nihon Giyugun\" division_template = \"Zen Nihon Giyugun\" start_experience_factor = 0.6"
 						owner = JAP
 					}
 					create_unit = {
-						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						division = "name = \"Zen Nihon Giyugun\" division_template = \"Zen Nihon Giyugun\" start_experience_factor = 0.6"
 						owner = JAP
 					}
 					create_unit = {
-						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						division = "name = \"Zen Nihon Giyugun\" division_template = \"Zen Nihon Giyugun\" start_experience_factor = 0.6"
 						owner = JAP
 					}
 					create_unit = {
-						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						division = "name = \"Zen Nihon Giyugun\" division_template = \"Zen Nihon Giyugun\" start_experience_factor = 0.6"
 						owner = JAP
 					}
 					create_unit = {
-						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						division = "name = \"Zen Nihon Giyugun\" division_template = \"Zen Nihon Giyugun\" start_experience_factor = 0.6"
 						owner = JAP
 					}
 				}
@@ -346,27 +355,27 @@ JAP_kyoto_collapse_infantry_set = {
 					}
 					prioritize = { 1072 }
 					create_unit = {
-						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						division = "name = \"Zen Nihon Giyugun\" division_template = \"Zen Nihon Giyugun\" start_experience_factor = 0.6"
 						owner = JAP
 					}
 					create_unit = {
-						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						division = "name = \"Zen Nihon Giyugun\" division_template = \"Zen Nihon Giyugun\" start_experience_factor = 0.6"
 						owner = JAP
 					}
 					create_unit = {
-						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						division = "name = \"Zen Nihon Giyugun\" division_template = \"Zen Nihon Giyugun\" start_experience_factor = 0.6"
 						owner = JAP
 					}
 					create_unit = {
-						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						division = "name = \"Zen Nihon Giyugun\" division_template = \"Zen Nihon Giyugun\" start_experience_factor = 0.6"
 						owner = JAP
 					}
 					create_unit = {
-						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						division = "name = \"Zen Nihon Giyugun\" division_template = \"Zen Nihon Giyugun\" start_experience_factor = 0.6"
 						owner = JAP
 					}
 					create_unit = {
-						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						division = "name = \"Zen Nihon Giyugun\" division_template = \"Zen Nihon Giyugun\" start_experience_factor = 0.6"
 						owner = JAP
 					}
 				}
@@ -378,30 +387,31 @@ JAP_kyoto_collapse_infantry_set = {
 					}
 					prioritize = { 282 }
 					create_unit = {
-						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						division = "name = \"Zen Nihon Giyugun\" division_template = \"Zen Nihon Giyugun\" start_experience_factor = 0.6"
 						owner = JAP
 					}
 					create_unit = {
-						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						division = "name = \"Zen Nihon Giyugun\" division_template = \"Zen Nihon Giyugun\" start_experience_factor = 0.6"
 						owner = JAP
 					}
 					create_unit = {
-						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						division = "name = \"Zen Nihon Giyugun\" division_template = \"Zen Nihon Giyugun\" start_experience_factor = 0.6"
 						owner = JAP
 					}
 					create_unit = {
-						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						division = "name = \"Zen Nihon Giyugun\" division_template = \"Zen Nihon Giyugun\" start_experience_factor = 0.6"
 						owner = JAP
 					}
 					create_unit = {
-						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						division = "name = \"Zen Nihon Giyugun\" division_template = \"Zen Nihon Giyugun\" start_experience_factor = 0.6"
 						owner = JAP
 					}
 					create_unit = {
-						division = "name = \"전일본구국의용군\" division_template = \"전일본구국의용군\" start_experience_factor = 0.6"
+						division = "name = \"Zen Nihon Giyugun\" division_template = \"Zen Nihon Giyugun\" start_experience_factor = 0.6"
 						owner = JAP
 					}
 				}
 			}
+		}
 	}
 }

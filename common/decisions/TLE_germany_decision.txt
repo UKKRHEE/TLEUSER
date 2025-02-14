@@ -1114,6 +1114,9 @@ TLE_divide_fucking_germany = {
 				exists = no
 			}
 			has_global_flag = TLE_germany_union_defeat
+			NOT = {
+				has_global_flag = TLE_germany_union_defeat_red
+			}
 		}
 		fire_only_once = yes
 		cost = 0
@@ -1159,8 +1162,19 @@ TLE_divide_fucking_germany = {
 			GER = {
 				exists = no
 			}
-			DDR = {
-				exists = no
+			OR = {
+				DDR = {
+					exists = no
+				}
+				AND = {
+					limit = {
+						has_global_flag = TLE_germany_union_defeat_red
+					}
+					DDR = {
+						exists = yes
+					}
+					date > 1943.1.1
+				}
 			}
 			has_global_flag = TLE_germany_union_defeat
 		}
@@ -1194,8 +1208,21 @@ TLE_divide_fucking_germany = {
 		}
 
 		complete_effect = {
-			country_event = {
-				id = korea.176
+			if = {
+				limit = {
+					has_global_flag = TLE_germany_union_defeat_red
+				}
+				TLE_REDORDER_germany_annex_austria_effect = yes
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = TLE_germany_union_defeat_red
+					}
+				}
+				country_event = {
+					id = korea.176
+				}
 			}
 		}
 	}

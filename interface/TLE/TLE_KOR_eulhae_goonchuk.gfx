@@ -1,0 +1,45 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_decision_KOR_eulhae_law"
+		textureFile = "gfx/interface/KOR_GUI/eulhae/decision_KOR_eulhae_law.png"
+	}
+
+	spriteType = {
+		name = "GFX_eulhae_GUI_border"
+		textureFile = "gfx/interface/KOR_GUI/eulhae/eulhae_border.png"
+	}
+
+	progressbartype = {
+		name = "GFX_eulhae_GUI_Progressbar"
+		texturefile1 =  "gfx/interface/KOR_GUI/eulhae/eulhae_progbar_full.png"
+		texturefile2 = "gfx/interface/blank.dds"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 0.0 0.0 0.0 }
+		size = {
+			x = 38
+			y = 192
+		}
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = no
+	}
+
+	progressbartype = {
+		name = "GFX_eulhae_GUI_Progressbar_green"
+		texturefile1 =  "gfx/interface/KOR_GUI/eulhae/eulhae_progbar_full_green.png"
+		texturefile2 = "gfx/interface/blank.dds"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 0.0 0.0 0.0 }
+		size = {
+			x = 38
+			y = 192
+		}
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = no
+	}
+
+	spriteType = {
+		name = "GFX_eulhae_GUI_Progressbar_Frame"
+		texturefile = "gfx/interface/KOR_GUI/eulhae/eulhae_progbar_frame.png"
+		alwaystransparent = yes
+	}
+}

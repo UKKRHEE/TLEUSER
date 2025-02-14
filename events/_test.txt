@@ -1,0 +1,281 @@
+add_namespace = tletest
+
+country_event = {
+	id = tletest.1
+	title = tletest.1.title
+	desc = tletest.1.desc
+	picture = GFX_TLE_korea_event_none
+
+	is_triggered_only = yes
+
+	option = {
+		name = tletest.1.a
+		set_variable = { sinhan_party = 40 }
+		set_variable = { social_party = 3 }
+		set_variable = { democratic_party = 280 }
+		set_variable = { korea_party = 175 }
+		set_variable = { imperial_party = 2 }
+		set_variable = { national_revouliton_party = 0 }
+		set_variable = { korean_resistance_party = 0 }
+		set_variable = { communist_party = 0 }
+		set_variable = { independent_party = 0 }
+		set_variable = { congress_ruling_party_info = 2 }
+		clear_parliament_gui_arrays = yes
+		parliament_gui_initial = yes
+		set_variable = { CongressPartyLeader = token:CongressPartyLeader_yi_won }
+		set_variable = { CongressLeader = token:CongressLeader_yoon_deokyong }
+	}
+	option = {
+		name = tletest.1.b
+		set_variable = { sinhan_party = 135 }
+		set_variable = { social_party = 24 }
+		set_variable = { democratic_party = 80 }
+		set_variable = { korea_party = 220 }
+		set_variable = { imperial_party = 36 }
+		set_variable = { national_revouliton_party = 5 }
+		set_variable = { korean_resistance_party = 0 }
+		set_variable = { communist_party = 0 }
+		set_variable = { independent_party = 0 }
+		set_variable = { congress_ruling_party_info = 3 }
+		clear_parliament_gui_arrays = yes
+		parliament_gui_initial = yes
+		set_variable = { CongressPartyLeader = token:CongressPartyLeader_yi_won }
+		set_variable = { CongressLeader = token:CongressLeader_an_changho }
+	}
+	option = {
+		name = tletest.1.c
+		set_variable = { sinhan_party = 231 }
+		set_variable = { social_party = 10 }
+		set_variable = { democratic_party = 37 }
+		set_variable = { korea_party = 215 }
+		set_variable = { imperial_party = 0 }
+		set_variable = { national_revouliton_party = 7 }
+		set_variable = { korean_resistance_party = 0 }
+		set_variable = { communist_party = 0 }
+		set_variable = { independent_party = 0 }
+		set_variable = { congress_ruling_party_info = 0 }
+		clear_parliament_gui_arrays = yes
+		parliament_gui_initial = yes
+		set_variable = { CongressPartyLeader = token:CongressPartyLeader_yi_won }
+		set_variable = { CongressLeader = token:CongressLeader_kim_kyusik }
+	}
+
+	option = {
+		name = tletest.1.d
+		set_variable = { sinhan_party = 463 }
+		set_variable = { social_party = 0 }
+		set_variable = { democratic_party = 37 }
+		set_variable = { korea_party = 0 }
+		set_variable = { imperial_party = 0 }
+		set_variable = { national_revouliton_party = 0 }
+		set_variable = { korean_resistance_party = 0 }
+		set_variable = { communist_party = 0 }
+		set_variable = { independent_party = 0 }
+		set_variable = { congress_ruling_party_info = 0 }
+		clear_parliament_gui_arrays = yes
+		parliament_gui_initial = yes
+		set_variable = { CongressPartyLeader = token:CongressPartyLeader_yi_won }
+		set_variable = { CongressLeader = token:CongressLeader_kim_kyusik }
+	}
+
+	option = {
+		name = tletest.1.e
+		set_variable = { sinhan_party = 500 }
+		set_variable = { social_party = 0 }
+		set_variable = { democratic_party = 0 }
+		set_variable = { korea_party = 0 }
+		set_variable = { imperial_party = 0 }
+		set_variable = { national_revouliton_party = 0 }
+		set_variable = { korean_resistance_party = 0 }
+		set_variable = { communist_party = 0 }
+		set_variable = { independent_party = 0 }
+		set_variable = { congress_ruling_party_info = 0 }
+		clear_parliament_gui_arrays = yes
+		parliament_gui_initial = yes
+		set_variable = { CongressPartyLeader = token:CongressPartyLeader_yi_won }
+		set_variable = { CongressLeader = token:CongressLeader_seo_jae_pil }
+	}
+}
+
+country_event = {
+	id = tletest.2
+	title = tletest.2.title
+	desc = tletest.2.desc
+	picture = GFX_TLE_korea_event_none
+
+	is_triggered_only = yes
+
+	option = {
+		name = tletest.2.a
+		set_variable = { sinhan_party = 0 }
+		set_variable = { social_party = 19 }
+		set_variable = { democratic_party = 73 }
+		set_variable = { korea_party = 241 }
+		set_variable = { imperial_party = 0 }
+		set_variable = { national_revouliton_party = 16 }
+		set_variable = { korean_resistance_party = 0 }
+		set_variable = { communist_party = 0 }
+		set_variable = { independent_party = 151 }
+		set_variable = { congress_ruling_party_info = 3 }
+		clear_parliament_gui_arrays = yes
+		parliament_gui_initial = yes
+		set_variable = { CongressPartyLeader = token:CongressPartyLeader_yi_won }
+		set_variable = { CongressLeader = token:CongressLeader_seo_jae_pil }
+	}
+
+	option = {
+		name = tletest.2.b
+		set_variable = { sinhan_party = 0 }
+		set_variable = { social_party = 53 }
+		set_variable = { democratic_party = 148 }
+		set_variable = { korea_party = 256 }
+		set_variable = { imperial_party = 0 }
+		set_variable = { national_revouliton_party = 11 }
+		set_variable = { korean_resistance_party = 3 }
+		set_variable = { communist_party = 29 }
+		set_variable = { independent_party = 0 }
+		set_variable = { congress_ruling_party_info = 3 }
+		clear_parliament_gui_arrays = yes
+		parliament_gui_initial = yes
+		set_variable = { CongressPartyLeader = token:CongressPartyLeader_lee_jaemyong }
+		set_variable = { CongressLeader = token:CongressLeader_kim_kyusik }
+	}
+}
+
+country_event = {
+	id = tletest.3
+	title = tletest.3.title
+	desc = tletest.3.desc
+	picture = GFX_TLE_korea_event_none
+
+	is_triggered_only = yes
+
+	option = {
+		name = tletest.3.a
+		set_variable = { sinhan_party = 74 }
+		set_variable = { social_party = 4 }
+		set_variable = { democratic_party = 103 }
+		set_variable = { korea_party = 258 }
+		set_variable = { imperial_party = 59 }
+		set_variable = { national_revouliton_party = 2 }
+		set_variable = { congress_ruling_party_info = 3 }
+		clear_parliament_gui_arrays = yes
+		parliament_gui_initial = yes
+		set_variable = { CongressPartyLeader = token:CongressPartyLeader_yi_won }
+		set_variable = { CongressLeader = token:CongressLeader_yi_siyeong }
+	}
+}
+
+country_event = {
+	id = tletest.4
+	title = tletest.4.title
+	desc = tletest.4.desc
+	picture = GFX_TLE_korea_event_none
+
+	is_triggered_only = yes
+
+	option = {
+		name = tletest.4.a
+		set_temp_variable = { temp_member = 1 }
+		set_temp_variable = { temp_seats = 30 }
+		modify_parliament_seat = yes
+		congress_modify_var = yes
+	}
+
+	option = {
+		name = tletest.4.b
+		set_temp_variable = { temp_member = 5 }
+		set_temp_variable = { temp_seats = 500 }
+		set_variable = { congress_ruling_party_info = 4 }
+		modify_parliament_seat = yes
+		congress_modify_var = yes
+	}
+
+	option = {
+		name = tletest.4.c
+		set_temp_variable = { temp_member = 8 }
+		set_temp_variable = { temp_seats = 500 }
+		set_variable = { congress_ruling_party_info = 7 }
+		modify_parliament_seat = yes
+		congress_modify_var = yes
+	}
+
+	option = {
+		name = tletest.4.d
+		set_country_flag = FLAG_DEBUG_DECISION_KOR
+	}
+	
+	option = {
+		name = tletest.4.e
+		clr_country_flag = FLAG_DEBUG_DECISION_KOR
+	}
+}
+country_event = {
+	id = tletest.5
+	title = tletest.5.title
+	desc = tletest.5.desc
+	picture = GFX_TLE_korea_event_none
+
+	is_triggered_only = yes
+
+	option = {
+		name = tletest.5.a
+		KOR_arrest_communist_var_up = yes
+	}
+
+	option = {
+		name = tletest.5.b
+		KOR_arrest_communist_var_down = yes
+	}
+
+	option = {
+		name = tletest.5.c
+		KOR_arrest_communist_var_up = yes
+		KOR_arrest_communist_var_up = yes
+		KOR_arrest_communist_var_up = yes
+		KOR_arrest_communist_var_up = yes
+		KOR_arrest_communist_var_up = yes
+	}
+	option = {
+		name = tletest.5.d
+		KOR_arrest_communist_var_down = yes
+		KOR_arrest_communist_var_down = yes
+		KOR_arrest_communist_var_down = yes
+		KOR_arrest_communist_var_down = yes
+		KOR_arrest_communist_var_down = yes
+	}
+}
+country_event = {
+	id = tletest.6
+	title = tletest.6.title
+	desc = tletest.6.desc
+	picture = GFX_TLE_korea_event_none
+
+	is_triggered_only = yes
+
+	option = {
+		name = tletest.6.a
+		595 = {
+			set_border_war = yes
+		}
+		1061 = {
+			set_border_war = yes
+		}
+		1043 = {
+			set_border_war = yes
+		}
+		600 = {
+			set_border_war = yes
+		}
+	}
+
+	option = {
+		name = tletest.6.b
+		every_state = {
+			limit = {
+				is_core_of = QIN
+			}	
+			set_border_war = no
+		}
+	}
+}

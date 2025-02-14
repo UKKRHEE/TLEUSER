@@ -382,6 +382,13 @@ defined_text = {
 		}
 		localization_key = TLE_NEWS_LOGO_ITA
 	}
+	
+	text = {
+		trigger = {
+			TAG = SIA
+		}
+		localization_key = TLE_NEWS_LOGO_SIA
+	}
 	#text = {
 	#	trigger = {
 	#		TAG = SWE

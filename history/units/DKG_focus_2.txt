@@ -1,0 +1,4 @@
+﻿focus = {
+    current = "JPN_fake_5"
+    Progress = 0
+}

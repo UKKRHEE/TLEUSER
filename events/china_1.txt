@@ -338,78 +338,6 @@ country_event = {
     }
 }
 #Hanmindies
-news_event = {
-	id = china.1019
-	title = {
-	text = china.1019.t
-	trigger = { tag = ZLC }
-	}
-	title = {
-	text = china.1019.t_other
-	trigger = { NOT { tag = ZLC }}
-	}
-	desc = {
-	text = china.1019.d
-	trigger = { tag = ZLC }
-	}
-	desc = {
-	text = china.1019.d_other
-	trigger = { NOT { tag = ZLC }}
-	}
-	picture = GFX_news_event_CHI_hanmin_dies
-	is_triggered_only = yes
-
-	trigger = {
-		date > 1936.5.12 
-		}
-	
-	option = {
-	name = china.1019.a
-	trigger = { tag = ZLC}
-	hidden_effect = { set_global_flag = hu_hanmin_dead }
-    }
-	option = {
-	name = china.1019.b
-	trigger = { NOT = { tag = CHI }}
-	}	
-}	
-#ShanghaiMilitarised
-news_event = {
-	id = china.1020
-	title = {
-	text = china.1020.t
-	trigger = { tag = CHI }
-	}
-	title = {
-	text = china.1020.t_other
-	trigger = { NOT { tag = CHI }}
-	}
-	desc = {
-	text = china.1020.d
-	trigger = { tag = CHI }
-	}
-	desc = {
-	text = china.1020.d_other
-	trigger = { NOT { tag = CHI }}
-	}
-	picture = GFX_news_event_CHI_Shanghai_militarised
-	is_triggered_only = yes
-
-	trigger = {
-		date < 1936.5.12
-		date > 1936.5.10
-		}
-	
-	option = {
-	name = china.1020.a
-	trigger = { tag = CHI}
-	}
-
-	option = {
-	name = china.1020.b
-	trigger = { NOT = { tag = CHI }}
-	}	
-}	
 #HamninSpeech
 country_event = {
 	id = china.1021
@@ -881,10 +809,6 @@ country_event = {
 
 	option = {
 		name = china.1047.a
-		annex_country = {
-        target = RMN
-        transfer_troops = yes
-      }
     }
 }
 ########################################################################################################################RussianManchuriaDenied
@@ -932,10 +856,6 @@ country_event = {
         }
         annex_country = {
         target = MON
-        transfer_troops = yes
-        }
-        annex_country = {
-        target = RMN
         transfer_troops = yes
         }
         } 
@@ -1277,7 +1197,6 @@ country_event = {
 	option = {
 		set_country_flag  = FLAG_WZC_WAS_COLLAPESED
 		name = china.1089.a
-		remove_unit_leader = 91099
 		retire_character = WZC_sun_chuanfang
 		hidden_effect = {
 			add_country_leader_role = {
@@ -1309,7 +1228,6 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = china.1090.a
-		remove_unit_leader = 91110
 		hidden_effect = {
 			WZC = {
 				add_ideas = WZC_not_surrender
@@ -1330,13 +1248,8 @@ country_event = {
 			ZLC = {
 				set_country_flag = FLAG_WZC_WAS_COLLAPESED
 			}
-			KPL = {
-				transfer_state = 1036
-				add_state_core = 1036
-			}
 			1036 = {
-				
-					set_demilitarized_zone = yes
+				set_demilitarized_zone = yes
 			}
 		}
     }
@@ -1377,7 +1290,7 @@ country_event = {
 	option = { 
 		name = china.1092.a
 		ai_chance = {
-			factor = 70
+			factor = 100
 		}
 		PREV = {
 			every_unit_leader = {
@@ -1389,12 +1302,13 @@ country_event = {
 				target = PREV
 				transfer_troops = yes
 			}
+			transfer_state = 1054
 		}
     }
 	option = {
 		name = china.1092.b
 		ai_chance = {
-			factor = 30
+			factor = 0
 		}
 		CHI = {
 			create_wargoal = {
@@ -1454,10 +1368,6 @@ country_event = {
 			}
 		}
 		CHI = {
-			country_event = {
-				id = china.1200
-				hours = 3
-			}
 		}
     }
 }
@@ -1606,7 +1516,7 @@ country_event = {
 	option = { 
 		name = china.1104.a
 		ai_chance = {
-			factor 100
+			factor = 100
 		}
 		declare_war_on = {
 			target = AQC
@@ -1621,7 +1531,7 @@ country_event = {
 	option = { 
 		name = china.1104.b
 		ai_chance = {
-			factor 0
+			factor = 0
 		}
 		create_wargoal = {
 			target = AQC
@@ -1663,7 +1573,6 @@ country_event = {
 		CHI = {
 			add_to_faction = PRC
 			add_to_faction = AHC
-			puppet = PRC
 		}
 		#declare_war_on = {
 		#	type = annex_everything 
@@ -1845,25 +1754,25 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 		hidden_effect = {
-			remove_country_leader_role = {
-				character = CHI_wang_jingwei
-				ideology = xunzheng
-			}
-			activate_advisor = wjw_tok_1
-			deactivate_advisor = cks_tok_1
-			set_politics = {
-				ruling_party = neutrality
-				last_election = "1936.1.1"
-				election_frequency = 48
-				elections_allowed = no
-			}
+			#remove_country_leader_role = {
+			#	character = CHI_wang_jingwei
+			#	ideology = xunzheng
+			#}
+			#activate_advisor = wjw_tok_1
+			#deactivate_advisor = cks_tok_1
+			#set_politics = {
+			#	ruling_party = neutrality
+			#	last_election = "1936.1.1"
+			#	election_frequency = 48
+			#	elections_allowed = no
+			#}
 
-			set_popularities = {
-				neutrality = 48
-				communism = 33
-				democratic = 7
-				fascism = 12	
-			}
+			#set_popularities = {
+			#	neutrality = 48
+			#	communism = 33
+			#	democratic = 7
+			#	fascism = 12	
+			#}
 		}
 	}
 	option = { 

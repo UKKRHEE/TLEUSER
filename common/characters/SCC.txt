@@ -1,0 +1,24 @@
+characters = {
+	SCC_yang_sen = {
+		name = "SCC_yang_sen"
+		portraits={
+			civilian={
+				large="gfx/leaders/SZC/Portrait_SZC_Yang_Sen.png"
+			}
+			army = {
+				large="gfx/leaders/SZC/Portrait_SZC_Yang_Sen.png"
+			}
+		}
+		country_leader={
+			ideology=oligarchism
+		}
+		field_marshal={
+			traits = { politically_connected career_officer offensive_doctrine }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+}	

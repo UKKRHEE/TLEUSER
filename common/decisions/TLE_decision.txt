@@ -2,58 +2,60 @@
 TLE_history_yes = {
 	KOR_TLE_TNO_scree_info = {
 
-		#icon = generic_prepare_civil_war
+		icon = generic_prepare_civil_war
 		
-		# picture = GFX_decision_cat_national_assembly
+	 	picture = GFX_decision_cat_national_assembly
         
-		allowed = {
-		}
-		available = {
-			OR = {
+	 	allowed = {
+	 	}
+	 	available = {
+	 		OR = {
 				original_tag = KOR
-				original_tag = DKG
+	 			original_tag = DKG
 				original_tag = JAP
-				original_tag = CHI
-				original_tag = ZLC
-				original_tag = SOV
-				original_tag = USA
-				original_tag = ENG
-				original_tag = FRA
-				original_tag = ITA
-				original_tag = GER
-			}
-			is_ai = no
-		}
+	 			original_tag = CHI
+	 			original_tag = ZLC
+	 			original_tag = SOV
+	 			original_tag = USA
+	 			original_tag = ENG
+	 			original_tag = FRA
+	 			original_tag = ITA
+	 			original_tag = GER
+	 			original_tag = SIA
+	 		}
+	 		is_ai = no
+	 	}
 
-		visible = {
-			OR = {
-				original_tag = KOR
-				original_tag = DKG
-				original_tag = JAP
-				original_tag = CHI
-				original_tag = ZLC
-				original_tag = SOV
-				original_tag = USA
-				original_tag = ENG
-				original_tag = FRA
-				original_tag = ITA
-				original_tag = GER
-			}
-		}
-		cost = 0
-		ai_will_do = {
-			factor = 0
-		}
+	 	visible = {
+	 		OR = {
+	 			original_tag = KOR
+	 			original_tag = DKG
+	 			original_tag = JAP
+	 			original_tag = CHI
+	 			original_tag = ZLC
+	 			original_tag = SOV
+	 			original_tag = USA
+	 			original_tag = ENG
+	 			original_tag = FRA
+	 			original_tag = ITA
+	 			original_tag = GER
+	 			original_tag = SIA
+	 		}
+	 	}
+	 	cost = 0
+	 	ai_will_do = {
+	 		factor = 0
+	 	}
 		
-		fire_only_once = no
+	 	fire_only_once = no
 
 
-		# modifier = {
-		# }
+	 	modifier = {
+	 	}
 		
 
-		complete_effect = {
-			set_country_flag = TNO_Country_Info_Screen_Visible
+	 	complete_effect = {
+	 		set_country_flag = TNO_Country_Info_Screen_Visible
         }
     }
 	KOR_history_of_TLE_world = {
@@ -84,220 +86,7 @@ TLE_history_yes = {
 
 		complete_effect = {
 			country_event = {
-				id = korea.784
-			}
-        }
-    }
-	TLE_I_WANT_TO_SEE_SP = {
-
-		#icon = generic_prepare_civil_war
-		
-		# picture = GFX_decision_cat_national_assembly
-        
-		allowed = {
-		}
-		available = {
-			has_country_flag = TLE_CANT_SEE_SP_EVENT
-			is_ai = no
-		}
-
-		visible = {
-			has_country_flag = TLE_CANT_SEE_SP_EVENT
-		}
-		cost = 0
-		ai_will_do = {
-			factor = 0
-		}
-		
-		fire_only_once = no
-
-
-		# modifier = {
-		# }
-		
-
-		complete_effect = {
-			clr_country_flag = TLE_CANT_SEE_SP_EVENT
-        }
-    }
-	TLE_I_DONT_TO_SEE_SP = {
-
-		#icon = generic_prepare_civil_war
-		
-		# picture = GFX_decision_cat_national_assembly
-        
-		allowed = {
-		}
-		available = {
-			NOT = {
-				has_country_flag = TLE_CANT_SEE_SP_EVENT
-			}
-			is_ai = no
-		}
-
-		visible = {
-			NOT = {
-				has_country_flag = TLE_CANT_SEE_SP_EVENT
-			}
-		}
-		cost = 0
-		ai_will_do = {
-			factor = 0
-		}
-		
-		fire_only_once = no
-
-
-		# modifier = {
-		# }
-		
-
-		complete_effect = {
-			set_country_flag = TLE_CANT_SEE_SP_EVENT
-        }
-    }
-	TLE_I_DONT_TO_SEE_JOKBO = {
-
-		#icon = generic_prepare_civil_war
-		
-		# picture = GFX_decision_cat_national_assembly
-        
-		allowed = {
-		}
-		available = {
-			NOT = {
-				has_country_flag = double_leader_system_nosee
-			}
-			is_ai = no
-		}
-
-		visible = {
-			NOT = {
-				has_country_flag = double_leader_system_nosee
-			}
-			tag = KOR
-		}
-		cost = 0
-		ai_will_do = {
-			factor = 0
-		}
-		
-		fire_only_once = no
-
-
-		# modifier = {
-		# }
-		
-
-		complete_effect = {
-			set_country_flag = double_leader_system_nosee
-        }
-    }
-	TLE_I__SEE_JOKBO = {
-
-		#icon = generic_prepare_civil_war
-		
-		# picture = GFX_decision_cat_national_assembly
-        
-		allowed = {
-		}
-		available = {
-			has_country_flag = double_leader_system_nosee
-			is_ai = no
-		}
-
-		visible = {
-			has_country_flag = double_leader_system_nosee
-			tag = KOR
-		}
-		cost = 0
-		ai_will_do = {
-			factor = 0
-		}
-		
-		fire_only_once = no
-
-
-		# modifier = {
-		# }
-		
-
-		complete_effect = {
-			clr_country_flag = double_leader_system_nosee
-        }
-    }
-	#######
-	TLE_yi_kang_balance_see = {
-
-		#icon = generic_prepare_civil_war
-		
-		# picture = GFX_decision_cat_national_assembly
-        
-		allowed = {
-			original_tag = KOR
-		}
-		available = {
-			has_country_flag = TLE_dont_want_to_balance
-			is_ai = no
-		}
-
-		visible = {
-			has_country_flag = TLE_dont_want_to_balance
-			has_any_power_balance = yes
-		}
-		cost = 0
-		ai_will_do = {
-			factor = 0
-		}
-		
-		fire_only_once = no
-
-
-		# modifier = {
-		# }
-		
-
-		complete_effect = {
-			clr_country_flag = TLE_dont_want_to_balance
-        }
-    }
-	TLE_yi_kang_balance_notsee = {
-
-		#icon = generic_prepare_civil_war
-		
-		# picture = GFX_decision_cat_national_assembly
-        
-		allowed = {
-			original_tag = KOR
-		}
-		available = {
-			NOT = {
-				has_country_flag = TLE_dont_want_to_balance
-			}
-			is_ai = no
-		}
-
-		visible = {
-			NOT = {
-				has_country_flag = TLE_dont_want_to_balance
-			}
-			has_any_power_balance = yes
-		}
-		cost = 0
-		ai_will_do = {
-			factor = 0
-		}
-		
-		fire_only_once = no
-
-
-		# modifier = {
-		# }
-		
-
-		complete_effect = {
-			set_country_flag = TLE_dont_want_to_balance
-			hidden_effect = {
+				id = thelastempire.2
 			}
         }
     }

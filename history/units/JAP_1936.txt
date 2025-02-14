@@ -30,15 +30,6 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		unique = {
-			"무타구치 렌야"
-		}
-		portraits = {
-			army = {
-				large = "gfx/leaders/JAP/Portrait_JAP_renya_mudaguchi.png"
-				small = "gfx/interface/ideas/idea_JAP_renya_mudaguchi.png"
-			}
-		}
 		location = 4142
 		division_template = "Hohei Shidan"
 		start_experience_factor = 0.3
@@ -48,15 +39,6 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		unique = {
-			"도미나가 교지"
-		}
-		portraits = {
-			army = {
-				large = "gfx/leaders/JAP/Portrait_JAP_kyoji_tominaga.png"
-				small = "gfx/interface/ideas/idea_JAP_kyoji_tominaga.png"
-			}
-		}
 		location = 1067
 		division_template = "Hohei Shidan"
 		start_experience_factor = 0.3
@@ -65,15 +47,6 @@ units = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 1
-		}
-		unique = {
-			"스기야마 하지메"
-		}
-		portraits = {
-			army = {
-				large = "gfx/leaders/JAP/Portrait_JAP_hajime_tsugiyama.png"
-				small = "gfx/interface/ideas/idea_JAP_hajime_tsugiyama.png"
-			}
 		}
 		location = 1067
 		division_template = "Hohei Shidan"
@@ -102,7 +75,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 1136
+		location = 11960
 		division_template = "Hohei Shidan"
 		start_experience_factor = 0.3
 	}
@@ -111,7 +84,16 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 1136
+		location = 13384
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13389
 		division_template = "Hohei Shidan"
 		start_experience_factor = 0.3
 	}

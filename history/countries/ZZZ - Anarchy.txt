@@ -29,7 +29,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/ZZZ/Portrait_ZZZ_Anarchy.dds"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = anarchism
 	traits = {
 		#
 	}

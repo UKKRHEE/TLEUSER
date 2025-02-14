@@ -5,7 +5,7 @@ country_event = { #막부의 운명
 	id = TLE_DKG_event.1
 	title = TLE_DKG_event.1.t
 	desc = TLE_DKG_event.1.d
-	picture = GFX
+	picture = GFX_report_event_vienna_award_hungary
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -50,7 +50,6 @@ country_event = { #막부가 교토 점령
 			id = 1182
 			name = "keijo"
 		set_capital = { state = 282 }
-		set_country_flag = DKG_marching_to_kyoto_flag
 	}
 }
 }
@@ -144,7 +143,7 @@ country_event = { #진압 실패-관서
 	id = TLE_DKG_event.9
 	title = TLE_DKG_event.9.t
 	desc = TLE_DKG_event.9.d
-	picture = GFX
+	picture = GFX_event_japanese_revolt
 
 	is_triggered_only = yes
 	fire_only_once = yes

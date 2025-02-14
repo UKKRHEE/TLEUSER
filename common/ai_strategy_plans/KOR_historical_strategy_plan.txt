@@ -6,18 +6,9 @@ KOR_historical_plan = {
 		original_tag = KOR
 	}
 	enable = {
-		OR = {
-			AND = {
-				is_historical_focus_on = yes
-				has_game_rule = {
-					rule = KOR_ai_behavior
-					option = FASCIST_HISTORICAL
-				}
-			}
-			has_game_rule = {
-				rule = KOR_ai_behavior
-				option = DEFAULT
-			}
+		has_game_rule = {
+			rule = KOR_ai_behavior
+			option = FASCIST_HISTORICAL
 		}
 	}
 	abort = {
@@ -45,8 +36,8 @@ KOR_historical_plan = {
 		KOR_all_claim
 		kor_tsushima
 		KOR_last_say_of_russia
-		kor_add
-		KOR_dalian_attack
+		#kor_add
+		#KOR_dalian_attack
 		KOR_attack_colonial_territory
 		KOR_allied_with_russia
 		KOR_give_me_the_manchu
@@ -55,8 +46,15 @@ KOR_historical_plan = {
 		KOR_kyushu_colonism_up
 		KOR_attack_taiwan
 		kor_control_asia
-		KOR_indonesia_support
-	}				
+		#KOR_indonesia_support
+		KOR_the_plan_south
+		KOR_the_malay_focus
+		KOR_the_ins_focus
+		KOR_the_philiphine_focus
+		KOR_baekje_kisadan
+		kor_control_asia
+		KOR_GEACP_zone
+	}
 
 	research = {
 		

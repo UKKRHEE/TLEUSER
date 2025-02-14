@@ -1,0 +1,585 @@
+characters={
+	SIA_phraya_phahon = {
+		name = "SIA_phraya_phahon"
+		portraits={
+			civilian={
+				large="gfx/leaders/SIA/Portrait_Siam_Phraya_Phahon.dds"
+			}
+			army={
+				small="gfx/interface/ideas/SIA/idea_SIA_phraya_phahon.dds"
+				large="gfx/leaders/SIA/Phraya_Phahon.png"
+			}
+		}
+		country_leader={
+			ideology=oligarchism
+			desc = "SIA_phraya_phahon_desc"
+			traits = { permanent_revolutionary }
+		}
+		field_marshal={
+			desc = "SIA_phraya_phahon_desc"
+			traits = {
+				old_guard
+				inflexible_strategist
+				inspirational_leader
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 3
+		}
+		advisor={
+			slot = air_chief
+			idea_token = SIA_phraya_phahon
+			allowed = {
+				original_tag = SIA	
+			}
+			available = {
+				has_idea = SIA_phraya_phahon
+			}
+			traits = {
+				air_chief_reform_1
+			}
+			cost = 100
+			removal_cost = -1
+			#can_be_fired = no
+		}
+	}
+	SIA_pridi_banomyong={
+		name="SIA_pridi_banomyong"
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/SIA/idea_SIA_pridi_panomyong.dds"
+				large="gfx/leaders/SIA/Pridi_Banomyong.png"
+			}
+		}
+		country_leader={
+			ideology=socialism
+			desc = "SIA_pridi_banomyong_desc"
+			traits={ pridi_trait }
+			id=-1
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = pridi_banomyong
+			ledger = army
+				allowed = {
+					original_tag = SIA
+				}
+				available = {
+					NOT  = {
+						has_government = fascism 
+					}
+				}
+				traits = {
+					financial_expert
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+	}
+	SIA_ananda_mahidol={
+		name="SIA_ananda_mahidol"
+		portraits={
+			civilian={
+				small="#"
+				large="gfx/leaders/SIA/Rama_VIII.png"
+			}
+		}
+	}
+	SIA_chao_phonphayuhasena={
+		name="SIA_unknown"
+		portraits={
+			civilian={
+				large=GFX_portrait_Chao_Phonphayuhasena
+			}
+		}
+		country_leader={
+			ideology=anarchist_communism
+			traits={ retired_officer }
+			expire="1942.1.1.12"
+			id=-1
+		}
+	}
+	SIA_plaek_phibunsongkhram={
+		name="SIA_plaek_phibunsongkhram"
+		portraits={
+			civilian={
+				small="GFX_idea_SIA_plaek_phibunsongkhram"
+				large="gfx/leaders/SIA/Plaek_Phibunsongkhram.png"
+			}
+		}
+		country_leader={
+			ideology=fascism_ideology
+			desc = "SIA_plaek_phibunsongkhram_desc"
+			traits = { dictator }
+			id=-1
+		}
+		corps_commander={
+			desc = "SIA_plaek_phibunsongkhram_commander_desc"
+			traits = {
+				infantry_officer
+				jungle_rat
+				naval_liason
+			}
+			skill = 3
+			attack_skill = 5
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+		advisor={
+			slot = army_chief
+			idea_token = plaek_phibunsongkhram
+			desc = "SIA_plaek_phibunsongkhram_commander_desc"
+			ledger = army
+				allowed = {
+					original_tag = SIA
+				}
+				traits = {
+					army_chief_offensive_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+	}
+	SIA_plaek_phibunsongkhram_old={
+		name="SIA_plaek_phibunsongkhram"
+		portraits={
+			civilian={
+				small=""
+				large="gfx/leaders/SIA/Old_Phibun.png"
+			}
+		}
+	}
+	SIA_khuang_aphaiwong={
+		name="SIA_khuang_aphaiwong"
+		portraits={
+			civilian={
+				small="GFX_idea_SIA_khuang_aphaiwong"
+				large="gfx/leaders/SIA/Khuang_Aphaiwong.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = khuang_aphaiwong
+			ledger = army
+				allowed = {
+					original_tag = SIA
+				}
+				traits = {
+					silent_workhorse
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+	}
+	SIA_luang_karjsongkhram={
+		name="SIA_luang_karjsongkhram"
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/SIA/idea_SIA_luang_karjsongkhram.dds"
+				large="gfx/leaders/SIA/Portrait_Siam_Luang_Karjsongkhram.dds"
+			}
+		}
+		corps_commander={
+			traits = {
+				armor_officer
+				trait_reckless
+			}
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+		}
+		advisor={
+			slot = high_command
+			idea_token = luang_karjsongkhram
+			ledger = army
+				allowed = {
+					original_tag = SIA
+				}
+				traits = {
+					army_armored_1
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+	}
+	SIA_adul_adulyadejchrat={
+		name="SIA_adul_adulyadejchrat"
+		portraits={
+			civilian={
+				small="GFX_idea_SIA_adul_adulyadejchrat"
+				large="gfx/leaders/SIA/Portrait_Siam_Adul_Adulyadejchrat.dds"
+			}
+		}
+		corps_commander={
+			traits = {
+				inflexible_strategist
+				bearer_of_artillery
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+		advisor={
+			slot = army_chief
+			idea_token = adul_adulyadejchrat
+			ledger = army
+				allowed = {
+					original_tag = SIA
+				}
+				traits = {
+					army_artillery_3
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+	}
+	SIA_phraya_songsuradet={
+		name="SIA_phraya_songsuradet"
+		portraits={
+			civilian={
+				small="GFX_idea_SIA_phraya_songsuradet"
+				large="gfx/leaders/SIA/Portrait_Siam_Phraya_Songsuradet.png"
+			}
+		}
+		corps_commander={
+			traits = {
+				politically_connected
+				media_personality
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = phraya_songsuradet
+			ledger = army
+				allowed = {
+					original_tag = SIA
+				}
+				traits = {
+					compassionate_gentleman
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+	}
+	SIA_mangkorn_promyothee={
+		name="SIA_mangkorn_promyothee"
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/SIA/idea_SIA_mangkorn_promyothee.dds"
+				large="gfx/leaders/SIA/Portrait_Siam_Mangkorn_Promyothee.dds"
+			}
+		}
+		corps_commander={
+			traits = {
+				infantry_officer
+				harsh_leader
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		advisor={
+			slot = theorist
+			idea_token = mangkorn_promyothee
+			ledger = army
+		    allowed = {
+		    	original_tag = SIA
+		    }
+		    traits = { military_theorist }
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SIA_pichit_kriengsakpichit={
+		name="SIA_pichit_kriengsakpichit"
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/SIA/idea_SIA_pichit_kriengsakpichit.png"
+				large="gfx/leaders/SIA/Portrait_Siam_Pichit_Kriengsakpichit.dds"
+			}
+		}
+		corps_commander={
+			traits = {
+				infantry_officer
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 2
+		}
+		advisor={
+			slot = theorist
+			idea_token = SIA_pichit_kriengsakpichit
+			ledger = army
+		    allowed = {
+		    	original_tag = SIA
+		    }
+		    traits = { grand_battle_plan_expert }
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SIA_luang_seriroengrit={
+		name="SIA_luang_seriroengrit"
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/SIA/idea_SIA_luang_seriroengrit.png"
+				large="gfx/leaders/SIA/Portrait_Siam_Luang_Seriroengrit.dds"
+			}
+		}
+		corps_commander={
+			traits = {
+				logistics_wizard
+			}
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 4
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SIA_luang_seriroengrit
+			ledger = army
+		    allowed = {
+		    	original_tag = SIA
+		    }
+		    traits = { prince_of_terror }
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SIA_luang_wichitwathakan={
+		name="SIA_luang_wichitwathakan"
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/SIA/idea_SIA_luang_wichitwathakan.png"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SIA_luang_wichitwathakan
+			ledger = army
+		    allowed = {
+		    	original_tag = SIA
+		    }
+		    traits = { propaganda_expert }
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SIA_pao_pienlert_boripanyutakit={
+		name="SIA_pao_pienlert_boripanyutakit"
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/SIA/idea_SIA_pao_pienlert_boripanyutakit.png"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SIA_pao_pienlert_boripanyutakit
+			ledger = army
+		    allowed = {
+		    	original_tag = SIA
+		    }
+		    traits = { war_industrialist }
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SIA_phin_choonhavan={
+		name="SIA_phin_choonhavan"
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/SIA/idea_SIA_phin_choonhavan.png"
+				large="gfx/leaders/SIA/Portrait_Siam_Phin_Choonhavan.dds"
+			}
+		}
+		corps_commander={
+			traits = {
+				cavalry_leader
+			}
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+		}
+		advisor={
+			slot = high_command
+			idea_token = SIA_phin_choonhavan
+			ledger = army
+		    allowed = {
+		    	original_tag = SIA
+		    }
+		    traits = { army_cavalry_2 }
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SIA_bunchai_sawathasuk={
+		name="SIA_bunchai_sawathasuk"
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/SIA/idea_SIA_bunchai_sawathasuk.png"
+				large="gfx/leaders/SIA/Portrait_Siam_Bunchai_Sawathasuk.dds"
+			}
+		}
+		corps_commander={
+			traits = {
+				ambusher
+				scavenger
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+		}
+		advisor={
+			slot = high_command
+			idea_token = SIA_bunchai_sawathasuk
+			ledger = army
+		    allowed = {
+		    	original_tag = SIA
+		    }
+		    traits = { army_concealment_2 }
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SIA_sindhu_kamolnavin={
+		name="SIA_sindhu_kamolnavin"
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/SIA/idea_SIA_sindhu_kamolnavin.dds"
+				large="gfx/leaders/SIA/Portrait_Siam_Sindhu_Kamolnavin.dds"
+			}
+		}
+		navy_leader={
+			traits = { blockade_runner }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 3
+			maneuvering_skill = 4
+			coordination_skill = 1
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = SIA_sindhu_kamolnavin
+			allowed = {
+				original_tag = SIA
+			}
+			traits = {
+				navy_chief_maneuver_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SIA_thawan_thamrongnawasawat={
+		name="SIA_thawan_thamrongnawasawat"
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/SIA/idea_SIA_thawan_thamrongnawasawat.dds"
+				large="gfx/leaders/SIA/Portrait_Siam_Thawan_Thamrongnawasawat.dds"
+			}
+		}
+		navy_leader={
+			traits = { ironside }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			maneuvering_skill = 1
+			coordination_skill = 1
+		}
+		advisor={
+			slot = high_command
+			idea_token = SIA_sindhu_kamolnavin
+			allowed = {
+				original_tag = SIA
+			}
+			traits = {
+				navy_chief_decisive_battle_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SIA_mongkol_mongkolnavin={
+		name="SIA_mongkol_mongkolnavin"
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/SIA/idea_SIA_mongkol_mongkolnavin.dds"
+				large="gfx/leaders/SIA/Portrait_Siam_Mongkol_Mongkolnavin.dds"
+			}
+		}
+		navy_leader={
+			traits = { spotter }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			maneuvering_skill = 2
+			coordination_skill = 2
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = mongkol_mongkolnavin
+			allowed = {
+				original_tag = SIA
+			}
+			traits = {
+				navy_chief_reform_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+}

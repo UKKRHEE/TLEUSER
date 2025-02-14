@@ -5,6 +5,8 @@
  TLE_fight_opinion:0 "우리와 적대함"
  TLE_anhui_clique_opinion:0 "안휘군벌"
  TLE_zhili_clique_opinion:0 "직예군벌"
+ TLE_nanyang_puppet_not:0 "남양군도 독립 맹약"
+ TLE_koreas_support:0 "연미공영"
  KMT_opinion:0 "국민당"
  #opinion modifier
  GER_KOR:0 "추축동맹"

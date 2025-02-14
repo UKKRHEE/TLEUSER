@@ -1,5 +1,5 @@
 ﻿division_template = {
-	name = "하급 무사" 			# (Square) Infantry Division - 4 infantry regiments (3k men each), 1 field artillery regiment - abstracted into infantry,
+	name = "Bakufu Hohei Rentai" 			# (Square) Infantry Division - 4 infantry regiments (3k men each), 1 field artillery regiment - abstracted into infantry,
 	division_names_group = JAP_INF_01
 									# 1 engineering regiment, 1 recon regiment
 	regiments = {
@@ -17,7 +17,7 @@ units = {
 			name_order = 1
 		}
 		location = 10125
-		division_template = "하급 무사"
+		division_template = "Bakufu Hohei Rentai"
 		start_experience_factor = 0.3
 	}
 }

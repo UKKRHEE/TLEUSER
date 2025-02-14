@@ -7,7 +7,7 @@ on_actions = {
 			1046 = { set_state_flag = guangdong_province_state } #광저우
 			593 = { set_state_flag = guangdong_province_state } #광둥
 			592 = { set_state_flag = guangdong_province_state } #포산
-			971 = { set_state_flag = guangdong_province_state } #친저우
+			1098 = { set_state_flag = guangdong_province_state } #친저우
 			1045 = { set_state_flag = guangdong_province_state } #잔장
 			728 = { set_state_flag = guangdong_province_state } #광저우만
 			591 = { set_state_flag = guangdong_province_state } #하이난
@@ -58,7 +58,7 @@ on_actions = {
 			598 = { set_state_flag = jiangsu_province_state } #쑤첸
 			1051 = { set_state_flag = jiangsu_province_state } #옌청
 			1040 = { set_state_flag = jiangsu_province_state } #타이저우
-			979 = { set_state_flag = jiangsu_province_state } #난퉁
+			997 = { set_state_flag = jiangsu_province_state } #난퉁
 			613 = { set_state_flag = jiangsu_province_state } #난징
 			1038 = { set_state_flag = jiangsu_province_state } #자싱
 			1037 = { set_state_flag = jiangsu_province_state } #쑤저우
@@ -93,10 +93,10 @@ on_actions = {
 			#산서성
 			1052 = { set_state_flag = shanxi_province_state } #뤼량
 			615 = { set_state_flag = shanxi_province_state } #타이위안
-			972 = { set_state_flag = shanxi_province_state } #양취안
+			1099 = { set_state_flag = shanxi_province_state } #양취안
 			
 			#산동성
-			973 = { set_state_flag = shandong_province_state } #랴오청
+			1100 = { set_state_flag = shandong_province_state } #랴오청
 			597 = { set_state_flag = shandong_province_state } #지난
 			1050 = { set_state_flag = shandong_province_state } #둥잉
 			1049 = { set_state_flag = shandong_province_state } #웨이팡
@@ -110,12 +110,12 @@ on_actions = {
 			621 = { set_state_flag = suiyuan_province_state } #쑤이위안
 			
 			#직예성
-			974 = { set_state_flag = zhili_province_state } #스자좡
+			1101 = { set_state_flag = zhili_province_state } #스자좡
 			614 = { set_state_flag = zhili_province_state } #바오딩
 			608 = { set_state_flag = zhili_province_state } #베이징
 			1033 = { set_state_flag = zhili_province_state } #톈진
 			609 = { set_state_flag = zhili_province_state } #탕산
-			970 = { set_state_flag = zhili_province_state } #즈리
+			1097 = { set_state_flag = zhili_province_state } #즈리
 			1012 = { set_state_flag = zhili_province_state } #후루다오
 			
 			#찰합이

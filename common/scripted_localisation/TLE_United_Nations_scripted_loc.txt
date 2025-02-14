@@ -1,0 +1,97 @@
+defined_text = {
+	name = GetUNAgenda
+	text = {
+		trigger = {
+			check_variable = { UN_Agenda_v = 1 }
+		}
+		localization_key = "UN_Agenda_1695"
+	}
+	text = {
+		trigger = {
+			check_variable = { UN_Agenda_v = 2 }
+		}
+		localization_key = "UN_Agenda_6974"
+	}
+	text = {
+		localization_key = "UN_Agenda_None"
+	}
+}
+
+defined_text = {
+	name = GetUNAgendaDesc
+	text = {
+		trigger = {
+			check_variable = { UN_Agenda_v = 1 }
+		}
+		localization_key = "UN_Agenda_1695_desc"
+	}
+	text = {
+		trigger = {
+			check_variable = { UN_Agenda_v = 2 }
+		}
+		localization_key = "UN_Agenda_6974_desc"
+	}
+}
+
+defined_text = {
+	name = GetUNAgendaPass
+
+	text = {
+		trigger = {
+			has_global_flag = UN_Agenda_Passed
+		}
+		localization_key = "UN_Agenda_Passed_TEXT"
+	}
+
+	text = {
+		trigger = {
+			has_global_flag = UN_Agenda_Rejected
+		}
+		localization_key = "UN_Agenda_Rejected_TEXT"
+	}
+}
+
+defined_text = {
+	name = GetUNAgendaCheck
+
+	text = {
+		trigger = {
+			check_variable = { GetAgendaFrame = 2 }
+		}
+		localization_key = "UN_SC_Agenda_Check_Yes"
+	}
+
+	text = {
+		localization_key = "UN_SC_Agenda_Check_No"
+	}
+}
+
+defined_text = {
+	name = GetAgendaHistory
+	text = {
+		trigger = { check_variable = { global.GNG_legco_ordinance_id = 1 } }
+		localization_key = "UN_Agenda_1695"
+	}
+	text = {
+		trigger = { check_variable = { global.GNG_legco_ordinance_id = 2 } }
+		localization_key = "UN_Agenda_6974"
+	}
+	text = {
+		localization_key = "NO TITLE"
+	}
+}
+
+defined_text = {
+	name = GetAgendaHistoryDesc
+	text = {
+		trigger = { check_variable = { global.GNG_legco_ordinance_id = 1 } }
+		localization_key = "UN_Agenda_1695_desc"
+	}
+	text = {
+		trigger = { check_variable = { global.GNG_legco_ordinance_id = 2 } }
+		localization_key = "UN_Agenda_6974_desc"
+	}
+	text = {
+		localization_key = "NO TITLE"
+	}
+}

@@ -1,0 +1,5 @@
+﻿
+focus = {
+    current = "KOR_kim_death_go_to_the_chaebol"
+    Progress = 0
+}   

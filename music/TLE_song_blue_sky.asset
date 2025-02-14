@@ -1,0 +1,95 @@
+music = {
+	name = "winter_sea"
+	file = "blue_sky/winter_sea.ogg"
+	volume = 1.0
+}
+music = {
+	name = "when_the_crying_day"
+	file = "blue_sky/when_the_crying_day.ogg"
+	volume = 1.0
+}
+music = {
+	name = "sad_goodbye"
+	file = "blue_sky/sad_goodbye.ogg"
+	volume = 1.0
+}
+music = {
+	name = "until_this_night_passes"
+	file = "blue_sky/until_this_night_passes.ogg"
+	volume = 1.0
+}
+music = {
+	name = "we_are_all_here"
+	file = "blue_sky/we_are_all_here.ogg"
+	volume = 1.0
+}
+music = {
+	name = "blue_sky_song"
+	file = "blue_sky/blue_sky_song.ogg"
+	volume = 1.0
+}
+music = {
+	name = "love_to_you"
+	file = "blue_sky/love_to_you.ogg"
+	volume = 1.0
+}
+music = {
+	name = "until_that_day_comes"
+	file = "blue_sky/until_that_day_comes.ogg"
+	volume = 1.0
+}
+music = {
+	name = "congratulation_bluesky"
+	file = "blue_sky/congratulation_bluesky.ogg"
+	volume = 1.0
+}
+music = {
+	name = "street_seen_in_a_dream"
+	file = "blue_sky/street_seen_in_a_dream.ogg"
+	volume = 1.0
+}
+music = {
+	name = "under_the_dark_sky"
+	file = "blue_sky/under_the_dark_sky.ogg"
+	volume = 1.0
+}
+music = {
+	name = "her_call"
+	file = "blue_sky/her_call.ogg"
+	volume = 1.0
+}
+music = {
+	name = "her_call_ii"
+	file = "blue_sky/her_call_ii.ogg"
+	volume = 1.0
+}
+music = {
+	name = "forever_in_my_heart"
+	file = "blue_sky/forever_in_my_heart.ogg"
+	volume = 1.0
+}
+music = {
+	name = "road_to_tomorrow"
+	file = "blue_sky/road_to_tomorrow.ogg"
+	volume = 1.0
+}
+music = {
+	name = "changed_outfit"
+	file = "blue_sky/changed_outfit.ogg"
+	volume = 1.0
+}
+music = {
+	name = "forget_me"
+	file = "blue_sky/forget_me.ogg"
+	volume = 1.0
+}
+music = {
+	name = "under_your_side"
+	file = "blue_sky/under_your_side.ogg"
+	volume = 1.0
+}
+music = {
+	name = "i_dont_want_to_chainned"
+	file = "blue_sky/i_dont_want_to_chainned.ogg"
+	volume = 1.0
+}

@@ -8,7 +8,7 @@ state={
 
 	history={
 		victory_points = {
-			1097 3 
+			1097 7
 		}
 		victory_points = {
 			7016 3 
@@ -21,10 +21,6 @@ state={
 			industrial_complex = 1
 			arms_factory = 1
 			dockyard = 1
-			9998 = {
-				naval_base = 6
-
-			}
 
 		}
 		1939.1.1 = {

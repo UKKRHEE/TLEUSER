@@ -1,0 +1,47 @@
+guiTypes = {
+	containerWindowType = {
+		name = "KOR_IKN_purge_GUI"
+		size = { width = 500 height = 100 }
+		position = { x = 0 y = 0 }
+
+		containerWindowType = {
+			name = "KOR_IKN_purge"
+			size = { width = 0 height = 0 }
+			position = { x = -100 y = 60 }
+
+			iconType = {#진척도
+				name = "KOR_IKN_purge_Progressbar"
+				spriteType = "GFX_KOR_IKN_purge_Progressbar"
+				position = { x =200 y = -31 } 
+			}
+			iconType = {#
+				name = "KOR_IKN_purge_Progressbar_frame"
+				spriteType = "GFX_JAP_progressbar_frame"
+				position = { x =200 y = -30 } 
+			}
+			instantTextBoxType = {
+				name ="KOR_IKNTOOLTIP"
+				position = { x = 230 y = 20 }
+				font = "cg_16b"
+				borderSize = {x = 0 y = 0}
+				text = "KOR_IKN_tt"
+				format = left
+				maxWidth = 600
+				maxHeight = 30
+			}
+			#iconType = {
+			#	name = "PSD"
+			#	spriteType = "GFX_BRA_GUI_PSD"
+			#	position = { x = 420 y = 462 }
+			#	scale = 1.00
+			#}
+#
+			#iconType = {
+			#	name = "UDN"
+			#	spriteType = "GFX_BRA_GUI_UDN"
+			#	position = { x = 11 y = 462 }
+			#	scale = 1.00
+			#}
+		}
+	}
+}

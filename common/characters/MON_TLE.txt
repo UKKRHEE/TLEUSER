@@ -9,9 +9,6 @@ characters={
 				large="GFX_portrait_men_demchugdongrub"
 			}
 		}
-		country_leader={
-			ideology=despotism
-		}
 		field_marshal={
 			skill = 1
 			attack_skill = 1

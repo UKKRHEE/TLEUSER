@@ -44,40 +44,5 @@ spriteTypes = {
 		texturefile = "gfx/interface/decisions/reitoku.png"
 		legacy_lazy_load = no
 	}
-	spriteType = {
-		name = "GFX_Portrait_KOR_yi_hwan" 
-		texturefile = "gfx/leaders/KOR/Portrait_KOR_yi_hwan.png"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_Portrait_KOR_yi_cheon"
-		texturefile = "gfx/leaders/KOR/Portrait_KOR_yi_cheon.png"
-		legacy_lazy_load = no
-	} 
-	spriteType = {
-		name = "GFX_Portrait_KOR_yi_taek"
-		texturefile = "gfx/leaders/KOR/Portrait_KOR_yi_taek.png"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_Portrait_KOR_yi_jin"
-		texturefile = "gfx/leaders/KOR/Portrait_KOR_yi_jin_old.png"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_Portrait_KOR_yi_jin_TNO"
-		texturefile = "gfx/leaders/KOR/Portrait_KOR_yi_jin_TNO.png"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_Portrait_KOR_yi_jin_lose"
-		texturefile = "gfx/leaders/KOR/Portrait_KOR_yi_jin_lose.png"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_Portrait_KOR_yi_hyul"
-		texturefile = "gfx/leaders/KOR/Portrait_KOR_yi_hyul.png"
-		legacy_lazy_load = no 
-	}
 
 }

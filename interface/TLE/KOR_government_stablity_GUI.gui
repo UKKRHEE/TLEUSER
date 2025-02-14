@@ -1,0 +1,176 @@
+guiTypes = {
+	containerWindowType = {
+		name = "KOR_government_stablity_GUI"
+		size = { width = 500 height = 430 }
+		position = { x = 0 y = 0 }
+
+		iconType = {
+			name = "desc"
+			spriteType = "GFX_help_button"
+			position = { x = 464 y = -10 }
+			pdx_tooltip = "KOR_government_stablity_desc_tt"
+		}
+
+		containerWindowType = {
+			name = "KOR_government_stablity_main_container"
+			position = { x = 70 y = -15 }
+			size = { width = 350 height = 320 }
+
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_tiled_window_thin_border2"
+			}
+
+			containerWindowType = {
+				name = "pabeol"
+				position = { x = -50 y = 33 }
+
+				containerWindowType = {
+					name = "pabeol_title"
+					position = { x = 3 y = 0 }
+
+					instantTextBoxType = {
+						name ="KOR_KIM_pabeol_title"
+						position = { x = 80 y = -20 }
+						font = "Bomb_28"
+						borderSize = {x = 0 y = 0}
+						text = "KOR_KIM_pabeol_title"
+						format = left
+						maxWidth = 200
+						maxHeight = 30
+					}
+	
+					
+					instantTextBoxType = {
+						name ="KOR_KIM_pabeol_rating_title"
+						position = { x = 190 y = -20 }
+						font = "Bomb_28"
+						borderSize = {x = 0 y = 0}
+						text = "KOR_KIM_pabeol_rating_title"
+						format = left
+						maxWidth = 200
+						maxHeight = 30
+					}
+	
+					instantTextBoxType = {
+						name ="KOR_KIM_pabeol_level_title"
+						position = { x = 320 y = -20 }
+						font = "Bomb_28"
+						borderSize = {x = 0 y = 0}
+						text = "KOR_KIM_pabeol_level_title"
+						format = left
+						maxWidth = 200
+						maxHeight = 30
+					}
+				}
+
+				gridBoxType = {
+					name = "pabeol_grid"
+					position = { x = 2 y = 0 }
+					size = { width = 100%% height = 100%% }
+					slotsize = { width = 100%% height = 30 }
+					max_slots_horizontal = 1
+					max_slots_vertical = 8
+					add_horizontal = no
+				}
+			}
+		}
+
+		containerWindowType = {
+			name = "KOR_government_stablity_progressbar_GUI"
+			size = { width = 0 height = 0 }
+			position = { x = -103 y = 85 }
+
+			iconType = {#진척도
+				name = "KOR_government_stablity_Progressbar"
+				spriteType = "GFX_KOR_IKN_purge_Progressbar"
+				position = { x =200 y = 229 } 
+			}
+			iconType = {#
+				name = "KOR_government_stablity_Progressbar_frame"
+				spriteType = "GFX_JAP_progressbar_frame"
+				position = { x =200 y = 230 } 
+			}
+			instantTextBoxType = {
+				name ="KOR_KIM_TOOLTIP"
+				position = { x = 190 y = 275 }
+				font = "cg_16b"
+				borderSize = {x = 0 y = 0}
+				text = "KOR_government_stablity_TT"
+				format = center
+				maxWidth = 300
+				maxHeight = 30
+			}
+		}
+
+		containerWindowType = {
+			name = "KOR_government_stablity_button_container"
+			position = { x = 19 y = 388 }
+
+			buttonType = {
+				name = "politic_button"
+				spriteType = "GFX_button_148x34"
+				buttonFont = "Bomb_16"
+				buttonText = "KOR_government_stablity_politic_button"
+				position = { x = 0 y = 0 }
+			}
+
+			buttonType = {
+				name = "military_button"
+				spriteType = "GFX_button_148x34"
+				buttonFont = "Bomb_16"
+				buttonText = "KOR_government_stablity_military_button"
+				position = { x = 150 y = 0 }
+			}
+
+			buttonType = {
+				name = "civil_button"
+				spriteType = "GFX_button_148x34"
+				buttonFont = "Bomb_16"
+				buttonText = "KOR_government_stablity_civil_button"
+				position = { x = 300 y = 0 }
+			}
+		}
+	}
+
+	containerWindowType = {
+		name = "pabeol_grid_entry"
+		position = { x = 0 y = 0 }
+
+		instantTextBoxType = {
+			name ="KOR_KIM_pabeol"
+			position = { x = 80 y = 30 }
+			font = "TNO_hoi_24header_outline_b"
+			borderSize = {x = 0 y = 0}
+			text = "[TLE_government_stablity_pabeol_name]"
+			# text = "v: [?pabeol_grid_v] i: [?pabeol_grid_i]"
+			format = left
+			maxWidth = 200
+			maxHeight = 30
+		}
+
+		instantTextBoxType = {
+			name ="KOR_KIM_pabeol_rating"
+			position = { x = 190 y = 30 }
+			font = "hoi_24header"
+			borderSize = {x = 0 y = 0}
+			text = "[TLE_government_stablity_pabeol_rating_var]"
+			# text = "v: [?pabeol_grid_v] i: [?pabeol_grid_i]"
+			format = left
+			maxWidth = 200
+			maxHeight = 30
+		}
+
+		instantTextBoxType = {
+			name ="KOR_KIM_pabeol_level"
+			position = { x = 320 y = 30 }
+			font = "hoi_24header"
+			borderSize = {x = 0 y = 0}
+			text = "[TLE_government_stablity_pabeol_level]"
+			# text = "v: [?pabeol_grid_v] i: [?pabeol_grid_i]"
+			format = left
+			maxWidth = 200
+			maxHeight = 30
+		}
+	}
+}

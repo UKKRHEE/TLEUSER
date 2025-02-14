@@ -1,0 +1,13 @@
+
+FRI_befree = {
+
+	picture = GFX_category_indochinesewar
+	
+	available = {
+		tag = FRI
+	}
+	visible = {
+		tag = FRI
+	}
+	priority = 100
+}

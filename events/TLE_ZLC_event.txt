@@ -607,16 +607,40 @@ country_event = {
 
 	is_triggered_only = yes
 	
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					has_country_leader = {
+						character = ZLC_cao_kun
+						ruling_only = yes
+					}
+				}
+				kill_country_leader = yes
+				add_country_leader_role = {
+					Character = ZLC_wu_peifu
+					country_leader = {
+						#expire = "1965.1.1"
+						ideology = despotism
+						desc="POLITICS_WU_PEIFU_DESC"
+						traits = {
+							ZLC_dazongtong 
+							wupeifu_trait
+						}
+					}
+					promote_leader = yes
+				}	
+			}
+		}
+	}
+	
 	option = {
 		name = ZLC.100.a
-		if = {
-			limit = {
-				has_country_leader = {
-					character = ZLC_cao_kun
-					ruling_only = yes
-				}
-			}
-			kill_country_leader = yes
+		news_event = {
+			id = eok_news.44
+			days = 2
+		}
+		effect_tooltip = {
 			add_country_leader_role = {
 				Character = ZLC_wu_peifu
 				country_leader = {
@@ -630,10 +654,7 @@ country_event = {
 				}
 				promote_leader = yes
 			}	
-		}
-		news_event = {
-			id = eok_news.44
-		}
+		}	
 	}
 }
 ############
@@ -650,6 +671,11 @@ country_event = {
 		NOT = {
 			has_completed_focus = ZLC_BEI_caokun_lead
 			has_completed_focus = ZLC_BEI_wupeifu_lead
+		}
+		KOR = {
+			NOT = {
+				has_country_flag = FLAG_KOR_DEMOCRACY_ROUTE
+			}
 		}
 	}
 	fire_only_once = yes

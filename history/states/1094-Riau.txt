@@ -1,0 +1,26 @@
+state={
+	id=1094
+	name="STATE_RIAU"
+	history={
+		owner = INS
+		add_core_of = INS
+		buildings = {
+			infrastructure = 1
+			12113 = {
+				naval_base = 1
+
+			}
+			13298 = {
+				naval_base = 1
+
+			}
+		}
+	}
+	provinces={
+		12113 13298 
+	}
+	manpower=685000
+	state_category = tiny_island
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

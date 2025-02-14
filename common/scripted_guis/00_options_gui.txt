@@ -1,0 +1,120 @@
+scripted_gui = {
+	KR_options_gui = {
+		context_type = player_context
+		window_name = "kr_options_container"
+		parent_window_token = top_bar
+		dirty = global.kr_options_dirty
+
+		ai_enabled = {
+			always = no
+		}
+
+		visible = {
+			has_global_flag = kr_options_visible
+		}
+
+		effects = {
+			super_events_button_click = {
+				if = {
+					limit = { has_global_flag = TLE_CANT_SEE_SP_EVENT }
+					set_variable = { global.super_events_frame = 2 }
+					clr_global_flag = TLE_CANT_SEE_SP_EVENT
+				}
+				else = {
+					set_variable = { global.super_events_frame = 1 }
+					set_global_flag = TLE_CANT_SEE_SP_EVENT
+				}
+				add_to_variable = { global.kr_options_dirty = 1 }
+			}
+			JOKBO_button_click = {
+				if = {
+					limit = { has_country_flag = double_leader_system_nosee }
+					set_variable = { global.JOKBO_frame = 2 }
+					clr_country_flag = double_leader_system_nosee
+				}
+				else = {
+					set_variable = { global.JOKBO_frame = 1 }
+					set_country_flag = double_leader_system_nosee
+				}
+				add_to_variable = { global.kr_options_dirty = 1 }
+			}
+			BOP_button_click = {
+				if = {
+					limit = { has_power_balance = { id = KOR_balance } }
+					set_variable = { global.BOP_frame = 1 }
+					remove_power_balance = { id = KOR_balance }
+				}
+				else = {
+					set_variable = { global.BOP_frame = 2 }
+					set_power_balance = { id = KOR_balance }
+				}
+				add_to_variable = { global.kr_options_dirty = 1 }
+			}
+		}
+
+		triggers = {
+			BOP_button_click_enabled = {
+				original_tag = KOR
+			}
+			JOKBO_button_click_enabled = {
+				original_tag = KOR
+			}
+		}
+
+		properties = {
+			super_events_button = {
+				frame = global.super_events_frame
+			}
+			JOKBO_button = {
+				frame = global.JOKBO_frame
+			}
+			BOP_button = {
+				frame = global.BOP_frame
+			}
+		}
+	}
+
+	KR_options_button = {
+		context_type = player_context
+		window_name = "kr_options_button_container"
+		parent_window_token = top_bar
+		dirty = global.kr_options_dirty
+
+		ai_enabled = {
+			always = no
+		}
+
+		effects = {
+			kr_options_button_click = {
+				if = {
+					limit = { has_global_flag = kr_options_visible }
+					clr_global_flag = kr_options_visible
+				}
+				else = {
+					set_global_flag = kr_options_visible
+				}
+			}
+		}
+	}
+
+	KR_help_button = {
+		context_type = player_context
+		window_name = "kr_help_button_container"
+		parent_window_token = top_bar
+		dirty = KR_welcome_splash_variable
+
+		ai_enabled = { always = no }
+
+		effects = {
+			kr_help_button_click = {
+				if = {
+					limit = { NOT = { has_country_flag = TNO_Country_Info_Screen_Visible } }
+					set_country_flag = TNO_Country_Info_Screen_Visible
+				}
+				else = {
+					clr_country_flag = TNO_Country_Info_Screen_Visible
+				}
+			}
+		}
+	}
+}

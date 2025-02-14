@@ -1,0 +1,36 @@
+
+state={
+	id=869
+	name="STATE_869"
+
+	history={
+		victory_points = {
+			1488 10 
+		}
+		victory_points = {
+			1990 3 
+		}
+		victory_points = {
+			7572 3 
+		}
+		victory_points = {
+			7492 1 
+		}
+		buildings = {
+			arms_factory = 1
+			infrastructure = 1
+
+		}
+		owner = SIA
+		add_core_of = SIA
+
+	}
+
+	provinces={
+		1253 1488 1990 4496 7312 7353 7492 7531 7544 7559 7572 7675 8045 10371 10398 10411 12345 
+	}
+	manpower=2000000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

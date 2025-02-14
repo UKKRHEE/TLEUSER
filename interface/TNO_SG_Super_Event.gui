@@ -103,7 +103,7 @@ guiTypes = {
 		animation_time = 1
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
-		size = { width = 588 height = 480 }
+		size = { width = 610 height = 400 }
 		Orientation = center
 		Origo = center
 		moveable = yes

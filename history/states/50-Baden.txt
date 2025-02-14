@@ -18,7 +18,6 @@ state={
 			11640 3 
 		}
 		add_core_of = GER
-		set_demilitarized_zone = yes
 		1939.1.1 = {
 			buildings = {
 				arms_factory = 2
@@ -31,7 +30,7 @@ state={
 	}
 
 	provinces={
-		3530 3679 6542 6568 6712 11640 
+		6555 6581 9517 9545 11499
 	}
 	manpower=1086854
 	buildings_max_level_factor=1.000

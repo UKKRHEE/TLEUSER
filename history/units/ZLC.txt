@@ -11,6 +11,8 @@ division_template = {
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
 	}
 	support = {
 		artillery = { x = 0 y = 0 }
@@ -24,10 +26,14 @@ division_template = {
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
 		infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 0 }
 	}
 	support = {
 		artillery = { x = 0 y = 0 }
@@ -375,63 +381,63 @@ units = {
 		location = 12012
 		division_template = "Jingyu Infantry Division"
 		start_experience_factor = 0.1
-		start_equipment_factor = 1.0
+		start_equipment_factor = 0.7
 	}
 	division = {
 		name = "2. Guofang Jun Bubing Zhen"
 		location = 4190
 		division_template = "Jingyu Infantry Division"
 		start_experience_factor = 0.1
-		start_equipment_factor = 1.0
+		start_equipment_factor = 0.7
 	}
 	division = {
 		name = "3. Guofang Jun Bubing Zhen"
 		location = 1154
 		division_template = "Jingyu Infantry Division"
 		start_experience_factor = 0.1
-		start_equipment_factor = 1.0
+		start_equipment_factor = 0.7
 	}
 	division = {
 		name = "4. Guofang Jun Bubing Zhen"
 		location = 7019
 		division_template = "Jingyu Infantry Division"
 		start_experience_factor = 0.1
-		start_equipment_factor = 1.0
+		start_equipment_factor = 0.7
 	}
 	division = {
 		name = "5. Guofang Jun Bubing Zhen"
 		location = 11980
 		division_template = "Jingyu Infantry Division"
 		start_experience_factor = 0.1
-		start_equipment_factor = 1.0
+		start_equipment_factor = 0.7
 	}
 	division = {
 		name = "6. Guofang Jun Bubing Zhen"
 		location = 1603
 		division_template = "Jingyu Infantry Division"
 		start_experience_factor = 0.1
-		start_equipment_factor = 1.0
+		start_equipment_factor = 0.7
 	}
 	division = {
 		name = "7. Guofang Jun Bubing Zhen"
 		location = 12026
 		division_template = "Jingyu Infantry Division"
 		start_experience_factor = 0.1
-		start_equipment_factor = 1.0
+		start_equipment_factor = 0.7
 	}
 	division = {
 		name = "1. Guofang Jun Qibing Zhen"
 		location = 7000
 		division_template = "Jingyu Infantry Division"
 		start_experience_factor = 0.1
-		start_equipment_factor = 1.0
+		start_equipment_factor = 0.7
 	}
 	division = {
 		name = "2. Guofang Jun Qibing Zhen"
 		location = 1137
 		division_template = "Jingyu Infantry Division"
 		start_experience_factor = 0.1
-		start_equipment_factor = 1.0
+		start_equipment_factor = 0.7
 	}
 }
 

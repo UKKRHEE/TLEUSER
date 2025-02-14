@@ -1,4 +1,4 @@
-﻿capital = 613
+﻿capital = 606
 OOB = "LEP"
 set_research_slots = 2
 set_war_support = 0.30

@@ -7,11 +7,23 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=despotism
+			ideology=xunzheng
 			traits = {  }
 		}
 		country_leader={
 			ideology=ultranationalism
+			traits = {  }
+		}
+	}
+	CH1_chen_gongbo = {
+		name = "CH1_chen_gongbo"
+		portraits={
+			civilian={
+				large="gfx/leaders/CH1/Portrait_CH1_chen_gongbo.png"
+			}
+		}
+		country_leader={
+			ideology=sanminzhuyi_communism
 			traits = {  }
 		}
 	}

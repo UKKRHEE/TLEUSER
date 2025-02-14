@@ -493,7 +493,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 10000
+		location = 4052
 		division_template = "해군육전대"
 		start_experience_factor = 1.0
 		start_equipment_factor = 1.0

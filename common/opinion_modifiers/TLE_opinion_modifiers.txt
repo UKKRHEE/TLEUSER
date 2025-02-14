@@ -30,5 +30,13 @@ opinion_modifiers = {
 	TLE_zhili_clique_opinion = { #직예군벌
 		value = 20
 	}
+	
+	TLE_nanyang_puppet_not = {
+		value = 20
+	}
+	
+	TLE_koreas_support = {
+		value = 25
+	}
 
 } #end of modifiers	

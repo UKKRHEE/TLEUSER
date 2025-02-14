@@ -1,0 +1,280 @@
+focus_tree = {
+	id = korea_kks_bad
+	country = {
+		factor = 0
+		modifier = {
+			add = 0
+			tag = KOR
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 50 y = 5000 }
+	focus = {
+		id = KOR_kks_bad_1
+		icon = GFX_focus_KOR_kks_bad_1
+		cost = 1.00
+		x = 9
+		y = 0
+		select_effect = {
+			play_song = "love_on_its_soltitude"
+			hidden_effect = {
+				remove_ideas = KOR_kks_social_reform_idea_1
+				remove_ideas = KOR_kks_social_reform_idea_2
+				remove_ideas = KOR_kks_social_reform_idea_3
+				remove_ideas = KOR_kks_social_reform_idea_4
+				remove_ideas = KOR_kks_volunteers_of_united_nations_idea
+				remove_ideas = KOR_prioritize_army_aircraft_construction_idea
+				remove_ideas = KOR_prioritize_naval_aircraft_construction_idea
+				remove_ideas = KOR_interservice_rivalry_army_dominant
+				remove_ideas = KOR_interservice_rivalry_navy_dominant
+				remove_ideas = KOR_interservice_rivalry_army_strengthened
+				remove_ideas = KOR_interservice_rivalry_navy_strengthened
+				remove_ideas = KOR_interservice_rivalry_balanced
+			}
+		}
+		completion_reward = {
+			country_event = {
+				id = korea.2700
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_kks_bad_2
+		icon = GFX_focus_KOR_kks_bad_2
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_kks_bad_1
+		}
+		x = 8
+		y = 1
+		completion_reward = {
+			country_event = {
+				id = korea.2701
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_kks_bad_3
+		icon = GFX_focus_KOR_kks_bad_3
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_kks_bad_1
+		}
+		x = 10
+		y = 1
+		completion_reward = {
+			country_event = {
+				id = korea.2702
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_kks_bad_4
+		icon = GFX_focus_KOR_kks_bad_4
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_kks_bad_2
+		}
+		prerequisite = {
+			focus = KOR_kks_bad_3
+		}
+		x = 9
+		y = 2
+		completion_reward = {
+			country_event = {
+				id = korea.2703
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_kks_bad_5
+		icon = GFX_focus_KOR_kks_bad_5
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_kks_bad_4
+		}
+		x = 7
+		y = 3
+		completion_reward = {
+			country_event = {
+				id = korea.2704
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_kks_bad_7
+		icon = GFX_focus_KOR_kks_bad_7
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_kks_bad_4
+		}
+		available = {
+			has_completed_focus = KOR_kks_bad_6
+		}
+		x = 9
+		y = 3
+		completion_reward = {
+			country_event = {
+				id = korea.2706
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_kks_bad_8
+		icon = GFX_focus_KOR_kks_bad_8
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_kks_bad_7
+		}
+		x = 9
+		y = 4
+		completion_reward = {
+			country_event = {
+				id = korea.2707
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_kks_bad_6
+		icon = GFX_focus_KOR_kks_bad_6
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_kks_bad_5
+		}
+		x = 7
+		y = 4
+		completion_reward = {
+			country_event = {
+				id = korea.2705
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_kks_bad_9
+		icon = GFX_focus_KOR_kks_bad_9
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_kks_bad_4
+		}
+		available = {
+			has_completed_focus = KOR_kks_bad_8
+		}
+		x = 11
+		y = 3
+		completion_reward = {
+			country_event = {
+				id = korea.2708
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_kks_bad_10
+		icon = GFX_focus_KOR_kks_bad_10
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_kks_bad_9
+		}
+		x = 11
+		y = 4
+		completion_reward = {
+			country_event = {
+				id = korea.2709
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_kks_bad_11
+		icon = GFX_focus_KOR_kks_bad_11
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_kks_bad_6
+		}
+		prerequisite = {
+			focus = KOR_kks_bad_8
+		}
+		prerequisite = {
+			focus = KOR_kks_bad_10
+		}
+		x = 8
+		y = 5
+		completion_reward = {
+			country_event = {
+				id = korea.2710
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_kks_bad_12
+		icon = GFX_focus_KOR_kks_bad_12
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_kks_bad_6
+		}
+		prerequisite = {
+			focus = KOR_kks_bad_8
+		}
+		prerequisite = {
+			focus = KOR_kks_bad_10
+		}
+		available = {
+			has_completed_focus = KOR_kks_bad_11
+		}
+		x = 10
+		y = 5
+		completion_reward = {
+			country_event = {
+				id = korea.2711
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_kks_bad_13
+		icon = GFX_focus_KOR_kks_bad_13
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_kks_bad_11
+		}
+		prerequisite = {
+			focus = KOR_kks_bad_12
+		}
+		x = 9
+		y = 6
+		completion_reward = {
+			country_event = {
+				id = korea.2712
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_kks_bad_14
+		icon = GFX_focus_KOR_kks_bad_14
+		cost = 3.00
+		prerequisite = {
+			focus = KOR_kks_bad_13
+		}
+		x = 9
+		y = 7
+		select_effect = {
+			play_song = "not_posted_letter_3"
+		}
+		completion_reward = {
+			country_event = {
+				id = korea.3001
+			}
+		}
+
+	}
+}

@@ -264,4 +264,88 @@ KOR_debug_category = {
 			}
         }
 	}	
+	debug_event_korea_10015 = {
+		#icon = generic_tank
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+			
+		}
+		complete_effect = {
+			country_event = {
+				id = korea.10015
+			}
+        }
+	}	
+	debug_event_korea_10016 = {
+		#icon = generic_tank
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+			
+		}
+		complete_effect = {
+			country_event = {
+				id = korea.10016
+			}
+        }
+	}	
+	debug_event_korea_10017 = {
+		#icon = generic_tank
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+			
+		}
+		complete_effect = {
+			country_event = {
+				id = korea.10017
+			}
+        }
+	}	
+	debug_event_korea_10018 = {
+		#icon = generic_tank
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+			
+		}
+		complete_effect = {
+			country_event = {
+				id = korea.10018
+			}
+        }
+	}	
+	debug_event_korea_10019 = {
+		#icon = generic_tank
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+			
+		}
+		complete_effect = {
+			country_event = {
+				id = korea.10019
+			}
+        }
+	}
+	debug_event_sea = {
+		#icon = generic_tank
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+			
+		}
+		complete_effect = {
+			country_event = {
+				id = korea.10020
+			}
+        }
+	}
 }

@@ -4,8 +4,239 @@
 
 add_namespace = japan
 add_namespace = TLE_japan
+add_namespace = JAP_war_of_yashima
 add_namespace = Civilwar_of_Japan
 add_namespace = TLE_Japan_warlord
+add_namespace = TLE_Japan_on_action
+
+country_event = {#시작 이벤트
+	id = TLE_Japan_on_action.1
+	title = TLE_Japan_on_action.1.title
+	desc = TLE_Japan_on_action.1.desc
+	picture = GFX_report_event_japanese_parade
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = { #
+		name = TLE_Japan_on_action.1.a
+		ai_chance = { factor = 1  }
+	}
+}
+
+#일한전쟁
+country_event = {#양키가 온다
+	id = JAP_war_of_yashima.1
+	title = JAP_war_of_yashima.1.t
+	desc = JAP_war_of_yashima.1.d
+	picture = GFX_report_event_JAP_east_heibei
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = JAP_war_of_yashima.1.a	
+        ai_chance = { factor = 1  }
+
+	}
+}
+country_event = {#렌드리스
+	id = JAP_war_of_yashima.2
+	title = JAP_war_of_yashima.2.t
+	desc = JAP_war_of_yashima.2.d
+	picture = GFX_report_event_JAP_east_heibei
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = JAP_war_of_yashima.2.a	
+        ai_chance = { factor = 0.1  }
+
+	}
+}
+
+country_event = {#한국의 침공
+	id = JAP_war_of_yashima.3
+	title = JAP_war_of_yashima.3.t
+	desc = JAP_war_of_yashima.3.d
+	picture = GFX_report_event_JAP_east_heibei
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			JAP = {
+				529 = {
+					add_dynamic_modifier = { modifier = JAP_hiroshima_defence }
+				}
+				1066 = {
+					add_dynamic_modifier = { modifier = JAP_hiroshima_defence }
+				}
+				530 = {
+					add_dynamic_modifier = { modifier = JAP_hiroshima_defence }
+				}
+				988 = {
+					add_dynamic_modifier = { modifier = JAP_hiroshima_defence }
+				}
+				1065 = {
+					add_dynamic_modifier = { modifier = JAP_hiroshima_defence }
+				}
+				1068 = {
+					add_dynamic_modifier = { modifier = JAP_aomori_defence }
+					add_dynamic_modifier = { modifier = JAP_hiroshima_defence }
+				}
+				533 = {
+					add_dynamic_modifier = { modifier = JAP_hiroshima_defence }
+				}
+				1071 = {
+					add_dynamic_modifier = { modifier = JAP_hiroshima_defence }
+				}
+				1072 = {
+					add_dynamic_modifier = { modifier = JAP_hiroshima_defence }
+				}
+			}
+		}
+	}
+	option = {
+		name = JAP_war_of_yashima.3.a	
+        ai_chance = { factor = 0.1  }
+		custom_effect_tooltip = JAP_war_with_tiger_TT
+		set_country_flag = JAP_war_with_KOR_flag
+		mark_focus_tree_layout_dirty = yes
+		complete_national_focus = JAP_war_of_yashima_focus
+	}
+}
+
+country_event = {#오카야마 유격대
+	id = JAP_war_of_yashima.4
+	title = JAP_war_of_yashima.4.t
+	desc = JAP_war_of_yashima.4.d
+	picture = GFX_report_event_JAP_east_heibei
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = JAP_war_of_yashima.4.a	
+        ai_chance = { factor = 0.1  }
+		custom_effect_tooltip = JAP_army_buff_TT
+		add_to_variable = {
+			JAP_army_attack_factor_modifier = 0.05
+		}
+		add_to_variable = {
+			JAP_army_defence_factor_modifier = 0.05
+		}
+		add_to_variable = {
+			JAP_army_org_factor_modifier = 0.05
+		}
+		hidden_effect = {
+			load_oob = JAP_hiroshima
+		}
+	}
+}
+country_event = {#잘있어라, 츄고쿠
+	id = JAP_war_of_yashima.5
+	title = JAP_war_of_yashima.5.t
+	desc = JAP_war_of_yashima.5.d
+	picture = GFX_report_event_JAP_east_heibei
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = JAP_war_of_yashima.5.a	
+        ai_chance = { factor = 0.1  }
+		custom_effect_tooltip = JAP_army_buff_TT
+		add_to_variable = {
+			JAP_army_org_factor_modifier = 0.05
+		}
+		hidden_effect = {
+			load_oob = JAP_hiroshima
+		}
+	}
+}
+country_event = {#이치키 키토쿠로 총리 임명
+	id = JAP_war_of_yashima.6
+	title = JAP_war_of_yashima.6.t
+	desc = JAP_war_of_yashima.6.d
+	picture = GFX_report_event_JAP_east_heibei
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = JAP_war_of_yashima.6.a	
+        ai_chance = { factor = 0.1  }
+		custom_effect_tooltip = JAP_ichiki_kitokuro_TT
+		add_to_variable = {
+			JAPPrimeMinister = 1
+		}
+		hidden_effect = {
+			country_event = {
+				id = JAP_war_of_yashima.7
+				days = 20
+			}
+		}
+	}
+}
+country_event = {#이치키 키토쿠로 총리 임명
+	id = JAP_war_of_yashima.7
+	title = JAP_war_of_yashima.7.t
+	desc = JAP_war_of_yashima.7.d
+	picture = GFX_report_event_JAP_east_heibei
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = JAP_war_of_yashima.7.a	
+        ai_chance = { factor = 0.1  }
+		custom_effect_tooltip = JAP_ICHIKI_EVENT_TT
+		add_stability = 0.25
+	}
+}
+country_event = {#틀딱 숙청
+	id = JAP_war_of_yashima.8
+	title = JAP_war_of_yashima.8.t
+	desc = JAP_war_of_yashima.8.d
+	picture = GFX_report_event_JAP_east_heibei
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = JAP_war_of_yashima.8.a	
+        ai_chance = { factor = 0.1  }
+		set_province_name = {
+			id = 1133
+			name = "wakayama"
+		}
+		custom_effect_tooltip = JAP_yushinkai_shukusei
+	}
+}
+country_event = {#토죠
+	id = JAP_war_of_yashima.9
+	title = JAP_war_of_yashima.9.t
+	desc = JAP_war_of_yashima.9.d
+	picture = GFX_report_event_japanese_parade
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = JAP_war_of_yashima.9.a	
+        ai_chance = { factor = 0.1  }
+		custom_effect_tooltip = JAP_kyuukoku_no_ketsudan
+		hidden_effect = {
+			JAP = {
+				load_oob = JAP_ibaraki_rikugun
+			}
+		}
+	}
+}
 
 #  AnnexationofKorea
 news_event = {
@@ -408,7 +639,6 @@ country_event = {
 		name = japan.1010.a	
         add_to_faction = CHI
         add_ideas = JAP_influence_us
-        add_opinion_modifier = { target = JAP modifier = improved_good }
 	}
 }
 
@@ -442,7 +672,7 @@ country_event = {
 			modifier = {
 				add = 40
 				KOR = {
-					has_government = fascism
+					has_country_flag = FLAG_KOR_FASCIST_ROUTE
 				}
 			}
 		}
@@ -459,7 +689,7 @@ country_event = {
 			modifier = {
 				add = -40
 				KOR = {
-					has_government = fascism
+					has_country_flag = FLAG_KOR_FASCIST_ROUTE
 				}
 			}
 		}
@@ -513,7 +743,7 @@ country_event = { #도쿠가와 독살
 	id = japan.1014 
 	title = japan.1014.t
 	desc = japan.1014.d
-	picture = GFX_report_event_vienna_award_hungary
+	picture = GFX_event_japanetc_2
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -582,9 +812,9 @@ country_event = { #도쿠가와 독살
 }
 country_event = { #쿄토의 가장 어두운 밤
 	id = japan.1015
-	title = japan.1015.t
-	desc = japan.1015.d
-	picture = GFX_report_event_vienna_award_hungary
+	title = japan.1015.tt
+	desc = japan.1015.dd
+	picture = GFX_event_japanetc_1
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -602,8 +832,8 @@ country_event = { #쿄토의 가장 어두운 밤
 	}
 
 	option = {
-		name = japan.1015.a	#일본 유신파로
-		custom_effect_tooltip = TOOLTIP_JAPAN_RIGHT
+		name = japan.1015.aa	#일본 유신파로
+		custom_effect_tooltip = TOOLTIP_JAPAN_YUSHIN
 		hidden_effect = {
 			set_country_flag = JAP_Empire
 			country_event = {
@@ -612,27 +842,12 @@ country_event = { #쿄토의 가장 어두운 밤
 				}
 		}	
 	}
-	option = {
-		name = japan.1015.b	#도쿠가와
-		custom_effect_tooltip = TOOLTIP_JAPAN_NOPE
-		hidden_effect = {	
-			set_country_flag = JAP_Shogunate
-			country_event = {
-					id = japan.1018
-					hours = 13
-				}
-			country_event = {
-					id = japan.1049
-					days = 6
-				}
-		}
-	}
 }
 country_event = { #천황의 운명
 	id = japan.1016
 	title = japan.1016.t
 	desc = japan.1016.d
-	picture = GFX_report_event_vienna_award_hungary
+	picture = GFX_event_japanetc_3
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -657,25 +872,17 @@ country_event = { #쇼와 유신
 	id = japan.1017
 	title = japan.1017.t
 	desc = japan.1017.d
-	picture = GFX_report_event_vienna_award_hungary
+	picture = GFX_event_japanetc_3
 
 	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
 		name = japan.1017.a	#덴노 헤이카 반자이!
+		custom_effect_tooltip = JAP_SHOWAYUSHIN_START_TT
 		hidden_effect = {
 			DKG = {
 				retire_character = DKG_dokugawa_yoshihisa
-				add_country_leader_role = {
-					Character = DKG_dokugawa_yoshimitsu
-					Promote_leader = yes
-					Country_leader = {
-						ideology = despotism
-						#expire = "1989.1.1"
-							traits={ warrior_code }
-					}
-				}
 			}
 			country_event = {
 					id = japan.1049
@@ -725,7 +932,7 @@ country_event = { #내전 발발
 	id = japan.1019
 	title = japan.1019.t
 	desc = japan.1019.d
-	picture = GFX_report_event_vienna_award_hungary
+	picture = GFX_event_japanese_revolution
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -818,43 +1025,52 @@ country_event = { #내전 발발
 		trigger = {
 			has_country_flag = JAP_Empire
 		}
-			TBJ = {
-				declare_war_on = {
-					target = JAP
-					type = annex_everything
-				}
-				set_country_flag = FLAG_PEACE_CWJ
-			}
-			GJJ = {
-				declare_war_on = {
-					target = JAP
-					type = annex_everything
-				}
-				set_country_flag = FLAG_PEACE_CWJ
-			}
-		retire_character = JAP_yamato_junta
+		JAP = {
+			country_event = {
+				id = japan.1151
+				days = 5
+			}	
+		}
 		hidden_effect = {
 			DKG = {
-				transfer_navy = {
-					target = JAP
+				destroy_ships = {
+					type = battleship
+					count = all
+				}
+				destroy_ships = {
+					type = heavy_cruiser
+					count = all
+				}
+				destroy_ships = {
+					type = light_cruiser
+					count = all
+				}
+				destroy_ships = {
+					type = destroyer
+					count = all
+				}
+				destroy_ships = {
+					type = submarine
+					count = all
 				}
 			}
 			set_country_flag = JAP_superevent_of_cw
 			JAP = {
 				#create_faction = "유신파"
 				remove_ideas = JAP_showa_hirohito
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+					}
+					load_oob = "JAP_1936_naval"
+				}
+				if = {
+					limit = { not = { has_dlc = "Man the Guns" } }
+					load_oob = "JAP_1936_naval_legacy"
+				}
 			}
 			DKG = {
 				#create_faction = "좌막파"
-			}
-			if = {
-				limit = {
-					tag = DKG
-				}
-				declare_war_on = {
-					target = JAP
-					type = annex_everything
-				}
 			}
 			if = {
 				limit = {
@@ -919,7 +1135,17 @@ country_event = { #내전 발발
 					Promote_leader = yes
 					Country_leader = {
 						desc="SHOWA_TENNO_DESC"
-						ideology = rexism
+						ideology = conservatism
+						#expire = "1989.1.1"
+							traits={ tenno_heikka showa_tenno }
+					}
+				}
+				add_country_leader_role = {
+					Character = JAP_emperor_hirohito
+					Promote_leader = yes
+					Country_leader = {
+						desc="SHOWA_TENNO_DESC"
+						ideology = marxism
 						#expire = "1989.1.1"
 							traits={ tenno_heikka showa_tenno }
 					}
@@ -930,7 +1156,7 @@ country_event = { #내전 발발
 			DKG = {
 				remove_ideas = JAP_showa_hirohito
 				dismantle_faction = yes
-				set_capital = 282
+				set_capital = { state = 282 }
 				complete_national_focus = DKG_continuing_with_tokugawa
 				load_oob = "DKG_civilwar_1936"
 				load_focus_tree = DKG_Japan
@@ -962,145 +1188,6 @@ country_event = { #내전 발발
 			set_country_flag = Japanese_civil_war
 			every_country = {
 				limit = { is_ai = no }
-				set_temp_variable = { TLE_temp_super_event = token:SE_JAPAN_CW }
-				TNO_fire_super_event_JAPAN_CW = yes
-			}
-			TBJ = {
-				country_event = {
-					id = japan.1040
-					days = 15
-				}
-			}
-			GJJ = {
-				country_event = {
-					id = japan.1040
-					days = 15
-				}
-			}
-		}
-	}
-	option = {
-		name = japan.1019.b	#막부
-		trigger = {
-			has_country_flag = JAP_Shogunate
-		}
-		retire_character = JAP_yamato_junta
-		hidden_effect = {
-			DKG = {
-				transfer_navy = {
-					target = JAP
-				}
-			}
-			JAP = {
-				#create_faction = "유신파"
-				remove_ideas = JAP_showa_hirohito
-			}
-			DKG = {
-				#create_faction = "좌막파"
-			}
-			1070 = {
-				set_demilitarized_zone = no
-			}
-			JAP = {
-				transfer_state = 1070
-				transfer_state = 531
-				transfer_state = 991
-				add_state_core = 528
-				add_state_core = 1064
-				add_state_core = 1066
-				add_state_core = 529
-				add_state_core = 530
-				add_state_core = 1065
-				add_state_core = 1069
-				add_state_core = 532
-				add_state_core = 535
-				add_state_core = 282
-				add_state_core = 1072
-				add_state_core = 534
-				add_state_core = 533
-				add_state_core = 1071
-				add_state_core = 1068
-				add_state_core = 1067
-				add_state_core = 1067
-				add_state_core = 988
-				add_state_core = 989
-				add_state_core = 990
-				add_state_core = 991
-				every_state = {
-					limit = {
-						is_core_of = DKG
-					}
-					add_core_of = JAP
-				}
-				load_oob = "JAP_1936"
-			}
-			JAP = {
-				complete_national_focus = JAP_rising_sun
-				add_country_leader_role = {
-					Character = JAP_emperor_hirohito
-					Promote_leader = yes
-					Country_leader = {
-						desc="SHOWA_TENNO_DESC"
-						ideology = showaism
-						#expire = "1989.1.1"
-						traits={ tenno_heikka showa_tenno }
-					}
-				}
-				add_country_leader_role = {
-					Character = JAP_emperor_hirohito
-					Promote_leader = yes
-					Country_leader = {
-						desc="SHOWA_TENNO_DESC"
-						ideology = rexism
-						#expire = "1989.1.1"
-							traits={ tenno_heikka showa_tenno }
-					}
-				}
-			}	
-			DKG = {
-				remove_ideas = JAP_showa_hirohito
-				dismantle_faction = yes
-				set_capital = 282
-				complete_national_focus = DKG_continuing_with_tokugawa
-				load_oob = "DKG_civilwar_1936"
-				set_country_flag = japan_focus_start
-				load_focus_tree = DKG_Japan
-			}
-			if = {
-				limit = {
-					tag = DKG
-				}
-				declare_war_on = {
-					target = JAP
-					type = annex_everything
-				}
-			}
-			if = {
-				limit = {
-					tag = JAP
-				}
-				declare_war_on = {
-					target = DKG
-					type = annex_everything
-				}
-				declare_war_on = {
-					target = TBJ
-					type = annex_everything
-				}
-				declare_war_on = {
-					target = GJJ
-					type = annex_everything
-				}
-			}
-			JAP = {
-				set_country_flag = Japanese_civil_war
-				load_focus_tree = japan_tenno
-				set_temp_variable = { TLE_temp_super_event = token:SE_JAPAN_CW }
-				TNO_fire_super_event_JAPAN_CW = yes
-			}
-			set_country_flag = Japanese_civil_war
-			every_country = {
-				limit =  { is_ai = no }
 				set_temp_variable = { TLE_temp_super_event = token:SE_JAPAN_CW }
 				TNO_fire_super_event_JAPAN_CW = yes
 			}
@@ -1165,7 +1252,7 @@ country_event = { #쇼와 유신
 	id = japan.1021
 	title = japan.1021.t
 	desc = japan.1021.d
-	picture = GFX_report_event_vienna_award_hungary
+	picture = GFX_event_japanese_revolution
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -1333,7 +1420,7 @@ country_event = { #쇼와 유신
 	id = japan.1028
 	title = japan.1028.t
 	desc = japan.1028.d
-	picture = GFX_report_event_vienna_award_hungary
+	picture = GFX_event_japanese_revolution
 
 	is_triggered_only = yes
 
@@ -1359,7 +1446,6 @@ country_event = { #
 				ruling_party = fascism
 				ideology = rexism
 				size = 0.4
-				only_own_territory = no
 				capital = 282
 				states = { 
 					282 535
@@ -1577,7 +1663,7 @@ country_event = { #평화를 구하는 TBJ와 GJJ
 	id = japan.1040
 	title = japan.1040.t
 	desc = japan.1040.d
-	picture = GFX_report_event_vienna_award_hungary
+	picture = GFX_event_japanese_revolution
 
 	is_triggered_only = yes
 	#fire_only_once = yes
@@ -1596,7 +1682,7 @@ country_event = { #평화를 구하는 TBJ와 GJJ
 	id = japan.1041
 	title = japan.1041.t
 	desc = japan.1041.d
-	picture = GFX_report_event_vienna_award_hungary
+	picture = GFX_event_japanese_revolution
 
 	is_triggered_only = yes
 	#fire_only_once = yes
@@ -1837,6 +1923,8 @@ country_event = { #
 			has_country_flag = FLAG_JAPAN_1050
 		}
 	}
+	
+	fire_only_once = yes
 
 	option = {
 		name = japan.1050.a	
@@ -1893,6 +1981,8 @@ country_event = { #
 			has_country_flag = FLAG_JAPAN_1053
 		}
 	}
+	
+	fire_only_once = yes
 
 	option = {
 		name = japan.1053.a	
@@ -2076,6 +2166,14 @@ country_event = { #쇼와 유신
 				character = JAP_emperor_hirohito
 				ideology = rexism	
 			}
+			remove_country_leader_role = {
+				character = JAP_emperor_hirohito
+				ideology = marxism
+			}
+			remove_country_leader_role = {
+				character = JAP_emperor_hirohito
+				ideology = conservatism	
+			}
 			add_country_leader_role = {
 				Character = JAP_emperor_hirohito
 				Promote_leader = yes
@@ -2094,6 +2192,26 @@ country_event = { #쇼와 유신
 					ideology = rexism
 					#expire = "1989.1.1"
 						traits={ tenno_heikka JAP_hirohito_ending_trait }
+				}
+			}
+			add_country_leader_role = {
+				Character = JAP_emperor_hirohito
+				Promote_leader = yes
+				Country_leader = {
+					desc="SHOWA_TENNO_DESC"
+					ideology = conservatism
+					#expire = "1989.1.1"
+						traits={ tenno_heikka showa_tenno }
+				}
+			}
+			add_country_leader_role = {
+				Character = JAP_emperor_hirohito
+				Promote_leader = yes
+				Country_leader = {
+					desc="SHOWA_TENNO_DESC"
+					ideology = marxism
+					#expire = "1989.1.1"
+						traits={ tenno_heikka showa_tenno }
 				}
 			}
 			set_portraits = {
@@ -2445,7 +2563,7 @@ country_event = { #Chuhei
 		name = japan.1150.a	#동의
 	}
 }
-country_event = { #Nagoya 1
+country_event = { #쇼와의 낭인(1/2)
 	id = japan.1151
 	title = japan.1151.t
 	desc = japan.1151.d
@@ -2455,12 +2573,9 @@ country_event = { #Nagoya 1
 
 	option = {
 		name = japan.1151.a	#동의
-		country_event = {
-			id = japan.1152
-		}
 	}
 }
-country_event = { #Nagoya 2
+country_event = { #쇼와의 낭인(2/2)
 	id = japan.1152
 	title = japan.1152.t
 	desc = japan.1152.d
@@ -2472,7 +2587,7 @@ country_event = { #Nagoya 2
 		name = japan.1152.a	#동의
 	}
 }
-country_event = { #Edo 1
+country_event = { #대정익찬회(1/2)
 	id = japan.1153
 	title = japan.1153.t
 	desc = japan.1153.d
@@ -2487,7 +2602,7 @@ country_event = { #Edo 1
 		}
 	}
 }
-country_event = { #Edo 2
+country_event = { #대정익찬회(2/2)
 	id = japan.1154
 	title = japan.1154.t
 	desc = japan.1154.d
@@ -2496,7 +2611,29 @@ country_event = { #Edo 2
 	is_triggered_only = yes
 
 	option = {
-		name = japan.1153.a	#동의
+		name = japan.1154.a	#동의
+		custom_effect_tooltip = JAP_japan.1154_TT
+		set_country_flag = JAP_yokusankai_on
+		set_party_name = {
+			ideology = neutrality
+			long_name = "JAP_yokusankai"
+			name = "JAP_yokusankai"
+		}
+		set_party_name = {
+			ideology = democratic
+			long_name = "JAP_yokusankai"
+			name = "JAP_yokusankai"
+		}
+		set_party_name = {
+			ideology = fascism
+			long_name = "JAP_yokusankai"
+			name = "JAP_yokusankai"
+		}
+		set_party_name = {
+			ideology = communism
+			long_name = "JAP_yokusankai"
+			name = "JAP_yokusankai"
+		}
 	}
 }
 country_event = { #Nigata 1
@@ -2600,64 +2737,6 @@ country_event = { #윾자의 짐
 	}
 }
 ####
-country_event = { #설정
-	id = TLE_japan.1
-	title = TLE_japan.1.title
-	desc = TLE_japan.1.desc
-	picture = GFX_report_event_vienna_award_hungary
-
-	is_triggered_only = yes
-	fire_only_once = yes
-
-	option = {
-		name = TLE_japan.1.a
-		country_event = {
-			id = TLE_japan.2
-		}
-	}
-}
-country_event = { #설정
-	id = TLE_japan.2
-	title = TLE_japan.2.title
-	desc = TLE_japan.2.desc
-	picture = GFX_report_event_vienna_award_hungary
-
-	is_triggered_only = yes
-	fire_only_once = yes
-
-	option = {
-		name = TLE_japan.2.a
-		country_event = {
-			id = TLE_japan.3
-		}
-	}
-}
-country_event = { #설정
-	id = TLE_japan.3
-	title = TLE_japan.3.title
-	desc = TLE_japan.3.desc
-	picture = GFX_report_event_vienna_award_hungary
-
-	is_triggered_only = yes
-	fire_only_once = yes
-
-	option = {
-		name = TLE_japan.3.a
-	}
-}
-country_event = { #설정
-	id = TLE_japan.4
-	title = TLE_japan.4.title
-	desc = TLE_japan.4.desc
-	picture = GFX_report_event_vienna_award_hungary
-
-	is_triggered_only = yes
-	fire_only_once = yes
-
-	option = {
-		name = TLE_japan.4.a
-	}
-}
 ####일본 내전 군벌 점령 이벤트
 country_event = { #열번 동맹 점령
 	id = TLE_Japan_warlord.1

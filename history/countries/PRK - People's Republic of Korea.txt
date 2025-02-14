@@ -6,8 +6,8 @@ oob = "KOR_1936"
 set_technology = {
 	### 보병 ###
 	infantry_weapons = 1
+	infantry_weapons1 = 1
 	motorised_infantry = 1
-	motorised_infantry1 = 1
 	tech_trucks = 1
 	marines  = 1
 	
@@ -25,7 +25,13 @@ set_technology = {
 	### 공군 ###
 	
 	### 육군 교리 ###
-	superior_firepower = 1
+	superior_firepower = 1 #화력우세
+	
+	### 해군 교리 ### 
+	base_strike = 1 #기지타격
+	
+	### 공군 교리 ###
+	formation_flying = 1 #전장 지원
 	
 	### 산업/공학 ###
 	fuel_silos = 1

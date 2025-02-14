@@ -16,12 +16,24 @@ music = {
 	file = "UKKRHEE_personal/shukusen_lolikami_requiem.ogg"
 }
 music = {
+	name = "ui_mugibatake_de_tsukamaete"
+	file = "UKKRHEE_personal/ui_mugibatake_de_tsukamaete.ogg"
+}
+music = {
 	name = "dadadada_tenshi"
 	file = "UKKRHEE_personal/dadadada_tenshi.ogg"
 }
 music = {
 	name = "yeomra"
 	file = "UKKRHEE_personal/yeomra.ogg"
+}
+music = {
+	name = "flowering"
+	file = "UKKRHEE_personal/flowering.ogg"
+}
+music = {
+	name = "pure_blood"
+	file = "UKKRHEE_personal/pure_blood.ogg"
 }
 music = {
 	name = "kick_back"
@@ -50,4 +62,32 @@ music = {
 music = {
 	name = "your_shampoo_scent_in_the_flowers"
 	file = "UKKRHEE_personal/your_shampoo_scent_in_the_flowers.ogg"
+}
+music = {
+	name = "rabbit_hole"
+	file = "UKKRHEE_personal/rabbit_hole.ogg"
+}
+music = {
+	name = "sparkle"
+	file = "UKKRHEE_personal/sparkle.ogg"
+}
+music = {
+	name = "sensensense"
+	file = "UKKRHEE_personal/sensensense.ogg"
+}
+music = {
+	name = "aiai_ii"
+	file = "UKKRHEE_personal/aiai_ii.ogg"
+}
+music = {
+	name = "sangokuno_tenshino_tese"
+	file = "UKKRHEE_personal/sangokuno_tenshino_tese.ogg"
+}
+music = {
+	name = "passport_please_victory"
+	file = "UKKRHEE_personal/passport_please_victory.ogg"
+}
+music = {
+	name = "yain"
+	file = "UKKRHEE_personal/yain.ogg"
 }

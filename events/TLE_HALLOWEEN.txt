@@ -169,7 +169,7 @@ country_event = { #안경.. 재료가... 없답니다..
 		set_portraits = {
 			character = JAP_emperor_hirohito
 			civilian = { 
-				large =large="gfx/leaders/JAP/Portrait_JAP_showa_hirohito.png"
+				large="gfx/leaders/JAP/Portrait_JAP_showa_hirohito.png"
 			}
 		}
 	}
@@ -242,9 +242,9 @@ country_event = { #
 		retire_character = MCP_park_chunghee
 		add_country_leader_role = {
 			character = MCP_park_gongju
-			desc=""
 			country_leader = {
 				#expire = "1965.1.1"
+				desc = ""
 				ideology = despotism
 				traits = { MCP_chicken_trait }
 			}
@@ -352,9 +352,9 @@ country_event = { #제위를 계승중입니다
 		}
 		add_country_leader_role = {
 			character = KOR_emperor_yi_hyul
-			desc=""
 			country_leader = {
 				#expire = "1965.1.1"
+				desc = ""
 				ideology = despotism
 				traits = { KORHALLOWEEN_yihyul_1 }
 			}
@@ -362,9 +362,9 @@ country_event = { #제위를 계승중입니다
 		}
 		add_country_leader_role = {
 			character = KOR_emperor_yi_hyul
-			desc=""
 			country_leader = {
 				#expire = "1965.1.1"
+				desc = ""
 				ideology = ultranationalism
 				traits = { KORHALLOWEEN_yihyul_1 }
 			}
@@ -446,9 +446,9 @@ country_event = { #무다구치 요다
 		retire_character = KOR_emperor_yi_hyul
 		add_country_leader_role = {
 			character = KOR_yi_wu
-			desc=""
 			country_leader = {
 				#expire = "1965.1.1"
+				desc = ""
 				ideology = despotism
 				traits = { }
 			}
@@ -456,9 +456,9 @@ country_event = { #무다구치 요다
 		}
 		add_country_leader_role = {
 			character = KOR_yi_wu
-			desc=""
 			country_leader = {
 				#expire = "1965.1.1"
+				desc = ""
 				ideology = ultranationalism
 				traits = { }
 			}

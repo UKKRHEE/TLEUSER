@@ -1,0 +1,246 @@
+UN_GUI_Setup = {
+	ZZZ = {
+		UN_GUI_Member_Setup = yes
+		UN_GUI_SC_Member_Setup = yes
+	}
+}
+
+UN_GUI_Member_Setup = {
+	clear_array = global.UN_member
+	clear_array = UN_Contenders
+	every_country = { 
+		limit = {
+			AND = {
+				exists = yes
+				NOT = {
+					is_puppet = yes
+				}
+			}
+		}
+		add_to_array = { global.UN_member = THIS } 
+	}
+	for_each_scope_loop = {
+		array = global.UN_member
+		every_country = {
+			if = {
+				limit = {
+					is_in_array = {
+						array = global.UN_member
+						value = THIS
+					}
+				}
+				add_to_array = { UN_Contenders = PREV }
+			}	
+		}
+	}
+}
+
+UN_GUI_SC_Member_Setup = {
+	clear_array = global.UN_SC_member
+	clear_array = UN_SC_Contenders
+	add_to_array = { global.UN_SC_member = USA }
+	add_to_array = { global.UN_SC_member = SOV }
+	add_to_array = { global.UN_SC_member = FRA }
+	add_to_array = { global.UN_SC_member = ENG }
+	add_to_array = { global.UN_SC_member = KOR }
+	for_each_scope_loop = {
+		array = global.UN_SC_member
+		every_country = {
+			if = {
+				limit = {
+					is_in_array = {
+						array = global.UN_SC_member
+						value = THIS
+					}
+				}
+				add_to_array = { UN_SC_Contenders = PREV }
+			}			
+		}
+	}
+}
+
+
+UN_GUI_SC_Member_Update = {
+	clear_array = UN_SC_Contenders
+	for_each_scope_loop = {
+		array = global.UN_member
+		if = {
+			limit = {
+				AND = {
+					is_in_array = {
+						array = global.UN_SC_member
+						value = THIS
+					}
+					exists = yes
+				}
+			}
+			add_to_array = { UN_SC_Contenders = PREV }
+		}
+		else = {
+			remove_from_array = { UN_SC_Contenders = PREV }
+		}
+	}
+}
+
+UN_Agenda_Setup = {
+	hidden_effect = {
+		set_variable = { global.UN_vote_time = 10 }
+		every_country = {
+			if = {
+				limit = {
+					is_in_array = {
+						array = global.UN_SC_member
+						value = THIS
+					}
+				}
+				set_global_flag = UN_Agenda_Enable
+				if = {
+					limit = {
+						has_global_flag = UN_Agenda_All_Yes_flag
+					}
+					UN_Agenda_All_Yes = yes
+				}
+				else_if  = {
+					limit = {
+						has_global_flag = UN_Agenda_All_No_flag
+					}
+					UN_Agenda_All_No = yes
+				}
+				else = {
+					UN_Agenda_AI = yes
+				}
+			}
+		}
+	}
+}
+
+UN_Agenda_Vote_Yes_effect = {
+	add_to_variable = {
+		global.UN_Agenda_Vote_Yes = 1
+	}
+	set_variable = {
+		GetAgendaFrame = 2
+	}
+	set_country_flag = UN_Agenda_Voted
+}
+
+UN_Agenda_Vote_No_effect = {
+	add_to_variable = {
+		global.UN_Agenda_Vote_No = 1
+	}
+	set_variable = {
+		GetAgendaFrame = 1
+	}
+	set_country_flag = UN_Agenda_Voted
+}
+
+UN_Agenda_AI = {
+	if = {
+		limit = {
+			is_ai = yes
+			is_in_array = {
+				array = global.UN_SC_member
+				value = THIS
+			}
+		}
+		random_list = {
+			100 = {
+				random_list = {
+					100 = {
+						country_event = {
+							id = UN_Agenda_Vote.1
+							days = 3
+							random_days = 3
+						}
+						# UN_Agenda_Vote_Yes_effect = yes
+					}
+					# 30 = { 
+					# 	country_event = {
+					# 		id = UN_Agenda_Vote.2
+					# 		days = 3
+					# 		random_days = 3
+					# 	}
+					# 	# UN_Agenda_Vote_No_effect = yes
+					# }
+				}
+			}
+		}
+	}
+}
+
+UN_Agenda_All_Yes = {
+	if = {
+		limit = {
+			is_in_array = {
+				array = global.UN_SC_member
+				value = THIS
+			}
+		}
+		UN_Agenda_Vote_Yes_effect = yes
+	}
+}
+
+UN_Agenda_All_No = {
+	if = {
+		limit = {
+			is_in_array = {
+				array = global.UN_SC_member
+				value = THIS
+			}
+		}
+		UN_Agenda_Vote_No_effect = yes
+	}
+}
+
+UN_Agenda_Calculation = { 
+	if = {
+		limit = {
+			check_variable = { global.UN_Agenda_Vote_Yes = global.UN_SC_member^num }
+		}
+		meta_effect = {
+			text = {
+				country_event = {
+					id = un_agenda_effect.[AgendaNumber]
+				}
+			}
+			AgendaNumber = "[?UN_Agenda_v]"
+		}
+		every_country = {
+			add_to_array = { GNG_legco_history = UN_Agenda_v }
+		}
+		set_global_flag = UN_Agenda_Pass_enable
+		clr_global_flag = UN_Agenda_Rejected
+		set_global_flag = UN_Agenda_Passed
+		every_country = {
+			clr_country_flag = UN_Agenda_Voted
+			clr_global_flag = UN_Agenda_Enable
+			clear_variable = global.UN_Agenda_Vote_Yes
+			clear_variable = global.UN_Agenda_Vote_No
+			clear_variable = GetAgendaFrame
+			clear_variable = UN_Agenda_v
+		}
+	}
+	else = {
+		# limit = {
+		# 	NOT = { check_variable = { global.UN_Agenda_Vote_Yes = global.UN_SC_member^num } }
+		# }
+		if = {
+			limit = {
+				is_ai = no
+			}
+			country_event = un_agenda.2
+		}
+		set_global_flag = UN_Agenda_Pass_enable
+		clr_global_flag = UN_Agenda_Passed
+		set_global_flag = UN_Agenda_Rejected
+		every_country = {
+			clr_country_flag = UN_Agenda_Voted
+			clr_global_flag = UN_Agenda_Enable
+			clear_variable = global.UN_Agenda_Vote_Yes
+			clear_variable = global.UN_Agenda_Vote_No
+			clear_variable = GetAgendaFrame
+			clear_variable = UN_Agenda_v
+		}
+	}
+	clear_variable = global.UN_vote_time
+}

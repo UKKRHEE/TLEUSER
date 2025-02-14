@@ -1,0 +1,104 @@
+characters={
+	FRI_jules_brevie = {
+		name = "FRI_jules_brevie"
+		portraits={
+			civilian={
+				large="gfx/leaders/FRI/Brevie.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits = {  }
+		}
+	}
+	FRI_ngo_dinh_diem = {
+		name = "FRI_ngo_dinh_diem"
+		portraits={
+			civilian={
+				large="gfx/leaders/VIN/Portrait_Vietnam_Ngo_Diem.dds"
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			traits = {  }
+		}
+	}
+	FRI_jean_decoux = {
+		name = "KVN_jean_decoux"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRI/Portrait_FRI_jean_decoux.png"
+			}
+		}
+		country_leader={
+			ideology=fascism_ideology
+			desc = ""	
+			traits = {
+			}
+		}
+	}
+	FRI_ho_chi_minh = {
+		name = "VIN_ho_chi_minh"
+		portraits={
+			civilian={
+				large="gfx/leaders/VIN/Portrait_Vietnam_Ho_Chi_Minh.dds"
+			}
+		}
+		country_leader={
+			ideology=marxism
+			traits = { leader_of_vienmin }
+		}
+	}
+	FRI_douglas_gracey = {
+		name = "FRI_douglas_gracey"
+		portraits={
+			civilian={
+				large="gfx/leaders/FRI/FRI_douglas_gracey.png"
+			}
+		}
+	}
+	FRI_remilitary = {
+		name = "FRI_remilitary"
+		portraits={
+			civilian={
+				large="gfx/leaders/FRI/FRI_remilitary.png"
+			}
+		}
+	}
+	CCH_remilitary = {
+		name = "FRI_remilitary"
+		portraits={
+			civilian={
+				large="gfx/leaders/FRI/FRI_remilitary.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits = {  }
+		}
+	}
+	TNK_nguyen_baodai= {
+		name = "VIN_nguyen_baodai"
+		portraits={
+			civilian={
+				large="gfx/leaders/VIN/Portrait_Vietnam_Bao_Dai.dds"
+			}
+		}
+		country_leader={
+			ideology=monarchism
+			traits = {  }
+		}
+	}
+	ANM_nguyen_baodai= {
+		name = "VIN_nguyen_baodai"
+		portraits={
+			civilian={
+				large="gfx/leaders/VIN/Portrait_Vietnam_Bao_Dai.dds"
+			}
+		}
+		country_leader={
+			ideology=monarchism
+			traits = {  }
+		}
+	}
+}

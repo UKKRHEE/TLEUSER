@@ -1,0 +1,38 @@
+scripted_gui = {
+	JAP_yokusankai_GUI = {
+		context_type = decision_category
+		window_name = "JAP_yokusankai_GUI"
+
+		visible = {
+			original_tag = JAP
+		}
+
+		dynamic_lists = {
+			yokusankai_main_grid = {
+				array = yokusankai_main_array
+				index = yokusankai_main_index
+				change_scope = no
+				entry_container = yokusankai_main_entry
+			}
+		}
+
+		triggers = {
+
+		}
+
+		properties = {
+			yokusankai_main_icon = {
+				frame = v
+			}
+			yokusankai_faction_icon = {
+				frame = v
+			}
+			tenno_inf_color_icon = {
+				image = [GetGFXTENNOINFLOC]
+			}
+			yokusankai_congress_party_leader = {
+				image = [GetJAPPrimeMinisterGFX]
+			}
+		}
+	}
+}

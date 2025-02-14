@@ -16,7 +16,7 @@ characters={
 		name="ROK_kim_songsu"
 		portraits={
 			civilian={
-				large="gfx/leaders/KOR/Portrait_KOR_kim_songsu.dds"
+				large="gfx/leaders/KOR/Portrait_KOR_kim_songsu.png"
 			}
 		}
 		country_leader={
@@ -35,6 +35,22 @@ characters={
 		country_leader={
 			ideology=ultranationalism
 			traits={ }
+			id=-1
+		}
+	}
+	ROK_yi_sungjun={
+		name="ROK_yi_sungjun"
+		portraits={
+			civilian={
+				large="gfx/leaders/ROK/Portrait_ROK_yi_sungjun.png"
+			}
+		}
+		country_leader={
+			ideology=ultranationalism
+			traits={
+				prime_minister_of_korea
+				lee_sungjun_trait
+			}
 			id=-1
 		}
 	}

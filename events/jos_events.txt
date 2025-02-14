@@ -364,8 +364,6 @@ country_event = {
 
 	option = {
 		name = joseon.16.a
-		annex_country = { target = JOS transfer_troops = no }
-		white_peace = JAP
 	}
 }
 
@@ -379,10 +377,7 @@ country_event = {
 	fire_only_once = yes
 
 	option = {
-		name = joseon.17.a
-		JAP = {
-			annex_country = { target = JOS transfer_troops = no }
-		}	
+		name = joseon.17.a	
 	}
 }
 country_event = {
@@ -423,6 +418,9 @@ country_event = { #체코 쿠데타
 			NOT = { has_government = communism }
 		}
 		has_global_flag = TLE_germany_union_defeat
+		NOT = {
+			has_global_flag = TLE_german_defeat_red_effect
+		}
 	}
 	
 	option = {
@@ -491,6 +489,7 @@ country_event = { #체코 쿠데타
 			}
 			remove_ideas = king_peter_1
 		}
+		add_country_leader_trait = leader_of_yugo
 		news_event = {
 			id = eok_news.28
 		}	

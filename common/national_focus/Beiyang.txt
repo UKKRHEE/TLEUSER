@@ -2,6 +2,10 @@ focus_tree = {
 	id = Beiyang
 	country = {
 		factor = 0
+		modifier = {
+			add = 10
+			tag = ZLC
+		}
 	}
 	default = no
 	focus = {
@@ -52,7 +56,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ZLC_BEI_caokun_anding
-		icon = GFX_goal_ANQ_promote_nationalist_thought
+		icon = GFX_focus_ZLC_promote_nationalist_thought
 		cost = 5.00
 		prerequisite = {
 			focus = ZLC_BEI_decide_the_load
@@ -61,6 +65,13 @@ focus_tree = {
 			focus = ZLC_BEI_caokun_lead
 			focus = ZLC_BEI_wupeifu_lead
 		}
+		available = {
+			NOT = {
+				KOR = {
+					has_country_flag = FLAG_KOR_DEMOCRACY_ROUTE
+				}
+			}
+		}	
 		x = 15
 		y = 1
 
@@ -268,6 +279,11 @@ focus_tree = {
 		y = 1
 		available = {
 			is_ai = no
+			NOT = {
+				KOR = {
+					has_country_flag = FLAG_KOR_DEMOCRACY_ROUTE
+				}
+			}
 		}
 
 	}
@@ -286,6 +302,11 @@ focus_tree = {
 		y = 1
 		available = {
 			is_ai = no
+			NOT = {
+				KOR = {
+					has_country_flag = FLAG_KOR_DEMOCRACY_ROUTE
+				}
+			}
 		}
 
 	}
@@ -591,23 +612,23 @@ focus_tree = {
 		y = 4
 		available = {
 			OR = {
-				is_neighbor_of = XKC
+				is_neighbor_of = HNC
 				is_neighbor_of = SCC
 				is_neighbor_of = SZC
 			}
 		}
 		bypass = {
 			NOT = {
-				is_neighbor_of = XKC
+				is_neighbor_of = HNC
 				is_neighbor_of = SCC
 				is_neighbor_of = SZC
 			}
 		}
 		completion_reward = {
-			every_neighbor_country = {
+			every_other_country = {
 				limit = {
 					OR = {
-						tag = XKC
+						tag = HNC
 						tag = SCC
 						tag = SZC
 					}
@@ -827,7 +848,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ZLC_BEI_anding_recover_the_economy
-		icon = GFX_focus_jap_industry2
+		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
 			focus = ZLC_BEI_anding_baoding_officer_support

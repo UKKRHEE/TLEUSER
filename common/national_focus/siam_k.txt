@@ -1,0 +1,88 @@
+﻿focus_tree = {
+	id = ksi_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = KSI
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 50 y = 1000 }
+
+	focus = {
+		id = ksi_1
+		icon = GFX_goal_sia_defenses
+		x = 20
+		y = 1
+		cost = 5
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = TOOLTIP_KSIA
+		}
+	}
+	focus = {
+		id = ksi_2
+		icon = GFX_goal_sia_monarchy
+		mutually_exclusive = { focus = ksi_3 }
+		x = 18
+		y = 2
+		cost = 5
+		prerequisite = { focus = ksi_1 }
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = TOOLTIP_KSIB
+		}
+	}
+	focus = {
+		id = ksi_3
+		icon = GFX_goal_sia_autonomy
+		mutually_exclusive = { focus = ksi_2 }
+		x = 22
+		y = 2
+		cost = 5
+		prerequisite = { focus = ksi_1 }
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = TOOLTIP_KSIC
+		}
+	}
+	focus = {
+		id = ksi_4
+		icon = GFX_goal_sia_rat
+		x = 20
+		y = 4
+		cost = 5
+		prerequisite = { 
+			focus = ksi_2
+			focus = ksi_3
+		}
+		available = {
+			has_war = no
+		}
+		
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			news_event = {
+				id = siam_news.10
+			}
+			custom_effect_tooltip = TOOLTIP_KSID
+		}
+	}
+}

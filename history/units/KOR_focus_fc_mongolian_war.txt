@@ -1,0 +1,5 @@
+﻿
+focus = {
+    current = "KOR_last_say_of_russia"
+    Progress = 0
+}   

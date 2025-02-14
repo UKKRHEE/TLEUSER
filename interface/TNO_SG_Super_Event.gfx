@@ -288,12 +288,48 @@ spriteTypes = {
 		texturefile = "gfx/superevent_pictures/fall_of_britain.png"
 	}
 	spriteType = {
+		name = "GFX_SE_NORMANDY_INVASION"
+		texturefile = "gfx/superevent_pictures/normandy.png"
+	}
+	spriteType = {
+		name = "GFX_SE_FRANCO_THAI_WAR"
+		texturefile = "gfx/superevent_pictures/franco_thai_war.png"
+	}
+	spriteType = {
 		name = "GFX_SE_GREAT_ASIAN_WAR"
 		texturefile = "gfx/superevent_pictures/great_asian_war.png"
 	}
 	spriteType = {
 		name = "GFX_SE_GREAT_ASIAN_WAR_ILSO"
 		texturefile = "gfx/superevent_pictures/great_asian_war_ilso.png"
+	}
+	spriteType = {
+		name = "GFX_SE_FIGHT_OF_QINHUANGDAO"
+		texturefile = "gfx/superevent_pictures/fight_of_qinhuangdao.png"
+	}
+	spriteType = {
+		name = "GFX_SE_GREAT_ASIAN_WAR_DOSAN"
+		texturefile = "gfx/superevent_pictures/great_asian_war_dosan.png"
+	}
+	spriteType = {
+		name = "GFX_SE_CONSTITUTION_DOSAN"
+		texturefile = "gfx/superevent_pictures/new_constitution_dosan.png"
+	}
+	spriteType = {
+		name = "GFX_SE_JAPAN_ATTACK_ILSO"
+		texturefile = "gfx/superevent_pictures/japan_attack_ilso.png"
+	}
+	spriteType = {
+		name = "GFX_SE_TIANMING_DIVIDE_ILSO"
+		texturefile = "gfx/superevent_pictures/tianming_divide_ilso.png"
+	}
+	spriteType = {
+		name = "GFX_SE_JAPAN_ATTACK_WOOSA"
+		texturefile = "gfx/superevent_pictures/japan_attack_woosa.png"
+	}
+	spriteType = {
+		name = "GFX_SE_CHINA_ATTACK_WOOSA"
+		texturefile = "gfx/superevent_pictures/china_attack_woosa.png"
 	}
 	##USE SUPER_EVENT_MAKER_GUI IN USEFUL PYTHON PROGRAMS TO MAKE NEW SUPER EVENTS##
 }

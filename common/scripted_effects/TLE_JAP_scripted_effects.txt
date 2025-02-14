@@ -1,0 +1,7 @@
+JAP_fyp_clamp = {
+	clamp_variable = {
+		var = JAP_five_years_plan_1_bar_var
+		min = 0
+		max = 100
+	}
+}

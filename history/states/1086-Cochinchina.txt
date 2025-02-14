@@ -1,0 +1,36 @@
+state={
+	id=1086
+	name="STATE_COCHINCHINA"
+	resources={
+		rubber=34.000
+	}
+	provinces={
+		1248 1285 1300 1302 1328 1400 1605 4255 4334 4363 4379 4405 7229 7271 7380 10137 10162 10180 10232 10309 12109 12150 12176 12204 
+	}
+	history={
+		add_core_of = VIN
+		add_core_of = VTC
+		add_core_of = FRI
+		add_core_of = ANM
+		owner = FRI
+		victory_points = {
+			10309 5 
+		}
+		victory_points = {
+			10137 3 
+		}
+		victory_points = {
+			1400 1 
+		}
+		victory_points = {
+			12204 1 
+		}
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	manpower=1630000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

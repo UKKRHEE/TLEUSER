@@ -1,0 +1,59 @@
+KOR_ilso_economical_problem_clamp = {
+	clamp_variable = {
+		var = KOR_pcy_economical_problem_consumer_var
+		min = 0
+		max = 1
+	}
+	clamp_variable = {
+		var = KOR_pcy_economical_problem_industrial_capacity_var
+		min = -0.5
+		max = 0
+	}
+	clamp_variable = {
+		var = KOR_pcy_economical_problem_research_var
+		min = -0.1
+		max = 0
+	}
+	clamp_variable = {
+		var = KOR_pcy_economical_problem_stability_var
+		min = -0.5
+		max = 0
+	}
+}
+
+KOR_ilso_ep_var_up = {
+	custom_effect_tooltip = KOR_ilso_ep_var_up_tt
+	hidden_effect = {
+		add_to_variable = { 
+			KOR_pcy_economical_problem_consumer_var = 0.01
+		}
+		subtract_from_variable = { 
+			KOR_pcy_economical_problem_industrial_capacity_var = 0.005 #이런 숫자가 존재할 수 있나?
+		}
+		subtract_from_variable = { 
+			KOR_pcy_economical_problem_research_var = 0.001 #이런 숫자가 존재할 수 있나?
+		}
+		subtract_from_variable = { 
+			KOR_pcy_economical_problem_stability_var = 0.005 #이런 숫자가 존재할 수 있나? #병신겜이라 안될 것 같은데.
+		}
+		KOR_ilso_economical_problem_clamp = yes
+	}
+}
+KOR_ilso_ep_var_down = {
+	custom_effect_tooltip = KOR_ilso_ep_var_down_tt
+	hidden_effect = {
+		subtract_from_variable = { 
+			KOR_pcy_economical_problem_consumer_var = 0.01
+		}
+		add_to_variable = { 
+			KOR_pcy_economical_problem_industrial_capacity_var = 0.005 #이런 숫자가 존재할 수 있나?
+		}
+		add_to_variable = { 
+			KOR_pcy_economical_problem_research_var = 0.001 #이런 숫자가 존재할 수 있나?
+		}
+		add_to_variable = { 
+			KOR_pcy_economical_problem_stability_var = 0.005 #이런 숫자가 존재할 수 있나? #병신겜이라 안될 것 같은데.
+		}
+		KOR_ilso_economical_problem_clamp = yes
+	}
+}

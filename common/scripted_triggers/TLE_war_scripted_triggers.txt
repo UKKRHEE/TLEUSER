@@ -1,0 +1,1245 @@
+
+zhili_attack_trigger = {
+	OR = {
+				608 = {
+					OR = {
+						if = {
+							limit = {
+								WZC = {
+									is_puppet_of = KOR
+								}
+							}
+							is_controlled_by = WZC
+							any_neighbor_state = {
+								is_controlled_by = WZC
+							}
+						}
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+				1097 = {
+					OR = {
+						if = {
+							limit = {
+								WZC = {
+									is_puppet_of = KOR
+								}
+							}
+							is_controlled_by = WZC
+							any_neighbor_state = {
+								is_controlled_by = WZC
+							}
+						}
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+				1033 = {
+					OR = {
+						if = {
+							limit = {
+								WZC = {
+									is_puppet_of = KOR
+								}
+							}
+							is_controlled_by = WZC
+							any_neighbor_state = {
+								is_controlled_by = WZC
+							}
+						}
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+				614 = {
+					OR = {
+						if = {
+							limit = {
+								WZC = {
+									is_puppet_of = KOR
+								}
+							}
+							is_controlled_by = WZC
+							any_neighbor_state = {
+								is_controlled_by = WZC
+							}
+						}
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+				1101 = {
+					OR = {
+						if = {
+							limit = {
+								WZC = {
+									is_puppet_of = KOR
+								}
+							}
+							is_controlled_by = WZC
+							any_neighbor_state = {
+								is_controlled_by = WZC
+							}
+						}
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+				609 = {
+					OR = {
+						if = {
+							limit = {
+								WZC = {
+									is_puppet_of = KOR
+								}
+							}
+							is_controlled_by = WZC
+							any_neighbor_state = {
+								is_controlled_by = WZC
+							}
+						}
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+			}
+}
+shandong_attack_trigger = {
+		OR = {
+				597 = {
+					OR = {
+						if = {
+							limit = {
+								WZC = {
+									is_puppet_of = KOR
+								}
+							}
+							is_controlled_by = WZC
+							any_neighbor_state = {
+								is_controlled_by = WZC
+							}
+						}
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+				1100 = {
+					OR = {
+						if = {
+							limit = {
+								WZC = {
+									is_puppet_of = KOR
+								}
+							}
+							is_controlled_by = WZC
+							any_neighbor_state = {
+								is_controlled_by = WZC
+							}
+						}
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+				945 = {
+					OR = {
+						if = {
+							limit = {
+								WZC = {
+									is_puppet_of = KOR
+								}
+							}
+							is_controlled_by = WZC
+							any_neighbor_state = {
+								is_controlled_by = WZC
+							}
+						}
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+				944 = {
+					OR = {
+						if = {
+							limit = {
+								WZC = {
+									is_puppet_of = KOR
+								}
+							}
+							is_controlled_by = WZC
+							any_neighbor_state = {
+								is_controlled_by = WZC
+							}
+						}
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+				1035 = {
+					OR = {
+						if = {
+							limit = {
+								WZC = {
+									is_puppet_of = KOR
+								}
+							}
+							is_controlled_by = WZC
+							any_neighbor_state = {
+								is_controlled_by = WZC
+							}
+						}
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+				1034 = {
+					OR = {
+						if = {
+							limit = {
+								WZC = {
+									is_puppet_of = KOR
+								}
+							}
+							is_controlled_by = WZC
+							any_neighbor_state = {
+								is_controlled_by = WZC
+							}
+						}
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+			}
+}
+shanxi_attack_trigger = {
+OR = {
+				615 = {
+					OR = {
+						if = {
+							limit = {
+								WZC = {
+									is_puppet_of = KOR
+								}
+							}
+							is_controlled_by = WZC
+							any_neighbor_state = {
+								is_controlled_by = WZC
+							}
+						}
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+				1099 = {
+					OR = {
+						if = {
+							limit = {
+								WZC = {
+									is_puppet_of = KOR
+								}
+							}
+							is_controlled_by = WZC
+							any_neighbor_state = {
+								is_controlled_by = WZC
+							}
+						}
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+				947 = {
+					OR = {
+						if = {
+							limit = {
+								WZC = {
+									is_puppet_of = KOR
+								}
+							}
+							is_controlled_by = WZC
+							any_neighbor_state = {
+								is_controlled_by = WZC
+							}
+						}
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+			}
+}
+shaanxi_attack_trigger = {
+OR = {
+				622 = {
+					OR = {
+						if = {
+							limit = {
+								WZC = {
+									is_puppet_of = KOR
+								}
+							}
+							is_controlled_by = WZC
+							any_neighbor_state = {
+								is_controlled_by = WZC
+							}
+						}
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+				744 = {
+					OR = {
+						if = {
+							limit = {
+								WZC = {
+									is_puppet_of = KOR
+								}
+							}
+							is_controlled_by = WZC
+							any_neighbor_state = {
+								is_controlled_by = WZC
+							}
+						}
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+			}
+}
+henan_attack_trigger = {
+OR = {
+				952 = {
+					OR = {
+						if = {
+							limit = {
+								WZC = {
+									is_puppet_of = KOR
+								}
+							}
+							is_controlled_by = WZC
+							any_neighbor_state = {
+								is_controlled_by = WZC
+							}
+						}
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+				969 = {
+					OR = {
+						if = {
+							limit = {
+								WZC = {
+									is_puppet_of = KOR
+								}
+							}
+							is_controlled_by = WZC
+							any_neighbor_state = {
+								is_controlled_by = WZC
+							}
+						}
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+				607 = {
+					OR = {
+						if = {
+							limit = {
+								WZC = {
+									is_puppet_of = KOR
+								}
+							}
+							is_controlled_by = WZC
+							any_neighbor_state = {
+								is_controlled_by = WZC
+							}
+						}
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+			}
+}
+anhui_attack_trigger = {
+OR = {
+				606 = {
+					OR = {
+						if = {
+							limit = {
+								WZC = {
+									is_puppet_of = KOR
+								}
+							}
+							is_controlled_by = WZC
+							any_neighbor_state = {
+								is_controlled_by = WZC
+							}
+						}
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+				749 = {
+					OR = {
+						if = {
+							limit = {
+								WZC = {
+									is_puppet_of = KOR
+								}
+							}
+							is_controlled_by = WZC
+							any_neighbor_state = {
+								is_controlled_by = WZC
+							}
+						}
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+			}
+}
+jiangsu_attack_trigger = {
+OR = {
+				598 = {
+					OR = {
+						if = {
+							limit = {
+								WZC = {
+									is_puppet_of = KOR
+								}
+							}
+							is_controlled_by = WZC
+							any_neighbor_state = {
+								is_controlled_by = WZC
+							}
+						}
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+				935 = {
+					OR = {
+						if = {
+							limit = {
+								WZC = {
+									is_puppet_of = KOR
+								}
+							}
+							is_controlled_by = WZC
+							any_neighbor_state = {
+								is_controlled_by = WZC
+							}
+						}
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+				946 = {
+					OR = {
+						if = {
+							limit = {
+								WZC = {
+									is_puppet_of = KOR
+								}
+							}
+							is_controlled_by = WZC
+							any_neighbor_state = {
+								is_controlled_by = WZC
+							}
+						}
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+				997 = {
+					OR = {
+						if = {
+							limit = {
+								WZC = {
+									is_puppet_of = KOR
+								}
+							}
+							is_controlled_by = WZC
+							any_neighbor_state = {
+								is_controlled_by = WZC
+							}
+						}
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+				1038 = {
+					OR = {
+						if = {
+							limit = {
+								WZC = {
+									is_puppet_of = KOR
+								}
+							}
+							is_controlled_by = WZC
+							any_neighbor_state = {
+								is_controlled_by = WZC
+							}
+						}
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+				1037 = {
+					OR = {
+						if = {
+							limit = {
+								WZC = {
+									is_puppet_of = KOR
+								}
+							}
+							is_controlled_by = WZC
+							any_neighbor_state = {
+								is_controlled_by = WZC
+							}
+						}
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+				1036 = {
+					OR = {
+						if = {
+							limit = {
+								WZC = {
+									is_puppet_of = KOR
+								}
+							}
+							is_controlled_by = WZC
+							any_neighbor_state = {
+								is_controlled_by = WZC
+							}
+						}
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+				613 = {
+					OR = {
+						if = {
+							limit = {
+								WZC = {
+									is_puppet_of = KOR
+								}
+							}
+							is_controlled_by = WZC
+							any_neighbor_state = {
+								is_controlled_by = WZC
+							}
+						}
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+			}
+}
+zhejiang_attack_trigger = {
+OR = {
+				937 = {
+					OR = {
+						if = {
+							limit = {
+								WZC = {
+									is_puppet_of = KOR
+								}
+							}
+							is_controlled_by = WZC
+							any_neighbor_state = {
+								is_controlled_by = WZC
+							}
+						}
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+				596 = {
+					OR = {
+						if = {
+							limit = {
+								WZC = {
+									is_puppet_of = KOR
+								}
+							}
+							is_controlled_by = WZC
+							any_neighbor_state = {
+								is_controlled_by = WZC
+							}
+						}
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+				936 = {
+					OR = {
+						if = {
+							limit = {
+								WZC = {
+									is_puppet_of = KOR
+								}
+							}
+							is_controlled_by = WZC
+							any_neighbor_state = {
+								is_controlled_by = WZC
+							}
+						}
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+			}
+}
+fujian_attack_trigger = {
+OR = {
+				595 = {
+					OR = {
+						if = {
+							limit = {
+								WZC = {
+									is_puppet_of = KOR
+								}
+							}
+							is_controlled_by = WZC
+							any_neighbor_state = {
+								is_controlled_by = WZC
+							}
+						}
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+				938 = {
+					OR = {
+						if = {
+							limit = {
+								WZC = {
+									is_puppet_of = KOR
+								}
+							}
+							is_controlled_by = WZC
+							any_neighbor_state = {
+								is_controlled_by = WZC
+							}
+						}
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+				950 = {
+					OR = {
+						if = {
+							limit = {
+								WZC = {
+									is_puppet_of = KOR
+								}
+							}
+							is_controlled_by = WZC
+							any_neighbor_state = {
+								is_controlled_by = WZC
+							}
+						}
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+				939 = {
+					OR = {
+						if = {
+							limit = {
+								WZC = {
+									is_puppet_of = KOR
+								}
+							}
+							is_controlled_by = WZC
+							any_neighbor_state = {
+								is_controlled_by = WZC
+							}
+						}
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+			}
+}
+hubei_attack_trigger = {
+OR = {
+				951 = {
+					OR = {
+						if = {
+							limit = {
+								WZC = {
+									is_puppet_of = KOR
+								}
+							}
+							is_controlled_by = WZC
+							any_neighbor_state = {
+								is_controlled_by = WZC
+							}
+						}
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+				620 = {
+					OR = {
+						if = {
+							limit = {
+								WZC = {
+									is_puppet_of = KOR
+								}
+							}
+							is_controlled_by = WZC
+							any_neighbor_state = {
+								is_controlled_by = WZC
+							}
+						}
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+				943 = {
+					OR = {
+						if = {
+							limit = {
+								WZC = {
+									is_puppet_of = KOR
+								}
+							}
+							is_controlled_by = WZC
+							any_neighbor_state = {
+								is_controlled_by = WZC
+							}
+						}
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+				750 = {
+					OR = {
+						if = {
+							limit = {
+								WZC = {
+									is_puppet_of = KOR
+								}
+							}
+							is_controlled_by = WZC
+							any_neighbor_state = {
+								is_controlled_by = WZC
+							}
+						}
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+			}
+}
+hunan_attack_trigger = {
+OR = {
+				602 = {
+					OR = {
+						if = {
+							limit = {
+								WZC = {
+									is_puppet_of = KOR
+								}
+							}
+							is_controlled_by = WZC
+							any_neighbor_state = {
+								is_controlled_by = WZC
+							}
+						}
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+				949 = {
+					OR = {
+						if = {
+							limit = {
+								WZC = {
+									is_puppet_of = KOR
+								}
+							}
+							is_controlled_by = WZC
+							any_neighbor_state = {
+								is_controlled_by = WZC
+							}
+						}
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+			}
+}
+guangdong_attack_trigger = {
+OR = {
+				593 = {
+					OR = {
+						if = {
+							limit = {
+								WZC = {
+									is_puppet_of = KOR
+								}
+							}
+							is_controlled_by = WZC
+							any_neighbor_state = {
+								is_controlled_by = WZC
+							}
+						}
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+				941 = {
+					OR = {
+						if = {
+							limit = {
+								WZC = {
+									is_puppet_of = KOR
+								}
+							}
+							is_controlled_by = WZC
+							any_neighbor_state = {
+								is_controlled_by = WZC
+							}
+						}
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+				592 = {
+					OR = {
+						if = {
+							limit = {
+								WZC = {
+									is_puppet_of = KOR
+								}
+							}
+							is_controlled_by = WZC
+							any_neighbor_state = {
+								is_controlled_by = WZC
+							}
+						}
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+				1098 = {
+					OR = {
+						if = {
+							limit = {
+								WZC = {
+									is_puppet_of = KOR
+								}
+							}
+							is_controlled_by = WZC
+							any_neighbor_state = {
+								is_controlled_by = WZC
+							}
+						}
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+				940 = {
+					OR = {
+						if = {
+							limit = {
+								WZC = {
+									is_puppet_of = KOR
+								}
+							}
+							is_controlled_by = WZC
+							any_neighbor_state = {
+								is_controlled_by = WZC
+							}
+						}
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+				591 = {
+					OR = {
+						if = {
+							limit = {
+								WZC = {
+									is_puppet_of = KOR
+								}
+							}
+							is_controlled_by = WZC
+							any_neighbor_state = {
+								is_controlled_by = WZC
+							}
+						}
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+			}
+}
+guangxi_attack_trigger = {
+OR = {
+				594 = {
+					OR = {
+						if = {
+							limit = {
+								WZC = {
+									is_puppet_of = KOR
+								}
+							}
+							is_controlled_by = WZC
+							any_neighbor_state = {
+								is_controlled_by = WZC
+							}
+						}
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+				599 = {
+					OR = {
+						if = {
+							limit = {
+								WZC = {
+									is_puppet_of = KOR
+								}
+							}
+							is_controlled_by = WZC
+							any_neighbor_state = {
+								is_controlled_by = WZC
+							}
+						}
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+			}
+}
+guizhou_attack_trigger = {
+OR = {
+				603 = {
+					OR = {
+						if = {
+							limit = {
+								WZC = {
+									is_puppet_of = KOR
+								}
+							}
+							is_controlled_by = WZC
+							any_neighbor_state = {
+								is_controlled_by = WZC
+							}
+						}
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+				953 = {
+					OR = {
+						if = {
+							limit = {
+								WZC = {
+									is_puppet_of = KOR
+								}
+							}
+							is_controlled_by = WZC
+							any_neighbor_state = {
+								is_controlled_by = WZC
+							}
+						}
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+				948 = {
+					OR = {
+						if = {
+							limit = {
+								WZC = {
+									is_puppet_of = KOR
+								}
+							}
+							is_controlled_by = WZC
+							any_neighbor_state = {
+								is_controlled_by = WZC
+							}
+						}
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+			}
+}
+sichuan_attack_trigger = {
+OR = {
+				753 = {
+					OR = {
+						if = {
+							limit = {
+								WZC = {
+									is_puppet_of = KOR
+								}
+							}
+							is_controlled_by = WZC
+							any_neighbor_state = {
+								is_controlled_by = WZC
+							}
+						}
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+				942 = {
+					OR = {
+						if = {
+							limit = {
+								WZC = {
+									is_puppet_of = KOR
+								}
+							}
+							is_controlled_by = WZC
+							any_neighbor_state = {
+								is_controlled_by = WZC
+							}
+						}
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+				605 = {
+					OR = {
+						if = {
+							limit = {
+								WZC = {
+									is_puppet_of = KOR
+								}
+							}
+							is_controlled_by = WZC
+							any_neighbor_state = {
+								is_controlled_by = WZC
+							}
+						}
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+				748 = {
+					OR = {
+						if = {
+							limit = {
+								WZC = {
+									is_puppet_of = KOR
+								}
+							}
+							is_controlled_by = WZC
+							any_neighbor_state = {
+								is_controlled_by = WZC
+							}
+						}
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
+			}
+}
+is_korean_tag = {
+	OR = {
+		original_tag = KOR
+		original_tag = EOK
+		original_tag = KKS
+		original_tag = KHK
+		original_tag = KYH
+		original_tag = KMN
+		original_tag = ROK
+		original_tag = PRK
+		original_tag = DK1
+		original_tag = DK2
+		original_tag = DK3
+		original_tag = DK4
+	}
+}
+plan_isnt_started_chi = {
+	has_global_flag = global_CHI_defence_the_korea
+	custom_trigger_tooltip = {
+		tooltip = plan_isnt_started_chi_tt
+		NOT = {
+			has_decision = KOR_zhili_attack_1
+			has_decision = KOR_zhili_attack_2
+			has_decision = KOR_zhili_attack_3
+			has_decision = KOR_shandong_attack_1
+			has_decision = KOR_shandong_attack_2
+			has_decision = KOR_shandong_attack_3
+			has_decision = KOR_shanxi_attack_1
+			has_decision = KOR_shanxi_attack_2
+			has_decision = KOR_shanxi_attack_3
+			has_decision = KOR_shaanxi_attack_1
+			has_decision = KOR_shaanxi_attack_2
+			has_decision = KOR_shaanxi_attack_3
+			has_decision = KOR_henan_attack_1
+			has_decision = KOR_henan_attack_2
+			has_decision = KOR_henan_attack_3
+			has_decision = KOR_anhui_attack_1
+			has_decision = KOR_anhui_attack_2
+			has_decision = KOR_anhui_attack_3
+			has_decision = KOR_jiangsu_attack_1
+			has_decision = KOR_jiangsu_attack_2
+			has_decision = KOR_jiangsu_attack_3
+			has_decision = KOR_zhejiang_attack_1
+			has_decision = KOR_zhejiang_attack_2
+			has_decision = KOR_zhejiang_attack_3
+			has_decision = KOR_fujian_attack_1
+			has_decision = KOR_fujian_attack_2
+			has_decision = KOR_fujian_attack_3
+			has_decision = KOR_hubei_attack_1
+			has_decision = KOR_hubei_attack_2
+			has_decision = KOR_hubei_attack_3
+			has_decision = KOR_hunan_attack_1
+			has_decision = KOR_hunan_attack_2
+			has_decision = KOR_hunan_attack_3
+			has_decision = KOR_guangdong_attack_1
+			has_decision = KOR_guangdong_attack_2
+			has_decision = KOR_guangdong_attack_3
+			has_decision = KOR_guangxi_attack_1
+			has_decision = KOR_guangxi_attack_2
+			has_decision = KOR_guangxi_attack_3
+			has_decision = KOR_guizhou_attack_1
+			has_decision = KOR_guizhou_attack_2
+			has_decision = KOR_guizhou_attack_3
+			has_decision = KOR_sichuan_attack_1
+			has_decision = KOR_sichuan_attack_2
+			has_decision = KOR_sichuan_attack_3
+		}
+	}
+}
+plan_isnt_started_jap = {
+	custom_trigger_tooltip = {
+		tooltip = plan_isnt_started_jap_tt
+		NOT = {
+			has_decision = KOR_chugoku_attack
+			has_decision = KOR_sigoku_attack
+			has_decision = KOR_kansai_attack
+			has_decision = KOR_chubu_attack
+			has_decision = KOR_kanto_attack
+			has_decision = KOR_tohoku_attack
+		}
+	}
+}

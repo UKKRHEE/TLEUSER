@@ -1,0 +1,853 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "TLE_Side_GUI_Opener"
+		size = { width = 95 height = 95 }
+		position = { x = -10 y = -128 }
+
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_tiled_window_thin_border2"
+		}
+
+		buttonType = {
+			name = "crt_button"
+			spriteType = "GFX_Side_GUI_Opener"
+			position = { x = 48 y = 48 }
+			centerposition = yes
+			scale = 0.7
+			pdx_tooltip = "TLE_Side_GUI_opener_tt"
+		}
+	}
+	
+	containerWindowType = {
+		name = "TLE_Side_Dis_GUI"
+		position = { x = 0 y = -50 }
+		# size = { width = 174 height = 126 }
+		moveable = no
+		orientation = upper_right
+		origo = upper_left
+
+		containerWindowType = {
+			name = "inside_1_dis"
+			position = { x = 0 y = 0 }
+			show_position = { x = 0 y = 0 }
+			hide_position = { x = 0 y = 0 }
+			show_animation_type = decelerated
+			hide_animation_type = accelerated
+			animation_time = 2000
+
+			containerWindowType = {
+				name = "inside_2_dis"
+				size = { width = 260 height = 170 }
+				position = { x = 0 y = 170 }
+				show_position = { x = 0 y = 170 }
+				hide_position = { x = -245 y = 170 }
+				show_animation_type = accelerated
+				hide_animation_type = decelerated
+				animation_time = 2000
+							
+				background = {
+					name = "Background"
+					quadTextureSprite = "GFX_tiled_bg"
+				}
+
+				instantTextBoxType = {
+					name = "Title"
+					position = { x = 60 y = 20 }
+					font = "hoi_24header"
+					text = "side_gui_title"
+					maxWidth = 147
+					maxHeight = 26
+					format = center
+					vertical_alignment = center
+					alwaysTransparent = yes
+				}
+
+				instantTextBoxType = {
+					name = "Desc"
+					position = { x = 60 y = 80 }
+					font = "hoi_18b"
+					text = "side_gui_desc"
+					maxWidth = 147
+					maxHeight = 26
+					format = center
+					vertical_alignment = center
+					alwaysTransparent = yes
+				}
+
+			}
+
+			containerWindowType = {
+				name = "inside_3_dis"
+				size = { width = 260 height = 300 }
+				position = { x = 0 y = 330 }
+				show_position = { x = 0 y = 330 }
+				hide_position = { x = -245 y = 330 }
+				show_animation_type = accelerated
+				hide_animation_type = decelerated
+				animation_time = 1500
+							
+				background = {
+					name = "Background"
+					quadTextureSprite = "GFX_tiled_bg"
+				}
+
+				containerWindowType = {
+					name = "main_dis_guis"
+					position = { x= 0 y= 0 }
+					size = { width = 750 height = 510 }
+					clipping = yes
+				}
+
+				containerWindowType = {
+					name = "map_dis_guis"
+					position = { x= 70 y= 40 }
+					size = { width = 125 height = 200 }
+					clipping = yes
+				}
+			}
+
+			containerWindowType = {
+				name = "inside_4_dis"
+				size = { width = 260 height = 200 }
+				position = { x = 0 y = 620 }
+				show_position = { x = 0 y = 620 }
+				hide_position = { x = -245 y = 620 }
+				show_animation_type = accelerated
+				hide_animation_type = decelerated
+				animation_time = 1000
+							
+				background = {
+					name = "Background"
+					quadTextureSprite = "GFX_tiled_bg"
+				}
+
+				containerWindowType = {
+					name = "sub_dis_guis"
+					position = { x= 0 y= 0 }
+					size = { width = 260 height = 200 }
+					clipping = yes
+				}
+
+				buttonType = {
+					name = "close"
+					spriteType = "GFX_button_148x34"
+					buttonFont = "Bomb_16"
+					buttonText = "CLOSE"
+					position = { x = 60 y = 150 }
+				}
+			}
+		}
+	}
+
+	containerWindowType = {
+		name = "TLE_Side_GUI"
+		position = { x = 0 y = -50 }
+		# size = { width = 174 height = 126 }
+		moveable = no
+		orientation = upper_right
+		origo = upper_left
+
+		containerWindowType = {
+			name = "inside_1"
+			position = { x = 0 y = 0 }
+			show_position = { x = 0 y = 0 }
+			show_animation_type = decelerated
+			hide_animation_type = accelerated
+			animation_time = 2000
+
+			containerWindowType = {
+				name = "inside_2"
+				size = { width = 260 height = 170 }
+				position = { x = 0 y = 170 }
+				show_position = { x = -245 y = 170 }
+				show_animation_type = decelerated
+				hide_animation_type = accelerated
+				animation_time = 1000
+							
+				background = {
+					name = "Background"
+					quadTextureSprite = "GFX_tiled_bg"
+				}
+
+				instantTextBoxType = {
+					name = "Title"
+					position = { x = 60 y = 20 }
+					font = "hoi_24header"
+					text = "side_gui_title"
+					maxWidth = 147
+					maxHeight = 26
+					format = center
+					vertical_alignment = center
+					alwaysTransparent = yes
+				}
+
+				instantTextBoxType = {
+					name = "Desc"
+					position = { x = 60 y = 80 }
+					font = "hoi_18b"
+					text = "side_gui_desc"
+					maxWidth = 147
+					maxHeight = 26
+					format = center
+					vertical_alignment = center
+					alwaysTransparent = yes
+				}
+
+			}
+
+			containerWindowType = {
+				name = "inside_3"
+				size = { width = 260 height = 300 }
+				position = { x = 0 y = 330 }
+				show_position = { x = -245 y = 330 }
+				show_animation_type = decelerated
+				hide_animation_type = accelerated
+				animation_time = 2000
+							
+				background = {
+					name = "Background"
+					quadTextureSprite = "GFX_tiled_bg"
+				}
+
+				containerWindowType = {
+					name = "main_guis"
+					position = { x= 0 y= 0 }
+					size = { width = 260 height = 300 }
+					clipping = yes
+				}
+
+				containerWindowType = {
+					name = "map_guis"
+					position = { x= 70 y= 40 }
+					size = { width = 125 height = 120 }
+					clipping = yes
+				}
+
+			}
+
+			containerWindowType = {
+				name = "inside_4"
+				size = { width = 260 height = 200 }
+				position = { x = 0 y = 620 }
+				show_position = { x = -245 y = 620 }
+				show_animation_type = decelerated
+				hide_animation_type = accelerated
+				animation_time = 3000
+							
+				background = {
+					name = "Background"
+					quadTextureSprite = "GFX_tiled_bg"
+				}
+
+				containerWindowType = {
+					name = "sub_guis"
+					position = { x= 0 y= 0 }
+					size = { width = 260 height = 200 }
+					clipping = yes
+				}
+
+				buttonType = {
+					name = "close"
+					spriteType = "GFX_button_148x34"
+					buttonFont = "Bomb_16"
+					buttonText = "CLOSE"
+					position = { x = 60 y = 150 }
+				}
+			}
+		}
+	}
+
+	containerWindowType = {
+		name = "national_dissatisfaction_GUI"
+		position = { x = 0 y = 0 }
+		size = { width = 260 height = 170 }
+		moveable = no
+
+		instantTextBoxType = {
+			name = "Title"
+			position = { x = 60 y = 20 }
+			font = "hoi_24header"
+			text = "[Get_major_state]"
+			maxWidth = 147
+			maxHeight = 26
+			format = center
+			vertical_alignment = center
+			alwaysTransparent = yes
+		}
+		
+		containerWindowType = {
+			name = "Change_Buttons"
+
+			buttonType = {
+				name = "Prev"
+				position = { x = 30 y = 90 }
+				spriteType = "button_left"
+			}
+	
+			buttonType = {
+				name = "Next"
+				position = { x = 210 y = 90 }
+				spriteType = "button_right"
+			}
+		}
+
+		containerWindowType = {
+			name = "Desc"
+
+			instantTextBoxType = {
+				name = "Selected_State_Title"
+				position = { x = 60 y = 155 }
+				font = "hoi_20b"
+				text = "selected_state_title_loc"
+				maxWidth = 147
+				maxHeight = 26
+				format = center
+				vertical_alignment = center
+				alwaysTransparent = yes
+			}
+
+			instantTextBoxType = {
+				name = "Selected_State"
+				position = { x = 60 y = 180 }
+				font = "hoi_18b"
+				text = "[Get_selected_state]"
+				maxWidth = 147
+				maxHeight = 26
+				format = center
+				vertical_alignment = center
+				alwaysTransparent = yes
+			}
+
+			instantTextBoxType = {
+				name = "Graphs_Title"
+				position = { x = 60 y = 210 }
+				font = "hoi_20b"
+				text = "graphs_title_loc"
+				maxWidth = 147
+				maxHeight = 26
+				format = center
+				vertical_alignment = center
+				alwaysTransparent = yes
+			}
+		}
+
+		iconType = {
+			name = "Graphs_progbar"
+			spriteType = "GFX_Side_GUI_Progressbar"
+			position = { x = 42 y = 239 }
+		}
+
+		iconType = {
+			name = "Graphs_progbar_Frame"
+			spriteType = "GFX_Side_GUI_Progressbar_Frame"
+			position = { x = 42 y = 240 }
+		}
+
+		instantTextBoxType = {
+			name = "Graphs_progbar_text"
+			position = { x = 106 y = 244 }
+			font = "aldrich_22_outline"
+			text = "[?ND_Graphs_array^selected_state]%"
+			maxWidth = 60
+			maxHeight = 26
+			format = center
+			vertical_alignment = center
+			alwaysTransparent = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "ND_board_GUI"
+		position = { x = 0 y = 0 }
+		size = { width = 260 height = 200 }
+		moveable = no
+
+		containerWindowType = {
+			name = "board_graphs_container"
+
+			instantTextBoxType = {
+				name = "total_graph_title"
+				position = { x = 18 y = 25 }
+				font = "hoi_18"
+				text = "total_map_text"
+				maxWidth = 147
+				maxHeight = 26
+				format = left
+				vertical_alignment = left
+				alwaysTransparent = yes
+			}
+
+			iconType = {
+				name = "total_graph_progbar"
+				spriteType = "GFX_Side_GUI_Progressbar_small"
+				position = { x = 65 y = 28 }
+			}
+
+			instantTextBoxType = {
+				name = "total_graph_var"
+				position = { x = 95 y = 25 }
+				font = "hoi_18"
+				text = "[?ND_Graphs_array_total|0]%"
+				maxWidth = 147
+				maxHeight = 26
+				format = right
+				vertical_alignment = right
+				alwaysTransparent = yes
+			}
+
+			instantTextBoxType = {
+				name = "manchuria_graph_title"
+				position = { x = 18 y = 40 }
+				font = "hoi_18"
+				text = "manchuria_map_text"
+				maxWidth = 147
+				maxHeight = 26
+				format = left
+				vertical_alignment = left
+				alwaysTransparent = yes
+			}
+
+			iconType = {
+				name = "manchuria_graph_progbar"
+				spriteType = "GFX_Side_GUI_Progressbar_small"
+				position = { x = 65 y = 43 }
+			}
+
+			instantTextBoxType = {
+				name = "manchuria_graph_var"
+				position = { x = 95 y = 40 }
+				font = "hoi_18"
+				text = "[?ND_Graphs_array^1]%"
+				maxWidth = 147
+				maxHeight = 26
+				format = right
+				vertical_alignment = right
+				alwaysTransparent = yes
+			}
+
+			instantTextBoxType = {
+				name = "south_manchuria_graph_title"
+				position = { x = 18 y = 55 }
+				font = "hoi_18"
+				text = "south_manchuria_map_text"
+				maxWidth = 147
+				maxHeight = 26
+				format = left
+				vertical_alignment = left
+				alwaysTransparent = yes
+			}
+
+			iconType = {
+				name = "south_manchuria_progbar"
+				spriteType = "GFX_Side_GUI_Progressbar_small"
+				position = { x = 65 y = 58 }
+			}
+
+			instantTextBoxType = {
+				name = "south_manchuria_graph_var"
+				position = { x = 95 y = 55 }
+				font = "hoi_18"
+				text = "[?ND_Graphs_array^2]%"
+				maxWidth = 147
+				maxHeight = 26
+				format = right
+				vertical_alignment = right
+				alwaysTransparent = yes
+			}
+
+			instantTextBoxType = {
+				name = "primorsky_graph_title"
+				position = { x = 18 y = 70 }
+				font = "hoi_18"
+				text = "primorsky_map_text"
+				maxWidth = 147
+				maxHeight = 26
+				format = left
+				vertical_alignment = left
+				alwaysTransparent = yes
+			}
+
+			iconType = {
+				name = "primorsky_progbar"
+				spriteType = "GFX_Side_GUI_Progressbar_small"
+				position = { x = 65 y = 73 }
+			}
+
+			instantTextBoxType = {
+				name = "primorsky_graph_var"
+				position = { x = 95 y = 70 }
+				font = "hoi_18"
+				text = "[?ND_Graphs_array^3]%"
+				maxWidth = 147
+				maxHeight = 26
+				format = right
+				vertical_alignment = right
+				alwaysTransparent = yes
+			}
+
+			iconType = {
+				name = "north_primorsky_progbar"
+				spriteType = "GFX_Side_GUI_Progressbar_small"
+				position = { x = 65 y = 88 }
+			}
+
+			instantTextBoxType = {
+				name = "north_primorsky_graph_title"
+				position = { x = 18 y = 85 }
+				font = "hoi_18"
+				text = "north_primorsky_map_text"
+				maxWidth = 147
+				maxHeight = 26
+				format = left
+				vertical_alignment = left
+				alwaysTransparent = yes
+			}
+
+			instantTextBoxType = {
+				name = "north_primorsky_graph_var"
+				position = { x = 95 y = 85 }
+				font = "hoi_18"
+				text = "[?ND_Graphs_array^4]%"
+				maxWidth = 147
+				maxHeight = 26
+				format = right
+				vertical_alignment = right
+				alwaysTransparent = yes
+			}
+
+			instantTextBoxType = {
+				name = "kyushu_graph_title"
+				position = { x = 18 y = 100 }
+				font = "hoi_18"
+				text = "kyushu_map_text"
+				maxWidth = 147
+				maxHeight = 26
+				format = left
+				vertical_alignment = left
+				alwaysTransparent = yes
+			}
+
+			iconType = {
+				name = "kyushu_progbar"
+				spriteType = "GFX_Side_GUI_Progressbar_small"
+				position = { x = 65 y = 103 }
+			}
+
+			instantTextBoxType = {
+				name = "kyushu_graph_var"
+				position = { x = 95 y = 100 }
+				font = "hoi_18"
+				text = "[?ND_Graphs_array^5]%"
+				maxWidth = 147
+				maxHeight = 26
+				format = right
+				vertical_alignment = right
+				alwaysTransparent = yes
+			}
+
+			instantTextBoxType = {
+				name = "hokkaido_graph_title"
+				position = { x = 18 y = 115 }
+				font = "hoi_18"
+				text = "hokkaido_map_text"
+				maxWidth = 147
+				maxHeight = 26
+				format = left
+				vertical_alignment = left
+				alwaysTransparent = yes
+			}
+
+			iconType = {
+				name = "hokkaido_progbar"
+				spriteType = "GFX_Side_GUI_Progressbar_small"
+				position = { x = 65 y = 118 }
+			}
+
+			instantTextBoxType = {
+				name = "hokkaido_graph_var"
+				position = { x = 95 y = 115 }
+				font = "hoi_18"
+				text = "[?ND_Graphs_array^6]%"
+				maxWidth = 147
+				maxHeight = 26
+				format = right
+				vertical_alignment = right
+				alwaysTransparent = yes
+			}
+
+			instantTextBoxType = {
+				name = "taiwan_graph_title"
+				position = { x = 18 y = 130 }
+				font = "hoi_18"
+				text = "taiwan_map_text"
+				maxWidth = 147
+				maxHeight = 26
+				format = left
+				vertical_alignment = left
+				alwaysTransparent = yes
+			}
+
+			iconType = {
+				name = "taiwan_progbar"
+				spriteType = "GFX_Side_GUI_Progressbar_small"
+				position = { x = 65 y = 133 }
+			}
+
+			instantTextBoxType = {
+				name = "taiwan_graph_var"
+				position = { x = 95 y = 130 }
+				font = "hoi_18"
+				text = "[?ND_Graphs_array^7]%"
+				maxWidth = 147
+				maxHeight = 26
+				format = right
+				vertical_alignment = right
+				alwaysTransparent = yes
+			}
+		}
+
+		instantTextBoxType = {
+			name = "Title"
+			position = { x = 60 y =13 }
+			font = "hoi_24header"
+			text = "nd_board_title_loc"
+			maxWidth = 147
+			maxHeight = 26
+			format = center
+			vertical_alignment = center
+			alwaysTransparent = yes
+		}
+
+	}
+
+	containerWindowType = {
+		name = "Manchuria_Maps_dis_GUI"
+		size = { width = 125 height = 170 }
+		position = { x = 0 y = 25 }
+		moveable = no
+
+		buttonType = {
+			name = "manchuria_map"
+			position = { x = 0 y = 0 }
+			spriteType = "GFX_Side_GUI_manchuria_Map"
+		}
+		buttonType = {
+			name = "south_manchuria_map"
+			position = { x = 25 y = 32 }
+			spriteType = "GFX_Side_GUI_south_manchuria_Map"
+		}
+		buttonType = {
+			name = "primorsky_map"
+			position = { x = 80 y = 0 }
+			spriteType = "GFX_Side_GUI_primorsky_Map"
+		}
+		buttonType = {
+			name = "north_primorsky_map"
+			position = { x = 12 y = -14 }
+			spriteType = "GFX_Side_GUI_north_primorsky_Map"
+		}		
+
+		iconType = {
+			name = "manchuria_map_outline"
+			position = { x = 0 y = 0 }
+			spriteType = "GFX_Side_GUI_manchuria_Map_Outline"
+		}
+		iconType = {
+			name = "south_manchuria_map_outline"
+			position = { x = 25 y = 32 }
+			spriteType = "GFX_Side_GUI_south_manchuria_Map_Outline"
+		}
+		iconType = {
+			name = "primorsky_map_outline"
+			position = { x = 80 y = 0 }
+			spriteType = "GFX_Side_GUI_primorsky_Map_Outline"
+		}
+		iconType = {
+			name = "north_primorsky_map_outline"
+			position = { x = 12 y = -14 }
+			spriteType = "GFX_Side_GUI_north_primorsky_Map_Outline"
+		}
+	}
+
+	containerWindowType = {
+		name = "Manchuria_Maps_GUI"
+		size = { width = 125 height = 170 }
+		position = { x = 1000 y = 25 }
+		show_position = { x = 0 y = 25 }
+		hide_position = { x = -1000 y = 25 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 1000
+		moveable = no
+
+		buttonType = {
+			name = "manchuria_map"
+			position = { x = 0 y = 0 }
+			spriteType = "GFX_Side_GUI_manchuria_Map"
+		}
+		buttonType = {
+			name = "south_manchuria_map"
+			position = { x = 25 y = 32 }
+			spriteType = "GFX_Side_GUI_south_manchuria_Map"
+		}
+		buttonType = {
+			name = "primorsky_map"
+			position = { x = 80 y = 0 }
+			spriteType = "GFX_Side_GUI_primorsky_Map"
+		}
+		buttonType = {
+			name = "north_primorsky_map"
+			position = { x = 12 y = -14 }
+			spriteType = "GFX_Side_GUI_north_primorsky_Map"
+		}		
+
+		iconType = {
+			name = "manchuria_map_outline"
+			position = { x = 0 y = 0 }
+			spriteType = "GFX_Side_GUI_manchuria_Map_Outline"
+		}
+		iconType = {
+			name = "south_manchuria_map_outline"
+			position = { x = 25 y = 32 }
+			spriteType = "GFX_Side_GUI_south_manchuria_Map_Outline"
+		}
+		iconType = {
+			name = "primorsky_map_outline"
+			position = { x = 80 y = 0 }
+			spriteType = "GFX_Side_GUI_primorsky_Map_Outline"
+		}
+		iconType = {
+			name = "north_primorsky_map_outline"
+			position = { x = 12 y = -14 }
+			spriteType = "GFX_Side_GUI_north_primorsky_Map_Outline"
+		}
+	}
+
+	containerWindowType = {
+		name = "Kyushu_Maps_dis_GUI"
+		size = { width = 125 height = 170 }
+		position = { x = 0 y = 25 }
+		moveable = no
+
+		buttonType = {
+			name = "kyushu_map"
+			position = { x = 30 y = 0 }
+			spriteType = "GFX_Side_GUI_kyushu_Map"
+		}
+
+		iconType = {
+			name = "kyushu_map_outline"
+			position = { x = 30 y = 0 }
+			spriteType = "GFX_Side_GUI_kyushu_Map_Outline"
+		}
+	}
+
+	containerWindowType = {
+		name = "Kyushu_Maps_GUI"
+		size = { width = 125 height = 170 }
+		position = { x = 0 y = -165 }
+		show_position = { x = 0 y = 25 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 1000
+		moveable = no
+
+		buttonType = {
+			name = "kyushu_map"
+			position = { x = 30 y = 0 }
+			spriteType = "GFX_Side_GUI_kyushu_Map"
+		}
+
+		iconType = {
+			name = "kyushu_map_outline"
+			position = { x = 30 y = 0 }
+			spriteType = "GFX_Side_GUI_kyushu_Map_Outline"
+		}
+	}
+
+	containerWindowType = {
+		name = "Hokkaido_Maps_dis_GUI"
+		size = { width = 125 height = 170 }
+		position = { x = 0 y = 25 }
+		moveable = no
+
+		buttonType = {
+			name = "hokkaido_map"
+			position = { x = 15 y = 0 }
+			spriteType = "GFX_Side_GUI_hokkaido_Map"
+		}
+
+		iconType = {
+			name = "hokkaido_map_outline"
+			position = { x = 15 y = 0 }
+			spriteType = "GFX_Side_GUI_hokkaido_Map_Outline"
+		}
+	}
+
+	containerWindowType = {
+		name = "Hokkaido_Maps_GUI"
+		size = { width = 125 height = 170 }
+		position = { x = 1000 y = 25 }
+		show_position = { x = 0 y = 25 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 1000
+		moveable = no
+
+		buttonType = {
+			name = "hokkaido_map"
+			position = { x = 15 y = 0 }
+			spriteType = "GFX_Side_GUI_hokkaido_Map"
+		}
+
+		iconType = {
+			name = "hokkaido_map_outline"
+			position = { x = 15 y = 0 }
+			spriteType = "GFX_Side_GUI_hokkaido_Map_Outline"
+		}
+	}
+
+	containerWindowType = {
+		name = "Taiwan_Maps_dis_GUI"
+		size = { width = 125 height = 170 }
+		position = { x = 0 y = 1000 }
+		moveable = no
+
+		buttonType = {
+			name = "taiwan_map"
+			position = { x = 15 y = 0 }
+			spriteType = "GFX_Side_GUI_taiwan_Map"
+		}
+
+		iconType = {
+			name = "taiwan_map_outline"
+			position = { x = 15 y = 0 }
+			spriteType = "GFX_Side_GUI_taiwan_Map_Outline"
+		}
+	}
+
+	containerWindowType = {
+		name = "Taiwan_Maps_GUI"
+		size = { width = 125 height = 170 }
+		position = { x = 0 y = 1000 }
+		show_position = { x = 33 y = 33 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 1000
+		moveable = no
+
+		buttonType = {
+			name = "taiwan_map"
+			position = { x = 15 y = 0 }
+			spriteType = "GFX_Side_GUI_taiwan_Map"
+		}
+
+		iconType = {
+			name = "hokkaido_map_outline"
+			position = { x = 15 y = 0 }
+			spriteType = "GFX_Side_GUI_taiwan_Map_Outline"
+		}
+	}
+}

@@ -5,8 +5,9 @@ state={
 		10330 10356 10456 
 	}
 	history={
-		owner = FRA
+		owner = FRI
 		add_core_of = LAO
+		add_core_of = FRI
 		buildings = {
 			infrastructure = 1
 
@@ -16,5 +17,5 @@ state={
 
 	manpower=124000
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=pastoral
 }

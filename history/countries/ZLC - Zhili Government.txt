@@ -12,19 +12,11 @@ if = {
 		}
 	}
 }
-every_state = {
-	limit = {
-		is_core_of = ZLC
-		is_owned_by = ZLC
-	}
-	add_dynamic_modifier = { modifier = dense_rural_infrastructure }
-}
 set_autonomy = {
 	target = HNC
 	autonomous_state = autonomy_puppet
 }
 
-diplomatic_relation = { country = ZLC relation = non_aggression_pact }
 add_opinion_modifier = {
 	target = ZLC
 	modifier = TLE_zhili_clique_opinion
@@ -47,9 +39,6 @@ set_power_balance = {
 	set_value = 0.35
 }
 
-ZLC = {
-	add_ideas = wu_peifu_token
-}
 set_cosmetic_tag = ZLC_beiyang
 add_ideas = {
 	#히든세팅
@@ -73,6 +62,18 @@ add_ideas = {
 	#법
 	limited_conscription
 	free_trade
+	
+	#법률 및 정책
+	zlc_dip_pre_germanism
+	zlc_inn_dongdaoxiqi
+	zlc_pol_oligarchism
+	zlc_mil_hezongjun
+	
+	#원로
+	ZLC_wu_peifu_elder
+	
+	#부원수
+	ZLC_yan_huiqing_prince
 }
 	
 add_ideas = { #안쓰는거(이전 버전)
@@ -254,7 +255,7 @@ recruit_character = ZLC_pan_fu
 recruit_character = ZLC_yin_lugeng
 recruit_character = ZLC_wang_kemin
 recruit_character = ZLC_xiong_xiling
-recruit_character = ZLC_jiang_jinghui
+recruit_character = ZLC_zhang_jinghui
 recruit_character = ZLC_luo_wengan
 recruit_character = ZLC_jin_yunpeng
 recruit_character = ZLC_gu_weijun
@@ -267,6 +268,7 @@ recruit_character = ZLC_zhao_yuanren
 recruit_character = ZLC_qian_xuesen
 
 ### Field Marshals
+recruit_character = ZLC_yannos #Inevitable
 
 if = {
 	limit = {

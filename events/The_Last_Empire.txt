@@ -1,0 +1,673 @@
+
+add_namespace = thelastempire
+
+country_event = { 
+	id = thelastempire.1
+	title = thelastempire.1.title
+	desc = thelastempire.1.desc
+	picture = GFX_event_korea_777
+	
+	fire_only_once = yes	
+    is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					KOR = {
+						is_ai = yes
+					}
+				}
+				KOR = {
+					add_ideas = KOR_they_will_more_division
+				}	
+			}
+		}
+		set_global_flag = TLE_GLOBAL_KOREA_1
+	}
+	option = { #그래 시작해보자고
+		name = thelastempire.1.a
+		if = {
+			limit = {
+				is_korean_tag = yes
+			}
+			country_event = {
+				id = thelastempire.1000 #대한제국 역사
+			}
+			set_major = yes
+		}
+		if = {
+			limit = {
+				is_japan_clique = yes
+			}
+			country_event = {
+				id = thelastempire.2000 #일본국 역사
+			}
+			set_major = no
+		}
+		if = {
+			limit = {
+				is_chinese_clique = yes
+			}
+			country_event = {
+				id = thelastempire.3000 #중국 역사
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					is_korean_tag = yes
+					is_chinese_clique = yes
+					is_japan_clique = yes
+				}
+			}
+			country_event = {
+				id = thelastempire.1000
+			}
+		}
+	}
+	
+	option = { #그래 시작해보자고
+		name = thelastempire.1.b
+		if = {
+			limit = {
+				is_korean_tag = yes
+			}
+			set_major = yes
+		}
+	}
+}	
+country_event = { #결론
+	id = thelastempire.2
+	title = thelastempire.2.title
+	desc = thelastempire.2.desc
+	picture = GFX_event_korea_777
+	
+    is_triggered_only = yes
+	 
+	option = { #한국
+		name = thelastempire.2.a
+		country_event = {
+			id = thelastempire.1000
+		}
+	}
+	option = { #일본
+		name = thelastempire.2.b
+		country_event = {
+			id = thelastempire.2000
+		}
+	}
+	option = { #중국
+		name = thelastempire.2.c
+		country_event = {
+			id = thelastempire.3000
+		}
+	}
+	option = { #저 그냥 나갈래요
+		name = thelastempire.2.d
+	}
+}
+
+country_event = { #결론
+	id = thelastempire.3
+	title = thelastempire.3.title
+	desc = thelastempire.3.desc
+	picture = GFX_event_korea_777
+	
+    is_triggered_only = yes
+	 
+	option = { #한국
+		name = thelastempire.3.a
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+country_event = { #결론
+	id = thelastempire.4
+	title = thelastempire.4.title
+	desc = thelastempire.4.desc
+	picture = GFX_event_korea_777
+	
+    is_triggered_only = yes
+	 
+	option = { #한국
+		name = thelastempire.4.a
+		KOR = { change_tag_from = ROOT }
+	}
+	option = { #한국
+		name = thelastempire.4.b
+	}
+}
+country_event = { #결론
+	id = thelastempire.5
+	title = thelastempire.5.title
+	desc = thelastempire.5.desc
+	picture = GFX_event_korea_777
+	
+    is_triggered_only = yes
+	 
+	option = { #한국
+		name = thelastempire.5.a
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = TLE_KOREA_HARDCORE_RULE
+					option = TLE_VERY_HARD
+				}
+			}
+			custom_effect_tooltip = TOOLTIP_EVENT_NANYIDO_4
+		}
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = TLE_KOREA_HARDCORE_RULE
+					option = TLE_HARDCORE
+				}
+			}
+			custom_effect_tooltip = TOOLTIP_EVENT_NANYIDO
+		}
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = TLE_KOREA_HARDCORE_RULE
+					option = TLE_LIGHT
+				}
+			}
+			custom_effect_tooltip = TOOLTIP_EVENT_NANYIDO_2
+		}
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = TLE_KOREA_HARDCORE_RULE
+					option = TLE_SOLIGHT
+				}
+			}
+			custom_effect_tooltip = TOOLTIP_EVENT_NANYIDO_3
+		}
+	}
+}
+
+country_event = { #Welcome to the Nasang!
+	id = thelastempire.6
+	title = thelastempire.6.title
+	desc = thelastempire.6.desc
+	picture = GFX_event_korea_777
+	
+    is_triggered_only = yes
+	
+	option = { #
+		name = thelastempire.6.a
+		custom_effect_tooltip = TOOLTIP_NASANG
+	}
+}
+country_event = { #씨발 역사적 좀 키라고!
+	id = thelastempire.7
+	title = thelastempire.7.title
+	desc = thelastempire.7.desc
+	picture = GFX_event_korea_777
+	
+    is_triggered_only = yes
+	
+	option = { #
+		name = thelastempire.7.a
+		custom_effect_tooltip = TOOLTIP_RE_START_PLZ
+		if = {
+			limit = {
+				ZZZ = {
+					exists = no
+				}
+			}
+			every_country = {
+				limit = {
+					exists = yes
+				}
+				save_event_target_as = TLE_ALL_COUNTRY
+			}
+			every_state = {
+				set_state_owner_to = ZZZ
+				transfer_state_to = ZZZ
+				add_core_of = ZZZ
+			}
+			ZZZ = {
+				annex_country = {
+					target = event_target:TLE_ALL_COUNTRY
+					transfer_troops = no
+				}
+			}
+			ZZZ = {
+				change_tag_from = ROOT
+			}	
+		}
+	}
+}
+country_event = { #김규식 루트
+	id = thelastempire.8
+	title = thelastempire.8.title
+	desc = thelastempire.8.desc
+	picture = GFX_event_korea_777
+	
+    is_triggered_only = yes
+	
+	option = { #
+		name = thelastempire.8.a
+		country_event = {
+			id = thelastempire.9
+		}
+	}
+	
+	option = { #
+		name = thelastempire.8.b
+	}
+}
+country_event = { #김규식 빨갱이 잡기
+	id = thelastempire.9
+	title = thelastempire.9.title
+	desc = thelastempire.9.desc
+	picture = GFX_event_korea_777
+	
+    is_triggered_only = yes
+	
+	option = { #
+		name = thelastempire.9.a
+	}
+}
+country_event = { #박중양 루트
+	id = thelastempire.10
+	title = thelastempire.10.title
+	desc = thelastempire.10.desc
+	picture = GFX_event_korea_777
+	
+    is_triggered_only = yes
+	
+	option = { #
+		name = thelastempire.10.a
+		country_event = {
+			id = thelastempire.9
+		}
+	}
+	
+	option = { #
+		name = thelastempire.10.b
+	}
+}
+country_event = { #박중양 루트
+	id = thelastempire.11
+	title = thelastempire.11.title
+	desc = thelastempire.11.desc
+	picture = GFX_event_korea_777
+	
+    is_triggered_only = yes
+	
+	option = { #
+		name = thelastempire.10.a
+	}
+}
+country_event = { #안창호 루트
+	id = thelastempire.12
+	title = thelastempire.12.title
+	desc = thelastempire.12.desc
+	picture = GFX_event_korea_777
+	
+    is_triggered_only = yes
+	
+	option = { #
+		name = thelastempire.12.a
+		country_event = {
+			id = thelastempire.13
+		}
+	}
+	
+	option = { #
+		name = thelastempire.12.b
+	}
+}
+country_event = { #안창호 루트
+	id = thelastempire.13
+	title = thelastempire.13.title
+	desc = thelastempire.13.desc
+	picture = GFX_event_korea_777
+	
+    is_triggered_only = yes
+	
+	option = { #
+		name = thelastempire.13.a
+	}
+}
+####### EOK 1000~
+
+country_event = { #라엠 한국 - 1
+	id = thelastempire.1000
+	title = thelastempire.1000.title
+	desc = thelastempire.1000.desc
+	picture = GFX_event_korea_777
+	
+    is_triggered_only = yes
+	
+	option = { #
+		name = thelastempire.1000.a
+		country_event = {
+			id = thelastempire.1001
+		}
+	}
+}
+country_event = { #라엠 한국 - 2
+	id = thelastempire.1001
+	title = thelastempire.1001.title
+	desc = thelastempire.1001.desc
+	picture = GFX_event_korea_777
+	
+    is_triggered_only = yes
+	
+	option = { #
+		name = thelastempire.1001.a
+		country_event = {
+			id = thelastempire.1002
+		}
+	}
+}
+country_event = { #라엠 한국 - 3
+	id = thelastempire.1002
+	title = thelastempire.1002.title
+	desc = thelastempire.1002.desc
+	picture = GFX_event_korea_777
+	
+    is_triggered_only = yes
+	
+	option = { #
+		name = thelastempire.1002.a
+	}
+	option = { #
+		name = thelastempire.1002.b
+		country_event = {
+			id = thelastempire.1003 #군의 역사
+		} 
+	}
+	option = { #
+		name = thelastempire.1002.c
+		country_event = {
+			id = thelastempire.1005 #대한의 황실
+		}
+	}
+}
+#
+country_event = { #군의 역사
+	id = thelastempire.1003
+	title = thelastempire.1003.title
+	desc = thelastempire.1003.desc
+	picture = GFX_event_korea_777
+	
+    is_triggered_only = yes
+	 
+	option = { #
+		name = thelastempire.1003.a
+		country_event = {
+			id = thelastempire.1004
+		}
+	}
+	option = { #
+		name = thelastempire.1003.b
+		country_event = {
+			id = thelastempire.1005
+		}
+	}
+	option = { #
+		name = thelastempire.1003.c
+	}
+}
+country_event = { #황국협회와 근황파
+	id = thelastempire.1004
+	title = thelastempire.1004.title
+	desc = thelastempire.1004.desc
+	picture = GFX_event_korea_777
+	
+    is_triggered_only = yes
+	 
+	option = { #
+		name = thelastempire.1004.a
+	}
+}
+#
+country_event = { #대한 황실 - 역사
+	id = thelastempire.1005
+	title = thelastempire.1005.title
+	desc = thelastempire.1005.desc
+	picture = GFX_event_korea_777
+	
+    is_triggered_only = yes
+	 
+	option = { #한국
+		name = thelastempire.1005.a
+		country_event = {
+			id = thelastempire.1006
+		}
+	}	
+	option = { #한국
+		name = thelastempire.1005.b
+	}	
+}
+country_event = { #대한 황실 - 궁가
+	id = thelastempire.1006
+	title = thelastempire.1006.title
+	desc = thelastempire.1006.desc
+	picture = GFX_event_korea_777
+	
+    is_triggered_only = yes
+	 
+	option = { #한국
+		name = thelastempire.1006.a
+		country_event = {
+			id = thelastempire.1007
+		}
+	}
+	option = { #한국
+		name = thelastempire.1006.b
+	}
+}
+country_event = { #대한 황실 - 직계 정보
+	id = thelastempire.1007
+	title = thelastempire.1007.title
+	desc = thelastempire.1007.desc
+	picture = GFX_event_korea_777
+	
+    is_triggered_only = yes
+	 
+	option = { #한국
+		name = thelastempire.1007.a
+		country_event = {
+			id = thelastempire.1008
+		}
+	}
+	option = { #한국
+		name = thelastempire.1007.b
+	}
+}
+country_event = { #대한 황실 - 방계 정보
+	id = thelastempire.1008
+	title = thelastempire.1008.title
+	desc = thelastempire.1008.desc
+	picture = GFX_event_korea_777
+	
+    is_triggered_only = yes
+	 
+	option = { #한국
+		name = thelastempire.1008.a
+		custom_effect_tooltip = TLE_EVENT_KOREA_1008
+	}
+}
+
+######## JAP 2000~
+country_event = { #설정
+	id = thelastempire.2000
+	title = thelastempire.2000.title
+	desc = thelastempire.2000.desc
+	picture = GFX_event_korea_777
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = thelastempire.2000.a
+		country_event = {
+			id = thelastempire.2001
+		}
+	}
+}
+country_event = { #설정
+	id = thelastempire.2001
+	title = thelastempire.2001.title
+	desc = thelastempire.2001.desc
+	picture = GFX_event_korea_777
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = thelastempire.2001.a
+		country_event = {
+			id = thelastempire.2002
+		}
+	}
+}
+country_event = { #설정
+	id = thelastempire.2002
+	title = thelastempire.2002.title
+	desc = thelastempire.2002.desc
+	picture = GFX_event_korea_777
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = thelastempire.2002.a
+	}
+}
+#
+country_event = { #우리의 해가 뜨던 땅
+	id = thelastempire.2003
+	title = thelastempire.2003.title
+	desc = thelastempire.2003.desc
+	picture = GFX_event_japanetc_4
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = thelastempire.2003.a
+	}
+}
+#
+country_event = { #결론
+	id = thelastempire.2100
+	title = thelastempire.2100.title
+	desc = thelastempire.2100.desc
+	picture = GFX_event_korea_777
+	
+    is_triggered_only = yes
+	 
+	option = { #한국
+		name = thelastempire.2100.a
+		add_stability = 0.15
+		hidden_effect = {
+			set_country_flag = TLE_THE_LAST_EMPIRE
+			clr_country_flag = TLE_DUTY_OF_CONFUCIANS 
+			TNO_Country_Closing_Screen_Show = yes
+		}
+	}
+}
+
+######## CHI 3000~
+
+country_event = { #
+	id = thelastempire.3000
+	title = thelastempire.3000.title
+	desc = thelastempire.3000.desc
+	picture = GFX_event_korea_777
+	
+    is_triggered_only = yes
+	 
+	option = { #한국
+		name = thelastempire.3000.a
+		country_event = {
+			id = thelastempire.3001
+		}
+	}
+}
+country_event = { #
+	id = thelastempire.3001
+	title = thelastempire.3001.title
+	desc = thelastempire.3001.desc
+	picture = GFX_event_korea_777
+	
+    is_triggered_only = yes
+	 
+	option = { #한국
+		name = thelastempire.3001.a
+	}
+}
+# China Summary
+country_event = { #
+	id = thelastempire.3002
+	title = thelastempire.3002.title
+	desc = thelastempire.3002.desc
+	picture = GFX_event_korea_777
+	
+    is_triggered_only = yes
+	 
+	option = { #한국
+		name = thelastempire.3002.a
+	}
+}
+
+######## Other 5000~
+country_event = { #마지막 제국
+	id = thelastempire.5000
+	title = thelastempire.5000.title
+	desc = thelastempire.5000.desc
+	picture = GFX_event_korea_777
+	
+    is_triggered_only = yes
+	 
+	option = { #
+		name = thelastempire.5000.a
+	}
+}
+country_event = { #결론
+	id = thelastempire.5001
+	title = thelastempire.5001.title
+	desc = thelastempire.5001.desc
+	picture = GFX_event_korea_777
+	
+    is_triggered_only = yes
+	 
+	option = { #한국
+		name = thelastempire.5001.a
+		custom_effect_tooltip = TLE_EVENT_KOREA_5001_tt
+		hidden_effect = {
+			add_offsite_building = {
+				type = arms_factory
+				level = 20
+			}
+			add_offsite_building = {
+				type = dockyard
+				level = 20
+			}
+			add_offsite_building = {
+				type = industrial_complex
+				level = 20
+			}
+			USA_add_factories_TLE = yes
+			USA_add_factories_TLE = yes
+			USA_add_factories_TLE = yes
+			USA_add_factories_TLE = yes
+			USA_add_factories_TLE = yes
+			USA_add_factories_TLE = yes
+			USA_add_factories_TLE = yes
+			USA_add_factories_TLE = yes
+			USA_add_factories_TLE = yes
+			USA_add_factories_TLE = yes
+			USA_add_factories_TLE = yes
+			USA_add_factories_TLE = yes
+		
+		}
+	}
+}

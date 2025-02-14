@@ -1,0 +1,41 @@
+characters={
+	WGR_konrad_adenauer={
+		name="WGR_konrad_adenauer"
+		portraits={
+			civilian={
+				large="gfx/leaders/WGR/Portrait_WGR_Konrad_Adenauer.png"
+			}
+		}
+		country_leader={
+			ideology=socialism
+			traits={ }
+			id=-1
+		}
+	}
+	WGR_klaus_klauser={
+		name="WGR_konrad_adenauer"
+		portraits={
+			civilian={
+				large=GFX_portrait_Klaus_Klauser
+			}
+		}
+		country_leader={
+			ideology=nazism
+			traits={ }
+			id=-1
+		}
+	}
+	WGR_wilhelm_iv={
+		name="WGR_wilhelm_iv"
+		portraits={
+			civilian={
+				large="gfx/leaders/WGR/Portrait_WGR_Wilhelm_von_Preussen.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			id=-1
+		}
+	}
+}

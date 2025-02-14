@@ -7,8 +7,10 @@
  VICTORY_POINTS_7125:0 "한성"
  VICTORY_POINTS_7221:0 "인천"
  VICTORY_POINTS_12040:0 "개성"
+ VICTORY_POINTS_13392:0 "양주"
+ VICTORY_POINTS_13394:0 "수원"
  VICTORY_POINTS_10065:0 "황주"
- VICTORY_POINTS_10110:0 "광주"
+ VICTORY_POINTS_13397:0 "광주"
  VICTORY_POINTS_13369:0 "대전"
  VICTORY_POINTS_7121:0 "연일" #포항
  VICTORY_POINTS_3981:0 "함흥"
@@ -18,7 +20,7 @@
  VICTORY_POINTS_9790:0 "안주"
  VICTORY_POINTS_6822:0 "경성"
  VICTORY_POINTS_6944:0 "경흥"
- VICTORY_POINTS_4086:0 "대구"
+ VICTORY_POINTS_13396:0 "대구"
  VICTORY_POINTS_11915:0 "봉산"
  VICTORY_POINTS_13370:0 "군산"
  VICTORY_POINTS_13371:0 "전주"
@@ -119,7 +121,7 @@
  VICTORY_POINTS_1134:0 "서수이"
  VICTORY_POINTS_8018:0 "싱수하이"
  VICTORY_POINTS_10770:0 "어지나"
- VICTORY_POINTS_4205:0 "위해" #웨이하이
+ VICTORY_POINTS_4205:0 "웨이하이" #웨이하이
  VICTORY_POINTS_13386:0 "원덩" #웨이하이
  VICTORY_POINTS_9412:0 "비엘스코비아와" #웨이하이
  
@@ -141,9 +143,9 @@
  VICTORY_POINTS_1502:0 "금산" #
  VICTORY_POINTS_1627:0 "태주" #바이청
  VICTORY_POINTS_1645:0 "대경" #다칭
- VICTORY_POINTS_10000:0 "청도" #칭다오
+ VICTORY_POINTS_10000:0 "칭다오" #칭다오
  VICTORY_POINTS_1150:0 "비사" #다롄
- VICTORY_POINTS_6961:0 "정리" #나홋카 #유래는 발해 정리부
+ VICTORY_POINTS_6961:0 "정주" #나홋카 #유래는 발해 정리부 정주
  VICTORY_POINTS_3977:0 "솔빈" #우수리스크 #유래는 발해 솔빈부
  VICTORY_POINTS_945:0 "환도" #퉁화
  VICTORY_POINTS_9803:0 "압록" #바이산
@@ -160,7 +162,7 @@
  VICTORY_POINTS_11752:0 "시린궈러" #
  VICTORY_POINTS_10444:0 "찰황"
  VICTORY_POINTS_12421:0 "욱천"
- VICTORY_POINTS_9639:0 "북해현"
+ VICTORY_POINTS_9639:0 "영주"
  VICTORY_POINTS_4144:0 "푸양"
  VICTORY_POINTS_12414:0 "언스"
  VICTORY_POINTS_11972:0 "루저우"
@@ -196,17 +198,18 @@
  VICTORY_POINTS_4179:0 "사이죠"
  VICTORY_POINTS_7145:0 "시마네"
  VICTORY_POINTS_7212:0 "오카야마"
- VICTORY_POINTS_1133:0 "와카야마"
+ VICTORY_POINTS_1133:0 "키슈"
  VICTORY_POINTS_1097:0 "사이타마"
  VICTORY_POINTS_7016:0 "이바라키"
  VICTORY_POINTS_4142:0 "스즈카"
  VICTORY_POINTS_1136:0 "마이즈루"
  VICTORY_POINTS_11985:0 "시모노세키"
  VICTORY_POINTS_13384:0 "나라"
+ VICTORY_POINTS_11932:0 "슈리"
  
  VICTORY_POINTS_3547:0 "본"
  VICTORY_POINTS_11407:0 "바스토뉴"
- VICTORY_POINTS_11640:0 "프라이부르크"
+ VICTORY_POINTS_11640:0 "뢰어라흐"
  VICTORY_POINTS_13268:0 "치리크베니차"
  VICTORY_POINTS_519:0 "튀빙겐"
  VICTORY_POINTS_833:0 "키체보"
@@ -216,7 +219,71 @@
  VICTORY_POINTS_13383:0 "쿠레"
  VICTORY_POINTS_6287:0 "코펜하겐"
  VICTORY_POINTS_3957:0 "워싱턴 D.C."
+ VICTORY_POINTS_10199:0 "센다칸"
+ VICTORY_POINTS_10250:0 "아유타야"
+ VICTORY_POINTS_10177:0 "바탐방"
+ VICTORY_POINTS_12360:0 "콘깬"
+ VICTORY_POINTS_4119:0 "하이퐁"
+ VICTORY_POINTS_1990:0 "치앙라이"
+ VICTORY_POINTS_7492:0 "람빵"
+ VICTORY_POINTS_12230:0 "푸켓"
+ VICTORY_POINTS_1403:0 "몰라먀잉"
+ VICTORY_POINTS_10223:0 "바세인"
+ VICTORY_POINTS_7603:0 "따웅지"
+ VICTORY_POINTS_7572:0 "핏사눌록"
+ VICTORY_POINTS_4613:0 "루앙프라방"
+ VICTORY_POINTS_10309:0 "후에"
+ VICTORY_POINTS_12215:0 "페낭"
+ VICTORY_POINTS_7260:0 "콜롬보"
+ VICTORY_POINTS_1337:0 "나콘시탐마랏"
+ VICTORY_POINTS_4433:0 "라용"
+ VICTORY_POINTS_1548:0 "우본랏차타니"
+ VICTORY_POINTS_10384:0 "우돈타니"
+ VICTORY_POINTS_4511:0 "사꼰나콘"
+ VICTORY_POINTS_4539:0 "칸타부리"
+ VICTORY_POINTS_4302:0 "씨엠립"
+ VICTORY_POINTS_4312:0 "수랏타니"
+ VICTORY_POINTS_4330:0 "캄퐁참"
+ VICTORY_POINTS_4355:0 "쿠알라트렝가누"
+ VICTORY_POINTS_4424:0 "조호르바루"
+ VICTORY_POINTS_4367:0 "쿠안탄"
+ VICTORY_POINTS_4384:0 "이포"
+ VICTORY_POINTS_10212:0 "제셀턴"
  
+ VICTORY_POINTS_12319:0 "라이저우"
+ VICTORY_POINTS_4529:0 "디엔비엔푸"
+ VICTORY_POINTS_7093:0 "몽까이"
+ VICTORY_POINTS_4397:0 "디엔쩌우"
+ VICTORY_POINTS_7280:0 "둥호이"
+ VICTORY_POINTS_12065:0 "까오방"
+ VICTORY_POINTS_4341:0 "까마우"
+ VICTORY_POINTS_1423:0 "빈롱"
+ VICTORY_POINTS_12204:0 "판랑"
+ VICTORY_POINTS_10137:0 "다낭"
+ VICTORY_POINTS_1400:0 "부은마투옷"
+ 
+ VICTORY_POINTS_11564_ITA:0 "피우메"
+ 
+ chinamdo:0 "진남도"
+ jakarta:0 "자카르타"
+ munlae:0 "문래"
+ yangsa:0 "양사"
+ kwangju:0 "광주"
+ omun:0 "오문"
+ hyanghang:0 "향항"
+ yuwon:0 "유원"
+ joju:0 "조주"
+ umju:0 "음주"
+ haegu:0 "해구"
+ abi:0 "아비"
+ sundalgwan:0 "선달관"
+ gojin:0 "고진"
+ gwandan:0 "관단"
+ gilyungpa:0 "길융파"
+ bingsung:0 "빈성"
+ shinsan:0 "신산"
+ simcheon:0 "심천"
+ nakhonsiam:0 "나콘시암"
  
  #####유동지명######
  bukkyung:0 "북경"
@@ -264,7 +331,7 @@
  kanto:0 "키타칸토"
  saitama:0 "사이타마"
  yibaraki:0 "이바라키"
- city_oh:0 "오 시"
+ city_oh:0 "오"
  kure:0 "쿠레"
  muhak:0 "무학"
  maisuru:0 "마이즈루"
@@ -284,6 +351,7 @@
  ryukyu_channal:0 "류큐 제도"
  okinawa:0 "오키나와"
  naha:0 "나하"
+ shuri:0 "슈리"
  tonghae:0 "동해"
  myonggook:0 "명고옥"
  jeongkang:0 "정강"
@@ -378,10 +446,10 @@
  taibei:0 "타이베이"
  gaoxiong:0 "가오슝"
  
- north_garafuto:0 "북부 가라후토"
- south_garafuto:0 "남부 가라후토"
+ north_garafuto:0 "키타카라후토"
+ south_garafuto:0 "미나미카라후토"
  qixima_ryoto:0 "치시마 열도"
- toyohara:0 "도요하라"
+ toyohara:0 "토요하라"
  akita:0 "아키타"
  chujeon:0 "추전"
  kifu:0 "기후"

@@ -1,3 +1,4111 @@
+KOR_ilsoism_GUI_category = {
+	KOR_dec_ilso_economic_problem_rise_limit = {
+		priority = 10
+		icon = generic_political_discourse
+		allowed = {
+			tag = KOR
+		}
+		activation = {
+			OR = {	
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				AND = {
+					has_country_flag = FLAG_PCY_ECONOMIC_PROBLEM_START
+					has_country_flag = FLAG_PCY_ROUTE
+					OR = {
+						has_war = yes
+						NOT = {
+							has_idea = civilian_economy
+							has_idea = low_economic_mobilisation
+							if = {
+								limit = {
+									has_country_flag = FLAG_PCY_PARTIAL_ECONOMIC_MOBILISATION
+								}
+								has_ideas = partial_economic_mobilisation
+							}
+						}
+						NOT = {
+							has_idea = disarmed_nation
+							has_idea = volunteer_only
+							has_idea = limited_conscription
+							if = {
+								limit = {
+									has_country_flag = FLAG_PCY_PARTIAL_ECONOMIC_MOBILISATION
+								}
+								has_ideas = extensive_conscription
+							}
+						}
+					}
+				}
+			}	
+		}
+		visible = {
+			OR = {	
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				AND = {
+					has_country_flag = FLAG_PCY_ECONOMIC_PROBLEM_START
+					has_country_flag = FLAG_PCY_ROUTE
+					OR = {
+						has_war = yes
+						NOT = {
+							has_idea = civilian_economy
+							has_idea = low_economic_mobilisation
+							if = {
+								limit = {
+									has_country_flag = FLAG_PCY_PARTIAL_ECONOMIC_MOBILISATION
+								}
+								has_ideas = partial_economic_mobilisation
+							}
+						}
+						NOT = {
+							has_idea = disarmed_nation
+							has_idea = volunteer_only
+							has_idea = limited_conscription
+							if = {
+								limit = {
+									has_country_flag = FLAG_PCY_PARTIAL_ECONOMIC_MOBILISATION
+								}
+								has_ideas = extensive_conscription
+							}
+						}
+					}
+				}
+			}
+		} 
+		available = {
+			AND = {
+				has_war = no
+				OR = {
+					has_idea = civilian_economy
+					has_idea = low_economic_mobilisation
+					if = {
+						limit = {
+							has_country_flag = FLAG_PCY_PARTIAL_ECONOMIC_MOBILISATION
+						}
+						has_ideas = partial_economic_mobilisation
+					}
+				}
+				OR = {
+					has_idea = disarmed_nation
+					has_idea = volunteer_only
+					has_idea = limited_conscription
+					if = {
+						limit = {
+							has_country_flag = FLAG_PCY_PARTIAL_ECONOMIC_MOBILISATION
+						}
+						has_ideas = extensive_conscription
+					}
+				}
+			}
+		}
+		days_mission_timeout = 10
+		fixed_random_seed = no
+		fire_only_once = no
+		is_good = no
+		complete_effect = {
+		}
+		remove_effect = {
+		}
+		timeout_effect = {
+			KOR_ilso_ep_var_up = yes
+		}
+	}
+	KOR_dec_ilso_economic_problem_down_limit = {
+		priority = 10
+		icon = generic_political_discourse
+		allowed = {
+			tag = KOR
+		}
+		activation = {
+			OR = {	
+				AND = {
+					is_debug = yes #디버그임
+					has_country_flag = FLAG_DEBUG_DECISION_KOR #디버그 플래그
+				}
+				AND = {
+					has_country_flag = FLAG_PCY_ECONOMIC_PROBLEM_START
+					has_country_flag = FLAG_PCY_ROUTE
+					AND = {
+						has_war = no
+						OR = {
+							has_idea = civilian_economy
+							has_idea = low_economic_mobilisation
+							if = {
+								limit = {
+									has_country_flag = FLAG_PCY_PARTIAL_ECONOMIC_MOBILISATION
+								}
+								has_ideas = partial_economic_mobilisation
+							}
+						}
+						OR = {
+							has_idea = disarmed_nation
+							has_idea = volunteer_only
+							has_idea = limited_conscription
+							if = {
+								limit = {
+									has_country_flag = FLAG_PCY_PARTIAL_ECONOMIC_MOBILISATION
+								}
+								has_ideas = extensive_conscription
+							}
+						}
+					}
+				}
+			}	
+		}
+		visible = {
+			OR = {	
+				AND = {
+					is_debug = yes #디버그임
+					has_country_flag = FLAG_DEBUG_DECISION_KOR #디버그 플래그
+				}
+				AND = {
+					has_country_flag = FLAG_PCY_ECONOMIC_PROBLEM_START
+					has_country_flag = FLAG_PCY_ROUTE
+					AND = {
+						has_war = no
+						OR = {
+							has_idea = civilian_economy
+							has_idea = low_economic_mobilisation
+							if = {
+								limit = {
+									has_country_flag = FLAG_PCY_PARTIAL_ECONOMIC_MOBILISATION
+								}
+								has_ideas = partial_economic_mobilisation
+							}
+						}
+						OR = {
+							has_idea = disarmed_nation
+							has_idea = volunteer_only
+							has_idea = limited_conscription
+							if = {
+								limit = {
+									has_country_flag = FLAG_PCY_PARTIAL_ECONOMIC_MOBILISATION
+								}
+								has_ideas = extensive_conscription
+							}
+						}
+					}
+				}
+			}	
+		} 
+		available = {
+			OR = {
+				has_war = yes
+				NOT = {
+					has_idea = civilian_economy
+					has_idea = low_economic_mobilisation
+					if = {
+						limit = {
+							has_country_flag = FLAG_PCY_PARTIAL_ECONOMIC_MOBILISATION
+						}
+						has_ideas = partial_economic_mobilisation
+					}
+				}
+				NOT = {
+					has_idea = disarmed_nation
+					has_idea = volunteer_only
+					has_idea = limited_conscription
+					if = {
+						limit = {
+							has_country_flag = FLAG_PCY_PARTIAL_ECONOMIC_MOBILISATION
+						}
+						has_ideas = extensive_conscription
+					}
+				}
+			}
+		}
+		days_mission_timeout = 45
+		fixed_random_seed = no
+		fire_only_once = no
+		is_good = no
+		complete_effect = {
+		}
+		remove_effect = {
+		}
+		timeout_effect = {
+			KOR_ilso_ep_var_down = yes
+		}
+	}
+	KOR_dec_ilso_economic_problem_army_limit_after_kuomintang = {
+		priority = 10
+		icon = generic_speech
+		allowed = {
+			tag = KOR
+		}
+		activation = {
+			OR = {	
+				AND = {
+					is_debug = yes #디버그임
+					has_country_flag = FLAG_DEBUG_DECISION_KOR #디버그 플래그
+				}
+				AND = {
+					has_country_flag = FLAG_PCY_ECONOMIC_PROBLEM_START
+					has_country_flag = FLAG_PCY_ROUTE
+					has_country_flag = FLAG_ILSOISM_PROGRESS_7
+					has_global_flag = GLOB_PCY_KUOMINTANG_COLLAPSED_1
+					NOT = {
+						has_country_flag = FLAG_PCY_7_ARMY_LIMIT
+					}
+				}
+			}
+		}
+		visible = {
+			OR = {	
+				AND = {
+					is_debug = yes #디버그임
+					has_country_flag = FLAG_DEBUG_DECISION_KOR #디버그 플래그
+				}
+				AND = {
+					has_country_flag = FLAG_PCY_ECONOMIC_PROBLEM_START
+					has_country_flag = FLAG_PCY_ROUTE
+					has_country_flag = FLAG_ILSOISM_PROGRESS_7
+					has_global_flag = GLOB_PCY_KUOMINTANG_COLLAPSED_1
+					NOT = {
+						has_country_flag = FLAG_PCY_7_ARMY_LIMIT
+					}
+				}
+			}
+		} 
+		available = {
+			has_army_size = { size < 50 }
+		}
+		days_mission_timeout = 30
+		fixed_random_seed = no
+		fire_only_once = no
+		is_good = no
+		complete_effect = {
+			set_country_flag = FLAG_PCY_7_ARMY_LIMIT
+		}
+		remove_effect = {
+		}
+		timeout_effect = {
+			custom_effect_tooltip = KOR_ilso_ep_var_up_tt_20
+			hidden_effect = {
+				KOR_ilso_ep_var_up = yes
+				KOR_ilso_ep_var_up = yes
+				KOR_ilso_ep_var_up = yes
+				KOR_ilso_ep_var_up = yes
+				KOR_ilso_ep_var_up = yes
+				KOR_ilso_ep_var_up = yes
+				KOR_ilso_ep_var_up = yes
+				KOR_ilso_ep_var_up = yes
+				KOR_ilso_ep_var_up = yes
+				KOR_ilso_ep_var_up = yes
+				KOR_ilso_ep_var_up = yes
+				KOR_ilso_ep_var_up = yes
+				KOR_ilso_ep_var_up = yes
+				KOR_ilso_ep_var_up = yes
+				KOR_ilso_ep_var_up = yes
+				KOR_ilso_ep_var_up = yes
+				KOR_ilso_ep_var_up = yes
+				KOR_ilso_ep_var_up = yes
+				KOR_ilso_ep_var_up = yes
+				KOR_ilso_ep_var_up = yes
+			}
+		}
+	}
+	KOR_dec_ilso_restore_qing_and_north_pp = {
+		icon = generic_political_rally
+		allowed = {
+			tag = KOR
+		}
+		visible = {
+			OR = {
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				AND = {
+					has_completed_focus = KOR_pak_inner_20
+					NOT = {
+						has_war_with = LCY
+					}
+					LCY = {
+						exists = yes
+					}
+					has_country_flag = FLAG_ILSOISM_PROGRESS_5
+				}
+			}
+		}
+		available = {
+			has_country_flag = FLAG_ILSOISM_PROGRESS_5
+		}
+		#days_remove = 0
+		cost = 100
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1012
+				state = 609
+				state = 1097
+				state = 1033
+				state = 608
+				state = 614
+				state = 1101
+				state = 1174
+				state = 1099
+				state = 615
+				state = 1052
+				state = 622
+				state = 1100
+				state = 1050
+				state = 597
+				state = 1049
+				state = 1035
+				state = 1004
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		complete_effect = {
+			add_stability = -0.05
+			PCY_north_chinese_government_effect = yes
+		}
+	}
+	KOR_dec_ilso_attack_luoyang_clique = {
+		icon = generic_intelligence_operation
+		allowed = {
+			tag = KOR
+		}
+		visible = {
+			OR = {
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				AND = {
+					has_completed_focus = KOR_pak_inner_20
+					NOT = {
+						has_war_with = LCY
+					}
+					LCY = {
+						exists = yes
+					}
+					has_country_flag = FLAG_ILSOISM_PROGRESS_6
+				}
+			}
+		}
+		available = {
+			has_country_flag = FLAG_ILSOISM_PROGRESS_6
+		}
+		#days_remove = 0
+		cost = 25
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1057
+				state = 607
+				state = 620
+				state = 1056
+				state = 744
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		complete_effect = {
+			declare_war_on = {
+				target = LYC
+				type = annex_everything
+			}
+		}
+	}
+	KOR_dec_ilso_attack_kuomintang = {
+		icon = generic_intelligence_operation
+		allowed = {
+			tag = KOR
+		}
+		visible = {
+			OR = {
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				AND = {
+					has_completed_focus = KOR_pak_inner_20
+					NOT = {
+						has_war_with = CHI
+					}
+					CHI = {
+						exists = yes
+						owns_state = 613
+					}
+					has_country_flag = FLAG_ILSOISM_PROGRESS_6
+				}
+			}
+		}
+		available = {
+			has_country_flag = FLAG_ILSOISM_PROGRESS_6
+		}
+		#days_remove = 0
+		cost = 25
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+				state = 613
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		complete_effect = {
+			set_global_flag = GLOB_PCY_ATTACK_KUOMINTANG
+			declare_war_on = {
+				target = CHI
+				type = annex_everything
+			}
+		}
+	}
+}
+
+KOR_anti_imperialism_democratical_united_front_problem = {
+	KOR_dec_aiduf_rise_limit = {
+		priority = 10
+		icon = generic_speech
+		allowed = {
+			tag = KOR
+		}
+		activation = {
+			OR = {	
+				AND = {
+					is_debug = yes #디버그임
+					has_country_flag = FLAG_DEBUG_DECISION_KOR #디버그 플래그
+				}
+				has_global_flag = GLOB_PCY_AIDUF_RISE
+			}
+		}
+		visible = {
+			has_global_flag = GLOB_PCY_AIDUF_RISE
+		} 
+		available = {
+			always = no
+		}
+		days_mission_timeout = 30
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+		complete_effect = {
+		}
+		remove_effect = {
+		}
+		timeout_effect = {
+			KOR = {
+				country_event = {
+					id = korea.1163
+				}
+			}
+		}
+	}
+	KOR_dec_kuomintang_third_rise_limit = {
+		priority = 10
+		icon = generic_speech
+		allowed = {
+			tag = KOR
+		}
+		activation = {
+			OR = {	
+				AND = {
+					is_debug = yes #디버그임
+					has_country_flag = FLAG_DEBUG_DECISION_KOR #디버그 플래그
+				}
+				has_global_flag = GLOB_PCY_AIDUF_RISE
+			}
+		}
+		visible = {
+			has_global_flag = GLOB_PCY_AIDUF_RISE
+		} 
+		available = {
+			always = no
+		}
+		days_mission_timeout = 45
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+		complete_effect = {
+		}
+		remove_effect = {
+		}
+		timeout_effect = {
+			KOR = {
+				country_event = {
+					id = korea.1164
+				}
+			}
+		}
+	}
+	KOR_react_to_border_war = {
+		icon = GFX_decision_generic_operation
+		allowed = {
+			original_tag = KOR
+		}
+		state_target = yes
+		targets = {
+			1057
+			1056
+			620
+			1048
+			1009
+			606
+			598
+			1051
+			1040
+			749
+			1036
+			596
+			622
+			1052
+			615
+		}
+		on_map_mode = map_and_decisions_view
+		days_remove = 10
+		available = {
+			FROM = {
+				OR = {
+					is_controlled_by = ROOT
+					AND = {
+						is_controlled_by_ROOT_or_subject = yes
+						owner = {
+							is_subject_of = ROOT
+						}
+					}
+				}
+			}
+			NOT = {
+				has_country_flag = KOR_react_to_border_war_flag
+			}
+		}
+		visible = {
+			FROM = { 
+				NOT = {
+					has_state_flag = KOR_border_war_clear
+				}
+				is_demilitarized_zone = yes
+			}
+			NOT = {
+				has_global_flag = GLOB_PCY_aiduf_attack
+			}
+		}
+		cancel_if_not_visible = yes
+		cost = 300
+		complete_effect = {
+			set_country_flag = KOR_react_to_border_war_flag
+		}
+		remove_effect = {
+			FROM = {
+				if = {
+					limit = {
+						FROM = {
+							NOT = {
+								is_core_of = OWNER
+							}
+						}
+					}
+					add_core_of = OWNER
+				}
+				set_demilitarized_zone = no
+				set_state_flag = KOR_border_war_clear
+			}
+			clr_country_flag = KOR_react_to_border_war_flag
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+}
+
+KOR_kks_clear_the_communist_category = {
+	KOR_dec_com_arrest_communist_limit = {
+		priority = 10
+		icon = generic_civil_support
+		allowed = {
+			tag = KOR
+		}
+		activation = {
+			OR = {	
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				has_country_flag = FLAG_KKS_ROUTE
+			}	
+			NOT = {
+				has_country_flag = FLAG_KKS_ROUTE_KKS_DEAD
+			}
+		}
+		visible = {
+		} 
+		available = {
+			has_country_flag = FLAG_KKS_SUCCESS_ARREST_REDS
+		}
+		days_mission_timeout = 365
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+		complete_effect = {
+			country_event = {
+				id = korea.1398
+			}
+		}
+		timeout_effect = {
+			country_event = {
+				id = korea.1399
+			}
+		}
+	}
+	KOR_dec_com_arrest_communist = {
+		priority = 9
+		icon = generic_assassination
+		allowed = {
+			tag = KOR
+		}
+		visible = {
+			NOT = {
+				has_country_flag = FLAG_KKS_SUCCESS_ARREST_REDS
+			}
+		} 
+		available = {
+			NOT = { has_country_flag = FLAG_KKS_SUCCESS_ARREST_REDS }
+		}
+		days_remove = 10
+		cost = 60
+		fire_only_once = no
+		complete_effect = {
+			country_event = {
+				id = korea.1402
+			}
+		}
+		remove_effect = {
+			random_list = {
+				20 = {
+					country_event = {
+						id = korea.1403
+					}
+					modifier = {
+						add = 4
+						check_variable = { KOR_dec_com_arrest_communist_count > 0 } 
+					}
+					modifier = {
+						add = 4
+						check_variable = { KOR_dec_com_arrest_communist_count > 1 } 
+					}
+					modifier = {
+						add = 4
+						check_variable = { KOR_dec_com_arrest_communist_count > 2 } 
+					}
+					modifier = {
+						add = 4
+						check_variable = { KOR_dec_com_arrest_communist_count > 3 } 
+					}
+					modifier = {
+						add = 4
+						check_variable = { KOR_dec_com_arrest_communist_count > 4 } 
+					}
+					modifier = {
+						add = 4
+						check_variable = { KOR_dec_com_arrest_communist_count > 5 } 
+					}
+					modifier = {
+						add = 4
+						check_variable = { KOR_dec_com_arrest_communist_count > 6 } 
+					}
+					modifier = {
+						add = 4
+						check_variable = { KOR_dec_com_arrest_communist_count > 7 } 
+					}
+					modifier = {
+						add = 4
+						check_variable = { KOR_dec_com_arrest_communist_count > 8 } 
+					}
+					modifier = {
+						add = 4
+						check_variable = { KOR_dec_com_arrest_communist_count > 9 } 
+					}
+					modifier = {
+						add = 4
+						check_variable = { KOR_dec_com_arrest_communist_count > 10 } 
+					}
+					modifier = {
+						add = 4
+						check_variable = { KOR_dec_com_arrest_communist_count > 11 } 
+					}
+					modifier = {
+						add = 4
+						check_variable = { KOR_dec_com_arrest_communist_count > 12 } 
+					}
+					modifier = {
+						add = 4
+						check_variable = { KOR_dec_com_arrest_communist_count > 13 } 
+					}
+					modifier = {
+						add = 4
+						check_variable = { KOR_dec_com_arrest_communist_count > 14 } 
+					}
+					modifier = {
+						add = 4
+						check_variable = { KOR_dec_com_arrest_communist_count > 15 } 
+					}
+					modifier = {
+						add = 4
+						check_variable = { KOR_dec_com_arrest_communist_count > 16 } 
+					}
+					modifier = {
+						add = 4
+						check_variable = { KOR_dec_com_arrest_communist_count > 17 } 
+					}
+					modifier = {
+						add = 4
+						check_variable = { KOR_dec_com_arrest_communist_count > 18 } 
+					}
+					modifier = {
+						add = 4
+						check_variable = { KOR_dec_com_arrest_communist_count > 19 } 
+					}
+				}
+				80 = {
+					modifier = {
+						add = -4
+						check_variable = { KOR_dec_com_arrest_communist_count > 0 } 
+					}
+					modifier = {
+						add = -4
+						check_variable = { KOR_dec_com_arrest_communist_count > 1 } 
+					}
+					modifier = {
+						add = -4
+						check_variable = { KOR_dec_com_arrest_communist_count > 2 } 
+					}
+					modifier = {
+						add = -4
+						check_variable = { KOR_dec_com_arrest_communist_count > 3 } 
+					}
+					modifier = {
+						add = -4
+						check_variable = { KOR_dec_com_arrest_communist_count > 4 } 
+					}
+					modifier = {
+						add = -4
+						check_variable = { KOR_dec_com_arrest_communist_count > 5 } 
+					}
+					modifier = {
+						add = -4
+						check_variable = { KOR_dec_com_arrest_communist_count > 6 } 
+					}
+					modifier = {
+						add = -4
+						check_variable = { KOR_dec_com_arrest_communist_count > 7 } 
+					}
+					modifier = {
+						add = -4
+						check_variable = { KOR_dec_com_arrest_communist_count > 8 } 
+					}
+					modifier = {
+						add = -4
+						check_variable = { KOR_dec_com_arrest_communist_count > 9 } 
+					}
+					modifier = {
+						add = -4
+						check_variable = { KOR_dec_com_arrest_communist_count > 10 } 
+					}
+					modifier = {
+						add = -4
+						check_variable = { KOR_dec_com_arrest_communist_count > 11 } 
+					}
+					modifier = {
+						add = -4
+						check_variable = { KOR_dec_com_arrest_communist_count > 12 } 
+					}
+					modifier = {
+						add = -4
+						check_variable = { KOR_dec_com_arrest_communist_count > 13 } 
+					}
+					modifier = {
+						add = -4
+						check_variable = { KOR_dec_com_arrest_communist_count > 14 } 
+					}
+					modifier = {
+						add = -4
+						check_variable = { KOR_dec_com_arrest_communist_count > 15 } 
+					}
+					modifier = {
+						add = -4
+						check_variable = { KOR_dec_com_arrest_communist_count > 16 } 
+					}
+					modifier = {
+						add = -4
+						check_variable = { KOR_dec_com_arrest_communist_count > 17 } 
+					}
+					modifier = {
+						add = -4
+						check_variable = { KOR_dec_com_arrest_communist_count > 18 } 
+					}
+					modifier = {
+						add = -4
+						check_variable = { KOR_dec_com_arrest_communist_count > 19 } 
+					}
+					country_event = {
+						id = korea.1404
+					}
+				}
+				
+			}
+		}
+	}
+	KOR_dec_com_arrest_south_korea = {
+		icon = generic_arrest
+		allowed = {
+			tag = KOR
+		}
+		visible = {
+			NOT = {
+				has_country_flag = FLAG_KKS_SUCCESS_ARREST_REDS
+			}
+		}
+		available = {	
+			NOT = {
+				has_country_flag = FLAG_KKS_SUCCESS_ARREST_REDS
+			}
+			NOT = {
+				has_decision = KOR_dec_com_arrest_north_korea
+				has_decision = KOR_dec_com_arrest_south_manchu
+				has_decision = KOR_dec_com_arrest_north_manchu
+				has_decision = KOR_dec_com_arrest_yonhai
+			}
+		}
+		days_remove = 15
+		cost = KOR_dec_com_arrest_south_korea_cost_total?10
+		fire_only_once = no
+		highlight_states = {
+			highlight_state_targets = {
+				state = 525
+				state = 1018
+				state = 1014
+				state = 1022
+				state = 1026
+				state = 1016
+				state = 1015
+				state = 1023
+				state = 1020
+				state = 1021
+				state = 1029
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					check_variable = { var = KOR_dec_com_arrest_south_korea_cost value = 15 compare = less_than }
+				}
+				set_variable = { var = KOR_dec_com_arrest_south_korea_cost value = 10 }
+			}
+			add_to_variable = { var = KOR_dec_com_arrest_south_korea_cost value = 10}
+			set_variable = { KOR_dec_com_arrest_south_korea_cost_total = KOR_dec_com_arrest_south_korea_cost }
+		}
+		remove_effect = {
+			random_list = {
+				65 = {
+					country_event = {
+						id = korea.1400
+					}
+					KOR_arrest_communist_var_up = yes
+				}
+				35 = {
+					country_event = {
+						id = korea.1401
+					}
+				}
+			}
+		}
+	}
+	KOR_dec_com_arrest_north_korea = {
+		icon = generic_arrest
+		allowed = {
+			tag = KOR
+		}
+		visible = {
+			NOT = {
+				has_country_flag = FLAG_KKS_SUCCESS_ARREST_REDS
+			}
+		}
+		available = {	
+			NOT = {
+				has_country_flag = FLAG_KKS_SUCCESS_ARREST_REDS
+			}
+			NOT = {
+				has_decision = KOR_dec_com_arrest_south_korea
+				has_decision = KOR_dec_com_arrest_south_manchu
+				has_decision = KOR_dec_com_arrest_north_manchu
+				has_decision = KOR_dec_com_arrest_yonhai
+			}
+		}
+		days_remove = 15
+		cost = KOR_dec_com_arrest_north_korea_cost_total?10
+		fire_only_once = no
+		highlight_states = {
+			highlight_state_targets = {
+				state = 527
+				state = 1025
+				state = 1019
+				state = 1017
+				state = 1024
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					check_variable = { var = KOR_dec_com_arrest_north_korea_cost value = 15 compare = less_than }
+				}
+				set_variable = { var = KOR_dec_com_arrest_north_korea_cost value = 10 }
+			}
+			add_to_variable = { var = KOR_dec_com_arrest_north_korea_cost value = 10}
+			set_variable = { KOR_dec_com_arrest_north_korea_cost_total = KOR_dec_com_arrest_north_korea_cost }
+		}
+		remove_effect = {
+			random_list = {
+				65 = {
+					country_event = {
+						id = korea.1400
+					}
+					KOR_arrest_communist_var_up = yes
+				}
+				35 = {
+					country_event = {
+						id = korea.1401
+					}
+				}
+			}
+		}
+	}
+	KOR_dec_com_arrest_south_manchu = {
+		icon = generic_arrest
+		allowed = {
+			tag = KOR
+		}
+		visible = {
+			NOT = {
+				has_country_flag = FLAG_KKS_SUCCESS_ARREST_REDS
+			}
+		}
+		available = {	
+			NOT = {
+				has_country_flag = FLAG_KKS_SUCCESS_ARREST_REDS
+			}
+			NOT = {
+				has_decision = KOR_dec_com_arrest_south_korea
+				has_decision = KOR_dec_com_arrest_north_korea
+				has_decision = KOR_dec_com_arrest_north_manchu
+				has_decision = KOR_dec_com_arrest_yonhai
+			}
+		}
+		days_remove = 15
+		cost = KOR_dec_com_arrest_south_manchu_cost_total?10
+		fire_only_once = no
+		highlight_states = {
+			highlight_state_targets = {
+				state = 745
+				state = 1032
+				state = 716
+				state = 1031
+				state = 328
+				state = 1030
+				state = 717
+				state = 1028
+				state = 1027
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					check_variable = { var = KOR_dec_com_arrest_south_manchu_cost value = 15 compare = less_than }
+				}
+				set_variable = { var = KOR_dec_com_arrest_south_manchu_cost value = 10 }
+			}
+			add_to_variable = { var = KOR_dec_com_arrest_south_manchu_cost value = 10}
+			set_variable = { KOR_dec_com_arrest_south_manchu_cost_total = KOR_dec_com_arrest_south_manchu_cost }
+		}
+		remove_effect = {
+			random_list = {
+				65 = {
+					country_event = {
+						id = korea.1400
+					}
+					KOR_arrest_communist_var_up = yes
+				}
+				35 = {
+					country_event = {
+						id = korea.1401
+					}
+				}
+			}
+		}
+	}
+	KOR_dec_com_arrest_north_manchu = {
+		icon = generic_arrest
+		allowed = {
+			tag = KOR
+		}
+		visible = {
+			NOT = {
+				has_country_flag = FLAG_KKS_SUCCESS_ARREST_REDS
+			}
+		}
+		available = {	
+			NOT = {
+				has_country_flag = FLAG_KKS_SUCCESS_ARREST_REDS
+			}
+			NOT = {
+				has_decision = KOR_dec_com_arrest_south_korea
+				has_decision = KOR_dec_com_arrest_north_korea
+				has_decision = KOR_dec_com_arrest_south_manchu
+				has_decision = KOR_dec_com_arrest_yonhai
+			}
+		}
+		days_remove = 15
+		cost = KOR_dec_com_arrest_north_manchu_cost_total?10
+		fire_only_once = no
+		highlight_states = {
+			highlight_state_targets = {
+				state = 714
+				state = 1059
+				state = 761
+				state = 715
+				state = 1060
+				state = 610
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					check_variable = { var = KOR_dec_com_arrest_north_manchu_cost value = 15 compare = less_than }
+				}
+				set_variable = { var = KOR_dec_com_arrest_north_manchu_cost value = 10 }
+			}
+			add_to_variable = { var = KOR_dec_com_arrest_north_manchu_cost value = 10}
+			set_variable = { KOR_dec_com_arrest_north_manchu_cost_total = KOR_dec_com_arrest_north_manchu_cost }
+		}
+		remove_effect = {
+			random_list = {
+				65 = {
+					country_event = {
+						id = korea.1400
+					}
+					KOR_arrest_communist_var_up = yes
+				}
+				35 = {
+					country_event = {
+						id = korea.1401
+					}
+				}
+			}
+		}
+	}
+	KOR_dec_com_arrest_yonhai = {
+		icon = generic_arrest
+		allowed = {
+			tag = KOR
+		}
+		visible = {
+			NOT = {
+				has_country_flag = FLAG_KKS_SUCCESS_ARREST_REDS
+			}
+		}
+		available = {	
+			NOT = {
+				has_country_flag = FLAG_KKS_SUCCESS_ARREST_REDS
+			}
+			NOT = {
+				has_decision = KOR_dec_com_arrest_south_korea
+				has_decision = KOR_dec_com_arrest_north_korea
+				has_decision = KOR_dec_com_arrest_south_manchu
+				has_decision = KOR_dec_com_arrest_north_manchu
+			}
+		}
+		days_remove = 15
+		cost = KOR_dec_com_arrest_yonhai_cost_total?10
+		fire_only_once = no
+		highlight_states = {
+			highlight_state_targets = {
+				state = 408
+				state = 409
+				state = 560
+				state = 657
+				state = 561
+				state = 537
+				state = 655
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					check_variable = { var = KOR_dec_com_arrest_yonhai_cost value = 15 compare = less_than }
+				}
+				set_variable = { var = KOR_dec_com_arrest_yonhai_cost value = 10 }
+			}
+			add_to_variable = { var = KOR_dec_com_arrest_yonhai_cost value = 10}
+			set_variable = { KOR_dec_com_arrest_yonhai_cost_total = KOR_dec_com_arrest_yonhai_cost }
+		}
+		remove_effect = {
+			random_list = {
+				65 = {
+					country_event = {
+						id = korea.1400
+					}
+					KOR_arrest_communist_var_up = yes
+				}
+				35 = {
+					country_event = {
+						id = korea.1401
+					}
+				}
+			}
+		}
+	}
+	KOR_dec_com_torture_to_west_political_jail = {
+		icon = generic_confiscation
+		allowed = {
+			tag = KOR
+		}
+		visible = {
+			NOT = {
+				has_country_flag = FLAG_KKS_SUCCESS_ARREST_REDS
+			}
+		}
+		available = {	
+			NOT = {
+				has_country_flag = FLAG_KKS_SUCCESS_ARREST_REDS
+			}
+		}
+		days_remove = 60
+		cost = 20
+		fire_only_once = no
+		complete_effect = {
+			country_event = {
+				id = korea.1405
+			}
+			KOR_arrest_communist_var_up = yes
+			KOR_arrest_communist_var_up = yes
+		}
+		remove_effect = {
+			country_event = {
+				id = korea.1406
+			}
+		}
+	}
+}
+KOR_government_stablity_category = {
+	KOR_dec_debug_government_add = {
+		priority = 15
+		icon = generic_form_nation
+		allowed = {
+			tag = KOR
+		}
+		visible = {
+			is_debug = yes
+		}
+		available = {
+			is_debug = yes
+		}
+		days_remove = 0
+		fire_only_once = no
+		complete_effect = {
+			KOR_imperial_var_up = yes
+			KOR_ilso_var_up = yes
+			KOR_ahn_var_up = yes
+			KOR_hwa_var_up = yes
+			KOR_army_var_up = yes
+			KOR_chaebeol_var_up = yes
+			KOR_cityzen_var_up = yes
+			KOR_rural_var_up = yes
+			KOR_government_stablity_check_progressbar = yes
+		}
+	}
+	KOR_dec_debug_government_remove = {
+		priority = 15
+		icon = generic_form_nation
+		allowed = {
+			tag = KOR
+		}
+		visible = {
+			is_debug = yes
+		}
+		available = {
+			is_debug = yes
+		}
+		days_remove = 0
+		fire_only_once = no
+		complete_effect = {
+			KOR_imperial_var_down = yes
+			KOR_ilso_var_down = yes
+			KOR_ahn_var_down = yes
+			KOR_hwa_var_down = yes
+			KOR_army_var_down = yes
+			KOR_chaebeol_var_down = yes
+			KOR_cityzen_var_down = yes
+			KOR_rural_var_down = yes
+			KOR_government_stablity_check_progressbar = yes
+		}
+	}
+	###############
+	KOR_dec_army_conscription_law = {
+		priority = 15
+		icon = SOV_place_hq
+		allowed = {
+			tag = KOR
+		}
+		activation = {
+			OR = {	
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				AND = {
+					has_country_flag = FLAG_KKS_ROUTE
+					has_country_flag = KOR_inner_army_conscription_law_fix_flag
+				}
+			}	
+			NOT = {
+				has_country_flag = FLAG_KKS_ROUTE_KKS_DEAD
+			}
+		}
+		visible = {
+			OR = {	
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				AND = {
+					has_country_flag = FLAG_KKS_ROUTE
+					has_country_flag = KOR_inner_army_conscription_law_fix_flag
+				}
+			}	
+		} 
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = KOR_GOV_STABILITY_UP_85
+				check_variable = { KOR_government_stablity_var > 84 } #정권 지지도 합 N% 이상
+			}	
+		}
+		days_mission_timeout = 90
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+		complete_effect = {
+			country_event = {
+				id = korea.1423
+			}
+			set_country_flag = KOR_inner_army_conscription_law_fix_flag_suc
+		}
+		timeout_effect = {
+			country_event = {
+				id = korea.1424
+			}
+			set_country_flag = KOR_inner_army_conscription_law_fix_flag_fai
+		}
+	}
+	###############
+	KOR_dec_submission_of_bill = {
+		priority = 10
+		icon = SOV_place_hq
+		allowed = {
+			tag = KOR
+		}
+		activation = {
+			OR = {	
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				has_country_flag = FLAG_KKS_ROUTE
+			}	
+			NOT = {
+				has_country_flag = FLAG_KKS_ROUTE_KKS_DEAD
+			}
+		}
+		visible = {
+			OR = {	
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				has_country_flag = FLAG_KKS_ROUTE
+			}	
+		} 
+		available = {
+			always = no
+		}
+		days_mission_timeout = 60
+		fixed_random_seed = no
+		fire_only_once = no
+		is_good = no
+		complete_effect = {
+		}
+		remove_effect = {
+		}
+		timeout_effect = {
+			country_event = {
+				id = korea.1379
+			}
+		}
+	}
+	KOR_dec_daehan_political_fight = {
+		priority = 10
+		icon = generic_political_discourse
+		allowed = {
+			tag = KOR
+		}
+		activation = {
+			OR = {	
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				has_country_flag = FLAG_KKS_ROUTE
+			}	
+			NOT = {
+				has_country_flag = FLAG_KKS_ROUTE_KKS_DEAD
+			}
+		}
+		visible = {
+			OR = {	
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				has_country_flag = FLAG_KKS_ROUTE
+			}	
+		} 
+		available = {
+			always = no
+		}
+		days_mission_timeout = 80
+		fixed_random_seed = no
+		fire_only_once = no
+		is_good = no
+		complete_effect = {
+		}
+		remove_effect = {
+		}
+		timeout_effect = {
+			random_list = {
+				40 = {
+					custom_effect_tooltip = KOR_dec_daehan_political_fight_none_tt
+				}
+				20 = {
+					country_event = {
+						id = korea.1380
+					}
+				}
+				20 = {
+					country_event = {
+						id = korea.1381
+					}
+				}
+				20 = {
+					country_event = {
+						id = korea.1382
+					}
+				}
+			}
+		}
+	}
+	KOR_dec_army_low_the_army_support = {
+		priority = 10
+		icon = generic_political_discourse
+		allowed = {
+			tag = KOR
+		}
+		activation = {
+			OR = {	
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				has_country_flag = FLAG_KKS_ROUTE
+			}	
+			NOT = {
+				has_country_flag = FLAG_KKS_ROUTE_KKS_DEAD
+			}
+		}
+		visible = {
+			OR = {	
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				has_country_flag = FLAG_KKS_ROUTE
+			}	
+		} 
+		available = {
+			always = no
+		}
+		days_mission_timeout = 90
+		fixed_random_seed = no
+		fire_only_once = no
+		is_good = no
+		complete_effect = {
+		}
+		remove_effect = {
+		}
+		timeout_effect = {
+			random_list = {
+				40 = {
+					custom_effect_tooltip = KOR_dec_daehan_political_fight_none_tt
+				}
+				35 = {
+					country_event = {
+						id = korea.1387
+					}
+				}
+				15 = {
+					country_event = {
+						id = korea.1388
+					}
+				}
+			}
+		}
+	}
+	KOR_dec_civ_low_the_civilian_support = {
+		priority = 10
+		icon = generic_political_discourse
+		allowed = {
+			tag = KOR
+		}
+		activation = {
+			OR = {	
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				has_country_flag = FLAG_KKS_ROUTE
+			}	
+			NOT = {
+				has_country_flag = FLAG_KKS_ROUTE_KKS_DEAD
+			}
+		}
+		visible = {
+			OR = {	
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				has_country_flag = FLAG_KKS_ROUTE
+			}	
+		} 
+		available = {
+			always = no
+		}
+		days_mission_timeout = 100
+		fixed_random_seed = no
+		fire_only_once = no
+		is_good = no
+		complete_effect = {
+		}
+		remove_effect = {
+		}
+		timeout_effect = {
+			random_list = {
+				50 = {
+					custom_effect_tooltip = KOR_dec_daehan_political_fight_none_tt
+				}
+				15 = {
+					country_event = {
+						id = korea.1394
+					}
+				}
+				15 = {
+					country_event = {
+						id = korea.1395
+					}
+				}
+				15 = {
+					country_event = {
+						id = korea.1396
+					}
+				}
+				5 = {
+					country_event = {
+						id = korea.1397
+					}
+				}
+			}
+		}
+	}
+	#######
+	KOR_dec_ilso_support = {
+		icon = hol_exchange_intelligence_data
+		allowed = {
+			tag = KOR
+		}
+		visible = {
+			OR = {	
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				has_country_flag = FLAG_KKS_ROUTE
+			}	
+			has_country_flag = KOR_government_stablity_politic_button_flag
+		}
+		available = {
+			NOT = {
+				has_decision = KOR_dec_hyokshin_support
+				has_decision = KOR_dec_hyokshin_support_immediate
+				has_decision = KOR_dec_ilso_support_immediate
+			}
+		}
+		days_remove = 20
+		cost = 30
+		fire_only_once = no
+		complete_effect = {
+		}
+		remove_effect = {
+			KOR_ilso_var_up = yes
+			KOR_government_stablity_check_progressbar = yes
+			hidden_effect = {
+				country_event = {
+					id = korea.1372
+				}
+			}
+		}
+	}
+	KOR_dec_ilso_support_immediate = {
+		icon = hol_exchange_intelligence_data
+		allowed = {
+			tag = KOR
+		}
+		visible = {
+			OR = {	
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				has_country_flag = FLAG_KKS_ROUTE
+			}	
+			has_country_flag = KOR_government_stablity_politic_button_flag
+		}
+		available = {
+			NOT = {
+				has_decision = KOR_dec_hyokshin_support
+				has_decision = KOR_dec_hyokshin_support_immediate
+				has_decision = KOR_dec_ilso_support
+			}
+		}
+		days_remove = 20
+		cost = 45
+		fire_only_once = no
+		complete_effect = {
+			KOR_ilso_var_up = yes
+			KOR_government_stablity_check_progressbar = yes
+		}
+		remove_effect = {
+			hidden_effect = {
+				country_event = {
+					id = korea.1372
+				}
+			}
+		}
+	}
+	KOR_dec_hyokshin_support = {
+		icon = hol_exchange_intelligence_data
+		allowed = {
+			tag = KOR
+		}
+		visible = {
+			OR = {	
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				has_country_flag = FLAG_KKS_ROUTE
+			}	
+			has_country_flag = KOR_government_stablity_politic_button_flag
+		}
+		available = {
+			NOT = {
+				has_decision = KOR_dec_ilso_support
+				has_decision = KOR_dec_ilso_support_immediate
+				has_decision = KOR_dec_hyokshin_support_immediate
+			}
+		}
+		days_remove = 20
+		cost = 30
+		fire_only_once = no
+		complete_effect = {
+		}
+		remove_effect = {
+			KOR_ahn_var_up = yes
+			KOR_government_stablity_check_progressbar = yes
+			hidden_effect = {
+				country_event = {
+					id = korea.1373
+				}
+			}
+		}
+	}
+	KOR_dec_hyokshin_support_immediate = {
+		icon = hol_exchange_intelligence_data
+		allowed = {
+			tag = KOR
+		}
+		visible = {
+			OR = {	
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				has_country_flag = FLAG_KKS_ROUTE
+			}	
+			has_country_flag = KOR_government_stablity_politic_button_flag
+		}
+		available = {
+			NOT = {
+				has_decision = KOR_dec_ilso_support
+				has_decision = KOR_dec_ilso_support_immediate
+				has_decision = KOR_dec_hyokshin_support
+			}
+		}
+		days_remove = 20
+		cost = 45
+		fire_only_once = no
+		complete_effect = {
+			KOR_ahn_var_up = yes
+			KOR_government_stablity_check_progressbar = yes
+		}
+		remove_effect = {
+			hidden_effect = {
+				country_event = {
+					id = korea.1373
+				}
+			}
+		}
+	}
+	###############
+	KOR_dec_request_to_rally_support = {
+		icon = generic_speech
+		allowed = {
+			tag = KOR
+		}
+		visible = {
+			OR = {	
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				has_country_flag = FLAG_KKS_ROUTE
+			}	
+			has_country_flag = KOR_government_stablity_politic_button_flag
+		}
+		available = {
+			
+		}
+		days_remove = 180
+		cost = 90
+		fire_only_once = no
+		remove_effect = {
+			KOR_ilso_var_up = yes
+			KOR_ahn_var_up = yes
+			KOR_government_stablity_check_progressbar = yes
+			country_event = {
+				id = korea.1374
+			}
+		}
+	}
+	KOR_dec_request_to_rally_support_emperor = {
+		icon = SWI_elect_confederation_president
+		allowed = {
+			tag = KOR
+		}
+		visible = {
+			OR = {	
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				has_country_flag = FLAG_KKS_ROUTE
+			}	
+			has_country_flag = KOR_government_stablity_politic_button_flag
+		}
+		available = {
+			
+		}
+		days_remove = 365
+		cost = 120
+		fire_only_once = no
+		complete_effect = {
+			KOR_ilso_var_up = yes
+			KOR_ilso_var_up = yes
+			KOR_ahn_var_up = yes
+			KOR_ahn_var_up = yes
+			KOR_government_stablity_check_progressbar = yes
+		}
+		remove_effect = {
+			country_event = {
+				id = korea.1375
+			}
+		}
+	}
+	KOR_dec_park_not_attack = {
+		icon = generic_political_rally
+		allowed = {
+			tag = KOR
+		}
+		visible = {
+			OR = {	
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				has_country_flag = FLAG_KKS_ROUTE
+			}	
+			has_country_flag = KOR_government_stablity_politic_button_flag
+		}
+		available = {
+			
+		}
+		cost = 10
+		fire_only_once = yes
+		complete_effect = {
+			KOR_ilso_var_up = yes
+			KOR_ilso_var_up = yes
+			KOR_government_stablity_check_progressbar = yes
+			hidden_effect = {
+				country_event = {
+					id = korea.1376
+				}
+			}
+		}
+	}
+	KOR_dec_council_pay_rise = {
+		icon = ger_mefo_bills
+		allowed = {
+			tag = KOR
+		}
+		visible = {
+			OR = {	
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				has_country_flag = FLAG_KKS_ROUTE
+			}	
+			has_country_flag = KOR_government_stablity_politic_button_flag
+		}
+		available = {
+			
+		}
+		modifier = {
+			consumer_goods_expected_value = 0.05
+		}
+		days_remove = 365
+		cost = 20
+		fire_only_once = yes
+		complete_effect = {
+			KOR_ilso_var_up = yes
+			KOR_ahn_var_up = yes
+			KOR_government_stablity_check_progressbar = yes
+			hidden_effect = {
+				country_event = {
+					id = korea.1377
+				}
+			}
+		}
+	}
+	KOR_dec_pyongan_invest_plan = {
+		icon = eng_ally_imperialist_coup
+		allowed = {
+			tag = KOR
+		}
+		visible = {
+			OR = {	
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				has_country_flag = FLAG_KKS_ROUTE
+			}	
+			has_country_flag = KOR_government_stablity_politic_button_flag
+		}
+		available = {
+			
+		}
+		days_remove = 60
+		cost = 10
+		fire_only_once = yes
+		complete_effect = {
+			KOR_ahn_var_up = yes
+			KOR_government_stablity_check_progressbar = yes
+		}
+	}
+	KOR_dec_conceding_the_right_to_appoint_supreme_court_justices = {
+		icon = generic_political_address
+		allowed = {
+			tag = KOR
+		}
+		visible = {
+			OR = {	
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				has_country_flag = FLAG_KKS_ROUTE
+			}	
+			has_country_flag = KOR_government_stablity_politic_button_flag
+			NOT = {
+				has_country_flag = KOR_dec_conceding_the_right_to_appoint_supreme_court_justices_flag
+			}
+		}
+		available = {
+			
+		}
+		days_remove = 60
+		cost = 10
+		fire_only_once = no
+		complete_effect = {
+			country_event = {
+				id = korea.1378
+			}
+			set_country_flag = KOR_dec_conceding_the_right_to_appoint_supreme_court_justices_flag
+		}
+	}
+	###############
+	KOR_dec_army_support_trainning = {
+		icon = generic_reorganize_irregulars
+		allowed = {
+			tag = KOR
+		}
+		visible = {
+			OR = {	
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				has_country_flag = FLAG_KKS_ROUTE
+			}	
+			has_country_flag = KOR_government_stablity_military_button_flag
+			NOT = {
+				has_country_flag = KOR_we_cant_go_chinese_war #더 확전하지는 않겠다
+			}
+		}
+		available = {
+			NOT = {
+				has_decision = KOR_dec_army_support_trainning_ie
+			}
+		}
+		days_remove = 15
+		cost = 20
+		fire_only_once = no
+		remove_effect = {
+			KOR_army_var_up = yes
+			KOR_government_stablity_check_progressbar = yes
+			hidden_effect = {
+				country_event = {
+					id = korea.1383
+				}
+			}
+		}
+	}
+	KOR_dec_army_support_trainning_ie = {
+		icon = generic_reorganize_irregulars
+		allowed = {
+			tag = KOR
+		}
+		visible = {
+			OR = {	
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				has_country_flag = FLAG_KKS_ROUTE
+			}	
+			has_country_flag = KOR_government_stablity_military_button_flag
+			NOT = {
+				has_country_flag = KOR_we_cant_go_chinese_war
+			}
+		}
+		available = {
+			NOT = {
+				has_decision = KOR_dec_army_support_trainning
+			}
+		}
+		days_remove = 15
+		custom_cost_trigger = {
+			has_equipment = {
+				infantry_equipment > 2000
+			}
+		}
+		custom_cost_text = decision_cost_ie_2000
+		fire_only_once = no
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -2000
+			}
+		}	
+		remove_effect = {
+			KOR_army_var_up = yes
+			KOR_government_stablity_check_progressbar = yes
+			hidden_effect = {
+				country_event = {
+					id = korea.1383
+				}
+			}
+		}
+	}
+	KOR_dec_army_division_up = {
+		icon = generic_protection
+		allowed = {
+			tag = KOR
+		}
+		visible = {
+			OR = {	
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				has_country_flag = FLAG_KKS_ROUTE
+			}	
+			has_country_flag = KOR_government_stablity_military_button_flag
+			NOT = {
+				has_country_flag = KOR_we_cant_go_chinese_war
+			}
+		}
+		available = {
+			
+		}
+		days_remove = 15
+		cost = 30
+		fire_only_once = no
+		complete_effect = {
+			KOR_army_var_up = yes
+			KOR_government_stablity_check_progressbar = yes
+		}
+		remove_effect = {
+			hidden_effect = {
+				country_event = {
+					id = korea.1384
+				}
+			}
+		}
+	}
+	KOR_dec_army_research_rise = {
+		icon = generic_research
+		allowed = {
+			tag = KOR
+		}
+		visible = {
+			OR = {	
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				has_country_flag = FLAG_KKS_ROUTE
+			}	
+			has_country_flag = KOR_government_stablity_military_button_flag
+			NOT = {
+				has_country_flag = KOR_we_cant_go_chinese_war
+			}
+		}
+		available = {
+			
+		}
+		days_remove = 10
+		cost = 50
+		fire_only_once = no
+		complete_effect = {
+		}
+		remove_effect = {
+			KOR_army_var_up = yes
+			KOR_army_var_up = yes
+			KOR_government_stablity_check_progressbar = yes
+			hidden_effect = {
+				country_event = {
+					id = korea.1385
+				}
+			}
+		}
+	}
+	KOR_dec_army_additional_budget_planned = {
+		icon = generic_consumer_goods
+		allowed = {
+			tag = KOR
+		}
+		visible = {
+			OR = {	
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				has_country_flag = FLAG_KKS_ROUTE
+			}	
+			has_country_flag = KOR_government_stablity_military_button_flag
+			NOT = {
+				has_country_flag = KOR_we_cant_go_chinese_war
+			}
+		}
+		available = {
+			
+		}
+		days_remove = 365
+		cost = 100
+		fire_only_once = no
+		complete_effect = {
+		}
+		remove_effect = {
+			KOR_army_var_up = yes
+			KOR_army_var_up = yes
+			KOR_army_var_up = yes
+			KOR_government_stablity_check_progressbar = yes
+			hidden_effect = {
+				country_event = {
+					id = korea.1386
+				}
+			}
+		}
+	}
+	KOR_dec_army_political_stars = {
+		icon = generic_police_action
+		allowed = {
+			tag = KOR
+		}
+		visible = {
+			OR = {	
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				has_country_flag = FLAG_KKS_ROUTE
+			}	
+			has_country_flag = KOR_government_stablity_military_button_flag
+			NOT = {
+				has_country_flag = KOR_we_cant_go_chinese_war
+			}
+		}
+		available = {
+			
+		}
+		cost = 10
+		fire_only_once = yes
+		complete_effect = {
+			KOR_army_var_up = yes
+			KOR_army_var_up = yes
+			KOR_government_stablity_check_progressbar = yes
+		}
+	}
+	KOR_dec_army_conniving_military_supply_corruption = {
+		icon = generic_arrest
+		allowed = {
+			tag = KOR
+		}
+		visible = {
+			OR = {	
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				has_country_flag = FLAG_KKS_ROUTE
+			}	
+			has_country_flag = KOR_government_stablity_military_button_flag
+			NOT = {
+				has_country_flag = KOR_we_cant_go_chinese_war
+			}
+		}
+		available = {
+			
+		}
+		cost = 20
+		fire_only_once = yes
+		complete_effect = {
+			KOR_army_var_up = yes
+			KOR_army_var_up = yes
+			KOR_army_var_up = yes
+			KOR_army_var_up = yes
+			KOR_government_stablity_check_progressbar = yes
+			set_country_flag = KOR_dec_army_conniving_military_supply_corruption_flag
+		}
+	}
+	###############
+	KOR_dec_civ_chaebol_support = {
+		icon = hol_exchange_intelligence_data
+		allowed = {
+			tag = KOR
+		}
+		visible = {
+			OR = {	
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				has_country_flag = FLAG_KKS_ROUTE
+			}	
+			has_country_flag = KOR_government_stablity_civil_button_flag
+		}
+		available = {
+			NOT = {
+				has_decision = KOR_dec_civ_chaebol_support_immediate
+				has_decision = KOR_dec_civ_cityzen_support
+				has_decision = KOR_dec_civ_cityzen_support_immediate
+				has_decision = KOR_dec_civ_rural_support
+				has_decision = KOR_dec_civ_rural_support_immediate
+			}
+		}
+		days_remove = 20
+		cost = 20
+		fire_only_once = no
+		complete_effect = {
+		}
+		remove_effect = {
+			KOR_chaebeol_var_up = yes
+			KOR_government_stablity_check_progressbar = yes
+			hidden_effect = {
+				country_event = {
+					id = korea.1389
+				}
+			}
+		}
+	}
+	KOR_dec_civ_chaebol_support_immediate = {
+		icon = hol_exchange_intelligence_data
+		allowed = {
+			tag = KOR
+		}
+		visible = {
+			OR = {	
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				has_country_flag = FLAG_KKS_ROUTE
+			}	
+			has_country_flag = KOR_government_stablity_civil_button_flag
+		}
+		available = {
+			NOT = {
+				has_decision = KOR_dec_civ_chaebol_support
+				has_decision = KOR_dec_civ_cityzen_support
+				has_decision = KOR_dec_civ_cityzen_support_immediate
+				has_decision = KOR_dec_civ_rural_support
+				has_decision = KOR_dec_civ_rural_support_immediate
+			}
+		}
+		days_remove = 20
+		cost = 30
+		fire_only_once = no
+		complete_effect = {
+			KOR_chaebeol_var_up = yes
+			KOR_government_stablity_check_progressbar = yes
+		}
+		remove_effect = {
+			hidden_effect = {
+				country_event = {
+					id = korea.1389
+				}
+			}
+		}
+	}
+	KOR_dec_civ_income_tax_savings = {
+		icon = eng_ally_imperialist_coup
+		allowed = {
+			tag = KOR
+		}
+		visible = {
+			OR = {	
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				has_country_flag = FLAG_KKS_ROUTE
+			}	
+			has_country_flag = KOR_government_stablity_civil_button_flag
+		}
+		available = {
+		}
+		cost = 10
+		fire_only_once = yes
+		complete_effect = {
+			KOR_chaebeol_var_up = yes
+			KOR_chaebeol_var_up = yes
+			KOR_chaebeol_var_up = yes
+			KOR_cityzen_var_down = yes
+			KOR_rural_var_down = yes
+			KOR_government_stablity_check_progressbar = yes
+		}
+		remove_effect = {
+		}
+	}
+	KOR_dec_civ_north_jawon_tamsa = {
+		icon = hol_draw_up_staff_plans
+		allowed = {
+			tag = KOR
+		}
+		visible = {
+			OR = {	
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				AND = {
+					has_country_flag = FLAG_KKS_ROUTE
+					has_completed_focus = KOR_kim_inner_save_the_north
+				}	
+			}	
+			has_country_flag = KOR_government_stablity_civil_button_flag
+		}
+		available = {
+			has_completed_focus = KOR_kim_inner_save_the_north
+		}
+		cost = 25
+		days_remove = 90
+		fire_only_once = yes
+		complete_effect = {
+		}
+		remove_effect = {
+			KOR_chaebeol_var_up = yes
+			KOR_chaebeol_var_up = yes
+			KOR_chaebeol_var_up = yes
+			KOR_government_stablity_check_progressbar = yes
+			set_country_flag = KOR_dec_civ_north_jawon_tamsa_effect_flag
+			hidden_effect = {
+				country_event = {
+					id = korea.1392
+				}
+			}	
+		}
+	}
+	KOR_dec_civ_daqing_oil = {
+		icon = hol_draw_up_staff_plans
+		allowed = {
+			tag = KOR
+		}
+		visible = {
+			OR = {	
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				AND = {
+					has_country_flag = FLAG_KKS_ROUTE
+					has_completed_focus = KOR_kim_dip_pan_trust_allies
+				}	
+			}	
+			has_country_flag = KOR_government_stablity_civil_button_flag
+		}
+		available = {
+			has_tech = excavation4
+			has_completed_focus = KOR_kim_dip_pan_trust_allies
+			has_country_flag = KOR_dec_civ_north_jawon_tamsa_effect_flag
+		}
+		cost = 30
+		days_remove = 180
+		fire_only_once = yes
+		complete_effect = {
+			KOR_chaebeol_var_up = yes
+			KOR_chaebeol_var_up = yes
+			KOR_government_stablity_check_progressbar = yes
+		}
+		remove_effect = {
+			add_resource = {
+				type = oil
+				amount = 25
+				state = 1059
+			}
+			hidden_effect = {
+				country_event = {
+					id = korea.1393
+				}
+			}	
+		}
+	}
+	KOR_dec_civ_cityzen_support = {
+		icon = hol_exchange_intelligence_data
+		allowed = {
+			tag = KOR
+		}
+		visible = {
+			OR = {	
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				has_country_flag = FLAG_KKS_ROUTE
+			}	
+			has_country_flag = KOR_government_stablity_civil_button_flag
+		}
+		available = {
+			NOT = {
+				has_decision = KOR_dec_civ_chaebol_support
+				has_decision = KOR_dec_civ_chaebol_support_immediate
+				has_decision = KOR_dec_civ_cityzen_support_immediate
+				has_decision = KOR_dec_civ_rural_support
+				has_decision = KOR_dec_civ_rural_support_immediate
+			}
+		}
+		days_remove = 20
+		cost = 20
+		fire_only_once = no
+		complete_effect = {
+		}
+		remove_effect = {
+			KOR_cityzen_var_up = yes
+			KOR_government_stablity_check_progressbar = yes
+			hidden_effect = {
+				country_event = {
+					id = korea.1390
+				}
+			}
+		}
+	}
+	KOR_dec_civ_cityzen_support_immediate = {
+		icon = hol_exchange_intelligence_data
+		allowed = {
+			tag = KOR
+		}
+		visible = {
+			OR = {	
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				has_country_flag = FLAG_KKS_ROUTE
+			}	
+			has_country_flag = KOR_government_stablity_civil_button_flag
+		}
+		available = {
+			NOT = {
+				has_decision = KOR_dec_civ_chaebol_support
+				has_decision = KOR_dec_civ_chaebol_support_immediate
+				has_decision = KOR_dec_civ_cityzen_support
+				has_decision = KOR_dec_civ_rural_support
+				has_decision = KOR_dec_civ_rural_support_immediate
+			}
+		}
+		days_remove = 20
+		cost = 30
+		fire_only_once = no
+		complete_effect = {
+			KOR_cityzen_var_up = yes
+			KOR_government_stablity_check_progressbar = yes
+		}
+		remove_effect = {
+			hidden_effect = {
+				country_event = {
+					id = korea.1390
+				}
+			}
+		}
+	}
+	KOR_dec_civ_relax_social_censorship = {
+		icon = generic_coastal_fortification
+		allowed = {
+			tag = KOR
+		}
+		visible = {
+			OR = {	
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				has_country_flag = FLAG_KKS_ROUTE
+			}	
+			has_country_flag = KOR_government_stablity_civil_button_flag
+		}
+		available = {
+		}
+		cost = 10
+		fire_only_once = yes
+		complete_effect = {
+			KOR_cityzen_var_up = yes
+			KOR_cityzen_var_up = yes
+			KOR_cityzen_var_up = yes
+			KOR_chaebeol_var_down = yes
+			KOR_rural_var_down = yes
+			KOR_government_stablity_check_progressbar = yes
+		}
+		remove_effect = {
+		}
+	}
+	
+	KOR_dec_civ_rural_support = {
+		icon = hol_exchange_intelligence_data
+		allowed = {
+			tag = KOR
+		}
+		visible = {
+			OR = {	
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				has_country_flag = FLAG_KKS_ROUTE
+			}	
+			has_country_flag = KOR_government_stablity_civil_button_flag
+		}
+		available = {
+			NOT = {
+				has_decision = KOR_dec_civ_chaebol_support
+				has_decision = KOR_dec_civ_chaebol_support_immediate
+				has_decision = KOR_dec_civ_cityzen_support
+				has_decision = KOR_dec_civ_cityzen_support_immediate
+				has_decision = KOR_dec_civ_rural_support_immediate
+			}
+		}
+		days_remove = 20
+		cost = 20
+		fire_only_once = no
+		complete_effect = {
+		}
+		remove_effect = {
+			KOR_rural_var_up = yes
+			KOR_government_stablity_check_progressbar = yes
+			hidden_effect = {
+				country_event = {
+					id = korea.1391
+				}
+			}
+		}
+	}
+	KOR_dec_civ_rural_support_immediate = {
+		icon = hol_exchange_intelligence_data
+		allowed = {
+			tag = KOR
+		}
+		visible = {
+			OR = {	
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				has_country_flag = FLAG_KKS_ROUTE
+			}	
+			has_country_flag = KOR_government_stablity_civil_button_flag
+		}
+		available = {
+			NOT = {
+				has_decision = KOR_dec_civ_chaebol_support
+				has_decision = KOR_dec_civ_chaebol_support_immediate
+				has_decision = KOR_dec_civ_cityzen_support
+				has_decision = KOR_dec_civ_cityzen_support_immediate
+				has_decision = KOR_dec_civ_rural_support
+			}
+		}
+		days_remove = 20
+		cost = 30
+		fire_only_once = no
+		complete_effect = {
+			KOR_rural_var_up = yes
+			KOR_government_stablity_check_progressbar = yes
+		}
+		remove_effect = {
+			hidden_effect = {
+				country_event = {
+					id = korea.1391
+				}
+			}
+		}
+	}
+	KOR_dec_civ_agricultural_adjustment_act = {
+		icon = generic_consumer_goods
+		allowed = {
+			tag = KOR
+		}
+		visible = {
+			OR = {	
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				has_country_flag = FLAG_KKS_ROUTE
+			}	
+			has_country_flag = KOR_government_stablity_civil_button_flag
+		}
+		available = {
+		}
+		cost = 10
+		fire_only_once = yes
+		complete_effect = {
+			KOR_rural_var_up = yes
+			KOR_rural_var_up = yes
+			KOR_rural_var_up = yes
+			KOR_chaebeol_var_down = yes
+			KOR_cityzen_var_down = yes
+			KOR_government_stablity_check_progressbar = yes
+		}
+		remove_effect = {
+		}
+	}
+}
+KOR_four_new_life_strategies = {
+	KOR_four_new_life_strategies_limit = {
+		icon = SOV_place_hq
+		allowed = {
+			tag = KOR
+		}
+		activation = {
+			OR = {
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				AND = {
+					has_country_flag = KOR_kim_inner_new_life_streatagy_flag
+					NOT = {
+						has_country_flag = KOR_four_new_life_strategies_limit_flag
+					}
+				}
+			}
+		}
+		visible = {
+			OR = {
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				AND = {
+					has_country_flag = KOR_kim_inner_new_life_streatagy_flag
+					NOT = {
+						has_country_flag = KOR_four_new_life_strategies_limit_flag
+					}
+				}
+			}
+		} 
+		available = {
+			always = no
+		}
+		days_mission_timeout = 900
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+		complete_effect = {
+		}
+		remove_effect = {
+		}
+		timeout_effect = {
+			set_country_flag = KOR_four_new_life_strategies_limit_flag
+			country_event = {
+				id = korea.1351
+			}
+		}
+	}
+	KOR_dec_media_censorship_lifted = {
+		icon = eng_trade_unions_support
+		allowed = {
+			tag = KOR
+		}
+		activation = {
+			OR = {
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				AND = {
+					has_country_flag = KOR_kim_inner_new_life_streatagy_flag
+					NOT = {
+						has_country_flag = KOR_four_new_life_strategies_limit_flag
+					}
+				}
+			}
+		}
+		visible = {
+			OR = {
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				AND = {
+					has_country_flag = KOR_kim_inner_new_life_streatagy_flag
+					NOT = {
+						has_country_flag = KOR_four_new_life_strategies_limit_flag
+					}
+				}
+			}
+		} 
+		available = {
+			has_decision = institute_press_censorship_democratic_state
+		}
+		days_mission_timeout = 730
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+		complete_effect = {
+			add_stability = -0.05
+			country_event = {
+				id = korea.1352
+			}
+		}
+		remove_effect = {
+		}
+		timeout_effect = {
+			KOR_newlife_stack_add_effect = yes
+			country_event = {
+				id = korea.1353
+			}
+		}
+	}
+	KOR_dec_establish_kyolyon = {
+		icon = eng_trade_unions_support
+		allowed = {
+			tag = KOR
+		}
+		activation = {
+			OR = {
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				AND = {
+					has_country_flag = KOR_kim_inner_new_life_streatagy_flag
+					NOT = {
+						has_country_flag = KOR_four_new_life_strategies_limit_flag
+					}
+				}
+			}
+		}
+		visible = {
+			OR = {
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				AND = {
+					has_country_flag = KOR_kim_inner_new_life_streatagy_flag
+					NOT = {
+						has_country_flag = KOR_four_new_life_strategies_limit_flag
+					}
+				}
+			}
+		} 
+		available = {
+			has_completed_focus = KOR_inner_army_kyolyeon_make
+		}
+		days_mission_timeout = 899
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+		complete_effect = {
+			KOR_newlife_stack_add_effect = yes
+		}
+		remove_effect = {
+		}
+		timeout_effect = {
+		}
+	}
+	
+	KOR_dec_labor_rework = {
+		icon = generic_merge_plant_materiel
+		allowed = {
+			tag = KOR
+		}
+		activation = {
+			OR = {
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				AND = {
+					has_country_flag = KOR_kim_inner_new_life_streatagy_flag
+					NOT = {
+						has_country_flag = KOR_four_new_life_strategies_limit_flag
+					}
+				}
+			}
+		}
+		visible = {
+			OR = {
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				AND = {
+					has_country_flag = KOR_kim_inner_new_life_streatagy_flag
+					NOT = {
+						has_country_flag = KOR_four_new_life_strategies_limit_flag
+					}
+				}
+			}
+		} 
+		available = {
+			has_decision = improved_worker_conditions
+		}
+		days_mission_timeout = 899
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+		complete_effect = {
+			KOR_newlife_stack_add_effect = yes
+			country_event = {
+				id = korea.1354
+			}
+		}
+		remove_effect = {
+		}
+		timeout_effect = {
+			add_stability = -0.05
+		}
+	}
+	KOR_dec_wonsan_break_defense = {
+		icon = generic_merge_plant_materiel
+		allowed = {
+			tag = KOR
+		}
+		activation = {
+			OR = {
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				AND = {
+					has_country_flag = KOR_kim_inner_new_life_streatagy_flag
+					NOT = {
+						has_country_flag = KOR_four_new_life_strategies_limit_flag
+					}
+				}
+			}
+		}
+		visible = {
+			OR = {
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				AND = {
+					has_country_flag = KOR_kim_inner_new_life_streatagy_flag
+					NOT = {
+						has_country_flag = KOR_four_new_life_strategies_limit_flag
+					}
+				}
+			}
+		} 
+		available = {
+			has_completed_focus = KOR_kim_inner_wonsan_problem
+		}
+		days_mission_timeout = 899
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+		complete_effect = {
+			KOR_newlife_stack_add_effect = yes
+		}
+		remove_effect = {
+		}
+		timeout_effect = {
+		}
+	}
+
+	KOR_dec_samnam_civilize = {
+		icon = generic_operation
+		allowed = {
+			tag = KOR
+		}
+		activation = {
+			OR = {
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				AND = {
+					has_country_flag = KOR_kim_inner_new_life_streatagy_flag
+					NOT = {
+						has_country_flag = KOR_four_new_life_strategies_limit_flag
+					}
+				}
+			}
+		}
+		visible = {
+			OR = {
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				AND = {
+					has_country_flag = KOR_kim_inner_new_life_streatagy_flag
+					NOT = {
+						has_country_flag = KOR_four_new_life_strategies_limit_flag
+					}
+				}
+			}
+		} 
+		available = {
+			1026 = {
+				industrial_complex > 3
+			}
+			1016 = {
+				industrial_complex > 3
+			}
+			1015 = {
+				industrial_complex > 3
+			}
+			1023 = {
+				industrial_complex > 3
+			}
+		}
+		days_mission_timeout = 899
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+		complete_effect = {
+			KOR_newlife_stack_add_effect = yes
+			country_event = {
+				id = korea.1355
+			}
+		}
+		remove_effect = {
+		}
+		timeout_effect = {
+		}
+	}
+	KOR_dec_gwanseo_civilize = {
+		icon = generic_operation
+		allowed = {
+			tag = KOR
+		}
+		activation = {
+			OR = {
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				AND = {
+					has_country_flag = KOR_kim_inner_new_life_streatagy_flag
+					NOT = {
+						has_country_flag = KOR_four_new_life_strategies_limit_flag
+					}
+				}
+			}
+		}
+		visible = {
+			OR = {
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				AND = {
+					has_country_flag = KOR_kim_inner_new_life_streatagy_flag
+					NOT = {
+						has_country_flag = KOR_four_new_life_strategies_limit_flag
+					}
+				}
+			}
+		} 
+		available = {
+			1017 = {
+				infrastructure > 2
+				industrial_complex > 1
+			}
+			1024 = {
+				infrastructure > 2
+				industrial_complex > 1
+			}
+		}
+		days_mission_timeout = 899
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+		complete_effect = {
+			KOR_newlife_stack_add_effect = yes
+			country_event = {
+				id = korea.1356
+			}
+		}
+		remove_effect = {
+		}
+		timeout_effect = {
+		}
+	}
+	KOR_dec_nammanchu_civilize = {
+		icon = generic_operation
+		allowed = {
+			tag = KOR
+		}
+		activation = {
+			OR = {
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				AND = {
+					has_country_flag = KOR_kim_inner_new_life_streatagy_flag
+					NOT = {
+						has_country_flag = KOR_four_new_life_strategies_limit_flag
+					}
+				}
+			}
+		}
+		visible = {
+			OR = {
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				AND = {
+					has_country_flag = KOR_kim_inner_new_life_streatagy_flag
+					NOT = {
+						has_country_flag = KOR_four_new_life_strategies_limit_flag
+					}
+				}
+			}
+		} 
+		available = {
+			716 = {
+				infrastructure > 2
+				industrial_complex > 2
+			}
+			1032 = {
+				infrastructure > 2
+				industrial_complex > 2
+			}
+			328 = {
+				infrastructure > 3
+			}
+			1031 = {
+				infrastructure > 3
+			}
+			717 = {
+				infrastructure > 3
+			}
+			1030 = {
+				infrastructure > 3
+			}
+		}
+		days_mission_timeout = 899
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+		complete_effect = {
+			KOR_newlife_stack_add_effect = yes
+			country_event = {
+				id = korea.1357
+			}
+		}
+		remove_effect = {
+		}
+		timeout_effect = {
+		}
+	}
+	KOR_dec_taiwan_korea = {
+		icon = generic_nationalism
+		allowed = {
+			tag = KOR
+		}
+		activation = {
+			OR = {
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				AND = {
+					has_country_flag = KOR_kim_inner_new_life_streatagy_flag
+					NOT = {
+						has_country_flag = KOR_four_new_life_strategies_limit_flag
+					}
+				}
+			}
+		}
+		visible = {
+			OR = {
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				AND = {
+					has_country_flag = KOR_kim_inner_new_life_streatagy_flag
+					NOT = {
+						has_country_flag = KOR_four_new_life_strategies_limit_flag
+					}
+				}
+			}
+		} 
+		available = {
+			owns_state = 524
+		}
+		selectable_mission = yes
+		days_mission_timeout = 899
+		fixed_random_seed = no
+		fire_only_once = yes
+		cost = 30
+		complete_effect = {
+			custom_effect_tooltip = KOR_var_all_not_hwa_minus_two_tt
+			hidden_effect = {
+				KOR_ilso_var_down = yes
+				KOR_ilso_var_down = yes
+				KOR_ahn_var_down = yes
+				KOR_ahn_var_down = yes
+				KOR_army_var_down = yes
+				KOR_army_var_down = yes
+				KOR_chaebeol_var_down = yes
+				KOR_chaebeol_var_down = yes
+				KOR_cityzen_var_down = yes
+				KOR_cityzen_var_down = yes
+				KOR_rural_var_down = yes
+				KOR_rural_var_down = yes
+				KOR_government_stablity_check_progressbar = yes
+			}
+			KOR_newlife_stack_add_effect = yes
+			add_state_core = 524
+			country_event = {
+				id = korea.1358
+			}
+		}
+		remove_effect = {
+		}
+		timeout_effect = {
+		}
+	}
+	KOR_dec_hotkaido_korea = {
+		icon = generic_nationalism
+		allowed = {
+			tag = KOR
+		}
+		activation = {
+			OR = {
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				AND = {
+					has_country_flag = KOR_kim_inner_new_life_streatagy_flag
+					NOT = {
+						has_country_flag = KOR_four_new_life_strategies_limit_flag
+					}
+				}
+			}
+		}
+		visible = {
+			OR = {
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				AND = {
+					has_country_flag = KOR_kim_inner_new_life_streatagy_flag
+					NOT = {
+						has_country_flag = KOR_four_new_life_strategies_limit_flag
+					}
+				}
+			}
+		} 
+		available = {
+			OR = {
+				owns_state = 536
+				any_other_country = {
+					is_puppet_of = KOR
+					owns_state = 536
+				}
+			}
+		}
+		selectable_mission = yes
+		days_mission_timeout = 899
+		fixed_random_seed = no
+		fire_only_once = yes
+		cost = 30
+		complete_effect = {
+			custom_effect_tooltip = KOR_var_all_not_hwa_minus_two_tt
+			hidden_effect = {
+				KOR_ilso_var_down = yes
+				KOR_ilso_var_down = yes
+				KOR_ahn_var_down = yes
+				KOR_ahn_var_down = yes
+				KOR_army_var_down = yes
+				KOR_army_var_down = yes
+				KOR_chaebeol_var_down = yes
+				KOR_chaebeol_var_down = yes
+				KOR_cityzen_var_down = yes
+				KOR_cityzen_var_down = yes
+				KOR_rural_var_down = yes
+				KOR_rural_var_down = yes
+				KOR_government_stablity_check_progressbar = yes
+			}
+			KOR_newlife_stack_add_effect = yes
+			if = {
+				limit = {
+					KHK = {
+						exists = yes
+						is_puppet_of = KOR
+					}
+				}
+				annex_country = {
+					target = KHK
+					transfer_troops = no
+				}	
+			}
+			add_state_core = 536
+			country_event = {
+				id = korea.1359
+			}
+		}
+		remove_effect = {
+		}
+		timeout_effect = {
+		}
+	}
+}
+
+KOR_flames_of_war = {
+	KOR_dec_hansung_tokugawa_gov = {
+		icon = gre_faction_management_category
+		allowed = {
+			tag = KOR
+		}
+		visible = {
+			OR = {
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				has_country_flag = KOR_kimkyusik_diplo_chinese_plan_flag
+			}
+			NOT = {
+				has_global_flag = GLOB_KKS_GAP_OPERATION
+			}
+		}
+		available = {
+			has_completed_focus = KOR_kim_dip_jap_tokugawa_support
+		}
+		fire_only_once = yes
+		cost = 50
+		complete_effect = {
+			custom_effect_tooltip = KOR_dec_hansung_tokugawa_gov_tt
+			country_event = {
+				id = korea.1360
+			}
+		}
+		remove_effect = {
+		}
+	}
+	KOR_dec_jap_trainning_support = {
+		icon = generic_army_support
+		allowed = {
+			tag = KOR
+		}
+		visible = {
+			OR = {
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				has_country_flag = KOR_kimkyusik_diplo_chinese_plan_flag
+			}
+			NOT = {
+				has_global_flag = GLOB_KKS_GAP_OPERATION
+			}
+		}
+		available = {
+			has_completed_focus = KOR_kim_dip_jap_tokugawa_support
+		}
+		fire_only_once = yes
+		custom_cost_trigger = {
+			has_equipment = {
+				infantry_equipment > 30000
+			}
+		}
+		custom_cost_text = decision_cost_ie_30000
+		complete_effect = {
+			custom_effect_tooltip = KOR_dec_jap_trainning_support_tt
+			set_country_flag = KOR_dec_jap_trainning_support_flag
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -30000
+			}
+			country_event = {
+				id = korea.1361
+			}
+		}
+		remove_effect = {
+		}
+	}
+	KOR_dec_jap_strengthening_tariff_barriers = {
+		icon = generic_break_treaty
+		allowed = {
+			tag = KOR
+		}
+		visible = {
+			OR = {
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				has_country_flag = KOR_kimkyusik_diplo_chinese_plan_flag
+			}
+			NOT = {
+				has_global_flag = GLOB_KKS_GAP_OPERATION
+			}
+		}
+		available = {
+			has_completed_focus = KOR_kim_dip_jap_economical_attack
+		}
+		days_remove = 720
+		cost = 150
+		modifier = {
+			political_power_factor = -0.05
+			stability_factor = -0.05
+		}
+		fire_only_once = yes
+		complete_effect = {
+			JAP = {
+				remove_ideas = KOR_kks_korean_economic_block_idea
+				add_ideas = KOR_kks_korean_economic_block_idea_2
+			}
+			country_event = {
+				id = korea.1362
+			}
+		}
+		remove_effect = {
+		}
+	}
+	KOR_dec_special_military_opperation_gap = {
+		icon = generic_intelligence_operation
+		allowed = {
+			tag = KOR
+		}
+		visible = {
+			has_country_flag = FLAG_KKS_ROUTE
+			NOT = {
+				has_global_flag = GLOB_KKS_GAP_OPERATION
+			}
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = KOR_dec_special_military_opperation_gap_tt
+				always = no
+			}
+		}
+		fire_only_once = yes
+		complete_effect = {
+			custom_effect_tooltip = KOR_kim_dip_jap_war_with_japan_tt
+		}
+		remove_effect = {
+		}
+	}
+	
+	KOR_dec_hebei_divide_plan_limit = {
+		icon = SOV_place_hq
+		allowed = {
+			tag = KOR
+		}
+		activation = {
+			OR = {
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				AND = {
+					has_country_flag = KOR_kim_dip_chi_hebei_divide_plan_effect_flag
+					NOT = {
+						has_country_flag = KOR_dec_hebei_divide_plan_limit_flag
+					}
+				}
+			}
+			NOT = {
+				has_global_flag = GLOB_KKS_Z_OPERATION
+			}
+		}
+		visible = {
+			OR = {
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				AND = {
+					has_country_flag = KOR_kim_dip_chi_hebei_divide_plan_effect_flag
+					NOT = {
+						has_country_flag = KOR_dec_hebei_divide_plan_limit_flag
+					}
+				}
+			}
+			NOT = {
+				has_global_flag = GLOB_KKS_Z_OPERATION
+			}
+		} 
+		available = {
+			always = no
+		}
+		days_mission_timeout = 180
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+		complete_effect = {
+		}
+		remove_effect = {
+		}
+		timeout_effect = {
+			set_country_flag = KOR_dec_hebei_divide_plan_limit_flag
+			country_event = {
+				id = korea.1363
+			}
+		}
+	}
+	KOR_dec_hebei_divide_plan_chinese_defense = {
+		icon = generic_independence
+		allowed = {
+			tag = KOR
+		}
+		activation = {
+			OR = {
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				AND = {
+					has_country_flag = KOR_kim_dip_chi_hebei_divide_plan_effect_flag
+					NOT = {
+						has_country_flag = KOR_dec_hebei_divide_plan_limit_flag
+					}
+				}
+			}
+			NOT = {
+				has_global_flag = GLOB_KKS_Z_OPERATION
+			}
+		}
+		visible = {
+			OR = {
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				AND = {
+					has_country_flag = KOR_kim_dip_chi_hebei_divide_plan_effect_flag
+					NOT = {
+						has_country_flag = KOR_dec_hebei_divide_plan_limit_flag
+					}
+				}
+			}
+			NOT = {
+				has_global_flag = GLOB_KKS_Z_OPERATION
+			}
+		} 
+		available = {
+			has_country_flag = KOR_dec_hebei_divide_plan_limit_flag
+		}
+		days_mission_timeout = 60
+		fixed_random_seed = no
+		fire_only_once = no
+		is_good = no
+		complete_effect = {
+		}
+		remove_effect = {
+		}
+		timeout_effect = {
+			KOR_chi_div_level_down = yes
+			country_event = {
+				id = korea.1364
+			}
+		}
+	}
+	
+	KOR_dec_chi_div_zhili_bei = {
+		icon = border_war
+		allowed = {
+			tag = KOR
+		}
+		visible = {
+			OR = {
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				AND = {
+					has_country_flag = KOR_kim_dip_chi_hebei_divide_plan_effect_flag
+					NOT = {
+						has_country_flag = KOR_dec_hebei_divide_plan_limit_flag
+					}
+				}
+			}
+			NOT = {
+				has_global_flag = GLOB_KKS_Z_OPERATION
+			}
+		}
+		available = {
+			has_country_flag = KOR_kim_dip_chi_hebei_divide_plan_effect_flag
+			NOT = {
+				has_country_flag = KOR_dec_hebei_divide_plan_limit_flag
+			}
+			NOT = {
+				has_decision = KOR_dec_chi_div_zhili_nan
+				has_decision = KOR_dec_chi_div_shandong_dong
+				has_decision = KOR_dec_chi_div_shandong_xi
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1012
+				state = 609
+				state = 1097
+				state = 608
+				state = 1033
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		cost = 50
+		days_remove = 10
+		fire_only_once = no
+		complete_effect = {
+		}
+		remove_effect = {
+			KOR_chi_div_level_up = yes
+			country_event = {
+				id = korea.1365
+			}
+		}
+	}
+	KOR_dec_chi_div_zhili_nan = {
+		icon = border_war
+		allowed = {
+			tag = KOR
+		}
+		visible = {
+			OR = {
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				AND = {
+					has_country_flag = KOR_kim_dip_chi_hebei_divide_plan_effect_flag
+					NOT = {
+						has_country_flag = KOR_dec_hebei_divide_plan_limit_flag
+					}
+				}
+			}
+			NOT = {
+				has_global_flag = GLOB_KKS_Z_OPERATION
+			}
+		}
+		available = {
+			has_country_flag = KOR_kim_dip_chi_hebei_divide_plan_effect_flag
+			NOT = {
+				has_country_flag = KOR_dec_hebei_divide_plan_limit_flag
+			}
+			NOT = {
+				has_decision = KOR_dec_chi_div_zhili_bei
+				has_decision = KOR_dec_chi_div_shandong_dong
+				has_decision = KOR_dec_chi_div_shandong_xi
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 614
+				state = 1101
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		cost = 50
+		days_remove = 10
+		fire_only_once = no
+		complete_effect = {
+		}
+		remove_effect = {
+			KOR_chi_div_level_up = yes
+			country_event = {
+				id = korea.1366
+			}
+		}
+	}
+	KOR_dec_chi_div_shandong_dong = {
+		icon = border_war
+		allowed = {
+			tag = KOR
+		}
+		visible = {
+			OR = {
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				AND = {
+					has_country_flag = KOR_kim_dip_chi_hebei_divide_plan_effect_flag
+					NOT = {
+						has_country_flag = KOR_dec_hebei_divide_plan_limit_flag
+					}
+				}
+			}
+			NOT = {
+				has_global_flag = GLOB_KKS_Z_OPERATION
+			}
+		}
+		available = {
+			has_country_flag = KOR_kim_dip_chi_hebei_divide_plan_effect_flag
+			NOT = {
+				has_country_flag = KOR_dec_hebei_divide_plan_limit_flag
+			}
+			NOT = {
+				has_decision = KOR_dec_chi_div_zhili_bei
+				has_decision = KOR_dec_chi_div_zhili_nan
+				has_decision = KOR_dec_chi_div_shandong_xi
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 743
+				state = 1034
+				state = 1004
+				state = 1035
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		cost = 50
+		days_remove = 10
+		fire_only_once = no
+		complete_effect = {
+		}
+		remove_effect = {
+			KOR_chi_div_level_up = yes
+			country_event = {
+				id = korea.1367
+			}
+		}
+	}
+	KOR_dec_chi_div_shandong_xi = {
+		icon = border_war
+		allowed = {
+			tag = KOR
+		}
+		visible = {
+			OR = {
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				AND = {
+					has_country_flag = KOR_kim_dip_chi_hebei_divide_plan_effect_flag
+					NOT = {
+						has_country_flag = KOR_dec_hebei_divide_plan_limit_flag
+					}
+				}
+			}
+			NOT = {
+				has_global_flag = GLOB_KKS_Z_OPERATION
+			}
+		}
+		available = {
+			has_country_flag = KOR_kim_dip_chi_hebei_divide_plan_effect_flag
+			NOT = {
+				has_country_flag = KOR_dec_hebei_divide_plan_limit_flag
+			}
+			NOT = {
+				has_decision = KOR_dec_chi_div_zhili_bei
+				has_decision = KOR_dec_chi_div_zhili_nan
+				has_decision = KOR_dec_chi_div_shandong_dong
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1050
+				state = 1049
+				state = 597
+				state = 1100
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		cost = 50
+		days_remove = 10
+		fire_only_once = no
+		complete_effect = {
+		}
+		remove_effect = {
+			KOR_chi_div_level_up = yes
+			country_event = {
+				id = korea.1368
+			}
+		}
+	}
+	KOR_dec_britain_fujian_and_southern_china = {
+		icon = generic_nationalism
+		allowed = {
+			tag = KOR
+		}
+		visible = {
+			OR = {
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				has_country_flag = KOR_kim_dip_pan_britain_diplo
+			}
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = KOR_dec_britain_fujian_and_southern_china_tt
+				always = no
+			}
+		}
+		fire_only_once = yes
+		complete_effect = {
+			custom_effect_tooltip = KOR_dec_britain_fujian_and_southern_china_effect_tt
+		}
+		remove_effect = {
+		}
+	}
+	KOR_dec_special_military_opperation_eul = {
+		icon = generic_intelligence_operation
+		allowed = {
+			tag = KOR
+		}
+		visible = {
+			has_country_flag = FLAG_KKS_ROUTE
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = KOR_dec_special_military_opperation_eul_tt
+				always = no
+			}
+		}
+		fire_only_once = yes
+		complete_effect = {
+			custom_effect_tooltip = KOR_kim_dip_chi_special_military_operation_tt
+		}
+		remove_effect = {
+		}
+	}
+	KOR_dec_sell_military_supplies_to_the_allies = {
+		icon = generic_industry
+		allowed = {
+			tag = KOR
+		}
+		activation = {
+			OR = {
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				AND = {
+					has_country_flag = KOR_kim_dip_pan_panzer_allies_effect_flag
+					NOT = {
+						has_country_flag = KOR_dec_sell_military_supplies_to_the_allies_kick_flag
+					}
+				}
+			}
+		}
+		visible = {
+			OR = {
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				has_country_flag = KOR_kim_dip_pan_panzer_allies_effect_flag
+			}
+		} 
+		available = {
+			always = no
+		}
+		days_mission_timeout = 45
+		fixed_random_seed = no
+		fire_only_once = no
+		is_good = no
+		complete_effect = {
+		}
+		remove_effect = {
+		}
+		timeout_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -3500
+			}
+			every_country = {
+				limit = {
+					is_in_faction_with = ENG
+					is_faction_leader = yes
+				}	
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 3500
+				}
+			}
+			country_event = {
+				id = korea.1369
+			}
+		}
+	}
+	KOR_dec_sell_military_supplies_to_the_allies_kick = {
+		icon = generic_break_treaty
+		allowed = {
+			tag = KOR
+		}
+		visible = {
+			OR = {
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				AND = {
+					has_country_flag = KOR_kim_dip_pan_panzer_allies_effect_flag
+					NOT = {
+						has_country_flag = KOR_dec_sell_military_supplies_to_the_allies_kick_flag
+					}
+				}
+			}	
+		}
+		available = {
+			NOT = {
+				has_country_flag = KOR_dec_sell_military_supplies_to_the_allies_kick_flag
+			}
+			if = {
+				limit = {
+					has_country_flag = KOR_sup_restart_flag_2
+				}
+				has_country_flag = {
+					flag = KOR_sup_restart_flag_2
+					days > 30
+				}
+			}
+		}
+		cost = 30
+		fire_only_once = no
+		complete_effect = {
+			set_country_flag = KOR_dec_sell_military_supplies_to_the_allies_kick_flag
+			set_country_flag = KOR_sup_kick_flag_2
+			clr_country_flag = KOR_sup_restart_flag_2
+			remove_ideas = KOR_kks_arms_industory_britain_idea
+			country_event = {
+				id = korea.1370
+			}
+		}
+	}
+	KOR_dec_sell_military_supplies_to_the_allies_restart = {
+		icon = eng_trade_unions_support
+		allowed = {
+			tag = KOR
+		}
+		visible = {
+			OR = {
+				AND = {
+					is_debug = yes
+					has_country_flag = FLAG_DEBUG_DECISION_KOR
+				}
+				AND = {
+					has_country_flag = KOR_kim_dip_pan_panzer_allies_effect_flag
+					has_country_flag = KOR_dec_sell_military_supplies_to_the_allies_kick_flag
+				}
+			}
+		}
+		available = {
+			has_country_flag = KOR_dec_sell_military_supplies_to_the_allies_kick_flag
+			if = {
+				limit = {
+					has_country_flag = KOR_sup_kick_flag_2
+				}
+				has_country_flag = {
+					flag = KOR_sup_kick_flag_2
+					days > 30
+				}
+			}
+		}
+		cost = 30
+		fire_only_once = no
+		complete_effect = {
+			clr_country_flag = KOR_dec_sell_military_supplies_to_the_allies_kick_flag
+			add_ideas = KOR_kks_arms_industory_britain_idea
+			set_country_flag = KOR_sup_restart_flag_2
+			country_event = {
+				id = korea.1371
+			}
+		}
+	}
+}
+
+KOR_IKN_purge_category = {
+	KOR_debug_dec1 = {
+		icon = generic_form_nation
+		allowed = {
+			tag = KOR
+		}
+		visible = {
+			is_debug = yes
+		}
+		available = {
+			is_debug = yes
+		}
+
+		days_remove = 0
+
+		fire_only_once = no
+
+		complete_effect = {
+			add_to_variable = { var = KOR_ikn_purge_bar_var value = 50 }
+			KOR_IKN_purge_clamp = yes
+		}
+	
+		remove_effect = {
+
+		}
+	}
+	KOR_debug_dec2 = {
+		icon = generic_form_nation
+		allowed = {
+			tag = KOR
+		}
+		visible = {
+			is_debug = yes
+		}
+		available = {
+			is_debug = yes
+		}
+
+		days_remove = 0
+
+		fire_only_once = no
+
+		complete_effect = {
+			add_to_variable = { var = KOR_ikn_purge_bar_var value = -50 }
+			KOR_IKN_purge_clamp = yes
+		}
+	
+		remove_effect = {
+
+		}
+	}
+	KOR_timeout_coupdetat = {
+		icon = generic_ignite_civil_war
+		allowed = {
+			tag = KOR
+		}
+		activation = {
+			NOT = {
+				has_country_flag = KOR_timeout_coupdetat_is_end
+			}
+			has_country_flag = FLAG_PAK_PURGE_START
+		}
+		visible = {
+			has_country_flag = FLAG_PAK_PURGE_START
+		} 
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = KOR_timeout_coupdetat_tt
+				check_variable = {
+					KOR_ikn_purge_bar_var = 100
+				}
+			}
+		}
+		days_mission_timeout = 100
+		
+		fixed_random_seed = no
+
+		fire_only_once = yes
+		is_good = no
+
+		days_remove = 0
+
+		complete_effect = {
+			set_country_flag = KOR_timeout_coupdetat_is_end
+			hidden_effect = {
+				country_event = {
+					id = korea.1108
+				}
+			}
+		}
+	
+		remove_effect = {
+			
+		}
+		timeout_effect = {
+			custom_effect_tooltip = KOR_timeout_coupdetat_tt_pak_dead
+			hidden_effect = {
+				country_event = {
+					id = korea.1107
+				}
+			}
+		}
+	}
+	KOR_ahn_cant_marchall = {
+		icon = generic_police_action
+		allowed = {
+			tag = KOR
+		}
+		visible = {
+		}
+		available = {
+			NOT = {
+				has_decision = KOR_yi_marchall_use
+				has_decision = KOR_ahn_cant_marchall
+				has_decision = KOR_hwangdo_line_purge
+				has_decision = KOR_tongje_line_divide
+				custom_trigger_tooltip = {
+					tooltip = KOR_has_completed_100
+					check_variable = {
+						KOR_ikn_purge_bar_var = 100
+					}
+				}
+			}
+		}
+
+		days_remove = 5
+
+		fire_only_once = yes
+		
+		cost = 10
+
+		complete_effect = {
+		}
+	
+		remove_effect = {
+			custom_effect_tooltip = KOR_PURGE_15
+			add_to_variable = { var = KOR_ikn_purge_bar_var value = 15 }
+			KOR_IKN_purge_clamp = yes
+			add_days_mission_timeout = {
+				mission = KOR_timeout_coupdetat
+				days = 15
+			}
+		}
+	}
+	KOR_yi_marchall_use = {
+		icon = generic_military
+		allowed = {
+			tag = KOR
+		}
+		visible = {
+		}
+		available = {
+			NOT = {
+				has_decision = KOR_yi_marchall_use
+				has_decision = KOR_ahn_cant_marchall
+				has_decision = KOR_hwangdo_line_purge
+				has_decision = KOR_tongje_line_divide
+				custom_trigger_tooltip = {
+					tooltip = KOR_has_completed_100
+					check_variable = {
+						KOR_ikn_purge_bar_var = 100
+					}
+				}
+			}
+		}
+
+		days_remove = 5
+
+		fire_only_once = yes
+
+		cost = 15
+		
+		complete_effect = {
+		}
+	
+		remove_effect = {
+			custom_effect_tooltip = KOR_PURGE_20
+			add_to_variable = { var = KOR_ikn_purge_bar_var value = 20 }
+			KOR_IKN_purge_clamp = yes
+
+			add_days_mission_timeout = {
+				mission = KOR_timeout_coupdetat
+				days = 20
+			}
+		}
+	}
+	KOR_hwangdo_line_purge = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			tag = KOR
+		}
+		visible = {
+		}
+		available = {
+			NOT = {
+				has_decision = KOR_yi_marchall_use
+				has_decision = KOR_ahn_cant_marchall
+				has_decision = KOR_hwangdo_line_purge
+				has_decision = KOR_tongje_line_divide
+				custom_trigger_tooltip = {
+					tooltip = KOR_has_completed_100
+					check_variable = {
+						KOR_ikn_purge_bar_var = 100
+					}
+				}
+			}
+		}
+		
+		cost = 30
+
+		days_remove = 15
+
+		fire_only_once = no
+
+		complete_effect = {
+		}
+	
+		remove_effect = {
+			add_days_mission_timeout = {
+				mission = KOR_timeout_coupdetat
+				days = 10
+			}
+			random_list = {
+				15 = {
+					country_event = {
+						id = korea.1104
+					}
+				}
+				45 = {
+					country_event = {
+						id = korea.1105
+					}
+				}
+				40 = {
+					country_event = {
+						id = korea.1106
+					}
+				}
+			}
+		}
+	}
+	KOR_tongje_line_divide = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			tag = KOR
+		}
+		visible = {
+		}
+		available = {
+			NOT = {
+				has_decision = KOR_yi_marchall_use
+				has_decision = KOR_ahn_cant_marchall
+				has_decision = KOR_hwangdo_line_purge
+				has_decision = KOR_tongje_line_divide
+				custom_trigger_tooltip = {
+					tooltip = KOR_has_completed_100
+					check_variable = {
+						KOR_ikn_purge_bar_var = 100
+					}
+				}
+			}
+		}
+
+		days_remove = 15
+		
+		cost = 30
+
+		fire_only_once = no
+
+		complete_effect = {
+		}
+	
+		remove_effect = {
+			add_days_mission_timeout = {
+				mission = KOR_timeout_coupdetat
+				days = 10
+			}
+			random_list = {
+				80 = {
+					country_event = {
+						id = korea.1109
+					}
+				}
+				20 = {
+					country_event = {
+						id = korea.1110
+					}
+				}
+			}
+		}
+	}
+}
 KOR_decision_eulhae_goonchuk = {
 	KOR_the_time_limit = {
 		icon = generic_form_nation
@@ -205,311 +4313,6 @@ KOR_anti_hwakyo_movement = {
 		}
 	}
 }
-KOR_kill_the_usa_plan = {
-	KOR_confiscation_of_US_assets = {
-		icon = ger_mefo_bills
-		allowed = {
-			tag = KOR
-		}
-		ai_will_do = {
-			factor = 100000
-		}
-		available = {
-			has_country_flag = FLAG_USA_FUCK_TO_KOREA
-			NOT = {
-				has_country_flag = FLAG_SAY_SORRY_TO_USA
-			}
-			not = {
-				has_decision = KOR_not_say_the_panay
-			}
-			NOT = {
-				has_country_flag = KOR_KILL_NOSESE
-			}
-		}
-		visible = {
-			has_country_flag = KOR_PANAI_PROBLEM
-			NOT = {
-				has_country_flag = FLAG_SAY_SORRY_TO_USA
-			}
-		}		
-		days_remove = 10
-		fire_only_once = yes
-		remove_effect = {
-			custom_effect_tooltip = TOOLTIP_IT_WILL_BE_DISASTER_MOON
-			set_country_flag = KOR_KILL_NOSESE
-			hidden_effect = {
-				USA = {
-					country_event = {
-						id = korea.69
-						days = 2
-					}
-				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = arms_factory
-							size > 0
-							include_locked = yes
-						}
-						OR = {
-							is_in_home_area = yes
-							NOT = {
-								owner = {
-									any_owned_state = {
-										free_building_slots = {
-											building = arms_factory
-											size > 0
-											include_locked = yes
-										}
-										is_in_home_area = yes
-									}
-								}
-							}
-						}
-					}
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
-				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = arms_factory
-							size > 0
-							include_locked = yes
-						}
-						OR = {
-							is_in_home_area = yes
-							NOT = {
-								owner = {
-									any_owned_state = {
-										free_building_slots = {
-											building = arms_factory
-											size > 0
-											include_locked = yes
-										}
-										is_in_home_area = yes
-									}
-								}
-							}
-						}
-					}
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
-				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = industrial_complex
-							size > 0
-							include_locked = yes
-						}
-						OR = {
-							is_in_home_area = yes
-							NOT = {
-								owner = {
-									any_owned_state = {
-										free_building_slots = {
-											building = industrial_complex
-											size > 0
-											include_locked = yes
-										}
-										is_in_home_area = yes
-									}
-								}
-							}
-						}
-					}
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = industrial_complex
-							size > 0
-							include_locked = yes
-						}
-						OR = {
-							is_in_home_area = yes
-							NOT = {
-								owner = {
-									any_owned_state = {
-										free_building_slots = {
-											building = industrial_complex
-											size > 0
-											include_locked = yes
-										}
-										is_in_home_area = yes
-									}
-								}
-							}
-						}
-					}
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			add_threat = 2
-        }
-		
-		# timeout_effect = {
-			
-		# }
-	}
-	KOR_not_say_the_panay = { #파나이에 대해 사과
-		icon = generic_form_nation
-		allowed = {
-			tag = KOR
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		available = {
-			has_country_flag = KOR_PANAI_PROBLEM
-			has_political_power > 1999
-			has_stability > 0.99
-			has_war_support > 0.99
-		}
-		visible = {
-			has_country_flag = KOR_PANAI_PROBLEM
-			NOT = {
-				has_country_flag = FLAG_END_OF_THE_PANAY
-				has_global_flag = GLOBFLAG_TLE_PANAI_2
-			}
-			not = {
-				OR = {
-					has_decision = KOR_confiscation_of_US_assets
-					has_decision = KOR_hunlian_in_pacific
-				}	
-			}
-		}		
-		
-		fire_only_once = yes
-		complete_effect = {
-			add_stability = -10
-			add_war_support = -10
-			add_political_power = -2000
-			set_country_flag = FLAG_SAY_SORRY_TO_USA
-			USA = {
-				add_political_power = 2000
-				add_stability = 0.05
-				add_war_support = 0.1
-				set_country_flag = FLAG_SAY_SORRY_TO_USA
-			}
-			add_threat = -3
-		}
-		# timeout_effect = {
-			
-		# }
-	}
-	KOR_hunlian_in_pacific = { #태평양에서의 훈련
-		icon = generic_prepare_civil_war
-		allowed = {
-			tag = KOR
-		}
-		ai_will_do = {
-			factor = 100
-		}
-		available = {
-			has_country_flag = TLE_USA_GO_EXPERIENCE
-		}
-		visible = {
-			has_country_flag = TLE_USA_GO_EXPERIENCE
-		}		
-		
-		days_remove = 13
-		fire_only_once = yes		
-		remove_effect = {
-			army_experience = 20
-			navy_experience = 20
-			add_threat = 5
-			add_war_support = 0.05
-			hidden_effect = {
-				USA = {
-					add_war_support = 0.1
-				}
-				KOR = {
-					country_event = {
-						id = korea.16
-					}
-				}
-			}
-		}
-		# timeout_effect = {
-			
-		# }
-	}
-	KOR_war_with_usa_dec = { 
-		icon = generic_prepare_civil_war
-		allowed = {
-			tag = KOR
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		available = {
-			OR = {
-				has_idea = KOR_embargo_us
-				has_idea = KOR_embargo_us_a
-				has_idea = KOR_embargo_us_b
-				has_idea = KOR_embargo_us_c
-				has_idea = KOR_embargo_us_d
-			}	
-			has_army_experience > 3000
-			has_navy_experience > 3000
-			has_air_experience > 3000
-			has_war_support > 0.8
-		}
-		visible = {
-			has_war_with = USA
-			OR = {
-				has_idea = KOR_embargo_us
-				has_idea = KOR_embargo_us_a
-				has_idea = KOR_embargo_us_b
-				has_idea = KOR_embargo_us_c
-				has_idea = KOR_embargo_us_d
-			}	
-		}		
-		days_remove = 180
-		#fire_only_once = yes
-		complete_effect = {
-			army_experience = -3000
-			navy_experience = -3000
-			air_experience = -3000
-			set_country_flag = FLAG_DEC_CLEAR_EMBARGO
-		}
-		remove_effect = {
-			remove_ideas = KOR_embargo_us
-			remove_ideas = KOR_embargo_us_a
-			remove_ideas = KOR_embargo_us_b
-			remove_ideas = KOR_embargo_us_c
-			remove_ideas = KOR_embargo_us_d
-			add_timed_idea = {
-				idea = KOR_embargo_us_2
-				days = 1265
-			}
-		}
-		# timeout_effect = {
-			
-		# }
-	}
-}
 KOR_the_three_countries_plan = {
 	KOR_political_officer_kill = {
 		icon = generic_form_nation
@@ -554,7 +4357,7 @@ KOR_first_plan_lightning = {
 		}
 	}
 	KOR_peking_time_limit = {
-		icon = generic_form_nation
+		icon = generic_confiscation
 		allowed = {
 			tag = KOR
 		}
@@ -570,7 +4373,13 @@ KOR_first_plan_lightning = {
 				}
 				has_war_with = ZLC
 			}
-			controls_state = 608
+			OR = {
+				controls_state = 608
+				any_other_country = {
+					is_puppet_of = KOR
+					controls_state = 608
+				}
+			}
 		}
 		visible = {
 			tag = KOR
@@ -636,156 +4445,8 @@ KOR_first_plan_lightning = {
 			}
 		}
 	}
-	KOR_ruoyang_time_limit = {
-		icon = generic_form_nation
-		allowed = {
-			tag = KOR
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		available = {
-			if = { 
-				limit = {
-					ZLC = {
-						owns_state = 1057 
-					}
-				}
-				has_war_with = ZLC
-			}
-			controls_state = 1057
-		}
-		visible = {
-			tag = KOR
-		} 
-		highlight_states = {
- 		highlight_state_targets = { state = 1057 } 
-		}
-		activation = {
-			KOR = {
-				has_completed_focus = kor_tsushima
-				has_war_with = ZLC
-				has_country_flag = TLE_RUOYANG_GO
-				if = { 
-					limit = {
-						ZLC = {
-							exists = yes
-							owns_state = 1057
-						}
-					}
-					has_war_with = ZLC
-				}
-				if = { 
-					limit = {
-						NOT = {
-							ZLC = {
-								exists = yes
-								owns_state = 1057
-							}
-						}
-					}
-					has_war_with = CHI
-				}
-			}
-		}
-		days_mission_timeout = 120
-		
-		fixed_random_seed = no
-
-		fire_only_once = yes
-		is_good = no
-		complete_effect = {
-			KOR = {
-				country_event = {
-					id = korea.118
-				}
-				set_country_flag = TLE_WUHAN_GO
-			}
-		}	
-		timeout_effect = {
-			KOR = {
-				country_event = {
-					id = korea.119
-				}
-				set_country_flag = TLE_WUHAN_GO
-			}
-		}
-	}
-	KOR_wuhan_time_limit = {
-		icon = generic_form_nation
-		allowed = {
-			tag = KOR
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		available = {
-			if = { 
-				limit = {
-					ZLC = {
-						owns_state = 1048
-					}
-				}
-				has_war_with = ZLC
-			}
-			controls_state = 1048
-		}
-		visible = {
-			tag = KOR
-		} 
-		highlight_states = {
- 		highlight_state_targets = { state = 1048 } 
-		}
-		activation = {
-			KOR = {
-				has_completed_focus = kor_tsushima
-				has_war_with = ZLC
-				has_country_flag = TLE_WUHAN_GO
-				if = { 
-					limit = {
-						ZLC = {
-							exists = yes
-							owns_state = 1048
-						}
-					}
-					has_war_with = ZLC
-				}
-				if = { 
-					limit = {
-						NOT = {
-							ZLC = {
-								exists = yes
-								owns_state = 1048
-							}
-						}
-					}
-					has_war_with = CHI
-				}
-			}
-		}
-		days_mission_timeout = 130
-		
-		fixed_random_seed = no
-
-		fire_only_once = yes
-		is_good = no
-		complete_effect = {
-			KOR = {
-				country_event = {
-					id = korea.198
-				}
-			}
-		}	
-		timeout_effect = {
-			KOR = {
-				country_event = {
-					id = korea.199
-				}
-			}
-		}
-	}
 	KOR_the_war_plan_Z = {
-		icon = generic_prepare_civil_war 
+		icon = generic_army_support 
 		available = {
 			tag = KOR
 				OR = {
@@ -793,7 +4454,6 @@ KOR_first_plan_lightning = {
 				has_idea = KOR_not_planed_attack_4
 				}
 				has_army_experience > 1000
-				command_power > 99
 		}
 
 		ai_will_do = {
@@ -812,7 +4472,6 @@ KOR_first_plan_lightning = {
 		days_remove = 250
 		complete_effect = { 
 			army_experience = -1000
-			add_command_power = -100
 		}
 		remove_effect = {
 			if = {
@@ -836,7 +4495,7 @@ KOR_first_plan_lightning = {
 		}
 	}
 	KOR_the_war_plan_Z_2 = {
-		icon = generic_prepare_civil_war 
+		icon = generic_air 
 		available = {
 			tag = KOR
 				OR = {
@@ -844,8 +4503,6 @@ KOR_first_plan_lightning = {
 				has_idea = KOR_not_planed_attack_5
 				}
 				has_army_experience > 1000
-				has_political_power > 1000
-				command_power > 100
 		}
 
 		ai_will_do = {
@@ -864,8 +4521,6 @@ KOR_first_plan_lightning = {
 		days_remove = 200
 		complete_effect = { 
 			army_experience = -1000
-			add_command_power = -100
-			add_political_power = -1000
 		}
 		remove_effect = {
 			if = {
@@ -898,6 +4553,79 @@ KOR_first_plan_lightning = {
 			}
 		}
 	}
+	KOR_the_war_plan_Z_3 = {
+		icon = generic_ignite_civil_war 
+		available = {
+			tag = KOR
+			command_power > 150
+			has_political_power > 1000
+			KOR = {
+				is_ai = no
+				has_war_with = ZLC
+				has_completed_focus = KOR_the_plan_south
+			}
+			any_state = {
+				is_owned_by = KVN
+					OR = {
+						any_neighbor_state = {
+							NOT = {
+								is_controlled_by = KOR
+							}
+						} 
+						if = {
+							limit = {
+								WZC = {
+									is_puppet_of = KOR
+								} 
+							}
+							any_neighbor_state = {
+								NOT = {
+									is_controlled_by = WZC
+								}
+							} 
+						}
+					}
+			}
+			KVN = {
+				exists = yes
+				is_puppet_of = KOR
+			}
+			ZLC = {
+				surrender_progress > 0.50
+			}
+			NOT = {
+				has_country_flag = FLAG_HAS_BEEN_OPPERATED_CROSSTHROUGHOUT
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			has_war_with = ZLC
+			NOT = {
+				has_country_flag = FLAG_HAS_BEEN_OPPERATED_CROSSTHROUGHOUT
+			}
+		}
+		allowed = {
+			tag = KOR
+		}
+		#fire_only_once = yes
+		days_remove = 240
+		modifier = {
+			army_attack_factor = 0.3
+			army_defence_factor = 0.1
+			army_org_factor = 0.1
+			army_morale_factor = 0.1
+		}
+		complete_effect = {
+			add_command_power = -150
+			add_political_power = -1000
+		}
+		remove_effect = {
+			set_country_flag = FLAG_HAS_BEEN_OPPERATED_CROSSTHROUGHOUT
+		}
+	}
 	KOR_the_war_plan_Z_ai = {
 		icon = generic_prepare_civil_war 
 		available = {
@@ -926,17 +4654,16 @@ KOR_first_plan_lightning = {
 		}
 		remove_effect = {
 			remove_ideas = KOR_not_planed_attack
+			remove_ideas = KOR_not_planed_attack_HID
 		}
 	}
 	KOR_attack_shandong = {
 		icon = generic_tank 
 		available = {
 			tag = KOR
+			command_power > 10
 			ZLC = {
 				controls_state = 608
-			}
-			KOR = {
-				controls_state = 743
 			}
 			has_war_with = ZLC
 			NOT = {
@@ -959,14 +4686,17 @@ KOR_first_plan_lightning = {
 		#fire_only_once = yes
 		days_remove = 15
 		modifier = {
-			army_armor_attack_factor = 0.1
-			army_armor_speed_factor = 0.1
+			army_attack_factor = 0.2
+			army_speed_factor = 0.2
 			# if = {
 			# 	limit = {
 			# 		is_ai = yes
 			# 	}
 			# 	army_attack_factor = 0.1
 			# }
+		}
+		complete_effect = {
+			add_command_power = -10
 		}
 		remove_effect = {
 			set_country_flag = FLAG_HAS_BEEN_OPPERATED_SHANDONG
@@ -990,7 +4720,7 @@ KOR_second_plan_tent = {
 	}
 	KOR_three_divided_china = {
 		
-		icon = generic_form_nation
+		icon = generic_break_treaty
 
 		allowed = {
 			tag = KOR
@@ -1049,7 +4779,7 @@ KOR_second_plan_tent = {
 		}
 	}
 	KOR_save_the_qi_xieyean = {
-		icon = generic_form_nation 
+		icon = generic_political_discourse
 		available = {
 			tag = KOR
 			has_war_with = ZLC
@@ -1122,15 +4852,11 @@ KOR_second_plan_tent = {
 		}
 	}
 	KOR_make_puppet_government = {
-		icon = generic_form_nation 
+		icon = generic_speech
 		available = {
 			tag = KOR
+			controls_state = 608
 			controls_state = 613
-			controls_state = 1037
-			controls_state = 1038
-			controls_state = 749
-			controls_state = 1042
-			controls_state = 596
 			or = {
 				controls_state = 1048
 				has_game_rule = {
@@ -1156,36 +4882,49 @@ KOR_second_plan_tent = {
 		#days_remove = 25
 		fire_only_once = yes
 		complete_effect = {
-			set_country_flag = FLAG_WZC_PUPPET_KOR
-			KOR = {
-				puppet = WZC
-			}
-			WZC = {
-				set_cosmetic_tag = WZC_CHI
-				add_country_leader_role = {
-					Character = WZC_qi_xieyuan
-					Promote_leader = yes
-					Country_leader = {
-						ideology = rexism
-						expire = "1965.1.1"
-						traits = {
-							war_industrialist
+			custom_effect_tooltip = KOR_ESTABLISH_CHINESE_PUPPET
+			hidden_effect = {
+				set_country_flag = FLAG_WZC_PUPPET_KOR
+				KOR = {
+					puppet = WZC
+				}
+				WZC = {
+					set_cosmetic_tag = WZC_CHI
+					add_country_leader_role = {
+						Character = WZC_qi_xieyuan
+						Promote_leader = yes
+						Country_leader = {
+							ideology = ultranationalism
+							expire = "1965.1.1"
+							traits = {
+								war_industrialist
+							}
 						}
+					}	
+					set_capital = {
+						state = 608
+						remember_old_capital = no
 					}
-				}	
-				transfer_state = 1037
-			}
-			every_state = {
-				limit = {
-					is_controlled_by = KOR
-					is_core_of = ZLC
-					NOT = {
-						is_owned_by = KOR
-						is_owned_by = MEN
-						is_owned_by = KYH
+					transfer_state = 1037
+				}
+				every_state = {
+					limit = {
+						is_core_of = ZLC
 					}
-				}	
-				set_state_controller_to = WZC
+					add_core_of = WZC
+				}
+				every_state = {
+					limit = {
+						is_controlled_by = KOR
+						is_core_of = ZLC
+						NOT = {
+							is_owned_by = KOR
+							is_owned_by = MEN
+							is_owned_by = KYH
+						}
+					}	
+					set_state_controller_to = WZC
+				}
 			}
 		}
 		# modifier = {
@@ -1209,8 +4948,46 @@ KOR_third_plan_doryun = {
 			custom_effect_tooltip = KOR_story_of_doryun_tt
 		}
 	}
+	KOR_hunlian_in_pacific = { #태평양에서의 훈련
+		icon = generic_air
+		allowed = {
+			tag = KOR
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			has_country_flag = TLE_USA_GO_EXPERIENCE
+		}
+		visible = {
+			has_country_flag = TLE_USA_GO_EXPERIENCE
+		}		
+		
+		days_remove = 97
+		fire_only_once = yes		
+		remove_effect = {
+			add_threat = 5
+			add_war_support = 0.05
+			KOR = {
+				complete_national_focus = KOR_the_plan_south
+			}
+			hidden_effect = {
+				USA = {
+					add_war_support = 0.1
+				}
+				KOR = {
+					country_event = {
+						id = korea.16
+					}
+				}
+			}
+		}
+		# timeout_effect = {
+			
+		# }
+	}
 	KOR_start_the_doryun = { #
-		icon = generic_form_nation
+		icon = generic_political_rally
 		allowed = {
 		    tag = KOR
 		}
@@ -1240,9 +5017,6 @@ KOR_third_plan_doryun = {
 		modifier = {
 			planning_speed = 0.4
 			war_support_factor = 0.2
-			army_org_Factor = 0.1
-			army_morale_factor = 0.1
-			consumer_goods_expected_value = -0.1
 		}
 		days_remove = 365
 		ai_will_do = {
@@ -1258,345 +5032,983 @@ KOR_third_plan_doryun = {
 		remove_effect = {
 		}
 	}
-	KOR_attack_siam = { #태국에게 통첩
-		icon = generic_army
+	KOR_invasion_of_malay = { 
+		icon = GFX_decision_SWE_set_navy_budget
+	    
+		#picture = GFX_decision_cat_national_assembly
+
 		allowed = {
-		    tag = KOR
+			original_tag = KOR
+		}	
+		highlight_states = {
+			highlight_state_targets = {
+				state = 336
+				state = 1078
+				state = 1077
+				state = 1075
+				state = 1094
+				state = 1095
+			} 
 		}
 		available = {
-			SIA = { exists = yes }
 			OR = {
+				KOR = {
+					controls_state = 336
+					controls_state = 1078
+					controls_state = 1077
+					controls_state = 1075
+					controls_state = 1095
+				}
 				AND = {
-					controls_state = 671
-					controls_state = 286
-					controls_state = 741
-					controls_state = 670
-				}
-				AND = {
-					KVN = {
-						exists = yes
-						is_puppet_of = KOR
+					MAL = {
+						OR = {
+							has_capitulated = yes
+							NOT = {
+								has_war_with = KOR
+							}
+						}
+					}
+					SST = {
+						OR = {
+							has_capitulated = yes
+							NOT = {
+								has_war_with = KOR
+							}
+						}
 					}
 				}
 			}
-			has_war_support > 0.5	
-			has_completed_focus = kor_threat_united_states
-			OR = {
-				has_country_flag = FLAG_USA_FUCK_TO_KOREA
-				has_war_with = USA
-			}	
-        }
-		visible = {
-			has_completed_focus = KOR_the_plan_south
 		}
+
+		days_mission_timeout = 30
 
 		fire_only_once = yes
-
-		cost = 10
-		days_remove = 3
-		ai_will_do = {
-			factor = 1000
-		}
-		complete_effect = {
-			SIA = {
-				country_event = {
-					id = korea.3
-				}
-			}	
-		}
-		remove_effect = {
-            create_wargoal = {
-		        target = SIA
-		        type = puppet_wargoal_focus
-	        }
-		}
-	}
-	KOR_establish_vietnam_government = { #
-		icon = generic_army
-		allowed = {
-		    tag = KOR
-		}
-		available = {
-			KVN = { exists = no }
-			KOR = {
-				controls_state = 671
-				controls_state = 670
-				controls_state = 286
-				controls_state = 741
-			}	
-        }
-		visible = {
-			has_completed_focus = KOR_indonesia_support
-		}
-
-		fire_only_once = yes
-
-		cost = 0
-		ai_will_do = {
-			factor = 1000
-		}
-		complete_effect = {
-			KOR = {
-				puppet = KVN
-			}
-			KVN = {
-				transfer_state = 671
-				transfer_state = 670
-				transfer_state = 286
-				transfer_state = 741
-				transfer_state = 993
-				transfer_state = 994
-				transfer_state = 995
-				add_state_core = 671
-				add_state_core = 670
-				add_state_core = 286
-				add_state_core = 741
-				add_state_core = 993
-				add_state_core = 994
-				add_state_core = 995
-				set_cosmetic_tag = VIE_KOR
-				division_template = {
-					name = "Indochina Infantry"
-					regiments = {
-						infantry = {
-							x = 0
-							y = 0
-						}
-						infantry = {
-							x = 0
-							y = 1
-						}
-						infantry = {
-							x = 0
-							y = 2
-						}
-						infantry = {
-							x = 1
-							y = 0
-						}
-						infantry = {
-							x = 1
-							y = 1
-						}
-						infantry = {
-							x = 1
-							y = 2
-						}
-					}
-				}
-				random_owned_controlled_state = {
-					prioritize = { 671 }
-					create_unit = {
-						division = "name = \"Indochina Infantry\" division_template = \"Indochina Infantry\" start_experience_factor = 0.6"
-						owner = KVN
-					}
-					create_unit = {
-						division = "name = \"Indochina Infantry\" division_template = \"Indochina Infantry\" start_experience_factor = 0.6"
-						owner = KVN
-					}
-					create_unit = {
-						division = "name = \"Indochina Infantry\" division_template = \"Indochina Infantry\" start_experience_factor = 0.6"
-						owner = KVN
-					}
-					create_unit = {
-						division = "name = \"Indochina Infantry\" division_template = \"Indochina Infantry\" start_experience_factor = 0.6"
-						owner = KVN
-					}
-					create_unit = {
-						division = "name = \"Indochina Infantry\" division_template = \"Indochina Infantry\" start_experience_factor = 0.6"
-						owner = KVN
-					}
-					create_unit = {
-						division = "name = \"Indochina Infantry\" division_template = \"Indochina Infantry\" start_experience_factor = 0.6"
-						owner = KVN
-					}
-					create_unit = {
-						division = "name = \"Indochina Infantry\" division_template = \"Indochina Infantry\" start_experience_factor = 0.6"
-						owner = KVN
-					}
-					create_unit = {
-						division = "name = \"Indochina Infantry\" division_template = \"Indochina Infantry\" start_experience_factor = 0.6"
-						owner = KVN
-					}
-					create_unit = {
-						division = "name = \"Indochina Infantry\" division_template = \"Indochina Infantry\" start_experience_factor = 0.6"
-						owner = KVN
-					}
-					create_unit = {
-						division = "name = \"Indochina Infantry\" division_template = \"Indochina Infantry\" start_experience_factor = 0.6"
-						owner = KVN
-					}
-					create_unit = {
-						division = "name = \"Indochina Infantry\" division_template = \"Indochina Infantry\" start_experience_factor = 0.6"
-						owner = KVN
-					}
-				}	
-				random_owned_controlled_state = {
-					prioritize = { 670 }
-					create_unit = {
-						division = "name = \"Indochina Infantry\" division_template = \"Indochina Infantry\" start_experience_factor = 0.6"
-						owner = KVN
-					}
-					create_unit = {
-						division = "name = \"Indochina Infantry\" division_template = \"Indochina Infantry\" start_experience_factor = 0.6"
-						owner = KVN
-					}
-					create_unit = {
-						division = "name = \"Indochina Infantry\" division_template = \"Indochina Infantry\" start_experience_factor = 0.6"
-						owner = KVN
-					}
-					create_unit = {
-						division = "name = \"Indochina Infantry\" division_template = \"Indochina Infantry\" start_experience_factor = 0.6"
-						owner = KVN
-					}
-					create_unit = {
-						division = "name = \"Indochina Infantry\" division_template = \"Indochina Infantry\" start_experience_factor = 0.6"
-						owner = KVN
-					}
-					create_unit = {
-						division = "name = \"Indochina Infantry\" division_template = \"Indochina Infantry\" start_experience_factor = 0.6"
-						owner = KVN
-					}
-					create_unit = {
-						division = "name = \"Indochina Infantry\" division_template = \"Indochina Infantry\" start_experience_factor = 0.6"
-						owner = KVN
-					}
-					create_unit = {
-						division = "name = \"Indochina Infantry\" division_template = \"Indochina Infantry\" start_experience_factor = 0.6"
-						owner = KVN
-					}
-					create_unit = {
-						division = "name = \"Indochina Infantry\" division_template = \"Indochina Infantry\" start_experience_factor = 0.6"
-						owner = KVN
-					}
-					create_unit = {
-						division = "name = \"Indochina Infantry\" division_template = \"Indochina Infantry\" start_experience_factor = 0.6"
-						owner = KVN
-					}
-					create_unit = {
-						division = "name = \"Indochina Infantry\" division_template = \"Indochina Infantry\" start_experience_factor = 0.6"
-						owner = KVN
-					}
-				}	
-				random_owned_controlled_state = {
-					prioritize = { 286 }
-					create_unit = {
-						division = "name = \"Indochina Infantry\" division_template = \"Indochina Infantry\" start_experience_factor = 0.6"
-						owner = KVN
-					}
-					create_unit = {
-						division = "name = \"Indochina Infantry\" division_template = \"Indochina Infantry\" start_experience_factor = 0.6"
-						owner = KVN
-					}
-					create_unit = {
-						division = "name = \"Indochina Infantry\" division_template = \"Indochina Infantry\" start_experience_factor = 0.6"
-						owner = KVN
-					}
-					create_unit = {
-						division = "name = \"Indochina Infantry\" division_template = \"Indochina Infantry\" start_experience_factor = 0.6"
-						owner = KVN
-					}
-					create_unit = {
-						division = "name = \"Indochina Infantry\" division_template = \"Indochina Infantry\" start_experience_factor = 0.6"
-						owner = KVN
-					}
-				}	
-			}
-		}
-		remove_effect = {
-		}
-	}
-	KOR_attack_malay = {
-		icon = generic_army
-		allowed = {
-		    tag = KOR
-		}
-		available = {
-			MAL = { exists = yes }
-			has_completed_focus = KOR_the_malay_focus
-			OR = {
-				has_country_flag = FLAG_USA_FUCK_TO_KOREA
-				has_war_with = USA
-			}	
-        }
-		visible = {
-			has_completed_focus = KOR_the_plan_south
-		}
-
-		fire_only_once = yes
-
-		cost = 10
-		days_remove = 10
-		ai_will_do = {
-			base = 0
-			modifier = {
-				add = 1000
-				has_war_with = USA
-			}
-		}
 		
-		remove_effect = {
-            declare_war_on = {
-		        target = RAJ
-		        type = puppet_wargoal_focus
-	        }
-            declare_war_on = {
-		        target = ENG
-		        type = puppet_wargoal_focus
-	        }
-            declare_war_on = {
-		        target = AST
-		        type = puppet_wargoal_focus
-	        }
-            declare_war_on = {
-		        target = NZL
-		        type = puppet_wargoal_focus
-	        }
+		is_good = no
+
+		activation = {
+			is_ai = no
+			has_completed_focus = KOR_the_plan_south
+		}
+
+		visible = {
+			original_tag = KOR
+			USA = {
+				has_war_with = KOR
+			}
+        }	
+		complete_effect = {
+			#
+		}
+
+		timeout_effect = {
+			custom_effect_tooltip = KOR_INVADE_MAL
 			hidden_effect = {
 				news_event = {
 					id = eok_news.47
-					days = 1
 				}
+				load_oob = "KOR_MAL"
 			}
 		}
 	}
-	KOR_attack_indonesia = {
-		icon = generic_army
+	KOR_surrander_of_phi = { 
+		icon = GFX_decision_generic_operation
+	    
+		#picture = GFX_decision_cat_national_assembly
+
+		allowed = {
+			original_tag = KOR
+		}	
+		
+		highlight_states = {
+			highlight_state_targets = { 
+				state = 623
+				state = 327
+				state = 624
+				state = 625
+				state = 626
+				state = 627
+				state = 628
+			}
+		}
+		available = {
+			PHI = {
+				has_capitulated = yes
+			}
+			KOR = {
+				controls_state = 327
+			}
+		}
+
+		days_mission_timeout = 360
+
+		fire_only_once = yes
+		
+		is_good = no
+
+		activation = {
+			KOR = {
+				has_completed_focus = KOR_the_plan_south
+			}
+			USA = {
+				has_war_with = KOR
+			}
+		}
+
+		visible = {
+			original_tag = KOR
+			has_completed_focus = KOR_the_plan_south
+        }
+		complete_effect = {
+			country_event = {
+				id = south.3
+			}
+			set_country_flag = flag_KOR_surrander_of_phi_end
+			KOR_embargo_level_down = yes
+		}
+
+		timeout_effect = {
+			set_country_flag = flag_KOR_surrander_of_phi_end
+			country_event = {
+				id = south.22
+			}
+		}
+		
+	}
+	KOR_invasion_of_burma = { #버마
+		icon = GFX_decision_generic_operation
 		allowed = {
 		    tag = KOR
 		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1090
+				state = 640
+				state = 1092
+				state = 288
+				state = 1091
+				state = 992
+				state = 1076
+			}
+		}
 		available = {
-			INS = { exists = yes }
+			controls_state = 1090
+			controls_state = 640
+			controls_state = 1092
+			controls_state = 288
+			controls_state = 1091
+     	}
+		visible = {
+			has_completed_focus = KOR_the_plan_south
+		}
+		activation = {
+			has_completed_focus = KOR_the_plan_south
+			KOR = {
+				has_war_with = BUR
+			}
+		}
+		days_mission_timeout = 360
+	
+		fire_only_once = yes
+		is_good = no
+		complete_effect = {
+			custom_effect_tooltip = KOR_INVADE_BUR
+			hidden_effect = {
+				set_country_flag = KOR_won_in_burma
+			}
+		}
+		timeout_effect = {
+			#페널티
+		}
+	}
+	KOR_calcutta = { #캘커타
+		icon = GFX_decision_generic_operation
+		allowed = {
+		    tag = KOR
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 430
+				state = 431
+				state = 432
+				state = 434
+			}
+		}
+		available = {
+			has_country_flag = KOR_won_in_burma
+			controls_state = 430
+			controls_state = 431
+     	}
+		visible = {
+			has_completed_focus = KOR_the_plan_south
+		}
+		activation = {
+			has_completed_focus = KOR_the_plan_south
+			KOR = {
+				has_war_with = RAJ
+			}
+		}
+		days_mission_timeout = 720
+	
+		fire_only_once = yes
+		is_good = no
+		complete_effect = {
+			KOR = {
+				country_event = {
+					id = south.33
+				}
+			}
+		}
+		timeout_effect = {
+			#페널티
+		}
+	}
+	KOR_delhi = { #델리
+		icon = GFX_decision_generic_operation
+		allowed = {
+		    tag = KOR
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 320
+				state = 321
+				state = 423
+				state = 424
+				state = 425
+				state = 426
+				state = 427
+				state = 428
+				state = 429
+				state = 433
+				state = 435
+				state = 436
+				state = 437
+				state = 438
+				state = 439
+				state = 440
+				state = 441
+				state = 443
+				state = 787
+			}
+		}
+		available = {
+			controls_state = 439
+     	}
+		visible = {
+			has_completed_focus = KOR_the_plan_south
+		}
+		activation = {
+			has_completed_focus = KOR_the_plan_south
+			KOR = {
+				has_country_flag = KOR_invade_delhi
+				has_war_with = RAJ
+			}
+		}
+		days_mission_timeout = 720
+	
+		fire_only_once = yes
+		is_good = no
+		complete_effect = {
+			KOR = {
+				country_event = {
+					id = south.34
+				}
+			}
+		}
+		timeout_effect = {
+			#페널티
+		}
+	}
+	KOR_ceylon = { #실론
+		icon = GFX_decision_generic_operation
+		allowed = {
+		    tag = KOR
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 422
+			}
+		}
+		available = {
+			controls_state = 422
+     	}
+		visible = {
+			has_completed_focus = KOR_the_plan_south
+		}
+		activation = {
+			has_completed_focus = KOR_the_plan_south
+			KOR = {
+				has_country_flag = KOR_invade_ceylon
+				has_war_with = SRL
+			}
+		}
+		days_mission_timeout = 180
+	
+		fire_only_once = yes
+		is_good = no
+		complete_effect = {
+			KOR = {
+				country_event = {
+					id = south.35
+				}
+			}
+		}
+		timeout_effect = {
+			#페널티
+		}
+	}
+	KOR_surrander_of_ins = { 
+		icon = GFX_decision_oil
+	    
+		#picture = GFX_decision_cat_national_assembly
+
+		allowed = {
+			original_tag = KOR
+		}	
+		
+		highlight_states = {
+			highlight_state_targets = { 
+				state = 336
+				state = 1078
+				state = 1077
+				state = 1075
+				state = 1094
+				state = 1095
+				state = 334
+				state = 333
+				state = 1079
+				state = 1081
+				state = 1080
+				state = 668
+				state = 673
+				state = 672
+				state = 335
+				state = 667
+				state = 669
+				state = 523
+				state = 721
+				state = 738
+				state = 979
+			}
+		}
+		available = {
+			MAL = {
+				has_capitulated = yes
+			}
+			KOR = {
+				has_country_flag = KOR_won_in_malay
+				has_country_flag = KOR_won_in_borneo
+				has_country_flag = KOR_won_in_celebes
+				has_country_flag = KOR_won_in_sumatra
+				has_country_flag = KOR_won_in_java
+				has_country_flag = KOR_won_in_papua
+				has_country_flag = KOR_won_in_phi
+				has_country_flag = KOR_won_in_timor
+			}
+		}
+
+		days_mission_timeout = 720
+
+		fire_only_once = yes
+		
+		is_good = no
+
+		activation = {
+			is_ai = no
+			has_completed_focus = KOR_the_plan_south
+			NOT = {
+				has_country_flag = flag_KOR_surrander_of_ins_end
+			}
+			INS = {
+				has_war_with = KOR
+			}
+		}
+
+		visible = {
+			original_tag = KOR
+			USA = {
+				has_war_with = KOR
+			}
+        }	
+		complete_effect = {
+			set_country_flag = flag_KOR_surrander_of_ins_end
+			country_event = {
+				id = south.26
+			}
+			hidden_effect = {
+				set_country_flag = KOR_won_in_ins
+			}
+		}
+
+		timeout_effect = {
+			set_country_flag = flag_KOR_surrander_of_ins_end
+			country_event = {
+				id = south.22
+			}
+		}
+		
+	}
+	KOR_austrailia = { #남방 - 호주
+		icon = generic_form_nation
+		allowed = {
+		    tag = KOR
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 634
+				state = 635
+				state = 711
+				state = 712
+				state = 734
+				state = 737
+			}
+		}
+		available = {
+			has_country_flag = KOR_won_in_ins
+			controls_state = 634
+			controls_state = 635
+			controls_state = 711
+			controls_state = 712
+			controls_state = 734
+			controls_state = 737
+     	}
+		visible = {
 			has_completed_focus = KOR_the_ins_focus
-			OR = {
-				has_country_flag = FLAG_USA_FUCK_TO_KOREA
+		}
+		activation = {
+			has_completed_focus = KOR_the_ins_focus
+		}
+		days_mission_timeout = 360
+	
+		fire_only_once = yes
+		is_good = no
+		complete_effect = {
+			KOR = {
+				country_event = {
+					id = south.2
+				}
+			}
+		}
+		timeout_effect = {
+			#페널티
+		}
+	}
+	KOR_the_embargo_rising = { 
+		icon = GFX_decision_SWI_consolidate_council_power
+	    
+		#picture = GFX_decision_cat_national_assembly
+
+		allowed = {
+			original_tag = KOR
+		}	
+		
+		available = {
+			NOT = {
+				has_idea = KOR_embargo_us
+				has_idea = KOR_embargo_us_a
+				has_idea = KOR_embargo_us_b
+				has_idea = KOR_embargo_us_c
+				has_idea = KOR_embargo_us_d
+			}
+			NOT = {
 				has_war_with = USA
+			}
+		}	
+
+		days_mission_timeout = 180
+
+		fire_only_once = yes
+		
+		is_good = no
+
+		activation = {
+			is_ai = no
+			has_war_with = USA
+			OR = {
+				has_idea = KOR_embargo_us
+				has_idea = KOR_embargo_us_a
+				has_idea = KOR_embargo_us_b
+				has_idea = KOR_embargo_us_c
+				has_idea = KOR_embargo_us_d
 			}	
+			NOT = {
+				has_country_flag = flag_KOR_the_embargo_rising_end
+			}
+		}
+
+		visible = {
+			original_tag = KOR
+        }	
+		complete_effect = {
+			custom_effect_tooltip = KOR_the_embargo_rising_tt
+			set_country_flag = flag_KOR_the_embargo_rising_end
+			hidden_effect = {
+				remove_ideas = KOR_embargo_us
+				remove_ideas = KOR_embargo_us_a
+				remove_ideas = KOR_embargo_us_b
+				remove_ideas = KOR_embargo_us_c
+				remove_ideas = KOR_embargo_us_d
+			}
+		}
+
+		timeout_effect = {
+			KOR_embargo_level_up = yes
+		}
+		
+	}
+	KOR_invasion_of_borneo = { 
+		icon = generic_air
+	    
+		#picture = GFX_decision_cat_national_assembly
+
+		allowed = {
+			original_tag = KOR
+		}	
+		highlight_states = {
+			highlight_state_targets = {
+				state = 334
+				state = 333
+				state = 1079
+				state = 1081
+				state = 1080
+			}
+		}
+		available = {
+			is_ai = no
+			has_completed_focus = KOR_the_plan_south
+			has_country_flag = KOR_won_in_malay
+			NOT = {
+				has_country_flag = KOR_won_in_borneo
+			}
         }
 		visible = {
 			has_completed_focus = KOR_the_plan_south
 		}
+		days_remove = 15
 
 		fire_only_once = yes
-
-		cost = 10
-		days_remove = 10
-		ai_will_do = {
-			base = 0
-			modifier = {
-				add = 1000
-				has_war_with = USA
+		
+		is_good = no
+		
+		remove_effect = {
+			custom_effect_tooltip = KOR_INVADE_BOR
+			hidden_effect = {
+				load_oob = "KOR_BOR"
 			}
 		}
+	}
+	KOR_invasion_of_celebes = { #슬라웨시
+		icon = GFX_decision_SWE_set_air_budget
+	    
+		#picture = GFX_decision_cat_national_assembly
 
+		allowed = {
+			original_tag = KOR
+		}	
+		highlight_states = {
+			highlight_state_targets = {
+				state = 668
+				state = 673
+			}
+		}
+		available = {
+			is_ai = no
+			has_completed_focus = KOR_the_plan_south
+			has_country_flag = KOR_won_in_malay
+			has_country_flag = KOR_won_in_phi
+			NOT = {
+				has_country_flag = KOR_won_in_celebes
+			}
+        }
+		visible = {
+			has_completed_focus = KOR_the_plan_south
+		}
+		days_remove = 15
+
+		fire_only_once = yes
+		
+		is_good = no
+		
 		remove_effect = {
-            declare_war_on = {
-		        target = INS
-		        type = puppet_wargoal_focus
-	        }
+			custom_effect_tooltip = KOR_INVADE_CEL
+			hidden_effect = {
+				load_oob = "KOR_CEL"
+			}
 		}
 	}
-	
+	KOR_invasion_of_sumatra = { #수마트라
+		icon = generic_human_torpedo
+	    
+		#picture = GFX_decision_cat_national_assembly
+
+		allowed = {
+			original_tag = KOR
+		}	
+		highlight_states = {
+			highlight_state_targets = {
+				state = 672
+			}
+		}
+		available = {
+			is_ai = no
+			has_completed_focus = KOR_the_plan_south
+			has_country_flag = KOR_won_in_malay
+			has_country_flag = KOR_won_in_borneo
+			NOT = {
+				has_country_flag = KOR_won_in_sumatra
+			}
+        }
+		visible = {
+			has_completed_focus = KOR_the_plan_south
+		}
+		days_remove = 15
+
+		fire_only_once = yes
+		
+		is_good = no
+		
+		remove_effect = {
+			custom_effect_tooltip = KOR_INVADE_SUM
+			hidden_effect = {
+				load_oob = "KOR_SUM"
+			}
+		}
+	}
+	KOR_invasion_of_java = { #자바
+		icon = GFX_decision_generic_trucks
+	    
+		#picture = GFX_decision_cat_national_assembly
+
+		allowed = {
+			original_tag = KOR
+		}	
+		highlight_states = {
+			highlight_state_targets = {
+				state = 335
+				state = 667
+			}
+		}
+		available = {
+			is_ai = no
+			has_completed_focus = KOR_the_plan_south
+			has_country_flag = KOR_won_in_borneo
+			has_country_flag = KOR_won_in_sumatra
+			NOT = {
+				has_country_flag = KOR_won_in_java
+			}
+        }
+		visible = {
+			has_completed_focus = KOR_the_plan_south
+		}
+		days_remove = 15
+
+		fire_only_once = yes
+		
+		is_good = no
+		
+		remove_effect = {
+			custom_effect_tooltip = KOR_INVADE_JAV
+			hidden_effect = {
+				load_oob = "KOR_JAV"
+			}
+		}
+	}
+	KOR_invasion_of_papua = { #뉴기니
+		icon = generic_naval
+	    
+		#picture = GFX_decision_cat_national_assembly
+
+		allowed = {
+			original_tag = KOR
+		}	
+		highlight_states = {
+			highlight_state_targets = {
+				state = 669
+				state = 523
+				state = 738
+				state = 979
+			}
+		}
+		available = {
+			is_ai = no
+			has_completed_focus = KOR_the_plan_south
+			has_country_flag = KOR_won_in_java
+			has_country_flag = KOR_won_in_celebes
+			NOT = {
+				has_country_flag = KOR_won_in_papua
+			}
+        }
+		visible = {
+			has_completed_focus = KOR_the_plan_south
+		}
+		days_remove = 15
+
+		fire_only_once = yes
+		
+		is_good = no
+		
+		remove_effect = {
+			custom_effect_tooltip = KOR_INVADE_PAP
+			hidden_effect = {
+				load_oob = "KOR_PAP"
+			}
+		}
+	}
+	KOR_invasion_of_timor = { #티모르
+		icon = generic_tank
+	    
+		#picture = GFX_decision_cat_national_assembly
+
+		allowed = {
+			original_tag = KOR
+		}	
+		highlight_states = {
+			highlight_state_targets = {
+				state = 721
+			}
+		}
+		available = {
+			has_completed_focus = KOR_the_plan_south
+			has_country_flag = KOR_won_in_java
+        }
+		visible = {
+			has_completed_focus = KOR_the_plan_south
+		}
+		days_remove = 15
+
+		fire_only_once = yes
+		
+		is_good = no
+		
+		remove_effect = {
+			POR = {
+				country_event = {
+					id = south.27
+				}
+			}
+			KOR = {
+				set_country_flag = KOR_won_in_timor
+				transfer_state = 721
+			}
+		}
+		ai_will_do = {
+			factor = 200
+		}
+	}
+}
+KOR_philippines = { #남방 - 필리핀
+	KOR_phi_2ndrep = { #제2공화국 수립
+		icon = generic_speech
+
+		allowed = {
+			original_tag = KOR
+		}
+
+		available = {
+			327 = {
+				is_controlled_by = KPH
+				is_core_of = KPH
+			}
+			623 = {
+				is_controlled_by = KPH
+				is_core_of = KPH
+			}
+			624 = {
+				is_controlled_by = KPH
+				is_core_of = KPH
+			}
+			625 = {
+				is_controlled_by = KPH
+				is_core_of = KPH
+			}
+			626 = {
+				is_controlled_by = KPH
+				is_core_of = KPH
+			}
+			627 = {
+				is_controlled_by = KPH
+				is_core_of = KPH
+			}
+			628 = {
+				is_controlled_by = KPH
+				is_core_of = KPH
+			}
+		}
+		
+		cost = 100
+		fire_only_once = yes
+
+		visible = {
+			original_tag = KOR
+			has_global_flag = PHI_capitulated
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = TOOLTIP_PHIREP
+			KPH = {
+				set_cosmetic_tag = KPH_F
+			}
+			hidden_effect = {
+				news_event = {
+					id = siam_news.17
+				}
+				set_autonomy = { target = KPH autonomy_state = korean_puppet }
+				KPH = {
+					add_country_leader_role = {
+						Character = KPH_jose_paciano_laurel
+						Promote_leader = yes
+						Country_leader = {
+							ideology = fascism_ideology
+							expire = "1965.1.1"
+							traits = {
+								#
+							}
+						}
+					}
+					set_party_name = {
+						ideology = fascism
+						long_name = "PHI_fascism_party_long"
+						name = "PHI_fascism_party"
+					}				
+				}		
+			}
+			set_global_flag = KPH_second_rep
+		}
+		
+		ai_will_do = {
+			factor = 200
+		}
+	}
+	KOR_phi_1 = { #마닐라
+		icon = generic_nationalism
+
+		allowed = {
+			original_tag = KOR
+		}
+
+		available = {
+			KPH = {	
+				controls_state = 327
+			}
+		}
+		
+		cost = 80
+		fire_only_once = yes
+
+		visible = {
+			original_tag = KOR
+			has_global_flag = PHI_capitulated
+		}
+		
+		days_remove = 180
+
+		remove_effect = {
+			327 = { add_core_of = KPH }
+		}
+		
+		ai_will_do = {
+			factor = 200
+		}
+	}
+	KOR_phi_2 = { #루손
+		icon = generic_nationalism
+
+		allowed = {
+			original_tag = KOR
+		}
+
+		available = {
+			KPH = {	
+				controls_state = 623
+				controls_state = 624
+			}
+		}
+		
+		cost = 80
+		fire_only_once = yes
+
+		visible = {
+			original_tag = KOR
+			has_global_flag = PHI_capitulated
+		}
+		
+		days_remove = 180
+
+		remove_effect = {
+			623 = { add_core_of = KPH }
+			624 = { add_core_of = KPH }
+		}
+		
+		ai_will_do = {
+			factor = 200
+		}
+	}
+	KOR_phi_3 = { #민다나오
+		icon = generic_nationalism
+
+		allowed = {
+			original_tag = KOR
+		}
+
+		available = {
+			KPH = {	
+				controls_state = 627
+			}
+		}
+		
+		cost = 80
+		fire_only_once = yes
+
+		visible = {
+			original_tag = KOR
+			has_global_flag = PHI_capitulated
+		}
+		
+		days_remove = 180
+
+		remove_effect = {
+			627 = { add_core_of = KPH }
+		}
+		
+		ai_will_do = {
+			factor = 200
+		}
+	}
+	KOR_phi_4 = { #중부제도
+		icon = generic_nationalism
+
+		allowed = {
+			original_tag = KOR
+		}
+
+		available = {
+			KPH = {	
+				controls_state = 625
+				controls_state = 626
+				controls_state = 628
+			}
+		}
+		
+		cost = 80
+		fire_only_once = yes
+
+		visible = {
+			original_tag = KOR
+			has_global_flag = PHI_capitulated
+		}
+		
+		days_remove = 180
+
+		remove_effect = {
+			625 = { add_core_of = KPH }
+			626 = { add_core_of = KPH }
+			628 = { add_core_of = KPH }
+		}
+		
+		ai_will_do = {
+			factor = 200
+		}
+	}
 }
 KOR_forth_plan_nakil = {
 	KOR_story_of_nakil = {
@@ -1614,7 +6026,7 @@ KOR_forth_plan_nakil = {
 		}
 	}
 	KOR_attack_japanese_empire = {
-		icon = generic_army
+		icon = generic_reorganize_irregulars
 		allowed = {
 		    tag = KOR
 		}
@@ -1639,7 +6051,7 @@ KOR_forth_plan_nakil = {
 						is_ai = yes
 					}
 				}
-				date > 1941.6.25
+				date > 1941.12.7
 				has_war_with = USA
 			}
         }
@@ -1653,7 +6065,7 @@ KOR_forth_plan_nakil = {
 		fire_only_once = yes
 
 		cost = 0
-		days_remove = 45
+		days_remove = 26
 		ai_will_do = {
 			factor = 1000
 		}
@@ -1717,6 +6129,134 @@ KOR_interservice_rivalry = {
 				add_power_balance_value = {
 					id = KOR_balance
 					value = 0.05
+				}
+			}
+			if = {
+				limit = {
+					has_idea = KOR_choheung
+					has_idea = kim_gap_sun
+					has_idea = bang_jonghwan
+					has_idea = civilian_economy
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = yes
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+										is_in_home_area = yes
+									}
+								}
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = yes
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+										is_in_home_area = yes
+									}
+								}
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = yes
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+										is_in_home_area = yes
+									}
+								}
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = yes
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+										is_in_home_area = yes
+									}
+								}
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
 				}
 			}
 		}	
@@ -1818,6 +6358,137 @@ KOR_interservice_rivalry = {
 		}
 		
 		days_remove = 60
+		
+		complete_effect = {
+			if = {
+				limit = {
+					has_idea = KOR_choheung
+					has_idea = kim_gap_sun
+					has_idea = bang_jonghwan
+					has_idea = civilian_economy
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+										is_in_home_area = yes
+									}
+								}
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+										is_in_home_area = yes
+									}
+								}
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+										is_in_home_area = yes
+									}
+								}
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+										is_in_home_area = yes
+									}
+								}
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}	
 
 		remove_effect = {
             random_owned_controlled_state = {
@@ -1928,6 +6599,134 @@ KOR_interservice_rivalry = {
 					id = KOR_balance
 					value = -0.05
 				}
+			}
+			if = {
+				limit = {
+					has_idea = KOR_choheung
+					has_idea = kim_gap_sun
+					has_idea = bang_jonghwan
+					has_idea = civilian_economy
+				}
+            random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+									    building = dockyard
+									    size > 0
+								    	include_locked = yes
+								    }
+								    is_in_home_area = yes
+								}
+							}
+					    }
+				    }
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+            random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+									    building = dockyard
+									    size > 0
+								    	include_locked = yes
+								    }
+								    is_in_home_area = yes
+								}
+							}
+					    }
+				    }
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+            random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+									    building = dockyard
+									    size > 0
+								    	include_locked = yes
+								    }
+								    is_in_home_area = yes
+								}
+							}
+					    }
+				    }
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+            random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+									    building = dockyard
+									    size > 0
+								    	include_locked = yes
+								    }
+								    is_in_home_area = yes
+								}
+							}
+					    }
+				    }
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
 			}
 		}	
 
@@ -2463,7 +7262,7 @@ KOR_interservice_rivalry = {
 			}
 		}
 		cost = 50
-		fire_only_once = yes
+		fire_only_once = no
 		ai_will_do = {
 			factor = 1
 		}
@@ -2534,7 +7333,7 @@ KOR_interservice_rivalry = {
 			}
 		}
 		cost = 50
-		fire_only_once = yes
+		fire_only_once = no
 		ai_will_do = {
 			factor = 1
 		}

@@ -1,0 +1,2 @@
+﻿
+#recruit_character = COG_adalbert_von_hohenzollern

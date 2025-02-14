@@ -1,0 +1,1798 @@
+SIA_power_supports = { 
+	SIA_power_supports_claim = {
+		icon = GFX_decision_icon_default
+		allowed = {
+			original_tag = SIA
+		}
+		available = {
+			has_completed_focus = siam_39
+		}
+		visible = {
+			has_country_leader = {
+				character = SIA_plaek_phibunsongkhram
+				ruling_only = yes
+			}
+			NOT = {
+				has_country_flag = SIA_power_supports_claimed
+			}
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			set_country_flag = SIA_power_supports_claimed
+		}
+	}
+}
+SIA_politics_category = { 
+	SIA_facismo_grow = {
+		icon = generic_civil_support
+		allowed = {
+		    tag = SIA
+		}
+		available = {
+			has_country_flag = SIA_phibun_in_power
+		}
+		activation = {
+			NOT = {
+				has_country_flag = SIA_phibun_in_power
+			}
+		}
+
+		selectable_mission = no
+		is_good = no
+		days_mission_timeout = 151
+
+		timeout_effect = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+			activate_mission = SIA_facismo_grow
+		}
+	}
+	SIA_democrat_grow = {
+		icon = generic_civil_support
+		allowed = {
+		    tag = SIA
+		}
+		available = {
+			has_country_flag = SIA_phibun_in_power
+		}
+		activation = {
+			NOT = {
+				has_country_flag = SIA_phibun_in_power
+			}
+		}
+
+		selectable_mission = no
+		is_good = no
+		days_mission_timeout = 201
+
+		timeout_effect = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+			activate_mission = SIA_democrat_grow
+		}
+	}
+	SIA_end_of_the_regime = {
+		icon = generic_political_address
+		allowed = {
+		    tag = SIA
+		}
+		available = {
+			has_country_flag = SIA_phibun_in_power
+		}
+		activation = {
+			NOT = {
+				has_completed_focus = siam_15
+			}
+		}
+
+		selectable_mission = no
+		fire_only_once = yes
+		is_good = no
+		days_mission_timeout = 1051
+
+		timeout_effect = {
+			complete_national_focus = siam_15
+		}
+	}
+}
+SIA_indochinesewar_category = {
+	SIA_invade_faster = {
+		icon = generic_tank
+		allowed = {
+			original_tag = SIA
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+		    SIA = {
+                has_war = yes
+            }
+			FRI = {
+				exists = yes
+				has_war = yes
+			}
+		}
+		visible = {
+			has_completed_focus = siam_23
+		}
+
+		days_remove = 30
+
+		fire_only_once = no
+		
+		cost = 200
+
+		modifier = {
+			army_defence_factor = 0.1
+			army_attack_factor = 0.1
+			army_speed_factor = 0.2
+		}
+	}
+	SIA_the_time_limit = {
+		icon = generic_operation
+		allowed = {
+			original_tag = SIA
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+		    SIA = {
+                has_war = no
+            }
+		}
+		visible = {
+		} 
+		activation = {
+			has_completed_focus = siam_23
+		}
+		days_mission_timeout = 40
+		
+		fixed_random_seed = no
+
+		fire_only_once = yes
+		is_good = no
+		complete_effect = {
+			hidden_effect = {
+				country_event = {
+					id = siam.22
+					days = 1
+				}
+				SIA = {
+					white_peace = FRI
+					transfer_state = 670
+					transfer_state = 993
+					transfer_state = 994
+					transfer_state = 995
+					transfer_state = 741
+					puppet = CAM
+					puppet = VIN
+				}
+				CAM = {
+					transfer_state = 1103
+					set_politics = {
+						ruling_party = neutrality
+						last_election = "1936.3.15"
+						election_frequency = 48
+						elections_allowed = no
+					}
+					set_popularities = {
+						neutrality = 100
+						fascism = 0
+						communism = 0
+						democratic = 0
+					}
+				}
+				VIN = {
+					transfer_state = 671
+					transfer_state = 286	
+					transfer_state = 1082
+					transfer_state = 1083
+					transfer_state = 1084
+					transfer_state = 1085
+					transfer_state = 1086
+					transfer_state = 1087
+					set_politics = {
+						ruling_party = neutrality
+						last_election = "1936.3.15"
+						election_frequency = 48
+						elections_allowed = no
+					}
+					set_popularities = {
+						neutrality = 100
+						fascism = 0
+						communism = 0
+						democratic = 0
+					}
+				}
+			}
+		}	
+		timeout_effect = {
+			custom_effect_tooltip = TOOLTIP_KOREAN_INTERVENTION
+			hidden_effect = {
+				if = {
+					limit = {
+						KOR = {
+							has_country_flag = FLAG_KOR_FASCIST_ROUTE
+						}
+					}
+					KOR = {
+						country_event = {
+							id = siam.9
+							days = 2
+						}
+					}
+					country_event = {
+						id = siam.11
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							KOR = {
+								has_country_flag = FLAG_KKS_ROUTE
+							}
+							KOR = {
+								has_country_flag = FLAG_ACH_ROUTE
+							}
+						}
+					}
+					ENG = {
+						country_event = {
+							id = siam.24
+							days = 2
+						}
+					}
+					CHI = {
+						country_event = {
+							id = siam.25
+							days = 2
+						}
+					}
+					country_event = {
+						id = siam.26
+						days = 2
+					}
+					news_event = {
+						id = siam_news.13
+						days = 3
+					}
+				}
+				if = {
+					limit = {
+						KOR = {
+							has_country_flag = FLAG_PCY_ROUTE
+						}
+					}
+					country_event = {
+						id = siam.61
+						days = 2
+					}
+				}
+			}
+		}
+	}
+}
+SIA_lebensraum_category = {
+	SIA_int_one = {
+		icon = GFX_decision_icon_default
+
+		allowed = {
+			original_tag = SIA
+		}
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 993
+			}
+		}
+
+		available = {
+			controls_state = 993
+		}
+		
+		cost = 50
+		fire_only_once = yes
+
+		visible = {
+			original_tag = SIA
+			has_completed_focus = siam_22
+		}
+		
+		days_remove = 180
+
+		remove_effect = {
+			993 = { add_core_of = ROOT }
+		}
+		
+		ai_will_do = {
+			factor = 200
+		}
+	}
+	
+	SIA_int_two = {
+		icon = GFX_decision_icon_default
+
+		allowed = {
+			original_tag = SIA
+		}
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 994
+			}
+		}
+		
+		available = {
+			controls_state = 994
+		}
+		
+		cost = 50
+		fire_only_once = yes
+
+		visible = {
+			original_tag = SIA
+			has_completed_focus = siam_22
+		}
+		
+		days_remove = 180
+
+		remove_effect = {
+			994 = { add_core_of = ROOT }
+		}
+		
+		ai_will_do = {
+			factor = 200
+		}
+	}
+	SIA_int_three = {
+		icon = GFX_decision_icon_default
+
+		allowed = {
+			original_tag = SIA
+		}
+			
+		highlight_states = {
+			highlight_state_targets = {
+				state = 995
+			}
+		}
+
+		available = {
+			controls_state = 995
+		}
+		
+		cost = 50
+		fire_only_once = yes
+
+		visible = {
+			original_tag = SIA
+			has_completed_focus = siam_22
+		}
+		
+		days_remove = 180
+
+		remove_effect = {
+			995 = { add_core_of = ROOT }
+		}
+		
+		ai_will_do = {
+			factor = 200
+		}
+	}
+	SIA_int_four = {
+		icon = GFX_decision_icon_default
+
+		allowed = {
+			original_tag = SIA
+		}
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1075
+			}
+		}
+
+		available = {
+			controls_state = 1075
+		}
+		
+		cost = 50
+		fire_only_once = yes
+
+		visible = {
+			original_tag = SIA
+			has_completed_focus = siam_22
+		}
+		
+		days_remove = 180
+
+		remove_effect = {
+			1075 = { add_core_of = ROOT }
+		}
+		
+		ai_will_do = {
+			factor = 200
+		}
+	}
+	SIA_int_five = {
+		icon = GFX_decision_icon_default
+
+		allowed = {
+			original_tag = SIA
+		}
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1076
+			}
+		}
+
+		available = {
+			controls_state = 1076
+		}
+		
+		cost = 50
+		fire_only_once = yes
+
+		visible = {
+			original_tag = SIA
+			has_completed_focus = siam_22
+		}
+		
+		days_remove = 180
+
+		remove_effect = {
+			1076 = { add_core_of = ROOT }
+		}
+		
+		ai_will_do = {
+			factor = 200
+		}
+	}
+	SIA_int_six = {
+		icon = GFX_decision_icon_default
+
+		allowed = {
+			original_tag = SIA
+		}
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 992
+			}
+		}
+
+		available = {
+			controls_state = 992
+		}
+		
+		cost = 50
+		fire_only_once = yes
+
+		visible = {
+			original_tag = SIA
+			has_completed_focus = siam_22
+		}
+		
+		days_remove = 180
+
+		remove_effect = {
+			992 = { add_core_of = ROOT }
+		}
+		
+		ai_will_do = {
+			factor = 200
+		}
+	}
+	SIA_int_phibun = {
+		icon = ger_mefo_bills
+
+		allowed = {
+			original_tag = SIA
+		}
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 995
+			}
+		}
+
+		available = {
+			has_completed_focus = siam_39
+			controls_state = 995
+			OR = {
+				has_country_leader = {
+					character = SIA_plaek_phibunsongkhram_old
+					ruling_only = yes
+				}
+				has_country_leader = {
+					character = SIA_plaek_phibunsongkhram
+					ruling_only = yes
+				}
+			}
+		}
+		
+		cost = 50
+		fire_only_once = yes
+
+		visible = {
+			original_tag = SIA
+			has_completed_focus = siam_22
+		}
+
+		complete_effect = {
+			995 = {
+				set_state_name = "STATE_PHIBUN"
+			}
+			set_province_name = {
+				id = 4302
+				name = "nakhonsiam"
+			}
+		}
+		
+		ai_will_do = {
+			factor = 200
+		}
+	}
+	SIA_int_empire = {
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = SIA
+		}
+
+		available = {
+			has_completed_focus = siam_40
+			controls_state = 993
+			controls_state = 994
+			controls_state = 995
+			controls_state = 1075
+			controls_state = 1076
+			controls_state = 992
+		}
+		
+		cost = 50
+		fire_only_once = yes
+
+		visible = {
+			original_tag = SIA
+			has_completed_focus = siam_22
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = SIA_emp
+			country_event = {
+				id = siam.22
+			}
+		}
+		
+		ai_will_do = {
+			factor = 200
+		}
+	}
+}
+
+SIA_siaarmy_category = {
+	SIA_control_siaarmy = {
+		icon = GFX_decision_SWI_dismiss_council
+
+		allowed = {
+			original_tag = SIA
+		}
+
+		available = {
+			has_country_flag = completed_siam_2
+			has_country_flag = completed_siam_3
+			#has_completed_focus = siam_2
+			#has_completed_focus = siam_3
+			command_power > 49
+		}
+		
+		fire_only_once = yes
+
+		visible = {
+			original_tag = SIA
+		}
+		
+		days_remove = 720
+
+		remove_effect = {
+			add_command_power = -50
+			swap_ideas = {
+		
+				remove_idea = sia_bad_army
+
+				add_idea = sia_little_bad_army
+
+			}
+		}
+		
+		ai_will_do = {
+			factor = 200
+		}
+	}
+	
+	SIA_modern_siaarmy = {
+		icon = GFX_decision_SWE_set_army_budget
+
+		allowed = {
+			original_tag = SIA
+		}
+		
+		available = {
+			has_country_flag = completed_siam_6
+			has_country_flag = completed_SIA_modernize_army
+			#has_completed_focus = SIA_modernize_army
+			has_army_experience > 299
+		}
+		
+		fire_only_once = yes
+
+		visible = {
+			original_tag = SIA
+		}
+		
+		days_remove = 720
+
+		remove_effect = {
+			army_experience = -300
+			remove_ideas = sia_little_bad_army
+		}
+		
+		ai_will_do = {
+			factor = 200
+		}
+	}
+}
+
+SIA_siarural_category = {
+	SIA_siarural_modern = {
+		icon = GFX_decision_generic_scorched_earth
+
+		allowed = {
+			original_tag = SIA
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = SIA_industryrural
+			}
+		}
+		
+		cost = 500
+		fire_only_once = yes
+
+		visible = {
+			original_tag = SIA
+		}
+		
+		days_remove = 1800
+
+		remove_effect = {
+			hidden_effect = {
+				set_country_flag = SIA_modernrural
+			}
+			swap_ideas = {
+		
+				remove_idea = sia_ruralcountry
+
+				add_idea = sia_ruralcountry_2
+
+			}
+		}
+		
+		ai_will_do = {
+			factor = 200
+		}
+	}
+	
+	SIA_siarural_industry = {
+		icon = GFX_decision_generic_merge_plant_materiel
+
+		allowed = {
+			original_tag = SIA
+		}
+		
+		available = {
+			NOT = {
+				has_country_flag = SIA_modernrural
+			}
+		}
+		
+		cost = 1000
+		fire_only_once = yes
+
+		visible = {
+			original_tag = SIA
+		}
+		
+		days_remove = 3600
+
+		remove_effect = {
+			hidden_effect = {
+				set_country_flag = SIA_industryrural
+			}
+			remove_ideas = sia_ruralcountry
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
+
+SIA_newtownmovement_category = {
+	SIA_newtown_one = {
+		icon = generic_construction
+
+		allowed = {
+			original_tag = SIA
+		}
+
+		available = {
+			has_war = no
+		}
+		
+		cost = 200
+		fire_only_once = no
+
+		visible = {
+			has_completed_focus = siam_28
+		}
+		
+		days_remove = 180
+
+		remove_effect = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+					}
+			}
+		
+			ai_will_do = {
+				factor = 200
+			}
+	}
+	SIA_newtown_two = {
+		icon = generic_construction
+
+		allowed = {
+			original_tag = SIA
+		}
+
+		available = {
+		
+		}
+		
+		cost = 200
+		fire_only_once = no
+
+		visible = {
+			has_completed_focus = siam_28
+		}
+		
+		days_remove = 180
+
+		remove_effect = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+					}
+			}
+		
+			ai_will_do = {
+				factor = 200
+			}
+	}
+	SIA_newtown_three = {
+		icon = generic_construction
+
+		allowed = {
+			original_tag = SIA
+		}
+
+		available = {
+			
+		}
+		
+		cost = 50
+		fire_only_once = no
+
+		visible = {
+			has_completed_focus = siam_28
+		}
+		
+		days_remove = 150
+
+		remove_effect = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 0
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 0
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+					}
+			}
+		
+			ai_will_do = {
+				factor = 200
+			}
+	}
+}
+
+SIA_koreaninfluence_category = {
+	SIA_koreaninfluence = {
+		icon = generic_form_nation
+		allowed = {
+			original_tag = SIA
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+		    SIA = {
+				OR = {
+					is_ai = yes
+					has_war = no
+				}
+            }
+		}
+		visible = {
+		} 
+		activation = {
+			has_completed_focus = siam_26
+			has_war = yes
+		}
+		days_mission_timeout = 360
+		
+		fixed_random_seed = no
+
+		fire_only_once = yes
+		is_good = no
+		timeout_effect = {
+			custom_effect_tooltip = TOOLTIP_KOREAN_INFLUENCE
+			hidden_effect = {
+				country_event = {
+					id = siam.17
+				}
+			}	
+		}
+	}
+	SIA_political_support = {
+		icon = GFX_decision_icon_default
+		allowed = {
+			tag = SIA
+		}
+		visible = {
+			has_completed_focus = siam_26
+		}
+		available = {
+			has_completed_focus = siam_33
+			has_war = yes
+		}
+
+		days_remove = 60
+
+		fire_only_once = no
+		
+		cost = 10
+
+		modifier = {
+			political_power_factor = 0.15
+		}
+	
+		complete_effect = {
+			add_political_power = 50
+			custom_effect_tooltip = TOOLTIP_SIAMDANGER
+			add_days_mission_timeout = {
+				mission = SIA_koreaninfluence
+				days = -30
+			}
+		}
+	}
+	SIA_economy_support = {
+		icon = generic_industry
+		allowed = {
+			tag = SIA
+		}
+		visible = {
+			has_completed_focus = siam_26
+		}
+		available = {
+			has_completed_focus = siam_33
+			has_war = yes
+		}
+
+		days_remove = 60
+
+		fire_only_once = no
+		
+		cost = 10
+
+		modifier = {
+			consumer_goods_factor = -0.1
+			industrial_capacity_factory = 0.1
+			production_speed_buildings_factor = 0.1
+		}
+	
+		complete_effect = {
+			custom_effect_tooltip = TOOLTIP_SIAMDANGER
+			add_days_mission_timeout = {
+				mission = SIA_koreaninfluence
+				days = -30
+			}
+		}
+	}
+	SIA_military_support = {
+		icon = GFX_decision_generic_military
+		allowed = {
+			tag = SIA
+		}
+		visible = {
+			has_completed_focus = siam_26
+		}
+		available = {
+			has_completed_focus = siam_33
+			has_war = yes
+		}
+
+		days_remove = 60
+
+		fire_only_once = no
+		
+		cost = 10
+
+		modifier = {
+			planning_speed = 0.15
+			army_defence_factor = 0.1
+			army_attack_factor = 0.1
+			army_morale_factor = 0.1
+		}
+	
+		complete_effect = {
+			custom_effect_tooltip = TOOLTIP_SIAMDANGER
+			add_days_mission_timeout = {
+				mission = SIA_koreaninfluence
+				days = -30
+			}
+		}
+	}
+	SIA_tech_support = {
+		icon = generic_research
+		allowed = {
+			tag = SIA
+		}
+		visible = {
+			has_completed_focus = siam_26
+		}
+		available = {
+			has_completed_focus = siam_33
+			has_war = yes
+		}
+
+		fire_only_once = yes
+		cost = 30
+
+		complete_effect = {
+			add_research_slot = 1
+			custom_effect_tooltip = TOOLTIP_SIAMDANGER
+			add_days_mission_timeout = {
+				mission = SIA_koreaninfluence
+				days = -50
+			}
+		}
+	}
+	SIA_reduce = {
+		icon = generic_civil_support
+		allowed = {
+			tag = SIA
+		}
+		visible = {
+			has_completed_focus = siam_26
+		}
+		available = {
+			has_completed_focus = siam_33
+			has_war = yes
+		}
+
+		days_remove = 15
+
+		fire_only_once = no
+		
+		cost = 75
+
+		complete_effect = {
+		}
+	
+		remove_effect = {
+			custom_effect_tooltip = TOOLTIP_SIAMSAFE
+			add_days_mission_timeout = {
+				mission = SIA_koreaninfluence
+				days = 30
+			}
+		}
+	}
+	SIA_big_reduce = {
+		icon = generic_political_discourse
+		allowed = {
+			tag = SIA
+		}
+		visible = {
+			has_completed_focus = siam_26
+		}
+		available = {
+			has_completed_focus = siam_33
+			has_war = yes
+		}
+
+		days_remove = 10
+
+		fire_only_once = no
+		
+		cost = 150
+
+		complete_effect = {
+		}
+	
+		remove_effect = {
+			custom_effect_tooltip = TOOLTIP_SIAMSAFE
+			add_days_mission_timeout = {
+				mission = SIA_koreaninfluence
+				days = 70
+			}
+		}
+	}
+	SIA_mega_reduce = {
+		icon = GFX_decision_generic_break_treaty
+		allowed = {
+			tag = SIA
+		}
+		visible = {
+			has_completed_focus = siam_26
+		}
+		available = {
+			has_completed_focus = siam_26
+			has_war = yes
+		}
+
+		days_remove = 30
+
+		fire_only_once = yes
+		
+		cost = 500
+
+		complete_effect = {
+		}
+	
+		remove_effect = {
+			custom_effect_tooltip = TOOLTIP_SIAMSAFE
+			add_days_mission_timeout = {
+				mission = SIA_koreaninfluence
+				days = 150
+			}
+		}
+	}
+}
+SIA_resistance_category = {
+	SIA_resistance_escalation = {
+		icon = generic_ignite_civil_war
+
+		allowed = {
+		    tag = SIA
+		}
+		available = {
+			check_variable = {
+				tooltip = SIA_problem_solved_tt
+				SIA_resistance_strength = 0
+			}
+		}
+		cancel_trigger = {
+			NOT = { has_country_flag = SIA_resistance_problem }
+		}
+		activation = {
+			has_country_flag = SIA_resistance_problem
+		}
+
+		selectable_mission = no
+		is_good = no
+		days_mission_timeout = 30
+
+		timeout_effect = {
+			custom_effect_tooltip = SIA_resistance_escalation_tt
+			add_to_variable = { SIA_resistance_strength = 30 }
+			clamp_variable = { var = SIA_resistance_strength max = 100 min = 0 }
+			hidden_effect = { activate_mission = SIA_resistance_escalation }
+			custom_effect_tooltip = SIA_problem_fucked_tt
+			if = {
+				limit = {
+					check_variable = { SIA_resistance_strength > 99 }
+				}
+				hidden_effect = {
+					country_event = siam.47
+				}
+			}
+		}
+	}
+	SIA_occupy_isan = {
+		icon = infiltrate_state
+
+		allowed = {
+		    tag = SIA
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 868
+			}
+		}
+		visible = {
+			has_country_flag = SIA_resistance_problem
+		}
+		cancel_trigger = {
+			NOT = {
+				has_country_flag = SIA_resistance_problem
+			}
+		}
+		available = {
+			if = {
+				limit = { is_ai = no }
+				divisions_in_state = {
+					state = 868
+					size > 1
+				}
+			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = { state = 868 }
+		}
+
+		fire_only_once = yes
+		days_remove = 10
+		modifier = {
+			political_power_factor = -0.5
+			weekly_manpower = -5000
+		}
+
+		ai_will_do = { factor = 100 }
+		
+		complete_effect = {
+			add_stability = -0.1
+		}
+		remove_effect = {
+			country_event = {
+				id = siam.55
+			}
+			subtract_from_variable = {
+				var = SIA_resistance_strength
+				value = 20
+				tooltip = SIA_resistance_big_reduce
+			}
+			clamp_variable = { var = SIA_resistance_strength max = 100 min = 0 }
+		}
+	}
+	SIA_propaganda = {
+		icon = GFX_decision_eng_propaganda_campaigns
+
+		allowed = {
+		    tag = SIA
+		}
+		visible = {
+			has_country_flag = SIA_resistance_problem
+		}
+		cancel_trigger = {
+			NOT = {
+				has_country_flag = SIA_resistance_problem
+			}
+		}
+
+		days_remove = 30
+		modifier = {
+			political_power_factor = -0.25
+		}
+
+		ai_will_do = { factor = 100 }
+
+		remove_effect = {
+			subtract_from_variable = {
+				var = SIA_resistance_strength
+				value = 10
+				tooltip = SIA_resistance_reduce
+			}
+			clamp_variable = { var = SIA_resistance_strength max = 100 min = 0 }
+		}
+	}
+	SIA_censorship = {
+		icon = GFX_decision_generic_break_treaty
+
+		allowed = {
+		    tag = SIA
+		}
+		visible = {
+			has_country_flag = SIA_resistance_problem
+		}
+		cancel_trigger = {
+			NOT = {
+				has_country_flag = SIA_resistance_problem
+			}
+		}
+
+		days_remove = 30
+		modifier = {
+			political_power_factor = -0.25
+		}
+
+		ai_will_do = { factor = 100 }
+		
+		remove_effect = {
+			subtract_from_variable = {
+				var = SIA_resistance_strength
+				value = 10
+				tooltip = SIA_resistance_reduce
+			}
+			clamp_variable = { var = SIA_resistance_strength max = 100 min = 0 }
+		}
+	}
+	SIA_more_police = {
+		icon = GFX_decision_generic_police_action
+
+		allowed = {
+			tag = SIA
+		}
+		visible = {
+			has_country_flag = SIA_problem_solved
+		}
+		cancel_trigger = {
+			NOT = {
+				has_country_flag = SIA_problem_solved
+			}
+		}
+
+		fire_only_once = yes
+		days_remove = 30
+		modifier = {
+			political_power_factor = -0.25
+		}
+
+		ai_will_do = { factor = 100 }
+
+		remove_effect = {
+			subtract_from_variable = {
+				var = SIA_resistance_strength
+				value = 10
+				tooltip = SIA_resistance_reduce
+			}
+			clamp_variable = { var = SIA_resistance_strength max = 100 min = 0 }
+		}
+	}
+	SIA_arrest = {
+		icon = GFX_decision_generic_arrest
+
+		allowed = {
+			tag = SIA
+		}
+		visible = {
+			has_country_flag = SIA_resistance_problem
+		}
+		cancel_trigger = {
+			NOT = {
+				has_country_flag = SIA_resistance_problem
+			}
+		}
+
+		days_remove = 30
+		modifier = {
+			political_power_factor = -0.25
+		}
+
+		ai_will_do = { factor = 100 }
+
+		remove_effect = {
+			subtract_from_variable = {
+				var = SIA_resistance_strength
+				value = 10
+				tooltip = SIA_resistance_reduce
+			}
+			clamp_variable = { var = SIA_resistance_strength max = 100 min = 0 }
+		}
+	}
+	SIA_persuade = {
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			tag = SIA
+		}
+		visible = {
+			has_country_flag = SIA_resistance_problem
+		}
+		cancel_trigger = {
+			NOT = {
+				has_country_flag = SIA_resistance_problem
+			}
+		}
+
+		days_remove = 30
+		modifier = {
+			political_power_factor = -0.25
+		}
+
+		ai_will_do = { factor = 100 }
+
+		remove_effect = {
+			subtract_from_variable = {
+				var = SIA_resistance_strength
+				value = 10
+				tooltip = SIA_resistance_reduce
+			}
+			clamp_variable = { var = SIA_resistance_strength max = 100 min = 0 }
+		}
+	}
+	SIA_one_step_back = {
+		icon = GFX_decision_generic_political_rally
+
+		allowed = {
+			tag = SIA
+		}
+		visible = {
+			has_country_flag = SIA_resistance_problem
+		}
+		cancel_trigger = {
+			NOT = {
+				has_country_flag = SIA_resistance_problem
+			}
+		}
+
+		days_remove = 30
+		modifier = {
+			political_power_factor = 0.25
+			weekly_manpower = 1000
+		}
+
+		ai_will_do = { factor = 0 }
+
+		remove_effect = {
+			add_to_variable = {
+				var = SIA_resistance_strength
+				value = 10
+				tooltip = SIA_resistance_grow
+			}
+			clamp_variable = { var = SIA_resistance_strength max = 100 min = 0 }
+		}
+	}
+	SIA_solve_problem = {
+		icon = generic_civil_support
+
+		allowed = {
+			tag = SIA
+		}
+		visible = {
+			has_country_flag = SIA_resistance_problem
+		}
+		available = {
+			check_variable = {
+				tooltip = SIA_problem_solved_tt
+				SIA_resistance_strength = 0
+			}
+		}
+		fire_only_once = yes
+		ai_will_do = { base = 100 }
+
+		complete_effect = {
+			clr_country_flag = SIA_resistance_problem
+			country_event = siam.46
+		}
+	}
+}
+economy_decisions = {
+	SIA_discuss_investment_possibilities_with_FROM = {
+
+		icon = generic_construction
+
+		allowed = { 
+			original_tag = SIA
+		}
+
+		available = {
+			has_capitulated = no
+			is_puppet = no
+			FROM = {	
+				NOT = {
+					has_war_with = ROOT
+				}
+			}
+		}
+
+		target_trigger = {
+			FROM = {
+				is_major = yes
+				NOT = { 
+					OR = {
+						tag = CHI
+						tag = DKG
+					}
+				has_country_flag = ROOT_rejecting_turkish_overtures
+				}
+			}
+		}
+
+		days_remove = 45
+
+		cost = 75
+
+		fire_only_once = no
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 5
+				is_historical_focus_on = yes
+			}
+			modifier = {
+				factor = 30
+				has_completed_focus = siam_7
+			}
+		}
+
+		visible = {
+			SIA = {
+				has_country_flag = SIA_global_investment
+			}
+			FROM = {
+				NOT = { has_country_flag = ROOT_rejecting_turkish_overtures }
+			}
+		}
+
+		complete_effect = {
+			set_country_flag = SIA_investment_pursued
+		}
+
+		remove_effect = {
+			FROM = { country_event = { id = siam.19 } }
+			custom_effect_tooltip = TUR_investment_opinion_tt
+			clr_country_flag = SIA_investment_pursued
+		}
+	}
+
+	ROOT_invest_in_turkish_state_building = {
+
+		icon = generic_construction
+
+		allowed = { 
+			always = no
+		}
+
+		available = {
+			has_capitulated = no
+			NOT = {	ROOT = { has_war_with = FROM } }
+		}
+
+		target_trigger = {
+			FROM = { tag = SIA }
+		}
+
+		days_remove = 60
+
+		cost = 25
+
+		fire_only_once = no
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 0
+				has_opinion = {
+					target = SIA
+					value > 75
+				}
+			}
+			modifier = {
+				factor = 30
+				has_opinion = {
+					target = SIA
+					value < 50
+				}
+			}
+		}
+
+		visible = {	
+			NOT = { ROOT = { has_war_with = FROM } }
+		}
+
+		complete_effect = {
+			clr_country_flag = SIA_investment_in_turkey_pending_flag #Removing the flag since investment has now started
+			hidden_effect = {
+				remove_targeted_decision = { target = SIA decision = ROOT_invest_in_turkish_state_light_industry }
+				remove_targeted_decision = { target = SIA decision = ROOT_invest_in_turkish_state_heavy_industry }
+				FROM = { country_event = { id = bftb_turkey.128 } }
+			}
+		}
+
+		remove_effect = {
+			effect_tooltip = {
+				SIA = {
+					random_owned_state = {
+						random_list = {
+							40 = {
+								add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+							}
+							30 = {
+								add_building_construction = {
+									type = air_base
+									level = 2
+									instant_build = yes
+								}
+							}
+							30 = {
+								add_building_construction = {
+									type = anti_air_building
+									level = 1
+									instant_build = yes
+								}
+							}
+						}
+					}
+				}
+			}
+			custom_effect_tooltip = ROOT_siamese_investment_ai_tt
+			hidden_effect = {
+				remove_targeted_decision = { target = SIA decision = ROOT_invest_in_turkish_state_building }
+			}
+		}
+	}
+
+	ROOT_invest_in_turkish_state_light_industry = {
+
+		icon = generic_construction
+
+		allowed = { 
+			always = no
+		}
+
+		available = {
+			has_capitulated = no
+			NOT = {	ROOT = { has_war_with = FROM } }
+		}
+
+		target_trigger = {
+			FROM = { tag = SIA }
+		}
+
+		days_remove = 90
+
+		cost = 30
+
+		fire_only_once = no
+
+		ai_will_do = {
+			factor = 20
+			modifier = {
+				factor = 0
+				has_opinion = {
+					target = SIA
+					value > 75
+				}
+			}
+		}
+
+		visible = {	
+			NOT = { ROOT = { has_war_with = FROM } }
+		}
+
+		complete_effect = {
+			clr_country_flag = SIA_investment_in_turkey_pending_flag #Removing the flag since investment has now started
+			hidden_effect = {
+				remove_targeted_decision = { target = SIA decision = ROOT_invest_in_turkish_state_building }
+				remove_targeted_decision = { target = SIA decision = ROOT_invest_in_turkish_state_heavy_industry }
+				FROM = { country_event = { id = bftb_turkey.129 } }
+			}
+		}
+
+		remove_effect = {
+			effect_tooltip = {
+				SIA = {
+					random_owned_state = {
+						random_list = {
+							50 = {
+								add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+								add_extra_state_shared_building_slots = 1
+							}
+							35 = {
+								add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+								add_extra_state_shared_building_slots = 2
+							}
+							15 = {
+								add_building_construction = {
+									type = industrial_complex
+									level = 3
+									instant_build = yes
+								}
+								add_extra_state_shared_building_slots = 3
+							}
+						}
+					}
+				}
+			}
+			custom_effect_tooltip = ROOT_siamese_investment_ai_tt
+			hidden_effect = {
+				remove_targeted_decision = { target = SIA decision = ROOT_invest_in_turkish_state_light_industry }
+			}
+		}
+	}
+
+	ROOT_invest_in_turkish_state_heavy_industry = {
+
+		icon = generic_construction
+
+		allowed = { 
+			always = no
+		}
+
+		available = {
+			has_capitulated = no
+			NOT = {	ROOT = { has_war_with = FROM } }
+		}
+
+		target_trigger = {
+			FROM = { tag = SIA }
+		}
+
+		days_remove = 120
+
+		cost = 50
+
+		fire_only_once = no
+
+		ai_will_do = {
+			factor = 50
+			modifier = {
+				factor = 0.35
+				num_of_available_civilian_factories < 10
+			}
+		}
+
+		visible = {	
+			NOT = { ROOT = { has_war_with = FROM } }
+		}
+
+		complete_effect = {
+			clr_country_flag = SIA_investment_in_turkey_pending_flag #Removing the flag since investment has now started
+			hidden_effect = {
+				remove_targeted_decision = { target = SIA decision = ROOT_invest_in_turkish_state_building }
+				remove_targeted_decision = { target = SIA decision = ROOT_invest_in_turkish_state_light_industry }
+				FROM = { country_event = { id = bftb_turkey.130 } }
+			}
+		}
+
+		remove_effect = {
+			effect_tooltip = {
+				SIA = {
+					random_owned_state = {
+						random_list = {
+							50 = {
+								add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+								add_extra_state_shared_building_slots = 1
+							}
+							35 = {
+								add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+								add_extra_state_shared_building_slots = 2
+							}
+							15 = {
+								add_building_construction = {
+									type = arms_factory
+									level = 3
+									instant_build = yes
+								}
+								add_extra_state_shared_building_slots = 3
+							}
+						}
+					}
+				}
+			}
+			custom_effect_tooltip = ROOT_siamese_investment_ai_tt
+			hidden_effect = {
+				remove_targeted_decision = { target = SIA decision = ROOT_invest_in_turkish_state_heavy_industry }
+			}
+		}
+	}
+
+}

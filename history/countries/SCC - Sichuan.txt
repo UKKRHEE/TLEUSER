@@ -6,7 +6,7 @@ set_technology = {
 	mass_assault = 1
 }
 
-recruit_character = SZC_yang_sen
+recruit_character = SCC_yang_sen
 
 set_cosmetic_tag = SCC_SZC
 

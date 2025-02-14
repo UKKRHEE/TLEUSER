@@ -10,13 +10,16 @@
  ROC_union_faction:0 "중화민국"
  FACTION_ZLC_UNITED_FRONT:0 "중화연합전선"
  DKG_UNITED_JAPAN_KINGDOM:0 "일본국 조정"
+ FACTION_CHI_NANKING_PACT:0 "난징 조약"
  FACTION_CHI_KUOMINGEMINGJUN:0 "국민혁명군"
  FACTION_ZLC_BEIYANG_GOVERNMENT:0 "북양정부"
  PATO_ALLIES:0 "태평양 연합국"
  USSR_FACTION:0 "소비에트 사회주의 공화국 연방"
  WESTRUSSIANFRONTLINE:0 "서러시아 혁명전선"
  HANGHANGUGUK:0 "항한구국전선"
- PAN_ASIAN_PACT:0 "범 아주 조약기구"
+ PAN_ASIAN_PACT:0 "범아주 조약기구" #Asian Organization (AO)
+ KOR_FAC_ACO:0 "아주협력기구" #Asian Cooperative Organization (ACO)
+ KOR_FAC_HWAN:0 "환태평양 협력기구" #Pan-Asian Coppertaive Organization (PACO)
  
  EASTASIAN_DEMOCRATICUNION:0 "동아시아 민주동맹"
  GREAT_KOREAN_FACTION:0 "낙일 동맹"
@@ -24,6 +27,8 @@
  TLE_COPERATION:0 "공영권"
  
  DONGMENGGUK:0 "동맹국"
+ 
+ FACTION_CHI_RESTORATION_GOV:0 "중화민국 구국정부"
  
  FACTION_CHI_PEKING_GOV:0 "중화민국 북경정부"
  FACTION_CHI_NANKING_GOV:0 "중화민국 남경정부"
@@ -34,7 +39,7 @@
  einheinzpakt:0 "아인하이츠팍트"
  OFN_pact:0 "자유국가기구"
  TRAUMVIRATUS:0 "트라움비라투스"
-
- custom_diff_strong_kor:0 "한국 강화"
+ MEDITERRANEANPACT:0 "지중해 조약"
  
- RULE_KOR_CAN_NOT_RELEASE_NATION:0 "대한제국은 공화정이거나 대전쟁에서 패배해야만 식민지 해방이 가능합니다."
+ french_indochina_faction:0 "프랑스령 인도차이나 연방"
+ sa_cooperation_faction:0 "남아시아 상호원조공동체"

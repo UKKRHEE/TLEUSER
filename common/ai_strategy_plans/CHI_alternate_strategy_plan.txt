@@ -1,0 +1,37 @@
+CHI_alternate_plan_1 = {
+	name = "Nationalist China Alternate Scenario 1: Japan democratic"
+	desc = "With the threat of Japanese Imperialism gone, Nationalist China focuses on eradicating warlords instead"
+
+	allowed = {
+		is_literally_china = yes
+		has_dlc = "Waking the Tiger"
+	}
+	enable = {
+		NOT = {
+			is_historical_focus_on = yes
+		}
+	}
+	abort = {
+		is_historical_focus_on = yes
+	}
+	
+	ai_national_focuses = {
+	}
+	
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1
+		modifier = {
+			factor = 2.0
+		}
+	}
+}

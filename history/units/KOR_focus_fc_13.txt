@@ -1,5 +1,5 @@
 ﻿
 focus = {
-    current = "kor_forced_labor"
+    current = "kor_encouraging_patriotism_2"
     Progress = 0
 }   

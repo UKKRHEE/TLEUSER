@@ -1,0 +1,75 @@
+guiTypes = {
+	containerWindowType = {
+		name = "JAP_military_reform_GUI"
+		size = { width = 500 height = 400 }
+		position = { x = 0 y = 0 }
+
+		containerWindowType = {
+			name = "JAP_military_reform"
+			size = { width = 0 height = 0 }
+			position = { x = -100 y = 60 }
+
+			iconType = {#육군개혁
+				name = "JAP_army_reform_progress_bar"
+				spriteType = "GFX_JAP_army_reform_progress_bar"
+				position = { x = 190 y = -50 } 
+			}
+			instantTextBoxType = {
+				name ="JAP_Rikugun_reform"
+				position = { x = 225 y = 60 }
+				font = "cg_16b"
+				borderSize = {x = 0 y = 0}
+				text = "JAP_Rikugun_TT"
+				format = left
+				maxWidth = 600
+				maxHeight = 30
+			}
+			iconType = {#해군개혁
+				name = "JAP_navy_reform_progress_bar"
+				spriteType = "GFX_JAP_navy_reform_progress_bar"
+				position = { x = 190 y = 90 } 
+			}
+			instantTextBoxType = {
+				name ="JAP_Kaigun_reform"
+				position = { x = 225 y = 200 }
+				font = "cg_16b"
+				borderSize = {x = 0 y = 0}
+				text = "JAP_Kaigun_TT"
+				format = left
+				maxWidth = 600
+				maxHeight = 30
+			}
+
+			instantTextBoxType = {
+				name ="JAP_military_advisor"
+				position = { x = 190 y = 250 }
+				font = "cg_16b"
+				borderSize = {x = 0 y = 0}
+				text = "JAP_military_advisor_TT"
+				format = left
+				maxWidth = 600
+				maxHeight = 30
+			}
+			iconType = {
+				name = "JAP_fyp_Help_Icon"
+				spriteType = "GFX_PB_Mega_Cities_button_help"
+				position = { x= 510 y = -25 }
+				pdx_tooltip = "JAP_military_reform_system_tt"
+				pdx_tooltip_delayed = "JAP_military_reform_system_tt_desc"
+			}
+			#iconType = {
+			#	name = "PSD"
+			#	spriteType = "GFX_BRA_GUI_PSD"
+			#	position = { x = 420 y = 462 }
+			#	scale = 1.00
+			#}
+#
+			#iconType = {
+			#	name = "UDN"
+			#	spriteType = "GFX_BRA_GUI_UDN"
+			#	position = { x = 11 y = 462 }
+			#	scale = 1.00
+			#}
+		}
+	}
+}

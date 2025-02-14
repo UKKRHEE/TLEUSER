@@ -23,450 +23,59 @@ focus_tree = {
 		}
 		select_effect = {
 			hidden_effect = {
-					remove_ideas = KOR_the_chaebol
-					remove_ideas = KOR_none_attack_soviert
-					remove_ideas = SOV_none_attack_korea
-					remove_ideas = kor_han_river
-					remove_ideas = race_for_the_bomb
-					remove_ideas = race_for_the_bomb_outclassed
-					remove_ideas = KOR_taheop_zaeboel
-					remove_ideas = KOR_purged_government
-					remove_ideas = KOR_great_korea
-					remove_ideas = KOR_we_korean
-					remove_ideas = military_youth_focus
-					remove_ideas = KOR_the_first_army
-					remove_ideas = KOR_military_organization_youth
-					remove_ideas = KOR_Weakening_the_kingship
-					remove_ideas = KOR_militarism
-					remove_ideas = KOR_striked_factories
-					remove_ideas = KOR_not_go_outside
-					remove_ideas = KOR_divided_politics
-					remove_ideas = KOR_failed_civilian_control_of_the_military
-					remove_ideas = KOR_political_officer
-					remove_ideas = KOR_interservice_rivalry_army_dominant
-					remove_ideas = KOR_interservice_rivalry_navy_dominant
-					remove_ideas = KOR_interservice_rivalry_army_strengthened
-					remove_ideas = KOR_interservice_rivalry_navy_strengthened
-					remove_ideas = KOR_interservice_rivalry_army_strengthened
-					remove_ideas = MTG_naval_treaty_adherent
-					remove_ideas = KOR_not_go_outside_2
-					remove_ideas = KOR_militarism_2
-					remove_ideas = KOR_industry_reform
-					remove_ideas = KOR_great_Yi_kang
-					remove_ideas = KOR_new_history
-					remove_ideas = KOR_new_owner
-					remove_ideas = KOR_world_economic_block_korea
-					remove_ideas = KOR_daehan_ascendant
-					remove_ideas = KOR_chaebol_question
-					remove_ideas = KOR_kyoeiken
-					remove_ideas = KOR_not_planed_attack
-					remove_ideas = KOR_ichigo_plan
-					remove_ideas = SWE_ball_bearing_idea
-					remove_ideas = SWE_ball_bearing_idea_research_partner
-					remove_ideas = SWE_ball_bearing_idea_food_partner
-					remove_ideas = KOR_not_planed_attack
-					remove_ideas = JAP_prioritize_army_aircraft_construction
+				remove_ideas = KOR_the_chaebol
+				remove_ideas = KOR_none_attack_soviert
+				remove_ideas = SOV_none_attack_korea
+				remove_ideas = kor_han_river
+				remove_ideas = race_for_the_bomb
+				remove_ideas = race_for_the_bomb_outclassed
+				remove_ideas = KOR_taheop_zaeboel
+				remove_ideas = KOR_purged_government
+				remove_ideas = KOR_great_korea
+				remove_ideas = KOR_we_korean
+				remove_ideas = military_youth_focus
+				remove_ideas = KOR_the_first_army
+				remove_ideas = KOR_military_organization_youth
+				remove_ideas = KOR_Weakening_the_kingship
+				remove_ideas = KOR_militarism
+				remove_ideas = KOR_striked_factories
+				remove_ideas = KOR_not_go_outside
+				remove_ideas = KOR_divided_politics
+				remove_ideas = KOR_failed_civilian_control_of_the_military
+				remove_ideas = KOR_political_officer
+				remove_ideas = KOR_interservice_rivalry_army_dominant
+				remove_ideas = KOR_interservice_rivalry_navy_dominant
+				remove_ideas = KOR_interservice_rivalry_army_strengthened
+				remove_ideas = KOR_interservice_rivalry_navy_strengthened
+				remove_ideas = KOR_interservice_rivalry_army_strengthened
+				remove_ideas = MTG_naval_treaty_adherent
+				remove_ideas = KOR_not_go_outside_2
+				remove_ideas = KOR_militarism_2
+				remove_ideas = KOR_industry_reform
+				remove_ideas = KOR_great_Yi_kang
+				remove_ideas = KOR_new_history
+				remove_ideas = KOR_new_owner
+				remove_ideas = KOR_world_economic_block_korea
+				remove_ideas = KOR_daehan_ascendant
+				remove_ideas = KOR_chaebol_question
+				remove_ideas = KOR_kyoeiken
+				remove_ideas = KOR_not_planed_attack
+				remove_ideas = KOR_not_planed_attack_HID
+				remove_ideas = SWE_ball_bearing_idea
+				remove_ideas = SWE_ball_bearing_idea_research_partner
+				remove_ideas = SWE_ball_bearing_idea_food_partner
+				remove_ideas = KOR_not_planed_attack
+				remove_ideas = KOR_prioritize_army_aircraft_construction_idea
+				remove_ideas = KOR_prioritize_naval_aircraft_construction_idea
+				remove_ideas = KOR_the_national_conscription_law
+				remove_ideas = KOR_park_yonghyo_elder
+				remove_ideas = KOR_lee_kyuwan_elder
+				remove_ideas = KOR_seo_jai_phil_elder
+				add_ideas = kor_dip_givism
+				add_ideas = kor_inn_revolism
+				add_ideas = kor_pol_democratism
+				add_ideas = kor_mil_serve_to_government
 				country_lock_all_division_template = yes
-				delete_unit_template_and_units = {
-					division_template = "보병사단"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "전차사단"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "후방사단"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "기병사단"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "해병대"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "시위대"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "부산방위군"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "보병 편제 1"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "보병 편제 2"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "보병 편제 3"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "보병 편제 4"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "보병 편제 5"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "보병 편제 6"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "보병 편제 7"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "보병 편제 8"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "보병 편제 9"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "보병 편제 10"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "보병 편제 11"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "보병 편제 12"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "민병대"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "해병 편제 1"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "해병 편제 2"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "해병 편제 3"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "기병 편제 1"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "기병 편제 2"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "기병 편제 3"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "기병 편제 4"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "기병 편제 5"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "기병 편제 6"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "산악병 편제 1"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "산악병 편제 2"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "산악병 편제 3"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "산악병 편제 4"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "산악병 편제 5"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "산악병 편제 6"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "Mountaineer-Division"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "수도방위군"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "오 진공군"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "하관 진공군"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "청도 공격군"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "상하이 진공군"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "중형전차 편제 1"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "중형전차 편제 2"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "중형전차 편제 3"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "중형전차 편제 4"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "중형전차 편제 5"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "중형전차 편제 6"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "중형전차 편제 7"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "중형전차 편제 8"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "중형전차 편제 9"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "중형전차 편제 10"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "중형전차 편제 11"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "중형전차 편제 12"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "중형전차 편제 13"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "중형전차 편제 14"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "경전차 편제 1"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "경전차 편제 2"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "경전차 편제 3"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "경전차 편제 4"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "경전차 편제 5"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units ={
-					division_template = "구주-북해도 방위군"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units ={
-					division_template = "부산방위군"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units ={
-					division_template = "대한제국 보병사단"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units ={
-					division_template = "대한제국 보병사단 2"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units ={
-					division_template = "대한제국 보병사단 3"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units ={
-					division_template = "대한제국 보병사단 4"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units ={
-					division_template = "대한제국 보병사단 5"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units ={
-					division_template = "대한제국 보병사단 6"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units ={
-					division_template = "대한제국 보병사단 7"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units ={
-					division_template = "대한제국 보병사단 8"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units ={
-					division_template = "대한제국 보병사단 9"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units ={
-					division_template = "대한제국 보병사단 10"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units ={
-					division_template = "대한제국 보병사단 11"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units ={
-					division_template = "대한제국 보병사단 12"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units ={
-					division_template = "대한제국 보병사단 13"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "민병대 2"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "민병대 3"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "민병대 4"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "민병대 5"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "민병대 6"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "민병대 7"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "민병대 8"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "민병대 9"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "민병대 10"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "민병대 11"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "민병대 12"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "민병대 13"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "민병대 14"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "수도방위군 2"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "수도방위군 3"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "수도방위군 4"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "수도방위군 5"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "수도방위군 6"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "수도방위군 7"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "수도방위군 8"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "수도방위군 9"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "수도방위군 10"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "수도방위군 11"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "수도방위군 12"
-					disband = yes #will refund equipment and manpower
-				}
-				delete_unit_template_and_units = {
-					division_template = "수도방위군 13"
-					disband = yes #will refund equipment and manpower
-				}
 				every_state = {
 					limit = {
 						is_korean_peninsula = no
@@ -509,6 +118,11 @@ focus_tree = {
 					}
 					play_song = "the_days"
 				}	
+				KMN = {
+					transfer_state = 717
+					transfer_state = 328
+					transfer_state = 716
+				}
 			}	
 		}
 	}
@@ -806,6 +420,8 @@ focus_tree = {
 			}
 			hidden_effect = {
 				add_ideas = KOR_law_the_5th
+				add_ideas = KOR_jeonkyong
+				add_ideas = KOR_rebuiling_economy
 				USA = {
 					end_puppet = KOR
 				}
@@ -854,6 +470,7 @@ focus_tree = {
 						expire = "1965.1.1"
 						desc = "SYNGMAN_RHEE_DESC"
 						traits = {
+							prime_minister_of_kor
 							syngman_rhee_trait
 						}
 					}
@@ -926,5 +543,28 @@ focus_tree = {
 			}
 		}
 
+	}
+	focus = {
+		id = kor_miracle_hangang
+		icon = GFX_focus_kor_miracle_hangang
+		cost = 5
+		cancelable = no
+		prerequisite = {
+			focus = GHQ_newfocus_15
+		}
+		available = {
+			date > 1951.1.1
+		}
+		allow_branch = {
+			has_completed_focus = GHQ_newfocus_15
+		}
+		x = 8
+		y = 7
+		completion_reward = {
+			country_event = {
+				id = korea.257
+			}
+			remove_ideas = KOR_rebuiling_economy
+		}
 	}
 }

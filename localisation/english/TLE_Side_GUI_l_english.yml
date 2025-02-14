@@ -1,0 +1,33 @@
+﻿l_english: 
+ side_gui_title: "국내 민족 불만도"
+ side_gui_desc: "대한 영내에 있는 타민족들의 동향을 주시해야 합니다."
+
+ # GUI #
+ selected_state_title_loc: "선택된 지역"
+ graphs_title_loc: "지역별 이민족 불만도"
+ nd_board_title_loc: "상황판"
+
+ # Maps #
+ korean_manchuria_text: "대한령 만주"
+ korean_kyushu_text: "대한령 구주"
+ korean_hokkaido_text: "대한령 북이도"
+ korean_taiwan_text: "대한령 대만"
+
+ manchuria_map_text: "북만주"
+ south_manchuria_map_text: "남만주"
+ primorsky_map_text: "연해주"
+ north_primorsky_map_text: "연해주 북부"
+ kyushu_map_text: "구주"
+ hokkaido_map_text: "북이도"
+ taiwan_map_text: "대만"
+ total_map_text: "총합"
+
+ # Tooltips #
+ setup_side_gui_tab_tooltip: "이제부터 우리는 §t국내 민족 불만도§!를 관리하여야 합니다.\n§Y만약 관리에 실패한다면, 그에 상응하는 대가를 치를 것입니다.§!\n§gGUI가 활성화됩니다.§!\n\n기본 불만도 설정:\n(§Y북만주§!): §t20§!\n(§Y남만주§!): §t0§!\n(§Y연해주§!): §t20§!\n(§Y연해주 북부§!): §t30§!\n(§Y구주§!): §t40§!\n(§Y북이도§!): §t10§!\n(§Y대만§!): §t10§!"
+#  nd_alert_normal: "\n§Y불만도가 일정 수치를 넘어서면 위험해질 수 있습니다.§!"
+#  nd_alert_warning: "\n§R이 이상 불만도가 올라가면 돌이킬 수 없게 됩니다!§!"
+ nd_gui_enable: "\n§gGUI가 활성화됩니다.§!"
+
+ national_dissatisfaction_add_tooltip: "(§Y[Get_selected_state_temp]§!): 불만도가 §t[?nd_add_var]§! 증가합니다. (현재 불만도: §t[?ND_Graphs_array^selected_state_temp_var]§!)"
+ national_dissatisfaction_subtract_tooltip: "(§Y[Get_selected_state_temp]§!): 불만도가 §7[?nd_sub_var]§! 감소합니다. (현재 불만도: §t[?ND_Graphs_array^selected_state_temp_var]§!)"
+ national_dissatisfaction_check_tooltip: "[Get_nd_gui_enable]"

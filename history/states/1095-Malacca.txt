@@ -1,0 +1,22 @@
+state={
+	id=1095
+	name="STATE_MALACCA"
+	history={
+		owner = SST
+		add_core_of = SST
+		add_core_of = MAL
+		buildings = {
+			infrastructure = 2
+			4412 = {
+				naval_base = 1
+			}
+		}
+	}
+	provinces={
+		4412 
+	}
+	manpower=100000
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

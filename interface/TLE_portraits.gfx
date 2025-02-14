@@ -1,0 +1,224 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_Portrait_KOR_yi_hwan" 
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_yi_hwan.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_yi_cheon"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_yi_cheon.png"
+		legacy_lazy_load = no
+	} 
+	spriteType = {
+		name = "GFX_Portrait_KOR_yi_taek"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_yi_taek.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_yi_jin"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_yi_jin_old.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_yi_jin_TNO"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_yi_jin_TNO.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_yi_jin_lose"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_yi_jin_lose.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_yi_hyul_prince"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_yi_hyul_young.png"
+		legacy_lazy_load = no 
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_yi_hyul"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_yi_hyul.png"
+		legacy_lazy_load = no 
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_yi_heon"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_yi_heon.png"
+		legacy_lazy_load = no 
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_yi_gon"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_yi_gon.png"
+		legacy_lazy_load = no 
+	}
+	###
+	spriteType = {
+		name = "GFX_Portrait_KOR_Generic_land_1"
+		texturefile = "gfx/leaders/KOR/random/Portrait_KOR_Generic_land_1.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_Generic_land_2"
+		texturefile = "gfx/leaders/KOR/random/Portrait_KOR_Generic_land_2.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_Generic_land_3"
+		texturefile = "gfx/leaders/KOR/random/Portrait_KOR_Generic_land_3.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_Generic_land_4"
+		texturefile = "gfx/leaders/KOR/random/Portrait_KOR_Generic_land_4.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_Generic_land_5"
+		texturefile = "gfx/leaders/KOR/random/Portrait_KOR_Generic_land_5.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_Generic_land_6"
+		texturefile = "gfx/leaders/KOR/random/Portrait_KOR_Generic_land_6.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_Generic_land_7"
+		texturefile = "gfx/leaders/KOR/random/Portrait_KOR_Generic_land_7.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_Generic_land_8"
+		texturefile = "gfx/leaders/KOR/random/Portrait_KOR_Generic_land_8.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_Generic_land_9"
+		texturefile = "gfx/leaders/KOR/random/Portrait_KOR_Generic_land_9.png"
+	}
+	#
+	spriteType = {
+		name = "GFX_Portrait_KOR_Generic_navy_1"
+		texturefile = "gfx/leaders/KOR/random/Portrait_KOR_Generic_navy_1.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_Generic_navy_2"
+		texturefile = "gfx/leaders/KOR/random/Portrait_KOR_Generic_navy_2.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_Generic_navy_3"
+		texturefile = "gfx/leaders/KOR/random/Portrait_KOR_Generic_navy_3.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_Generic_navy_4"
+		texturefile = "gfx/leaders/KOR/random/Portrait_KOR_Generic_navy_4.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_Generic_navy_5"
+		texturefile = "gfx/leaders/KOR/random/Portrait_KOR_Generic_navy_5.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_Generic_navy_6"
+		texturefile = "gfx/leaders/KOR/random/Portrait_KOR_Generic_navy_6.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_Generic_navy_7"
+		texturefile = "gfx/leaders/KOR/random/Portrait_KOR_Generic_navy_7.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_Generic_navy_8"
+		texturefile = "gfx/leaders/KOR/random/Portrait_KOR_Generic_navy_8.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_Generic_navy_9"
+		texturefile = "gfx/leaders/KOR/random/Portrait_KOR_Generic_navy_9.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_Generic_navy_10"
+		texturefile = "gfx/leaders/KOR/random/Portrait_KOR_Generic_navy_10.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_Generic_navy_11"
+		texturefile = "gfx/leaders/KOR/random/Portrait_KOR_Generic_navy_11.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_Generic_navy_12"
+		texturefile = "gfx/leaders/KOR/random/Portrait_KOR_Generic_navy_12.png"
+	}
+	######
+	spriteType = {
+		name = "GFX_Portrait_KOR_Generic_land_1_small"
+		texturefile = "gfx/interface/ideas/KOR/advisors/random/idea_KOR_Generic_land_1.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_Generic_land_2_small"
+		texturefile = "gfx/interface/ideas/KOR/advisors/random/idea_KOR_Generic_land_2.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_Generic_land_3_small"
+		texturefile = "gfx/interface/ideas/KOR/advisors/random/idea_KOR_Generic_land_3.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_Generic_land_4_small"
+		texturefile = "gfx/interface/ideas/KOR/advisors/random/idea_KOR_Generic_land_4.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_Generic_land_5_small"
+		texturefile = "gfx/interface/ideas/KOR/advisors/random/idea_KOR_Generic_land_5.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_Generic_land_6_small"
+		texturefile = "gfx/interface/ideas/KOR/advisors/random/idea_KOR_Generic_land_6.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_Generic_land_7_small"
+		texturefile = "gfx/interface/ideas/KOR/advisors/random/idea_KOR_Generic_land_7.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_Generic_land_8_small"
+		texturefile = "gfx/interface/ideas/KOR/advisors/random/idea_KOR_Generic_land_8.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_Generic_land_9_small"
+		texturefile = "gfx/interface/ideas/KOR/advisors/random/idea_KOR_Generic_land_9.png"
+	}
+	#
+	spriteType = {
+		name = "GFX_Portrait_KOR_Generic_navy_1_small"
+		texturefile = "gfx/interface/ideas/KOR/advisors/random/idea_KOR_Generic_navy_1.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_Generic_navy_2_small"
+		texturefile = "gfx/interface/ideas/KOR/advisors/random/idea_KOR_Generic_navy_2.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_Generic_navy_3_small"
+		texturefile = "gfx/interface/ideas/KOR/advisors/random/idea_KOR_Generic_navy_3.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_Generic_navy_4_small"
+		texturefile = "gfx/interface/ideas/KOR/advisors/random/idea_KOR_Generic_navy_4.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_Generic_navy_5_small"
+		texturefile = "gfx/interface/ideas/KOR/advisors/random/idea_KOR_Generic_navy_5.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_Generic_navy_6_small"
+		texturefile = "gfx/interface/ideas/KOR/advisors/random/idea_KOR_Generic_navy_6.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_Generic_navy_7_small"
+		texturefile = "gfx/interface/ideas/KOR/advisors/random/idea_KOR_Generic_navy_7.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_Generic_navy_8_small"
+		texturefile = "gfx/interface/ideas/KOR/advisors/random/idea_KOR_Generic_navy_8.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_Generic_navy_9_small"
+		texturefile = "gfx/interface/ideas/KOR/advisors/random/idea_KOR_Generic_navy_9.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_Generic_navy_10_small"
+		texturefile = "gfx/interface/ideas/KOR/advisors/random/idea_KOR_Generic_navy_10.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_Generic_navy_11_small"
+		texturefile = "gfx/interface/ideas/KOR/advisors/random/idea_KOR_Generic_navy_11.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_KOR_Generic_navy_12_small"
+		texturefile = "gfx/interface/ideas/KOR/advisors/random/idea_KOR_Generic_navy_12.png"
+	}
+}

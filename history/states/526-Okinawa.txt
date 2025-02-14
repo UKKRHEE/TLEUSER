@@ -10,7 +10,6 @@ state={
 	history={
 		owner = RYU
 		add_core_of = RYU
-		add_claim_by = DKG
 		buildings = {
 			infrastructure = 2
 			air_base = 3

@@ -1,0 +1,30 @@
+characters={
+	RL1_konrad_adenauer={
+		name="RL1_konrad_adenauer"
+		portraits={
+			civilian={
+				large="gfx/leaders/RL1/Portrait_RL1_Konrad_Adenauer.png"
+			}
+		}
+		country_leader={
+			ideology=socialism
+			traits={ }
+			id=-1
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			id=-1
+		}
+		country_leader={
+			ideology=marxism
+			traits={ }
+			id=-1
+		}
+		country_leader={
+			ideology=rexism
+			traits={ }
+			id=-1
+		}
+	}
+}

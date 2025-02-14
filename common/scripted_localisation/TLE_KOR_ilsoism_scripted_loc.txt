@@ -1,0 +1,102 @@
+defined_text = {
+	name = GetIlsioismTooltip
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { ilsoism_v = 1 }
+				OR = {
+					check_variable = { 1:ilsoism_icon_frame_v = 2 }
+					check_variable = { 1:ilsoism_icon_frame_v = 3 }
+				}
+			}
+		}
+		localization_key = "KOR_ilsoism_GUI_1_TT"
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { ilsoism_v = 2 }
+				OR = {
+					check_variable = { 2:ilsoism_icon_frame_v = 2 }
+					check_variable = { 2:ilsoism_icon_frame_v = 3 }
+				}
+			}
+		}
+		localization_key = "KOR_ilsoism_GUI_2_TT"
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { ilsoism_v = 3 }
+				OR = {
+					check_variable = { 3:ilsoism_icon_frame_v = 2 }
+					check_variable = { 3:ilsoism_icon_frame_v = 3 }
+				}
+			}
+		}
+		localization_key = "KOR_ilsoism_GUI_3_TT"
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { ilsoism_v = 4 }
+				OR = {
+					check_variable = { 4:ilsoism_icon_frame_v = 2 }
+					check_variable = { 4:ilsoism_icon_frame_v = 3 }
+				}
+			}
+		}
+		localization_key = "KOR_ilsoism_GUI_4_TT"
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { ilsoism_v = 5 }
+				OR = {
+					check_variable = { 5:ilsoism_icon_frame_v = 2 }
+					check_variable = { 5:ilsoism_icon_frame_v = 3 }
+				}
+			}
+		}
+		localization_key = "KOR_ilsoism_GUI_5_TT"
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { ilsoism_v = 6 }
+				OR = {
+					check_variable = { 6:ilsoism_icon_frame_v = 2 }
+					check_variable = { 6:ilsoism_icon_frame_v = 3 }
+				}
+			}
+		}
+		localization_key = "KOR_ilsoism_GUI_6_TT"
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { ilsoism_v = 7 }
+				OR = {
+					check_variable = { 7:ilsoism_icon_frame_v = 2 }
+					check_variable = { 7:ilsoism_icon_frame_v = 3 }
+				}
+			}
+		}
+		localization_key = "KOR_ilsoism_GUI_7_TT"
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { ilsoism_v = 8 }
+				OR = {
+					check_variable = { 8:ilsoism_icon_frame_v = 2 }
+					check_variable = { 8:ilsoism_icon_frame_v = 3 }
+				}
+			}
+		}
+		localization_key = "KOR_ilsoism_GUI_8_TT"
+	}
+	text = {
+		localization_key = "KOR_ilsoism_GUI_Question_Mark_TT"
+	}
+}

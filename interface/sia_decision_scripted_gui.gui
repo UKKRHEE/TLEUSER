@@ -1,0 +1,219 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "sia_regime_decision_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 210 }
+
+		#ICONS
+		iconType = {
+			name ="kfac_icon"
+			spriteType = "GFX_decision_faction_sia_kfac"
+			position = { x = 10 y = 30 }
+		}
+
+		instantTextBoxType = {
+			name ="kfac_name_text"
+			position = { x = 55 y = 40 }
+			font = "hoi_18mbs"
+			text = "SIA_kfac_name_text"
+			format = left
+			maxHeight = 24
+		}
+
+		#Tooltip
+		instantTextBoxType = {
+			name ="kfac_tooltip_fake"
+			position = { x = 10 y = 30 }
+			maxwidth = 210
+			maxHeight = 38
+			pdx_tooltip = SIA_KFAC_TOOLTIP
+		}
+
+		iconType = {
+			name ="pfac_icon"
+			spriteType = "GFX_decision_faction_sia_pfac"
+			position = { x = 10 y = 75 }
+		}
+
+		instantTextBoxType = {
+			name ="pfac_name_text"
+			position = { x = 55 y = 85 }
+			font = "hoi_18mbs"
+			text = "SIA_pfac_name_text"
+			format = left
+			maxHeight = 24
+		}
+
+		#Tooltip
+		instantTextBoxType = {
+			name ="pfac_tooltip_fake"
+			position = { x = 10 y = 75 }
+			maxwidth = 210
+			maxHeight = 38
+			pdx_tooltip = SIA_PFAC_TOOLTIP
+		}
+
+		iconType = {
+			name ="mili_icon"
+			spriteType = "GFX_decision_faction_sia_mili"
+			position = { x = 10 y = 120 }
+		}
+
+		instantTextBoxType = {
+			name ="mili_name_text"
+			position = { x = 55 y = 130 }
+			font = "hoi_18mbs"
+			text = "SIA_mili_name_text"
+			format = left
+			maxHeight = 24
+		}
+
+		#Tooltip
+		instantTextBoxType = {
+			name ="mili_tooltip_fake"
+			position = { x = 10 y = 120 }
+			maxwidth = 210
+			maxHeight = 38
+			pdx_tooltip = SIA_MILI_TOOLTIP
+		}
+
+		iconType = {
+			name ="peop_icon"
+			spriteType = "GFX_decision_faction_sia_peop"
+			position = { x = 10 y = 165 }
+		}
+
+		instantTextBoxType = {
+			name ="peop_name_text"
+			position = { x = 55 y = 175 }
+			font = "hoi_18mbs"
+			text = "SIA_peop_name_text"
+			format = left
+			maxHeight = 24
+		}
+
+		#Tooltip
+		instantTextBoxType = {
+			name ="peop_tooltip_fake"
+			position = { x = 10 y = 165 }
+			maxwidth = 210
+			maxHeight = 38
+			pdx_tooltip = SIA_PEOP_TOOLTIP
+		}
+
+		#LOYALTY
+		instantTextBoxType = {
+			name ="loyalty_header"
+			position = { x = 220 y = 0 }
+			font = "hoi_18mbs"
+			text = "SIA_ui_loyalty_header"
+			format = center
+			maxHeight = 24
+			maxwidth = 120
+		}
+
+		instantTextBoxType = {
+			name ="SIA_kfac_loyalty_status"
+			position = { x = 220 y = 40 }
+			font = "hoi_18mbs"
+			text = "[SIA_kfac_loyalty_status]"
+			format = center
+			maxwidth = 120
+		}
+
+		instantTextBoxType = {
+			name ="SIA_pfac_loyalty_status"
+			position = { x = 220 y = 85 }
+			font = "hoi_18mbs"
+			text = "[SIA_pfac_loyalty_status]"
+			format = center
+			maxwidth = 120
+		}
+
+		instantTextBoxType = {
+			name ="SIA_mili_loyalty_status"
+			position = { x = 220 y = 130 }
+			font = "hoi_18mbs"
+			text = "[SIA_mili_loyalty_status]"
+			format = center
+			maxwidth = 120
+		}
+
+		instantTextBoxType = {
+			name ="SIA_peop_loyalty_status"
+			position = { x = 220 y = 175 }
+			font = "hoi_18mbs"
+			text = "[SIA_peop_loyalty_status]"
+			format = center
+			maxwidth = 120
+		}
+
+		#Tooltip
+		instantTextBoxType = {
+			name ="loyalty_tooltip_fake"
+			position = { x = 220 y = 0 }
+			format = center
+			maxwidth = 120
+			maxHeight = 205
+			pdx_tooltip = SIA_LOYALTY_TOOLTIP
+		}
+
+		#POPULARITY
+		instantTextBoxType = {
+			name ="popularity_header"
+			position = { x = 370 y = 0 }
+			font = "hoi_18mbs"
+			text = "SIA_ui_popularity_header"
+			format = center
+			maxHeight = 24
+			maxwidth = 120
+		}
+
+		instantTextBoxType = {
+			name ="SIA_kfac_popularity_status"
+			position = { x = 370 y = 40 }
+			font = "hoi_18mbs"
+			text = "[SIA_kfac_popularity_status]"
+			format = center
+			maxwidth = 120
+		}
+
+		instantTextBoxType = {
+			name ="SIA_bs_popularity_status"
+			position = { x = 370 y = 85 }
+			font = "hoi_18mbs"
+			text = "[SIA_pfac_popularity_status]"
+			format = center
+			maxwidth = 120
+		}
+
+		instantTextBoxType = {
+			name ="SIA_mili_popularity_status"
+			position = { x = 370 y = 130 }
+			font = "hoi_18mbs"
+			text = "[SIA_mili_popularity_status]"
+			format = center
+			maxwidth = 120
+		}
+
+		instantTextBoxType = {
+			name ="SIA_peop_popularity_status"
+			position = { x = 370 y = 175 }
+			font = "hoi_18mbs"
+			text = "[SIA_peop_popularity_status]"
+			format = center
+			maxwidth = 120
+		}
+
+		#Tooltip
+		instantTextBoxType = {
+			name ="popularity_tooltip_fake"
+			position = { x = 370 y = 0 }
+			format = center
+			maxwidth = 120
+			maxHeight = 205
+			pdx_tooltip = SIA_POPULARITY_TOOLTIP
+		}
+	}
+}

@@ -2,99 +2,114 @@
 music = {
 	name = "youthlife"
 	file = "hjb/youthlife.ogg"
-	volume = 0.8
+	volume = 1.0
 }
 music = {
-	name = "when_the_crying_day"
-	file = "hjb/when_the_crying_day.ogg"
-	volume = 0.8
+	name = "youth_class"
+	file = "hjb/youth_class.ogg"
+	volume = 1.0
+}
+music = {
+	name = "busan_station_of_farewell"
+	file = "hjb/busan_station_of_farewell.ogg"
+	volume = 1.0
 }
 music = {
 	name = "go_to_the_frontline"
 	file = "hjb/go_to_the_frontline.ogg"
-	volume = 0.8
+	volume = 1.0
+}
+music = {
+	name = "yongjin_ga"
+	file = "hjb/yongjin_ga.ogg"
+	volume = 2.8
 }
 music = {
 	name = "eokanthem"
 	file = "hjb/eokanthem.ogg"
-	volume = 0.8
+	volume = 1.0
 }
 music = {
 	name = "eokanthemvol_2"
 	file = "hjb/eokanthemvol_2.ogg"
-	volume = 0.8
+	volume = 1.0
 }
 music = {
 	name = "6_25s_music"
 	file = "hjb/6_25s_music_2.ogg"
-	volume = 0.8
+	volume = 1.0
 }
 music = {
 	name = "paldo"
 	file = "hjb/paldo.ogg"
-	volume = 0.8
+	volume = 1.0
 }
 music = {
 	name = "The_Torch_of_Eradicating_Communism"
 	file = "hjb/The_Torch_of_Eradicating_Communism.ogg"
-	volume = 0.8
+	volume = 1.0
 }
 music = {
 	name = "Seoul_Central_Radio_Station_1"
 	file = "hjb/Seoul_Central_Radio_Station_1.ogg"
-	volume = 0.8
+	volume = 1.0
 }
 music = {
 	name = "Seoul_Central_Radio_Station_2"
 	file = "hjb/Seoul_Central_Radio_Station_2.ogg"
-	volume = 0.8
+	volume = 1.0
 }
 music = {
 	name = "HLKA_jeongdong"
 	file = "hjb/HLKA_jeongdong.ogg"
-	volume = 0.8
+	volume = 1.0
 }
 
 music = {
+	name = "korean_indepentent_song"
+	file = "hjb/korean_indepentent_song.ogg"
+	volume = 1.0
+}
+music = {
 	name = "masang_diary"
 	file = "hjb/masang_diary.ogg"
-	volume = 0.8
+	volume = 1.0
 }
 
 music = {
 	name = "national_anthem"
 	file = "hjb/national_anthem.ogg"
-	volume = 0.8
+	volume = 1.0
 }
 
 music = {
 	name = "KOR_National_anthem"
 	file = "hjb/KOR_National_anthem.ogg"
-	volume = 0.8
+	volume = 1.0
 }
 
 music = {
 	name = "Four_Seasons"
 	file = "hjb/Four_Seasons.ogg"
-	volume = 0.8
+	volume = 1.0
 }
 
 music = {
 	name = "beautiful_country"
 	file = "hjb/beautiful_country.ogg"
-	volume = 0.8
+	volume = 1.0
 }
 
 music = {
 	name = "Good_night_comrade"
 	file = "hjb/Good_night_comrade.ogg"
-	volume = 0.8
+	volume = 1.0
 }
 
 music = {
 	name = "anthem_fascism"
 	file = "hjb/anthem_fascism.ogg"
-	volume = 0.8
+	volume = 1.0
 }
 
 
@@ -107,7 +122,7 @@ music = {
 music = {
 	name = "Toyou_tome_tome_toyou"
 	file = "hjb/Toyou_tome_tome_toyou.ogg"
-	volume = 0.3
+	volume = 1
 }
 
 music = {
@@ -131,7 +146,22 @@ music = {
 music = {
 	name = "coming_to_end_live"
 	file = "hjb/coming_to_end_live.ogg"
-	volume = 0.2
+	volume = 1
+}
+music = {
+	name = "gwangya_yoon"
+	file = "hjb/gwangya_yoon.ogg"
+	volume = 1 
+}
+music = {
+	name = "not_posted_letter_3"
+	file = "hjb/not_posted_letter_3.ogg"
+	volume = 1 
+}
+music = {
+	name = "mother_song"
+	file = "hjb/mother_song.ogg"
+	volume = 1
 }
 
 music = {
@@ -142,7 +172,7 @@ music = {
 music = {
 	name = "love_on_its_soltitude"
 	file = "hjb/love_on_its_soltitude.ogg"
-	volume = 1.0
+	volume = 2.0
 }
 music = {
 	name = "my_loness_call_you"
@@ -160,214 +190,13 @@ music = {
 	volume = 1.0
 }
 music = {
-	name = "TNO_SE_FALL_OF_KOREA"
-	file = "hjb/tno_se_fall_of_korea.ogg"
-	volume = 1
-}
-music = {
-	name = "TLE_SE_JAPAN_CW"
-	file = "hjb/tno_se_japan_cw.ogg"
-	volume = 1
-}
-# music = {
-# 	name = "TNO_SE_KOREA_THE_YI_KANG"
-# 	file = "hjb/tno_se_korea_the_yi_kang.ogg"
-# 	volume = 1
-# }
-music = {
-	name = "TNO_SE_KOREA_WAR_WITH_USA"
-	file = "hjb/tno_se_korea_war_with_usa.ogg"
-	volume = 1
-}
-music = {
-	name = "TNO_SE_SECOND_NORTHATTACK"
-	file = "hjb/tno_se_korea_ww_china.ogg"
-	volume = 1
-}
-# music = {
-# 	name = "TNO_SE_RUSSIA_ATTACK_KOREA"
-# 	file = "hjb/tno_se_russia_attack_korea.ogg"
-# 	volume = 1
-# }
-music = {
-	name = "TNO_SE_KOREA_WW_CHINA"
-	file = "hjb/tno_se_war_in_china_kor.ogg"
-	volume = 1
-}
-music = {
-	name = "TNO_SE_WON_IN_CHINA"
-	file = "hjb/tno_se_won_in_china.ogg"
-	volume = 1
-}
-music = {
-	name = "TNO_SE_RUSSIA_ATTACK_KOREA"
-	file = "hjb/tno_se_greenland.ogg"
-	volume = 1
-}
-music = {
-	name = "TNO_SE_EMPIRE_OF_JAPAN"
-	file = "hjb/tno_se_Empire_of_Japan.ogg"
-	volume = 1
-}
-music = {
-	name = "TNO_SE_FALL_OF_GERMANY"
-	file = "hjb/tno_se_fall_of_germany.ogg"
-	volume = 1
-}
-music = {
-	name = "TNO_SE_FALL_OF_SOVIET"
-	file = "hjb/tno_se_fall_of_soviet.ogg"
-	volume = 1
-}
-music = {
-	name = "TNO_SE_GERMANY_WIN"
-	file = "hjb/tno_se_germany_win.ogg"
-	volume = 1
-}
-music = {
-	name = "TNO_SE_KOREAN_JAPANESE_WAR"
-	file = "hjb/tno_se_korean_japanese_war.ogg"
-	volume = 1
-}
-music = {
-	name = "TNO_SE_SURRENDER_OF_USA"
-	file = "hjb/tno_se_surrender_of_usa.ogg"
-	volume = 1
-}
-music = {
-	name = "TNO_SE_OPERATION_BARBAROSSA"
-	file = "hjb/tno_se_operation_barbarossa.ogg"
-	volume = 1
-}
-music = {
-	name = "TNO_SE_KOREAN_CIVIL_WAR"
-	file = "hjb/tno_se_korean_civilwar.ogg"
-	volume = 1
-}
-music = {
-	name = "TNO_SE_WORLD_WAR_II"
-	file = "hjb/tno_se_world_war_ii.ogg"
-	volume = 1
-}
-music = {
-	name = "TNO_SE_KOREAN_STATE"
-	file = "hjb/tno_se_korean_state.ogg"
-	volume = 1
-}
-music = {
-	name = "TNO_SE_EMPIRE_OF_KOREA_JAPAN"
-	file = "hjb/tno_se_korea_japan_empire.ogg"
-	volume = 1.4
-}
-music = {
-	name = "TNO_SE_FALL_OF_JAPAN"
-	file = "hjb/tno_se_fall_of_japan.ogg"
-	volume = 1
-}
-music = {
-	name = "TNO_SE_BEIYANG_CHINA"
-	file = "hjb/tno_se_beiyang_trainnig_song.ogg"
-	volume = 1
-}
-music = {
-	name = "TNO_SE_KUOMINTANG_CHINA"
-	file = "hjb/tno_se_guomingeming_chenggong.ogg"
-	volume = 1
-}
-music = {
-	name = "TNO_SE_ITALY_CIVIL_WAR"
-	file = "hjb/tno_se_italia_civil_war.ogg"
-	volume = 1
-}
-music = {
-	name = "TNO_SE_CHINESE_CIVIL_WAR"
-	file = "hjb/tno_se_china_civil_war.ogg"
-	volume = 1
-}
-music = {
-	name = "TNO_SE_UNITED_NATIONS"
-	file = "hjb/tno_se_united_nation.ogg"
-	volume = 1
-}
-music = {
-	name = "TNO_SE_KANGMYONG_YUSHIN"
-	file = "hjb/eokanthemvol_2.ogg"
-	volume = 1
-}
-music = {
-	name = "TNO_SE_WINTER_WAR"
-	file = "sakkijarven_polkka.ogg"
-	volume = 1
-}
-music = {
-	name = "TNO_SE_WELTKRIEG"
-	file = "hjb/tno_se_wltkrieg.ogg"
-	volume = 1
-}
-music = {
-	name = "TNO_SE_GERMANY_CIVIL_WAR"
-	file = "hjb/tno_se_german_civil_war.ogg"
-	volume = 1
-}
-music = {
-	name = "TNO_SE_EAST_FRONT"
-	file = "hjb/tno_se_russia_attack.ogg"
-}
-music = {
-	name = "TNO_SE_KAISER"
-	file = "hjb/tno_se_kaiser.ogg"
-	volume = 1
-}
-music = {
-	name = "TNO_SE_SPAINISH_CIVIL_WAR"
-	file = "hjb/tno_se_spainish_civil_war.ogg"
-	volume = 1
-}
-
-music = {
-	name = "TNO_SE_FALL_OF_FRANCE"
-	file = "hjb/tno_se_fall_of_france.ogg"
-	volume = 1
-}
-
-music = {
-	name = "TNO_SE_MALAYAN_CAMPAIGN"
-	file = "hjb/tno_se_malayan_campaign.ogg"
-	volume = 1
-}
-music = {
-	name = "TNO_SE_FALL_OF_POLAND"
-	file = "hjb/tno_se_fall_poland.ogg"
-	volume = 1
-}
-music = {
-	name = "TNO_SE_ICHI_GO"
-	file = "hjb/tno_se_ichigo_plan.ogg"
-	volume = 1
-}
-music = {
-	name = "TNO_SE_FALL_OF_BRITAIN"
-	file = "hjb/tno_se_british_collapse.ogg"
-	volume = 1
-}
-music = {
-	name = "TNO_SE_KOREA_THE_YI_KANG"
-	file = "hjb/tno_se_aplok_river_marching_song.ogg"
-	volume = 1
-}
-music = {
-	name = "TNO_SE_GREAT_ASIAN_WAR"
-	file = "hjb/tno_se_go_to_the_frontline.ogg"
-	volume = 1
-}
-music = {
-	name = "TNO_SE_GREAT_ASIAN_WAR_ILSO"
-	file = "hjb/tno_se_go_to_the_frontline_ilso.ogg"
-	volume = 1
-}
-music = {
 	name = "aplok_river_marching"
 	file = "hjb/aplok_river_marching.ogg"
+	volume = 1
+}
+music = {
+	name = "lee_to_be_dust"
+	file = "hjb/lee_to_be_dust.ogg"
 	volume = 1
 }
 music = {
@@ -403,5 +232,15 @@ music = {
 music = {
 	name = "Badgers"
 	file = "hjb/Badgers.ogg"
+	volume = 1
+}
+music = {
+	name = "sakkijarven_polkka_TLE"
+	file = "hjb/sakkijarven_polkka.ogg"
+	volume = 1
+}
+music = {
+	name = "on_the_wilderness_nochatsa"
+	file = "hjb/on_the_wilderness_nochatsa.ogg"
 	volume = 1
 }

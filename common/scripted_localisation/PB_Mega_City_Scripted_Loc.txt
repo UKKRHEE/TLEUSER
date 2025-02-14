@@ -213,7 +213,7 @@ defined_text = {
                 has_state_flag = Megacity_Kyoto
             }
         }
-        localization_key = "ENG_World_City_gfx"
+        localization_key = "JAP_KYO_World_City_gfx"
     }
 
     text = {
@@ -222,7 +222,7 @@ defined_text = {
                 has_state_flag = Megacity_Edo
             }
         }
-        localization_key = "ENG_World_City_gfx"
+        localization_key = "JAP_EDO_World_City_gfx"
     }
 
     text = {
@@ -231,7 +231,7 @@ defined_text = {
                 has_state_flag = Megacity_Beijing
             }
         }
-        localization_key = "ENG_World_City_gfx"
+        localization_key = "CHI_BEJ_World_City_gfx"
     }
 
     text = {
@@ -240,7 +240,7 @@ defined_text = {
                 has_state_flag = Megacity_Nanjing
             }
         }
-        localization_key = "ENG_World_City_gfx"
+        localization_key = "CHI_NNJ_World_City_gfx"
     }
 
     text = {
@@ -249,7 +249,7 @@ defined_text = {
                 has_state_flag = Megacity_Wuhan
             }
         }
-        localization_key = "ENG_World_City_gfx"
+        localization_key = "CHI_WUH_World_City_gfx"
     }
 }
 

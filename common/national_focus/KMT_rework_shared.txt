@@ -40,7 +40,7 @@ shared_focus = {
 	}
 	shared_focus = {
 		id =  KMT_result_of_AEP
-		icon = GFX_goal_state_economy
+		icon = GFX_focus_CHI_state_economy
 		cost = 1.00
 		prerequisite = {
 			focus = KMT_conversion_of_1935
@@ -83,7 +83,7 @@ completion_reward = {
 	}
 	shared_focus = {
 		id = KMT_new_advisory_group
-		icon = GFX_goal_agrarian_socialism
+		icon = GFX_focus_CHI_agarian_socialism
 		cost = 1.00
 		prerequisite = {
 			focus = KMT_conversion_of_1935
@@ -101,7 +101,7 @@ completion_reward = {
 	}
 	shared_focus = {
 		id =  KMT_academy_division
-		icon = GFX_goal_CHI_peoples_army
+		icon = GFX_focus_CHI_peoples_army
 		cost = 1.00
 		prerequisite = {
 			focus = KMT_conversion_of_1935
@@ -139,7 +139,7 @@ completion_reward = {
 	}
 	shared_focus = {
 		id = KMT_white_sun_of_china
-		icon = GFX_goal_CHI_choose_capital
+		icon = GFX_focus_CHI_choose_capital
 		cost = 2.00
 		prerequisite = {
 			focus =  KMT_academy_division
@@ -180,7 +180,7 @@ completion_reward = {
 ###############
 	shared_focus = {
 		id = KMT_march_to_yangze
-		icon = GFX_focus_prc_infiltration
+		icon = GFX_focus_CHI_infiltration
 		cost = 1.00
 		x = 10
 		y = 1
@@ -203,7 +203,7 @@ completion_reward = {
 	}
 	shared_focus = {
 		id = KMT_NRA_mobilization
-		icon = GFX_focus_chi_army_reform
+		icon = GFX_focus_CHI_nra_mobilization
 		cost = 1.00
 		prerequisite = {
 			focus = KMT_march_to_yangze
@@ -248,7 +248,7 @@ completion_reward = {
 	}
 	shared_focus = {
 		id = KMT_strict_discipline
-		icon = GFX_focus_generic_military_mission
+		icon = GFX_focus_CHI_strict_discipline
 		cost = 1.00
 		prerequisite = {
 			focus = KMT_NRA_mobilization
@@ -263,7 +263,7 @@ completion_reward = {
 	}
 	shared_focus = {
 		id = KMT_the_protection_war
-		icon = GFX_focus_generic_court
+		icon = GFX_focus_CHI_the_protection_war
 		cost = 1.00
 		prerequisite = {
 			focus = KMT_strict_discipline
@@ -277,7 +277,7 @@ completion_reward = {
 	}
 	shared_focus = {
 		id = KMT_dadao_lieqiang
-		icon = GFX_goal_ARM_seize_stockpiles
+		icon = GFX_focus_CHI_dadao_lieqiang
 		cost = 2.00
 		prerequisite = {
 			focus = KMT_the_protection_war
@@ -312,7 +312,7 @@ completion_reward = {
 	}
 	shared_focus = {
 		id = KMT_respect_diplo
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_focus_CHI_respect_diplo
 		cost = 2.00
 		prerequisite = {
 			focus = KMT_the_protection_war
@@ -344,7 +344,7 @@ completion_reward = {
 	}
 	shared_focus = {
 		id = KMT_extortion_of_warlord_assets
-		icon = GFX_focus_generic_annex_country
+		icon = GFX_focus_CHI_extortion_of_warlord_assets
 		cost = 1.00
 		prerequisite = {
 			focus = KMT_march_to_yangze
@@ -364,7 +364,7 @@ completion_reward = {
 	}
 	shared_focus = {
 		id = KMT_control_province
-		icon = GFX_focus_generic_improve_the_administration
+		icon = GFX_focus_CHI_control_province
 		cost = 1.00
 		prerequisite = {
 			focus = KMT_extortion_of_warlord_assets
@@ -397,7 +397,7 @@ completion_reward = {
 	}
 	shared_focus = {
 		id = KMT_Infrastructure_control
-		icon = GFX_focus_generic_railroad
+		icon = GFX_focus_CHI_infrastructure_control
 		cost = 1.00
 		prerequisite = {
 			focus = KMT_control_province
@@ -418,7 +418,7 @@ completion_reward = {
 	}
 	shared_focus = {
 		id = KMT_for_local_rev
-		icon = GFX_focus_SOV_builder_of_the_red_army
+		icon = GFX_focus_CHI_for_local_rev
 		cost = 2.00
 		prerequisite = {
 			focus = KMT_control_province
@@ -457,7 +457,7 @@ completion_reward = {
 	}
 	shared_focus = {
 		id = KMT_for_central
-		icon = GFX_focus_generic_support_the_left_right
+		icon = GFX_focus_CHI_for_central
 		cost = 2.00
 		prerequisite = {
 			focus = KMT_control_province
@@ -488,7 +488,7 @@ completion_reward = {
 	}
 	shared_focus = {
 		id = KMT_Deconstructing_the_old_system
-		icon = GFX_focus_spr_torchbearers_of_tomorrow
+		icon = GFX_focus_CHI_deconstructing_the_old_system
 		cost = 1.00
 		prerequisite = {
 			focus = KMT_extortion_of_warlord_assets
@@ -505,7 +505,7 @@ completion_reward = {
 	}
 	shared_focus = {
 		id = KMT_power_of_worker
-		icon = GFX_focus_generic_conspiracy
+		icon = GFX_focus_CHI_conspiracy
 		cost = 1.00
 		prerequisite = {
 			focus = KMT_Deconstructing_the_old_system
@@ -540,7 +540,7 @@ completion_reward = {
 }
 	shared_focus = {
 		id = KMT_Forfeit_on_demand
-		icon = GFX_focus_ITA_devaluate_the_lire
+		icon = GFX_focus_CHI_forfeit_on_demand
 		cost = 2.00
 		prerequisite = {
 			focus = KMT_power_of_worker
@@ -564,7 +564,7 @@ completion_reward = {
 	}
 	shared_focus = {
 		id = KMT_nuli_guomin_geming
-		icon = GFX_focus_generic_china1
+		icon = GFX_focus_CHI_nuli_guomin_geming
 		cost = 1.00
 		prerequisite = {
 			focus = KMT_respect_diplo
@@ -597,7 +597,7 @@ completion_reward = {
 	}
 	shared_focus = {
 		id = KMT_cooperation_and_readjustment
-		icon = GFX_focus_hol_abandon_the_gold_standard
+		icon = GFX_focus_CHI_cooperation_and_readjustment
 		cost = 2.00
 		prerequisite = {
 			focus = KMT_power_of_worker
@@ -635,7 +635,7 @@ completion_reward = {
 
 	shared_focus = {
 		id = KMT_six_party_congress
-		icon = GFX_focus_generic_china1
+		icon = GFX_focus_CHI_six_party_congress
 		cost = 7.00
 		x = 17
 		y = 0
@@ -654,7 +654,7 @@ completion_reward = {
 	}
 	shared_focus = {
 		id = KMT_national_defence_gov
-		icon = GFX_focus_chi_cooperation_with_the_nationalists
+		icon = GFX_focus_CHI_national_defence_gov
 		cost = 1.00
 		
 		mutually_exclusive = {
@@ -692,7 +692,7 @@ completion_reward = {
 	}
 	shared_focus = {
 		id = KMT_expend_nra
-		icon = GFX_goal_CHI_military_affairs_cmsn  
+		icon = GFX_focus_CHI_expend_nra
 		cost = 3.00
 		prerequisite = {
 			focus = KMT_six_party_congress
@@ -832,7 +832,7 @@ completion_reward = {
 	}
 	shared_focus = {
 		id = KMT_for_revolution
-		icon = GFX_goal_CHI_peoples_army
+		icon = GFX_focus_CHI_peoples_army
 		cost = 4.00
 		prerequisite = {
 			focus = KMT_new_env_train
@@ -1219,7 +1219,7 @@ completion_reward = {
 	}
 	shared_focus = {
 		id = KMT_army_of_modern
-		icon = GFX_goal_CHI_form_2nd_NRA
+		icon = GFX_focus_CHI_army_of_modern
 		cost = 4.00
 		prerequisite = {
 			focus = KMT_reorganized_division
@@ -1327,6 +1327,7 @@ completion_reward = {
 			GXC = {
 				exists = no
 			}
+			has_war_with = KOR
 		}
 		x = 17
 		y = 2
@@ -1358,7 +1359,7 @@ completion_reward = {
 	}
 	shared_focus = {
 		id = KMT_colab_of_revol
-		icon = GFX_goal_revolution_arms
+		icon = GFX_focus_CHI_colab_of_revol
 		cost = 4.00
 		prerequisite = {
 			focus = KMT_deal_with_warlord
@@ -1379,7 +1380,7 @@ completion_reward = {
 	}
 	shared_focus = {
 		id = KMT_politic_commisar
-		icon = GFX_goal_generic_police_state
+		icon = GFX_focus_CHI_politic_commisar
 		cost = 3.00
 		prerequisite = {
 			focus = KMT_six_party_congress
@@ -1456,7 +1457,7 @@ completion_reward = {
 	}
 	shared_focus = {
 		id = KMT_grand_recon_plan
-		icon = GFX_goal_CHI_revive_china
+		icon = GFX_focus_CHI_grand_recon_plan
 		cost = 4.00
 		prerequisite = {
 			focus = KMT_help_people
@@ -1488,7 +1489,6 @@ completion_reward = {
 					free_building_slots = {
 						building = infrastructure
 						size < 4
-						include_locked = yes
 					}
 					OR = {
 						has_state_flag = guangdong_province_state
@@ -2219,7 +2219,7 @@ completion_reward = {
 	}
 	shared_focus = {
 		id = KMT_encroachment
-		icon = GFX_goal_CHI_northern_expedition
+		icon = GFX_goal_unknown
 		cost = 6.00
 		prerequisite = {
 			focus = KMT_all_in_the_same_boat
@@ -2248,7 +2248,7 @@ completion_reward = {
 	}
 	shared_focus = {
 		id = KMT_for_liberation
-		icon = GFX_goal_LKMT_A_New_China
+		icon = GFX_focus_CHI_for_liberation
 		cost = 6.00
 		prerequisite = {
 			focus = KMT_guerrilla_group
@@ -2293,7 +2293,7 @@ completion_reward = {
 	}
 	shared_focus = {
 		id = KMT_united_stuggle
-		icon = GFX_goal_CHI_YUN_reconcile
+		icon = GFX_focus_CHI_united_stuggle
 		cost = 5.00
 		prerequisite = {
 			focus = KMT_NMC
@@ -2327,7 +2327,7 @@ completion_reward = {
 	}
 	shared_focus = {
 		id = KMT_success_of_revolution_way
-		icon = GFX_goal_generic_revolutionary_government
+		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
 			focus = KMT_national_unification
@@ -2340,7 +2340,7 @@ completion_reward = {
 	}
 	shared_focus = {
 		id = KMT_propaganda_machine
-		icon = GFX_goal_famine
+		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
 			focus = KMT_success_of_revolution_way
@@ -2353,7 +2353,7 @@ completion_reward = {
 	}
 	shared_focus = {
 		id = KMT_march_of_NRA
-		icon = GFX_goal_army_guy_2
+		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
 			focus = KMT_national_unification
@@ -2366,7 +2366,7 @@ completion_reward = {
 	}
 	shared_focus = {
 		id = KMT_expend_secret_org
-		icon = GFX_goal_generic_phone_crisis
+		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
 			focus = KMT_march_of_NRA
@@ -2379,7 +2379,7 @@ completion_reward = {
 	}
 	shared_focus = {
 		id = KMT_develop_heavy_industry
-		icon = GFX_goal_generic_heavy_armour_russian
+		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
 			focus = KMT_national_unification
@@ -2392,7 +2392,7 @@ completion_reward = {
 	}
 	shared_focus = {
 		id = KMT_Autarky
-		icon = GFX_focus_ger_autarky
+		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
 			focus = KMT_develop_heavy_industry
@@ -2405,7 +2405,7 @@ completion_reward = {
 	}
 	shared_focus = {
 		id = KMT_fire_spark
-		icon = GFX_goal_agrarian_socialism
+		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
 			focus = KMT_Autarky
@@ -2421,7 +2421,7 @@ completion_reward = {
 	}
 	shared_focus = {
 		id = KMT_soviet_help
-		icon = GFX_goal_soviet_revolution
+		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
 			focus = KMT_develop_heavy_industry
@@ -2434,7 +2434,7 @@ completion_reward = {
 	}
 	shared_focus = {
 		id = KMT_preparing_strike
-		icon = GFX_focus_hun_youth
+		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
 			focus = KMT_Autarky
@@ -2479,7 +2479,7 @@ completion_reward = {
 ##################
 	shared_focus = {
 		id = KMT_last_fight
-		icon = GFX_goal_LKMT_A_New_China
+		icon = GFX_focus_CHI_last_fight
 		cost = 1.00
 		x = 8
 		y = 1
@@ -2563,7 +2563,7 @@ completion_reward = {
 	}
 	shared_focus = {
 		id = KMT_attack_hyper_inflation
-		icon = GFX_goal_ANQ_Dalu_Yinhang
+		icon = GFX_goal_unknown
 		cost = 4.00
 		prerequisite = {
 			focus = KMT_call_of_people
@@ -2578,7 +2578,7 @@ completion_reward = {
 	}
 	shared_focus = {
 		id = KMT_the_grand_promise
-		icon = GFX_goal_ANQ_promote_nationalist_thought
+		icon = GFX_focus_CHI_promote_nationalist_thought
 		cost = 4.00
 		prerequisite = {
 			focus = KMT_mao_ste
@@ -2593,7 +2593,7 @@ completion_reward = {
 	}
 	shared_focus = {
 		id = KMT_new_land_law
-		icon = GFX_goal_generic_landowner_tax_cuts
+		icon = GFX_goal_unknown
 		cost = 4.00
 		prerequisite = {
 			focus = KMT_call_of_people
@@ -2698,7 +2698,7 @@ completion_reward = {
 	}
 	shared_focus = {
 		id = KMT_besige_city
-		icon = GFX_goal_ANQ_centralization
+		icon = GFX_goal_unknown
 		cost = 4.00
 		prerequisite = {
 			focus = KMT_behind_the_enemy
@@ -2728,7 +2728,7 @@ completion_reward = {
 	}
 	shared_focus = {
 		id = KMT_forced_conversion
-		icon = GFX_goal_CHI_follow_lingxiu
+		icon = GFX_goal_unknown
 		cost = 4.00
 		prerequisite = {
 			focus = KMT_besige_city

@@ -14,7 +14,6 @@ state={
 		}
 		add_core_of = MON
 		add_core_of = MSR
-		add_core_of = MEN
 		1935.12.6 = {
 			MON = {
 				set_province_controller = 12533

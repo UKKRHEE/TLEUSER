@@ -1,0 +1,107 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_KOR_ilsoism_GUI_Base_Image"
+		textureFile = "gfx/interface/KOR_GUI/ilsoism/base.png"
+		noOfFrames = 3
+	}
+	spriteType = {
+		name = "GFX_KOR_ilsoism_icon_1"
+		textureFile = "gfx/interface/KOR_GUI/ilsoism/1.png"
+		noOfFrames = 3
+	}
+	spriteType = {
+		name = "GFX_KOR_ilsoism_icon_2"
+		textureFile = "gfx/interface/KOR_GUI/ilsoism/2.png"
+		noOfFrames = 3
+	}
+	spriteType = {
+		name = "GFX_KOR_ilsoism_icon_3"
+		textureFile = "gfx/interface/KOR_GUI/ilsoism/3.png"
+		noOfFrames = 3
+	}
+	spriteType = {
+		name = "GFX_KOR_ilsoism_icon_4"
+		textureFile = "gfx/interface/KOR_GUI/ilsoism/4.png"
+		noOfFrames = 3
+	}
+	spriteType = {
+		name = "GFX_KOR_ilsoism_icon_5"
+		textureFile = "gfx/interface/KOR_GUI/ilsoism/5.png"
+		noOfFrames = 3
+	}
+	spriteType = {
+		name = "GFX_KOR_ilsoism_icon_6"
+		textureFile = "gfx/interface/KOR_GUI/ilsoism/6.png"
+		noOfFrames = 3
+	}
+	spriteType = {
+		name = "GFX_KOR_ilsoism_icon_7"
+		textureFile = "gfx/interface/KOR_GUI/ilsoism/7.png"
+		noOfFrames = 3
+	}
+	spriteType = {
+		name = "GFX_KOR_ilsoism_icon_8"
+		textureFile = "gfx/interface/KOR_GUI/ilsoism/8.png"
+		noOfFrames = 3
+	}
+	spriteType = {
+		name = "GFX_ilsoism_target_1"
+		textureFile = "gfx/interface/KOR_GUI/ilsoism/target/ilsoism_target_1.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ilsoism_target_2"
+		textureFile = "gfx/interface/KOR_GUI/ilsoism/target/ilsoism_target_2.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ilsoism_target_3"
+		textureFile = "gfx/interface/KOR_GUI/ilsoism/target/ilsoism_target_3.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ilsoism_target_4"
+		textureFile = "gfx/interface/KOR_GUI/ilsoism/target/ilsoism_target_4.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ilsoism_target_5"
+		textureFile = "gfx/interface/KOR_GUI/ilsoism/target/ilsoism_target_5.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ilsoism_target_6"
+		textureFile = "gfx/interface/KOR_GUI/ilsoism/target/ilsoism_target_6.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ilsoism_target_7"
+		textureFile = "gfx/interface/KOR_GUI/ilsoism/target/ilsoism_target_7.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ilsoism_target_8"
+		textureFile = "gfx/interface/KOR_GUI/ilsoism/target/ilsoism_target_8.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ilsoism_target_ilsoism_end"
+		textureFile = "gfx/interface/KOR_GUI/ilsoism/target/ilsoism_target_ilsoism_end.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ilsoism_taeguk_circle"
+		textureFile = "gfx/interface/KOR_GUI/ilsoism/taeguk_circle.png"
+		legacy_lazy_load = no
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_gui_alert"
+		texturefile = "gfx/interface/gui_alert.dds"
+		noOfFrames = 10
+		animation_rate_fps = 10
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		alwaystransparent = yes
+	}
+}

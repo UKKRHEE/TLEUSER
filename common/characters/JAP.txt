@@ -6,10 +6,6 @@ characters={
 				large="gfx/leaders/JAP/JAP_yamato_junta.png"
 			}
 		}
-		country_leader={
-			ideology=despotism
-			traits={ warrior_code }
-		}
 	}
 	JAP_emperor_hirohito={
 		name=JAP_emperor_hirohito
@@ -19,8 +15,8 @@ characters={
 				small="gfx/interface/ideas/JAP/idea_showa_hirohito.png"
 			}
 			army={
-				large="gfx/leaders/JAP/Portrait_JAP_showa_hirohito.png"
-				small="gfx/interface/ideas/JAP/idea_showa_hirohito.png"
+				large="gfx/leaders/JAP/Portrait_JAP_hirohito_youth.png"
+				small="gfx/interface/ideas/JAP/idea_JAP_hirohito_youth.png"
 			}
 		}
 		country_leader={
@@ -38,17 +34,17 @@ characters={
 			}
 		}
 	}
-	JAP_dakamasunomiya_nobuhito={
-		name=JAP_dakamasunomiya_nobuhito
+	JAP_takamatsunomiya_nobuhito={
+		name=JAP_takamatsunomiya_nobuhito
 		portraits={
 			army={
-				large="gfx/leaders/JAP/Portrait_JAP_dakamasunomiya_nobuhito.png"
-				small="gfx/interface/ideas/JAP/advisors/idea_JAP_dakamasunomiya_nobuhito.png"
+				large="gfx/leaders/JAP/Portrait_JAP_takamatsunomiya_nobuhito.png"
+				small="gfx/interface/ideas/JAP/advisors/idea_JAP_takamatsunomiya_nobuhito.png"
 			}
 		}
 		navy_leader={
 			visible = {
-				has_completed_focus = JAP_the_imperial_section
+				has_country_flag = FLAG_JAP_IMPERIAL_SECTION
 			}
 			traits={ JAP_imperial_family politically_connected }
 			skill=2
@@ -63,12 +59,12 @@ characters={
 		portraits={
 			army={
 				large="gfx/leaders/JAP/Portrait_JAP_kaninomiya_haruhito.png"
-				small="gfx/interface/ideas/JAP/idea_JAP_kaninomiya_haruhito.png"
+				small="gfx/interface/ideas/JAP/advisors/idea_JAP_kaninomiya_haruhito.png"
 			}
 		}
 		corps_commander={
 			visible = {
-				has_completed_focus = JAP_the_imperial_section
+				has_country_flag = FLAG_JAP_IMPERIAL_SECTION
 			}
 			traits={ JAP_imperial_family politically_connected JAP_samurai_lineage }
 			skill=3
@@ -78,17 +74,19 @@ characters={
 			logistics_skill=2
 		}
 	}	
-	JAP_jichibunomiya_yasuhito={ #야스히토
-		name=JAP_jichibunomiya_yasuhito
+	JAP_chichibunomiya_yasuhito={ #야스히토
+		name=JAP_chichibunomiya_yasuhito
 		portraits={
 			army={
-				large="gfx/leaders/JAP/Portrait_JAP_jichibunomiya_yasuhito.png"
+				large="gfx/leaders/JAP/Portrait_JAP_chichibunomiya_yasuhito.png"
+			}
+			civilian={
 				small="gfx/interface/ideas/JAP/advisors/idea_JAP_chichibunomiya_yasuhito.png"
 			}
 		}
 		advisor={
 			slot = political_advisor
-			idea_token = jichibunomiya_yasuhito
+			idea_token = chichibunomiya_yasuhito
 		    allowed = {
 		    	original_tag = JAP
 		    }
@@ -101,7 +99,7 @@ characters={
 		}
 		corps_commander={
 			visible = {
-				has_completed_focus = JAP_the_imperial_section
+				has_country_flag = FLAG_JAP_IMPERIAL_SECTION
 			}
 			traits={ JAP_imperial_family politically_connected JAP_samurai_lineage }
 			skill=3
@@ -111,17 +109,17 @@ characters={
 			logistics_skill=3
 		}
 	}	
-	JAP_mikasanomiya_dakahito={ #다카히토
-		name=JAP_mikasanomiya_dakahito
+	JAP_mikasanomiya_takahito={ #타카히토
+		name=JAP_mikasanomiya_takahito
 		portraits={
 			army={
-				large="gfx/leaders/JAP/Portrait_JAP_mikasanomiya_dakahito.png"
-				small="gfx/interface/ideas/JAP/idea_JAP_mikasanomiya_dakahito.png"
+				large="gfx/leaders/JAP/Portrait_JAP_mikasanomiya_takahito.png"
+				small="gfx/interface/ideas/JAP/advisors/idea_JAP_mikasanomiya_takahito.png"
 			}
 		}
 		corps_commander={
 			visible = {
-				has_completed_focus = JAP_the_imperial_section
+				has_country_flag = FLAG_JAP_IMPERIAL_SECTION
 			}
 			traits={ JAP_imperial_family politically_connected JAP_samurai_lineage }
 			skill=3
@@ -131,17 +129,17 @@ characters={
 			logistics_skill=3
 		}
 	}	
-	JAP_yamashinanomiya_dakehiko={ #다케히코
-		name=JAP_yamashinanomiya_dakehiko
+	JAP_yamashinanomiya_takehiko={ #다케히코
+		name=JAP_yamashinanomiya_takehiko
 		portraits={
 			army={
-				large="gfx/leaders/JAP/Portrait_JAP_mikasanomiya_dakahito.png"
-				small="gfx/interface/ideas/JAP/idea_JAP_mikasanomiya_dakahito.png"
+				large="gfx/leaders/JAP/Portrait_JAP_yamashinanomiya_takehiko.png"
+				small="gfx/interface/ideas/JAP/advisors/idea_JAP_yamashinanomiya_takehiko.png"
 			}
 		}
 		navy_leader={
 			visible = {
-				has_completed_focus = JAP_the_imperial_section
+				has_country_flag = FLAG_JAP_IMPERIAL_SECTION
 			}
 			traits={ JAP_imperial_family politically_connected }
 			skill=2
@@ -151,17 +149,17 @@ characters={
 			coordination_skill=2
 		}
 	}	
-	JAP_guninomiya_asaakira={ #다케히코
-		name=JAP_guninomiya_asaakira
+	JAP_kuninomiya_asaakira={ #쿠니노미야 아사아키라
+		name=JAP_kuninomiya_asaakira
 		portraits={
 			army={
-				large="gfx/leaders/JAP/Portrait_JAP_guninomiya_asaakira.png"
-				small="gfx/interface/ideas/JAP/idea_JAP_guninomiya_asaakira.png"
+				large="gfx/leaders/JAP/Portrait_JAP_kuninomiya_asaakira.png"
+				small="gfx/interface/ideas/JAP/advisors/idea_JAP_kuninomiya_asaakira.png"
 			}
 		}
 		navy_leader={
 			visible = {
-				has_completed_focus = JAP_the_imperial_section
+				has_country_flag = FLAG_JAP_IMPERIAL_SECTION
 			}
 			traits={ JAP_imperial_family politically_connected }
 			skill=2
@@ -205,15 +203,21 @@ characters={
 			}
 		}
 		advisor={
-			cost = 150
-			slot = theorist
-			idea_token = tomoyuki_yamashita
+			slot = army_chief
+			idea_token = JAP_tomoyuki_yamashita
 			ledger = army
 			allowed = {
-				original_tag = JAP
+				tag = JAP
 			}
 			traits = {
-				grand_battle_plan_expert
+				army_chief_offensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 3.000
+				modifier = {
+					factor = 3.000
+				}
 			}
 		}
 
@@ -314,17 +318,93 @@ characters={
 		name=JAP_kanji_ishiwara
 		portraits={
 			army={
-				large="gfx/leaders/JAP/Portrait_Japan_Kanji_Ishiwara.dds"
+				large="gfx/leaders/JAP/Portrait_JAP_kanji_ishiwara.png"
 				small="gfx/interface/ideas/JAP/advisors/idea_JAP_kanji_ishiwara.dds"
 			}
 		}
+
+		advisor={
+			slot = high_command
+			idea_token = JAP_kanji_ishiwara
+			ledger = army
+			allowed = {
+				tag = JAP
+			}
+			available = {
+
+			}
+			traits = {
+				army_infantry_3
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 8.000
+			}
+		}
+		
 		corps_commander={
 			traits={ JAP_samurai_lineage }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=3
+		}
+	}
+	JAP_shiba_gorou={
+		name=JAP_shiba_gorou
+		portraits={
+			army={
+				large="gfx/leaders/JAP/Portrait_JAP_shiba_gorou.png"
+				small="gfx/interface/ideas/JAP/advisors/idea_JAP_shiba_gorou.png"
+			}
+		}
+
+		advisor={
+			slot = high_command
+			idea_token = JAP_shiba_gorou
+			ledger = army
+			allowed = {
+				tag = JAP
+			}
+			available = {
+
+			}
+			traits = {
+				army_artillery_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 8.000
+			}
+		}
+	}
+	JAP_hara_tomio={
+		name=JAP_hara_tomio
+		portraits={
+			army={
+				large="gfx/leaders/JAP/Portrait_JAP_shiba_gorou.png"
+				small="gfx/interface/ideas/JAP/advisors/idea_JAP_shiba_gorou.png"
+			}
+		}
+
+		advisor={
+			slot = high_command
+			idea_token = JAP_hara_tomio
+			ledger = army
+			allowed = {
+				tag = JAP
+			}
+			available = {
+
+			}
+			traits = {
+				army_armored_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 8.000
+			}
 		}
 	}
 
@@ -345,6 +425,42 @@ characters={
 			logistics_skill=3
 		}
 	}
+	JAP_nagata_tetsuzan={
+		name=JAP_nagata_tetsuzan
+		portraits={
+			army={
+				small="GFX_idea_JAP_nagata_tetsuzan"
+				large="gfx/leaders/JAP/Portrait_JAP_nagata_tetsuzan.png"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = JAP_nagata_tetsuzan
+			ledger = army
+			allowed = {
+				tag = JAP
+			}
+			traits = {
+				army_chief_planning_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 3.000
+				modifier = {
+					factor = 3.000
+				}
+			}
+		}
+		
+		corps_commander={
+			traits={ trait_reckless }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
 
 	JAP_yasuji_okamura={
 		name=JAP_yasuji_okamura
@@ -354,30 +470,6 @@ characters={
 				large="gfx/leaders/JAP/Portrait_Japan_Yasuji_Okamura.dds"
 			}
 		}
-		advisor={
-			slot = high_command
-			idea_token = yasuji_okamura
-			ledger = army
-			allowed = {
-				original_tag = JAP
-			}
-			traits = {
-				army_infantry_3
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 3.000
-				modifier = {
-					factor = 3.000
-					not = {
-						JAP = {
-							has_war_with = USA
-						}
-					}
-				}
-			}
-		}
-		
 		corps_commander={
 			traits={ trait_reckless }
 			skill=1
@@ -428,7 +520,7 @@ characters={
 		name=JAP_naruhikonomiya_higashikuni
 		portraits={
 			army={
-				large="gfx/leaders/JAP/Portrait_Japan_Naruhiko_Higashikuni.dds"
+				large="gfx/leaders/JAP/Portrait_JAP_higashikuni_naruhiko.dds"
 				small="gfx/interface/ideas/JAP/advisors/idea_JAP_naruhiko_higashikuni.dds"
 			}
 		}
@@ -563,6 +655,41 @@ characters={
 			logistics_skill=1
 		}
 	}
+	JAP_sato_kotoku={
+		name=JAP_sato_kotoku
+		portraits={
+			army={
+				large="gfx/leaders/JAP/Portrait_JAP_sato_kotoku.png"
+				small="gfx/interface/ideas/JAP/advisors/idea_JAP_sato_kotoku.png"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = JAP_sato_kotoku
+			ledger = army
+			allowed = {
+				tag = JAP
+			}
+			traits = {
+				army_chief_maneuver_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 3.000
+				modifier = {
+					factor = 3.000
+				}
+			}
+		}
+		corps_commander={
+			traits={ trait_cautious politically_connected }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=3
+		}
+	}
 
 	JAP_yoshijiro_umezu={
 		name=JAP_yoshijiro_umezu
@@ -570,6 +697,24 @@ characters={
 			army={
 				large="gfx/leaders/JAP/Portrait_Japan_Yoshijiro_Umezu.dds"
 				small="gfx/interface/ideas/JAP/advisors/idea_JAP_yoshijiro_umezu.dds"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = JAP_yoshijiro_umezu
+			ledger = army
+			allowed = {
+				tag = JAP
+			}
+			traits = {
+				army_chief_organizational_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 3.000
+				modifier = {
+					factor = 3.000
+				}
 			}
 		}
 		corps_commander={
@@ -742,7 +887,7 @@ characters={
 			planning_skill=2
 			logistics_skill=2
 		}
-	}
+	}	
 
 	JAP_hitoshi_imamura={
 		name=JAP_hitoshi_imamura
@@ -762,7 +907,7 @@ characters={
 				original_tag = JAP
 			}
 			traits = {
-				army_logistics_2
+				army_regrouping_2
 			}
 			cost = 100
 			ai_will_do = {
@@ -1234,20 +1379,6 @@ characters={
 				small="GFX_idea_kanin_kotohito"
 			}
 		}
-		advisor={
-			slot = army_chief
-			idea_token = kanin_kotohito
-			allowed = {
-				original_tag = JAP
-			}
-			traits = {
-				army_chief_offensive_2
-			}
-			cost =  50
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
 	}
 
 	JAP_hajime_sugiyama={
@@ -1326,6 +1457,7 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_fushimi_hiroyasu"
+				large="gfx/leaders/JAP/Portrait_JAP_fushiminoimya_hiroyasu.png"
 			}
 		}
 		advisor={
@@ -1344,7 +1476,7 @@ characters={
 		}
 		navy_leader={
 			visible = {
-				has_completed_focus = JAP_the_imperial_section
+				has_country_flag = FLAG_JAP_IMPERIAL_SECTION
 			}
 			traits={ JAP_imperial_family bold aviation_enthusiast superior_tactician  }
 			skill=3
@@ -1684,6 +1816,26 @@ characters={
 				small="gfx/interface/ideas/JAP/advisors/idea_JAP_renya_mutaguchi.png"
 			}
 		}
+
+		advisor={
+			slot = high_command
+			idea_token = JAP_hara_tomio
+			ledger = army
+			allowed = {
+				tag = JAP
+			}
+			available = {
+
+			}
+			traits = {
+				houtou
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 8.000
+			}
+		}
+
 		corps_commander={
 			traits = { harsh_leader war_hero infantry_officer career_officer }
 			skill = 2
@@ -1889,9 +2041,13 @@ characters={
 		name=JAP_kazushige_ugaki
 		portraits={
 			army={
-				large="gfx/leaders/JAP/Portrait_JAP_ugaki_gajeusige.dds"
+				large="gfx/leaders/JAP/Portrait_JAP_Ugaki_kazushige.png"
 				small="gfx/interface/ideas/JAP/advisors/idea_JAP_kazushige_ugaki.png"
 			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ JAP_sholi_trait ishiin_leader }
 		}
 		advisor={
 			slot = political_advisor

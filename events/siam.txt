@@ -1,0 +1,2091 @@
+#####
+
+add_namespace = siam
+
+country_event = {
+	id = siam.1
+	title = siam.1.t
+	desc = siam.1.d
+	picture = GFX_event_siam_nation
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = siam.1.a
+	}
+}
+
+country_event = {
+	id = siam.2
+	title = siam.2.t
+	desc = siam.2.d
+	picture = GFX_siam_phibun
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = siam.2.a
+	}
+}
+
+country_event = {
+	id = siam.3
+	title = siam.3.t
+	desc = siam.3.d
+	picture = GFX_event_siam_king
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = siam.3.a
+		add_ideas = SIA_rama_viii
+		add_ideas = SIA_prince_bhumibol 
+	}
+}
+
+country_event = {
+	id = siam.4
+	title = siam.4.t
+	desc = siam.4.d
+	picture = GFX_event_siam_leader1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = siam.4.a
+		set_country_flag = SIA_phibun_in_power
+		complete_national_focus = siam_16
+		custom_effect_tooltip = SIA_REGIME_DECISION_TOOLTIP
+		hidden_effect = {
+			set_party_name = {
+				ideology = fascism
+				long_name =  SIA_fascism_party_black_long
+				name =  SIA_fascism_party_black
+			}
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+			add_to_variable = { SIA_kfac_loyalty = 40 }
+			clamp_variable = { var = SIA_kfac_loyalty max = 100 min = 0 }
+			add_to_variable = { SIA_kfac_popularity = 25 }
+			clamp_variable = { var = SIA_kfac_popularity max = 100 min = 0 }
+			add_to_variable = { SIA_pfac_loyalty = 70 }
+			clamp_variable = { var = SIA_pfac_loyalty max = 100 min = 0 }
+			add_to_variable = { SIA_pfac_popularity = 70 }
+			clamp_variable = { var = SIA_pfac_popularity max = 100 min = 0 }
+			add_to_variable = { SIA_mili_loyalty = 85 }
+			clamp_variable = { var = SIA_mili_loyalty max = 100 min = 0 }
+			add_to_variable = { SIA_mili_popularity = 50 }
+			clamp_variable = { var = SIA_mili_popularity max = 100 min = 0 }
+			add_to_variable = { SIA_peop_loyalty = 50 }
+			clamp_variable = { var = SIA_peop_loyalty max = 100 min = 0 }
+			add_to_variable = { SIA_peop_popularity = 10 }
+			clamp_variable = { var = SIA_peop_popularity max = 100 min = 0 }
+		}
+	}
+}
+
+country_event = {
+	id = siam.5
+	title = siam.5.t
+	desc = siam.5.d
+	picture = GFX_siam_king_3
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = siam.5.a
+		set_party_name = {
+			ideology = neutrality
+			long_name =  SIA_neutrality_party_king_long
+			name =  SIA_neutrality_party_king
+		}
+		add_country_leader_role = {
+			character = SIA_ananda_mahidol
+			country_leader = {
+				expire = "1965.1.1"
+				ideology = monarchism
+				desc=""
+				traits = {
+					#
+				}
+			}
+			promote_leader = yes
+		}
+		add_to_variable = {
+			var = SIA_kfac_popularity
+			value = 20
+			tooltip = SIA_KFAC_NEU_1_TOOLTIP
+		}
+	}
+}
+
+country_event = {
+	id = siam.6
+	title = siam.6.t
+	desc = siam.6.d
+	picture = GFX_event_siam_culture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = siam.6.a
+		country_event = {
+			id = siam.41
+			days = 1
+		}
+		subtract_from_variable = {
+			var = SIA_peop_loyalty
+			value = 20
+			tooltip = SIA_PEOP_BAD_1_TOOLTIP
+		}
+	}
+}
+
+country_event = {
+	id = siam.7
+	title = siam.7.t
+	desc = siam.7.d
+	picture = GFX_event_siam_flag
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = siam.7.a
+		news_event = {
+			id = siam_news.5
+		}
+		SIA = {
+			country_event = {
+				id = siam.16
+			}
+		}
+	}
+}
+
+country_event = {
+	id = siam.8
+	title = siam.8.t
+	desc = siam.8.d
+	picture = GFX_event_siam_flag
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = siam.8.a
+		KOR = { add_to_faction = SIA }
+	}
+}
+
+country_event = {
+	id = siam.9
+	title = siam.9.t
+	desc = siam.9.d
+	picture = GFX_korea_in_indochina
+
+	is_triggered_only = yes
+	fire_only_once = yes
+		
+	option = {
+		name = siam.9.a
+		news_event = {
+				id = siam_news.4
+			}
+		KOR = {
+				puppet = {
+					target = KVN
+					end_wars = yes
+				}		
+				set_autonomy = { target = KVN autonomy_state = korean_military_admin }
+			}
+		hidden_effect = {
+			if = {
+				limit = {
+					728 = {
+						is_owned_by = FRI
+					}
+				}
+				KOR = { transfer_state = 728 }
+			}
+			if = {
+				limit = {
+					728 = {
+						is_owned_by = KVN
+					}
+				}
+				KOR = { transfer_state = 728 }
+			}					
+			KVN = {
+				set_politics = {
+					ruling_party = fascism
+					last_election = "1932.3.8"
+					election_frequency = 60
+					elections_allowed = no
+				}
+				set_popularities = {
+					democratic = 0
+					fascism = 100
+					communism = 0
+					neutrality = 0
+				}
+				993 = {
+					if = {
+						limit = { is_owned_by = FRI }
+						add_core_of = KVN
+					}
+				}
+				994 = {
+					if = {
+						limit = { is_owned_by = FRI }
+						add_core_of = KVN
+					}
+				}
+				995 = {
+					if = {
+						limit = { is_owned_by = FRI }
+						add_core_of = KVN
+					}
+				}
+				670 = {
+					if = {
+						limit = { is_owned_by = FRI }
+						add_core_of = KVN
+					}
+				}
+				1089 = {
+					if = {
+						limit = { is_owned_by = FRI }
+						add_core_of = KVN
+					}
+				}
+				286 = {
+					if = {
+						limit = { is_owned_by = FRI }
+						add_core_of = KVN
+					}
+				}
+				741 = {
+					if = {
+						limit = { is_owned_by = FRI }
+						add_core_of = KVN
+					}
+				}
+				1103 = {
+					if = {
+						limit = { is_owned_by = FRI }
+						add_core_of = KVN
+					}
+				}
+				671 = {
+					if = {
+						limit = { is_owned_by = FRI }
+						add_core_of = KVN
+					}
+				}
+				1082 = {
+					if = {
+						limit = { is_owned_by = FRI }
+						add_core_of = KVN
+					}
+				}
+				1083 = {
+					if = {
+						limit = { is_owned_by = FRI }
+						add_core_of = KVN
+					}
+				}
+				1084 = {
+					if = {
+						limit = { is_owned_by = FRI }
+						add_core_of = KVN
+					}
+				}
+				1085 = {
+					if = {
+						limit = { is_owned_by = FRI }
+						add_core_of = KVN
+					}
+				}
+				1086 = {
+					if = {
+						limit = { is_owned_by = FRI }
+						add_core_of = KVN
+					}
+				}
+				1087 = {
+					if = {
+						limit = { is_owned_by = FRI }
+						add_core_of = KVN
+					}
+				}
+				annex_country = { target = FRI transfer_troops = yes }
+				add_ideas = {
+					korean_indochina
+					indo_french
+				}
+			}
+		}
+		SIA = {
+			country_event = {
+				id = siam.10
+			}
+		}
+	}
+}
+
+country_event = {
+	id = siam.10
+	title = siam.10.t
+	desc = siam.10.d
+	picture = GFX_event_siam_korea
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = siam.10.a
+		add_to_variable = {
+			var = SIA_peop_loyality
+			value = 20
+			tooltip = SIA_PEOP_GOOD_1_TOOLTIP
+		}
+		custom_effect_tooltip = SIA_MILI_GOOD_1_TOOLTIP
+		transfer_state = 993
+		transfer_state = 994
+		transfer_state = 995
+	}
+}
+
+country_event = {
+	id = siam.11
+	title = siam.11.t
+	desc = siam.11.d
+	picture = GFX_korea_in_indochina
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = siam.11.a
+	}
+}
+
+country_event = {
+	id = siam.12
+	title = siam.12.t
+	desc = siam.12.d
+	picture = GFX_pridi_is_fucking_communist
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = siam.12.a
+		add_ideas = sia_free_movement
+		set_party_name = {
+			ideology = democratic
+			long_name =  SIA_democratic_party_pridi_long
+			name =  SIA_democratic_party_pridi
+		}
+		set_country_flag = SIA_resistance_problem
+		custom_effect_tooltip = TOOLTIP_SIAMRESISTANCE
+		add_to_variable = { SIA_resistance_strength = 65 }
+	}
+}
+
+country_event = {
+	id = siam.13
+	title = siam.13.t
+	desc = siam.13.d
+	picture = GFX_event_siam_fuckers
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = siam.13.a
+	}
+}
+
+country_event = {
+	id = siam.14
+	title = siam.14.t
+	desc = siam.14.d
+	picture = GFX_event_siam_leader2
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = siam.14.a
+		SIA = {
+			remove_ideas = { sia_great_depression }
+		}
+	}
+}
+
+country_event = {
+	id = siam.15
+	title = siam.15.t
+	desc = siam.15.d
+	picture = GFX_songsuradet_rebel
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = siam.15.a
+		retire_character = SIA_phraya_songsuradet
+	}
+}
+
+country_event = {
+	id = siam.16
+	title = siam.16.t
+	desc = siam.16.d
+	picture = GFX_siam_phone
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = siam.16.a
+		complete_national_focus = siam_26
+	}
+}
+
+country_event = {
+	id = siam.17
+	title = siam.17.t
+	desc = siam.17.d
+	picture = GFX_event_siam_korea
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = siam.17.a
+		custom_effect_tooltip = TOOLTIP_KOREAN_INFLUENCE_E
+		set_global_flag = SIA_is_korean_puppet
+	}
+}
+country_event = {
+	id = siam.18
+	title = siam.18.t
+	desc = siam.18.d
+	picture = GFX_event_siam_railway
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = siam.18.a
+		custom_effect_tooltip = TOOLTIP_BEND
+		set_country_flag = TLE_DUTY_OF_CONFUCIANS
+		clr_country_flag = TLE_THE_LAST_EMPIRE 
+		TNO_Country_Closing_Screen_Show = yes
+	}
+}
+country_event = {
+	id = siam.19
+	title = siam.19.t
+	desc = siam.19.desc
+	picture = GFX_report_event_tur_industry
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = siam.19.a #ok
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = 20
+				has_opinion = {
+					target = SIA
+					value > 25
+				}
+			}
+			modifier = {
+				add = 30
+				has_opinion = {
+					target = SIA
+					value > 75
+				}
+			}
+		}
+		activate_targeted_decision = { target = SIA decision = ROOT_invest_in_turkish_state_building }
+		if = {
+			limit = {
+				has_opinion = {
+					target = SIA
+					value > 25
+				}
+			}
+			activate_targeted_decision = { target = SIA decision = ROOT_invest_in_turkish_state_light_industry }
+		}
+		if = {
+			limit = {
+				has_opinion = {
+					target = SIA
+					value > 50
+				}
+			}
+			activate_targeted_decision = { target = SIA decision = ROOT_invest_in_turkish_state_heavy_industry }
+		}
+
+		hidden_effect = {
+			set_country_flag = SIA_investment_in_turkey_pending_flag
+		}
+	}
+	option = {
+		name = siam.19.b #no
+		ai_chance = {
+			base = 5
+			modifier = {
+				add = 20
+				has_opinion = {
+					target = SIA
+					value < -10
+				}
+			}
+			modifier = {
+				add = 30
+				has_war = yes
+			}
+			modifier = {
+				add = 50
+				has_opinion = {
+					target = SIA
+					value < -75
+				}
+			}
+		}
+		SIA = { country_event = { id = bftb_turkey.127 days = 1 } }
+		hidden_effect = {
+			set_country_flag = ROOT_rejecting_turkish_overtures
+		}
+	}
+}
+country_event = {
+	id = siam.20
+	title = siam.20.t
+	desc = siam.20.d
+	picture = GFX_event_siam_palace
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = siam.20.a
+		custom_effect_tooltip = TOOLTIP_SIAKINGDEAD
+		hidden_effect = {
+			remove_ideas = { SIA_rama_viii SIA_prince_bhumibol }
+			add_ideas = rama_ix
+		}
+		country_event = {
+			id = siam.35
+			days = 30
+		}
+	}
+}
+country_event = {
+	id = siam.21
+	title = siam.21.t
+	desc = siam.21.d
+	picture = GFX_event_siam_korea
+
+	trigger = {
+		tag = SIA
+		KOR = {
+			has_completed_focus = KOR_the_plan_south
+		}
+		SIA = {
+			has_completed_focus = siam_26
+		}
+	}
+	fire_only_once = yes
+
+	option = {
+		name = siam.21.a
+		declare_war_on = {
+			target = USA
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = ENG
+			type = annex_everything
+		}
+	}
+}
+country_event = {
+	id = siam.22
+	title = siam.22.t
+	desc = siam.22.d
+	picture = GFX_event_siam_king
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = siam.22.a
+		custom_effect_tooltip = TOOLTIP_SIACHEAT
+	}
+}
+country_event = {
+	id = siam.23
+	title = siam.23.t
+	desc = siam.23.d
+	picture = GFX_siam_phibun
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = siam.23.a
+		news_event = {
+			id = siam_news.7
+		}
+		SIA = {
+			retire_character = SIA_plaek_phibunsongkhram
+			add_country_leader_role = {
+				character = SIA_khuang_aphaiwong
+				promote_leader = yes 
+				country_leader = { 
+					ideology = fascism_ideology
+					desc="SIA_khuang_aphaiwong_desc"
+					traits = {
+						khuang_trait
+					}
+				}
+			}
+		}
+		set_global_flag = SIA_phibun_is_fucked
+	}
+}
+country_event = {
+	id = siam.24
+	title = siam.24.t
+	desc = siam.24.d
+	picture = GFX_siam_phibun
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+
+	option = {
+		name = siam.24.a
+		ENG = {
+			puppet = {
+				target = FRI
+			}
+		}
+		FRI = {
+			set_cosmetic_tag = FRI_UK
+			set_politics = {
+				ruling_party = neutrality
+				last_election = "1932.3.8"
+				election_frequency = 60
+				elections_allowed = no
+			}
+			set_popularities = {
+				democratic = 0
+				fascism = 0
+				communism = 0
+				neutrality = 100
+			}
+			set_capital = {
+				state = 286
+				remember_old_capital = yes
+			}
+			set_party_name = {
+				ideology = neutrality
+				long_name =  FRI_neutrality_party_uk_long
+				name =  FRI_neutrality_party_uk
+			}
+			remove_ideas = { french_indochina }
+			retire_character = FRI_jules_brevie
+			retire_character = FRI_jean_decoux
+			add_country_leader_role = {
+				character = FRI_douglas_gracey
+				country_leader = {
+					expire = "1965.1.1"
+					ideology = despotism
+					desc=""
+					traits = {
+						#
+					}
+				}
+				promote_leader = yes
+			}
+		}
+	}
+}
+country_event = {
+	id = siam.25
+	title = siam.25.t
+	desc = siam.25.d
+	picture = GFX_siam_phibun
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+
+	option = {
+		name = siam.25.a
+		CHI = {
+			puppet = {
+				target = VTC
+			}
+			transfer_state = 728
+		}
+		VTC = {
+			transfer_state = 670
+			transfer_state = 671
+			transfer_state = 1082
+			transfer_state = 1083
+			transfer_state = 1084
+			transfer_state = 1085
+			set_capital = {
+				state = 671
+				remember_old_capital = no
+			}
+			set_cosmetic_tag = VTC_CHI
+			set_politics = {
+				ruling_party = neutrality
+				last_election = "1932.3.8"
+				election_frequency = 60
+				elections_allowed = no
+			}
+			set_popularities = {
+				democratic = 0
+				fascism = 0
+				communism = 0
+				neutrality = 100
+			}
+			set_party_name = {
+				ideology = neutrality
+				long_name =  VTC_neutrality_party_chi_long
+				name =  VTC_neutrality_party_chi
+			}
+		}
+		670 = {
+			add_core_of = VTC
+		}
+		741 = {
+			add_core_of = VTC
+		}
+		1103 = {
+			add_core_of = VTC
+		}
+		993 = {
+			add_core_of = VTC
+		}
+		994 = {
+			add_core_of = VTC
+		}
+		995 = {
+			add_core_of = VTC
+		}
+		1089 = {
+			add_core_of = VTC
+		}
+	}
+}
+country_event = {
+	id = siam.26
+	title = siam.26.t
+	desc = siam.26.d
+	picture = GFX_event_siam_flag
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+
+	option = {
+		name = siam.26.a
+		transfer_state = 993
+		transfer_state = 994
+		transfer_state = 995
+	}
+}
+country_event = {
+	id = siam.27
+	title = siam.27.t
+	desc = siam.27.d
+	picture = GFX_event_siam_flag
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+
+	option = {
+		name = siam.27.a
+		VTC = {
+			set_politics = {
+				ruling_party = communism
+				last_election = "1932.3.8"
+				election_frequency = 60
+				elections_allowed = no
+			}
+			set_popularities = {
+				democratic = 0
+				fascism = 0
+				communism = 100
+				neutrality = 0
+			}
+			set_party_name = {
+				ideology = communism
+				long_name =  VTC_communism_party_chi_long
+				name =  VTC_communism_party_chi
+			}
+			retire_character = VTC_ho_chi_minh
+			add_country_leader_role = {
+				character = VTC_phan_boi_chau
+				country_leader = {
+					expire = "1965.1.1"
+					ideology = sanminzhuyi_communism
+					desc=""
+					traits = {
+						#
+					}
+				}
+				promote_leader = yes
+			}
+			set_cosmetic_tag = VTC_KMT
+		}
+	}
+}
+country_event = {
+	id = siam.28
+	title = siam.28.t
+	desc = siam.28.d
+	picture = GFX_event_siam_flag
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+
+	option = {
+		name = siam.28.a
+		FRI = {
+			set_politics = {
+				ruling_party = democratic
+				last_election = "1932.3.8"
+				election_frequency = 60
+				elections_allowed = no
+			}
+			set_popularities = {
+				democratic = 100
+				fascism = 0
+				communism = 0
+				neutrality = 0
+			}
+			set_cosmetic_tag = FRI_FED
+			leave_faction = yes
+		}
+		ENG = {
+			end_puppet = FRI
+		}
+	}
+}
+country_event = {
+	id = siam.29
+	title = siam.29.t
+	desc = siam.29.d
+	picture = GFX_event_siam_radio
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = siam.29.a
+	}
+}
+country_event = {
+	id = siam.30
+	title = siam.30.t
+	desc = siam.30.d
+	picture = GFX_event_my_boyhood_in_siam
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = siam.30.a
+	}
+}
+country_event = {
+	id = siam.31
+	title = siam.31.t
+	desc = siam.31.d
+	picture = GFX_event_siamese_tractor
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = siam.31.a
+	}
+}
+country_event = {
+	id = siam.32 #인도차이나 붕괴
+	title = siam.32.t
+	desc = siam.32.d
+	picture = GFX_event_siam_flag
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = siam.32.a
+		VTC = {
+			set_cosmetic_tag = VTC_rep
+			set_capital = { 
+				state = 671
+				remember_old_capital = no
+			}
+			transfer_state = 286
+			transfer_state = 671
+			transfer_state = 1082
+			transfer_state = 1083
+			transfer_state = 1084
+			transfer_state = 1085
+			transfer_state = 1086
+			transfer_state = 1087
+			puppet = LAO
+			puppet = CAM
+		}
+		LAO = {
+			set_cosmetic_tag = LAO_rep
+			transfer_state = 670
+			transfer_state = 1089
+		}
+		CAM = {
+			set_cosmetic_tag = CAM_rep
+			transfer_state = 741
+			transfer_state = 1103
+			transfer_state = 995
+		}
+		SIA = {
+			transfer_state = 993
+			transfer_state = 994
+		}
+		993 = {
+			set_demilitarized_zone = yes
+		}
+		994 = {
+			set_demilitarized_zone = yes
+		}
+		995 = {
+			set_demilitarized_zone = yes
+		}
+	}
+}
+country_event = {
+	id = siam.33
+	title = siam.33.t
+	desc = siam.33.d
+	picture = GFX_king_of_the_white_elephant
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = siam.33.a
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.05
+		}
+	}	
+	option = {
+		name = siam.33.b
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.05
+		}
+	}
+}
+country_event = {
+	id = siam.34
+	title = siam.34.t
+	desc = siam.34.d
+	picture = GFX_siam_king_2
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = siam.34.a
+		country_event = {
+			id = siam.12
+			days = 7
+		}
+	}
+}
+country_event = {
+	id = siam.35
+	title = siam.35.t
+	desc = siam.35.d
+	picture = GFX_siam_king_gun
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = siam.35.a
+		custom_effect_tooltip = TOOLTIP_AEND
+		country_event = {
+			id = siam.52
+			days = 30
+		}
+	}
+}
+country_event = {
+	id = siam.36
+	title = siam.36.t
+	desc = siam.36.d
+	picture = GFX_siam_ship
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = siam.36.a
+		ai_chance = { factor = 100 }
+		add_political_power = -50
+		KOR = {
+			country_event = {
+				id = siam.37
+				days = 1
+			}
+		}
+	}
+	option = {
+		name = siam.36.b
+		ai_chance = { factor = 0 }
+		add_political_power = 10
+	}
+}
+country_event = {
+	id = siam.37
+	title = siam.37.t
+	desc = siam.37.d
+	picture = GFX_siam_ship
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = siam.37.a
+		ai_chance = { factor = 100 }
+		add_political_power = 50
+		SIA = {
+			country_event = {
+				id = siam.39
+				days = 7
+			}
+			add_opinion_modifier = {
+				target = KOR
+				modifier = medium_increase
+			}
+		}
+	}
+	option = {
+		name = siam.37.b
+		ai_chance = { factor = 0 }
+		SIA = {
+			country_event = {
+				id = siam.38
+				days = 1
+			}
+			add_opinion_modifier = {
+				target = KOR
+				modifier = medium_decrease
+			}
+		}
+	}
+}
+country_event = {
+	id = siam.38
+	title = siam.38.t
+	desc = siam.38.d
+	picture = GFX_siam_ship
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = siam.38.a
+		add_political_power = 25
+	}
+}
+country_event = {
+	id = siam.39
+	title = siam.39.t
+	desc = siam.39.d
+	picture = GFX_siam_ship
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = siam.39.a
+		custom_effect_tooltip = TOOLTIP_SIANAVY
+		hidden_effect = {
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				load_oob = SIA_korean_cruiser_mtg
+			}
+			else = {
+				load_oob = SIA_korean_cruiser_legacy
+			}
+		}
+	}
+}
+country_event = {
+	id = siam.40
+	title = siam.40.t
+	desc = siam.40.d
+	picture = GFX_siam_flood
+	
+	trigger = {
+		TAG = SIA
+		date > 1942.9.1
+        country_exists = SIA
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	fire_only_once = yes
+	
+	option = {
+		name = siam.40.a
+		add_manpower = -373
+		add_stability = -0.1
+		add_war_support = -0.1
+	}
+}
+country_event = {
+	id = siam.41
+	title = siam.41.t
+	desc = siam.41.d
+	picture = GFX_event_siam_flag
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = siam.41.a
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.05
+		}
+		add_stability = 0.05
+		country_event = {
+			id = siam.42
+			days = 1
+		}
+	}
+	option = {
+		name = siam.41.b
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.05
+		}
+		add_stability = -0.05
+		country_event = {
+			id = siam.42
+			days = 1
+		}
+	}
+}
+country_event = {
+	id = siam.42
+	title = siam.42.t
+	desc = siam.42.d
+	picture = GFX_event_siam_flag
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = siam.42.a
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.05
+		}
+		add_stability = -0.05
+	}
+	
+	option = {
+		name = siam.42.b
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.05
+		}
+	}
+	
+	option = {
+		name = siam.42.c
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.05
+		}
+		add_stability = 0.05
+	}
+}
+country_event = {
+	id = siam.43
+	title = siam.43.t
+	desc = siam.43.d
+	picture = GFX_siam_street
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = siam.43.a
+	}
+}
+country_event = {
+	id = siam.44
+	title = siam.44.t
+	desc = siam.44.d
+	picture = GFX_siam_march
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = siam.44.a
+	}
+}
+country_event = {
+	id = siam.45
+	title = siam.45.t
+	desc = siam.45.d
+	picture = GFX_bangkok_bombing
+	
+	trigger = {
+		TAG = SIA
+		date > 1944.1.2
+        country_exists = SIA
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	fire_only_once = yes
+	
+	option = {
+		name = siam.45.a
+		add_manpower = -8711
+		add_stability = -0.3
+		add_war_support = -0.3
+		289 = {
+			damage_building = {
+				type = industrial_complex
+				damage = 1.5
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 2
+			}
+			damage_building = {
+				type = infrastructure
+				damage = 2
+			}
+			damage_building = {
+				type = naval_base
+				damage = 1
+			}
+		}
+	}
+}
+country_event = {
+	id = siam.46
+	title = siam.46.t
+	desc = siam.46.d
+	picture = GFX_free_thai_movement
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = siam.46.a
+		remove_ideas = sia_free_movement
+	}
+}
+country_event = {
+	id = siam.47
+	title = siam.47.t
+	desc = siam.47.d
+	picture = GFX_free_thai_movement
+
+	is_triggered_only = yes
+
+	option = {
+		name = siam.47.a
+		subtract_from_variable = {
+			var = SIA_peop_loyalty
+			value = 20
+			tooltip = SIA_PEOP_BAD_2_TOOLTIP
+		}
+		hidden_effect = {
+			add_to_variable = { SIA_peop_popularity = 20 }
+			clamp_variable = { var = SIA_peop_popularity max = 100 min = 0 }
+			clamp_variable = { var = SIA_peop_loyalty max = 100 min = 0 }
+			if = {
+				limit = {
+					AND = {
+						check_variable = { SIA_peop_popularity > 40 }
+						check_variable = { SIA_peop_loyalty > 80 }
+					}
+				}
+				country_event = {
+					id = siam.58
+					days = 1
+				}
+			}
+		}
+		add_manpower = -1000
+		add_stability = -0.1
+		add_war_support = -0.1
+		random_owned_controlled_state = {
+			damage_building = {
+				type = industrial_complex
+				damage = 0.5
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 0.5
+			}
+			damage_building = {
+				type = infrastructure
+				damage = 0.5
+			}
+		}
+		custom_effect_tooltip = TOOLTIP_SIAMRESISTANCEFULL
+	}
+}
+country_event = {
+	id = siam.48
+	title = siam.48.t
+	desc = siam.48.d
+	picture = GFX_event_siam_flag
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = siam.48.a
+		ai_chance = { factor = 100 }
+	}
+	option = {
+		name = siam.48.b
+		ai_chance = { factor = 0 }
+		custom_effect_tooltip = SIA_KFAC_BAD_1_TOOLTIP
+		custom_effect_tooltip = TOOLTIP_SIAREGIMEDANGER
+		hidden_effect = {
+			set_country_flag = SIA_fallen_government
+			country_event = {
+				id = siam.57
+			}
+		}
+	}
+}
+country_event = {
+	id = siam.49
+	title = siam.49.t
+	desc = siam.49.d
+	picture = GFX_event_siam_flag
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = siam.49.a
+		ai_chance = { factor = 100 }
+		hidden_effect = {
+			set_country_flag = SIA_fallen_government
+			country_event = {
+				id = siam.23
+			}
+		}
+		custom_effect_tooltip = SIA_KFAC_BAD_1_TOOLTIP
+		custom_effect_tooltip = SIA_PFAC_BAD_1_TOOLTIP
+		custom_effect_tooltip = TOOLTIP_SIAREGIMEDANGER
+	}
+	option = {
+		name = siam.49.b
+		ai_chance = { factor = 0 }
+	}
+}
+country_event = {
+	id = siam.50
+	title = siam.50.t
+	desc = siam.50.d
+	picture = GFX_siamese_fighter
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = siam.50.a
+		air_experience = 25
+		add_ideas = SIA_phraya_phahon
+	}
+}
+country_event = {
+	id = siam.51 #프리디 파놈용
+	title = siam.51.t
+	desc = siam.51.d
+	picture = GFX_siam_pridi
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = siam.51.a
+		custom_effect_tooltip = TOOLTIP_SIAPRIDIEND
+		country_event = {
+			id = siam.68
+			days = 30
+		}
+	}
+}
+country_event = {
+	id = siam.52 #라마 9새
+	title = siam.52.t
+	desc = siam.52.d
+	picture = GFX_siam_rama_ix
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = siam.52.a
+		custom_effect_tooltip = TOOLTIP_SIARAMAEND
+		set_country_flag = TLE_THE_LAST_EMPIRE
+		clr_country_flag = TLE_DUTY_OF_CONFUCIANS
+		TNO_Country_Closing_Screen_Show = yes
+		hidden_effect = {
+			news_event = { id = siam_news.8 days = 70 }
+			if = {
+				limit = {
+					is_ai = no
+				}
+				play_song = "our_homeland"
+			}
+		}
+	}
+}
+country_event = {
+	id = siam.53 #쿠데타
+	title = siam.53.t
+	desc = siam.53.d
+	picture = GFX_siam_coup
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = siam.53.a
+		custom_effect_tooltip = TOOLTIP_SIACOUPEND
+	}
+}
+country_event = {
+	id = siam.54 #영국과의 불가침조약
+	title = siam.54.t
+	desc = siam.54.d
+	picture = GFX_siam_nap
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = siam.54.a
+		custom_effect_tooltip = TOOLTIP_SIAENGWAR
+	}
+}
+country_event = {
+	id = siam.55 #사콘나콘
+	title = siam.55.t
+	desc = siam.55.d
+	picture = GFX_sakon_nakhon
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = siam.55.a
+	}
+}
+country_event = {
+	id = siam.56 #
+	title = siam.56.t
+	desc = siam.56.d
+	picture = GFX_event_korea_777
+
+	trigger = {
+		tag = SIA
+	}
+	fire_only_once = yes
+
+	option = {
+		name = siam.56.a
+	}
+}
+country_event = {
+	id = siam.57
+	title = siam.57.t
+	desc = siam.57.d
+	picture = GFX_siam_phibun
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = siam.57.a
+		news_event = {
+			id = siam_news.7
+		}
+		SIA = {
+			retire_character = SIA_plaek_phibunsongkhram
+			add_country_leader_role = {
+				character = SIA_khuang_aphaiwong
+				promote_leader = yes 
+				country_leader = { 
+					ideology = fascism_ideology
+					desc="SIA_khuang_aphaiwong_desc"
+					traits = {
+						khuang_trait
+					}
+				}
+			}
+		}
+		set_global_flag = SIA_phibun_is_fucked
+	}
+}
+country_event = {
+	id = siam.58
+	title = siam.58.t
+	desc = siam.58.d
+	picture = GFX_siam_phibun
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = siam.58.a
+		news_event = {
+			id = siam_news.7
+		}
+		SIA = {
+			retire_character = SIA_plaek_phibunsongkhram
+			add_country_leader_role = {
+				character = SIA_khuang_aphaiwong
+				promote_leader = yes 
+				country_leader = { 
+					ideology = fascism_ideology
+					desc="SIA_khuang_aphaiwong_desc"
+					traits = {
+						khuang_trait
+					}
+				}
+			}
+		}
+		set_global_flag = SIA_phibun_is_fucked
+	}
+}
+country_event = {
+	id = siam.59
+	title = siam.59.t
+	desc = siam.59.d
+	picture = GFX_bangkok_bombing
+	
+	trigger = {
+		TAG = KSI
+		date > 1944.8.17
+        country_exists = KSI
+		country_exists = SIA
+		KSI = {
+			has_war = yes
+		}
+		SIA = {
+			has_war = yes
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	fire_only_once = yes
+	
+	option = {
+		ai_chance = { factor = 50 }
+		name = siam.59.a
+		trigger = {
+			NOT = {
+				has_global_flag = PRE_THE_NEW_ORDER_GBR
+			}
+		}
+		KSI = {
+			annex_country = {
+				target = SIA
+				transfer_troops = no
+			}
+		}
+		if = {
+			limit = {
+				ENG = {
+					is_faction_leader = yes
+				}
+			}
+			ENG = {
+				add_to_faction = KSI
+			}
+		}
+		if = {
+			limit = {
+				USA = {
+					is_faction_leader = yes
+					is_in_faction_with = ENG
+				}
+			}
+			USA = {
+				add_to_faction = KSI
+			}
+		}
+		news_event = {
+			id = siam_news.21
+		}
+	}
+	option = {
+		ai_chance = { factor = 50 }
+		name = siam.59.b
+		NML = {
+			declare_war_on = {
+				target = KSI
+				type = annex_everything
+			}
+		}
+		SIA = {
+			annex_country = {
+				target = KSI
+				transfer_troops = no
+			}
+		}
+		news_event = {
+			id = siam_news.22
+		}
+	}
+}
+country_event = {
+	id = siam.60
+	title = siam.60.t
+	desc = siam.60.d
+	picture = GFX_siam_phibun
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = siam.60.a
+		news_event = {
+			id = siam_news.9
+		}
+	}
+}
+country_event = {
+	id = siam.61
+	title = siam.61.t
+	desc = siam.61.d
+	picture = GFX_siam_phibun
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = siam.60.a
+		country_event = {
+			id = siam.62
+		}
+		country_event = {
+			id = siam.63
+			days = 360
+		}
+		SIA = {
+			transfer_state = 993
+			transfer_state = 994
+			transfer_state = 995
+		}
+		ANM = {
+			transfer_state = 1085
+			transfer_state = 1086
+		}
+		TNK = {
+			transfer_state = 671
+			transfer_state = 1084
+			transfer_state = 1082
+			transfer_state = 1083
+		}
+		CCH = {
+			transfer_state = 286
+			transfer_state = 1087
+		}
+		LAO = {
+			transfer_state = 670
+			transfer_state = 1089
+			set_cosmetic_tag = LAO_FRA
+		}
+		CAM = {
+			transfer_state = 1103
+			transfer_state = 741
+			set_cosmetic_tag = CAM_FRA
+		}
+		1082 = {
+			set_demilitarized_zone = yes
+		}
+		1087 = {
+			set_demilitarized_zone = yes
+		}
+	}
+}
+country_event = {
+	id = siam.62
+	title = siam.61.t
+	desc = siam.61.d
+	picture = GFX_siam_phibun
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = siam.60.a
+		CCH = {
+			create_faction = "french_indochina_faction"
+			add_to_faction = ANM
+			add_to_faction = TNK
+			add_to_faction = LAO
+			add_to_faction = CAM
+		}
+	}
+}
+country_event = {
+	id = siam.63
+	title = siam.61.t
+	desc = siam.61.d
+	picture = GFX_siam_phibun
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = siam.60.a
+		country_event = {
+			id = siam.69
+			days = 180
+		}
+		VIN = {
+			set_cosmetic_tag = VIN_FRA
+			transfer_state = 671
+			transfer_state = 1086
+			set_capital = {
+				state = 1086
+				remember_old_capital = no
+			}
+		}
+		CCH = {
+			add_to_faction = VIN
+		}
+		VTC = {
+			transfer_state = 1087
+			transfer_state = 1085
+			transfer_state = 1084
+			transfer_state = 1082
+			transfer_state = 1083
+		}
+		1083 = {
+			set_demilitarized_zone = yes
+		}
+		1084 = {
+			set_demilitarized_zone = yes
+		}
+		1085 = {
+			set_demilitarized_zone = yes
+		}
+	}
+}
+country_event = {
+	id = siam.64
+	title = siam.61.t
+	desc = siam.61.d
+	picture = GFX_siam_phibun
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = siam.60.a
+		news_event = {
+			id = siam_news.23
+		}
+		country_event = {
+			id = siam.65
+			days = 3
+		}
+		SIA = {
+			if = {
+				limit = {
+					NOT = {
+						SIA = {
+							is_in_faction_with = BUR
+						}
+					}
+				}
+				create_faction = sa_cooperation_faction
+			}
+			add_to_faction = LAO
+			declare_war_on = {
+				target = CAM
+				type = annex_everything
+			}
+		}
+		LAO = {
+			drop_cosmetic_tag = yes
+		}
+		CAM = {
+			drop_cosmetic_tag = yes
+		}
+		VTC = {
+			set_cosmetic_tag = VTC_rep
+			set_capital = { 
+				state = 671
+				remember_old_capital = no
+			}
+			transfer_state = 671
+			transfer_state = 1086
+			transfer_state = 286
+		}
+	}
+}
+country_event = {
+	id = siam.65
+	title = siam.61.t
+	desc = siam.61.d
+	picture = GFX_siam_phibun
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = siam.60.a
+		SIA = {
+			white_peace = CAM
+			transfer_state = 741
+		}
+		VTC = {
+			puppet = CAM
+		}
+		CAM = {
+			set_cosmetic_tag = CAM_rep
+			set_politics = {
+				ruling_party = communism
+				last_election = "1936.1.1"
+				election_frequency = 60
+				elections_allowed = no
+			}
+			set_popularities = {
+				democratic = 0
+				fascism = 0
+				communism = 100
+				neutrality = 0
+			}
+			set_capital = { 
+				state = 1103
+				remember_old_capital = yes
+			}
+		}
+	}
+}
+country_event = {
+	id = siam.66
+	title = siam.61.t
+	desc = siam.61.d
+	picture = GFX_siam_phibun
+	
+	trigger = {
+		tag = SIA
+		has_global_flag = SIA_attacked_burma
+		OR = {
+			SIA = {
+				controls_state = 288
+			}
+			BUR = {
+				surrender_progress > 0.01
+			}
+		}
+	}
+	fire_only_once = yes
+	
+	option = {
+		name = siam.60.a
+		country_event = {
+			id = siam.67
+			days = 70
+		}
+		news_event = {
+			id = siam_news.24
+		}
+		SIA = {
+			set_cosmetic_tag = SIA_emp
+			white_peace = BUR
+			transfer_state = 992
+			transfer_state = 1076
+			transfer_state = 1075
+		}
+		288 = {
+			set_demilitarized_zone = yes
+		}
+		1091 = {
+			set_demilitarized_zone = yes
+		}
+	}
+}
+country_event = {
+	id = siam.67
+	title = siam.61.t
+	desc = siam.61.d
+	picture = GFX_siam_phibun
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = siam.60.a
+		BRM = {
+			set_cosmetic_tag = BRM_SIA
+			transfer_state = 288
+			transfer_state = 640
+			transfer_state = 1090
+			transfer_state = 1091
+			transfer_state = 1092
+			set_politics = {
+				ruling_party = fascism
+				last_election = "1936.1.1"
+				election_frequency = 60
+				elections_allowed = no
+			}
+			set_popularities = {
+				democratic = 0
+				fascism = 100
+				communism = 0
+				neutrality = 0
+			}
+		}
+		SIA = {
+			if = {
+				limit = {
+					NOT = {
+						SIA = {
+							is_in_faction_with = LAO
+						}
+					}
+				}
+				create_faction = sa_cooperation_faction
+			}
+			add_to_faction = BRM
+			if = {
+				limit = {
+					NOT = {
+						MAL = {
+							is_in_faction_with = ENG
+						}
+					}
+				}
+				add_to_faction = MAL
+			}
+		}
+	}
+}
+country_event = {
+	id = siam.68
+	title = siam.68.t
+	desc = siam.68.d
+	picture = GFX_siam_phibun
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = siam.68.a
+		custom_effect_tooltip = TOOLTIP_SIAPHIBUNEND
+		country_event = {
+			id = siam.20
+			days = 30
+		}
+	}
+}
+country_event = {
+	id = siam.69
+	title = siam.69.t
+	desc = siam.69.d
+	picture = GFX_siam_phibun
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = siam.69.a
+		country_event = {
+			id = siam.64
+			days = 7
+		}
+		LAO = {
+			leave_faction = yes
+		}
+		CAM = {
+			leave_faction = yes
+		}
+		1082 = {
+			set_demilitarized_zone = no
+		}
+		1083 = {
+			set_demilitarized_zone = no
+		}
+		1084 = {
+			set_demilitarized_zone = no
+		}
+		1085 = {
+			set_demilitarized_zone = no
+		}
+		1087 = {
+			set_demilitarized_zone = no
+		}
+		VTC = {
+			load_oob = VTC_RES
+			declare_war_on = {
+				target = VIN
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = CCH
+				type = annex_everything
+			}
+		}
+	}
+}

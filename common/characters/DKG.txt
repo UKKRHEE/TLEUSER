@@ -24,6 +24,8 @@ characters={
 			desc = "POLITICS_Yoshihisa_DESC"
 			ideology = despotism
 			traits = {
+				the_president_of_japan
+				the_none_popular
 				the_shogun
 			}
 		}
@@ -39,6 +41,7 @@ characters={
 			desc = "POLITICS_Yoshimitsu_DESC"
 			ideology = despotism
 			traits = {
+				the_v_president_of_japan
 				DKG_yoshimitsu_trait
 			}
 		}
@@ -47,8 +50,7 @@ characters={
 		name= "DKG_aizawa_saburou"
 		portraits={
 			army={
-				large="gfx/leaders/JAP/DKG_aizawa_saburou.png"
-				small="gfx/leaders/JAP/DKG_aizawa_saburou.png"
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
 			}
 		}
 		corps_commander={
@@ -63,8 +65,7 @@ characters={
 		name= "DKG_nagata_tetsuzan"
 		portraits={
 			army={
-				large="gfx/leaders/JAP/DKG_nagata_tetsuzan.png"
-				small="gfx/leaders/JAP/DKG_nagata_tetsuzan.png"
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
 			}
 		}
 		corps_commander={
@@ -80,8 +81,7 @@ characters={
 		name= "DKG_imamura_hitoshi"
 		portraits={
 			army={
-				large="gfx/leaders/JAP/DKG_imamura_hitoshi.png"
-				small="gfx/leaders/JAP/DKG_imamura_hitoshi.png"
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
 			}
 		}
 		corps_commander={
@@ -97,8 +97,7 @@ characters={
 		name= "DKG_suzuki_sosaku"
 		portraits={
 			army={
-				large="gfx/leaders/JAP/DKG_suzuki_sosaku.png"
-				small="gfx/leaders/JAP/DKG_suzuki_sosaku.png"
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
 			}
 		}
 		corps_commander={
@@ -113,8 +112,7 @@ characters={
 		name= "DKG_Adachi_Hatazou"
 		portraits={
 			army={
-				large="gfx/leaders/JAP/DKG_Adachi_Hatazou.png"
-				small="gfx/leaders/JAP/DKG_Adachi_Hatazou.png"
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds."
 			}
 		}
 		corps_commander={
@@ -388,11 +386,11 @@ characters={
 		}
 	}
 	############Clique################
-	EJP_soda_kaichi = {
-		name = "EJP_soda_kaichi"
+	EJP_asano_nagakoto = {
+		name = "EJP_asano_nagakoto"
 		portraits={
 			civilian={
-				large="gfx/leaders/JAP/Portrait_JAP_soda_gaichi.png"
+				large="gfx/leaders/JAP/Portrait_EJP_asano_nagakoto.png"
 			}
 		}
 		country_leader={

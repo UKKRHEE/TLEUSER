@@ -381,7 +381,7 @@ focus_tree = {
 				98 = {
 					set_state_name = "sudpreussen"
 				}
-				978 = {
+				987 = {
 					set_state_name = "wieletz"
 				}
 				87 = {
@@ -390,10 +390,10 @@ focus_tree = {
 				97 = {
 					set_state_name = "noiostpreussen"
 				}
-				976 = {
+				984 = {
 					set_state_name = "grodno"
 				}
-				975 = {
+				1102 = {
 					set_state_name = "nordgrodno"
 				}
 				72 = {
@@ -420,12 +420,12 @@ focus_tree = {
 					name = "wieletz"
 				}
 				add_state_core = 87
-				add_state_core = 978
+				add_state_core = 987
 				add_state_core = 72
 				add_state_core = 98
 				add_state_core = 97
-				add_state_core = 976
-				add_state_core = 975
+				add_state_core = 984
+				add_state_core = 1102
 			}
 		}
 

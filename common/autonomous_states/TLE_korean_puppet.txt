@@ -83,6 +83,8 @@ autonomy_state = {
 		extra_trade_to_overlord_factor = 0.25
 		overlord_trade_cost_factor = -0.25
 		can_master_build_for_us = 1
+		cic_to_overlord_factor = 0.8
+		mic_to_overlord_factor = 0.8
 	}
 	
 	ai_subject_wants_higher = {

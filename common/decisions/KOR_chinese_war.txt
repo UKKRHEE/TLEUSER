@@ -1,23 +1,31 @@
 
 KOR_first_plan_lightning = {
 	KOR_zhili_attack_1 = {
-		icon = generic_tank
+		icon = generic_operation
 		allowed = { original_tag = KOR }
 		ai_will_do = {
 			factor = 10
 		}
-		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+		available = { if = { limit = { is_ai =no } has_army_experience > 20 command_power > 100 } plan_isnt_started_chi = yes
 			has_war_with = ZLC
-			any_state = { has_state_flag = zhili_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			any_state = { has_state_flag = zhili_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } OR = { is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } } }
 		}
 		visible = { tag = KOR has_war_with = ZLC has_global_flag = global_CHI_defence_the_korea } 
 		highlight_states = {
-			highlight_state_targets = { state = 608 } 
+			highlight_state_targets = { 
+				state = 1012
+				state = 609
+				state = 608
+				state = 1097
+				state = 1033
+				state = 614
+				state = 1101
+			} 
 		}
 		
 		fire_only_once = yes
 		days_remove = 30
-		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.264 } }
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -20 add_command_power = -100 country_event = { id = korea.264 } }
 			every_state = {
 				limit = {
 					has_state_flag = zhili_province_state
@@ -36,14 +44,14 @@ KOR_first_plan_lightning = {
 		}
 	}
 	KOR_zhili_attack_2 = {
-		icon = generic_tank
+		icon = generic_operation
 		allowed = { original_tag = KOR }
 		ai_will_do = {
 			factor = 10
 		}
-		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+		available = { if = { limit = { is_ai =no } has_army_experience > 20 command_power > 100 } plan_isnt_started_chi = yes
 			has_war_with = ZLC
-			any_state = { has_state_flag = zhili_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			any_state = { has_state_flag = zhili_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } OR = { is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } } }
 			has_country_flag = flag_KOR_zhili_attack_2
 		}
 		visible = {
@@ -51,12 +59,20 @@ KOR_first_plan_lightning = {
 			has_country_flag = flag_KOR_zhili_attack_2
 		} 
 		highlight_states = {
-			highlight_state_targets = { state = 608 } 
+			highlight_state_targets = { 
+				state = 1012
+				state = 609
+				state = 608
+				state = 1097
+				state = 1033
+				state = 614
+				state = 1101
+			} 
 		}
 		
 		fire_only_once = yes
 		days_remove = 30
-		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.264 } }
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -20 add_command_power = -100 country_event = { id = korea.264 } }
 			every_state = {
 				limit = {
 					has_state_flag = zhili_province_state
@@ -75,14 +91,14 @@ KOR_first_plan_lightning = {
 		}
 	}
 	KOR_zhili_attack_3 = {
-		icon = generic_tank
+		icon = generic_operation
 		allowed = { original_tag = KOR }
 		ai_will_do = {
 			factor = 10
 		}
-		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+		available = { if = { limit = { is_ai =no } has_army_experience > 20 command_power > 100 } plan_isnt_started_chi = yes
 			has_war_with = ZLC
-			any_state = { has_state_flag = zhili_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			any_state = { has_state_flag = zhili_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } OR = { is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } } }
 			has_country_flag = flag_KOR_zhili_attack_3
 		}
 		visible = {
@@ -90,12 +106,20 @@ KOR_first_plan_lightning = {
 			has_country_flag = flag_KOR_zhili_attack_3
 		} 
 		highlight_states = {
-			highlight_state_targets = { state = 608 } 
+			highlight_state_targets = { 
+				state = 1012
+				state = 609
+				state = 608
+				state = 1097
+				state = 1033
+				state = 614
+				state = 1101
+			} 
 		}
 		
-		fire_only_once = no
+		fire_only_once = yes
 		days_remove = 10
-		complete_effect = { if = { limit = { is_ai =no NOT = { has_country_flag = flag_KOR_zhili_attack_4 } } army_experience = -60 add_political_power = -80 } country_event = { id = korea.352 }
+		complete_effect = { if = { limit = { is_ai =no NOT = { has_country_flag = flag_KOR_zhili_attack_4 } } army_experience = -20 add_command_power = -100 } country_event = { id = korea.352 }
 			every_state = {
 				limit = {
 					has_state_flag = zhili_province_state
@@ -104,33 +128,36 @@ KOR_first_plan_lightning = {
 			}	
 		}	
 		remove_effect = {
-			every_state = {
-				limit = {
-					has_state_flag = zhili_province_state
-				}
-				add_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
-			}	
 			set_country_flag = flag_KOR_zhili_attack_4
 		}
 	}
 	KOR_shandong_attack_1 = {
-		icon = generic_tank
+		icon = generic_operation
 		allowed = { original_tag = KOR }
 		ai_will_do = {
 			factor = 10
 		}
-		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+		available = { if = { limit = { is_ai =no } has_army_experience > 20 command_power > 100 } plan_isnt_started_chi = yes
 			has_war_with = ZLC
-			any_state = { has_state_flag = shandong_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			any_state = { has_state_flag = shandong_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } OR = { is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } } }
 		}
 		visible = { tag = KOR has_war_with = ZLC has_global_flag = global_CHI_defence_the_korea } 
 		highlight_states = {
-			highlight_state_targets = { state = 597 } 
+			highlight_state_targets = { 
+				state = 1100
+				state = 1050
+				state = 597
+				state = 1049
+				state = 1035
+				state = 1004
+				state = 743
+				state = 1034
+			}  
 		}
 		
 		fire_only_once = yes
 		days_remove = 30
-		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.264 } }
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -20 add_command_power = -100 country_event = { id = korea.264 } }
 			every_state = {
 				limit = {
 					has_state_flag = shandong_province_state
@@ -157,14 +184,14 @@ KOR_first_plan_lightning = {
 		}
 	}
 	KOR_shandong_attack_2 = {
-		icon = generic_tank
+		icon = generic_operation
 		allowed = { original_tag = KOR }
 		ai_will_do = {
 			factor = 10
 		}
-		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+		available = { if = { limit = { is_ai =no } has_army_experience > 20 command_power > 100 } plan_isnt_started_chi = yes
 			has_war_with = ZLC
-			any_state = { has_state_flag = shandong_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			any_state = { has_state_flag = shandong_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } OR = { is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } } }
 			has_country_flag = flag_KOR_shandong_attack_2
 		}
 		visible = {
@@ -172,12 +199,21 @@ KOR_first_plan_lightning = {
 			has_country_flag = flag_KOR_shandong_attack_2
 		} 
 		highlight_states = {
-			highlight_state_targets = { state = 597 } 
+			highlight_state_targets = { 
+				state = 1100
+				state = 1050
+				state = 597
+				state = 1049
+				state = 1035
+				state = 1004
+				state = 743
+				state = 1034
+			}  
 		}
 		
 		fire_only_once = yes
 		days_remove = 30
-		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.264 } }
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -20 add_command_power = -100 country_event = { id = korea.264 } }
 			every_state = {
 				limit = {
 					has_state_flag = shandong_province_state
@@ -204,14 +240,14 @@ KOR_first_plan_lightning = {
 		}
 	}
 	KOR_shandong_attack_3 = {
-		icon = generic_tank
+		icon = generic_operation
 		allowed = { original_tag = KOR }
 		ai_will_do = {
 			factor = 10
 		}
-		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+		available = { if = { limit = { is_ai =no } has_army_experience > 20 command_power > 100 } plan_isnt_started_chi = yes
 			has_war_with = ZLC
-			any_state = { has_state_flag = shandong_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			any_state = { has_state_flag = shandong_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } OR = { is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } } }
 			has_country_flag = flag_KOR_shandong_attack_3
 		}
 		visible = {
@@ -219,12 +255,21 @@ KOR_first_plan_lightning = {
 			has_country_flag = flag_KOR_shandong_attack_3
 		} 
 		highlight_states = {
-			highlight_state_targets = { state = 597 } 
+			highlight_state_targets = { 
+				state = 1100
+				state = 1050
+				state = 597
+				state = 1049
+				state = 1035
+				state = 1004
+				state = 743
+				state = 1034
+			}  
 		}
 		
-		fire_only_once = no
+		fire_only_once = yes
 		days_remove = 10
-		complete_effect = { if = { limit = { is_ai =no NOT = { has_country_flag = flag_KOR_shandong_attack_4 } } army_experience = -60 add_political_power = -80 } country_event = { id = korea.352 }
+		complete_effect = { if = { limit = { is_ai =no NOT = { has_country_flag = flag_KOR_shandong_attack_4 } } army_experience = -20 add_command_power = -100 } country_event = { id = korea.352 }
 			every_state = {
 				limit = {
 					has_state_flag = shandong_province_state
@@ -237,37 +282,31 @@ KOR_first_plan_lightning = {
 			}	
 		}	
 		remove_effect = {
-			every_state = {
-				limit = {
-					has_state_flag = shandong_province_state
-					NOT = {
-						state = 743
-						state = 1034
-					}
-				}
-				add_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
-			}	
 			set_country_flag = flag_KOR_shandong_attack_4
 		}
 	}
 	KOR_shanxi_attack_1 = {
-		icon = generic_tank
+		icon = generic_operation
 		allowed = { original_tag = KOR }
 		ai_will_do = {
 			factor = 10
 		}
-		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+		available = { if = { limit = { is_ai =no } has_army_experience > 20 command_power > 100 } plan_isnt_started_chi = yes
 			has_war_with = ZLC
-			any_state = { has_state_flag = shanxi_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			any_state = { has_state_flag = shanxi_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } OR = { is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } } }
 		}
 		visible = { tag = KOR has_war_with = ZLC has_global_flag = global_CHI_defence_the_korea } 
 		highlight_states = {
-			highlight_state_targets = { state = 615 } 
+			highlight_state_targets = { 
+				state = 1099
+				state = 615
+				state = 1052
+			}  
 		}
 		
 		fire_only_once = yes
 		days_remove = 30
-		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.264 } }
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -20 add_command_power = -100 country_event = { id = korea.264 } }
 			every_state = {
 				limit = {
 					has_state_flag = shanxi_province_state
@@ -286,14 +325,14 @@ KOR_first_plan_lightning = {
 		}
 	}
 	KOR_shanxi_attack_2 = {
-		icon = generic_tank
+		icon = generic_operation
 		allowed = { original_tag = KOR }
 		ai_will_do = {
 			factor = 10
 		}
-		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+		available = { if = { limit = { is_ai =no } has_army_experience > 20 command_power > 100 } plan_isnt_started_chi = yes
 			has_war_with = ZLC
-			any_state = { has_state_flag = shanxi_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			any_state = { has_state_flag = shanxi_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } OR = { is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } } }
 			has_country_flag = flag_KOR_shanxi_attack_2
 		}
 		visible = {
@@ -301,12 +340,16 @@ KOR_first_plan_lightning = {
 			has_country_flag = flag_KOR_shanxi_attack_2
 		} 
 		highlight_states = {
-			highlight_state_targets = { state = 615 } 
+			highlight_state_targets = { 
+				state = 1099
+				state = 615
+				state = 1052
+			}  
 		}
 		
 		fire_only_once = yes
 		days_remove = 30
-		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.264 } }
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -20 add_command_power = -100 country_event = { id = korea.264 } }
 			every_state = {
 				limit = {
 					has_state_flag = shanxi_province_state
@@ -325,14 +368,14 @@ KOR_first_plan_lightning = {
 		}
 	}
 	KOR_shanxi_attack_3 = {
-		icon = generic_tank
+		icon = generic_operation
 		allowed = { original_tag = KOR }
 		ai_will_do = {
 			factor = 10
 		}
-		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+		available = { if = { limit = { is_ai =no } has_army_experience > 20 command_power > 100 } plan_isnt_started_chi = yes
 			has_war_with = ZLC
-			any_state = { has_state_flag = shanxi_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			any_state = { has_state_flag = shanxi_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } OR = { is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } } }
 			has_country_flag = flag_KOR_shanxi_attack_3
 		}
 		visible = {
@@ -340,47 +383,48 @@ KOR_first_plan_lightning = {
 			has_country_flag = flag_KOR_shanxi_attack_3
 		} 
 		highlight_states = {
-			highlight_state_targets = { state = 615 } 
+			highlight_state_targets = { 
+				state = 1099
+				state = 615
+				state = 1052
+			}  
 		}
 		
-		fire_only_once = no
+		fire_only_once = yes
 		days_remove = 10
-		complete_effect = { if = { limit = { is_ai =no NOT = { has_country_flag = flag_KOR_shanxi_attack_4 } } army_experience = -60 add_political_power = -80 } country_event = { id = korea.352 }
+		complete_effect = { if = { limit = { is_ai =no NOT = { has_country_flag = flag_KOR_shanxi_attack_4 } } army_experience = -20 add_command_power = -100 } country_event = { id = korea.352 }
 			every_state = {
 				limit = {
 					has_state_flag = shanxi_province_state
 				}
-				remove_dynamic_modifier = { modifier = CHI_defence_the_korea_2 }
+				remove_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
 			}	
 		}	
 		remove_effect = {
-			every_state = {
-				limit = {
-					has_state_flag = shanxi_province_state
-				}
-				add_dynamic_modifier = { modifier = CHI_defence_the_korea_2 }
-			}	
 			set_country_flag = flag_KOR_shanxi_attack_4
 		}
 	}
 	KOR_shaanxi_attack_1 = {
-		icon = generic_tank
+		icon = generic_operation
 		allowed = { original_tag = KOR }
 		ai_will_do = {
 			factor = 10
 		}
-		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+		available = { if = { limit = { is_ai =no } has_army_experience > 20 command_power > 100 } plan_isnt_started_chi = yes
 			has_war_with = ZLC
-			any_state = { has_state_flag = shaanxi_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			any_state = { has_state_flag = shaanxi_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } OR = { is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } } }
 		}
 		visible = { tag = KOR has_war_with = ZLC has_global_flag = global_CHI_defence_the_korea } 
 		highlight_states = {
-			highlight_state_targets = { state = 622 } 
+			highlight_state_targets = { 
+				state = 622
+				state = 744
+			}  
 		}
 		
 		fire_only_once = yes
 		days_remove = 30
-		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.264 } }
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -20 add_command_power = -100 country_event = { id = korea.264 } }
 			every_state = {
 				limit = {
 					has_state_flag = shaanxi_province_state
@@ -399,14 +443,14 @@ KOR_first_plan_lightning = {
 		}
 	}
 	KOR_shaanxi_attack_2 = {
-		icon = generic_tank
+		icon = generic_operation
 		allowed = { original_tag = KOR }
 		ai_will_do = {
 			factor = 10
 		}
-		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+		available = { if = { limit = { is_ai =no } has_army_experience > 20 command_power > 100 } plan_isnt_started_chi = yes
 			has_war_with = ZLC
-			any_state = { has_state_flag = shaanxi_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			any_state = { has_state_flag = shaanxi_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } OR = { is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } } }
 			has_country_flag = flag_KOR_shaanxi_attack_2
 		}
 		visible = {
@@ -414,12 +458,15 @@ KOR_first_plan_lightning = {
 			has_country_flag = flag_KOR_shaanxi_attack_2
 		} 
 		highlight_states = {
-			highlight_state_targets = { state = 622 } 
+			highlight_state_targets = { 
+				state = 622
+				state = 744
+			}  
 		}
 		
 		fire_only_once = yes
 		days_remove = 30
-		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.264 } }
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -20 add_command_power = -100 country_event = { id = korea.264 } }
 			every_state = {
 				limit = {
 					has_state_flag = shaanxi_province_state
@@ -438,14 +485,14 @@ KOR_first_plan_lightning = {
 		}
 	}
 	KOR_shaanxi_attack_3 = {
-		icon = generic_tank
+		icon = generic_operation
 		allowed = { original_tag = KOR }
 		ai_will_do = {
 			factor = 10
 		}
-		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+		available = { if = { limit = { is_ai =no } has_army_experience > 20 command_power > 100 } plan_isnt_started_chi = yes
 			has_war_with = ZLC
-			any_state = { has_state_flag = shaanxi_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			any_state = { has_state_flag = shaanxi_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } OR = { is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } } }
 			has_country_flag = flag_KOR_shaanxi_attack_3
 		}
 		visible = {
@@ -453,12 +500,15 @@ KOR_first_plan_lightning = {
 			has_country_flag = flag_KOR_shaanxi_attack_3
 		} 
 		highlight_states = {
-			highlight_state_targets = { state = 622 } 
+			highlight_state_targets = { 
+				state = 622
+				state = 744
+			}  
 		}
 		
-		fire_only_once = no
+		fire_only_once = yes
 		days_remove = 10
-		complete_effect = { if = { limit = { is_ai =no NOT = { has_country_flag = flag_KOR_shaanxi_attack_4 } } army_experience = -60 add_political_power = -80 } country_event = { id = korea.352 }
+		complete_effect = { if = { limit = { is_ai =no NOT = { has_country_flag = flag_KOR_shaanxi_attack_4 } } army_experience = -20 add_command_power = -100 } country_event = { id = korea.352 }
 			every_state = {
 				limit = {
 					has_state_flag = shaanxi_province_state
@@ -467,33 +517,32 @@ KOR_first_plan_lightning = {
 			}	
 		}	
 		remove_effect = {
-			every_state = {
-				limit = {
-					has_state_flag = shaanxi_province_state
-				}
-				add_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
-			}	
 			set_country_flag = flag_KOR_shaanxi_attack_4
 		}
 	}
 	KOR_henan_attack_1 = {
-		icon = generic_tank
+		icon = generic_operation
 		allowed = { original_tag = KOR }
 		ai_will_do = {
 			factor = 10
 		}
-		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+		available = { if = { limit = { is_ai =no } has_army_experience > 20 command_power > 100 } plan_isnt_started_chi = yes
 			has_war_with = ZLC
-			any_state = { has_state_flag = henan_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			any_state = { has_state_flag = henan_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } OR = { is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } } }
 		}
 		visible = { tag = KOR has_war_with = ZLC has_global_flag = global_CHI_defence_the_korea } 
 		highlight_states = {
-			highlight_state_targets = { state = 1067 } 
+			highlight_state_targets = { 
+				state = 607
+				state = 1057
+				state = 1008
+				state = 1074
+			}  
 		}
 		
 		fire_only_once = yes
 		days_remove = 30
-		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.264 } }
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -20 add_command_power = -100 country_event = { id = korea.264 } }
 			every_state = {
 				limit = {
 					has_state_flag = henan_province_state
@@ -512,14 +561,14 @@ KOR_first_plan_lightning = {
 		}
 	}
 	KOR_henan_attack_2 = {
-		icon = generic_tank
+		icon = generic_operation
 		allowed = { original_tag = KOR }
 		ai_will_do = {
 			factor = 10
 		}
-		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+		available = { if = { limit = { is_ai =no } has_army_experience > 20 command_power > 100 } plan_isnt_started_chi = yes
 			has_war_with = ZLC
-			any_state = { has_state_flag = henan_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			any_state = { has_state_flag = henan_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } OR = { is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } } }
 			has_country_flag = flag_KOR_henan_attack_2
 		}
 		visible = {
@@ -527,12 +576,17 @@ KOR_first_plan_lightning = {
 			has_country_flag = flag_KOR_henan_attack_2
 		} 
 		highlight_states = {
-			highlight_state_targets = { state = 1067 } 
+			highlight_state_targets = { 
+				state = 607
+				state = 1057
+				state = 1008
+				state = 1074
+			}
 		}
 		
 		fire_only_once = yes
 		days_remove = 30
-		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.264 } }
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -20 add_command_power = -100 country_event = { id = korea.264 } }
 			every_state = {
 				limit = {
 					has_state_flag = henan_province_state
@@ -551,14 +605,14 @@ KOR_first_plan_lightning = {
 		}
 	}
 	KOR_henan_attack_3 = {
-		icon = generic_tank
+		icon = generic_operation
 		allowed = { original_tag = KOR }
 		ai_will_do = {
 			factor = 10
 		}
-		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+		available = { if = { limit = { is_ai =no } has_army_experience > 20 command_power > 100 } plan_isnt_started_chi = yes
 			has_war_with = ZLC
-			any_state = { has_state_flag = henan_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			any_state = { has_state_flag = henan_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } OR = { is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } } }
 			has_country_flag = flag_KOR_henan_attack_3
 		}
 		visible = {
@@ -566,12 +620,17 @@ KOR_first_plan_lightning = {
 			has_country_flag = flag_KOR_henan_attack_3
 		} 
 		highlight_states = {
-			highlight_state_targets = { state = 1067 } 
+			highlight_state_targets = { 
+				state = 607
+				state = 1057
+				state = 1008
+				state = 1074
+			}
 		}
 		
-		fire_only_once = no
+		fire_only_once = yes
 		days_remove = 10
-		complete_effect = { if = { limit = { is_ai =no NOT = { has_country_flag = flag_KOR_henan_attack_4 } } army_experience = -60 add_political_power = -80 } country_event = { id = korea.352 }
+		complete_effect = { if = { limit = { is_ai =no NOT = { has_country_flag = flag_KOR_henan_attack_4 } } army_experience = -20 add_command_power = -100 } country_event = { id = korea.352 }
 			every_state = {
 				limit = {
 					has_state_flag = henan_province_state
@@ -580,33 +639,30 @@ KOR_first_plan_lightning = {
 			}	
 		}	
 		remove_effect = {
-			every_state = {
-				limit = {
-					has_state_flag = henan_province_state
-				}
-				add_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
-			}	
 			set_country_flag = flag_KOR_henan_attack_4
 		}
 	}
 	KOR_anhui_attack_1 = {
-		icon = generic_tank
+		icon = generic_operation
 		allowed = { original_tag = KOR }
 		ai_will_do = {
 			factor = 10
 		}
-		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+		available = { if = { limit = { is_ai =no } has_army_experience > 20 command_power > 100 } plan_isnt_started_chi = yes
 			has_war_with = ZLC
-			any_state = { has_state_flag = anhui_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			any_state = { has_state_flag = anhui_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } OR = { is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } } }
 		}
 		visible = { tag = KOR has_war_with = ZLC has_global_flag = global_CHI_defence_the_korea } 
 		highlight_states = {
-			highlight_state_targets = { state = 606 } 
+			highlight_state_targets = { 
+				state = 606
+				state = 749
+			}
 		}
 		
 		fire_only_once = yes
 		days_remove = 30
-		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.264 } }
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -20 add_command_power = -100 country_event = { id = korea.264 } }
 			every_state = {
 				limit = {
 					has_state_flag = anhui_province_state
@@ -625,14 +681,14 @@ KOR_first_plan_lightning = {
 		}
 	}
 	KOR_anhui_attack_2 = {
-		icon = generic_tank
+		icon = generic_operation
 		allowed = { original_tag = KOR }
 		ai_will_do = {
 			factor = 10
 		}
-		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+		available = { if = { limit = { is_ai =no } has_army_experience > 20 command_power > 100 } plan_isnt_started_chi = yes
 			has_war_with = ZLC
-			any_state = { has_state_flag = anhui_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			any_state = { has_state_flag = anhui_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } OR = { is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } } }
 			has_country_flag = flag_KOR_anhui_attack_2
 		}
 		visible = {
@@ -640,12 +696,15 @@ KOR_first_plan_lightning = {
 			has_country_flag = flag_KOR_anhui_attack_2
 		} 
 		highlight_states = {
-			highlight_state_targets = { state = 606 } 
+			highlight_state_targets = { 
+				state = 606
+				state = 749
+			}
 		}
 		
 		fire_only_once = yes
 		days_remove = 30
-		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.264 } }
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -20 add_command_power = -100 country_event = { id = korea.264 } }
 			every_state = {
 				limit = {
 					has_state_flag = anhui_province_state
@@ -664,14 +723,14 @@ KOR_first_plan_lightning = {
 		}
 	}
 	KOR_anhui_attack_3 = {
-		icon = generic_tank
+		icon = generic_operation
 		allowed = { original_tag = KOR }
 		ai_will_do = {
 			factor = 10
 		}
-		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+		available = { if = { limit = { is_ai =no } has_army_experience > 20 command_power > 100 } plan_isnt_started_chi = yes
 			has_war_with = ZLC
-			any_state = { has_state_flag = anhui_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			any_state = { has_state_flag = anhui_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } OR = { is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } } }
 			has_country_flag = flag_KOR_anhui_attack_3
 		}
 		visible = {
@@ -679,12 +738,15 @@ KOR_first_plan_lightning = {
 			has_country_flag = flag_KOR_anhui_attack_3
 		} 
 		highlight_states = {
-			highlight_state_targets = { state = 606 } 
+			highlight_state_targets = { 
+				state = 606
+				state = 749
+			}
 		}
 		
-		fire_only_once = no
+		fire_only_once = yes
 		days_remove = 10
-		complete_effect = { if = { limit = { is_ai =no NOT = { has_country_flag = flag_KOR_anhui_attack_4 } } army_experience = -60 add_political_power = -80 } country_event = { id = korea.352 }
+		complete_effect = { if = { limit = { is_ai =no NOT = { has_country_flag = flag_KOR_anhui_attack_4 } } army_experience = -20 add_command_power = -100 } country_event = { id = korea.352 }
 			every_state = {
 				limit = {
 					has_state_flag = anhui_province_state
@@ -693,33 +755,36 @@ KOR_first_plan_lightning = {
 			}	
 		}
 		remove_effect = {
-			every_state = {
-				limit = {
-					has_state_flag = anhui_province_state
-				}
-				add_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
-			}	
 			set_country_flag = flag_KOR_anhui_attack_4
 		}
 	}
 	KOR_jiangsu_attack_1 = {
-		icon = generic_tank
+		icon = generic_operation
 		allowed = { original_tag = KOR }
 		ai_will_do = {
 			factor = 10
 		}
-		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+		available = { if = { limit = { is_ai =no } has_army_experience > 20 command_power > 100 } plan_isnt_started_chi = yes
 			has_war_with = ZLC
-			any_state = { has_state_flag = jiangsu_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			any_state = { has_state_flag = jiangsu_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } OR = { is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } } }
 		}
 		visible = { tag = KOR has_war_with = ZLC has_global_flag = global_CHI_defence_the_korea } 
 		highlight_states = {
-			highlight_state_targets = { state = 613 } 
+			highlight_state_targets = { 
+				state = 598
+				state = 1051
+				state = 1040
+				state = 997
+				state = 613
+				state = 1038
+				state = 1036
+				state = 1037
+			}
 		}
 		
 		fire_only_once = yes
 		days_remove = 30
-		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.264 } }
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -20 add_command_power = -100 country_event = { id = korea.264 } }
 			every_state = {
 				limit = {
 					has_state_flag = jiangsu_province_state
@@ -738,14 +803,14 @@ KOR_first_plan_lightning = {
 		}
 	}
 	KOR_jiangsu_attack_2 = {
-		icon = generic_tank
+		icon = generic_operation
 		allowed = { original_tag = KOR }
 		ai_will_do = {
 			factor = 10
 		}
-		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+		available = { if = { limit = { is_ai =no } has_army_experience > 20 command_power > 100 } plan_isnt_started_chi = yes
 			has_war_with = ZLC
-			any_state = { has_state_flag = jiangsu_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			any_state = { has_state_flag = jiangsu_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } OR = { is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } } }
 			has_country_flag = flag_KOR_jiangsu_attack_2
 		}
 		visible = {
@@ -753,12 +818,21 @@ KOR_first_plan_lightning = {
 			has_country_flag = flag_KOR_jiangsu_attack_2
 		} 
 		highlight_states = {
-			highlight_state_targets = { state = 613 } 
+			highlight_state_targets = { 
+				state = 598
+				state = 1051
+				state = 1040
+				state = 997
+				state = 613
+				state = 1038
+				state = 1036
+				state = 1037
+			}
 		}
 		
 		fire_only_once = yes
 		days_remove = 30
-		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.264 } }
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -20 add_command_power = -100 country_event = { id = korea.264 } }
 			every_state = {
 				limit = {
 					has_state_flag = jiangsu_province_state
@@ -777,14 +851,14 @@ KOR_first_plan_lightning = {
 		}
 	}
 	KOR_jiangsu_attack_3 = {
-		icon = generic_tank
+		icon = generic_operation
 		allowed = { original_tag = KOR }
 		ai_will_do = {
 			factor = 10
 		}
-		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+		available = { if = { limit = { is_ai =no } has_army_experience > 20 command_power > 100 } plan_isnt_started_chi = yes
 			has_war_with = ZLC
-			any_state = { has_state_flag = jiangsu_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			any_state = { has_state_flag = jiangsu_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } OR = { is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } } }
 			has_country_flag = flag_KOR_jiangsu_attack_3
 		}
 		visible = {
@@ -792,12 +866,21 @@ KOR_first_plan_lightning = {
 			has_country_flag = flag_KOR_jiangsu_attack_3
 		} 
 		highlight_states = {
-			highlight_state_targets = { state = 613 } 
+			highlight_state_targets = { 
+				state = 598
+				state = 1051
+				state = 1040
+				state = 997
+				state = 613
+				state = 1038
+				state = 1036
+				state = 1037
+			}
 		}
 		
-		fire_only_once = no
+		fire_only_once = yes
 		days_remove = 10
-		complete_effect = { if = { limit = { is_ai =no NOT = { has_country_flag = flag_KOR_jiangsu_attack_4 } } army_experience = -60 add_political_power = -80 } country_event = { id = korea.352 }
+		complete_effect = { if = { limit = { is_ai =no NOT = { has_country_flag = flag_KOR_jiangsu_attack_4 } } army_experience = -20 add_command_power = -100 } country_event = { id = korea.352 }
 			every_state = {
 				limit = {
 					has_state_flag = jiangsu_province_state
@@ -806,33 +889,31 @@ KOR_first_plan_lightning = {
 			}	
 		}	
 		remove_effect = {
-			every_state = {
-				limit = {
-					has_state_flag = jiangsu_province_state
-				}
-				add_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
-			}	
 			set_country_flag = flag_KOR_jiangsu_attack_4
 		}
 	}
 	KOR_zhejiang_attack_1 = {
-		icon = generic_tank
+		icon = generic_operation
 		allowed = { original_tag = KOR }
 		ai_will_do = {
 			factor = 10
 		}
-		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+		available = { if = { limit = { is_ai =no } has_army_experience > 20 command_power > 100 } plan_isnt_started_chi = yes
 			has_war_with = ZLC
-			any_state = { has_state_flag = zhejiang_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			any_state = { has_state_flag = zhejiang_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } OR = { is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } } }
 		}
 		visible = { tag = KOR has_war_with = ZLC has_global_flag = global_CHI_defence_the_korea } 
 		highlight_states = {
-			highlight_state_targets = { state = 596 } 
+			highlight_state_targets = { 
+				state = 596
+				state = 1042
+				state = 1041
+			}
 		}
 		
 		fire_only_once = yes
 		days_remove = 30
-		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.264 } }
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -20 add_command_power = -100 country_event = { id = korea.264 } }
 			every_state = {
 				limit = {
 					has_state_flag = zhejiang_province_state
@@ -851,14 +932,14 @@ KOR_first_plan_lightning = {
 		}
 	}
 	KOR_zhejiang_attack_2 = {
-		icon = generic_tank
+		icon = generic_operation
 		allowed = { original_tag = KOR }
 		ai_will_do = {
 			factor = 10
 		}
-		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+		available = { if = { limit = { is_ai =no } has_army_experience > 20 command_power > 100 } plan_isnt_started_chi = yes
 			has_war_with = ZLC
-			any_state = { has_state_flag = zhejiang_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			any_state = { has_state_flag = zhejiang_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } OR = { is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } } }
 			has_country_flag = flag_KOR_zhejiang_attack_2
 		}
 		visible = {
@@ -866,12 +947,16 @@ KOR_first_plan_lightning = {
 			has_country_flag = flag_KOR_zhejiang_attack_2
 		} 
 		highlight_states = {
-			highlight_state_targets = { state = 596 } 
+			highlight_state_targets = { 
+				state = 596
+				state = 1042
+				state = 1041
+			} 
 		}
 		
 		fire_only_once = yes
 		days_remove = 30
-		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.264 } }
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -20 add_command_power = -100 country_event = { id = korea.264 } }
 			every_state = {
 				limit = {
 					has_state_flag = zhejiang_province_state
@@ -890,14 +975,14 @@ KOR_first_plan_lightning = {
 		}
 	}
 	KOR_zhejiang_attack_3 = {
-		icon = generic_tank
+		icon = generic_operation
 		allowed = { original_tag = KOR }
 		ai_will_do = {
 			factor = 10
 		}
-		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+		available = { if = { limit = { is_ai =no } has_army_experience > 20 command_power > 100 } plan_isnt_started_chi = yes
 			has_war_with = ZLC
-			any_state = { has_state_flag = zhejiang_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			any_state = { has_state_flag = zhejiang_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } OR = { is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } } }
 			has_country_flag = flag_KOR_zhejiang_attack_3
 		}
 		visible = {
@@ -905,12 +990,16 @@ KOR_first_plan_lightning = {
 			has_country_flag = flag_KOR_zhejiang_attack_3
 		} 
 		highlight_states = {
-			highlight_state_targets = { state = 596 } 
+			highlight_state_targets = { 
+				state = 596
+				state = 1042
+				state = 1041
+			} 
 		}
 		
-		fire_only_once = no
+		fire_only_once = yes
 		days_remove = 10
-		complete_effect = { if = { limit = { is_ai =no NOT = { has_country_flag = flag_KOR_zhejiang_attack_4 } } army_experience = -60 add_political_power = -80 } country_event = { id = korea.352 }
+		complete_effect = { if = { limit = { is_ai =no NOT = { has_country_flag = flag_KOR_zhejiang_attack_4 } } army_experience = -20 add_command_power = -100 } country_event = { id = korea.352 }
 			every_state = {
 				limit = {
 					has_state_flag = zhejiang_province_state
@@ -919,33 +1008,32 @@ KOR_first_plan_lightning = {
 			}	
 		}	
 		remove_effect = {
-			every_state = {
-				limit = {
-					has_state_flag = zhejiang_province_state
-				}
-				add_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
-			}	
 			set_country_flag = flag_KOR_zhejiang_attack_4
 		}
 	}
 	KOR_fujian_attack_1 = {
-		icon = generic_tank
+		icon = generic_operation
 		allowed = { original_tag = KOR }
 		ai_will_do = {
 			factor = 10
 		}
-		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+		available = { if = { limit = { is_ai =no } has_army_experience > 20 command_power > 100 } plan_isnt_started_chi = yes
 			has_war_with = ZLC
-			any_state = { has_state_flag = fujian_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			any_state = { has_state_flag = fujian_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } OR = { is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } } }
 		}
 		visible = { tag = KOR has_war_with = ZLC has_global_flag = global_CHI_defence_the_korea } 
 		highlight_states = {
-			highlight_state_targets = { state = 595 } 
+			highlight_state_targets = { 
+				state = 595
+				state = 1043
+				state = 1055
+				state = 1044
+			}
 		}
 		
 		fire_only_once = yes
 		days_remove = 30
-		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.264 } }
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -20 add_command_power = -100 country_event = { id = korea.264 } }
 			every_state = {
 				limit = {
 					has_state_flag = fujian_province_state
@@ -964,14 +1052,14 @@ KOR_first_plan_lightning = {
 		}
 	}
 	KOR_fujian_attack_2 = {
-		icon = generic_tank
+		icon = generic_operation
 		allowed = { original_tag = KOR }
 		ai_will_do = {
 			factor = 10
 		}
-		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+		available = { if = { limit = { is_ai =no } has_army_experience > 20 command_power > 100 } plan_isnt_started_chi = yes
 			has_war_with = ZLC
-			any_state = { has_state_flag = fujian_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			any_state = { has_state_flag = fujian_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } OR = { is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } } }
 			has_country_flag = flag_KOR_fujian_attack_2
 		}
 		visible = {
@@ -979,12 +1067,17 @@ KOR_first_plan_lightning = {
 			has_country_flag = flag_KOR_fujian_attack_2
 		} 
 		highlight_states = {
-			highlight_state_targets = { state = 595 } 
+			highlight_state_targets = { 
+				state = 595
+				state = 1043
+				state = 1055
+				state = 1044
+			} 
 		}
 		
 		fire_only_once = yes
 		days_remove = 30
-		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.264 } }
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -20 add_command_power = -100 country_event = { id = korea.264 } }
 			every_state = {
 				limit = {
 					has_state_flag = fujian_province_state
@@ -1003,14 +1096,14 @@ KOR_first_plan_lightning = {
 		}
 	}
 	KOR_fujian_attack_3 = {
-		icon = generic_tank
+		icon = generic_operation
 		allowed = { original_tag = KOR }
 		ai_will_do = {
 			factor = 10
 		}
-		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+		available = { if = { limit = { is_ai =no } has_army_experience > 20 command_power > 100 } plan_isnt_started_chi = yes
 			has_war_with = ZLC
-			any_state = { has_state_flag = fujian_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			any_state = { has_state_flag = fujian_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } OR = { is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } } }
 			has_country_flag = flag_KOR_fujian_attack_3
 		}
 		visible = {
@@ -1018,12 +1111,17 @@ KOR_first_plan_lightning = {
 			has_country_flag = flag_KOR_fujian_attack_3
 		} 
 		highlight_states = {
-			highlight_state_targets = { state = 595 } 
+			highlight_state_targets = { 
+				state = 595
+				state = 1043
+				state = 1055
+				state = 1044
+			}
 		}
 		
-		fire_only_once = no
+		fire_only_once = yes
 		days_remove = 10
-		complete_effect = { if = { limit = { is_ai =no NOT = { has_country_flag = flag_KOR_fujian_attack_4 } } army_experience = -60 add_political_power = -80 } country_event = { id = korea.352 }
+		complete_effect = { if = { limit = { is_ai =no NOT = { has_country_flag = flag_KOR_fujian_attack_4 } } army_experience = -20 add_command_power = -100 } country_event = { id = korea.352 }
 			every_state = {
 				limit = {
 					has_state_flag = fujian_province_state
@@ -1032,33 +1130,152 @@ KOR_first_plan_lightning = {
 			}	
 		}	
 		remove_effect = {
-			every_state = {
-				limit = {
-					has_state_flag = fujian_province_state
-				}
-				add_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
-			}	
 			set_country_flag = flag_KOR_fujian_attack_4
 		}
 	}
-	KOR_hubei_attack_1 = {
-		icon = generic_tank
+	KOR_jiangxi_attack_1 = {
+		icon = generic_operation
 		allowed = { original_tag = KOR }
 		ai_will_do = {
 			factor = 10
 		}
-		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+		available = { if = { limit = { is_ai =no } has_army_experience > 20 command_power > 100 } plan_isnt_started_chi = yes
 			has_war_with = ZLC
-			any_state = { has_state_flag = hubei_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			any_state = { has_state_flag = jiangxi_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } OR = { is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } } }
 		}
 		visible = { tag = KOR has_war_with = ZLC has_global_flag = global_CHI_defence_the_korea } 
 		highlight_states = {
-			highlight_state_targets = { state = 1048 } 
+			highlight_state_targets = { 
+				state = 1062
+				state = 600
+				state = 1061
+			}
 		}
 		
 		fire_only_once = yes
 		days_remove = 30
-		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.264 } }
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -20 add_command_power = -100 country_event = { id = korea.264 } }
+			every_state = {
+				limit = {
+					has_state_flag = jiangxi_province_state
+				}
+				remove_dynamic_modifier = { modifier = CHI_defence_the_korea }
+			}	
+		}	
+		remove_effect = {
+			every_state = {
+				limit = {
+					has_state_flag = jiangxi_province_state
+				}
+				add_dynamic_modifier = { modifier = CHI_defence_the_korea_2 }
+			}	
+			set_country_flag = flag_KOR_jiangxi_attack_2
+		}
+	}
+	KOR_jiangxi_attack_2 = {
+		icon = generic_operation
+		allowed = { original_tag = KOR }
+		ai_will_do = {
+			factor = 10
+		}
+		available = { if = { limit = { is_ai =no } has_army_experience > 20 command_power > 100 } plan_isnt_started_chi = yes
+			has_war_with = ZLC
+			any_state = { has_state_flag = jiangxi_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } OR = { is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } } }
+			has_country_flag = flag_KOR_jiangxi_attack_2
+		}
+		visible = {
+			tag = KOR has_war_with = ZLC
+			has_country_flag = flag_KOR_jiangxi_attack_2
+		} 
+		highlight_states = {
+			highlight_state_targets = { 
+				state = 1062
+				state = 600
+				state = 1061
+			}
+		}
+		
+		fire_only_once = yes
+		days_remove = 30
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -20 add_command_power = -100 country_event = { id = korea.264 } }
+			every_state = {
+				limit = {
+					has_state_flag = jiangxi_province_state
+				}
+				remove_dynamic_modifier = { modifier = CHI_defence_the_korea_2 }
+			}	
+		}	
+		remove_effect = {
+			every_state = {
+				limit = {
+					has_state_flag = jiangxi_province_state
+				}
+				add_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
+			}	
+			set_country_flag = flag_KOR_jiangxi_attack_3
+		}
+	}
+	KOR_jiangxi_attack_3 = {
+		icon = generic_operation
+		allowed = { original_tag = KOR }
+		ai_will_do = {
+			factor = 10
+		}
+		available = { if = { limit = { is_ai =no } has_army_experience > 20 command_power > 100 } plan_isnt_started_chi = yes
+			has_war_with = ZLC
+			any_state = { has_state_flag = jiangxi_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } OR = { is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } } }
+			has_country_flag = flag_KOR_jiangxi_attack_3
+		}
+		visible = {
+			tag = KOR has_war_with = ZLC
+			has_country_flag = flag_KOR_jiangxi_attack_3
+		} 
+		highlight_states = {
+			highlight_state_targets = { 
+				state = 1062
+				state = 600
+				state = 1061
+			}
+		}
+		
+		fire_only_once = yes
+		days_remove = 10
+		complete_effect = { if = { limit = { is_ai =no NOT = { has_country_flag = flag_KOR_jiangxi_attack_4 } } army_experience = -20 add_command_power = -100 } country_event = { id = korea.352 }
+			every_state = {
+				limit = {
+					has_state_flag = jiangxi_province_state
+				}
+				remove_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
+			}	
+		}	
+		remove_effect = {	
+			set_country_flag = flag_KOR_jiangxi_attack_4
+		}
+	}
+	KOR_hubei_attack_1 = {
+		icon = generic_operation
+		allowed = { original_tag = KOR }
+		ai_will_do = {
+			factor = 10
+		}
+		available = { if = { limit = { is_ai =no } has_army_experience > 20 command_power > 100 } plan_isnt_started_chi = yes
+			has_war_with = ZLC
+			any_state = { has_state_flag = hubei_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } OR = { is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } } }
+		}
+		visible = { tag = KOR has_war_with = ZLC has_global_flag = global_CHI_defence_the_korea } 
+		highlight_states = {
+			highlight_state_targets = { 
+				state = 1009
+				state = 1048
+				state = 620
+				state = 1056
+				state = 750
+			}
+		}
+		
+		fire_only_once = yes
+		days_remove = 30
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -20 add_command_power = -100 country_event = { id = korea.264 } }
 			every_state = {
 				limit = {
 					has_state_flag = hubei_province_state
@@ -1077,14 +1294,14 @@ KOR_first_plan_lightning = {
 		}
 	}
 	KOR_hubei_attack_2 = {
-		icon = generic_tank
+		icon = generic_operation
 		allowed = { original_tag = KOR }
 		ai_will_do = {
 			factor = 10
 		}
-		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+		available = { if = { limit = { is_ai =no } has_army_experience > 20 command_power > 100 } plan_isnt_started_chi = yes
 			has_war_with = ZLC
-			any_state = { has_state_flag = hubei_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			any_state = { has_state_flag = hubei_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } OR = { is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } } }
 			has_country_flag = flag_KOR_hubei_attack_2
 		}
 		visible = {
@@ -1092,12 +1309,18 @@ KOR_first_plan_lightning = {
 			has_country_flag = flag_KOR_hubei_attack_2
 		} 
 		highlight_states = {
-			highlight_state_targets = { state = 1048 } 
+			highlight_state_targets = { 
+				state = 1009
+				state = 1048
+				state = 620
+				state = 1056
+				state = 750
+			}
 		}
 		
 		fire_only_once = yes
 		days_remove = 30
-		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.264 } }
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -20 add_command_power = -100 country_event = { id = korea.264 } }
 			every_state = {
 				limit = {
 					has_state_flag = hubei_province_state
@@ -1116,14 +1339,14 @@ KOR_first_plan_lightning = {
 		}
 	}
 	KOR_hubei_attack_3 = {
-		icon = generic_tank
+		icon = generic_operation
 		allowed = { original_tag = KOR }
 		ai_will_do = {
 			factor = 10
 		}
-		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+		available = { if = { limit = { is_ai =no } has_army_experience > 20 command_power > 100 } plan_isnt_started_chi = yes
 			has_war_with = ZLC
-			any_state = { has_state_flag = hubei_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			any_state = { has_state_flag = hubei_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } OR = { is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } } }
 			has_country_flag = flag_KOR_hubei_attack_3
 		}
 		visible = {
@@ -1131,12 +1354,18 @@ KOR_first_plan_lightning = {
 			has_country_flag = flag_KOR_hubei_attack_3
 		} 
 		highlight_states = {
-			highlight_state_targets = { state = 1048 } 
+			highlight_state_targets = { 
+				state = 1009
+				state = 1048
+				state = 620
+				state = 1056
+				state = 750
+			}
 		}
 		
-		fire_only_once = no
+		fire_only_once = yes
 		days_remove = 10
-		complete_effect = { if = { limit = { is_ai =no NOT = { has_country_flag = flag_KOR_hubei_attack_4 } } army_experience = -60 add_political_power = -80 } country_event = { id = korea.352 }
+		complete_effect = { if = { limit = { is_ai =no NOT = { has_country_flag = flag_KOR_hubei_attack_4 } } army_experience = -20 add_command_power = -100 } country_event = { id = korea.352 }
 			every_state = {
 				limit = {
 					has_state_flag = hubei_province_state
@@ -1145,33 +1374,30 @@ KOR_first_plan_lightning = {
 			}	
 		}	
 		remove_effect = {
-			every_state = {
-				limit = {
-					has_state_flag = hubei_province_state
-				}
-				add_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
-			}	
 			set_country_flag = flag_KOR_hubei_attack_4
 		}
 	}
 	KOR_hunan_attack_1 = {
-		icon = generic_tank
+		icon = generic_operation
 		allowed = { original_tag = KOR }
 		ai_will_do = {
 			factor = 10
 		}
-		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+		available = { if = { limit = { is_ai =no } has_army_experience > 20 command_power > 100 } plan_isnt_started_chi = yes
 			has_war_with = ZLC
-			any_state = { has_state_flag = hunan_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			any_state = { has_state_flag = hunan_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } OR = { is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } } }
 		}
 		visible = { tag = KOR has_war_with = ZLC has_global_flag = global_CHI_defence_the_korea } 
 		highlight_states = {
-			highlight_state_targets = { state = 602 } 
+			highlight_state_targets = { 
+				state = 602
+				state = 1054
+			}
 		}
 		
 		fire_only_once = yes
 		days_remove = 30
-		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.264 } }
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -20 add_command_power = -100 country_event = { id = korea.264 } }
 			every_state = {
 				limit = {
 					has_state_flag = hunan_province_state
@@ -1190,14 +1416,14 @@ KOR_first_plan_lightning = {
 		}
 	}
 	KOR_hunan_attack_2 = {
-		icon = generic_tank
+		icon = generic_operation
 		allowed = { original_tag = KOR }
 		ai_will_do = {
 			factor = 10
 		}
-		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+		available = { if = { limit = { is_ai =no } has_army_experience > 20 command_power > 100 } plan_isnt_started_chi = yes
 			has_war_with = ZLC
-			any_state = { has_state_flag = hunan_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			any_state = { has_state_flag = hunan_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } OR = { is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } } }
 			has_country_flag = flag_KOR_hunan_attack_2
 		}
 		visible = {
@@ -1205,12 +1431,15 @@ KOR_first_plan_lightning = {
 			has_country_flag = flag_KOR_hunan_attack_2
 		} 
 		highlight_states = {
-			highlight_state_targets = { state = 602 } 
+			highlight_state_targets = { 
+				state = 602
+				state = 1054
+			}
 		}
 		
 		fire_only_once = yes
 		days_remove = 30
-		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.264 } }
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -20 add_command_power = -100 country_event = { id = korea.264 } }
 			every_state = {
 				limit = {
 					has_state_flag = hunan_province_state
@@ -1229,14 +1458,14 @@ KOR_first_plan_lightning = {
 		}
 	}
 	KOR_hunan_attack_3 = {
-		icon = generic_tank
+		icon = generic_operation
 		allowed = { original_tag = KOR }
 		ai_will_do = {
 			factor = 10
 		}
-		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+		available = { if = { limit = { is_ai =no } has_army_experience > 20 command_power > 100 } plan_isnt_started_chi = yes
 			has_war_with = ZLC
-			any_state = { has_state_flag = hunan_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			any_state = { has_state_flag = hunan_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } OR = { is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } } }
 			has_country_flag = flag_KOR_hunan_attack_3
 		}
 		visible = {
@@ -1244,12 +1473,15 @@ KOR_first_plan_lightning = {
 			has_country_flag = flag_KOR_hunan_attack_3
 		} 
 		highlight_states = {
-			highlight_state_targets = { state = 602 } 
+			highlight_state_targets = { 
+				state = 602
+				state = 1054
+			}
 		}
 		
-		fire_only_once = no
+		fire_only_once = yes
 		days_remove = 10
-		complete_effect = { if = { limit = { is_ai =no NOT = { has_country_flag = flag_KOR_hunan_attack_4 } } army_experience = -60 add_political_power = -80 } country_event = { id = korea.352 }
+		complete_effect = { if = { limit = { is_ai =no NOT = { has_country_flag = flag_KOR_hunan_attack_4 } } army_experience = -20 add_command_power = -100 } country_event = { id = korea.352 }
 			every_state = {
 				limit = {
 					has_state_flag = hunan_province_state
@@ -1258,33 +1490,37 @@ KOR_first_plan_lightning = {
 			}	
 		}	
 		remove_effect = {
-			every_state = {
-				limit = {
-					has_state_flag = hunan_province_state
-				}
-				add_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
-			}	
 			set_country_flag = flag_KOR_hunan_attack_4
 		}
 	}
 	KOR_guangdong_attack_1 = {
-		icon = generic_tank
+		icon = generic_operation
 		allowed = { original_tag = KOR }
 		ai_will_do = {
 			factor = 10
 		}
-		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+		available = { if = { limit = { is_ai =no } has_army_experience > 20 command_power > 100 } plan_isnt_started_chi = yes
 			has_war_with = ZLC
-			any_state = { has_state_flag = guangdong_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			any_state = { has_state_flag = guangdong_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } OR = { is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } } }
 		}
 		visible = { tag = KOR has_war_with = ZLC has_global_flag = global_CHI_defence_the_korea } 
 		highlight_states = {
-			highlight_state_targets = { state = 1046 } 
+			highlight_state_targets = { 
+				state = 1046
+				state = 593
+				state = 592
+				state = 728
+				state = 1045
+				state = 591
+				state = 729
+				state = 326
+				state = 1098
+			}
 		}
 		
 		fire_only_once = yes
 		days_remove = 30
-		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.264 } }
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -20 add_command_power = -100 country_event = { id = korea.264 } }
 			every_state = {
 				limit = {
 					has_state_flag = guangdong_province_state
@@ -1313,14 +1549,14 @@ KOR_first_plan_lightning = {
 		}
 	}
 	KOR_guangdong_attack_2 = {
-		icon = generic_tank
+		icon = generic_operation
 		allowed = { original_tag = KOR }
 		ai_will_do = {
 			factor = 10
 		}
-		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+		available = { if = { limit = { is_ai =no } has_army_experience > 20 command_power > 100 } plan_isnt_started_chi = yes
 			has_war_with = ZLC
-			any_state = { has_state_flag = guangdong_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			any_state = { has_state_flag = guangdong_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } OR = { is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } } }
 			has_country_flag = flag_KOR_guangdong_attack_2
 		}
 		visible = {
@@ -1328,12 +1564,22 @@ KOR_first_plan_lightning = {
 			has_country_flag = flag_KOR_guangdong_attack_2
 		} 
 		highlight_states = {
-			highlight_state_targets = { state = 1046 } 
+			highlight_state_targets = { 
+				state = 1046
+				state = 593
+				state = 592
+				state = 728
+				state = 1045
+				state = 591
+				state = 729
+				state = 326
+				state = 1098
+			}
 		}
 		
 		fire_only_once = yes
 		days_remove = 30
-		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.264 } }
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -20 add_command_power = -100 country_event = { id = korea.264 } }
 			every_state = {
 				limit = {
 					has_state_flag = guangdong_province_state
@@ -1362,14 +1608,14 @@ KOR_first_plan_lightning = {
 		}
 	}
 	KOR_guangdong_attack_3 = {
-		icon = generic_tank
+		icon = generic_operation
 		allowed = { original_tag = KOR }
 		ai_will_do = {
 			factor = 10
 		}
-		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+		available = { if = { limit = { is_ai =no } has_army_experience > 20 command_power > 100 } plan_isnt_started_chi = yes
 			has_war_with = ZLC
-			any_state = { has_state_flag = guangdong_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			any_state = { has_state_flag = guangdong_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } OR = { is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } } }
 			has_country_flag = flag_KOR_guangdong_attack_3
 		}
 		visible = {
@@ -1377,12 +1623,22 @@ KOR_first_plan_lightning = {
 			has_country_flag = flag_KOR_guangdong_attack_3
 		} 
 		highlight_states = {
-			highlight_state_targets = { state = 1046 } 
+			highlight_state_targets = { 
+				state = 1046
+				state = 593
+				state = 592
+				state = 728
+				state = 1045
+				state = 591
+				state = 729
+				state = 326
+				state = 1098
+			}
 		}
 		
-		fire_only_once = no
+		fire_only_once = yes
 		days_remove = 10
-		complete_effect = { if = { limit = { is_ai =no NOT = { has_country_flag = flag_KOR_guangdong_attack_4 } } army_experience = -60 add_political_power = -80 } country_event = { id = korea.352 }
+		complete_effect = { if = { limit = { is_ai =no NOT = { has_country_flag = flag_KOR_guangdong_attack_4 } } army_experience = -20 add_command_power = -100 } country_event = { id = korea.352 }
 			every_state = {
 				limit = {
 					has_state_flag = guangdong_province_state
@@ -1396,38 +1652,30 @@ KOR_first_plan_lightning = {
 			}	
 		}	
 		remove_effect = {
-			every_state = {
-				limit = {
-					has_state_flag = guangdong_province_state
-					NOT = {
-						state = 729
-						state = 326
-						state = 728
-					}
-				}
-				add_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
-			}	
 			set_country_flag = flag_KOR_guangdong_attack_4
 		}
 	}
 	KOR_guangxi_attack_1 = {
-		icon = generic_tank
+		icon = generic_operation
 		allowed = { original_tag = KOR }
 		ai_will_do = {
 			factor = 10
 		}
-		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+		available = { if = { limit = { is_ai =no } has_army_experience > 20 command_power > 100 } plan_isnt_started_chi = yes
 			has_war_with = ZLC
-			any_state = { has_state_flag = guangxi_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			any_state = { has_state_flag = guangxi_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } OR = { is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } } }
 		}
 		visible = { tag = KOR has_war_with = ZLC has_global_flag = global_CHI_defence_the_korea } 
 		highlight_states = {
-			highlight_state_targets = { state = 594 } 
+			highlight_state_targets = { 
+				state = 599
+				state = 594
+			}
 		}
 		
 		fire_only_once = yes
 		days_remove = 30
-		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.264 } }
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -20 add_command_power = -100 country_event = { id = korea.264 } }
 			every_state = {
 				limit = {
 					has_state_flag = guangxi_province_state
@@ -1446,14 +1694,14 @@ KOR_first_plan_lightning = {
 		}
 	}
 	KOR_guangxi_attack_2 = {
-		icon = generic_tank
+		icon = generic_operation
 		allowed = { original_tag = KOR }
 		ai_will_do = {
 			factor = 10
 		}
-		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+		available = { if = { limit = { is_ai =no } has_army_experience > 20 command_power > 100 } plan_isnt_started_chi = yes
 			has_war_with = ZLC
-			any_state = { has_state_flag = guangxi_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			any_state = { has_state_flag = guangxi_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } OR = { is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } } }
 			has_country_flag = flag_KOR_guangxi_attack_2
 		}
 		visible = {
@@ -1461,12 +1709,15 @@ KOR_first_plan_lightning = {
 			has_country_flag = flag_KOR_guangxi_attack_2
 		} 
 		highlight_states = {
-			highlight_state_targets = { state = 594 } 
+			highlight_state_targets = { 
+				state = 599
+				state = 594
+			}
 		}
 		
 		fire_only_once = yes
 		days_remove = 30
-		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.264 } }
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -20 add_command_power = -100 country_event = { id = korea.264 } }
 			every_state = {
 				limit = {
 					has_state_flag = guangxi_province_state
@@ -1485,14 +1736,14 @@ KOR_first_plan_lightning = {
 		}
 	}
 	KOR_guangxi_attack_3 = {
-		icon = generic_tank
+		icon = generic_operation
 		allowed = { original_tag = KOR }
 		ai_will_do = {
 			factor = 10
 		}
-		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+		available = { if = { limit = { is_ai =no } has_army_experience > 20 command_power > 100 } plan_isnt_started_chi = yes
 			has_war_with = ZLC
-			any_state = { has_state_flag = guangxi_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			any_state = { has_state_flag = guangxi_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } OR = { is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } } }
 			has_country_flag = flag_KOR_guangxi_attack_3
 		}
 		visible = {
@@ -1500,12 +1751,15 @@ KOR_first_plan_lightning = {
 			has_country_flag = flag_KOR_guangxi_attack_3
 		} 
 		highlight_states = {
-			highlight_state_targets = { state = 594 } 
+			highlight_state_targets = { 
+				state = 599
+				state = 594
+			}
 		}
 		
-		fire_only_once = no
+		fire_only_once = yes
 		days_remove = 10
-		complete_effect = { if = { limit = { is_ai =no NOT = { has_country_flag = flag_KOR_guangxi_attack_4 } } army_experience = -60 add_political_power = -80 } country_event = { id = korea.352 }
+		complete_effect = { if = { limit = { is_ai =no NOT = { has_country_flag = flag_KOR_guangxi_attack_4 } } army_experience = -20 add_command_power = -100 } country_event = { id = korea.352 }
 			every_state = {
 				limit = {
 					has_state_flag = guangxi_province_state
@@ -1514,33 +1768,31 @@ KOR_first_plan_lightning = {
 			}	
 		}	
 		remove_effect = {
-			every_state = {
-				limit = {
-					has_state_flag = guangxi_province_state
-				}
-				add_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
-			}	
 			set_country_flag = flag_KOR_guangxi_attack_4
 		}
 	}
 	KOR_guizhou_attack_1 = {
-		icon = generic_tank
+		icon = generic_operation
 		allowed = { original_tag = KOR }
 		ai_will_do = {
 			factor = 10
 		}
-		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+		available = { if = { limit = { is_ai =no } has_army_experience > 20 command_power > 100 } plan_isnt_started_chi = yes
 			has_war_with = ZLC
-			any_state = { has_state_flag = guizhou_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			any_state = { has_state_flag = guizhou_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } OR = { is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } } }
 		}
 		visible = { tag = KOR has_war_with = ZLC has_global_flag = global_CHI_defence_the_korea } 
 		highlight_states = {
-			highlight_state_targets = { state = 603 } 
+			highlight_state_targets = { 
+				state = 603
+				state = 1058
+				state = 1053
+			}
 		}
 		
 		fire_only_once = yes
 		days_remove = 30
-		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.264 } }
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -20 add_command_power = -100 country_event = { id = korea.264 } }
 			every_state = {
 				limit = {
 					has_state_flag = guizhou_province_state
@@ -1559,14 +1811,14 @@ KOR_first_plan_lightning = {
 		}
 	}
 	KOR_guizhou_attack_2 = {
-		icon = generic_tank
+		icon = generic_operation
 		allowed = { original_tag = KOR }
 		ai_will_do = {
 			factor = 10
 		}
-		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+		available = { if = { limit = { is_ai =no } has_army_experience > 20 command_power > 100 } plan_isnt_started_chi = yes
 			has_war_with = ZLC
-			any_state = { has_state_flag = guizhou_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			any_state = { has_state_flag = guizhou_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } OR = { is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } } }
 			has_country_flag = flag_KOR_guizhou_attack_2
 		}
 		visible = {
@@ -1574,12 +1826,16 @@ KOR_first_plan_lightning = {
 			has_country_flag = flag_KOR_guizhou_attack_2
 		} 
 		highlight_states = {
-			highlight_state_targets = { state = 603 } 
+			highlight_state_targets = { 
+				state = 603
+				state = 1058
+				state = 1053
+			}
 		}
 		
 		fire_only_once = yes
 		days_remove = 30
-		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.264 } }
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -20 add_command_power = -100 country_event = { id = korea.264 } }
 			every_state = {
 				limit = {
 					has_state_flag = guizhou_province_state
@@ -1598,14 +1854,14 @@ KOR_first_plan_lightning = {
 		}
 	}
 	KOR_guizhou_attack_3 = {
-		icon = generic_tank
+		icon = generic_operation
 		allowed = { original_tag = KOR }
 		ai_will_do = {
 			factor = 10
 		}
-		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+		available = { if = { limit = { is_ai =no } has_army_experience > 20 command_power > 100 } plan_isnt_started_chi = yes
 			has_war_with = ZLC
-			any_state = { has_state_flag = guizhou_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			any_state = { has_state_flag = guizhou_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } OR = { is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } } }
 			has_country_flag = flag_KOR_guizhou_attack_3
 		}
 		visible = {
@@ -1613,12 +1869,16 @@ KOR_first_plan_lightning = {
 			has_country_flag = flag_KOR_guizhou_attack_3
 		} 
 		highlight_states = {
-			highlight_state_targets = { state = 603 } 
+			highlight_state_targets = { 
+				state = 603
+				state = 1058
+				state = 1053
+			}
 		}
 		
-		fire_only_once = no
+		fire_only_once = yes
 		days_remove = 10
-		complete_effect = { if = { limit = { is_ai =no NOT = { has_country_flag = flag_KOR_guizhou_attack_4 } } army_experience = -60 add_political_power = -80 } country_event = { id = korea.352 }
+		complete_effect = { if = { limit = { is_ai =no NOT = { has_country_flag = flag_KOR_guizhou_attack_4 } } army_experience = -20 add_command_power = -100 } country_event = { id = korea.352 }
 			every_state = {
 				limit = {
 					has_state_flag = guizhou_province_state
@@ -1627,33 +1887,33 @@ KOR_first_plan_lightning = {
 			}	
 		}	
 		remove_effect = {
-			every_state = {
-				limit = {
-					has_state_flag = guizhou_province_state
-				}
-				add_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
-			}	
 			set_country_flag = flag_KOR_guizhou_attack_4
 		}
 	}
 	KOR_sichuan_attack_1 = {
-		icon = generic_tank
+		icon = generic_operation
 		allowed = { original_tag = KOR }
 		ai_will_do = {
 			factor = 10
 		}
-		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+		available = { if = { limit = { is_ai =no } has_army_experience > 20 command_power > 100 } plan_isnt_started_chi = yes
 			has_war_with = ZLC
-			any_state = { has_state_flag = sichuan_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			any_state = { has_state_flag = sichuan_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } OR = { is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } } }
 		}
 		visible = { tag = KOR has_war_with = ZLC has_global_flag = global_CHI_defence_the_korea } 
 		highlight_states = {
-			highlight_state_targets = { state = 605 } 
+			highlight_state_targets = { 
+				state = 1007
+				state = 1047
+				state = 753
+				state = 748
+				state = 605
+			} 
 		}
 		
 		fire_only_once = yes
 		days_remove = 30
-		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.264 } }
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -20 add_command_power = -100 country_event = { id = korea.264 } }
 			every_state = {
 				limit = {
 					has_state_flag = sichuan_province_state
@@ -1672,14 +1932,14 @@ KOR_first_plan_lightning = {
 		}
 	}
 	KOR_sichuan_attack_2 = {
-		icon = generic_tank
+		icon = generic_operation
 		allowed = { original_tag = KOR }
 		ai_will_do = {
 			factor = 10
 		}
-		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+		available = { if = { limit = { is_ai =no } has_army_experience > 20 command_power > 100 } plan_isnt_started_chi = yes
 			has_war_with = ZLC
-			any_state = { has_state_flag = sichuan_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			any_state = { has_state_flag = sichuan_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } OR = { is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } } }
 			has_country_flag = flag_KOR_sichuan_attack_2
 		}
 		visible = {
@@ -1692,7 +1952,7 @@ KOR_first_plan_lightning = {
 		
 		fire_only_once = yes
 		days_remove = 30
-		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.264 } }
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -20 add_command_power = -100 country_event = { id = korea.264 } }
 			every_state = {
 				limit = {
 					has_state_flag = sichuan_province_state
@@ -1711,14 +1971,14 @@ KOR_first_plan_lightning = {
 		}
 	}
 	KOR_sichuan_attack_3 = {
-		icon = generic_tank
+		icon = generic_operation
 		allowed = { original_tag = KOR }
 		ai_will_do = {
 			factor = 10
 		}
-		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_chi = yes
+		available = { if = { limit = { is_ai =no } has_army_experience > 20 command_power > 100 } plan_isnt_started_chi = yes
 			has_war_with = ZLC
-			any_state = { has_state_flag = sichuan_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } }
+			any_state = { has_state_flag = sichuan_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } OR = { is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } } }
 			has_country_flag = flag_KOR_sichuan_attack_3
 		}
 		visible = {
@@ -1729,9 +1989,9 @@ KOR_first_plan_lightning = {
 			highlight_state_targets = { state = 605 } 
 		}
 		
-		fire_only_once = no
+		fire_only_once = yes
 		days_remove = 10
-		complete_effect = { if = { limit = { is_ai =no NOT = { has_country_flag = flag_KOR_sichuan_attack_4 } } army_experience = -60 add_political_power = -80 } country_event = { id = korea.352 }
+		complete_effect = { if = { limit = { is_ai =no NOT = { has_country_flag = flag_KOR_sichuan_attack_4 } } army_experience = -20 add_command_power = -100 } country_event = { id = korea.352 }
 			every_state = {
 				limit = {
 					has_state_flag = sichuan_province_state
@@ -1740,24 +2000,259 @@ KOR_first_plan_lightning = {
 			}	
 		}	
 		remove_effect = {
+			set_country_flag = flag_KOR_sichuan_attack_4
+		}
+	}
+	KOR_xikang_attack_1 = {
+		icon = generic_operation
+		allowed = { original_tag = KOR }
+		ai_will_do = {
+			factor = 10
+		}
+		available = { if = { limit = { is_ai =no } has_army_experience > 20 command_power > 100 } plan_isnt_started_chi = yes
+			has_war_with = ZLC
+			any_state = { has_state_flag = xikang_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } OR = { is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } } }
+		}
+		visible = { tag = KOR has_war_with = ZLC has_global_flag = global_CHI_defence_the_korea } 
+		highlight_states = {
+			highlight_state_targets = { 
+				state = 752
+				state = 751
+				state = 601
+			} 
+		}
+		
+		fire_only_once = yes
+		days_remove = 30
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -20 add_command_power = -100 country_event = { id = korea.264 } }
 			every_state = {
 				limit = {
-					has_state_flag = sichuan_province_state
+					has_state_flag = xikang_province_state
+				}
+				remove_dynamic_modifier = { modifier = CHI_defence_the_korea }
+			}	
+		}	
+		remove_effect = {
+			every_state = {
+				limit = {
+					has_state_flag = xikang_province_state
+				}
+				add_dynamic_modifier = { modifier = CHI_defence_the_korea_2 }
+			}	
+			set_country_flag = flag_KOR_xikang_attack_2
+		}
+	}
+	KOR_xikang_attack_2 = {
+		icon = generic_operation
+		allowed = { original_tag = KOR }
+		ai_will_do = {
+			factor = 10
+		}
+		available = { if = { limit = { is_ai =no } has_army_experience > 20 command_power > 100 } plan_isnt_started_chi = yes
+			has_war_with = ZLC
+			any_state = { has_state_flag = xikang_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } OR = { is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } } }
+			has_country_flag = flag_KOR_xikang_attack_2
+		}
+		visible = {
+			tag = KOR has_war_with = ZLC
+			has_country_flag = flag_KOR_xikang_attack_2
+		} 
+		highlight_states = {
+			highlight_state_targets = { 
+				state = 752
+				state = 751
+				state = 601
+			} 
+		}
+		
+		fire_only_once = yes
+		days_remove = 30
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -20 add_command_power = -100 country_event = { id = korea.264 } }
+			every_state = {
+				limit = {
+					has_state_flag = xikang_province_state
+				}
+				remove_dynamic_modifier = { modifier = CHI_defence_the_korea_2 }
+			}	
+		}	
+		remove_effect = {
+			every_state = {
+				limit = {
+					has_state_flag = xikang_province_state
 				}
 				add_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
 			}	
-			set_country_flag = flag_KOR_sichuan_attack_4
+			set_country_flag = flag_KOR_xikang_attack_3
+		}
+	}
+	KOR_xikang_attack_3 = {
+		icon = generic_operation
+		allowed = { original_tag = KOR }
+		ai_will_do = {
+			factor = 10
+		}
+		available = { if = { limit = { is_ai =no } has_army_experience > 20 command_power > 100 } plan_isnt_started_chi = yes
+			has_war_with = ZLC
+			any_state = { has_state_flag = xikang_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } OR = { is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } } }
+			has_country_flag = flag_KOR_xikang_attack_3
+		}
+		visible = {
+			tag = KOR has_war_with = ZLC
+			has_country_flag = flag_KOR_xikang_attack_3
+		} 
+		highlight_states = {
+			highlight_state_targets = { 
+				state = 752
+				state = 751
+				state = 601
+			} 
+		}
+		
+		fire_only_once = yes
+		days_remove = 10
+		complete_effect = { if = { limit = { is_ai =no NOT = { has_country_flag = flag_KOR_xikang_attack_4 } } army_experience = -20 add_command_power = -100 } country_event = { id = korea.352 }
+			every_state = {
+				limit = {
+					has_state_flag = xikang_province_state
+				}
+				remove_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
+			}	
+		}	
+		remove_effect = {
+			set_country_flag = flag_KOR_xikang_attack_4
+		}
+	}
+	KOR_yunnan_attack_1 = {
+		icon = generic_operation
+		allowed = { original_tag = KOR }
+		ai_will_do = {
+			factor = 10
+		}
+		available = { if = { limit = { is_ai =no } has_army_experience > 20 command_power > 100 } plan_isnt_started_chi = yes
+			has_war_with = ZLC
+			any_state = { has_state_flag = yunnan_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } OR = { is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } } }
+		}
+		visible = { tag = KOR has_war_with = ZLC has_global_flag = global_CHI_defence_the_korea } 
+		highlight_states = {
+			highlight_state_targets = { 
+				state = 1010
+				state = 747
+				state = 325
+				state = 1013
+			} 
+		}
+		
+		fire_only_once = yes
+		days_remove = 30
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -20 add_command_power = -100 country_event = { id = korea.264 } }
+			every_state = {
+				limit = {
+					has_state_flag = yunnan_province_state
+				}
+				remove_dynamic_modifier = { modifier = CHI_defence_the_korea }
+			}	
+		}	
+		remove_effect = {
+			every_state = {
+				limit = {
+					has_state_flag = yunnan_province_state
+				}
+				add_dynamic_modifier = { modifier = CHI_defence_the_korea_2 }
+			}	
+			set_country_flag = flag_KOR_yunnan_attack_2
+		}
+	}
+	KOR_yunnan_attack_2 = {
+		icon = generic_operation
+		allowed = { original_tag = KOR }
+		ai_will_do = {
+			factor = 10
+		}
+		available = { if = { limit = { is_ai =no } has_army_experience > 20 command_power > 100 } plan_isnt_started_chi = yes
+			has_war_with = ZLC
+			any_state = { has_state_flag = yunnan_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } OR = { is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } } }
+			has_country_flag = flag_KOR_yunnan_attack_2
+		}
+		visible = {
+			tag = KOR has_war_with = ZLC
+			has_country_flag = flag_KOR_yunnan_attack_2
+		} 
+		highlight_states = {
+			highlight_state_targets = { 
+				state = 1010
+				state = 747
+				state = 325
+				state = 1013
+			} 
+		}
+		
+		fire_only_once = yes
+		days_remove = 30
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -20 add_command_power = -100 country_event = { id = korea.264 } }
+			every_state = {
+				limit = {
+					has_state_flag = yunnan_province_state
+				}
+				remove_dynamic_modifier = { modifier = CHI_defence_the_korea_2 }
+			}	
+		}	
+		remove_effect = {
+			every_state = {
+				limit = {
+					has_state_flag = yunnan_province_state
+				}
+				add_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
+			}	
+			set_country_flag = flag_KOR_yunnan_attack_3
+		}
+	}
+	KOR_yunnan_attack_3 = {
+		icon = generic_operation
+		allowed = { original_tag = KOR }
+		ai_will_do = {
+			factor = 10
+		}
+		available = { if = { limit = { is_ai =no } has_army_experience > 20 command_power > 100 } plan_isnt_started_chi = yes
+			has_war_with = ZLC
+			any_state = { has_state_flag = yunnan_province_state	OR = { is_controlled_by = KOR any_neighbor_state = { is_controlled_by = KOR } if = { limit = { WZC = { is_puppet_of = KOR } } OR = { is_controlled_by = WZC any_neighbor_state = { is_controlled_by = WZC } } } } }
+			has_country_flag = flag_KOR_yunnan_attack_3
+		}
+		visible = {
+			tag = KOR has_war_with = ZLC
+			has_country_flag = flag_KOR_yunnan_attack_3
+		} 
+		highlight_states = {
+			highlight_state_targets = { 
+				state = 1010
+				state = 747
+				state = 325
+				state = 1013
+			}  
+		}
+		
+		fire_only_once = yes
+		days_remove = 10
+		complete_effect = { if = { limit = { is_ai =no NOT = { has_country_flag = flag_KOR_yunnan_attack_4 } } army_experience = -20 add_command_power = -100 } country_event = { id = korea.352 }
+			every_state = {
+				limit = {
+					has_state_flag = yunnan_province_state
+				}
+				remove_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
+			}	
+		}	
+		remove_effect = {	
+			set_country_flag = flag_KOR_yunnan_attack_4
 		}
 	}
 }	
 KOR_forth_plan_nakil = {
 	KOR_chugoku_attack = {
-		icon = generic_tank
+		icon = generic_operation
 		allowed = { original_tag = KOR }
 		ai_will_do = {
 			factor = 10
 		}
-		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_jap = yes
+		available = { if = { limit = { is_ai =no } has_army_experience > 20 command_power > 100 } plan_isnt_started_jap = yes
 			has_war_with = JAP
 			OR = {
 				1066 = {
@@ -1787,7 +2282,7 @@ KOR_forth_plan_nakil = {
 			}
 		}
 		visible = {
-			tag = KOR has_war_with = JAP
+			tag = KOR has_war_with = JAP has_game_rule = { rule = TLE_JAP_HARDCORE_RULE option = TLE_JAP_HARDCORE_DEFAULT }
 		} 
 		highlight_states = {
 			highlight_state_targets = { state = 529 } 
@@ -1795,7 +2290,7 @@ KOR_forth_plan_nakil = {
 		
 		fire_only_once = no
 		days_remove = 20
-		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.266 } }
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -20 add_command_power = -100 country_event = { id = korea.266 } }
 			529 = {
 				remove_dynamic_modifier = { modifier = JAP_defence_the_korea }
 			}
@@ -1819,12 +2314,12 @@ KOR_forth_plan_nakil = {
 		}
 	}
 	KOR_sigoku_attack = {
-		icon = generic_tank
+		icon = generic_operation
 		allowed = { original_tag = KOR }
 		ai_will_do = {
 			factor = 10
 		}
-		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_jap = yes
+		available = { if = { limit = { is_ai =no } has_army_experience > 20 command_power > 100 } plan_isnt_started_jap = yes
 			has_war_with = JAP
 			530 = {
 				OR = {
@@ -1836,7 +2331,7 @@ KOR_forth_plan_nakil = {
 			}
 		}
 		visible = {
-			tag = KOR has_war_with = JAP
+			tag = KOR has_war_with = JAP has_game_rule = { rule = TLE_JAP_HARDCORE_RULE option = TLE_JAP_HARDCORE_DEFAULT }
 		} 
 		highlight_states = {
 			highlight_state_targets = { state = 530 } 
@@ -1844,7 +2339,7 @@ KOR_forth_plan_nakil = {
 		
 		fire_only_once = no
 		days_remove = 20
-		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.266 } }
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -20 add_command_power = -100 country_event = { id = korea.266 } }
 			530 = {
 				remove_dynamic_modifier = { modifier = JAP_defence_the_korea }
 			}
@@ -1856,12 +2351,12 @@ KOR_forth_plan_nakil = {
 		}
 	}
 	KOR_kansai_attack = {
-		icon = generic_tank
+		icon = generic_operation
 		allowed = { original_tag = KOR }
 		ai_will_do = {
 			factor = 10
 		}
-		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_jap = yes
+		available = { if = { limit = { is_ai =no } has_army_experience > 20 command_power > 100 } plan_isnt_started_jap = yes
 			has_war_with = JAP
 			OR = {
 				531 = {
@@ -1907,7 +2402,7 @@ KOR_forth_plan_nakil = {
 			}
 		}
 		visible = {
-			tag = KOR has_war_with = JAP
+			tag = KOR has_war_with = JAP has_game_rule = { rule = TLE_JAP_HARDCORE_RULE option = TLE_JAP_HARDCORE_DEFAULT }
 		} 
 		highlight_states = {
 			highlight_state_targets = { state = 1070 } 
@@ -1915,7 +2410,7 @@ KOR_forth_plan_nakil = {
 		
 		fire_only_once = no
 		days_remove = 20
-		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.266 } }
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -20 add_command_power = -100 country_event = { id = korea.266 } }
 			1070 = {
 				remove_dynamic_modifier = { modifier = JAP_defence_the_korea }
 			}
@@ -1951,12 +2446,12 @@ KOR_forth_plan_nakil = {
 		}
 	}
 	KOR_chubu_attack = {
-		icon = generic_tank
+		icon = generic_operation
 		allowed = { original_tag = KOR }
 		ai_will_do = {
 			factor = 10
 		}
-		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_jap = yes
+		available = { if = { limit = { is_ai =no } has_army_experience > 20 command_power > 100 } plan_isnt_started_jap = yes
 			has_war_with = JAP
 			OR = {
 				1069 = {
@@ -1994,7 +2489,7 @@ KOR_forth_plan_nakil = {
 			}
 		}
 		visible = {
-			tag = KOR has_war_with = JAP
+			tag = KOR has_war_with = JAP has_game_rule = { rule = TLE_JAP_HARDCORE_RULE option = TLE_JAP_HARDCORE_DEFAULT }
 		} 
 		highlight_states = {
 			highlight_state_targets = { state = 535 } 
@@ -2002,7 +2497,7 @@ KOR_forth_plan_nakil = {
 		
 		fire_only_once = no
 		days_remove = 20
-		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.266 } }
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -20 add_command_power = -100 country_event = { id = korea.266 } }
 			535 = {
 				remove_dynamic_modifier = { modifier = JAP_defence_the_korea }
 			}
@@ -2032,12 +2527,12 @@ KOR_forth_plan_nakil = {
 		}
 	}
 	KOR_kanto_attack = {
-		icon = generic_tank
+		icon = generic_operation
 		allowed = { original_tag = KOR }
 		ai_will_do = {
 			factor = 10
 		}
-		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_jap = yes
+		available = { if = { limit = { is_ai =no } has_army_experience > 20 command_power > 100 } plan_isnt_started_jap = yes
 			has_war_with = JAP
 			OR = {
 				990 = {
@@ -2075,7 +2570,7 @@ KOR_forth_plan_nakil = {
 			}
 		}
 		visible = {
-			tag = KOR has_war_with = JAP
+			tag = KOR has_war_with = JAP has_game_rule = { rule = TLE_JAP_HARDCORE_RULE option = TLE_JAP_HARDCORE_DEFAULT }
 		} 
 		highlight_states = {
 			highlight_state_targets = { state = 282 } 
@@ -2083,7 +2578,7 @@ KOR_forth_plan_nakil = {
 		
 		fire_only_once = no
 		days_remove = 20
-		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.266 } }
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -20 add_command_power = -100 country_event = { id = korea.266 } }
 			990 = {
 				remove_dynamic_modifier = { modifier = JAP_defence_the_korea }
 			}
@@ -2113,12 +2608,12 @@ KOR_forth_plan_nakil = {
 		}
 	}
 	KOR_tohoku_attack = {
-		icon = generic_tank
+		icon = generic_operation
 		allowed = { original_tag = KOR }
 		ai_will_do = {
 			factor = 10
 		}
-		available = { if = { limit = { is_ai =no } has_army_experience > 60 has_political_power > 80 } plan_isnt_started_jap = yes
+		available = { if = { limit = { is_ai =no } has_army_experience > 20 command_power > 100 } plan_isnt_started_jap = yes
 			has_war_with = JAP
 			OR = {
 				1072 = {
@@ -2156,7 +2651,7 @@ KOR_forth_plan_nakil = {
 			}
 		}
 		visible = {
-			tag = KOR has_war_with = JAP
+			tag = KOR has_war_with = JAP has_game_rule = { rule = TLE_JAP_HARDCORE_RULE option = TLE_JAP_HARDCORE_DEFAULT }
 		} 
 		highlight_states = {
 			highlight_state_targets = { state = 533 } 
@@ -2164,7 +2659,7 @@ KOR_forth_plan_nakil = {
 		
 		fire_only_once = no
 		days_remove = 20
-		complete_effect = { if = { limit = { is_ai =no } army_experience = -60 add_political_power = -80 country_event = { id = korea.266 } }
+		complete_effect = { if = { limit = { is_ai =no } army_experience = -20 add_command_power = -100 country_event = { id = korea.266 } }
 			1072 = {
 				remove_dynamic_modifier = { modifier = JAP_defence_the_korea }
 			}
@@ -2194,625 +2689,4 @@ KOR_forth_plan_nakil = {
 		}
 	}
 	
-}	
-KOR_kill_the_usa_plan = {
-	
-	KOR_the_embargo_rising = { 
-		icon = generic_civil_support
-	    
-		picture = GFX_decision_cat_national_assembly
-
-		allowed = {
-			original_tag = KOR
-		}	
-		
-		available = {
-			NOT = {
-				has_idea = KOR_embargo_us
-				has_idea = KOR_embargo_us_a
-				has_idea = KOR_embargo_us_b
-				has_idea = KOR_embargo_us_c
-				has_idea = KOR_embargo_us_d
-			}
-			NOT = {
-				has_war_with = USA
-			}
-		}
-
-		days_mission_timeout = 180
-		
-		fixed_random_seed = no
-
-		fire_only_once = no
-		
-		is_good = no
-
-		activation = {
-			OR = {
-				has_idea = KOR_embargo_us
-				has_idea = KOR_embargo_us_a
-				has_idea = KOR_embargo_us_b
-				has_idea = KOR_embargo_us_c
-				has_idea = KOR_embargo_us_d
-			}	
-			NOT = {
-				has_country_flag = flag_KOR_the_embargo_rising_end
-			}
-		}
-
-		visible = {
-			original_tag = KOR
-        }	
-		complete_effect = {
-			custom_effect_tooltip = KOR_the_embargo_rising_tt
-			set_country_flag = flag_KOR_the_embargo_rising_end
-			hidden_effect = {
-				remove_ideas = KOR_embargo_us
-				remove_ideas = KOR_embargo_us_a
-				remove_ideas = KOR_embargo_us_b
-				remove_ideas = KOR_embargo_us_c
-				remove_ideas = KOR_embargo_us_d
-			}
-		}
-
-		timeout_effect = {
-			KOR_embargo_level_up = yes
-		}
-		
-	}
-	KOR_surrander_of_phi = { 
-		icon = generic_tank
-	    
-		picture = GFX_decision_cat_national_assembly
-
-		allowed = {
-			original_tag = KOR
-		}	
-		
-		highlight_states = {
-			highlight_state_targets = { state = 327 } 
-		}
-		available = {
-			PHI = {
-				OR = {
-					has_capitulated = yes
-					AND = {
-						USA = {
-							has_war_with = KOR
-						}
-						exists = no
-						KOR = {
-							controls_state = 327
-						}
-					}
-				}
-			}
-		}
-
-		days_mission_timeout = 900
-		
-		fixed_random_seed = no
-
-		fire_only_once = no
-		
-		is_good = no
-
-		activation = {
-			OR = {
-				has_idea = KOR_embargo_us
-				has_idea = KOR_embargo_us_a
-				has_idea = KOR_embargo_us_b
-				has_idea = KOR_embargo_us_c
-				has_idea = KOR_embargo_us_d
-			}	
-			NOT = {
-				has_country_flag = flag_KOR_surrander_of_phi_end
-			}
-			#PHI = {
-			#	has_war_with = KOR
-			#}
-			USA = {
-				has_war_with = KOR
-			}
-		}
-
-		visible = {
-			original_tag = KOR
-			USA = {
-				has_war_with = KOR
-			}
-        }	
-		complete_effect = {
-			set_country_flag = flag_KOR_surrander_of_phi_end
-			KOR_embargo_level_down = yes
-		}
-
-		timeout_effect = {
-			set_country_flag = flag_KOR_surrander_of_phi_end
-			KOR_embargo_level_up = yes
-		}
-		
-	}
-	KOR_surrander_of_malay = { 
-		icon = generic_tank
-	    
-		picture = GFX_decision_cat_national_assembly
-
-		allowed = {
-			original_tag = KOR
-		}	
-		highlight_states = {
-			highlight_state_targets = { state = 336 } 
-		}
-		
-		available = {
-			MAL = {
-				OR = {
-					has_capitulated = yes
-					AND = {
-						ENG = {
-							has_war_with = KOR
-						}
-						exists = no
-						KOR = {
-							controls_state = 336
-						}
-					}
-				}
-			}
-		}
-
-		days_mission_timeout = 1200
-		
-		fixed_random_seed = no
-
-		fire_only_once = no
-		
-		is_good = no
-
-		activation = {
-			OR = {
-				has_idea = KOR_embargo_us
-				has_idea = KOR_embargo_us_a
-				has_idea = KOR_embargo_us_b
-				has_idea = KOR_embargo_us_c
-				has_idea = KOR_embargo_us_d
-			}	
-			NOT = {
-				has_country_flag = flag_KOR_surrander_of_malay_end
-			}
-			#MAL = {
-			#	has_war_with = KOR
-			#}
-			USA = {
-				has_war_with = KOR
-			}
-		}
-
-		visible = {
-			original_tag = KOR
-			USA = {
-				has_war_with = KOR
-			}
-        }	
-		complete_effect = {
-			set_country_flag = flag_KOR_surrander_of_malay_end
-			KOR_embargo_level_down = yes
-		}
-
-		timeout_effect = {
-			set_country_flag = flag_KOR_surrander_of_malay_end
-			KOR_embargo_level_up = yes
-		}
-		
-	}
-	KOR_surrander_of_indonesia = { 
-		icon = generic_tank
-	    
-		picture = GFX_decision_cat_national_assembly
-
-		allowed = {
-			original_tag = KOR
-		}	
-		highlight_states = {
-			highlight_state_targets = { state = 335 } 
-		}
-		
-		available = {
-			INS = {
-				OR = {
-					has_capitulated = yes
-					AND = {
-						HOL = {
-							has_war_with = KOR
-						}
-						exists = no
-						KOR = {
-							controls_state = 335
-						}
-					}
-				}
-			}
-		}
-
-		days_mission_timeout = 1500
-		
-		fixed_random_seed = no
-
-		fire_only_once = no
-		
-		is_good = no
-
-		activation = {
-			OR = {
-				has_idea = KOR_embargo_us
-				has_idea = KOR_embargo_us_a
-				has_idea = KOR_embargo_us_b
-				has_idea = KOR_embargo_us_c
-				has_idea = KOR_embargo_us_d
-			}	
-			NOT = {
-				has_country_flag = flag_KOR_surrander_of_indonesia_end
-			}
-			#INS = {
-			#	has_war_with = KOR
-			#}
-			USA = {
-				has_war_with = KOR
-			}
-		}
-
-		visible = {
-			original_tag = KOR
-			USA = {
-				has_war_with = KOR
-			}
-        }	
-		complete_effect = {
-			set_country_flag = flag_KOR_surrander_of_indonesia_end
-			KOR_embargo_level_down = yes
-		}
-
-		timeout_effect = {
-			set_country_flag = flag_KOR_surrander_of_indonesia_end
-			KOR_embargo_level_up = yes
-		}
-		
-	}
-	KOR_surrander_of_burma = { 
-		icon = generic_tank
-	    
-		picture = GFX_decision_cat_national_assembly
-
-		allowed = {
-			original_tag = KOR
-		}	
-		highlight_states = {
-			highlight_state_targets = { state = 288 } 
-		}
-		
-		available = {
-			KOR = {
-				has_full_control_of_state = 288
-				has_full_control_of_state = 640
-			}
-		}
-
-		days_mission_timeout = 1800
-		
-		fixed_random_seed = no
-
-		fire_only_once = no
-		
-		is_good = no
-
-		activation = {
-			OR = {
-				has_idea = KOR_embargo_us
-				has_idea = KOR_embargo_us_a
-				has_idea = KOR_embargo_us_b
-				has_idea = KOR_embargo_us_c
-				has_idea = KOR_embargo_us_d
-			}	
-			NOT = {
-				has_country_flag = flag_KOR_surrander_of_burma_end
-			}
-			#RAJ = {
-			#	has_war_with = KOR
-			#}
-			USA = {
-				has_war_with = KOR
-			}
-		}
-
-		visible = {
-			original_tag = KOR
-			USA = {
-				has_war_with = KOR
-			}
-        }	
-		complete_effect = {
-			set_country_flag = flag_KOR_surrander_of_burma_end
-			KOR_embargo_level_down = yes
-		}
-
-		timeout_effect = {
-			set_country_flag = flag_KOR_surrander_of_burma_end
-			KOR_embargo_level_up = yes
-		}
-		
-	}
-	KOR_surrander_of_india = { 
-		icon = generic_tank
-	    
-		picture = GFX_decision_cat_national_assembly
-
-		allowed = {
-			original_tag = KOR
-		}	
-		
-		available = {
-			RAJ = {
-				has_war_with = KOR
-				has_capitulated = yes
-			}
-		}
-		highlight_states = {
-			highlight_state_targets = { state = 439 } 
-		}
-
-		days_mission_timeout = 2100
-		
-		fixed_random_seed = no
-
-		fire_only_once = no
-		
-		is_good = no
-
-		activation = {
-			OR = {
-				has_idea = KOR_embargo_us
-				has_idea = KOR_embargo_us_a
-				has_idea = KOR_embargo_us_b
-				has_idea = KOR_embargo_us_c
-				has_idea = KOR_embargo_us_d
-			}	
-			NOT = {
-				has_country_flag = flag_KOR_surrander_of_india_end
-			}
-			#RAJ = {
-			#	has_war_with = KOR
-			#}
-			USA = {
-				has_war_with = KOR
-			}
-		}
-
-		visible = {
-			original_tag = KOR
-			USA = {
-				has_war_with = KOR
-			}
-        }	
-		complete_effect = {
-			set_country_flag = flag_KOR_surrander_of_india_end
-			KOR_embargo_level_down = yes
-		}
-
-		timeout_effect = {
-			set_country_flag = flag_KOR_surrander_of_india_end
-			KOR_embargo_level_up = yes
-		}
-		
-	}
-	KOR_surrander_of_japan = { 
-		icon = generic_tank
-	    
-		picture = GFX_decision_cat_national_assembly
-
-		allowed = {
-			original_tag = KOR
-		}	
-		
-		available = {
-			JAP = {
-				OR = {
-					exists = no
-					AND = {
-						has_war_with = KOR
-						has_capitulated = yes
-					}
-				}
-			}
-		}
-		highlight_states = {
-			highlight_state_targets = { state = 1070 } 
-		}
-
-		days_mission_timeout = 1800
-		
-		fixed_random_seed = no
-
-		fire_only_once = no
-		
-		is_good = no
-
-		activation = {
-			OR = {
-				has_idea = KOR_embargo_us
-				has_idea = KOR_embargo_us_a
-				has_idea = KOR_embargo_us_b
-				has_idea = KOR_embargo_us_c
-				has_idea = KOR_embargo_us_d
-			}	
-			NOT = {
-				has_country_flag = flag_KOR_surrander_of_japan_end
-			}
-			#JAP = {
-			#	has_war_with = KOR
-			#}
-			DKG = {
-				exists = no
-			}
-			USA = {
-				has_war_with = KOR
-			}
-		}
-
-		visible = {
-			original_tag = KOR
-			USA = {
-				has_war_with = KOR
-			}
-        }	
-		complete_effect = {
-			set_country_flag = flag_KOR_surrander_of_japan_end
-			KOR_embargo_level_down = yes
-		}
-
-		timeout_effect = {
-			set_country_flag = flag_KOR_surrander_of_japan_end
-			KOR_embargo_level_up = yes
-		}
-		
-	}
-	KOR_send_the_peace = { 
-	    
-		picture = GFX_decision_cat_national_assembly
-
-		allowed = {
-			original_tag = KOR
-		}	
-		highlight_states = {
-			highlight_state_targets = { state = 361 } 
-		}
-		
-		available = {
-			if = {
-				limit = {
-					NOT = {
-						has_country_flag = KOR_send_the_peace_1
-					}
-				}
-				INS = {
-					OR = {
-						has_capitulated = yes
-						exists = no
-						is_puppet_of = KOR
-					}
-				}
-				PHI = {
-					OR = {
-						has_capitulated = yes
-						exists = no
-						is_puppet_of = KOR
-					}
-				}
-				MAL = {
-					OR = {
-						has_capitulated = yes
-						exists = no
-						is_puppet_of = KOR
-					}
-				}
-				JAP = {
-					OR = {
-						has_capitulated = yes
-						exists = no
-					}	
-				}
-				CHI = {
-					exists = no
-				}
-				ZLC = {
-					exists = no
-				}
-				every_state = {
-					limit = {
-						is_core_of = HAW
-					}
-					is_controlled_by = KOR
-				}
-			}
-			if = {
-				limit = {
-					has_country_flag = KOR_send_the_peace_1
-				}
-				INS = {
-					OR = {
-						has_capitulated = yes
-						exists = no
-						is_puppet_of = KOR
-					}
-				}
-				PHI = {
-					OR = {
-						has_capitulated = yes
-						exists = no
-						is_puppet_of = KOR
-					}
-				}
-				MAL = {
-					OR = {
-						has_capitulated = yes
-						exists = no
-						is_puppet_of = KOR
-					}
-				}
-				JAP = {
-					OR = {
-						has_capitulated = yes
-						exists = no
-					}	
-				}
-				RAJ = {
-					OR = {
-						has_capitulated = yes
-						exists = no
-						is_puppet_of = KOR
-					}
-				}
-				CHI = {
-					exists = no
-				}
-				ZLC = {
-					exists = no
-				}
-				every_state = {
-					limit = {
-						is_core_of = HAW
-					}
-					is_controlled_by = KOR
-				}
-				USA = {
-					has_navy_size = { size < 150 }
-				}
-			}
-		}
-		
-		fixed_random_seed = no
-
-		fire_only_once = no
-		
-		is_good = no
-		
-		days_remove = 100
-		
-		visible = {
-			original_tag = KOR
-			NOT = {
-				has_country_flag = KOR_send_the_peace_2
-			}
-			has_war_with = USA
-        }	
-		complete_effect = {
-			USA = {
-				country_event = {
-					id = korea.261
-				}
-			}
-		}
-
-		
-	}
 }

@@ -50,6 +50,16 @@ music = {
 	}
 }
 music = {
+	song = "yiyongjun_jinxingqu"
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = yes
+			is_chinese_clique = yes
+		}
+	}
+}
+music = {
 	song = "changchengyao"
 	chance = {
 		modifier = {

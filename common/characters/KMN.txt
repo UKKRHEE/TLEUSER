@@ -1,6 +1,6 @@
 characters={
 	KMN_yi_cheok = {
-		name="KMM_yi_cheok"
+		name="KMN_yi_cheok"
 		portraits={
 			civilian={
 				large="gfx/leaders/KOR/Portrait_KOR_Yi_Cheok.png"
@@ -12,7 +12,7 @@ characters={
 			traits={ yicheok_trait }
 		}
 		country_leader={
-			ideology=fascism_ideology
+			ideology=ultranationalism
 			desc="KMN_YI_CHEOK_DESC"
 			traits={ yicheok_trait }
 		}
@@ -39,7 +39,7 @@ characters={
 		name="KMN_john_reed_hodge"
 		portraits={
 			civilian={
-				large="gfx/leaders/USA/Portrait_USA_Generic_land_4.dds"
+				large="gfx/leaders/USA/Portrait_USA_john_john_reed hodge_1945.png"
 			}
 		}
 	}

@@ -6,33 +6,20 @@ ZLC_nationalist_historical_plan = {
 		original_tag = ZLC
 	}
 	enable = {
-		OR = {
-			AND = {
-				is_historical_focus_on = yes
-				has_game_rule = {
-					rule = ZLC_ai_behavior
-					option = DEFAULT
-				}	
-			}
-			has_country_flag = CHI_AI_RANDOM_HISTORICAL
-			has_game_rule = {
-				rule = ZLC_ai_behavior
-				option = HISTORICAL
-			}
+		has_game_rule = {
+			rule = ZLC_ai_behavior
+			option = HISTORICAL
 		}
 	}
 	abort = {
 		KOR = {
-			OR = {
-				has_completed_focus = KOR_use_the_anti-armed
-				has_completed_focus = KOR_power_up_to_imoperial
-				is_in_faction_with = ENG 
-				is_in_faction_with = USA 
-			}
+			has_completed_focus = KOR_the_democracy_route
 		}
-		has_game_rule = {
-			rule = ZLC_ai_behavior
-			option = ALTERNATE
+		NOT = {
+			has_game_rule = {
+				rule = ZLC_ai_behavior
+				option = HISTORICAL
+			}
 		}
 		MEN = {
 			is_subject = no
@@ -47,7 +34,7 @@ ZLC_nationalist_historical_plan = {
 	}
 
 	ideas = {
-		CHI_soong_mei_ling = 10
+		
 	}
 
 	# Keep small, as it is used as a factor for some things (such as research needs)

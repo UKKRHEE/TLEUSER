@@ -53,8 +53,7 @@ guiTypes = {
 			buttonType = {
 				name = "IMP_emp_18"
 				spriteType = "GFX_focus_can_start_bg_2"
-				position = { x = 645 y = 540 }		
-				allwaystransparent = yes
+				position = { x = 645 y = 540 }
 			}
 			instantTextboxType = {
 				name = "IMP_emp_18_text"
@@ -268,8 +267,7 @@ guiTypes = {
 			buttonType = {
 				name = "IMP_emp_11"
 				spriteType = "GFX_focus_completed_bg_2"
-				position = { x = 285 y = 490 }		
-				allwaystransparent = yes
+				position = { x = 285 y = 490 }
 			}
 			instantTextboxType = {
 				name = "IMP_emp_11_text"
@@ -286,8 +284,7 @@ guiTypes = {
 			buttonType = {
 				name = "IMP_emp_12"
 				spriteType = "GFX_focus_completed_bg_2"
-				position = { x = 285 y = 540 }		
-				allwaystransparent = yes
+				position = { x = 285 y = 540 }
 			}
 			instantTextboxType = {
 				name = "IMP_emp_12_text"
@@ -343,7 +340,7 @@ guiTypes = {
 				name = "IMP_emp_15_text"
 				position = { x = 470 y = 460 }
 				font = "hoi_20b"
-				text = "익평대원군 이희"
+				text = "익평대원왕 이희"
 				maxWidth = 155
 				maxHeight = 20
 				format = center
@@ -352,8 +349,7 @@ guiTypes = {
 			buttonType = {
 				name = "IMP_emp_16"
 				spriteType = "GFX_focus_completed_bg_2"
-				position = { x = 465 y = 490 }		
-				allwaystransparent = yes
+				position = { x = 465 y = 490 }
 			}
 			instantTextboxType = {
 				name = "IMP_emp_16_text"
@@ -370,8 +366,7 @@ guiTypes = {
 			buttonType = {
 				name = "IMP_emp_17"
 				spriteType = "GFX_focus_completed_bg_2"
-				position = { x = 465 y = 540 }		
-				allwaystransparent = yes
+				position = { x = 465 y = 540 }
 			}
 			instantTextboxType = {
 				name = "IMP_emp_17_text"
@@ -388,8 +383,7 @@ guiTypes = {
 			buttonType = {
 				name = "IMP_emp_19"
 				spriteType = "GFX_focus_unavailable_bg"
-				position = { x = 645 y = 590 }		
-				allwaystransparent = yes
+				position = { x = 645 y = 590 }
 			}
 			instantTextboxType = {
 				name = "IMP_emp_19_text"
@@ -551,8 +545,7 @@ guiTypes = {
 			buttonType = {
 				name = "IMP_emp_29"
 				spriteType = "GFX_pol_leader_rank_frame"
-				position = { x = 850 y = 550 }		
-				allwaystransparent = yes
+				position = { x = 850 y = 550 }
 			}
 			instantTextboxType = {
 				name = "IMP_emp_29_text"
@@ -569,8 +562,7 @@ guiTypes = {
 			buttonType = {
 				name = "IMP_emp_30"
 				spriteType = "GFX_pol_leader_rank_frame"
-				position = { x = 850 y = 600 }		
-				allwaystransparent = yes
+				position = { x = 850 y = 600 }
 			}
 			instantTextboxType = {
 				name = "IMP_emp_30_text"

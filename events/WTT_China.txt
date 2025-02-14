@@ -14,38 +14,12 @@ country_event = {
 	#Accept puppet
 	option = {
 		name = wtt_china.1.a
-		ai_chance = { 
-			base = 10 
-			modifier = {
-				has_global_flag = CHI_xian_refused
-				factor = 0
-			}
-			modifier = {
-				factor = 0
-				OR = {
-					has_war_with = PRC
-					has_war_with = YUN
-					has_war_with = SIK
-					has_war_with = XSM
-					has_war_with = GXC
-					has_war_with = CHI
-				}
-			}
-		}
 		FROM = {
-			puppet = ROOT
+			annex_country = {
+				target = ROOT
+				transfer_troops = yes
+			}
 			country_event = { id = wtt_china.2 }
-		}
-	}
-
-	#Never
-	option = {
-		name = wtt_china.1.b
-		ai_chance = { 
-			base = 10 
-		}
-		FROM = {
-			country_event = { id = wtt_china.3 }
 		}
 	}
 }
@@ -61,6 +35,21 @@ country_event = {
 	
 	option = {
 		name = wtt_china.2.a
+		hidden_effect = {
+			annex_country = {
+				target = HNC
+				transfer_troops = yes
+			}
+			transfer_state = 1047
+			transfer_state = 1007
+			transfer_state = 605
+			transfer_state = 748
+			transfer_state = 753
+			XKC = {
+				set_cosmetic_tag = XKC
+			}
+			set_capital = { state = 605 }
+		}
 	}
 }
 

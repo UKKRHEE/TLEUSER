@@ -1,0 +1,261 @@
+music = {
+	name = "TLE_SE_FALL_OF_KOREA"
+	file = "tle_se_fall_of_korea.ogg"
+	volume = 1
+}
+music = {
+	name = "TLE_SE_JAPAN_CW"
+	file = "tle_se_japan_cw.ogg"
+	volume = 1
+}
+# music = {
+# 	name = "TLE_SE_KOREA_THE_YI_KANG"
+# 	file = "tle_se_korea_the_yi_kang.ogg"
+# 	volume = 1
+# }
+music = {
+	name = "TLE_SE_KOREA_WAR_WITH_USA"
+	file = "tle_se_korea_war_with_usa.ogg"
+	volume = 1
+}
+music = {
+	name = "TLE_SE_SECOND_NORTHATTACK"
+	file = "tle_se_korea_ww_china.ogg"
+	volume = 1
+}
+# music = {
+# 	name = "TLE_SE_RUSSIA_ATTACK_KOREA"
+# 	file = "tle_se_russia_attack_korea.ogg"
+# 	volume = 1
+# }
+music = {
+	name = "TLE_SE_KOREA_WW_CHINA"
+	file = "tle_se_war_in_china_kor.ogg"
+	volume = 1
+}
+music = {
+	name = "TLE_SE_WON_IN_CHINA"
+	file = "tle_se_won_in_china.ogg"
+	volume = 1
+}
+music = {
+	name = "TLE_SE_RUSSIA_ATTACK_KOREA"
+	file = "tle_se_greenland.ogg"
+	volume = 1
+}
+music = {
+	name = "TLE_SE_EMPIRE_OF_JAPAN"
+	file = "tle_se_Empire_of_Japan.ogg"
+	volume = 1
+}
+music = {
+	name = "TLE_SE_FALL_OF_GERMANY"
+	file = "tle_se_fall_of_germany.ogg"
+	volume = 1
+}
+music = {
+	name = "TLE_SE_FALL_OF_SOVIET"
+	file = "tle_se_fall_of_soviet.ogg"
+	volume = 1
+}
+music = {
+	name = "TLE_SE_GERMANY_WIN"
+	file = "tle_se_germany_win.ogg"
+	volume = 1
+}
+music = {
+	name = "TLE_SE_KOREAN_JAPANESE_WAR"
+	file = "tle_se_korean_japanese_war.ogg"
+	volume = 1
+}
+music = {
+	name = "TLE_SE_SURRENDER_OF_USA"
+	file = "tle_se_surrender_of_usa.ogg"
+	volume = 1
+}
+music = {
+	name = "TLE_SE_OPERATION_BARBAROSSA"
+	file = "tle_se_operation_barbarossa.ogg"
+	volume = 1
+}
+music = {
+	name = "TLE_SE_KOREAN_CIVIL_WAR"
+	file = "tle_se_korean_civilwar.ogg"
+	volume = 1
+}
+music = {
+	name = "TLE_SE_WORLD_WAR_II"
+	file = "tle_se_world_war_ii.ogg"
+	volume = 1
+}
+music = {
+	name = "TLE_SE_KOREAN_STATE"
+	file = "tle_se_korean_state.ogg"
+	volume = 1
+}
+music = {
+	name = "TLE_SE_EMPIRE_OF_KOREA_JAPAN"
+	file = "tle_se_korea_japan_empire.ogg"
+	volume = 1.4
+}
+music = {
+	name = "TLE_SE_FALL_OF_JAPAN"
+	file = "tle_se_fall_of_japan.ogg"
+	volume = 1
+}
+music = {
+	name = "TLE_SE_BEIYANG_CHINA"
+	file = "tle_se_beiyang_trainnig_song.ogg"
+	volume = 1
+}
+music = {
+	name = "TLE_SE_KUOMINTANG_CHINA"
+	file = "tle_se_guomingeming_chenggong.ogg"
+	volume = 1
+}
+music = {
+	name = "TLE_SE_ITALY_CIVIL_WAR"
+	file = "tle_se_italia_civil_war.ogg"
+	volume = 1
+}
+music = {
+	name = "TLE_SE_CHINESE_CIVIL_WAR"
+	file = "tle_se_china_civil_war.ogg"
+	volume = 1
+}
+music = {
+	name = "TLE_SE_UNITED_NATIONS"
+	file = "tle_se_united_nation.ogg"
+	volume = 1
+}
+music = {
+	name = "TLE_SE_KANGMYONG_YUSHIN"
+	file = "tle_se_kangmyong_yushin.ogg"
+	volume = 1
+}
+music = {
+	name = "TLE_SE_WINTER_WAR"
+	file = "tle_se_winter_war.ogg"
+	volume = 1
+}
+music = {
+	name = "TLE_SE_WELTKRIEG"
+	file = "tle_se_wltkrieg.ogg"
+	volume = 1
+}
+music = {
+	name = "TLE_SE_GERMANY_CIVIL_WAR"
+	file = "tle_se_german_civil_war.ogg"
+	volume = 1
+}
+music = {
+	name = "TLE_SE_EAST_FRONT"
+	file = "tle_se_russia_attack.ogg"
+}
+music = {
+	name = "TLE_SE_KAISER"
+	file = "tle_se_kaiser.ogg"
+	volume = 1
+}
+music = {
+	name = "TLE_SE_SPAINISH_CIVIL_WAR"
+	file = "tle_se_spainish_civil_war.ogg"
+	volume = 1
+}
+
+music = {
+	name = "TLE_SE_FALL_OF_FRANCE"
+	file = "tle_se_fall_of_france.ogg"
+	volume = 1
+}
+
+music = {
+	name = "TLE_SE_MALAYAN_CAMPAIGN"
+	file = "tle_se_malayan_campaign.ogg"
+	volume = 1
+}
+music = {
+	name = "TLE_SE_FALL_OF_POLAND"
+	file = "tle_se_fall_poland.ogg"
+	volume = 1
+}
+music = {
+	name = "TLE_SE_ICHI_GO"
+	file = "tle_se_ichigo_plan.ogg"
+	volume = 1
+}
+music = {
+	name = "TLE_SE_FALL_OF_BRITAIN"
+	file = "tle_se_british_collapse.ogg"
+	volume = 1
+}
+music = {
+	name = "TLE_SE_NORMANDY_INVASION"
+	file = "tle_se_normandy_invasion.ogg"
+	volume = 1
+}
+music = {
+	name = "TLE_SE_FRANCO_THAI_WAR"
+	file = "tle_se_franco_thai_war.ogg"
+	volume = 1
+}
+music = {
+	name = "TLE_SE_KOREA_THE_YI_KANG"
+	file = "tle_se_aplok_river_marching_song.ogg"
+	volume = 1
+}
+music = {
+	name = "TLE_SE_GREAT_ASIAN_WAR"
+	file = "tle_se_go_to_the_frontline.ogg"
+	volume = 1
+}
+music = {
+	name = "TLE_SE_GREAT_ASIAN_WAR_ILSO"
+	file = "tle_se_go_to_the_frontline_ilso.ogg"
+	volume = 1
+}
+music = {
+	name = "TLE_SE_FIGHT_OF_QINHUANGDAO"
+	file = "tle_se_fight_of_qinhuangdao.ogg"
+	volume = 2.8
+}
+music = {
+	name = "TLE_SE_GREAT_ASIAN_WAR_DOSAN"
+	file = "tle_se_xiangtianzaijiewubainian.ogg"
+	volume = 1
+}
+music = {
+	name = "TLE_SE_CONSTITUTION_DOSAN"
+	file = "tle_se_ahnchangho_aegukga.ogg"
+	volume = 1
+}
+music = {
+	name = "TLE_SE_JAPAN_ATTACK_ILSO"
+	file = "tle_se_hoheinohonryo.ogg"
+	volume = 1
+}
+music = {
+	name = "TLE_SE_TIANMING_DIVIDE_ILSO"
+	file = "tle_se_rotkxii_wu_theme.ogg"
+	volume = 1
+}
+music = {
+	name = "TLE_SE_JAPAN_ATTACK_WOOSA"
+	file = "tle_se_dies_irae_jap.ogg"
+	volume = 1
+}
+music = {
+	name = "TLE_SE_CHINA_ATTACK_WOOSA"
+	file = "tle_se_dies_irae_chi.ogg"
+	volume = 1
+}
+music = {
+	name = "buraphacounty"
+	file = "buraphacounty.ogg"
+	volume = 1
+}
+music = {
+	name = "our_homeland"
+	file = "our_homeland.ogg"
+	volume = 1.2
+}

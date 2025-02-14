@@ -1,0 +1,103 @@
+#####################
+
+###  ##  #  # # #  ## 
+ #  #  # ## # # # #   
+ #  #### # ## ##   #  
+ #  #  # #  # # #   # 
+ #  #  # #  # # # ## 
+
+ #################### 
+
+army_ars_d = {
+	include = generic_tank_organization
+	icon = GFX_idea_SIA_army_ars
+	allowed = {	
+		tag = SIA
+		has_dlc = "Arms Against Tyranny"
+	}
+} 
+
+#####################
+
+ ## #  # ### ###   ## 
+#   #  #  #  #  # #   
+ #  ####  #  ###   #  
+  # #  #  #  #      # 
+##  #  # ### #    ##  
+ 
+#####################
+
+
+navy_ars = {
+	include = generic_escort_ship_organization
+	icon = GFX_idea_SIA_navy_ars
+	allowed = {	
+		tag = SIA 
+		has_dlc = "Arms Against Tyranny"
+	}
+}
+
+###########################
+
+###  #    ##  #  # ###  ## 
+#  # #   #  # ## # #   #   
+###  #   #### # ## ##   #  
+#    #   #  # #  # #     # 
+#    ### #  # #  # ### ##  
+
+###########################
+
+
+air_ars = {
+	include = generic_high_agility_fighter_aircraft_organization
+	icon = GFX_idea_SIA_air_ars
+	
+	allowed = {	 
+		tag = SIA 
+		has_dlc = "Arms Against Tyranny"
+	}
+	
+} 
+
+################################### 
+
+#   #  ##  ### ### ###  ### ### #   
+## ## #  #  #  #   #  #  #  #   #   
+# # # ####  #  ##  ###   #  ##  #   
+#   # #  #  #  #   #  #  #  #   #   
+#   # #  #  #  ### #  # ### ### ### 
+
+
+###################################
+
+army_ars_a = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_SIA_army_ars
+	allowed = {	
+		tag = SIA 
+		has_dlc = "Arms Against Tyranny"
+	}
+}
+
+army_ars_b = {
+	include = generic_artillery_organization
+	icon = GFX_idea_SIA_army_ars
+	allowed = {	
+		tag = SIA 
+		has_dlc = "Arms Against Tyranny"
+	}
+} 
+
+army_ars_c = {
+	include = generic_motorized_mechanized_organization 
+	icon = GFX_idea_SIA_army_ars
+	allowed = {	
+		tag = SIA 
+		has_dlc = "Arms Against Tyranny"
+	}
+	initial_trait = {
+		equipment_bonus = {
+			build_cost_ic = -0.05
+		}
+	}
+}

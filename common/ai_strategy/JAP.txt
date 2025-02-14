@@ -422,6 +422,99 @@ JAP_area_priority = {
 	}
 }
 
+JAP_you_cant_be_international = {
+	allowed = {
+		original_tag = JAP
+	}
+	enable = {
+		always = yes
+	}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = USA
+		value = 100
+	}
+	
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = INS
+		value = 100
+	}
+	
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = MAL
+		value = 100
+	}
+	
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = ENG
+		value = 100
+	}
+	
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = FRA
+		value = 100
+	}
+	
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = BEL
+		value = 100
+	}
+	
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = HOL
+		value = 100
+	}
+	
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = PHI
+		value = 100
+	}
+	
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = GRE
+		value = 100
+	}
+	
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = AST
+		value = 100
+	}
+	
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = SAR
+		value = 100
+	}
+	
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = BOR
+		value = 100
+	}
+	
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = RAJ
+		value = 100
+	}
+	
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = BUR
+		value = 100
+	}
+	
+}
 
 JAP_unit_buffer_for_home_islands_invasion_force = {
 	allowed = {

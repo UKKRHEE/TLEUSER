@@ -1,0 +1,255 @@
+characters={
+	LYC_wu_peifu = {
+		name="LYC_wu_peifu"
+		portraits={
+			civilian={
+				large="gfx/leaders/ZLC/Portrait_ZLC_wu_peifu.png"
+			}
+			army = {
+				large="gfx/leaders/ZLC/Portrait_ZLC_wu_peifu.png"
+				small="gfx/interface/ideas/ZLC/advisors/idea_ZLC_wu_peifu.png"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = LYC_wu_peifu_token
+			desc = POLITICS_WU_PEIFU_DESC
+		    allowed = {
+		    	original_tag = LYC
+		    }
+		    available = {
+				NOT = {
+					has_country_leader = {
+						character = LYC_wu_peifu
+						ruling_only = yes
+					}
+				}
+			}	
+			visible = {
+			}
+			can_be_fired = no
+		
+	    	traits = { confucian_general }
+			ai_will_do = {
+				factor = 0.000
+			}
+		}
+		#country_leader={
+		#	ideology=rexism
+		#	desc="POLITICS_WU_PEIFU_DESC"
+		#	traits={ ZLC_dazongtong ZLC_xunlieshe wupeifu_trait }
+		#}
+		field_marshal={
+			desc="POLITICS_WU_PEIFU_DESC"
+			visible = {
+				NOT = {
+					has_country_leader = {
+						character = LYC_wu_peifu
+						ruling_only = yes
+					}
+				}
+			}
+			traits = { ZLC_wu_peifu_jie career_officer old_guard infantry_officer trait_cautious inflexible_strategist  }
+			skill = 5
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+	LYC_zhang_qihuang = {
+		name="LYC_zhang_qihuang"
+		portraits={
+			civilian={
+			}
+			army = {
+				large="gfx/leaders/ZLC/Portrait_ZLC_Zhang_Qihuang.png"	
+				small="gfx/interface/ideas/ZLC/advisors/idea_ZLC_zhang_qihuang.png"	
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = LYC_ZLC_zhang_qihuang
+			allowed = {
+				original_tag = LYC
+			}
+			traits = {
+				army_chief_defensive_2
+			}
+		}
+		corps_commander={
+			traits = { ZLC_wu_peifu_jie harsh_leader cavalry_officer career_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 3
+		}
+	}
+	LYC_cai_chengxun = {
+		name="LYC_cai_chengxun"
+		portraits={
+			civilian={
+			}
+			army = {
+				large="gfx/leaders/ZLC/Portrait_ZLC_Cai_Chengxun.png"	
+				small="gfx/interface/ideas/ZLC/advisors/idea_ZLC_cai_chengxun.png"
+			}
+		}
+		advisor={
+			slot = high_command
+			ledger = army
+			idea_token = LYC_ZLC_cai_chengxun
+			allowed = {
+				original_tag = LYC
+			}
+			traits = {
+				army_cavalry_3
+			}
+		}
+		corps_commander={
+			traits = { ZLC_wu_peifu_jie politically_connected infantry_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	LYC_xiao_yaonan = {
+		name="LYC_xiao_yaonan"
+		portraits={
+			civilian={
+			}
+			army = {
+				large="gfx/leaders/ZLC/Portrait_ZLC_Xiao_Yaonan.png"
+				small="gfx/interface/ideas/ZLC/advisors/idea_ZLC_xiao_yaonan.png"
+			}
+		}
+		advisor={
+			slot = high_command
+			ledger = army
+			idea_token = LYC_ZLC_xiao_yaonan
+			allowed = {
+				original_tag = LYC
+			}
+			traits = {
+				army_infantry_1
+			}
+		}
+		corps_commander={
+			traits = { ZLC_wu_peifu_jie politically_connected old_guard infantry_officer inflexible_strategist }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	LYC_du_xijun = {
+		name="LYC_du_xijun"
+		portraits={
+			civilian={
+			}
+			army = {
+				large="gfx/leaders/ZLC/Portrait_ZLC_Du_Xijun.png"
+				small="gfx/interface/ideas/ZLC/advisors/idea_ZLC_du_xijun.png"
+			}
+		}
+		corps_commander={
+			traits = { ZLC_wu_peifu_jie politically_connected bearer_of_artillery infantry_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	LYC_guo_jijiao = {
+		name="LYC_guo_jijiao"
+		portraits={
+			civilian={
+			}
+			army = {
+				large="gfx/leaders/ZLC/Portrait_ZLC_Guo_Jijiao.png"
+				small="gfx/interface/ideas/ZLC/advisors/idea_ZLC_guo_jijiao.png"
+			}
+		}
+		corps_commander={
+			traits = { ZLC_wu_peifu_jie bearer_of_artillery infantry_officer trait_engineer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 3
+		}
+	}
+	LYC_li_bingzhi = {
+		name="LYC_li_bingzhi"
+		portraits={
+			civilian={
+			}
+			army = {
+				large="gfx/leaders/ZLC/Portrait_ZLC_Li_Bingzhi.png"
+				small="gfx/interface/ideas/ZLC/advisors/idea_ZLC_li_bingzhi.png"
+			}
+		}
+		advisor={
+			slot = theorist
+			idea_token = LYC_ZLC_li_bingzhi
+			ledger = army
+		    allowed = {
+		    	original_tag = LYC
+		    }
+			
+		    research_bonus = {
+		    	land_doctrine = 0.07
+		    }
+			
+		    traits = { military_theorist }
+			cost = 100
+			ai_will_do = {
+				factor = 8.000
+			}
+		}
+		corps_commander={
+			traits = { ZLC_wu_peifu_jie war_hero career_officer brilliant_strategist infantry_officer trait_engineer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	LYC_wu_daoshi = {
+		name="LYC_wu_daoshi"
+		portraits={
+			civilian={
+			}
+			army = {
+				large="gfx/leaders/ZLC/Portrait_ZLC_wu_daoshi.png"
+				small="gfx/interface/ideas/ZLC/advisors/idea_ZLC_wu_daoshi.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			desc=""
+			traits={ ZLC_dazongtong }
+		}
+		country_leader={
+			ideology=rexism
+			desc=""
+			traits={ ZLC_dazongtong }
+		}
+		corps_commander={
+			visible = {
+			}
+			traits = { ZLC_wu_peifu_jie war_hero career_officer brilliant_strategist infantry_officer }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+}

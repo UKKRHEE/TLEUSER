@@ -1,0 +1,5 @@
+﻿
+focus = {
+    current = "KOR_kim_death_changsuk_cabinet"
+    Progress = 0
+}   

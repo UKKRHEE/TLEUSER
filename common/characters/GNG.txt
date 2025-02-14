@@ -1,0 +1,20 @@
+characters={
+	GNG_song_hoseong={
+		name="GNG_song_hoseong"
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/Portrait_KOR_song_hoseong.png"
+			}
+		}
+		country_leader={
+			ideology=ultranationalism
+			traits={ }
+			id=-1
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			id=-1
+		}
+	}
+}

@@ -36,6 +36,15 @@ music = {
 	}
 }
 music = {
+	song = "ui_mugibatake_de_tsukamaete"
+	chance = {
+		modifier = {
+			factor = 10
+			is_ai = no
+		}
+	}
+}
+music = {
 	song = "dadadada_tenshi"
 	chance = {
 		modifier = {
@@ -46,6 +55,24 @@ music = {
 }
 music = {
 	song = "yeomra"
+	chance = {
+		modifier = {
+			factor = 10
+			is_ai = no
+		}
+	}
+}
+music = {
+	song = "flowering"
+	chance = {
+		modifier = {
+			factor = 10
+			is_ai = no
+		}
+	}
+}
+music = {
+	song = "pure_blood"
 	chance = {
 		modifier = {
 			factor = 10
@@ -109,6 +136,69 @@ music = {
 }
 music = {
 	song = "your_shampoo_scent_in_the_flowers"
+	chance = {
+		modifier = {
+			factor = 10
+			is_ai = no
+		}
+	}
+}
+music = {
+	song = "rabbit_hole"
+	chance = {
+		modifier = {
+			factor = 10
+			is_ai = no
+		}
+	}
+}
+music = {
+	song = "sensensense"
+	chance = {
+		modifier = {
+			factor = 10
+			is_ai = no
+		}
+	}
+}
+music = {
+	song = "sparkle"
+	chance = {
+		modifier = {
+			factor = 10
+			is_ai = no
+		}
+	}
+}
+music = {
+	song = "aiai_ii"
+	chance = {
+		modifier = {
+			factor = 10
+			is_ai = no
+		}
+	}
+}
+music = {
+	song = "sangokuno_tenshino_tese"
+	chance = {
+		modifier = {
+			factor = 10
+			is_ai = no
+		}
+	}
+}
+music = {
+	song = "passport_please_victory"
+	chance = {
+		modifier = {
+			factor = 10
+			is_ai = no
+		}
+	}
+}
+music = {
+	song = "yain"
 	chance = {
 		modifier = {
 			factor = 10

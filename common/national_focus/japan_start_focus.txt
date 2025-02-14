@@ -18,13 +18,6 @@ focus_tree = {
 		x = 20
 		y = 1
 		cancelable = no
-		allow_branch = {
-			NOT = {
-				JAP = {
-					has_completed_focus = JAP_economic_policy
-				}
-			}
-		}
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = japan_focus_start
@@ -45,7 +38,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JPN_fake_2
-		icon = GFX_goal_DOM_The_Trial
+		icon = GFX_focus_JPN_fake_2
 		cost = 1.5
 		x = 18
 		y = 2
@@ -72,7 +65,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JPN_fake_3
-		icon = GFX_LEC_Illegitimate_Economy
+		icon = GFX_focus_JPN_fake_3
 		cost = 1.5
 		x = 22
 		y = 2
@@ -99,7 +92,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JPN_fake_4
-		icon = GFX_goal_JAP_tokyo_conf
+		icon = GFX_focus_JPN_fake_4
 		cost = 1.5
 		x = 20
 		y = 3
@@ -132,7 +125,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JPN_fake_5
-		icon = GFX_goal_foreign_diplomacy
+		icon = GFX_focus_JPN_fake_5
 		cost = 1.5
 		x = 20
 		y = 2

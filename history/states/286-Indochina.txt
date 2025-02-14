@@ -1,16 +1,19 @@
 
 state={
 	id=286
-	name="STATE_286"
+	name="STATE_SAIGON"
 	resources={
-		rubber=55.000
+		rubber=21.000
 	}
 
 	history={
 		add_core_of = VIN
-		owner = FRA
+		add_core_of = VTC
+		add_core_of = FRI
+		add_core_of = CCH
+		owner = FRI
 		victory_points = {
-			4401 3 
+			4401 10 
 		}
 		buildings = {
 			infrastructure = 2
@@ -26,9 +29,9 @@ state={
 	}
 
 	provinces={
-		1248 1285 1300 1302 1328 1396 1400 1423 1605 4223 4255 4284 4334 4341 4363 4379 4401 4405 7229 7238 7271 7303 7331 7347 7380 10137 10162 10180 10232 10261 10309 12109 12133 12150 12176 12204 12232 
+		4401 7238 7347 10261 12232 
 	}
-	manpower=5245000
+	manpower=2145000
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

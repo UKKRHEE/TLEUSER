@@ -27,6 +27,7 @@ add_equipment_to_stockpile = {
 	producer = KOR
 }
 recruit_character = CH1_gao_zongwu
+recruit_character = CH1_chen_gongbo
 set_politics = {
 	ruling_party = fascism
 	last_election = "1933.7.1"

@@ -10,9 +10,19 @@ country_event = {
 	
 	option = {
 		name = TLE_Germany.1.a
-	}
-	option = {
-		name = TLE_Germany.1.a
+		TLE_soviet_defeat_effect = yes
+		GER = {
+			news_event = {
+				id = eok_news.19
+				days = 2
+			}
+		}
+		SOV = {
+			country_event = {
+				id = korea.171
+				days = 10
+			}
+		}
 	}
 }
 country_event = {
@@ -37,17 +47,6 @@ country_event = {
 				id = TLE_Germany.4
 				days = 5
 			} 
-			if = {
-				limit = {
-					NOT = {
-						has_global_flag = PRE_THE_NEW_ORDER_GBR
-					}
-				}
-				country_event = {
-					id = TLE_Germany.13
-					days = 2
-				}
-			}
 		}
 		BRG = {
 			transfer_state = 17
@@ -180,16 +179,48 @@ country_event = {
 	picture = GFX_report_event_stalin_01
 	
 	fire_only_once = yes
-	trigger = {
-		tag = GER
-		has_global_flag = GB_Germany_victory_at_ww2
-		has_government = fascism
-		owns_state = 764
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			GER = {
+				add_to_faction = SER
+				add_to_faction = ROM
+				add_to_faction = HUN
+			}
+			ITA = {
+				add_to_faction = BUL
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = TLE_GER_GREAT_RULE
+						option = TLE_GER_GREAT_RULE_GER_WIN_TNO
+					}	
+				}
+				SER = {
+					transfer_state = 764
+					add_state_core = 764
+				}
+			}
+		}
 	}
 	
 	option = {
 		name = TLE_Germany.3.a #바나트 좆까
-		ai_chance = { factor = 0 }
+		ai_chance = { 
+			factor = 0 
+			modifier = {
+				factor = 0
+				has_global_flag = PRE_THE_NEW_ORDER_GBR
+			}
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = TLE_GER_GREAT_RULE
+					option = TLE_GER_GREAT_RULE_GER_WIN_TNO
+				}	
+			}
+		}
 	}
 	option = {
 		name = TLE_Germany.3.b #바나트 ㅇㅋ
@@ -217,12 +248,19 @@ country_event = {
 		}
 	}
 	option = {
-		name = TLE_Germany.3.c #세르비아 ㄱㄱ
+		name = TLE_Germany.3.d #세르비아 ㄱㄱ
 		ai_chance = {
 			factor = 0
 			modifier = {
 				factor = 100
 				has_global_flag = PRE_THE_NEW_ORDER_GBR
+			}
+			modifier = {
+				factor = 100
+				has_game_rule = {
+					rule = TLE_GER_GREAT_RULE
+					option = TLE_GER_GREAT_RULE_GER_WIN_TNO
+				}	
 			}
 		}
 		SER = {
@@ -247,9 +285,9 @@ country_event = {
 				has_global_flag = PRE_THE_NEW_ORDER_GBR
 			}
 		}
-		ai_chance = { factor = 90 }
+		ai_chance = { factor = 0 }
 		GER = {
-			transfer_state = 980
+			transfer_state = 999
 			puppet = BG1
 			country_event = {
 				id = TLE_Germany.11
@@ -257,11 +295,42 @@ country_event = {
 		}
 		BG1 = {
 			transfer_state = 6
+			transfer_state = 977
+			transfer_state = 980
 			transfer_state = 34
-			transfer_state = 1001
+			transfer_state = 29
 			add_state_core = 6
+			add_state_core = 977
+			add_state_core = 980
 			add_state_core = 34
-			add_state_core = 1001
+			add_state_core = 29
+		}
+		FRS = {
+			annex_country = {
+				target = BRG
+				transfer_troops = no
+			}
+		}
+		15 = {
+			set_demilitarized_zone = no
+		}
+		16 = {
+			set_demilitarized_zone = no
+		}
+		20 = {
+			set_demilitarized_zone = no
+		}
+		27 = {
+			set_demilitarized_zone = no
+		}
+		17 = {
+			set_demilitarized_zone = yes
+		}
+		18 = {
+			set_demilitarized_zone = yes
+		}
+		985 = {
+			set_demilitarized_zone = yes
 		}
 	}
 	option = {
@@ -269,7 +338,7 @@ country_event = {
 		trigger = {
 			has_global_flag = PRE_THE_NEW_ORDER_GBR
 		}
-		ai_chance = { factor = 10 }
+		ai_chance = { factor = 100 }
 		GER = {
 			
 			country_event = {
@@ -278,11 +347,13 @@ country_event = {
 		}
 		BRG = {
 			transfer_state = 6
+			transfer_state = 977
+			transfer_state = 980
 			transfer_state = 34
-			transfer_state = 1001
 			add_state_core = 6
+			add_state_core = 977
+			add_state_core = 980
 			add_state_core = 34
-			add_state_core = 1001
 		}
 	}
 	option = {
@@ -379,11 +450,19 @@ country_event = {
 			add_state_core = 91
 			add_state_core = 89
 		}
+		country_event = {
+			id = TLE_Germany.3
+			days = 7
+		}
 	}
 	
 	option = {
 		name = TLE_Germany.12.b #네덜란드 국판
 		ai_chance = { factor = 0 }
+		country_event = {
+			id = TLE_Germany.3
+			days = 7
+		}
 	}
 }
 country_event = {
@@ -487,8 +566,8 @@ country_event = {
 			transfer_state = 152
 			transfer_state = 153
 			transfer_state = 848
-			transfer_state = 984
-			transfer_state = 986
+			transfer_state = 975
+			transfer_state = 976
 			set_politics = {
 				ruling_party = democratic
 				last_election = "1936.2.26"
@@ -533,7 +612,7 @@ country_event = {
 			transfer_state = 152
 			transfer_state = 153
 			transfer_state = 848
-			transfer_state = 986
+			transfer_state = 976
 			set_politics = {
 				ruling_party = democratic
 				last_election = "1936.2.26"
@@ -569,12 +648,12 @@ country_event = {
 			transfer_state = 152
 			transfer_state = 153
 			transfer_state = 848
-			transfer_state = 986
+			transfer_state = 976
 			add_state_core = 152
 			add_state_core = 153
 			add_state_core = 848
-			add_state_core = 986
-			add_state_core = 984
+			add_state_core = 976
+			add_state_core = 975
 			add_state_core = 4
 		}
 	}
@@ -592,14 +671,14 @@ country_event = {
 		name = TLE_Germany.10.a #오스트리아 동의
 		ai_chance = { factor = 100 }
 		AS1 = { #오인공
-			transfer_state = 984
+			transfer_state = 975
 			transfer_state = 4
 			add_state_core = 4
 			add_state_core = 152
 			add_state_core = 153
 			add_state_core = 848
-			add_state_core = 984
-			add_state_core = 986
+			add_state_core = 975
+			add_state_core = 976
 		}
 	}
 }

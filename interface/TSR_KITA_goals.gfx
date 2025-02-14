@@ -1,0 +1,231 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_focus_chi_blue" 
+		texturefile = "gfx/interface/goals/focus_chi_blue.dds"  
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_war_economy" 
+		texturefile = "gfx/interface/goals/TSR/focus_JAP_war_economy.png"  
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_arms_build_up" 
+		texturefile = "gfx/interface/goals/TSR/focus_JAP_arms_build_up.png"  
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_farmer" 
+		texturefile = "gfx/interface/goals/TSR/focus_JAP_farmer.png"  
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_manchu" 
+		texturefile = "gfx/interface/goals/TSR/focus_JAP_manchu.png"  
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_yushinkai" 
+		texturefile = "gfx/interface/goals/TSR/focus_JAP_yushinkai.png"  
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_cash" 
+		texturefile = "gfx/interface/goals/TSR/focus_JAP_cash.png"  
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_conc" 
+		texturefile = "gfx/interface/goals/TSR/focus_JAP_conc.png"  
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_new_social" 
+		texturefile = "gfx/interface/goals/TSR/focus_JAP_new_social.png"  
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_Production" 
+		texturefile = "gfx/interface/goals/TSR/focus_JAP_Production.png"  
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_economy_reform_1" 
+		texturefile = "gfx/interface/goals/TSR/focus_JAP_economy_reform_1.png"  
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_labor_dividend" 
+		texturefile = "gfx/interface/goals/TSR/focus_JAP_labor_dividend.png"  
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_eight" 
+		texturefile = "gfx/interface/goals/TSR/focus_JAP_eight.png"  
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_liberty_rights" 
+		texturefile = "gfx/interface/goals/TSR/focus_JAP_liberty_rights.png"  
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_research" 
+		texturefile = "gfx/interface/goals/TSR/focus_JAP_research.png"  
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_property_rights" 
+		texturefile = "gfx/interface/goals/TSR/focus_JAP_property_rights.png"  
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_Great_asia" 
+		texturefile = "gfx/interface/goals/TSR/focus_JAP_Great_asia.png"  
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_nationalism" 
+		texturefile = "gfx/interface/goals/TSR/focus_JAP_nationalism.png"  
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_equ" 
+		texturefile = "gfx/interface/goals/TSR/focus_JAP_equ.png"  
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_reform_council" 
+		texturefile = "gfx/interface/goals/TSR/focus_JAP_reform_council.png"  
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_law_1" 
+		texturefile = "gfx/interface/goals/TSR/focus_JAP_law_1.png"  
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_labor_2" 
+		texturefile = "gfx/interface/goals/TSR/focus_JAP_labor_2.png"  
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_democratic_michi" 
+		texturefile = "gfx/interface/goals/TSR/focus_JAP_democratic_michi.png"  
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_consultative_meeting" 
+		texturefile = "gfx/interface/goals/TSR/focus_JAP_consultative_meeting.png"  
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_Nobility" 
+		texturefile = "gfx/interface/goals/TSR/focus_JAP_Nobility.png"  
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_beuracary" 
+		texturefile = "gfx/interface/goals/TSR/focus_JAP_beuracary.png"  
+	}  
+	SpriteType = {
+		name = "GFX_focus_JAP_private_property" 
+		texturefile = "gfx/interface/goals/TSR/focus_JAP_private_property.png"  
+	}  
+	SpriteType = {
+		name = "GFX_focus_JAP_bourgeois" 
+		texturefile = "gfx/interface/goals/TSR/focus_JAP_bourgeois.png"  
+	}  
+	SpriteType = { 
+		name = "GFX_focus_JAP_labor" 
+		texturefile = "gfx/interface/goals/TSR/focus_JAP_labor.png"  
+	}  
+	SpriteType = { 
+		name = "GFX_focus_JAP_voet_right" 
+		texturefile = "gfx/interface/goals/TSR/focus_JAP_voet_right.png"  
+	}  
+	SpriteType = { 
+		name = "GFX_focus_JAP_economy_grow" 
+		texturefile = "gfx/interface/goals/TSR/focus_JAP_economy_grow.png"  
+	}  
+	SpriteType = { 
+		name = "GFX_focus_JAP_nippon_teikoku_law" 
+		texturefile = "gfx/interface/goals/TSR/focus_JAP_nippon_teikoku_law.png"  
+	}  
+	SpriteType = { 
+		name = "GFX_focus_JAP_sante_false" 
+		texturefile = "gfx/interface/goals/TSR/focus_JAP_sante_false.png"  
+	}  
+	SpriteType = { 
+		name = "GFX_focus_JAP_kitaikki_reform" 
+		texturefile = "gfx/interface/goals/TSR/focus_JAP_kitaikki_reform.png"  
+	}  
+	SpriteType = { 
+		name = "GFX_focus_JAP_Kita" 
+		texturefile = "gfx/interface/goals/TSR/focus_JAP_Kita.png"  
+	}  
+	SpriteType = { 
+		name = "GFX_focus_JAP_Ugaki" 
+		texturefile = "gfx/interface/goals/TSR/focus_JAP_Ugaki.png"  
+	}  
+	SpriteType = { 
+		name = "GFX_focus_JAP_Ishiwara" 
+		texturefile = "gfx/interface/goals/TSR/focus_JAP_Ishiwara.png"  
+	}  
+
+	SpriteType = { 
+		name = "GFX_JAP_focus_kita_ikki_reform" 
+		texturefile = "gfx/interface/goals/TSR/JAP_focus_kita_ikki_reform.png"  
+	}
+	SpriteType = { 
+		name = "GFX_focus_JAP_2.26" 
+		texturefile = "gfx/interface/goals/TSR/focus_JAP_2.26.png"  
+	}  
+	SpriteType = { 
+		name = "GFX_focus_JAP_2.26_congrass" 
+		texturefile = "gfx/interface/goals/TSR/focus_JAP_2.26_congrass.png"  
+	}  
+	SpriteType = { 
+		name = "GFX_JAP_focus_2.26_showa" 
+		texturefile = "gfx/interface/goals/TSR/JAP_focus_2.26_showa.png"  
+	}  
+	SpriteType = { 
+		name = "GFX_JAP_focus_2.26_army" 
+		texturefile = "gfx/interface/goals/TSR/JAP_focus_2.26_army.png"  
+	}
+	SpriteType = { 
+		name = "GFX_JAP_second_yushin" 
+		texturefile = "gfx/interface/goals/TSR/focus_JAP_second_yushin.png"  
+	}  
+	SpriteType = { 
+		name = "GFX_JAP_rikugun_tousei" 
+		texturefile = "gfx/interface/goals/TSR/focus_JAP_rikugun_tousei.png"  
+	}  
+	SpriteType = { 
+		name = "GFX_focus_dojo" 
+		texturefile = "gfx/interface/goals/TSR/focus_dojo.png"  
+	}  
+	SpriteType = { 
+		name = "GFX_focus_JAP_law_ham" 
+		texturefile = "gfx/interface/goals/TSR/focus_JAP_law_ham.png"  
+	}  
+	SpriteType = { 
+		name = "GFX_focus_JAP_nihon_kaizou" 
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_nihon_kaizou.png"  
+	}  
+	SpriteType = { 
+		name = "GFX_focus_JAP_koudouha" 
+		texturefile = "gfx/interface/goals/TSR/focus_JAP_koudouha.png"  
+	}  
+	SpriteType = { 
+		name = "GFX_focus_JAP_radical_factory" 
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_radical_factory.png"  
+	}
+	SpriteType = { 
+		name = "GFX_focus_JAP_yondai" 
+		texturefile = "gfx/interface/goals/TSR/focus_JAP_yondai.png"  
+	}
+	SpriteType = { 
+		name = "GFX_focus_JAP_CHI_fr" 
+		texturefile = "gfx/interface/goals/TSR/focus_JAP_CHI_fr.png"  
+	}
+	SpriteType = { 
+		name = "GFX_focus_JAP_Blossom" 
+		texturefile = "gfx/interface/goals/TSR/focus_JAP_Blossom.png"  
+	}
+	SpriteType = { 
+		name = "GFX_focus_JAP_mixed_economy" 
+		texturefile = "gfx/interface/goals/TSR/focus_JAP_mixed_economy.png"  
+	}
+	SpriteType = { 
+		name = "GFX_focus_JAP_capital_limit" 
+		texturefile = "gfx/interface/goals/TSR/focus_JAP_capital_limit.png"  
+	}
+	SpriteType = { 
+		name = "GFX_focus_JAP_colony_economy_change" 
+		texturefile = "gfx/interface/goals/TSR/focus_JAP_colony_economy_change.png"  
+	}
+	SpriteType = { 
+		name = "GFX_focus_JAP_farm_reform_end" 
+		texturefile = "gfx/interface/goals/TSR/focus_JAP_farm_reform_end.png"  
+	}
+	SpriteType = { 
+		name = "GFX_focus_JAP_farm_reform_end2" 
+		texturefile = "gfx/interface/goals/TSR/focus_JAP_farm_reform_end2.png"  
+	}
+}

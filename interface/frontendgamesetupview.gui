@@ -653,6 +653,13 @@ guiTypes = {
 			pdx_tooltip = "BOOKMARK_UGLY_AMERICAN_NEW_KOR"
 			pdx_tooltip_delayed = "BOOKMARK_UGLY_AMERICAN_NEW_DELAYED_KOR"
 		}
+		iconType = { # BRAZIL INFO
+				name = "country_selection_info_japan"
+				position = { x = 301 y = 244 }
+				spriteType = "GFX_country_selection_new_shine"
+				pdx_tooltip = "BOOKMARK_JAPAN_INFO"
+				pdx_tooltip_delayed = "BOOKMARK_JAPAN_INFO_DELAYED"
+		}
 
 		iconType = { # UGLY AMERICAN NEW -- GERMANY
 			name = "country_selection_new_ugly_ger"
@@ -676,6 +683,14 @@ guiTypes = {
 			spriteType = "GFX_country_selection_new_big_shine"
 			pdx_tooltip = "BOOKMARK_UGLY_AMERICAN_NEW_USA"
 			pdx_tooltip_delayed = "BOOKMARK_UGLY_AMERICAN_NEW_DELAYED_USA"
+		}
+		
+		iconType = { # Siam New
+			name = "country_selection_new_siam"
+			position = { x = 421 y = 244 }
+			spriteType = "GFX_country_selection_new_shine"
+			pdx_tooltip = "BOOKMARK_SIAM_INFO"
+			pdx_tooltip_delayed = "BOOKMARK_SIAM_INFO_DELAYED"
 		}
 
 		containerWindowType = {
@@ -716,18 +731,25 @@ guiTypes = {
 			}
 			iconType = { # BRAZIL INFO
 				name = "country_selection_info_korea"
-				position = { x = 260 y = 80 }
-				spriteType = "GFX_country_selection_alert_big_shine"
+				position = { x = 286 y = 101 }
+				spriteType = "GFX_country_selection_new_shine"
 				pdx_tooltip = "BOOKMARK_KOREA_INFO"
 				pdx_tooltip_delayed = "BOOKMARK_KOREA_INFO_DELAYED"
 			}
-			iconType = { # ITALY INFO
-				name = "country_selection_info_america"
-				position = { x = 980 y = 10 }
+			iconType = { # BRAZIL INFO
+				name = "country_selection_info_korea_alert"
+				position = { x = 262 y = 80 }
 				spriteType = "GFX_country_selection_alert_big_shine"
-				pdx_tooltip = "BOOKMARK_USA_INFO"
-				pdx_tooltip_delayed = "BOOKMARK_USA_INFO_DELAYED"
+				pdx_tooltip = "BOOKMARK_KOREA_INFO_ALERT"
+				pdx_tooltip_delayed = "BOOKMARK_KOREA_INFO_ALERT_DELAYED"
 			}
+			#iconType = { # ITALY INFO
+			#	name = "country_selection_info_america"
+			#	position = { x = 980 y = 10 }
+			#	spriteType = "GFX_country_selection_alert_big_shine"
+			#	pdx_tooltip = "BOOKMARK_USA_INFO"
+			#	pdx_tooltip_delayed = "BOOKMARK_USA_INFO_DELAYED"
+			#}
 			#iconType = { # TURKEY BLOCKED ENTRY
 			#	name = "countries_blocker_big_trium_2_entry"
 			#	position = { x = 820 y = 90 }
@@ -735,20 +757,20 @@ guiTypes = {
 			#	pdx_tooltip = "BOOKMARK_MONGOL_BLOCKER"
 			#	pdx_tooltip_delayed = "BOOKMARK_MONGOL_BLOCKER_DELAYED"
 			#}
-			iconType = { # IBERIA INFO
-				name = "country_selection_info_britan"
-				position = { x = 980 y = 80 }
-				spriteType = "GFX_country_selection_alert_big_shine"
-				pdx_tooltip = "BOOKMARK_GBR_INFO"
-				pdx_tooltip_delayed = "BOOKMARK_GBR_INFO_DELAYED"
-			}
-			iconType = { # GERMANY INFO
-				name = "country_selection_info_germany"
-				position = { x = 80 y = 10 }
-				spriteType = "GFX_country_selection_alert_big_shine"
-				pdx_tooltip = "BOOKMARK_GERMANY_INFO"
-				pdx_tooltip_delayed = "BOOKMARK_GERMANY_INFO_DELAYED"
-			}
+			#iconType = { # IBERIA INFO
+			#	name = "country_selection_info_britan"
+			#	position = { x = 980 y = 80 }
+			#	spriteType = "GFX_country_selection_alert_big_shine"
+			#	pdx_tooltip = "BOOKMARK_GBR_INFO"
+			#	pdx_tooltip_delayed = "BOOKMARK_GBR_INFO_DELAYED"
+			#}
+			#iconType = { # GERMANY INFO
+			#	name = "country_selection_info_germany"
+			#	position = { x = 80 y = 10 }
+			#	spriteType = "GFX_country_selection_alert_big_shine"
+			#	pdx_tooltip = "BOOKMARK_GERMANY_INFO"
+			#	pdx_tooltip_delayed = "BOOKMARK_GERMANY_INFO_DELAYED"
+			#}
 			iconType = { # FRANCE BLOCKED ENTRY
 				name = "countries_blocker_big_pakt_3_entry"
 				position = { x = 280 y = 160 }
@@ -2324,7 +2346,7 @@ guiTypes = {
 			iconType = {
 				name = "enabled_achievement_icons"
 				position = { x = -382 y = -115 }
-				quadTextureSprite ="GFX_enabled_achievement_icons"
+				quadTextureSprite ="GFX_enabled_achievement_icons_TLE"
 				Orientation = "LOWER_RIGHT"
 			}
 

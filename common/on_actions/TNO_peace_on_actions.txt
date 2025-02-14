@@ -507,7 +507,7 @@
 # 								}
 # 							}
 # 							reset_province_name = 3882
-# 							reset_province_name = 974
+# 							reset_province_name = 1101
 # 						}
 # 						else = {
 # 							white_peace = ROOT
