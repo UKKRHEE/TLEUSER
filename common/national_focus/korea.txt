@@ -3543,6 +3543,9 @@ focus_tree = {
 		}
 		x = 22
 		y = 17
+		available = {
+			has_completed_focus = KOR_kim_dip_jap_war_with_japan
+		}
 		completion_reward = {
 			if = {
 				limit = {
@@ -3774,6 +3777,9 @@ focus_tree = {
 		}
 		x = 26
 		y = 18
+		available = {
+			has_completed_focus = KOR_kim_dip_chi_hebei_divide_plan
+		}
 		completion_reward = {
 			add_political_power = 50
 			custom_effect_tooltip = KOR_kim_dip_pan_chinese_economy_accept_tt
@@ -4062,6 +4068,42 @@ focus_tree = {
 			add_ideas = KOR_kks_arms_industory_britain_idea
 			custom_effect_tooltip = KOR_kim_dip_pan_panzer_allies_tt_2
 			set_country_flag = KOR_kim_dip_pan_panzer_allies_effect_flag
+		}
+
+	}
+	focus = {
+		id = KOR_kks_happy_new_world
+		icon = GFX_focus_KOR_kks_happy_new_world
+		cost = 80.00
+		prerequisite = {
+			focus = KOR_kim_dip_chi_special_military_operation
+		}
+		prerequisite = {
+			focus = KOR_kim_dip_pan_god_save_the_empire
+		}
+		prerequisite = {
+			focus = KOR_kim_dip_jap_divide_and_rule
+		}
+		allow_branch = {
+			NOT = {
+				has_country_flag = FLAG_KKS_ROUTE_KKS_DEAD
+			}
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = KOR_kks_happy_new_world_flag
+				NOT = {
+					has_country_flag = FLAG_KKS_ROUTE_KKS_DEAD
+				}
+			}	
+			
+		}
+		cancelable = no
+		continue_if_invalid = no
+		x = 17
+		y = 21
+		completion_reward = {
+			custom_effect_tooltip = KOR_kks_happy_new_world_tt
 		}
 
 	}

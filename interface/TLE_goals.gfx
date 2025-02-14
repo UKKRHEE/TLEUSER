@@ -1116,6 +1116,11 @@ spriteTypes = {
 	}  
 	###########################
 	SpriteType = { 
+		name = "GFX_focus_KOR_kks_happy_new_world" 
+		texturefile = "gfx/interface/goals/KOR/KKS/focus_KOR_kks_happy_new_world.png"  
+	}  
+	###########################
+	SpriteType = { 
 		name = "GFX_focus_KOR_kks_bad_1" 
 		texturefile = "gfx/interface/goals/KOR/KKS/ENDING/BAD/focus_KOR_kks_bad_1.png"  
 	}  
