@@ -1763,6 +1763,28 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
+					tag = CHI
+					has_war_with = ZLC
+					KOR = {
+						has_country_flag = FLAG_KOR_DEMOCRACY_ROUTE
+					}
+					has_global_flag = GLOB_NASANG_KUOMINTANG_NORTH
+					NOT = {
+						has_global_flag = GLOB_KKS_KUOMINTANG_NORTH_ATTACK_SUCCESS
+					}
+					FROM = { tag = ZLC }
+					FROM.FROM = { 
+						OR = {
+							controls_state = 597
+							controls_state = 614
+							controls_state = 608
+						}
+					}
+				}
+				KKS_kuomintang_north_attack_success_effect = yes
+			}	
+			if = {
+				limit = {
 					is_chinese_clique = yes
 					is_in_faction_with = CHI
 					has_global_flag = FLAG_KOR_DEM_GREAT_ASIAN_WAR

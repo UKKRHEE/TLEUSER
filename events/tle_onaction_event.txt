@@ -8360,6 +8360,9 @@ country_event = {
 		}
 		has_global_flag = GLOB_NASANG_KUOMINTANG_NORTH
 		has_war_with = ZLC
+		NOT = {
+			has_global_flag = GLOB_KKS_KUOMINTANG_NORTH_ATTACK_SUCCESS
+		}
 		CHI = {
 			OR = {
 				AND = {
@@ -8378,53 +8381,7 @@ country_event = {
 	
 	option = {
 		name = tle_onaction.1.a
-		every_country = {
-			limit = {
-				has_war_with = ZLC
-			}
-			white_peace = ZLC
-		}
-		CHI = {
-			transfer_state = 606
-			transfer_state = 1040
-			transfer_state = 598
-			transfer_state = 1051
-			transfer_state = 997
-			transfer_state = 1048
-			transfer_state = 1009
-			transfer_state = 1008
-			transfer_state = 1056
-			transfer_state = 620
-			transfer_state = 1057
-			transfer_state = 607
-			transfer_state = 1074
-		}
-		if = {
-			limit = {
-				SHX = {
-					is_puppet_of = ZLC
-				}
-			}
-			SHX = {
-				end_puppet = ZLC
-				set_cosmetic_tag = SHX
-			}
-		}
-		597 = {
-			set_demilitarized_zone = yes
-		}
-		1100 = {
-			set_demilitarized_zone = yes
-		}
-		1050 = {
-			set_demilitarized_zone = yes
-		}
-		1101 = {
-			set_demilitarized_zone = yes
-		}
-		1049 = {
-			set_demilitarized_zone = yes
-		}
+		KKS_kuomintang_north_attack_success_effect = yes
 	}
 }
 country_event = {
