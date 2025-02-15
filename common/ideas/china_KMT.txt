@@ -82,11 +82,11 @@ ideas = {
 			}
 			picture = idea_generic_supply_depot
 			modifier = {
-				stability_factor = 0.4
-				war_support_factor = 0.4
+				stability_factor = 0.8
+				war_support_factor = 0.8
 				conscription_factor = 0.5
-				army_core_attack_factor = 15
-				army_core_defence_factor = 15
+				army_core_attack_factor = 20
+				army_core_defence_factor = 20
 			}
 		}
 		CHI_national_revolution1 = {

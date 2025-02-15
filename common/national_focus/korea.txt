@@ -4266,6 +4266,7 @@ focus_tree = {
 			}
 			if = {
 				limit = {
+					has_global_flag = FLAG_KOR_DEM_GREAT_ASIAN_WAR
 					NOT = { has_global_flag = GLOB_KKS_GAW_WIN has_global_flag = GLOB_KKS_GAW_LOSE }
 					OR = {
 						613 = {
@@ -4290,7 +4291,22 @@ focus_tree = {
 						}
 					}
 				}
+				custom_effect_tooltip = KOR_kim_death_great_asian_war_tt_2
 				CHI = {
+					add_state_core = 715
+					add_state_core = 761
+					add_state_core = 714
+					add_state_core = 610
+					add_state_core = 1059
+					add_state_core = 1060
+					
+					add_state_claim = 716
+					add_state_claim = 328
+					add_state_claim = 717
+					add_state_claim = 745
+					add_state_claim = 1032
+					add_state_claim = 1031
+					add_state_claim = 1030
 					add_ideas = KMT_kks_the_time_out
 				}
 				if = {
@@ -4312,6 +4328,7 @@ focus_tree = {
 			}
 			if = {
 				limit = {
+					has_global_flag = FLAG_KOR_DEM_GREAT_ASIAN_WAR
 					OR = {
 						has_global_flag = GLOB_KKS_GAW_WIN
 						AND = {

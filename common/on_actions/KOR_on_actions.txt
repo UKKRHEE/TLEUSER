@@ -1800,6 +1800,7 @@ on_actions = {
 				}
 				KOR = {
 					complete_national_focus = KOR_kim_death_great_asian_war
+					complete_national_focus = KOR_kim_gaw_sunset
 				}
 			}	
 			if = {
