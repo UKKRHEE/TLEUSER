@@ -5359,12 +5359,13 @@ KOR_third_plan_doryun = {
 	}
 	KOR_surrander_of_ins = { 
 		icon = GFX_decision_oil
-	    
-		#picture = GFX_decision_cat_national_assembly
-
+		
 		allowed = {
 			original_tag = KOR
-		}	
+		}
+		cancel_trigger = {
+			has_country_flag = KOR_doryun_end
+		}
 		
 		highlight_states = {
 			highlight_state_targets = { 
@@ -5392,9 +5393,6 @@ KOR_third_plan_doryun = {
 			}
 		}
 		available = {
-			MAL = {
-				has_capitulated = yes
-			}
 			KOR = {
 				has_country_flag = KOR_won_in_malay
 				has_country_flag = KOR_won_in_borneo
@@ -5418,6 +5416,9 @@ KOR_third_plan_doryun = {
 			has_completed_focus = KOR_the_plan_south
 			NOT = {
 				has_country_flag = flag_KOR_surrander_of_ins_end
+			}
+			NOT = {
+				has_country_flag = KOR_doryun_end
 			}
 			INS = {
 				has_war_with = KOR
@@ -5493,31 +5494,30 @@ KOR_third_plan_doryun = {
 			#페널티
 		}
 	}
-	KOR_the_embargo_rising = { 
+	KOR_the_embargo_rising = {
 		icon = GFX_decision_SWI_consolidate_council_power
-	    
-		#picture = GFX_decision_cat_national_assembly
-
 		allowed = {
 			original_tag = KOR
 		}	
 		
 		available = {
-			NOT = {
-				has_idea = KOR_embargo_us
-				has_idea = KOR_embargo_us_a
-				has_idea = KOR_embargo_us_b
-				has_idea = KOR_embargo_us_c
-				has_idea = KOR_embargo_us_d
+			OR = {
+				NOT = {
+					has_idea = KOR_embargo_us
+					has_idea = KOR_embargo_us_a
+					has_idea = KOR_embargo_us_b
+					has_idea = KOR_embargo_us_c
+					has_idea = KOR_embargo_us_d
+				}
+				NOT = {
+					has_war_with = USA
+				}
 			}
-			NOT = {
-				has_war_with = USA
-			}
-		}	
+		}
 
 		days_mission_timeout = 180
 
-		fire_only_once = yes
+		fire_only_once = no
 		
 		is_good = no
 

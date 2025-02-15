@@ -437,7 +437,6 @@ country_event = { #간략한 설정
 	option = { #
 		ai_chance = { factor = 100 }
 		name = korea.16.a
-		complete_national_focus = kor_threat_united_states
 		USA = {
 		    country_event = {
 			    id = korea.17
@@ -576,10 +575,6 @@ country_event = { #중국의 거절!
 			}
 			declare_war_on = {
 				target = CHI
-				type = puppet_wargoal_focus
-			}
-			declare_war_on = {
-				target = SND
 				type = puppet_wargoal_focus
 			}
 		}
@@ -6498,13 +6493,6 @@ country_event = { #1938년
 	}
 	option = { #아.
 		name = korea.166.a	
-		SOV = {
-			diplomatic_relation = {
-				country = ROOT
-				relation = non_aggression_pact
-				active = yes
-			}
-		}
 		hidden_effect = {
 			country_event = {
 				id = korea.167
@@ -6523,13 +6511,6 @@ country_event = { #1939년
 	}
 	option = { #아.
 		name = korea.166.a	
-		SOV = {
-			diplomatic_relation = {
-				country = ROOT
-				relation = non_aggression_pact
-				active = yes
-			}
-		}
 		hidden_effect = {
 			country_event = {
 				id = korea.168
@@ -6548,15 +6529,6 @@ country_event = { #1940년
 	}
 	option = { #아.
 		name = korea.166.a	
-		SOV = {
-			diplomatic_relation = {
-				country = ROOT
-				relation = non_aggression_pact
-				active = yes
-			}
-		}
-		hidden_effect = {
-		}
 	}
 }
 country_event = { #1940년
@@ -7536,6 +7508,8 @@ country_event = {
 	picture = GFX_TLE_korea_event_none
 	
 	is_triggered_only = yes
+	
+	hidden = yes
 	
 	option = { #
 		name = korea.183.a
@@ -11385,13 +11359,12 @@ country_event = { #작계 수립 #9.1
 	
     is_triggered_only = yes
 	immediate = {
+		complete_national_focus = kor_threat_united_states
 		hidden_effect = {
 			KOR = {
 				custom_effect_tooltip = TOOLTIP_WILL_CAN_DEFENCE
 				set_country_flag = TLE_USA_GO_EXPERIENCE
-				hidden_effect = {
-					activate_decision = KOR_hunlian_in_pacific
-				}	
+				activate_decision = KOR_hunlian_in_pacific
 				country_event = {
 					id = korea.377
 					days = 9
@@ -11520,13 +11493,19 @@ country_event = { #1941
 	
 	option = { 
 		name = korea.381.a
-		set_politics = {
-			ruling_party = fascism
-			last_election = "1936.2.26"
-			election_frequency = 48
-			elections_allowed = no
+		set_party_name = {
+			ideology = fascism
+			long_name = "KOR_bibyunsa_party_long"
+			name = "KOR_bibyunsa_party"
 		}
 		hidden_effect = {
+			complete_national_focus = KOR_trust_him
+			set_politics = {
+				ruling_party = fascism
+				last_election = "1936.2.26"
+				election_frequency = 48
+				elections_allowed = no
+			}
 			set_party_name = {
 				ideology = fascism
 				long_name = "KOR_bibyunsa_party_long"
