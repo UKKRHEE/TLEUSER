@@ -10692,7 +10692,6 @@ PCY_korea_annex_collaped_beigov_effect = {
 			transfer_state = 1012
 			transfer_state = 1097
 			transfer_state = 614
-			transfer_state = 1001
 			
 			transfer_state = 1099
 			transfer_state = 615
