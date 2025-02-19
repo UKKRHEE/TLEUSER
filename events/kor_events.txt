@@ -15280,6 +15280,10 @@ country_event = { #
 	 
 	option = { #한국
 		name = korea.1404.a
+		add_days_mission_timeout = {
+			mission = KOR_dec_com_arrest_communist_limit
+			days = 20
+		}
 	}
 }
 country_event = { #

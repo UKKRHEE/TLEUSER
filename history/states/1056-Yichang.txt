@@ -5,7 +5,7 @@ state={
 
 	history={
 		victory_points = {
-			1612 5 
+			1612 3 
 		}
 		buildings = {
 			infrastructure = 2

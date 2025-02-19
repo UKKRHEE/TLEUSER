@@ -8,7 +8,7 @@ state={
 			11931 10 
 		}
 		victory_points = {
-			4519 5 
+			4519 3 
 		}
 		owner = ZLC
 		add_core_of = ZLC

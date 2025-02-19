@@ -4,10 +4,6 @@ oob = "VIN_1936"
 set_cosmetic_tag = VTC_com_min
 set_research_slots = 3
 
-add_ideas = {
-	vietnam_communists_for_real
-}
-
 # Starting tech
 # clone of France
 set_technology = {

@@ -5,7 +5,7 @@ state={
 
 	history={
 		victory_points = {
-			10446 5 
+			10446 3 
 		}
 		owner = ZLC
 		add_core_of = ZLC

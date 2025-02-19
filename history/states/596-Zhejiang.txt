@@ -8,10 +8,10 @@ state={
 			4042 3 
 		}
 		victory_points = {
-			11920 1 
+			11920 3 
 		}
 		victory_points = {
-			11991 1 
+			11991 3 
 		}
 		owner = AHC
 		add_core_of = AHC

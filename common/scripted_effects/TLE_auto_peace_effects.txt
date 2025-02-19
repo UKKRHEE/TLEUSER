@@ -7614,6 +7614,69 @@ FRS_diminished_effect = {
 	}
 	if = {
 		limit = {
+			NOT = {
+				has_global_flag = PRE_THE_NEW_ORDER_GBR
+				KOR = {
+					has_country_flag = FLAG_KOR_FASCIST_ROUTE
+				}
+			}
+		}
+		RAJ = {
+			set_cosmetic_tag = RAJ_UK_autonomy_dominion
+			set_politics = { 
+				ruling_party = democratic
+				last_election = "1936.11.26"
+				election_frequency = 48
+				elections_allowed = no
+			}
+			set_popularities = {
+				democratic = 100
+			}
+			country_event = {
+				id = burma.1
+			}
+		}
+		ENG = {
+			puppet = PAK
+		}
+		PAK = {
+			set_cosmetic_tag = PAK_UK
+			transfer_state = 430
+			transfer_state = 440
+			transfer_state = 442
+			transfer_state = 443
+			transfer_state = 444
+			transfer_state = 445
+			transfer_state = 787
+			set_politics = { 
+				ruling_party = neutrality
+				last_election = "1936.11.26"
+				election_frequency = 48
+				elections_allowed = no
+			}
+			set_popularities = {
+				neutrality = 100
+			}
+		}
+		MAL = { #말레이 통일
+			set_cosmetic_tag = MAL_united
+			annex_country = {
+				target = SST
+				transfer_troops = yes
+			}
+			set_capital = { state = 1078 }
+			leave_faction = yes
+		}
+		SAR = {
+			set_cosmetic_tag = SAR_UKD
+		}
+		AST = {
+			transfer_state = 711
+			transfer_state = 722
+		}
+	}
+	if = {
+		limit = {
 			has_global_flag = PRE_THE_NEW_ORDER_GBR
 		}
 		hidden_effect = {
@@ -8336,12 +8399,7 @@ FRS_diminished_effect = {
 			}
 			if = {
 				limit = {
-					OR = {
-						has_global_flag = TLE_KOREA_IS_DEFEATED
-						NOT = {
-							has_global_flag = FLAG_KOR_FASCIST_ROUTE
-						}
-					}
+					has_global_flag = TLE_KOREA_IS_DEFEATED
 				}
 				news_event = {
 					id = siam_news.14

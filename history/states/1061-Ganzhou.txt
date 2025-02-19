@@ -8,7 +8,7 @@ state={
 	}
 	history={
 		victory_points = {
-			9942 5 
+			9942 3 
 		}
 		owner = CHI
 		add_core_of = CHI #나중에 핵심주 개편하면서 제거했다가 중점으로 붙일 것

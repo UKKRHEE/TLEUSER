@@ -1813,6 +1813,7 @@ country_event = {
 			add_to_faction = VIN
 		}
 		VTC = {
+			add_ideas = vietnam_communists_of_real
 			transfer_state = 1087
 			transfer_state = 1085
 			transfer_state = 1084

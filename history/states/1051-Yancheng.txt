@@ -6,7 +6,7 @@ state={
 	local_supplies=0.0 
 	history={
 		victory_points = {
-			7142 1 
+			7142 3 
 		}
 		buildings = {
 			infrastructure = 3

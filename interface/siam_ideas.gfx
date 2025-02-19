@@ -32,6 +32,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/SIA/ideas/vietnam_communists.png"
 	}
 	SpriteType = {
+		name = "GFX_idea_vietnam_communists_of_real"
+		texturefile = "gfx/interface/SIA/ideas/vietnam_communists_of_real.png"
+	}
+	SpriteType = {
 		name = "GFX_idea_us_philippines"
 		texturefile = "gfx/interface/SIA/ideas/us_philippines.png"
 	}

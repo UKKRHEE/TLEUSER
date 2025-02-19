@@ -10,6 +10,17 @@ ideas = {
 				political_power_gain = 0.1
 			}
 		}
+		KMT_arm_contorl_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KMT_arm_contorl_idea" }
+			picture = SPA_recovering_from_the_civil_war
+			allowed = { always = no }
+			modifier = {
+				political_power_factor = -0.25
+				consumer_goods_expected_value = -0.05
+				industrial_capacity_factory = -0.9
+				industrial_capacity_factory = -0.9
+			}
+		}
 		KMT_commissars_idea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CHI_commissars_idea" }
 			picture = FRA_national_mobilization_focus

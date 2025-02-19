@@ -19,9 +19,6 @@ state={
 		victory_points = {
 			1099 3 
 		}
-		victory_points = {
-			1099 5 
-		}
 		1938.10.25 = {
 			controller = DKG
 			CHI = {

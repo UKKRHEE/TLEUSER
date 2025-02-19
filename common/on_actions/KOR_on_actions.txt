@@ -1775,9 +1775,9 @@ on_actions = {
 					FROM = { tag = ZLC }
 					FROM.FROM = { 
 						OR = {
-							controls_state = 597
-							controls_state = 614
-							controls_state = 608
+							state = 597
+							state = 614
+							state = 608
 						}
 					}
 				}

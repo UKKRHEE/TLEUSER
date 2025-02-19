@@ -48,6 +48,7 @@ if = {
 	add_ideas = {
 		CHI_kuomintang_right
 		CHI_right_NRA_idea
+		KMT_arm_contorl_idea
 	}
 
 1939.1.1 = {

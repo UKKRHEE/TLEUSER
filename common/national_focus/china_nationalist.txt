@@ -907,6 +907,9 @@ focus_tree = {
 					KOR = {
 						has_completed_focus = KOR_power_up_to_imperial
 					}
+					KOR = {
+						has_country_flag = FLAG_KOR_DEMOCRACY_ROUTE
+					}
 				}
 			}	
 			cancel_if_invalid = yes

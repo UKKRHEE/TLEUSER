@@ -5,7 +5,7 @@ state={
 
 	history={
 		victory_points = {
-			4504 3 
+			4504 5 
 		}
 		owner = GXC
 		add_core_of = GXC

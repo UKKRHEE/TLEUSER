@@ -134,7 +134,7 @@ ideas = {
 			}
 		}
 		vietnam_communists_of_real = {
-			picture = GFX_idea_vietnam_communists
+			picture = GFX_idea_vietnam_communists_of_real
 			
 			allowed = {
 				tag = VTC

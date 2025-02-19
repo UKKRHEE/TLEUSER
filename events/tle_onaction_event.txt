@@ -9485,7 +9485,7 @@ country_event = {
 	}
 }
 country_event = {
-	id = tle_onaction.298 #박중양일 시 독일 버프 제거
+	id = tle_onaction.298 #민주루트일 시 독일 버프 제거
 	title = tle_onaction.1.title
 	desc = tle_onaction.1.desc
 	picture = GFX_event_korea_777
@@ -9495,7 +9495,7 @@ country_event = {
 	trigger = {
 		tag = GER
 		KOR = {
-			has_country_flag = FLAG_PCY_ROUTE
+			has_country_flag = FLAG_KOR_DEMOCRACY_ROUTE
 		}
 	}
 	mean_time_to_happen = {
@@ -9521,6 +9521,58 @@ country_event = {
 			GER = {
 				remove_ideas = TLE_GER_WIN_IDEA
 			}
+		}
+		if = {
+			limit = {
+				SOV = {
+					is_ai = yes
+				}
+			}
+			SOV = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_0
+					amount = 100000
+					producer = SOV
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = tle_onaction.299 #
+	title = tle_onaction.1.title
+	desc = tle_onaction.1.desc
+	picture = GFX_event_korea_777
+	
+	hidden = yes
+	
+	trigger = {
+		tag = RUS
+		has_global_flag = TLE_soviet_union_defeat
+		RUS = {
+			exists = yes
+		}
+		KOR = {
+			has_country_flag = FLAG_KKS_ROUTE
+		}
+		SOV = {
+			owns_state = 561
+            owns_state = 657
+            owns_state = 560
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	fire_only_once = yes
+	
+	option = {
+		name = tle_onaction.1.a
+		RUS = {
+			transfer_state = 561
+            transfer_state = 657
+            transfer_state = 560
 		}
 	}
 }
