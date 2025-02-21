@@ -7789,7 +7789,6 @@ country_event = {
 		tag = KOR
 		has_country_flag = FLAG_KOR_FASCIST_ROUTE
 		date > 1941.3.17
-		has_war = yes
 	}
 	
 	fire_only_once = yes
@@ -7979,7 +7978,6 @@ country_event = {
 		
 	trigger = {
 		KOR = {
-			is_ai = yes
 			has_war_with = ENG
 		}
 		SIA = {

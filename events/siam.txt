@@ -617,13 +617,27 @@ country_event = {
 
 	option = {
 		name = siam.21.a
-		declare_war_on = {
-			target = USA
-			type = annex_everything
+		if = {
+			limit = {
+				KOR = {
+					has_war_with = USA
+				}
+			}
+			declare_war_on = {
+				target = USA
+				type = annex_everything
+			}
 		}
-		declare_war_on = {
-			target = ENG
-			type = annex_everything
+		if = {
+			limit = {
+				KOR = {
+					has_war_with = ENG
+				}
+			}
+			declare_war_on = {
+				target = ENG
+				type = annex_everything
+			}
 		}
 	}
 }

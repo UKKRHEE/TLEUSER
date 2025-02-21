@@ -461,6 +461,7 @@ recruit_character = KOR_yi_won #경친왕 이원 (1906)
 recruit_character = KOR_yi_jegak #의양군 이재각 (1874)
 recruit_character = KOR_yi_haeseung #청풍군 이해승 (1890)
 recruit_character = KOR_yi_haechang #창산군 이해창 (1865)
+recruit_character = KOR_yi_kiyong #수성군 이기용 (1889)
 
 recruit_character = KOR_yi_un #이은 (1896)
 recruit_character = KOR_yi_wu #이우 (1912)

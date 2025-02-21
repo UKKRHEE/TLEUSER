@@ -7,9 +7,6 @@ SOV_surrender = {
 		}
 
 		available = {
-			GER = {
-				is_ai = yes
-			}
 			SOV = {
 				surrender_progress > 0.7
 			}

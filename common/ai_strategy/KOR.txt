@@ -26,6 +26,97 @@ KOR_stock_up_on_trains_before_china = {
 	}
 }
 
+KOR_do_not_let_strangers_in = {
+	allowed = {
+		original_tag = KOR
+	}
+
+	enable = {
+		KOR = {
+			has_country_flag = FLAG_KOR_FASCIST_ROUTE
+		}
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = antagonize
+		id = USA
+		value = 100
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = ENG
+		value = 100
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = FRA
+		value = 100
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = SOV
+		value = 100
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = JAP
+		value = 999
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = ZLC
+		value = 999
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = CHI
+		value = 999
+	}
+	
+	ai_strategy = {
+		type = support
+		id = SIA
+		value = 100
+	}
+
+	ai_strategy = {
+		type = ignore
+		id = PRU
+		value = 999
+	}
+	
+	ai_strategy = {
+		type = ignore
+		id = ICE
+		value = 999
+	}
+	
+	ai_strategy = {
+		type = ignore
+		id = VEN
+		value = 999
+	}
+	
+	ai_strategy = {
+		type = ignore
+		id = DOM
+		value = 999
+	}
+	
+	ai_strategy = {
+		type = ignore
+		id = ELS
+		value = 999
+	}
+}
+
 less_trucks_4_u_KOR = {
 	allowed = {
 		original_tag = KOR

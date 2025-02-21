@@ -57,7 +57,7 @@ characters={
 		#		leader_of_despotism
 		#	}
 		#}
-		corps_commander={
+		field_marshal={
 			visible = {
 				has_game_rule = {
 					rule = TLE_HALLOWEEN_RULE
@@ -95,10 +95,11 @@ characters={
 		name=KOR_yi_won_chinwang
 		portraits={
 			army={
-				large="gfx/leaders/KOR/Portrait_KOR_yi_won.png"
+				large="gfx/leaders/KOR/Portrait_KOR_yi_won_general.png"
 				small="gfx/interface/ideas/KOR/advisors/idea_KOR_yi_won.png"
 			}
 			civilian={
+				large="gfx/leaders/KOR/Portrait_KOR_yi_won.png"
 				small="gfx/interface/ideas/KOR/advisors/grey/idea_KOR_yi_won_grey.png"
 			}
 		}
@@ -123,7 +124,7 @@ characters={
 				factor = 0.000
 			}
 		}
-		corps_commander={
+		field_marshal={
 			traits={ KOR_imperial_family politically_connected old_guard media_personality cavalry_officer }
 			visible = {
 				NOT = {
@@ -146,11 +147,14 @@ characters={
 		name=KOR_yi_yeong_chinwang
 		portraits={
 			army={
-				large="gfx/leaders/KOR/Portrait_KOR_yi_yeong.png"
+				large="gfx/leaders/KOR/Portrait_KOR_yi_yeong_general.png"
 				small="gfx/interface/ideas/KOR/advisors/idea_KOR_yi_yeong_advisor.png"
 			}
+			civilian={
+				large="gfx/leaders/KOR/Portrait_KOR_yi_yeong.png"
+			}	
 		}
-		corps_commander={
+		field_marshal={
 			traits={ KOR_imperial_family politically_connected media_personality infantry_officer trait_cautious }
 			desc = "KOR_yi_yeong_commander_desc"
 			skill = 3
@@ -169,7 +173,7 @@ characters={
 				small="gfx/interface/ideas/KOR/advisors/idea_KOR_yi_jegak.png"
 			}
 		}
-		corps_commander={
+		field_marshal={
 			visible = {
 				KHK = {
 					exists = no
@@ -194,7 +198,7 @@ characters={
 				small="gfx/interface/ideas/KOR/advisors/idea_KOR_yi_kiyong.png"
 			}
 		}
-		corps_commander={
+		field_marshal={
 			visible = {
 				KYH = {
 					exists = no
@@ -219,7 +223,7 @@ characters={
 				small="gfx/interface/ideas/KOR/advisors/idea_KOR_yi_haeseung.png"
 			}
 		}
-		corps_commander={
+		field_marshal={
 			visible = {
 				KKS = {
 					exists = no
@@ -2751,12 +2755,12 @@ characters={
 			}
 		}
 		field_marshal={
-			traits = { KOR_tongjepa old_guard war_hero politically_connected inflexible_strategist harsh_leader }
+			traits = { KOR_tongjepa war_hero politically_connected inflexible_strategist harsh_leader }
 			skill = 5
 			attack_skill = 3
-			defense_skill = 3
+			defense_skill = 2
 			planning_skill = 5
-			logistics_skill = 5
+			logistics_skill = 4
 		}
 	}
 	KOR_woo_deoksun = { #1879

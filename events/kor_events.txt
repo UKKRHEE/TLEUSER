@@ -275,7 +275,7 @@ country_event = { #승전
 	id = korea.10
 	title = korea.10.title
 	desc = korea.10.desc
-	picture = GFX_TLE_korea_event_none
+	picture = GFX_report_event_japanese_chinese_surrender
 	
 	fire_only_once = yes	
     is_triggered_only = yes
@@ -11359,12 +11359,8 @@ country_event = { #작계 수립 #9.1
 	
     is_triggered_only = yes
 	immediate = {
-		complete_national_focus = kor_threat_united_states
 		hidden_effect = {
 			KOR = {
-				custom_effect_tooltip = TOOLTIP_WILL_CAN_DEFENCE
-				set_country_flag = TLE_USA_GO_EXPERIENCE
-				activate_decision = KOR_hunlian_in_pacific
 				country_event = {
 					id = korea.377
 					days = 9
@@ -11375,6 +11371,9 @@ country_event = { #작계 수립 #9.1
 	
 	option = { 
 		name = korea.375.a
+		hidden_effect = {
+			complete_national_focus = kor_threat_united_states
+		}
 		country_event = {
 			id = korea.376
 		}

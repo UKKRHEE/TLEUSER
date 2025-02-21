@@ -4313,34 +4313,6 @@ KOR_anti_hwakyo_movement = {
 		}
 	}
 }
-KOR_the_three_countries_plan = {
-	KOR_political_officer_kill = {
-		icon = generic_form_nation
-		
-		allowed = {
-		
-		}
-		visible = {
-			has_country_flag = won_in_china
-		}
-		available = {
-			has_country_flag = won_in_china
-			has_army_experience > 200
-			has_navy_experience > 200
-			has_air_experience > 200
-		}
-		fire_only_once = yes
-		days_remove = 45
-		complete_effect = { 
-			army_experience = -200
-			navy_experience = -200
-			air_experience = -200
-		}
-		remove_effect = {
-			remove_ideas = KOR_political_officer
-		}
-	}
-}
 KOR_first_plan_lightning = {
 	KOR_story_of_lightning = {
 		icon = generic_form_nation
@@ -4778,6 +4750,32 @@ KOR_second_plan_tent = {
 			set_country_flag = won_in_china
 		}
 	}
+	KOR_political_officer_kill = {
+		icon = generic_form_nation
+		
+		allowed = {
+		
+		}
+		visible = {
+			has_country_flag = won_in_china
+		}
+		available = {
+			has_country_flag = won_in_china
+			has_army_experience > 100
+			has_navy_experience > 100
+			has_air_experience > 100
+		}
+		fire_only_once = yes
+		days_remove = 45
+		complete_effect = { 
+			army_experience = -100
+			navy_experience = -100
+			air_experience = -100
+		}
+		remove_effect = {
+			remove_ideas = KOR_political_officer
+		}
+	}
 	KOR_save_the_qi_xieyean = {
 		icon = generic_political_discourse
 		available = {
@@ -5164,7 +5162,6 @@ KOR_third_plan_doryun = {
 				id = south.3
 			}
 			set_country_flag = flag_KOR_surrander_of_phi_end
-			KOR_embargo_level_down = yes
 		}
 
 		timeout_effect = {
@@ -5524,13 +5521,169 @@ KOR_third_plan_doryun = {
 		activation = {
 			is_ai = no
 			has_war_with = USA
+			has_idea = KOR_embargo_us
+			NOT = {
+				has_country_flag = flag_KOR_the_embargo_rising_end
+			}
+		}
+
+		visible = {
+			original_tag = KOR
+        }	
+		complete_effect = {
+			custom_effect_tooltip = KOR_the_embargo_rising_tt
+			set_country_flag = flag_KOR_the_embargo_rising_end
+			hidden_effect = {
+				remove_ideas = KOR_embargo_us
+			}
+		}
+
+		timeout_effect = {
+			swap_ideas = {
+				add_idea = KOR_embargo_us_a
+				remove_idea = KOR_embargo_us
+			}
+		}
+	}
+	KOR_the_embargo_rising_a = {
+		icon = GFX_decision_SWI_consolidate_council_power
+		allowed = {
+			original_tag = KOR
+		}	
+		
+		available = {
 			OR = {
-				has_idea = KOR_embargo_us
-				has_idea = KOR_embargo_us_a
-				has_idea = KOR_embargo_us_b
-				has_idea = KOR_embargo_us_c
-				has_idea = KOR_embargo_us_d
-			}	
+				NOT = {
+					has_idea = KOR_embargo_us
+					has_idea = KOR_embargo_us_a
+					has_idea = KOR_embargo_us_b
+					has_idea = KOR_embargo_us_c
+					has_idea = KOR_embargo_us_d
+				}
+				NOT = {
+					has_war_with = USA
+				}
+			}
+		}
+
+		days_mission_timeout = 180
+
+		fire_only_once = no
+		
+		is_good = no
+
+		activation = {
+			is_ai = no
+			has_war_with = USA
+			has_idea = KOR_embargo_us_a
+			NOT = {
+				has_country_flag = flag_KOR_the_embargo_rising_end
+			}
+		}
+
+		visible = {
+			original_tag = KOR
+        }	
+		complete_effect = {
+			custom_effect_tooltip = KOR_the_embargo_rising_tt
+			set_country_flag = flag_KOR_the_embargo_rising_end
+			hidden_effect = {
+				remove_ideas = KOR_embargo_us_a
+			}
+		}
+
+		timeout_effect = {
+			swap_ideas = {
+				add_idea = KOR_embargo_us_b
+				remove_idea = KOR_embargo_us_a
+			}
+		}
+	}
+	KOR_the_embargo_rising_b = {
+		icon = GFX_decision_SWI_consolidate_council_power
+		allowed = {
+			original_tag = KOR
+		}	
+		
+		available = {
+			OR = {
+				NOT = {
+					has_idea = KOR_embargo_us
+					has_idea = KOR_embargo_us_a
+					has_idea = KOR_embargo_us_b
+					has_idea = KOR_embargo_us_c
+					has_idea = KOR_embargo_us_d
+				}
+				NOT = {
+					has_war_with = USA
+				}
+			}
+		}
+
+		days_mission_timeout = 180
+
+		fire_only_once = no
+		
+		is_good = no
+
+		activation = {
+			is_ai = no
+			has_war_with = USA
+			has_idea = KOR_embargo_us_b	
+			NOT = {
+				has_country_flag = flag_KOR_the_embargo_rising_end
+			}
+		}
+
+		visible = {
+			original_tag = KOR
+        }	
+		complete_effect = {
+			custom_effect_tooltip = KOR_the_embargo_rising_tt
+			set_country_flag = flag_KOR_the_embargo_rising_end
+			hidden_effect = {
+				remove_ideas = KOR_embargo_us_b
+			}
+		}
+
+		timeout_effect = {
+			swap_ideas = {
+				add_idea = KOR_embargo_us_c
+				remove_idea = KOR_embargo_us_b
+			}
+		}
+	}
+	KOR_the_embargo_rising_c = {
+		icon = GFX_decision_SWI_consolidate_council_power
+		allowed = {
+			original_tag = KOR
+		}	
+		
+		available = {
+			OR = {
+				NOT = {
+					has_idea = KOR_embargo_us
+					has_idea = KOR_embargo_us_a
+					has_idea = KOR_embargo_us_b
+					has_idea = KOR_embargo_us_c
+					has_idea = KOR_embargo_us_d
+				}
+				NOT = {
+					has_war_with = USA
+				}
+			}
+		}
+
+		days_mission_timeout = 180
+
+		fire_only_once = no
+		
+		is_good = no
+
+		activation = {
+			is_ai = no
+			has_war_with = USA
+			has_idea = KOR_embargo_us_c	
 			NOT = {
 				has_country_flag = flag_KOR_the_embargo_rising_end
 			}
@@ -5552,9 +5705,63 @@ KOR_third_plan_doryun = {
 		}
 
 		timeout_effect = {
-			KOR_embargo_level_up = yes
+			swap_ideas = {
+				add_idea = KOR_embargo_us_d
+				remove_idea = KOR_embargo_us_c
+			}
 		}
+	}
+	KOR_the_embargo_rising_d = {
+		icon = GFX_decision_SWI_consolidate_council_power
+		allowed = {
+			original_tag = KOR
+		}	
 		
+		available = {
+			OR = {
+				NOT = {
+					has_idea = KOR_embargo_us
+					has_idea = KOR_embargo_us_a
+					has_idea = KOR_embargo_us_b
+					has_idea = KOR_embargo_us_c
+					has_idea = KOR_embargo_us_d
+				}
+				NOT = {
+					has_war_with = USA
+				}
+			}
+		}
+
+		days_mission_timeout = 180
+
+		fire_only_once = no
+		
+		is_good = no
+
+		activation = {
+			is_ai = no
+			has_war_with = USA
+			has_idea = KOR_embargo_us_d
+			NOT = {
+				has_country_flag = flag_KOR_the_embargo_rising_end
+			}
+		}
+
+		visible = {
+			original_tag = KOR
+        }	
+		complete_effect = {
+			custom_effect_tooltip = KOR_the_embargo_rising_tt
+			set_country_flag = flag_KOR_the_embargo_rising_end
+			hidden_effect = {
+				remove_ideas = KOR_embargo_us_d
+			}
+		}
+
+		timeout_effect = {
+			add_stability = -0.1
+			add_war_support = -0.1
+		}
 	}
 	KOR_invasion_of_borneo = { 
 		icon = generic_air
@@ -7356,111 +7563,7 @@ KOR_interservice_rivalry = {
 		}
 	}
 }
-# KOR_the_problem_of_militaryship = {
-		
-# }
-KOR_new_country_name = {
-}
 KOR_reichskommissariat = {
-	
-	
-	#KOR_daehwan_empire = { #대환제국
-	#	icon = generic_form_nation
-	#
-	#	allowed = {
-	#		tag = KOR
-	#	}
-
-	#	available = {
-	#		has_country_flag = CHINA_KOREA
-	#		is_subject = no
-	#		JAP = { exists = no }
-	#		CHI = { exists = no }
-	#		custom_trigger_tooltip = {
-	#			tooltip = form_country_korea_tt
-	#			tag = KOR
-	#		}
-	#		custom_trigger_tooltip = {
-	#			tooltip = form_country_manju_tt
-	#			owns_state = 328
-	#			owns_state = 715
-	#			owns_state = 714
-	#		}
-	#		custom_trigger_tooltip = {
-	#			tooltip = form_country_mongolia_tt
-	#			owns_state = 330
-	#		}
-	#		custom_trigger_tooltip = {
-	#			tooltip = form_country_china_tt
-	#			owns_state = 622
-	#			owns_state = 621
-	#			owns_state = 620
-	#			owns_state = 616
-	#			owns_state = 615
-	#			owns_state = 614
-	#			owns_state = 611
-	#			owns_state = 610
-	#			owns_state = 591
-	#			owns_state = 592
-	#			owns_state = 593
-	#			owns_state = 607
-	#			owns_state = 606
-	#			owns_state = 605
-	#			owns_state = 604
-	#			owns_state = 603
-	#			owns_state = 602
-	#			owns_state = 601
-	#			owns_state = 600
-	#			owns_state = 608
-	#			owns_state = 612
-	#			owns_state = 613
-	#			owns_state = 325
-	#			owns_state = 1047
-	#			owns_state = 1048
-	#			owns_state = 1036
-	#			owns_state = 1033
-	#			owns_state = 1046
-	#		}
-	#		custom_trigger_tooltip = {
-	#			tooltip = form_country_japan_tt
-	#			owns_state = 1070
-	#			owns_state = 282
-	#		}
-	#		custom_trigger_tooltip = {
-	#			tooltip = form_state_gando_tt
-	#			owns_state = 1030
-	#			owns_state = 1031
-	#			owns_state = 1032
-	#		}
-	#	}
-
-	#	visible = {
-	#		tag = KOR
-	#		is_subject = no
-	#	}
-
-	#	complete_effect = {
-	#		KOR = {
-	#		    set_cosmetic_tag = DWE_UNIFIED
-	#		}
-	#		hidden_effect = {
-	#			news_event = { id = wtk_news.2 days = 1 }
-	#		}
-	#		every_state = {
-	#			add_core_of = ROOT
-	#		}
-	#	}
-	#	fire_only_once = yes
-
-	#	ai_will_do = {
-	#		factor = 200
-	#		modifier = {
-	#			factor = 0
-	#			is_historical_focus_on = yes
-	#		}
-	#	}
-	#}
-	
 	KOR_asia_union = { #아시아 연방
 		icon = generic_form_nation
 

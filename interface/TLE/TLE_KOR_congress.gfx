@@ -60,7 +60,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_CongressPartyLeader_yi_won"
-		texturefile = "gfx/leaders/KOR/Portrait_KOR_yi_won.png"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_yi_won_general.png"
 	}
 	spriteType = {
 		name = "GFX_CongressPartyLeader_yi_gon"

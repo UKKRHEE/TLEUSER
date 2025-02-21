@@ -10,229 +10,161 @@
 # protect
 # influence
 
-WTT_add_infiltration_save_equipment = {
-	enable = {
-		has_completed_focus = PRC_infiltration
-	}
-	abort = {
-		OR = {
-			has_war_with = event_target:WTT_current_china_leader
-			NOT = { country_exists = event_target:WTT_current_china_leader }
-			AND = {
-				has_war = yes
-				any_enemy_country = {
-					is_major = yes
-				}
-			}
-		}
-	}
-	
-	ai_strategy = {
-		type = save_equipment
-		id = infantry_equipment
-		value = 501
-	}
-}
-
-#Best always keep some in reserve to remove infiltration when needed
-WTT_remove_infiltration_save_equipment = {
-	enable = {
-		tag = event_target:WTT_current_china_leader
-		any_other_country = {
-			has_completed_focus = PRC_infiltration
-		}
-	}
-	abort = {
-		OR = {
-			any_country = {
-				has_completed_focus = PRC_infiltration
-				has_war_with = ROOT
-			}
-			AND = {
-				has_war = yes
-				any_enemy_country = {
-					is_major = yes
-				}
-			}
-		}
-	}
-	ai_strategy = {
-		type = save_equipment
-		id = infantry_equipment
-		value = 1001
-	}
-}
-
-# make warlords support china better
-WTT_all_warlords_support_china_in_war = {
-	reversed = yes
-
-	enable = {
-		CHI = { is_faction_leader = yes }
-		is_in_faction_with = CHI
-		has_war = yes
-	}
-	abort = {
-		OR = {
-			CHI = { is_faction_leader = no }
-			NOT = { is_in_faction_with = CHI }
-			has_war = no
-		}		
-	}
-	
-	ai_strategy = {
-		type = send_volunteers_desire
-		id = CHI
-		value = 50
-	}
-}
-
-# make warlords support china better part 2
-WTT_all_warlords_support_china_in_war = {
-	enable = {
-		CHI = { is_faction_leader = yes }
-		is_in_faction_with = CHI
-		has_war = yes
-	}
-	abort = {
-		OR = {
-			CHI = { is_faction_leader = no }
-			NOT = { is_in_faction_with = CHI }
-			has_war = no
-		}		
-	}
-	
-	ai_strategy = {
-		type = spare_unit_factor
-		value = 50
-	}
-}
-
-# we skip some of the minor minors that dont see much frontline
-SOV_dont_waste_volunteers_to_chinese_minors = {
-	enable = {
-		tag = SOV
-		SIK = { is_in_faction_with = CHI }
-	}
-	abort = {
-		NOT = { SIK = { is_in_faction_with = CHI } }
-	}
-	
-	ai_strategy = {
-		type = send_volunteers_desire
-		id = "SIK"
-		value = -100
-	}
-	ai_strategy = {
-		type = send_volunteers_desire
-		id = "YUN"
-		value = -100
-	
-	}
-}
-SOV_only_bother_with_volunteers_if_chi_losing = {
+SOV_send_volunteers_to_chi = {
 	allowed = {
 		original_tag = SOV
 	}
 
-	enable = {		
-		KOR = { is_ai = yes }
-		date < 1941.1.1
-		CHI = { surrender_progress < 0.75 }	#Basically never, because they just win
-	}
-	abort = {
-		OR ={
-			date > 1941.1.1
-			KOR = { is_ai = no }
-			CHI = { surrender_progress > 0.65 }
+	enable = {
+		date > 1937.1.1
+		CHI = { 
+			OR = {
+				has_war_with = KOR
+				has_war_with = ZLC
+			}
+			has_government = communism
 		}
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = send_lend_lease_desire
+		id = "CHI"
+		value = 200
 	}
 	
 	ai_strategy = {
 		type = send_volunteers_desire
-		id = "YUN"
-		value = -974
+		id = "CHI"
+		value = 200
 	}
+	
 	ai_strategy = {
 		type = send_volunteers_desire
-		id = "XSM"
-		value = -974
-	}
-	ai_strategy = {
-		type = send_volunteers_desire
-		id = "SHX"
-		value = -974
+		id = "ZLC"
+		value = -200
 	}
 }
 
-
-SOV_dont_support_if_exiles_and_friendly_with_KORan = {
+USJ_send_volunteers_to_zlc = {
 	allowed = {
-		tag = SOV
+		OR = {
+			original_tag = USA
+			original_tag = ENG
+			original_tag = JAP
+		}
 	}
 
-	enable = {		
+	enable = {
+		date > 1937.1.1
+		ZLC = { 
+			OR = {
+				has_war_with = KOR
+				has_war_with = CHI
+			}
+		}
+		KOR = {
+			has_country_flag = FLAG_KOR_FASCIST_ROUTE
+		}
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = send_lend_lease_desire
+		id = "ZLC"
+		value = 200
+	}
+	
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "ZLC"
+		value = 200
+	}
+	
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "CHI"
+		value = -999
+	}
+	
+	ai_strategy = {
+		type = send_lend_lease_desire
+		id = "KOR"
+		value = -999
+	}
+}
+
+USJ_donot_send_volunteers_to_cliques = {
+	allowed = {
 		OR = {
-			SOV = { has_government = neutrality }	
-			SOV = { has_government = fascism }	
+			original_tag = USA
+			original_tag = ENG
+			original_tag = JAP
+			original_tag = SOV
 		}
 	}
-	abort = {
-		OR ={
-			SOV = { has_war_with = KOR }
-			SOV = { has_completed_focus = SOV_memories_of_1905 }
+
+	enable = {
+		ZLC = {
+			has_war_with = KOR
 		}
+		KOR = {
+			has_country_flag = FLAG_KOR_FASCIST_ROUTE
+		}
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = send_lend_lease_desire
+		id = "KOR"
+		value = -999
 	}
 	
 	ai_strategy = {
-		type = send_volunteers_desire
-		id = "YUN"
-		value = -500
-	}
-	ai_strategy = {
-		type = send_volunteers_desire
+		type = send_lend_lease_desire
 		id = "XSM"
-		value = -500
+		value = -999
 	}
+	
 	ai_strategy = {
-		type = send_volunteers_desire
+		type = send_lend_lease_desire
 		id = "SHX"
-		value = -500
-	}
-	ai_strategy = {
-		type = send_volunteers_desire
-		id = "CHI"
-		value = -500
-	}
-	ai_strategy = {
-		type = send_volunteers_desire
-		id = "PRC"
-		value = -500
+		value = -999
 	}
 	
 	ai_strategy = {
 		type = send_lend_lease_desire
 		id = "YUN"
-		value = -500
+		value = -999
 	}
+	
 	ai_strategy = {
 		type = send_lend_lease_desire
-		id = "XSM"
-		value = -500
+		id = "HNC"
+		value = -999
 	}
+	
 	ai_strategy = {
 		type = send_lend_lease_desire
-		id = "SHX"
-		value = -500
+		id = "SZC"
+		value = -999
 	}
+	
 	ai_strategy = {
 		type = send_lend_lease_desire
-		id = "CHI"
-		value = -500
+		id = "SCC"
+		value = -999
 	}
+	
 	ai_strategy = {
 		type = send_lend_lease_desire
-		id = "PRC"
-		value = -500
+		id = "GZC"
+		value = -999
+	}
+	
+	ai_strategy = {
+		type = send_lend_lease_desire
+		id = "XKC"
+		value = -999
 	}
 }

@@ -60,9 +60,9 @@
  RULE_OPTION_TLE_GER_GREAT_RULE_DEFAULT:0 "기본"
  RULE_OPTION_TLE_GER_GREAT_RULE_DEFAULT_DESC:0 "독일은 AI의 활약에 따라 다른 길을 걸을 것입니다."
  RULE_OPTION_TLE_GER_GREAT_RULE_GER_WIN:0 "독일 승리"
- RULE_OPTION_TLE_GER_GREAT_RULE_GER_WIN_DESC:0 "독일은 대전쟁에서 무조건 승리할 것입니다.\n\n§R선행 조건:§! @KOR§Y대한제국§!은 §Y박중양의 지도§!가 아님"
+ RULE_OPTION_TLE_GER_GREAT_RULE_GER_WIN_DESC:0 "독일은 대전쟁에서 무조건 승리할 것입니다.\n\n§R선행 조건:§! @KOR§Y대한제국§!은 §Y치국평천하§!임"
  RULE_OPTION_TLE_GER_GREAT_RULE_GER_WIN_TNO:0 "TNO 확정"
- RULE_OPTION_TLE_GER_GREAT_RULE_GER_WIN_TNO_DESC:0 "유럽은 §YTHE NEW ORDER: LAST DAYS OF EUROPE§!의 역사를 따라갈 것입니다.\n\n§R선행 조건:§! @KOR§Y대한제국§!은 §Y박중양의 지도§!가 아님"
+ RULE_OPTION_TLE_GER_GREAT_RULE_GER_WIN_TNO_DESC:0 "유럽은 §YTHE NEW ORDER: LAST DAYS OF EUROPE§!의 역사를 따라갈 것입니다.\n\n§R선행 조건:§! @KOR§Y대한제국§!은 §Y치국평천하§!임"
  
  TLE_KOR_GREAT_RULE:0 "@KOR 한국 AI의 승패 여부"
  RULE_OPTION_TLE_KOR_GREAT_RULE_DEFAULT:0 "기본"
