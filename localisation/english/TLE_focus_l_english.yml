@@ -950,53 +950,68 @@
  
  KOR_outer_side_plan_desc:0 "" #외무
  KOR_inner_problem_desc:0 "" #내무
- KOR_kimkyusik_plan_desc:0 "" #김규식의 내치
- KOR_anchangho_plan_desc:0 "" #안창호의 번영
- KOR_parkjungyang_plan_desc:0 "" #박중양의 지도
- KOR_kyushu_rising_attack_desc:0 "" #큐슈 유화책 제시
+ KOR_kimkyusik_plan_desc:0 "화평계와 김규식 총리는 우리 황국에 있어서 가장 필요한 안정을 줄 것입니다." #김규식의 내치
+ KOR_anchangho_plan_desc:0 "혁신계와 안창호 총리는 우리 황국에 있어서 가장 필요한 총체적인 개혁을 줄 것입니다." #안창호의 번영
+ KOR_parkjungyang_plan_desc:0 "일소계와 박중양 총리는 우리 황국과 극동에서의 패권을 재편성할 것입니다." #박중양의 지도
  KOR_kimkyusik_outer_resetting_desc:0 "" #외교관계 재설정
+ KOR_kyushu_rising_attack_desc:0 "" #큐슈 유화책 제시
  KOR_kimkyusik_hand_to_army_desc:0 "" #현역대신무관제 유지
  KOR_anchangho_fuck_the_army_desc:0 "" #현역대신관제 폐지
- KOR_kimkyusik_asian_diplomancy_desc:0 "" #대동아 외교
- KOR_kimkyusik_diplo_chinese_plan_desc:0 "" #대 중국 포위망
- KOR_kimkyusik_diplo_pan_asian_plan_desc:0 "" #태평양 관계
- KOR_kim_dip_chi_hebei_divide_plan_desc:0 "" #화북분리공작
- KOR_kim_dip_chi_manchurian_setting_desc:0 "" #만주인 분리주의자 포섭
- KOR_kim_dip_chi_aisingioro_palace_desc:0 "" #소조정 협조요청
- KOR_kim_dip_chi_caokun_desc:0 "" #조곤계 포섭
- KOR_kim_dip_chi_special_military_operation_desc:0 "" #화북특별군사작전
- KOR_kim_dip_chi_man2_desc:0 "" #산해관을 넘어라
- KOR_kim_dip_chi_ending_of_zhili_desc:0 "" #직예 세력권 확보
- KOR_kim_dip_chi_attack_qingdao_desc:0 "" #청도 영유권 확보
- KOR_kim_dip_chi_economy_attack_desc:0 "" #차관 공격
- KOR_kimkyusik_diplomancy_japan_desc:0 "" #대화공세작전 수립
- KOR_kim_dip_jap_tokugawa_support_desc:0 "" #덕천 복권준비
- KOR_kim_dip_jap_economical_attack_desc:0 "" #대일농산품 관세장벽
- KOR_kim_dip_jap_kyushu_annex_desc:0 "" #큐슈병합조약
- KOR_kim_dip_jap_nanyang_puppet_desc:0 "" #남양군도 독립지원
- KOR_kim_dip_jap_war_with_japan_desc:0 "" #신고산을 올라라 1208
- KOR_kim_dip_jap_chugoku_plan_desc:0 "" #유신회 무용론 설파
- KOR_kim_dip_pan_support_to_usa_desc:0 "" #대미협력 강화
- KOR_kim_dip_pan_navy_under_pact_desc:0 "" #한미해군기본협정
- KOR_kim_dip_pan_economy_resetting_desc:0 "" #한미상호무역절차 간소화
- KOR_kim_dip_pan_trust_allies_desc:0 "" #대기업간 기술공조
- KOR_kim_dip_pan_america_support_to_ww2_desc:0 "" #연합군 군사의용단 파견
- KOR_kim_dip_jap_divide_and_rule_desc:0 "" #분리하여, 통치하라
- KOR_kim_dip_pan_britain_diplo_desc:0 "" #한영동맹을 다시 한번
- KOR_kim_dip_pan_chinese_economy_accept_desc:0 "" #중국 이권보장
- KOR_kim_dip_solve_the_problem_desc:0 "" #무역분쟁 해결
- KOR_inner_army_control_desc:0 "" #군부 문제 대두
- KOR_kim_inner_elite_setting_desc:0 "" #엘리트주의 고수
- KOR_kim_inner_kp_cleanning_desc:0 "" #대한당 내부파벌 개혁
- KOR_kim_inner_dp_kill_desc:0 "" #민주당 지탄
- KOR_kim_inner_attract_to_zaibatsu_desc:0 "" #재벌 경제에 타협
- KOR_kim_inner_nongmin_save_desc:0 "" #농업진흥법 추진
- KOR_kim_inner_vnaroad_retry_desc:0 "" #브나로드 운동에서 차용
- KOR_inner_the_first_and_last_empire_desc:0 "" #최초이자 최후의 제국
- KOR_kim_dip_pan_nonattack_pact_desc:0 "" #남방 불가침 맹약
- KOR_kim_dip_pan_god_save_the_empire_desc:0 "" #상제는 우리 조국을 도우소서
- KOR_kim_dip_pan_establish_un_desc:0 "" #국제연합 창설 참여
- KOR_kim_dip_pan_panzer_allies_desc:0 "" #병기를 대가로 한 군사원조
+ KOR_kimkyusik_asian_diplomancy_desc:0 "내부적인 문제는 어느정도 해결하였으니, 이제는 대동아로 우리의 관심을 돌려야할 때입니다." #대동아 외교
+ KOR_kimkyusik_diplo_chinese_plan_desc:0 "선진시대부터 중원 국가들은 해동 국가들과 끊임없는 충돌을 빚어왔고, 현대까지도 변하지 않았습니다. 황국의 모든 외교적 전략은 중국을 경쟁자에서 제거하는 것에 초첨을 둘 것입니다." #대 중국 포위망
+ KOR_kimkyusik_diplo_pan_asian_plan_desc:0 "태평양에서 추가적인 분쟁이 있다면 우리 황국은 지나와 영미 둘에게 끼여서 죽을 수 밖에 없습니다. 우리는 바다 너머의 사람들과 원활한 관계를 맺어야 합니다." #태평양 관계
+ KOR_kim_dip_chi_hebei_divide_plan_desc:0 "지나 땅에서 황국과 가장 밀접한 관계를 맺은 지역은 화북입니다. 장강 이북의 이 땅은 그 아래의 중국이 무너진다 하더라도 반드시 우리의 품으로 가져와야 합니다. 영구적으로 중국을 경쟁자에서 제거하기 위해서는 필수입니다." #화북분리공작
+ KOR_kim_dip_chi_manchurian_setting_desc:0 "한족과 정체성이 많이 섞이긴 했다만, 여전히 만주인들 중 예전의 특권을 그리워하는 이들은 많습니다. 그들은 황국이 중국 분열책에서 사용할 수 있는 좋은 패입니다." #만주인 분리주의자 포섭
+ KOR_kim_dip_chi_aisingioro_palace_desc:0 "북경의 푸이는 장쉰 등의 인물의 사례에서 알 수 있듯 '적은 수'지만 여전히 많은 사람들이 존중하는 마지막 중국 황제입니다. 소조정을 이용하는 것은 혼란 속 북경정부를 뒤흔들 수 있는 방안 중 하나가 될 수 있습니다." #소조정 협조요청
+ KOR_kim_dip_chi_caokun_desc:0 "오패부계와 조곤계는 북경정부의 양대 축으로 자리매김하고 있다만, 그 중에서 조곤계의 세력이 더 약합니다. 황국은 이들에게 지원을 하면서 추후 있을 을호작전 시에 협조를 요청할 것입니다." #조곤계 포섭
+ KOR_kim_dip_chi_special_military_operation_desc:0 "§R전국 각 지방의 부대는 거듭 착실하게 준비를 하고 조금도 태만히 해서는 안된다. 반드시 만일에 대비하여야 한다.§!" #화북특별군사작전
+ KOR_kim_dip_chi_man2_desc:0 "혼란을 틈타 우리는 직예 북동부에서 가장 까다로운 산해관을 급습하고 점령할 것입니다. 중국을 향한 칼이 준비되었습니다." #산해관을 넘어라
+ KOR_kim_dip_chi_ending_of_zhili_desc:0 "직예성에서 황국 상무영과 정보대는 굉장히 많은 영향력을 행사할 수 있게 되었고, 우리 내각은 군벌들과 끈을 만드는데 성공하였습니다. 저무는 해인 북경정부를 대신할 새 질서를 기다릴 것입니다." #직예 세력권 확보
+ KOR_kim_dip_chi_attack_qingdao_desc:0 "청도와 교주만은 황국이 점유해야하는 권리였습니다! 우리가 흘린 피를 대체 왜 중국에게 넘겨주어야 한다는 말입니까? 그러나 굴욕의 시간도 끝입니다. 우리는 청도에 대한 영유권을 수단과 방법을 가리지 않고 받아낼 것입니다." #청도 영유권 확보
+ KOR_kim_dip_chi_economy_attack_desc:0 "중국이 우리에게 빌린 돈은 상당히 많습니다. 북경정부를 옥죄는 방법은 매우 간단하게도 돈으로 승부를 보는 것입니다." #차관 공격
+ KOR_kimkyusik_diplomancy_japan_desc:0 "일본을 바로잡는건 황국 경각부 사람들이면 항상 가져야하는 외교적 전략입니다. 내치를 완수했으니 이전 내각이 벌인 실수를 수습할 때입니다." #대화공세작전 수립
+ KOR_kim_dip_jap_tokugawa_support_desc:0 "토쿠가와 씨족들은 한성으로 와 망명정부를 결성하였습니다. 일본을 무력으로 점거하며 임진란에 저들이 했던 것과 같은 실수를 벌이기 싫다면 정통성 있는 괴뢰정부를 허울상이라도 만들어야 합니다." #덕천 복권준비
+ KOR_kim_dip_jap_economical_attack_desc:0 "일본의 무역 수지 중 가장 큰 부분을 차지하는 농산물을 가장 많이 수입하는 국가는 저곡가 정책을 유지하는 우리 황국입니다. 우리 황국에도 피해가 분명히 있겠지만 일본을 옥죄는데는 이 농산품에 대한 관세를 크게 올리는게 효율적입니다." #대일농산품 관세장벽
+ KOR_kim_dip_jap_kyushu_annex_desc:0 "구주에 설치된 통감부는 전쟁을 대비하기에는 '공치'의 틀을 갖고 있기에 매우 비효율적입니다. 황국은 토쿠가와 정통정부와의 협약을 맺고 이 땅을 황국의 영토로 편입할 것입니다." #큐슈병합조약
+ KOR_kim_dip_jap_nanyang_puppet_desc:0 "남양군도 또한 국제연합에서 '위임통치령'으로 받은 땅입니다. 이 땅에 확실한 독립 약속을 함으로 앞으로 있을 동아시아에서의 무력 충돌 이후 황국에게 붙을 '전쟁광'의 인상을 떨어뜨릴 수 있을 것입니다." #남양군도 독립지원
+ KOR_kim_dip_jap_war_with_japan_desc:0 "§R망령되게 움직이지 말고 조용하고 무겁기를 산과 같이 하라.§!" #신고산을 올라라 1208
+ KOR_kim_dip_jap_chugoku_plan_desc:0 "일본인들에게 경제적으로 타격을 준 후, 정치적으로 반대파를 만든 뒤에, 최종적으로 '희망은 없다'라고 심리적인 굴복을 완수해야지 앞으로 천 년을 갈 황국의 치세를 완수할 수 있습니다. 유신회가 개혁과 변화를 만들 수 없다는 인식을 퍼뜨리는 것이 그 초석입니다." #유신회 무용론 설파
+ KOR_kim_dip_pan_support_to_usa_desc:0 "미국과는 항상 친하게 지내고, 반목하지 않으며, 때로는 견제할 수 있는 관계를 유지해야 합니다. 황국이 수입하는 많은 수의 자원이 바로 미국산입니다. 그들에게 중요한 위치로 격상되어야지 불신은 하여도 공격받지 않을 수 있습니다." #대미협력 강화
+ KOR_kim_dip_pan_navy_under_pact_desc:0 "가장 확실한 한미관계 개선은 태평양 패권에 관심이 없다는 '해군협정'일 것입니다. 지난 십 수년 간 황국은 군의 양성과 태평양으로의 확장을 중점으로 두었지만, 동아시아에서 힘의 공백이 있는 지금은 상황이 달라졌습니다. 우선 대륙을 점거한 후에 해군을 키워 바다로 나가야 합니다." #한미해군기본협정
+ KOR_kim_dip_pan_economy_resetting_desc:0 "미국과의 충분한 관계 개선을 이루어냈으니, 그 다음은 무역 부문에서의 공조입니다. 황국은 앞으로 거대한 미주 대륙에서 황국의 물산을 효율적으로 판매할 수 있을 것입니다." #한미상호무역절차 간소화
+ KOR_kim_dip_pan_trust_allies_desc:0 "이전 김희선 내각이 한 일 중 그나마 좋았던 정책은 스탠더드오일을 비롯한 미국 기업들과의 국가적인 협력 제안이었습니다. 비록 이후 수 많은 일들로 인해 수포로 돌아갔지만, 그 당시 만들어둔 자료들과 인맥은 여전히 남아있습니다. 한미관계가 양호해진 지금은 다시 시도해볼만 합니다." #대기업간 기술공조
+ KOR_kim_dip_pan_america_support_to_ww2_desc:0 "파시즘의 파도가 전 유럽을 뒤덮고 있고, 자유와 민권의 불길은 저 아래로 추락하고 있습니다. 독일이라는 전제국가와 황국은 절대로 맞을 수 없고, 영미 동지들과의 관계는 끊을 수 없습니다. 황국은 연합국의 편에 설 것이고, 인류의 영속적인 자유를 위해 투쟁할 것입니다." #연합군 군사의용단 파견
+ KOR_kim_dip_jap_divide_and_rule_desc:0 "일본은 더 이상 하나된 민족의 국가를 가질 수 없을 것입니다. 앞으로 백 년에 걸쳐서 야마토 민족은 한민족의 일원이 될 것이며, 절대로 스스로의 운명을 결정할 수 없을 것입니다." #분리하여, 통치하라
+ KOR_kim_dip_pan_britain_diplo_desc:0 "언제까지 귀축영미라고 하여 증오와 갈등을 이어가야만 합니까? 영국은 강대국이고, 미우나 고우나 우리 황국이 크게 영향을 받은 나라입니다. 영국이 유럽에서의 일로 인해 동양에서 발을 빼겠다고 결심한 지금은 저들과 싸울 이유가 하등 없습니다." #한영동맹을 다시 한번
+ KOR_kim_dip_pan_chinese_economy_accept_desc:0 "지나에서의 최소한의 이권ㅡ홍콩 등 동남부 중국에서의 영국의 입지는 추후 황국이 지나를 정토하여 세력권에 넣는다고 해도 영국과의 관계를 위해 보장해줄 것입니다." #중국 이권보장
+ KOR_kim_dip_solve_the_problem_desc:0 "인도에서 시작하여 네덜란드, 호주 등지로 퍼져나간 1932년의 한영무역분쟁은 모두에게 상처만 남겼습니다. 끝맺음이 낼 때가 왔으니, 다시 그 이전의 정상적인 교역상태로 돌아갈 것입니다." #무역분쟁 해결
+ KOR_kim_inner_kangmyong_shoke_study_desc:0 "1927년의 강명 쇼크와 2년 뒤인 1929년의 세계 대공황은 황국의 경제적 취약점을 굉장히 잘 알려준 사태였습니다. 탁지부의 지혜로운 대처로 문제는 해결하였다만 앞으로 이런 위기에 대한 대처방법을 미리 짜두어야 할 것입니다. 분석과 반성은 항상 행해야 합니다." #강명 쇼크에서 분석
+ KOR_kim_inner_support_middle_industry_desc:0 "생사 등 경공업을 중시한 탓에 서양에 비해 낮은 수준의 이화학공업은 황국의 약점입니다. 내각의 전폭적인 투자만이 이 상황을 뒤엎을 수 있습니다." #중화학공업 전폭지원
+ KOR_kim_inner_new_life_streatagy_desc:0 "도산 안창호가 지적한 바와 같이 황국의 많은 사람들은 초등교육만 겨우 받으면서 스스로 생각하고 살아가는 방법을 궁리하지 않고 있습니다. 계몽을 끊임없이 외치는 이유는 사람이 사람답게 살 수 있는 나라를 만들기 위해서입니다. 이가 바로 '새로운 생활을 위한 네 가지 전략'을 내각이 추진해야하는 이유입니다." #신생활4개전략
+ KOR_kim_inner_save_the_north_desc:0 "만주는 황국이 보유한 자원의 비고입니다. 안산철광은 현대화의 지름길을 쌓게 해주었습니다. 최근 고고학과 지질학의 발달은 만주 지방의 지층에서 석유가 존재할 수 있다고 말하고 있습니다." #북방자원 탐사
+ KOR_kim_inner_nkyp_absorption_desc:0 "대한당의 세력이 이전과 달리 강해졌고 당 내에서 우익들을 결집시킬 수 있는 충분한 실력을 행사하고 있는 관계로 신한청년당은 천천히 죽어가는 처지에 놓였습니다. 다만 내각의 입지를 강화하기 위해서는 이들을 '정당 대 정당'으로 싸워 죽이는 것이 아니라 흡수하여 정계의 동지로 만드는 것이 상책입니다." #신한청년당 흡수
+ KOR_inner_army_conscription_law_fix_desc:0 "황국의 군대에 인원을 벌충하는 일은 굉장히 까다로웠고, 수십 년 동안의 평화기간 동안 징병법은 천천히 완화되었습니다. 다만 전쟁이 다가오고 있음이 확실해졌으니 의회에서 개정안을 발의해 후일을 대비해야 합니다." #징병법 개정안 발의
+ KOR_inner_army_kyolyeon_make_desc:0 "학생들에게도 군대에 가기 전, 혹은 전쟁이 일어났을 때를 대비한 예비 훈련이 필요합니다." #교련수업 창설
+ KOR_kim_inner_end_of_the_reform_desc:0 "개혁의 동력은 전부 소모되었고, 황제 폐하께서는 이정도로도 내각을 고평가하시고 계십니다. 각하께서는 충분히 할 일을 이루어내셨습니다. 이제는 수성을 가하는 일 뿐입니다." #개혁의 끝, 현상유지의 시작
+ KOR_kim_inner_save_the_daldongnae_desc:0 "한성 외곽의 달동네는 중방 등 도심지 거주민들에게는 난개발을 일으키는 골칫덩이입니다. 또한 이들 탓에 치안이 악화되니, 하루 빨리 이들의 불법 거주 문제를 해결해야 합니다." #달동네 거주문제 해결
+ KOR_kim_inner_busan_greating_desc:0 "외국과의 무역을 위해 부산항은 지속적인 확장을 이어왔습니다. 지금에 이르러서 부산은 황국의 물류 총책도시로 발전하였습니다." #부산항 확장
+ KOR_kim_inner_wonsan_problem_desc:0 "원산에서의 폭동은 황국의 통제력이 굉장히 약하다는 증거와 동시에 노동자들의 불만이 극에 달하였다는 증거였습니다. 당근과 채찍을 적절하게 이용했어야 한 이전의 정부들은 실패하였습니다. 김규식 내각은 절대로 이들의 실수를 반복하지 않을 것입니다." #두 번의 원산 파업은 없다
+ KOR_kim_inner_simyang_attack_desc:0 "심양의 거주지들은 굉장히 불친절합니다. 이 지역은 도시에서 싸우는 시가전을 대비하고 만들어졌습니다. 만주의 공장이라는 반 경탄 반 조롱의 의미는 그렇게 만들어졌습니다. 개편이 굉장히 시급합니다." #심양 거주문제
+ KOR_kim_inner_save_our_emperor_desc:0 "대황제께서는 충분히 김규식 총리대신의 행보를 마음에 들어하셨고, 우리 내각을 완전히 신임하시기로 결정하셨습니다. 폐하의 은덕은 우리 내각이 수월하게 굴러갈 수 있도록 할 것입니다!" #황제시여, 우리를 도우소서
+ KOR_kim_inner_manchu_railway_rework_desc:0 "만주에 건설된 철도는 제국의 북방과 남방을 이어주는 혈관입니다. 혈관에 노폐물이 끼듯 관리와 보수가 제대로 되지 않는다면 제국 자체가 멈출 수 있습니다." #만주철도 중심 개발
+ KOR_inner_army_control_desc:0 "군인들을 한 번 솎아내는 것에 성공하였지만, 여전히 그 과격성과 내각을 향하는 불충한 눈이 사라진 것입 아닙니다. 언젠가 정부는 이들에 대한 처우를 결정해야 합니다." #군부 문제 대두
+ KOR_kim_inner_elite_setting_desc:0 "정치 개혁이라던지 민중의 나라라던지라고 하는 말은 굉장히 조심스럽게 다가와야 합니다. 황제께서는 아직도 고어좌에서 신민들을 내려보시고 계시며, 우리를 물어뜯기 위한 정적들은 널려있습니다." #엘리트주의 고수
+ KOR_kim_inner_kp_cleanning_desc:0 "이진호 총리대신의 실각 이후, 대한당은 당수를 하나의 마음으로 받들기는 커녕 당권을 잡기 위해 강대한 세력들이 서로를 비난하고 헐뜯기 일수였습니다. 이러한 파벌정치와 붕당을 끝내야만 합니다." #대한당 내부파벌 개혁
+ KOR_kim_inner_dp_kill_desc:0 "전임 총리대신은 사실상 역적이 되었습니다. 그의 처벌을 원하는 이들의 숫자는 적지 않습니다. 정치적인 리스크 또한 적습니다. 우리 내각의 안정을 위해서라면 김희선은 충분히 선제물로 바칠 수 있습니다." #민주당 지탄
+ KOR_kim_inner_attract_to_zaibatsu_desc:0 "황국 경제에 뿌리를 깊이 내린 재벌은 어찌할 수 없습니다. 폐하께서도 극적인 변화를 우리에게 기대하지 않는 많금, 내각은 여러 재벌들에게 상호 간 관계 속에서 여전히 정치 권력이우위를 점하고 있음만 알려주면 됩니다." #재벌 경제에 타협
+ KOR_kim_inner_nongmin_save_desc:0 "농민은 아직까지도 우리 경제에서 큰 위치를 점하고 있습니다. 또한 추후 있을 외환에 대비해 황국의 농업 생산량은 답보가 아닌 진보를 해야합니다. 전임 내각의 실수를 바로잡고 농민들에 대한 지원을 늘려야 합니다." #농업진흥법 추진
+ KOR_kim_inner_vnaroad_retry_desc:0 "비록 실패로 끝났지만, 브나로드 운동은 민족과 민중의 계몽에 많은 기여를 했습니다. 변질되기 전 운동이 가졌던 순수한 뜻을 차용하는건 좋은 선택지입니다." #브나로드 운동에서 차용
+ KOR_inner_the_first_and_last_empire_desc:0 "황국은 끊임없는 발전을 거듭할 것이고, 외환에 절대로 무너지지 않을 것입니다. 고조께서 세우시고 고종께서 중흥하시어 순종께서 받든 민족의 나라는 앞으로도 영원히 이 땅에서 군림할 것입니다." #최초이자 최후의 제국
+ KOR_kim_dip_pan_nonattack_pact_desc:0 "더 이상 태평양 패권은 우리의 관심사가 아닙니다. 우리는 동북아시아에서 황국이 누리던 패권의 재확인을 원할 뿐, 영미와의 충돌을 감수하면서까지 바다로 나아가고 싶지 않습니다." #남방 불가침 맹약
+ KOR_kim_dip_pan_god_save_the_empire_desc:0 "황국은 여러 국난을 겪어왔고, 앞으로도 겪을 것입니다. 그러나 우리의 선조들과 호국영령들이 해온 바와 같이 우리는 항상 이겨낼 수 있고 이겨낼 것입니다. 상제는 우리 황제를 도우소서, 그리고 빛나는 우리 조국을 도우소서!" #상제는 우리 조국을 도우소서
+ KOR_kim_dip_pan_establish_un_desc:0 "연합국과 공조를 하면서 알아낸 바 중 하나는 국제연맹 이후의 만들 새로운 국제기구에 대한 것이었습니다. 강력한 통제력이 없던 국맹에서의 실패를 거름 삼아서 세계를 주름잡는 패권국들을 '결정권이 있는 나라'로 하여 만들 '국제연합'은 앞으로의 세상에서 큰 영향력을 미칠 것입니다. 황국은 이 국련에서 주도권을 잡기 위해 노력할 것입니다." #국제연합 창설 참여
+ KOR_kim_dip_pan_panzer_allies_desc:0 "첫 번째 세계대전에서 황국은 병기를 수출하면서 경제적 호황을 누릴 수 있었고, 이를 통해 대동아 제일의 국가로 일어설 수 있게 되었습니다. 두 번째 또한 우리 황국을 그리 만들어줄 것입니다." #병기를 대가로 한 군사원조
+ KOR_inner_natinal_np_desc:0 "언론의 힘은 생각한 것보다 강합니다. 펜이 물리적으로 칼을 이길 수는 없지만, 정신적으로는 칼도 아니라 총조차 따라올 수 없습니다. 사람을 조종하는 힘을 우리 내각 또한 확보해야 합니다." #관영언론 지원
  KOR_kim_death_after_the_end_desc:0 "" #그의 삶이 끝난 후
  KOR_kim_death_changsuk_cabinet_desc:0 "" #김창숙 내각 출범
  KOR_kim_death_army_saving_desc:0 "" #군부 권한 강화
@@ -1009,11 +1024,7 @@
  KOR_kim_death_imperial_army_desc:0 "" #황군의 정신
  KOR_kim_death_governmental_royal_family_desc:0 "" #황족 각료 의무제 발의
  KOR_kim_death_emperors_administration_desc:0 "" #폐하의 정부
- KOR_kim_inner_kangmyong_shoke_study_desc:0 "" #강명 쇼크에서 분석
- KOR_kim_inner_support_middle_industry_desc:0 "" #중화학공업 전폭지원
- KOR_kim_inner_new_life_streatagy_desc:0 "" #신생활4개전략
- KOR_kim_inner_save_the_north_desc:0 "" #북방자원 탐사
- KOR_kim_inner_nkyp_absorption_desc:0 "" #신한청년당 흡수
+ KOR_kim_death_imperialland_institude_is_strong_desc:0 "" #황국협회의 강권
  KOR_kim_gaw_win_at_war_desc:0 "" #승리만이 있으리
  KOR_kim_gaw_sunset_desc:0 "" #황혼의 제국
  KOR_kim_gaw_death_of_china_desc:0 "" #중화의 종막
@@ -1022,16 +1033,7 @@
  KOR_kim_gaw_the_manchurian_koreans_desc:0 "" #만주의 한국인들
  KOR_kim_gaw_4th_is_banned_desc:0 "" #사방으로 틀어막혀서
  KOR_kim_gaw_end_of_imperialism_desc:0 "" #새벽녘의 미몽
- KOR_kim_death_imperialland_institude_is_strong_desc:0 "" #황국협회의 강권
- KOR_inner_army_conscription_law_fix_desc:0 "" #징병법 개정안 발의
- KOR_inner_army_kyolyeon_make_desc:0 "" #교련수업 창설
- KOR_kim_inner_end_of_the_reform_desc:0 "" #개혁의 끝, 현상유지의 시작
- KOR_kim_inner_save_the_daldongnae_desc:0 "" #달동네 거주문제 해결
- KOR_kim_inner_busan_greating_desc:0 "" #부산항 확장
- KOR_kim_inner_wonsan_problem_desc:0 "" #두 번의 원산 파업은 없다
- KOR_kim_inner_simyang_attack_desc:0 "" #심양 거주문제
- KOR_kim_inner_save_our_emperor_desc:0 "" #황제시여, 우리를 도우소서
- KOR_kim_inner_manchu_railway_rework_desc:0 "" #만주철도 중심 개발
+ 
  KOR_an_inner_line_setting_desc:0 "" #선을 정리하다
  KOR_an_inner_shinmin_reform_desc:0 "" #신민회 개편
  KOR_an_inner_ii_fuck_you_desc:0 "" #황국협회 억제
@@ -1040,7 +1042,6 @@
  KOR_an_inner_focus_1_desc:0 "" #일소계 타파
  KOR_an_inner_focus_3_desc:0 "" #황제를 회유하기
  KOR_an_inner_focus_4_desc:0 "" #경친왕 전하께 아뢰기
- KOR_inner_natinal_np_desc:0 "" #관영언론 지원
  KOR_an_inner_focus_2_desc:0 "" #박중양 사냥
  KOR_an_inner_focus_6_desc:0 "" #김희선 사면
  KOR_an_inner_focus_5_desc:0 "" #화평계 흡수
@@ -1187,34 +1188,60 @@
  KOR_pak_gaw_11_desc:0 "" #유럽파병군 유지
  KOR_pak_gaw_7_desc:0 "" #대동아회의 개최
  
- KOR_focus_khs_1_desc:0 "" #김희선 내각 출범
- KOR_focus_khs_2_desc:0 "" #유연히 대처하기
- KOR_focus_khs_3_desc:0 "" #완고함이 해답이다
- KOR_focus_khs_24_desc:0 "" #궁내부대신 유임
+ KOR_focus_khs_1_desc:0 "김희선 의원은 민주당이 대승을 거둔 뒤 당당하게 총리대신의 자리에 올랐고, 이제는 대황제 폐하의 성권을 받아 나라를 운영할 것입니다. 새 총리대신께 건배!" #김희선 내각 출범
+ KOR_focus_khs_2_desc:0 "가지고 있는 문제점을 항상 무시만 하면 안됩니다. 우리는 버드나무와 같이 신민들의 바람에 흔들려야 합니다." #유연히 대처하기
+ KOR_focus_khs_3_desc:0 "외부에서의 공격에는 강경하게 대응해야 합니다. 우리는 소나무와 같이 바람 서리에도 불변해야 합니다." #완고함이 해답이다
+ KOR_focus_khs_24_desc:0 "대황제 폐하께서 그나마 신임하는 개화당-민주당-의 인사는 서재필 박사가 유일합니다. 박사께 외람된 말이지만 궁내부대신을 그대로 맡아달라 청할 것입니다." #궁내부대신 유임
  KOR_focus_khs_25_desc:0 "황제폐하께옵서는 선제 폐하의 아우로써, 황태제에서 즉위하시었습니다. 그러나 폐하께옵서는 정무에 크게 능숙하지 못하십니다. 그 분께서 거하시고자 하는 길은 외람되지만 가서는 아니 되는 길입니다. 그 분이 거하시고자 의지함을 되돌리어, 군주로써 군림하시게 해야 합니다." #황제폐하 다루기
- KOR_focus_khs_26_desc:0 "" #개화당의 유산
- KOR_focus_khs_27_desc:0 "" #대한당의 침묵
- KOR_focus_khs_28_desc:0 "" #일 할 시간
- KOR_focus_khs_4_desc:0 "" #대마불사
- KOR_focus_khs_14_desc:0 "" #유화책 제시
- KOR_focus_khs_17_desc:0 "" #농촌 불만 잠재우기
- KOR_focus_khs_15_desc:0 "" #관계악화 감수
- KOR_focus_khs_6_desc:0 "" #브나로드 운동 완전 폐지
- KOR_focus_khs_5_desc:0 "" #사회당 용인
- KOR_focus_khs_7_desc:0 "" #빈민 구제 우선시
- KOR_focus_khs_8_desc:0 "" #제12대 민의원 총선거
- KOR_focus_khs_11_desc:0 "" #스탠더드오일 초청
- KOR_focus_khs_13_desc:0 "" #구밀복검
- KOR_focus_khs_9_desc:0 "" #치안유지법 강화
- KOR_focus_khs_10_desc:0 "" #안중근 좌천
- KOR_focus_khs_12_desc:0 "" #군 충성심 확인
- KOR_focus_khs_16_desc:0 "" #군축은 필수
- KOR_focus_khs_18_desc:0 "" #탕산 격전
- KOR_focus_khs_19_desc:0 "" #농촌 불만 탄압하기
- KOR_focus_khs_22_desc:0 "" #한미태평양협정
- KOR_focus_khs_20_desc:0 "" #수신제가
- KOR_focus_khs_21_desc:0 "" #부수청령
- KOR_focus_khs_23_desc:0 "" #면종복배
+ KOR_focus_khs_26_desc:0 "민주당은 고종 대제께서 후원한 개화당의 후손이며, 개혁과 혁신 그리고 계몽의 뜻을 가지고 있습니다. 앞으로도 이를 잊어서는 안됩니다." #개화당의 유산
+ KOR_focus_khs_27_desc:0 "내각에서 행하는 법안에 딴지를 놓는 것 외에는 무슨 연유에서인지 대한당은 정치공세를 멈추고 있습니다. 대체 무슨 이유에서일까요?" #대한당의 침묵
+ KOR_focus_khs_28_desc:0 "상황이 좋지는 않습니다. 외교관계는 점점 고립으로 향하고 있고, 내부경제는 다시 한 번 침체로 돌아서고 있습니다. 그럼에도 불구하고 우리는 지금까지 그래왔듯 앞으로 나아갈 것입니다." #일 할 시간
+ KOR_focus_khs_4_desc:0 "강명금융공황과 대공황에도 불구하고 재벌들은 살아있지만 온전치는 않습니다. 너무나 큰 집단은 쓰러지는 것만으로도 큰 피해를 줄 수 있습니다. 정부에서 조치를 취해야 합니다." #대마불사
+ KOR_focus_khs_14_desc:0 "신민들과 드잡이질을 하는 것은 악수입니다. 내각은 어디까지나 이들의 바람을 들어주면서 살 길을 찾아야 합니다." #유화책 제시
+ KOR_focus_khs_17_desc:0 "농자천하지대본이 언제부터 국시가 아니게 되었단 말입니까? 현대화는 끝물입니다. 이제는 내실을 다질 때입니다." #농촌 불만 잠재우기
+ KOR_focus_khs_15_desc:0 "우리는 끝까지 권위적이고 고압적인 태도를 가지고 가야만 합니다. 이것 외에는 불만 많은 대중들을 달랠 방법도, 정권을 유지할 방법도 없습니다." #관계악화 감수
+ KOR_focus_khs_6_desc:0 "러시아어로 '인민 속으로' 라는 의미의 브나로드(Vnaroad) 운동은 우리 황국에서도 계몽, 혁신 운동으로 잘 알려져 있다만, 지금 이 브나로드 운동에 대해서 굉장히 의문점이 많은 첩보들이 속속 들어오고 있습니다. 국체의 호지를 위해서 이 운동은 더 이상 존재해서는 안됩니다. " #브나로드 운동 완전 폐지
+ KOR_focus_khs_5_desc:0 "한국사회당은 이름부터 알 수 있듯 브나로드 운동을 주도하는 지휘자급 인원들이 조직하여 만든 원외 정치조직으로, 운동이 힘과 인기를 얻어갈 수록 크게 당세가 확장되고 있습니다. 개혁의 동력으로 삼기에는 매우 적절합니다." #사회당 용인
+ KOR_focus_khs_7_desc:0 "선개발 후분배의 원칙은 더 이상 필요치 않습니다. 굶주리고 배고픈 인민들에게 쌀 한 톨, 빵 한 조각이라도 나눠주어야 합니다." #빈민 구제 우선시
+ KOR_focus_khs_8_desc:0 "지금 강명 10년(1932) 1월에 이르기까지 이진호 내각은 경제적, 사회적 위기에 대해서 아무런 대처도 하지 못하였습니다. 우리 대황제 폐하께서는 총리와 대한당이 가지고 있는 많은 문제점에 대해 경각심을 가지고 있으셨고, 결국 내각의 해산을 명한 뒤 총선을 일찍 앞당기셨습니다." #제12대 민의원 총선거
+ KOR_focus_khs_11_desc:0 "스탠더드오일이 가지고 있는 석유 굴착 기술과 정제 기술은 배울 점이 매우 많습니다. 추후 있을 만주 지역의 유전 탐사를 위해 우리는 이들과의 협력을 추구해야 합니다." #스탠더드오일 초청
+ KOR_focus_khs_13_desc:0 "외부적인 압력에서 우리 황국은 국체를 호지하고 지금까지 쌓아온 위업을 지켜낼 수 있었습니다. 각하의 성공적인 정책을 축복합시다." #구밀복검
+ KOR_focus_khs_9_desc:0 "치안유지법에는 많은 허점이 있었고, 그 허점을 이용해 불경한 죄인들이 황국 곳곳에 퍼져나갔습니다. 이런 실수는 그대로 존치해두어서는 안됩니다. 법은 반드시 수정될 것입니다." #치안유지법 강화
+ KOR_focus_khs_10_desc:0 "동평파를 언제까지, 왜, 어째서 가만히 놓아두어야 할까요? 총리대신께서도 아시지 않습니까. 안중근은 도원수로 진급하기에는 너무나도 위험한 사람입니다. 그는 얌전히 정년을 맞이한 후 퇴역해야 합니다." #안중근 좌천
+ KOR_focus_khs_12_desc:0 "우리의 황군은 폐하 뿐 아니라 황국 자체에 충성을 하고 있습니다. 이들은 우리 나라를 수호하는 가장 강하고 믿음직한 방벽이며, 내우외환을 막을 수호대입니다." #군 충성심 확인
+ KOR_focus_khs_16_desc:0 "군대는 비생산적인 소모 집단입니다. 약탈로써 경제를 운영할게 아니라면 이 명제는 절대로 바뀌지 않습니다. 그렇다면 현재의 재정난 속에서 어떻게 대처해야 할까요? 정답은 군대에 들어가는 쓸데없는 돈들을 다른 곳으로 돌리는 것입니다." #군축은 필수
+ KOR_focus_khs_18_desc:0 "§R대체 이 중요한 시국에, 왜 하필 내 임기 때 이런 일이 터지는게냐고.§!" #탕산 격전
+ KOR_focus_khs_19_desc:0 "농민들에게 불만이란 없습니다. 대황제 폐하께서 다스리는 우리 황국은 강토 안에 있는 모든 신민들에게 하루하루 웃을 수 있는 축복을 내리고 있습니다." #농촌 불만 탄압하기
+ KOR_focus_khs_22_desc:0 "태평양에서 미국은 굉장히 크고 강한 입지를 가지고 있고, 우리 황국이 영국과의 동맹이 끊어진 이상 관계의 악화를 감수해서는 안됩니다. 상호 간의 협상은 필수입니다." #한미태평양협정
+ KOR_focus_khs_20_desc:0 "우리의 경제는 다시금 되살아나고 있습니다. 민심은 그럭저럭 되돌아왔으며 지나와 일본 등과의 무역도 활성화되고 있습니다." #수신제가
+ KOR_focus_khs_21_desc:0 "아무런 문제도 없습니다. 가끔씩 반정부 인사들이 총리대신과 그 정당을 음해하기는 하다만 이는 소수의 의견일 뿐입니다. 정말로요." #부수청령
+ KOR_focus_khs_23_desc:0 "겉으로나마 괜찮은 모습을 보이고 있다만, 사실 우리 내각은 모든 문제에 올바르게 대처하지는 못하였습니다. 내각의 지지도는 뭉텅이로 깎여나갔고, 3불 정책이랍시고 조롱이나 받는 처지에 이르렀습니다. 하지만 괜찮습니다. 적어도 지금 문제가 일어나고 있지는 않으니까요!" #면종복배
+ 
+ 
+ KOR_ach_happy_1:0 "푸른 하늘"
+ KOR_ach_happy_2:0 "마지막에 이르러서"
+ KOR_ach_happy_3:0 "되찾은 꿈"
+ KOR_ach_happy_12:0 "광야에서"
+ KOR_ach_happy_5:0 "후학을 바라보면"
+ KOR_ach_happy_6:0 "다툼 대신 화합"
+ KOR_ach_happy_7:0 "증오 대신 용서"
+ KOR_ach_happy_11:0 "유지경성"
+ KOR_ach_happy_4:0 "축하해요"
+ KOR_ach_happy_8:0 "국가의 제일 시민"
+ KOR_ach_happy_9:0 "의무의 계승"
+ KOR_ach_happy_10:0 "자유, 평등, 연대"
+ KOR_ach_happy_1_desc:0 "" #푸른 하늘
+ KOR_ach_happy_2_desc:0 "" #마지막에 이르러서
+ KOR_ach_happy_3_desc:0 "" #되찾은 꿈
+ KOR_ach_happy_12_desc:0 "" #광야에서
+ KOR_ach_happy_5_desc:0 "" #후학을 바라보면
+ KOR_ach_happy_6_desc:0 "" #다툼 대신 화합
+ KOR_ach_happy_7_desc:0 "" #증오 대신 용서
+ KOR_ach_happy_11_desc:0 "" #유지경성
+ KOR_ach_happy_4_desc:0 "" #축하해요
+ KOR_ach_happy_8_desc:0 "" #국가의 제일 시민
+ KOR_ach_happy_9_desc:0 "" #의무의 계승
+ KOR_ach_happy_10_desc:0 "" #자유, 평등, 연대
  
  KOR_focus_khs_1_tt:0 "§Y김희선§! 총리대신은 임기를 다 지내지 못한 §Y이진호§! 총리대신의 뒤를 이어서 정부를 운영할 것입니다."
  KOR_focus_khs_3_tt:0 "§Y내치에 필요한 것은 소나무처럼 꿈쩍 않는 인내심입니다.§!"

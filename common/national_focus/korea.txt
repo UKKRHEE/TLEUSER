@@ -70,7 +70,10 @@ focus_tree = {
 		icon = GFX_focus_KOR_focus_khs_1
 		cost = 10.00
 		x = 52
-		y = 0
+		y = 1
+		prerequisite = {
+			focus = KOR_focus_khs_8
+		}
 			completion_reward = {
 					custom_effect_tooltip = KOR_focus_khs_1_tt
 				}
@@ -81,7 +84,7 @@ focus_tree = {
 		icon = GFX_focus_KOR_focus_khs_3
 		cost = 10.00
 		prerequisite = {
-			focus = KOR_focus_khs_1
+			focus = KOR_focus_khs_8
 		}
 		x = 47
 		y = 1
@@ -170,12 +173,8 @@ focus_tree = {
 		id = KOR_focus_khs_8
 		icon = GFX_focus_KOR_focus_khs_8
 		cost = 10.00
-		prerequisite = {
-			focus = KOR_focus_khs_5
-			focus = KOR_focus_khs_6
-		}
-		x = 47
-		y = 3
+		x = 52
+		y = 0
 			completion_reward = {
 					custom_effect_tooltip = KOR_focus_khs_8_tt
 				}
@@ -189,7 +188,7 @@ focus_tree = {
 			focus = KOR_focus_khs_7
 		}
 		prerequisite = {
-			focus = KOR_focus_khs_8
+			focus = KOR_focus_khs_18
 		}
 		x = 46
 		y = 4
@@ -220,7 +219,7 @@ focus_tree = {
 			focus = KOR_focus_khs_9
 		}
 		prerequisite = {
-			focus = KOR_focus_khs_8
+			focus = KOR_focus_khs_18
 		}
 		x = 48
 		y = 4
@@ -234,10 +233,11 @@ focus_tree = {
 		icon = GFX_focus_KOR_focus_khs_24
 		cost = 10.00
 		prerequisite = {
-			focus = KOR_focus_khs_1
+			focus = KOR_focus_khs_14
+			focus = KOR_focus_khs_15
 		}
-		x = 52
-		y = 1
+		x = 57
+		y = 3
 			completion_reward = {
 					custom_effect_tooltip = KOR_focus_khs_24_tt
 				}
@@ -248,7 +248,7 @@ focus_tree = {
 		icon = GFX_focus_KOR_focus_khs_25
 		cost = 10.00
 		prerequisite = {
-			focus = KOR_focus_khs_24
+			focus = KOR_focus_khs_1
 		}
 		x = 52
 		y = 2
@@ -325,7 +325,7 @@ focus_tree = {
 		icon = GFX_focus_KOR_focus_khs_2
 		cost = 10.00
 		prerequisite = {
-			focus = KOR_focus_khs_1
+			focus = KOR_focus_khs_8
 		}
 		x = 57
 		y = 1
@@ -387,10 +387,10 @@ focus_tree = {
 		icon = GFX_focus_KOR_focus_khs_18
 		cost = 10.00
 		prerequisite = {
-			focus = KOR_focus_khs_14
-			focus = KOR_focus_khs_15
+			focus = KOR_focus_khs_5
+			focus = KOR_focus_khs_6
 		}
-		x = 57
+		x = 47
 		y = 3
 			completion_reward = {
 					custom_effect_tooltip = KOR_focus_khs_18_tt
@@ -405,7 +405,7 @@ focus_tree = {
 			focus = KOR_focus_khs_17
 		}
 		prerequisite = {
-			focus = KOR_focus_khs_18
+			focus = KOR_focus_khs_24
 		}
 		x = 56
 		y = 4
@@ -433,7 +433,7 @@ focus_tree = {
 		icon = GFX_focus_KOR_focus_khs_21
 		cost = 10.00
 		prerequisite = {
-			focus = KOR_focus_khs_18
+			focus = KOR_focus_khs_24
 		}
 		prerequisite = {
 			focus = KOR_focus_khs_19
