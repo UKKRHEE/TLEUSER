@@ -703,6 +703,21 @@
  KOR_rural_var_down_tt:0 "§Y농민§! 지지도 §R감소§!"
  
  KOR_var_all_not_hwa_minus_two_tt:0 "§Y화평계§!를 제외한 §Y모든 파벌§!의 지지도 §Y2§! §R감소§!"
+
+ #안창호
+ KOR_ahn_innovation_category: "혁신"
+ ahn_innovation_text: "§b[GetAhnInnovationText]§!"
+ ahn_innovation_text_1: "혁신의제1"
+ ahn_innovation_text_2: "혁신의제2"
+ ahn_innovation_text_3: "혁신의제3"
+ ahn_innovation_text_4: "혁신의제4"
+ ahn_innovation_text_5: "혁신의제5"
+ ahn_innovation_tooltip: "[GetAhnInnovationTooltip]"
+ ahn_innovation_tooltip_1: "혁신의제1"
+ ahn_innovation_tooltip_2: "혁신의제2"
+ ahn_innovation_tooltip_3: "혁신의제3"
+ ahn_innovation_tooltip_4: "혁신의제4"
+ ahn_innovation_tooltip_5: "혁신의제5"
  
  #툴팁
  DEC_END_OF_THE_HWAKYO:0 "§Y화교배척운동§!이 끝납니다.\n\n§t그러나 한민족을 제외한 제국의 모든 이들은 이 일을 끝까지 기억할 것입니다.§!"

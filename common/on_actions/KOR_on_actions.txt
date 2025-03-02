@@ -729,6 +729,11 @@ on_actions = {
 								has_country_flag = FLAG_KOR_FASCIST_ROUTE
 							}
 						}
+						JAP = {
+							country_event = {
+								id = JAP_war_of_yashima.3
+							}	
+						}	
 						every_country = {
 							limit = { is_ai = no }
 							set_temp_variable = { TNO_temp_super_event = token:SE_KOREAN_JAPANESE_WAR }
@@ -1027,6 +1032,12 @@ on_actions = {
 								has_country_flag = FLAG_KOR_FASCIST_ROUTE
 							}
 						}
+						JAP = {
+							country_event = {
+								id = JAP_war_of_yashima.3
+								days = 2
+							}	
+						}	
 						every_country = {
 							limit = { is_ai = no }
 							set_temp_variable = { TNO_temp_super_event = token:SE_KOREAN_JAPANESE_WAR }
@@ -3607,6 +3618,19 @@ on_actions = {
                     id = 7212
                     name = "kangsan"
                 }
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = GLOB_JAP_CHUGOKU_FALL
+						}
+					}
+					JAP = {
+						set_global_flag = GLOB_JAP_CHUGOKU_FALL
+						country_event = {
+							id = JAP_war_of_yashima.4
+						}	
+					}	
+				}
 			}
 			if = {
 				limit = {
@@ -4317,6 +4341,19 @@ on_actions = {
                     id = 7212
                     name = "kangsan"
                 }
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = GLOB_JAP_SANIN_FALL
+						}
+					}
+					JAP = {
+						set_global_flag = GLOB_JAP_SANIN_FALL
+						country_event = {
+							id = JAP_war_of_yashima.5
+						}	
+					}	
+				}
 			}
 			if = {
 				limit = {

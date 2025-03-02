@@ -19614,6 +19614,668 @@ country_event = { #
 		name = korea.2807.a
 	}
 }
+country_event = {  
+    id = korea.2900
+    title = korea.2900.title
+    desc = korea.2900.desc
+    picture = GFX_TLE_korea_event_none
+
+    is_triggered_only = yes
+
+    option = {  
+        name = korea.2900.a
+    }
+}
+
+country_event = {  
+    id = korea.2901
+    title = korea.2901.title
+    desc = korea.2901.desc
+    picture = GFX_TLE_korea_event_none
+
+    is_triggered_only = yes
+
+    option = {  
+        name = korea.2901.a
+    }
+}
+
+country_event = {  
+    id = korea.2902
+    title = korea.2902.title
+    desc = korea.2902.desc
+    picture = GFX_TLE_korea_event_none
+
+    is_triggered_only = yes
+
+    option = {  
+        name = korea.2902.a
+    }
+}
+
+country_event = {  
+    id = korea.2903
+    title = korea.2903.title
+    desc = korea.2903.desc
+    picture = GFX_TLE_korea_event_none
+
+    is_triggered_only = yes
+
+    option = {  
+        name = korea.2903.a
+    }
+}
+
+country_event = {  
+    id = korea.2904
+    title = korea.2904.title
+    desc = korea.2904.desc
+    picture = GFX_TLE_korea_event_none
+
+    is_triggered_only = yes
+
+    option = {  
+        name = korea.2904.a
+    }
+}
+
+country_event = {  
+    id = korea.2905
+    title = korea.2905.title
+    desc = korea.2905.desc
+    picture = GFX_TLE_korea_event_none
+
+    is_triggered_only = yes
+
+    option = {  
+        name = korea.2905.a
+    }
+}
+
+country_event = {  
+    id = korea.2906
+    title = korea.2906.title
+    desc = korea.2906.desc
+    picture = GFX_TLE_korea_event_none
+
+    is_triggered_only = yes
+
+    option = {  
+        name = korea.2906.a
+    }
+}
+
+country_event = {  
+    id = korea.2907
+    title = korea.2907.title
+    desc = korea.2907.desc
+    picture = GFX_TLE_korea_event_none
+
+    is_triggered_only = yes
+
+    option = {  
+        name = korea.2907.a
+    }
+}
+
+country_event = {  
+    id = korea.2908
+    title = korea.2908.title
+    desc = korea.2908.desc
+    picture = GFX_TLE_korea_event_none
+
+    is_triggered_only = yes
+
+    option = {  
+        name = korea.2908.a
+    }
+}
+
+country_event = {  
+    id = korea.2909
+    title = korea.2909.title
+    desc = korea.2909.desc
+    picture = GFX_TLE_korea_event_none
+
+    is_triggered_only = yes
+
+    option = {  
+        name = korea.2909.a
+    }
+}
+
+country_event = {  
+    id = korea.2910
+    title = korea.2910.title
+    desc = korea.2910.desc
+    picture = GFX_TLE_korea_event_none
+
+    is_triggered_only = yes
+
+    option = {  
+        name = korea.2910.a
+    }
+}
+
+country_event = {  
+    id = korea.2911
+    title = korea.2911.title
+    desc = korea.2911.desc
+    picture = GFX_TLE_korea_event_none
+
+    is_triggered_only = yes
+
+    option = {  
+        name = korea.2911.a
+    }
+}
+
+country_event = {  
+    id = korea.2912
+    title = korea.2912.title
+    desc = korea.2912.desc
+    picture = GFX_TLE_korea_event_none
+
+    is_triggered_only = yes
+
+    option = {  
+        name = korea.2912.a
+    }
+}
+
+country_event = {  
+    id = korea.2913
+    title = korea.2913.title
+    desc = korea.2913.desc
+    picture = GFX_TLE_korea_event_none
+
+    is_triggered_only = yes
+
+    option = {  
+        name = korea.2913.a
+    }
+}
+
+country_event = {  
+    id = korea.2914
+    title = korea.2914.title
+    desc = korea.2914.desc
+    picture = GFX_TLE_korea_event_none
+
+    is_triggered_only = yes
+
+    option = {  
+        name = korea.2914.a
+    }
+}
+
+country_event = {  
+    id = korea.2915
+    title = korea.2915.title
+    desc = korea.2915.desc
+    picture = GFX_TLE_korea_event_none
+
+    is_triggered_only = yes
+
+    option = {  
+        name = korea.2915.a
+    }
+}
+
+country_event = {  
+    id = korea.2916
+    title = korea.2916.title
+    desc = korea.2916.desc
+    picture = GFX_TLE_korea_event_none
+
+    is_triggered_only = yes
+
+    option = {  
+        name = korea.2916.a
+    }
+}
+
+country_event = {  
+    id = korea.2917
+    title = korea.2917.title
+    desc = korea.2917.desc
+    picture = GFX_TLE_korea_event_none
+
+    is_triggered_only = yes
+
+    option = {  
+        name = korea.2917.a
+    }
+}
+
+country_event = {  
+    id = korea.2918
+    title = korea.2918.title
+    desc = korea.2918.desc
+    picture = GFX_TLE_korea_event_none
+
+    is_triggered_only = yes
+
+    option = {  
+        name = korea.2918.a
+    }
+}
+
+country_event = {  
+    id = korea.2919
+    title = korea.2919.title
+    desc = korea.2919.desc
+    picture = GFX_TLE_korea_event_none
+
+    is_triggered_only = yes
+
+    option = {  
+        name = korea.2919.a
+    }
+}
+
+country_event = {  
+    id = korea.2920
+    title = korea.2920.title
+    desc = korea.2920.desc
+    picture = GFX_TLE_korea_event_none
+
+    is_triggered_only = yes
+
+    option = {  
+        name = korea.2920.a
+    }
+}
+
+country_event = {  
+    id = korea.2921
+    title = korea.2921.title
+    desc = korea.2921.desc
+    picture = GFX_TLE_korea_event_none
+
+    is_triggered_only = yes
+
+    option = {  
+        name = korea.2921.a
+    }
+}
+
+country_event = {  
+    id = korea.2922
+    title = korea.2922.title
+    desc = korea.2922.desc
+    picture = GFX_TLE_korea_event_none
+
+    is_triggered_only = yes
+
+    option = {  
+        name = korea.2922.a
+    }
+}
+
+country_event = {  
+    id = korea.2923
+    title = korea.2923.title
+    desc = korea.2923.desc
+    picture = GFX_TLE_korea_event_none
+
+    is_triggered_only = yes
+
+    option = {  
+        name = korea.2923.a
+    }
+}
+
+country_event = {  
+    id = korea.2924
+    title = korea.2924.title
+    desc = korea.2924.desc
+    picture = GFX_TLE_korea_event_none
+
+    is_triggered_only = yes
+
+    option = {  
+        name = korea.2924.a
+    }
+}
+
+country_event = {  
+    id = korea.2925
+    title = korea.2925.title
+    desc = korea.2925.desc
+    picture = GFX_TLE_korea_event_none
+
+    is_triggered_only = yes
+
+    option = {  
+        name = korea.2925.a
+    }
+}
+
+country_event = {  
+    id = korea.2926
+    title = korea.2926.title
+    desc = korea.2926.desc
+    picture = GFX_TLE_korea_event_none
+
+    is_triggered_only = yes
+
+    option = {  
+        name = korea.2926.a
+    }
+}
+
+country_event = {  
+    id = korea.2927
+    title = korea.2927.title
+    desc = korea.2927.desc
+    picture = GFX_TLE_korea_event_none
+
+    is_triggered_only = yes
+
+    option = {  
+        name = korea.2927.a
+    }
+}
+
+country_event = {  
+    id = korea.2928
+    title = korea.2928.title
+    desc = korea.2928.desc
+    picture = GFX_TLE_korea_event_none
+
+    is_triggered_only = yes
+
+    option = {  
+        name = korea.2928.a
+    }
+}
+
+country_event = {  
+    id = korea.2929
+    title = korea.2929.title
+    desc = korea.2929.desc
+    picture = GFX_TLE_korea_event_none
+
+    is_triggered_only = yes
+
+    option = {  
+        name = korea.2929.a
+    }
+}
+
+country_event = {  
+    id = korea.2930
+    title = korea.2930.title
+    desc = korea.2930.desc
+    picture = GFX_TLE_korea_event_none
+
+    is_triggered_only = yes
+
+    option = {  
+        name = korea.2930.a
+    }
+}
+
+country_event = {  
+    id = korea.2931
+    title = korea.2931.title
+    desc = korea.2931.desc
+    picture = GFX_TLE_korea_event_none
+
+    is_triggered_only = yes
+
+    option = {  
+        name = korea.2931.a
+    }
+}
+
+country_event = {  
+    id = korea.2932
+    title = korea.2932.title
+    desc = korea.2932.desc
+    picture = GFX_TLE_korea_event_none
+
+    is_triggered_only = yes
+
+    option = {  
+        name = korea.2932.a
+    }
+}
+
+country_event = {  
+    id = korea.2933
+    title = korea.2933.title
+    desc = korea.2933.desc
+    picture = GFX_TLE_korea_event_none
+
+    is_triggered_only = yes
+
+    option = {  
+        name = korea.2933.a
+    }
+}
+
+country_event = {  
+    id = korea.2934
+    title = korea.2934.title
+    desc = korea.2934.desc
+    picture = GFX_TLE_korea_event_none
+
+    is_triggered_only = yes
+
+    option = {  
+        name = korea.2934.a
+    }
+}
+
+country_event = {  
+    id = korea.2935
+    title = korea.2935.title
+    desc = korea.2935.desc
+    picture = GFX_TLE_korea_event_none
+
+    is_triggered_only = yes
+
+    option = {  
+        name = korea.2935.a
+    }
+}
+
+country_event = {  
+    id = korea.2936
+    title = korea.2936.title
+    desc = korea.2936.desc
+    picture = GFX_TLE_korea_event_none
+
+    is_triggered_only = yes
+
+    option = {  
+        name = korea.2936.a
+    }
+}
+
+country_event = {  
+    id = korea.2937
+    title = korea.2937.title
+    desc = korea.2937.desc
+    picture = GFX_TLE_korea_event_none
+
+    is_triggered_only = yes
+
+    option = {  
+        name = korea.2937.a
+    }
+}
+
+country_event = {  
+    id = korea.2938
+    title = korea.2938.title
+    desc = korea.2938.desc
+    picture = GFX_TLE_korea_event_none
+
+    is_triggered_only = yes
+
+    option = {  
+        name = korea.2938.a
+    }
+}
+
+country_event = {  
+    id = korea.2939
+    title = korea.2939.title
+    desc = korea.2939.desc
+    picture = GFX_TLE_korea_event_none
+
+    is_triggered_only = yes
+
+    option = {  
+        name = korea.2939.a
+    }
+}
+
+country_event = {  
+    id = korea.2940
+    title = korea.2940.title
+    desc = korea.2940.desc
+    picture = GFX_TLE_korea_event_none
+
+    is_triggered_only = yes
+
+    option = {  
+        name = korea.2940.a
+    }
+}
+
+country_event = {  
+    id = korea.2941
+    title = korea.2941.title
+    desc = korea.2941.desc
+    picture = GFX_TLE_korea_event_none
+
+    is_triggered_only = yes
+
+    option = {  
+        name = korea.2941.a
+    }
+}
+
+country_event = {  
+    id = korea.2942
+    title = korea.2942.title
+    desc = korea.2942.desc
+    picture = GFX_TLE_korea_event_none
+
+    is_triggered_only = yes
+
+    option = {  
+        name = korea.2942.a
+    }
+}
+
+country_event = {  
+    id = korea.2943
+    title = korea.2943.title
+    desc = korea.2943.desc
+    picture = GFX_TLE_korea_event_none
+
+    is_triggered_only = yes
+
+    option = {  
+        name = korea.2943.a
+    }
+}
+
+country_event = {  
+    id = korea.2944
+    title = korea.2944.title
+    desc = korea.2944.desc
+    picture = GFX_TLE_korea_event_none
+
+    is_triggered_only = yes
+
+    option = {  
+        name = korea.2944.a
+    }
+}
+
+country_event = {  
+    id = korea.2945
+    title = korea.2945.title
+    desc = korea.2945.desc
+    picture = GFX_TLE_korea_event_none
+
+    is_triggered_only = yes
+
+    option = {  
+        name = korea.2945.a
+    }
+}
+
+country_event = {  
+    id = korea.2946
+    title = korea.2946.title
+    desc = korea.2946.desc
+    picture = GFX_TLE_korea_event_none
+
+    is_triggered_only = yes
+
+    option = {  
+        name = korea.2946.a
+    }
+}
+
+country_event = {  
+    id = korea.2947
+    title = korea.2947.title
+    desc = korea.2947.desc
+    picture = GFX_TLE_korea_event_none
+
+    is_triggered_only = yes
+
+    option = {  
+        name = korea.2947.a
+    }
+}
+
+country_event = {  
+    id = korea.2948
+    title = korea.2948.title
+    desc = korea.2948.desc
+    picture = GFX_TLE_korea_event_none
+
+    is_triggered_only = yes
+
+    option = {  
+        name = korea.2948.a
+    }
+}
+
+country_event = {  
+    id = korea.2949
+    title = korea.2949.title
+    desc = korea.2949.desc
+    picture = GFX_TLE_korea_event_none
+
+    is_triggered_only = yes
+
+    option = {  
+        name = korea.2949.a
+    }
+}
+
+country_event = {  
+    id = korea.2950
+    title = korea.2950.title
+    desc = korea.2950.desc
+    picture = GFX_TLE_korea_event_none
+
+    is_triggered_only = yes
+
+    option = {  
+        name = korea.2950.a
+    }
+}
 
 ########################
 country_event = { #김규식 패전 엔딩
@@ -22191,6 +22853,29 @@ country_event = { #seadebug
 		}
 	}
 }
+country_event = { #독궈제국
+	id = korea.10021
+	title = korea.10021.title
+	desc = korea.10021.desc
+	picture = GFX_event_korea_777
+	is_triggered_only = yes
+	option = { #
+		name = korea.10021.a
+		load_focus_tree = korea_ach_happy
+	}
+	option = { #
+		name = korea.10021.b
+	}
+	option = { #
+		name = korea.10021.c
+	}
+	option = { #
+		name = korea.10021.d
+	}
+	option = { #
+		name = korea.10021.e
+	}
+}	
 ##########Text Test#################
 country_event = { #독궈제국
 	id = korea.99999

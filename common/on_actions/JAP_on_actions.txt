@@ -1,45 +1,5 @@
 on_actions = {
 	#일한전쟁 시스템
-	on_daily = {
-		effect = {
-			if = {
-				limit = {
-					JAP = {
-						has_war_with = KOR
-					}
-				}
-				JAP = {
-					country_event = JAP_war_of_yashima.3
-				}	
-			}
-			if = {
-				limit = {
-					JAP = {
-						has_war_with = KOR
-					}
-					KOR = {
-						controls_state = 529
-					}
-				}
-				JAP = {
-					country_event = JAP_war_of_yashima.4
-				}	
-			}
-			if = {
-				limit = {
-					JAP = {
-						has_war_with = KOR
-					}
-					KOR = {
-						controls_state = 1066
-					}
-				}
-				JAP = {
-					country_event = JAP_war_of_yashima.5
-				}	
-			}
-		}
-	}
 	on_startup = {
 		effect = {
 			if = {

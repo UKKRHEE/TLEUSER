@@ -1032,42 +1032,10 @@ country_event = { #내전 발발
 			}	
 		}
 		hidden_effect = {
-			DKG = {
-				destroy_ships = {
-					type = battleship
-					count = all
-				}
-				destroy_ships = {
-					type = heavy_cruiser
-					count = all
-				}
-				destroy_ships = {
-					type = light_cruiser
-					count = all
-				}
-				destroy_ships = {
-					type = destroyer
-					count = all
-				}
-				destroy_ships = {
-					type = submarine
-					count = all
-				}
-			}
 			set_country_flag = JAP_superevent_of_cw
 			JAP = {
 				#create_faction = "유신파"
 				remove_ideas = JAP_showa_hirohito
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					load_oob = "JAP_1936_naval"
-				}
-				if = {
-					limit = { not = { has_dlc = "Man the Guns" } }
-					load_oob = "JAP_1936_naval_legacy"
-				}
 			}
 			DKG = {
 				#create_faction = "좌막파"
@@ -1152,6 +1120,11 @@ country_event = { #내전 발발
 				}
 				complete_national_focus = JAP_economic_policy
 				set_country_flag = japan_focus_start
+			}
+			DKG = {
+				transfer_navy = {
+					target = JAP
+				}
 			}
 			DKG = {
 				remove_ideas = JAP_showa_hirohito
