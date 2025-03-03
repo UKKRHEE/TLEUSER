@@ -38,24 +38,9 @@ scripted_gui = {
 				}
 				add_to_variable = { global.kr_options_dirty = 1 }
 			}
-			BOP_button_click = {
-				if = {
-					limit = { has_power_balance = { id = KOR_balance } }
-					set_variable = { global.BOP_frame = 1 }
-					remove_power_balance = { id = KOR_balance }
-				}
-				else = {
-					set_variable = { global.BOP_frame = 2 }
-					set_power_balance = { id = KOR_balance }
-				}
-				add_to_variable = { global.kr_options_dirty = 1 }
-			}
 		}
 
 		triggers = {
-			BOP_button_click_enabled = {
-				original_tag = KOR
-			}
 			JOKBO_button_click_enabled = {
 				original_tag = KOR
 			}
@@ -67,9 +52,6 @@ scripted_gui = {
 			}
 			JOKBO_button = {
 				frame = global.JOKBO_frame
-			}
-			BOP_button = {
-				frame = global.BOP_frame
 			}
 		}
 	}

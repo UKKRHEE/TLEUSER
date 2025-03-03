@@ -1,0 +1,14 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_Ahn_Innovation_Background"
+		textureFile = "gfx/interface/KOR_GUI/innovation/background.png"
+	}
+	spriteType = {
+		name = "GFX_Ahn_Innovation_Checkbox"
+		textureFile = "gfx/interface/KOR_GUI/innovation/checkbox.png"
+	}
+	spriteType = {
+		name = "GFX_Ahn_Innovation_Checkmark"
+		textureFile = "gfx/interface/KOR_GUI/innovation/checkmark.png"
+	}
+}

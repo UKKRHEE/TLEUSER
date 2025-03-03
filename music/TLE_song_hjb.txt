@@ -433,16 +433,3 @@ music = {
 		}		
 	}	
 }
-# Don't Put Roh's Fucking Song
-#music = {
-#	song = "asscity"
-#	chance = {
-#		factor = 0
-#	}
-#}
-#music = {
-#	song = "Badgers"
-#	chance = {
-#		factor = 0
-#	}
-#}

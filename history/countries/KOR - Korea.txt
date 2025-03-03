@@ -608,19 +608,6 @@ recruit_character = KOR_est_cho_jiwon #조지원
 recruit_character = KOR_est_hwang_geunchul #황근출
 recruit_character = KOR_est_kim_du_han #김두한
 
-#ROK Political Advisors
-recruit_character = KOR_est_lee_seungman #이승만
-recruit_character = KOR_est_kim_dae_jung #김대중
-recruit_character = KOR_est_moon_jaein #문재인
-recruit_character = KOR_est_roh_moohyun #노무현
-recruit_character = KOR_est_park_geunhye #박근혜
-recruit_character = KOR_est_park_chunghee #박정희
-recruit_character = KOR_est_lee_myungbak #이명박
-recruit_character = KOR_est_chun_doohwan #전두환
-recruit_character = KOR_est_yoon_seokyeol #윤석열
-recruit_character = KOR_est_lee_jaemyeong #이재명
-recruit_character = KOR_est_jaemaiham #찢칠라
-
 #서브모드꺼
 recruit_character = KOR_INE
 recruit_character = KOR_JING

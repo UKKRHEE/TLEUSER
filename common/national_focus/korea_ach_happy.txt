@@ -1,0 +1,210 @@
+focus_tree = {
+	id = korea_ach_happy
+	country = {
+		factor = 0
+	}
+	default = no
+	focus = {
+		id = KOR_ach_happy_1
+		icon = GFX_focus_KOR_ach_happy_1
+		cost = 1
+		x = 9
+		y = 0
+		select_effect = {
+			play_song = "blue_sky_song"
+		}
+		completion_reward = {
+			country_event = {
+				id = korea.2900
+			}
+		}	
+	}
+	focus = {
+		id = KOR_ach_happy_2
+		icon = GFX_focus_KOR_ach_happy_2
+		cost = 1
+		prerequisite = {
+			focus = KOR_ach_happy_1
+		}
+		x = 7
+		y = 1
+		completion_reward = {
+			country_event = {
+				id = korea.2901
+			}
+		}	
+
+	}
+	focus = {
+		id = KOR_ach_happy_3
+		icon = GFX_focus_KOR_ach_happy_3
+		cost = 1
+		prerequisite = {
+			focus = KOR_ach_happy_1
+		}
+		x = 9
+		y = 1
+		completion_reward = {
+			country_event = {
+				id = korea.2902
+			}
+		}	
+
+	}
+	focus = {
+		id = KOR_ach_happy_5
+		icon = GFX_focus_KOR_ach_happy_5
+		cost = 1
+		prerequisite = {
+			focus = KOR_ach_happy_2
+		}
+		prerequisite = {
+			focus = KOR_ach_happy_3
+		}
+		x = 8
+		y = 2
+		completion_reward = {
+			country_event = {
+				id = korea.2904
+			}
+		}	
+
+	}
+	focus = {
+		id = KOR_ach_happy_6
+		icon = GFX_focus_KOR_ach_happy_6
+		cost = 1
+		prerequisite = {
+			focus = KOR_ach_happy_5
+		}
+		x = 8
+		y = 3
+		completion_reward = {
+			country_event = {
+				id = korea.2905
+			}
+		}	
+
+	}
+	focus = {
+		id = KOR_ach_happy_7
+		icon = GFX_focus_KOR_ach_happy_7
+		cost = 1
+		prerequisite = {
+			focus = KOR_ach_happy_6
+		}
+		x = 8
+		y = 4
+		completion_reward = {
+			country_event = {
+				id = korea.2906
+			}
+		}	
+
+	}
+	focus = {
+		id = KOR_ach_happy_4
+		icon = GFX_focus_KOR_ach_happy_4
+		cost = 1
+		prerequisite = {
+			focus = KOR_ach_happy_1
+		}
+		x = 11
+		y = 1
+		completion_reward = {
+			country_event = {
+				id = korea.2903
+			}
+		}	
+
+	}
+	focus = {
+		id = KOR_ach_happy_8
+		icon = GFX_focus_KOR_ach_happy_8
+		cost = 1
+		prerequisite = {
+			focus = KOR_ach_happy_3
+		}
+		prerequisite = {
+			focus = KOR_ach_happy_4
+		}
+		x = 10
+		y = 2
+		completion_reward = {
+			country_event = {
+				id = korea.2907
+			}
+		}	
+
+	}
+	focus = {
+		id = KOR_ach_happy_9
+		icon = GFX_focus_KOR_ach_happy_9
+		cost = 1
+		prerequisite = {
+			focus = KOR_ach_happy_8
+		}
+		x = 10
+		y = 3
+		completion_reward = {
+			country_event = {
+				id = korea.2908
+			}
+		}	
+
+	}
+	focus = {
+		id = KOR_ach_happy_10
+		icon = GFX_focus_KOR_ach_happy_10
+		cost = 1
+		prerequisite = {
+			focus = KOR_ach_happy_9
+		}
+		x = 10
+		y = 4
+		completion_reward = {
+			country_event = {
+				id = korea.2909
+			}
+		}	
+
+	}
+	focus = {
+		id = KOR_ach_happy_11
+		icon = GFX_focus_KOR_ach_happy_11
+		cost = 1
+		prerequisite = {
+			focus = KOR_ach_happy_7
+		}
+		prerequisite = {
+			focus = KOR_ach_happy_10
+		}
+		x = 9
+		y = 5
+		completion_reward = {
+			country_event = {
+				id = korea.2910
+			}
+		}	
+
+	}
+	focus = {
+		id = KOR_ach_happy_12
+		icon = GFX_focus_KOR_ach_happy_12
+		cost = 1
+		prerequisite = {
+			focus = KOR_ach_happy_11
+		}
+		x = 9
+		y = 6
+		select_effect = {
+			play_song = "gwangya_yoon"
+		}
+		completion_reward = {
+			country_event = {
+				id = korea.3005
+			}
+		}	
+
+	}
+}

@@ -1,0 +1,29 @@
+scripted_gui = {
+	KOR_ahn_innovation_GUI = {
+		context_type = decision_category
+		window_name = "KOR_ahn_innovation_GUI"
+		
+		visible = {
+			original_tag = KOR
+		}
+
+		dynamic_lists = {
+			checkbox_grid = {
+				array = innovation_checkbox_array
+				index = innovation_checkbox_index
+				change_scope = no
+				entry_container = KOR_ahn_innovation_GUI_entry
+			}
+		}
+
+		triggers = {
+			checkmark_visible = {
+				check_variable = { innovation_checkbox_array^innovation_checkbox_index = 1 }
+			}
+		}
+
+		effects = {
+			
+		}
+	}
+}

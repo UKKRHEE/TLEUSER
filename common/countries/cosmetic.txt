@@ -877,8 +877,8 @@ italo_ethiopian_empire = {
 }
 
 greater_italy = {
- color = rgb { 0 102 0 }
- color_ui = rgb { 0 51 0 }
+	color = rgb { 109 142 96 }
+	color_ui = rgb { 109 142 96 }
 }
 
 papal_states = {

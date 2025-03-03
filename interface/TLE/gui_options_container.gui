@@ -18,7 +18,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "kr_options_container"
 		position = { x = -300 y = 90 }
-		size = { width = 200 height = 106 }
+		size = { width = 200 height = 86 }
 		orientation = upper_right
 		clipping = yes
 		fade_time = 1000
@@ -88,33 +88,6 @@ guiTypes = {
 				font = "hoi_16mbs"
 				borderSize = { x = 0 y = 0 }
 				text = "JOKBO_text"
-				maxWidth = @label_width
-				format = left
-			}
-		}
-
-		#Grouped text and checkbox for easier positioning
-		containerWindowType = {
-			name = "BOP_container"
-			position = { x = @container_pos_x y = @container_pos_slot_2_y }
-			Orientation = upper_left
-
-			buttonType = {
-				name = "BOP_button"
-				position = { x = @checkbox_pos_x y = @checkbox_pos_y }
-				quadTextureSprite = "GFX_generic_checkbox3"
-				clicksound = decisions_ui_button
-				pdx_tooltip = BOP_tooltip
-				pdx_disabled_tooltip = BOP_disabled_tooltip
-			}
-
-			instantTextboxType = {
-				name = "description"
-				position = { x = @label_pos_x y = @label_pos_y }
-				textureFile = ""
-				font = "hoi_16mbs"
-				borderSize = { x = 0 y = 0 }
-				text = "BOP_text"
 				maxWidth = @label_width
 				format = left
 			}

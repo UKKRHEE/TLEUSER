@@ -1,0 +1,16 @@
+ahn_innovation_setup = {
+	clear_array = innovation_checkbox_array
+	add_to_array = { innovation_checkbox_array = 0 }
+	add_to_array = { innovation_checkbox_array = 0 }
+	add_to_array = { innovation_checkbox_array = 0 }
+	add_to_array = { innovation_checkbox_array = 0 }
+	add_to_array = { innovation_checkbox_array = 0 }
+}
+
+ahn_innovation_test = {
+	set_variable = { innovation_checkbox_array^0 = 1 }
+	set_variable = { innovation_checkbox_array^1 = 0 }
+	set_variable = { innovation_checkbox_array^2 = 0 }
+	set_variable = { innovation_checkbox_array^3 = 1 }
+	set_variable = { innovation_checkbox_array^4 = 1 }
+}

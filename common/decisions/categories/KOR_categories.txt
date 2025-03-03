@@ -1,35 +1,44 @@
-
 TLE_history_yes = {
-	allowed = {
-	}
-	visible = {
-	}
+	allowed = { }
+	visible = { }
 	priority = 9999
 }
 KOR_decision_congress_GUI = {
-	allowed = {
-		original_tag = KOR
-	}
-	visible = {
-		original_tag = KOR
-	}
+	allowed = { original_tag = KOR }
+	visible = { original_tag = KOR }
 	priority = 9999
 	visible_when_empty = yes
 	scripted_gui = KOR_congress_GUI
 }
 KOR_debug_category = {
-	allowed = {
-	}
+	allowed = { }
 	visible = {
 		is_debug = yes
 		is_ai = no
 	}
 	priority = 9997
 }
-KOR_ilsoism_GUI_category = {
-	allowed = {
-		original_tag = KOR
+
+### ACH ###
+KOR_ahn_innovation_category = {
+	allowed = { original_tag = KOR }
+	visible = { 
+		OR = {	
+			AND = {
+				is_debug = yes
+				has_country_flag = FLAG_DEBUG_DECISION_KOR
+			}
+			has_country_flag = FLAG_ACH_ROUTE
+		}	
 	}
+	scripted_gui = KOR_ahn_innovation_GUI
+	visible_when_empty = yes
+	priority = 9999
+}
+
+### KKS ###
+KOR_ilsoism_GUI_category = {
+	allowed = { original_tag = KOR }
 	visible = {
 		original_tag = KOR
 		OR = {	
@@ -41,13 +50,11 @@ KOR_ilsoism_GUI_category = {
 		}	
 	}
 	visible_when_empty = yes
-	priority = 9998
+	priority = 152
 	scripted_gui = KOR_ilsoism_GUI
 }
 KOR_kks_clear_the_communist_category = { #KKS
-	allowed = {
-		original_tag = KOR
-	}
+	allowed = { original_tag = KOR }
 	visible = {
 		original_tag = KOR
 		OR = {	
@@ -64,9 +71,7 @@ KOR_kks_clear_the_communist_category = { #KKS
 	priority = 151
 }
 KOR_government_stablity_category = { #KKS
-	allowed = {
-		original_tag = KOR
-	}
+	allowed = { original_tag = KOR }
 	visible = {
 		original_tag = KOR
 		OR = {	
@@ -84,9 +89,7 @@ KOR_government_stablity_category = { #KKS
 	priority = 150
 }
 KOR_four_new_life_strategies = { #KKS
-	allowed = {
-		original_tag = KOR
-	}
+	allowed = { original_tag = KOR }
 	visible = {
 		original_tag = KOR
 		NOT = {
@@ -96,23 +99,19 @@ KOR_four_new_life_strategies = { #KKS
 	priority = 100
 }
 KOR_flames_of_war = { #KKS
-	allowed = {
-		original_tag = KOR
-	}
+	allowed = { original_tag = KOR }
 	visible = {
 		original_tag = KOR
 		#NOT = {
 		#	has_country_flag = FLAG_KKS_ROUTE_KKS_DEAD
-		#}
+		#} 
 	}
 	priority = 99
 }
 
-
+### PCY ###
 KOR_IKN_purge_category = { #PCY
-	allowed = {
-		original_tag = KOR
-	}
+	allowed = { original_tag = KOR }
 	visible = {
 		original_tag = KOR
 		OR = {
@@ -138,9 +137,7 @@ KOR_IKN_purge_category = { #PCY
 }
 KOR_anti_imperialism_democratical_united_front_problem = { #PCY
 	icon = GFX_decision_category_generic_monarchism
-	allowed = {
-		original_tag = KOR
-	}
+	allowed = { original_tag = KOR }
 	visible = {
 		has_global_flag = GLOB_PCY_AIDUF_RISE
 		NOT = {
@@ -161,13 +158,10 @@ KOR_anti_imperialism_democratical_united_front_problem = { #PCY
 	priority = 99
 }
 
+### Others ###
 KOR_reichskommissariat = {
 	#picture = GFX_descision_KOR_hwan
-
-	allowed = {
-		original_tag = KOR
-	}
-
+	allowed = { original_tag = KOR }
 	visible = {
 		original_tag = KOR
 		not = {
@@ -179,47 +173,29 @@ KOR_reichskommissariat = {
 	priority = 88
 }
 KOR_mongolian_attack_category = {
-	allowed = {
-		original_tag = KOR
-	}
-	visible = {
-		original_tag = KOR
-	}
+	allowed = { original_tag = KOR }
+	visible = { original_tag = KOR }
 	priority = 88
 }
 KOR_anti_hwakyo_movement = {
-	allowed = {
-		original_tag = KOR
-	}
-	visible = {
-		original_tag = KOR
-	}
+	allowed = { original_tag = KOR }
+	visible = { original_tag = KOR }
 	priority = 87
 }
 KOR_revolutionary_war = {
-	allowed = {
-		original_tag = KOR
-	}
-	visible = {
-		original_tag = KOR
-	}
+	allowed = { original_tag = KOR }
+	visible = { original_tag = KOR }
 	priority = 86
 }
 KOR_decision_eulhae_goonchuk = {
-	allowed = {
-			original_tag = KOR
-	}
-	visible = {
-		original_tag = KOR
-	}
+	allowed = { original_tag = KOR }
+	visible = { original_tag = KOR }
 	priority = 85
 	scripted_gui = KOR_decision_eulhae_goonchuk_GUI
 }
 KOR_first_plan_lightning = {
 	#picture = GFX_descision_KOR_plan_lightning
-	allowed = {
-		original_tag = KOR
-	}
+	allowed = { original_tag = KOR }
 	visible = {
 		original_tag = KOR
 		not = {
@@ -232,9 +208,7 @@ KOR_first_plan_lightning = {
 }
 KOR_second_plan_tent = {
 	#picture = GFX_descision_KOR_plan_tent
-	allowed = {
-		original_tag = KOR
-	}
+	allowed = { original_tag = KOR }
 	visible = {
 		original_tag = KOR
 		not = {
@@ -247,9 +221,7 @@ KOR_second_plan_tent = {
 }
 KOR_third_plan_doryun = {
 	#picture = GFX_descision_KOR_plan_doryun
-	allowed = {
-		original_tag = KOR
-	}
+	allowed = { original_tag = KOR }
 	visible = {
 		original_tag = KOR
 		not = {
@@ -262,9 +234,7 @@ KOR_third_plan_doryun = {
 }
 KOR_philippines = {
 	#picture = GFX
-	allowed = {
-		original_tag = KOR
-	}
+	allowed = { original_tag = KOR }
 	visible = {
 		original_tag = KOR
 		has_global_flag = PHI_capitulated
@@ -273,9 +243,7 @@ KOR_philippines = {
 }
 KOR_forth_plan_nakil = {
 	#picture = GFX_descision_KOR_plan_nakil
-	allowed = {
-		original_tag = KOR
-	}
+	allowed = { original_tag = KOR }
 	visible = {
 		original_tag = KOR
 		not = {
@@ -288,9 +256,7 @@ KOR_forth_plan_nakil = {
 }
 KOR_interservice_rivalry = {
 	icon = GFX_decision_category_power_struggle
-	allowed = {
-		original_tag = KOR
-	}
+	allowed = { original_tag = KOR }
 	visible = {
 		original_tag = KOR
 		not = {
@@ -303,29 +269,16 @@ KOR_interservice_rivalry = {
 	}
 	priority = 77
 }
-
 KOR_nuke_surrend = {
-
-	allowed = {
-	}
-
-	visible = {
-		has_war = yes
-	}
+	allowed = { }
+	visible = { has_war = yes }
 }
 
+### BoP ###
 KOR_bop_category = {
 	icon = GFX_decision_category_power_struggle
-	
-	allowed = {
-		original_tag = KOR
-	}
-	
+	allowed = {	original_tag = KOR }
 	priority = 90
-	
-	available = {
-	}
-	
-	visible = {
-	}
+	available = { }
+	visible = { }
 }

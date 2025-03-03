@@ -91,9 +91,9 @@
  TLE_HALLOWEEN_RULE:0 "할로윈 아케이드 모드 §R(폐쇄)§!"
  RULE_OPTION_TLE_HALLOWEEN_RULE_NO:0 "미사용"
  RULE_OPTION_TLE_HALLOWEEN_RULE_NO_DESC:0 "라스트 엠파이어는 기존과 동일할 것입니다."
- RULE_OPTION_TLE_HALLOWEEN_RULE_YES:0 "사용"
- RULE_OPTION_TLE_HALLOWEEN_RULE_YES_DESC:0 "2023년 아케이드 모드, 지금 바로 플레이하세요!\n§R주의: 매우 매우 민감한 드립 및 내용이 함유되어있습니다. 괜히 플레이한다고 켰다가 불쾌감 얻고선 제작자한테 따지지 마십시오. 온전한 당신의 선택입니다.§!\n\n플레이 가능 국가: @KOR§Y대한제국 은하정부§!, @JAP§Y일본 제국§!, @KRH§Y대한제국 호박정부§!, @MJT§Y로베타 연방§!, @MCP§Y메카 대한민국§!"
- 
+ RULE_OPTION_TLE_HALLOWEEN_RULE_YES:0 "미사용"
+ RULE_OPTION_TLE_HALLOWEEN_RULE_YES_DESC:0 "라스트 엠파이어는 기존과 동일할 것입니다." #2023년 아케이드 모드, 지금 바로 플레이하세요!\n§R주의: 매우 매우 민감한 드립 및 내용이 함유되어있습니다. 괜히 플레이한다고 켰다가 불쾌감 얻고선 제작자한테 따지지 마십시오. 온전한 당신의 선택입니다.§!\n\n플레이 가능 국가: @KOR§Y대한제국 은하정부§!, @JAP§Y일본 제국§!, @KRH§Y대한제국 호박정부§!, @MJT§Y로베타 연방§!, @MCP§Y메카 대한민국§!
+  
  RULE_WARGOAL_BLOCKED_KOR_TT:0 "§R- 한국은 일본에게 정당화를 할 수 없습니다.§!"
  RULE_WARGOAL_BLOCKED_JAP_TT:0 "§R- 일본은 한국에게 정당화를 할 수 없습니다.§!"
  RULE_WARGOAL_BLOCKED_HISTORICAL_TT:0 "§R라스트 엠파이어 정사에서는 전쟁 정당화가 허락되지 않습니다.§!"

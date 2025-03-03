@@ -1,0 +1,67 @@
+defined_text = {
+    name = GetAhnInnovationText
+    text = {
+        trigger = {
+            check_variable = { innovation_checkbox_index = 0 }
+        }
+        localization_key = "ahn_innovation_text_1"
+    }
+    text = {
+        trigger = {
+            check_variable = { innovation_checkbox_index = 1 }
+        }
+        localization_key = "ahn_innovation_text_2"
+    }
+    text = {
+        trigger = {
+            check_variable = { innovation_checkbox_index = 2 }
+        }
+        localization_key = "ahn_innovation_text_3"
+    }
+    text = {
+        trigger = {
+            check_variable = { innovation_checkbox_index = 3 }
+        }
+        localization_key = "ahn_innovation_text_4"
+    }
+    text = {
+        trigger = {
+            check_variable = { innovation_checkbox_index = 4 }
+        }
+        localization_key = "ahn_innovation_text_5"
+    }
+}
+
+defined_text = {
+    name = GetAhnInnovationTooltip
+    text = {
+        trigger = {
+            check_variable = { innovation_checkbox_index = 0 }
+        }
+        localization_key = "ahn_innovation_tooltip_1"
+    }
+    text = {
+        trigger = {
+            check_variable = { innovation_checkbox_index = 1 }
+        }
+        localization_key = "ahn_innovation_tooltip_2"
+    }
+    text = {
+        trigger = {
+            check_variable = { innovation_checkbox_index = 2 }
+        }
+        localization_key = "ahn_innovation_tooltip_3"
+    }
+    text = {
+        trigger = {
+            check_variable = { innovation_checkbox_index = 3 }
+        }
+        localization_key = "ahn_innovation_tooltip_4"
+    }
+    text = {
+        trigger = {
+            check_variable = { innovation_checkbox_index = 4 }
+        }
+        localization_key = "ahn_innovation_tooltip_5"
+    }
+}

@@ -225,16 +225,6 @@ music = {
 	volume = 1
 }
 music = {
-	name = "asscity"
-	file = "hjb/asscity.ogg"
-	volume = 1
-}
-music = {
-	name = "Badgers"
-	file = "hjb/Badgers.ogg"
-	volume = 1
-}
-music = {
 	name = "sakkijarven_polkka_TLE"
 	file = "hjb/sakkijarven_polkka.ogg"
 	volume = 1
