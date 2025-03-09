@@ -1773,11 +1773,10 @@ ideas = {
 				naval_doctrine_cost_factor = 1.5
 				air_doctrine_cost_factor = 1.5
 				no_compliance_gain = 1
-				resistance_target = 0.5
 				resistance_activity = 0.5
 				required_garrison_factor = 0.2
 				resistance_growth = 0.15
-				resistance_target = 0.15
+				resistance_target = 0.3
 				resistance_decay = -0.15
 			}
 			targeted_modifier = {
@@ -2046,18 +2045,6 @@ ideas = {
 			modifier = {
 				research_speed_factor = -0.05
 			}
-			equipment_bonus = {
-				fighter_equipment = {
-					build_cost_ic = -0.05 
-					instant = yes
-				}
-			}	
-			equipment_bonus = {
-				CAS_equipment = {
-					build_cost_ic = -0.05
-					instant = yes
-				}
-			}	
 		}
 		KOR_the_democracy_ruler = {
 			
@@ -2707,7 +2694,6 @@ ideas = {
 			
 			modifier = {
 				training_time_army_factor = -0.05
-				stability_factor = 0.05
 				war_support_factor = 0.1
 				stability_factor = 0.1
 				production_factory_max_efficiency_factor = 0.1
@@ -3795,7 +3781,6 @@ ideas = {
 				resistance_activity = -0.1
 				required_garrison_factor = -0.1
 				resistance_growth = -0.1
-				resistance_target = -0.1
 				resistance_decay = 0.1
 			}
 		}
@@ -3813,7 +3798,6 @@ ideas = {
 				resistance_activity = -0.2
 				required_garrison_factor = -0.15
 				resistance_growth = -0.15
-				resistance_target = -0.15
 				resistance_decay = 0.15
 				conscription_factor = 0.35
 				conscription = 0.001

@@ -9,6 +9,13 @@ set_technology = {
 
 recruit_character = BAN_sarat_chandra_bose
 
+if = {
+	limit = {
+		has_dlc = "Graveyard of Empires"
+	}
+	recruit_character = RAJ_huseyn_shaheed_suhrawardy
+}
+
 set_convoys = 5
 
 1939.1.1 = {
@@ -32,7 +39,6 @@ set_convoys = 5
 		#electronics
 		electronic_mechanical_engineering = 1
 		radio = 1
-		radio_detection = 1
 		mechanical_computing = 1
 
 		#industry
@@ -44,6 +50,9 @@ set_convoys = 5
 		construction2 = 1
 		dispersed_industry = 1
 		dispersed_industry2 = 1
+	}
+	complete_special_project = {
+		project = sp:sp_air_radar
 	}
 }
 set_politics = {
@@ -58,6 +67,18 @@ set_popularities = {
 	communism = 1
 	neutrality = 23
 }
+
+#create_country_leader = {
+#	
+#	name = "Jonas Lote"
+#	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+#	expire = "1965.1.1"
+#	ideology = centrism
+#	traits = {
+#		#
+#	}
+#}
+
 
 1939.1.1 = {
 	set_politics = {

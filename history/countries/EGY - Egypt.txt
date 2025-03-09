@@ -1,15 +1,22 @@
 ﻿capital = 907
 
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
 set_cosmetic_tag = EGY_UK
 
 add_ideas = {
 	uk_egypt_moon
 }
-
-# Starting tech
-set_technology = {
-	infantry_weapons = 1
+IF = {
+	limit = {
+		has_dlc = "Battle for the Bosporus"
+	}
+	set_technology = { camelry = 1 }
 }
+
 if = {
 	limit = {
 		NOT = {
@@ -22,6 +29,8 @@ if = {
 }
 
 set_convoys = 20
+
+#set_cosmetic_tag = EGY_brit_puppet
 
 1939.1.1 = {
 
@@ -57,7 +66,6 @@ set_convoys = 20
 		#electronics
 		electronic_mechanical_engineering = 1
 		radio = 1
-		radio_detection = 1
 		mechanical_computing = 1
 		computing_machine = 1
 
@@ -71,6 +79,9 @@ set_convoys = 20
 		dispersed_industry = 1
 		dispersed_industry2 = 1
 	}
+	complete_special_project = {
+		project = sp:sp_air_radar
+	}
 }
 
 
@@ -81,10 +92,10 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 0
-	fascism = 0
-	communism = 0
-	neutrality = 100
+	democratic = 25
+	fascism = 20
+	communism = 5
+	neutrality = 50
 }
 
 create_country_leader = {
@@ -111,7 +122,7 @@ create_country_leader = {
 	name = "Farouk Muhammad Ali"
 	desc = ""
 	picture = "GFX_portrait_egy_faud_i"
-	ideology = monarchism
+	ideology = despotism
 	traits = {
 		#
 	}

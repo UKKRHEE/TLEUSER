@@ -588,7 +588,7 @@
 					factor = 90
 				}
 			available = {
-				controls_state = 990
+				controls_state = 1108
 				controls_state = 1070
 }
 			completion_reward = {

@@ -4,6 +4,7 @@ spriteTypes = {
 		name = "GFX_NEW_TLE_logo_game_tno" 
 		textureFile = "gfx/interface/country_info_screen/NEW_TLE_logo_game.png"
 	}
+
 	spriteType = {
 		name = "GFX_topbar_star_button"
 		textureFile = "gfx/interface/topbar/topbar_star_button.dds"
@@ -90,14 +91,14 @@ spriteTypes = {
 	}
 	
 	# Buttons
-	spriteType = {
-		name = "GFX_opening_button_next_page"
-		textureFile = "gfx/interface/opening_screen/opening_button_next_page.dds"
-	}
-	spriteType = {
-		name = "GFX_opening_button_prev_page"
-		textureFile = "gfx/interface/opening_screen/opening_button_prev_page.dds"
-	}
+	# spriteType = {
+	# 	name = "GFX_opening_button_next_page"
+	# 	textureFile = "gfx/interface/opening_screen/opening_button_next_page.dds"
+	# }
+	# spriteType = {
+	# 	name = "GFX_opening_button_prev_page"
+	# 	textureFile = "gfx/interface/opening_screen/opening_button_prev_page.dds"
+	# }
 	
 	spriteType = {
 		name = "GFX_discord_button"

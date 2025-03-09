@@ -25,73 +25,17 @@ country_event = {
 			news_event = {
 				id = siam_news.15
 			}
-			if = {
+			every_state = {
 				limit = {
-					288 = {
-						is_owned_by = RAJ
-					}
+					is_owned_by = RAJ
+					is_core_of = BRM
 				}
-				BUR = { transfer_state = 288 }
-			}
-			if = {
-				limit = {
-					640 = {
-						is_owned_by = RAJ
-					}
-				}
-				BUR = { transfer_state = 640 }
-			}
-			if = {
-				limit = {
-					992 = {
-						is_owned_by = RAJ
-					}
-				}
-				BUR = { transfer_state = 992 }
-			}
-            if = {
-				limit = {
-					1076 = {
-						is_owned_by = RAJ
-					}
-				}
-				BUR = { transfer_state = 1076 }
-			}
-            if = {
-				limit = {
-					1090 = {
-						is_owned_by = RAJ
-					}
-				}
-				BUR = { transfer_state = 1090 }
-			}
-            if = {
-				limit = {
-					1091 = {
-						is_owned_by = RAJ
-					}
-				}
-				BUR = { transfer_state = 1091 }
-			}
-            if = {
-				limit = {
-					1092 = {
-						is_owned_by = RAJ
-					}
-				}
-				BUR = { transfer_state = 1092 }
+				transfer_state_to = BUR
+				add_core_of = BUR
 			}
 			ENG = {
 				puppet = BUR
 			}
-			BUR = { set_cosmetic_tag = BUR_UK }
-			BUR = { add_state_core = 288 }
-			BUR = { add_state_core = 640 }
-			BUR = { add_state_core = 992 }
-    		BUR = { add_state_core = 1076 }
-    		BUR = { add_state_core = 1090 }
-    		BUR = { add_state_core = 1091 }
-    		BUR = { add_state_core = 1092 }
 			BUR = { 
 				set_politics = { 
 					ruling_party = neutrality
@@ -133,63 +77,14 @@ country_event = {
 			news_event = {
 				id = siam_news.16
 			}
-			if = {
+			every_state = {
 				limit = {
-					288 = {
-						is_owned_by = BUR
-					}
+					is_owned_by = BUR
+					is_core_of = BRM
 				}
-				BRM = { transfer_state = 288 }
+				transfer_state_to = BRM
 			}
-			if = {
-				limit = {
-					640 = {
-						is_owned_by = BUR
-					}
-				}
-				BRM = { transfer_state = 640 }
-			}
-			if = {
-				limit = {
-					992 = {
-						is_owned_by = BUR
-					}
-				}
-				BRM = { transfer_state = 992 }
-			}
-            if = {
-				limit = {
-					1076 = {
-						is_owned_by = BUR
-					}
-				}
-				BRM = { transfer_state = 1076 }
-			}
-			if = {
-				limit = {
-					1090 = {
-						is_owned_by = BUR
-					}
-				}
-				BRM = { transfer_state = 1090 }
-			}
-			if = {
-				limit = {
-					1091 = {
-						is_owned_by = BUR
-					}
-				}
-				BRM = { transfer_state = 1091 }
-			}
-			if = {
-				limit = {
-					1092 = {
-						is_owned_by = BUR
-					}
-				}
-				BRM = { transfer_state = 1092 }
-			}
-			BUR = { 
+			BRM = { 
 				set_politics = { 
 					ruling_party = democratic
 					last_election = "1936.1.1"

@@ -678,6 +678,19 @@ country_event = { #반란!
 	
 	option = { #진압
 		name = korea.25.a
+		trigger = {
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				NOT = {
+					has_game_rule = {
+						rule = KOR_ai_behavior
+						option = DEMOCRATIC_KKS
+					}
+				}
+			}
+		}
 		ai_chance = {
 			factor = 100
 		}
@@ -704,6 +717,13 @@ country_event = { #반란!
 		trigger = {
 			OR = {
 				is_ai = no
+				AND = {
+					is_ai = yes
+					has_game_rule = {
+						rule = KOR_ai_behavior
+						option = DEMOCRATIC_KKS
+					}
+				}
 				is_debug = yes
 			}
 		}	
@@ -2533,15 +2553,15 @@ country_event = { #마지막 제국
 						size > 0
 					}
 					divisions_in_state = {
-						state = 1014
+						state = 1132
 						size > 0
 					}
 					divisions_in_state = {
-						state = 1015
+						state = 1133
 						size > 0
 					}
 					divisions_in_state = {
-						state = 1016
+						state = 1091
 						size > 0
 					}
 					divisions_in_state = {
@@ -2598,15 +2618,15 @@ country_event = { #마지막 제국
 						size > 0
 					}
 					divisions_in_state = {
-						state = 1014
+						state = 1132
 						size > 0
 					}
 					divisions_in_state = {
-						state = 1015
+						state = 1133
 						size > 0
 					}
 					divisions_in_state = {
-						state = 1016
+						state = 1091
 						size > 0
 					}
 					divisions_in_state = {
@@ -2663,15 +2683,15 @@ country_event = { #마지막 제국
 						size > 0
 					}
 					divisions_in_state = {
-						state = 1014
+						state = 1132
 						size > 0
 					}
 					divisions_in_state = {
-						state = 1015
+						state = 1133
 						size > 0
 					}
 					divisions_in_state = {
-						state = 1016
+						state = 1091
 						size > 0
 					}
 					divisions_in_state = {
@@ -2797,7 +2817,7 @@ country_event = { #중국군의 승리
 			330 = { set_state_flag = waimenggu_province_state } #후레
 			818 = { set_state_flag = waimenggu_province_state } #허브드
 			820 = { set_state_flag = waimenggu_province_state } #후브스굴
-			1006 = { set_state_flag = waimenggu_province_state } #동부 고비
+			1124 = { set_state_flag = waimenggu_province_state } #동부 고비
 			329 = { set_state_flag = waimenggu_province_state } #탄누투바
 		
 			#서장성
@@ -3521,7 +3541,7 @@ country_event = {
 			1066 = {
 				set_demilitarized_zone = yes
 			}
-			989 = {
+			1107 = {
 				set_demilitarized_zone = yes
 			}
 			529 = {
@@ -5104,13 +5124,13 @@ country_event = {
 		527 = {
 			set_demilitarized_zone = yes
 		}
-		1014 = {
+		1132 = {
 			set_demilitarized_zone = yes
 		}
-		1015 = {
+		1133 = {
 			set_demilitarized_zone = yes
 		}
-		1016 = {
+		1091 = {
 			set_demilitarized_zone = yes
 		}
 		1017 = {
@@ -5277,13 +5297,13 @@ country_event = {
 		527 = {
 			add_dynamic_modifier = { modifier = KOR_army_resistance_modifier }
 		}
-		1014 = {
+		1132 = {
 			add_dynamic_modifier = { modifier = KOR_army_resistance_modifier }
 		}
-		1015 = {
+		1133 = {
 			add_dynamic_modifier = { modifier = KOR_army_resistance_modifier }
 		}
-		1016 = {
+		1091 = {
 			add_dynamic_modifier = { modifier = KOR_army_resistance_modifier }
 		}
 		1017 = {
@@ -5363,13 +5383,13 @@ country_event = {
 		527 = {
 			set_demilitarized_zone = no
 		}
-		1014 = {
+		1132 = {
 			set_demilitarized_zone = no
 		}
-		1015 = {
+		1133 = {
 			set_demilitarized_zone = no
 		}
-		1016 = {
+		1091 = {
 			set_demilitarized_zone = no
 		}
 		1017 = {
@@ -5503,10 +5523,10 @@ country_event = {
 				}
 			}
 			EOK = {
-				transfer_state = 1014
+				transfer_state = 1132
 				transfer_state = 1022
 				random_owned_controlled_state = {
-					prioritize = { 1014 }
+					prioritize = { 1132 }
 					create_unit = {
 						division = "name = \"제국 해방군\" division_template = \"제국 해방군\" start_experience_factor = 0.6"
 						owner = EOK
@@ -5568,10 +5588,10 @@ country_event = {
 				}
 			}
 			EOK = {
-				transfer_state = 1015
+				transfer_state = 1133
 				transfer_state = 1023
 				random_owned_controlled_state = {
-					prioritize = { 1015 }
+					prioritize = { 1133 }
 					create_unit = {
 						division = "name = \"제국 해방군\" division_template = \"제국 해방군\" start_experience_factor = 0.6"
 						owner = EOK
@@ -5633,10 +5653,10 @@ country_event = {
 				}
 			}
 			EOK = {
-				transfer_state = 1016
+				transfer_state = 1091
 				transfer_state = 1026
 				random_owned_controlled_state = {
-					prioritize = { 1016 }
+					prioritize = { 1091 }
 					create_unit = {
 						division = "name = \"제국 해방군\" division_template = \"제국 해방군\" start_experience_factor = 0.6"
 						owner = EOK
@@ -6459,8 +6479,8 @@ country_event = {
 			}
 		}
 		launch_nuke = {
-			province = 13370
-			state = 1015
+			province = 13402
+			state = 1133
 			controller = KOR
 			use_nuke = yes
 		}
@@ -7067,8 +7087,8 @@ country_event = {
 			transfer_state = 42
 			transfer_state = 50
 			transfer_state = 50
-			transfer_state = 998
-			transfer_state = 982
+			transfer_state = 1116
+			transfer_state = 1110
 			transfer_state = 978
 			#
 			add_state_core = 64
@@ -7089,8 +7109,8 @@ country_event = {
 			add_state_core = 42
 			add_state_core = 50
 			add_state_core = 50
-			add_state_core = 998
-			add_state_core = 982
+			add_state_core = 1116
+			add_state_core = 1110
 			add_state_core = 978
 			set_capital = { state = 51 }
 		}
@@ -8144,7 +8164,7 @@ country_event = {
 			609 = {
 				set_demilitarized_zone = yes
 			}
-			1012 = {
+			1130 = {
 				set_demilitarized_zone = yes
 			}
 			608 = {
@@ -8447,10 +8467,10 @@ country_event = {
 				set_cosmetic_tag = VIN_KOR_2
 			}
 			SIA = {
-				transfer_state = 992
 				transfer_state = 993
-				transfer_state = 994
-				transfer_state = 995
+				transfer_state = 1111
+				transfer_state = 1112
+				transfer_state = 1113
 				transfer_state = 1075
 				transfer_state = 1076
 			}
@@ -8601,7 +8621,7 @@ country_event = {
 				}
 			}
 			CH1 = {
-				transfer_state = 1004
+				transfer_state = 1122
 				transfer_state = 1035
 			}
 			XKC = {
@@ -11888,6 +11908,19 @@ country_event = { #조기선거의 결과 친택
 	
 	option = { #...일소 박중양
 		name = korea.408.a
+		trigger = {
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				NOT = {
+					has_game_rule = {
+						rule = KOR_ai_behavior
+						option = DEMOCRATIC_KKS
+					}
+				}
+			}
+		}
 		custom_effect_tooltip = EVENT_KOREA_408_PAK_TT
 		set_country_flag = FLAG_PCY_ROUTE
 		remove_country_leader_role = {
@@ -11964,6 +11997,19 @@ country_event = { #조기선거의 결과 친택
 	}
 	option = { #...도산 안창호
 		name = korea.408.b
+		trigger = {
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				NOT = {
+					has_game_rule = {
+						rule = KOR_ai_behavior
+						option = DEMOCRATIC_KKS
+					}
+				}
+			}
+		}
 		custom_effect_tooltip = EVENT_KOREA_408_NOT_TT
 		custom_effect_tooltip = EVENT_KOREA_408_ACH_TT
 		set_country_flag = FLAG_ACH_ROUTE
@@ -13417,7 +13463,7 @@ country_event = { #거병!
 			1048 = {
 				set_demilitarized_zone = yes
 			}
-			1009 = {
+			1127 = {
 				set_demilitarized_zone = yes
 			}
 			620 = {
@@ -14055,7 +14101,7 @@ country_event = { #
 	 
 	option = { #한국
 		name = korea.1332.a
-		transfer_state = 1012
+		transfer_state = 1130
 	}
 }
 country_event = { #
@@ -14110,7 +14156,7 @@ country_event = { #
 				transfer_state = 597
 				transfer_state = 1049
 				transfer_state = 1035
-				transfer_state = 1004
+				transfer_state = 1122
 				transfer_state = 743
 				transfer_state = 1034
 
@@ -14126,7 +14172,7 @@ country_event = { #
 				add_state_core = 597
 				add_state_core = 1049
 				add_state_core = 1035
-				add_state_core = 1004
+				add_state_core = 1122
 				add_state_core = 743
 				add_state_core = 1034
 				set_politics = {
@@ -14180,7 +14226,7 @@ country_event = { #
 							add = 10
 							has_country_flag = FLAG_CHI_DIV_5
 						}
-						transfer_state = 1004
+						transfer_state = 1122
 						transfer_state = 1035
 					}
 					25 = {
@@ -14204,7 +14250,7 @@ country_event = { #
 							add = -5
 							has_country_flag = FLAG_CHI_DIV_5
 						}
-						transfer_state = 1004
+						transfer_state = 1122
 					}
 					25 = {
 						modifier = {
@@ -15698,7 +15744,14 @@ country_event = { #
 			white_peace = CHI
 		}
 		KOR = {
-			complete_national_focus = KOR_kim_death_great_asian_war
+			if = {
+				limit = {
+					NOT = {
+						has_completed_focus = KOR_kim_death_great_asian_war
+					}
+				}	
+				complete_national_focus = KOR_kim_death_great_asian_war
+			}
 			complete_national_focus = KOR_kim_gaw_sunset
 		}
 	}
@@ -20613,9 +20666,9 @@ country_event = { #결론
 			transfer_state = 741
 			transfer_state = 1103
 			transfer_state = 286
-			transfer_state = 993
-			transfer_state = 994
-			transfer_state = 995
+			transfer_state = 1111
+			transfer_state = 1112
+			transfer_state = 1113
 		}	
 	}
 	option = {
@@ -20726,8 +20779,8 @@ country_event = { #결론
 				transfer_troops = no
 			}
 			transfer_state = 1073
-			transfer_state = 988
-			transfer_state = 989
+			transfer_state = 1106
+			transfer_state = 1107
 			transfer_state = 1067
 		}
 		hidden_effect = {
@@ -20922,12 +20975,12 @@ country_event = { #황도파 제작이벤트
 		#차오시엔성
 		525 = { set_state_flag = chaoxian_province_state } #경기
 		1018 = { set_state_flag = chaoxian_province_state } #강원
-		1014 = { set_state_flag = chaoxian_province_state } #충북
+		1132 = { set_state_flag = chaoxian_province_state } #충북
 		1022 = { set_state_flag = chaoxian_province_state } #충남
-		1015 = { set_state_flag = chaoxian_province_state } #전북
+		1133 = { set_state_flag = chaoxian_province_state } #전북
 		1023 = { set_state_flag = chaoxian_province_state } #전남
 		1026 = { set_state_flag = chaoxian_province_state } #경북
-		1016 = { set_state_flag = chaoxian_province_state } #경남
+		1091 = { set_state_flag = chaoxian_province_state } #경남
 		1020 = { set_state_flag = chaoxian_province_state } #제주
 		1021 = { set_state_flag = chaoxian_province_state } #울릉
 		1019 = { set_state_flag = chaoxian_province_state } #황해
@@ -20962,8 +21015,8 @@ country_event = { #황도파 제작이벤트
 			#운남성
 			325 = { set_state_flag = yunnan_province_state } #윈난
 			747 = { set_state_flag = yunnan_province_state } #다리
-			1010 = { set_state_flag = yunnan_province_state } #리장
-			1013 = { set_state_flag = yunnan_province_state } #징훙
+			1128 = { set_state_flag = yunnan_province_state } #리장
+			1131 = { set_state_flag = yunnan_province_state } #징훙
 			
 			#서강성
 			752 = { set_state_flag = xikang_province_state } #간쯔
@@ -20975,7 +21028,7 @@ country_event = { #황도파 제작이벤트
 			1047 = { set_state_flag = sichuan_province_state } #쓰촨
 			605 = { set_state_flag = sichuan_province_state } #충칭
 			748 = { set_state_flag = sichuan_province_state } #루저우
-			1007 = { set_state_flag = sichuan_province_state } #다저우
+			1125 = { set_state_flag = sichuan_province_state } #다저우
 
 			#호남성
 			602 = { set_state_flag = hunan_province_state } #후난
@@ -20996,7 +21049,7 @@ country_event = { #황도파 제작이벤트
 			598 = { set_state_flag = jiangsu_province_state } #쑤첸
 			1051 = { set_state_flag = jiangsu_province_state } #옌청
 			1040 = { set_state_flag = jiangsu_province_state } #타이저우
-			997 = { set_state_flag = jiangsu_province_state } #난퉁
+			1115 = { set_state_flag = jiangsu_province_state } #난퉁
 			613 = { set_state_flag = jiangsu_province_state } #난징
 			1038 = { set_state_flag = jiangsu_province_state } #자싱
 			1037 = { set_state_flag = jiangsu_province_state } #쑤저우
@@ -21022,7 +21075,7 @@ country_event = { #황도파 제작이벤트
 			1074 = { set_state_flag = henan_province_state } #허비
 			607 = { set_state_flag = henan_province_state } #카이펑
 			1057 = { set_state_flag = henan_province_state } #뤄양
-			1008 = { set_state_flag = henan_province_state } #신양
+			1126 = { set_state_flag = henan_province_state } #신양
 			
 			#섬서성
 			622 = { set_state_flag = shaanxi_province_state } #산시
@@ -21041,7 +21094,7 @@ country_event = { #황도파 제작이벤트
 			1035 = { set_state_flag = shandong_province_state } #옌타이
 			743 = { set_state_flag = shandong_province_state } #칭다오
 			1034 = { set_state_flag = shandong_province_state } #웨이하이
-			1004 = { set_state_flag = shandong_province_state } #원덩
+			1122 = { set_state_flag = shandong_province_state } #원덩
 			
 			#수원성
 			746 = { set_state_flag = suiyuan_province_state } #이커자오
@@ -21054,17 +21107,17 @@ country_event = { #황도파 제작이벤트
 			1033 = { set_state_flag = zhili_province_state } #톈진
 			609 = { set_state_flag = zhili_province_state } #탕산
 			1097 = { set_state_flag = zhili_province_state } #즈리
-			1012 = { set_state_flag = zhili_province_state } #후루다오
+			1130 = { set_state_flag = zhili_province_state } #후루다오
 			
 			#찰합이
 			611 = { set_state_flag = chahar_province_state } #남 차하얼
 			612 = { set_state_flag = chahar_province_state } #북 차하얼
-			1005 = { set_state_flag = chahar_province_state } #남더르너드
+			1123 = { set_state_flag = chahar_province_state } #남더르너드
 			
 			#감숙성
 			283 = { set_state_flag = gansu_province_state } #간쑤
 			1063 = { set_state_flag = gansu_province_state } #장예
-			996 = { set_state_flag = gansu_province_state } #장예
+			1114 = { set_state_flag = gansu_province_state } #장예
 			
 			#영하성
 			756 = { set_state_flag = ningxia_province_state } #주취안
@@ -21124,7 +21177,7 @@ country_event = { #황도파 제작이벤트
 		818 = { set_state_flag = waimenggu_province_state } #허브드
 		820 = { set_state_flag = waimenggu_province_state } #후브스굴
 		329 = { set_state_flag = waimenggu_province_state } #탄누투바
-		1006 = { set_state_flag = waimenggu_province_state } #동부 고비
+		1124 = { set_state_flag = waimenggu_province_state } #동부 고비
 	}	
 }
 
@@ -21176,11 +21229,11 @@ country_event = { #독궈제국
 						}
 					}
 					HUN = {
-						transfer_state = 987
+						transfer_state = 1105
 						transfer_state = 88
 						transfer_state = 91
 						transfer_state = 89
-						add_state_core = 987
+						add_state_core = 1105
 						add_state_core = 88
 						add_state_core = 91
 						add_state_core = 89
@@ -21438,14 +21491,14 @@ country_event = { #독궈제국
 					if = {
 						limit = {
 							ROM = {
-								owns_state = 986
+								owns_state = 1104
 							}
 							HUN = {
 								has_cosmetic_tag = HUN_EMPIRE
 							}
 						}
 						HUN = {
-							transfer_state = 986
+							transfer_state = 1104
 						}	
 					}
 				}
@@ -21493,11 +21546,11 @@ country_event = { #독궈제국
 						}
 						transfer_state = 102
 						transfer_state = 853
-						transfer_state = 1002
+						transfer_state = 1120
 					}
 					HUN = {
 						transfer_state = 45
-						transfer_state = 983
+						transfer_state = 1076
 					}
 					SER = {
 						transfer_state = 764
@@ -21512,14 +21565,14 @@ country_event = { #독궈제국
 					}	
 					MNT = {
 						transfer_state = 105
-						transfer_state = 1000
+						transfer_state = 1118
 					}
 					CRO = {
 						transfer_state = 109
 						transfer_state = 104
 						transfer_state = 103
 						transfer_state = 804
-						transfer_state = 1001
+						transfer_state = 1119
 					}
 				}
 				if = {
@@ -21532,7 +21585,7 @@ country_event = { #독궈제국
 						puppet = SER
 					}
 					HUN = {
-						transfer_state = 983
+						transfer_state = 1076
 						transfer_state = 102
 						transfer_state = 45
 						transfer_state = 109
@@ -21541,7 +21594,7 @@ country_event = { #독궈제국
 						transfer_state = 804
 						transfer_state = 1001
 						transfer_state = 853
-						transfer_state = 1002
+						transfer_state = 1120
 						transfer_state = 764
 					}
 					SER = {
@@ -21556,7 +21609,7 @@ country_event = { #독궈제국
 					}	
 					MNT = {
 						transfer_state = 105
-						transfer_state = 1000
+						transfer_state = 1118
 					}
 				}
 	}
@@ -21638,7 +21691,7 @@ country_event = { #독궈제국
 					set_state_owner_to = GER
 				}
 				GER = {
-					transfer_state = 999
+					transfer_state = 1117
 					transfer_state = 34
 					puppet = BEL
 				}
@@ -21676,7 +21729,7 @@ country_event = { #독궈제국
 				GER = {
 					puppet = FRS
 					transfer_state = 28
-					transfer_state = 985
+					transfer_state = 1092
 				}
 				every_state = {
 					limit = {
@@ -21719,10 +21772,10 @@ country_event = { #독궈제국
 						transfer_state = 286
 						transfer_state = 741
 						transfer_state = 1103
-						transfer_state = 995
+						transfer_state = 1113
 						transfer_state = 670
-						transfer_state = 994
-						transfer_state = 993
+						transfer_state = 1112
+						transfer_state = 1111
 					}	
 				}
 	}
@@ -22356,7 +22409,7 @@ country_event = { #독궈제국
 				}
 				HUN = {
 					transfer_state = 45
-					transfer_state = 983
+					transfer_state = 1076
 				}
 				CRO = {
 					transfer_state = 109
@@ -22366,7 +22419,7 @@ country_event = { #독궈제국
 				}
 				ITA = {
 					transfer_state = 853
-					transfer_state = 1002
+					transfer_state = 1120
 					transfer_state = 105
 					transfer_state = 1001
 				}
@@ -22379,7 +22432,7 @@ country_event = { #독궈제국
 						owns_state = 44
 					}
 					transfer_state = 802
-					transfer_state = 1000
+					transfer_state = 1118
 					transfer_state = 970
 				}
 	}
@@ -22644,11 +22697,11 @@ country_event = { #seadebug
 			}
 			if = {
 				limit = {
-					992 = {
+					993 = {
 						is_owned_by = RAJ
 					}
 				}
-				BUR = { transfer_state = 992 }
+				BUR = { transfer_state = 993 }
 			}
             if = {
 				limit = {
@@ -22688,7 +22741,7 @@ country_event = { #seadebug
 			BUR = { set_cosmetic_tag = BUR_UK }
 			BUR = { add_state_core = 288 }
 			BUR = { add_state_core = 640 }
-			BUR = { add_state_core = 992 }
+			BUR = { add_state_core = 993 }
     		BUR = { add_state_core = 1076 }
     		BUR = { add_state_core = 1090 }
     		BUR = { add_state_core = 1091 }
@@ -22787,8 +22840,8 @@ country_event = { #seadebug
 		LAO = {
 			set_cosmetic_tag = LAO_rep
 			transfer_state = 670
-			transfer_state = 993
-			transfer_state = 994
+			transfer_state = 1111
+			transfer_state = 1112
 			transfer_state = 1089
 			set_politics = {
 				ruling_party = communism
@@ -22807,7 +22860,7 @@ country_event = { #seadebug
 			set_cosmetic_tag = CAM_rep
 			transfer_state = 741
 			transfer_state = 1103
-			transfer_state = 995
+			transfer_state = 1113
 			set_politics = {
 				ruling_party = communism
 				last_election = "1936.1.1"
@@ -22824,13 +22877,13 @@ country_event = { #seadebug
 		671 = {
 			set_demilitarized_zone = no
 		}
-		993 = {
+		1111 = {
 			set_demilitarized_zone = yes
 		}
-		994 = {
+		1112 = {
 			set_demilitarized_zone = yes
 		}
-		995 = {
+		1113 = {
 			set_demilitarized_zone = yes
 		}
 		1082 = {

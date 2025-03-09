@@ -4,6 +4,10 @@ oob = "INS_1936"
 
 set_research_slots = 2
 
+add_ideas = { 
+	east_indies_ai
+	east_indies_user
+}
 # Starting tech
 # clone of Holland
 set_technology = {
@@ -65,17 +69,18 @@ set_popularities = {
 	fascism = 0
 	communism = 10
 	neutrality = 75
+	democratic = 50
+	fascism = 10
+	communism = 20
+	neutrality = 20
 }
 
-add_ideas = { 
-	east_indies_ai
-	east_indies_user
-}
 
 recruit_character = INS_a_t_van_starkenborgh_stachouwer
+recruit_character = INS_sukarno_TNO
 recruit_character = INS_sukarno
 recruit_character = INS_amir_sjarifuddin_harahap
-recruit_character = INS_sukarno_TNO
+recruit_character = INS_suharto
 recruit_character = INS_sutan_sjahrir
 
 
@@ -123,7 +128,6 @@ set_cosmetic_tag = INS_HOL # Netherlands East Indies
 		#electronics
 		electronic_mechanical_engineering = 1
 		radio = 1
-		radio_detection = 1
 		mechanical_computing = 1
 
 		#industry
@@ -135,6 +139,9 @@ set_cosmetic_tag = INS_HOL # Netherlands East Indies
 		construction2 = 1
 		dispersed_industry = 1
 		dispersed_industry2 = 1
+	}
+	complete_special_project = {
+		project = sp:sp_air_radar
 	}
 	if = {
 		limit = {

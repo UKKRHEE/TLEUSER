@@ -89,6 +89,7 @@ add_ideas = {
 	SIA_prince_aditya
 }
 
+add_ideas = idea_SIA_army_of_siam
 
 set_politics = {
 	ruling_party = neutrality

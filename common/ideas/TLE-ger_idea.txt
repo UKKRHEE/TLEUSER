@@ -20,7 +20,6 @@ ideas = {
 				resistance_activity = -0.7
 				required_garrison_factor = -0.5
 				resistance_growth = -0.3
-				resistance_target = -0.3
 				resistance_decay = 0.3	
 			}	
 			targeted_modifier = {

@@ -1038,13 +1038,13 @@ focus_tree = {
 								}
 							ENG = {
 									NOT = {
-											controls_state = 988
+											controls_state = 1106
 										}
 								}
 						}
 				}
 			completion_reward = {
-					transfer_state = 988
+					transfer_state = 1106
 				}
 
 	}

@@ -355,8 +355,7 @@ characters={
 		name=JAP_shiba_gorou
 		portraits={
 			army={
-				large="gfx/leaders/JAP/Portrait_JAP_shiba_gorou.png"
-				small="gfx/interface/ideas/JAP/advisors/idea_JAP_shiba_gorou.png"
+				large="gfx/leaders/JAP/Portrait_JAP_arima_kana.png"
 			}
 		}
 
@@ -429,8 +428,7 @@ characters={
 		name=JAP_nagata_tetsuzan
 		portraits={
 			army={
-				small="GFX_idea_JAP_nagata_tetsuzan"
-				large="gfx/leaders/JAP/Portrait_JAP_nagata_tetsuzan.png"
+				large="gfx/leaders/JAP/JAP_yamato_junta.png"
 			}
 		}
 		advisor={
@@ -659,8 +657,7 @@ characters={
 		name=JAP_sato_kotoku
 		portraits={
 			army={
-				large="gfx/leaders/JAP/Portrait_JAP_sato_kotoku.png"
-				small="gfx/interface/ideas/JAP/advisors/idea_JAP_sato_kotoku.png"
+				large="gfx/leaders/JAP/JAP_yamato_junta.png"
 			}
 		}
 		advisor={

@@ -272,6 +272,13 @@ ideas = {
 						has_idea = CHI_failed_north_attack1
 					}
 				}
+				IF = {
+					limit = {
+						has_dlc	= "Graveyard of Empires"
+						original_tag = AFG
+					}
+					has_completed_focus = AFG_adopt_nufus
+				}	
 			}
 
 			modifier = {
@@ -521,6 +528,13 @@ ideas = {
 						has_idea = CHI_failed_north_attack1
 					}
 				}
+				IF = {
+					limit = {
+						has_dlc	= "Graveyard of Empires"
+						original_tag = AFG
+					}
+					has_completed_focus = AFG_adopt_nufus
+				}	
 				
 			}
 			ai_will_do = {
@@ -761,6 +775,13 @@ ideas = {
 						has_idea = CHI_failed_north_attack1
 					}
 				}
+				IF = {
+					limit = {
+						has_dlc	= "Graveyard of Empires"
+						original_tag = AFG
+					}
+					has_completed_focus = AFG_adopt_nufus
+				}	
 			}
 
 			ai_will_do = {
@@ -991,6 +1012,13 @@ ideas = {
 						has_idea = CHI_failed_north_attack1
 					}
 				}
+				IF = {
+					limit = {
+						has_dlc	= "Graveyard of Empires"
+						original_tag = AFG
+					}
+					has_completed_focus = AFG_adopt_nufus
+				}	
 			}
 
 			ai_will_do = {

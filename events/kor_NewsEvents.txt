@@ -1121,14 +1121,14 @@ news_event = {
 	option = {
 		name = nuke_dropped.18.a
 		trigger = {
-			NOT = { owns_state = 1015 }
+			NOT = { owns_state = 1133 }
 		}
 	}
 	
 	option = {
 		name = nuke_dropped.18.b
 		trigger = {
-			owns_state = 1015
+			owns_state = 1133
 		}
 	}
 }
@@ -1617,9 +1617,9 @@ news_event = { #부산
 	
 	trigger = {
 		NOT = {
-			1016 = { is_controlled_by = KOR }
+			1091 = { is_controlled_by = KOR }
 		}
-		1016 = { is_owned_by = KOR }
+		1091 = { is_owned_by = KOR }
 		KOR = { has_war_with = USA has_country_flag = FLAG_KOR_FASCIST_ROUTE }
 		NOT = { has_global_flag = fall_of_busan }
 	}

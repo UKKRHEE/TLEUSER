@@ -116,6 +116,13 @@ on_actions = {
 				}
 				set_global_flag = PRE_THE_NEW_ORDER_GBR
 			}
+			ENG = {
+				end_puppet = BRM
+			}
+			BRM = {
+				leave_faction = yes
+				drop_cosmetic_tag = yes
+			}
 			WZC = {
 				country_event = {
 					id = china.1089
@@ -771,9 +778,9 @@ on_actions = {
 							set_demilitarized_zone = no
 						}
 						JAP = {
-							transfer_state = 989
+							transfer_state = 1107
 						}
-						989 = {
+						1107 = {
 							set_demilitarized_zone = yes
 							set_demilitarized_zone = no
 							set_state_controller_to = KOR
@@ -1075,9 +1082,9 @@ on_actions = {
 							set_demilitarized_zone = no
 						}
 						JAP = {
-							transfer_state = 989
+							transfer_state = 1107
 						}
-						989 = {
+						1107 = {
 							set_demilitarized_zone = yes
 							set_demilitarized_zone = no
 							set_state_controller_to = KOR
@@ -1808,9 +1815,9 @@ on_actions = {
 						OR = {
 							state = 525
 							state = 527
-							state = 1014
-							state = 1015
-							state = 1016
+							state = 1132
+							state = 1133
+							state = 1091
 							state = 1017
 							state = 1018
 							state = 1019
@@ -1824,16 +1831,10 @@ on_actions = {
 						}
 					}
 				}
-				set_global_flag = GLOB_KKS_GAW_LOSE
-				every_country = {
-					limit = {
-						has_war_with = CHI
-					}
-					white_peace = CHI
-				}
 				KOR = {
-					complete_national_focus = KOR_kim_death_great_asian_war
-					complete_national_focus = KOR_kim_gaw_sunset
+					country_event = {
+						id = korea.1435
+					}
 				}
 			}	
 			if = {
@@ -2059,7 +2060,7 @@ on_actions = {
 					}
 					ZLC = {
 						transfer_state = 1051
-						transfer_state = 997
+						transfer_state = 1115
 						transfer_state = 1040
 						transfer_state = 606
 						transfer_state = 598
@@ -2141,7 +2142,7 @@ on_actions = {
 				621 = {
 					set_demilitarized_zone = yes
 				}
-				1005 = {
+				1123 = {
 					set_demilitarized_zone = yes
 				}
 				
@@ -2450,7 +2451,7 @@ on_actions = {
 								transfer_troops = yes
 							}
 							transfer_state = 1047
-							transfer_state = 1007
+							transfer_state = 1125
 							transfer_state = 605
 							transfer_state = 748
 							transfer_state = 753
@@ -3683,7 +3684,7 @@ on_actions = {
 			if = {
 				limit = {
 					is_korean_tag = yes #점령국 - 대한
-					FROM.FROM = { state = 991 } #점령 주 - 미에
+					FROM.FROM = { state = 1109 } #점령 주 - 미에
 				}
                 FROM.FROM = {
 					set_state_name = "namoaekyung"
@@ -3705,7 +3706,7 @@ on_actions = {
 			if = {
 				limit = {
 					is_japan_clique = yes #점령국 - 일본
-					FROM.FROM = { state = 991 } #점령 주 - 미에
+					FROM.FROM = { state = 1109 } #점령 주 - 미에
 				}
                 FROM.FROM = {
 					set_state_name = "minamikinki"
@@ -3727,7 +3728,7 @@ on_actions = {
 			if = {
 				limit = {
 					is_korean_tag = yes #점령국 - 대한
-					FROM.FROM = { state = 990 } #점령 주 - 간토
+					FROM.FROM = { state = 1108 } #점령 주 - 간토
 				}
                 FROM.FROM = {
 					set_state_name = "kwandong"
@@ -3745,7 +3746,7 @@ on_actions = {
 			if = {
 				limit = {
 					is_japan_clique = yes #점령국 - 일본
-					FROM.FROM = { state = 990 } #점령 주 - 간토
+					FROM.FROM = { state = 1108 } #점령 주 - 간토
 				}
                 FROM.FROM = {
 					set_state_name = "kanto"
@@ -3763,7 +3764,7 @@ on_actions = {
 			if = {
 				limit = {
 					is_korean_tag = yes #점령국 - 대한
-					FROM.FROM = { state = 989 } #점령 주 - 고치
+					FROM.FROM = { state = 1107 } #점령 주 - 고치
 				}
                 FROM.FROM = {
 					set_state_name = "city_oh"
@@ -3777,7 +3778,7 @@ on_actions = {
 			if = {
 				limit = {
 					is_japan_clique = yes #점령국 - 일본
-					FROM.FROM = { state = 989 } #점령 주 - 구레
+					FROM.FROM = { state = 1107 } #점령 주 - 구레
 				}
                 FROM.FROM = {
 					set_state_name = "kure"
@@ -3791,7 +3792,7 @@ on_actions = {
 			if = {
 				limit = {
 					is_korean_tag = yes #점령국 - 대한
-					FROM.FROM = { state = 988 } #점령 주 - 마이즈루
+					FROM.FROM = { state = 1106 } #점령 주 - 마이즈루
 				}
                 FROM.FROM = {
 					set_state_name = "muhak"
@@ -3805,7 +3806,7 @@ on_actions = {
 			if = {
 				limit = {
 					is_japan_clique = yes #점령국 - 일본
-					FROM.FROM = { state = 988 } #점령 주 - 마이즈루
+					FROM.FROM = { state = 1106 } #점령 주 - 마이즈루
 				}
                 FROM.FROM = {
 					set_state_name = "maisuru"
@@ -4457,9 +4458,9 @@ on_actions = {
 					FROM.FROM = { 
 						OR = {
 							state = 1020 
-							state = 1015
-							state = 1016 
-							state = 1014 
+							state = 1133
+							state = 1091
+							state = 1132 
 							state = 1018 
 							state = 1025 
 							state = 1026 
@@ -4497,9 +4498,9 @@ on_actions = {
 						OR = {
 							state = 525
 							state = 527
-							state = 1014
-							state = 1015
-							state = 1016
+							state = 1132
+							state = 1133
+							state = 1091
 							state = 1017
 							state = 1018
 							state = 1019

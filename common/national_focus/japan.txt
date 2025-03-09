@@ -1938,8 +1938,8 @@ focus_tree = {
 		y = 8
 			bypass = {
 					JAP = {
-							owns_state = 988
-							owns_state = 989
+							owns_state = 1106
+							owns_state = 1107
 							owns_state = 1067
 						}
 				}

@@ -78,7 +78,7 @@ country_event = {#한국의 침공
 				530 = {
 					add_dynamic_modifier = { modifier = JAP_hiroshima_defence }
 				}
-				988 = {
+				1106 = {
 					add_dynamic_modifier = { modifier = JAP_hiroshima_defence }
 				}
 				1065 = {
@@ -717,9 +717,9 @@ country_event = {
 			transfer_state = 670
 			transfer_state = 286
 			transfer_state = 741
-			transfer_state = 993
-			transfer_state = 994
-			transfer_state = 995
+			transfer_state = 1111
+			transfer_state = 1112
+			transfer_state = 1113
 		}
 	}
 }
@@ -980,12 +980,12 @@ country_event = { #내전 발발
 				set_demilitarized_zone = no
 			}
 			KPL = {
-				transfer_state = 989
-				add_state_core = 989
+				transfer_state = 1107
+				add_state_core = 1107
 			}
 			KPL = {
-				transfer_state = 988
-				add_state_core = 988
+				transfer_state = 1106
+				add_state_core = 1106
 			}
 			KPL = {
 				transfer_state = 1067
@@ -997,10 +997,10 @@ country_event = { #내전 발발
 			535 = {
 				set_demilitarized_zone = no
 			}
-			989 = {
+			1107 = {
 				set_demilitarized_zone = no
 			}
-			988 = {
+			1106 = {
 				set_demilitarized_zone = no
 			}
 			1067 = {
@@ -1012,7 +1012,7 @@ country_event = { #내전 발발
 			531 = {
 				set_demilitarized_zone = no
 			}
-			991 = {
+			1109 = {
 				set_demilitarized_zone = no
 			}
 			1065 = {
@@ -1056,7 +1056,7 @@ country_event = { #내전 발발
 			JAP = {
 				transfer_state = 1070
 				transfer_state = 531
-				transfer_state = 991
+				transfer_state = 1109
 				transfer_state = 1065
 				add_state_core = 528
 				add_state_core = 1064
@@ -1074,10 +1074,10 @@ country_event = { #내전 발발
 				add_state_core = 1071
 				add_state_core = 1068
 				add_state_core = 1067
-				add_state_core = 988
-				add_state_core = 989
-				add_state_core = 990
-				add_state_core = 991
+				add_state_core = 1106
+				add_state_core = 1107
+				add_state_core = 1108
+				add_state_core = 1109
 				every_state = {
 					limit = {
 						is_core_of = DKG
@@ -1719,7 +1719,7 @@ country_event = { #쇼와 유신
 			factor = 100
 		}
 		JAP = {
-			transfer_state = 988
+			transfer_state = 1106
 		}
 		FRA = {
 			add_political_power = 30
@@ -1758,7 +1758,7 @@ country_event = { #쇼와 유신
 			factor = 100
 		}
 		JAP = {
-			transfer_state = 989
+			transfer_state = 1107
 		}
 		ENG = {
 			add_political_power = 30
@@ -2041,7 +2041,7 @@ country_event = { #신선조 동원
 			532 = {
 				set_demilitarized_zone = yes
 			}
-			991 = {
+			1109 = {
 				set_demilitarized_zone = yes
 			}
 			529 = {

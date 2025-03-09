@@ -51,7 +51,7 @@ focus_tree = {
 				753 = {
 					set_demilitarized_zone = yes
 				}
-				1007 = {
+				1125 = {
 					set_demilitarized_zone = yes
 				}
 				605 = {

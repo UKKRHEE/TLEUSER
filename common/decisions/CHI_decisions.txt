@@ -7020,7 +7020,7 @@ CHI_sichuan_struggle = {
 			752
 			753
 			1047
-			1007
+			1125
 		}
 		on_map_mode = map_and_decisions_view
 		days_remove = 30
@@ -7137,7 +7137,7 @@ CHI_sichuan_struggle = {
 				is_core_of = ROOT
 				is_owned_and_controlled_by = ROOT
 			}
-			1007 = {
+			1125 = {
 				is_core_of = ROOT
 				is_owned_and_controlled_by = ROOT
 			}

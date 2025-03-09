@@ -103,6 +103,94 @@ DIPLOMACY_REVOKE_GUARANTEE_ENABLE_TRIGGER = {
 DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 	if = {
 		limit = {
+			has_game_rule = {
+				rule = allow_release_nations
+				option = BLOCKED
+				option = FREE
+			}
+			has_dlc = "Battle for the Bosporus"
+			OR = { 
+				original_tag = TUR
+				original_tag = SYR
+				original_tag = PER
+				original_tag = IRQ
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_RELEASE_NATIONS_BLOCKED_TOOLTIP
+			always = no
+			tooltip = RULE_ALLOW_RELEASE_NATIONS_KURDISTAN_TOOLTIP
+			NOT = { FROM = { tag = KUR } }
+		}
+	}
+
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_release_nations
+				option = FREE
+			}
+			has_dlc = "Graveyard of Empires"
+			
+			original_tag = RAJ
+			is_subject = no
+			NOT = { has_country_flag = RAJ_allow_release_states }
+			OR = {
+				 FROM = { tag = MPU }
+				 FROM = { tag = KAS }
+				 FROM = { tag = HYD }
+				 FROM = { tag = MYS }
+				 FROM = { tag = NWF }
+				 FROM = { tag = RJP }
+				 FROM = { tag = KOL }
+				 FROM = { tag = WIS }
+				 FROM = { tag = CIP }
+				 FROM = { tag = RAS }
+				 FROM = { tag = SKK }
+				 FROM = { tag = KLT } 
+				 FROM = { tag = KHL } 
+				 FROM = { tag = SIN }
+				 FROM = { tag = PAK } 
+			}
+		}
+
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_RELEASE_NATIONS_NOT_RAJ_TOOLTIP
+			NOT = { FROM = { tag = MPU } }
+			NOT = { FROM = { tag = KAS } }
+			NOT = { FROM = { tag = HYD } }
+			NOT = { FROM = { tag = MYS } }
+			NOT = { FROM = { tag = NWF } }
+			NOT = { FROM = { tag = RJP } }
+			NOT = { FROM = { tag = KOL } }
+			NOT = { FROM = { tag = WIS } }
+			NOT = { FROM = { tag = CIP } }
+			NOT = { FROM = { tag = RAS } }
+			NOT = { FROM = { tag = SKK } }
+			NOT = { FROM = { tag = KLT } }
+			NOT = { FROM = { tag = KHL } }
+			NOT = { FROM = { tag = SIN } }
+			NOT = { FROM = { tag = PAK } }
+		}
+	}
+
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_release_nations
+				option = FREE
+			}
+			has_dlc = "Graveyard of Empires"
+			
+			original_tag = RAJ
+			FROM = { tag = DIP }
+		}
+
+		NOT = { FROM = { tag = DIP } }
+	}
+	
+	if = {
+		limit = {
 			tag = KOR
 			NOT = {
 				has_country_flag = TLE_THE_WAR_IS_ENDED

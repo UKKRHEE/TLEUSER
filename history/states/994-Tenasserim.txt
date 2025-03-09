@@ -1,0 +1,21 @@
+state = {
+	id = 994
+	name = "STATE_994"
+	
+	state_category = rural
+	manpower = 136693
+	
+	history = {
+		owner = RAJ
+		add_core_of = BRM
+		victory_points = {
+			1403 3 
+		}
+	}
+
+	provinces = {
+		1296 1315 1385 1403 4275 4408 7295 10217 12125 12238 12292 
+	}
+	buildings_max_level_factor = 1.000
+	local_supplies = 0.000
+}

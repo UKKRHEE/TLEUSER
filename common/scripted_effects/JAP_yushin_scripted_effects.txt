@@ -159,9 +159,9 @@ JAP_kyoto_collapse_infantry_set = {
 					limit = {
 						is_owned_by = JAP
 						is_controlled_by = JAP
-						state = 991
+						state = 1109
 					}
-					prioritize = { 991 }
+					prioritize = { 1109 }
 					create_unit = {
 						division = "name = \"Zen Nihon Giyugun\" division_template = \"Zen Nihon Giyugun\" start_experience_factor = 0.6"
 						owner = JAP
@@ -319,9 +319,9 @@ JAP_kyoto_collapse_infantry_set = {
 					limit = {
 						is_owned_by = JAP
 						is_controlled_by = JAP
-						state = 990
+						state = 1108
 					}
-					prioritize = { 990 }
+					prioritize = { 1108 }
 					create_unit = {
 						division = "name = \"Zen Nihon Giyugun\" division_template = \"Zen Nihon Giyugun\" start_experience_factor = 0.6"
 						owner = JAP

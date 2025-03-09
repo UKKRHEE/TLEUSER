@@ -251,7 +251,7 @@ news_event = {
 			724 = {
 				add_core_of = KSI
 			}
-			993 = {
+			1111 = {
 				add_core_of = KSI
 			}
 			1088 = {
@@ -292,8 +292,8 @@ news_event = {
 				}
 			}
 			FRI = {
-				transfer_state = 994
-				transfer_state = 995
+				transfer_state = 1112
+				transfer_state = 1113
 			}
 			NML = {
 				load_focus_tree = siam_focus_4
@@ -333,7 +333,7 @@ news_event = {
 				remove_state_core = 868
 				remove_state_core = 869
 				remove_state_core = 724
-				remove_state_core = 993
+				remove_state_core = 1111
 				remove_state_core = 1088
 			}
 			NML = {
@@ -364,7 +364,7 @@ news_event = {
 				remove_state_core = 868
 				remove_state_core = 869
 				remove_state_core = 724
-				remove_state_core = 993
+				remove_state_core = 1111
 				remove_state_core = 1088
 			}
 			NML = {

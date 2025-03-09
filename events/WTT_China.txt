@@ -41,7 +41,7 @@ country_event = {
 				transfer_troops = yes
 			}
 			transfer_state = 1047
-			transfer_state = 1007
+			transfer_state = 1125
 			transfer_state = 605
 			transfer_state = 748
 			transfer_state = 753

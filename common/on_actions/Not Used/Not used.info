@@ -95,7 +95,7 @@
 					}
 					transfer_state = 606
 					transfer_state = 1040
-					transfer_state = 997
+					transfer_state = 1115
 					transfer_state = 1051
 					transfer_state = 598
 					transfer_state = 1034
@@ -147,7 +147,7 @@
 						}
 						add_core_of = MCP
 					}
-					transfer_state = 1016
+					transfer_state = 1134
 					transfer_state = 1026
 					load_oob = "MCP_HAL"
 				}
@@ -182,9 +182,9 @@
 							}
 							add_core_of = LMC
 						}
-						transfer_state = 1014
+						transfer_state = 1132
 						transfer_state = 1022
-						transfer_state = 1015
+						transfer_state = 1133
 						transfer_state = 1023
 						transfer_state = 1020
 						load_oob = "LMC_HAL"

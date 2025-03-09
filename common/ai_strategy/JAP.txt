@@ -6,6 +6,9 @@ JAP_template_design = {
 	enable = {
 		date > 1940.1.1
 	}
+	abort = {
+		always = no
+	}
 
 	ai_strategy = {
 		type = template_prio
@@ -71,7 +74,7 @@ jap_building_boats_is_great = {
 	}
 
 	abort = {
-
+		always = no
 	}
 
 	ai_strategy = {
@@ -233,6 +236,9 @@ JAP_naval_role_ratios_historical_late = {
 	enable = {
 		num_of_naval_factories > 60
 	}
+	abort = {
+		always = no
+	}
 
 	ai_strategy = {
 		type = role_ratio
@@ -361,6 +367,9 @@ JAP_area_priority = {
 	enable = {
 		always = yes
 	}
+	abort = {
+		always = no
+	}
 
 	ai_strategy = {
 		type = area_priority
@@ -428,6 +437,9 @@ JAP_you_cant_be_international = {
 	}
 	enable = {
 		always = yes
+	}
+	abort = {
+		always = no
 	}
 
 	ai_strategy = {

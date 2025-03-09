@@ -38,7 +38,7 @@ JAP_kure_naval_arsenal_organization = {
 	}
 	available = {
 		FROM = {
-			controls_state = 989
+			controls_state = 1107
 		}
 	}
 }

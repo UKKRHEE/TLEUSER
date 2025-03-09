@@ -518,11 +518,11 @@ country_event = {
 		GER = {
 			transfer_state = 39
 			transfer_state = 850
-			transfer_state = 1003
+			transfer_state = 1121
 			transfer_state = 736
 			transfer_state = 852
 			transfer_state = 853
-			transfer_state = 1002
+			transfer_state = 1120
 		}
 	}
 }

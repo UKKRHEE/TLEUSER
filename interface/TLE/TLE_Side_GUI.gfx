@@ -1,6 +1,11 @@
 spriteTypes = {
 
 	spriteType = {
+		name = "GFX_blank"
+		textureFile = "gfx/interface/blank.dds"
+	}
+
+	spriteType = {
 		name = "GFX_Side_GUI_Opener"
 		texturefile = "gfx/interface/KOR_GUI/National_Dissatisfaction/open_crt_button.png"
 		transparencecheck = yes

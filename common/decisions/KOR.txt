@@ -23,7 +23,7 @@ KOR_ilsoism_GUI_category = {
 								limit = {
 									has_country_flag = FLAG_PCY_PARTIAL_ECONOMIC_MOBILISATION
 								}
-								has_ideas = partial_economic_mobilisation
+								has_idea = partial_economic_mobilisation
 							}
 						}
 						NOT = {
@@ -34,7 +34,7 @@ KOR_ilsoism_GUI_category = {
 								limit = {
 									has_country_flag = FLAG_PCY_PARTIAL_ECONOMIC_MOBILISATION
 								}
-								has_ideas = extensive_conscription
+								has_idea = extensive_conscription
 							}
 						}
 					}
@@ -59,7 +59,7 @@ KOR_ilsoism_GUI_category = {
 								limit = {
 									has_country_flag = FLAG_PCY_PARTIAL_ECONOMIC_MOBILISATION
 								}
-								has_ideas = partial_economic_mobilisation
+								has_idea = partial_economic_mobilisation
 							}
 						}
 						NOT = {
@@ -70,7 +70,7 @@ KOR_ilsoism_GUI_category = {
 								limit = {
 									has_country_flag = FLAG_PCY_PARTIAL_ECONOMIC_MOBILISATION
 								}
-								has_ideas = extensive_conscription
+								has_idea = extensive_conscription
 							}
 						}
 					}
@@ -87,7 +87,7 @@ KOR_ilsoism_GUI_category = {
 						limit = {
 							has_country_flag = FLAG_PCY_PARTIAL_ECONOMIC_MOBILISATION
 						}
-						has_ideas = partial_economic_mobilisation
+						has_idea = partial_economic_mobilisation
 					}
 				}
 				OR = {
@@ -98,7 +98,7 @@ KOR_ilsoism_GUI_category = {
 						limit = {
 							has_country_flag = FLAG_PCY_PARTIAL_ECONOMIC_MOBILISATION
 						}
-						has_ideas = extensive_conscription
+						has_idea = extensive_conscription
 					}
 				}
 			}
@@ -139,7 +139,7 @@ KOR_ilsoism_GUI_category = {
 								limit = {
 									has_country_flag = FLAG_PCY_PARTIAL_ECONOMIC_MOBILISATION
 								}
-								has_ideas = partial_economic_mobilisation
+								has_idea = partial_economic_mobilisation
 							}
 						}
 						OR = {
@@ -150,7 +150,7 @@ KOR_ilsoism_GUI_category = {
 								limit = {
 									has_country_flag = FLAG_PCY_PARTIAL_ECONOMIC_MOBILISATION
 								}
-								has_ideas = extensive_conscription
+								has_idea = extensive_conscription
 							}
 						}
 					}
@@ -175,7 +175,7 @@ KOR_ilsoism_GUI_category = {
 								limit = {
 									has_country_flag = FLAG_PCY_PARTIAL_ECONOMIC_MOBILISATION
 								}
-								has_ideas = partial_economic_mobilisation
+								has_idea = partial_economic_mobilisation
 							}
 						}
 						OR = {
@@ -186,7 +186,7 @@ KOR_ilsoism_GUI_category = {
 								limit = {
 									has_country_flag = FLAG_PCY_PARTIAL_ECONOMIC_MOBILISATION
 								}
-								has_ideas = extensive_conscription
+								has_idea = extensive_conscription
 							}
 						}
 					}
@@ -203,7 +203,7 @@ KOR_ilsoism_GUI_category = {
 						limit = {
 							has_country_flag = FLAG_PCY_PARTIAL_ECONOMIC_MOBILISATION
 						}
-						has_ideas = partial_economic_mobilisation
+						has_idea = partial_economic_mobilisation
 					}
 				}
 				NOT = {
@@ -214,7 +214,7 @@ KOR_ilsoism_GUI_category = {
 						limit = {
 							has_country_flag = FLAG_PCY_PARTIAL_ECONOMIC_MOBILISATION
 						}
-						has_ideas = extensive_conscription
+						has_idea = extensive_conscription
 					}
 				}
 			}
@@ -340,7 +340,7 @@ KOR_ilsoism_GUI_category = {
 		fire_only_once = yes
 		highlight_states = {
 			highlight_state_targets = {
-				state = 1012
+				state = 1130
 				state = 609
 				state = 1097
 				state = 1033
@@ -357,7 +357,7 @@ KOR_ilsoism_GUI_category = {
 				state = 597
 				state = 1049
 				state = 1035
-				state = 1004
+				state = 1122
 			}
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
@@ -547,7 +547,7 @@ KOR_anti_imperialism_democratical_united_front_problem = {
 			1056
 			620
 			1048
-			1009
+			1127
 			606
 			598
 			1051
@@ -671,6 +671,16 @@ KOR_kks_clear_the_communist_category = {
 		}
 		days_remove = 10
 		cost = 60
+		ai_will_do = {
+			base = 100
+			modifier = {
+				add = 100000
+				has_game_rule = {
+					rule = KOR_ai_behavior
+					option = DEMOCRATIC_KKS
+				}
+			}
+		}
 		fire_only_once = no
 		complete_effect = {
 			country_event = {
@@ -763,6 +773,14 @@ KOR_kks_clear_the_communist_category = {
 						add = 4
 						check_variable = { KOR_dec_com_arrest_communist_count > 19 } 
 					}
+					modifier = {
+						add = 100
+						is_ai = yes
+						has_game_rule = {
+							rule = KOR_ai_behavior
+							option = DEMOCRATIC_KKS
+						}
+					}
 				}
 				80 = {
 					modifier = {
@@ -845,6 +863,14 @@ KOR_kks_clear_the_communist_category = {
 						add = -4
 						check_variable = { KOR_dec_com_arrest_communist_count > 19 } 
 					}
+					modifier = {
+						add = -100
+						is_ai = yes
+						has_game_rule = {
+							rule = KOR_ai_behavior
+							option = DEMOCRATIC_KKS
+						}
+					}
 					country_event = {
 						id = korea.1404
 					}
@@ -881,11 +907,11 @@ KOR_kks_clear_the_communist_category = {
 			highlight_state_targets = {
 				state = 525
 				state = 1018
-				state = 1014
+				state = 1132
 				state = 1022
 				state = 1026
-				state = 1016
-				state = 1015
+				state = 1091
+				state = 1133
 				state = 1023
 				state = 1020
 				state = 1021
@@ -2838,10 +2864,10 @@ KOR_four_new_life_strategies = {
 			1026 = {
 				industrial_complex > 3
 			}
-			1016 = {
+			1091 = {
 				industrial_complex > 3
 			}
-			1015 = {
+			1133 = {
 				industrial_complex > 3
 			}
 			1023 = {
@@ -3436,7 +3462,7 @@ KOR_flames_of_war = {
 		}
 		highlight_states = {
 			highlight_state_targets = {
-				state = 1012
+				state = 1130
 				state = 609
 				state = 1097
 				state = 608
@@ -3547,7 +3573,7 @@ KOR_flames_of_war = {
 			highlight_state_targets = {
 				state = 743
 				state = 1034
-				state = 1004
+				state = 1122
 				state = 1035
 			}
 			highlight_color_while_active = 3
@@ -5184,8 +5210,8 @@ KOR_third_plan_doryun = {
 				state = 1092
 				state = 288
 				state = 1091
-				state = 992
-				state = 1076
+				state = 993
+				state = 994
 			}
 		}
 		available = {
@@ -7747,9 +7773,9 @@ KOR_nuke_surrend = {
 				OR = {
 					controls_state = 525
 					controls_state = 527
-					controls_state = 1014
-					controls_state = 1015
-					controls_state = 1016
+					controls_state = 1132
+					controls_state = 1133
+					controls_state = 1091
 					controls_state = 1017
 					controls_state = 1018
 					controls_state = 1019
@@ -7868,11 +7894,11 @@ KOR_revolutionary_war = {
 				size > 0
 			}
 			divisions_in_state = {
-				state = 1014	
+				state = 1132	
 				size > 0
 			}
 			divisions_in_state = {
-				state = 1015	
+				state = 1133	
 				size > 0
 			}
 			divisions_in_state = {
@@ -7953,11 +7979,11 @@ KOR_revolutionary_war = {
 				size > 0
 			}
 			divisions_in_state = {
-				state = 1014	
+				state = 1132	
 				size > 0
 			}
 			divisions_in_state = {
-				state = 1016
+				state = 1091
 				size > 0
 			}
 			divisions_in_state = {
@@ -8030,7 +8056,7 @@ KOR_revolutionary_war = {
 			factor = 1000
 		}	
 		highlight_states = {
-			highlight_state_targets = { state = 1014 } 
+			highlight_state_targets = { state = 1132 } 
 		}
 		
 		available = {
@@ -8039,7 +8065,7 @@ KOR_revolutionary_war = {
 					is_ai = no
 				}
 				divisions_in_state = {
-					state = 1014	
+					state = 1132	
 					size > 3
 				}
 				divisions_in_state = {
@@ -8092,7 +8118,7 @@ KOR_revolutionary_war = {
 
 		remove_effect = {
 			set_country_flag = DEC_CONTROL_CHUNGCHEONG
-			1014 = {
+			1132 = {
 				remove_dynamic_modifier = { modifier = KOR_army_resistance_modifier }
 			}
 			1022 = {
@@ -8116,7 +8142,7 @@ KOR_revolutionary_war = {
 			factor = 1000
 		}	
 		highlight_states = {
-			highlight_state_targets = { state = 1015 } 
+			highlight_state_targets = { state = 1133 } 
 		}
 		
 		available = {
@@ -8125,7 +8151,7 @@ KOR_revolutionary_war = {
 					is_ai = no
 				}
 				divisions_in_state = {
-					state = 1015
+					state = 1133
 					size > 3
 				}
 				divisions_in_state = {
@@ -8169,7 +8195,7 @@ KOR_revolutionary_war = {
 		}	
 
 		remove_effect = {
-			1015 = {
+			1133 = {
 				remove_dynamic_modifier = { modifier = KOR_army_resistance_modifier }
 			}
 			1023 = {
@@ -8194,7 +8220,7 @@ KOR_revolutionary_war = {
 			factor = 1000
 		}	
 		highlight_states = {
-			highlight_state_targets = { state = 1016 } 
+			highlight_state_targets = { state = 1091 } 
 		}
 		
 		available = {
@@ -8203,7 +8229,7 @@ KOR_revolutionary_war = {
 					is_ai = no
 				}
 				divisions_in_state = {
-					state = 1016
+					state = 1091
 					size > 3
 				}
 				divisions_in_state = {
@@ -8248,7 +8274,7 @@ KOR_revolutionary_war = {
 
 		remove_effect = {
 			set_country_flag = DEC_CONTROL_GYEONGSANG
-			1016 = {
+			1091 = {
 				remove_dynamic_modifier = { modifier = KOR_army_resistance_modifier }
 			}
 			1026 = {

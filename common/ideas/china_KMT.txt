@@ -18,7 +18,6 @@ ideas = {
 				political_power_factor = -0.25
 				consumer_goods_expected_value = -0.05
 				industrial_capacity_factory = -0.9
-				industrial_capacity_factory = -0.9
 			}
 		}
 		KMT_commissars_idea = {

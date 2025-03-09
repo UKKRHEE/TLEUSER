@@ -1025,8 +1025,6 @@ ideas = {
 				defense_bonus_against = 3
 			}
 			modifier = {
-				# cavalry_speed_factor = 0.5 #호이 본편에서 고장나서 작동 안하고 오류뿜음 병신겜
-				army_infantry_speed_factor = 0.5
 				supply_consumption_factor = -0.5
 				army_org_Factor = 0.35
 				army_morale_factor = 0.35
@@ -1619,7 +1617,6 @@ ideas = {
 			
 			modifier = {
 			    conscription_factor = 0.05
-				army_attack_factor = 0.1
 				army_attack_factor = 0.1
 			}
 

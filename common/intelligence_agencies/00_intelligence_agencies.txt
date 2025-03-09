@@ -261,6 +261,235 @@ intelligence_agency = {
 	available = { original_tag = BUL }
 }
 
+
+intelligence_agency = {
+
+	picture = GFX_intelligence_agency_logo_HUN_IH
+	names = { "VKF 2" } # Információs Hivatal
+	
+	default = { 
+		tag = HUN 
+		NOT = { has_government = communism }
+		NOT = { has_completed_focus = wuw_HUN_the_lands_of_the_crown_of_saint_stephen }
+	} 
+	available = { 
+		original_tag = HUN 
+		NOT = { has_government = communism }
+	}
+}
+
+intelligence_agency = {
+	
+	picture = GFX_intelligence_agency_logo_HUN_AVH
+	names = { "Államvédelmi Hatóság" }
+	
+	default = { 
+		tag = HUN 
+		has_government = communism
+	} 
+	available = { 
+		original_tag = HUN 
+		has_government = communism
+	}
+}
+
+intelligence_agency = {
+	
+	picture = GFX_intelligence_agency_logo_AUS_evidenzbureau
+	names = { "Evidenzbureau" }
+	
+	default = { 
+		tag = HUN
+		has_completed_focus = wuw_HUN_the_lands_of_the_crown_of_saint_stephen
+	} 
+	available = { 
+		original_tag = HUN
+		has_completed_focus = wuw_HUN_the_lands_of_the_crown_of_saint_stephen
+	}
+}
+
+intelligence_agency = {
+	
+	picture = GFX_intelligence_agency_logo_BRA_communist
+	names = { "EICI" }
+	
+	available = { 
+		tag = BRA
+		has_government = communism
+	}
+	
+	default = { 		
+		tag = BRA
+		has_government = communism
+	}
+}
+
+intelligence_agency = {
+	
+	picture = GFX_intelligence_agency_logo_AUS_evidenzbureau
+	names = { "Evidenzbureau" }
+	
+	default = { 
+		tag = AUS
+	} 
+	available = { 
+		original_tag = AUS
+	}
+}
+
+intelligence_agency = { 
+	
+	picture = GFX_intelligence_agency_logo_AUS_dsn
+	names = { "Direktion Staatsschutz und Nachrichtendienst" }
+
+	default = { 
+		tag = AUS
+		has_completed_focus = AUS_the_right_to_rearm
+	}
+
+	available = {
+		tag = AUS
+		has_completed_focus = AUS_the_right_to_rearm
+	}
+}
+
+intelligence_agency = {
+
+	picture = GFX_intelligence_agency_logo_BRA_neutrality
+	names = { "Departamento de Ordem" }
+	
+	available = { 
+		tag = BRA
+		NOT = { has_government = communism }
+	}
+	
+	default = { 		
+		tag = BRA
+		NOT = { has_government = communism }
+	} 
+}
+
+intelligence_agency = {
+	
+	picture = GFX_intelligence_agency_logo_ARG_intelligence
+	names = { "S.I." }
+	
+	default = { tag = ARG }
+	available = { original_tag = ARG }
+}
+
+intelligence_agency = {
+
+	picture = GFX_intelligence_agency_logo_COG_snip
+	names = { "Service National d'Identification et de Protection" }
+	
+	default = { 
+		tag = COG 
+		is_subject = yes
+	} 
+	available = { 
+		original_tag = COG 
+	}
+}
+
+intelligence_agency = {
+	
+	picture = GFX_intelligence_agency_logo_COG_anr
+	names = { "Service National d'Intelligence et de Protection" }
+	
+	default = { 
+		tag = COG 
+		is_subject = no
+	} 
+	available = { 
+		original_tag = COG 
+	}
+}
+
+intelligence_agency = {
+
+	picture = GFX_intelligence_agency_logo_IRQ_DGS # TODO_ASD: should be intelligence_agency_logo_IRQ_DGS !!!
+	names = { "Mudiria al-Amn al-'Amm" } # The Directorate of General Security (DGS)
+	
+	default = { 
+		tag = IRQ 
+		has_war = no
+	} 
+	available = { 
+		original_tag = IRQ 
+	}
+}
+
+intelligence_agency = {
+
+	picture = GFX_intelligence_agency_logo_IRQ_DGMI 
+	names = { "Mudiriyyat al-Istikhabarat al-'Askariyya al-'Amma" } 
+	
+	default = { 
+		tag = IRQ 
+		has_war = yes
+	} 
+	available = { 
+		original_tag = IRQ 
+	}
+}
+
+intelligence_agency = {
+
+	picture = GFX_intelligence_agency_logo_AFG_neutrality
+	names = { "Istikhbarat" } 
+	
+	default = { 
+		tag = AFG 
+	} 
+	available = { 
+		original_tag = AFG 
+		has_government = neutrality
+	}
+}
+
+intelligence_agency = {
+
+	picture = GFX_intelligence_agency_logo_AFG_communism
+	names = { "KHAD" } 
+	
+	default = { 
+		tag = AFG 
+	} 
+	available = { 
+		original_tag = AFG 
+		has_government = communism
+	}
+}
+
+intelligence_agency = {
+
+	picture = GFX_intelligence_agency_logo_AFG_democratic
+	names = { "National Directorate of Security" } 
+	
+	default = { 
+		tag = AFG 
+	} 
+	available = { 
+		original_tag = AFG 
+		has_government = democratic
+	}
+}
+
+intelligence_agency = {
+
+	picture = GFX_intelligence_agency_logo_PER_savak
+	names = { "SAVAK" } 
+	
+	default = { 
+		tag = PER 
+	} 
+	available = { 
+		original_tag = PER 
+		NOT = { has_government = communism }
+	}
+}
+
 intelligence_agency = {
 	
 	picture = GFX_agency_logo_eth_fetno_derash

@@ -51,11 +51,11 @@ country_event = {
 		BRG = {
 			transfer_state = 17
 			transfer_state = 18
-			transfer_state = 985
+			transfer_state = 1092
 			transfer_state = 29
 			add_state_core = 17
 			add_state_core = 18
-			add_state_core = 985
+			add_state_core = 1092
 			add_state_core = 29
 		}
 		if = {
@@ -287,7 +287,7 @@ country_event = {
 		}
 		ai_chance = { factor = 0 }
 		GER = {
-			transfer_state = 999
+			transfer_state = 1117
 			puppet = BG1
 			country_event = {
 				id = TLE_Germany.11
@@ -329,7 +329,7 @@ country_event = {
 		18 = {
 			set_demilitarized_zone = yes
 		}
-		985 = {
+		1092 = {
 			set_demilitarized_zone = yes
 		}
 	}

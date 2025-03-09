@@ -634,7 +634,7 @@ characters={
 		name = "LMC_yi_hyung"
 		portraits={
 			civilian={
-				large="gfx/leaders/HALLOWEEN/LMC/Portrait_LMC_yi_hyung.png"
+				large="gfx/leaders/HALLOWEEN/LMC/Portrait_LMC_yi_jaehwang.png"
 			}
 		}
 		country_leader={

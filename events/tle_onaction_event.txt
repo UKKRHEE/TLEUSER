@@ -589,7 +589,7 @@ country_event = {
 			is_puppet_of = ITA
 		}
 		ITA = {
-			owns_state = 1000
+			owns_state = 1118
 			owns_state = 970
 		}
 	}
@@ -597,7 +597,7 @@ country_event = {
 	option = { #
 		name = tle_onaction.1.a
 		ALB = {
-			transfer_state = 1000
+			transfer_state = 1118
 			transfer_state = 970
 		}
 	}
@@ -627,7 +627,7 @@ country_event = {
 		name = tle_onaction.1.a
 		CRO = {
 			transfer_state = 103
-			transfer_state = 1001
+			transfer_state = 1119
 		}
 	}
 	
@@ -857,14 +857,14 @@ country_event = {
             owns_state = 95
             owns_state = 94
             NOT = {
-                owns_state = 984
+                owns_state = 1090
 		    }
 	    }
     }
 	option = { #
 		name = tle_onaction.1.a
         SOV = {
-			transfer_state = 984
+			transfer_state = 1090
 		}
     }
 }
@@ -1099,7 +1099,14 @@ country_event = {
 		KOR = {
 			has_country_flag = FLAG_KKS_ROUTE
 			has_war_with = CHI
-			has_completed_focus = KOR_kim_death_great_asian_war
+			if = {
+				limit = {
+					NOT = {
+						has_completed_focus = KOR_kim_death_great_asian_war
+					}
+				}	
+				complete_national_focus = KOR_kim_death_great_asian_war
+			}
 		}
 		has_global_flag = FLAG_KOR_DEM_GREAT_ASIAN_WAR
 		NOT = {
@@ -1214,7 +1221,7 @@ country_event = {
 			set_country_flag = ALB_TRS_YES
 			transfer_state = 970
 			transfer_state = 802
-			transfer_state = 1000
+			transfer_state = 1118
 		}	
 	}
 }
@@ -1231,7 +1238,7 @@ country_event = {
         has_global_flag = TLE_soviet_union_defeat
         GER = {
             owns_state = 28
-            owns_state = 987
+            owns_state = 1105
 	    }
         NOT = {
             owns_state = 16
@@ -1313,7 +1320,7 @@ country_event = {
 		}
         HUN = {
 			transfer_state = 45
-			transfer_state = 983
+			transfer_state = 1076
 		}
         CRO = {
 			transfer_state = 109
@@ -1323,7 +1330,7 @@ country_event = {
 		}
         ITA = {
 			transfer_state = 853
-			transfer_state = 1002
+			transfer_state = 1120
 			transfer_state = 105
 			transfer_state = 1001
 		}
@@ -1336,7 +1343,7 @@ country_event = {
 				owns_state = 44
 			}
 			transfer_state = 802
-			transfer_state = 1000
+			transfer_state = 1118
 			transfer_state = 970
 		}
         
@@ -2178,18 +2185,18 @@ country_event = {
         FRA = {
             owns_state = 670
             NOT = {
-                owns_state = 993
-                owns_state = 994
-                owns_state = 995
+                owns_state = 1111
+                owns_state = 1112
+                owns_state = 1113
 		    }
 	    }
     }
 	option = { #
 		name = tle_onaction.1.a
         FRA = {
-			transfer_state = 993
-			transfer_state = 994
-			transfer_state = 995
+			transfer_state = 1111
+			transfer_state = 1112
+			transfer_state = 1113
 		}
     }
 }
@@ -4495,9 +4502,9 @@ country_event = {
 				OR = {
 					state = 525
 					state = 527
-					state = 1014
-					state = 1015
-					state = 1016
+					state = 1132
+					state = 1133
+					state = 1091
 					state = 1017
 					state = 1018
 					state = 1019
@@ -5088,7 +5095,7 @@ country_event = {
 			transfer_state = 102
 			transfer_state = 736
 			transfer_state = 852
-			transfer_state = 983
+			transfer_state = 1076
 			end_puppet = SOV
 			leave_faction = yes
 		}
@@ -6203,14 +6210,14 @@ country_event = {
         KPL = {
             exists = no
 	    }
-        989 = {
+        1107 = {
             is_core_of = KPL
 	    }
     }
 	option = { #
 		name = tle_onaction.1.a
         KPL = {
-			remove_state_core = 989
+			remove_state_core = 1107
 		}
     }
 }
@@ -6226,14 +6233,14 @@ country_event = {
         KPL = {
             exists = no
 	    }
-        988 = {
+        1106 = {
             is_core_of = KPL
 	    }
     }
 	option = { #
 		name = tle_onaction.1.a
         KPL = {
-			remove_state_core = 988
+			remove_state_core = 1106
 		}
     }
 }
@@ -7365,9 +7372,9 @@ country_event = {
 	option = { #
 		name = tle_onaction.1.a
 		KPL = {
-			transfer_state = 989
+			transfer_state = 1107
 			transfer_state = 1067
-			transfer_state = 988
+			transfer_state = 1106
 			
 		}
 		JAP = {
@@ -7607,7 +7614,7 @@ country_event = {
 				NOT = {
 					is_core_of = HUN
 				}
-				is_controlled_by = HUN
+				is_fully_controlled_by = HUN
 			}
 			set_state_controller_to = GER
 		}
@@ -7639,7 +7646,7 @@ country_event = {
 					is_core_of = POL
 					is_core_of = SOV
 				}
-				is_controlled_by = ROM
+				is_fully_controlled_by = ROM
 				NOT = {
 					state = 192
 				}
@@ -7670,10 +7677,16 @@ country_event = {
 			is_ai = yes
 			has_government = fascism
 			has_war_with = SOV
-			OR = {
-				controls_state = 192
-				controls_state = 198
-				controls_state = 834
+		}
+		OR = {
+			192 = {
+				is_fully_controlled_by = GER
+			}
+			198 = {
+				is_fully_controlled_by = GER
+			}
+			834 = {
+				is_fully_controlled_by = GER
 			}
 		}
 		ROM = {
@@ -7740,16 +7753,13 @@ country_event = {
 				is_puppet_of = ENG
 				OR = {
 					has_cosmetic_tag = RAJ_FREE
-					has_cosmetic_tag = RAJ_UK_autonomy_dominion
+					has_cosmetic_tag = RAJ_FREETNO
 				}
 			}
 		}
 	}
 	option = {
 		name = tle_onaction.1.a
-		RAJ = {
-			set_cosmetic_tag = RAJ_FREE
-		}
 	}
 }
 country_event = {
@@ -7948,16 +7958,13 @@ country_event = {
 			rule = TLE_GER_GREAT_RULE
 			option = TLE_GER_GREAT_RULE_DEFAULT
 		}
-		KOR = {
-			has_country_flag = FLAG_PCY_ROUTE
-		}
         GER = {
             is_ai = yes
             has_war_with = SOV
 	    }
         SOV = {
             is_ai = yes
-			surrender_progress > 0.25
+			surrender_progress > 0.40
 		}
     }
 	option = { #
@@ -7996,7 +8003,7 @@ country_event = {
 				NOT = {
 					is_claimed_by = SIA
 				}
-				is_controlled_by = SIA
+				is_fully_controlled_by = SIA
 			}
 			set_state_controller_to = KOR
 		}
@@ -8029,7 +8036,7 @@ country_event = {
 					is_core_of = SIA
 					is_claimed_by = SIA
 				}
-				is_controlled_by = KOR
+				is_fully_controlled_by = KOR
 			}
 			set_state_controller_to = SIA
 		}
@@ -8175,7 +8182,7 @@ country_event = {
 			transfer_state = 1052
 			transfer_state = 615
 			transfer_state = 1099
-			transfer_state = 996
+			transfer_state = 1114
 			transfer_state = 744
 			load_oob = "SHX_nasang_break"
 		}	

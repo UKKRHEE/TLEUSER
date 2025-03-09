@@ -168,9 +168,9 @@ SIA_indochinesewar_category = {
 				SIA = {
 					white_peace = FRI
 					transfer_state = 670
-					transfer_state = 993
-					transfer_state = 994
-					transfer_state = 995
+					transfer_state = 1111
+					transfer_state = 1112
+					transfer_state = 1113
 					transfer_state = 741
 					puppet = CAM
 					puppet = VIN
@@ -290,12 +290,12 @@ SIA_lebensraum_category = {
 		
 		highlight_states = {
 			highlight_state_targets = {
-				state = 993
+				state = 1111
 			}
 		}
 
 		available = {
-			controls_state = 993
+			controls_state = 1111
 		}
 		
 		cost = 50
@@ -309,7 +309,7 @@ SIA_lebensraum_category = {
 		days_remove = 180
 
 		remove_effect = {
-			993 = { add_core_of = ROOT }
+			1111 = { add_core_of = ROOT }
 		}
 		
 		ai_will_do = {
@@ -326,12 +326,12 @@ SIA_lebensraum_category = {
 		
 		highlight_states = {
 			highlight_state_targets = {
-				state = 994
+				state = 1112
 			}
 		}
 		
 		available = {
-			controls_state = 994
+			controls_state = 1112
 		}
 		
 		cost = 50
@@ -345,7 +345,7 @@ SIA_lebensraum_category = {
 		days_remove = 180
 
 		remove_effect = {
-			994 = { add_core_of = ROOT }
+			1112 = { add_core_of = ROOT }
 		}
 		
 		ai_will_do = {
@@ -361,12 +361,12 @@ SIA_lebensraum_category = {
 			
 		highlight_states = {
 			highlight_state_targets = {
-				state = 995
+				state = 1113
 			}
 		}
 
 		available = {
-			controls_state = 995
+			controls_state = 1113
 		}
 		
 		cost = 50
@@ -380,7 +380,7 @@ SIA_lebensraum_category = {
 		days_remove = 180
 
 		remove_effect = {
-			995 = { add_core_of = ROOT }
+			1113 = { add_core_of = ROOT }
 		}
 		
 		ai_will_do = {
@@ -431,12 +431,12 @@ SIA_lebensraum_category = {
 		
 		highlight_states = {
 			highlight_state_targets = {
-				state = 1076
+				state = 994
 			}
 		}
 
 		available = {
-			controls_state = 1076
+			controls_state = 994
 		}
 		
 		cost = 50
@@ -450,7 +450,7 @@ SIA_lebensraum_category = {
 		days_remove = 180
 
 		remove_effect = {
-			1076 = { add_core_of = ROOT }
+			994 = { add_core_of = ROOT }
 		}
 		
 		ai_will_do = {
@@ -466,12 +466,12 @@ SIA_lebensraum_category = {
 		
 		highlight_states = {
 			highlight_state_targets = {
-				state = 992
+				state = 993
 			}
 		}
 
 		available = {
-			controls_state = 992
+			controls_state = 993
 		}
 		
 		cost = 50
@@ -485,7 +485,7 @@ SIA_lebensraum_category = {
 		days_remove = 180
 
 		remove_effect = {
-			992 = { add_core_of = ROOT }
+			993 = { add_core_of = ROOT }
 		}
 		
 		ai_will_do = {
@@ -501,13 +501,13 @@ SIA_lebensraum_category = {
 		
 		highlight_states = {
 			highlight_state_targets = {
-				state = 995
+				state = 1113
 			}
 		}
 
 		available = {
 			has_completed_focus = siam_39
-			controls_state = 995
+			controls_state = 1113
 			OR = {
 				has_country_leader = {
 					character = SIA_plaek_phibunsongkhram_old
@@ -529,7 +529,7 @@ SIA_lebensraum_category = {
 		}
 
 		complete_effect = {
-			995 = {
+			1113 = {
 				set_state_name = "STATE_PHIBUN"
 			}
 			set_province_name = {
@@ -551,12 +551,12 @@ SIA_lebensraum_category = {
 
 		available = {
 			has_completed_focus = siam_40
-			controls_state = 993
-			controls_state = 994
-			controls_state = 995
+			controls_state = 1111
+			controls_state = 1112
+			controls_state = 1113
 			controls_state = 1075
 			controls_state = 1076
-			controls_state = 992
+			controls_state = 993
 		}
 		
 		cost = 50

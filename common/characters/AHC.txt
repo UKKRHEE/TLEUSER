@@ -69,9 +69,6 @@ characters={
 	AHC_zhang_zuolin = {
 		name = AHC_zhang_zuolin
 		portraits = {
-			army = {
-				small = "gfx/interface/advisors/FNG/FNG_zhang_zuolin.png"
-			}
 			civilian = {
 				large = "gfx/leaders/FNG/Portrait_FNG_Zhang_Zuolin.tga"
 			}
@@ -94,9 +91,6 @@ characters={
 	AHC_zhang_xueliang = {
 		name = FNG_zhang_xueliang
 		portraits = {
-			civilian = {
-				large = "gfx/leaders/FNG/Portrait_FNG_Zhang_Xueliang.png"
-			}
 			army = {
 				small = "gfx/interface/advisors/FNG/FNG_zhang_xueliang.png"
 				large = "gfx/leaders/FNG/Portrait_FNG_Zhang_Xueliang_Army.png"

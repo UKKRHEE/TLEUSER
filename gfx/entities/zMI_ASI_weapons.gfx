@@ -63,14 +63,14 @@ objectTypes = {
 #####################
 
 entity = {
-	name = "MI_INS_infantry_weapon_mg_MP28_left_entity"
-	pdxmesh = "MI_INS_infantry_weapon_mg_MP28_mesh"
+	name = "MI_KOR_infantry_weapon_mg_MP28_left_entity"
+	pdxmesh = "MI_KOR_infantry_weapon_mg_MP28_mesh"
 	scale = 1.0
 }
 	
 entity = {
-	name = "MI_INS_infantry_weapon_mg_MP28_right_entity"
-	pdxmesh = "MI_INS_infantry_weapon_mg_MP28_mesh"
+	name = "MI_KOR_infantry_weapon_mg_MP28_right_entity"
+	pdxmesh = "MI_KOR_infantry_weapon_mg_MP28_mesh"
 	scale = 1.0
 	
 	get_state_from_parent = yes
@@ -98,7 +98,7 @@ entity = {
 }
 
 entity = {
-	name = "MI_INS_infantry_weapon_mg_MP28_long_idle_entity"
-	pdxmesh = "MI_INS_infantry_weapon_mg_MP28_mesh"
+	name = "MI_KOR_infantry_weapon_mg_MP28_long_idle_entity"
+	pdxmesh = "MI_KOR_infantry_weapon_mg_MP28_mesh"
 	scale = 1.0
 }

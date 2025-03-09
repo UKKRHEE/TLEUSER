@@ -44,6 +44,11 @@
  china_nationalist_focus:0 "중화민국 북양정부 중점 계통도"
  korean_socialist_empire_focus:0 "대한 사회주의 제국 중점 계통도"
  
+ RAJ_provincial_autonomy:0 "인도양 위의 태양"
+ RAJ_purna_swaraj:0 "독립의 길을 향해"
+ TLE_RAJ_indian_independence_act_flag:0 "§G아대륙이 평안해졌습니다.§!"
+ TLE_RAJ_indian_independence_act_tooltip:0 "§Y인도 공화국§!과 §Y파키스탄 이슬람 공화국§!이 건국됩니다."
+ 
  mtg_netherlands.11.t:0 "동인도제도에 관심을 가지는 한국"
  
  RAJ_japanese_army_air_force_academy:0 "한국 육군항공사관학교"

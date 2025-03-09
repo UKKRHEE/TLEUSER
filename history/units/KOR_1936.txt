@@ -242,7 +242,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 13373
+		location = 13405
 		division_template = "보병사단"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0

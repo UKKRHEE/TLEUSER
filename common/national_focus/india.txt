@@ -11,53 +11,51 @@ focus_tree = {
 	
 	country = {
 		factor = 0
-		
-		modifier = {
-			add = 10
-			tag = RAJ
-			has_dlc = "Together for Victory"
-		}
 	}
 	
 	default = no
 
 
 
-#	focus = {
-#		id = RAJ_
-#		icon = GFX_
-#		prerequisite = { focus = }
-#		mutually_exclusive = { focus =  }
-#		x = -3
-#		y = 0
-#		relative_position_id = 
+	#focus = {
+	#	id = RAJ_
+	#	#icon = GFX_
+	#	#prerequisite = { focus = }
+	#	#mutually_exclusive = { focus =  }
+	#	x = 0
+	#	y = 0
+	#	#relative_position_id = 
 #
-#		cost = 10
+	#	cost = 10
 #
-#		ai_will_do = {
-#			factor = 1
-#		}
+	#	ai_will_do = {
+	#		factor = 1
+	#	}
 #
-#		available = {
+	#	available = {
 #
-#		}
-#		
-#		bypass = {
+	#	}
+	#	
+	#	bypass = {
 #
-#		}
+	#	}
 #
-#		cancel_if_invalid = yes
-#		continue_if_invalid = no
-#		available_if_capitulated = no
+	#	cancel_if_invalid = yes
+	#	continue_if_invalid = no
+	#	available_if_capitulated = no
 #
-#		complete_tooltip = {
+	#	complete_tooltip = {
 #
-#		}
+	#	}
 #
-#		completion_reward = {
+	#	completion_reward = {
 #
-#		}
-#	}
+	#	}
+	#}
+
+
+ 
+
 
 
 	############################
@@ -77,9 +75,6 @@ focus_tree = {
 		}
 
 		available = {
-			RAJ = {
-				is_ai = no
-			}
 			OR = {
 				AND = {
 					threat > 0.1
@@ -457,6 +452,9 @@ focus_tree = {
 						ideology = neutrality
 						popularity = 0.15
 					}
+					set_variable = { RAJ_agrarian_society_increment = RAJ.RAJ_agrarian_society_increment }
+					set_variable = { RAJ_agrarian_society_value = RAJ.RAJ_agrarian_society_value }
+					add_dynamic_modifier = { modifier = RAJ_agrarian_society_dynamic }
 					ENG = { add_to_faction = PREV }
 				}						
 			}
@@ -590,11 +588,11 @@ focus_tree = {
 			add_corps_commander_role = {
 				character = RAJ_lakshmi_sahgal
 				traits = { }
-				skill = 3
+				skill = 5
 				female = yes
-				attack_skill = 3
+				attack_skill = 4
 				defense_skill = 2
-				planning_skill = 3
+				planning_skill = 4
 				logistics_skill = 2
 			}
 			division_template = {
@@ -923,6 +921,9 @@ focus_tree = {
 						ideology = neutrality
 						popularity = 0.15
 					}
+					set_variable = { RAJ_agrarian_society_increment = RAJ.RAJ_agrarian_society_increment }
+					set_variable = { RAJ_agrarian_society_value = RAJ.RAJ_agrarian_society_value }
+					add_dynamic_modifier = { modifier = RAJ_agrarian_society_dynamic }
 					ENG = { add_to_faction = PREV }
 				}					
 			}
@@ -1036,7 +1037,7 @@ focus_tree = {
 		available = {
 			OR = {
 				is_in_faction_with = GER
-				is_in_faction_with = KOR
+				is_in_faction_with = JAP
 			}
 			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
@@ -1074,7 +1075,7 @@ focus_tree = {
 		available = {
 			OR = {
 				is_in_faction_with = GER
-				is_in_faction_with = KOR
+				is_in_faction_with = JAP
 			}
 			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
@@ -1091,9 +1092,13 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {	
 			air_experience = 25
+			add_breakthrough_progress = {
+				specialization = specialization_air
+				value = 0.5
+			}
 			add_tech_bonus = {
 				name = RAJ_japanese_army_air_force_academy
-				bonus = 3.0
+				bonus = 2 # was 3
 				uses = 1
 				category = light_fighter
 				category = cas_bomber
@@ -1417,6 +1422,7 @@ focus_tree = {
 						type = ship_hull_cruiser_2
 						name_group = RAJ_CL_HISTORICAL
 						parent_version = 0
+						allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
 						modules = {
 							fixed_ship_battery_slot = ship_light_medium_battery_2
 							fixed_ship_anti_air_slot = ship_anti_air_1
@@ -1459,7 +1465,7 @@ focus_tree = {
 							basic_torpedo = 1
 							basic_medium_battery = 1
 						}
-						navy_experience = 20
+						navy_experience = 50
 						custom_effect_tooltip = RAJ_navy_funding_effect
 					}
 				}
@@ -1501,11 +1507,11 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			army_experience = 20
+			army_experience = 30
 			add_tech_bonus = {
 				name = RAJ_british_army_support
 				bonus = 1.0
-				uses = 1
+				uses = 2
 				category = support_tech
 			}
 		}
@@ -1922,6 +1928,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
 			add_ideas = RAJ_lions_of_the_great_war
+			army_experience = 30
 			custom_effect_tooltip = RAJ_create_unit_sikh_tt
 			hidden_effect = {
 
@@ -2179,8 +2186,8 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			custom_effect_tooltip = RAJ_revive_the_screw_guns_effect
-			hidden_effect = { set_technology = { mountain_gun = 1 } }
+			custom_effect_tooltip = mountain_guns_tt
+			hidden_effect = { set_technology = { mountain_gun = 1 popup = no } }
 		}
 	}
 
@@ -2216,6 +2223,10 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			add_breakthrough_progress = {
+				specialization = specialization_land
+				value = 0.5
+			}
 			add_tech_bonus = {
 				name = RAJ_indian_armor
 				bonus = 1.0
@@ -2542,6 +2553,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			air_experience = 25
+			add_breakthrough_progress = {
+				specialization = specialization_air
+				value = 0.25
+			}
 			add_doctrine_cost_reduction = {
 				name = RAJ_royal_indian_air_force
 				cost_reduction = 0.5
@@ -2587,12 +2602,31 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			add_tech_bonus = {
-				name = RAJ_the_smiling_buddha
-				bonus = 3.0
-				uses = 1
-				category = nuclear
+			
+			if = {
+				limit = {
+					NOT = {
+						has_tech = atomic_research
+					}
+				}
+				add_tech_bonus = {
+					name = RAJ_the_smiling_buddha
+					bonus = 3.0
+					uses = 1
+					category = nuclear
+				}
+				add_breakthrough_progress = {
+					specialization = specialization_nuclear
+					value = 0.5
+				}
 			}
+			else = {
+				add_breakthrough_progress = {
+					specialization = specialization_nuclear
+					value = 1
+				}
+			}
+
 		}
 	}
 
@@ -2783,9 +2817,17 @@ focus_tree = {
 			432 = {
 				add_resource = {
 					type = oil
-					amount = 3
+					amount = 12
 				}
 			}
+
+            add_tech_bonus = {
+            	name = RAJ_assam_oil
+                bonus = 1
+                uses = 1
+                category = synth_resources # optional 
+                # technology  = technology_id # optional
+            }
 		}
 	}
 
@@ -2852,14 +2894,35 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+
+			if = {
+				limit = {
+					NOT = {
+						has_tech = atomic_research
+					}
+				}
+				add_tech_bonus = {
+					name = RAJ_institute_of_fundamental_research
+					bonus = 1.0
+					uses = 1
+					category = nuclear
+				}
+				add_breakthrough_progress = {
+					specialization = specialization_nuclear
+					value = 0.25
+				}
+			}
+			else = {
+				add_breakthrough_progress = {
+					specialization = specialization_nuclear
+					value = 0.75
+				}
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			custom_effect_tooltip = available_theorist
 			show_ideas_tooltip = RAJ_homi_j_bhabha
-			add_tech_bonus = {
-				name = RAJ_institute_of_fundamental_research
-				bonus = 1.0
-				uses = 1
-				category = nuclear
-			}
 		}
 	}
 
@@ -2942,17 +3005,17 @@ focus_tree = {
 				limit = {
 					has_state_flag = RAJ_expand_mazagon_dock
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 				if = {
 					limit = { has_state_flag = RAJ_expand_mazagon_dock_NB }
 					add_building_construction = {
 						type = naval_base
-						level = 1
+						level = 2
 						instant_build = yes
 						province = 1349
 					}
@@ -2961,7 +3024,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			navy_experience = 5
+			navy_experience = 50
 			random_owned_controlled_state = {
 				prioritize = { 429 }
 				limit = {
@@ -2972,10 +3035,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = RAJ_expand_mazagon_dock
@@ -2983,7 +3046,7 @@ focus_tree = {
 					limit = { state = 429 }
 					add_building_construction = {
 						type = naval_base
-						level = 1
+						level = 2
 						instant_build = yes
 						province = 1349
 					}
@@ -3025,17 +3088,17 @@ focus_tree = {
 				limit = {
 					has_state_flag = RAJ_found_scindia_shipyard
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 				if = {
 					limit = { has_state_flag = RAJ_found_scindia_shipyard_NB }
 					add_building_construction = {
 						type = naval_base
-						level = 1
+						level = 2
 						instant_build = yes
 						province = 10255
 					}
@@ -3044,7 +3107,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			navy_experience = 5
+			navy_experience = 25
 			random_owned_controlled_state = {
 				prioritize = { 426 }
 				limit = {
@@ -3055,10 +3118,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = RAJ_found_scindia_shipyard
@@ -3066,7 +3129,7 @@ focus_tree = {
 					limit = { state = 426 }
 					add_building_construction = {
 						type = naval_base
-						level = 1
+						level = 2
 						instant_build = yes
 						province = 10255
 					}
@@ -3312,7 +3375,7 @@ focus_tree = {
 		id = RAJ_east_india_railways
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = RAJ_great_indian_peninsula_railway }
-		x = 4
+		x = 5
 		y = 1
 		relative_position_id = RAJ_great_indian_peninsula_railway
 
@@ -3417,7 +3480,7 @@ focus_tree = {
 				}
 				build_railway = { #Lucknow - Bombay
 					path = {
-						1349 7013 4072 7060 7430 10030 4950 11995 4953 5096 5040 4045 2036 12137
+						1349 7013 4072 7060 7430 10030 4950 11995 4953 5096 5040 4045 2036 1377
 					}
 				}
 			}
@@ -3428,7 +3491,7 @@ focus_tree = {
 		id = RAJ_ishapore_arsenal
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = RAJ_east_india_railways }
-		x = 1
+		x = 2
 		y = 1
 		relative_position_id = RAJ_east_india_railways
 

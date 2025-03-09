@@ -2388,15 +2388,7 @@ spriteTypes = {
 	SpriteType = {       
 		name = "GFX_focus_TNO"
 		texturefile = "gfx/interface/goals/TNO.png"     
-	} 
-	SpriteType = {       
-		name = "GFX_focus_OLD_yi_kang_portrait"         
-		texturefile = "gfx/interface/goals/focus_OLD_yi_kang_portrait.png"    
-	} 
-	SpriteType = {       
-		name = "GFX_focus_mango_chungshin"        
-		texturefile = "gfx/interface/goals/focus_mango_chungshin.png"    
-	} 
+	}
 	SpriteType = {       
 		name = "GFX_focus_jawon"        
 		texturefile = "gfx/interface/goals/focus_jawon.png"   
@@ -2621,5 +2613,9 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_focus_jap_special_forces"
 		texturefile = "gfx/interface/goals/JAP/focus_JAP_special_forces.dds"     
+	}
+	SpriteType = {
+		name = "GFX_focus_RAJ_british_india"
+		texturefile = "gfx/interface/goals/RAJ/RAJ_british_india.png"     
 	}
 }	

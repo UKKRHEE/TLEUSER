@@ -263,6 +263,10 @@
  SHG_SQN:0 "서하국"
  SHG_SQN_DEF:0 "서하국"
  SHG_SQN_ADJ:0 "서하국"
+ 
+ BHU_PLAY:0 "관전 왕국"
+ BHU_PLAY_DEF:0 "관전자"
+ BHU_PLAY_ADJ:0 "관전자"
 
  ASM:0 "아삼"
  ASM_DEF:0 "아삼"
@@ -590,11 +594,15 @@
  RAJ_UK_subject:0 "$OVERLORDADJ$령 인도 제국"
  RAJ_UK_autonomy_dominion:0 "인도 자치령"
  RAJ_UK_autonomy_dominion_DEF:0 "인도 자치령"
+ RAJ_TLE_dominion:0 "인도 자치령"
+ RAJ_TLE_dominion_DEF:0 "인도 자치령"
  PAK_UK:0 "파키스탄 자치령"
  PAK_UK_DEF:0 "파키스탄 자치령"
  
  RAJ_FREE:0 "인도 공화국"
  RAJ_FREE_DEF:0 "인도 공화국"
+ RAJ_FREETNO:0 "인도 공화국"
+ RAJ_FREETNO_DEF:0 "인도 공화국"
 
  KOR_JAP_fascism_autonomy_dominion:0 "조선 자치정부"
  KOR_JAP_fascism_autonomy_colony:0 "조선 총독부"

@@ -2,13 +2,6 @@
 TNO_fire_super_event = {
 	hidden_effect = {
 		if = {
-			limit = { check_variable = { TNO_temp_super_event = token:SE_NUCLEAR_WAR } }
-			ZZZ = {
-				set_variable = { TNO_super_event = TNO_temp_super_event }
-				play_song = "TNO_SE_NUCLEAR_WAR"
-			}
-		}
-		else_if = {
 			limit = { NOT = { has_global_flag = TLE_CANT_SEE_SP_EVENT } }
 			set_variable = { TNO_super_event = TNO_temp_super_event }
 			### SUPERS WITH DYNAMIC SFX ###
@@ -25,13 +18,6 @@ TNO_fire_super_event = {
 TNO_fire_super_event_JAPAN_CW = {
 	hidden_effect = {
 		if = {
-			limit = { check_variable = { TLE_temp_super_event = token:SE_NUCLEAR_WAR } }
-			ZZZ = {
-				set_variable = { TLE_super_event = TLE_temp_super_event }
-				play_song = "TNO_SE_NUCLEAR_WAR"
-			}
-		}
-		else_if = {
 			limit = { NOT = { has_global_flag = TLE_CANT_SEE_SP_EVENT } }
 			set_variable = { TLE_super_event = TLE_temp_super_event }
 			### SUPERS WITH DYNAMIC SFX ###

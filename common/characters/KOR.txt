@@ -316,7 +316,6 @@ characters={
 		portraits = {
 			civilian = {
 				large="gfx/leaders/KOR/Portrait_KOR_yi_siyeong.png"
-				small="gfx/interface/ideas/KOR/advisors/idea_KOR_yi_siyeong.png"
 			}
 		}
 	}
@@ -362,38 +361,47 @@ characters={
 				if = {
 					limit = {
 						has_completed_focus = KOR_asian_democracy
-						NOT = {
-							has_country_flag = FLAG_PCY_ROUTE
-							has_country_flag = FLAG_KKS_ROUTE
-							has_country_flag = FLAG_ACH_ROUTE
+						KOR = {
+							NOT = {
+								has_country_flag = FLAG_PCY_ROUTE
+								has_country_flag = FLAG_KKS_ROUTE
+								has_country_flag = FLAG_ACH_ROUTE
+							}
 						}
 					}
-					OR = {
-						has_country_flag = FLAG_PCY_ROUTE 
-						has_country_flag = FLAG_KKS_ROUTE 
-						has_country_flag = FLAG_ACH_ROUTE 
+					KOR = {
+						OR = {
+							has_country_flag = FLAG_PCY_ROUTE 
+							has_country_flag = FLAG_KKS_ROUTE 
+							has_country_flag = FLAG_ACH_ROUTE 
+						}
 					}
 				}
 				if = {
 					limit = {
-						has_country_flag = FLAG_KKS_ROUTE
-					}	
-					has_country_flag = FLAG_KKS_CAN_USE_POLITICAL_ADVISOR
+						KOR = {
+							has_country_flag = FLAG_KKS_ROUTE
+						}
+					}
 				}
 			}
 			visible = {
 				NOT = {
-					has_country_flag = FLAG_KOR_FASCIST_ROUTE
-					has_country_leader = {
-						character = KOR_park_jungyang
-						ruling_only = yes
+					KOR = {
+						has_country_flag = FLAG_KOR_FASCIST_ROUTE
+						has_country_leader = {
+							character = KOR_park_jungyang
+							ruling_only = yes
+						}
 					}
 				}
 			}
 			on_add = {
 				if = {
 					limit = {
-						has_country_flag = FLAG_KKS_ROUTE
+						KOR = {
+							has_country_flag = FLAG_KKS_ROUTE
+						}
 					}
 					KOR_ilso_var_up = yes
 					KOR_government_stablity_check_progressbar = yes
@@ -402,7 +410,9 @@ characters={
 			on_remove = {
 				if = {
 					limit = {
-						has_country_flag = FLAG_KKS_ROUTE
+						KOR = {
+							has_country_flag = FLAG_KKS_ROUTE
+						}
 					}
 					KOR_ilso_var_down = yes
 					KOR_government_stablity_check_progressbar = yes
@@ -444,32 +454,39 @@ characters={
 				if = {
 					limit = {
 						has_completed_focus = KOR_asian_democracy
-						NOT = {
-							has_country_flag = FLAG_PCY_ROUTE
-							has_country_flag = FLAG_KKS_ROUTE
-							has_country_flag = FLAG_ACH_ROUTE
+						KOR = {
+							NOT = {
+								has_country_flag = FLAG_PCY_ROUTE
+								has_country_flag = FLAG_KKS_ROUTE
+								has_country_flag = FLAG_ACH_ROUTE
+							}
 						}
 					}
-					OR = {
-						has_country_flag = FLAG_PCY_ROUTE 
-						has_country_flag = FLAG_KKS_ROUTE 
-						has_country_flag = FLAG_ACH_ROUTE 
+					KOR = {
+						OR = {
+							has_country_flag = FLAG_PCY_ROUTE 
+							has_country_flag = FLAG_KKS_ROUTE 
+							has_country_flag = FLAG_ACH_ROUTE 
+						}
 					}
 				}
 				if = {
 					limit = {
-						has_country_flag = FLAG_PCY_ROUTE
+						KOR = {
+							has_country_flag = FLAG_PCY_ROUTE
+						}
 					}	
-					has_country_flag = FLAG_KKS_CAN_USE_POLITICAL_ADVISOR
 				}
 			}
 			visible = {
-		    	NOT = { has_country_flag = FLAG_KOR_FASCIST_ROUTE }
+		    	KOR = { NOT = { has_country_flag = FLAG_KOR_FASCIST_ROUTE } }
 			}
 			on_add = {
 				if = {
 					limit = {
-						has_country_flag = FLAG_KKS_ROUTE
+						KOR = {
+							has_country_flag = FLAG_KKS_ROUTE
+						}
 					}
 					KOR_ilso_var_up = yes
 					KOR_government_stablity_check_progressbar = yes
@@ -478,7 +495,9 @@ characters={
 			on_remove = {
 				if = {
 					limit = {
-						has_country_flag = FLAG_KKS_ROUTE
+						KOR = {
+							has_country_flag = FLAG_KKS_ROUTE
+						}
 					}
 					KOR_ilso_var_down = yes
 					KOR_government_stablity_check_progressbar = yes
@@ -516,47 +535,62 @@ characters={
 				if = {
 					limit = {
 						has_completed_focus = KOR_asian_democracy
-						NOT = {
-							has_country_flag = FLAG_PCY_ROUTE
-							has_country_flag = FLAG_KKS_ROUTE
-							has_country_flag = FLAG_ACH_ROUTE
+						KOR = {
+							NOT = {
+								has_country_flag = FLAG_PCY_ROUTE
+								has_country_flag = FLAG_KKS_ROUTE
+								has_country_flag = FLAG_ACH_ROUTE
+							}
 						}
 					}
 					OR = {
-						has_country_flag = FLAG_PCY_ROUTE 
-						has_country_flag = FLAG_KKS_ROUTE 
-						has_country_flag = FLAG_ACH_ROUTE 
+						KOR = {
+							has_country_flag = FLAG_PCY_ROUTE 
+							has_country_flag = FLAG_KKS_ROUTE 
+							has_country_flag = FLAG_ACH_ROUTE 
+						}
 					}
 				}
 				if = {
 					limit = {
-						has_country_flag = FLAG_PCY_ROUTE
+						KOR = {
+							has_country_flag = FLAG_PCY_ROUTE
+						}
 					}	
 				}
 				if = {
 					limit = {
-						has_country_flag = FLAG_KKS_ROUTE
-					}	
-					has_country_flag = FLAG_KKS_CAN_USE_POLITICAL_ADVISOR
+						KOR = {
+							has_country_flag = FLAG_KKS_ROUTE
+						}
+					}
 				}
 				if = {
 					limit = {
-						has_country_flag = FLAG_ACH_ROUTE
+						KOR = {
+							has_country_flag = FLAG_ACH_ROUTE
+						}
 					}	
 					NOT = { 
-						has_country_flag = FLAG_ACH_ROUTE 
+						KOR = {
+							has_country_flag = FLAG_ACH_ROUTE 
+						}
 					}
 				}
 			}	
 			visible = {
 				NOT = {
-					has_country_flag = FLAG_KOR_FASCIST_ROUTE
+					KOR = {
+						has_country_flag = FLAG_KOR_FASCIST_ROUTE
+					}
 				}
 			}
 			on_add = {
 				if = {
 					limit = {
-						has_country_flag = FLAG_KKS_ROUTE
+						KOR = {
+							has_country_flag = FLAG_KKS_ROUTE
+						}
 					}
 					KOR_ilso_var_up = yes
 					KOR_government_stablity_check_progressbar = yes
@@ -624,7 +658,6 @@ characters={
 					limit = {
 						has_country_flag = FLAG_KKS_ROUTE
 					}	
-					has_country_flag = FLAG_KKS_CAN_USE_POLITICAL_ADVISOR
 				}
 				if = {
 					limit = {
@@ -715,7 +748,6 @@ characters={
 					limit = {
 						has_country_flag = FLAG_KKS_ROUTE
 					}	
-					has_country_flag = FLAG_KKS_CAN_USE_POLITICAL_ADVISOR
 				}
 			}
 			visible = {
@@ -808,7 +840,6 @@ characters={
 					limit = {
 						has_country_flag = FLAG_KKS_ROUTE
 					}	
-					has_country_flag = FLAG_KKS_CAN_USE_POLITICAL_ADVISOR
 				}
 				if = {
 					limit = {
@@ -893,7 +924,6 @@ characters={
 					limit = {
 						has_country_flag = FLAG_KKS_ROUTE
 					}	
-					has_country_flag = FLAG_KKS_CAN_USE_POLITICAL_ADVISOR
 				}
 				if = {
 					limit = {
@@ -977,8 +1007,7 @@ characters={
 				if = {
 					limit = {
 						has_country_flag = FLAG_KKS_ROUTE
-					}	
-					has_country_flag = FLAG_KKS_CAN_USE_POLITICAL_ADVISOR
+					}
 				}
 				if = {
 					limit = {
@@ -1120,36 +1149,48 @@ characters={
 					limit = {
 						has_completed_focus = KOR_asian_democracy
 						NOT = {
+							KOR = {
+								has_country_flag = FLAG_PCY_ROUTE
+								has_country_flag = FLAG_KKS_ROUTE
+								has_country_flag = FLAG_ACH_ROUTE
+							}
+						}
+					}
+					OR = {
+						KOR = {
 							has_country_flag = FLAG_PCY_ROUTE
 							has_country_flag = FLAG_KKS_ROUTE
 							has_country_flag = FLAG_ACH_ROUTE
 						}
 					}
-					OR = {
-						has_country_flag = FLAG_PCY_ROUTE 
-						has_country_flag = FLAG_KKS_ROUTE 
-						has_country_flag = FLAG_ACH_ROUTE 
+				}
+				if = {
+					limit = {
+						KOR = {
+							has_country_flag = FLAG_PCY_ROUTE
+						}
 					}
 				}
 				if = {
 					limit = {
-						has_country_flag = FLAG_PCY_ROUTE
-					}	
+						KOR = {
+							has_country_flag = FLAG_KKS_ROUTE
+						}
+					}
 				}
 				if = {
 					limit = {
-						has_country_flag = FLAG_KKS_ROUTE
-					}	
-				}
-				if = {
-					limit = {
-						has_country_flag = FLAG_ACH_ROUTE
+						KOR = {
+							has_country_flag = FLAG_ACH_ROUTE
+						}
 					}	
 				}
 			}	
 			visible = {
 				NOT = {
-					has_country_flag = FLAG_KOR_FASCIST_ROUTE
+					KOR = {
+						has_country_flag = FLAG_KOR_FASCIST_ROUTE
+					}
 				}
 			}
 		
@@ -1185,36 +1226,48 @@ characters={
 					limit = {
 						has_completed_focus = KOR_asian_democracy
 						NOT = {
+							KOR = {
+								has_country_flag = FLAG_PCY_ROUTE
+								has_country_flag = FLAG_KKS_ROUTE
+								has_country_flag = FLAG_ACH_ROUTE
+							}
+						}
+					}
+					OR = {
+						KOR = {
 							has_country_flag = FLAG_PCY_ROUTE
 							has_country_flag = FLAG_KKS_ROUTE
 							has_country_flag = FLAG_ACH_ROUTE
 						}
 					}
-					OR = {
-						has_country_flag = FLAG_PCY_ROUTE 
-						has_country_flag = FLAG_KKS_ROUTE 
-						has_country_flag = FLAG_ACH_ROUTE 
+				}
+				if = {
+					limit = {
+						KOR = {
+							has_country_flag = FLAG_PCY_ROUTE
+						}
 					}
 				}
 				if = {
 					limit = {
-						has_country_flag = FLAG_PCY_ROUTE
-					}	
+						KOR = {
+							has_country_flag = FLAG_KKS_ROUTE
+						}
+					}
 				}
 				if = {
 					limit = {
-						has_country_flag = FLAG_KKS_ROUTE
-					}	
-				}
-				if = {
-					limit = {
-						has_country_flag = FLAG_ACH_ROUTE
+						KOR = {
+							has_country_flag = FLAG_ACH_ROUTE
+						}
 					}	
 				}
 			}	
 			visible = {
 				NOT = {
-					has_country_flag = FLAG_KOR_FASCIST_ROUTE
+					KOR = {
+						has_country_flag = FLAG_KOR_FASCIST_ROUTE
+					}
 				}
 			}
 		
@@ -1250,36 +1303,48 @@ characters={
 					limit = {
 						has_completed_focus = KOR_asian_democracy
 						NOT = {
+							KOR = {
+								has_country_flag = FLAG_PCY_ROUTE
+								has_country_flag = FLAG_KKS_ROUTE
+								has_country_flag = FLAG_ACH_ROUTE
+							}
+						}
+					}
+					OR = {
+						KOR = {
 							has_country_flag = FLAG_PCY_ROUTE
 							has_country_flag = FLAG_KKS_ROUTE
 							has_country_flag = FLAG_ACH_ROUTE
 						}
 					}
-					OR = {
-						has_country_flag = FLAG_PCY_ROUTE 
-						has_country_flag = FLAG_KKS_ROUTE 
-						has_country_flag = FLAG_ACH_ROUTE 
+				}
+				if = {
+					limit = {
+						KOR = {
+							has_country_flag = FLAG_PCY_ROUTE
+						}
 					}
 				}
 				if = {
 					limit = {
-						has_country_flag = FLAG_PCY_ROUTE
-					}	
+						KOR = {
+							has_country_flag = FLAG_KKS_ROUTE
+						}
+					}
 				}
 				if = {
 					limit = {
-						has_country_flag = FLAG_KKS_ROUTE
-					}	
-				}
-				if = {
-					limit = {
-						has_country_flag = FLAG_ACH_ROUTE
+						KOR = {
+							has_country_flag = FLAG_ACH_ROUTE
+						}
 					}	
 				}
 			}	
 			visible = {
 				NOT = {
-					has_country_flag = FLAG_KOR_FASCIST_ROUTE
+					KOR = {
+						has_country_flag = FLAG_KOR_FASCIST_ROUTE
+					}
 				}
 			}
 		
@@ -1324,7 +1389,9 @@ characters={
 		    available = {
 			}	
 			visible = {
-				has_country_flag = FLAG_KOR_FASCIST_ROUTE
+				KOR = {
+					has_country_flag = FLAG_KOR_FASCIST_ROUTE
+				}
 			}
 		
 	    	traits = { backroom_backstabber  }
@@ -1703,8 +1770,10 @@ characters={
 								option = KIM_YES
 							}
 						}
-						country_event = {
-							id = korea.36
+						KOR = {
+							country_event = {
+								id = korea.36
+							}
 						}
 					}
 				}
@@ -3360,11 +3429,13 @@ characters={
 						NOT = {
 							has_country_flag = TLE_YWH_CEV
 						}
-					}	
-					country_event = {
-						id = korea.182
-					}	
-					set_country_flag = TLE_YWH_CEV
+					}
+					KOR = {
+						country_event = {
+							id = korea.182
+						}	
+						set_country_flag = TLE_YWH_CEV
+					}
 				}
 			}
 		    allowed = {

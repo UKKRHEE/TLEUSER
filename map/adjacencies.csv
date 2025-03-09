@@ -275,13 +275,13 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 4996;12898;impassable;-1;-1;-1;-1;-1;;Yunnan-Burma
 4996;12789;impassable;-1;-1;-1;-1;-1;;Yunnan-Burma
 4318;12789;impassable;-1;-1;-1;-1;-1;;Yunnan-Burma
-12085;1158;sea;10011;1;1;1;1;KOREA_STRAIT_FAKE;For Country Name
+12085;1158;sea;2708;1;1;1;1;KOREA_STRAIT_FAKE;For Country Name
 10011;1158;sea;2708;1;1;1;1;KOREA_STRAIT_FAKE_2;For Country Name
 11948;1177;sea;2708;1;1;1;1;JEJU_STRAIT_FAKE;For Country Name
-11912;13372;sea;7932;1;1;1;1;ULLENG_STRAIT_FAKE;For Country Name
+11912;13404;sea;7932;1;1;1;1;ULLENG_STRAIT_FAKE;For Country Name
 13037;4646;sea;4465;1;1;1;1;KURIL_STRAIT_FAKE;For Country Name
 12446;4576;sea;4465;1;1;1;1;SAHALIN_STRAIT_FAKE;For Country Name
-4211;4409;sea;4465;1;1;1;1;INDONESIA_STRAIT_FAKE;For Country Name
+4211;4409;sea;5641;1;1;1;1;INDONESIA_STRAIT_FAKE;For Country Name
 10181;1098;sea;8822;1;1;1;1;INDONESIA_STRAIT_FAKE_2;For Country Name
 10409;12386;sea;5320;1;1;1;1;INDONESIA_STRAIT_FAKE_3;For Country Name
 4579;10219;sea;5238;1;1;1;1;INDONESIA_STRAIT_FAKE_4;For Country Name
@@ -290,7 +290,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 3311;6350;sea;8340;1;1;1;1;BRIT_STRAIT_FAKE_2;For Country Name
 7423;10272;sea;2876;-1;-1;-1;-1;;NPHI-Sebu Strait
 12118;1224;sea;8751;-1;-1;-1;-1;;CPHI-Sebu Strait
-10186;7360;sea;5641;-1;-1;-1;-1;;SPHI-Sebu Strait
+10186;7360;sea;2899;-1;-1;-1;-1;;SPHI-Sebu Strait
 7419;10272;sea;2971;-1;-1;-1;-1;;NPHI-Palawan Strait
 10184;1421;sea;2899;-1;-1;-1;-1;;SPHI Strait
 4493;7369;sea;5343;-1;-1;-1;-1;;Sulawesi-Maluku Strait

@@ -54,7 +54,7 @@ air_wings = {
 			version_name = "귀조 개 1형"
 		}
 	}
-	1016 = { #동래
+	1133 = { #동래
 		small_plane_airframe_0 = {
 			owner = "KOR" 
 			amount = 100
@@ -71,7 +71,7 @@ air_wings = {
 			version_name = "원앙"
 		}
 	}
-	1015 = { #전주
+	1132 = { #전주
 		small_plane_airframe_0 = {
 			owner = "KOR" 
 			amount = 60

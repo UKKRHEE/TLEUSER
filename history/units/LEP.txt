@@ -283,13 +283,6 @@ units = {
 		start_equipment_factor = 1.0
 	}
 	division = {
-		name = "Hilfstruppe 'Nantong'"
-		location = 13707 # Nantong
-		division_template = "Polizeitruppe"
-		start_experience_factor = 0.1
-		start_equipment_factor = 1.0
-	}
-	division = {
 		name = "Hilfstruppe 'Kulangsu'"
 		location = 7071 # Xiamen
 		division_template = "Polizeitruppe"

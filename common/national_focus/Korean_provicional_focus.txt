@@ -166,13 +166,13 @@ focus_tree = {
 			527 = {
 				add_dynamic_modifier = { modifier = KOR_army_resistance_modifier }
 			}
-			1014 = {
+			1132 = {
 				add_dynamic_modifier = { modifier = KOR_army_resistance_modifier }
 			}
-			1015 = {
+			1133 = {
 				add_dynamic_modifier = { modifier = KOR_army_resistance_modifier }
 			}
-			1016 = {
+			1091 = {
 				add_dynamic_modifier = { modifier = KOR_army_resistance_modifier }
 			}
 			1017 = {

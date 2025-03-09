@@ -240,19 +240,19 @@ country_event = {
 			}
 			if = {
 				limit = {
-					993 = {
+					1111 = {
 						is_owned_by = FRI
 					}
 				}
-				LAO = { transfer_state = 993 }
+				LAO = { transfer_state = 1111 }
 			}
 			if = {
 				limit = {
-					994 = {
+					1112 = {
 						is_owned_by = FRI
 					}
 				}
-				LAO = { transfer_state = 994 }
+				LAO = { transfer_state = 1112 }
 			}
 			if = {
 				limit = {
@@ -297,11 +297,11 @@ country_event = {
 			}
 			if = {
 				limit = {
-					995 = {
+					1113 = {
 						is_owned_by = FRI
 					}
 				}
-				CAM = { transfer_state = 995 }
+				CAM = { transfer_state = 1113 }
 			}
 		}
 	}
@@ -312,16 +312,9 @@ country_event = {
 	desc = vietnam.4.d
 	picture = gfx
 	
-	trigger = {
-		has_global_flag = TLE_KOREA_IS_DEFEATED
-		NOT = {
-			has_global_flag = TLE_TNO
-		}
-		TAG = RAJ
-		date > 1950.1.1
-		date < 1950.2.1
-        country_exists = RAJ
-	}
+	hidden = yes
+	
+	is_triggered_only = yes
 
 	mean_time_to_happen = {
 		days = 1

@@ -297,7 +297,7 @@ KOR_glorious_nippon_steel_has_triumphed = {
 		}
 	}
 	abort = {
-
+		always = no
 	}
 
 	ai_strategy = {
@@ -642,6 +642,9 @@ KOR_template_design = {
 	}
 	enable = {
 		date > 1940.1.1
+	}
+	abort = {
+		always = no
 	}
 
 	ai_strategy = {
@@ -1005,7 +1008,7 @@ KOR_building_boats_is_great = {
 	}
 
 	abort = {
-
+		always = no
 	}
 
 	ai_strategy = {
@@ -1166,6 +1169,9 @@ KOR_naval_role_ratios_historical_late = {
 	}
 	enable = {
 		num_of_naval_factories > 60
+	}
+	abort = {
+		always = no
 	}
 
 	ai_strategy = {
@@ -1385,6 +1391,9 @@ KOR_area_priority = {
 	enable = {
 		always = yes
 	}
+	abort = {
+		always = no
+	}
 
 	ai_strategy = {
 		type = area_priority
@@ -1466,20 +1475,6 @@ KOR_USA_we_love_islands = {
 		type = area_priority
 		id = pacific
 		value = 140
-	}
-}
-
-KOR_we_will_mostly_fight_on_subjects = {
-	allowed = {
-		original_tag = KOR
-	}
-	enable = {
-		always = yes
-	}
-	abort_when_not_enabled = yes
-	ai_strategy = {
-		type = produce_unit_for_subject_supply_chunks
-		value = 50
 	}
 }
 

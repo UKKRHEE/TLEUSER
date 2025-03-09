@@ -11,8 +11,8 @@ on_actions = {
 					has_global_flag = TLE_germany_union_defeat
 				}
 				WGR = {
-					transfer_state = 982
-					add_state_core = 982
+					transfer_state = 1110
+					add_state_core = 1110
 					set_country_flag = OST_RHEINLAND_FLAG
 				}
 			}
@@ -295,7 +295,7 @@ on_actions = {
 			if = {
 				limit = {
 					tag = GER #
-					FROM.FROM = { state = 985 } #
+					FROM.FROM = { state = 1092 } #
 				}
                 FROM.FROM = {
 					set_state_name = "nanzig_sedan"
@@ -315,7 +315,7 @@ on_actions = {
 						original_tag = FRA
 						original_tag = FRS
 					} #
-					FROM.FROM = { state = 985 } #
+					FROM.FROM = { state = 1092 } #
 				}
                 FROM.FROM = {
 					set_state_name = "nancy_sedan"
@@ -589,23 +589,23 @@ on_actions = {
 			if = {
 				limit = {
 					tag = GER #
-					FROM.FROM = { state = 999 } #
+					FROM.FROM = { state = 1117 } #
 				}
                 FROM.FROM = {
 					set_state_name = "eupen"
 				}
 				GER = {
-					transfer_state = 999
+					transfer_state = 1117
 				}
 				if = {
 					limit = {
 						NOT = {
-							999 = {
+							1117 = {
 								is_core_of = GER
 							}
 						}
 					}	
-					999 = {
+					1117 = {
 						add_core_of = GER
 					}
 				}
@@ -613,21 +613,21 @@ on_actions = {
 			if = {
 				limit = {
 					tag = BEL #
-					FROM.FROM = { state = 999 } #
+					FROM.FROM = { state = 1117 } #
 				}
                 FROM.FROM = {
 					set_state_name = "oepen"
 				}
 				BEL = {
-					transfer_state = 999
+					transfer_state = 1117
 				}
 				if = {
 					limit = {
-						999 = {
+						1117 = {
 							is_core_of = GER
 						}
 					}	
-					999 = {
+					1117 = {
 						remove_core_of = GER
 					}
 				}

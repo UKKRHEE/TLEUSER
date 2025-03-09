@@ -4,7 +4,7 @@
  RULE_OPTION_KIM_NOT:0 "역사적 장교진"
  RULE_OPTION_KIM_NOT_EXIST_DESC:0 "@KOR§Y대한제국§!의 장교진과 참모진들은 역사적 사실을 따라갈 것입니다."
  RULE_OPTION_KIM_YES:0 "특별한 손님 §R(비추천)§!"
- RULE_OPTION_KIM_YES_DESC:0 "@KOR§Y대한제국§!의 장교진에 특별한 인물들이 추가되고, 이벤트를 통해 최대 두개의 교리를 선택할 수 있게 됩니다. §R민감한 분§!들이 나올 수 있으니, 방송에서는 추천하진 않습니다\n\n§R경고했는데도 이거 키고 불만불평 온갖 똥글 싸지르면 직접 대가리 깨드립니다.§!"
+ RULE_OPTION_KIM_YES_DESC:0 "@KOR§Y대한제국§!의 장교진에 특별한 인물들이 추가되고, 이벤트를 통해 최대 두개의 교리를 선택할 수 있게 됩니다. §R민감한 분§!들이 나올 수 있으니, 방송에서는 추천하진 않습니다\n\n§RTHE LAST EMPIRE 팀은 이미 경고했습니다.§!"
  
  TLE_DONT_CHANGE_RULE:0 "라스트 엠파이어의 난이도를 변경하지 않음"
  
@@ -150,7 +150,7 @@
  RULE_OPTION_DEFAULT_AI_DESC:0 "AI는 강제된 역사적 중점 및 시나리오와 같은 현실 역사에 기반한 결정을 내립니다."
  RULE_GROUP_AI_BEHAVIOR_B:0 "역사적인 게임 §R(변경 금지)§!§!"
 
- RULE_KOR_FASCIST_HISTORICAL_AI_DESC:0 "한국 AI는 신한청년당을 중심으로 한 민족주의 광풍을 바탕삼아 전 아시아를 석권하고 대동아공영권의 이상을 실현하려고 시도할 것입니다."
+ RULE_KOR_FASCIST_HISTORICAL_AI_DESC:0 "한국 AI는 전 아시아를 석권하고 대동아공영권의 이상을 실현하려고 시도할 것입니다."
  RULE_OPTION_KOR_DEMOCRATIC_AI_DESC:0 "한국 AI는 개혁요구를 받아들이며 자유의 등불로 우뚝 서려는 것과 관련있는 국가적 중점 계통도를 따라 내려갈 것입니다."
  RULE_OPTION_KOR_DEMOCRATIC_CONSERVETISM_AI_DESC:0 "한국 AI는 현 상황을 유지하며 아주의 등불로 우뚝 서려는 것과 관련있는 국가적 중점 계통도를 따라 내려갈 것입니다."
  RULE_OPTION_KOR_COMMUNISM_AI_DESC:0 "한국 AI는 공산주의의 광풍을 받아들여 프롤레타리아의 나라를 만드려는 것과 관련있는 국가적 중점 계통도를 따라 내려갈 것입니다."
@@ -158,10 +158,7 @@
  RULE_OPTION_KOR_NEUTRALITY_AI_DESC:0 "한국 AI는 강명 유신을 일으켜 대한제국을 온전한 황제의 나라로 만드려는 것과 관련있는 국가적 중점 계통도를 따라 내려갈 것입니다."
 
  RULE_KOR_FASCIST_HISTORICAL:0 "§R마지막 제국§!"
- RULE_OPTION_KOR_DEMOCRATIC:0 "자유주의적 논조"
- RULE_OPTION_KOR_DEMOCRATIC_CONSERVETISM:0 "보수주의적 논조"
- RULE_OPTION_KOR_COMMUNISM:0 "인민의 나라"
- RULE_OPTION_KOR_COMMUNISM_EMPIRE:0 "사회주의 제국"
- RULE_OPTION_KOR_NEUTRALITY:0 "강명 유신"
+ RULE_KOR_DEMOCRATIC_KKS:0 "§8우레를 지나§! - §Y김규식§!"
+ RULE_KOR_DEMOCRATIC_KKS_AI_DESC:0 "한국 AI는 융희 데모크라시의 유산을 이어가면서 김규식 총리의 지도를 받을 것입니다."
  
  RULE_KOR_CAN_NOT_RELEASE_NATION:0 "대한제국은 공화정이거나 대전쟁에서 패배해야만 식민지 해방이 가능합니다."

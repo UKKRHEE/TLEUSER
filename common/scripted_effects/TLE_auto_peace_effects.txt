@@ -196,18 +196,18 @@ KOR_hangbok_event = {
 		}
 	}
 	SIA = {
-		remove_state_core = 992
 		remove_state_core = 993
-		remove_state_core = 994
-		remove_state_core = 995
+		remove_state_core = 1111
+		remove_state_core = 1112
+		remove_state_core = 1113
 		remove_state_core = 1075
-		remove_state_core = 1076
-		remove_state_claim = 992
+		remove_state_core = 994
 		remove_state_claim = 993
-		remove_state_claim = 994
-		remove_state_claim = 995
+		remove_state_claim = 1111
+		remove_state_claim = 1112
+		remove_state_claim = 1113
 		remove_state_claim = 1075
-		remove_state_claim = 1076
+		remove_state_claim = 994
 	}
 	KVN = {
 		remove_state_core = 286
@@ -216,9 +216,9 @@ KOR_hangbok_event = {
 		remove_state_core = 670
 		remove_state_core = 1089
 		remove_state_core = 671
-		remove_state_core = 993
-		remove_state_core = 994
-		remove_state_core = 995
+		remove_state_core = 1111
+		remove_state_core = 1112
+		remove_state_core = 1113
 		remove_state_core = 1082
 		remove_state_core = 1083
 		remove_state_core = 1084
@@ -265,9 +265,9 @@ KOR_hangbok_event = {
 			transfer_state = 670
 			transfer_state = 671
 			transfer_state = 1089
-			transfer_state = 993
-			transfer_state = 994
-			transfer_state = 995
+			transfer_state = 1111
+			transfer_state = 1112
+			transfer_state = 1113
 			transfer_state = 1083
 			transfer_state = 1085
 			retire_character = FRI_jules_brevie
@@ -363,7 +363,7 @@ KOR_hangbok_event = {
 			set_cosmetic_tag = CAM_rep
 			transfer_state = 741
 			transfer_state = 1103
-			transfer_state = 995
+			transfer_state = 1113
 			set_politics = {
 				ruling_party = communism
 				last_election = "1936.1.1"
@@ -378,16 +378,16 @@ KOR_hangbok_event = {
 			}
 		}
 		SIA = {
-			transfer_state = 993
-			transfer_state = 994
+			transfer_state = 1111
+			transfer_state = 1112
 		}
-		993 = {
+		1111 = {
 			set_demilitarized_zone = yes
 		}
-		994 = {
+		1112 = {
 			set_demilitarized_zone = yes
 		}
-		995 = {
+		1113 = {
 			set_demilitarized_zone = yes
 		}
 		every_country = {
@@ -411,7 +411,11 @@ KOR_hangbok_event = {
 				has_global_flag = PRE_THE_NEW_ORDER_GBR
 			}
 		}
+		YEM = {
+			transfer_state = 992
+		}
 		RAJ = {
+			set_country_flag = TLE_RAJ_indian_independence_act_flag
 			set_cosmetic_tag = RAJ_UK_autonomy_dominion
 			set_politics = { 
 				ruling_party = democratic
@@ -422,6 +426,14 @@ KOR_hangbok_event = {
 			set_popularities = {
 				democratic = 100
 			}
+			retire_country_leader = yes
+			create_country_leader = {
+				name = "RAJ_jawaharlal_nehru"
+				picture = "gfx/leaders/RAJ/Jawaharlal_Nehru.png"
+				ideology = socialism
+				traits = {
+				}
+			}
 			country_event = {
 				id = burma.1
 			}
@@ -429,15 +441,15 @@ KOR_hangbok_event = {
 		ENG = {
 			puppet = PAK
 		}
+		every_state = {
+			limit = {
+				is_owned_by = RAJ
+				is_core_of = PAK
+			}
+			transfer_state_to = PAK
+		}
 		PAK = {
 			set_cosmetic_tag = PAK_UK
-			transfer_state = 430
-			transfer_state = 440
-			transfer_state = 442
-			transfer_state = 443
-			transfer_state = 444
-			transfer_state = 445
-			transfer_state = 787
 			set_politics = { 
 				ruling_party = neutrality
 				last_election = "1936.11.26"
@@ -676,7 +688,7 @@ KOR_hangbok_event = {
 			set_cosmetic_tag = SZC_clique
 		}
 		SCC = {
-			transfer_state = 1007
+			transfer_state = 1125
 		}
 	}
     if = {
@@ -695,9 +707,9 @@ KOR_hangbok_event = {
 			transfer_state = 670
 			transfer_state = 1089
 			transfer_state = 671
-			transfer_state = 993
-			transfer_state = 994
-			transfer_state = 995
+			transfer_state = 1111
+			transfer_state = 1112
+			transfer_state = 1113
 		}
 	}
 	if = {
@@ -1132,8 +1144,8 @@ KOR_hangbok_event = {
     	transfer_state = 819
     	transfer_state = 820
 		transfer_state = 612
-		transfer_state = 1005
-		transfer_state = 1006
+		transfer_state = 1123
+		transfer_state = 1124
     	set_cosmetic_tag = MSR
     }
     every_country = {
@@ -1150,8 +1162,8 @@ KOR_hangbok_event = {
     	transfer_state = 1064
     	transfer_state = 536
     	transfer_state = 645
-    	transfer_state = 988
-    	transfer_state = 989
+    	transfer_state = 1106
+    	transfer_state = 1107
     	add_state_core = 536
     	add_state_core = 1029
     	add_state_core = 645
@@ -1259,7 +1271,7 @@ KOR_hangbok_event = {
 				transfer_troops = yes
 			}
 			transfer_state = 1035
-			transfer_state = 1004
+			transfer_state = 1122
 		}
 		XSM = {
 			annex_country = {
@@ -1486,10 +1498,10 @@ KOR_hangbok_event = {
 			transfer_state = 1064
 			transfer_state = 536
 			transfer_state = 645
-			transfer_state = 988
-			transfer_state = 989
-			transfer_state = 990
-			transfer_state = 991
+			transfer_state = 1106
+			transfer_state = 1107
+			transfer_state = 1108
+			transfer_state = 1109
 			add_state_core = 536
 			add_state_core = 1029
 			add_state_core = 645
@@ -1827,18 +1839,18 @@ KOR_hangbok_event_2 = {
 		}
 	}
 	SIA = {
-		remove_state_core = 992
 		remove_state_core = 993
-		remove_state_core = 994
-		remove_state_core = 995
+		remove_state_core = 1111
+		remove_state_core = 1112
+		remove_state_core = 1113
 		remove_state_core = 1075
-		remove_state_core = 1076
-		remove_state_claim = 992
+		remove_state_core = 994
 		remove_state_claim = 993
-		remove_state_claim = 994
-		remove_state_claim = 995
+		remove_state_claim = 1111
+		remove_state_claim = 1112
+		remove_state_claim = 1113
 		remove_state_claim = 1075
-		remove_state_claim = 1076
+		remove_state_claim = 994
 	}
 	KVN = {
 		remove_state_core = 286
@@ -1847,9 +1859,9 @@ KOR_hangbok_event_2 = {
 		remove_state_core = 670
 		remove_state_core = 1089
 		remove_state_core = 671
-		remove_state_core = 993
-		remove_state_core = 994
-		remove_state_core = 995
+		remove_state_core = 1111
+		remove_state_core = 1112
+		remove_state_core = 1113
 		remove_state_core = 1082
 		remove_state_core = 1083
 		remove_state_core = 1084
@@ -1896,9 +1908,9 @@ KOR_hangbok_event_2 = {
 			transfer_state = 670
 			transfer_state = 671
 			transfer_state = 1089
-			transfer_state = 993
-			transfer_state = 994
-			transfer_state = 995
+			transfer_state = 1111
+			transfer_state = 1112
+			transfer_state = 1113
 			transfer_state = 1083
 			transfer_state = 1085
 			retire_character = FRI_jules_brevie
@@ -1994,7 +2006,7 @@ KOR_hangbok_event_2 = {
 			set_cosmetic_tag = CAM_rep
 			transfer_state = 741
 			transfer_state = 1103
-			transfer_state = 995
+			transfer_state = 1113
 			set_politics = {
 				ruling_party = communism
 				last_election = "1936.1.1"
@@ -2009,16 +2021,16 @@ KOR_hangbok_event_2 = {
 			}
 		}
 		SIA = {
-			transfer_state = 993
-			transfer_state = 994
+			transfer_state = 1111
+			transfer_state = 1112
 		}
-		993 = {
+		1111 = {
 			set_demilitarized_zone = yes
 		}
-		994 = {
+		1112 = {
 			set_demilitarized_zone = yes
 		}
-		995 = {
+		1113 = {
 			set_demilitarized_zone = yes
 		}
 		every_country = {
@@ -2042,7 +2054,11 @@ KOR_hangbok_event_2 = {
 				has_global_flag = PRE_THE_NEW_ORDER_GBR
 			}
 		}
+		YEM = {
+			transfer_state = 992
+		}
 		RAJ = {
+			set_country_flag = TLE_RAJ_indian_independence_act_flag
 			set_cosmetic_tag = RAJ_UK_autonomy_dominion
 			set_politics = { 
 				ruling_party = democratic
@@ -2053,6 +2069,14 @@ KOR_hangbok_event_2 = {
 			set_popularities = {
 				democratic = 100
 			}
+			retire_country_leader = yes
+			create_country_leader = {
+				name = "RAJ_jawaharlal_nehru"
+				picture = "gfx/leaders/RAJ/Jawaharlal_Nehru.png"
+				ideology = socialism
+				traits = {
+				}
+			}
 			country_event = {
 				id = burma.1
 			}
@@ -2060,15 +2084,15 @@ KOR_hangbok_event_2 = {
 		ENG = {
 			puppet = PAK
 		}
+		every_state = {
+			limit = {
+				is_owned_by = RAJ
+				is_core_of = PAK
+			}
+			transfer_state_to = PAK
+		}
 		PAK = {
 			set_cosmetic_tag = PAK_UK
-			transfer_state = 430
-			transfer_state = 440
-			transfer_state = 442
-			transfer_state = 443
-			transfer_state = 444
-			transfer_state = 445
-			transfer_state = 787
 			set_politics = { 
 				ruling_party = neutrality
 				last_election = "1936.11.26"
@@ -2333,9 +2357,9 @@ KOR_hangbok_event_2 = {
 				owns_state = 741
 				owns_state = 670
 				owns_state = 1089
-				owns_state = 993
-				owns_state = 994
-				owns_state = 995
+				owns_state = 1111
+				owns_state = 1112
+				owns_state = 1113
 			}
 		}
 		FRA = {
@@ -2344,9 +2368,9 @@ KOR_hangbok_event_2 = {
 			transfer_state = 670
 			transfer_state = 1089
 			transfer_state = 671
-			transfer_state = 993
-			transfer_state = 994
-			transfer_state = 995
+			transfer_state = 1111
+			transfer_state = 1112
+			transfer_state = 1113
 		}
 	}
 	every_country = {
@@ -2511,8 +2535,8 @@ KOR_hangbok_event_2 = {
     	transfer_state = 819
     	transfer_state = 820
 		transfer_state = 612
-		transfer_state = 1005
-		transfer_state = 1006
+		transfer_state = 1123
+		transfer_state = 1124
     	set_cosmetic_tag = MSR
     }
 	if = {
@@ -2608,8 +2632,8 @@ KOR_hangbok_event_2 = {
     	transfer_state = 1064
     	transfer_state = 536
     	transfer_state = 645
-    	transfer_state = 988
-    	transfer_state = 989
+    	transfer_state = 1106
+    	transfer_state = 1107
     	add_state_core = 536
     	add_state_core = 1029
     	add_state_core = 645
@@ -2713,7 +2737,7 @@ KOR_hangbok_event_2 = {
 				transfer_troops = yes
 			}
 			transfer_state = 1035
-			transfer_state = 1004
+			transfer_state = 1122
 		}
 		XSM = {
 			annex_country = {
@@ -2929,10 +2953,10 @@ KOR_hangbok_event_2 = {
 			transfer_state = 536
 			transfer_state = 645
 			transfer_state = 645
-			transfer_state = 988
-			transfer_state = 989
-			transfer_state = 990
-			transfer_state = 991
+			transfer_state = 1106
+			transfer_state = 1107
+			transfer_state = 1108
+			transfer_state = 1109
 			add_state_core = 536
 			add_state_core = 1029
 			add_state_core = 645
@@ -3066,12 +3090,12 @@ KOR_china_annex_effect = {
 	KTA = {
 		set_cosmetic_tag = KTA_KOR
 		transfer_state = 283
-		transfer_state = 996
+		transfer_state = 1114
 		transfer_state = 1063
 		transfer_state = 616
 		transfer_state = 756
 		add_state_core = 283
-		add_state_core = 996
+		add_state_core = 1114
 		add_state_core = 1063
 		add_state_core = 616
 		add_state_core = 756
@@ -3093,7 +3117,7 @@ KOR_china_annex_effect = {
 		set_cosmetic_tag = XSM_REV_KOR
 		transfer_state = 755
 		transfer_state = 754
-		transfer_state = 1011
+		transfer_state = 1129
 		set_politics = {
 			ruling_party = neutrality
 			last_election = "1933.7.1"
@@ -3113,12 +3137,12 @@ KOR_china_annex_effect = {
 		transfer_state = 1047
 		transfer_state = 605
 		transfer_state = 748
-		transfer_state = 1007
+		transfer_state = 1125
 		transfer_state = 753
 		add_state_core = 1047
 		add_state_core = 605
 		add_state_core = 748
-		add_state_core = 1007
+		add_state_core = 1125
 		add_state_core = 753
 		add_country_leader_role = {
 			Character = SZC_liu_xiang
@@ -3174,7 +3198,7 @@ KOR_china_annex_effect = {
 		transfer_state = 1101
 		transfer_state = 1033
 		transfer_state = 609
-		transfer_state = 1012
+		transfer_state = 1130
 		transfer_state = 1097
 		#
 		add_state_core = 608
@@ -3190,7 +3214,7 @@ KOR_china_annex_effect = {
 		add_state_core = 1101
 		add_state_core = 1033
 		add_state_core = 609
-		add_state_core = 1012
+		add_state_core = 1130
 		add_state_core = 1097
 		set_cosmetic_tag = SZY_KOR
 		set_politics = {
@@ -3210,13 +3234,13 @@ KOR_china_annex_effect = {
 		set_capital = { state = 613 }
 		transfer_state = 607
 		transfer_state = 1057
-		transfer_state = 1008
+		transfer_state = 1126
 		transfer_state = 620
 		transfer_state = 1056	
-		transfer_state = 1009
+		transfer_state = 1127
 		transfer_state = 598	
 		transfer_state = 1051
-		transfer_state = 997
+		transfer_state = 1115
 		transfer_state = 1040
 		transfer_state = 606
 		transfer_state = 1048
@@ -3298,8 +3322,8 @@ KOR_china_annex_effect = {
 		add_ideas = YUN_huguojun
 		transfer_state = 325
 		transfer_state = 747
-		transfer_state = 1010
-		transfer_state = 1013
+		transfer_state = 1128
+		transfer_state = 1131
 		set_politics = {
 			ruling_party = fascism
 			last_election = "1933.7.1"
@@ -3481,14 +3505,14 @@ KOR_japan_annex_effect = {
 				transfer_state = 529
 				transfer_state = 531
 				transfer_state = 1070
-				transfer_state = 991
+				transfer_state = 1109
 				transfer_state = 1066
 				transfer_state = 1065
 				add_ideas = DK1_nobuhito
 				add_state_core = 529
 				add_state_core = 531
 				add_state_core = 1070
-				add_state_core = 991
+				add_state_core = 1109
 				add_state_core = 1066
 				add_state_core = 1065
 			}
@@ -3512,7 +3536,7 @@ KOR_japan_annex_effect = {
 				transfer_state = 1072
 				transfer_state = 534
 				transfer_state = 282
-				transfer_state = 990
+				transfer_state = 1108
 				add_ideas = DK1_nobuhito
 				add_ideas = JAP_pre_modern_army
 				add_state_core = 1069
@@ -3521,7 +3545,7 @@ KOR_japan_annex_effect = {
 				add_state_core = 1072
 				add_state_core = 534
 				add_state_core = 282
-				add_state_core = 990
+				add_state_core = 1108
 				set_cosmetic_tag = KOR_TBJ
 			}
 		puppet = DK3
@@ -3614,10 +3638,10 @@ TNO_TLE_KOR_victory_effect = {
 					transfer_troops = no
 				}
 				
-				transfer_state = 988
+				transfer_state = 1106
 				transfer_state = 1073
 				transfer_state = 1067
-				transfer_state = 989
+				transfer_state = 1107
 				every_state = {
 					limit = {
 						is_core_of = JAP
@@ -3966,10 +3990,10 @@ TNO_TLE_KOR_victory_effect = {
 				neutrality = 5
 			}
 			transfer_state = 1075
-			transfer_state = 992
 			transfer_state = 993
-			transfer_state = 994
-			transfer_state = 995
+			transfer_state = 1111
+			transfer_state = 1112
+			transfer_state = 1113
 			set_cosmetic_tag = SIA_end
 			retire_character = SIA_plaek_phibunsongkhram
 			retire_character = SIA_khuang_aphaiwong
@@ -3996,7 +4020,7 @@ TNO_TLE_KOR_victory_effect = {
 				}
 			}
 			SIA = {
-				transfer_state = 1076
+				transfer_state = 994
 			}
 		}
 		if = {
@@ -4004,7 +4028,7 @@ TNO_TLE_KOR_victory_effect = {
 				has_global_flag = TNO_GEACSIAB
 			}
 			BRM = {
-				transfer_state = 1076
+				transfer_state = 994
 			}
 		}
 		if = {
@@ -4017,19 +4041,19 @@ TNO_TLE_KOR_victory_effect = {
 			}
 		}
 		KVN = {
-			993 = {
+			1111 = {
 				if = {
 					limit = { is_owned_by = FRI }
 					add_core_of = KVN
 				}
 			}
-			994 = {
+			1112 = {
 				if = {
 					limit = { is_owned_by = FRI }
 					add_core_of = KVN
 				}
 			}
-			995 = {
+			1113 = {
 				if = {
 					limit = { is_owned_by = FRI }
 					add_core_of = KVN
@@ -4125,18 +4149,25 @@ TNO_TLE_KOR_victory_effect = {
 			set_cosmetic_tag = BRM_KOR
 			transfer_state = 640
 			transfer_state = 288
-			transfer_state = 1090
-			transfer_state = 1091
-			transfer_state = 1092
+			transfer_state = 998
+			transfer_state = 999
+			transfer_state = 997
+			transfer_state = 995
+			transfer_state = 996
 		}
 		AFG = {
 			transfer_state = 445
 			transfer_state = 442
 			transfer_state = 444
-			
+			transfer_state = 987
+			transfer_state = 988
+			transfer_state = 1012
 			add_state_core = 445
 			add_state_core = 442
 			add_state_core = 444
+			add_state_core = 987
+			add_state_core = 988
+			add_state_core = 1012
 		}
 		INS = {
 			set_cosmetic_tag = INS_KOR
@@ -4215,6 +4246,9 @@ TNO_TLE_KOR_victory_effect = {
 				set_autonomy = { target = SIA autonomy_state = korean_puppet }
 			}
 		}
+		YEM = {
+			transfer_state = 992
+		}
 		if = {
 			limit = {
 				OR = {
@@ -4228,54 +4262,26 @@ TNO_TLE_KOR_victory_effect = {
 			}
 			BAN = {
 				set_cosmetic_tag = BAN_TNO
-				transfer_state = 320
-				transfer_state = 321
-				transfer_state = 423
-				transfer_state = 424
-				transfer_state = 425
-				transfer_state = 426
-				transfer_state = 427
-				transfer_state = 428
-				transfer_state = 429
-				transfer_state = 430
-				transfer_state = 431
-				transfer_state = 432
-				transfer_state = 433
-				transfer_state = 434
-				transfer_state = 435
-				transfer_state = 436
-				transfer_state = 437
-				transfer_state = 438
-				transfer_state = 439
-				transfer_state = 440
-				transfer_state = 441
-				transfer_state = 443
-				transfer_state = 787
-				add_state_core = 320
-				add_state_core = 321
-				add_state_core = 423
-				add_state_core = 424
-				add_state_core = 425
-				add_state_core = 426
-				add_state_core = 427
-				add_state_core = 428
-				add_state_core = 429
-				add_state_core = 431
-				add_state_core = 432
-				add_state_core = 433
-				add_state_core = 434
-				add_state_core = 435
-				add_state_core = 436
-				add_state_core = 437
-				add_state_core = 438
-				add_state_core = 439
-				add_state_core = 440
-				add_state_core = 441
-				add_state_core = 443
-				add_state_core = 787
 				set_capital = {
 					state = 439
+					remember_old_capital = no
 				}
+			}
+			every_state = {
+				limit = {
+					is_owned_by = RAJ
+					NOT = {
+						state = 445
+						state = 442
+						state = 444
+						state = 987
+						state = 988
+						state = 992
+						state = 1012
+					}
+				}
+				transfer_state_to = BAN
+				add_core_of = BAN
 			}
 			KOR = {
 				puppet = BAN
@@ -4307,7 +4313,11 @@ TNO_TLE_KOR_victory_effect = {
 					}
 				}
 			}
+			YEM = {
+				transfer_state = 992
+			}
 			RAJ = {
+				set_cosmetic_tag = RAJ_FREETNO
 				transfer_state = 320
 				transfer_state = 321
 				every_country = {
@@ -4328,6 +4338,14 @@ TNO_TLE_KOR_victory_effect = {
 					communism = 10
 					neutrality = 10
 				}
+				retire_country_leader = yes
+				create_country_leader = {
+					name = "RAJ_jawaharlal_nehru"
+					picture = "gfx/leaders/RAJ/Jawaharlal_Nehru.png"
+					ideology = socialism
+					traits = {
+					}
+				}
 				leave_faction = yes
 			}
 			BAN = {
@@ -4336,29 +4354,18 @@ TNO_TLE_KOR_victory_effect = {
 				transfer_state = 431
 				transfer_state = 432
 				transfer_state = 435
-				add_state_core = 423
-				add_state_core = 424
-				add_state_core = 425
-				add_state_core = 426
-				add_state_core = 427
-				add_state_core = 428
-				add_state_core = 429
-				add_state_core = 431
-				add_state_core = 432
-				add_state_core = 433
-				add_state_core = 434
-				add_state_core = 435
-				add_state_core = 436
-				add_state_core = 437
-				add_state_core = 438
-				add_state_core = 439
-				add_state_core = 440
-				add_state_core = 441
-				add_state_core = 443
-				add_state_core = 787
+				transfer_state = 985
+				transfer_state = 990
 				set_capital = {
 					state = 431
+					remember_old_capital = no
 				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = RAJ
+				}
+				add_core_of = BAN
 			}
 			TIB = {
 				transfer_state = 434
@@ -4602,7 +4609,7 @@ TLE_german_defeat_effect = {
 					OR = { NOT = { has_cosmetic_tag = HUN_EMPIRE } is_in_faction_with = GER }
 				}
 			}
-			transfer_state = 987
+			transfer_state = 1105
 		}
 	}	
 	ROM = {
@@ -4664,7 +4671,7 @@ TLE_german_defeat_effect = {
     }
     ENG = {
     	transfer_state = 51
-    	transfer_state = 982
+    	transfer_state = 1110
     	transfer_state = 57
     	transfer_state = 56
     	transfer_state = 59
@@ -4693,7 +4700,11 @@ TLE_german_defeat_effect = {
 				}
 			}
 		}
+		YEM = {
+			transfer_state = 992
+		}
 		RAJ = {
+			set_country_flag = TLE_RAJ_indian_independence_act_flag
 			set_cosmetic_tag = RAJ_UK_autonomy_dominion
 			set_politics = { 
 				ruling_party = democratic
@@ -4707,19 +4718,27 @@ TLE_german_defeat_effect = {
 			country_event = {
 				id = burma.1
 			}
+			retire_country_leader = yes
+			create_country_leader = {
+				name = "RAJ_jawaharlal_nehru"
+				picture = "gfx/leaders/RAJ/Jawaharlal_Nehru.png"
+				ideology = socialism
+				traits = {
+				}
+			}
 		}
 		ENG = {
 			puppet = PAK
 		}
+		every_state = {
+			limit = {
+				is_owned_by = RAJ
+				is_core_of = PAK
+			}
+			transfer_state_to = PAK
+		}
 		PAK = {
 			set_cosmetic_tag = PAK_UK
-			transfer_state = 430
-			transfer_state = 440
-			transfer_state = 442
-			transfer_state = 443
-			transfer_state = 444
-			transfer_state = 445
-			transfer_state = 787
 			set_politics = { 
 				ruling_party = neutrality
 				last_election = "1936.11.26"
@@ -4744,7 +4763,7 @@ TLE_german_defeat_effect = {
 		}
 		AST = {
 			transfer_state = 711
-			transfer_state = 722
+			transfer_state = 712
 		}
 		PHI = {
 			end_puppet = USA
@@ -4816,8 +4835,8 @@ TLE_german_defeat_effect = {
 		transfer_state = 557	
 		transfer_state = 777		
 		transfer_state = 772
-		transfer_state = 998
-		transfer_state = 985
+		transfer_state = 1116
+		transfer_state = 1092
     }
 	ALB = {
 		transfer_state = 44
@@ -4943,13 +4962,13 @@ TLE_german_defeat_effect = {
 			transfer_state = 804
 			transfer_state = 45
 			transfer_state = 764
-			transfer_state = 1000
-			transfer_state = 1002
+			transfer_state = 1118
+			transfer_state = 1120
 			transfer_state = 105
 			transfer_state = 853
 			transfer_state = 103
-			transfer_state = 1001
-			transfer_state = 983
+			transfer_state = 1119
+			transfer_state = 1076
 		}
 		transfer_state = 107
 		transfer_state = 108
@@ -5000,7 +5019,7 @@ TLE_german_defeat_effect = {
 			remove_power_balance = { id = ITA_power_balance }
 			save_event_target_as = italia_real_ww2
 			transfer_state = 160
-			transfer_state = 1003
+			transfer_state = 1121
 			transfer_state = 736
 			transfer_state = 159	
 			transfer_state = 158
@@ -5044,7 +5063,7 @@ TLE_german_defeat_effect = {
 			transfer_state = 39
 			transfer_state = 850
 			transfer_state = 160
-			transfer_state = 1003
+			transfer_state = 1121
 			transfer_state = 736
 			transfer_state = 159	
 			transfer_state = 158
@@ -5146,11 +5165,11 @@ TLE_german_defeat_effect = {
 		transfer_state = 6
 		if = {
 			limit = {
-				999 = {
+				1117 = {
 					is_core_of = BEL
 				}
 			}
-			transfer_state = 999
+			transfer_state = 1117
 		}
 		set_cosmetic_tag = BEL
 	}
@@ -5253,9 +5272,9 @@ TLE_german_defeat_effect = {
 			transfer_state = 741
 			transfer_state = 670
 			transfer_state = 1089
-			transfer_state = 993
-			transfer_state = 994
-			transfer_state = 995
+			transfer_state = 1111
+			transfer_state = 1112
+			transfer_state = 1113
 			transfer_state = 1082
 			transfer_state = 1083
 			transfer_state = 1084
@@ -5318,7 +5337,7 @@ TLE_german_defeat_effect = {
     	transfer_state = 188
     	transfer_state = 722
     	transfer_state = 1102
-    	transfer_state = 984
+    	transfer_state = 1090
     	#독일
     	transfer_state = 64
     	transfer_state = 62
@@ -5523,7 +5542,11 @@ TLE_german_defeat_red_effect = {
 				}
 			}
 		}
+		YEM = {
+			transfer_state = 992
+		}
 		RAJ = {
+			set_country_flag = TLE_RAJ_indian_independence_act_flag
 			set_cosmetic_tag = RAJ_UK_autonomy_dominion
 			set_politics = { 
 				ruling_party = democratic
@@ -5534,6 +5557,14 @@ TLE_german_defeat_red_effect = {
 			set_popularities = {
 				democratic = 100
 			}
+			retire_country_leader = yes
+			create_country_leader = {
+				name = "RAJ_jawaharlal_nehru"
+				picture = "gfx/leaders/RAJ/Jawaharlal_Nehru.png"
+				ideology = socialism
+				traits = {
+				}
+			}
 			country_event = {
 				id = burma.1
 			}
@@ -5541,15 +5572,15 @@ TLE_german_defeat_red_effect = {
 		ENG = {
 			puppet = PAK
 		}
+		every_state = {
+			limit = {
+				is_owned_by = RAJ
+				is_core_of = PAK
+			}
+			transfer_state_to = PAK
+		}
 		PAK = {
 			set_cosmetic_tag = PAK_UK
-			transfer_state = 430
-			transfer_state = 440
-			transfer_state = 442
-			transfer_state = 443
-			transfer_state = 444
-			transfer_state = 445
-			transfer_state = 787
 			set_politics = { 
 				ruling_party = neutrality
 				last_election = "1936.11.26"
@@ -5575,7 +5606,7 @@ TLE_german_defeat_red_effect = {
 		}
 		AST = {
 			transfer_state = 711
-			transfer_state = 722
+			transfer_state = 712
 		}
 		PHI = {
 			end_puppet = USA
@@ -5659,7 +5690,7 @@ TLE_german_defeat_red_effect = {
 					OR = { NOT = { has_cosmetic_tag = HUN_EMPIRE } is_in_faction_with = GER }
 				}
 			}
-			transfer_state = 987
+			transfer_state = 1105
 		}
 	}	
 	ROM = {
@@ -5773,7 +5804,7 @@ TLE_german_defeat_red_effect = {
 		transfer_state = 557	
 		transfer_state = 777		
 		transfer_state = 772
-		transfer_state = 985
+		transfer_state = 1092
     }
 	ALB = {
 		transfer_state = 44
@@ -5833,12 +5864,12 @@ TLE_german_defeat_red_effect = {
 		transfer_state = 59
 		transfer_state = 56
 		transfer_state = 57
-		transfer_state = 982
+		transfer_state = 1110
 		transfer_state = 55
 		transfer_state = 54
 		transfer_state = 50
 		transfer_state = 50
-		transfer_state = 998
+		transfer_state = 1116
 		transfer_state = 52
 		transfer_state = 53
 		transfer_state = 978
@@ -5855,12 +5886,12 @@ TLE_german_defeat_red_effect = {
 		add_state_core = 59
 		add_state_core = 56
 		add_state_core = 57
-		add_state_core = 982
+		add_state_core = 1110
 		add_state_core = 55
 		add_state_core = 54
 		add_state_core = 50
 		add_state_core = 50
-		add_state_core = 998
+		add_state_core = 1116
 		add_state_core = 52
 		add_state_core = 53
 		add_state_core = 978
@@ -5975,13 +6006,13 @@ TLE_german_defeat_red_effect = {
 			transfer_state = 804
 			transfer_state = 45
 			transfer_state = 764
-			transfer_state = 1000
-			transfer_state = 1002
+			transfer_state = 1118
+			transfer_state = 1120
 			transfer_state = 105
 			transfer_state = 853
 			transfer_state = 103
-			transfer_state = 1001
-			transfer_state = 983
+			transfer_state = 1119
+			transfer_state = 1076
 		}
 		transfer_state = 107
 		transfer_state = 108
@@ -6010,7 +6041,7 @@ TLE_german_defeat_red_effect = {
 			}
 			save_event_target_as = italia_real_ww2
 			transfer_state = 160
-			transfer_state = 1003
+			transfer_state = 1121
 			transfer_state = 736
 			transfer_state = 159	
 			transfer_state = 158
@@ -6054,7 +6085,7 @@ TLE_german_defeat_red_effect = {
 			transfer_state = 39
 			transfer_state = 850
 			transfer_state = 160
-			transfer_state = 1003
+			transfer_state = 1121
 			transfer_state = 736
 			transfer_state = 159	
 			transfer_state = 158
@@ -6147,11 +6178,11 @@ TLE_german_defeat_red_effect = {
 		transfer_state = 6
 		if = {
 			limit = {
-				999 = {
+				1117 = {
 					is_core_of = BEL
 				}
 			}
-			transfer_state = 999
+			transfer_state = 1117
 		}
 		set_cosmetic_tag = BEL
 	}
@@ -6236,9 +6267,9 @@ TLE_german_defeat_red_effect = {
 			transfer_state = 741
 			transfer_state = 670
 			transfer_state = 1089
-			transfer_state = 993
-			transfer_state = 994
-			transfer_state = 995
+			transfer_state = 1111
+			transfer_state = 1112
+			transfer_state = 1113
 			transfer_state = 1082
 			transfer_state = 1083
 			transfer_state = 1084
@@ -6297,7 +6328,7 @@ TLE_german_defeat_red_effect = {
     	transfer_state = 188
     	transfer_state = 722
     	transfer_state = 1102
-    	transfer_state = 984
+    	transfer_state = 1090
 		
 		transfer_state = 784
 		transfer_state = 96
@@ -6472,7 +6503,7 @@ TLE_REDORDER_italian_civilwar_end_effect = {
 	}
 	IT1 = {
 		transfer_state = 850
-		transfer_state = 1003
+		transfer_state = 1121
 		transfer_state = 160
 		transfer_state = 159
 		transfer_state = 161
@@ -6480,7 +6511,7 @@ TLE_REDORDER_italian_civilwar_end_effect = {
 		transfer_state = 162
 		
 		add_state_core = 850
-		add_state_core = 1003
+		add_state_core = 1121
 		add_state_core = 160
 		add_state_core = 159
 		add_state_core = 161
@@ -6579,12 +6610,12 @@ TLE_soviet_defeat_effect = {
 		}
 		if = {
 			limit = {
-				999 = {
+				1117 = {
 					is_core_of = BEL
 				}
 			}
-			transfer_state = 999
-			add_state_core = 999
+			transfer_state = 1117
+			add_state_core = 1117
 		}
 		transfer_state = 807
 		transfer_state = 85
@@ -6605,19 +6636,19 @@ TLE_soviet_defeat_effect = {
 		}
 		if = {
 			limit = {
-				984 = {
+				1090 = {
 					is_core_of = POL
 				}
 			}
-			transfer_state = 984
+			transfer_state = 1090
 		}
 		if = {
 			limit = {
-				987 = {
+				1105 = {
 					is_core_of = POL
 				}
 			}
-			transfer_state = 987
+			transfer_state = 1105
 		}
 		transfer_state = 98
 		transfer_state = 87
@@ -6906,7 +6937,7 @@ GER_victory_at_ww2 = {
 				transfer_state = 158
 				transfer_state = 159
 				transfer_state = 160
-				transfer_state = 1003
+				transfer_state = 1121
 				transfer_state = 850
 				transfer_state = 39
 				transfer_state = 736
@@ -6921,16 +6952,16 @@ GER_victory_at_ww2 = {
 				transfer_state = 908
 				transfer_state = 458
 				transfer_state = 665
-				transfer_state = 1002
+				transfer_state = 1120
 				transfer_state = 44
 				transfer_state = 934
 				transfer_state = 970
 				transfer_state = 802
-				transfer_state = 1000
+				transfer_state = 1118
 				transfer_state = 805
 				transfer_state = 446
 				transfer_state = 105
-				transfer_state = 1001
+				transfer_state = 1119
 				annex_country = {
 					target = italian_looser
 					transfer_troops = yes
@@ -7030,9 +7061,9 @@ GER_victory_at_ww2 = {
 					transfer_state = 1087
 				}
 				SIA = {
-					transfer_state = 993
-					transfer_state = 994
-					transfer_state = 995
+					transfer_state = 1111
+					transfer_state = 1112
+					transfer_state = 1113
 				}
 			}
 			every_country = {
@@ -7209,11 +7240,11 @@ GER_victory_at_ww2 = {
 				transfer_state = 45
 				if = {
 					limit = {
-						983 = {
+						1076 = {
 							is_core_of = YUG
 						}
 					}
-					transfer_state = 983
+					transfer_state = 1076
 				}
 			}
 			SER = {
@@ -7246,7 +7277,7 @@ GER_victory_at_ww2 = {
 				transfer_state = 39
 				transfer_state = 850
 				transfer_state = 160
-				transfer_state = 1003
+				transfer_state = 1121
 				transfer_state = 159	
 				transfer_state = 158
 				transfer_state = 161
@@ -7265,7 +7296,7 @@ GER_victory_at_ww2 = {
 				transfer_state = 665
 				transfer_state = 458
 				transfer_state = 105
-				transfer_state = 1001
+				transfer_state = 1119
 				annex_country = {
 					target = ETH
 					transfer_troops = yes
@@ -7388,9 +7419,9 @@ FRS_diminished_effect = {
 				transfer_state = 1087
 			}
 			SIA = {
-				transfer_state = 993
-				transfer_state = 994
-				transfer_state = 995
+				transfer_state = 1111
+				transfer_state = 1112
+				transfer_state = 1113
 			}
 		}
 		every_state = { #transfer French colonial empire
@@ -7592,6 +7623,10 @@ FRS_diminished_effect = {
 			}
 			remove_core_of = event_target:vichy_france
 		}
+		FRA = {
+			end_puppet = SYR
+			end_puppet = LEB
+		}
 		SYR = {
 			transfer_state = 677
 			transfer_state = 680
@@ -7621,7 +7656,11 @@ FRS_diminished_effect = {
 				}
 			}
 		}
+		YEM = {
+			transfer_state = 992
+		}
 		RAJ = {
+			set_country_flag = TLE_RAJ_indian_independence_act_flag
 			set_cosmetic_tag = RAJ_UK_autonomy_dominion
 			set_politics = { 
 				ruling_party = democratic
@@ -7632,6 +7671,14 @@ FRS_diminished_effect = {
 			set_popularities = {
 				democratic = 100
 			}
+			retire_country_leader = yes
+			create_country_leader = {
+				name = "RAJ_jawaharlal_nehru"
+				picture = "gfx/leaders/RAJ/Jawaharlal_Nehru.png"
+				ideology = socialism
+				traits = {
+				}
+			}
 			country_event = {
 				id = burma.1
 			}
@@ -7639,15 +7686,15 @@ FRS_diminished_effect = {
 		ENG = {
 			puppet = PAK
 		}
+		every_state = {
+			limit = {
+				is_owned_by = RAJ
+				is_core_of = PAK
+			}
+			transfer_state_to = PAK
+		}
 		PAK = {
 			set_cosmetic_tag = PAK_UK
-			transfer_state = 430
-			transfer_state = 440
-			transfer_state = 442
-			transfer_state = 443
-			transfer_state = 444
-			transfer_state = 445
-			transfer_state = 787
 			set_politics = { 
 				ruling_party = neutrality
 				last_election = "1936.11.26"
@@ -8049,7 +8096,7 @@ FRS_diminished_effect = {
 				transfer_state = 853
 				transfer_state = 735
 				transfer_state = 105
-				transfer_state = 1001
+				transfer_state = 1119
 
 				## 이집트 & 수단 ##
 				# transfer_state = 452
@@ -8105,12 +8152,12 @@ FRS_diminished_effect = {
 				transfer_state = 665
 				transfer_state = 458
 				transfer_state = 116
-				transfer_state = 1002
+				transfer_state = 1120
 				transfer_state = 44
 				transfer_state = 934
 				transfer_state = 970
 				transfer_state = 802
-				transfer_state = 1000
+				transfer_state = 1118
 				transfer_state = 805
 				annex_country = {
 					target = event_target:italian_looser
@@ -8140,6 +8187,7 @@ FRS_diminished_effect = {
 				set_cosmetic_tag = UAE_ITA
 				transfer_state = 658
 				transfer_state = 765
+				transfer_state = 1014
 			}
 			AOI = {
 				set_cosmetic_tag = AOI_ITA
@@ -8360,6 +8408,7 @@ FRS_diminished_effect = {
 			}
 			YEM = {
 				transfer_state = 659
+				transfer_state = 992
 			}
 			RAJ = {
 				set_politics = {
@@ -8371,12 +8420,16 @@ FRS_diminished_effect = {
 				set_popularities = {
 					democratic = 100
 				}
-				drop_cosmetic_tag = yes
-				transfer_state = 281
-				annex_country = {
-					target = PAK
-					transfer_troops = no
+				retire_country_leader = yes
+				create_country_leader = {
+					name = "RAJ_jawaharlal_nehru"
+					picture = "gfx/leaders/RAJ/Jawaharlal_Nehru.png"
+					ideology = socialism
+					traits = {
+					}
 				}
+				set_cosmetic_tag = RAJ_FREETNO
+				transfer_state = 281
 			}
 			if = {
 				limit = {
@@ -8441,16 +8494,16 @@ FRS_diminished_effect = {
 						limit = {
 							NOT = {
 								SIA = {
-									owns_state = 993
+									owns_state = 1111
 								}
 								KSI = {
-									owns_state = 993
+									owns_state = 1111
 								}
 							}
 						}		
-						transfer_state = 993
+						transfer_state = 1111
 					}
-					transfer_state = 994
+					transfer_state = 1112
 					transfer_state = 1089
 					set_politics = {
 						ruling_party = communism
@@ -8469,7 +8522,7 @@ FRS_diminished_effect = {
 					set_cosmetic_tag = CAM_rep
 					transfer_state = 741
 					transfer_state = 1103
-					transfer_state = 995
+					transfer_state = 1113
 					set_politics = {
 						ruling_party = communism
 						last_election = "1936.1.1"
@@ -8486,13 +8539,13 @@ FRS_diminished_effect = {
 				671 = {
 					set_demilitarized_zone = no
 				}
-				993 = {
+				1111 = {
 					set_demilitarized_zone = yes
 				}
-				994 = {
+				1112 = {
 					set_demilitarized_zone = yes
 				}
-				995 = {
+				1113 = {
 					set_demilitarized_zone = yes
 				}
 				1082 = {
@@ -8559,10 +8612,15 @@ FRS_diminished_effect = {
 				transfer_state = 445
 				transfer_state = 442
 				transfer_state = 444
-			
+				transfer_state = 987
+				transfer_state = 988
+				transfer_state = 1012
 				add_state_core = 445
 				add_state_core = 442
 				add_state_core = 444
+				add_state_core = 987
+				add_state_core = 988
+				add_state_core = 1012
 			}
 			RAJ = {
 				puppet = BUR
@@ -8651,11 +8709,15 @@ FRS_diminished_effect = {
 			set_demilitarized_zone = yes
 		}
 		HUN = {
-			transfer_state = 983	
+			transfer_state = 1076	
 		}
 		GER = {
-			transfer_state = 985
-			
+			transfer_state = 1092
+			transfer_state = 9
+			transfer_state = 75
+			remove_dynamic_modifier = {
+				modifier = GER_economy_of_conquest_modifier
+			}
 			set_autonomy = {
 				target = DM1
 				autonomous_state = autonomy_reichskommissariat
@@ -8786,7 +8848,7 @@ TLE_german_empire_win = {
 			}
 		}
 		POL = {
-			transfer_state = 984
+			transfer_state = 1090
 			transfer_state = 95
 			transfer_state = 96
 			transfer_state = 95
@@ -8812,7 +8874,7 @@ TLE_german_empire_win = {
 			puppet = BLR
 		}
 		BLR = {
-			transfer_state = 984
+			transfer_state = 1090
 			transfer_state = 95
 			transfer_state = 96
 			transfer_state = 95
@@ -9037,7 +9099,7 @@ TLE_german_empire_lose = {
 			transfer_state = 96
 			transfer_state = 784
 			transfer_state = 1102
-			transfer_state = 984
+			transfer_state = 1090
 			transfer_state = 763
 			transfer_state = 188
 			annex_country = {
@@ -9072,7 +9134,7 @@ TLE_german_empire_lose = {
 		transfer_state = 66
 		set_cosmetic_tag = POL_WW2
 		transfer_state = 88
-		transfer_state = 987
+		transfer_state = 1105
 		transfer_state = 807
 		transfer_state = 85
 		transfer_state = 86
@@ -9085,7 +9147,7 @@ TLE_german_empire_lose = {
 	}
 	BEL = {
 		set_cosmetic_tag = BEL
-		transfer_state = 999
+		transfer_state = 1117
 		transfer_state = 980
 	}
 	LUX = {
@@ -9129,16 +9191,16 @@ TLE_german_empire_lose = {
 			transfer_troops = yes
 		}
 		transfer_state = 45
-		transfer_state = 983
+		transfer_state = 1076
 		transfer_state = 102
 		transfer_state = 109
 		transfer_state = 104
 		transfer_state = 804
 		transfer_state = 853
-		transfer_state = 1002
+		transfer_state = 1120
 		transfer_state = 103
 		transfer_state = 163
-		transfer_state = 1001
+		transfer_state = 1119
 		transfer_state = 764
 		if = {
 			limit = {
@@ -9189,12 +9251,12 @@ TLE_german_empire_lose = {
 		transfer_state = 42
 		transfer_state = 51
 		transfer_state = 50
-		transfer_state = 998
-		transfer_state = 985
+		transfer_state = 1116
+		transfer_state = 1092
 	}
 	ROM = {
 		transfer_state = 76
-		transfer_state = 986
+		transfer_state = 1104
 		transfer_state = 84
 		transfer_state = 83
 		transfer_state = 82
@@ -9251,7 +9313,7 @@ TLE_german_empire_lose = {
 		add_state_core = 51
 		add_state_core = 50
 		add_state_core = 42
-		add_state_core = 998
+		add_state_core = 1116
 		change_tag_from = GER
 	}
 }
@@ -9342,9 +9404,9 @@ MON_MEN_korean_mongolian_win_effect = {
 			transfer_state = 612
 			transfer_state = 611
 			transfer_state = 621
-			transfer_state = 1005
+			transfer_state = 1123
 			transfer_state = 746
-			transfer_state = 1006
+			transfer_state = 1124
 			transfer_state = 819
 			set_cosmetic_tag = MEN
 		}
@@ -9490,7 +9552,7 @@ KKS_SMO_Z_effect = {
 		transfer_state = 1052
 		transfer_state = 615
 		transfer_state = 1099
-		transfer_state = 996
+		transfer_state = 1114
 		transfer_state = 744
 		add_state_core = 744
 	}
@@ -9517,7 +9579,7 @@ KKS_SMO_Z_effect = {
 			}
 			add_core_of = SZY
 		}
-		transfer_state = 1012
+		transfer_state = 1130
 		transfer_state = 609
 		transfer_state = 1097
 		transfer_state = 1049
@@ -9529,7 +9591,7 @@ KKS_SMO_Z_effect = {
 		transfer_state = 597
 		transfer_state = 1050
 		transfer_state = 1035
-		transfer_state = 1004
+		transfer_state = 1122
 		transfer_state = 1034
 		transfer_state = 743
 	}
@@ -9548,10 +9610,10 @@ KKS_kuomintang_north_attack_success_effect = {
 			transfer_state = 1040
 			transfer_state = 598
 			transfer_state = 1051
-			transfer_state = 997
+			transfer_state = 1115
 			transfer_state = 1048
-			transfer_state = 1009
-			transfer_state = 1008
+			transfer_state = 1127
+			transfer_state = 1126
 			transfer_state = 1056
 			transfer_state = 620
 			transfer_state = 1057
@@ -9671,10 +9733,10 @@ GAW_KKS_lose_effect = {
 			transfer_state = 612
 			transfer_state = 746
 			transfer_state = 1039
-			transfer_state = 1005
+			transfer_state = 1123
 			transfer_state = 1034
 			transfer_state = 743
-			transfer_state = 1004
+			transfer_state = 1122
 			transfer_state = 1035
 		}
 		if = { #소련 패전시
@@ -9752,15 +9814,15 @@ GAW_KKS_lose_effect = {
 				transfer_troops = no
 			}
 			transfer_state = 528 #나가사키
-			transfer_state = 988 #마이즈루
-			transfer_state = 989 #쿠레
+			transfer_state = 1106 #마이즈루
+			transfer_state = 1107 #쿠레
 			transfer_state = 1067 #요코하마
 		}
 		MSR = {
 			transfer_state = 330
 			transfer_state = 817
 			transfer_state = 819
-			transfer_state = 1006
+			transfer_state = 1124
 		}
 		USA = {
 			transfer_state = 646
@@ -9879,7 +9941,7 @@ GAW_KKS_win_effect = {
 			transfer_state = 598
 			transfer_state = 1040
 			transfer_state = 1051
-			transfer_state = 997
+			transfer_state = 1115
 			transfer_state = 613
 			transfer_state = 1038
 			transfer_state = 1037
@@ -9887,10 +9949,10 @@ GAW_KKS_win_effect = {
 			transfer_state = 596
 			transfer_state = 1042
 			transfer_state = 749
-			transfer_state = 1008
+			transfer_state = 1126
 			transfer_state = 1041
 			transfer_state = 620
-			transfer_state = 1009
+			transfer_state = 1127
 			transfer_state = 1048
 			transfer_state = 1056
 		}
@@ -9925,9 +9987,9 @@ GAW_KKS_win_effect = {
 		YUN = {
 			set_cosmetic_tag = YUN_KKS_HAPPY
 			transfer_state = 325
-			transfer_state = 1010
+			transfer_state = 1128
 			transfer_state = 747
-			transfer_state = 1013
+			transfer_state = 1131
 		}
 		GXC = {
 			set_cosmetic_tag = GXC_KKS_HAPPY
@@ -10006,16 +10068,16 @@ GAW_KKS_win_effect = {
 				limit = {
 					NOT = {
 						SIA = {
-							owns_state = 993
+							owns_state = 1111
 						}
 						KSI = {
-							owns_state = 993
+							owns_state = 1111
 						}
 					}
 				}		
-				transfer_state = 993
+				transfer_state = 1111
 			}
-			transfer_state = 994
+			transfer_state = 1112
 			transfer_state = 1089
 			set_politics = {
 				ruling_party = communism
@@ -10034,7 +10096,7 @@ GAW_KKS_win_effect = {
 			set_cosmetic_tag = CAM_rep
 			transfer_state = 741
 			transfer_state = 1103
-			transfer_state = 995
+			transfer_state = 1113
 			set_politics = {
 				ruling_party = communism
 				last_election = "1936.1.1"
@@ -10051,13 +10113,13 @@ GAW_KKS_win_effect = {
 		671 = {
 			set_demilitarized_zone = no
 		}
-		993 = {
+		1111 = {
 			set_demilitarized_zone = yes
 		}
-		994 = {
+		1112 = {
 			set_demilitarized_zone = yes
 		}
-		995 = {
+		1113 = {
 			set_demilitarized_zone = yes
 		}
 		HNC = {
@@ -10154,7 +10216,7 @@ GAW_ACH_lose_effect = {
 			transfer_state = 612
 			transfer_state = 746
 			transfer_state = 1039
-			transfer_state = 1005
+			transfer_state = 1123
 		}
 		if = { #소련 패전시
 			limit = {
@@ -10234,8 +10296,8 @@ GAW_ACH_lose_effect = {
 				transfer_troops = no
 			}
 			transfer_state = 528 #나가사키
-			transfer_state = 988 #마이즈루
-			transfer_state = 989 #쿠레
+			transfer_state = 1106 #마이즈루
+			transfer_state = 1107 #쿠레
 			transfer_state = 1067 #요코하마
 			transfer_state = 1029 #츠시마
 		}
@@ -10243,7 +10305,7 @@ GAW_ACH_lose_effect = {
 			transfer_state = 330
 			transfer_state = 817
 			transfer_state = 819
-			transfer_state = 1006
+			transfer_state = 1124
 		}
 		USA = {
 			transfer_state = 646
@@ -10372,12 +10434,12 @@ GAW_ACH_lose_effect = {
 			transfer_state = 1024
 			transfer_state = 1019
 			transfer_state = 1018
-			transfer_state = 1014
+			transfer_state = 1132
 			transfer_state = 1022
-			transfer_state = 1015
+			transfer_state = 1133
 			transfer_state = 1023
 			transfer_state = 1026
-			transfer_state = 1016
+			transfer_state = 1091
 			transfer_state = 1020
 			#
 			add_state_core = 525
@@ -10387,12 +10449,12 @@ GAW_ACH_lose_effect = {
 			add_state_core = 1024
 			add_state_core = 1019
 			add_state_core = 1018
-			add_state_core = 1014
+			add_state_core = 1132
 			add_state_core = 1022
-			add_state_core = 1015
+			add_state_core = 1133
 			add_state_core = 1023
 			add_state_core = 1026
-			add_state_core = 1016
+			add_state_core = 1091
 			add_state_core = 1020
 		}
 		716 = {
@@ -10518,7 +10580,7 @@ GAW_NONE_ACH_win_effect = {
 			transfer_state = 621
 			transfer_state = 611
 			transfer_state = 612
-			transfer_state = 1005
+			transfer_state = 1123
 			set_cosmetic_tag = CHI
 			set_capital = { state = 613 }
 		}
@@ -10619,7 +10681,7 @@ PCY_Japan_annex_effect = {
 			}
 			transfer_state = 282
 			transfer_state = 1073
-			transfer_state = 990
+			transfer_state = 1108
 			transfer_state = 535
 			transfer_state = 532
 			transfer_state = 1069
@@ -10629,14 +10691,14 @@ PCY_Japan_annex_effect = {
 			transfer_state = 1071
 			transfer_state = 1068	
 			transfer_state = 1065	
-			transfer_state = 991
+			transfer_state = 1109
 			transfer_state = 1070
 			transfer_state = 531
 			transfer_state = 1067
-			transfer_state = 988
+			transfer_state = 1106
 			transfer_state = 1066
 			transfer_state = 529
-			transfer_state = 989
+			transfer_state = 1107
 			transfer_state = 530
 			add_ideas = DK1_nobuhito
 			every_state = {
@@ -10695,7 +10757,7 @@ PCY_korea_annex_collaped_beigov_effect = {
 			transfer_state = 608
 			transfer_state = 1033
 			transfer_state = 609
-			transfer_state = 1012
+			transfer_state = 1130
 			transfer_state = 1097
 			transfer_state = 614
 			
@@ -10711,13 +10773,13 @@ PCY_korea_annex_collaped_beigov_effect = {
 			transfer_state = 1049
 			transfer_state = 1035
 			transfer_state = 743
-			transfer_state = 1004
+			transfer_state = 1122
 			transfer_state = 1034
 			
 			transfer_state = 1074
 		}
 		XSM = {
-			transfer_state = 996
+			transfer_state = 1114
 		}
 		LYC = {
 			annex_country = {
@@ -10727,8 +10789,8 @@ PCY_korea_annex_collaped_beigov_effect = {
 			transfer_state = 744
 			transfer_state = 1057
 			transfer_state = 607
-			transfer_state = 1008
-			transfer_state = 1009
+			transfer_state = 1126
+			transfer_state = 1127
 			transfer_state = 620
 			transfer_state = 1056
 			transfer_state = 1048
@@ -10736,8 +10798,8 @@ PCY_korea_annex_collaped_beigov_effect = {
 			add_state_core = 744
 			add_state_core = 1057
 			add_state_core = 607
-			add_state_core = 1008
-			add_state_core = 1009
+			add_state_core = 1126
+			add_state_core = 1127
 			add_state_core = 620
 			add_state_core = 1056
 			add_state_core = 1048
@@ -10751,10 +10813,10 @@ PCY_kuomintang_annex_collaped_beigov_effect = {
 			transfer_state = 598
 			transfer_state = 1051
 			transfer_state = 1040
-			transfer_state = 997
+			transfer_state = 1115
 			
-			transfer_state = 1008
-			transfer_state = 1009
+			transfer_state = 1126
+			transfer_state = 1127
 			transfer_state = 1048
 		}	
 	}
@@ -10811,13 +10873,13 @@ PCY_kuomintang_collapsed_effect = {
 			transfer_state = 1040
 			transfer_state = 598
 			transfer_state = 1051
-			transfer_state = 997
+			transfer_state = 1115
 			transfer_state = 1038
 			transfer_state = 1037
 			transfer_state = 1036
 			
-			transfer_state = 1008
-			transfer_state = 1009
+			transfer_state = 1126
+			transfer_state = 1127
 			transfer_state = 1048
 			
 			transfer_state = 606
@@ -10831,13 +10893,13 @@ PCY_kuomintang_collapsed_effect = {
 			add_state_core = 1040
 			add_state_core = 598
 			add_state_core = 1051
-			add_state_core = 997
+			add_state_core = 1115
 			add_state_core = 1038
 			add_state_core = 1037
 			add_state_core = 1036
 			
-			add_state_core = 1008
-			add_state_core = 1009
+			add_state_core = 1126
+			add_state_core = 1127
 			add_state_core = 1048
 			
 			add_state_core = 606
@@ -10886,8 +10948,8 @@ PCY_kuomintang_collapsed_effect = {
 		YUN = {
 			transfer_state = 325
 			transfer_state = 747
-			transfer_state = 1010
-			transfer_state = 1013
+			transfer_state = 1128
+			transfer_state = 1131
 		}
 		PRC = {
 			set_cosmetic_tag = PRC_PCY_KUOMINTANG
@@ -10957,7 +11019,7 @@ PCY_north_chinese_government_effect = {
 				neutrality = 100
 			}
 			transfer_state = 1097
-			transfer_state = 1012
+			transfer_state = 1130
 			transfer_state = 609
 			transfer_state = 1033
 			transfer_state = 608
@@ -10965,7 +11027,7 @@ PCY_north_chinese_government_effect = {
 			transfer_state = 1101
 			#
 			add_state_core = 1097
-			add_state_core = 1012
+			add_state_core = 1130
 			add_state_core = 609
 			add_state_core = 1033
 			add_state_core = 608
@@ -10987,14 +11049,14 @@ PCY_north_chinese_government_effect = {
 			transfer_state = 597
 			transfer_state = 1049
 			transfer_state = 1035
-			transfer_state = 1004
+			transfer_state = 1122
 			transfer_state = 1050
 			#
 			add_state_core = 1100
 			add_state_core = 597
 			add_state_core = 1049
 			add_state_core = 1035
-			add_state_core = 1004
+			add_state_core = 1122
 			add_state_core = 1050
 			set_cosmetic_tag = SND_PROV_GOV_KOR
 		}
@@ -11025,7 +11087,7 @@ PCY_aiduf_rise_effect = {
 					state =	1056
 					state =	620
 					state =	1048
-					state =	1009
+					state =	1127
 					state =	606
 					state =	598
 					state =	1051
@@ -11160,13 +11222,13 @@ PCY_aiduf_rise_effect = {
 		}
 		if = {
 			limit = {
-				1009 = {
+				1127 = {
 					NOT = {
 						has_state_flag = KOR_border_war_clear
 					}
 				}
 			}
-			1009 = {
+			1127 = {
 				set_demilitarized_zone = no
 				set_state_controller_to = CH1
 			}
@@ -11409,7 +11471,7 @@ PCY_aiduf_rise_effect = {
 		}
 		if = {
 			limit = {
-				1009 = {
+				1127 = {
 					NOT = {
 						has_state_flag = KOR_border_war_clear
 					}
@@ -11417,7 +11479,7 @@ PCY_aiduf_rise_effect = {
 			}
 			CH1 = {
 				random_controlled_state = {
-					prioritize = { 1009 }
+					prioritize = { 1127 }
 					create_unit = {
 						division = "name = \"Anti Imperialist Revolitional Army\" division_template = \"Anti Imperialist Revolitional Army\" start_experience_factor = 0.6"
 						owner = CH1
@@ -12006,7 +12068,7 @@ GAW_PCY_lose_effect = {
 			transfer_state = 612
 			transfer_state = 746
 			transfer_state = 1039
-			transfer_state = 1005
+			transfer_state = 1123
 		}
 		if = { #소련 패전시
 			limit = {
@@ -12087,8 +12149,8 @@ GAW_PCY_lose_effect = {
 				transfer_troops = no
 			}
 			transfer_state = 528 #나가사키
-			transfer_state = 988 #마이즈루
-			transfer_state = 989 #쿠레
+			transfer_state = 1106 #마이즈루
+			transfer_state = 1107 #쿠레
 			transfer_state = 1067 #요코하마
 			transfer_state = 1029 #츠시마
 			transfer_state = 526 #오키나와
@@ -12097,7 +12159,7 @@ GAW_PCY_lose_effect = {
 			transfer_state = 330
 			transfer_state = 817
 			transfer_state = 819
-			transfer_state = 1006
+			transfer_state = 1124
 		}
 		USA = {
 			transfer_state = 646
@@ -12258,12 +12320,12 @@ GAW_PCY_lose_effect = {
 			transfer_state = 1024
 			transfer_state = 1019
 			transfer_state = 1018
-			transfer_state = 1014
+			transfer_state = 1132
 			transfer_state = 1022
-			transfer_state = 1015
+			transfer_state = 1133
 			transfer_state = 1023
 			transfer_state = 1026
-			transfer_state = 1016
+			transfer_state = 1091
 			transfer_state = 1020
 			#
 			add_state_core = 525
@@ -12273,12 +12335,12 @@ GAW_PCY_lose_effect = {
 			add_state_core = 1024
 			add_state_core = 1019
 			add_state_core = 1018
-			add_state_core = 1014
+			add_state_core = 1132
 			add_state_core = 1022
-			add_state_core = 1015
+			add_state_core = 1133
 			add_state_core = 1023
 			add_state_core = 1026
-			add_state_core = 1016
+			add_state_core = 1091
 			add_state_core = 1020
 		}
 		PRK = {
@@ -12322,7 +12384,7 @@ GAW_PCY_win_war_effect = {
 		}
 		QIN = {
 			transfer_state = 1097
-			transfer_state = 1012
+			transfer_state = 1130
 			transfer_state = 609
 			transfer_state = 1033
 			transfer_state = 608
@@ -12330,7 +12392,7 @@ GAW_PCY_win_war_effect = {
 			transfer_state = 1101
 			#
 			add_state_core = 1097
-			add_state_core = 1012
+			add_state_core = 1130
 			add_state_core = 609
 			add_state_core = 1033
 			add_state_core = 608
@@ -12342,14 +12404,14 @@ GAW_PCY_win_war_effect = {
 			transfer_state = 597
 			transfer_state = 1049
 			transfer_state = 1035
-			transfer_state = 1004
+			transfer_state = 1122
 			transfer_state = 1050
 			#
 			add_state_core = 1100
 			add_state_core = 597
 			add_state_core = 1049
 			add_state_core = 1035
-			add_state_core = 1004
+			add_state_core = 1122
 			add_state_core = 1050
 		}
 		WEI = {
@@ -12375,13 +12437,13 @@ GAW_PCY_win_war_effect = {
 			transfer_state = 1040
 			transfer_state = 598
 			transfer_state = 1051
-			transfer_state = 997
+			transfer_state = 1115
 			transfer_state = 1038
 			transfer_state = 1037
 			transfer_state = 1036
 			
-			transfer_state = 1008
-			transfer_state = 1009
+			transfer_state = 1126
+			transfer_state = 1127
 			transfer_state = 1048
 			
 			transfer_state = 606
@@ -12443,8 +12505,8 @@ GAW_PCY_win_war_effect = {
 			set_cosmetic_tag = YUN_PCY_KOREA
 			transfer_state = 325
 			transfer_state = 747
-			transfer_state = 1010
-			transfer_state = 1013
+			transfer_state = 1128
+			transfer_state = 1131
 			set_politics = {
 				ruling_party = neutrality
 				last_election = "1936.1.1"
@@ -12616,7 +12678,7 @@ GAW_PCY_win_effect = {
 			}
 			transfer_state = 282
 			transfer_state = 1073
-			transfer_state = 990
+			transfer_state = 1108
 			transfer_state = 535
 			transfer_state = 532
 			transfer_state = 1069
@@ -12626,14 +12688,14 @@ GAW_PCY_win_effect = {
 			transfer_state = 1071
 			transfer_state = 1068	
 			transfer_state = 1065	
-			transfer_state = 991
+			transfer_state = 1109
 			transfer_state = 1070
 			transfer_state = 531
 			transfer_state = 1067
-			transfer_state = 988
+			transfer_state = 1106
 			transfer_state = 1066
 			transfer_state = 529
-			transfer_state = 989
+			transfer_state = 1107
 			transfer_state = 530
 			set_cosmetic_tag = JAP_RES_GOV
 		}
@@ -12652,14 +12714,14 @@ GAW_PCY_win_effect = {
 			transfer_state = 615
 			transfer_state = 1099
 			transfer_state = 744
-			transfer_state = 996
+			transfer_state = 1114
 			#
 			add_state_core = 622
 			add_state_core = 1052
 			add_state_core = 615
 			add_state_core = 1099
 			add_state_core = 744
-			add_state_core = 996
+			add_state_core = 1114
 			set_cosmetic_tag = SNJ_PCY_KOR
 		}
 		QIN = {
@@ -12673,7 +12735,7 @@ GAW_PCY_win_effect = {
 				neutrality = 100
 			}
 			transfer_state = 1097
-			transfer_state = 1012
+			transfer_state = 1130
 			transfer_state = 609
 			transfer_state = 1033
 			transfer_state = 608
@@ -12681,7 +12743,7 @@ GAW_PCY_win_effect = {
 			transfer_state = 1101
 			#
 			add_state_core = 1097
-			add_state_core = 1012
+			add_state_core = 1130
 			add_state_core = 609
 			add_state_core = 1033
 			add_state_core = 608
@@ -12703,14 +12765,14 @@ GAW_PCY_win_effect = {
 			transfer_state = 597
 			transfer_state = 1049
 			transfer_state = 1035
-			transfer_state = 1004
+			transfer_state = 1122
 			transfer_state = 1050
 			#
 			add_state_core = 1100
 			add_state_core = 597
 			add_state_core = 1049
 			add_state_core = 1035
-			add_state_core = 1004
+			add_state_core = 1122
 			add_state_core = 1050
 			set_cosmetic_tag = KRU_PCY_KOR
 		}
@@ -12727,20 +12789,20 @@ GAW_PCY_win_effect = {
 			transfer_state = 1074
 			transfer_state = 607
 			transfer_state = 1057
-			transfer_state = 1008
+			transfer_state = 1126
 			transfer_state = 620
 			transfer_state = 1056
 			transfer_state = 1048
-			transfer_state = 1009
+			transfer_state = 1127
 			#
 			add_state_core = 1074
 			add_state_core = 607
 			add_state_core = 1057
-			add_state_core = 1008
+			add_state_core = 1126
 			add_state_core = 620
 			add_state_core = 1056
 			add_state_core = 1048
-			add_state_core = 1009
+			add_state_core = 1127
 			set_cosmetic_tag = WEI_PCY_KOR
 		}
 		YUN = {
@@ -12754,16 +12816,16 @@ GAW_PCY_win_effect = {
 				neutrality = 100
 			}
 			transfer_state = 325
-			transfer_state = 1010
-			transfer_state = 1013
+			transfer_state = 1128
+			transfer_state = 1131
 			transfer_state = 747
 			transfer_state = 1053
 			transfer_state = 603
 			transfer_state = 1058
 			#
 			add_state_core = 325
-			add_state_core = 1010
-			add_state_core = 1013
+			add_state_core = 1128
+			add_state_core = 1131
 			add_state_core = 747
 			add_state_core = 1053
 			add_state_core = 603
@@ -12787,7 +12849,7 @@ GAW_PCY_win_effect = {
 			transfer_state = 1036
 			transfer_state = 1051
 			transfer_state = 598
-			transfer_state = 997
+			transfer_state = 1115
 			transfer_state = 606
 			transfer_state = 749
 			transfer_state = 596
@@ -12801,7 +12863,7 @@ GAW_PCY_win_effect = {
 			add_state_core = 1036
 			add_state_core = 1051
 			add_state_core = 598
-			add_state_core = 997
+			add_state_core = 1115
 			add_state_core = 606
 			add_state_core = 749
 			add_state_core = 596
@@ -12811,14 +12873,14 @@ GAW_PCY_win_effect = {
 		}
 		CH1 = {
 			transfer_state = 750
-			transfer_state = 1007
+			transfer_state = 1125
 			transfer_state = 748
 			transfer_state = 605
 			transfer_state = 753
 			transfer_state = 1047
 			#
 			add_state_core = 750
-			add_state_core = 1007
+			add_state_core = 1125
 			add_state_core = 748
 			add_state_core = 605
 			add_state_core = 753
@@ -12947,7 +13009,7 @@ GAW_PCY_win_effect = {
 		750 = {
 			set_demilitarized_zone = yes
 		}
-		1007 = {
+		1125 = {
 			set_demilitarized_zone = yes
 		}
 		748 = {
@@ -12990,7 +13052,7 @@ PCY_HAPPY_ENDING_effect = {
 		750 = {
 			set_demilitarized_zone = no
 		}
-		1007 = {
+		1125 = {
 			set_demilitarized_zone = no
 		}
 		748 = {
@@ -13023,12 +13085,12 @@ PCY_HAPPY_ENDING_effect = {
 			transfer_state = 1056
 			transfer_state = 750
 			transfer_state = 620
-			transfer_state = 1009
+			transfer_state = 1127
 			transfer_state = 1048
-			transfer_state = 1008
+			transfer_state = 1126
 			transfer_state = 606
 			transfer_state = 1040
-			transfer_state = 997
+			transfer_state = 1115
 			transfer_state = 1051
 			transfer_state = 598
 			transfer_state = 613
@@ -13065,12 +13127,12 @@ PCY_HAPPY_ENDING_effect = {
 			set_cosmetic_tag = YUN_PAK_HAPPY
 			transfer_state = 325
 			transfer_state = 747
-			transfer_state = 1013
-			transfer_state = 1010
+			transfer_state = 1131
+			transfer_state = 1128
 		}
 		SCC = {
 			set_cosmetic_tag = SCC_PAK_HAPPY
-			transfer_state = 1007
+			transfer_state = 1125
 			transfer_state = 605
 			transfer_state = 748
 			transfer_state = 1047
@@ -13109,7 +13171,7 @@ PCY_HAPPY_ENDING_effect = {
 			transfer_state = 597
 			transfer_state = 1050
 			transfer_state = 1035
-			transfer_state = 1004
+			transfer_state = 1122
 			transfer_state = 743
 			transfer_state = 1034
 		}
@@ -13121,9 +13183,9 @@ PCY_HAPPY_ENDING_effect = {
 			transfer_state = 755
 			transfer_state = 604
 			transfer_state = 283
-			transfer_state = 996
+			transfer_state = 1114
 			transfer_state = 616
-			transfer_state = 1011
+			transfer_state = 1129
 		}
 		QIN = {
 			annex_country = {
@@ -13189,7 +13251,7 @@ PCY_HAPPY_ENDING_effect = {
 				communism = 0
 				democratic = 0
 			}
-			transfer_state = 1005
+			transfer_state = 1123
 			transfer_state = 612
 			transfer_state = 611
 			transfer_state = 621
@@ -13213,7 +13275,7 @@ PCY_HAPPY_ENDING_effect = {
 			transfer_state = 756
 			transfer_state = 1063
 			transfer_state = 283
-			transfer_state = 996
+			transfer_state = 1114
 		}
 		DKG = {
 			set_cosmetic_tag = JAP_REP
@@ -13383,7 +13445,7 @@ TLE_chinese_war_ending_wp = {
 			transfer_state = 750
 			transfer_state = 1048
 			transfer_state = 1048
-			transfer_state = 1007
+			transfer_state = 1125
 			leave_faction = yes
 		}	
 		TIB = {

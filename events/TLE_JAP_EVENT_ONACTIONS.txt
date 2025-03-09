@@ -38,7 +38,7 @@ country_event = {#구국의 결단
 			controls_state = 532
 			OR = {
 				controls_state = 535
-				controls_state = 990
+				controls_state = 1108
 			}
 		}
 	}
