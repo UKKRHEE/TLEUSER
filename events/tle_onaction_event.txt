@@ -5342,6 +5342,7 @@ country_event = {
             has_country_flag = FLAG_KOR_FASCIST_ROUTE
             has_war_with = USA
             NOT = {
+				has_country_flag = KOR_won_in_ins
                 has_idea = KOR_embargo_us
                 has_idea = KOR_embargo_us_a
                 has_idea = KOR_embargo_us_b

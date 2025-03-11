@@ -1377,6 +1377,9 @@ on_actions = {
 					limit = {
 						KOR = {
 							is_ai = no
+							NOT = {
+								has_country_flag = KOR_won_in_ins
+							}
 						}
 					}
 					KOR = {
@@ -1477,6 +1480,9 @@ on_actions = {
 					limit = {
 						KOR = {
 							is_ai = no
+							NOT = {
+								has_country_flag = KOR_won_in_ins
+							}
 						}
 					}
 					KOR = {

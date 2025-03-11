@@ -2782,6 +2782,9 @@ news_event = { #광저우 함락
 	
 	major = yes
     trigger = {
+		KOR = {
+			has_war = yes
+		}
 		any_country = {
 			OR = {
 				original_tag = KOR
@@ -2851,6 +2854,9 @@ news_event = { #상하이 함락
 	
 	major = yes
 	trigger = {
+		KOR = {
+			has_war = yes
+		}
 		any_country = {
 			OR = {
 				original_tag = KOR
@@ -2921,6 +2927,9 @@ news_event = { #충칭 함락
 	
 	major = yes
     trigger = {
+		KOR = {
+			has_war = yes
+		}
 		any_country = {
 			OR = {
 				original_tag = KOR
@@ -2948,6 +2957,9 @@ news_event = { #우한 함락
 	
 	major = yes
     trigger = {
+		KOR = {
+			has_war = yes
+		}
 		any_country = {
 			OR = {
 				original_tag = KOR
