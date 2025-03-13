@@ -1970,7 +1970,7 @@ country_event = {
 			set_cosmetic_tag = SIA_emp
 			white_peace = BUR
 			transfer_state = 993
-			transfer_state = 1076
+			transfer_state = 994
 			transfer_state = 1075
 		}
 		288 = {

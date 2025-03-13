@@ -8472,7 +8472,7 @@ country_event = {
 				transfer_state = 1112
 				transfer_state = 1113
 				transfer_state = 1075
-				transfer_state = 1076
+				transfer_state = 994
 			}
 			LAO = {
 				transfer_state = 670
@@ -22705,11 +22705,11 @@ country_event = { #seadebug
 			}
             if = {
 				limit = {
-					1076 = {
+					994 = {
 						is_owned_by = RAJ
 					}
 				}
-				BUR = { transfer_state = 1076 }
+				BUR = { transfer_state = 994 }
 			}
             if = {
 				limit = {
@@ -22742,7 +22742,7 @@ country_event = { #seadebug
 			BUR = { add_state_core = 288 }
 			BUR = { add_state_core = 640 }
 			BUR = { add_state_core = 993 }
-    		BUR = { add_state_core = 1076 }
+    		BUR = { add_state_core = 994 }
     		BUR = { add_state_core = 1090 }
     		BUR = { add_state_core = 1091 }
     		BUR = { add_state_core = 1092 }
