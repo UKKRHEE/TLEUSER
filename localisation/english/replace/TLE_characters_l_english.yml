@@ -162,6 +162,8 @@
  KOR_yi_wu_yihaesung:0 "이해성"
  KMN_yi_cheok_yiguyong:0 "이구용"
  #
+ KJH_korean_jehol_government:0 "열하성 정부"
+ #
  WEI_yi_kang:0 "이강"
  WEI_yi_geon:0 "이건"
  ROC_li_hanhun:0 "리한훈" #李漢魂
@@ -478,7 +480,7 @@
  SIA_pao_pienlert_boripanyutakit:0 "파오 보리파뉴타킷"
  SIA_phin_choonhavan:0 "핀 춘하반하반"
  SIA_pichit_kriengsakpichit:0 "피칫 크렝삭피칫"
- FRI_jules_brevie:0 "줄스 브레비"
+ FRI_jules_brevie:0 "쥘 브레비에"
  FRI_ngo_dinh_diem:0 "응오딘지엠"
  FRI_douglas_gracey:0 "더글라스 그레이시"
  FRI_remilitary:0 "프랑스 군사행정부"

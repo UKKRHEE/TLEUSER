@@ -6,6 +6,7 @@ EOK = "countries/Korea.txt" #대한제국 황도파
 ROK = "countries/Korea.txt" #대한제국 황도파
 KVN = "countries/Korea.txt" #대한령 인도차이나
 KTA = "countries/Korea.txt" #대한제국 제24군 서북방면전구
+KJH = "countries/Korea.txt" #열하성
 ###Korean Chinese Kingdoms###
 MNG = "countries/China.txt" #명나라 #KCG
 WEI = "countries/China.txt" #위나라 #KWG

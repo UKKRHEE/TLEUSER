@@ -279,3 +279,34 @@ country_event = {
 		}
 	}
 }
+
+
+# country_event = {
+# 	id = tletest.7
+# 	title = tletest.7.title
+# 	desc = tletest.7.desc
+# 	picture = GFX_event_korea_777
+
+# 	trigger = {
+# 		original_tag = KOR
+# 		meta_trigger = {
+# 			text = {
+# 				AND = {
+# 					date > [YEAR]
+# 					date < [YEARTWO]
+# 				}
+# 			}
+# 			YEAR = "[?global.year].01.20"
+# 			YEARTWO = "[?global.year].01.22"
+# 		}
+# 	}
+
+# 	fire_only_once = yes
+	
+# 	option = {
+# 		name = tletest.7.a
+# 		set_temp_variable = { korea_ahn_budget_temp_var = 12.3 }
+# 		add_to_variable = { korea_ahn_budget_var = korea_ahn_budget_temp_var }
+# 		custom_effect_tooltip =  korea_ahn_add_budget_tt
+# 	}
+# }

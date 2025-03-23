@@ -2342,6 +2342,30 @@ POL_REDORDER = {
 	color = rgb { 141 46 72 }
 	color_ui = rgb { 141 46 72 }
 }
+ROM_WW2 = {
+	color = rgb { 209 90 78 }
+	color_ui = rgb { 209 90 78 }
+}
+BUL_WW2 = {
+	color = rgb { 171 42 44 }
+	color_ui = rgb { 171 42 44 }
+}
+BUL_communism = {
+	color = rgb { 171 42 44 }
+	color_ui = rgb { 171 42 44 }
+}
+HUN_WW2 = {
+	color = rgb { 209 77 79 }
+	color_ui = rgb { 209 77 79 }
+}
+CZE_WW2_RED = {
+	color = rgb { 181 48 87 }
+	color_ui = rgb { 181 48 87 }
+}
+POL_WW2 = {
+	color = rgb { 181 60 73 }
+	color_ui = rgb { 181 60 73 }
+}
 GRE_REDORDER = {
 	color = rgb { 152 29 75 }
 	color_ui = rgb { 152 29 75 }
@@ -2531,4 +2555,8 @@ CHI_PCY_SOV_VICTORY = {
 GER_TLE_ggr = {
 	color = rgb { 54 54 54 }
 	color_ui = rgb { 115 115 115 }
+}
+MEN_CHA = {
+	color = rgb { 191 178 119 }
+	color_ui = rgb { 191 178 119 }
 }

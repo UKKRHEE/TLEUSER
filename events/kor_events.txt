@@ -4447,6 +4447,7 @@ country_event = {
 	picture = GFX_TLE_korea_event_none
 	
 	is_triggered_only = yes
+	fire_only_once = yes
 	
 	option = { #아.
 		name = korea.112.a
@@ -16325,52 +16326,96 @@ country_event = { #독대
 	}
 }
 
-country_event = { #
+country_event = { #예산 (1.1)
 	id = korea.1502
 	title = korea.1502.title
 	desc = korea.1502.desc
 	picture = GFX_TLE_korea_event_none
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = korea.1502
+				days = 365
+			}
+		}
+	}
 	
     is_triggered_only = yes
 	 
 	option = { #한국
 		name = korea.1502.a
+ 		set_temp_variable = { korea_ahn_budget_temp_var = 12.3 }
+		add_to_variable = { korea_ahn_budget_var = korea_ahn_budget_temp_var }
+ 		custom_effect_tooltip =  korea_ahn_add_budget_tt
 	}
 }
-country_event = { #
+country_event = { #예산 (4.1)
 	id = korea.1503
 	title = korea.1503.title
 	desc = korea.1503.desc
 	picture = GFX_TLE_korea_event_none
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = korea.1503
+				days = 365
+			}
+		}
+	}
 	
     is_triggered_only = yes
 	 
 	option = { #한국
 		name = korea.1503.a
+ 		set_temp_variable = { korea_ahn_budget_temp_var = 12.3 }
+		add_to_variable = { korea_ahn_budget_var = korea_ahn_budget_temp_var }
+ 		custom_effect_tooltip =  korea_ahn_add_budget_tt
 	}
 }
-country_event = { #
+country_event = { #예산 (7.1)
 	id = korea.1504
 	title = korea.1504.title
 	desc = korea.1504.desc
 	picture = GFX_TLE_korea_event_none
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = korea.1504
+				days = 365
+			}
+		}
+	}
 	
     is_triggered_only = yes
 	 
 	option = { #한국
 		name = korea.1504.a
+ 		set_temp_variable = { korea_ahn_budget_temp_var = 12.3 }
+		add_to_variable = { korea_ahn_budget_var = korea_ahn_budget_temp_var }
+ 		custom_effect_tooltip =  korea_ahn_add_budget_tt
 	}
 }
-country_event = { #
+country_event = { #예산 (10.1)
 	id = korea.1505
 	title = korea.1505.title
 	desc = korea.1505.desc
 	picture = GFX_TLE_korea_event_none
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = korea.1505
+				days = 365
+			}
+		}
+	}
 	
     is_triggered_only = yes
 	 
 	option = { #한국
 		name = korea.1505.a
+ 		set_temp_variable = { korea_ahn_budget_temp_var = 12.3 }
+		add_to_variable = { korea_ahn_budget_var = korea_ahn_budget_temp_var }
+ 		custom_effect_tooltip =  korea_ahn_add_budget_tt
 	}
 }
 country_event = { #

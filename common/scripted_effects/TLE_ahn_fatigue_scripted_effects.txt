@@ -1,0 +1,44 @@
+update_fatigue_effect = {
+	if = {
+		limit = {
+			AND = {
+				check_variable = { ahn_fatigue_progress_bar_var < 200 }
+				OR = {
+					check_variable = { ahn_fatigue_progress_bar_var > 100 }
+					check_variable = { ahn_fatigue_progress_bar_var = 100 }
+				}
+			}
+		}
+		set_variable = { ahn_fatigue_control_var = 2 }
+	}
+	else_if = {
+		limit = {
+			AND = {
+				check_variable = { ahn_fatigue_progress_bar_var < 300 }
+				OR = {
+					check_variable = { ahn_fatigue_progress_bar_var > 200 }
+					check_variable = { ahn_fatigue_progress_bar_var = 200 }
+				}
+			}
+		}
+		set_variable = { ahn_fatigue_control_var = 3 }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = { ahn_fatigue_progress_bar_var > 300 }
+				check_variable = { ahn_fatigue_progress_bar_var = 300 }
+			}
+		}
+		set_variable = { ahn_fatigue_control_var = 4 }
+	}
+	else = {
+		set_variable = { ahn_fatigue_control_var = 1 }
+	}
+
+	clamp_variable = {
+		var = ahn_fatigue_progress_bar_var
+		min = 0
+		max = 300
+	}
+}

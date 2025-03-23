@@ -35,6 +35,49 @@ KOR_ahn_innovation_category = {
 	visible_when_empty = yes
 	priority = 9999
 }
+KOR_ahn_fatigue_category = {
+	allowed = { original_tag = KOR }
+	visible = { 
+		OR = {	
+			AND = {
+				is_debug = yes
+				has_country_flag = FLAG_DEBUG_DECISION_KOR
+			}
+			has_country_flag = FLAG_ACH_ROUTE
+		}	
+	}
+	scripted_gui = KOR_ahn_fatigue_GUI
+	visible_when_empty = yes
+	priority = 9999
+}
+KOR_ahn_budget_category = {
+	allowed = { original_tag = KOR }
+	visible = { 
+		OR = {	
+			AND = {
+				is_debug = yes
+				has_country_flag = FLAG_DEBUG_DECISION_KOR
+			}
+			has_country_flag = FLAG_ACH_ROUTE
+		}	
+	}
+	visible_when_empty = yes
+	priority = 9999
+}
+KOR_ahn_government_stability_category = {
+	allowed = { original_tag = KOR }
+	visible = { 
+		OR = {	
+			AND = {
+				is_debug = yes
+				has_country_flag = FLAG_DEBUG_DECISION_KOR
+			}
+			has_country_flag = FLAG_ACH_ROUTE
+		}	
+	}
+	visible_when_empty = yes
+	priority = 9999
+}
 
 ### KKS ###
 KOR_ilsoism_GUI_category = {

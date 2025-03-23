@@ -1,0 +1,5 @@
+﻿l_english:
+ RECALL_VOLUNTEERS_TITLE:0 "의용군 소환"
+ RECALL_VOLUNTEERS_ACTION_DESC:0 "필요하다면 우리는 타국에 파견했던 의용군을 불러올 수 있습니다."
+ RECALL_VOLUNTEERS_TOOLTIP:0 "§Y[This.GetNameWithFlag]§!§R에 의용군을 파견함§!"
+ RECALL_VOLUNTEERS_TOOLTIP_G:0 "§Y[This.GetNameWithFlag]§!에 의용군을 파견함"

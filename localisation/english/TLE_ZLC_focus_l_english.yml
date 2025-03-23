@@ -1,7 +1,7 @@
 ﻿l_english:
  ####### Common Setting #######
  ##### Battle of Power #####
- ZLC_balance:0 "중화민국 북양정부 권력의 균형"
+ ZLC_balance:0 "중화민국 북경정부 권력의 균형"
  ZLC_balance_range:0 "권력의 균형"
  ZLC_caokun_side:0 "중산계"
  ZLC_caokun_low:0 "중산계의 약간의 우위"
@@ -14,8 +14,8 @@
  ZLC_wupeifu_high:0 "자옥계의 큰 우위"
  ZLC_wupeifu_total:0 "자옥계의 완벽한 우위"
  
- ZLC_wupeifu_line_dec:0 "§g중화민국 북양정부 순열사 우페이푸 ㅡ 자옥계 결정§!"
- ZLC_caokun_line_dec:0 "§g중화민국 북양정부 대총통 차오쿤 ㅡ 중산계 결정§!"
+ ZLC_wupeifu_line_dec:0 "§g중화민국 북경정부 순열사 우페이푸 ㅡ 자옥계 결정§!"
+ ZLC_caokun_line_dec:0 "§g중화민국 북경정부 대총통 차오쿤 ㅡ 중산계 결정§!"
  ZLC_wupeifu_line_dec_tt:0 ""
  ZLC_caokun_line_dec_tt:0 ""
  

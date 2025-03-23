@@ -12,7 +12,7 @@ focus_tree = {
 	focus = {
 		id = KOR_TNO_0
 		icon = GFX_goal_KOR_TLE_0
-		cost = 2
+		cost = 1
 		x = 7
 		y = 0
 		available = {
@@ -124,7 +124,7 @@ focus_tree = {
 	focus = {
 		id = KOR_TNO_1
 		icon = GFX_goal_KOR_TLE_1
-		cost = 2
+		cost = 1
 		prerequisite = {
 			focus = KOR_TNO_0
 		}
@@ -140,7 +140,7 @@ focus_tree = {
 	focus = {
 		id = KOR_TNO_2
 		icon = GFX_goal_KOR_TLE_2
-		cost = 2
+		cost = 1
 		prerequisite = {
 			focus = KOR_TNO_0
 		}
@@ -156,7 +156,7 @@ focus_tree = {
 	focus = {
 		id = KOR_TNO_3
 		icon = GFX_goal_KOR_TLE_3
-		cost = 2
+		cost = 1
 		prerequisite = {
 			focus = KOR_TNO_0
 		}
@@ -172,7 +172,7 @@ focus_tree = {
 	focus = {
 		id = KOR_TNO_4
 		icon = GFX_goal_KOR_TLE_4
-		cost = 2
+		cost = 1
 		prerequisite = {
 			focus = KOR_TNO_1
 		}
@@ -194,7 +194,7 @@ focus_tree = {
 	focus = {
 		id = KOR_TNO_5
 		icon = GFX_goal_KOR_TLE_5
-		cost = 2
+		cost = 1
 		prerequisite = {
 			focus = KOR_TNO_4
 		}
@@ -210,7 +210,7 @@ focus_tree = {
 	focus = {
 		id = KOR_TNO_6
 		icon = GFX_goal_KOR_TLE_6
-		cost = 2
+		cost = 1
 		prerequisite = {
 			focus = KOR_TNO_4
 		}
@@ -226,7 +226,7 @@ focus_tree = {
 	focus = {
 		id = KOR_TNO_8
 		icon = GFX_goal_KOR_TLE_8
-		cost = 2
+		cost = 1
 		prerequisite = {
 			focus = KOR_TNO_5
 		}
@@ -245,7 +245,7 @@ focus_tree = {
 	focus = {
 		id = KOR_TNO_7
 		icon = GFX_goal_KOR_TLE_7
-		cost = 2
+		cost = 1
 		prerequisite = {
 			focus = KOR_TNO_6
 		}
@@ -264,7 +264,7 @@ focus_tree = {
 	focus = {
 		id = KOR_TNO_9
 		icon = GFX_goal_KOR_TLE_9
-		cost = 2
+		cost = 1
 		prerequisite = {
 			focus = KOR_TNO_6
 		}
@@ -283,7 +283,7 @@ focus_tree = {
 	focus = {
 		id = KOR_TNO_11
 		icon = GFX_goal_KOR_TLE_11
-		cost = 2
+		cost = 1
 		prerequisite = {
 			focus = KOR_TNO_8
 		}
@@ -305,7 +305,7 @@ focus_tree = {
 	focus = {
 		id = KOR_TNO_10
 		icon = GFX_goal_KOR_TLE_10
-		cost = 2
+		cost = 1
 		prerequisite = {
 			focus = KOR_TNO_7
 		}
@@ -327,7 +327,7 @@ focus_tree = {
 	focus = {
 		id = KOR_TNO_12
 		icon = GFX_goal_KOR_TLE_12
-		cost = 2
+		cost = 1
 		prerequisite = {
 			focus = KOR_TNO_10
 		}
@@ -346,7 +346,7 @@ focus_tree = {
 	focus = {
 		id = KOR_TNO_13
 		icon = GFX_goal_KOR_TLE_14
-		cost = 2
+		cost = 1
 		prerequisite = {
 			focus = KOR_TNO_12
 		}
@@ -362,7 +362,7 @@ focus_tree = {
 	focus = {
 		id = KOR_TNO_14 #엔딩
 		icon = GFX_focus_KOR_the_new_order
-		cost = 2
+		cost = 1
 		prerequisite = {
 			focus = KOR_TNO_13
 		}

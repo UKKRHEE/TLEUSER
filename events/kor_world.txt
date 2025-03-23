@@ -56,3 +56,26 @@ country_event = {
 		name = kor_world.3.a
 	}
 }
+
+country_event = {
+	id = kor_world.4
+	title = kor_world.4.t
+	desc = kor_world.4.d
+	picture = GFX_event_korea_777
+	
+	fire_only_once = yes	
+    trigger = {
+		has_game_rule = {
+			rule = KOR_ai_behavior
+			option = DEMOCRATIC_KKS
+		}
+		OR = {
+			tag = DKG
+			tag = SIA
+			tag = ZLC
+		}
+	}
+	option = {
+		name = kor_world.4.a
+	}
+}

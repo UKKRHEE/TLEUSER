@@ -100,7 +100,7 @@
  RULE_FACTION_BLOCKED_HISTORICAL_TT:0 "§R라스트 엠파이어 정사에서는 세력 가입이 허락되지 않습니다.§!"
  RULE_FACTION_CREATE_BLOCKED_HISTORICAL_TT:0 "§R라스트 엠파이어 정사에서는 세력 창설이 허락되지 않습니다.§!"
 
- ZLC_AI_BEHAVIOR:0 "@ZLC 중화민국 북양정부"
+ ZLC_AI_BEHAVIOR:0 "@ZLC 중화민국 북경정부"
  CHI_AI_BEHAVIOR:0 "@CHI 중화민국 광동정부"
  
  KOR_AI_BEHAVIOR:0 "@KOR 대한제국"
@@ -117,7 +117,7 @@
  RULE_OPTION_JAP_HISTORICAL:0 "쇼와 유신"
  RULE_OPTION_JAP_HISTORICAL_DESC:0 "일본 AI는 토쿠가와를 몰아내고 히로히토 천황을 중심으로 하여 반제국주의 정책을 펴나가고자 시도할 것입니다."
  RULE_OPTION_ZLC_HISTORICAL:0 "고독한 오색별"
- RULE_OPTION_ZLC_HISTORICAL_DESC:0 "북양정부 AI는 혼란한 상황 사이에서도 안정을 유지하려고 시도할 것입니다."
+ RULE_OPTION_ZLC_HISTORICAL_DESC:0 "북경정부 AI는 혼란한 상황 사이에서도 안정을 유지하려고 시도할 것입니다."
  RULE_OPTION_CHI_HISTORICAL:0 "푸른 하늘, 흰 태양"
  RULE_OPTION_CHI_HISTORICAL_DESC:0 "국민정부 AI는 북벌을 완수하여 국민혁명의 완성을 꾀하려고 시도할 것입니다."
  RULE_OPTION_SOV_HISTORICAL_TLE:0 "만국의 노동자여, 단결하라"
@@ -159,6 +159,6 @@
 
  RULE_KOR_FASCIST_HISTORICAL:0 "§R마지막 제국§!"
  RULE_KOR_DEMOCRATIC_KKS:0 "§8우레를 지나§! - §Y김규식§!"
- RULE_KOR_DEMOCRATIC_KKS_AI_DESC:0 "한국 AI는 융희 데모크라시의 유산을 이어가면서 김규식 총리의 지도를 받을 것입니다."
+ RULE_KOR_DEMOCRATIC_KKS_AI_DESC:0 "한국 AI는 융희 데모크라시의 유산을 이어가면서 김규식 총리의 지도를 받을 것입니다.\n\n§R주의: 실험적 기능입니다. 일부 국가들의 플레이가 제한받을 수 있습니다.§!"
  
  RULE_KOR_CAN_NOT_RELEASE_NATION:0 "대한제국은 공화정이거나 대전쟁에서 패배해야만 식민지 해방이 가능합니다."

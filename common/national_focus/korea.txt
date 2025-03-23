@@ -1385,7 +1385,6 @@ focus_tree = {
 		y = 14
 			cancelable = no
 			available = {
-					has_war_with = USA
 					JAP = {
 							exists = yes
 							controls_state = 1070

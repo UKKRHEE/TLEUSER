@@ -383,53 +383,71 @@ on_actions = {
 						set_temp_variable = { TNO_temp_super_event = token:SE_OPERATION_BARBAROSSA }
 						TNO_fire_super_event = yes
 					}
+					if = {
+						limit = {
+							NOT = {
+								has_game_rule = {
+									rule = TLE_GER_GREAT_RULE
+									option = TLE_GER_GREAT_RULE_GER_WIN_TNO
+								}
+							}	
+						}
+						SOV = {
+							add_equipment_to_stockpile = {
+								type = infantry_equipment_0
+								amount = 350000
+								producer = SOV
+							}
+							add_ideas = TLE_SOV_HISTORICAL_IDEA
+						}
+					}
+					set_global_flag = operation_barbarossa_global_flag
+					if = {
+						limit = {
+							is_historical_focus_on = yes
+							LIT = {
+								is_ai = yes
+								exists = yes
+							}
+						}
+						SOV = {
+							annex_country = {
+								target = LIT
+								transfer_troops = yes
+							}
+						}
+					}
+					if = {
+						limit = {
+							is_historical_focus_on = yes
+							LAT = {
+								is_ai = yes
+								exists = yes
+							}
+						}
+						SOV = {
+							annex_country = {
+								target = LAT
+								transfer_troops = yes
+							}
+						}
+					}
+					if = {
+						limit = {
+							is_historical_focus_on = yes
+							EST = {
+								is_ai = yes
+								exists = yes
+							}
+						}
+						SOV = {
+							annex_country = {
+								target = EST
+								transfer_troops = yes
+							}
+						}
+					}
 				}	
-				set_global_flag = operation_barbarossa_global_flag
-				if = {
-					limit = {
-						is_historical_focus_on = yes
-						LIT = {
-							is_ai = yes
-							exists = yes
-						}
-					}
-					SOV = {
-						annex_country = {
-							target = LIT
-							transfer_troops = yes
-						}
-					}
-				}
-				if = {
-					limit = {
-						is_historical_focus_on = yes
-						LAT = {
-							is_ai = yes
-							exists = yes
-						}
-					}
-					SOV = {
-						annex_country = {
-							target = LAT
-							transfer_troops = yes
-						}
-					}
-				}
-				if = {
-					limit = {
-						is_historical_focus_on = yes
-						EST = {
-							is_ai = yes
-							exists = yes
-						}
-					}
-					SOV = {
-						annex_country = {
-							target = EST
-							transfer_troops = yes
-						}
-					}
-				}
 			}
 			if = {
 				limit = {

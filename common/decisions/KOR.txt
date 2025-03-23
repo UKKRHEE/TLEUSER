@@ -6264,8 +6264,8 @@ KOR_forth_plan_nakil = {
 		    tag = KOR
 		}
 		available = {
+			has_war_with = USA
 			JAP = { exists = yes owns_state = 282 }
-			has_completed_focus = KOR_attack_taiwan
 			OR = {
 				custom_trigger_tooltip = {
 					tooltip = TRIGGER_TOOLTIP_WAR_IN_CHINA
@@ -6293,6 +6293,7 @@ KOR_forth_plan_nakil = {
 			NOT = {
 				has_war_with = JAP
 			}
+			has_completed_focus = KOR_attack_taiwan
 		}
 
 		fire_only_once = yes

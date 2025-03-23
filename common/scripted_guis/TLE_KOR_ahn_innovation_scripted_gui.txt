@@ -21,9 +21,5 @@ scripted_gui = {
 				check_variable = { innovation_checkbox_array^innovation_checkbox_index = 1 }
 			}
 		}
-
-		effects = {
-			
-		}
 	}
 }

@@ -1,0 +1,23 @@
+characters={
+	KJH_korean_jehol_government = {
+		name="KJH_korean_jehol_government"
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/Portrait_KOR_provicional_government.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+		}
+		country_leader={
+			ideology=fascism_ideology
+		}
+		country_leader={
+			ideology=liberalism
+		}
+		country_leader={
+			ideology=marxism
+		}
+	}
+
+}

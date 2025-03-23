@@ -2106,7 +2106,7 @@ country_event = {
 		}
 	}
 }
-country_event = {
+country_event = { #난 국명 결벽증 있어서 이런거 하면 껄끄럽다이말이야
 	id = siam.70
 	title = siam.70.t
 	desc = siam.70.d
@@ -2125,7 +2125,7 @@ country_event = {
 	option = {
 		name = siam.70.a
 		BHU = {
-			set_cosmetic_tag = BHU_PLAY
+			#set_cosmetic_tag = BHU_PLAY
 		}
 	}
 }

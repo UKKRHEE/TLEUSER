@@ -1,0 +1,18 @@
+spriteTypes = {
+	spriteType = {
+		name = "KOR_ahn_fatigue_control_icon"
+		textureFile = "gfx/interface/KOR_GUI/fatigue/control_icon.png"
+		noOfFrames = 4
+	}
+	progressbartype = {
+		name = "KOR_ahn_fatigue_progressbar"
+		textureFile1 = "gfx/interface/KOR_GUI/fatigue/progressbar_full.png"
+		textureFile2 = "gfx/interface/KOR_GUI/fatigue/progressbar_frame.png"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 0.0 0.0 0.0 }
+		size = { x = 467 y = 38 } 
+		effectFile = "gfx/FX/progress.shader"
+		horizontal = yes
+		steps = 300
+	}
+}

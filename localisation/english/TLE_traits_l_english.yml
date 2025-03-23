@@ -119,9 +119,9 @@
  ZLC_chaokun_jie:0 "중산계"
  ZLC_wu_peifu_jie:0 "자옥계"
  ZLC_xiaozhang:0 "소장파"
- ZLC_chaokun_jie_desc:0 "§L중화민국 북양정부의 차오쿤을 중심으로 한 파벌.§!"
- ZLC_wu_peifu_jie_desc:0 "§L중화민국 북양정부의 우페이푸를 중심으로 한 파벌.§!"
- ZLC_xiaozhang_desc:0 "§L중화민국 북양정부의 중립적인 파벌.§!"
+ ZLC_chaokun_jie_desc:0 "§L중화민국 북경정부의 차오쿤을 중심으로 한 파벌.§!"
+ ZLC_wu_peifu_jie_desc:0 "§L중화민국 북경정부의 우페이푸를 중심으로 한 파벌.§!"
+ ZLC_xiaozhang_desc:0 "§L중화민국 북경정부의 중립적인 파벌.§!"
  
  JAP_imperial_family:0 "일본 황실 장교"
  JAP_imperial_family_desc:0 "§L만세일계의 천황가는 군대에 입대하는 것이 관례입니다. 일본 황실의 일부 남성은 해외 사관학교 유학을 다녀오기도 합니다.§!"

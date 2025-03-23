@@ -495,7 +495,6 @@ KOR_hangbok_event = {
 	}
 	AST = {
 		transfer_state = 711
-		transfer_state = 722
 	}
 	POR = {
 		transfer_state = 721
@@ -4976,6 +4975,18 @@ TLE_german_defeat_effect = {
 		transfer_state = 803
 		transfer_state = 970
 		transfer_state = 106
+		set_politics = {
+			ruling_party = communism
+			last_election = "1940.5.1"
+			election_frequency = 48
+			elections_allowed = yes
+		}
+		set_popularities = {
+			democratic = 10
+			fascism = 10
+			neutrality = 30
+			communism = 50
+		}
 		leave_faction = yes
 	}
 	736 = {
@@ -5090,6 +5101,20 @@ TLE_german_defeat_effect = {
 	SOV = {
 		end_puppet = ITA
 		end_puppet = event_target:italia_real_ww2
+		transfer_state = 12
+		transfer_state = 810
+		transfer_state = 808
+		transfer_state = 809
+		transfer_state = 190
+		transfer_state = 191
+		transfer_state = 11
+		transfer_state = 815
+		transfer_state = 814
+		transfer_state = 189
+		transfer_state = 811
+		transfer_state = 812
+		transfer_state = 813
+		transfer_state = 13
 	}
 	USA = {
 		puppet = ITA
@@ -5741,6 +5766,8 @@ TLE_german_defeat_red_effect = {
 			original_tag = BUL
 			has_government = communism
 		}
+	}
+	BUL = {
 		set_cosmetic_tag = BUL_WW2
 	}
     FRA = {
@@ -7719,7 +7746,6 @@ FRS_diminished_effect = {
 		}
 		AST = {
 			transfer_state = 711
-			transfer_state = 722
 		}
 	}
 	if = {

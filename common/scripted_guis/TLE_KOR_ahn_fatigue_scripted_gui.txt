@@ -1,0 +1,20 @@
+scripted_gui = {
+	KOR_ahn_fatigue_GUI = {
+		context_type = decision_category
+		window_name = "KOR_ahn_fatigue_GUI"
+
+		visible = {
+			original_tag = KOR
+		}
+
+		properties = {
+			control_icon = {
+				frame = ahn_fatigue_control_var
+			}
+			progressbar = {
+				frame = ahn_fatigue_progress_bar_var
+			}
+		}
+	}
+}
+

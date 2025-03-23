@@ -439,6 +439,7 @@ country_event = { #체코 쿠데타
 				fascism = 0
 				communism = 100
 			}
+			set_cosmetic_tag = CZE_WW2_RED
 		}
 		news_event = {
 			id = eok_news.27

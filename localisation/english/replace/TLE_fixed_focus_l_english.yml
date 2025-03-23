@@ -11,8 +11,8 @@
  SOV_end_the_khalkhin_gol_conflict_desc:0 "연해주에서의 오래된 국경분쟁은 충분히, 오래 지속되었습니다. 만약 한국정부가 적법한 소련의 국경을 인정할 것인지를 충분의 믿을 수 없다면, 우리는 저들의 정부를 바꿔야 할 것입니다."
  SOV_soviet_japanese_pact_against_usa_focus:0 "소련-대한 반미 협정"
  SOV_soviet_japanese_pact_against_usa_focus_desc:0 "한국인들은 성장하는 경제에 활력을 불어넣기 위해 더 많은 확장을 원할 것입니다. 우리로부터 가능한 멀리 떨어진 곳에서 확장을 하고 강력한 해군력의 지지를 얻는 것이 우리의 최대 관심사입니다. 함께라면, 우리는 미국을 세계 무대에서 제거할 수 있습니다!"
- SOV_two_red_flags:0 "북양정부 지원"
- SOV_two_red_flags_desc:0 "중국 국민당은 군사력이 약하고 더 큰 군대를 만들 수 있는 산업 기반이 없습니다. 북양정부가 중국을 통제하고 성공적인 공산주의 혁명의 선행조건으로 필요한 일종의 부르주아 사회를 만들기에 가장 적합하다는 것은 분명합니다."
+ SOV_two_red_flags:0 "북경정부 지원"
+ SOV_two_red_flags_desc:0 "중국 국민당은 군사력이 약하고 더 큰 군대를 만들 수 있는 산업 기반이 없습니다. 북경정부가 중국을 통제하고 성공적인 공산주의 혁명의 선행조건으로 필요한 일종의 부르주아 사회를 만들기에 가장 적합하다는 것은 분명합니다."
  SOV_support_the_kuomintang_desc:0 "중국에서 혁명이 성공하지는 못했지만, 이것은 예상 밖의 일이 아닙니다. 중국은 아직 참된 사회주의 혁명에 필요한 산업사회가 아닙니다. 그런데도 국민당은 중국인들에게 공산주의 미래를 달성할 수 있는 최고의 기회입니다."
  
  MTG_naval_treaty.9.t:0 "제2차 런던 해군군축조약 서명"
@@ -32,7 +32,7 @@
  AST_japan_tech_sharing:0 "한국과의 기술공유"
  AST_war_on_japan:0 "한국과의 전쟁"
  HOL_placate_the_japanese:0 "한국 회유"
- CHI_cooperation_with_the_nationalists:0 "북양정부와의 협력"
+ CHI_cooperation_with_the_nationalists:0 "북경정부와의 협력"
  CHI_join_the_republican_government:0 "공화국 정부에 가담"
  CHI_opposition:0 "반대파"
  
@@ -41,7 +41,7 @@
  SOV_recover_the_kuril_islands_decisions_tt:0 "\n[SOV.GetNameDef] 측이 §Y[537.GetName]§!(와)과 §Y[555.GetName]§!(을)를 관리하게 되면 [KOR.GetNameDef] 측과 평화를 맺고 해당 영토를 유지할 수 있는 결정이 해금될 것입니다."
  SOV_spheres_of_influence_in_china_desc:0 "우리 사이에 남은 마지막 쟁점은 중국의 상황입니다. 이 지역에서 우리의 이익은 제한적이며, 만약 우리가 관심 분야에 대한 합의를 통해 한국의 지지를 살 수 있다면, 우리는 주저 없이 그렇게 해야 합니다."
  
- china_nationalist_focus:0 "중화민국 북양정부 중점 계통도"
+ china_nationalist_focus:0 "중화민국 북경정부 중점 계통도"
  korean_socialist_empire_focus:0 "대한 사회주의 제국 중점 계통도"
  
  RAJ_provincial_autonomy:0 "인도양 위의 태양"
@@ -54,7 +54,7 @@
  RAJ_japanese_army_air_force_academy:0 "한국 육군항공사관학교"
  
  CHI_three_principles_of_the_people:0 "정부 강화"
- CHI_three_principles_of_the_people_desc:0 "오랫동안 이어진 혼란 끝에, 화북지방에서는 차오쿤과 우페이푸 등을 위시로 한 북양정부가 수립되었습니다. 우리는 지금것 이어진 체제를 유지하고, 강화할 것입니다."
+ CHI_three_principles_of_the_people_desc:0 "오랫동안 이어진 혼란 끝에, 화북지방에서는 차오쿤과 우페이푸 등을 위시로 한 북경정부가 수립되었습니다. 우리는 지금것 이어진 체제를 유지하고, 강화할 것입니다."
  
  SOV_end_the_khalkhin_gol_conflict_wargoal_tt:0 "@KOR§Y대한제국§!과 §Y중국의 모든 한국 동맹국§!에 대한 전쟁 목표 §Y괴뢰화 (중점)§!을 얻습니다."
  SOV_soviet_japanese_reckoning:0 "소련과 대한의 복수"

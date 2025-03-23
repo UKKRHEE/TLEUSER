@@ -82,4 +82,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/decisions/decision_KOR_anti_hwakyo_movement.png"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_decision_KOR_ahn_budget_category" 
+		texturefile = "gfx/interface/decisions/decision_KOR_ahn_budget_category.png"
+		legacy_lazy_load = no
+	}
 }

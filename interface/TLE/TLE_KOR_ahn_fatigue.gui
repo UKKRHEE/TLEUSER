@@ -1,0 +1,19 @@
+guiTypes = {
+	containerWindowType = {
+		name = "KOR_ahn_fatigue_GUI"
+		position = { x = 0 y = 0 }
+		size = { width = 490 height = 200 }
+
+		iconType = {
+			name = "control_icon"
+			spriteType = "KOR_ahn_fatigue_control_icon"
+			position = { x = 30 y = 0 }
+		}
+
+		iconType = {
+			name = "progressbar"
+			spriteType = "KOR_ahn_fatigue_progressbar"
+			position = { x = 12 y = 145 }
+		}
+	}
+}

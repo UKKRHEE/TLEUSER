@@ -718,6 +718,15 @@
  ahn_innovation_tooltip_3: "혁신의제3"
  ahn_innovation_tooltip_4: "혁신의제4"
  ahn_innovation_tooltip_5: "혁신의제5"
+
+ KOR_ahn_fatigue_category: "도산의 인내심"
+ KOR_ahn_fatigue_category_desc: "사람에게는 견딜 수 있는 한계의 정신력이 있습니다. 아무리 바다와 같이 타인을 해량할 수 있는 사람일지라도, 열반한 붓다가 아닌 이상 자신에게 찾아온 곤난을 전부 받아들일 수 없습니다.\n\n도산 안창호는 분명 평범한 사람이 아닙니다. 그는 자신의 뜻을 확실히 세우고, 이뤄지지 않음에 포기하지 않고 끝까지 달려나왔습니다. 허나 손 앞에서 거머쥘 수 있는 기회가 주어졌는데, 그 때에 이르러서 방해를 받을 때에는 상상 이상의 절망감을 맛볼 것입니다.\n\n결국 도산 안창호에게 필요한건 자신의 정신을 꿋꿋하게 유지하고, 마지막에 마지막까지 포기하지 않는 희망을 가지는 것입니다. 후회를 하더라도 내가 이루지 못함에서 해야지, 시도조차 하지 않고 이전 날을 반추함은 어리석은 일입니다.\n"
+ KOR_ahn_budget_category: "경세제민"
+ KOR_ahn_budget_category_desc: "\n\n\n\n£GFX_decision_KOR_ahn_budget_category\n\n\n\n\n\n\n\n전에도 그랬고, 지금은 더 중요해졌습니다. 시대를 움직이는 가장 중요한 자원은 돈입니다. 돈은 물건의 모습이건, 금속의 모습이건, 종이의 모습이건 인류의 역사와 함께해왔습니다. 20세기 현대에도 우리와 함께하고 있습니다.\n\n내각이 어떤 정책을 행할 때마다 항상 계산에 두어야 하는건 바로 이 돈, 자금입니다. 탁지부에서 편성한 예산은 내각이 어떤 정책을 추진할 수 있는 상한선을 알려주며, 갈 수 있는 길을 확정하게 도와줍니다. \n\n매 분기마다 12.3억씩 세수가 걷힙니다. \n\n현재 내각이 가지고 있는 예산은 §G[?korea_ahn_budget_var]§!억원입니다."
+ korea_ahn_add_budget_tt: "예산 §G[?korea_ahn_budget_temp_var]§!억원 추가"
+
+ KOR_ahn_government_stability_category: "정권 안정도"
+ KOR_ahn_government_stability_category_desc: "현재 정권 안정도: [?KORAhnRegimeStability]"
  
  #툴팁
  DEC_END_OF_THE_HWAKYO:0 "§Y화교배척운동§!이 끝납니다.\n\n§t그러나 한민족을 제외한 제국의 모든 이들은 이 일을 끝까지 기억할 것입니다.§!"

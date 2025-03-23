@@ -232,6 +232,9 @@ set_variable = { KOR_kks_government_idea_chaebeol_var = 0.03 }
 set_variable = { KOR_kks_government_idea_cityzen_var = 0.00 }
 set_variable = { KOR_kks_government_idea_rural_var = -0.06 }
 
+#안창호 예산 시스템
+set_variable = { korea_ahn_budget_var = 74.6 } #1936 1월, 4월 자금 및 기존 대한제국이 가지고 있던 50억원 추가
+
 #안창호 혁신 시스템
 
 #안창호 민족불만도
@@ -298,6 +301,9 @@ set_technology = {
 	
 	basic_train = 1
 }
+
+	### 시작 특별 프로젝트 ###
+complete_special_project = sp:sp_naval_cruiser_submarine
 ###
 ###
 if = {
@@ -1009,14 +1015,14 @@ if = {
 		name_group = KOR_CA_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_light_medium_battery_2
+			fixed_ship_battery_slot = ship_medium_battery_2
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = cruiser_ship_engine_2
 			fixed_ship_armor_slot = ship_armor_cruiser_2
 			fixed_ship_secondaries_slot = dp_ship_secondaries_1
-			front_1_custom_slot = ship_light_medium_battery_2
+			front_1_custom_slot = ship_medium_battery_2
 			mid_1_custom_slot = ship_torpedo_2
 			mid_2_custom_slot = ship_torpedo_2
 			rear_1_custom_slot = ship_airplane_launcher_1

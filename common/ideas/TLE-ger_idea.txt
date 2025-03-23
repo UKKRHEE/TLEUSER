@@ -65,6 +65,21 @@ ideas = {
 				attack_bonus_against = 0.4
 			}
 		}
+		TLE_SOV_HISTORICAL_IDEA = {
+			picture = KOR_militarism
+			modifier = {
+				army_core_attack_factor = 0.15
+				army_core_defence_factor = 0.15
+				supply_consumption_factor = -0.3
+				ai_desired_divisions_factor = 10
+				surrender_limit = 0.1
+			}	
+			targeted_modifier = {
+                tag = GER
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.3
+			}
+		}
 		steel_reich_idea = {
 			allowed = {
 				always = no
