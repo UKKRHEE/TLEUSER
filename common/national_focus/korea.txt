@@ -1609,21 +1609,38 @@ focus_tree = {
 		x = 81
 		y = 13
 			completion_reward = {
-					if = {
-							limit = {
-									NOT = {
-											has_idea = KOR_dongmyong
-										}
-								}
-							add_ideas = KOR_dongmyong
-						}
-					if = {
-							limit = {
-									has_idea = KOR_dongmyong
-								}
-							add_political_power = 150
-						}
+				
+				if = {
+					limit = {
+						has_dlc = "Arms Against Tyranny"
+					}	
+					mio:dongmyong = {
+						add_mio_size = 2
+						unlock_mio_trait_tooltip =  KOR_mio_trait_carrier
+					}
+			
+			
 				}
+				else = {
+					if = {
+						limit = {
+							NOT = {
+								has_idea = KOR_dongmyong
+							}
+						}
+						add_ideas = KOR_dongmyong
+					}
+					if = {
+						limit = {
+							has_idea = KOR_dongmyong
+						}
+						add_political_power = 150
+					}
+				
+				
+				}
+				
+			}
 
 	}
 	focus = {
@@ -2511,33 +2528,47 @@ focus_tree = {
 									has_game_rule = {
 											rule = TLE_KOREA_HARDCORE_RULE
 											option = TLE_VERY_HARD
-										}
-								}
+									}
+							}
 							add_tech_bonus = {
 									name = kor_make_nuke
 									ahead_reduction = 1.0
 									bonus = 4.0
-									technology = nukes
+									technology = atomic_research
+							}
+							if = {
+								limit = { has_dlc_gtd = yes }
+								add_breakthrough_progress = {
+									specialization = specialization_nuclear
+									value = 1
 								}
-						}
+							}
+					}
 					if = {
 							limit = {
 									NOT = {
 											has_game_rule = {
 													rule = TLE_KOREA_HARDCORE_RULE
 													option = TLE_VERY_HARD
-												}
-										}
-								}
+											}
+									}
+							}	
 							add_tech_bonus = {
 									name = kor_make_nuke
 									ahead_reduction = 1.0
 									bonus = 3.0
-									technology = nukes
+									technology = atomic_research
+							}
+							if = {
+								limit = { has_dlc_gtd = yes }
+								add_breakthrough_progress = {
+									specialization = specialization_nuclear
+									value = 1
 								}
-						}
+							}
+					}
 					custom_effect_tooltip = TLE_kor_make_nuke
-				}
+			}
 
 	}
 	focus = {

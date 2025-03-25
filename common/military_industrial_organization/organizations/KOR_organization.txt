@@ -61,7 +61,31 @@ dongmyong = {
 		tag = KOR 
 		has_dlc = "Arms Against Tyranny"
 	}
+	add_trait = { 
+		token = KOR_mio_trait_carrier
+		name = KOR_mio_trait_carrier
+		icon = GFX_generic_mio_department_icon_ship_carrier_utility
+		special_trait_background = yes
+
+		all_parents = {   }
+
+		position = { x=3 y=0 }
+		
+		limit_to_equipment_type = { carrier }
+
+		equipment_bonus = {
+			carrier_size = 1
+		}
+		
+		available = {
+			if = {
+				limit = { FROM = { original_tag = KOR } }
+				FROM = { has_completed_focus = kor_great_navy }
+			}	
+		}
+	}
 }
+
 
 pyoahm = {
 	include = generic_escort_ship_organization
