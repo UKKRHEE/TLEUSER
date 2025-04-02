@@ -236,6 +236,13 @@ set_variable = { KOR_kks_government_idea_rural_var = -0.06 }
 set_variable = { korea_ahn_budget_var = 74.6 } #1936 1월, 4월 자금 및 기존 대한제국이 가지고 있던 50억원 추가
 
 #안창호 혁신 시스템
+ahn_innovation_setup = yes
+
+#안창호 철도
+setup_early_seoul_metro_stations = yes #좆같이 힘드네 ㅅㅂ...
+
+#안창호 정권 안정도
+set_variable = { KORAhnRegimeStability = 60 }
 
 #안창호 민족불만도
 # Set Default Selected State #

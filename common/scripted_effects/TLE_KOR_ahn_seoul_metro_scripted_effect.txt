@@ -1,0 +1,334 @@
+add_ahn_seoul_metro_stations = {
+	set_temp_variable = { v = Ahn_Seoul_Metro_Stations_Array^num }
+	add_to_temp_variable = { v = 1 }
+	add_to_array = { Ahn_Seoul_Metro_Stations_Array = v }
+	set_variable = { v:Ahn_Seoul_Metro_Pin_Xpos = x_pos }
+	set_variable = { v:Ahn_Seoul_Metro_Pin_Ypos = y_pos }
+	set_variable = { v:Ahn_Seoul_Metro_Building_Complete = building_complete }
+}
+
+ahn_test_metro = {
+	set_variable = { 1:Ahn_Seoul_Metro_Building_Complete = 1 }
+	set_variable = { 2:Ahn_Seoul_Metro_Building_Complete = 1 }
+	set_variable = { 3:Ahn_Seoul_Metro_Building_Complete = 1 }
+	set_variable = { 4:Ahn_Seoul_Metro_Building_Complete = 1 }
+	add_to_variable = { ahn_seoul_metro_dirty = 1 }
+}
+
+ahn_open_metro = {
+	set_country_flag = AHN_SEOUL_METRO_VISIBLE
+	setup_ahn_seoul_metro_stations_1 = yes
+}
+
+add_early_seoul_metro_stations = {
+	set_temp_variable = { v = Ahn_Seoul_Metro_Stations_Array^num }
+	add_to_temp_variable = { v = 1 }
+	add_to_array = { Ahn_Seoul_Metro_Stations_Array = v }
+	set_variable = { v:Ahn_Seoul_Metro_Pin_Xpos = x_pos }
+	set_variable = { v:Ahn_Seoul_Metro_Pin_Ypos = y_pos }
+	set_variable = { v:Ahn_Seoul_Metro_Building_Complete = building_complete }
+}
+
+setup_early_seoul_metro_stations = {
+	set_variable = { station_check = 1 }
+	clear_array = Ahn_Seoul_Metro_Stations_Array
+	
+	### 경부선
+	
+	# 서울역 #1
+	set_temp_variable = { building_complete = 0 }
+	set_temp_variable = { x_pos = 400 }
+	set_temp_variable = { y_pos = 387 }
+	add_early_seoul_metro_stations = yes
+	set_variable = { 1:Ahn_Seoul_Metro_Building_Complete = 1 }
+	
+	# 노량진역 #2
+	set_temp_variable = { building_complete = 0 }
+	set_temp_variable = { x_pos = 353 }
+	set_temp_variable = { y_pos = 480 }
+	add_early_seoul_metro_stations = yes
+	set_variable = { 2:Ahn_Seoul_Metro_Building_Complete = 1 }
+	
+	# 영등포역 #3
+	set_temp_variable = { building_complete = 0 }
+	set_temp_variable = { x_pos = 240 }
+	set_temp_variable = { y_pos = 480 }
+	add_early_seoul_metro_stations = yes
+	set_variable = { 3:Ahn_Seoul_Metro_Building_Complete = 1 }
+	
+	# 구로역 #4
+	set_temp_variable = { building_complete = 0 }
+	set_temp_variable = { x_pos = 188 }
+	set_temp_variable = { y_pos = 510 }
+	add_early_seoul_metro_stations = yes
+	set_variable = { 4:Ahn_Seoul_Metro_Building_Complete = 1 }
+	
+	### 경의선
+	
+	# 신촌역 #5
+	set_temp_variable = { building_complete = 0 }
+	set_temp_variable = { x_pos = 355 }
+	set_temp_variable = { y_pos = 370 }
+	add_early_seoul_metro_stations = yes
+	set_variable = { 5:Ahn_Seoul_Metro_Building_Complete = 1 }
+	
+	# 가좌역 #6
+	set_temp_variable = { building_complete = 0 }
+	set_temp_variable = { x_pos = 293 }
+	set_temp_variable = { y_pos = 336 }
+	add_early_seoul_metro_stations = yes
+	set_variable = { 6:Ahn_Seoul_Metro_Building_Complete = 1 }
+	
+	### 종로선
+	
+	# 광화문역 #7
+	set_temp_variable = { building_complete = 0 }
+	set_temp_variable = { x_pos = 405 }
+	set_temp_variable = { y_pos = 330 }
+	add_early_seoul_metro_stations = yes
+	set_variable = { 7:Ahn_Seoul_Metro_Building_Complete = 1 }
+	
+	# 종각역 #8
+	set_temp_variable = { building_complete = 0 }
+	set_temp_variable = { x_pos = 435 }
+	set_temp_variable = { y_pos = 329 }
+	add_early_seoul_metro_stations = yes
+	set_variable = { 8:Ahn_Seoul_Metro_Building_Complete = 1 }
+	
+	# 동대문역 #9
+	set_temp_variable = { building_complete = 0 }
+	set_temp_variable = { x_pos = 481 }
+	set_temp_variable = { y_pos = 321 }
+	add_early_seoul_metro_stations = yes
+	set_variable = { 9:Ahn_Seoul_Metro_Building_Complete = 1 }
+	
+	# 청량리역 #10
+	set_temp_variable = { building_complete = 0 }
+	set_temp_variable = { x_pos = 560 }
+	set_temp_variable = { y_pos = 285 }
+	add_early_seoul_metro_stations = yes
+	set_variable = { 10:Ahn_Seoul_Metro_Building_Complete = 1 }
+	
+	add_to_variable = { ahn_seoul_metro_dirty = 1 }
+}
+
+setup_ahn_seoul_metro_stations_1 = {
+	set_variable = { station_check = 1 }
+	clear_array = Ahn_Seoul_Metro_Stations_Array
+	
+	set_temp_variable = { building_complete = 0 }
+	set_temp_variable = { x_pos = 120 }
+	set_temp_variable = { y_pos = 350 }
+	add_ahn_seoul_metro_stations = yes
+
+	set_temp_variable = { building_complete = 0 }
+	set_temp_variable = { x_pos = 224 }
+	set_temp_variable = { y_pos = 290 }
+	add_ahn_seoul_metro_stations = yes
+
+	set_temp_variable = { building_complete = 0 }
+	set_temp_variable = { x_pos = 270 }
+	set_temp_variable = { y_pos = 233 }
+	add_ahn_seoul_metro_stations = yes
+
+	set_temp_variable = { building_complete = 0 }
+	set_temp_variable = { x_pos = 322 }
+	set_temp_variable = { y_pos = 238 }
+	add_ahn_seoul_metro_stations = yes
+
+	set_temp_variable = { building_complete = 0 }
+	set_temp_variable = { x_pos = 373 }
+	set_temp_variable = { y_pos = 302 }
+	add_ahn_seoul_metro_stations = yes	
+
+	set_temp_variable = { building_complete = 0 }
+	set_temp_variable = { x_pos = 188 }
+	set_temp_variable = { y_pos = 510 }
+	add_ahn_seoul_metro_stations = yes
+
+	set_temp_variable = { building_complete = 0 }
+	set_temp_variable = { x_pos = 240 }
+	set_temp_variable = { y_pos = 480 }
+	add_ahn_seoul_metro_stations = yes
+
+	set_temp_variable = { building_complete = 0 }
+	set_temp_variable = { x_pos = 440 }
+	set_temp_variable = { y_pos = 307 }
+	add_ahn_seoul_metro_stations = yes
+
+	set_temp_variable = { building_complete = 0 }
+	set_temp_variable = { x_pos = 490 }
+	set_temp_variable = { y_pos = 305 }
+	add_ahn_seoul_metro_stations = yes
+
+	set_temp_variable = { building_complete = 0 }
+	set_temp_variable = { x_pos = 600 }
+	set_temp_variable = { y_pos = 255 }
+	add_ahn_seoul_metro_stations = yes
+
+	set_temp_variable = { building_complete = 0 }
+	set_temp_variable = { x_pos = 288 }
+	set_temp_variable = { y_pos = 440 }
+	add_ahn_seoul_metro_stations = yes
+
+	set_temp_variable = { building_complete = 0 }
+	set_temp_variable = { x_pos = 355 }
+	set_temp_variable = { y_pos = 370 }
+	add_ahn_seoul_metro_stations = yes
+
+	set_temp_variable = { building_complete = 0 }
+	set_temp_variable = { x_pos = 455 }
+	set_temp_variable = { y_pos = 335 }
+	add_ahn_seoul_metro_stations = yes
+
+	set_temp_variable = { building_complete = 0 }
+	set_temp_variable = { x_pos = 500 }
+	set_temp_variable = { y_pos = 330 }
+	add_ahn_seoul_metro_stations = yes
+
+	set_temp_variable = { building_complete = 0 }
+	set_temp_variable = { x_pos = 564 }
+	set_temp_variable = { y_pos = 360 }
+	add_ahn_seoul_metro_stations = yes
+
+	set_temp_variable = { building_complete = 0 }
+	set_temp_variable = { x_pos = 650 }
+	set_temp_variable = { y_pos = 420 }
+	add_ahn_seoul_metro_stations = yes
+
+	set_temp_variable = { building_complete = 0 }
+	set_temp_variable = { x_pos = 250 }
+	set_temp_variable = { y_pos = 530 }
+	add_ahn_seoul_metro_stations = yes
+
+	set_temp_variable = { building_complete = 0 }
+	set_temp_variable = { x_pos = 445 }
+	set_temp_variable = { y_pos = 363 }
+	add_ahn_seoul_metro_stations = yes
+
+	set_temp_variable = { building_complete = 0 }
+	set_temp_variable = { x_pos = 464 }
+	set_temp_variable = { y_pos = 250 }
+	add_ahn_seoul_metro_stations = yes
+
+	add_to_variable = { ahn_seoul_metro_dirty = 1 }
+}
+
+
+setup_ahn_seoul_metro_stations_2 = {
+	set_variable = { station_check = 2 }
+	clear_array = Ahn_Seoul_Metro_Stations_Array
+
+	set_temp_variable = { building_complete = 0 }
+	set_temp_variable = { x_pos = 308 }
+	set_temp_variable = { y_pos = 334 }
+	add_ahn_seoul_metro_stations = yes
+
+	set_temp_variable = { building_complete = 0 }
+	set_temp_variable = { x_pos = 398 }
+	set_temp_variable = { y_pos = 388 }
+	add_ahn_seoul_metro_stations = yes
+
+	set_temp_variable = { building_complete = 0 }
+	set_temp_variable = { x_pos = 405 }
+	set_temp_variable = { y_pos = 340 }
+	add_ahn_seoul_metro_stations = yes
+
+	set_temp_variable = { building_complete = 0 }
+	set_temp_variable = { x_pos = 358 }
+	set_temp_variable = { y_pos = 478 }
+	add_ahn_seoul_metro_stations = yes
+
+	set_temp_variable = { building_complete = 0 }
+	set_temp_variable = { x_pos = 239 }
+	set_temp_variable = { y_pos = 479 }
+	add_ahn_seoul_metro_stations = yes
+
+	set_temp_variable = { building_complete = 0 }
+	set_temp_variable = { x_pos = 190 }
+	set_temp_variable = { y_pos = 530 }
+	add_ahn_seoul_metro_stations = yes
+
+	set_temp_variable = { building_complete = 0 }
+	set_temp_variable = { x_pos = 435 }
+	set_temp_variable = { y_pos = 307 }
+	add_ahn_seoul_metro_stations = yes
+
+	set_temp_variable = { building_complete = 0 }
+	set_temp_variable = { x_pos = 490 }
+	set_temp_variable = { y_pos = 297 }
+	add_ahn_seoul_metro_stations = yes
+
+	set_temp_variable = { building_complete = 0 }
+	set_temp_variable = { x_pos = 600 }
+	set_temp_variable = { y_pos = 255 }
+	add_ahn_seoul_metro_stations = yes
+
+	set_temp_variable = { building_complete = 0 }
+	set_temp_variable = { x_pos = 450 }
+	set_temp_variable = { y_pos = 335 }
+	add_ahn_seoul_metro_stations = yes
+
+	set_temp_variable = { building_complete = 0 }
+	set_temp_variable = { x_pos = 505 }
+	set_temp_variable = { y_pos = 324 }
+	add_ahn_seoul_metro_stations = yes
+
+	set_temp_variable = { building_complete = 0 }
+	set_temp_variable = { x_pos = 555 }
+	set_temp_variable = { y_pos = 367 }
+	add_ahn_seoul_metro_stations = yes
+
+	set_temp_variable = { building_complete = 0 }
+	set_temp_variable = { x_pos = 652 }
+	set_temp_variable = { y_pos = 410 }
+	add_ahn_seoul_metro_stations = yes
+
+	set_temp_variable = { building_complete = 0 }
+	set_temp_variable = { x_pos = 688 }
+	set_temp_variable = { y_pos = 475 }
+	add_ahn_seoul_metro_stations = yes
+
+	set_temp_variable = { building_complete = 0 }
+	set_temp_variable = { x_pos = 720 }
+	set_temp_variable = { y_pos = 530 }
+	add_ahn_seoul_metro_stations = yes
+
+	set_temp_variable = { building_complete = 0 }
+	set_temp_variable = { x_pos = 438 }
+	set_temp_variable = { y_pos = 255 }
+	add_ahn_seoul_metro_stations = yes
+
+	set_temp_variable = { building_complete = 0 }
+	set_temp_variable = { x_pos = 445 }
+	set_temp_variable = { y_pos = 366 }
+	add_ahn_seoul_metro_stations = yes
+
+	set_temp_variable = { building_complete = 0 }
+	set_temp_variable = { x_pos = 474 }
+	set_temp_variable = { y_pos = 414 }
+	add_ahn_seoul_metro_stations = yes
+
+	set_temp_variable = { building_complete = 0 }
+	set_temp_variable = { x_pos = 510 }
+	set_temp_variable = { y_pos = 480 }
+	add_ahn_seoul_metro_stations = yes
+
+	set_temp_variable = { building_complete = 0 }
+	set_temp_variable = { x_pos = 524 }
+	set_temp_variable = { y_pos = 540 }
+	add_ahn_seoul_metro_stations = yes
+
+	set_temp_variable = { building_complete = 0 }
+	set_temp_variable = { x_pos = 423 }
+	set_temp_variable = { y_pos = 507 }
+	add_ahn_seoul_metro_stations = yes
+
+	set_temp_variable = { building_complete = 0 }
+	set_temp_variable = { x_pos = 585 }
+	set_temp_variable = { y_pos = 500 }
+	add_ahn_seoul_metro_stations = yes
+
+	add_to_variable = { ahn_seoul_metro_dirty = 1 }
+}
+

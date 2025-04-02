@@ -6227,6 +6227,16 @@ focus_tree = {
 		}
 		x = 41
 		y = 13
+		available = {
+			if = {
+				limit = {
+					has_global_flag = GLOB_TLE_PAK_DEAD
+				}
+				NOT = {
+					has_global_flag = GLOB_TLE_PAK_DEAD
+				}
+			}
+		}
 			completion_reward = {
 					country_event = {
 							id = korea.1101
@@ -6243,6 +6253,16 @@ focus_tree = {
 		}
 		x = 43
 		y = 13
+		available = {
+			if = {
+				limit = {
+					has_global_flag = GLOB_TLE_PAK_DEAD
+				}
+				NOT = {
+					has_global_flag = GLOB_TLE_PAK_DEAD
+				}
+			}
+		}
 		completion_reward = {
 			country_event = {
 				id = korea.1119
@@ -6259,6 +6279,16 @@ focus_tree = {
 		}
 		x = 45
 		y = 13
+		available = {
+			if = {
+				limit = {
+					has_global_flag = GLOB_TLE_PAK_DEAD
+				}
+				NOT = {
+					has_global_flag = GLOB_TLE_PAK_DEAD
+				}
+			}
+		}
 			completion_reward = {
 					country_event = {
 							id = korea.1115
@@ -6275,6 +6305,16 @@ focus_tree = {
 		}
 		x = 47
 		y = 13
+		available = {
+			if = {
+				limit = {
+					has_global_flag = GLOB_TLE_PAK_DEAD
+				}
+				NOT = {
+					has_global_flag = GLOB_TLE_PAK_DEAD
+				}
+			}
+		}
 			completion_reward = {
 					country_event = {
 							id = korea.1112
@@ -6291,6 +6331,16 @@ focus_tree = {
 		}
 		x = 42
 		y = 14
+		available = {
+			if = {
+				limit = {
+					has_global_flag = GLOB_TLE_PAK_DEAD
+				}
+				NOT = {
+					has_global_flag = GLOB_TLE_PAK_DEAD
+				}
+			}
+		}
 			available = {
 					has_completed_focus = KOR_pak_inner_8
 					custom_trigger_tooltip = {
@@ -6315,6 +6365,16 @@ focus_tree = {
 		x = 44
 		y = 14
 		available = {
+			if = {
+				limit = {
+					has_global_flag = GLOB_TLE_PAK_DEAD
+				}
+				NOT = {
+					has_global_flag = GLOB_TLE_PAK_DEAD
+				}
+			}
+		}
+		available = {
 			has_completed_focus = KOR_pak_inner_9
 		}
 		completion_reward = {
@@ -6332,6 +6392,16 @@ focus_tree = {
 		}
 		x = 46
 		y = 14
+		available = {
+			if = {
+				limit = {
+					has_global_flag = GLOB_TLE_PAK_DEAD
+				}
+				NOT = {
+					has_global_flag = GLOB_TLE_PAK_DEAD
+				}
+			}
+		}
 			available = {
 					has_completed_focus = KOR_pak_inner_6
 				}
@@ -6350,6 +6420,16 @@ focus_tree = {
 		}
 		x = 41
 		y = 15
+		available = {
+			if = {
+				limit = {
+					has_global_flag = GLOB_TLE_PAK_DEAD
+				}
+				NOT = {
+					has_global_flag = GLOB_TLE_PAK_DEAD
+				}
+			}
+		}
 			completion_reward = {
 					country_event = {
 							id = korea.1111
@@ -6367,6 +6447,16 @@ focus_tree = {
 		}
 		x = 43
 		y = 15
+		available = {
+			if = {
+				limit = {
+					has_global_flag = GLOB_TLE_PAK_DEAD
+				}
+				NOT = {
+					has_global_flag = GLOB_TLE_PAK_DEAD
+				}
+			}
+		}
 			completion_reward = {
 					country_event = {
 							id = korea.1122
@@ -6383,6 +6473,16 @@ focus_tree = {
 		}
 		x = 45
 		y = 15
+		available = {
+			if = {
+				limit = {
+					has_global_flag = GLOB_TLE_PAK_DEAD
+				}
+				NOT = {
+					has_global_flag = GLOB_TLE_PAK_DEAD
+				}
+			}
+		}
 		available = {
 			has_country_flag = TLE_PAK_AHN_FIRED
 		}
@@ -6406,6 +6506,16 @@ focus_tree = {
 		}
 		x = 47
 		y = 15
+		available = {
+			if = {
+				limit = {
+					has_global_flag = GLOB_TLE_PAK_DEAD
+				}
+				NOT = {
+					has_global_flag = GLOB_TLE_PAK_DEAD
+				}
+			}
+		}
 		available = {
 				has_completed_focus = KOR_pak_inner_10
 				has_completed_focus = KOR_pak_inner_8
@@ -6450,6 +6560,16 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = KOR_pak_inner_7
+		}
+		available = {
+			if = {
+				limit = {
+					has_global_flag = GLOB_TLE_PAK_DEAD
+				}
+				NOT = {
+					has_global_flag = GLOB_TLE_PAK_DEAD
+				}
+			}
 		}
 		available = {
 			if = {
@@ -6666,6 +6786,22 @@ focus_tree = {
 			declare_war_on = {
 				target = event_target:TLE_PCY_BEIJING_GOV
 				type = annex_everything
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						KMN = {
+							exists = yes
+							is_puppet_of = KOR
+						}
+					}
+					KMN = {
+						declare_war_on = {
+							target = event_target:TLE_PCY_BEIJING_GOV
+							type = annex_everything
+						}
+					}
+				}
 			}
 		}
 

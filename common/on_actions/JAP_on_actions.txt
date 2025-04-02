@@ -128,6 +128,11 @@ on_actions = {
 						tag = JAP
 					} #피점령국 - 유신정부
 					FROM.FROM = { state = 1070 } #점령 주 - 나고야
+					NOT = {
+						JAP = {
+							has_war_with = KOR
+						}
+					}
 				}
 				TBJ = {
 					white_peace = JAP
@@ -176,6 +181,11 @@ on_actions = {
 						tag = JAP
 					} #피점령국 - 유신
 					FROM.FROM = { state = 1070 } #점령 주 - 교토
+					NOT = {
+						JAP = {
+							has_war_with = KOR
+						}
+					}
 				}
 				DKG = {
 					country_event = {

@@ -1,0 +1,26 @@
+scripted_gui = {
+	KOR_ahn_government_stability = {
+		context_type = player_context
+		window_name = "KOR_ahn_government_stability"
+		parent_window_token = top_bar
+
+		visible = {
+			has_country_flag = FLAG_ACH_ROUTE
+		}
+
+		triggers = {
+			gui_alert_visible = { 
+				has_country_flag = ahn_stability_gui_alert_visible
+			}
+		}
+
+		effects = {
+			KOR_ahn_government_stability_icon_click = {
+				clr_country_flag = ahn_stability_gui_alert_visible
+			}
+			KOR_ahn_government_stability_value_click = {
+				clr_country_flag = ahn_stability_gui_alert_visible
+			}
+		}
+	}
+}

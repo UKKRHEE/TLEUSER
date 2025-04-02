@@ -10662,6 +10662,71 @@ GAW_NONE_ACH_win_effect = {
 ##############################################
 #Democratic - Korean Great Asian War: Pak Chungyang
 ##############################################
+PCY_attack_japan_effect = {
+	set_global_flag = TLE_PAK_JAP_ATTACK
+	declare_war_on = {
+		target = JAP
+		type = annex_everything 
+	}
+	hidden_effect = {
+		if = {
+			limit = {
+				KKS = {
+					exists = yes
+					is_puppet_of = KOR
+				}
+			}
+			KKS = {
+				declare_war_on = {
+					target = JAP
+					type = annex_everything 
+				}
+			}
+		}
+		if = {
+			limit = {
+				NBJ = {
+					exists = yes
+				}
+			}
+			add_to_faction = NBJ
+			NBJ = {
+				declare_war_on = {
+					target = JAP
+					type = annex_everything 
+				}
+			}
+		}
+		if = {
+			limit = {
+				SDJ = {
+					exists = yes
+				}
+			}
+			add_to_faction = SDJ
+			SDJ = {
+				declare_war_on = {
+					target = JAP
+					type = annex_everything 
+				}
+			}
+		}
+		if = {
+			limit = {
+				TBJ = {
+					exists = yes
+				}
+			}
+			add_to_faction = TBJ
+			TBJ = {
+				declare_war_on = {
+					target = JAP
+					type = annex_everything 
+				}
+			}
+		}
+	}
+}
 PCY_Japan_annex_effect = {
 	custom_effect_tooltip = PCY_Japan_annex_effect_tooltip
 	hidden_effect = {
@@ -11997,6 +12062,26 @@ PCY_kuomintang_third_rise_effect = {
 		}
 		CHI = {
 			set_faction_leader = yes
+			declare_war_on = {
+				target = KOR
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = WEI
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = SNJ
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = QIN
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = SND
+				type = annex_everything
+			}
 		}
 		KOR = {
 			country_event = {

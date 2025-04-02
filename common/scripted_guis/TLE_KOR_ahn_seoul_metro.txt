@@ -1,0 +1,89 @@
+scripted_gui = {
+	KOR_ahn_seoul_metro_GUI = {
+		context_type = player_context
+		window_name = "KOR_ahn_seoul_metro_GUI"
+		dirty = ahn_seoul_metro_dirty
+
+		ai_enabled = { always = no }
+		
+		visible = {
+			has_country_flag = AHN_SEOUL_METRO_VISIBLE
+		}
+
+		dynamic_lists = {
+			Stations_Grid = {
+				array = Ahn_Seoul_Metro_Stations_Array
+				entry_container = KOR_ahn_seoul_metro_GUI_entry
+				index = idx
+				change_scope = no
+			}
+		}
+
+		effects = {
+			ahn_seoul_metro_close_click = {
+				clr_country_flag = AHN_SEOUL_METRO_VISIBLE
+			}
+			Metro_Pin_click = {
+				set_country_flag = AHN_SEOUL_METRO_DETAIL_VISIBLE
+				set_variable = { Selected_Ahn_Seoul_Metro_Station = v }
+			}
+		}
+		
+		properties = {
+			Metro_Pin = {
+				image = "[GetAhnMetroPinImage]"
+				x = v:Ahn_Seoul_Metro_Pin_Xpos
+				y = v:Ahn_Seoul_Metro_Pin_Ypos
+			}
+		}
+	}
+
+	KOR_ahn_seoul_metro_Decision_GUI = {
+		context_type = decision_category
+		window_name = "KOR_ahn_seoul_metro_Decision_GUI"
+
+		ai_enabled = { always = no }
+
+		visible = {
+			always = yes
+		}
+
+		effects = {
+			Open_Button_click = {
+				if = {
+					limit = {
+						has_country_flag = AHN_SEOUL_METRO_VISIBLE
+					}
+					clr_country_flag = AHN_SEOUL_METRO_VISIBLE
+				}
+				else = {
+					set_country_flag = AHN_SEOUL_METRO_VISIBLE
+				}
+			}
+		}
+	}
+
+	KOR_ahn_seoul_metro_Detail_GUI = {
+		context_type = player_context
+		window_name = "KOR_ahn_seoul_metro_Detail_GUI"
+		parent_window_name = KOR_ahn_seoul_metro_GUI
+
+		ai_enabled = { always = no }
+
+		visible = {
+			has_country_flag = AHN_SEOUL_METRO_DETAIL_VISIBLE
+		}
+
+		properties = {
+			desc_image = { 
+				image = "[GetAhnMetroStationDetailGFX]"
+			}
+		}
+
+		effects = {
+			ahn_seoul_metro_Detail_Close_click = {
+				clr_country_flag = AHN_SEOUL_METRO_DETAIL_VISIBLE
+			}
+		}
+	}
+}

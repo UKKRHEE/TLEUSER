@@ -1,0 +1,176 @@
+guiTypes = {
+	containerWindowType = {
+		name = "KOR_ahn_seoul_metro_GUI"
+		position = { x = 550  y = 100 }
+		size = { width = 857 height = 715 }
+		hide_position = { x = 550 y = -1000 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 300
+		moveable = yes
+		clipping = no
+		
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_tiled_plain_bg"
+		}
+
+		containerWindowType = {
+			name = "ahn_seoul_metro_title_container"
+			position = { x = 0 y = 0 }
+			size = { width = 857 height = 40 }
+
+			background = {
+				name = "Background"
+				spriteType = "GFX_tiled_header_1"
+				alwaystransparent = yes
+			}
+
+			instantTextBoxType = {
+				name = "ahn_seoul_metro_title"
+				position = { x = 170 y = 4 }
+				borderSize = { x = 0 y = 0 }
+				text = "ahn_seoul_metro_title_text"
+				font = "aldrich_36_outline"
+				format = center
+				maxWidth = 500
+			}
+
+			buttonType = {
+				name = "ahn_seoul_metro_close"
+				position = { x = -36 y = 4 }
+				spriteType = "GFX_closebutton"
+				clicksound = click_close
+				pdx_tooltip = "CLOSE"
+				shortcut = "ESCAPE"
+				orientation = UPPER_RIGHT
+			}
+		}
+
+		containerWindowType = {
+			name = "background_container"
+			position = { x = 0 y = 36 }
+			size = { width = 860 height = 675 }
+			
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_tiled_research_bg"
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "background_real"
+				spriteType = "GFX_KOR_ahn_seoul_metro_background"
+				position = { x = 8 y = 9 }
+				alwaystransparent = yes
+			}
+		}
+
+		# iconType = {
+		# 	name = "background_real"
+		# 	spriteType = "GFX_KOR_ahn_seoul_metro_background"
+		# 	position = { x = 11 y = 16 }
+		# 	alwaystransparent = yes
+		# }
+		
+		gridboxtype = {
+			name = "Stations_Grid"
+			position = { x = -3 y = 29 }
+			size = { width = 0 height = 0 }
+			slotsize = { width = 0 height = 0 }
+			add_horizontal = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "KOR_ahn_seoul_metro_GUI_entry"
+		position = { x = 0 y = 0 }
+
+		buttonType = {
+			name = "Metro_Pin"
+			spriteType = "GFX_KOR_ahn_seoul_metro_pin"
+			position = { x = 0 y = 0 }
+			pdx_tooltip = "KOR_ahn_seoul_metro_tooltip"
+		}
+	}
+
+	containerWindowType = {
+		name = "KOR_ahn_seoul_metro_Decision_GUI"
+		size = { width = 0 height = 400 }
+
+		buttonType = {
+			name = "Open_Button"
+			spriteType = "GFX_KOR_ahn_seoul_metro_open_button"
+			position = { x = 5 y = -10 }
+			pdx_tooltip = "KOR_ahn_seoul_metro_open_button_tooltip"
+		}
+	}
+
+	containerWindowType = {
+		name = "KOR_ahn_seoul_metro_Detail_GUI"
+		position = { x = 854 y = 45 }
+		size = { width = 320 height = 580 }
+		clipping = yes
+
+		containerWindowType = {
+			name = "inside_1"
+			size = { width = 320 height = 580 }
+			position = { x = -320 y = 0 }
+			show_position = { x = 0 y = 0 }
+			show_animation_type = decelerated
+			hide_animation_type = accelerated
+			animation_time = 1000
+			clipping = yes
+
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_tiled_plain_bg"
+			}
+
+			containerWindowType = {
+				name = "title_container"
+				position = { x = 0 y = 0 }
+				size = { width = 320 height = 40 }
+	
+				background = {
+					name = "Background"
+					spriteType = "GFX_tiled_header_1"
+					alwaystransparent = yes
+				}
+
+				instantTextBoxType = {
+					name = "ahn_seoul_metro_Detail"
+					position = { x = 5 y = 0 }
+					text = "[GetAhnMetroStationDetail]"
+					font = "aldrich_36_outline"
+					format = center
+					maxWidth = 300
+				}
+	
+				buttonType = {
+					name = "ahn_seoul_metro_Detail_Close"
+					position = { x = -35 y = 4 }
+					spriteType = "GFX_closebutton"
+					clicksound = click_close
+					pdx_tooltip = "CLOSE"
+					orientation = UPPER_RIGHT
+				}
+			}
+
+			iconType = {
+				name = "desc_image"
+				spriteType = "GFX_KOR_ahn_seoul_metro_desc_1"
+				position = { x = 5 y = 40 }
+			}
+
+			instantTextBoxType = {
+				name = "ahn_seoul_metro_Detail_Desc"
+				position = { x = 5 y = 150 }
+				text = "[GetAhnMetroStationDetailDesc]"
+				font = "aldrich_18_outline"
+				format = left
+				maxWidth = 300
+			}
+		}
+	}
+}

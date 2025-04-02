@@ -1,0 +1,43 @@
+guiTypes ={
+	containerWindowType = {
+		name = "KOR_ahn_government_stability"
+		position = { x= 1270 y = 5 }
+		clipping = no
+		size = { width=70 height=30 }
+		Orientation = UPPER_LEFT
+			
+		background = {
+			name = "KOR_ahn_government_stability_bg"
+			quadTextureSprite ="GFX_mini_tooltip"
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name ="KOR_ahn_government_stability_icon"
+			spriteType = "GFX_KOR_ahn_government_stability_icon"
+			position = { x= 5 y = 7 }
+			Orientation = "UPPER_LEFT"
+			pdx_tooltip = "KOR_ahn_government_stability_tooltip"
+			pdx_tooltip_delayed = "KOR_ahn_government_stability_tooltip_delayed"
+		}		
+		
+		instantTextBoxType = {
+			name ="KOR_ahn_government_stability_value"
+			position = { x= 23 y = 5 }
+			font = "hoi_18mbs"
+			text = "[?KORAhnRegimeStability]%"
+			format = left
+			maxWidth = 65
+			maxHeight = 24
+			fixedsize = yes
+			pdx_tooltip = "KOR_ahn_government_stability_tooltip"
+			pdx_tooltip_delayed = "KOR_ahn_government_stability_tooltip_delayed"
+		}
+
+		iconType = {
+			name = "gui_alert"
+			spriteType = "GFX_gui_alert"
+			position = { x = -55 y = -80 }
+		}
+	}
+}

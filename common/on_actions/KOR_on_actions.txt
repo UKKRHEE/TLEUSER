@@ -391,6 +391,9 @@ on_actions = {
 									option = TLE_GER_GREAT_RULE_GER_WIN_TNO
 								}
 							}	
+							SOV = {
+								is_ai = yes
+							}
 						}
 						SOV = {
 							add_equipment_to_stockpile = {

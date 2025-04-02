@@ -1,0 +1,49 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_KOR_ahn_seoul_metro_background"
+		textureFile = "gfx/interface/KOR_GUI/seoul_metro/background.png"
+	}
+
+	spriteType = {
+		name = "GFX_KOR_ahn_seoul_metro_pin"
+		textureFile = "gfx/interface/KOR_GUI/seoul_metro/pin.png"
+	}
+
+	spriteType = {
+		name = "GFX_KOR_ahn_seoul_metro_mark"
+		textureFile = "gfx/interface/KOR_GUI/seoul_metro/mark.png"
+	}
+
+	spriteType = {
+		name = "GFX_KOR_ahn_seoul_metro_open_button"
+		textureFile = "gfx/interface/KOR_GUI/seoul_metro/open_button.png"
+	}
+
+	spriteType = {
+		name = "GFX_KOR_ahn_seoul_metro_desc_1"
+		textureFile = "gfx/interface/KOR_GUI/seoul_metro/desc_1.png"
+	}
+	
+	spriteType = {
+		name = "GFX_KOR_ahn_seoul_metro_desc_2"
+		textureFile = "gfx/interface/KOR_GUI/seoul_metro/desc_2.png"
+	}
+	
+	spriteType = {
+		name = "GFX_KOR_ahn_seoul_metro_desc_3"
+		textureFile = "gfx/interface/KOR_GUI/seoul_metro/desc_3.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_ahn_seoul_metro_desc_7"
+		textureFile = "gfx/interface/KOR_GUI/seoul_metro/desc_7.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_ahn_seoul_metro_desc_9"
+		textureFile = "gfx/interface/KOR_GUI/seoul_metro/desc_9.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_ahn_seoul_metro_desc_10"
+		textureFile = "gfx/interface/KOR_GUI/seoul_metro/desc_10.png"
+	}
+	
+}

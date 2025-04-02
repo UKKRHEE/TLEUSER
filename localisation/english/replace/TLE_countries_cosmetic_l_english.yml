@@ -4,6 +4,14 @@
  russian_empire_DEF:0 "러시아 제국"
  russian_empire_ADJ:0 "러시아"
 
+ ARB_FEDERATION:0 "아랍연방공화국"
+ ARB_FEDERATION_DEF:0 "아랍연방공화국"
+ ARB_FEDERATION_ADJ:0 "아랍"
+
+ SAU_REDORDER:0 "아라비아 사회주의 공화국"
+ SAU_REDORDER_DEF:0 "아라비아 사회주의 공화국"
+ SAU_REDORDER_ADJ:0 "아라비아"
+
  CHI_PCY_KUOMINTANG:0 "국민혁명정부"
  CHI_PCY_KUOMINTANG_DEF:0 "국민혁명정부"
  CHI_PCY_KUOMINTANG_ADJ:0 "국민당"

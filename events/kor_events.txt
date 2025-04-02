@@ -12311,20 +12311,21 @@ country_event = { #배드엔딩 - 박중양 암살
 		effect_tooltip = {
 			
 		}
-		add_ideas = kor_dip_breakism
-		add_ideas = kor_inn_basism
-		add_ideas = kor_pol_leadism
-		add_ideas = kor_mil_serve_to_emp
+		#add_ideas = kor_dip_breakism
+		#add_ideas = kor_inn_basism
+		#add_ideas = kor_pol_leadism
+		#add_ideas = kor_mil_serve_to_emp
 		hidden_effect = {
-			add_country_leader_role = {
-				Character = KOR_ahn_chang_ho
-				Promote_leader = yes
-				country_leader = {
-					desc="AHN_CHANGHO_DESC"
-					ideology = korean_democracy
-					traits={ prime_minister_of_eok KOR_the_dosan }
-				}
-			}
+			set_global_flag = GLOB_TLE_PAK_DEAD
+			#add_country_leader_role = {
+			#	Character = KOR_ahn_chang_ho
+			#	Promote_leader = yes
+			#	country_leader = {
+			#		desc="AHN_CHANGHO_DESC"
+			#		ideology = korean_democracy
+			#		traits={ prime_minister_of_eok KOR_the_dosan }
+			#	}
+			#}
 			remove_country_leader_role = {
 				character = KOR_park_jungyang
 				ideology = korean_democracy
@@ -12362,7 +12363,7 @@ country_event = { #
 		add_political_power = 60
 		add_stability = 0.05
 		add_war_support = 0.05
-		add_ideas = kor_mil_serve_to_government
+		#add_ideas = kor_mil_serve_to_government #이건 안창호만 슈퍼해피엔딩에서 가능함.
 	}
 }
 country_event = { #
@@ -12476,70 +12477,8 @@ country_event = { #
 	 
 	option = { #
 		name = korea.1114.a
-		set_global_flag = TLE_PAK_JAP_ATTACK
+		PCY_attack_japan_effect = yes
 		custom_effect_tooltip = TLE_EVENT_KOREA_1114
-		declare_war_on = {
-			target = JAP
-			type = annex_everything 
-		}
-		hidden_effect = {
-			if = {
-				limit = {
-					KKS = {
-						exists = yes
-						is_puppet_of = KOR
-					}
-				}
-				KKS = {
-					declare_war_on = {
-						target = JAP
-						type = annex_everything 
-					}
-				}
-			}
-			if = {
-				limit = {
-					NBJ = {
-						exists = yes
-					}
-				}
-				add_to_faction = NBJ
-				NBJ = {
-					declare_war_on = {
-						target = JAP
-						type = annex_everything 
-					}
-				}
-			}
-			if = {
-				limit = {
-					SDJ = {
-						exists = yes
-					}
-				}
-				add_to_faction = SDJ
-				SDJ = {
-					declare_war_on = {
-						target = JAP
-						type = annex_everything 
-					}
-				}
-			}
-			if = {
-				limit = {
-					TBJ = {
-						exists = yes
-					}
-				}
-				add_to_faction = TBJ
-				TBJ = {
-					declare_war_on = {
-						target = JAP
-						type = annex_everything 
-					}
-				}
-			}
-		}
 	}
 }
 country_event = { #외교론 선회

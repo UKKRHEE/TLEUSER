@@ -1,3 +1,17 @@
+KOR_ahn_government_stability_var_clamp = {
+	clamp_variable = {
+		var = KORAhnRegimeStability
+		min = 0
+		max = 100
+	}
+}
+KOR_ahn_government_stability_up = {
+	add_to_variable = { 
+		KORAhnRegimeStability = 10
+	}
+	KOR_ahn_government_stability_var_clamp = yes
+}
+
 KOR_government_stablity_var_clamp = {
 	clamp_variable = {
 		var = KOR_government_stablity_emperor_var

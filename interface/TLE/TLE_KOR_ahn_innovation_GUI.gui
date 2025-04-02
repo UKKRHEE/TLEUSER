@@ -33,9 +33,9 @@ guiTypes = {
 		instantTextBoxType = {
 			name = "text"
 			position = { x = 70 y = 20 }
-			font = "Bomb_28"
+			font = "nnmj_i_27_abc"
 			text = "ahn_innovation_text"
-			maxWidth = 130
+			maxWidth = 280
 			maxHeight = 24
 			format = left
 			pdx_tooltip = "ahn_innovation_tooltip"

@@ -4,4 +4,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/kr_options_icon.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
+	spriteType = {
+		name = "GFX_KOR_ahn_government_stability_icon"
+		texturefile = "gfx/interface/KOR_GUI/cabinet_stability/KOR_ahn_government_stability_icon.png"
+		legacy_lazy_load = no
+	}
 }

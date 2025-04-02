@@ -1,0 +1,85 @@
+defined_text = {
+	name = GetAhnMetroStationName
+	text = {
+		trigger = {
+			set_temp_variable = { v = Ahn_Seoul_Metro_Stations_Array^idx }
+			check_variable = { station_check = 1 }
+		}		
+		localization_key = "KOR_ahn_seoul_metro_tooltip_[?v]"
+	}
+	text = {
+		trigger = {
+			set_temp_variable = { v = Ahn_Seoul_Metro_Stations_Array^idx }
+			check_variable = { station_check = 2 }
+		}
+		localization_key = "KOR_ahn_seoul_metro_tooltip_gangnam_[?v]"
+	}
+}
+defined_text = {
+	name = GetAhnMetroPinImage
+	text = {
+		trigger = {
+			set_temp_variable = { building_complete = v:Ahn_Seoul_Metro_Building_Complete }
+			check_variable = { building_complete = 1 }
+		}
+		localization_key = "GFX_KOR_ahn_seoul_metro_mark"
+	}
+	text = {
+		trigger = {
+			set_temp_variable = { building_complete = v:Ahn_Seoul_Metro_Building_Complete }
+			check_variable = { building_complete = 0 }
+		}
+		localization_key = "GFX_KOR_ahn_seoul_metro_pin"
+	}
+}
+defined_text = {
+	name = GetAhnMetroStationDetail
+	text = {
+		trigger = {
+			set_temp_variable = { v = Selected_Ahn_Seoul_Metro_Station }
+			check_variable = { station_check = 1 }
+		}
+		localization_key = "KOR_ahn_seoul_metro_tooltip_[?v]"
+	}
+	text = {
+		trigger = {
+			set_temp_variable = { v = Selected_Ahn_Seoul_Metro_Station }
+			check_variable = { station_check = 2 }
+		}
+		localization_key = "KOR_ahn_seoul_metro_tooltip_gangnam_[?v]"
+	}
+}
+defined_text = {
+	name = GetAhnMetroStationDetailDesc
+	text = {
+		trigger = {
+			set_temp_variable = { v = Selected_Ahn_Seoul_Metro_Station }
+			check_variable = { station_check = 1 }
+		}
+		localization_key = "KOR_ahn_seoul_metro_tooltip_desc_[?v]"
+	}
+	text = {
+		trigger = {
+			set_temp_variable = { v = Selected_Ahn_Seoul_Metro_Station }
+			check_variable = { station_check = 2 }
+		}
+		localization_key = "KOR_ahn_seoul_metro_tooltip_gangnam_desc_[?v]"
+	}
+}
+defined_text = {
+	name = GetAhnMetroStationDetailGFX
+	text = {
+		trigger = {
+			set_temp_variable = { v = Selected_Ahn_Seoul_Metro_Station }
+			check_variable = { station_check = 1 }
+		}
+		localization_key = "GFX_KOR_ahn_seoul_metro_desc_[?v]"
+	}
+	text = {
+		trigger = {
+			set_temp_variable = { v = Selected_Ahn_Seoul_Metro_Station }
+			check_variable = { station_check = 2 }
+		}
+		localization_key = "GFX_KOR_ahn_seoul_metro_gangnam_desc_[?v]"
+	}
+}
