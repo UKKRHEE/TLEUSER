@@ -63,3 +63,7 @@
  economic_bullshit_chungyang_NAME:0 "경제의 (병)신"
  economic_bullshit_chungyang_DESC:0 "전쟁 피로도를 최대로 만드십시오."
  KOR_economic_damnt_chungyang:0 "전쟁 피로도가 최대치에 도달"
+ 
+ TLE_GLOBAL_CHECK_2025_04_05:0 "2025년 4월 5일 이후 새로운 게임을 시작함"
+ KOR_sup_kick_achievements:0 "무기 판매를 중단한 적이 있음"
+ GLOB_KKS_SMO_Z_SUCCESS:0 "을호작전 성공"
