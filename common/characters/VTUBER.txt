@@ -4,6 +4,7 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/KOR/VTUBER/ISE/Portrait_KOR_kim_INE.png"
+				small="gfx/interface/ideas/KOR/vtuber/idea_KOR_INE.png"
 			}
 		}
 		field_marshal={
@@ -92,6 +93,7 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/KOR/VTUBER/ISE/Portrait_KOR_kim_Jing.png"
+				small="gfx/interface/ideas/KOR/vtuber/idea_KOR_JING.png"
 			}
 		}
 		corps_commander={
@@ -182,6 +184,7 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/KOR/VTUBER/ISE/Portrait_KOR_kim_lipa.png"
+				small="gfx/interface/ideas/KOR/vtuber/idea_KOR_LILPA.png"
 			}
 		}
 		corps_commander={
@@ -272,6 +275,7 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/KOR/VTUBER/ISE/Portrait_KOR_kim_Jururu3.png"
+				small="gfx/interface/ideas/KOR/vtuber/idea_KOR_JURURU.png"
 			}
 		}
 		corps_commander={
@@ -362,6 +366,7 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/KOR/VTUBER/ISE/Portrait_KOR_kim_gosegu_three.png"
+				small="gfx/interface/ideas/KOR/vtuber/idea_KOR_GOSEGU.png"
 			}
 		}
 		corps_commander={
@@ -452,6 +457,7 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/KOR/VTUBER/ISE/Portrait_KOR_kim_VIichan.png"
+				small="gfx/interface/ideas/KOR/vtuber/idea_KOR_VIichan.png"
 			}
 		}
 		corps_commander={
