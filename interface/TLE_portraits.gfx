@@ -5,6 +5,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_Portrait_KOR_yi_jeong" 
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_yi_jeong.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_Portrait_KOR_yi_cheon"
 		texturefile = "gfx/leaders/KOR/Portrait_KOR_yi_cheon.png"
 		legacy_lazy_load = no

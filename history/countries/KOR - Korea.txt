@@ -621,6 +621,13 @@ recruit_character = KOR_est_cho_jiwon #조지원
 recruit_character = KOR_est_hwang_geunchul #황근출
 recruit_character = KOR_est_kim_du_han #김두한
 
+#얘는 찰스
+recruit_character = KOR_est_chales_mountbatten
+recruit_character = KOR_est_tanga_ibuki
+recruit_character = KOR_est_ayatsuno_yuni
+recruit_character = KOR_est_arthur_morgan
+recruit_character = KOR_est_mgr
+
 #서브모드꺼
 recruit_character = KOR_INE
 recruit_character = KOR_JING
