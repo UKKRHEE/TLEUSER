@@ -227,49 +227,7 @@ on_actions = {
 						has_country_flag = FLAG_KKS_ROUTE
 					}	
 				}
-				KOR = {
-					news_event = {
-						id = eok_news.55
-						days = 2
-					}
-					country_event = {
-						id = korea.1428
-						days = 45
-					}	
-				}
-				set_global_flag = GLOB_KKS_GAP_SUCCESS
-				every_country = {
-					limit = {
-						has_war_with = JAP
-					}
-					white_peace = JAP
-				}
-				DK2 = {
-					every_state = {
-						limit = {
-							is_core_of = JAP
-							NOT = {
-								state = 1029
-								state = 528
-								state = 526
-							}
-						}
-						add_core_of = DK2
-					}
-					every_state = {
-						limit = {
-							OR = {
-								state = 528
-								state = 526
-							}
-						}
-						add_claim_by = DK2
-					}
-					annex_country = {
-						target = JAP
-						transfer_troops = no
-					}
-				}
+				KKS_real_gap_effect = yes
 			}
 			if = {
 				limit = {
@@ -347,44 +305,7 @@ on_actions = {
 						has_country_flag = FLAG_KKS_ROUTE
 					}	
 				}
-				set_global_flag = GLOB_KKS_SMO_Z_SUCCESS
-				every_country = {
-					limit = {
-						has_war_with = SZY
-					}
-					white_peace = SZY
-				}
-				KOR = {
-					set_autonomy = { target = SZY autonomy_state = korean_bunguk }
-					country_event = {
-						id = korea.1429
-						days = 45
-					}
-				}
-				SZY = {
-					set_cosmetic_tag = SZY_KOR	
-					set_politics = {
-						ruling_party = neutrality
-						last_election = "1936.3.15"
-						election_frequency = 48
-						elections_allowed = no
-					}
-					set_popularities = {
-						neutrality = 100
-						fascism = 0
-						communism = 0
-						democratic = 0
-					}
-					every_state = {
-						limit = {
-							is_core_of = ZLC
-						}
-						add_core_of = SZY
-					}
-					transfer_state = 1130
-					transfer_state = 1035
-					transfer_state = 1122
-				}	
+				KKS_real_eul_effect = yes
 			}
 			if = {
 				limit = {

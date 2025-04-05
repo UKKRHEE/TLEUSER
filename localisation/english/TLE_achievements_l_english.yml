@@ -35,4 +35,31 @@
  why_can_not_heojeop_NAME:0 "설마 이것도 못하겠어?"
  why_can_not_heojeop_DESC:0 "미합중국으로 태평양 전쟁에서 승리하십시오."
  
+ # 나상
+ couldnt_send_letter_NAME:0 "부치지 못한 편지"
+ couldnt_send_letter_DESC:0 "대한제국 우사 김규식 경로의 배드엔딩을 보십시오."
  
+ his_royal_highness_NAME:0 "그의 치세는"
+ his_royal_highness_DESC:0 "대한제국 우사 김규식 경로의 해피엔딩을 보십시오."
+ 
+ heir_of_ilso_NAME:0 "일소의 후계자"
+ heir_of_ilso_DESC:0 "대한제국 일소 박중양 경로의 해피엔딩을 보십시오."
+ 
+ i_wanna_money_kim_NAME:0 "나는 무기나 좀 팔고 싶은데?"
+ i_wanna_money_kim_DESC:0 "김규식 경로의 엔딩에 이르기까지 끊임없이 서방에 물자를 판매하십시오."
+ 
+ gunpla_lover_NAME:0 "건프라 사랑꾼"
+ gunpla_lover_DESC:0 "민주루트에서 아무 쓸모없는 해군을 350대나 만들었군요!"
+ 
+ knight_rider_NAME:0 "전격 z작전"
+ knight_rider_DESC:0 "정규병 이상의 난이도로 을호특별군사작전을 성공하십시오."
+ 
+ life_is_good_NAME:0 "생계형 비리"
+ life_is_good_DESC:0 "한국군은 항상 비리로 넘쳐있습니다."
+ 
+ political_god_kyusik_NAME:0 "정치의 신 규 식"
+ political_god_kyusik_DESC:0 "빨갱이 정상화 해줬잖아, 군바리 정상화 해줬잖아, 쪽바리 정상화 해줬잖아, 씨발 다! 그냥 다 해줬잖아."
+ 
+ economic_bullshit_chungyang_NAME:0 "경제의 (병)신"
+ economic_bullshit_chungyang_DESC:0 "전쟁 피로도를 최대로 만드십시오."
+ KOR_economic_damnt_chungyang:0 "전쟁 피로도가 최대치에 도달"

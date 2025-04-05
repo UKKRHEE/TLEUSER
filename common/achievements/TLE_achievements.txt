@@ -181,3 +181,190 @@ why_can_not_heojeop = {
         has_global_flag = TLE_KOREA_IS_DEFEATED
     }
 }
+
+##### Nasang #####
+couldnt_send_letter = {
+    possible = {
+		#is_ironman = yes
+		#is_debug = no
+        # classic triggers used in all vanilla achievements
+        #difficulty > 1
+        #has_start_date < 1936.01.02
+        has_any_custom_difficulty_setting = no
+        game_rules_allow_achievements = yes
+		#achievment specific
+		original_tag = KOR
+    }
+ 
+    happened = {
+        has_country_flag = FLAG_KKS_ROUTE
+        has_country_flag = TLE_KIM_GAW_LOSE_ENDING
+    }
+}
+
+his_royal_highness = {
+    possible = {
+		#is_ironman = yes
+		#is_debug = no
+        # classic triggers used in all vanilla achievements
+        #difficulty > 1
+        #has_start_date < 1936.01.02
+        has_any_custom_difficulty_setting = no
+        game_rules_allow_achievements = yes
+		#achievment specific
+		original_tag = KOR
+    }
+ 
+    happened = {
+        has_country_flag = FLAG_KKS_ROUTE
+        has_country_flag = TLE_KIM_GAW_WIN_ENDING
+    }
+}
+
+heir_of_ilso = {
+    possible = {
+		#is_ironman = yes
+		#is_debug = no
+        # classic triggers used in all vanilla achievements
+        #difficulty > 1
+        #has_start_date < 1936.01.02
+        has_any_custom_difficulty_setting = no
+        game_rules_allow_achievements = yes
+		#achievment specific
+		original_tag = KOR
+    }
+ 
+    happened = {
+        has_country_flag = FLAG_PCY_ROUTE
+        has_country_flag = TLE_PAK_GAW_WIN_ENDING
+    }
+}
+
+i_wanna_money_kim = {
+    possible = {
+		#is_ironman = yes
+		#is_debug = no
+        # classic triggers used in all vanilla achievements
+        #difficulty > 1
+        #has_start_date < 1936.01.02
+        has_any_custom_difficulty_setting = no
+        game_rules_allow_achievements = yes
+		#achievment specific
+		original_tag = KOR
+    }
+ 
+    happened = {
+        has_global_flag = TLE_GLOBAL_CHECK_2025_04_05
+        has_country_flag = FLAG_KKS_ROUTE
+		OR = {
+			has_country_flag = TLE_KIM_GAW_WIN_ENDING
+			has_country_flag = TLE_KIM_GAW_LOSE_ENDING
+		}
+		NOT = {
+			has_country_flag = KOR_sup_kick_achievements
+		}
+    }
+}
+
+gunpla_lover = {
+    possible = {
+		#is_ironman = yes
+		#is_debug = no
+        # classic triggers used in all vanilla achievements
+        #difficulty > 1
+        #has_start_date < 1936.01.02
+        has_any_custom_difficulty_setting = no
+        game_rules_allow_achievements = yes
+		#achievment specific
+		original_tag = KOR
+    }
+ 
+    happened = {
+		has_navy_size = { size > 350 }
+		OR = { has_country_flag = FLAG_KKS_ROUTE has_country_flag = FLAG_PCY_ROUTE }
+    }
+}
+
+knight_rider = {
+    possible = {
+		#is_ironman = yes
+		#is_debug = no
+        # classic triggers used in all vanilla achievements
+        #difficulty > 1
+        #has_start_date < 1936.01.02
+        has_any_custom_difficulty_setting = no
+        game_rules_allow_achievements = yes
+		#achievment specific
+		original_tag = KOR
+    }
+ 
+    happened = {
+        has_country_flag = FLAG_KKS_ROUTE
+		difficulty > 2
+		has_global_flag = GLOB_KKS_SMO_Z_SUCCESS
+    }
+}
+
+life_is_good = {
+    possible = {
+		#is_ironman = yes
+		#is_debug = no
+        # classic triggers used in all vanilla achievements
+        #difficulty > 1
+        #has_start_date < 1936.01.02
+        has_any_custom_difficulty_setting = no
+        game_rules_allow_achievements = yes
+		#achievment specific
+		original_tag = KOR
+    }
+ 
+    happened = {
+        has_country_flag = FLAG_KKS_ROUTE
+		has_war_with = CHI
+		has_idea = KOR_kks_garbage_army_factor
+    }
+}
+
+political_god_kyusik = {
+    possible = {
+		#is_ironman = yes
+		#is_debug = no
+        # classic triggers used in all vanilla achievements
+        #difficulty > 1
+        #has_start_date < 1936.01.02
+        has_any_custom_difficulty_setting = no
+        game_rules_allow_achievements = yes
+		#achievment specific
+		original_tag = KOR
+    }
+ 
+    happened = {
+        has_country_flag = FLAG_KKS_ROUTE
+		custom_trigger_tooltip = {
+			tooltip = KOR_GOV_STABILITY_UP_100
+			check_variable = { KOR_government_stablity_var > 99 } #정권 지지도 합 N% 이상
+		}	
+    }
+}
+
+economic_bullshit_chungyang = {
+    possible = {
+		#is_ironman = yes
+		#is_debug = no
+        # classic triggers used in all vanilla achievements
+        #difficulty > 1
+        #has_start_date < 1936.01.02
+        has_any_custom_difficulty_setting = no
+        game_rules_allow_achievements = yes
+		#achievment specific
+		original_tag = KOR
+    }
+ 
+    happened = {
+        has_country_flag = FLAG_PCY_ROUTE
+		custom_trigger_tooltip = {
+			tooltip = KOR_economic_damnt_chungyang
+			check_variable = { KOR_pcy_economical_problem_consumer_var = 1 } #
+		}	
+    }
+}
