@@ -9965,6 +9965,8 @@ GAW_KKS_lose_effect = {
 		KOR = {
 			transfer_state = 408 #남연해주
 			transfer_state = 409 #북연해주
+			add_state_core = 408 #양안
+			add_state_core = 409 #해백
 			set_politics = {
 				ruling_party = democratic
 				last_election = "1936.3.15"
@@ -13431,6 +13433,8 @@ PCY_HAPPY_ENDING_effect = {
 				transfer_troops = no
 			}
 			transfer_state = 591
+			add_state_core = 408 #양안
+			add_state_core = 409 #해백
 		}
 		MSR = {
 			annex_country = {
