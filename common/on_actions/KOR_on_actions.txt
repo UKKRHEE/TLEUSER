@@ -66,29 +66,9 @@ on_actions = {
 				}
 				every_state = {
 					limit = {
-						is_core_of = SOV
-						OR = {
-							is_owned_by = KYH
-							is_owned_by = KKS
-							is_owned_by = KHK
-							is_owned_by = KMN
-							is_owned_by = KOR
-						}
+						is_core_of = FER
 					}
-					remove_core_of = SOV
-				}
-				every_state = {
-					limit = {
-						is_claimed_by = SOV
-						OR = {
-							is_owned_by = KYH
-							is_owned_by = KKS
-							is_owned_by = KHK
-							is_owned_by = KMN
-							is_owned_by = KOR
-						}
-					}
-					remove_claim_by = SOV
+					remove_core_of = FER
 				}
 			}
 			if = {

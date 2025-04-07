@@ -22,25 +22,7 @@ state={
 			industrial_complex = 2
 			arms_factory = 2
 			air_base = 3
-			9843 = {
-				bunker = 4
-			}
-			11761 = {
-				bunker = 4
-			}
-			1137 = {
-				bunker = 4
-			}
-			4140 = {
-				bunker = 4
-			}
-
 		}
-		1938.10.25 = {
-			controller = DKG
-
-		}
-
 	}
 
 	provinces={

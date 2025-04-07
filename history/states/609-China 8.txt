@@ -16,29 +16,7 @@ state={
 			infrastructure = 1
 			arms_factory = 1
 			industrial_complex = 1
-			6969 = {
-				bunker = 1
-
-			}
-			900 = {
-				bunker = 1
-
-			}
-			1052 = {
-				bunker = 1
-
-			}
-			881 = {
-				bunker = 1
-
-			}
-
 		}
-		1936.8.1 = {
-			controller = DKG
-
-		}
-
 	}
 
 	provinces={

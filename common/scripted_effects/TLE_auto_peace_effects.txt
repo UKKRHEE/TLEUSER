@@ -1188,6 +1188,10 @@ KOR_hangbok_event = {
     	transfer_state = 646
     }
     KMN = {
+		remove_ideas = {
+			KOR_yi_jin
+			KOR_the_country_of_korea
+		}
     	set_cosmetic_tag = KMN_GHQ
 		set_party_name = {
 			ideology = democratic
@@ -2658,6 +2662,10 @@ KOR_hangbok_event_2 = {
     	transfer_state = 646
     }
     KMN = {
+		remove_ideas = {
+			KOR_yi_jin
+			KOR_the_country_of_korea
+		}
     	set_cosmetic_tag = KMN_GHQ
 		set_party_name = {
 			ideology = democratic

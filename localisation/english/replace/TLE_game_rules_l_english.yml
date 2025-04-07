@@ -26,13 +26,13 @@
  TLE_JAP_HARDCORE_RULE:0 "@KOR 한일전쟁 난이도 §R(치국평천하)§!"
  
  RULE_OPTION_TLE_VERY_HARD:0 "§R매우 어려움§!"
- RULE_OPTION_TLE_VERY_HARD_DESC:0 "아쉽게도, §R역사는 거스를 수 없습니다...§!\n"
+ RULE_OPTION_TLE_VERY_HARD_DESC:0 "아쉽게도, §R역사는 거스를 수 없습니다...§!\n\n§R주의:§! 이 커스텀 설정은 @KOR§Y대한제국§!이 §G플레이어§!이고, §Y치국평천하§!일 시에만 유효합니다. 그 외의 경우에는 기본값으로 둘 것을 추천드립니다."
  RULE_OPTION_TLE_HARDCORE:0 "정사 §R(어려움)§!"
  RULE_OPTION_TLE_HARDCORE_DESC:0 "대동아전쟁의 난이도가 변함이 없을 것입니다.\n\n치국평천하 루트에서 플레이어는 대부분의 경우 §R역사적으로 패망을 할 것입니다.§!"
  RULE_OPTION_TLE_LIGHT:0 "§Y보통§!"
- RULE_OPTION_TLE_LIGHT_DESC:0 "대동아전쟁에서의 패널티가 §Y정사§! 난이도의 절반 가량만 적용됩니다."
+ RULE_OPTION_TLE_LIGHT_DESC:0 "대동아전쟁에서의 패널티가 §Y정사§! 난이도의 절반 가량만 적용됩니다.\n\n§R주의:§! 이 커스텀 설정은 @KOR§Y대한제국§!이 §G플레이어§!이고, §Y치국평천하§!일 시에만 유효합니다. 그 외의 경우에는 기본값으로 둘 것을 추천드립니다."
  RULE_OPTION_TLE_SOLIGHT:0 "§C쉬움§!"
- RULE_OPTION_TLE_SOLIGHT_DESC:0 "대동아전쟁에서의 패널티가 사라집니다."
+ RULE_OPTION_TLE_SOLIGHT_DESC:0 "대동아전쟁에서의 패널티가 사라집니다.\n\n§R주의:§! 이 커스텀 설정은 @KOR§Y대한제국§!이 §G플레이어§!이고, §Y치국평천하§!일 시에만 유효합니다. 그 외의 경우에는 기본값으로 둘 것을 추천드립니다.."
  
  RULE_OPTION_TLE_KIYOKUN_YES:0 "의용군 등장"
  RULE_OPTION_TLE_KIYOKUN_YES_DESC:0 "대한제국 신민들은 황제를 향한 충성심으로 가득 차 있습니다."
@@ -42,12 +42,12 @@
  RULE_OPTION_TLE_CHINA_HARDCORE:0 "정사 §R(어려움)§!"
  RULE_OPTION_TLE_CHINA_HARDCORE_DESC:0 "한중전쟁의 난이도가 변함이 없을 것입니다."
  RULE_OPTION_TLE_CHINA_LIGHT:0 "§C쉬움§!"
- RULE_OPTION_TLE_CHINA_LIGHT_DESC:0 "한중전쟁에서의 @KOR§Y대한제국§! AI 버프가 사라집니다."
+ RULE_OPTION_TLE_CHINA_LIGHT_DESC:0 "한중전쟁에서의 @KOR§Y대한제국§! AI 버프가 사라집니다.\n\n§R주의:§! 이 커스텀 설정은 @ZLC@CHI§Y중화연합전선§!이 §G플레이어§!일 시에만 유효합니다. 그 외의 경우에는 기본값으로 둘 것을 추천드립니다."
  
  RULE_OPTION_TLE_JAP_HARDCORE:0 "정사 §R(어려움)§!"
  RULE_OPTION_TLE_JAP_HARDCORE_DESC:0 "한일전쟁의 난이도가 변함이 없을 것입니다."
  RULE_OPTION_TLE_JAP_LIGHT:0 "§C쉬움§!"
- RULE_OPTION_TLE_JAP_LIGHT_DESC:0 "한일전쟁에서의 @JAP§Y일본 제국§! AI 버프가 사라집니다."
+ RULE_OPTION_TLE_JAP_LIGHT_DESC:0 "한일전쟁에서의 @JAP§Y일본 제국§! AI 버프가 사라집니다.\n\n§R주의:§! 이 커스텀 설정은 @KOR§Y대한제국§!이 §G플레이어§!이고, §Y치국평천하§!일 시에만 유효합니다. 그 외의 경우에는 기본값으로 둘 것을 추천드립니다."
  
  TLE_KILL_THE_KANGMYONG:0 "@KOR 용을 노려라"
  RULE_OPTION_NOT_KILL_THE_TRAGON:0 "윤봉길의 희생"
@@ -159,6 +159,6 @@
 
  RULE_KOR_FASCIST_HISTORICAL:0 "§R마지막 제국§!"
  RULE_KOR_DEMOCRATIC_KKS:0 "§8우레를 지나§! - §Y김규식§!"
- RULE_KOR_DEMOCRATIC_KKS_AI_DESC:0 "한국 AI는 융희 데모크라시의 유산을 이어가면서 김규식 총리의 지도를 받을 것입니다.\n\n§R주의: 실험적 기능입니다. 일부 국가들의 플레이가 제한받을 수 있습니다.§!"
+ RULE_KOR_DEMOCRATIC_KKS_AI_DESC:0 "한국 AI는 융희 데모크라시의 유산을 이어가면서 김규식 총리의 지도를 받을 것입니다.\n\n§R주의:§! 실험적 기능입니다. 일부 국가들의 플레이가 §R제한§!받을 수 있습니다.§!"
  
  RULE_KOR_CAN_NOT_RELEASE_NATION:0 "대한제국은 공화정이거나 대전쟁에서 패배해야만 식민지 해방이 가능합니다."

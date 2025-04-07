@@ -26,6 +26,26 @@ KOR_stock_up_on_trains_before_china = {
 	}
 }
 
+KOR_mongolia_is_not_needed = {
+	allowed = {
+		original_tag = KOR
+	}
+
+	enable = {
+		KOR = {
+			has_country_flag = FLAG_KOR_FASCIST_ROUTE
+			has_war_with = ZLC
+		}
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = MEN
+		value = 100
+	}
+}
+
 KOR_do_not_let_strangers_in = {
 	allowed = {
 		original_tag = KOR

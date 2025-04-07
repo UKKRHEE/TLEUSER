@@ -3796,6 +3796,14 @@ KOR_flames_of_war = {
 			country_event = {
 				id = korea.1370
 			}
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = KOR_sup_kick_achievements
+					}
+				}
+				set_country_flag = KOR_sup_kick_achievements
+			}
 		}
 	}
 	KOR_dec_sell_military_supplies_to_the_allies_restart = {

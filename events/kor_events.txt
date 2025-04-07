@@ -579,12 +579,22 @@ country_event = { #중국의 거절!
 			}
 		}
 		hidden_effect = {
+			KMN = {
+				declare_war_on = {
+					target = ZLC
+					type = puppet_wargoal_focus
+				}
+				declare_war_on = {
+					target = CHI
+					type = puppet_wargoal_focus
+				}
+			}
 			news_event = {
 				id = eok_news.9
 				days = 1
 			}
-		}	
-		complete_national_focus = KOR_kwangtungjun
+			complete_national_focus = KOR_kwangtungjun
+		}
 	}
 }
 country_event = { #중국의 거절!
@@ -1398,7 +1408,7 @@ country_event = { #칭다오 도발
 	id = korea.41
 	title = korea.41.title
 	desc = korea.41.desc
-	picture = GFX_report_event_british_inspect_troops
+	picture = GFX_event_korea_41
 	
 	fire_only_once = yes
 	trigger = {
@@ -1429,7 +1439,7 @@ country_event = { #청도사건 - 중민
 	id = korea.42
 	title = korea.42.title
 	desc = korea.42.desc
-	picture = GFX_report_event_hitler_handshake
+	picture = GFX_event_korea_41
 	 
 	fire_only_once = yes	
     is_triggered_only = yes
@@ -4332,14 +4342,20 @@ country_event = {
 				}	
 			}
 			SOV = {
-				add_state_core = 561
-				add_state_core = 657
-				add_state_core = 560
 				add_state_core = 409
 				add_state_core = 408
 				add_state_core = 655
 				add_state_core = 537	
-				add_state_core = 555	
+				add_state_core = 555				
+			}
+			hidden_effect = {
+				SOV = {
+					remove_state_claim = 409
+					remove_state_claim = 408
+					remove_state_claim = 655
+					remove_state_claim = 537	
+					remove_state_claim = 555
+				}
 			}
 		}
 	}
@@ -4510,7 +4526,7 @@ country_event = {
 	id = korea.116 #
 	title = korea.116.title
 	desc = korea.116.desc
-	picture = GFX_TLE_korea_event_none
+	picture = GFX_event_korea_41
 	
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -8597,28 +8613,6 @@ country_event = {
 				annex_country = {
 					target = DK4
 					transfer_troops = no
-				}
-			}
-			KMN = {
-				set_cosmetic_tag = KYH_FUT
-				transfer_state = 715
-				transfer_state = 610
-				transfer_state = 1060
-				transfer_state = 1059
-				transfer_state = 761
-				transfer_state = 714
-				#
-				transfer_state = 657
-				transfer_state = 560
-				transfer_state = 561
-				add_state_core = 657
-				add_state_core = 560
-				add_state_core = 561
-				set_popularities = {
-					democratic = 0
-					fascism = 100
-					communism = 0
-					neutrality = 0
 				}
 			}
 			CH1 = {
@@ -16224,12 +16218,27 @@ country_event = { #1455와 연계
 				transfer_state = 408
 				transfer_state = 409
 			}
-			KYH = {
+			KMN = {
 				annex_country = {
-					target = KMN
+					target = KYH
 					transfer_troops = no
 				}
-				set_cosmetic_tag = KYH_FUT
+				set_cosmetic_tag = KMN_FUT
+				set_party_name = {
+					ideology = democratic
+					long_name = "KMN_FUT_democratic_party_long"
+					name = "KMN_FUT_democratic_party"
+				}
+				set_party_name = {
+					ideology = neutrality
+					long_name = "KMN_FUT_neutrality_party_long"
+					name = "KMN_FUT_neutrality_party"
+				}
+				set_party_name = {
+					ideology = fascism
+					long_name = "KMN_FUT_fascism_party_long"
+					name = "KMN_FUT_fascism_party"
+				}
 			}
 		}
 	}

@@ -9707,6 +9707,47 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = tle_onaction.305 #
+	title = tle_onaction.1.title
+	desc = tle_onaction.1.desc
+	picture = GFX_event_korea_777
+	
+	hidden = yes
+		
+	trigger = {
+		KMN = {
+			has_country_flag = FLAG_KMN_FUT
+			has_war = yes
+		}
+		KOR = {
+			has_war = yes
+		}
+	}
+	option = {
+		name = tle_onaction.1.a
+		every_state = {
+			limit = {
+				AND = {
+					NOT = {
+						state = 560
+						state = 561
+						state = 657
+					}
+					NOT = {
+						is_core_of = KMN
+					}
+					NOT = {
+						is_claimed_by = KMN
+					}
+					is_fully_controlled_by = KMN
+				}
+			}
+			set_state_controller_to = KOR
+		}
+	}
+}
+
 #################
 #################
 #################

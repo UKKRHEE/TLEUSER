@@ -9,8 +9,7 @@ state={
 
 	history={
 		owner = KKS
-		add_core_of = KKS
-		add_claim_by = KOR
+		add_claim_by = KKS
 		add_core_of = DKG
 		buildings = {
 			infrastructure = 3

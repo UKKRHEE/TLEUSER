@@ -9,7 +9,6 @@ state={
 
 	history={
 		owner = KHK
-		add_claim_by = KOR
 		add_core_of = KHK
 		add_core_of = ANU
 		add_claim_by = DKG

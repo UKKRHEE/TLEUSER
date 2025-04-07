@@ -23,6 +23,7 @@ country_event = {
 			}
 		}
 		set_global_flag = TLE_GLOBAL_KOREA_1
+		set_global_flag = TLE_GLOBAL_CHECK_2025_04_05
 	}
 	option = { #그래 시작해보자고
 		name = thelastempire.1.a

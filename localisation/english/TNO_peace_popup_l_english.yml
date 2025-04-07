@@ -32,7 +32,7 @@
  TNO_PEACE_POPUP_WAR_CONCLUSION_CHI_AHC: "§R강동 평정전§!에서 §Y[winning_country.GetNameWithFlag]§![GetWinnerAlliesWithHas](이)가 §Y[losing_country.GetNameWithFlag]§![GetLoserAllies](을)를 상대로 승리했습니다."
  TNO_PEACE_POPUP_WAR_CONCLUSION_KOR_MON: "§R외몽골 출병§!에서 §Y[winning_country.GetNameWithFlag]§![GetWinnerAlliesWithHas](이)가 §Y[losing_country.GetNameWithFlag]§![GetLoserAllies](을)를 상대로 승리했습니다."
  TNO_PEACE_POPUP_FLAVOR_DEFAULT: "전쟁은 끔찍합니다."
- TNO_PEACE_POPUP_FLAVOR_JAPAN_ISHIN: "천황폐하 만세."
+ TNO_PEACE_POPUP_FLAVOR_JAPAN_ISHIN: "천황 폐하 만세."
  TNO_PEACE_POPUP_FLAVOR_GERMAN_LOSE: "역사상 무적의 군대란 존재하지 않았다."
  TNO_PEACE_POPUP_FLAVOR_USA_LOSE: "추락하는 모든 것은 날개가 있다."
  TNO_PEACE_POPUP_FLAVOR_KOREA_LOSE: "가장하는 애국심의 속임수에 주의하라."

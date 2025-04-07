@@ -928,24 +928,19 @@ focus_tree = {
 		y = 12
 			cancelable = no
 			completion_reward = {
-					annex_country = {
-							target = KMN
-							transfer_troops = yes
-						}
-					hidden_effect = {
-							transfer_state = 761
-							every_state = {
-									limit = {
-											is_core_of = KMN
-										}
-									remove_core_of = KMN
-									add_claim_by = KMN
-								}
-							country_event = {
-									id = korea.269
-								}
-						}
+				every_state = {
+					limit = {
+						is_core_of = KMN
+					}
+					remove_claim_by = ZLC
+					remove_claim_by = CHI
 				}
+				hidden_effect = {
+					country_event = {
+						id = korea.269
+					}
+				}
+			}
 
 	}
 	focus = {
@@ -1309,33 +1304,64 @@ focus_tree = {
 		}
 		x = 73
 		y = 13
-			cancelable = no
-			available = {
-
-}
-			bypass = {
-					has_war_with = SOV
+		cancelable = no
+		available = {}
+		bypass = {}
+		completion_reward = {
+			custom_effect_tooltip = KOR_manchu_plan_tt
+			hidden_effect = {
+				KMN = {
+					set_country_flag = FLAG_KMN_FUT
+					set_cosmetic_tag = KMN_FUT
+					annex_country = {
+						target = KYH	
+						transfer_troops = yes
+					}
+					add_core_state = 560
+					add_core_state = 561
+					add_core_state = 657
+					transfer_state = 560
+					transfer_state = 561
+					transfer_state = 657
+					set_party_name = {
+						ideology = democratic
+						long_name = "KMN_FUT_democratic_party_long"
+						name = "KMN_FUT_democratic_party"
+					}
+					set_party_name = {
+						ideology = neutrality
+						long_name = "KMN_FUT_neutrality_party_long"
+						name = "KMN_FUT_neutrality_party"
+					}
+					set_party_name = {
+						ideology = fascism
+						long_name = "KMN_FUT_fascism_party_long"
+						name = "KMN_FUT_fascism_party"
+					}
 				}
-			completion_reward = {
-							annex_country = {
-									target = KYH
-									transfer_troops = yes
-								}
-							annex_country = {
-									target = KHK
-									transfer_troops = yes
-								}
-					hidden_effect = {
-							add_state_core = 657
-							add_state_core = 561
-							add_state_core = 560
-							add_state_core = 536
-							country_event = {
-									id = korea.304
-								}
-						}
+				annex_country = {
+					target = KHK
+					transfer_troops = yes
 				}
-
+				transfer_state = 408
+				transfer_state = 409
+				every_state = {
+					limit = {
+						is_core_of = KYH
+					}
+					remove_core_of = KYH
+				}
+				KHK = {
+					remove_state_core = 536
+				}
+				add_state_core = 408
+				add_state_core = 409
+				add_state_core = 536
+				country_event = {
+					id = korea.304
+				}
+			}
+		}
 	}
 	focus = {
 		id = KOR_kyushu_colonism_up
@@ -1357,12 +1383,13 @@ focus_tree = {
 						}
 				}
 			completion_reward = {
-					annex_country = {
+					custom_effect_tooltip = KOR_kyushu_plan_tt
+					hidden_effect = {
+						annex_country = {
 							target = KKS
 							transfer_troops = yes
 						}
-					hidden_effect = {
-						add_state_core = 1064
+						add_state_claim = 1064
 						news_event = {
 							id = eok_news.16
 							hours = 12
