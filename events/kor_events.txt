@@ -13487,6 +13487,17 @@ country_event = { #
 			add_state_core = 657
 			add_state_core = 560
 			add_state_core = 561
+			#
+			add_state_core = 1059 #부여
+			add_state_core = 1060 #금주
+			add_state_core = 1060 #금주
+			add_state_core = 408 #양안
+			add_state_core = 409 #해백
+			add_state_core = 610 #
+			add_state_core = 657 #
+			add_state_core = 714 #
+			add_state_core = 715 #
+			add_state_core = 761 #
 		}
 	}
 }
