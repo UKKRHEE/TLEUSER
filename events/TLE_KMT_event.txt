@@ -231,7 +231,10 @@ country_event = { ## 임시수도 난징?
 	
 	option = {
 		name = KMT.13.a
-		set_capital = { state = 613 }
+		set_capital = {
+			state = 613
+			remember_old_capital = no
+		}
 		country_event = {
 			id = KMT.14
 			days = 7

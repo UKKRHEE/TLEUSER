@@ -76,6 +76,24 @@ KOR_hangbok_event = {
 		}
 		remove_claim_by = QIN
 	}
+	every_state = {
+		limit = {
+			is_core_of = SOV
+			is_core_of = KMN
+		}
+		remove_core_of = KMN
+	}
+	every_state = {
+		limit = {
+			is_core_of = KMN
+			NOT = {
+				is_core_of = SOV
+			}
+		}
+		add_core_of = ZLC
+		remove_claim_by = ZLC
+		add_core_of = CHI
+	}
 	CHI = {
 		load_focus_tree = KMT_rework4
 		if = {
@@ -599,6 +617,7 @@ KOR_hangbok_event = {
 		remove_ideas = JAP_prioritize_naval_aircraft_construction
 		remove_ideas = KOR_divided_politics
 		remove_ideas = KOR_failed_civilian_control_of_the_military
+		remove_ideas = KOR_not_planed_attack_2
 		remove_ideas = KOR_the_first_army
 		complete_national_focus = KOR_the_last_empire_ending
 		retire_character = KOR_an_jung_geun 
@@ -1233,7 +1252,21 @@ KOR_hangbok_event = {
 			promote_leader = yes
 		}
     }
+	CHI = {
+		annex_country = {
+			target = CH2
+			transfer_troops = yes
+		}
+	}
 	ZLC = {
+		annex_country = {
+			target = XSM
+			transfer_troops = yes
+		}
+		annex_country = {
+			target = SZY
+			transfer_troops = yes
+		}
 		annex_country = {
 			target = HNC
 			transfer_troops = yes
@@ -1255,6 +1288,24 @@ KOR_hangbok_event = {
 		transfer_state = 746
 		transfer_state = 748
 		transfer_state = 750
+	}
+	every_state = {
+		limit = {
+			is_core_of = XSM
+		}
+		remove_core_of = XSM
+	}
+	every_state = {
+		limit = {
+			is_core_of = SZY
+		}
+		remove_core_of = SZY
+	}
+	every_state = {
+		limit = {
+			is_core_of = CH2
+		}
+		remove_core_of = CH2
 	}
 	if = {
 		limit = {
@@ -1686,22 +1737,32 @@ KOR_hangbok_event_2 = {
 	}
 	every_state = {
 		limit = {
+			is_core_of = SOV
 			is_core_of = KMN
+		}
+		remove_core_of = KMN
+	}
+	every_state = {
+		limit = {
+			is_core_of = KMN
+			NOT = {
+				is_core_of = SOV
+			}
 		}
 		add_core_of = ZLC
 		remove_claim_by = ZLC
 		add_core_of = CHI
 	}
-	if = {
-		limit = {
-			CHI = {
-				is_ai = no
-			}
-		}
-		country_event = {
-			id = KMT.120
-		}
-	}
+	#if = {
+	#	limit = {
+	#		CHI = {
+	#			is_ai = no
+	#		}
+	#	}
+	#	country_event = {
+	#		id = KMT.120
+	#	}
+	#}
 	CHI = {	
 		hidden_effect = {
 			activate_advisor = cks_tok_1
@@ -2278,6 +2339,7 @@ KOR_hangbok_event_2 = {
 		remove_ideas = KOR_none_attack_soviert
 		remove_ideas = KOR_divided_politics
 		remove_ideas = KOR_failed_civilian_control_of_the_military
+		remove_ideas = KOR_not_planed_attack_2
 		remove_ideas = mutiny_1
 		remove_ideas = mutiny_2
 		remove_ideas = mutiny_3
@@ -2702,8 +2764,22 @@ KOR_hangbok_event_2 = {
 			}
 			promote_leader = yes
 		}
-    }	
+    }
+	CHI = {
+		annex_country = {
+			target = CH2
+			transfer_troops = yes
+		}
+	}
 	ZLC = {
+		annex_country = {
+			target = XSM
+			transfer_troops = yes
+		}
+		annex_country = {
+			target = SZY
+			transfer_troops = yes
+		}
 		annex_country = {
 			target = HNC
 			transfer_troops = yes
@@ -2725,6 +2801,24 @@ KOR_hangbok_event_2 = {
 		transfer_state = 746
 		transfer_state = 748
 		transfer_state = 750
+	}
+	every_state = {
+		limit = {
+			is_core_of = XSM
+		}
+		remove_core_of = XSM
+	}
+	every_state = {
+		limit = {
+			is_core_of = SZY
+		}
+		remove_core_of = SZY
+	}
+	every_state = {
+		limit = {
+			is_core_of = CH2
+		}
+		remove_core_of = CH2
 	}
 	if = {
 		limit = {
@@ -3047,6 +3141,7 @@ KOR_china_annex_effect = {
 	puppet = SHX
 	puppet = HNC
 	puppet = CH1
+	puppet = CH2
 	puppet = GXC
 	puppet = SZC
 	puppet = SZY
@@ -3058,6 +3153,7 @@ KOR_china_annex_effect = {
 		set_autonomy = { target = SHX autonomy_state = korean_bunguk }
 		set_autonomy = { target = HNC autonomy_state = korean_bunguk }
 		set_autonomy = { target = CH1 autonomy_state = korean_bunguk }
+		set_autonomy = { target = CH2 autonomy_state = korean_bunguk }
 		set_autonomy = { target = GXC autonomy_state = korean_bunguk }
 		set_autonomy = { target = SZC autonomy_state = korean_bunguk }
 		set_autonomy = { target = SZY autonomy_state = korean_bunguk }
@@ -3106,6 +3202,20 @@ KOR_china_annex_effect = {
 		add_state_core = 1063
 		add_state_core = 616
 		add_state_core = 756
+		set_politics = {
+			ruling_party = fascism
+			last_election = "1933.7.1"
+			election_frequency = 48
+			elections_allowed = no
+		}
+		set_popularities = {
+			democratic = 0
+			fascism = 100
+			communism = 0
+			neutrality = 0
+		}
+	}
+	KMN = {
 		set_politics = {
 			ruling_party = fascism
 			last_election = "1933.7.1"
@@ -3196,6 +3306,8 @@ KOR_china_annex_effect = {
 	SZY = {
 		load_focus_tree = korean_government
 		transfer_state = 608
+		transfer_state = 1035
+		transfer_state = 1122
 		transfer_state = 614
 		transfer_state = 1074
 		transfer_state = 597
@@ -3237,7 +3349,8 @@ KOR_china_annex_effect = {
 			neutrality = 0
 		}
 	}
-	CH1 = {
+	CH2 = {
+		add_ideas = KOR_chinese_clique_puppet
 		set_capital = { state = 613 }
 		transfer_state = 607
 		transfer_state = 1057
@@ -3266,8 +3379,6 @@ KOR_china_annex_effect = {
 		transfer_state = 1036
 		transfer_state = 1041
 		transfer_state = 1044
-		set_cosmetic_tag = CHI_KOR
-		add_ideas = CHI_slave_of_the_sonpi
 		set_politics = {
 			ruling_party = fascism
 			last_election = "1933.7.1"
@@ -3962,18 +4073,6 @@ TNO_TLE_KOR_victory_effect = {
 				}
 			}
 			white_peace = SIA
-		}
-		every_state = {
-			limit = {
-				is_core_of = ZLC
-			}
-			remove_core_of = ZLC
-			remove_core_of = QIN
-			remove_core_of = CHI
-			remove_core_of = AQC
-			remove_core_of = WZC
-			remove_core_of = AHC
-			add_core_of = CH1
 		}
 		every_state = {
 			limit = {

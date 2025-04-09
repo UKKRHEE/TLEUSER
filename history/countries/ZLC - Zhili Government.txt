@@ -87,7 +87,6 @@ add_ideas = { #안쓰는거(이전 버전)
 }
 
 save_global_event_target_as = WTT_current_china_leader
-QIE_start_naval_variant = yes
 
 set_technology = {
 	### Trucks

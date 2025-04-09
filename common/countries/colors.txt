@@ -1257,6 +1257,10 @@ CH1 = {
 	color = rgb { 46  60  126 }
 	color_ui = rgb { 46  60  126 }
 }
+CH2 = {
+	color = rgb { 46  60  126 }
+	color_ui = rgb { 46  60  126 }
+}
 RYU = {
     color = rgb { 98  98  206 }
     color_ui = rgb { 98  98  206 }

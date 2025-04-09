@@ -570,6 +570,15 @@
  CH1_communism_party:0 "국민당"
  CH1_communism_party_long:0 "국민당"
  
+ CH2_neutrality_party:0 "중화민국 행정원"
+ CH2_neutrality_party_long:0 "중화민국 행정원"
+ CH2_fascism_party:0 "중화민국 행정원"
+ CH2_fascism_party_long:0 "중화민국 행정원"
+ CH2_democratic_party:0 "중화민국 행정원"
+ CH2_democratic_party_long:0 "중화민국 행정원"
+ CH2_communism_party:0 "국민당"
+ CH2_communism_party_long:0 "국민당"
+ 
  CH1_provinces_party:0 "성정부"
  CH1_provinces_party_long:0 "성정부"
  

@@ -49,7 +49,7 @@
  KOR_asia_union:0 "아주 해방 선언"
  KOR_the_three_countries_plan:0 "천하삼분지계"
  KOR_three_divided_china:0 "천하삼분지계"
- TRIGGER_TOOLTIP_RULLED_CHINA:0 "중국 대륙을 점령하고 있다."
+ TRIGGER_TOOLTIP_RULLED_CHINA:0 "§Y중국 대륙§!을 장악함"
  KOR_the_war_plan_Z_ai:0 "전쟁계획 §Y'천명'§!"
  KOR_the_war_plan_Z:0 "중국에서의 전쟁 가속화"
  KOR_the_war_plan_Z_2:0 "전쟁계획 §Y'천명'§!"
@@ -376,10 +376,14 @@
  TOOLTIP_WILL_CAN_DEFENCE:0 "§C이제 미국의 위협에서 벗어날 수 있습니다.§!\n\n§C진주만 공습§!을 통해 확실하게 전쟁의 위협에서 멀어질 것입니다. 진행도는 결정 탭에서 확인하실 수 있습니다."
  TOOLTIP_WILL_CANT_DEFENCE:0 "§R미국이 대한제국을 기습할 것입니다.§!"
  
- KOR_save_the_qi_xieyean:0 "치셰위안 포섭"
+ KOR_save_the_qi_xieyean:0 "북양계 인사 포섭"
  KOR_sea_blockade:0 "대륙해상봉쇄"
- KOR_make_puppet_government:0 "임시정부 건설"
- KOR_ESTABLISH_CHINESE_PUPPET:0 "중국 내 점령지에 @ZLC§Y중화민국 임시정부§!를 수립합니다."
+ KOR_make_puppet_government_north:0 "중화민국 임시정부 건설"
+ KOR_ESTABLISH_CHINESE_PUPPET_NORTH:0 "중국 내 점령지에 @ZLC§Y중화민국 임시정부§!를 수립합니다."
+ KOR_make_puppet_government_south:0 "중화민국 유신정부 건설"
+ KOR_ESTABLISH_CHINESE_PUPPET_SOUTH:0 "중국 내 점령지에 @CH2§Y중화민국 유신정부§!를 수립합니다."
+ TOOLTIP_ZHILI_SHANDONG_KOR:0 "§Y직예성, 산동성§!을 장악하고 있음"
+ TOOLTIP_JIANGSU_ANHUI_ZHEJIANG_KOR:0 "§Y강소성, 안휘성, 절강성§!을 장악하고 있음"
  
  CHI_embargo_korea:0 "한국의 해상봉쇄"
  
@@ -402,7 +406,10 @@
  KOR_attack_indonesia_desc:0 "[INS.GetName]은 동아등불인 아주의 빛을 원하고 있습니다. 우리는 저들에게 질서를 알려줄 것입니다."
  KOR_attack_malay:0 "영국 제국주의 척결"
  KOR_attack_indonesia_desc:0 "[MAL.GetName]은 동아등불인 아주의 빛을 원하고 있습니다. 우리는 저들에게 질서를 알려줄 것입니다."
- TOOLTIP_QI_WILL_PUPPET:0 "§Y치셰위안이 포섭되어 현지 협력정부를 수립할 수 있게 됩니다.§!"
+ TOOLTIP_QI_WILL_PUPPET:0 "§Y북양계 인사들§!이 §R포섭§!되어 현지에 §Y협력 정부§!를 수립할 수 있게 됩니다."
+ KOR_REDISTRIBUTE_CHINESE_PUPPETS:0 "우리 군의 점령지 중 §Y협력 정부§!의 §G핵심 주§!가 있을 경우 그 통제권을 그들에게 §Y이양§!합니다."
+ KOR_redistribute_territories:0 "협력 정부에 통제권 이양"
+ FLAG_QI_PUPPET:0 "§Y북양계 인사들이 포섭됨§!"
  #
  KOR_steel_for_guns:0 "§R총기에 철강 할당§!"
  KOR_steel_for_ships:0 "§C함선에 철강 할당§!"

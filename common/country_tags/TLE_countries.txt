@@ -40,6 +40,7 @@ GZC = "countries/China.txt" #귀주군벌
 SCC = "countries/China.txt" #달주진수사부
 AQC = "countries/China.txt" #안경군벌
 CH1 = "countries/China.txt" #천하삼분지계 중국
+CH2 = "countries/China.txt" #천하삼분지계 중국
 ###Mongolian People's Republic###
 MSR = "countries/Mongolia.txt" #몽골인민공화국
 ###Eastern Republic###

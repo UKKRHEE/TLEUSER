@@ -1317,9 +1317,9 @@ focus_tree = {
 						target = KYH	
 						transfer_troops = yes
 					}
-					add_core_state = 560
-					add_core_state = 561
-					add_core_state = 657
+					add_state_core = 560
+					add_state_core = 561
+					add_state_core = 657
 					transfer_state = 560
 					transfer_state = 561
 					transfer_state = 657

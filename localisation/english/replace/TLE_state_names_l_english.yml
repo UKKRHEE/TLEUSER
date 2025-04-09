@@ -38,7 +38,7 @@
  ###중국###
  STATE_TIANJIN:0 "톈진"
  STATE_WIHAE:0 "위해" #웨이하이
- STATE_WEIHAI:0 "웨이하이" #웨이하이
+ STATE_WEIHAI:0 "웨이하이웨이" #웨이하이
  STATE_YANTAI:0 "옌타이"
  STATE_SHANGHAI:0 "상하이"
  STATE_SUZHOU:0 "쑤저우"

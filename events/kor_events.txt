@@ -1633,6 +1633,18 @@ country_event = { #미국의 단독 점령
 					}
 					KOR = {
 						add_state_core = 1020
+						set_politics = {
+							ruling_party = neutrality
+							last_election = "1932.3.8"
+							election_frequency = 60
+							elections_allowed = no
+						}
+						set_popularities = {
+							neutrality = 100
+							fascism = 0
+							communism = 0
+							democratic = 0
+						}
 					}
 	}
 }
@@ -3430,6 +3442,7 @@ country_event = { #시안
 	
 	fire_only_once = yes	
 	is_triggered_only = yes
+	hidden = yes
 	
 	option = { #
 		name = korea.80.a
@@ -3486,6 +3499,7 @@ country_event = { #광저우
 	
 	fire_only_once = yes	
 	is_triggered_only = yes
+	hidden = yes
 	
 	option = { #
 		name = korea.83.a
@@ -7486,6 +7500,7 @@ country_event = {
 	picture = GFX_TLE_korea_event_none
 	fire_only_once = yes
 	is_triggered_only = yes
+	hidden = yes
 	immediate = {
 	}
 	option = { #
@@ -8147,7 +8162,38 @@ country_event = {
 		name = korea.217.a
 		custom_effect_tooltip = TLE_EVENT_KOREA_217
 		hidden_effect = {
+			every_state = {
+				limit = {
+					is_core_of = ZLC
+				}
+				remove_core_of = ZLC
+				remove_core_of = QIN
+				remove_core_of = CHI
+				remove_core_of = AQC
+				remove_core_of = WZC
+				remove_core_of = AHC
+				remove_core_of = SZY
+				remove_core_of = CH2
+				add_core_of = CH1
+			}
 			CH1 = {
+				set_politics = {
+					ruling_party = fascism
+					last_election = "1933.7.1"
+					election_frequency = 48
+					elections_allowed = no
+				}
+				set_popularities = {
+					democratic = 0
+					fascism = 100
+					communism = 0
+					neutrality = 0
+				}
+				add_ideas = CHI_slave_of_the_sonpi
+				annex_country = {
+					target = CH2
+					transfer_troops = yes
+				}
 				annex_country = {
 					target = SZY
 					transfer_troops = yes
@@ -8594,10 +8640,6 @@ country_event = {
 		}
 		hidden_effect = {
 			KOR = {
-				set_autonomy = {
-					target = KMN
-					autonomous_state = korean_general_government
-				}
 				annex_country = {
 					target = DK1
 					transfer_troops = no
@@ -8614,10 +8656,6 @@ country_event = {
 					target = DK4
 					transfer_troops = no
 				}
-			}
-			CH1 = {
-				transfer_state = 1122
-				transfer_state = 1035
 			}
 			XKC = {
 				transfer_state = 751
@@ -20828,20 +20866,54 @@ country_event = { #결론
 					name = "KOR_TNO_communism_party"
 				}
 				annex_country = {
-					target = KMN
-					transfer_troops = yes
-				}
-				annex_country = {
 					target = KKS
 					transfer_troops = yes
 				}
-				annex_country = {
-					target = KYH
-					transfer_troops = yes
-				}
+				transfer_state = 408
+				transfer_state = 409
+				add_state_core = 408
+				add_state_core = 409
 				annex_country = {
 					target = KHK
 					transfer_troops = yes
+				}
+			}
+			if = {
+				limit = {
+					KOR = {
+						NOT = {
+							has_country_flag = FLAG_KMN_FUT
+						}
+					}
+				}
+				KMN = {
+					set_country_flag = FLAG_KMN_FUT
+					set_cosmetic_tag = KMN_FUT
+					annex_country = {
+						target = KYH	
+						transfer_troops = yes
+					}
+					add_state_core = 560
+					add_state_core = 561
+					add_state_core = 657
+					transfer_state = 560
+					transfer_state = 561
+					transfer_state = 657
+					set_party_name = {
+						ideology = democratic
+						long_name = "KMN_FUT_democratic_party_long"
+						name = "KMN_FUT_democratic_party"
+					}
+					set_party_name = {
+						ideology = neutrality
+						long_name = "KMN_FUT_neutrality_party_long"
+						name = "KMN_FUT_neutrality_party"
+					}
+					set_party_name = {
+						ideology = fascism
+						long_name = "KMN_FUT_fascism_party_long"
+						name = "KMN_FUT_fascism_party"
+					}
 				}
 			}
 			KOR_japan_annex_effect = yes

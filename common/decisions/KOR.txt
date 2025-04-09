@@ -4570,28 +4570,6 @@ KOR_first_plan_lightning = {
 				has_war_with = ZLC
 				has_completed_focus = KOR_the_plan_south
 			}
-			any_state = {
-				is_owned_by = KVN
-					OR = {
-						any_neighbor_state = {
-							NOT = {
-								is_controlled_by = KOR
-							}
-						} 
-						if = {
-							limit = {
-								WZC = {
-									is_puppet_of = KOR
-								} 
-							}
-							any_neighbor_state = {
-								NOT = {
-									is_controlled_by = WZC
-								}
-							} 
-						}
-					}
-			}
 			KVN = {
 				exists = yes
 				is_puppet_of = KOR
@@ -4818,11 +4796,10 @@ KOR_second_plan_tent = {
 			WZC = {
 				exists = no
 			}
-			has_war_with = ZLC
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
 		visible = {
 			has_war_with = ZLC
@@ -4830,7 +4807,7 @@ KOR_second_plan_tent = {
 		allowed = {
 			tag = KOR
 		}
-		cost = 100
+		cost = 50
 		days_remove = 15
 		fire_only_once = yes
 		complete_effect = {
@@ -4883,30 +4860,57 @@ KOR_second_plan_tent = {
 			
 		}
 	}
-	KOR_make_puppet_government = {
+	KOR_make_puppet_government_north = {
 		icon = generic_speech
 		available = {
 			tag = KOR
-			controls_state = 608
-			controls_state = 613
-			or = {
-				controls_state = 1048
-				has_game_rule = {
-					rule = TLE_KOREA_HARDCORE_RULE
-					option = TLE_LIGHT
+			has_country_flag = FLAG_QI_PUPPET
+			custom_trigger_tooltip = {
+				tooltip = TOOLTIP_ZHILI_SHANDONG_KOR
+				608 = {
+					OR = {
+						is_fully_controlled_by = KOR
+						is_fully_controlled_by = KMN
+						is_fully_controlled_by = CH2
+					}
 				}
-				has_game_rule = {
-					rule = TLE_KOREA_HARDCORE_RULE
-					option = TLE_SOLIGHT
+				597 = {
+					OR = {
+						is_fully_controlled_by = KOR
+						is_fully_controlled_by = KMN
+						is_fully_controlled_by = CH2
+					}
+				}
+				1033 = {
+					OR = {
+						is_fully_controlled_by = KOR
+						is_fully_controlled_by = KMN
+						is_fully_controlled_by = CH2
+					}
 				}
 			}
 		}
+		
+		highlight_states = {
+			highlight_states_trigger = {
+				OR = {
+					has_state_flag = zhili_province_state
+					has_state_flag = shanxi_province_state
+					has_state_flag = shandong_province_state
+					state = 1074
+				}
+				NOT = {
+					state = 743
+					state = 1034
+				}
+			} 
+		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
 		visible = {
-			has_country_flag = FLAG_QI_PUPPET
+			has_war_with = ZLC
 		}
 		allowed = {
 			tag = KOR
@@ -4914,54 +4918,285 @@ KOR_second_plan_tent = {
 		#days_remove = 25
 		fire_only_once = yes
 		complete_effect = {
-			custom_effect_tooltip = KOR_ESTABLISH_CHINESE_PUPPET
+			custom_effect_tooltip = KOR_ESTABLISH_CHINESE_PUPPET_NORTH
 			hidden_effect = {
-				set_country_flag = FLAG_WZC_PUPPET_KOR
 				KOR = {
-					puppet = WZC
+					puppet = SZY
 				}
-				WZC = {
-					set_cosmetic_tag = WZC_CHI
-					add_country_leader_role = {
-						Character = WZC_qi_xieyuan
-						Promote_leader = yes
-						Country_leader = {
-							ideology = ultranationalism
-							expire = "1965.1.1"
-							traits = {
-								war_industrialist
+				SZY = {
+					transfer_state = 608
+					declare_war_on = {
+						target = ZLC
+						type = annex_everything
+					}
+					declare_war_on = {
+						target = CHI
+						type = annex_everything
+					}
+					set_cosmetic_tag = SZY_KOR
+					set_politics = {
+						ruling_party = neutrality
+						last_election = "1932.3.8"
+						election_frequency = 60
+						elections_allowed = no
+					}
+					set_popularities = {
+						neutrality = 100
+						fascism = 0
+						communism = 0
+						democratic = 0
+					}
+				}
+				every_state = {
+					limit = {
+						AND = {
+							OR = {
+								has_state_flag = zhili_province_state
+								has_state_flag = shanxi_province_state
+								has_state_flag = shandong_province_state
+								state = 1074
+							}
+							NOT = {
+								state = 743
+								state = 1034
+							}
+						}
+					}
+					add_core_of = SZY
+				}
+				every_state = {
+					limit = {
+						AND = {
+							OR = {
+								has_state_flag = zhili_province_state
+								has_state_flag = shandong_province_state
+							}
+							NOT = {
+								state = 743
+								state = 1034
+							}
+						}
+					}
+					remove_claim_by = KOR
+				}
+				every_state = {
+					limit = {
+						AND = {
+							OR = {
+								has_state_flag = zhili_province_state
+								has_state_flag = shanxi_province_state
+								has_state_flag = shandong_province_state
+								state = 1074
+							}
+							NOT = {
+								state = 743
+								state = 1034
+							}
+							OR = {
+								is_fully_controlled_by = KOR
+								is_fully_controlled_by = KMN
 							}
 						}
 					}	
-					set_capital = {
-						state = 608
-						remember_old_capital = no
-					}
-					transfer_state = 1037
-				}
-				every_state = {
-					limit = {
-						is_core_of = ZLC
-					}
-					add_core_of = WZC
-				}
-				every_state = {
-					limit = {
-						is_controlled_by = KOR
-						is_core_of = ZLC
-						NOT = {
-							is_owned_by = KOR
-							is_owned_by = MEN
-							is_owned_by = KYH
-						}
-					}	
-					set_state_controller_to = WZC
+					set_state_controller_to = SZY
 				}
 			}
 		}
 		# modifier = {
 		# }
 		remove_effect = {
+		}
+	}
+	KOR_make_puppet_government_south = {
+		icon = generic_speech
+		available = {
+			tag = KOR
+			has_country_flag = FLAG_QI_PUPPET
+			custom_trigger_tooltip = {
+				tooltip = TOOLTIP_JIANGSU_ANHUI_ZHEJIANG_KOR
+				613 = {
+					OR = {
+						is_fully_controlled_by = KOR
+						is_fully_controlled_by = KMN
+						is_fully_controlled_by = CH2
+					}
+				}
+				1036 = {
+					OR = {
+						is_fully_controlled_by = KOR
+						is_fully_controlled_by = KMN
+						is_fully_controlled_by = CH2
+					}
+				}
+				606 = {
+					OR = {
+						is_fully_controlled_by = KOR
+						is_fully_controlled_by = KMN
+						is_fully_controlled_by = CH2
+					}
+				}
+				596 = {
+					OR = {
+						is_fully_controlled_by = KOR
+						is_fully_controlled_by = KMN
+						is_fully_controlled_by = CH2
+					}
+				}
+			}
+		}
+		
+		highlight_states = {
+			highlight_states_trigger = {
+				OR = {
+					has_state_flag = henan_province_state
+					has_state_flag = anhui_province_state
+					has_state_flag = jiangsu_province_state
+					has_state_flag = zhejiang_province_state
+				}
+				NOT = {
+					state = 1074
+				}
+			} 
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		visible = {
+			has_war_with = ZLC
+		}
+		allowed = {
+			tag = KOR
+		}
+		#days_remove = 25
+		fire_only_once = yes
+		complete_effect = {
+			custom_effect_tooltip = KOR_ESTABLISH_CHINESE_PUPPET_SOUTH
+			hidden_effect = {
+				KOR = {
+					puppet = CH2
+				}
+				CH2 = {
+					transfer_state = 613
+					transfer_state = 1036
+					declare_war_on = {
+						target = ZLC
+						type = annex_everything
+					}
+					declare_war_on = {
+						target = CHI
+						type = annex_everything
+					}
+					set_politics = {
+						ruling_party = neutrality
+						last_election = "1932.3.8"
+						election_frequency = 60
+						elections_allowed = no
+					}
+					set_popularities = {
+						neutrality = 100
+						fascism = 0
+						communism = 0
+						democratic = 0
+					}
+				}
+				every_state = {
+					limit = {
+						AND = {
+							OR = {
+								has_state_flag = henan_province_state
+								has_state_flag = anhui_province_state
+								has_state_flag = jiangsu_province_state
+								has_state_flag = zhejiang_province_state
+							}
+							NOT = {
+								state = 1074
+							}
+						}
+					}
+					add_core_of = CH2
+				}
+				every_state = {
+					limit = {
+						AND = {
+							OR = {
+								has_state_flag = henan_province_state
+								has_state_flag = anhui_province_state
+								has_state_flag = jiangsu_province_state
+								has_state_flag = zhejiang_province_state
+							}
+							NOT = {
+								state = 1074
+							}
+							OR = {
+								is_fully_controlled_by = KOR
+								is_fully_controlled_by = KMN
+							}
+						}
+					}	
+					set_state_controller_to = CH2
+				}
+			}
+		}
+		# modifier = {
+		# }
+		remove_effect = {
+		}
+	}
+	KOR_redistribute_territories = {
+		icon = GFX_decision_infiltrate_state
+		available = {
+			tag = KOR
+			any_state = {
+				AND = {
+					OR = {
+						is_core_of = SZY
+						is_core_of = CH2
+					}
+					OR = {
+						is_fully_controlled_by = KMN
+						is_fully_controlled_by = KOR
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		visible = {
+			has_war_with = ZLC
+			has_country_flag = FLAG_QI_PUPPET
+		}
+		allowed = {
+			tag = KOR
+		}
+		fire_only_once = no
+		
+		complete_effect = {
+			custom_effect_tooltip = KOR_REDISTRIBUTE_CHINESE_PUPPETS
+			hidden_effect = {
+				every_state = {
+					limit = {
+						is_core_of = SZY
+						OR = {
+							is_fully_controlled_by = KMN
+							is_fully_controlled_by = KOR
+						}
+					}
+					set_state_controller_to = SZY
+				}
+				every_state = {
+					limit = {
+						is_core_of = CH2
+						OR = {
+							is_fully_controlled_by = KMN
+							is_fully_controlled_by = KOR
+						}
+					}
+					set_state_controller_to = CH2
+				}
+			}
 		}
 	}
 }	

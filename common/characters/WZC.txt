@@ -60,6 +60,34 @@ characters={
 			logistics_skill = 1
 		}
 	}
+	CH2_qi_xieyuan = {
+		name="WZC_qi_xieyuan"
+		portraits={
+			civilian={
+				large="gfx/leaders/WZC/Portrait_LEP_Qi_Xieyuan.png"
+			}
+			army = {
+				large="gfx/leaders/WZC/Portrait_LEP_Qi_Xieyuan.png"
+				small="gfx/leaders/WZC/Portrait_LEP_Qi_Xieyuan.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={  }
+		}
+		country_leader={
+			ideology=ultranationalism
+			traits={  }
+		}
+		country_leader={
+			ideology=democratic
+			traits={  }
+		}
+		country_leader={
+			ideology=communism
+			traits={  }
+		}
+	}
 	WZC_chen_yi = {
 		name="WZC_chen_yi"
 		portraits={
