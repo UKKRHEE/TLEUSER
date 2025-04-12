@@ -218,6 +218,11 @@ GER_german_empire = {
 	color_ui = rgb { 115 115 115 }
 }
 
+GER_neutrality = {
+	color = rgb { 128 128 128 }
+	color_ui = rgb { 115 115 115 }
+}
+
 GER_german_monarchy = {
 	color = rgb { 128 128 128 }
 	color_ui = rgb { 115 115 115 }
