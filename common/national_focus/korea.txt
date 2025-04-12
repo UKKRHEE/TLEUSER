@@ -1343,8 +1343,10 @@ focus_tree = {
 					target = KHK
 					transfer_troops = yes
 				}
-				transfer_state = 408
-				transfer_state = 409
+				annex_country = {
+					target = KMN
+					transfer_troops = yes
+				}
 				every_state = {
 					limit = {
 						is_core_of = KYH
@@ -1354,8 +1356,20 @@ focus_tree = {
 				KHK = {
 					remove_state_core = 536
 				}
+				#북만주
+				add_state_core = 1059
+				add_state_core = 1060
+				add_state_core = 610
+				add_state_core = 714
+				add_state_core = 715
+				add_state_core = 761
+				#연해주
+				add_state_core = 560
+				add_state_core = 561
+				add_state_core = 657
 				add_state_core = 408
 				add_state_core = 409
+				#북해도
 				add_state_core = 536
 				country_event = {
 					id = korea.304
@@ -1521,6 +1535,25 @@ focus_tree = {
 									days = 365
 								}
 						}
+						
+					if = {
+						limit = {
+							controls_province = 10110 #상무대
+							1023 = { #전라남도
+								is_owned_and_controlled_by = ROOT
+								can_construct_building = land_facility
+							}
+						}
+						1023 = { #전라남도
+							add_building_construction = {
+								type = land_facility
+								level = 1
+								province = 10110 #상무대
+								instant_build = yes
+							}	
+						}
+					
+					}
 				}
 
 	}
@@ -1636,6 +1669,25 @@ focus_tree = {
 		x = 81
 		y = 13
 			completion_reward = {
+				
+				
+				if = {
+					limit = {
+						controls_province = 1054 #진해
+						1091 = { #경상남도
+							is_owned_and_controlled_by = ROOT
+							can_construct_building = naval_facility
+						}
+					}
+					1091 = { #경상남도
+						add_building_construction = {
+							type = naval_facility
+							level = 1
+							province = 1054 #진해
+							instant_build = yes
+						}
+					}
+				}
 				
 				if = {
 					limit = {
@@ -2535,7 +2587,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = kor_make_nuke
+		id = kor_make_nuke #무궁화
 		icon = GFX_focus_KOR_nuke
 		cost = 5.00
 		prerequisite = {
@@ -2570,6 +2622,24 @@ focus_tree = {
 									value = 1
 								}
 							}
+							
+							if = {
+								limit = {
+									controls_province = 11878 #풍계리
+									1017 = { #함경북도
+										is_owned_and_controlled_by = ROOT
+										can_construct_building = nuclear_facility
+									}
+								}
+								1017 = { #함경북도
+									add_building_construction = {
+										type = nuclear_facility
+										level = 1
+										province = 11878 #풍계리
+										instant_build = yes
+									}
+								}
+							}
 					}
 					if = {
 							limit = {
@@ -2593,6 +2663,25 @@ focus_tree = {
 									value = 1
 								}
 							}
+							if = {
+								limit = {
+									controls_province = 11878 #풍계리
+									1017 = { #함경북도
+										is_owned_and_controlled_by = ROOT
+										can_construct_building = nuclear_facility
+									}
+								}
+								1017 = { #함경북도
+									add_building_construction = {
+										type = nuclear_facility
+										level = 1
+										province = 11878 #풍계리
+										instant_build = yes
+									}
+								}
+							}							
+							
+
 					}
 					custom_effect_tooltip = TLE_kor_make_nuke
 			}

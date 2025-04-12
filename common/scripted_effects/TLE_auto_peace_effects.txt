@@ -618,6 +618,7 @@ KOR_hangbok_event = {
 		remove_ideas = KOR_divided_politics
 		remove_ideas = KOR_failed_civilian_control_of_the_military
 		remove_ideas = KOR_not_planed_attack_2
+		remove_ideas = KOR_the_national_conscription_law
 		remove_ideas = KOR_the_first_army
 		complete_national_focus = KOR_the_last_empire_ending
 		retire_character = KOR_an_jung_geun 
@@ -1253,6 +1254,10 @@ KOR_hangbok_event = {
 		}
     }
 	CHI = {
+		set_capital = {
+			state = 613
+			remember_old_capital = no
+		}
 		annex_country = {
 			target = CH2
 			transfer_troops = yes
@@ -2340,6 +2345,7 @@ KOR_hangbok_event_2 = {
 		remove_ideas = KOR_divided_politics
 		remove_ideas = KOR_failed_civilian_control_of_the_military
 		remove_ideas = KOR_not_planed_attack_2
+		remove_ideas = KOR_the_national_conscription_law
 		remove_ideas = mutiny_1
 		remove_ideas = mutiny_2
 		remove_ideas = mutiny_3
@@ -2766,6 +2772,10 @@ KOR_hangbok_event_2 = {
 		}
     }
 	CHI = {
+		set_capital = {
+			state = 613
+			remember_old_capital = no
+		}
 		annex_country = {
 			target = CH2
 			transfer_troops = yes

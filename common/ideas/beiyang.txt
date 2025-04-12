@@ -107,7 +107,6 @@ ideas = {
 			}
 			targeted_modifier = {
                 tag = KOR
-				attack_bonus_against = 0.1
 				defense_bonus_against = 0.5
 			}
 

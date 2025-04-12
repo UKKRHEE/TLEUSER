@@ -1,5 +1,27 @@
 ﻿#편제
 division_template = {
+	name = "보병사단"
+	division_names_group = KOR_INF_01
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
 	name = "시위사단"
 	division_names_group = KOR_INF_02
 	
@@ -7,16 +29,62 @@ division_template = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
 		infantry = { x = 1 y = 3 }
-		artillery_brigade = { x = 2 y = 0 }
-		artillery_brigade = { x = 2 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 2 y = 3 }
+		artillery_brigade = { x = 3 y = 0 }
 	}
 	support = {
 		engineer = { x = 0 y = 0 }
 		recon = { x = 0 y = 1 }
+	}
+	priority = 2
+}
+
+division_template = {
+	name = "기동사단"				
+	division_names_group = KOR_MOT_01	
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+		motorized = { x = 3 y = 0 }
+		motorized = { x = 3 y = 1 }
+		motorized = { x = 3 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		mot_recon = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "독립혼성여단"
+	division_names_group = KOR_IMB_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		light_armor = { x= 2 y = 0 }
+		light_armor = { x= 2 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
 	}
 	priority = 2
 }
@@ -44,27 +112,6 @@ division_template = {
 }
 
 division_template = {
-	name = "보병사단"
-	division_names_group = KOR_INF_01
-	
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }
-		recon = { x = 0 y = 1 }
-	}
-}
-
-division_template = {
 	name = "기병사단"
 
 	division_names_group = KOR_CAV_01
@@ -79,6 +126,7 @@ division_template = {
 	}
 	support = {
 	}
+    priority = 0
 }
 
 division_template = {
@@ -97,6 +145,7 @@ division_template = {
 	}
     priority = 0
 }
+
 division_template = {
 	name = "해군육전대"				#This template covers SNLF divisions; historically there were roughly 5 total, with 1 being paratroopers
 	division_names_group = KOR_MAR_01
@@ -121,69 +170,17 @@ focus = {
     current = "kor_reform_korea"
     Progress = 0
 }      
+
 units = {
 #국내군
-	#특수사단
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		unique = {
-			"김산"
-		}
-		location = 12040
-		division_template = "전차사단"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		unique = {
-			"이규동"
-		}
-		location = 13378
-		division_template = "전차사단"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		unique = {
-			"문형순"
-		}
-		location = 964
-		division_template = "시위사단"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		unique = {
-			"오광선"
-		}
-		location = 3981
-		division_template = "시위사단"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
-	}
 	#보병사단
 	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 11835
-		division_template = "시위사단"
+		location = 964
+		division_template = "보병사단"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
@@ -192,8 +189,18 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 11915
-		division_template = "시위사단"
+		location = 3934
+		division_template = "보병사단"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11771
+		division_template = "보병사단"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
@@ -203,9 +210,9 @@ units = {
 			name_order = 1
 		}
 		location = 4572
-		division_template = "시위사단"
+		division_template = "보병사단"
 		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
+		start_equipment_factor = 0.91
 	}
 	division = {
 		division_name = {
@@ -213,16 +220,6 @@ units = {
 			name_order = 1
 		}
 		location = 10433
-		division_template = "시위사단"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 3803
 		division_template = "보병사단"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
@@ -232,10 +229,20 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 12011
+		location = 9623
 		division_template = "보병사단"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7021
+		division_template = "보병사단"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.78
 	}
 	division = {
 		division_name = {
@@ -245,7 +252,7 @@ units = {
 		location = 13405
 		division_template = "보병사단"
 		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
+		start_equipment_factor = 0.69
 	}
 	division = {
 		division_name = {
@@ -253,16 +260,6 @@ units = {
 			name_order = 1
 		}
 		location = 957
-		division_template = "보병사단"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 1177
 		division_template = "보병사단"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
@@ -292,7 +289,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 7204
+		location = 13392
 		division_template = "보병사단"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
@@ -302,7 +299,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 814
+		location = 1638
 		division_template = "보병사단"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
@@ -315,7 +312,7 @@ units = {
 		location = 6944
 		division_template = "보병사단"
 		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
+		start_equipment_factor = 0.9
 	}
 	division = {
 		division_name = {
@@ -325,124 +322,14 @@ units = {
 		location = 848
 		division_template = "보병사단"
 		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
+		start_equipment_factor = 0.75
 	}
 	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 11771
-		division_template = "보병사단"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 11764
-		division_template = "보병사단"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 1150
-		division_template = "보병사단"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 836
-		division_template = "보병사단"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 6981
-		division_template = "보병사단"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 9897
-		division_template = "보병사단"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 852
-		division_template = "보병사단"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 6822
-		division_template = "보병사단"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 3815
-		division_template = "보병사단"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 3881
-		division_template = "보병사단"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 3814
-		division_template = "보병사단"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 11801
+		location = 11835
 		division_template = "보병사단"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
@@ -462,8 +349,92 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 6852
+		location = 12189
 		division_template = "보병사단"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	#후방사단
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7121
+		division_template = "보병사단"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13401
+		division_template = "후방사단"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1177
+		division_template = "후방사단"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13402
+		division_template = "후방사단"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3		
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4056
+		division_template = "후방사단"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+	#시위사단
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7125
+		division_template = "시위사단"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	#특수사단
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12040
+		division_template = "전차사단"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	#독립혼성여단
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7171
+		division_template = "독립혼성여단"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
@@ -472,8 +443,19 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 12657
-		division_template = "보병사단"
+		location = 13395
+		division_template = "독립혼성여단"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	#기동사단
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13394
+		division_template = "기동사단"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
@@ -483,20 +465,10 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 12060
+		location = 3981
 		division_template = "기병사단"
 		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 957
-		division_template = "기병사단"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
+		start_equipment_factor = 0.55
 	}
 	##황근출##
 	division = {
@@ -507,7 +479,7 @@ units = {
 		location = 4052
 		division_template = "해군육전대"
 		start_experience_factor = 1.0
-		start_equipment_factor = 1.0
+		start_equipment_factor = 0.9
 	}
 }
 

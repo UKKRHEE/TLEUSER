@@ -3,12 +3,11 @@ ideas = {
 		KOR_not_planed_attack_ai_up_HID = {
 			picture = KOR_not_planed_attack
 			modifier = {
-				max_dig_in = 10
-				army_attack_factor = 0.1
-				army_defence_factor = 1.0
-				army_org_factor = 0.1
-				army_morale_factor = 0.1
-				submarine_attack = 20
+				max_dig_in = 2
+				army_defence_factor = 0.8
+				army_org_factor = 0.05
+				army_morale_factor = 0.05
+				submarine_attack = 10
 				resistance_growth = -1
 				resistance_target = -1
 				resistance_decay = 1
@@ -19,8 +18,8 @@ ideas = {
 			modifier = {
 				custom_modifier_tooltip = TOOLTIP_ATTACK_CHINA_REMOVE
 				max_dig_in = 10
+				army_defence_factor = 2.0
 				army_org_factor = 0.1
-				army_defence_factor = 1.0
 				army_morale_factor = 0.1
 				submarine_attack = 20
 				resistance_growth = -1
@@ -1713,11 +1712,22 @@ ideas = {
 			picture = chi_warlord_integration5
 			
 			cancel = {
-				KOR = {
-					controls_state = 608
-					controls_state = 607
-					controls_state = 613
-					controls_state = 1057
+				AND = {
+					OR = {
+						KOR = { controls_state = 608 }
+						SZY = { controls_state = 608 }
+						CH2 = { controls_state = 608 }
+					}
+					OR = {
+						KOR = { controls_state = 607 }
+						SZY = { controls_state = 607 }
+						CH2 = { controls_state = 607 }
+					}
+					OR = {
+						KOR = { controls_state = 613 }
+						SZY = { controls_state = 613 }
+						CH2 = { controls_state = 613 }
+					}
 				}
 			}
 			
@@ -1745,10 +1755,12 @@ ideas = {
 			targeted_modifier = {
                 tag = ZLC
 				attack_bonus_against = 0.1
+				defense_bonus_against = 0.5
 			}
 			targeted_modifier = {
                 tag = CHI
 				attack_bonus_against = 0.1
+				defense_bonus_against = 0.5
 			}
 		}
 		

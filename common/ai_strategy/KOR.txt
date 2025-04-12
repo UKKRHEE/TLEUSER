@@ -46,6 +46,58 @@ KOR_mongolia_is_not_needed = {
 	}
 }
 
+KOR_invade_phis = {
+	allowed = {
+		original_tag = KOR
+	}
+
+	enable = {
+		KOR = {
+			has_country_flag = FLAG_KOR_FASCIST_ROUTE
+			has_war_with = PHI
+		}
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = invasion_unit_request
+		strategic_region = 160
+		value = 100
+	}
+	
+	ai_strategy = {
+		type = front_unit_request
+		tag = PHI
+		value = 50
+	}
+}
+
+KOR_invade_japs = {
+	allowed = {
+		original_tag = KOR
+	}
+
+	enable = {
+		KOR = {
+			has_country_flag = FLAG_KOR_FASCIST_ROUTE
+			has_war_with = JAP
+		}
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = front_unit_request
+		tag = JAP
+		value = 100
+	}
+	
+	ai_strategy = {
+		type = invasion_unit_request
+		strategic_region = 154
+		value = 50
+	}
+}
+
 KOR_do_not_let_strangers_in = {
 	allowed = {
 		original_tag = KOR

@@ -4907,7 +4907,7 @@ KOR_second_plan_tent = {
 		}
 
 		ai_will_do = {
-			factor = 10
+			factor = 0
 		}
 		visible = {
 			has_war_with = ZLC
@@ -5060,7 +5060,7 @@ KOR_second_plan_tent = {
 		}
 
 		ai_will_do = {
-			factor = 10
+			factor = 0
 		}
 		visible = {
 			has_war_with = ZLC
@@ -5162,7 +5162,7 @@ KOR_second_plan_tent = {
 		}
 
 		ai_will_do = {
-			factor = 10
+			factor = 0
 		}
 		visible = {
 			has_war_with = ZLC

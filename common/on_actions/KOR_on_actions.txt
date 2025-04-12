@@ -741,6 +741,33 @@ on_actions = {
 							country_event = {
 								id = JAP_war_of_yashima.3
 							}	
+							remove_ideas = JAP_the_dokugawa_attack
+							if = {
+								limit = {
+									TBJ = {
+										exists = yes
+									}
+								}
+								JAP = {
+									annex_country = {
+										target = TBJ
+										transfer_troops = yes
+									}
+								}
+							}
+							if = {
+								limit = {
+									FJP = {
+										exists = yes
+									}
+								}
+								JAP = {
+									annex_country = {
+										target = FJP
+										transfer_troops = yes
+									}
+								}
+							}
 						}	
 						every_country = {
 							limit = { is_ai = no }
@@ -1045,6 +1072,33 @@ on_actions = {
 								id = JAP_war_of_yashima.3
 								days = 2
 							}	
+							remove_ideas = JAP_the_dokugawa_attack
+							if = {
+								limit = {
+									TBJ = {
+										exists = yes
+									}
+								}
+								JAP = {
+									annex_country = {
+										target = TBJ
+										transfer_troops = yes
+									}
+								}
+							}
+							if = {
+								limit = {
+									FJP = {
+										exists = yes
+									}
+								}
+								JAP = {
+									annex_country = {
+										target = FJP
+										transfer_troops = yes
+									}
+								}
+							}
 						}	
 						every_country = {
 							limit = { is_ai = no }
