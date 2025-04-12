@@ -46,6 +46,103 @@ KOR_mongolia_is_not_needed = {
 	}
 }
 
+KOR_manchuria_is_needed = {
+	allowed = {
+		original_tag = KOR
+	}
+
+	enable = {
+		KOR = {
+			has_country_flag = FLAG_KOR_FASCIST_ROUTE
+		}
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = force_defend_ally_borders
+		id = KMN
+		value = 300
+	}
+	
+	ai_strategy = {
+		type = front_unit_request
+		tag = ZLC
+		value = 100
+	}
+}
+
+ZLC_defend_sichuan = {
+	allowed = {
+		original_tag = ZLC
+	}
+
+	enable = {
+		ZLC = {
+			has_war_with = KOR
+			controls_state = 605
+		}
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = put_unit_buffers
+		ratio = 0.5
+		states = {
+			622
+			744
+			1056
+			750
+			126
+			605
+			1047
+			753
+			748
+			
+		}
+		subtract_fronts_from_need = yes
+	}
+}
+
+CHI_defend_zlc = {
+	allowed = {
+		original_tag = CHI
+	}
+
+	enable = {
+		CHI = {
+			has_war_with = KOR
+			is_in_faction_with = ZLC
+		}
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = force_defend_ally_borders
+		id = ZLC
+		value = 100
+	}
+}
+
+KOR_invade_south_china = {
+	allowed = {
+		original_tag = KOR
+	}
+
+	enable = {
+		KOR = {
+			has_war_with = CHI
+			has_country_flag = FLAG_KOR_FASCIST_ROUTE
+		}
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = front_unit_request
+		tag = CHI
+		value = 100
+	}
+}
+
 KOR_invade_phis = {
 	allowed = {
 		original_tag = KOR

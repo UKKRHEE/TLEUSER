@@ -36,7 +36,7 @@ units = {
 		location = 6999
 		division_template = "Paobing Zhen"
 		start_experience_factor = 1
-		start_equipment_factor = 1.0
+		start_equipment_factor = 0.65
 	}
 	division = {
 		division_name = {
@@ -46,7 +46,7 @@ units = {
 		location = 7240
 		division_template = "Paobing Zhen"
 		start_experience_factor = 1
-		start_equipment_factor = 1.0
+		start_equipment_factor = 0.65
 	}
 	division = {
 		division_name = {
@@ -56,7 +56,7 @@ units = {
 		location = 4925
 		division_template = "Paobing Zhen"
 		start_experience_factor = 1
-		start_equipment_factor = 1.0
+		start_equipment_factor = 0.65
 	}
 	division = {
 		division_name = {
@@ -66,7 +66,7 @@ units = {
 		location = 4431
 		division_template = "Paobing Zhen"
 		start_experience_factor = 1
-		start_equipment_factor = 1.0
+		start_equipment_factor = 0.65
 	}
 	division = {
 		division_name = {
@@ -76,7 +76,7 @@ units = {
 		location = 4141
 		division_template = "Paobing Zhen"
 		start_experience_factor = 1
-		start_equipment_factor = 1.0
+		start_equipment_factor = 0.65
 	}
 	division = {
 		division_name = {
@@ -86,7 +86,7 @@ units = {
 		location = 6999
 		division_template = "Paobing Zhen"
 		start_experience_factor = 1
-		start_equipment_factor = 1.0
+		start_equipment_factor = 0.65
 	}
 	division = {
 		division_name = {
@@ -96,7 +96,7 @@ units = {
 		location = 7240
 		division_template = "Paobing Zhen"
 		start_experience_factor = 1
-		start_equipment_factor = 1.0
+		start_equipment_factor = 0.65
 	}
 	division = {
 		division_name = {
@@ -106,7 +106,7 @@ units = {
 		location = 4925
 		division_template = "Paobing Zhen"
 		start_experience_factor = 1
-		start_equipment_factor = 1.0
+		start_equipment_factor = 0.65
 	}
 	division = {
 		division_name = {
@@ -116,7 +116,7 @@ units = {
 		location = 4431
 		division_template = "Paobing Zhen"
 		start_experience_factor = 1
-		start_equipment_factor = 1.0
+		start_equipment_factor = 0.65
 	}
 	division = {
 		division_name = {
@@ -126,7 +126,7 @@ units = {
 		location = 4141
 		division_template = "Paobing Zhen"
 		start_experience_factor = 1
-		start_equipment_factor = 1.0
+		start_equipment_factor = 0.65
 	}
 	division = {
 		division_name = {
@@ -136,7 +136,7 @@ units = {
 		location = 6999
 		division_template = "Paobing Zhen"
 		start_experience_factor = 1
-		start_equipment_factor = 1.0
+		start_equipment_factor = 0.65
 	}
 	division = {
 		division_name = {
@@ -146,7 +146,7 @@ units = {
 		location = 7240
 		division_template = "Paobing Zhen"
 		start_experience_factor = 1
-		start_equipment_factor = 1.0
+		start_equipment_factor = 0.65
 	}
 	division = {
 		division_name = {
@@ -156,7 +156,7 @@ units = {
 		location = 4925
 		division_template = "Paobing Zhen"
 		start_experience_factor = 1
-		start_equipment_factor = 1.0
+		start_equipment_factor = 0.65
 	}
 	division = {
 		division_name = {
@@ -166,7 +166,7 @@ units = {
 		location = 4431
 		division_template = "Paobing Zhen"
 		start_experience_factor = 1
-		start_equipment_factor = 1.0
+		start_equipment_factor = 0.65
 	}
 	division = {
 		division_name = {
@@ -176,7 +176,7 @@ units = {
 		location = 4141
 		division_template = "Paobing Zhen"
 		start_experience_factor = 1
-		start_equipment_factor = 1.0
+		start_equipment_factor = 0.65
 	}
 	division = {
 		division_name = {
@@ -186,7 +186,7 @@ units = {
 		location = 6999
 		division_template = "Paobing Zhen"
 		start_experience_factor = 1
-		start_equipment_factor = 1.0
+		start_equipment_factor = 0.65
 	}
 	division = {
 		division_name = {
@@ -196,7 +196,7 @@ units = {
 		location = 7240
 		division_template = "Paobing Zhen"
 		start_experience_factor = 1
-		start_equipment_factor = 1.0
+		start_equipment_factor = 0.65
 	}
 	division = {
 		division_name = {
@@ -206,7 +206,7 @@ units = {
 		location = 4925
 		division_template = "Paobing Zhen"
 		start_experience_factor = 1
-		start_equipment_factor = 1.0
+		start_equipment_factor = 0.65
 	}
 	division = {
 		division_name = {
@@ -216,7 +216,7 @@ units = {
 		location = 4431
 		division_template = "Paobing Zhen"
 		start_experience_factor = 1
-		start_equipment_factor = 1.0
+		start_equipment_factor = 0.65
 	}
 	division = {
 		division_name = {
@@ -226,7 +226,7 @@ units = {
 		location = 4141
 		division_template = "Paobing Zhen"
 		start_experience_factor = 1
-		start_equipment_factor = 1.0
+		start_equipment_factor = 0.65
 	}
 	division = {
 		division_name = {
@@ -236,7 +236,7 @@ units = {
 		location = 6999
 		division_template = "Paobing Zhen"
 		start_experience_factor = 1
-		start_equipment_factor = 1.0
+		start_equipment_factor = 0.65
 	}
 	division = {
 		division_name = {
@@ -246,7 +246,7 @@ units = {
 		location = 7240
 		division_template = "Paobing Zhen"
 		start_experience_factor = 1
-		start_equipment_factor = 1.0
+		start_equipment_factor = 0.65
 	}
 	division = {
 		division_name = {
@@ -256,7 +256,7 @@ units = {
 		location = 4925
 		division_template = "Paobing Zhen"
 		start_experience_factor = 1
-		start_equipment_factor = 1.0
+		start_equipment_factor = 0.65
 	}
 	division = {
 		division_name = {
@@ -266,7 +266,7 @@ units = {
 		location = 4431
 		division_template = "Paobing Zhen"
 		start_experience_factor = 1
-		start_equipment_factor = 1.0
+		start_equipment_factor = 0.65
 	}
 	division = {
 		division_name = {
@@ -276,7 +276,7 @@ units = {
 		location = 4141
 		division_template = "Paobing Zhen"
 		start_experience_factor = 1
-		start_equipment_factor = 1.0
+		start_equipment_factor = 0.65
 	}
 	division = {
 		division_name = {
@@ -286,7 +286,7 @@ units = {
 		location = 6999
 		division_template = "Paobing Zhen"
 		start_experience_factor = 1
-		start_equipment_factor = 1.0
+		start_equipment_factor = 0.65
 	}
 	division = {
 		division_name = {
@@ -296,7 +296,7 @@ units = {
 		location = 7240
 		division_template = "Paobing Zhen"
 		start_experience_factor = 1
-		start_equipment_factor = 1.0
+		start_equipment_factor = 0.65
 	}
 	division = {
 		division_name = {
@@ -306,7 +306,7 @@ units = {
 		location = 4925
 		division_template = "Paobing Zhen"
 		start_experience_factor = 1
-		start_equipment_factor = 1.0
+		start_equipment_factor = 0.65
 	}
 	division = {
 		division_name = {
@@ -316,7 +316,7 @@ units = {
 		location = 4431
 		division_template = "Paobing Zhen"
 		start_experience_factor = 1
-		start_equipment_factor = 1.0
+		start_equipment_factor = 0.65
 	}
 	division = {
 		division_name = {
@@ -326,7 +326,7 @@ units = {
 		location = 4141
 		division_template = "Paobing Zhen"
 		start_experience_factor = 1
-		start_equipment_factor = 1.0
+		start_equipment_factor = 0.65
 	}
 	division = {
 		division_name = {
@@ -336,7 +336,7 @@ units = {
 		location = 6999
 		division_template = "Paobing Zhen"
 		start_experience_factor = 1
-		start_equipment_factor = 1.0
+		start_equipment_factor = 0.65
 	}
 	division = {
 		division_name = {
@@ -346,6 +346,6 @@ units = {
 		location = 7240
 		division_template = "Paobing Zhen"
 		start_experience_factor = 1
-		start_equipment_factor = 1.0
+		start_equipment_factor = 0.65
 	}
 }

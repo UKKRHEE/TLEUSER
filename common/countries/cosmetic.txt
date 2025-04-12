@@ -1733,6 +1733,10 @@ KMN_KOR = { #
 	color = rgb { 36  7  126 }
 	color_ui = rgb { 36  7  126 }
 }
+KMN_FUT = { #
+	color = rgb { 36  7  126 }
+	color_ui = rgb { 36  7  126 }
+}
 KMN_REP = { #한국
 	color = rgb { 66  135  129 }
 	color_ui = rgb { 66  135  129 }

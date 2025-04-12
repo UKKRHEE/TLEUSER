@@ -533,6 +533,18 @@ KOR_hangbok_event = {
 		transfer_state = 336
 	}
 	KOR = {
+		set_politics = {
+			ruling_party = neutrality
+			last_election = "1932.3.8"
+			election_frequency = 60
+			elections_allowed = no
+		}
+		set_popularities = {
+			neutrality = 100
+			fascism = 0
+			communism = 0
+			democratic = 0
+		}
 		country_lock_all_division_template = yes
 		set_country_flag = TLE_THE_WAR_IS_ENDED
 		set_party_name = {
@@ -2228,6 +2240,18 @@ KOR_hangbok_event_2 = {
 		transfer_state = 336
 	}
 	KOR = {
+		set_politics = {
+			ruling_party = neutrality
+			last_election = "1932.3.8"
+			election_frequency = 60
+			elections_allowed = no
+		}
+		set_popularities = {
+			neutrality = 100
+			fascism = 0
+			communism = 0
+			democratic = 0
+		}
 		country_lock_all_division_template = yes
 		set_country_flag = TLE_THE_WAR_IS_ENDED
 		set_party_name = {

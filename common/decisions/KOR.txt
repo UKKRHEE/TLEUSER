@@ -6598,18 +6598,6 @@ KOR_interservice_rivalry = {
 		complete_effect = {
 			if = {
 				limit = {
-					is_ai = no
-					NOT = {
-						has_country_flag = TLE_dont_want_to_balance
-					}
-				}
-				add_power_balance_value = {
-					id = KOR_balance
-					value = 0.05
-				}
-			}
-			if = {
-				limit = {
 					has_idea = KOR_choheung
 					has_idea = kim_gap_sun
 					has_idea = bang_jonghwan
@@ -7067,18 +7055,6 @@ KOR_interservice_rivalry = {
 		complete_effect = {
 			if = {
 				limit = {
-					is_ai = no
-					NOT = {
-						has_country_flag = TLE_dont_want_to_balance
-					}
-				}
-				add_power_balance_value = {
-					id = KOR_balance
-					value = -0.05
-				}
-			}
-			if = {
-				limit = {
 					has_idea = KOR_choheung
 					has_idea = kim_gap_sun
 					has_idea = bang_jonghwan
@@ -7331,18 +7307,6 @@ KOR_interservice_rivalry = {
 			set_country_flag = { flag = KOR_war_conferences_cd value = 1 days = 180 }
 			KOR_interservice_rivalry_towards_army = yes
 			set_country_flag = KOR_steel_for_guns
-			if = {
-				limit = {
-					is_ai = no
-					NOT = {
-						has_country_flag = TLE_dont_want_to_balance
-					}
-				}
-				add_power_balance_value = {
-					id = KOR_balance
-					value = 0.1
-				}
-			}
 		}
 	}
 	KOR_prioritize_army_aircraft_construction = {
@@ -7373,18 +7337,6 @@ KOR_interservice_rivalry = {
 			add_ideas = KOR_prioritize_army_aircraft_construction_idea
 			KOR_interservice_rivalry_towards_army = yes
 			set_country_flag = KOR_prioritize_army_aircraft_construction
-			if = {
-				limit = {
-					is_ai = no
-					NOT = {
-						has_country_flag = TLE_dont_want_to_balance
-					}
-				}
-				add_power_balance_value = {
-					id = KOR_balance
-					value = 0.05
-				}
-			}
 		}
 	}
 	KOR_everybody_serves = {
@@ -7425,18 +7377,6 @@ KOR_interservice_rivalry = {
 			set_country_flag = { flag = KOR_war_conferences_cd value = 1 days = 180 }
 			KOR_interservice_rivalry_towards_army = yes
 			set_country_flag = KOR_everybody_serves
-			if = {
-				limit = {
-					is_ai = no
-					NOT = {
-						has_country_flag = TLE_dont_want_to_balance
-					}
-				}
-				add_power_balance_value = {
-					id = KOR_balance
-					value = 0.05
-				}
-			}
 		}
 	}
 	KOR_raiding_regiments = {
@@ -7469,18 +7409,6 @@ KOR_interservice_rivalry = {
 			set_country_flag = { flag = KOR_war_conferences_cd value = 1 days = 180 }
 			set_country_flag = KOR_raiding_regiments
 			KOR_interservice_rivalry_towards_army = yes
-			if = {
-				limit = {
-					is_ai = no
-					NOT = {
-						has_country_flag = TLE_dont_want_to_balance
-					}
-				}
-				add_power_balance_value = {
-					id = KOR_balance
-					value = 0.075
-				}
-			}
 		}
 	}
 	KOR_steel_for_ships = {
@@ -7544,18 +7472,6 @@ KOR_interservice_rivalry = {
 			set_country_flag = { flag = KOR_war_conferences_cd value = 1 days = 180 }
 			KOR_interservice_rivalry_towards_navy = yes
 			set_country_flag = KOR_steel_for_ships
-			if = {
-				limit = {
-					is_ai = no
-					NOT = {
-						has_country_flag = TLE_dont_want_to_balance
-					}
-				}
-				add_power_balance_value = {
-					id = KOR_balance
-					value = -0.2
-				}
-			}
 		}
 	}
 	KOR_prioritize_naval_aircraft_construction = {
@@ -7586,18 +7502,6 @@ KOR_interservice_rivalry = {
 			add_ideas = KOR_prioritize_naval_aircraft_construction_idea
 			KOR_interservice_rivalry_towards_navy = yes
 			set_country_flag = KOR_prioritize_naval_aircraft_construction
-			if = {
-				limit = {
-					is_ai = no
-					NOT = {
-						has_country_flag = TLE_dont_want_to_balance
-					}
-				}
-				add_power_balance_value = {
-					id = KOR_balance
-					value = -0.1
-				}
-			}
 		}
 	}
 	KOR_draft_exemptions = {
@@ -7631,18 +7535,6 @@ KOR_interservice_rivalry = {
 			set_country_flag = { flag = KOR_war_conferences_cd value = 1 days = 180 }
 			KOR_interservice_rivalry_towards_navy = yes
 			set_country_flag = KOR_draft_exemptions
-			if = {
-				limit = {
-					is_ai = no
-					NOT = {
-						has_country_flag = TLE_dont_want_to_balance
-					}
-				}
-				add_power_balance_value = {
-					id = KOR_balance
-					value = -0.1
-				}
-			}
 		}
 	}
 	KOR_special_air_landing_force = {
@@ -7676,18 +7568,6 @@ KOR_interservice_rivalry = {
 			set_country_flag = { flag = KOR_war_conferences_cd value = 1 days = 180 }
 			set_country_flag = KOR_special_air_landing_force
 			KOR_interservice_rivalry_towards_navy = yes
-			if = {
-				limit = {
-					is_ai = no
-					NOT = {
-						has_country_flag = TLE_dont_want_to_balance
-					}
-				}
-				add_power_balance_value = {
-					id = KOR_balance
-					value = -0.15
-				}
-			}
 		}
 	}
 	KOR_favor_army = {
@@ -7747,18 +7627,6 @@ KOR_interservice_rivalry = {
 		complete_effect = {
 			set_country_flag = { flag = KOR_war_conferences_cd value = 1 days = 180 }
 			KOR_interservice_rivalry_towards_army = yes
-			if = {
-				limit = {
-					is_ai = no
-					NOT = {
-						has_country_flag = TLE_dont_want_to_balance
-					}
-				}
-				add_power_balance_value = {
-					id = KOR_balance
-					value = 0.05
-				}
-			}
 		}
 	}
 	KOR_favor_navy = {
@@ -7818,18 +7686,6 @@ KOR_interservice_rivalry = {
 		complete_effect = {
 			set_country_flag = { flag = KOR_war_conferences_cd value = 1 days = 180 }
 			KOR_interservice_rivalry_towards_navy = yes
-			if = {
-				limit = {
-					is_ai = no
-					NOT = {
-						has_country_flag = TLE_dont_want_to_balance
-					}
-				}
-				add_power_balance_value = {
-					id = KOR_balance
-					value = -0.1
-				}
-			}
 		}
 	}
 }

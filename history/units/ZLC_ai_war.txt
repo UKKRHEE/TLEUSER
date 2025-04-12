@@ -24,104 +24,104 @@ units = {
 		location = 9843
 		division_template = "Renminjun"
 		start_experience_factor = 0.2
-		start_equipment_factor = 1.0
+		start_equipment_factor = 0.65
 	}
 	division = {
 		name = "Renminjun"
 		location = 9843
 		division_template = "Renminjun"
 		start_experience_factor = 0.2
-		start_equipment_factor = 1.0
+		start_equipment_factor = 0.65
 	}
 	division = {
 		name = "Renminjun"
 		location = 9843
 		division_template = "Renminjun"
 		start_experience_factor = 0.2
-		start_equipment_factor = 1.0
+		start_equipment_factor = 0.65
 	}
 	division = {
 		name = "Renminjun"
 		location = 9843
 		division_template = "Renminjun"
 		start_experience_factor = 0.2
-		start_equipment_factor = 1.0
+		start_equipment_factor = 0.65
 	}
 	division = {
 		name = "Renminjun"
 		location = 9843
 		division_template = "Renminjun"
 		start_experience_factor = 0.2
-		start_equipment_factor = 1.0
+		start_equipment_factor = 0.65
 	}
 	division = {
 		name = "Renminjun"
 		location = 9843
 		division_template = "Renminjun"
 		start_experience_factor = 0.2
-		start_equipment_factor = 1.0
+		start_equipment_factor = 0.65
 	}
 	division = {
 		name = "Renminjun"
 		location = 9843
 		division_template = "Renminjun"
 		start_experience_factor = 0.2
-		start_equipment_factor = 1.0
+		start_equipment_factor = 0.65
 	}
 	division = {
 		name = "Renminjun"
 		location = 9843
 		division_template = "Renminjun"
 		start_experience_factor = 0.2
-		start_equipment_factor = 1.0
+		start_equipment_factor = 0.65
 	}
 	division = {
 		name = "Renminjun"
 		location = 9843
 		division_template = "Renminjun"
 		start_experience_factor = 0.2
-		start_equipment_factor = 1.0
+		start_equipment_factor = 0.65
 	}
 	division = {
 		name = "Renminjun"
 		location = 9843
 		division_template = "Renminjun"
 		start_experience_factor = 0.2
-		start_equipment_factor = 1.0
+		start_equipment_factor = 0.65
 	}
 	division = {
 		name = "Renminjun"
 		location = 9843
 		division_template = "Renminjun"
 		start_experience_factor = 0.2
-		start_equipment_factor = 1.0
+		start_equipment_factor = 0.65
 	}
 	division = {
 		name = "Renminjun"
 		location = 9843
 		division_template = "Renminjun"
 		start_experience_factor = 0.2
-		start_equipment_factor = 1.0
+		start_equipment_factor = 0.65
 	}
 	division = {
 		name = "Renminjun"
 		location = 9843
 		division_template = "Renminjun"
 		start_experience_factor = 0.2
-		start_equipment_factor = 1.0
+		start_equipment_factor = 0.65
 	}
 	division = {
 		name = "Renminjun"
 		location = 9843
 		division_template = "Renminjun"
 		start_experience_factor = 0.2
-		start_equipment_factor = 1.0
+		start_equipment_factor = 0.65
 	}
 	division = {
 		name = "Renminjun"
 		location = 9843
 		division_template = "Renminjun"
 		start_experience_factor = 0.2
-		start_equipment_factor = 1.0
+		start_equipment_factor = 0.65
 	}
 }

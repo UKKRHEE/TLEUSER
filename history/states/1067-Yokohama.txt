@@ -18,7 +18,7 @@ state={
 			set_demilitarized_zone = yes
 		}
 		victory_points = {
-			9998 3
+			9998 15
 		}
 		owner = DKG
 		add_core_of = DKG

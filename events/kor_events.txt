@@ -11155,6 +11155,13 @@ country_event = { #강명제의 용인
 	
 	option = { 
 		name = korea.363.a
+		set_power_balance = {
+			id = KOR_balance
+			left_side = KOR_the_emperor
+			right_side = KOR_millitary
+			set_default = yes 
+			set_value = -0.55
+		}
 	}
 }
 country_event = { #박중양 사망의 여파
@@ -11203,6 +11210,13 @@ country_event = { #박중양 사망의 여파
 	
 	option = { 
 		name = korea.366.a
+		set_power_balance = {
+			id = KOR_balance
+			left_side = KOR_the_emperor
+			right_side = KOR_millitary
+			set_default = yes 
+			set_value = -0.5
+		}
 	}
 }
 country_event = { #황제에게 협박
@@ -11215,6 +11229,13 @@ country_event = { #황제에게 협박
 	
 	option = { 
 		name = korea.367.a
+		set_power_balance = {
+			id = KOR_balance
+			left_side = KOR_the_emperor
+			right_side = KOR_millitary
+			set_default = yes 
+			set_value = -0.25
+		}
 	}
 }
 ####### 진주만 사건 이벤트 체인 #######
@@ -11610,6 +11631,13 @@ country_event = { #1941
 					promote_leader = yes
 				}
 			}
+			set_power_balance = {
+				id = KOR_balance
+				left_side = KOR_the_emperor
+				right_side = KOR_millitary
+				set_default = yes 
+				set_value = -0.65
+			}
 		}
 	}
 }
@@ -11787,6 +11815,95 @@ country_event = { #1940 박중양
 			parliament_gui_initial = yes
 			set_variable = { CongressPartyLeader = token:CongressPartyLeader_yi_won }
 			set_variable = { CongressLeader = token:CongressLeader_yi_siyeong }
+		}
+	}
+}
+
+country_event = { #강북도독부 합병
+	id = korea.387
+	title = korea.387.title
+	desc = korea.387.desc
+	picture = GFX_TLE_korea_event_none
+	
+	trigger = {
+		KOR = {
+			has_country_flag = FLAG_KOR_FASCIST_ROUTE
+			has_war_with = ZLC
+		}
+		always = no
+	}
+	fire_only_once = yes
+	
+	option = { 
+		name = korea.387.a
+		hidden_effect = {
+			KOR = {
+				annex_country = {
+					target = KMN
+					transfer_troops = yes
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = KMN
+				}
+				add_core_of = KOR
+			}
+		}
+	}
+}
+
+country_event = { #강북도독부 분리
+	id = korea.388
+	title = korea.388.title
+	desc = korea.388.desc
+	picture = GFX_TLE_korea_event_none
+	
+	trigger = {
+		date > 1938.1.1
+		NOT = {
+			has_global_flag = TLE_KOREA_IS_DEFEATED
+		}
+		KOR = {
+			has_country_flag = FLAG_KOR_FASCIST_ROUTE
+			NOT = {
+				has_war_with = ZLC
+				has_war_with = CHI
+				has_war_with = USA
+				has_war_with = JAP
+			}
+		}
+		always = no
+	}
+	fire_only_once = yes
+	
+	option = { 
+		name = korea.388.a
+		hidden_effect = {
+			KOR = {
+				release = KMN
+				puppet = KMN
+			}
+			KMN = {
+				set_politics = {
+					ruling_party = fascism
+					last_election = "1936.1.1"
+					election_frequency = 60
+					elections_allowed = no
+				}
+				set_popularities = {
+					democratic = 0
+					fascism = 100
+					communism = 100
+					neutrality = 0
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = KMN
+				}
+				remove_core_of = KOR
+			}
 		}
 	}
 }

@@ -2492,18 +2492,7 @@ on_actions = {
 								load_oob = "ZLC_Chongqing"
 								add_equipment_to_stockpile = {
 									type = infantry_equipment_0
-									amount = 85000
-									producer = USA
-								}
-								add_equipment_to_stockpile = {
-									type = support_equipment
-									amount = 3000
-									producer = USA
-								}
-
-								add_equipment_to_stockpile = {
-									type = artillery_equipment_1
-									amount = 2000
+									amount = 40000
 									producer = USA
 								}
 							}

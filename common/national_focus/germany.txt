@@ -20842,6 +20842,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_POLITICAL_CHARACTER FOCUS_FILTER_MILITARY_CHARACTER }
 
 		select_effect = {
+			set_global_flag = GER_OP_HITLER
 			country_event = {
 			    id = wuw_GER_civil_war.7
 			    days = 7
@@ -33814,6 +33815,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 7
 		}
+		select_effect = {
+			set_global_flag = GER_OP_HITLER
+		}	
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
