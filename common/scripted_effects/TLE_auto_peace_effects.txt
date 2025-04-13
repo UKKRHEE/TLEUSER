@@ -425,12 +425,102 @@ KOR_hangbok_event = {
 	}
 	if = {
 		limit = {
+			BRM = {
+				exists = yes
+			}
+		}
+		BUR = {
+			annex_country = {
+				target = BRM
+				transfer_troops = yes
+			}
+			transfer_state = 640
+			transfer_state = 288
+			transfer_state = 993
+			transfer_state = 994
+			transfer_state = 998
+			transfer_state = 999
+			transfer_state = 997
+			transfer_state = 995
+			transfer_state = 996
+		}
+		BRM = {
+			set_politics = { 
+				ruling_party = democratic
+				last_election = "1936.11.26"
+				election_frequency = 48
+				elections_allowed = no
+			}
+			set_popularities = {
+				democratic = 100
+			}
+		}
+	}
+	if = {
+		limit = {
+			BAN = {
+				exists = yes
+			}
+		}
+		RAJ = {
+			annex_country = {
+				target = BAN
+				transfer_troops = yes
+			}
+		}
+		KOR = {
+			end_puppet = BAN
+		}
+		BAN = {
+			drop_cosmetic_tag = yes
+			set_politics = { 
+				ruling_party = democratic
+				last_election = "1936.11.26"
+				election_frequency = 48
+				elections_allowed = no
+			}
+			set_popularities = {
+				democratic = 100
+			}
+		}
+		every_state = {
+			limit = {
+				is_core_of = BAN
+				NOT = {
+					state = 430
+				}
+			}
+			remove_core_of = BAN
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_global_flag = PRE_THE_NEW_ORDER_GBR
+				}
+			}
+			ENG = {
+				puppet = RAJ
+			}
+		}
+	}
+	if = {
+		limit = {
 			NOT = {
 				has_global_flag = PRE_THE_NEW_ORDER_GBR
 			}
 		}
 		YEM = {
 			transfer_state = 992
+		}
+		if = { 
+			limit = {
+				BRM = {
+					exists = yes
+				}
+			}
+			ENG = {
+				puppet = BUR
+			}
 		}
 		RAJ = {
 			set_country_flag = TLE_RAJ_indian_independence_act_flag
@@ -2131,12 +2221,102 @@ KOR_hangbok_event_2 = {
 	}
 	if = {
 		limit = {
+			BRM = {
+				exists = yes
+			}
+		}
+		BUR = {
+			annex_country = {
+				target = BRM
+				transfer_troops = yes
+			}
+			transfer_state = 640
+			transfer_state = 288
+			transfer_state = 993
+			transfer_state = 994
+			transfer_state = 998
+			transfer_state = 999
+			transfer_state = 997
+			transfer_state = 995
+			transfer_state = 996
+		}
+		BRM = {
+			set_politics = { 
+				ruling_party = democratic
+				last_election = "1936.11.26"
+				election_frequency = 48
+				elections_allowed = no
+			}
+			set_popularities = {
+				democratic = 100
+			}
+		}
+	}
+	if = {
+		limit = {
+			BAN = {
+				exists = yes
+			}
+		}
+		RAJ = {
+			annex_country = {
+				target = BAN
+				transfer_troops = yes
+			}
+		}
+		KOR = {
+			end_puppet = BAN
+		}
+		BAN = {
+			drop_cosmetic_tag = yes
+			set_politics = { 
+				ruling_party = democratic
+				last_election = "1936.11.26"
+				election_frequency = 48
+				elections_allowed = no
+			}
+			set_popularities = {
+				democratic = 100
+			}
+		}
+		every_state = {
+			limit = {
+				is_core_of = BAN
+				NOT = {
+					state = 430
+				}
+			}
+			remove_core_of = BAN
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_global_flag = PRE_THE_NEW_ORDER_GBR
+				}
+			}
+			ENG = {
+				puppet = RAJ
+			}
+		}
+	}
+	if = {
+		limit = {
 			NOT = {
 				has_global_flag = PRE_THE_NEW_ORDER_GBR
 			}
 		}
 		YEM = {
 			transfer_state = 992
+		}
+		if = { 
+			limit = {
+				BRM = {
+					exists = yes
+				}
+			}
+			ENG = {
+				puppet = BUR
+			}
 		}
 		RAJ = {
 			set_country_flag = TLE_RAJ_indian_independence_act_flag
@@ -4391,13 +4571,8 @@ TNO_TLE_KOR_victory_effect = {
 		}
 		if = {
 			limit = {
-				OR = {
-					RAJ = {
-						surrender_progress > 0.7
-					}
-					KOR = {
-						owns_state = 439
-					}
+				KOR = {
+					has_country_flag = KOR_invade_delhi
 				}
 			}
 			BAN = {
@@ -4444,12 +4619,9 @@ TNO_TLE_KOR_victory_effect = {
 		}
 		if = {
 			limit = {
-				AND = {
-					RAJ = {
-						surrender_progress < 0.7
-					}
-					RAJ = {
-						owns_state = 439
+				NOT = {
+					KOR = {
+						has_country_flag = KOR_invade_delhi
 					}
 				}
 			}

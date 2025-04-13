@@ -119,11 +119,16 @@ SOV_fareastern_partisans = {
 		
 		icon = generic_tank
 		available = {
+			NOT = {
+				has_global_flag = TLE_KOREA_WON
+			}
 			KOR = {
 				has_government = fascism
 				NOT = {
-					has_country_flag = TLE_THE_WAR_IS_ENDED
-					has_country_flag = TLE_KOR_WIN_IN_CHINA_FUCKYEAH
+					OR = {
+						has_country_flag = TLE_THE_WAR_IS_ENDED
+						has_country_flag = TLE_KOR_WIN_IN_CHINA_FUCKYEAH
+					}
 				}
 			}
 			has_global_flag = TLE_germany_union_defeat

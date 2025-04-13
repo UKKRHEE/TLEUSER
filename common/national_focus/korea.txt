@@ -778,7 +778,6 @@ focus_tree = {
 									election_frequency = 48
 									elections_allowed = no
 								}
-							add_ideas = kor_dip_breakism
 							add_ideas = kor_inn_totalism
 							add_ideas = kor_pol_leadism
 							add_ideas = kor_mil_tongjepa
@@ -873,24 +872,20 @@ focus_tree = {
 		}
 		x = 72
 		y = 11
-			cancelable = no
-			available = {
-					custom_trigger_tooltip = {
-							tooltip = TOOLTIP_TERRITORY_KOR
-							has_completed_focus = kor_remove_strike
-							has_idea = KOR_not_go_outside_2
-						}
-				}
-			completion_reward = {
-					KOR = {
-
-}
-					add_threat = 3
-					country_event = {
-							id = korea.73
-						}
-				}
-
+		cancelable = no
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = TOOLTIP_TERRITORY_KOR
+				has_completed_focus = kor_remove_strike
+				has_idea = KOR_not_go_outside_2
+			}
+		}
+		completion_reward = {
+			add_threat = 3
+			country_event = {
+				id = korea.73
+			}
+		}
 	}
 	focus = {
 		id = KOR_all_claim
@@ -901,46 +896,84 @@ focus_tree = {
 		}
 		x = 70
 		y = 12
-			cancelable = no
-			available = {
-					has_idea = KOR_not_go_outside_2
+		cancelable = no
+		available = {
+			has_idea = KOR_not_go_outside_2
+		}
+		completion_reward = {
+			add_ideas = kor_dip_breakism
+			hidden_effect = {
+				country_event = {
+					id = korea.270
 				}
-			completion_reward = {
-					add_political_power = 150
-					add_stability = 0.05
-					add_war_support = 0.05
-					hidden_effect = {
-							country_event = {
-									id = korea.270
-								}
-						}
-				}
-
+			}
+		}
 	}
 	focus = {
 		id = KOR_plan_manchu
-		icon = GFX_focus_KOR_manchu_plan
-		cost = 8.00
+		icon = GFX_focus_KOR_annex_another
+		cost = 5.00
 		prerequisite = {
 			focus = kor_territory_expansion
 		}
 		x = 72
 		y = 12
-			cancelable = no
-			completion_reward = {
+		cancelable = no
+		completion_reward = {
+			custom_effect_tooltip = KOR_manchu_plan_tt
+			hidden_effect = {
+				KMN = {
+					set_country_flag = FLAG_KMN_FUT
+					set_cosmetic_tag = KMN_FUT
+					annex_country = {
+						target = KYH	
+						transfer_troops = yes
+					}
+					add_state_core = 560
+					add_state_core = 561
+					add_state_core = 657
+					transfer_state = 560
+					transfer_state = 561
+					transfer_state = 657
+					set_party_name = {
+						ideology = democratic
+						long_name = "KMN_FUT_democratic_party_long"
+						name = "KMN_FUT_democratic_party"
+					}
+					set_party_name = {
+						ideology = neutrality
+						long_name = "KMN_FUT_neutrality_party_long"
+						name = "KMN_FUT_neutrality_party"
+					}
+					set_party_name = {
+						ideology = fascism
+						long_name = "KMN_FUT_fascism_party_long"
+						name = "KMN_FUT_fascism_party"
+					}
+				}
+				annex_country = {
+					target = KHK
+					transfer_troops = yes
+				}
+				transfer_state = 408
+				transfer_state = 409
 				every_state = {
 					limit = {
-						is_core_of = KMN
+						is_core_of = KYH
 					}
-					remove_claim_by = ZLC
-					remove_claim_by = CHI
+					remove_core_of = KYH
 				}
-				hidden_effect = {
-					country_event = {
-						id = korea.269
-					}
+				KHK = {
+					remove_state_core = 536
+				}
+				add_state_core = 408
+				add_state_core = 409
+				add_state_core = 536
+				country_event = {
+					id = korea.269
 				}
 			}
+		}
 
 	}
 	focus = {
@@ -1009,6 +1042,8 @@ focus_tree = {
 		id = kor_tsushima
 		icon = GFX_focus_KOR_fight_with_china_fascism
 		cost = 10.00
+		will_lead_to_war_with = ZLC
+		will_lead_to_war_with = CHI
 		prerequisite = {
 			focus = KOR_plan_manchu
 		}
@@ -1267,7 +1302,7 @@ focus_tree = {
 	focus = {
 		id = KOR_allied_with_russia
 		icon = GFX_focus_KOR_peace_sov
-		cost = 5.00
+		cost = 8.00
 		prerequisite = {
 			focus = kor_territory_expansion
 		}
@@ -1294,7 +1329,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KOR_give_me_the_manchu
-		icon = GFX_focus_KOR_annex_another
+		icon = GFX_focus_KOR_manchu_plan
 		cost = 5.00
 		prerequisite = {
 			focus = KOR_allied_with_russia
@@ -1308,69 +1343,14 @@ focus_tree = {
 		available = {}
 		bypass = {}
 		completion_reward = {
-			custom_effect_tooltip = KOR_manchu_plan_tt
+			every_state = {
+				limit = {
+					is_core_of = KMN
+				}
+				remove_claim_by = ZLC
+				remove_claim_by = CHI
+			}
 			hidden_effect = {
-				KMN = {
-					set_country_flag = FLAG_KMN_FUT
-					set_cosmetic_tag = KMN_FUT
-					annex_country = {
-						target = KYH	
-						transfer_troops = yes
-					}
-					add_state_core = 560
-					add_state_core = 561
-					add_state_core = 657
-					transfer_state = 560
-					transfer_state = 561
-					transfer_state = 657
-					set_party_name = {
-						ideology = democratic
-						long_name = "KMN_FUT_democratic_party_long"
-						name = "KMN_FUT_democratic_party"
-					}
-					set_party_name = {
-						ideology = neutrality
-						long_name = "KMN_FUT_neutrality_party_long"
-						name = "KMN_FUT_neutrality_party"
-					}
-					set_party_name = {
-						ideology = fascism
-						long_name = "KMN_FUT_fascism_party_long"
-						name = "KMN_FUT_fascism_party"
-					}
-				}
-				annex_country = {
-					target = KHK
-					transfer_troops = yes
-				}
-				annex_country = {
-					target = KMN
-					transfer_troops = yes
-				}
-				every_state = {
-					limit = {
-						is_core_of = KYH
-					}
-					remove_core_of = KYH
-				}
-				KHK = {
-					remove_state_core = 536
-				}
-				#북만주
-				add_state_core = 1059
-				add_state_core = 1060
-				add_state_core = 610
-				add_state_core = 714
-				add_state_core = 715
-				add_state_core = 761
-				#연해주
-				add_state_core = 560
-				add_state_core = 561
-				add_state_core = 657
-				add_state_core = 408
-				add_state_core = 409
-				#북해도
-				add_state_core = 536
 				country_event = {
 					id = korea.304
 				}

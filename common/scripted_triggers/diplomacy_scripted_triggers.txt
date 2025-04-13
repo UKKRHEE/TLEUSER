@@ -1143,9 +1143,28 @@ DIPLOMACY_GENERATE_WARGOAL_ENABLE_TRIGGER = {
 				}
 			}
 		}
-		custom_trigger_tooltip = {
-			tooltip = RULE_WARGOAL_BLOCKED_HISTORICAL_TT
-			always = no
+		if = {
+			limit = {
+				NOT = {
+					original_tag = GER
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = RULE_WARGOAL_BLOCKED_HISTORICAL_TT
+				always = no
+			}
+		}
+		if = {
+			limit = {
+				original_tag = GER
+				NOT = {
+					has_global_flag = GER_OP_HITLER
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = RULE_WARGOAL_BLOCKED_HISTORICAL_TT
+				always = no
+			}
 		}
 	}
 	if = {
