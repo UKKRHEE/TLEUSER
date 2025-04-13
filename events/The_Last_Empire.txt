@@ -300,7 +300,7 @@ country_event = { #박중양 루트
     is_triggered_only = yes
 	
 	option = { #
-		name = thelastempire.10.a
+		name = thelastempire.11.a
 	}
 }
 country_event = { #안창호 루트
