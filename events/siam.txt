@@ -2129,3 +2129,27 @@ country_event = { #난 국명 결벽증 있어서 이런거 하면 껄끄럽다�
 		}
 	}
 }
+
+country_event = { #난 국명 결벽증 있어서 이런거 하면 껄끄럽다이말이야
+	id = siam.71
+	title = siam.71.t
+	desc = siam.71.d
+	picture = GFX_siam_phibun
+	
+	hidden = yes
+	fire_only_once = yes
+	
+	trigger = {
+		tag = RAJ
+		RAJ = {
+			is_ai = no
+		}
+	}
+	
+	option = {
+		name = siam.71.a
+		RAJ = {
+			load_focus_tree = TLE_indian_focus
+		}
+	}
+}

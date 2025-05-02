@@ -492,6 +492,7 @@ instant_effect = {
 			type = infantry_equipment_1
 			creator = "KOR"
 		}
+		industrial_manufacturer = mio:busanchobyung
 		requested_factories = 5
 		progress = 0.1
 		efficiency = 100
@@ -503,6 +504,7 @@ instant_effect = {
 			type = support_equipment_1
 			creator = "KOR" 
 		}
+		industrial_manufacturer = mio:samsung_mulsan
 		requested_factories = 2
 		progress = 0.3
 		efficiency = 100
@@ -514,6 +516,7 @@ instant_effect = {
 			type = artillery_equipment_1
 			creator = "KOR" 
 		}
+		industrial_manufacturer = mio:samsung
 		requested_factories = 2
 		progress = 0.3
 		efficiency = 100
@@ -526,6 +529,7 @@ instant_effect = {
 			creator = "KOR" 
 			version_name = "42식 경전차 흑표"
 		}
+		industrial_manufacturer = mio:daeseon
 		requested_factories = 2
 		progress = 0.4
 		efficiency = 50
@@ -537,6 +541,7 @@ instant_effect = {
 			type = motorized_equipment_1
 			creator = "KOR" 
 		}
+		industrial_manufacturer = mio:hwangseong_car
 		requested_factories = 2
 		progress = 0.4
 		efficiency = 100

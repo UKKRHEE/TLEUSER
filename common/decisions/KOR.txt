@@ -5347,7 +5347,7 @@ KOR_third_plan_doryun = {
 			}
 		}
 
-		days_mission_timeout = 30
+		days_mission_timeout = 15
 
 		fire_only_once = yes
 		
@@ -5540,6 +5540,10 @@ KOR_third_plan_doryun = {
 			}
 		}
 		available = {
+			NOT = {
+				has_global_flag = TLE_KOREA_IS_DEFEATED			
+				has_global_flag = TLE_KOREA_WON
+			}
 			has_country_flag = KOR_won_in_burma
 			AND = {
 				OR = {
@@ -8884,6 +8888,54 @@ KOR_revolutionary_war = {
 					}
 				}	
 				set_demilitarized_zone = no
+			}
+		}
+	}
+}
+prospect_for_resources = {
+	KOR_pine_wood_oil = {
+		icon = GFX_decision_oil
+
+		allowed = {
+			original_tag = KOR
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1017
+			}
+		}
+		available = {
+			has_tech = excavation1
+			1017 = { is_fully_controlled_by = ROOT }
+			date > 1944.1.1
+		}
+
+		cost = 25
+		days_remove = 60
+		
+		modifier = {
+			civilian_factory_use = 5
+		}	
+		fire_only_once = yes
+
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 5
+				has_political_power > 100
+			}
+			modifier = {
+				factor = 10
+				fuel_ratio < 0.5
+			}
+		}
+		remove_effect = {
+			log = "[GetLogRoot]: Decision remove KOR_pine_wood_oil"
+			1017 = {
+				add_resource = {
+					type = oil
+					amount = 3
+				}
 			}
 		}
 	}

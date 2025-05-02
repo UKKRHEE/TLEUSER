@@ -193,6 +193,45 @@ on_actions = {
 			}
 			if = {
 				limit = {
+					tag = KMN
+					has_cosmetic_tag = KMN_REP
+					has_war_with = KOR
+				}
+				every_country = {
+					limit = {
+						has_war_with = KMN
+					}
+					white_peace = KMN
+				}
+				KOR = {
+					annex_country = {
+						target = KMN
+						transfer_troops = no
+					}
+					transfer_state = 745 #비사
+					transfer_state = 716 #심요북도
+					transfer_state = 1032 #심요남도
+					transfer_state = 328 #환길북도
+					transfer_state = 1031 #환길남도
+					transfer_state = 717 #용계북도
+					transfer_state = 1030 #용계남도
+					
+					add_state_core = 745 #비사
+					add_state_core = 716 #심요북도
+					add_state_core = 1032 #심요남도
+					add_state_core = 328 #환길북도
+					add_state_core = 1031 #환길남도
+					add_state_core = 717 #용계북도
+					add_state_core = 1030 #용계남도
+					
+					
+					country_event = {
+						id = korea.800
+					}
+				}
+			}
+			if = {
+				limit = {
 					tag = CH1
 					has_war_with = KOR
 					has_global_flag = GLOB_PCY_aiduf_attack
@@ -2566,10 +2605,7 @@ on_actions = {
 						has_global_flag = KOR_nuke_2
 					}
 				}
-				EOK = {
-					set_faction_leader = yes
-				}
-				KOR_hangbok_event = yes
+				KOR_hangbok_event_2 = yes
 				KOR = {
 					remove_power_balance = { id = KOR_balance }
 				}

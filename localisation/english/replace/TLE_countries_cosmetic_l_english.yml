@@ -334,6 +334,10 @@
  KHK_IND_DEF:0 "홋카이도 민족해방위원회"
  KHK_IND_ADJ:0 "홋카이도"
 
+ KMN_GOV_RESTORED:0 "만주국"
+ KMN_GOV_RESTORED_DEF:0 "만주국"
+ KMN_GOV_RESTORED_ADJ:0 "만주"
+
  KMN_IND:0 "대한제국 만주정부"
  KMN_IND_DEF:0 "대한제국 만주정부"
  KMN_IND_ADJ:0 "만주"

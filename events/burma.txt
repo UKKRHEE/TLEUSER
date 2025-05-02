@@ -7,12 +7,7 @@ country_event = {
 	desc = burma.1.d
 	picture = gfx
 	
-	trigger = {
-		TAG = RAJ
-		date > 1937.4.1
-		date < 1939.1.1
-        country_exists = RAJ
-	}
+	is_triggered_only = yes
 
 	mean_time_to_happen = {
 		days = 1

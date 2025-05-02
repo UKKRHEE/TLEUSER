@@ -3219,6 +3219,51 @@ characters={
 			logistics_skill = 1
 		}
 	}
+	KOR_eou_dam = {
+		name=KOR_eou_dam
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_KOR_eou_dam.png"
+				small="gfx/interface/ideas/KOR/advisors/idea_KOR_eou_dam.png"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = eou_dam
+			ledger = army
+			allowed = {
+				original_tag = KOR
+			}
+			available = {
+				if = {
+					limit = {
+						has_cosmetic_tag = KOR_GHQ
+					}
+					NOT = {
+						has_cosmetic_tag = KOR_GHQ
+					}
+				}
+			}
+			visible = {
+				NOT = {
+					has_country_flag = TLE_THE_WAR_IS_ENDED
+				}
+			}
+		    traits = { army_artillery_2 }
+		
+		    ai_will_do = {
+		    	factor = 1
+		    }
+		}	
+		corps_commander={
+			traits = { KOR_tongjepa politically_connected career_officer skilled_staffer trickster }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
 	KOR_park_yongman = {
 		name=KOR_park_yongman
 		portraits={
@@ -3257,34 +3302,6 @@ characters={
 				small="gfx/interface/ideas/KOR/advisors/idea_KOR_lee_eungjun.png"
 			}
 		}
-		advisor={
-			slot = high_command
-			idea_token = lee_eungjun
-			ledger = army
-			allowed = {
-				original_tag = KOR
-			}
-			available = {
-				if = {
-					limit = {
-						has_cosmetic_tag = KOR_GHQ
-					}
-					NOT = {
-						has_cosmetic_tag = KOR_GHQ
-					}
-				}
-			}
-			visible = {
-				NOT = {
-					has_country_flag = TLE_THE_WAR_IS_ENDED
-				}
-			}
-		    traits = { army_artillery_2 }
-		
-		    ai_will_do = {
-		    	factor = 1
-		    }
-		}	
 		corps_commander={
 			traits = { KOR_tongjepa war_hero infantry_officer }
 			skill = 3
@@ -3292,6 +3309,24 @@ characters={
 			defense_skill = 3
 			planning_skill = 2
 			logistics_skill = 2
+		}
+	}
+	KOR_han_changgeol = {
+		name=KOR_han_changgeol
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_KOR_han_changgeol.png"
+				small="gfx/interface/ideas/KOR/advisors/idea_KOR_han_changgeol.png"
+			}
+		}
+		
+		corps_commander={
+			traits = { KOR_hwangdopa trait_reckless war_hero inflexible_strategist organizer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
 		}
 	}
 	KOR_ahn_changnam = {

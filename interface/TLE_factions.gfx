@@ -1,0 +1,6 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_Faction_Kyoeiken"
+		texturefile = "gfx/interface/factions/GFX_Faction_Kyoeiken.png"
+	}
+}

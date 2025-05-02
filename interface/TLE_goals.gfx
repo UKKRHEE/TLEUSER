@@ -2615,7 +2615,60 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/JAP/focus_JAP_special_forces.dds"     
 	}
 	SpriteType = {
-		name = "GFX_focus_RAJ_british_india"
-		texturefile = "gfx/interface/goals/RAJ/RAJ_british_india.png"     
+		name = "GFX_focus_TLE_RAJ_the_british_raj"
+		texturefile = "gfx/interface/goals/RAJ/focus_TLE_RAJ_the_british_raj.png"     
+	}
+	SpriteType = {
+		name = "GFX_focus_TLE_RAJ_the_new_king"
+		texturefile = "gfx/interface/goals/RAJ/focus_TLE_RAJ_the_new_king.png"     
+	}
+	SpriteType = {
+		name = "GFX_focus_TLE_RAJ_the_independence_raj"
+		texturefile = "gfx/interface/goals/RAJ/focus_TLE_RAJ_the_independence_raj.png"     
+	}
+	SpriteType = {
+		name = "GFX_focus_TLE_RAJ_the_military"
+		texturefile = "gfx/interface/goals/RAJ/focus_TLE_RAJ_the_military.png"     
+	}
+	SpriteType = {
+		name = "GFX_focus_TLE_RAJ_the_road_to_independence"
+		texturefile = "gfx/interface/goals/RAJ/focus_TLE_RAJ_the_road_to_independence.png"     
+	}
+	SpriteType = {
+		name = "GFX_focus_TLE_RAJ_british_burma"
+		texturefile = "gfx/interface/goals/RAJ/focus_TLE_RAJ_british_burma.png"     
+	}
+	SpriteType = {
+		name = "GFX_focus_TLE_RAJ_management"
+		texturefile = "gfx/interface/goals/RAJ/focus_TLE_RAJ_management.png"     
+	}
+	SpriteType = {
+		name = "GFX_focus_TLE_RAJ_korean_tiger"
+		texturefile = "gfx/interface/goals/RAJ/focus_TLE_RAJ_korean_tiger.png"     
+	}
+	SpriteType = {
+		name = "GFX_focus_TLE_RAJ_korean_invasion"
+		texturefile = "gfx/interface/goals/RAJ/focus_TLE_RAJ_korean_invasion.png"     
+	}
+	SpriteType = {
+		name = "GFX_focus_WIP"
+		texturefile = "gfx/interface/goals/RAJ/focus_WIP.png"     
+	}
+	#해군중점용
+	SpriteType = {
+		name = "GFX_focus_KOR_marine"
+		texturefile = "gfx/interface/goals/TLE/KOR_marine.png"   
+	}	
+	SpriteType = {
+		name = "GFX_focus_KOR_naval_aircraft"
+		texturefile = "gfx/interface/goals/TLE/KOR_naval_aircraft.png"   
+	}	
+	SpriteType = {
+		name = "GFX_focus_KOR_more_aircraft_carrier"
+		texturefile = "gfx/interface/goals/TLE/KOR_more_aircraft_carrier.png"  
+	}	
+	SpriteType = {
+		name = "GFX_focus_KOR_dangun"
+		texturefile = "gfx/interface/goals/TLE/KOR_dangun.png"     		
 	}
 }	

@@ -521,6 +521,10 @@ focus_tree = {
 									id = korea.68
 									days = 3
 								}
+							country_event = {
+									id = korea.4001
+									days = 1
+								}
 						}
 				}
 
@@ -1476,7 +1480,7 @@ focus_tree = {
 		prerequisite = {
 			focus = kor_korean_lebensraum
 		}
-		x = 81
+		x = 82
 		y = 11
 			available = {
 				}
@@ -1617,6 +1621,7 @@ focus_tree = {
 				}
 
 	}
+	#해군중점
 	focus = {
 		id = kor_naval_reform
 		icon = GFX_goal_KOR_Navy
@@ -1624,24 +1629,30 @@ focus_tree = {
 		prerequisite = {
 			focus = kor_military
 		}
-		x = 81
+		x = 82
 		y = 12
 			available = {
-					if = {
-							limit = {
-									has_country_flag = FLAG_KOR_FASCIST_ROUTE
-								}
-							has_completed_focus = KOR_all_claim
-						}
+				if = {
+					limit = {
+						has_country_flag = FLAG_KOR_FASCIST_ROUTE
+					}
+					has_completed_focus = KOR_all_claim
 				}
+			}
 			completion_reward = {
-					navy_experience = 100
+				navy_experience = 100
+				add_doctrine_cost_reduction = {
+					name = kor_naval_reform
+					category = naval_doctrine
+					cost_reduction = 0.5
+					uses = 2
 				}
-
+			}
 	}
+	
 	focus = {
-		id = kor_great_navy
-		icon = GFX_goal_bluewater_navy
+		id = kor_aircraft_carrier
+		icon = GFX_focus_TLE_carrier_aircraft
 		cost = 8.00
 		prerequisite = {
 			focus = kor_naval_reform
@@ -1649,26 +1660,13 @@ focus_tree = {
 		x = 81
 		y = 13
 			completion_reward = {
-				
-				
-				if = {
-					limit = {
-						controls_province = 1054 #진해
-						1091 = { #경상남도
-							is_owned_and_controlled_by = ROOT
-							can_construct_building = naval_facility
-						}
-					}
-					1091 = { #경상남도
-						add_building_construction = {
-							type = naval_facility
-							level = 1
-							province = 1054 #진해
-							instant_build = yes
-						}
-					}
+				navy_experience = 5
+				add_tech_bonus = {
+					bonus = 1
+					ahead_reduction = 1
+					uses = 2
+					category = cv_tech
 				}
-				
 				if = {
 					limit = {
 						has_dlc = "Arms Against Tyranny"
@@ -1695,44 +1693,79 @@ focus_tree = {
 						}
 						add_political_power = 150
 					}
-				
-				
-				}
-				
+				}	
 			}
-
 	}
+	
 	focus = {
-		id = kor_aircraft_carrier
-		icon = GFX_focus_TLE_carrier_aircraft
+		id = kor_jinhae_naval_Arsenal
+		icon = GFX_focus_kor_industrial_complex_haeju
 		cost = 8.00
 		prerequisite = {
-			focus = kor_great_navy
+			focus = kor_naval_reform
 		}
-		x = 81
-		y = 14
+		x = 83
+		y = 13
 			completion_reward = {
-					navy_experience = 5
-					1091 = {
-							add_extra_state_shared_building_slots = 1
-							add_building_construction = {
-									type = dockyard
-									level = 1
-									instant_build = yes
-								}
+				1091 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+				}				
+				if = {
+					limit = {
+						controls_province = 1054 #진해
+						1091 = { #경상남도
+							is_owned_and_controlled_by = ROOT
+							can_construct_building = naval_facility
 						}
-					add_tech_bonus = {
-							bonus = 1
-							ahead_reduction = 1
-							uses = 2
-							category = cv_tech
+					}
+					1091 = { #경상남도
+						add_building_construction = {
+							type = naval_facility
+							level = 1
+							province = 1054 #진해
+							instant_build = yes
 						}
-				}
-
+					}
+				}	
+			}
 	}
 	focus = {
-		id = kor_Destroyer
-		icon = GFX_goal_generic_naval_destroyer2
+		id = kor_marine
+		icon = GFX_focus_KOR_marine
+		cost = 8.00
+		prerequisite = {
+			focus = kor_aircraft_carrier focus = kor_jinhae_naval_Arsenal
+		}
+		x = 82
+		y = 14
+			completion_reward = {
+				add_tech_bonus = {
+					name = kor_marine
+					bonus = 1
+					uses = 2
+					category = marine_tech
+					category = tp_tech
+				}
+				if = {
+					limit = { has_dlc = "Arms Against Tyranny" }					
+					add_doctrine_cost_reduction = {
+						name = kor_marine
+						cost_reduction = 0.5
+						uses = 2
+						category = cat_marines_doctrine
+					}
+				}
+			}
+	}
+	
+	focus = {
+		id = kor_advanced_cv_aircraft
+		icon = GFX_focus_KOR_naval_aircraft
 		cost = 8.00
 		prerequisite = {
 			focus = kor_aircraft_carrier
@@ -1740,15 +1773,263 @@ focus_tree = {
 		x = 81
 		y = 15
 			completion_reward = {
+				if = {
+					limit = { has_dlc = "By Blood Alone" }
+					set_technology = {
+						armor_piercing_bombs = 1
+					}
 					add_tech_bonus = {
-							name = kor_Destroyer
-							bonus = 1
-							uses = 2
-							category = dd_tech
-						}
+						name = kor_advanced_cv_aircraft
+						bonus = 0.25
+						uses = 2
+						category = air_equipment
+					}
+					
 				}
+				else = {
+					add_tech_bonus = {
+						name = kor_advanced_cv_aircraft
+						bonus = 1
+						ahead_reduction = 1
+						uses = 1
+						category = naval_air
+					}
+				}
+			}
 
 	}
+	
+	focus = {
+		id = kor_shipbuilding_tech
+		icon = GFX_goal_bluewater_navy
+		cost = 8.00
+		prerequisite = {
+			focus = kor_jinhae_naval_Arsenal
+		}
+		x = 83
+		y = 15
+			completion_reward = {
+				if = {					
+					limit = { has_dlc = "Man the Guns" }
+					add_tech_bonus = {
+						name = kor_shipbuilding_tech
+						bonus = 0.75
+						uses = 2
+						category = ship_modules_tech
+					}
+				}
+				else = {
+					add_tech_bonus = {
+						name = kor_shipbuilding_tech
+						bonus = 0.5
+						uses = 2
+						category = naval_equipment			
+					}
+				}
+			}
+	}
+	
+	focus = {
+		id = kor_Destroyer
+		icon = GFX_goal_generic_naval_destroyer2
+		cost = 8.00
+		prerequisite = {
+			focus = kor_shipbuilding_tech focus = kor_advanced_cv_aircraft
+		}
+		x = 82
+		y = 16
+			completion_reward = {
+				add_tech_bonus = {
+					name = kor_Destroyer
+					bonus = 1
+					uses = 2
+					category = dd_tech
+				}
+			}
+	}
+	focus = {
+		id = kor_more_aircraftcarrier
+		icon = GFX_focus_KOR_more_aircraft_carrier
+		cost = 8.00
+		prerequisite = {focus = kor_advanced_cv_aircraft}
+		prerequisite = {focus = kor_shipbuilding_tech}
+		available = {
+			if = {					
+				limit = { has_dlc = "Man the Guns" }
+				has_tech = improved_ship_hull_carrier
+			}
+			else = {
+				has_tech = improved_carrier
+			}
+		}
+		x = 81
+		y = 17
+			completion_reward = {
+				custom_effect_tooltip = KOR_more_CV_tt
+				hidden_effect = {
+					if = {
+						limit = { has_dlc = "Man the Guns" }
+						create_equipment_variant = {
+							name = "양후공 이종무 급"				
+							name_group = KOR_CV_HISTORICAL
+							type = ship_hull_carrier_2
+							modules = {
+								fixed_ship_deck_slot_1 = ship_deck_space
+								fixed_ship_deck_slot_2 = ship_deck_space
+								fixed_ship_anti_air_slot = ship_anti_air_2
+								fixed_ship_engine_slot = carrier_ship_engine_2
+								fixed_ship_secondaries_slot = empty
+								front_1_custom_slot = ship_deck_space
+								mid_1_custom_slot = ship_deck_space
+								mid_2_custom_slot = ship_armor_carrier_deck
+							}
+							design_team = mio:dongmyong
+						}
+						add_equipment_production = {
+							equipment = {
+								type = ship_hull_carrier_2
+								creator = "KOR"
+								version_name = "양후공 이종무 급"
+							}
+							name = "IKN 양후공 이종무"
+							requested_factories = 1
+							progress = 0.75
+							amount = 1
+							industrial_manufacturer = mio:dongmyong
+						}						
+						add_equipment_production = {
+							equipment = {
+								type = ship_hull_carrier_2
+								creator = "KOR"
+								version_name = "양후공 이종무 급"
+							}
+							name = "IKN 충장공 어재연"
+							requested_factories = 1
+							progress = 0.50
+							amount = 1
+							industrial_manufacturer = mio:dongmyong
+						}
+					}
+					else = {
+						create_equipment_variant = {
+							name = "양후공 이종무 급"
+							type = carrier_3
+							parent_version = 0
+							upgrades = {
+								ship_reliability_upgrade = 2
+								ship_engine_upgrade = 3
+							}
+						}	
+						add_equipment_production = {
+							equipment = {
+								type = carrier_3
+								creator = "KOR"
+								version_name = "양후공 이종무 급"
+							}	
+							name = "IKN 양후공 이종무"
+							requested_factories = 1
+							progress = 0.75
+							amount = 1
+							industrial_manufacturer = mio:dongmyong
+						}						
+						add_equipment_production = {
+							equipment = {
+								type = carrier_3
+								creator = "KOR"
+								version_name = "양후공 이종무 급"
+							}	
+							name = "IKN 충장공 어재연"
+							requested_factories = 1
+							progress = 0.50
+							amount = 1
+							industrial_manufacturer = mio:dongmyong
+						}					
+					}
+				}
+			}					
+	}
+	focus = {
+		id = kor_Dangun_project
+		icon = GFX_focus_KOR_dangun
+		cost = 8.00
+		prerequisite = {focus = kor_advanced_cv_aircraft}
+		prerequisite = {focus = kor_shipbuilding_tech}
+		x = 83
+		y = 17
+			completion_reward = {
+				complete_special_project = sp:sp_naval_super_heavy_battleship
+				if = {
+					limit = {
+						not = { has_dlc = "Man the Guns" }
+					}
+					add_tech_bonus = {
+						name = kor_Dangun_project
+						bonus = 2.0
+						uses = 1
+						category = shbb_tech	
+					}
+				}			
+				else = {
+					custom_effect_tooltip = KOR_Dangun_tt
+					hidden_effect = {
+						create_equipment_variant = {
+							name = "단군급"
+							type = ship_hull_super_heavy_1
+							name_group = KOR_NATURE
+							parent_version = 0
+							allow_without_tech = yes #Makes no difference since focus grants appropriate tech (above), but it improves tooltip
+							modules = {
+								fixed_ship_battery_slot = ship_super_heavy_battery_1
+								fixed_ship_anti_air_slot = ship_anti_air_2
+								fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+								fixed_ship_radar_slot = empty
+								fixed_ship_engine_slot = heavy_ship_engine_2
+								fixed_ship_secondaries_slot = dp_ship_secondaries_1
+								fixed_ship_armor_slot = ship_armor_bc_2
+								front_1_custom_slot = empty
+								front_2_custom_slot = ship_super_heavy_battery_1
+								mid_1_custom_slot = dp_ship_secondaries_2
+								mid_2_custom_slot = ship_anti_air_2
+								mid_3_custom_slot = ship_anti_air_2
+								rear_1_custom_slot = empty
+								rear_2_custom_slot = ship_airplane_launcher_1
+							}
+							design_team = mio:daehan_dockyard
+						}
+						add_equipment_production = {
+							equipment = {
+								type = ship_hull_super_heavy_1
+								creator = "KOR"
+								version_name = "단군급"
+							}
+							name = "IKN 단군"
+							requested_factories = 5
+							progress = 0.5
+							amount = 1
+							industrial_manufacturer = mio:daehan_dockyard
+						}
+						add_equipment_production = {
+							equipment = {
+								type = ship_hull_super_heavy_1
+								creator = "KOR"
+								version_name = "단군급"
+							}
+							name = "IKN 왕검"
+							requested_factories = 5
+							progress = 0.3
+							amount = 1
+							industrial_manufacturer = mio:daehan_dockyard
+						}
+					}
+				}
+			}
+	}
+	
+	
+	
+	
+	
+	#공군중점
 	focus = {
 		id = kor_air_reform
 		icon = GFX_goal_KOR_Airforce
@@ -1756,7 +2037,7 @@ focus_tree = {
 		prerequisite = {
 			focus = kor_military
 		}
-		x = 84
+		x = 86
 		y = 12
 			available = {
 					if = {
@@ -1778,7 +2059,7 @@ focus_tree = {
 		prerequisite = {
 			focus = kor_air_reform
 		}
-		x = 83
+		x = 85
 		y = 13
 			completion_reward = {
 					add_tech_bonus = {
@@ -1792,6 +2073,25 @@ focus_tree = {
 				}
 
 	}
+	
+	focus = {
+		id = kor_airborne_force
+		icon = GFX_focus_eok_air
+		cost = 8.00
+		prerequisite = {
+			focus = kor_Fighter
+		}
+		x = 87
+		y = 13
+			completion_reward = {
+					add_tech_bonus = {
+							name = kor_airborne_force
+							bonus = 1.0
+							uses = 2
+							category = para_tech
+						}
+				}
+	}
 	focus = {
 		id = kor_CSA
 		icon = GFX_goal_generic_air_CAS_new
@@ -1799,7 +2099,7 @@ focus_tree = {
 		prerequisite = {
 			focus = kor_Fighter
 		}
-		x = 83
+		x = 85
 		y = 14
 			completion_reward = {
 					add_tech_bonus = {
@@ -1819,7 +2119,7 @@ focus_tree = {
 		prerequisite = {
 			focus = kor_air_reform
 		}
-		x = 85
+		x = 87
 		y = 14
 			completion_reward = {
 					add_tech_bonus = {
@@ -1838,7 +2138,7 @@ focus_tree = {
 		prerequisite = {
 			focus = kor_bomber
 		}
-		x = 84
+		x = 86
 		y = 15
 			completion_reward = {
 					add_tech_bonus = {
@@ -2913,25 +3213,7 @@ focus_tree = {
 				}
 
 	}
-	focus = {
-		id = kor_airborne_force
-		icon = GFX_focus_eok_air
-		cost = 8.00
-		prerequisite = {
-			focus = kor_Fighter
-		}
-		x = 85
-		y = 13
-			completion_reward = {
-					add_tech_bonus = {
-							name = kor_airborne_force
-							bonus = 1.0
-							uses = 2
-							category = para_tech
-						}
-				}
 
-	}
 	focus = {
 		id = KOR_refind_the_economic_crisis
 		icon = GFX_focus_KOR_refind_the_economic_crisis

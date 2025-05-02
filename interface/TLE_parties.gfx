@@ -235,6 +235,10 @@ spriteTypes = {
 		name = "GFX_ideology_korean_oligarchism"
 		texturefile = "gfx/interface/ideologies/KOR_imperial.png"
 	}
+	spriteType = {
+		name = "GFX_ideology_daegongism"
+		texturefile = "gfx/interface/ideologies/KOR_imperial.png"
+	}
 
 	spriteType = {
 		name = "GFX_ideology_authsocialism"

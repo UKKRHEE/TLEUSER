@@ -141,18 +141,7 @@ country_event = {
 	desc = south.10.d
 	picture = gfx
 	
-	trigger = {
-		TAG = KOR
-		NZL = {
-			has_capitulated = yes
-		}
-		has_completed_focus = KOR_the_ins_focus
-        country_exists = AST
-	}
-
-	mean_time_to_happen = {
-		days = 1
-	}
+	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = {
@@ -190,6 +179,7 @@ country_event = {
 			add_ideas = { ast_threat }
 			load_focus_tree = korean_government
 			leave_faction = yes
+			set_country_flag = TLE_AST_korean_threat_flag
 		}
 		ENG = {
 			end_puppet = AST
@@ -217,18 +207,21 @@ country_event = {
 	
 	option = {
 		name = south.12.a
+		hidden_effect = {
+			KOR = {
+				transfer_state = 523
+				transfer_state = 634
+				transfer_state = 635
+				transfer_state = 737
+				transfer_state = 979
+			}
+			518 = {
+				set_demilitarized_zone = yes
+			}
+		}
 		KOR = {
-			transfer_state = 284
-			transfer_state = 523
-			transfer_state = 634
-			transfer_state = 635
-			transfer_state = 723
-			transfer_state = 737
 			transfer_state = 1093
 			transfer_state = 1096
-		}
-		518 = {
-			set_demilitarized_zone = yes
 		}
 	}
 }
@@ -766,7 +759,7 @@ country_event = {
 	option = {
 		name = south.32.a
 		RAJ = {
-			add_ideas = TLE_raj_buff
+			set_country_flag = TLE_RAJ_bengal_famine
 			load_oob = "RAJ_KOR"
 		}
 	}
@@ -803,6 +796,9 @@ country_event = {
 					transfer_state = 985
 					transfer_state = 990
 				}
+			}
+			TIB = {
+				transfer_state = 434
 			}
 			AFG = {
 				transfer_state = 445

@@ -1,0 +1,26 @@
+characters={
+	TJP_emperor_hirohito={
+		name="TJP_emperor_hirohito"
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Portrait_JAP_hirohito_emperor.png"
+			}
+		}
+		country_leader={
+			ideology=showaism
+			traits={ emperor_showa }
+		}
+		country_leader={
+			ideology=conservatism
+			traits={ emperor_showa }
+		}
+		country_leader={
+			ideology=marxism
+			traits={ emperor_showa }
+		}
+		country_leader={
+			ideology=rexism
+			traits={ emperor_showa }
+		}
+	}
+}

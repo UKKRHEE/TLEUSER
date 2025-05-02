@@ -133,6 +133,21 @@ KOR_SS_HISTORICAL = {
 	ordered = {
 	}
 }
+### 순양잠수함 ###
+KOR_CSS_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CRUISER_SUBMARINES
+
+	for_countries = { KOR }
+
+	type = ship
+	ship_types = { ship_hull_cruiser_submarine submarine }
+	
+	prefix = "IKN "
+	fallback_name = "순잠-%d"
+	
+	ordered = {
+	}
+}
 
 
 ### 도 ###

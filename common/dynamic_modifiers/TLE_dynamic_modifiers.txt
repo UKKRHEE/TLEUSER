@@ -31,7 +31,7 @@ CHI_defence_the_korea = {
 	icon = GFX_unplanned_offensive
 	air_cas_present_factor = -0.75
 	army_attack_factor = -0.9
-	army_speed_factor = -0.75
+	army_speed_factor = -0.65
 	ground_attack_factor = -0.75
 	local_org_regain = -0.4
 	
@@ -41,14 +41,14 @@ CHI_defence_the_korea = {
 	state_resources_factor = -0.5
 	local_manpower = -0.6
 	local_non_core_supply_impact_factor = 0.9
-	disable_strategic_redeployment = 1
+	#disable_strategic_redeployment = 1
 }	
 CHI_defence_the_korea_2 = {
 	enable = { always = yes }
 	icon = GFX_unplanned_offensive
 	air_cas_present_factor = -0.6
 	army_attack_factor = -0.8
-	army_speed_factor = -0.6
+	army_speed_factor = -0.5
 	ground_attack_factor = -0.6
 	local_org_regain = -0.4
 	
@@ -58,14 +58,14 @@ CHI_defence_the_korea_2 = {
 	local_manpower = -0.4
 	local_non_core_supply_impact_factor = 0.8
 	state_resources_factor = -0.33
-	disable_strategic_redeployment = 1
+	#disable_strategic_redeployment = 1
 }	
 CHI_defence_the_korea_3 = {
 	enable = { always = yes }
 	icon = GFX_unplanned_offensive
 	air_cas_present_factor = -0.5
 	army_attack_factor = -0.7
-	army_speed_factor = -0.5
+	army_speed_factor = -0.3
 	ground_attack_factor = -0.5
 	local_org_regain = -0.3
 	
@@ -75,7 +75,7 @@ CHI_defence_the_korea_3 = {
 	local_manpower = -0.2
 	local_non_core_supply_impact_factor = 0.7
 	state_resources_factor = -0.15
-	disable_strategic_redeployment = 1
+	#disable_strategic_redeployment = 1
 }	
 
 JAP_defence_the_korea = {

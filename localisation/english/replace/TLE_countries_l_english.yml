@@ -42,7 +42,11 @@
  SOV_fascism_ADJ:0 "러시아"
  SOV_democratic_ADJ:0 "러시아"
  SOV_neutrality_ADJ:0 "러시아"
- SOV_communism_ADJ:0 "소련"
+ SOV_communism_ADJ:0 "소련
+ 
+ SOV_CCG:0 "소비에트 주권 공화국 연맹"
+ SOV_CCG_DEF:0 "소비에트 주권 공화국 연맹"
+ SOV_CCG_ADJ:0 "소련"
  
  FRA_fascism:2 "프랑스국"
  FRA_fascism_DEF:2 "프랑스국"
@@ -727,6 +731,22 @@
  KOR_STATE_DEF:0 "대한국"
  KOR_STATE:0 "대한국"
 
+ KOR_ACH_DAEGONG_fascism:0 "대한국"
+ KOR_ACH_DAEGONG_fascism_DEF:0 "대한국"
+ KOR_ACH_DAEGONG_fascism_ADJ:0 "대한"
+ KOR_ACH_DAEGONG_democratic:0 "대한국"
+ KOR_ACH_DAEGONG_democratic_DEF:0 "대한국"
+ KOR_ACH_DAEGONG_democratic_ADJ:0 "대한"
+ KOR_ACH_DAEGONG_communism:0 "대한국"
+ KOR_ACH_DAEGONG_communism_DEF:0 "대한국"
+ KOR_ACH_DAEGONG_communism_ADJ:0 "대한"
+ KOR_ACH_DAEGONG_neutrality:0 "대한국"
+ KOR_ACH_DAEGONG_neutrality_DEF:0 "대한국"
+ KOR_ACH_DAEGONG_neutrality_ADJ:0 "대한"
+ KOR_ACH_DAEGONG_ADJ:0 "대한"
+ KOR_ACH_DAEGONG_DEF:0 "대한국"
+ KOR_ACH_DAEGONG:0 "대한국"
+ 
  KPL_fascism:0 "공사관 위원회"
  KPL_fascism_DEF:0 "공사관 위원회"
  KPL_democratic:0 "공사관 위원회"
@@ -992,7 +1012,17 @@
  MON_communism_ADJ:0 "몽골"
  MON_neutrality_ADJ:0 "몽골"
  
- 
+ LBA_fascism:0 "대리비아 아랍 사회주의 인민 자마히리야"
+ LBA_fascism_DEF:0 "대리비아 아랍 사회주의 인민 자마히리야"
+ LBA_democratic:0 "리비아국"
+ LBA_democratic_DEF:0 "리비아국"
+ LBA_neutrality:0 "리비아 왕국"
+ LBA_neutrality_DEF:1 "리비아 왕국"
+ LBA_communism:0 "리비아 사회주의 공화국"
+ LBA_communism_DEF:0 "리비아 사회주의 공화국"
+ LBA_fascism_ADJ:0 "리비아"
+ LBA_democratic_ADJ:0 "리비아"
+ LBA_neutrality_ADJ:0 "리비아"
  
  MAL_fascism:0 "말레이시아국"
  MAL_fascism_DEF:0 "말레이시아국"

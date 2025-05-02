@@ -38,6 +38,18 @@ scripted_gui = {
 				}
 				add_to_variable = { global.kr_options_dirty = 1 }
 			}
+			Spheres_button_click = {
+				if = {
+					limit = { has_country_flag = economic_sphere_tab_invisible }
+					set_variable = { global.Spheres_frame = 2 }
+					clr_country_flag = economic_sphere_tab_invisible
+				}
+				else = {
+					set_variable = { global.Spheres_frame = 1 }
+					set_country_flag = economic_sphere_tab_invisible
+				}
+				add_to_variable = { global.kr_options_dirty = 1 }
+			}
 		}
 
 		triggers = {
@@ -52,6 +64,9 @@ scripted_gui = {
 			}
 			JOKBO_button = {
 				frame = global.JOKBO_frame
+			}
+			Spheres_button = {
+				frame = global.Spheres_frame
 			}
 		}
 	}

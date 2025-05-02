@@ -1662,9 +1662,17 @@ RUS = {
 	color = rgb { 104 152 83 }
 	color_ui = rgb { 135 198 108 }
 }
-KOR_socialist_empire = { #사회주의 제국
+SOV_CCG = {
 	color = rgb { 204 0 0 }
 	color_ui = rgb { 204 0 0 }
+}
+KOR_ACH_DAEGONG = { #
+	color = rgb { 94 92 140 }
+	color_ui = rgb { 94 92 140 }
+}
+KOR_socialist_empire = { #사회주의 제국
+	color = rgb { 209 17 21 }
+	color_ui = rgb { 209 17 21 }
 }
 MEN_socialist_empire = { #사회주의 제국
 	color = rgb { 204 0 0 }

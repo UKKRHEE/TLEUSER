@@ -1,0 +1,343 @@
+### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+
+focus_tree = {
+    id = TLE_indian_focus
+    
+    country = {
+        factor = 0
+    }
+    default = no
+    continuous_focus_position = { x = 200 y = 3800 }
+    
+    focus = {
+        id = TLE_RAJ_the_british_raj
+        icon = GFX_focus_TLE_RAJ_the_british_raj
+        #prerequisite = { focus = }
+        x = 18
+        y = 1
+
+        cost = 5
+
+        ai_will_do = {
+            factor = 1
+        }
+
+        available = {
+
+        }
+        
+        bypass = {
+        }
+
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+
+        search_filters = { FOCUS_FILTER_POLITICAL }
+
+        completion_reward = {
+			add_political_power = 150
+        }
+    }
+	
+	focus = {
+        id = TLE_RAJ_management
+        icon = GFX_focus_TLE_RAJ_management
+        prerequisite = { focus = TLE_RAJ_the_british_raj }
+        x = -4
+        y = 1
+        relative_position_id = TLE_RAJ_the_british_raj 
+
+        cost = 5
+
+        ai_will_do = {
+            factor = 1
+        }
+
+        available = {
+
+        }
+        
+        bypass = {
+        }
+
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+
+        search_filters = { FOCUS_FILTER_POLITICAL }
+
+        completion_reward = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = 2
+			}
+        }
+    }
+	
+	focus = {
+        id = TLE_RAJ_british_burma
+        icon = GFX_focus_TLE_RAJ_british_burma
+        prerequisite = { focus = TLE_RAJ_the_british_raj }
+        x = -1
+        y = 1
+        relative_position_id = TLE_RAJ_the_british_raj 
+
+        cost = 5
+
+        ai_will_do = {
+            factor = 10
+        }
+
+        available = {
+			date > 1937.3.1
+        }
+        
+        bypass = {
+        }
+
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+
+        search_filters = { FOCUS_FILTER_POLITICAL }
+
+        completion_reward = {
+            country_event = { id = burma.1 }
+        }
+    }
+	
+	focus = {
+        id = TLE_RAJ_the_new_king
+        icon = GFX_focus_TLE_RAJ_the_new_king
+        prerequisite = { focus = TLE_RAJ_the_british_raj }
+        x = 1
+        y = 1
+        relative_position_id = TLE_RAJ_the_british_raj 
+
+        cost = 5
+
+        ai_will_do = {
+            factor = 10
+        }
+
+        available = {
+
+        }
+        
+        bypass = {
+        }
+
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+
+        search_filters = { FOCUS_FILTER_POLITICAL }
+
+        completion_reward = {
+			country_event = { id = GOE_RAJ.29 }
+        }
+    }
+	
+	focus = {
+        id = TLE_RAJ_the_military
+        icon = GFX_focus_TLE_RAJ_the_military
+        prerequisite = { focus = TLE_RAJ_the_british_raj }
+        x = 4
+        y = 1
+        relative_position_id = TLE_RAJ_the_british_raj 
+
+        cost = 5
+
+        ai_will_do = {
+            factor = 1
+        }
+
+        available = {
+
+        }
+        
+        bypass = {
+        }
+
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+
+        search_filters = { FOCUS_FILTER_POLITICAL }
+
+        completion_reward = {
+			add_offsite_building = {
+				type = arms_factory
+				level = 2
+			}
+        }
+    }
+	
+	focus = {
+        id = TLE_RAJ_korean_invasion
+        icon = GFX_focus_TLE_RAJ_korean_invasion
+        prerequisite = { focus = TLE_RAJ_the_military focus = TLE_RAJ_the_new_king }
+        x = 2
+        y = 2
+        relative_position_id = TLE_RAJ_the_british_raj 
+
+        cost = 5
+
+        ai_will_do = {
+            factor = 1
+        }
+
+        available = {
+			has_war_with = KOR
+        }
+        
+        bypass = {
+        }
+
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+
+        search_filters = { FOCUS_FILTER_POLITICAL }
+
+        completion_reward = {
+			add_ideas = {
+				TLE_raj_buff
+			}
+        }
+    }
+	
+	focus = {
+        id = TLE_RAJ_the_road_to_independence
+        icon = GFX_focus_TLE_RAJ_the_road_to_independence
+        prerequisite = { focus = TLE_RAJ_management focus = TLE_RAJ_british_burma }
+        x = -2
+        y = 2
+        relative_position_id = TLE_RAJ_the_british_raj 
+
+        cost = 5
+
+        ai_will_do = {
+            factor = 1
+        }
+
+        available = {
+			has_country_flag = TLE_RAJ_bengal_famine
+        }
+        
+        bypass = {
+        }
+
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+
+        search_filters = { FOCUS_FILTER_POLITICAL }
+
+        completion_reward = {
+			add_stability = 0.1
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.1
+			}
+        }
+    }
+	
+	focus = {
+        id = TLE_RAJ_the_independence_raj
+        icon = GFX_focus_TLE_RAJ_the_independence_raj
+        prerequisite = { focus = TLE_RAJ_the_road_to_independence focus = TLE_RAJ_korean_invasion }
+        x = -2
+        y = 4
+        relative_position_id = TLE_RAJ_the_british_raj 
+		mutually_exclusive = { focus = TLE_RAJ_korean_tiger }
+
+        cost = 150
+
+        ai_will_do = {
+			factor = 100
+        }
+
+        available = {
+			has_country_flag = TLE_RAJ_indian_independence_act_flag
+        }
+        
+        bypass = {
+        }
+
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+
+        search_filters = {FOCUS_FILTER_POLITICAL}
+
+        complete_tooltip = {
+
+        }
+
+        completion_reward = {
+			custom_effect_tooltip = TLE_RAJ_indian_independence_act_tooltip
+			hidden_effect = {
+				if = {
+					limit = { has_idea = RAJ_princely_states }
+					remove_ideas = RAJ_princely_states
+				}
+				if = {
+					limit = { has_idea = RAJ_marginalized_muslim_community }
+					remove_ideas = RAJ_marginalized_muslim_community
+				}
+				country_event = {
+					id = vietnam.4
+				}
+			}
+        }
+    }
+	
+	focus = {
+        id = TLE_RAJ_korean_tiger
+        icon = GFX_focus_TLE_RAJ_korean_tiger
+        prerequisite = { focus = TLE_RAJ_the_road_to_independence focus = TLE_RAJ_korean_invasion }
+        x = 2
+        y = 4
+        relative_position_id = TLE_RAJ_the_british_raj
+		mutually_exclusive = { focus = TLE_RAJ_the_independence_raj }
+
+        cost = 5
+
+        ai_will_do = {
+            factor = 1
+        }
+
+        available = {
+			has_country_flag = TLE_RAJ_destiny_of_new_world_flag
+        }
+        
+        bypass = {
+			has_country_flag = TLE_RAJ_destiny_of_new_world_flag
+        }
+
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+
+        search_filters = { FOCUS_FILTER_POLITICAL }
+
+        completion_reward = {
+			custom_effect_tooltip = TLE_RAJ_korean_tiger_tooltip
+			hidden_effect = {
+				if = {
+					limit = { has_idea = RAJ_princely_states }
+					remove_ideas = RAJ_princely_states
+				}
+			}
+        }
+    }
+
+}       

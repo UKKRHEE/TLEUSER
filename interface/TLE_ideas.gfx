@@ -1616,6 +1616,10 @@ spriteTypes = {
 		name = "GFX_idea_generic_flexible_foreign_policy2"
 		texturefile = "gfx/interface/ideas/korea/idea_generic_flexible_foreign_policy2.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_RAJ_princely_states"
+		texturefile = "gfx/interface/ideas/idea_RAJ_princely_states.dds"
+	}
 	####주체
 	spriteType = {
 		name = "GFX_idea_commie"

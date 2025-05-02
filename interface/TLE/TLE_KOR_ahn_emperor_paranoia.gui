@@ -1,0 +1,13 @@
+guiTypes = {
+	containerWindowType = {
+		name = "KOR_ahn_emperor_paranoia_Decision_GUI"
+		position = { x = 0 y = 0 }
+		size = { width = 0 height = 550 }
+
+		iconType = {
+			name = "emperor_paranoia"
+			spriteType = "GFX_ahn_emperor_paranoia"
+			position = { x = 150 y = 0 }
+		}
+	}
+}

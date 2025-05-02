@@ -1,0 +1,16 @@
+scripted_gui = {
+	KOR_ahn_emperor_paranoia_Decision_GUI = {
+		context_type = decision_category
+		window_name = "KOR_ahn_emperor_paranoia_Decision_GUI"
+		
+		visible = {
+			original_tag = KOR
+		}
+
+		properties = {
+			emperor_paranoia = {
+				frame = emperor_paranoia_frame
+			}
+		}
+	}
+}

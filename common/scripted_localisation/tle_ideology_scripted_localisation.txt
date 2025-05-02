@@ -76,6 +76,12 @@ defined_text = {
 		localization_key = korean_democracy
 	}
 	text = {
+		trigger = {
+			has_country_leader_ideology = daegongism
+		}
+		localization_key = daegongism
+	}
+	text = {
 		localization_key = democratic
 	}
 }

@@ -227,6 +227,15 @@
  FJP_neutrality_party:0 "야마우치 가문"
  FJP_neutrality_party_long:0 "야마우치 가문"
  
+ TJP_communism_party:0 "대정익찬회"
+ TJP_communism_party_long:0 "대정익찬회"
+ TJP_democratic_party:0 "대정익찬회"
+ TJP_democratic_party_long:0 "대정익찬회"
+ TJP_neutrality_party:0 "대정익찬회"
+ TJP_neutrality_party_long:0 "대정익찬회"
+ TJP_fascism_party:0 "대정익찬회"
+ TJP_fascism_party_long:0 "대정익찬회"
+ 
  DKG_communism_party:0 "일본 공산당"
  DKG_communism_party_long:0 "일본 공산당"
  DKG_democratic_party:0 "일본 민주당"

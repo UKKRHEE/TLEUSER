@@ -1,0 +1,35 @@
+scripted_map_modes = {
+	economic_spheres_map_mode = {
+		top = {
+			type = none
+		}
+		bottom = {
+			type = country
+			color = {
+				set_temp_variable = { alpha = 0.7 }
+				FROM = {
+					if = {
+						limit = { is_in_economic_sphere = no }
+						set_temp_variable = { red = 0.5 }
+						set_temp_variable = { green = 0.5 }
+						set_temp_variable = { blue = 0.5 }
+						set_temp_variable = { alpha = 0.35 }
+					}
+					else = {
+						var:economic_sphere = {
+							set_temp_variable = { red = THIS.red }
+							set_temp_variable = { green = THIS.green }
+							set_temp_variable = { blue = THIS.blue }
+						}
+					}
+				}
+			}
+			thickness = yes
+		}
+
+		far_text = country
+		near_text = country
+
+		update_daily = yes
+	}
+}

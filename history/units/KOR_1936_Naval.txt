@@ -328,6 +328,7 @@
 		task_force = {
 			name = "제1잠수전대"
 			location = 1177
+			ship = { name = "IKN 순잠-1" definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = KOR version_name = "강치급" } } }
 			ship = { name = "IKN 잠-1" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "청새치급" } } }
 			ship = { name = "IKN 잠-2" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "청새치급" } } }
 			ship = { name = "IKN 잠-3" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "청새치급" } } }
@@ -344,6 +345,7 @@
 		task_force = {
 			name = "제2잠수전대"
 			location = 1177
+			ship = { name = "IKN 순잠-2" definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = KOR version_name = "강치급" } } }
 			ship = { name = "IKN 잠-12" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "청새치급" } } }
 			ship = { name = "IKN 잠-13" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "청새치급" } } }
 			ship = { name = "IKN 잠-14" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "청새치급" } } }
@@ -360,6 +362,7 @@
 		task_force = {
 			name = "제3잠수전대"
 			location = 1177
+			ship = { name = "IKN 순잠-3" definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = KOR version_name = "강치급" } } }
 			ship = { name = "IKN 잠-23" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "청새치급" } } }
 			ship = { name = "IKN 잠-24" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "청새치급" } } }
 			ship = { name = "IKN 잠-25" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "청새치급" } } }
@@ -376,6 +379,7 @@
 		task_force = {
 			name = "제4잠수전대"
 			location = 1177
+			ship = { name = "IKN 순잠-4" definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = KOR version_name = "강치급" } } }
 			ship = { name = "IKN 잠-34" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "청새치급" } } }
 			ship = { name = "IKN 잠-35" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "청새치급" } } }
 			ship = { name = "IKN 잠-36" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "청새치급" } } }
@@ -403,6 +407,7 @@ instant_effect =
 			requested_factories = 3
 			progress = 0.9
 			amount = 1
+			industrial_manufacturer = mio:daehan_dockyard
 		}
 		add_equipment_production = {				
 			equipment = {
@@ -413,6 +418,7 @@ instant_effect =
 			requested_factories = 2
 			progress = 0.8
 			amount = 1
+			industrial_manufacturer = mio:daehan_dockyard
 		}
 		add_equipment_production = {				
 			equipment = {
@@ -453,4 +459,25 @@ instant_effect =
 			progress = 0.43
 			#amount = 3
 		}
+		add_equipment_production = {				
+			equipment = {
+				type = ship_hull_cruiser_submarine
+				creator = "KOR" 
+				version_name = "돌고래급"
+			}
+			requested_factories = 1
+			progress = 0.90
+			amount = 1
+		}
+		add_equipment_production = {				
+			equipment = {
+				type = ship_hull_cruiser_submarine
+				creator = "KOR" 
+				version_name = "돌고래급"
+			}
+			requested_factories = 1
+			progress = 0.30
+			amount = 1
+		}
+		
 }

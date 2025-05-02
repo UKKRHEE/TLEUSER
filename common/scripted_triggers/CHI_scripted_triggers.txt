@@ -17,6 +17,7 @@
 is_japan_clique = { #Does not include sinkiang
 	OR = {
 		tag = JAP
+		tag = TJP
 		tag = DKG
 		tag = TBJ
 		tag = SDJ

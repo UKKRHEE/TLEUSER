@@ -110,6 +110,8 @@
  KOR_yang_se_bong:0 "양세봉" #梁世奉
  KOR_ryu_ja_myeong:0 "류자명" #柳子明
  KOR_nam_il:0 "남일" #南日
+ KOR_eou_dam:0 "어담" #魚潭
+ KOR_han_changgeol:0 "한창걸" #韓昌傑
  KOR_choe_yong_geon:0 "최용건" #崔庸健
  KOR_song_ho_seong:0 "송호성" #宋虎聲
  KOR_ahn_chang_ho:0 "안창호" #安昌浩
@@ -561,6 +563,8 @@
  DKG_yoshikumi_tokugawa:0 "토쿠가와 요시쿠미"
  DKG_takesada_tokugawa:0 "토쿠가와 타케사다"
  DKG_yoshichika_tokugawa:0 "토쿠가와 요시치카"
+ #
+ TJP_emperor_hirohito:0 "히로히토"
  
  JAP_hoshino_ai:0 "호시노 아이"
  JAP_hoshino_aquamarine:0 "호시노 아쿠아마린"

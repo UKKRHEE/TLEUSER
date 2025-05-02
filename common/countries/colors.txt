@@ -1281,6 +1281,10 @@ HNC = { #호남
 	color = rgb { 183 182 138 }
 	color_ui = rgb { 183 182 138 }
 }
+TJP = { #일본국
+	color = rgb { 247 144 145 }
+	color_ui = rgb { 247 144 145 }
+}
 EJP = { #산인산요
 	color = rgb { 230 230 230 }
 	color_ui = rgb { 230 230 230 }

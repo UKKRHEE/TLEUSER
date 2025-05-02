@@ -1,0 +1,8 @@
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "Graveyard of Empires"
+		}
+	}
+	recruit_character = RAJ_freeman_freeman_thomas
+}

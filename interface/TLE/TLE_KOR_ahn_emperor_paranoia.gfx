@@ -1,0 +1,7 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_ahn_emperor_paranoia"
+		textureFile = "gfx/interface/KOR_GUI/emperor_paranoia/paranoia.png"
+		noOfFrames = 6
+	}
+}

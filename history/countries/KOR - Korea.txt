@@ -209,7 +209,6 @@ set_variable = { KOR_pcy_economical_problem_stability_var = 0 }
 
 #김규식 안정도
 set_variable = { KOR_government_stablity_var = 1 }
-
 set_variable = { KOR_government_stablity_emperor_var = 6 }
 set_variable = { KOR_government_stablity_ilso_var = 2 }
 set_variable = { KOR_government_stablity_ahn_var = 4 }
@@ -218,7 +217,6 @@ set_variable = { KOR_government_stablity_army_var = 3 }
 set_variable = { KOR_government_stablity_chaebeol_var = 4 }
 set_variable = { KOR_government_stablity_cityzen_var = 5 }
 set_variable = { KOR_government_stablity_rural_var = 4 }
-
 KOR_government_stablity_setup = yes
 KOR_government_stablity_check_progressbar = yes
 
@@ -266,6 +264,20 @@ set_variable = { ND_Graphs_array^4 = 30 } # north primorsky
 set_variable = { ND_Graphs_array^5 = 40 } # kyushu
 set_variable = { ND_Graphs_array^6 = 10 } # hokkaido
 set_variable = { ND_Graphs_array^7 = 10 } # taiwan
+
+create_economic_sphere = yes
+var:economic_sphere = {
+	set_character_name = TLE_COPERATION
+	var:icon = { set_character_name = "GFX_Faction_Kyoeiken" }
+	set_variable = { red = 0.141 }
+	set_variable = { green = 0.027 }
+	set_variable = { blue = 0.49 }
+}
+set_country_flag = KOR_CPS_member
+for_each_scope_loop	= {
+	array = KOR.subjects
+	KOR_add_to_CPS_sphere = yes
+}
 
 
 set_research_slots = 4
@@ -548,6 +560,7 @@ recruit_character = KOR_yu_dong_yeol #유동열 (1879)
 recruit_character = KOR_chae_eung_eun #채응언 (1879)
 
 #부장 - 평균 1882년 이전생
+recruit_character = KOR_eou_dam #어담 (1881)
 recruit_character = KOR_park_yongman #박용만 (1881)
 recruit_character = KOR_shin_pal_gyun #신팔균 (1882)
 recruit_character = KOR_choi_myonglok #최진동 (1882)
@@ -568,6 +581,7 @@ recruit_character = KOR_oh_dong_jin #오동진 (1889)
 recruit_character = KOR_song_ho_seong #송호성 (1889)
 recruit_character = KOR_ham_seokun #함석은 (1890)
 recruit_character = KOR_lee_eungjun #이응준 (1891)
+recruit_character = KOR_han_changgeol #한창걸 (1892)
 
 #부령 - 평균 1896년 이전생
 recruit_character = KOR_kim_suk_won #김석원 (1893)
@@ -720,7 +734,7 @@ if = {
 		}
 	}
 	create_equipment_variant = {
-		name = "귀조"
+		name = "천둥"
 		type = small_plane_cas_airframe_0
 		modules = {
 			fixed_main_weapon_slot = small_bomb_bay
@@ -730,7 +744,7 @@ if = {
 		icon = "GFX_KOR_CAS1_medium"
 	}
 	create_equipment_variant = {
-		name = "천지"
+		name = "강우"
 		type = medium_plane_airframe_0
 		modules = {
 			fixed_main_weapon_slot = medium_bomb_bay
@@ -740,7 +754,7 @@ if = {
 		icon = "GFX_KOR_heavy_fighter1_medium"
 	}
 	create_equipment_variant = {
-		name = "귀조 개 1형"
+		name = "천둥 가"
 		type = small_plane_cas_airframe_0
 		modules = {
 			fixed_main_weapon_slot = bomb_locks
@@ -750,7 +764,7 @@ if = {
 		icon = "GFX_KOR_CAS1_medium"
 	}
 	create_equipment_variant = {
-		name = "해고양"
+		name = "가마우지"
 		type = cv_small_plane_cas_airframe_0
 		modules = {
 			fixed_main_weapon_slot = bomb_locks
@@ -760,7 +774,7 @@ if = {
 		icon = "GFX_KOR_CAS1_medium"
 	}
 	create_equipment_variant = {
-		name = "수리온"
+		name = "물수리"
 		type = cv_small_plane_airframe_0
 		modules = {
 			fixed_main_weapon_slot = light_mg_2x
@@ -770,7 +784,7 @@ if = {
 		icon = "gfx/interface/technologies/KOR_fighter1_cv.dds"
 	}
 	create_equipment_variant = {
-		name = "원앙"
+		name = "백로"
 		type = cv_small_plane_naval_bomber_airframe_0
 		modules = {
 			fixed_main_weapon_slot = torpedo_mounting
@@ -781,7 +795,7 @@ if = {
 		icon = "gfx/interface/technologies/KOR_naval_bomber1_cv.dds"
 	}
 	create_equipment_variant = {
-		name = "원앙 개 1형"
+		name = "도요새"
 		type = cv_small_plane_naval_bomber_airframe_1
 		modules = {
 			fixed_main_weapon_slot = torpedo_mounting
@@ -851,6 +865,85 @@ if = {
 		icon = "gfx/interface/technologies/FKR_imp_light_tank.dds"
 	}
 }
+if = {
+	limit = { NOT = { has_dlc = "Man the Guns" } }
+	#경항모
+	create_equipment_variant = {
+		name = "제주급"
+		type = carrier_1
+		parent_version = 0
+		upgrades = {
+			ship_deckspace_upgrade = 0
+			carrier_armor_upgrade = 0
+			ship_engine_upgrade = 1
+			ship_reliability_upgrade = 0
+		}
+		obsolete = yes
+	}
+	#순전
+	create_equipment_variant = {
+		name = "덕유급"
+		type = battle_cruiser_1
+		parent_version = 0
+		upgrades = {
+			ship_reliability_upgrade = 3
+			ship_engine_upgrade = 1
+			ship_armor_upgrade = 0
+			ship_gun_upgrade = 1
+		}
+		obsolete = yes
+	}
+	#중순
+	create_equipment_variant = {
+		name = "평양급"
+		type = heavy_cruiser_2
+		parent_version = 0
+		upgrades = {
+			ship_reliability_upgrade = 1
+			ship_engine_upgrade = 1
+			ship_armor_upgrade = 0
+			ship_gun_upgrade = 0
+		}
+		obsolete = yes
+	}
+	#경순
+	create_equipment_variant = {
+		name = "목포급"
+		type = light_cruiser_1
+		parent_version = 0
+		upgrades = {
+			ship_reliability_upgrade = 0
+			ship_engine_upgrade = 0
+			ship_gun_upgrade = 1
+			ship_anti_air_upgrade = 0
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "강치급"
+		type = submarine_1
+		parent_version = 0
+		upgrades = {
+			ship_reliability_upgrade = 2
+			sub_engine_upgrade = 3
+			sub_stealth_upgrade = 1
+			sub_torpedo_upgrade = 2
+		}
+		obsolete = yes
+	}	
+	create_equipment_variant = {
+		name = "돌고래급"
+		type = submarine_1
+		parent_version = 0
+		upgrades = {
+			ship_reliability_upgrade = 3
+			sub_engine_upgrade = 4
+			sub_stealth_upgrade = 1
+			sub_torpedo_upgrade = 2
+		}
+		obsolete = yes
+	}	
+}	
 if = {
 	limit = { has_dlc = "Man the Guns"}
 	###항모###
@@ -1156,4 +1249,29 @@ if = {
 		}
 		obsolete = yes
 	}
+	#순양잠수함
+	create_equipment_variant = {
+		name = "강치급"
+		type = ship_hull_cruiser_submarine
+		name_group = KOR_CSS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			front_1_custom_slot = ship_airplane_launcher_1
+		}
+		obsolete = yes		
+	}
+	create_equipment_variant = {
+		name = "돌고래급"
+		type = ship_hull_cruiser_submarine
+		name_group = KOR_CSS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_2
+			fixed_ship_engine_slot = sub_ship_engine_2
+			front_1_custom_slot = ship_airplane_launcher_1
+			rear_1_custom_slot = ship_extra_fuel_tank
+		}
+	}	
 }

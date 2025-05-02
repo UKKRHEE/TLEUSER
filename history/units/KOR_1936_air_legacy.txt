@@ -33,7 +33,7 @@ air_wings = {
 			amount = 20
 		}
 	}
-	1015 = { #대구
+	1133 = { #대구
 		fighter_equipment_0 = {
 			owner = "KOR" 
 			amount = 100
@@ -51,7 +51,7 @@ air_wings = {
 			amount = 40
 		}
 	}
-	1016 = { #대구
+	1132 = { #대구
 		fighter_equipment_0 = {
 			owner = "KOR" 
 			amount = 100

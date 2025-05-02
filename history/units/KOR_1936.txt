@@ -490,9 +490,10 @@ instant_effect = {
 			type = infantry_equipment_1
 			creator = "KOR"
 		}
+		industrial_manufacturer = mio:busanchobyung
 		requested_factories = 5
 		progress = 0.50
-		efficiency = 100
+		efficiency = 100		
 	}
 	add_equipment_production = {
 		equipment = {
@@ -508,15 +509,17 @@ instant_effect = {
 			type = artillery_equipment_1
 			creator = "KOR"
 		}
+		industrial_manufacturer = mio:samsung
 		requested_factories = 2
 		progress = 0.50
-		efficiency = 100
+		efficiency = 100		
 	}
 	add_equipment_production = {
 		equipment = {
 			type = light_tank_equipment_1
 			creator = "KOR"
 		}
+		industrial_manufacturer = mio:daeseon
 		requested_factories = 2
 		progress = 0.5
 		efficiency = 100

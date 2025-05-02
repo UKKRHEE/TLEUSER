@@ -428,6 +428,12 @@ KOR_hangbok_event = {
 			BRM = {
 				exists = yes
 			}
+			NOT = {
+				has_global_flag = PRE_THE_NEW_ORDER_GBR
+				KOR = {
+					has_country_flag = KOR_do_not_invade_delhi
+				}
+			}
 		}
 		BUR = {
 			annex_country = {
@@ -444,7 +450,51 @@ KOR_hangbok_event = {
 			transfer_state = 995
 			transfer_state = 996
 		}
+		KOR = {
+			end_puppet = BRM
+		}
 		BRM = {
+			drop_cosmetic_tag = yes
+			set_politics = { 
+				ruling_party = democratic
+				last_election = "1936.11.26"
+				election_frequency = 48
+				elections_allowed = no
+			}
+			set_popularities = {
+				democratic = 100
+			}
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_global_flag = PRE_THE_NEW_ORDER_GBR
+			}
+			KOR = {
+				has_country_flag = KOR_do_not_invade_delhi
+			}
+		}
+		BRM = {
+			annex_country = {
+				target = BUR
+				transfer_troops = yes
+			}
+			transfer_state = 640
+			transfer_state = 288
+			transfer_state = 993
+			transfer_state = 994
+			transfer_state = 998
+			transfer_state = 999
+			transfer_state = 997
+			transfer_state = 995
+			transfer_state = 996
+		}
+		KOR = {
+			end_puppet = BRM
+		}
+		BRM = {
+			drop_cosmetic_tag = yes
 			set_politics = { 
 				ruling_party = democratic
 				last_election = "1936.11.26"
@@ -496,6 +546,9 @@ KOR_hangbok_event = {
 			limit = {
 				NOT = {
 					has_global_flag = PRE_THE_NEW_ORDER_GBR
+					KOR = {
+						has_country_flag = KOR_do_not_invade_delhi
+					}
 				}
 			}
 			ENG = {
@@ -505,8 +558,33 @@ KOR_hangbok_event = {
 	}
 	if = {
 		limit = {
+			BAN = {
+				exists = no
+			}
+			OR = {
+				has_global_flag = PRE_THE_NEW_ORDER_GBR
+				KOR = {
+					has_country_flag = KOR_do_not_invade_delhi
+				}
+			}
+		}
+		RAJ = {
+			transfer_state = 430
+			transfer_state = 431
+			transfer_state = 432
+			transfer_state = 434
+			transfer_state = 435
+			transfer_state = 985
+			transfer_state = 990
+		}
+	}
+	if = {
+		limit = {
 			NOT = {
 				has_global_flag = PRE_THE_NEW_ORDER_GBR
+				KOR = {
+					has_country_flag = KOR_do_not_invade_delhi
+				}
 			}
 		}
 		YEM = {
@@ -569,25 +647,34 @@ KOR_hangbok_event = {
 			}
 		}
 	}
-	AST = {
-		transfer_state = 284
-		transfer_state = 523
-		transfer_state = 979
-		transfer_state = 634
-		transfer_state = 737
-		transfer_state = 1093
-		remove_ideas = { ast_threat }
-	}
-	FRA = {
-		transfer_state = 635
-	}
-	NZL = {
-		transfer_state = 284
-		transfer_state = 723
-	}
-	USA = {
-		add_to_faction = AST
-		add_to_faction = NZL
+	if = { 
+		limit = {
+			AST = {
+				has_country_flag = TLE_AST_korean_threat_flag
+			}
+		}
+		USA = {
+			transfer_state = 523
+			transfer_state = 979
+			transfer_state = 737
+		}
+		ENG = {
+			transfer_state = 634
+		}
+		AST = {
+			transfer_state = 1093
+			transfer_state = 1096
+			remove_ideas = { ast_threat }
+		}
+		FRA = {
+			transfer_state = 635
+		}
+		USA = {
+			add_to_faction = AST
+		}
+		518 = {
+			set_demilitarized_zone = no
+		}
 	}
 	MAL = { #말레이 통일
 		set_cosmetic_tag = MAL_united
@@ -2254,6 +2341,89 @@ KOR_hangbok_event_2 = {
 	}
 	if = {
 		limit = {
+			BRM = {
+				exists = yes
+			}
+			NOT = {
+				has_global_flag = PRE_THE_NEW_ORDER_GBR
+				KOR = {
+					has_country_flag = KOR_do_not_invade_delhi
+				}
+			}
+		}
+		BUR = {
+			annex_country = {
+				target = BRM
+				transfer_troops = yes
+			}
+			transfer_state = 640
+			transfer_state = 288
+			transfer_state = 993
+			transfer_state = 994
+			transfer_state = 998
+			transfer_state = 999
+			transfer_state = 997
+			transfer_state = 995
+			transfer_state = 996
+		}
+		KOR = {
+			end_puppet = BRM
+		}
+		BRM = {
+			drop_cosmetic_tag = yes
+			set_politics = { 
+				ruling_party = democratic
+				last_election = "1936.11.26"
+				election_frequency = 48
+				elections_allowed = no
+			}
+			set_popularities = {
+				democratic = 100
+			}
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_global_flag = PRE_THE_NEW_ORDER_GBR
+			}
+			KOR = {
+				has_country_flag = KOR_do_not_invade_delhi
+			}
+		}
+		BRM = {
+			annex_country = {
+				target = BUR
+				transfer_troops = yes
+			}
+			transfer_state = 640
+			transfer_state = 288
+			transfer_state = 993
+			transfer_state = 994
+			transfer_state = 998
+			transfer_state = 999
+			transfer_state = 997
+			transfer_state = 995
+			transfer_state = 996
+		}
+		KOR = {
+			end_puppet = BRM
+		}
+		BRM = {
+			drop_cosmetic_tag = yes
+			set_politics = { 
+				ruling_party = democratic
+				last_election = "1936.11.26"
+				election_frequency = 48
+				elections_allowed = no
+			}
+			set_popularities = {
+				democratic = 100
+			}
+		}
+	}
+	if = {
+		limit = {
 			BAN = {
 				exists = yes
 			}
@@ -2292,6 +2462,9 @@ KOR_hangbok_event_2 = {
 			limit = {
 				NOT = {
 					has_global_flag = PRE_THE_NEW_ORDER_GBR
+					KOR = {
+						has_country_flag = KOR_do_not_invade_delhi
+					}
 				}
 			}
 			ENG = {
@@ -2301,8 +2474,33 @@ KOR_hangbok_event_2 = {
 	}
 	if = {
 		limit = {
+			BAN = {
+				exists = no
+			}
+			OR = {
+				has_global_flag = PRE_THE_NEW_ORDER_GBR
+				KOR = {
+					has_country_flag = KOR_do_not_invade_delhi
+				}
+			}
+		}
+		RAJ = {
+			transfer_state = 430
+			transfer_state = 431
+			transfer_state = 432
+			transfer_state = 434
+			transfer_state = 435
+			transfer_state = 985
+			transfer_state = 990
+		}
+	}
+	if = {
+		limit = {
 			NOT = {
 				has_global_flag = PRE_THE_NEW_ORDER_GBR
+				KOR = {
+					has_country_flag = KOR_do_not_invade_delhi
+				}
 			}
 		}
 		YEM = {
@@ -2365,25 +2563,34 @@ KOR_hangbok_event_2 = {
 			}
 		}
 	}
-	AST = {
-		transfer_state = 284
-		transfer_state = 523
-		transfer_state = 979
-		transfer_state = 634
-		transfer_state = 737
-		transfer_state = 1093
-		remove_ideas = { ast_threat }
-	}
-	FRA = {
-		transfer_state = 635
-	}
-	NZL = {
-		transfer_state = 284
-		transfer_state = 723
-	}
-	USA = {
-		add_to_faction = AST
-		add_to_faction = NZL
+	if = { 
+		limit = {
+			AST = {
+				has_country_flag = TLE_AST_korean_threat_flag
+			}
+		}
+		USA = {
+			transfer_state = 523
+			transfer_state = 979
+			transfer_state = 737
+		}
+		ENG = {
+			transfer_state = 634
+		}
+		AST = {
+			transfer_state = 1093
+			transfer_state = 1096
+			remove_ideas = { ast_threat }
+		}
+		FRA = {
+			transfer_state = 635
+		}
+		USA = {
+			add_to_faction = AST
+		}
+		518 = {
+			set_demilitarized_zone = no
+		}
 	}
 	MAL = { #말레이 통일
 		set_cosmetic_tag = MAL_united
@@ -3385,12 +3592,8 @@ KOR_china_annex_effect = {
 		set_resistance = 0
 		set_garrison_strength = 1.0
 		start_resistance = no
-	}
-	every_state = {
-		limit = {
-			is_core_of = WZC
-		}
 		add_core_of = CH1
+		add_core_of = CH2
 	}
 	KOR = {
 		set_country_flag = TLE_KOR_WIN_IN_CHINA_FUCKYEAH
@@ -4629,6 +4832,7 @@ TNO_TLE_KOR_victory_effect = {
 				transfer_state = 992
 			}
 			RAJ = {
+				set_country_flag = TLE_RAJ_destiny_of_new_world_flag
 				set_cosmetic_tag = RAJ_FREETNO
 				transfer_state = 320
 				transfer_state = 321
@@ -4732,10 +4936,10 @@ TNO_TLE_KOR_victory_effect = {
 	every_country = {
 		limit = {
 			has_war_with = KOR
-				is_chinese_clique = no
-				NOT = {
-					original_tag = JAP
-				}
+			is_chinese_clique = no
+			NOT = {
+				original_tag = JAP
+			}
 		}	
 		white_peace = KOR
 		white_peace = DK1
@@ -4755,6 +4959,7 @@ TNO_TLE_KOR_victory_effect = {
 		white_peace = SIK
 		white_peace = KVN
 		white_peace = XSM
+		white_peace = RYU
 	}
 	every_country = {
 		limit = {
@@ -5676,6 +5881,7 @@ TLE_german_defeat_effect = {
     	transfer_state = 722
     	transfer_state = 1102
     	transfer_state = 1090
+    	add_state_core = 1090
     	#독일
     	transfer_state = 64
     	transfer_state = 62
@@ -6669,6 +6875,7 @@ TLE_german_defeat_red_effect = {
     	transfer_state = 722
     	transfer_state = 1102
     	transfer_state = 1090
+    	add_state_core = 1090
 		
 		transfer_state = 784
 		transfer_state = 96
@@ -9439,6 +9646,7 @@ TLE_german_empire_lose = {
 			transfer_state = 784
 			transfer_state = 1102
 			transfer_state = 1090
+			add_state_core = 1090
 			transfer_state = 763
 			transfer_state = 188
 			annex_country = {

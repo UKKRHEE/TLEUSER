@@ -25,6 +25,11 @@ ideologies = {
 				can_be_randomly_selected = no
 				color = { 62 66 106 }
 			}
+			
+			daegongism = {
+				can_be_randomly_selected = no
+				color = { 94 92 140 }
+			}
 		}
 
 		dynamic_faction_names = {

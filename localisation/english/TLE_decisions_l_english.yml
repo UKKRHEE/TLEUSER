@@ -861,6 +861,9 @@
  KOR_dockyard:0 "조선산업"
  KOR_dockyard_desc:0 "조선기술은 패권을 차지하는 지름길입니다."
  
+ KOR_pine_wood_oil:0 "대체유 추출"
+ KOR_pine_wood_oil_desc:0 "우리가 마주한 자원난을 타계하기 위해 소나무, 정어리, 유채 등 가능한 한 모든 곳에서 기름을 짜내어 연료를 확보해야 합니다."
+ 
  KOR_nuke_surrend:0 "외교정책"
  KOR_sue_for_peace_nuke:0 "조건부 항복제의"
  KOR_sue_for_peace_nuke_desc:0 "적들은 새롭고 가장 잔혹한 폭탄을 사용했습니다. 전쟁은 우리의 우위로 발달하는 것 만은 아닙니다. 우리는 반드시 견딜 수 없는 것을 견뎌야만 합니다."

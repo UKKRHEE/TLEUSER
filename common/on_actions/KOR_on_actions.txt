@@ -103,6 +103,20 @@ on_actions = {
 				leave_faction = yes
 				drop_cosmetic_tag = yes
 			}
+			RAJ = {
+				load_focus_tree = TLE_indian_focus
+				remove_ideas = {
+					RAJ_risk_of_famine
+				}
+				if = {
+					limit = {
+						has_dlc = "Graveyard of Empires"
+					}
+					remove_ideas = {
+						idea_RAJ_great_depression_1
+					}
+				}
+			}
 			WZC = {
 				country_event = {
 					id = china.1089
@@ -131,7 +145,7 @@ on_actions = {
 			every_country = {
 				set_variable = { global.super_events_frame = 2 }
 				set_variable = { global.JOKBO_frame = 2 }
-				set_variable = { global.BOP_frame = 2 }
+				set_variable = { global.Spheres_frame = 2 }
 			}
 			every_country = {
 				limit = {
@@ -2459,13 +2473,22 @@ on_actions = {
 			}
 			if = {
 				limit = {
-					is_korean_tag = yes #점령국 - 대한
+					OR = {
+						tag = KOR
+						is_in_faction_with = KOR
+					}
 					FROM = { 
-						is_chinese_clique = yes
-						
-					} #피점령국 - 중국
-					FROM.FROM = { state = 607 } #점령 주 - 우한
+						OR = {
+							original_tag = ZLC
+							original_tag = CHI
+						}
+					} 
+					FROM.FROM = { state = 607 } #점령 주 - 카이펑
+					NOT = {
+						has_global_flag = GLOB_KAIFENG_FALL
+					}
 				}
+				set_global_flag = GLOB_KAIFENG_FALL
 				if = {
 					limit = {
 						KOR = {
@@ -3641,11 +3664,11 @@ on_actions = {
 				}
                 set_province_name = {
                     id = 1025
-                    name = "gokura"
+                    name = "kokura"
                 }
                 set_province_name = {
                     id = 4102
-                    name = "gagoshima"
+                    name = "kagoshima"
                 }
 			}
 			if = {

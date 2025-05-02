@@ -9413,10 +9413,8 @@ country_event = {
 				Promote_leader = yes
 				Country_leader = {
 					ideology = despotism
-					#expire = "1965.1.1"
 					desc = ""
-					traits = {
-					}
+					traits = { }
 				}
 			}
 			set_character_name = {
@@ -9432,6 +9430,20 @@ country_event = {
 				ideology = fascism
 				long_name = "MEN_EMP_fascism_long"
 				name = "MEN_EMP_fascism"
+			}
+		}
+		hidden_effect = {
+			every_state = {
+				limit = {
+					is_core_of = MON
+				}
+				remove_core_of = MON
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = MON
+				}
+				remove_claim_by = MON
 			}
 		}
 	}
@@ -12306,6 +12318,66 @@ country_event = { #조기선거의 결과 친택
 			add_stability = -0.1
 			add_war_support = -0.1
 			mark_focus_tree_layout_dirty = yes
+		}
+	}
+}
+### 대충 혼자 노는 용도
+country_event = { #
+	id = korea.800
+	title = korea.800.title
+	desc = korea.800.desc
+	picture = GFX_TLE_korea_event_none
+	
+    is_triggered_only = yes
+	
+	option = { #
+		name = korea.800.a
+		KOR = {
+			add_state_claim = 1060 #금주
+			add_state_claim = 610 #열하
+			add_state_claim = 715 #요령
+			add_state_claim = 1059 #부여
+			add_state_claim = 761 #선비
+			add_state_claim = 714 #흑룡
+		}
+	}
+	option = { #
+		name = korea.800.b
+		KOR = {
+			add_state_claim = 1060 #금주
+			add_state_claim = 610 #열하
+			add_state_claim = 715 #요령
+			add_state_claim = 1059 #부여
+			add_state_claim = 761 #선비
+			add_state_claim = 714 #흑룡
+			set_autonomy = { target = KMN autonomy_state = korean_general_government }
+		}
+		KMN = {
+			transfer_state = 1060 
+			transfer_state = 610 
+			transfer_state = 715 
+			transfer_state = 1059 
+			transfer_state = 761 
+			transfer_state = 714 
+			set_cosmetic_tag = KMN_GOV_RESTORED
+			add_ideas = KOR_yi_jin_2
+		}
+	}
+	option = { #
+		name = korea.800.c
+		trigger = {
+			ZLC = {
+				exists = yes
+				controls_state = 608
+			}
+		}
+		ZLC = {
+			transfer_state = 1060 
+			transfer_state = 610 
+			transfer_state = 715 
+			transfer_state = 1059 
+			transfer_state = 761 
+			transfer_state = 714 
 		}
 	}
 }
@@ -20656,6 +20728,28 @@ country_event = { #박중양 대아대전 패전
 		custom_effect_tooltip = TLE_EVENT_KOREA_3008
 	}
 }
+
+country_event = { #해군군축조약 연장 거부
+	id = korea.4001
+	title = korea.4001.title
+	desc = korea.4001.desc
+	picture = GFX_report_event_usa_heavy_cruiser
+	
+    is_triggered_only = yes
+	fire_only_once = yes
+	 
+	option = { 
+		name = korea.4001.a
+		remove_naval_treaty_effect = yes
+		every_other_country = {
+			limit = {
+				has_naval_treaty_trigger = yes
+			}
+			country_event = { id = MTG_naval_treaty.7 days = 2 }
+		}
+	}
+}
+
 ########################
 country_event = { #결론
 	id = korea.10000
@@ -23109,15 +23203,225 @@ country_event = { #독궈제국
 	}
 	option = { #
 		name = korea.10021.b
+		MSR = {
+			transfer_state = 819
+			transfer_state = 1124
+			transfer_state = 330
+			transfer_state = 817
+		}
+		MEN = {
+			set_cosmetic_tag = MEN_CHA
+			transfer_state = 612
+			transfer_state = 611
+			transfer_state = 621
+			transfer_state = 746
+			transfer_state = 1123
+		}
+		KOR = {
+			set_faction_name = "KOR_FAC_HWAN"
+			swap_ideas = {
+				add_idea = KOR_yi_jin_ahn
+				remove_idea = KOR_yi_jin
+			}
+			remove_ideas = MTG_naval_treaty_adherent
+			remove_ideas = KOR_Weakening_the_kingship
+			remove_ideas = KOR_militarism
+			remove_ideas = KOR_striked_factories
+			remove_ideas = KOR_not_go_outside
+			remove_ideas = KOR_divided_politics
+			remove_ideas = KOR_failed_civilian_control_of_the_military_2
+			remove_ideas = KOR_failed_civilian_control_of_the_military
+			remove_ideas = KOR_political_officer
+			remove_ideas = KOR_interservice_rivalry_balanced
+			remove_ideas = KOR_interservice_rivalry_army_dominant
+			remove_ideas = KOR_interservice_rivalry_army_strengthened
+			remove_ideas = KOR_interservice_rivalry_navy_strengthened
+			remove_ideas = KOR_interservice_rivalry_navy_dominant
+			add_to_faction = TJP
+			add_to_faction = MEN
+			add_to_faction = CHI
+			add_to_faction = VIN
+			add_to_faction = LAO
+			add_to_faction = CAM
+			add_to_faction = SIA
+			add_to_faction = BRM
+			set_cosmetic_tag = KOR_ACH_DAEGONG
+			remove_country_leader_role = {
+				character = KOR_ahn_chang_ho
+				ideology = korean_democracy
+			}
+			add_country_leader_role = {
+				Character = KOR_ahn_chang_ho
+				Promote_leader = yes
+				country_leader = {
+					desc="AHN_CHANGHO_DESC"
+					ideology = daegongism
+					traits={ prime_minister_of_eok KOR_the_dosan_builder }
+				}
+			}
+			add_state_core = 408
+			add_state_core = 409
+			add_state_core = 657
+			add_state_core = 560
+			add_state_core = 561
+			
+			add_state_core = 714
+			add_state_core = 1059
+			add_state_core = 761
+			add_state_core = 715
+			add_state_core = 1060
+			add_state_core = 610
+			annex_country = {
+				target = KMN
+				transfer_troops = no
+			}
+			annex_country = {
+				target = KYH
+				transfer_troops = no
+			}
+			annex_country = {
+				target = KHK
+				transfer_troops = no
+			}
+		}
+		CHI = {
+			drop_cosmetic_tag = yes
+			set_cosmetic_tag = CHI
+			set_capital = { state = 613 }
+			annex_country = {
+				target = ZLC
+				transfer_troops = no
+			}
+			annex_country = {
+				target = XSM
+				transfer_troops = no
+			}
+			annex_country = {
+				target = XKC
+				transfer_troops = no
+			}
+			annex_country = {
+				target = SZC
+				transfer_troops = no
+			}
+			annex_country = {
+				target = SCC
+				transfer_troops = no
+			}
+			annex_country = {
+				target = YUN
+				transfer_troops = no
+			}
+			annex_country = {
+				target = GXC
+				transfer_troops = no
+			}
+			annex_country = {
+				target = HNC
+				transfer_troops = no
+			}
+			annex_country = {
+				target = AHC
+				transfer_troops = no
+			}
+			annex_country = {
+				target = AQC
+				transfer_troops = no
+			}
+			annex_country = {
+				target = WZC
+				transfer_troops = no
+			}
+			annex_country = {
+				target = PRC
+				transfer_troops = no
+			}
+		}
+		ETS = {
+			annex_country = {
+				target = SIK
+				transfer_troops = no
+			}
+			every_state = {
+				limit = {
+					is_core_of = SIK
+				}
+				add_core_of = ETS
+			}
+		}
+		TJP = {
+			every_state = {
+				limit = {
+					is_core_of = DKG
+				}
+				add_core_of = DKG
+			}
+			annex_country = {
+				target = DKG
+				transfer_troops = no
+			}
+			annex_country = {
+				target = DK1
+				transfer_troops = no
+			}
+			annex_country = {
+				target = DK2
+				transfer_troops = no
+			}
+			annex_country = {
+				target = DK3
+				transfer_troops = no
+			}
+			annex_country = {
+				target = DK4
+				transfer_troops = no
+			}
+			annex_country = {
+				target = TBJ
+				transfer_troops = no
+			}
+			annex_country = {
+				target = NBJ
+				transfer_troops = no
+			}
+			annex_country = {
+				target = SDJ
+				transfer_troops = no
+			}
+			annex_country = {
+				target = FJP
+				transfer_troops = no
+			}
+			annex_country = {
+				target = EJP
+				transfer_troops = no
+			}
+			annex_country = {
+				target = JAP
+				transfer_troops = no
+			}
+			transfer_state = 1064
+			transfer_state = 528
+		}
 	}
 	option = { #
 		name = korea.10021.c
+		every_country = { limit = { is_ai = no } set_temp_variable = { TNO_temp_super_event = token:SE_CONSTITUTION_DOSAN	 }
+		TNO_fire_super_event = yes }
 	}
 	option = { #
 		name = korea.10021.d
+		every_country = { limit = { is_ai = no } set_temp_variable = { TNO_temp_super_event = token:SE_GREAT_ASIAN_WAR_DOSAN	 }
+		TNO_fire_super_event = yes }
 	}
 	option = { #
 		name = korea.10021.e
+		every_country = {
+			limit = {
+				is_puppet_of = KOR
+			}
+			KOR_add_to_CPS_sphere = yes
+		}	
 	}
 }	
 ##########Text Test#################

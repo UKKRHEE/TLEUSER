@@ -98,7 +98,11 @@ ideas = {
 				tag = RAJ
 			}
 			
-			cancel = {}
+			cancel = {
+				NOT = {
+					has_war_with = KOR
+				}
+			}
 
 			allowed_civil_war = {
 				always = yes

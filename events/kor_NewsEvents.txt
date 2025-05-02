@@ -556,20 +556,6 @@ news_event = { #강명제를 향한 테러
 	
 	option = {
 		name = eok_news.10.a
-		hidden_effect = {
-			every_state = {
-				limit = {
-					is_core_of = MON
-				}
-				remove_core_of = MON
-			}
-			every_state = {
-				limit = {
-					is_claimed_by = MON
-				}
-				remove_claim_by = MON
-			}
-		}
 	}
 }
 

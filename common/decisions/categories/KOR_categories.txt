@@ -93,6 +93,21 @@ KOR_ahn_seoul_metro_category = {
 	scripted_gui = KOR_ahn_seoul_metro_Decision_GUI
 	visible_when_empty = yes
 }
+KOR_ahn_emperor_paranoia = {
+	allowed = { original_tag = KOR }
+	visible = { 
+		OR = {	
+			AND = {
+				is_debug = yes
+				has_country_flag = FLAG_DEBUG_DECISION_KOR
+			}
+			has_country_flag = FLAG_ACH_ROUTE
+		}	
+	}
+	priority = 9999
+	scripted_gui = KOR_ahn_emperor_paranoia_Decision_GUI
+	visible_when_empty = yes
+}
 
 ### KKS ###
 KOR_ilsoism_GUI_category = {

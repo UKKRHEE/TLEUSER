@@ -1,0 +1,19 @@
+mapmode_cores_claims_is_core = {
+	is_core_of = ROOT
+}
+
+mapmode_cores_claims_can_integrate_50 = {
+	check_variable = { can_integrate_@ROOT = 50 }
+}
+
+mapmode_cores_claims_can_integrate_80 = {
+	check_variable = { can_integrate_@ROOT = 80 }
+}
+
+mapmode_cores_claims_is_claim = {
+	is_claimed_by = ROOT
+}
+
+mapmode_cores_claims_is_owned = {
+	is_owned_by = ROOT
+}

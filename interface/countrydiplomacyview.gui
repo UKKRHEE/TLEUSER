@@ -10,6 +10,7 @@ guiTypes = {
 		size = { width=550 height=100%% }
 		verticalScrollbar = "right_vertical_slider"
 		#horizontalScrollbar = "bottom_horizontal_slider"
+		clipping = no
 
 		#hide_sound = menu_close_window
 		show_sound = menu_open_window

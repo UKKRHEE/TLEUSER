@@ -1039,6 +1039,9 @@ country_event = {
 		has_government = neutrality
 		has_country_flag = FLAG_KOR_FASCIST_ROUTE
 		date > 1942.9.1
+		NOT = {
+			has_global_flag = TLE_KOREA_IS_DEFEATED
+		}
     }
 	option = { #
 		name = tle_onaction.1.a
@@ -9738,6 +9741,33 @@ country_event = {
 				is_fully_controlled_by = KMN
 			}
 			set_state_controller_to = KOR
+		}
+	}
+}
+
+country_event = {
+	id = tle_onaction.306 #
+	title = tle_onaction.1.title
+	desc = tle_onaction.1.desc
+	picture = GFX_event_korea_777
+	
+	hidden = yes
+		
+	trigger = {
+		any_country = {
+			is_puppet_of = KOR
+			NOT = {
+				has_country_flag = KOR_CPS_member
+			}
+		}
+	}
+	option = {
+		name = tle_onaction.1.a
+		KOR = {			
+			for_each_scope_loop	= {
+				array = KOR.subjects
+				KOR_add_to_CPS_sphere = yes
+			}
 		}
 	}
 }

@@ -3,6 +3,8 @@
  kr_options_tooltip: "마지막 제국 특유의 게임 설정을 토글합니다"
  JOKBO_text: "황실 족보"
  JOKBO_tooltip: "이곳을 §G클릭§!해서 황실 족보 표시 여부를 토글할 수 있습니다."
+ Spheres_text: "경제권 탭"
+ Spheres_tooltip: "이곳을 §G클릭§!해서 외교 탭 오른쪽 경제권 탭 표시 여부를 토글할 수 있습니다."
  BOP_text: "대한제국 힘의 균형"
  BOP_tooltip: "이곳을 §G클릭§!해서 힘의 균형 사용 여부를 토글할 수 있습니다."
  BOP_disabled_tooltip: "§2@KOR대한제국§!만 사용 가능"
