@@ -1,0 +1,386 @@
+scripted_gui = {
+	JAP_MAP_FIRST_GUI = {
+		window_name = "JAP_MAP_FIRST_GUI_window"
+		context_type = decision_category
+
+		#visible = {
+		#	check_variable = { current_state = 1 }
+		#}
+
+		triggers = {
+			japan_map_kansai_lightedup_visible = {
+				check_variable = { JAP_MAP_GUI_selected_state = 1 }
+				JAP = {
+					controls_state = 1070
+				}
+			}
+			japan_map_kansai_kor_lightedup_visible = {
+				check_variable = { JAP_MAP_GUI_selected_state = 1 }
+				KOR = {
+					controls_state = 1070
+				}
+			}
+			japan_map_kansai_visible = {
+				JAP = {
+					controls_state = 1070
+				}
+			}
+			japan_map_kansai_kor_visible = {
+				KOR = {
+					controls_state = 1070
+				}
+			}
+			japan_map_kanto_lightedup_visible = {
+				check_variable = { JAP_MAP_GUI_selected_state = 2 }
+				JAP = {
+					controls_state = 282
+				}
+			}
+			japan_map_kanto_kor_lightedup_visible = {
+				check_variable = { JAP_MAP_GUI_selected_state = 2 }
+				KOR = {
+					controls_state = 282
+				}
+			}
+			japan_map_kanto_visible = {
+				JAP = {
+					controls_state = 282
+				}
+			}
+			japan_map_kanto_kor_visible = {
+				KOR = {
+					controls_state = 282
+				}
+			}
+			japan_map_chubu_lightedup_visible = {
+				check_variable = { JAP_MAP_GUI_selected_state = 3 }
+				JAP = {
+					controls_state = 532
+				}
+			}
+			japan_map_chubu_kor_lightedup_visible = {
+				check_variable = { JAP_MAP_GUI_selected_state = 3 }
+				KOR = {
+					controls_state = 532
+				}
+			}
+			japan_map_chubu_visible = {
+				JAP = {
+					controls_state = 532
+				}
+			}
+			japan_map_chubu_kor_visible = {
+				KOR = {
+					controls_state = 532
+				}
+			}
+			japan_map_chugoku_lightedup_visible = {
+				check_variable = { JAP_MAP_GUI_selected_state = 4 }
+				NOT = {
+					JAP = {
+						owns_state = 1066
+						owns_state = 529
+					}
+				}
+			}
+			japan_map_chugoku_jap_lightedup_visible = {
+				check_variable = { JAP_MAP_GUI_selected_state = 4 }
+				JAP = {
+					owns_state = 1066
+					owns_state = 529
+				}
+				NOT = {
+					KOR = {
+						controls_state = 1066
+						controls_state = 529
+					}
+				}
+			}
+			japan_map_chugoku_kor_lightedup_visible = {
+				check_variable = { JAP_MAP_GUI_selected_state = 4 }
+				KOR = {
+					controls_state = 1066
+					controls_state = 529
+				}
+			}
+			japan_map_chugoku_visible = {
+				NOT = {
+					JAP = {
+						owns_state = 1066
+						owns_state = 529
+					}
+				}
+			}
+			japan_map_chugoku_jap_visible = {
+				JAP = {
+					owns_state = 1066
+					owns_state = 529
+				}
+				NOT = {
+					KOR = {
+						controls_state = 1066
+						controls_state = 529
+					}
+				}
+			}
+			japan_map_chugoku_kor_visible = {
+				KOR = {
+					controls_state = 1066
+					controls_state = 529
+				}
+			}
+			japan_map_shigoku_lightedup_visible = {
+				check_variable = { JAP_MAP_GUI_selected_state = 5 }
+				NOT = {
+					JAP = {
+						owns_state = 530
+					}
+				}
+			}
+			japan_map_shigoku_jap_lightedup_visible = {
+				check_variable = { JAP_MAP_GUI_selected_state = 5 }
+				JAP = {
+					owns_state = 530
+				}
+				NOT = {
+					KOR = {
+						controls_state = 530
+					}
+				}
+			}
+			japan_map_shigoku_kor_lightedup_visible = {
+				check_variable = { JAP_MAP_GUI_selected_state = 5 }
+				KOR = {
+					controls_state = 530
+				}
+			}
+			japan_map_shigoku_visible = {
+				NOT = {
+					JAP = {
+						owns_state = 530
+					}
+				}
+			}
+			japan_map_shigoku_jap_visible = {
+				JAP = {
+					owns_state = 530
+				}
+				NOT = {
+					KOR = {
+						controls_state = 530
+					}
+				}
+			}
+			japan_map_shigoku_kor_visible = {
+				JAP = {
+					KOR = {
+						controls_state = 530
+					}
+				}
+			}
+			japan_map_kyushu_lightedup_visible = {
+				check_variable = { JAP_MAP_GUI_selected_state = 6 }
+				NOT = {
+					JAP = {
+						controls_state = 1064
+					}
+				}
+			}
+			japan_map_kyushu_jap_lightedup_visible = {
+				check_variable = { JAP_MAP_GUI_selected_state = 6 }
+				JAP = {
+					controls_state = 1064
+				}
+			}
+			japan_map_kyushu_visible = {
+				NOT = {
+					JAP = {
+						controls_state = 1064
+					}
+				}
+			}
+			japan_map_kyushu_jap_visible = {
+				JAP = {
+					controls_state = 1064
+				}
+			}
+			japan_map_okinawa_lightedup_visible = {
+				check_variable = { JAP_MAP_GUI_selected_state = 7 }
+			}
+			japan_map_tohoku_lightedup_visible = {
+				check_variable = { JAP_MAP_GUI_selected_state = 8 }
+				NOT = {
+					JAP = {
+						owns_state = 1071
+						owns_state = 1072
+						owns_state = 1068
+						owns_state = 534
+						owns_state = 533
+					}
+				}
+			}
+			japan_map_tohoku_jap_lightedup_visible = {
+				check_variable = { JAP_MAP_GUI_selected_state = 8 }
+				JAP = {
+					owns_state = 1071
+					owns_state = 1072
+					owns_state = 1068
+					owns_state = 534
+					owns_state = 533
+				}
+				NOT = {
+					KOR = {
+						controls_state = 1071
+						controls_state = 1072
+						controls_state = 1068
+						controls_state = 534
+						controls_state = 533
+					}
+				}
+			}
+			japan_map_tohoku_kor_lightedup_visible = {
+				check_variable = { JAP_MAP_GUI_selected_state = 8 }
+				KOR = {
+					controls_state = 1071
+					controls_state = 1072
+					controls_state = 1068
+					controls_state = 534
+					controls_state = 533
+				}
+			}
+			japan_map_tohoku_visible = {
+				NOT = {
+					JAP = {
+						owns_state = 1071
+						owns_state = 1072
+						owns_state = 1068
+						owns_state = 534
+						owns_state = 533
+					}
+				}
+			}
+			japan_map_tohoku_jap_visible = {
+				JAP = {
+					owns_state = 1071
+					owns_state = 1072
+					owns_state = 1068
+					owns_state = 534
+					owns_state = 533
+				}
+				NOT = {
+					KOR = {
+						controls_state = 1071
+						controls_state = 1072
+						controls_state = 1068
+						controls_state = 534
+						controls_state = 533
+					}
+				}
+			}
+			japan_map_tohoku_kor_visible = {
+				KOR = {
+					controls_state = 1071
+					controls_state = 1072
+					controls_state = 1068
+					controls_state = 534
+					controls_state = 533
+				}
+			}
+			japan_map_tsushima_lightedup_visible = {
+				check_variable = { JAP_MAP_GUI_selected_state = 9 }
+			}
+			japan_map_hottkaido_lightedup_visible = {
+				check_variable = { JAP_MAP_GUI_selected_state = 10 }
+				NOT = {
+					JAP = {
+						controls_state = 536
+					}
+				}
+			}
+			japan_map_hottkaido_jap_lightedup_visible = {
+				check_variable = { JAP_MAP_GUI_selected_state = 10 }
+				JAP = {
+					controls_state = 536
+				}
+			}
+			japan_map_hottkaido_visible = {
+				NOT = {
+					JAP = {
+						controls_state = 536
+					}
+				}
+			}
+			japan_map_hottkaido_jap_visible = {
+				JAP = {
+					controls_state = 536
+				}
+			}
+		}
+
+		effects = {
+			japan_map_kansai_click = {
+				set_variable = { JAP_MAP_GUI_selected_state = 1 }
+			}
+			japan_map_kansai_kor_click = {
+				set_variable = { JAP_MAP_GUI_selected_state = 1 }
+			}
+			japan_map_kanto_click = {
+				set_variable = { JAP_MAP_GUI_selected_state = 2 }
+			}
+			japan_map_kanto_kor_click = {
+				set_variable = { JAP_MAP_GUI_selected_state = 2 }
+			}
+			japan_map_chubu_click = {
+				set_variable = { JAP_MAP_GUI_selected_state = 3 }
+			}
+			japan_map_chubu_kor_click = {
+				set_variable = { JAP_MAP_GUI_selected_state = 3 }
+			}
+			japan_map_chugoku_click = {
+				set_variable = { JAP_MAP_GUI_selected_state = 4 }
+			}
+			japan_map_chugoku_jap_click = {
+				set_variable = { JAP_MAP_GUI_selected_state = 4 }
+			}
+			japan_map_chugoku_kor_click = {
+				set_variable = { JAP_MAP_GUI_selected_state = 4 }
+			}
+			japan_map_shigoku_click = {
+				set_variable = { JAP_MAP_GUI_selected_state = 5 }
+			}
+			japan_map_shigoku_jap_click = {
+				set_variable = { JAP_MAP_GUI_selected_state = 5 }
+			}
+			japan_map_shigoku_kor_click = {
+				set_variable = { JAP_MAP_GUI_selected_state = 5 }
+			}
+			japan_map_kyushu_click = {
+				set_variable = { JAP_MAP_GUI_selected_state = 6 }
+			}
+			japan_map_kyushu_jap_click = {
+				set_variable = { JAP_MAP_GUI_selected_state = 6 }
+			}
+			japan_map_okinawa_click = {
+				set_variable = { JAP_MAP_GUI_selected_state = 7 }
+			}
+			japan_map_tohoku_click = {
+				set_variable = { JAP_MAP_GUI_selected_state = 8 }
+			}
+			japan_map_tohoku_jap_click = {
+				set_variable = { JAP_MAP_GUI_selected_state = 8 }
+			}
+			japan_map_tohoku_kor_click = {
+				set_variable = { JAP_MAP_GUI_selected_state = 8 }
+			}
+			japan_map_tsushima_click = {
+				set_variable = { JAP_MAP_GUI_selected_state = 9 }
+			}
+			japan_map_hottkaido_click = {
+				set_variable = { JAP_MAP_GUI_selected_state = 10 }
+			}
+			japan_map_hottkaido_jap_click = {
+				set_variable = { JAP_MAP_GUI_selected_state = 10 }
+			}
+		}
+	}
+}

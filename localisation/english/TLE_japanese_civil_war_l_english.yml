@@ -85,3 +85,20 @@
  JAP_EJP_trigger_end:0 "§Y천황 폐하를 위해!§!"
  
  DKG_win_TT:0 "§R반자이!§!"
+ 
+ JAP_unification_map:0 "일본 통일"
+ 
+ JAP_MAP_GUI_KINKI_TEXT:0 "킨키"
+ JAP_MAP_GUI_KANTO_TEXT:0 "칸토"
+ JAP_MAP_GUI_CHUBU_TEXT:0 "츄부"
+ JAP_MAP_GUI_CHUGOKU_TEXT:0 "츄고쿠"
+ JAP_MAP_GUI_SHIGOKU_TEXT:0 "시고쿠"
+ JAP_MAP_GUI_KYUSHU_TEXT:0 "큐슈"
+ JAP_MAP_GUI_OKINAWA_TEXT:0 "난세이"
+ JAP_MAP_GUI_TOHOKU_TEXT:0 "토호쿠"
+ JAP_MAP_GUI_TSUSHIMA_TEXT:0 "츠시마"
+ JAP_MAP_GUI_HOTTKAIDO_TEXT:0 "홋카이도"
+ 
+ JAP_MAP_GUI_CHOSON_OWNER_TEXT:0 "이 지역은 §3조선§!의 통치 아래 있습니다."
+ JAP_MAP_GUI_TENNO_OWNER_TEXT:0 "이 지역은 §t천황 폐하§!의 통치 아래 있습니다."
+ JAP_MAP_GUI_TOKUGAWA_OWNER_TEXT:0 "이 지역은 §g토쿠가와§!의 통치 아래 있습니다."

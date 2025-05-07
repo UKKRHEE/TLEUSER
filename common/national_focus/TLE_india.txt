@@ -233,6 +233,7 @@ focus_tree = {
         }
         
         bypass = {
+			has_country_flag = TLE_RAJ_indian_independence_act_flag
         }
 
         cancel_if_invalid = yes

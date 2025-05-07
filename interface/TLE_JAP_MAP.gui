@@ -1,0 +1,240 @@
+guiTypes = {
+	containerWindowType = {
+		name = "JAP_MAP_FIRST_GUI_window"
+		position = { x = 0 y = 0 }
+		size = { width = 500 height = 750 }
+		moveable = yes
+		click_to_front = yes
+		
+		instantTextBoxType = {
+			name = "JAP_MAP_GUI_PROVINCE_NAME"
+			position = { x = 0 y = 600 }
+			text = "[JAP_MAP_GUI_PROVINCE_NAME_TEXT]"
+			font = "aldrich_36_outline"
+			format = center
+			maxWidth = 500
+		}
+		
+		instantTextBoxType = {
+			name = "JAP_MAP_GUI_PROVINCE_OWNER"
+			position = { x = 0 y = 650 }
+			font = "Bomb_24"
+			text = "[JAP_MAP_GUI_PROVINCE_OWNER_TEXT]"
+			maxWidth = 500
+			maxHeight = 24
+			format = center
+		}
+
+		buttonType = {
+			name = "japan_map_chubu"
+			position = { x = 10 y = 30 }
+			spriteType = "GFX_japan_map_chubu"
+		}
+		buttonType = {
+			name = "japan_map_chubu_kor"
+			position = { x = 10 y = 30 }
+			spriteType = "GFX_japan_map_chubu_kor"
+		}
+		buttonType = {
+			name = "japan_map_chugoku"
+			position = { x = 10 y = 30 }
+			spriteType = "GFX_japan_map_chugoku"
+		}
+		buttonType = {
+			name = "japan_map_chugoku_jap"
+			position = { x = 10 y = 30 }
+			spriteType = "GFX_japan_map_chugoku_jap"
+		}
+		buttonType = {
+			name = "japan_map_chugoku_kor"
+			position = { x = 10 y = 30 }
+			spriteType = "GFX_japan_map_chugoku_kor"
+		}
+		buttonType = {
+			name = "japan_map_hottkaido"
+			position = { x = 10 y = 30 }
+			spriteType = "GFX_japan_map_hottkaido"
+		}
+		buttonType = {
+			name = "japan_map_hottkaido_jap"
+			position = { x = 10 y = 30 }
+			spriteType = "GFX_japan_map_hottkaido_jap"
+		}
+		buttonType = {
+			name = "japan_map_kansai"
+			position = { x = 10 y = 30 }
+			spriteType = "GFX_japan_map_kansai"
+		}
+		buttonType = {
+			name = "japan_map_kansai_kor"
+			position = { x = 10 y = 30 }
+			spriteType = "GFX_japan_map_kansai_kor"
+		}
+		buttonType = {
+			name = "japan_map_kanto"
+			position = { x = 10 y = 30 }
+			spriteType = "GFX_japan_map_kanto"
+		}
+		buttonType = {
+			name = "japan_map_kanto_kor"
+			position = { x = 10 y = 30 }
+			spriteType = "GFX_japan_map_kanto_kor"
+		}
+		buttonType = {
+			name = "japan_map_kyushu"
+			position = { x = 10 y = 30 }
+			spriteType = "GFX_japan_map_kyushu"
+		}
+		buttonType = {
+			name = "japan_map_kyushu_jap"
+			position = { x = 10 y = 30 }
+			spriteType = "GFX_japan_map_kyushu_jap"
+		}
+		buttonType = {
+			name = "japan_map_okinawa"
+			position = { x = 10 y = 30 }
+			spriteType = "GFX_japan_map_okinawa"
+		}
+		buttonType = {
+			name = "japan_map_shigoku"
+			position = { x = 10 y = 30 }
+			spriteType = "GFX_japan_map_shigoku"
+		}
+		buttonType = {
+			name = "japan_map_shigoku_jap"
+			position = { x = 10 y = 30 }
+			spriteType = "GFX_japan_map_shigoku_jap"
+		}
+		buttonType = {
+			name = "japan_map_shigoku_kor"
+			position = { x = 10 y = 30 }
+			spriteType = "GFX_japan_map_shigoku_kor"
+		}
+		buttonType = {
+			name = "japan_map_tohoku"
+			position = { x = 10 y = 30 }
+			spriteType = "GFX_japan_map_tohoku"
+		}
+		buttonType = {
+			name = "japan_map_tohoku_jap"
+			position = { x = 10 y = 30 }
+			spriteType = "GFX_japan_map_tohoku_jap"
+		}
+		buttonType = {
+			name = "japan_map_tohoku_kor"
+			position = { x = 10 y = 30 }
+			spriteType = "GFX_japan_map_tohoku_kor"
+		}
+		buttonType = {
+			name = "japan_map_tsushima"
+			position = { x = 10 y = 30 }
+			spriteType = "GFX_japan_map_tsushima"
+		}	
+		################################################
+		iconType = {
+			name = "japan_map_chubu_lightedup"
+			position = { x = 10 y = 30 }
+			spriteType = "GFX_japan_map_chubu_lightedup"
+		}
+		iconType = {
+			name = "japan_map_chubu_kor_lightedup"
+			position = { x = 10 y = 30 }
+			spriteType = "GFX_japan_map_chubu_kor_lightedup"
+		}
+		iconType = {
+			name = "japan_map_chugoku_lightedup"
+			position = { x = 10 y = 30 }
+			spriteType = "GFX_japan_map_chugoku_lightedup"
+		}
+		iconType = {
+			name = "japan_map_chugoku_jap_lightedup"
+			position = { x = 10 y = 30 }
+			spriteType = "GFX_japan_map_chugoku_jap_lightedup"
+		}
+		iconType = {
+			name = "japan_map_chugoku_kor_lightedup"
+			position = { x = 10 y = 30 }
+			spriteType = "GFX_japan_map_chugoku_kor_lightedup"
+		}
+		iconType = {
+			name = "japan_map_hottkaido_lightedup"
+			position = { x = 10 y = 30 }
+			spriteType = "GFX_japan_map_hottkaido_lightedup"
+		}
+		iconType = {
+			name = "japan_map_hottkaido_jap_lightedup"
+			position = { x = 10 y = 30 }
+			spriteType = "GFX_japan_map_hottkaido_jap_lightedup"
+		}
+		iconType = {
+			name = "japan_map_kansai_lightedup"
+			position = { x = 10 y = 30 }
+			spriteType = "GFX_japan_map_kansai_lightedup"
+		}
+		iconType = {
+			name = "japan_map_kansai_kor_lightedup"
+			position = { x = 10 y = 30 }
+			spriteType = "GFX_japan_map_kansai_kor_lightedup"
+		}
+		iconType = {
+			name = "japan_map_kanto_lightedup"
+			position = { x = 10 y = 30 }
+			spriteType = "GFX_japan_map_kanto_lightedup"
+		}
+		iconType = {
+			name = "japan_map_kanto_kor_lightedup"
+			position = { x = 10 y = 30 }
+			spriteType = "GFX_japan_map_kanto_kor_lightedup"
+		}
+		iconType = {
+			name = "japan_map_kyushu_lightedup"
+			position = { x = 10 y = 30 }
+			spriteType = "GFX_japan_map_kyushu_lightedup"
+		}
+		iconType = {
+			name = "japan_map_kyushu_jap_lightedup"
+			position = { x = 10 y = 30 }
+			spriteType = "GFX_japan_map_kyushu_jap_lightedup"
+		}
+		iconType = {
+			name = "japan_map_okinawa_lightedup"
+			position = { x = 10 y = 30 }
+			spriteType = "GFX_japan_map_okinawa_lightedup"
+		}
+		iconType = {
+			name = "japan_map_shigoku_lightedup"
+			position = { x = 10 y = 30 }
+			spriteType = "GFX_japan_map_shigoku_lightedup"
+		}
+		iconType = {
+			name = "japan_map_shigoku_jap_lightedup"
+			position = { x = 10 y = 30 }
+			spriteType = "GFX_japan_map_shigoku_jap_lightedup"
+		}
+		iconType = {
+			name = "japan_map_shigoku_kor_lightedup"
+			position = { x = 10 y = 30 }
+			spriteType = "GFX_japan_map_shigoku_kor_lightedup"
+		}
+		iconType = {
+			name = "japan_map_tohoku_lightedup"
+			position = { x = 10 y = 30 }
+			spriteType = "GFX_japan_map_tohoku_lightedup"
+		}
+		iconType = {
+			name = "japan_map_tohoku_jap_lightedup"
+			position = { x = 10 y = 30 }
+			spriteType = "GFX_japan_map_tohoku_jap_lightedup"
+		}
+		iconType = {
+			name = "japan_map_tohoku_kor_lightedup"
+			position = { x = 10 y = 30 }
+			spriteType = "GFX_japan_map_tohoku_kor_lightedup"
+		}
+		iconType = {
+			name = "japan_map_tsushima_lightedup"
+			position = { x = 10 y = 30 }
+			spriteType = "GFX_japan_map_tsushima_lightedup"
+		}
+	}
+}

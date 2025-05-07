@@ -2001,7 +2001,6 @@ country_event = { #붉은 바다
 	is_triggered_only = yes
 
 	option = {
-		custom_effect_tooltip = DKG_kinki_tt
 		name = japan.1062.a	
 		ai_chance = {
 			factor = 100

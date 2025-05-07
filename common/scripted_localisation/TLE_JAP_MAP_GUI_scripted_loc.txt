@@ -1,0 +1,447 @@
+defined_text = {
+	name = JAP_MAP_GUI_PROVINCE_NAME_TEXT
+	text = {
+		trigger = { 
+				check_variable = { JAP_MAP_GUI_selected_state = 1 }
+		}
+		localization_key = JAP_MAP_GUI_KINKI_TEXT
+	}
+	text = {
+		trigger = { 
+				check_variable = { JAP_MAP_GUI_selected_state = 2 }
+		}
+		localization_key = JAP_MAP_GUI_KANTO_TEXT
+	}
+	text = {
+		trigger = { 
+				check_variable = { JAP_MAP_GUI_selected_state = 3 }
+		}
+		localization_key = JAP_MAP_GUI_CHUBU_TEXT
+	}
+	text = {
+		trigger = { 
+				check_variable = { JAP_MAP_GUI_selected_state = 4 }
+		}
+		localization_key = JAP_MAP_GUI_CHUGOKU_TEXT
+	}
+	text = {
+		trigger = { 
+				check_variable = { JAP_MAP_GUI_selected_state = 5 }
+		}
+		localization_key = JAP_MAP_GUI_SHIGOKU_TEXT
+	}
+	text = {
+		trigger = { 
+				check_variable = { JAP_MAP_GUI_selected_state = 6 }
+		}
+		localization_key = JAP_MAP_GUI_KYUSHU_TEXT
+	}
+	text = {
+		trigger = { 
+				check_variable = { JAP_MAP_GUI_selected_state = 7 }
+		}
+		localization_key = JAP_MAP_GUI_OKINAWA_TEXT
+	}
+	text = {
+		trigger = { 
+				check_variable = { JAP_MAP_GUI_selected_state = 8 }
+		}
+		localization_key = JAP_MAP_GUI_TOHOKU_TEXT
+	}
+	text = {
+		trigger = { 
+				check_variable = { JAP_MAP_GUI_selected_state = 9 }
+		}
+		localization_key = JAP_MAP_GUI_TSUSHIMA_TEXT
+	}
+	text = {
+		trigger = { 
+				check_variable = { JAP_MAP_GUI_selected_state = 10 }
+		}
+		localization_key = JAP_MAP_GUI_HOTTKAIDO_TEXT
+	}
+}
+defined_text = {
+	name = JAP_MAP_GUI_PROVINCE_OWNER_TEXT
+	text = {
+		trigger = {
+			OR = {
+				AND = { #킨키
+					check_variable = { JAP_MAP_GUI_selected_state = 1 }
+					1070 = {
+						OR = {
+							is_controlled_by = KOR
+							is_controlled_by = KKS
+							is_controlled_by = KHK
+							is_controlled_by = DK1
+							is_controlled_by = DK2
+							is_controlled_by = DK3
+							is_controlled_by = DK4
+							is_controlled_by = RYU
+						}
+					}
+				}
+				AND = { #칸토
+					check_variable = { JAP_MAP_GUI_selected_state = 2 }
+					282 = {
+						OR = {
+							is_controlled_by = KOR
+							is_controlled_by = KKS
+							is_controlled_by = KHK
+							is_controlled_by = DK1
+							is_controlled_by = DK2
+							is_controlled_by = DK3
+							is_controlled_by = DK4
+							is_controlled_by = RYU
+						}
+					}
+				}
+				AND = { #츄부
+					check_variable = { JAP_MAP_GUI_selected_state = 3 }
+					532 = {
+						OR = {
+							is_controlled_by = KOR
+							is_controlled_by = KKS
+							is_controlled_by = KHK
+							is_controlled_by = DK1
+							is_controlled_by = DK2
+							is_controlled_by = DK3
+							is_controlled_by = DK4
+							is_controlled_by = RYU
+						}
+					}
+				}
+				AND = { #츄고쿠
+					check_variable = { JAP_MAP_GUI_selected_state = 4 }
+					1066 = {
+						OR = {
+							is_controlled_by = KOR
+							is_controlled_by = KKS
+							is_controlled_by = KHK
+							is_controlled_by = DK1
+							is_controlled_by = DK2
+							is_controlled_by = DK3
+							is_controlled_by = DK4
+							is_controlled_by = RYU
+						}
+					}
+				}
+				AND = { #시고쿠
+					check_variable = { JAP_MAP_GUI_selected_state = 5 }
+					530 = {
+						OR = {
+							is_controlled_by = KOR
+							is_controlled_by = KKS
+							is_controlled_by = KHK
+							is_controlled_by = DK1
+							is_controlled_by = DK2
+							is_controlled_by = DK3
+							is_controlled_by = DK4
+							is_controlled_by = RYU
+						}
+					}
+				}
+				AND = { #큐슈
+					check_variable = { JAP_MAP_GUI_selected_state = 6 }
+					1064 = {
+						OR = {
+							is_controlled_by = KOR
+							is_controlled_by = KKS
+							is_controlled_by = KHK
+							is_controlled_by = DK1
+							is_controlled_by = DK2
+							is_controlled_by = DK3
+							is_controlled_by = DK4
+							is_controlled_by = RYU
+						}
+					}
+				}
+				AND = { #난세이
+					check_variable = { JAP_MAP_GUI_selected_state = 7 }
+					526 = {
+						OR = {
+							is_controlled_by = KOR
+							is_controlled_by = KKS
+							is_controlled_by = KHK
+							is_controlled_by = DK1
+							is_controlled_by = DK2
+							is_controlled_by = DK3
+							is_controlled_by = DK4
+							is_controlled_by = RYU
+						}
+					}
+				}
+				AND = { #토호쿠
+					check_variable = { JAP_MAP_GUI_selected_state = 8 }
+					1071 = {
+						OR = {
+							is_controlled_by = KOR
+							is_controlled_by = KKS
+							is_controlled_by = KHK
+							is_controlled_by = DK1
+							is_controlled_by = DK2
+							is_controlled_by = DK3
+							is_controlled_by = DK4
+							is_controlled_by = RYU
+						}
+					}
+				}
+				AND = { #츠시마
+					check_variable = { JAP_MAP_GUI_selected_state = 9 }
+					1029 = {
+						OR = {
+							is_controlled_by = KOR
+							is_controlled_by = KKS
+							is_controlled_by = KHK
+							is_controlled_by = DK1
+							is_controlled_by = DK2
+							is_controlled_by = DK3
+							is_controlled_by = DK4
+							is_controlled_by = RYU
+						}
+					}
+				}
+				AND = { #홋카이도
+					check_variable = { JAP_MAP_GUI_selected_state = 10 }
+					536 = {
+						OR = {
+							is_controlled_by = KOR
+							is_controlled_by = KKS
+							is_controlled_by = KHK
+							is_controlled_by = DK1
+							is_controlled_by = DK2
+							is_controlled_by = DK3
+							is_controlled_by = DK4
+							is_controlled_by = RYU
+						}
+					}
+				}
+			}
+		}
+		localization_key = JAP_MAP_GUI_CHOSON_OWNER_TEXT
+	}
+	text = {
+		trigger = {
+			OR = {
+				AND = { #킨키
+					check_variable = { JAP_MAP_GUI_selected_state = 1 }
+					1070 = {
+						is_controlled_by = JAP
+					}
+				}
+				AND = { #칸토
+					check_variable = { JAP_MAP_GUI_selected_state = 2 }
+					282 = {
+						is_controlled_by = JAP
+					}
+				}
+				AND = { #츄부
+					check_variable = { JAP_MAP_GUI_selected_state = 3 }
+					532 = {
+						is_controlled_by = JAP
+					}
+				}
+				AND = { #츄고쿠
+					check_variable = { JAP_MAP_GUI_selected_state = 4 }
+					1066 = {
+						is_controlled_by = JAP
+					}
+				}
+				AND = { #시고쿠
+					check_variable = { JAP_MAP_GUI_selected_state = 5 }
+					530 = {
+						is_controlled_by = JAP
+					}
+				}
+				AND = { #큐슈
+					check_variable = { JAP_MAP_GUI_selected_state = 6 }
+					1064 = {
+						is_controlled_by = JAP
+					}
+				}
+				AND = { #난세이
+					check_variable = { JAP_MAP_GUI_selected_state = 7 }
+					526 = {
+						is_controlled_by = JAP
+					}
+				}
+				AND = { #토호쿠
+					check_variable = { JAP_MAP_GUI_selected_state = 8 }
+					1071 = {
+						is_controlled_by = JAP
+					}
+				}
+				AND = { #츠시마
+					check_variable = { JAP_MAP_GUI_selected_state = 9 }
+					1029 = {
+						is_controlled_by = JAP
+					}
+				}
+				AND = { #홋카이도
+					check_variable = { JAP_MAP_GUI_selected_state = 10 }
+					536 = {
+						is_controlled_by = JAP
+					}
+				}
+			}
+		}
+		localization_key = JAP_MAP_GUI_TENNO_OWNER_TEXT
+	}
+	text = {
+		trigger = {
+			OR = {
+				AND = { #킨키
+					check_variable = { JAP_MAP_GUI_selected_state = 1 }
+					1070 = {
+						OR = {
+							is_controlled_by = DKG
+							is_controlled_by = KGJ
+							is_controlled_by = FJP
+							is_controlled_by = GJJ
+							is_controlled_by = EJP
+							is_controlled_by = TBJ
+							is_controlled_by = NBJ
+							is_controlled_by = SDJ
+						}
+					}
+				}
+				AND = { #칸토
+					check_variable = { JAP_MAP_GUI_selected_state = 2 }
+					282 = {
+						OR = {
+							is_controlled_by = DKG
+							is_controlled_by = KGJ
+							is_controlled_by = FJP
+							is_controlled_by = GJJ
+							is_controlled_by = EJP
+							is_controlled_by = TBJ
+							is_controlled_by = NBJ
+							is_controlled_by = SDJ
+						}
+					}
+				}
+				AND = { #츄부
+					check_variable = { JAP_MAP_GUI_selected_state = 3 }
+					532 = {
+						OR = {
+							is_controlled_by = DKG
+							is_controlled_by = KGJ
+							is_controlled_by = FJP
+							is_controlled_by = GJJ
+							is_controlled_by = EJP
+							is_controlled_by = TBJ
+							is_controlled_by = NBJ
+							is_controlled_by = SDJ
+						}
+					}
+				}
+				AND = { #츄고쿠
+					check_variable = { JAP_MAP_GUI_selected_state = 4 }
+					1066 = {
+						OR = {
+							is_controlled_by = DKG
+							is_controlled_by = KGJ
+							is_controlled_by = FJP
+							is_controlled_by = GJJ
+							is_controlled_by = EJP
+							is_controlled_by = TBJ
+							is_controlled_by = NBJ
+							is_controlled_by = SDJ
+						}
+					}
+				}
+				AND = { #시고쿠
+					check_variable = { JAP_MAP_GUI_selected_state = 5 }
+					530 = {
+						OR = {
+							is_controlled_by = DKG
+							is_controlled_by = KGJ
+							is_controlled_by = FJP
+							is_controlled_by = GJJ
+							is_controlled_by = EJP
+							is_controlled_by = TBJ
+							is_controlled_by = NBJ
+							is_controlled_by = SDJ
+						}
+					}
+				}
+				AND = { #큐슈
+					check_variable = { JAP_MAP_GUI_selected_state = 6 }
+					1064 = {
+						OR = {
+							is_controlled_by = DKG
+							is_controlled_by = KGJ
+							is_controlled_by = FJP
+							is_controlled_by = GJJ
+							is_controlled_by = EJP
+							is_controlled_by = TBJ
+							is_controlled_by = NBJ
+							is_controlled_by = SDJ
+						}
+					}
+				}
+				AND = { #난세이
+					check_variable = { JAP_MAP_GUI_selected_state = 7 }
+					526 = {
+						OR = {
+							is_controlled_by = DKG
+							is_controlled_by = KGJ
+							is_controlled_by = FJP
+							is_controlled_by = GJJ
+							is_controlled_by = EJP
+							is_controlled_by = TBJ
+							is_controlled_by = NBJ
+							is_controlled_by = SDJ
+						}
+					}
+				}
+				AND = { #토호쿠
+					check_variable = { JAP_MAP_GUI_selected_state = 8 }
+					1071 = {
+						OR = {
+							is_controlled_by = DKG
+							is_controlled_by = KGJ
+							is_controlled_by = FJP
+							is_controlled_by = GJJ
+							is_controlled_by = EJP
+							is_controlled_by = TBJ
+							is_controlled_by = NBJ
+							is_controlled_by = SDJ
+						}
+					}
+				}
+				AND = { #츠시마
+					check_variable = { JAP_MAP_GUI_selected_state = 9 }
+					1029 = {
+						OR = {
+							is_controlled_by = DKG
+							is_controlled_by = KGJ
+							is_controlled_by = FJP
+							is_controlled_by = GJJ
+							is_controlled_by = EJP
+							is_controlled_by = TBJ
+							is_controlled_by = NBJ
+							is_controlled_by = SDJ
+						}
+					}
+				}
+				AND = { #홋카이도
+					check_variable = { JAP_MAP_GUI_selected_state = 10 }
+					536 = {
+						OR = {
+							is_controlled_by = DKG
+							is_controlled_by = KGJ
+							is_controlled_by = FJP
+							is_controlled_by = GJJ
+							is_controlled_by = EJP
+							is_controlled_by = TBJ
+							is_controlled_by = NBJ
+							is_controlled_by = SDJ
+						}
+					}
+				}
+			}
+		}
+		localization_key = JAP_MAP_GUI_TOKUGAWA_OWNER_TEXT
+	}
+}

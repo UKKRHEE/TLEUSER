@@ -1,4 +1,20 @@
 # Empty file to overwrite vanilla.
+JAP_unification_map = {
+
+	scripted_gui = JAP_MAP_FIRST_GUI
+
+	available = {
+		tag = JAP
+	}
+	visible = {
+		tag = JAP
+		JAP = {
+			owns_state = 282
+		}
+	}
+	priority = 110
+	visible_when_empty = yes
+}
 JAP_Sakusen_categories = {
 	available = {
 		tag = JAP
@@ -109,6 +125,7 @@ JAP_yokusankai_GUI = {
 	}
 	visible = {
 		original_tag = JAP
+		is_debug = yes
 	}
 	scripted_gui = JAP_yokusankai_GUI
 	visible_when_empty = yes

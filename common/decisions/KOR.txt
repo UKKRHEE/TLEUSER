@@ -4853,9 +4853,6 @@ KOR_second_plan_tent = {
 				add_ideas = CHI_embargo_korea
 			}
 		}
-		modifier = {
-			naval_coordination = 0.1
-		}
 		remove_effect = {
 			
 		}
@@ -5378,231 +5375,6 @@ KOR_third_plan_doryun = {
 			}
 		}
 	}
-	KOR_surrander_of_phi = { 
-		icon = GFX_decision_generic_operation
-	    
-		#picture = GFX_decision_cat_national_assembly
-
-		allowed = {
-			original_tag = KOR
-		}	
-		
-		highlight_states = {
-			highlight_state_targets = { 
-				state = 623
-				state = 327
-				state = 624
-				state = 625
-				state = 626
-				state = 627
-				state = 628
-			}
-		}
-		available = {
-			PHI = {
-				has_capitulated = yes
-			}
-			KOR = {
-				controls_state = 327
-			}
-		}
-
-		days_mission_timeout = 360
-
-		fire_only_once = yes
-		
-		is_good = no
-
-		activation = {
-			KOR = {
-				has_completed_focus = KOR_the_plan_south
-			}
-			USA = {
-				has_war_with = KOR
-			}
-		}
-
-		visible = {
-			original_tag = KOR
-			has_completed_focus = KOR_the_plan_south
-        }
-		complete_effect = {
-			country_event = {
-				id = south.3
-			}
-			set_country_flag = flag_KOR_surrander_of_phi_end
-		}
-
-		timeout_effect = {
-			set_country_flag = flag_KOR_surrander_of_phi_end
-			country_event = {
-				id = south.22
-			}
-		}
-		
-	}
-	KOR_invasion_of_burma = { #버마
-		icon = GFX_decision_generic_operation
-		allowed = {
-		    tag = KOR
-		}
-		highlight_states = {
-			highlight_state_targets = {
-				state = 288
-				state = 640
-				state = 993
-				state = 994
-				state = 995
-				state = 996
-				state = 997
-				state = 998
-				state = 999
-			}
-		}
-		available = {
-			AND = {
-				OR = {
-					KOR = { controls_state = 288 }
-					any_country = { is_in_faction_with = KOR controls_state = 288 }
-				}
-				OR = {
-					KOR = { controls_state = 640 }
-					any_country = { is_in_faction_with = KOR controls_state = 640 }
-				}
-				OR = {
-					KOR = { controls_state = 993 }
-					any_country = { is_in_faction_with = KOR controls_state = 993 }
-				}
-				OR = {
-					KOR = { controls_state = 994 }
-					any_country = { is_in_faction_with = KOR controls_state = 994 }
-				}
-				OR = {
-					KOR = { controls_state = 995 }
-					any_country = { is_in_faction_with = KOR controls_state = 995 }
-				}
-				OR = {
-					KOR = { controls_state = 996 }
-					any_country = { is_in_faction_with = KOR controls_state = 996 }
-				}
-				OR = {
-					KOR = { controls_state = 997 }
-					any_country = { is_in_faction_with = KOR controls_state = 997 }
-				}
-				OR = {
-					KOR = { controls_state = 998 }
-					any_country = { is_in_faction_with = KOR controls_state = 998 }
-				}
-				OR = {
-					KOR = { controls_state = 999 }
-					any_country = { is_in_faction_with = KOR controls_state = 999 }
-				}
-			}
-     	}
-		visible = {
-			has_completed_focus = KOR_the_plan_south
-		}
-		activation = {
-			has_completed_focus = KOR_the_plan_south
-			KOR = {
-				has_war_with = BUR
-			}
-		}
-		days_mission_timeout = 1080
-	
-		fire_only_once = yes
-		is_good = no
-		complete_effect = {
-			custom_effect_tooltip = KOR_INVADE_BUR
-			hidden_effect = {
-				set_country_flag = KOR_won_in_burma
-			}
-		}
-		timeout_effect = {
-			#페널티
-		}
-	}
-	
-	KOR_calcutta = { #캘커타
-		icon = GFX_decision_generic_operation
-		allowed = {
-		    tag = KOR
-		}
-		highlight_states = {
-			highlight_state_targets = {
-				state = 430
-				state = 431
-				state = 432
-				state = 434
-				state = 435
-				state = 985
-				state = 990
-			}
-		}
-		available = {
-			NOT = {
-				has_global_flag = TLE_KOREA_IS_DEFEATED			
-				has_global_flag = TLE_KOREA_WON
-			}
-			has_country_flag = KOR_won_in_burma
-			AND = {
-				OR = {
-					KOR = { controls_state = 430 }
-					any_country = { is_in_faction_with = KOR controls_state = 430 }
-				}
-				OR = {
-					KOR = { controls_state = 431 }
-					any_country = { is_in_faction_with = KOR controls_state = 431 }
-				}
-				OR = {
-					KOR = { controls_state = 432 }
-					any_country = { is_in_faction_with = KOR controls_state = 432 }
-				}
-				OR = {
-					KOR = { controls_state = 434 }
-					any_country = { is_in_faction_with = KOR controls_state = 434 }
-				}
-				OR = {
-					KOR = { controls_state = 435 }
-					any_country = { is_in_faction_with = KOR controls_state = 435 }
-				}
-				OR = {
-					KOR = { controls_state = 985 }
-					any_country = { is_in_faction_with = KOR controls_state = 985 }
-				}
-				OR = {
-					KOR = { controls_state = 990 }
-					any_country = { is_in_faction_with = KOR controls_state = 990 }
-				}
-			}
-     	}
-		visible = {
-			has_completed_focus = KOR_the_plan_south
-		}
-		activation = {
-			has_completed_focus = KOR_the_plan_south
-			KOR = {
-				has_war_with = RAJ
-				has_war_with = BUR
-			}
-		}
-		days_mission_timeout = 1080
-	
-		fire_only_once = yes
-		is_good = no
-		complete_effect = {
-			custom_effect_tooltip = KOR_INVADE_BAN
-			hidden_effect = {
-				KOR = {
-					set_country_flag = KOR_won_in_calcutta
-					country_event = {
-						id = south.33
-					}
-				}
-			}
-		}
-	}
-	
 	KOR_surrander_of_ins = { 
 		icon = GFX_decision_oil
 		
@@ -5695,8 +5467,223 @@ KOR_third_plan_doryun = {
 		}
 		
 	}
+	KOR_surrander_of_phi = { 
+		icon = GFX_decision_rubber
+	    
+		#picture = GFX_decision_cat_national_assembly
+
+		allowed = {
+			original_tag = KOR
+		}	
+		
+		highlight_states = {
+			highlight_state_targets = { 
+				state = 623
+				state = 327
+				state = 624
+				state = 625
+				state = 626
+				state = 627
+				state = 628
+			}
+		}
+		available = {
+			PHI = {
+				has_capitulated = yes
+			}
+			KOR = {
+				controls_state = 327
+			}
+		}
+
+		days_mission_timeout = 360
+
+		fire_only_once = yes
+		
+		is_good = no
+
+		activation = {
+			KOR = {
+				has_completed_focus = KOR_the_plan_south
+			}
+			USA = {
+				has_war_with = KOR
+			}
+		}
+
+		visible = {
+			original_tag = KOR
+			has_completed_focus = KOR_the_plan_south
+        }
+		complete_effect = {
+			country_event = {
+				id = south.3
+			}
+			set_country_flag = flag_KOR_surrander_of_phi_end
+		}
+
+		timeout_effect = {
+			set_country_flag = flag_KOR_surrander_of_phi_end
+			country_event = {
+				id = south.22
+			}
+		}
+		
+	}
+	KOR_invasion_of_burma = { #버마
+		icon = GFX_decision_generic_operation
+		allowed = {
+		    tag = KOR
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 288
+				state = 640
+				state = 993
+				state = 994
+				state = 995
+				state = 996
+				state = 997
+				state = 998
+				state = 999
+			}
+		}
+		available = {
+			has_war_with = BUR
+			AND = {
+				OR = {
+					KOR = { controls_state = 288 }
+					any_country = { is_in_faction_with = KOR controls_state = 288 }
+				}
+				OR = {
+					KOR = { controls_state = 640 }
+					any_country = { is_in_faction_with = KOR controls_state = 640 }
+				}
+				OR = {
+					KOR = { controls_state = 993 }
+					any_country = { is_in_faction_with = KOR controls_state = 993 }
+				}
+				OR = {
+					KOR = { controls_state = 994 }
+					any_country = { is_in_faction_with = KOR controls_state = 994 }
+				}
+				OR = {
+					KOR = { controls_state = 995 }
+					any_country = { is_in_faction_with = KOR controls_state = 995 }
+				}
+				OR = {
+					KOR = { controls_state = 996 }
+					any_country = { is_in_faction_with = KOR controls_state = 996 }
+				}
+				OR = {
+					KOR = { controls_state = 997 }
+					any_country = { is_in_faction_with = KOR controls_state = 997 }
+				}
+				OR = {
+					KOR = { controls_state = 998 }
+					any_country = { is_in_faction_with = KOR controls_state = 998 }
+				}
+				OR = {
+					KOR = { controls_state = 999 }
+					any_country = { is_in_faction_with = KOR controls_state = 999 }
+				}
+			}
+     	}
+		visible = {
+			has_completed_focus = KOR_the_plan_south
+		}
+		activation = {
+			has_completed_focus = KOR_the_plan_south
+			KOR = {
+				has_war_with = BUR
+			}
+		}
+		days_mission_timeout = 1500
+	
+		fire_only_once = yes
+		is_good = no
+		complete_effect = {
+			custom_effect_tooltip = KOR_INVADE_BUR
+			hidden_effect = {
+				set_country_flag = KOR_won_in_burma
+			}
+		}
+		timeout_effect = {
+			#페널티
+		}
+	}
+	
+	KOR_calcutta = { #캘커타
+		icon = GFX_decision_generic_operation
+		allowed = {
+		    tag = KOR
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 430
+				state = 431
+				state = 432
+				state = 434
+				state = 435
+				state = 985
+				state = 990
+			}
+		}
+		available = {
+			has_war_with = RAJ
+			has_country_flag = KOR_won_in_burma
+			AND = {
+				OR = {
+					KOR = { controls_state = 430 }
+					any_country = { is_in_faction_with = KOR controls_state = 430 }
+				}
+				OR = {
+					KOR = { controls_state = 431 }
+					any_country = { is_in_faction_with = KOR controls_state = 431 }
+				}
+				OR = {
+					KOR = { controls_state = 432 }
+					any_country = { is_in_faction_with = KOR controls_state = 432 }
+				}
+				OR = {
+					KOR = { controls_state = 435 }
+					any_country = { is_in_faction_with = KOR controls_state = 435 }
+				}
+				OR = {
+					KOR = { controls_state = 990 }
+					any_country = { is_in_faction_with = KOR controls_state = 990 }
+				}
+			}
+     	}
+		visible = {
+			has_completed_focus = KOR_the_plan_south
+		}
+		activation = {
+			has_completed_focus = KOR_the_plan_south
+			KOR = {
+				has_war_with = RAJ
+				has_war_with = BUR
+			}
+		}
+		days_mission_timeout = 1500
+	
+		fire_only_once = yes
+		is_good = no
+		complete_effect = {
+			custom_effect_tooltip = KOR_INVADE_BAN
+			hidden_effect = {
+				KOR = {
+					set_country_flag = KOR_won_in_calcutta
+					country_event = {
+						id = south.33
+					}
+				}
+			}
+		}
+	}
+	
 	KOR_austrailia = { #남방 - 호주
-		icon = generic_form_nation
+		icon = GFX_decision_SWI_support_humanitarian_efforts
 		allowed = {
 		    tag = KOR
 		}
@@ -5711,6 +5698,7 @@ KOR_third_plan_doryun = {
 			}
 		}
 		available = {
+			has_war_with = AST
 			has_country_flag = KOR_won_in_ins
 			controls_state = 634
 			controls_state = 635
@@ -5720,19 +5708,22 @@ KOR_third_plan_doryun = {
 			controls_state = 737
      	}
 		visible = {
-			has_completed_focus = KOR_the_ins_focus
+			has_country_flag = TLE_KOR_invade_austrailia_flag
 		}
 		activation = {
-			has_completed_focus = KOR_the_ins_focus
+			has_country_flag = TLE_KOR_invade_austrailia_flag
 		}
-		days_mission_timeout = 360
+		days_mission_timeout = 1500
 	
 		fire_only_once = yes
 		is_good = no
 		complete_effect = {
-			KOR = {
-				country_event = {
-					id = south.2
+			custom_effect_tooltip = KOR_INVADE_AST
+			hidden_effect = {
+				KOR = {
+					country_event = {
+						id = south.10
+					}
 				}
 			}
 		}
@@ -6211,7 +6202,7 @@ KOR_third_plan_doryun = {
 		}
 	}
 	KOR_burma_independence = { #버마독립
-		icon = GFX_decision_generic_operation
+		icon = GFX_decision_eng_trade_unions_support
 		allowed = {
 		    tag = KOR
 		}
@@ -6254,11 +6245,26 @@ KOR_third_plan_doryun = {
 				KOR = {
 					puppet = BRM
 				}
+				BRM = {
+					set_cosmetic_tag = BRM_KOR
+					set_politics = {
+						ruling_party = fascism
+						last_election = "1936.1.1"
+						election_frequency = 60
+						elections_allowed = no
+					}
+					set_popularities = {
+						democratic = 0
+						fascism = 100
+						communism = 0
+						neutrality = 0
+					}
+				}
 			}
 		}
 	}
 	KOR_free_india = { #자유인도
-		icon = GFX_decision_generic_operation
+		icon = GFX_decision_generic_political_discourse
 		allowed = {
 		    tag = KOR
 		}
@@ -6286,6 +6292,9 @@ KOR_third_plan_doryun = {
 			custom_effect_tooltip = KOR_PUPPET_BAN
 			hidden_effect = {
 				set_global_flag = KOR_free_india_established
+				KOR = {
+					puppet = BAN
+				}
 				BAN = {
 					set_cosmetic_tag = BAN_KOR
 					transfer_state = 430
@@ -6304,9 +6313,18 @@ KOR_third_plan_doryun = {
 					add_state_core = 435
 					add_state_core = 985
 					add_state_core = 990
-				}
-				KOR = {
-					puppet = BAN
+					set_politics = {
+						ruling_party = fascism
+						last_election = "1936.1.1"
+						election_frequency = 60
+						elections_allowed = no
+					}
+					set_popularities = {
+						democratic = 0
+						fascism = 100
+						communism = 0
+						neutrality = 0
+					}
 				}
 			}
 		}

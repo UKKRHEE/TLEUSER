@@ -558,6 +558,16 @@ KOR_hangbok_event = {
 	}
 	if = {
 		limit = {
+			KOR = {
+				has_country_flag = KOR_do_not_invade_delhi
+			}
+		}
+		RAJ = {
+			set_cosmetic_tag = RAJ_FREE
+		}
+	}
+	if = {
+		limit = {
 			BAN = {
 				exists = no
 			}
@@ -629,7 +639,10 @@ KOR_hangbok_event = {
 		}
 		every_state = {
 			limit = {
-				is_owned_by = RAJ
+				OR = {
+					is_owned_by = RAJ
+					is_owned_by = AFG
+				}
 				is_core_of = PAK
 			}
 			transfer_state_to = PAK
@@ -726,18 +739,18 @@ KOR_hangbok_event = {
 		set_country_flag = TLE_THE_WAR_IS_ENDED
 		set_party_name = {
 			ideology = democratic
-			long_name = "KOR_GHQ_party"
-			name = "KOR_GHQ_party"
+			long_name = "THE_LAST_EMPIRE_DEMOCRATIC_LONG"
+			name = "THE_LAST_EMPIRE_DEMOCRATIC_SHORT"
 		}
 		set_party_name = {
 			ideology = fascism
-			long_name = "KOR_GHQ_party"
-			name = "KOR_GHQ_party"
+			long_name = "THE_LAST_EMPIRE_FASCISM_LONG"
+			name = "THE_LAST_EMPIRE_FASCISM_SHORT"
 		}
 		set_party_name = {
 			ideology = communism
-			long_name = "KOR_GHQ_party"
-			name = "KOR_GHQ_party"
+			long_name = "THE_LAST_EMPIRE_COMMUNISM_LONG"
+			name = "THE_LAST_EMPIRE_COMMUNISM_SHORT"
 		}
 		set_party_name = {
 			ideology = neutrality
@@ -748,18 +761,29 @@ KOR_hangbok_event = {
 			Character = KOR_douglas_mcarthur
 			country_leader = {
 				expire = "1965.1.1"
-				ideology = liberalism
+				ideology = conservatism
 				desc=""
 				traits = {
 				}
 			}
 			promote_leader = yes
-		}	
+		}
 		add_country_leader_role = {
-			Character = KOR_douglas_mcarthur
+			Character = KOR_unknown
 			country_leader = {
 				expire = "1965.1.1"
-				ideology = fascism_ideology
+				ideology = marxism
+				desc=""
+				traits = {
+				}
+			}
+			promote_leader = yes
+		}
+		add_country_leader_role = {
+			Character = KOR_unknown
+			country_leader = {
+				expire = "1965.1.1"
+				ideology = ultranationalism
 				desc=""
 				traits = {
 				}
@@ -776,7 +800,7 @@ KOR_hangbok_event = {
 				}
 			}
 			promote_leader = yes
-		}	
+		}
 		dismantle_faction = yes
 		#set_country_flag = fall_of_korea
 		set_country_flag = TLE_THE_WAR_IS_ENDED
@@ -2474,6 +2498,16 @@ KOR_hangbok_event_2 = {
 	}
 	if = {
 		limit = {
+			KOR = {
+				has_country_flag = KOR_do_not_invade_delhi
+			}
+		}
+		RAJ = {
+			set_cosmetic_tag = RAJ_FREE
+		}
+	}
+	if = {
+		limit = {
 			BAN = {
 				exists = no
 			}
@@ -2545,7 +2579,10 @@ KOR_hangbok_event_2 = {
 		}
 		every_state = {
 			limit = {
-				is_owned_by = RAJ
+				OR = {
+					is_owned_by = RAJ
+					is_owned_by = AFG
+				}
 				is_core_of = PAK
 			}
 			transfer_state_to = PAK
@@ -2643,18 +2680,18 @@ KOR_hangbok_event_2 = {
 		set_country_flag = TLE_THE_WAR_IS_ENDED
 		set_party_name = {
 			ideology = democratic
-			long_name = "KOR_GHQ_party"
-			name = "KOR_GHQ_party"
+			long_name = "THE_LAST_EMPIRE_DEMOCRATIC_LONG"
+			name = "THE_LAST_EMPIRE_DEMOCRATIC_SHORT"
 		}
 		set_party_name = {
 			ideology = fascism
-			long_name = "KOR_GHQ_party"
-			name = "KOR_GHQ_party"
+			long_name = "THE_LAST_EMPIRE_FASCISM_LONG"
+			name = "THE_LAST_EMPIRE_FASCISM_SHORT"
 		}
 		set_party_name = {
 			ideology = communism
-			long_name = "KOR_GHQ_party"
-			name = "KOR_GHQ_party"
+			long_name = "THE_LAST_EMPIRE_COMMUNISM_LONG"
+			name = "THE_LAST_EMPIRE_COMMUNISM_SHORT"
 		}
 		set_party_name = {
 			ideology = neutrality
@@ -2665,18 +2702,29 @@ KOR_hangbok_event_2 = {
 			Character = KOR_douglas_mcarthur
 			country_leader = {
 				expire = "1965.1.1"
-				ideology = liberalism
+				ideology = conservatism
 				desc=""
 				traits = {
 				}
 			}
 			promote_leader = yes
-		}	
+		}
 		add_country_leader_role = {
-			Character = KOR_douglas_mcarthur
+			Character = KOR_unknown
 			country_leader = {
 				expire = "1965.1.1"
-				ideology = fascism_ideology
+				ideology = marxism
+				desc=""
+				traits = {
+				}
+			}
+			promote_leader = yes
+		}
+		add_country_leader_role = {
+			Character = KOR_unknown
+			country_leader = {
+				expire = "1965.1.1"
+				ideology = ultranationalism
 				desc=""
 				traits = {
 				}
@@ -2693,7 +2741,7 @@ KOR_hangbok_event_2 = {
 				}
 			}
 			promote_leader = yes
-		}	
+		}
 		dismantle_faction = yes
 		#set_country_flag = fall_of_korea
 		set_country_flag = TLE_THE_WAR_IS_ENDED

@@ -475,29 +475,6 @@ focus_tree = {
 						}
 					}
 				}
-				add_country_leader_role = {
-					Character = KOR_emperor_yi_jin
-					country_leader = {
-						expire = "1965.1.1"
-						ideology = rexism
-						desc="KOR_yi_jin_2_desc"
-						traits = {
-							korea_emperor
-						}
-					}
-					promote_leader = yes
-				}	
-				add_country_leader_role = {
-					Character = KOR_lee_jaemyong
-					country_leader = {
-						expire = "1965.1.1"
-						ideology = marxism
-						desc=""
-						traits = {
-						}
-					}
-					promote_leader = yes
-				}	
 				transfer_state = 1020
 				news_event = {
 					id = eok_news.15

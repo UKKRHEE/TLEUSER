@@ -17,6 +17,11 @@ country_event = {
 	option = {
 		name = south.1.a
 		custom_effect_tooltip = TOOLTIP_SOUTHAUS
+		hidden_effect = {
+			KOR = {
+				set_country_flag = TLE_KOR_invade_austrailia_flag
+			}
+		}
 	}
 }
 country_event = {
@@ -61,6 +66,7 @@ country_event = {
 	
 	option = {
 		name = south.3.a
+		complete_national_focus = KOR_the_philiphine_focus
 		custom_effect_tooltip = TOOLTIP_KORPHI
 		hidden_effect = {
 			set_country_flag = KOR_won_in_phi
@@ -173,6 +179,9 @@ country_event = {
 				id = south.12
 			}
 		}
+		ENG = {
+			end_puppet = AST
+		}
 		AST = {
 			set_cosmetic_tag = AST_REP
 			remove_ideas = { AST_standard_gauge_railway  AST_great_depression_1  AST_great_depression_2  AST_great_depression_3  AST_all_in  AST_invest_in_victory  AST_invest_in_victory_2  AST_australian_womens_army_service  AST_naval_auxiliary_patrol  AST_australian_arms_production  AST_volunteer_defence_corps  AST_citizen_military_forces  AST_classify_aliens  AST_empire_air_training_scheme  AST_central_bureau_idea }
@@ -180,9 +189,6 @@ country_event = {
 			load_focus_tree = korean_government
 			leave_faction = yes
 			set_country_flag = TLE_AST_korean_threat_flag
-		}
-		ENG = {
-			end_puppet = AST
 		}
 		every_country = {
 			limit = {
@@ -207,6 +213,7 @@ country_event = {
 	
 	option = {
 		name = south.12.a
+		complete_national_focus = KOR_the_ins_focus
 		hidden_effect = {
 			KOR = {
 				transfer_state = 523
@@ -617,6 +624,10 @@ country_event = {
 		name = south.26.a
 		custom_effect_tooltip = KOR_no_more_embargo
 		hidden_effect = {
+			country_event = {
+				id = south.1
+				days = 30
+			}
 			remove_ideas = KOR_embargo_us
 			remove_ideas = KOR_embargo_us_a
 			remove_ideas = KOR_embargo_us_b
@@ -777,6 +788,7 @@ country_event = {
 	option = {
 		name = south.33.a
 		ai_chance = { factor = 100 }
+		complete_national_focus = KOR_the_malay_focus
 		custom_effect_tooltip = TOOLTIP_SOUTHRAJ
 		hidden_effect = {
 			KOR = {
@@ -848,6 +860,7 @@ country_event = {
 		custom_effect_tooltip = TOOLTIP_SOUTHNOTRAJ
 		hidden_effect = {
 			KOR = {
+				complete_national_focus = KOR_the_malay_focus
 				set_country_flag = KOR_invade_delhi
 			}
 			AFG = {
@@ -857,34 +870,8 @@ country_event = {
 				transfer_state = 987
 				transfer_state = 988
 				transfer_state = 1012
-			} 
-			ENG = {
-				end_puppet = RAJ
 			}
-			RAJ = {
-				set_cosmetic_tag = RAJ_FREETNO
-				set_politics = {
-					ruling_party = democratic
-					last_election = "1936.1.1"
-					election_frequency = 60
-					elections_allowed = no
-				}
-				set_popularities = {
-					democratic = 80
-					fascism = 0
-					communism = 10
-					neutrality = 10
-				}
-				retire_country_leader = yes
-				create_country_leader = {
-					name = "RAJ_jawaharlal_nehru"
-					picture = "gfx/leaders/RAJ/Jawaharlal_Nehru.png"
-					ideology = socialism
-					traits = {
-					}
-				}
-			}
-		}	
+		}
 	}
 }
 country_event = {
@@ -926,5 +913,46 @@ country_event = {
 	option = {
 		name = south.36.b
 		custom_effect_tooltip = TOOLTIP_STOPTAG
+	}
+}
+
+country_event = { 
+	id = south.401 #민광식 사망
+	title = south.401.t
+	desc = south.401.d
+	picture = GFX_event_korea_Gap_event_1
+	
+	fire_only_once = yes
+	trigger = {
+		NOT = {
+			controls_state = 634
+		}			
+		tag = KOR
+		date > 1943.4.18	
+	}
+	
+	option = { #
+		name = south.401.a
+		custom_effect_tooltip = min_kwang_sik_is_dead
+		hidden_effect = {
+			retire_character = KOR_min_kwang_sik
+		}
+		add_war_support = -0.05
+	}
+}
+country_event = { 
+	id = south.601 #멍텅구리
+	title = south.601.t
+	desc = south.601.d
+	picture = GFX_event_korea_event_idolt	
+	
+	fire_only_once = yes
+	trigger = {			
+		tag = KOR
+		date > 1942.1.1	
+	}
+	
+	option = { #
+		name = south.601.a
 	}
 }

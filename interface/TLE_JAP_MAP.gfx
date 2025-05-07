@@ -1,0 +1,217 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_japan_map_chubu_lightedup"
+		texturefile = "gfx/interface/JAP_GUI/map/chubu_lightedup.png"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_japan_map_chubu_kor_lightedup"
+		texturefile = "gfx/interface/JAP_GUI/map/chubu_kor_lightedup.png"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_japan_map_chugoku_lightedup"
+		texturefile = "gfx/interface/JAP_GUI/map/chugoku_lightedup.png"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_japan_map_chugoku_jap_lightedup"
+		texturefile = "gfx/interface/JAP_GUI/map/chugoku_jap_lightedup.png"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_japan_map_chugoku_kor_lightedup"
+		texturefile = "gfx/interface/JAP_GUI/map/chugoku_kor_lightedup.png"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_japan_map_hottkaido_lightedup"
+		texturefile = "gfx/interface/JAP_GUI/map/hottkaido_lightedup.png"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_japan_map_hottkaido_jap_lightedup"
+		texturefile = "gfx/interface/JAP_GUI/map/hottkaido_jap_lightedup.png"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_japan_map_kansai_lightedup"
+		texturefile = "gfx/interface/JAP_GUI/map/kansai_lightedup.png"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_japan_map_kansai_kor_lightedup"
+		texturefile = "gfx/interface/JAP_GUI/map/kansai_kor_lightedup.png"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_japan_map_kanto_lightedup"
+		texturefile = "gfx/interface/JAP_GUI/map/kanto_lightedup.png"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_japan_map_kanto_kor_lightedup"
+		texturefile = "gfx/interface/JAP_GUI/map/kanto_kor_lightedup.png"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_japan_map_kyushu_lightedup"
+		texturefile = "gfx/interface/JAP_GUI/map/kyushu_lightedup.png"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_japan_map_kyushu_jap_lightedup"
+		texturefile = "gfx/interface/JAP_GUI/map/kyushu_jap_lightedup.png"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_japan_map_okinawa_lightedup"
+		texturefile = "gfx/interface/JAP_GUI/map/okinawa_lightedup.png"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_japan_map_shigoku_lightedup"
+		texturefile = "gfx/interface/JAP_GUI/map/shigoku_lightedup.png"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_japan_map_shigoku_jap_lightedup"
+		texturefile = "gfx/interface/JAP_GUI/map/shigoku_jap_lightedup.png"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_japan_map_shigoku_kor_lightedup"
+		texturefile = "gfx/interface/JAP_GUI/map/shigoku_kor_lightedup.png"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_japan_map_tohoku_lightedup"
+		texturefile = "gfx/interface/JAP_GUI/map/tohoku_lightedup.png"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_japan_map_tohoku_jap_lightedup"
+		texturefile = "gfx/interface/JAP_GUI/map/tohoku_jap_lightedup.png"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_japan_map_tohoku_kor_lightedup"
+		texturefile = "gfx/interface/JAP_GUI/map/tohoku_kor_lightedup.png"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_japan_map_tsushima_lightedup"
+		texturefile = "gfx/interface/JAP_GUI/map/tsushima_lightedup.png"
+		alwaystransparent = yes
+	}
+	###########################################################
+	spriteType = {
+		name = "GFX_japan_map_chubu"
+		texturefile = "gfx/interface/JAP_GUI/map/chubu.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_japan_map_chubu_kor"
+		texturefile = "gfx/interface/JAP_GUI/map/chubu_kor.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_japan_map_chugoku"
+		texturefile = "gfx/interface/JAP_GUI/map/chugoku.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_japan_map_chugoku_jap"
+		texturefile = "gfx/interface/JAP_GUI/map/chugoku_jap.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_japan_map_chugoku_kor"
+		texturefile = "gfx/interface/JAP_GUI/map/chugoku_kor.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_japan_map_hottkaido"
+		texturefile = "gfx/interface/JAP_GUI/map/hottkaido.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_japan_map_hottkaido_jap"
+		texturefile = "gfx/interface/JAP_GUI/map/hottkaido_jap.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_japan_map_kansai"
+		texturefile = "gfx/interface/JAP_GUI/map/kansai.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_japan_map_kansai_kor"
+		texturefile = "gfx/interface/JAP_GUI/map/kansai_kor.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_japan_map_kanto"
+		texturefile = "gfx/interface/JAP_GUI/map/kanto.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_japan_map_kanto_kor"
+		texturefile = "gfx/interface/JAP_GUI/map/kanto_kor.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_japan_map_kyushu"
+		texturefile = "gfx/interface/JAP_GUI/map/kyushu.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_japan_map_kyushu_jap"
+		texturefile = "gfx/interface/JAP_GUI/map/kyushu_jap.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_japan_map_okinawa"
+		texturefile = "gfx/interface/JAP_GUI/map/okinawa.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_japan_map_shigoku"
+		texturefile = "gfx/interface/JAP_GUI/map/shigoku.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_japan_map_shigoku_jap"
+		texturefile = "gfx/interface/JAP_GUI/map/shigoku_jap.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_japan_map_shigoku_kor"
+		texturefile = "gfx/interface/JAP_GUI/map/shigoku_kor.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_japan_map_tohoku"
+		texturefile = "gfx/interface/JAP_GUI/map/tohoku.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_japan_map_tohoku_jap"
+		texturefile = "gfx/interface/JAP_GUI/map/tohoku_jap.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_japan_map_tohoku_kor"
+		texturefile = "gfx/interface/JAP_GUI/map/tohoku_kor.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_japan_map_tsushima"
+		texturefile = "gfx/interface/JAP_GUI/map/tsushima.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_TLE_JAP_GUI_bg"
+		texturefile = "gfx/interface/JAP_GUI/map/TLE_JAP_GUI_bg.png"
+	}
+}

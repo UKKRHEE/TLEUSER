@@ -508,6 +508,7 @@ recruit_character = KOR_park_jungyang #박중양 (1872)
 recruit_character = KOR_kim_songsu #김성수 (1891)
 #엔딩시점
 recruit_character = KOR_jang_sedong #장세동 (1936)
+recruit_character = KOR_unknown #불명
 
 #정치고문
 recruit_character = KOR_phillip_jaisohn #서재필 (1864)

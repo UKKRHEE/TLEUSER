@@ -8065,8 +8065,8 @@ country_event = {
 			}
 			set_party_name = {
 				ideology = neutrality
-				long_name = "THE_LAST_EMPIRE_DEMOCRATIC_LONG"
-				name = "THE_LAST_EMPIRE_DEMOCRATIC_SHORT"
+				long_name = "THE_LAST_EMPIRE_NEUTRALITY_LONG"
+				name = "THE_LAST_EMPIRE_NEUTRALITY_SHORT"
 			}
 		}
 	}

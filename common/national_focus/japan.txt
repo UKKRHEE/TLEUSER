@@ -1510,12 +1510,9 @@ focus_tree = {
 		}
 		x = 32
 		y = 6
-			completion_reward = {
-					set_rule = {
-							can_create_factions = yes
-						}
-				}
-
+		completion_reward = {
+			can_declare_war_without_wargoal_when_in_war = yes
+		}
 	}
 	focus = {
 		id = JAP_focus_asian_supporter
@@ -2425,12 +2422,7 @@ focus_tree = {
 		y = 10
 			completion_reward = {
 					set_rule = {
-							can_declare_war_without_wargoal_when_in_war = yes
 							can_send_volunteers = yes
-							can_puppet = yes
-							can_only_justify_war_on_threat_country = no
-							can_create_collaboration_government = yes
-							can_declare_war_on_same_ideology = yes
 						}
 				}
 

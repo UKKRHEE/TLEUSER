@@ -1188,22 +1188,12 @@ focus_tree = {
 		x = 72
 		y = 18
 			available = {
-					OR = {
-							has_war_with = USA
-							date > 1941.12.7
-						}
+				PHI = {
+					has_capitulated = yes
 				}
-			bypass = {
-					PHI = {
-							has_war_with = KOR
-						}
-				}
+			}
 			completion_reward = {
 					custom_effect_tooltip = TOOLTIP_SOUTHNEXT
-					declare_war_on = {
-							target = PHI
-							type = annex_everything
-						}
 				}
 
 	}
@@ -1217,31 +1207,12 @@ focus_tree = {
 		x = 74
 		y = 18
 			available = {
-					OR = {
-							has_war_with = USA
-							date > 1944.1.1
-						}
+				AST = {
+					has_capitulated = yes
 				}
-			bypass = {
-					AST = {
-							has_capitulated = yes
-						}
-				}
+			}
 			completion_reward = {
 					custom_effect_tooltip = TOOLTIP_SOUTHNEXT
-					declare_war_on = {
-							target = AST
-							type = annex_everything
-						}
-					declare_war_on = {
-							target = NZL
-							type = annex_everything
-						}
-					hidden_effect = {
-							country_event = {
-									id = south.1
-								}
-						}
 				}
 
 	}
@@ -1255,26 +1226,12 @@ focus_tree = {
 		x = 70
 		y = 18
 			available = {
-					OR = {
-							has_war_with = USA
-							date > 1942.8.1
-						}
+				RAJ = {
+					has_capitulated = yes
 				}
-			bypass = {
-					RAJ = {
-							has_capitulated = yes
-						}
-				}
+			}
 			completion_reward = {
 					custom_effect_tooltip = TOOLTIP_SOUTHNEXT
-					declare_war_on = {
-							target = RAJ
-							type = annex_everything
-						}
-					declare_war_on = {
-							target = BUR
-							type = annex_everything
-						}
 				}
 
 	}
@@ -2079,7 +2036,7 @@ focus_tree = {
 		icon = GFX_focus_eok_air
 		cost = 8.00
 		prerequisite = {
-			focus = kor_Fighter
+			focus = kor_air_reform
 		}
 		x = 87
 		y = 13
@@ -2116,9 +2073,8 @@ focus_tree = {
 		id = kor_bomber
 		icon = GFX_goal_generic_air_bomber_new
 		cost = 8.00
-		prerequisite = {
-			focus = kor_air_reform
-		}
+		prerequisite = {focus = kor_Fighter}
+		prerequisite = {focus = kor_airborne_force}		
 		x = 87
 		y = 14
 			completion_reward = {

@@ -1,3 +1,280 @@
+JAP_unification_map = {
+	JAP_dec_war_SDJ = { #전쟁
+		icon = generic_tank
+	    
+
+		allowed = {
+			    original_tag = JAP
+			}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1000
+				owns_state = 534
+			}
+		}	
+		
+		available = {
+			has_country_flag = FLAG_HAS_COMPLETED_DECISION_GENBO
+			has_completed_focus = JAP_expansionism
+			JAP_clear_or_has_yushin = yes
+			has_political_power > 50
+			not = {
+				has_decision = JAP_dec_war_FJP
+				has_decision = JAP_dec_war_NBJ
+			}
+		}
+
+		days_remove = 15
+		
+		fixed_random_seed = no
+
+		fire_only_once = yes
+        
+		visible = {
+			original_tag = JAP			
+			is_subject = no
+			SDJ = {
+				exists = yes
+			}
+        }	
+		highlight_states = {
+			highlight_state_targets = { state = 1071 } 
+		}
+		on_map_mode = map_and_decisions_view
+		complete_effect = {
+			add_political_power = -50
+		}	
+
+		remove_effect = {
+			declare_war_on = {
+				target = SDJ
+				type = annex_everything
+			}
+		}	
+		
+	}	
+	JAP_dec_war_NBJ = { #전쟁
+		icon = generic_tank
+	    
+
+		allowed = {
+			    original_tag = JAP
+			}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				owns_state = 1071
+				add = 1000
+			}
+		}	
+		
+		available = {
+			has_country_flag = FLAG_HAS_COMPLETED_DECISION_GENBO
+			has_completed_focus = JAP_expansionism
+			JAP_clear_or_has_yushin = yes
+			has_political_power > 50
+			not = {
+				has_decision = JAP_dec_war_FJP
+				has_decision = JAP_dec_war_SDJ
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = { state = 1068 } 
+		}
+		on_map_mode = map_and_decisions_view
+
+		days_remove = 15
+		
+		fixed_random_seed = no
+
+		fire_only_once = yes
+        
+		visible = {
+			original_tag = JAP			
+			is_subject = no
+			NBJ = {
+				exists = yes
+			}
+        }	
+		complete_effect = {
+			add_political_power = -50
+		}	
+
+		remove_effect = {
+			declare_war_on = {
+				target = NBJ
+				type = annex_everything
+			}
+		}	
+		
+	}	
+	JAP_dec_war_FJP = { #전쟁
+		icon = generic_tank
+	    
+
+		allowed = {
+			    original_tag = JAP
+			}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				owns_state = 1068
+				add = 1000
+			}
+		}	
+		
+		available = {
+			has_country_flag = FLAG_HAS_COMPLETED_DECISION_GENBO
+			has_completed_focus = JAP_expansionism
+			JAP_clear_or_has_yushin = yes
+			has_political_power > 50
+			not = {
+				has_decision = JAP_dec_war_NBJ
+				has_decision = JAP_dec_war_SDJ
+			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = { state = 530 } 
+		}
+		on_map_mode = map_and_decisions_view
+		days_remove = 15
+		
+		fixed_random_seed = no
+
+		fire_only_once = yes
+        
+		visible = {
+			original_tag = JAP
+			is_subject = no
+			FJP = {
+				exists = yes
+			}
+        }	
+		complete_effect = {
+			add_political_power = -50
+		}	
+
+		remove_effect = {
+			declare_war_on = {
+				target = FJP
+				type = annex_everything
+			}
+		}	
+		
+	}	
+	JAP_dec_war_TBJ = { #전쟁
+		icon = generic_tank
+	    
+
+		allowed = {
+			    original_tag = JAP
+			}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				owns_state = 1073
+				add = 1000
+			}
+		}	
+		
+		available = {
+			has_country_flag = FLAG_HAS_COMPLETED_DECISION_GENBO
+			has_completed_focus = JAP_expansionism
+			JAP_clear_or_has_yushin = yes
+			has_political_power > 50
+			not = {
+				has_decision = JAP_dec_war_NBJ
+				has_decision = JAP_dec_war_SDJ
+			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = { state = 534 } 
+		}
+		on_map_mode = map_and_decisions_view
+		days_remove = 15
+		
+		fixed_random_seed = no
+
+		fire_only_once = yes
+        
+		visible = {
+			original_tag = JAP
+			is_subject = no
+			TBJ = {
+				exists = yes
+			}
+        }	
+		complete_effect = {
+			add_political_power = -50
+		}	
+
+		remove_effect = {
+			declare_war_on = {
+				target = TBJ
+				type = annex_everything
+			}
+		}	
+		
+	}	
+	JAP_dec_war_GJJ = { #전쟁
+		icon = generic_tank
+	    
+
+		allowed = {
+			    original_tag = JAP
+			}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				owns_state = 282
+				add = 1000
+			}
+		}	
+		
+		available = {
+			has_country_flag = FLAG_HAS_COMPLETED_DECISION_GENBO
+			has_completed_focus = JAP_expansionism
+			JAP_clear_or_has_yushin = yes
+			has_political_power > 50
+			not = {
+				has_decision = JAP_dec_war_NBJ
+				has_decision = JAP_dec_war_SDJ
+			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = { state = 1073 } 
+		}
+		on_map_mode = map_and_decisions_view
+		days_remove = 15
+		
+		fixed_random_seed = no
+
+		fire_only_once = yes
+        
+		visible = {
+			original_tag = JAP
+			is_subject = no
+			GJJ = {
+				exists = yes
+			}
+        }	
+		complete_effect = {
+			add_political_power = -50
+		}	
+
+		remove_effect = {
+			declare_war_on = {
+				target = GJJ
+				type = annex_everything
+			}
+		}	
+		
+	}
+}
 #일본 내전
 JAP_yokusankai_GUI = {
 	JAP_yokusankai_debug_inf_1 = {
@@ -924,283 +1201,6 @@ JAP_closed_bunchi_county = {
 			set_country_flag = FLAG_END_OF_NAISEN
 		}
 	}
-	#########
-	JAP_dec_war_SDJ = { #전쟁
-		icon = generic_tank
-	    
-
-		allowed = {
-			    original_tag = JAP
-			}
-		ai_will_do = {
-			base = 0
-			modifier = {
-				add = 1000
-				owns_state = 534
-			}
-		}	
-		
-		available = {
-			has_country_flag = FLAG_HAS_COMPLETED_DECISION_GENBO
-			has_completed_focus = JAP_expansionism
-			JAP_clear_or_has_yushin = yes
-			has_political_power > 50
-			not = {
-				has_decision = JAP_dec_war_FJP
-				has_decision = JAP_dec_war_NBJ
-			}
-		}
-
-		days_remove = 15
-		
-		fixed_random_seed = no
-
-		fire_only_once = yes
-        
-		visible = {
-			original_tag = JAP			
-			is_subject = no
-			SDJ = {
-				exists = yes
-			}
-        }	
-		highlight_states = {
-			highlight_state_targets = { state = 1071 } 
-		}
-		on_map_mode = map_and_decisions_view
-		complete_effect = {
-			add_political_power = -50
-		}	
-
-		remove_effect = {
-			declare_war_on = {
-				target = SDJ
-				type = annex_everything
-			}
-		}	
-		
-	}	
-	JAP_dec_war_NBJ = { #전쟁
-		icon = generic_tank
-	    
-
-		allowed = {
-			    original_tag = JAP
-			}
-		ai_will_do = {
-			base = 0
-			modifier = {
-				owns_state = 1071
-				add = 1000
-			}
-		}	
-		
-		available = {
-			has_country_flag = FLAG_HAS_COMPLETED_DECISION_GENBO
-			has_completed_focus = JAP_expansionism
-			JAP_clear_or_has_yushin = yes
-			has_political_power > 50
-			not = {
-				has_decision = JAP_dec_war_FJP
-				has_decision = JAP_dec_war_SDJ
-			}
-		}
-		highlight_states = {
-			highlight_state_targets = { state = 1068 } 
-		}
-		on_map_mode = map_and_decisions_view
-
-		days_remove = 15
-		
-		fixed_random_seed = no
-
-		fire_only_once = yes
-        
-		visible = {
-			original_tag = JAP			
-			is_subject = no
-			NBJ = {
-				exists = yes
-			}
-        }	
-		complete_effect = {
-			add_political_power = -50
-		}	
-
-		remove_effect = {
-			declare_war_on = {
-				target = NBJ
-				type = annex_everything
-			}
-		}	
-		
-	}	
-	JAP_dec_war_FJP = { #전쟁
-		icon = generic_tank
-	    
-
-		allowed = {
-			    original_tag = JAP
-			}
-		ai_will_do = {
-			base = 0
-			modifier = {
-				owns_state = 1068
-				add = 1000
-			}
-		}	
-		
-		available = {
-			has_country_flag = FLAG_HAS_COMPLETED_DECISION_GENBO
-			has_completed_focus = JAP_expansionism
-			JAP_clear_or_has_yushin = yes
-			has_political_power > 50
-			not = {
-				has_decision = JAP_dec_war_NBJ
-				has_decision = JAP_dec_war_SDJ
-			}
-		}
-
-		highlight_states = {
-			highlight_state_targets = { state = 530 } 
-		}
-		on_map_mode = map_and_decisions_view
-		days_remove = 15
-		
-		fixed_random_seed = no
-
-		fire_only_once = yes
-        
-		visible = {
-			original_tag = JAP
-			is_subject = no
-			FJP = {
-				exists = yes
-			}
-        }	
-		complete_effect = {
-			add_political_power = -50
-		}	
-
-		remove_effect = {
-			declare_war_on = {
-				target = FJP
-				type = annex_everything
-			}
-		}	
-		
-	}	
-	JAP_dec_war_TBJ = { #전쟁
-		icon = generic_tank
-	    
-
-		allowed = {
-			    original_tag = JAP
-			}
-		ai_will_do = {
-			base = 0
-			modifier = {
-				owns_state = 1073
-				add = 1000
-			}
-		}	
-		
-		available = {
-			has_country_flag = FLAG_HAS_COMPLETED_DECISION_GENBO
-			has_completed_focus = JAP_expansionism
-			JAP_clear_or_has_yushin = yes
-			has_political_power > 50
-			not = {
-				has_decision = JAP_dec_war_NBJ
-				has_decision = JAP_dec_war_SDJ
-			}
-		}
-
-		highlight_states = {
-			highlight_state_targets = { state = 534 } 
-		}
-		on_map_mode = map_and_decisions_view
-		days_remove = 15
-		
-		fixed_random_seed = no
-
-		fire_only_once = yes
-        
-		visible = {
-			original_tag = JAP
-			is_subject = no
-			TBJ = {
-				exists = yes
-			}
-        }	
-		complete_effect = {
-			add_political_power = -50
-		}	
-
-		remove_effect = {
-			declare_war_on = {
-				target = TBJ
-				type = annex_everything
-			}
-		}	
-		
-	}	
-	JAP_dec_war_GJJ = { #전쟁
-		icon = generic_tank
-	    
-
-		allowed = {
-			    original_tag = JAP
-			}
-		ai_will_do = {
-			base = 0
-			modifier = {
-				owns_state = 282
-				add = 1000
-			}
-		}	
-		
-		available = {
-			has_country_flag = FLAG_HAS_COMPLETED_DECISION_GENBO
-			has_completed_focus = JAP_expansionism
-			JAP_clear_or_has_yushin = yes
-			has_political_power > 50
-			not = {
-				has_decision = JAP_dec_war_NBJ
-				has_decision = JAP_dec_war_SDJ
-			}
-		}
-
-		highlight_states = {
-			highlight_state_targets = { state = 1073 } 
-		}
-		on_map_mode = map_and_decisions_view
-		days_remove = 15
-		
-		fixed_random_seed = no
-
-		fire_only_once = yes
-        
-		visible = {
-			original_tag = JAP
-			is_subject = no
-			GJJ = {
-				exists = yes
-			}
-        }	
-		complete_effect = {
-			add_political_power = -50
-		}	
-
-		remove_effect = {
-			declare_war_on = {
-				target = GJJ
-				type = annex_everything
-			}
-		}	
-		
-	}	
-	######
 	JAP_lord_conciliation = { #상경 명령 (여러번 가능)
 		icon = generic_political_discourse
 	    

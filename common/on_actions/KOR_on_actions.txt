@@ -117,6 +117,15 @@ on_actions = {
 					}
 				}
 			}
+			AFG = {
+				load_focus_tree = korean_government
+			}
+			every_state = {
+				limit = {
+					is_owned_by = SIK
+				}
+				add_core_of = ETS
+			}
 			WZC = {
 				country_event = {
 					id = china.1089
@@ -751,6 +760,25 @@ on_actions = {
 								has_country_flag = FLAG_KOR_FASCIST_ROUTE
 							}
 						}
+						if = {
+							limit = {
+								JAP = {
+									is_ai = yes
+								}
+							}
+							531 = {
+								add_dynamic_modifier = { modifier = JAP_showa_line }
+							}
+							1070 = {
+								add_dynamic_modifier = { modifier = JAP_showa_line }
+							}
+							1109 = {
+								add_dynamic_modifier = { modifier = JAP_showa_line }
+							}
+							1065 = {
+								add_dynamic_modifier = { modifier = JAP_showa_line }
+							}
+						}
 						JAP = {
 							country_event = {
 								id = JAP_war_of_yashima.3
@@ -1079,6 +1107,25 @@ on_actions = {
 						limit = {
 							KOR = {
 								has_country_flag = FLAG_KOR_FASCIST_ROUTE
+							}
+						}
+						if = {
+							limit = {
+								JAP = {
+									is_ai = yes
+								}
+							}
+							531 = {
+								add_dynamic_modifier = { modifier = JAP_showa_line }
+							}
+							1070 = {
+								add_dynamic_modifier = { modifier = JAP_showa_line }
+							}
+							1109 = {
+								add_dynamic_modifier = { modifier = JAP_showa_line }
+							}
+							1065 = {
+								add_dynamic_modifier = { modifier = JAP_showa_line }
 							}
 						}
 						JAP = {

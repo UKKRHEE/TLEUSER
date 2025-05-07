@@ -1290,4 +1290,8 @@ spriteTypes = {
 		name = "GFX_news_event_chungqing_battle"
 		texturefile = "gfx/event_pictures/news_event_chungqing_battle.png"
 	}
-}
+	spriteType = { 
+		name = "GFX_event_korea_event_idolt"
+		texturefile = "gfx/event_pictures/event_korea_idolt.png"
+	}
+}	

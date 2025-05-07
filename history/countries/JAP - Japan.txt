@@ -6,6 +6,7 @@ set_stability = 0.15 #baseline, THE EMPEROR PROTECTS
 set_war_support = 0.3
 set_research_slots = 3
 set_fuel_ratio = 1.0
+set_variable = { JAP_MAP_GUI_selected_state = 1 }
 add_ideas = {
 	free_trade
 	#####
