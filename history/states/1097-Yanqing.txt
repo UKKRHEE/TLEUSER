@@ -2,7 +2,7 @@ state={
 	id=1097
 	name="STATE_YANQING"
 	provinces={
-		1590 3955 6904 9776 
+		1137 6904 13412
 	}
 	history={
 		owner = ZLC
@@ -12,16 +12,14 @@ state={
 		add_core_of = ZLC
 		add_core_of = PRC
 		buildings = {
-			infrastructure = 2
-		}
-		victory_points = {
-			9776 1 
-		}
-		1936.3.5 = {
+			infrastructure = 1
 		}
 
+		victory_points = {
+			6904 3 
+		}
 	}
-	manpower=470000
+	manpower=137280
 	buildings_max_level_factor=1.000
 	state_category=pastoral
 	local_supplies=0.000

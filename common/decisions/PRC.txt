@@ -79,6 +79,7 @@ PRC_infiltrate_nationalist_areas = {
 						603 = { CONTROLLER = { is_KOR_or_ally_of_KOR = yes } }
 						605 = { CONTROLLER = { is_KOR_or_ally_of_KOR = yes } }
 						606 = { CONTROLLER = { is_KOR_or_ally_of_KOR = yes } }
+						1138 = { CONTROLLER = { is_KOR_or_ally_of_KOR = yes } }
 						607 = { CONTROLLER = { is_KOR_or_ally_of_KOR = yes } }
 						608 = { CONTROLLER = { is_KOR_or_ally_of_KOR = yes } }
 						613 = { CONTROLLER = { is_KOR_or_ally_of_KOR = yes } }
@@ -2324,6 +2325,7 @@ political_actions = {
 						603 = { is_controlled_by = ROOT }
 						605 = { is_controlled_by = ROOT }
 						606 = { is_controlled_by = ROOT }
+						1138 = { is_controlled_by = ROOT }
 						607 = { is_controlled_by = ROOT }
 						608 = { is_controlled_by = ROOT }
 						613 = { is_controlled_by = ROOT }

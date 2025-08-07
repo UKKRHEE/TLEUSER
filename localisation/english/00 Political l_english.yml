@@ -23,3 +23,5 @@
  unit_limit_above_limit_desc: "\n\n--------------\n\n§R우리는 현재 한계값을 초과하였으며, 국가에 걸린 압박을 완화할 수 있는 유일한 방법은 우리 사단들 중 일부를 제거하는 것입니다.§!\n\n$MODIFIER_ARMY_ORG_FACTOR$: [?mobilisation_penalty_var|+=%1]\n$MODIFIER_CONSUMER_GOODS_FACTOR$: [?mobilisation_penalty_var_consumer_goods|=%H1]\n$MODIFIER_INDUSTRIAL_CAPACITY_FACTOR$: [?mobilisation_penalty_var|+=%]\n$MODIFIER_TRAINING_TIME_ARMY_FACTOR$: [?mobilisation_penalty_var_positive|-=%]\n$MODIFIER_LAND_REINFORCE_RATE$: [?mobilisation_penalty_var|+=%1]"
  unit_limit_reached_cap_desc: "\n(최소한으로 제한됨 [?300|H0])"`
  unit_limit_modified_by_desc: "\n\n추가적으로 변동된 수치:"
+ 
+ FE_MULTI_PLAYER_NOT_SUPPORTED:0 "여럿이서 하기 §R(지원하지 않음)§!"

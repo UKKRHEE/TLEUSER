@@ -10,7 +10,9 @@ state={
 		add_core_of = DKG
 		buildings = {
 			infrastructure = 1
-
+			4184 = {
+				naval_base = 3
+			}
 		}
 		victory_points = {
 			4188 3 

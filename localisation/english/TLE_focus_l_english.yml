@@ -4,7 +4,7 @@
  kor_politics:0 "정치 개혁"
  kor_politics_desc:0 "현재 제국의 정치는 혼란스럽습니다. 우리는 선택을 해야합니다."
  kor_monarchy:0 "궐기"
- kor_monarchy_desc:0 "'...그리고 저 나약한 문민정부란 것들은 제국의 방패이자 곧 전 아주의 방패인 제국군을 완전히 부숴버리려고 작정하였습니다. 다행이도, 우리에게는 뜻을 함께하는 많은 동지들과 안중근 대장께서 있으시니 다시 제국의 질서를 바로세울 것입니다. 소자가 만약 돌아오지 않는다면, 유신의 길은 실패한 것으로 알아주시길 바라겠습니다. 대한제국 만세. 사랑하는 아버지께, 아들이.'\n-김 참령의 편지"
+ kor_monarchy_desc:0 ""...그리고 저 나약한 문민정부란 것들은 황제 폐하의 방패인 제국군을 완전히 부숴버리려고 작정하였습니다. 소자가 돌아오지 않는다면 유신의 길은 실패한 것입니다. 대한제국 만세. 사랑하는 아버지께, 아들이."\n\nㅡ강명 14년(1936) 2월 26일, 김 참령의 편지"
  kor_remove_strike:0 "정권 창출"
  kor_remove_strike_desc:0 "제12대 총선은 민중의 실수였습니다. 민주당 정권은 돌이킬 수 없는 실수를 반복하였고, 외부와 내부를 가리지 않고 제국의 상황은 무너지고 있습니다. 대한당과 신한청년당의 연정을 통해 우리는 민주당이 저지른 모든 실책을 되돌릴 것입니다."
  kor_lifeguard_extension:0 "구악 일소"
@@ -161,6 +161,7 @@
  kor_the_new_history_desc:0 ""
  kor_homeland_development:0 "제 3차 5개년 계획"
  kor_homeland_development_desc:0 "1880년대 1차 5개년 계획, 1900년대 2차 5개년 계획은 우리 제국을 열강의 말석까지 들게 하였습니다. 상황이 혼란스러운 지금, 새로운 계획이 필요합니다."
+ TOOLTIP_KOR_HOMELAND_DEVELOPMENT:0 "§Y제 3차 5개년 계획§! 결정을 해금합니다."
  kor_infrastructure_1:0 "기반시설 확충"
  kor_infrastructure_1_desc:0 "도로와 철도는 나라의 발전의 큰 도움이 됩니다."
  kor_seoul-busan_highway:0 "한성-부산간 고속도로"
@@ -513,6 +514,8 @@
  KOR_GEACP_zone_desc:0 "우리의 공영권은 전 대아주에 걸쳐서 넓게 퍼졌고, 비로소 이 땅에 모든 황인들은 저마다의 자주권을 되찾았습니다. 황상 폐하께서 인도하시는 황국은 아시아의 열국들을 이끌면서 만세토록 번영할 것입니다!"
  KOR_baekje_kisadan:0 "도래인 구별법"
  KOR_baekje_kisadan_desc:0 "이 왜 땅을 정복하였으니 이 땅을 통치할 기관을 설립하여야 하는데, 이를 우리 민족에게 온전히 맡기기에는 많은 위협이 있을 것입니다. 우리는 소위 '도래인'이라고 불리는, 옛 백제로부터 넘어온 이들과 '본토인'이라고 불리는 일본인들을 구분하여 '분열하고, 지배하라.'를 철저히 따를 것입니다."
+ KOR_french_indochina:0 "인도차이나 진주"
+ KOR_french_indochina_desc:0 ""
  KOR_giving_guidance_to_chaebol:0 "재벌에 지침하달"
  KOR_giving_guidance_to_chaebol_desc:0 "막강한 위세를 자랑하며 제국의 정계를 장악하던 재벌은 이제 없습니다. 이제는 재벌 또한 나라와 한 몸이 되어 다 같이 성전에 참여해야 합니다."
  KOR_take_control_of_the_party:0 "대동아전쟁을 위한 총선"
@@ -625,7 +628,7 @@
  KOR_focus_the_empire_strikes_back_desc:0 "두 제국의 귀환"
  KOR_focus_asian_korea_desc:0 "동아시아 패권 인정"
  KOR_focus_with_britain_desc:0 "대영제국과 함께"
- KOR_focus_jeongshin_of_korean_desc:0 "누구보다 우리 대한민족의 의지는 우월하며, 굳세며, 단단합니다. 그 어떤 고난과 역경이 있다고 해도, 우리는 끝까지 버텨낼 것입니다."
+ KOR_focus_jeongshin_of_korean_desc:0 "총포와 함선과 먹을 것이 부족하다 하더라도, 황제 폐하의 편에서 제국주의에 맞서 싸우고자 하는 우리 민족의 의지는 그 어떤 나라보다도 우월합니다. 굳세고 단단한 의지를 전쟁의 기반으로 다진다면 그 어떤 고난과 역경이 있다고 해도 헤쳐나갈 수 있을 것입니다."
  KOR_focus_rural_support_desc:0 "농자천하지대본이라 하였습니다. 대한이 강성해질 수록 농자들은 지금까지 빈곤해져만 갔습니다. 우리는 옛 질서를 따라, 농민들에게 충분한 지원을 해줄 것입니다."
  KOR_focus_god_save_kangmyong_desc:0 "폐하를 모시다"
  KOR_focus_zhilseo_uprising_desc:0 "질서 강화"
@@ -1220,6 +1223,36 @@
  KOR_focus_khs_23_desc:0 "겉으로나마 괜찮은 모습을 보이고 있다만, 사실 우리 내각은 모든 문제에 올바르게 대처하지는 못하였습니다. 내각의 지지도는 뭉텅이로 깎여나갔고, 3불 정책이랍시고 조롱이나 받는 처지에 이르렀습니다. 하지만 괜찮습니다. 적어도 지금 문제가 일어나고 있지는 않으니까요!" #면종복배
  
  
+ ITA_lose_newfocus_0:0 "종전 이후"
+ ITA_lose_newfocus_1:0 "움베르토의 업적"
+ ITA_lose_newfocus_7:0 "에마누엘레의 실책"
+ ITA_lose_newfocus_13:0 "왕정 존폐 선거"
+ ITA_lose_newfocus_8:0 "북부 노동자 결집"
+ ITA_lose_newfocus_10:0 "국가파시스트당 비판"
+ ITA_lose_newfocus_11:0 "이탈리아 좌익 통합"
+ ITA_lose_newfocus_9:0 "동방 지지 요청"
+ ITA_lose_newfocus_12:0 "이탈리아 공화국 선전"
+ ITA_lose_newfocus_6:0 "왕국 체제의 안정성"
+ ITA_lose_newfocus_2:0 "경제적 지원 요청"
+ ITA_lose_newfocus_4:0 "암흑의 역사 비판"
+ ITA_lose_newfocus_3:0 "전국 순회"
+ ITA_lose_newfocus_5:0 "좌익 포섭"
+ ITA_lose_newfocus_0_tt:0 "§Y왕세자 움베르토§!는 §Y비토리오 에마누엘레 3세§!를 대신해 전 이탈리아의 국왕 §Y움베르토 2세§!로 즉위합니다."
+ ITA_lose_newfocus_0_desc:0 "" #종전 이후
+ ITA_lose_newfocus_1_desc:0 "" #움베르토의 업적
+ ITA_lose_newfocus_7_desc:0 "" #에마누엘레의 실책
+ ITA_lose_newfocus_13_desc:0 "" #왕정 존폐 선거
+ ITA_lose_newfocus_8_desc:0 "" #북부 노동자 결집
+ ITA_lose_newfocus_10_desc:0 "" #국가파시스트당 비판
+ ITA_lose_newfocus_11_desc:0 "" #이탈리아 좌익 통합
+ ITA_lose_newfocus_9_desc:0 "" #동방 지지 요청
+ ITA_lose_newfocus_12_desc:0 "" #이탈리아 공화국 선전
+ ITA_lose_newfocus_6_desc:0 "" #왕국 체제의 안정성
+ ITA_lose_newfocus_2_desc:0 "" #경제적 지원 요청
+ ITA_lose_newfocus_4_desc:0 "" #암흑의 역사 비판
+ ITA_lose_newfocus_3_desc:0 "" #전국 순회
+ ITA_lose_newfocus_5_desc:0 "" #좌익 포섭
+ 
  KOR_ach_happy_1:0 "푸른 하늘"
  KOR_ach_happy_2:0 "마지막에 이르러서"
  KOR_ach_happy_3:0 "되찾은 꿈"
@@ -1276,6 +1309,208 @@
  KOR_focus_khs_22_tt:0 "§Y대한제국§!과 §Y미합중국§!은 태평양 무역에 관해 재협상을 할 것입니다."
  KOR_focus_khs_23_tt:0 "§Y무슨 문제가 있을까요?§!\n§R있어도 어쩔 수 없습니다.§!"
 
+ korea_yi_chin:0 "강명제 경로"
+ KOR_yi_chin_newfocus_0:0 "지나전선 '휴전'"
+ KOR_yi_chin_newfocus_0_tt:0 "§R황국이 지난 4년 동안 흘린 피는 헛수고가 되었습니다.§!"
+ KOR_yi_chin_newfocus_1:0 "신한청년당 내각 해산"
+ KOR_yi_chin_newfocus_2:0 "보궐선거 준비"
+ KOR_yi_chin_newfocus_19:0 "강명 유신"
+ KOR_yi_chin_newfocus_15:0 "군상대권 발동"
+ KOR_yi_chin_newfocus_16:0 "대구코뮌 진압"
+ KOR_yi_chin_newfocus_17:0 "중추원 해산"
+ KOR_yi_chin_newfocus_18:0 "황족내각 수립"
+ KOR_yi_chin_newfocus_3:0 "민의원 이용"
+ KOR_yi_chin_newfocus_4:0 "법부 포섭"
+ KOR_yi_chin_newfocus_6:0 "보궐선거 개최"
+ KOR_yi_chin_newfocus_6_tt:0 "§R그럼 그렇지. 내 예상에서 벗어나지를 않는군.§!"
+ KOR_yi_chin_newfocus_5:0 "황국협회 동원"
+ KOR_yi_chin_newfocus_13:0 "대구 봉기"
+ KOR_yi_chin_newfocus_13_tt:0 "§Y계획대로 진행되고 있다.§!"
+ KOR_yi_chin_newfocus_14:0 "총파업"
+ KOR_yi_chin_newfocus_14_tt:0 "§R때가 왔다.§!"
+ KOR_yi_chin_newfocus_7:0 "본토 철수작전"
+ KOR_yi_chin_newfocus_8:0 "화북정부 수립"
+ KOR_yi_chin_newfocus_12:0 "내지 계엄 선언"
+ KOR_yi_chin_newfocus_12_tt:0 "§R봉천승운황제는 다음과 같은 조서를 내린다.§!"
+ KOR_yi_chin_newfocus_10:0 "서만주 요새화"
+ KOR_yi_chin_newfocus_11:0 "군 예산 재편"
+ KOR_yi_chin_newfocus_9:0 "경제블록 재편"
+ KOR_yi_chin_newfocus_20:0 "해옥주를 산같이 쌓으시고"
+ KOR_yi_chin_newfocus_20_tt:0 "§Y대황제 폐하께서는 앞으로 천 년 동안 이어질 황국의 근간을 다질 것입니다§!."
+ KOR_yi_chin_newfocus_31:0 "재계 건전화"
+ KOR_yi_chin_newfocus_25:0 "노동쟁의 금지"
+ KOR_yi_chin_newfocus_21:0 "정치 개혁"
+ KOR_yi_chin_newfocus_22:0 "민의원 임명제"
+ KOR_yi_chin_newfocus_22_tt:0 "§Y폐하의 명에 따라 중추원이 재편됩니다.§!"
+ KOR_yi_chin_newfocus_23:0 "황족 각료 필참"
+ KOR_yi_chin_newfocus_24:0 "황국협회 강화"
+ KOR_yi_chin_newfocus_28:0 "경제 개혁"
+ KOR_yi_chin_newfocus_36:0 "삼권분립 해체"
+ KOR_yi_chin_newfocus_29:0 "재벌에게 명령 하달"
+ KOR_yi_chin_newfocus_30:0 "탈세자 체포"
+ KOR_yi_chin_newfocus_27:0 "현대식 전랑 체계"
+ KOR_yi_chin_newfocus_32:0 "상공업자 탄압"
+ KOR_yi_chin_newfocus_33:0 "배금주의 배척"
+ KOR_yi_chin_newfocus_34:0 "사회건전화 실시"
+ KOR_yi_chin_newfocus_35:0 "상시계엄"
+ KOR_yi_chin_newfocus_63:0 "일본 문제"
+ KOR_yi_chin_newfocus_64:0 "히로히토의 야망 분쇄"
+ KOR_yi_chin_newfocus_65:0 "토쿠가와 연립정권 제안"
+ KOR_yi_chin_newfocus_66:0 "한일 경제교류"
+ KOR_yi_chin_newfocus_69:0 "대동아공영권 주창"
+ KOR_yi_chin_newfocus_68:0 "중국전쟁 가속화"
+ KOR_yi_chin_newfocus_71:0 "회전문 전술 수립"
+ KOR_yi_chin_newfocus_72:0 "총공세"
+ KOR_yi_chin_newfocus_67:0 "적대적 공생이론"
+ KOR_yi_chin_newfocus_70:0 "인도차이나 영향권 유지"
+ KOR_yi_chin_newfocus_62:0 "제2차 대동아전쟁"
+ KOR_yi_chin_newfocus_62_tt:0 "§Y[SZY.GetName]§!를 §R중점 기한이 끝날 때까지§! 수비하십시오. 전쟁이 시작할 때 §Y천명전쟁§!(§Y중국§!에 대한 방어 혜택: §G+30.0%§!) 을 획득. \n\n제한시간 내 §G달성§! 시:\n"
+ KOR_yi_chin_newfocus_62_tt_2:0 "§R중국§! 해체 및 §Y국민당 정권§!의 삼분할."
+ KOR_yi_chin_newfocus_62_trigger_tt:0 "§R황국을 수호하기 위해 총력을 다해야 합니다.§!"
+ KOR_yi_chin_newfocus_62_fail_bypass_tt:0 "§Y대동아전쟁§!의 전황이 §R혼란 속§!으로 빠짐."
+ KOR_yi_chin_newfocus_26:0 "대황제 인가제도 확립"
+ KOR_yi_chin_newfocus_37:0 "외교 개혁"
+ KOR_yi_chin_newfocus_42:0 "군대 개혁"
+ KOR_yi_chin_newfocus_43:0 "황도파 굴종"
+ KOR_yi_chin_newfocus_44:0 "통제파 해산"
+ KOR_yi_chin_newfocus_44_tt:0 "§Y통제파 영수§! 장성들 §Y예편§!."
+ KOR_yi_chin_newfocus_45:0 "근황주의 주입"
+ KOR_yi_chin_newfocus_48:0 "교리 선진화"
+ KOR_yi_chin_newfocus_47:0 "상명하복 철저화"
+ KOR_yi_chin_newfocus_52:0 "대황제의 나라"
+ KOR_yi_chin_newfocus_53:0 "동남아 문제"
+ KOR_yi_chin_newfocus_54:0 "인도차이나 영향권 보전"
+ KOR_yi_chin_newfocus_54_tt:0 "독립은 할 것입니다. §R그 시점이 조금 느릴 뿐이죠.§!"
+ KOR_yi_chin_newfocus_55:0 "완전 철수"
+ KOR_yi_chin_newfocus_55_tt:0 "인도차이나는 §Y약속대로§! 독립할 것입니다."
+ KOR_yi_chin_newfocus_73:0 "화북정부 지원"
+ KOR_yi_chin_newfocus_74:0 "황하를 사수하라!"
+ KOR_yi_chin_newfocus_75:0 "유인 후 역습"
+ KOR_yi_chin_newfocus_76:0 "화북분리공작 완수"
+ KOR_yi_chin_newfocus_56:0 "베트남 국민당 소탕"
+ KOR_yi_chin_newfocus_56_tt:0 "§Y월남 국민당§! 소탕."
+ KOR_yi_chin_newfocus_60:0 "물자 보전"
+ KOR_yi_chin_newfocus_57:0 "황인 해방 주창"
+ KOR_yi_chin_newfocus_59:0 "인도차이나 경제권 확보"
+ KOR_yi_chin_newfocus_58:0 "필리핀 무위협 선언"
+ KOR_yi_chin_newfocus_61:0 "구밀복검"
+ KOR_yi_chin_newfocus_61_tt:0 "때를 §Y기다릴 것§!입니다. 언제가 될지는 몰라도, §R서구 제국주의자들을 무너뜨릴 그 때까지§! 기다릴 것입니다."
+ KOR_yi_chin_newfocus_51:0 "군군신신부부자자"
+ KOR_yi_chin_newfocus_51_tt:0 "§Y강명황제 이진§!은 §Y원수§!가 됩니다."
+ KOR_yi_chin_newfocus_38:0 "태평양 연대 강화"
+ KOR_yi_chin_newfocus_39:0 "대미우호 증진"
+ KOR_yi_chin_newfocus_39_tt:0 "§Y남태평양 군도§!에 대한 §Y위임통치§! 종료."
+ KOR_yi_chin_newfocus_40:0 "추축동맹 해체"
+ KOR_yi_chin_newfocus_46:0 "확장주의 억제"
+ KOR_yi_chin_newfocus_41:0 "태평양 패권 포기"
+ KOR_yi_chin_newfocus_50:0 "동북아 패권 확보"
+ KOR_yi_chin_newfocus_49:0 "민족주의 압력 해소"
+ KOR_yi_chin_newfocus_77:0 "자아도취"
+ KOR_yi_chin_newfocus_78:0 "정치의 미래"
+ KOR_yi_chin_newfocus_79:0 "사회의 미래"
+ KOR_yi_chin_newfocus_80:0 "인형극의 주인"
+ KOR_yi_chin_newfocus_81:0 "임의 이름을 부릅니다"
+ KOR_yi_chin_newfocus_82:0 "앞으로의 세계"
+ KOR_yi_chin_newfocus_83:0 "동양평화의 씨앗"
+ KOR_yi_chin_newfocus_85:0 "서방의 위협?"
+ KOR_yi_chin_newfocus_84:0 "일본의 미래"
+ KOR_yi_chin_newfocus_87:0 "동방 패권의 문제"
+ KOR_yi_chin_newfocus_89:0 "대황제 폐하 만세"
+ KOR_yi_chin_newfocus_86:0 "주사위 놀이"
+ KOR_yi_chin_newfocus_88:0 "완성된 캔버스"
+
+ KOR_yi_chin_newfocus_0_desc:0 "휴전이라고? 승전도, 패전도 아니고 휴전은 무슨 개짓거리이지? '대황제 폐하를 익찬하여 성권에 보답하겠다'고 찌껄인 모든 놈들은 개나리가 따로 없다. 그런 놈들을 믿은, 아니 애초에 대한이라는 나라에 책임감 자체를 느끼지 못할 민간각료나, 생각할 머리가 빈 군바리 출신들을 믿은 내가 멍청했다. \n나는 황제였지만 아무런 일도 할 수 없었다. 지근거리는 머리를 아무리 눌러봐도 상황이 바뀌지는 않았다. 황국은 졌고, 나는 뒷일을 수습해야만 했다." #지나전선 '휴전'
+ KOR_yi_chin_newfocus_1_desc:0 "이강이고 조소앙이고 전부 쓸모없는 놈들이었다. 애초에 근본이라곤 없는 길바닥 빨갱이 반역도들 당을 체질개선 했다는 아부를 믿으면 안됐었다. 청년당은 이용할 가치도 없었고, 나라를 말아먹기만 잘 하는 족속이었다." #신한청년당 내각 해산
+ KOR_yi_chin_newfocus_2_desc:0 "청년당 내각은 내 목숨을 보전하기 위해서라도 집권시키면 안됐지만, 나라에 정부가 비는 꼴은 만들어서는 안됐다. 김옥균이 쓴 헌법총론에서 볼 수 있듯 근대국가라면 민의에 기반한 통치와 군민공치를 통해...\n\n...읊기에도 귀찮다. 굳이 선출한 권력이 필요할까?" #보궐선거 준비
+ KOR_yi_chin_newfocus_19_desc:0 "프란츠 에케르트가 곡을 쓴 애국가의 곡조가 귀에 맴돈다." #강명 유신
+ KOR_yi_chin_newfocus_15_desc:0 "나는 해야만 하는 일을 했을 뿐이다. 스스로에게 빠진 나르시스트도 아니다. 절벽 아래로 굴러떨어지는 아이를 건져 올리는 것 뿐이다. 앞으로 해를 끼치는 물건들이 있다면 이를 치워주는게 어버이의 도리다." #군상대권 발동
+ KOR_yi_chin_newfocus_16_desc:0 "§R잔적들은 모조리 지워버려야 한다.§!" #대구코뮌 진압
+ KOR_yi_chin_newfocus_17_desc:0 "내 형황께서 만든 유산이였기에 차마 건드릴 엄두를 하지 못하였다. 나는 그래서는 안됐다. 빠르게 결단을 내리고 나라를 통제했어야지, 지금처럼 비상시국에 이를 때까지 방관만 하는건 황제로서 실격이었다. 그래도 뒤늦게나마 돌이킬 방도가 있으니 다행이다." #중추원 해산
+ KOR_yi_chin_newfocus_18_desc:0 "내가 앞으로 믿을 수가 얼마나 있겠는가? 피로써 이어진 친척들이야말로 나와 황실을 무조건적으로 보위할 진정한 충신이다. 양고대제의 혈통을 이은 이들이 고어좌 위에 있는 동안 황족들은 충성스러운 장기말로 남을 것이다." #황족내각 수립
+ KOR_yi_chin_newfocus_3_desc:0 "아직까지는 흠정대한국헌법 하의 헌정이라는 틀이 유지되고 있었다. 내가 그놈의 군민공치 들먹이는 놈들을 전부 폐립하려면 조금 더 시간이 필요하다. 상원인 참의원은 애초부터 나와 황실을 옹위하니깐 남은건 하원인 민의원이다. 약한 고리를 찾아서 끊어내면 쉬이 목적을 달성하리다." #민의원 이용
+ KOR_yi_chin_newfocus_4_desc:0 "포섭이라고 할 것도 없다. 입법 사법 행정 중 사법을 담당하는 법부는 애초부터 행정부인 경각부 산하에 있다. 법부대신에게 압박을 넣고... 혹시나 거절한다면 내 권한으로 치워버리면 사법을 장악하는 일은 깔끔하게 끝난다." #법부 포섭
+ KOR_yi_chin_newfocus_6_desc:0 "선거가 일어난다고 무엇이 바뀌겠는가? 나라 꼴을 어떻게든 되살리겠다고 외치는 놈들은 결국 지금 기회를 노리는 승냥이 따위다. 그리고 예상해보건데, 대한당이고 민주당이고 한 당은 무조건 과반을 채울 수 없다. 내각 자체를 폐하는데 좋은 명분 좋은 꼴이 잘 나타날 것이다." #보궐선거 개최
+ KOR_yi_chin_newfocus_5_desc:0 "민간에서 대부분의 신민들이 나를 존숭한다면, 의회에서 황제의 명을 따르는 놈들은 형황이 심어둔 황국협회이다. 대계가 세워졌으니 도구들을 하나 둘 모을 때가 됐다." #황국협회 동원
+ KOR_yi_chin_newfocus_13_desc:0 "" #대구 봉기
+ KOR_yi_chin_newfocus_14_desc:0 "" #총파업
+ KOR_yi_chin_newfocus_7_desc:0 "꼴이 말이 아니긴 하지만 해야할 일은 당연히 해야한다. 내 신자된 아이들은 단순히 개나리들의 희생양으로 소비된 것이 아니겠는가. 지나 땅에 있는 모든 대한인들은 확실하게 한 목숨의 희생도 없이 퇴각시킬 것이다." #본토 철수작전
+ KOR_yi_chin_newfocus_8_desc:0 "그럼에도 불구하고 황국이 얻어낸 조각만한 땅이 화북이다. 아무리 우리를 혐오하는 루즈벨트의 미국이라 해도, 황국과 전쟁을 원하지는 않았다. 지나 북부는 앞으로 몇 년 후 있을 전쟁에 대비할 완충지가 되리라." #화북정부 수립
+ KOR_yi_chin_newfocus_12_desc:0 "§R더 이상 이 나라에는 헌법에 입각한 선출된 관료들의 통치가 필요하지 않고, 쓸모있지도 않다. 지나를 3개월만에 정토하겠답시고 호언장담했는데 이 양상이 무엇인가? 나는 대한의 군주이다. 모든 실수를 바로잡겠다.§!" #내지 계엄 선언
+ KOR_yi_chin_newfocus_10_desc:0 "심양과 의주를 방어할 마지막 선이 서만주이다. 어차피 어정쩡하게 끝난 지나전선은 무조건 우리 황국이 치건, 지나인들이 치건 10년 안에는 한번 더 전쟁이 난다. 아마 내 개조가 진행되는 대한은 공격할 여력이 없을거니 다음에는 수성의 입장일테지. 서만주를 요새로 만들어야 한다." #서만주 요새화
+ KOR_yi_chin_newfocus_11_desc:0 "지나전선의 전훈을 보면 공군과 기술의 혁신이 가장 중요한데, 해군에다가 예산 대부분을 쳐박아두니 나라가 전쟁에서 패배하지, 이 멍청한 놈들. 더 이상 건함경쟁이니 태평양 패권이니 말하는 놈들은 내 손으로 직접 쳐 죽이겠다. 항공투사와 교리 선진화, 이 두 개를 최우선으로 둔다." #군 예산 재편
+ KOR_yi_chin_newfocus_9_desc:0 "이 사달이 난 가장 큰 원인은 영불화가 황국에게 경제적으로 심대한 타격을 입힌 것이다. 황국이 동북아에 고립무원 외딴 섬에 떠있는 꼴과 같으니, 살아남기 위해서는 지나던지 인도지나던지로 손을 뻗을 수 밖에 없었다. 그렇다면 가지고 있는 경제적 문제와, 그 근간이 되는 구역을 건드려야만 한다." #경제블록 재편
+ KOR_yi_chin_newfocus_20_desc:0 "" #해옥주를 산같이 쌓으시고
+ KOR_yi_chin_newfocus_31_desc:0 "" #재계 건전화
+ KOR_yi_chin_newfocus_25_desc:0 "" #노동쟁의 금지
+ KOR_yi_chin_newfocus_21_desc:0 "" #정치 개혁
+ KOR_yi_chin_newfocus_22_desc:0 "" #민의원 임명제
+ KOR_yi_chin_newfocus_23_desc:0 "" #황족 각료 필참
+ KOR_yi_chin_newfocus_24_desc:0 "" #황국협회 강화
+ KOR_yi_chin_newfocus_28_desc:0 "" #경제 개혁
+ KOR_yi_chin_newfocus_36_desc:0 "" #삼권분립 해체
+ KOR_yi_chin_newfocus_29_desc:0 "" #재벌에게 명령 하달
+ KOR_yi_chin_newfocus_30_desc:0 "" #탈세자 체포
+ KOR_yi_chin_newfocus_27_desc:0 "" #현대식 전랑 체계
+ KOR_yi_chin_newfocus_32_desc:0 "" #상공업자 탄압
+ KOR_yi_chin_newfocus_33_desc:0 "" #배금주의 배척
+ KOR_yi_chin_newfocus_34_desc:0 "" #사회건전화 실시
+ KOR_yi_chin_newfocus_35_desc:0 "" #상시계엄
+ KOR_yi_chin_newfocus_63_desc:0 "" #일본 문제
+ KOR_yi_chin_newfocus_64_desc:0 "" #히로히토의 야망 분쇄
+ KOR_yi_chin_newfocus_65_desc:0 "" #토쿠가와 연립정권 제안
+ KOR_yi_chin_newfocus_66_desc:0 "" #한일 경제교류
+ KOR_yi_chin_newfocus_69_desc:0 "" #대동아공영권 주창
+ KOR_yi_chin_newfocus_68_desc:0 "" #중국전쟁 가속화
+ KOR_yi_chin_newfocus_71_desc:0 "" #회전문 전술 수립
+ KOR_yi_chin_newfocus_72_desc:0 "" #총공세
+ KOR_yi_chin_newfocus_67_desc:0 "" #적대적 공생이론
+ KOR_yi_chin_newfocus_70_desc:0 "" #인도차이나 영향권 유지
+ KOR_yi_chin_newfocus_62_desc:0 "" #제2차 대동아전쟁
+ KOR_yi_chin_newfocus_26_desc:0 "" #대황제 인가제도 확립
+ KOR_yi_chin_newfocus_37_desc:0 "" #외교 개혁
+ KOR_yi_chin_newfocus_42_desc:0 "" #군대 개혁
+ KOR_yi_chin_newfocus_43_desc:0 "" #황도파 굴종
+ KOR_yi_chin_newfocus_44_desc:0 "" #통제파 해산
+ KOR_yi_chin_newfocus_45_desc:0 "" #근황주의 주입
+ KOR_yi_chin_newfocus_48_desc:0 "" #교리 선진화
+ KOR_yi_chin_newfocus_47_desc:0 "" #상명하복 철저화
+ KOR_yi_chin_newfocus_52_desc:0 "" #대황제의 나라
+ KOR_yi_chin_newfocus_53_desc:0 "" #동남아 문제
+ KOR_yi_chin_newfocus_54_desc:0 "" #인도차이나 영향권 보전
+ KOR_yi_chin_newfocus_55_desc:0 "" #완전 철수
+ KOR_yi_chin_newfocus_73_desc:0 "" #화북정부 지원
+ KOR_yi_chin_newfocus_74_desc:0 "" #황하를 사수하라!
+ KOR_yi_chin_newfocus_75_desc:0 "" #유인 후 역습
+ KOR_yi_chin_newfocus_76_desc:0 "" #화북분리공작 완수
+ KOR_yi_chin_newfocus_56_desc:0 "" #베트남 국민당 소탕
+ KOR_yi_chin_newfocus_60_desc:0 "" #물자 보전
+ KOR_yi_chin_newfocus_57_desc:0 "" #황인 해방 주창
+ KOR_yi_chin_newfocus_59_desc:0 "" #인도차이나 경제권 확보
+ KOR_yi_chin_newfocus_58_desc:0 "" #필리핀 무위협 선언
+ KOR_yi_chin_newfocus_61_desc:0 "" #구밀복검
+ KOR_yi_chin_newfocus_51_desc:0 "" #군군신신부부자자
+ KOR_yi_chin_newfocus_38_desc:0 "" #태평양 위기 해소
+ KOR_yi_chin_newfocus_39_desc:0 "" #대미우호 증진
+ KOR_yi_chin_newfocus_40_desc:0 "" #추축동맹 해체
+ KOR_yi_chin_newfocus_46_desc:0 "" #확장주의 억제
+ KOR_yi_chin_newfocus_41_desc:0 "" #태평양 패권 포기
+ KOR_yi_chin_newfocus_50_desc:0 "" #동북아 패권 확보
+ KOR_yi_chin_newfocus_49_desc:0 "" #민족주의 압력 해소
+ KOR_yi_chin_newfocus_77_desc:0 "" #대황제 폐하 만세
+ KOR_yi_chin_newfocus_78_desc:0 "" #정치의 미래
+ KOR_yi_chin_newfocus_79_desc:0 "" #사회의 미래
+ KOR_yi_chin_newfocus_80_desc:0 "" #인형극의 주인
+ KOR_yi_chin_newfocus_81_desc:0 "" #임의 이름을 부릅니다
+ KOR_yi_chin_newfocus_82_desc:0 "" #앞으로의 세계
+ KOR_yi_chin_newfocus_83_desc:0 "" #동양평화의 씨앗
+ KOR_yi_chin_newfocus_85_desc:0 "" #서방의 위협?
+ KOR_yi_chin_newfocus_84_desc:0 "" #일본의 미래
+ KOR_yi_chin_newfocus_87_desc:0 "" #동방 패권의 문제
+ KOR_yi_chin_newfocus_89_desc:0 "" #자아도취
+ KOR_yi_chin_newfocus_86_desc:0 "" #주사위 놀이
+ KOR_yi_chin_newfocus_88_desc:0 "" #완성된 캔버스
+
+
  
  KSC_death_of_kangmyong:0 "강명제의 죽음"
  KSC_newfocus_1:0 "젠장!"
@@ -1320,7 +1555,7 @@
  KTL_newfocus_20:0 "조선공산당 출범"
  KTL_newfocus_21:0 "북만주 회복"
  KTL_newfocus_22:0 "몽골 혁명 지속"
- KTL_newfocus_23:0 "구주와 북해도"
+ KTL_newfocus_23:0 "구주와 북이도"
  KTL_newfocus_24:0 "세계혁명 준비"
  KTL_newfocus_25:0 "세계를 바라보면"
  KTL_newfocus_26:0 "황실의 처우"
@@ -1409,7 +1644,7 @@
  KTL_newfocus_20_desc:0 ""
  KTL_newfocus_21_desc:0 "조국의 영예를 어깨에 매고\n태극기 밑에서 뭉쳐진 우리\n대한의 만세를 높이 부르며\n나가자 인민군 제3고지대"
  KTL_newfocus_22_desc:0 "옛 정부의 부르주아지적 행태로 몽골의 혁명은 아쉽게 실패하였습니다. 인민의 정부를 위하여 다시 출병할 때입니다."
- KTL_newfocus_23_desc:0 "구주와 북해도의 자치정부라 칭하는 반동들은 대한의 인민들과 협치하는 것을 거부하였습니다. 혁명을 위한 전진이 필요합니다."
+ KTL_newfocus_23_desc:0 "구주와 북이도의 자치정부라 칭하는 반동들은 대한의 인민들과 협치하는 것을 거부하였습니다. 혁명을 위한 전진이 필요합니다."
  KTL_newfocus_24_desc:0 "혁명! 그리고 세계혁명! 일국사회주의는 실패했습니다! 우리는 전 세계로 나아갈 것입니다!"
  KTL_newfocus_25_desc:0 "세계를 바라보면"
  KTL_newfocus_26_desc:0 "황제와는 무관하게, 우리는 황실이 존재합니다. 인민의 황실은 존재할 수 없습니다. 이들을 어찌 처리해야 할까요."

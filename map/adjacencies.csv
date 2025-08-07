@@ -298,6 +298,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 12162;12219;sea;2291;-1;-1;-1;-1;;Sunda
 1339;10219;sea;5414;-1;-1;-1;-1;;Sunda
 855;12559;sea;2510;-1;-1;-1;-1;;Sakhalin
-1342;10279;sea;2737;1;1;1;1;;SUM_STRAIT_FAKE_1;For Country Name
-1399;4728;sea;5488;1;1;1;1;;KURIL_STRAIT_FAKE_1;For Country Name
+1342;10279;sea;2737;1;1;1;1;SUM_STRAIT_FAKE_1;For Country Name
+1399;4728;sea;5488;1;1;1;1;KURIL_STRAIT_FAKE_1;For Country Name
+7214;4196;sea;5322;1;1;1;1;TAIWAN_STRAIT_FAKE;For Country Name
 -1;-1;;-1;-1;-1;-1;-1;-1 

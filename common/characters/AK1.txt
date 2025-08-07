@@ -1,0 +1,22 @@
+characters={
+	AK1_syngman_rhee={
+		name="AK1_syngman_rhee"
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/Portrait_KOR_syngman_rhee.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ 
+				grand_duke_of_korea_syngman
+			}
+		}
+		country_leader={
+			ideology=ultranationalism
+			traits={ 
+				grand_duke_of_korea_syngman
+			}
+		}
+	}
+}

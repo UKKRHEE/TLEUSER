@@ -6,11 +6,15 @@ state={
 	}
 	history={
 		owner = XSM
+		add_core_of = GXM
 		add_core_of = XSM
 		add_core_of = CHI
 		add_core_of = PRC
 		buildings = {
 			infrastructure = 1
+		}
+		victory_points = {
+			4313 3 
 		}
 	}	
 	manpower=128940

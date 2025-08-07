@@ -39,6 +39,9 @@ XKC = "countries/China.txt" #서강군벌
 GZC = "countries/China.txt" #귀주군벌
 SCC = "countries/China.txt" #달주진수사부
 AQC = "countries/China.txt" #안경군벌
+NXM = "countries/China.txt" #영하군벌
+GXM = "countries/China.txt" #감숙군벌
+TNG = "countries/China.txt" #화전군벌 #둥가니스탄
 CH1 = "countries/China.txt" #천하삼분지계 중국
 CH2 = "countries/China.txt" #천하삼분지계 중국
 ###Mongolian People's Republic###
@@ -62,6 +65,7 @@ DK1 = "countries/Japan.txt" #조센징 괴뢰
 DK2 = "countries/Japan.txt" #조센징 괴뢰
 DK3 = "countries/Japan.txt" #조센징 괴뢰
 DK4 = "countries/Japan.txt" #조센징 괴뢰
+NGJ = "countries/Japan.txt" #나가사키 경제특구
 ###Southern Expantion Country###
 BUR	= "countries/Burma.txt"
 FRI	= "countries/Vietnam.txt"
@@ -103,6 +107,10 @@ GM1 = "countries/Germany.txt" #마다가스카르 국가판무관부
 FRS = "countries/France.txt" #프랑스
 ###End of WW2(Allies Win)###
 AS1 = "countries/Germany.txt" #오스트리아인민
+PLS = "countries/Poland.txt" #폴인공
+BLS = "countries/Bulgaria.txt" #불인공
+HNS = "countries/Hungary.txt" #헝인공
+RMS = "countries/Romania.txt" #루인공
 ###End of WW2(Reds Win)###
 RL1 = "countries/Germany.txt" #라인란트
 IT1 = "countries/Italy.txt" #빨갱이탈리아
@@ -120,3 +128,12 @@ MCP = "countries/Korea.txt" #메카박정희
 KRH = "countries/Korea.txt" #대한제국 호박정부
 LMC = "countries/Korea.txt" #슨상님
 UMA = "countries/Mongolia.txt" #우마무스메 칭기스칸국
+
+#
+AK1 = "countries/Korea.txt" #이승만
+AK2 = "countries/Korea.txt" #안창호(하와이)
+AK3 = "countries/Korea.txt" #박정희(리치먼드 새마을운동 위원회)
+AK4 = "countries/Korea.txt" #플로리다 신성모 통치령
+AK5 = "countries/Korea.txt" #
+AK6 = "countries/Korea.txt" #
+AK7 = "countries/Korea.txt" #

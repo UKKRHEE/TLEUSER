@@ -26,33 +26,20 @@ JAP_historical_plan = {
 		JAP_focus_sakusen_kantai
 		JAP_slave_workers
 		JAP_war_support
-		JAP_internal_state
 		JAP_expansionism
-		JAP_military
-		JAP_army_reform
-		JAP_showa_tenno_heil
-		JAP_focus_shinja
-		JAP_fighters_for_the_emporer
-		JAP_focus_kyoryo
-		JAP_focus_battotai_seili
-		JAP_focus_start_of_paifen
-		JAP_focus_waijiao
+		JAP_war_of_yashima_focus1
+		JAP_war_of_yashima_focus3
 		JAP_the_civilian_pact
-		JAP_southern_asia
+		JAP_war_of_yashima_focus4
+		JAP_war_of_yashima_focus5
+		JAP_focus_waijiao
+		JAP_showa_tenno_heil
+		JAP_miliraty 
+		JAP_army_reform
+		JAP_focus_shinja
 		JAP_the_safe_japan
-		JAP_indian_conquest
-		JAP_focus_asian_supporter
-		JAP_focus_war_for_korea
-		JAP_focus_support_with_china
-		JAP_focus_find_lomin
-		JAP_demand_Indochina
-		JAP_focus_tennos_empire
 		JAP_focus_shinto_kaisen
-		JAP_rus_border
-		JAP_northern_asia
-		JAP_focus_kyoeiken
-		JAP_war_CHI
-		JAP_war_RUS
+		JAP_eastern_asia
 		JAP_for_empreror
 		JAP_the_last_empire
 		

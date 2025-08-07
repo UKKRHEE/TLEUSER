@@ -345,6 +345,7 @@ KOR_ilsoism_GUI_category = {
 				state = 1097
 				state = 1033
 				state = 608
+				state = 1137
 				state = 614
 				state = 1101
 				state = 1174
@@ -548,7 +549,9 @@ KOR_anti_imperialism_democratical_united_front_problem = {
 			620
 			1048
 			1127
+			1139
 			606
+			1138
 			598
 			1051
 			1040
@@ -3467,6 +3470,7 @@ KOR_flames_of_war = {
 				state = 1097
 				state = 608
 				state = 1033
+				state = 1137
 			}
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
@@ -4451,6 +4455,83 @@ KOR_first_plan_lightning = {
 			}
 		}
 	}
+	KOR_nanking_time_limit = {
+		icon = eng_blackshirt_march
+		allowed = {
+			tag = KOR
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			if = { 
+				limit = {
+					CHI = {
+						owns_state = 613
+					}
+				}
+				has_war_with = CHI
+			}
+			OR = {
+				controls_state = 613
+				any_other_country = {
+					is_puppet_of = KOR
+					controls_state = 613
+				}
+			}
+		}
+		visible = {
+			tag = KOR
+		} 
+		highlight_states = {
+ 		highlight_state_targets = { state = 613 } 
+		}
+		activation = {
+			KOR = {
+				has_completed_focus = kor_tsushima
+				if = { 
+					limit = {
+						CHI = {
+							exists = yes
+							owns_state = 613
+						}
+					}
+					has_war_with = CHI
+				}
+				if = { 
+					limit = {
+						NOT = {
+							CHI = {
+								exists = yes
+								owns_state = 613
+							}
+						}
+					}
+					has_war_with = CHI
+				}
+			}
+		}
+		days_mission_timeout = 200
+		
+		fixed_random_seed = no
+
+		fire_only_once = yes
+		is_good = no
+		complete_effect = {
+			KOR = {
+				country_event = {
+					id = korea.118
+				}
+			}
+		}	
+		timeout_effect = {
+			KOR = {
+				country_event = {
+					id = korea.119
+				}
+			}
+		}
+	}
 	KOR_the_war_plan_Z = {
 		icon = generic_army_support 
 		available = {
@@ -4727,12 +4808,14 @@ KOR_second_plan_tent = {
 						owns_state = 616
 						owns_state = 615
 						owns_state = 614
+						owns_state = 1137
 						owns_state = 610
 						owns_state = 591
 						owns_state = 592
 						owns_state = 593
 						owns_state = 607
 						owns_state = 606
+						owns_state = 1138
 						owns_state = 605
 						owns_state = 604
 						owns_state = 603
@@ -4997,6 +5080,10 @@ KOR_second_plan_tent = {
 					}	
 					set_state_controller_to = SZY
 				}
+				1097 = {
+					set_state_controller_to = SZY
+					add_core_of = SZY
+				}
 			}
 		}
 		# modifier = {
@@ -5026,6 +5113,13 @@ KOR_second_plan_tent = {
 					}
 				}
 				606 = {
+					OR = {
+						is_fully_controlled_by = KOR
+						is_fully_controlled_by = KMN
+						is_fully_controlled_by = CH2
+					}
+				}
+				1138 = {
 					OR = {
 						is_fully_controlled_by = KOR
 						is_fully_controlled_by = KMN
@@ -5231,7 +5325,6 @@ KOR_third_plan_doryun = {
 		fire_only_once = yes		
 		remove_effect = {
 			add_threat = 5
-			add_war_support = 0.05
 			KOR = {
 				complete_national_focus = KOR_the_plan_south
 			}
@@ -5353,6 +5446,9 @@ KOR_third_plan_doryun = {
 		activation = {
 			is_ai = no
 			has_completed_focus = KOR_the_plan_south
+			NOT = {
+				has_global_flag = TLE_KOREA_IS_DEFEATED
+			}
 		}
 
 		visible = {
@@ -5441,6 +5537,9 @@ KOR_third_plan_doryun = {
 			INS = {
 				has_war_with = KOR
 			}
+			NOT = {
+				has_global_flag = TLE_KOREA_IS_DEFEATED
+			}
 		}
 
 		visible = {
@@ -5508,6 +5607,9 @@ KOR_third_plan_doryun = {
 			}
 			USA = {
 				has_war_with = KOR
+			}
+			NOT = {
+				has_global_flag = TLE_KOREA_IS_DEFEATED
 			}
 		}
 
@@ -5597,6 +5699,9 @@ KOR_third_plan_doryun = {
 			KOR = {
 				has_war_with = BUR
 			}
+			NOT = {
+				has_global_flag = TLE_KOREA_IS_DEFEATED
+			}
 		}
 		days_mission_timeout = 1500
 	
@@ -5664,6 +5769,9 @@ KOR_third_plan_doryun = {
 				has_war_with = RAJ
 				has_war_with = BUR
 			}
+			NOT = {
+				has_global_flag = TLE_KOREA_IS_DEFEATED
+			}
 		}
 		days_mission_timeout = 1500
 	
@@ -5672,6 +5780,7 @@ KOR_third_plan_doryun = {
 		complete_effect = {
 			custom_effect_tooltip = KOR_INVADE_BAN
 			hidden_effect = {
+				set_global_flag = TLE_KOR_invaded_india_flag
 				KOR = {
 					set_country_flag = KOR_won_in_calcutta
 					country_event = {
@@ -5699,19 +5808,29 @@ KOR_third_plan_doryun = {
 		}
 		available = {
 			has_war_with = AST
-			has_country_flag = KOR_won_in_ins
-			controls_state = 634
-			controls_state = 635
-			controls_state = 711
-			controls_state = 712
-			controls_state = 734
-			controls_state = 737
+			OR = {
+				AND = {
+					has_country_flag = KOR_won_in_ins
+					controls_state = 634
+					controls_state = 635
+					controls_state = 711
+					controls_state = 712
+					controls_state = 734
+					controls_state = 737
+				}
+				AST = {
+					surrender_progress > 0.2
+				}
+			}
      	}
 		visible = {
 			has_country_flag = TLE_KOR_invade_austrailia_flag
 		}
 		activation = {
 			has_country_flag = TLE_KOR_invade_austrailia_flag
+			NOT = {
+				has_global_flag = TLE_KOREA_IS_DEFEATED
+			}
 		}
 		days_mission_timeout = 1500
 	
@@ -5719,6 +5838,7 @@ KOR_third_plan_doryun = {
 		is_good = no
 		complete_effect = {
 			custom_effect_tooltip = KOR_INVADE_AST
+			set_global_flag = TLE_KOR_invaded_austrailia_flag
 			hidden_effect = {
 				KOR = {
 					country_event = {
@@ -5764,6 +5884,9 @@ KOR_third_plan_doryun = {
 			has_idea = KOR_embargo_us
 			NOT = {
 				has_country_flag = flag_KOR_the_embargo_rising_end
+			}
+			NOT = {
+				has_global_flag = TLE_KOREA_IS_DEFEATED
 			}
 		}
 
@@ -5830,6 +5953,9 @@ KOR_third_plan_doryun = {
 			hidden_effect = {
 				remove_ideas = KOR_embargo_us_a
 			}
+			NOT = {
+				has_global_flag = TLE_KOREA_IS_DEFEATED
+			}
 		}
 
 		timeout_effect = {
@@ -5872,6 +5998,9 @@ KOR_third_plan_doryun = {
 			has_idea = KOR_embargo_us_b	
 			NOT = {
 				has_country_flag = flag_KOR_the_embargo_rising_end
+			}
+			NOT = {
+				has_global_flag = TLE_KOREA_IS_DEFEATED
 			}
 		}
 
@@ -5926,6 +6055,9 @@ KOR_third_plan_doryun = {
 			has_idea = KOR_embargo_us_c	
 			NOT = {
 				has_country_flag = flag_KOR_the_embargo_rising_end
+			}
+			NOT = {
+				has_global_flag = TLE_KOREA_IS_DEFEATED
 			}
 		}
 
@@ -5985,6 +6117,9 @@ KOR_third_plan_doryun = {
 			NOT = {
 				has_country_flag = flag_KOR_the_embargo_rising_end
 			}
+			NOT = {
+				has_global_flag = TLE_KOREA_IS_DEFEATED
+			}
 		}
 
 		visible = {
@@ -6042,6 +6177,39 @@ KOR_third_plan_doryun = {
 			hidden_effect = {
 				load_oob = "KOR_BOR"
 			}
+		}
+	}
+	KOR_defeat_the_americans = {
+		icon = GFX_decision_eng_puppet_usa
+		allowed = {
+		    tag = KOR
+		}
+		available = {
+			NOT = {
+				has_war_with = USA
+			}
+     	}
+		visible = {
+			has_completed_focus = KOR_the_plan_south
+		}
+		activation = {
+			has_completed_focus = KOR_the_plan_south
+			KOR = {
+				has_war_with = USA
+			}
+			NOT = {
+				has_global_flag = TLE_KOREA_IS_DEFEATED
+			}
+		}
+		days_mission_timeout = 1800
+		is_good = no
+		fire_only_once = yes
+		complete_effect = {
+			custom_effect_tooltip = KOR_win_the_pacific_war_tt
+		}
+
+		timeout_effect = {
+			custom_effect_tooltip = KOR_lose_the_pacific_war_tt
 		}
 	}
 	KOR_invasion_of_celebes = { #슬라웨시
@@ -6202,7 +6370,7 @@ KOR_third_plan_doryun = {
 		}
 	}
 	KOR_burma_independence = { #버마독립
-		icon = GFX_decision_eng_trade_unions_support
+		icon = GFX_decision_generic_disband_irregulars
 		allowed = {
 		    tag = KOR
 		}
@@ -6368,6 +6536,83 @@ KOR_third_plan_doryun = {
 		}
 		ai_will_do = {
 			factor = 200
+		}
+	}
+	KOR_send_the_peace = {
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = KOR
+		}	
+		highlight_states = {
+			highlight_state_targets = { state = 361 } 
+		}
+		
+		available = {
+			if = {
+				limit = {
+					has_country_flag = KOR_send_the_peace_1
+				}
+				controls_state = 629
+				has_country_flag = flag_KOR_surrander_of_ins_end
+				has_global_flag = TLE_KOR_invaded_india_flag
+				has_global_flag = TLE_KOR_invaded_austrailia_flag
+				JAP = {
+					OR = {
+						has_capitulated = yes
+						exists = no
+					}	
+				}
+				CHI = {
+					OR = {
+						has_capitulated = yes
+						exists = no
+					}	
+				}
+				ZLC = {
+					OR = {
+						has_capitulated = yes
+						exists = no
+					}	
+				}
+				USA = {
+					has_navy_size = { size < 150 }
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = KOR_send_the_peace_1
+					}
+				}
+				has_country_flag = flag_KOR_surrander_of_ins_end
+				has_global_flag = TLE_KOR_invaded_india_flag
+				has_global_flag = TLE_KOR_invaded_austrailia_flag
+			}
+		}
+		
+		fixed_random_seed = no
+
+		fire_only_once = no
+		
+		is_good = no
+		
+		days_remove = 1
+		
+		visible = {
+			original_tag = KOR
+			NOT = {
+				has_country_flag = KOR_send_the_peace_2
+			}
+			has_war_with = USA
+        }	
+		complete_effect = {
+			custom_effect_tooltip = TOOLTIP_PEACEWITHUSA
+			USA = {
+				country_event = {
+					id = korea.261
+				}
+			}
 		}
 	}
 }
@@ -6659,23 +6904,51 @@ KOR_forth_plan_nakil = {
 		}
 	}
 }	
-KOR_interservice_rivalry = {
-	KOR_goonsoo = {
-		priority = 100
-		icon = generic_prepare_civil_war
+KOR_economy_projects = {
+	KOR_economy_projects_timeout = {
+		icon = GFX_decision_eng_trade_unions_support
+		available = {
+			OR = {
+				has_idea = KOR_embargo_us
+				has_idea = KOR_embargo_us_a
+				has_idea = KOR_embargo_us_b
+				has_idea = KOR_embargo_us_c
+				has_idea = KOR_embargo_us_d
+			}
+		}
+
+		visible = {
+			has_country_flag = FLAG_KOR_HOMELAND_DEVELOPMENT
+		}
+
+		modifier = {
+			
+		}
+
+		days_mission_timeout = 1800
+		fire_only_once = yes
+
+		activation = {
+			has_country_flag = FLAG_KOR_HOMELAND_DEVELOPMENT
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = TOOLTIP_KOR_HOMELAND_DEVELOPMENT_END
+			clr_country_flag = FLAG_KOR_HOMELAND_DEVELOPMENT
+		}
 		
-		# picture = GFX_decision_cat_national_assembly
-        
+		timeout_effect = {
+			custom_effect_tooltip = TOOLTIP_KOR_HOMELAND_DEVELOPMENT_END
+			clr_country_flag = FLAG_KOR_HOMELAND_DEVELOPMENT
+		}
+	}
+	KOR_goonsoo = {
+		icon = generic_industry
 		allowed = {
 			tag = KOR
-		    # OR = {
-			#     tag = KOR 
-			#     original_tag = MKR
-			#     original_tag = DKR 
-		    # }
 		}
 		available = {
-			has_completed_focus = kor_homeland_development
+			has_country_flag = FLAG_KOR_HOMELAND_DEVELOPMENT
 		}
 
 		visible = {
@@ -6889,18 +7162,9 @@ KOR_interservice_rivalry = {
         }
     }
 	KOR_mingangongjang = {
-		priority = 100
-		icon = ger_mefo_bills
-		
-		# picture = GFX_decision_cat_national_assembly
-        
+		icon = generic_consumer_goods
 		allowed = {
 		    tag = KOR
-		    # OR = {
-			#     tag = KOR 
-			#     original_tag = MKR
-			#     original_tag = DKR 
-		    # }
 		}
 
 		cost = 60
@@ -6911,7 +7175,7 @@ KOR_interservice_rivalry = {
 		fire_only_once = no
 
 		available = {
-			has_completed_focus = kor_homeland_development
+			has_country_flag = FLAG_KOR_HOMELAND_DEVELOPMENT
 		}
 
 		visible = {
@@ -7118,11 +7382,7 @@ KOR_interservice_rivalry = {
         }
     }
 	KOR_dockyard = {
-		priority = 100
-		icon = generic_naval
-		
-		# picture = GFX_decision_cat_national_assembly
-        
+		icon = generic_merge_plant_ship
 		allowed = {
 		    tag = KOR
 		    # OR = {
@@ -7139,7 +7399,7 @@ KOR_interservice_rivalry = {
 		fire_only_once = no
 
 		available = {
-			has_completed_focus = kor_homeland_development
+			has_country_flag = FLAG_KOR_HOMELAND_DEVELOPMENT
 		}
 
 		visible = {
@@ -7345,6 +7605,8 @@ KOR_interservice_rivalry = {
 			}
         }
     }
+}
+KOR_interservice_rivalry = {
 	KOR_steel_for_guns = { 
 		priority = 100
 		icon = generic_tank
@@ -7799,8 +8061,6 @@ KOR_reichskommissariat = {
 
 		available = {
 			is_subject = no
-			#JAP = { exists = no }
-			CHI = { exists = no }
 			OR = {
 			custom_trigger_tooltip = {
 				tooltip = form_country_china_tt
@@ -7809,12 +8069,14 @@ KOR_reichskommissariat = {
 				owns_state = 616
 				owns_state = 615
 				owns_state = 614
+				owns_state = 1137
 				owns_state = 610
 				owns_state = 591
 				owns_state = 592
 				owns_state = 593
 				owns_state = 607
 				owns_state = 606
+				owns_state = 1138
 				owns_state = 605
 				owns_state = 604
 				owns_state = 603
@@ -7848,9 +8110,6 @@ KOR_reichskommissariat = {
 			set_country_flag = CHINA_KOREA
 			KOR = {
 				add_ideas = KOR_great_korea
-			}
-			hidden_effect = {
-				news_event = { id = eok_news.5 days = 1 }
 			}
 		}
 

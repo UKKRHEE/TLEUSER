@@ -1,0 +1,22 @@
+characters={
+	AK7_henry_ford={
+		name="AK7_henry_ford"
+		portraits={
+			civilian={
+				large="gfx/leaders/USA/Portrait_USA_henry_ford.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ 
+				#
+			}
+		}
+		country_leader={
+			ideology=ultranationalism
+			traits={ 
+				#
+			}
+		}
+	}
+}

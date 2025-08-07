@@ -140,48 +140,36 @@ guiTypes = {
 			size = { width = 580 height = 128 }
 			position = { x= 5 y = 7 }
 			alwaystransparent = yes
-			Orientation = center
-			Origo = center
 		}
 		iconType = {
 			name = "SE_image_2"
 			size = { width = 580 height = 128 }
 			position = { x= 5 y = 7 }
 			alwaystransparent = yes
-			Orientation = center
-			Origo = center
 		}
 		iconType = {
 			name = "SE_image_3"
 			size = { width = 580 height = 128 }
 			position = { x= 5 y = 7 }
 			alwaystransparent = yes
-			Orientation = center
-			Origo = center
 		}
 		iconType = {
 			name = "SE_image_4"
 			size = { width = 580 height = 128 }
 			position = { x= 5 y = 7 }
 			alwaystransparent = yes
-			Orientation = center
-			Origo = center
 		}
 		iconType = {
 			name = "SE_image_5"
 			size = { width = 580 height = 128 }
 			position = { x= 5 y = 7 }
 			alwaystransparent = yes
-			Orientation = center
-			Origo = center
 		}
 		iconType = {
 			name = "SE_image_6"
 			size = { width = 580 height = 128 }
 			position = { x= 5 y = 7 }
 			alwaystransparent = yes
-			Orientation = center
-			Origo = center
 		}
 
 		containerWindowType = {

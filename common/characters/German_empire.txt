@@ -67,4 +67,43 @@ characters={
 			}
 		}
 	}
+	HAN_ludwig_erhard={
+		name="HAN_ludwig_erhard"
+		portraits={
+			civilian={
+				large="gfx/leaders/GER/Portrait_Ludwig_Erhard.png"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			traits={ }
+			id=-1
+		}
+	}
+	AUS_leopold_figi={
+		name="AUS_leopold_figi"
+		portraits={
+			civilian={
+				large="gfx/leaders/AUS/Portrait_leopold_figi.png"
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			traits={ }
+			id=-1
+		}
+	}
+	PRE_otto_grotewohl={
+		name="DDR_otto_grotewohl"
+		portraits={
+			civilian={
+				large="gfx/leaders/DDR/Portrait_DDR_Otto_Grotewohl.png"
+			}
+		}
+		country_leader={
+			ideology=socialism
+			traits={ }
+			id=-1
+		}
+	}
 }

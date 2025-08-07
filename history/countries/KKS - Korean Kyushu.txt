@@ -29,8 +29,6 @@ set_popularities = {
 	neutrality = 100
 }
 add_ideas = {
-	KOR_yi_jin
-	KOR_the_country_of_korea
 	KKS_shimazu_tadashige
 }
 }

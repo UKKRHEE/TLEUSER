@@ -58,10 +58,10 @@ focus_tree = {
 								}
 						}
 					hidden_effect = {
-							country_event = {
-									id = korea.310
-								}
+						country_event = {
+							id = korea.314
 						}
+					}
 				}
 
 	}
@@ -560,7 +560,7 @@ focus_tree = {
 	focus = {
 		id = KOR_side_in
 		icon = GFX_goal_KOR_new_2
-		cost = 2.00
+		cost = 5.00
 		prerequisite = {
 			focus = kor_korean_lebensraum
 		}
@@ -929,16 +929,24 @@ focus_tree = {
 				KMN = {
 					set_country_flag = FLAG_KMN_FUT
 					set_cosmetic_tag = KMN_FUT
-					annex_country = {
-						target = KYH	
-						transfer_troops = yes
+					if = {
+						limit = {
+							has_game_rule = {
+								rule = TLE_MANCHU_ANNEX
+								option = TLE_MANCHU_ANNEX_NO
+							}
+						}
+						annex_country = {
+							target = KYH	
+							transfer_troops = yes
+						}
+						add_state_core = 560
+						add_state_core = 561
+						add_state_core = 657
+						transfer_state = 560
+						transfer_state = 561
+						transfer_state = 657
 					}
-					add_state_core = 560
-					add_state_core = 561
-					add_state_core = 657
-					transfer_state = 560
-					transfer_state = 561
-					transfer_state = 657
 					set_party_name = {
 						ideology = democratic
 						long_name = "KMN_FUT_democratic_party_long"
@@ -954,6 +962,23 @@ focus_tree = {
 						long_name = "KMN_FUT_fascism_party_long"
 						name = "KMN_FUT_fascism_party"
 					}
+				}
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = TLE_MANCHU_ANNEX
+							option = TLE_MANCHU_ANNEX_YES
+						}
+					}
+					add_state_core = 560
+					add_state_core = 561
+					add_state_core = 657
+					add_state_core = 714
+					add_state_core = 1059
+					add_state_core = 715
+					add_state_core = 761
+					add_state_core = 610
+					add_state_core = 1060
 				}
 				annex_country = {
 					target = KHK
@@ -1084,12 +1109,12 @@ focus_tree = {
 	focus = {
 		id = KOR_kwangtungjun
 		icon = GFX_goal_KOR_new_13
-		cost = 0.00
+		cost = 1.00
 		prerequisite = {
 			focus = kor_tsushima
 			focus = KOR_threat_up_of_east_asia
 		}
-		x = 71
+		x = 70
 		y = 15
 			bypass = {
 					ZLC = {
@@ -1115,7 +1140,7 @@ focus_tree = {
 		icon = GFX_goal_KOR_new_17
 		cost = 1.00
 		prerequisite = {
-			focus = kor_tsushima
+			focus = KOR_french_indochina
 		}
 		x = 72
 		y = 16
@@ -1356,7 +1381,7 @@ focus_tree = {
 	focus = {
 		id = KOR_attack_taiwan
 		icon = GFX_focus_break_japan
-		cost = 8.00
+		cost = 1.00
 		prerequisite = {
 			focus = KOR_kyushu_colonism_up
 		}
@@ -1365,24 +1390,24 @@ focus_tree = {
 		}
 		x = 74
 		y = 14
+		bypass_effect = {
+		}
 			cancelable = no
 			available = {
-					JAP = {
-							exists = yes
-							controls_state = 1070
-						}
-					DKG = {
-							exists = no
-						}
+				has_war_with = USA
+				JAP = {
+					exists = yes
+					controls_state = 1070
 				}
-			bypass = {
-					JAP = {
-							OR = {
-									has_war_with = KOR
-									exists = no
-								}
-						}
+				DKG = {
+					exists = no
 				}
+			}
+		bypass = {
+			KOR = {
+				has_war_with = USA
+			}
+		}
 			completion_reward = {
 				custom_effect_tooltip = KOREA_ATTACK_JAPAN_FOCUS
 				hidden_effect = {
@@ -1399,14 +1424,41 @@ focus_tree = {
 
 	}
 	focus = {
+		id = KOR_french_indochina
+		icon = GFX_focus_KOR_french_indochina
+		cost = 8.00
+		prerequisite = {
+			focus = kor_tsushima
+		}
+		x = 72
+		y = 15
+		available = {
+			FRI = {
+				OR = {
+					has_capitulated = yes
+					exists = no
+				}
+			}
+		}
+		bypass = {
+			KVN = {
+				exists = yes
+				is_puppet_of = KOR
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = KOREA_ATTACK_USA_TENSION
+		}
+	}
+	focus = {
 		id = KOR_baekje_kisadan
 		icon = GFX_focus_dorae_cut
-		cost = 6.00
+		cost = 1.00
 		prerequisite = {
 			focus = KOR_attack_taiwan
 			focus = kor_tsushima
 		}
-		x = 73
+		x = 74
 		y = 15
 			available = {
 					controls_state = 1070
@@ -1435,10 +1487,10 @@ focus_tree = {
 		icon = GFX_focus_eok_army
 		cost = 4.00
 		prerequisite = {
-			focus = kor_korean_lebensraum
+			focus = kor_territory_expansion
 		}
 		x = 82
-		y = 11
+		y = 12
 			available = {
 				}
 			completion_reward = {
@@ -1459,7 +1511,7 @@ focus_tree = {
 			focus = kor_military
 		}
 		x = 78
-		y = 12
+		y = 13
 			available = {
 					if = {
 							limit = {
@@ -1506,7 +1558,7 @@ focus_tree = {
 			focus = kor_army_reform
 		}
 		x = 77
-		y = 13
+		y = 14
 			completion_reward = {
 					add_tech_bonus = {
 							name = kor_guksan_gun
@@ -1525,7 +1577,7 @@ focus_tree = {
 			focus = kor_army_reform
 		}
 		x = 79
-		y = 13
+		y = 14
 			completion_reward = {
 					army_experience = 15
 					add_tech_bonus = {
@@ -1545,7 +1597,7 @@ focus_tree = {
 			focus = kor_guksan_tank
 		}
 		x = 78
-		y = 15
+		y = 16
 			completion_reward = {
 					army_experience = 15
 					add_tech_bonus = {
@@ -1567,7 +1619,7 @@ focus_tree = {
 			focus = kor_guksan_tank
 		}
 		x = 79
-		y = 14
+		y = 15
 			completion_reward = {
 					add_tech_bonus = {
 							name = mechanized_bonus
@@ -1587,7 +1639,7 @@ focus_tree = {
 			focus = kor_military
 		}
 		x = 82
-		y = 12
+		y = 13
 			available = {
 				if = {
 					limit = {
@@ -1615,7 +1667,7 @@ focus_tree = {
 			focus = kor_naval_reform
 		}
 		x = 81
-		y = 13
+		y = 14
 			completion_reward = {
 				navy_experience = 5
 				add_tech_bonus = {
@@ -1656,13 +1708,13 @@ focus_tree = {
 	
 	focus = {
 		id = kor_jinhae_naval_Arsenal
-		icon = GFX_focus_kor_industrial_complex_haeju
+		icon = GFX_focus_kor_Jinhae_naval_arssenal
 		cost = 8.00
 		prerequisite = {
 			focus = kor_naval_reform
 		}
 		x = 83
-		y = 13
+		y = 14
 			completion_reward = {
 				1091 = {
 					add_extra_state_shared_building_slots = 2
@@ -1674,7 +1726,7 @@ focus_tree = {
 				}				
 				if = {
 					limit = {
-						controls_province = 1054 #진해
+						controls_province = 4056 #진해
 						1091 = { #경상남도
 							is_owned_and_controlled_by = ROOT
 							can_construct_building = naval_facility
@@ -1684,7 +1736,7 @@ focus_tree = {
 						add_building_construction = {
 							type = naval_facility
 							level = 1
-							province = 1054 #진해
+							province = 4056 #진해
 							instant_build = yes
 						}
 					}
@@ -1699,7 +1751,7 @@ focus_tree = {
 			focus = kor_aircraft_carrier focus = kor_jinhae_naval_Arsenal
 		}
 		x = 82
-		y = 14
+		y = 15
 			completion_reward = {
 				add_tech_bonus = {
 					name = kor_marine
@@ -1728,7 +1780,7 @@ focus_tree = {
 			focus = kor_aircraft_carrier
 		}
 		x = 81
-		y = 15
+		y = 16
 			completion_reward = {
 				if = {
 					limit = { has_dlc = "By Blood Alone" }
@@ -1764,7 +1816,7 @@ focus_tree = {
 			focus = kor_jinhae_naval_Arsenal
 		}
 		x = 83
-		y = 15
+		y = 16
 			completion_reward = {
 				if = {					
 					limit = { has_dlc = "Man the Guns" }
@@ -1794,7 +1846,7 @@ focus_tree = {
 			focus = kor_shipbuilding_tech focus = kor_advanced_cv_aircraft
 		}
 		x = 82
-		y = 16
+		y = 17
 			completion_reward = {
 				add_tech_bonus = {
 					name = kor_Destroyer
@@ -1820,7 +1872,7 @@ focus_tree = {
 			}
 		}
 		x = 81
-		y = 17
+		y = 18
 			completion_reward = {
 				custom_effect_tooltip = KOR_more_CV_tt
 				hidden_effect = {
@@ -1912,7 +1964,7 @@ focus_tree = {
 		prerequisite = {focus = kor_advanced_cv_aircraft}
 		prerequisite = {focus = kor_shipbuilding_tech}
 		x = 83
-		y = 17
+		y = 18
 			completion_reward = {
 				complete_special_project = sp:sp_naval_super_heavy_battleship
 				if = {
@@ -1995,7 +2047,7 @@ focus_tree = {
 			focus = kor_military
 		}
 		x = 86
-		y = 12
+		y = 13
 			available = {
 					if = {
 							limit = {
@@ -2017,7 +2069,7 @@ focus_tree = {
 			focus = kor_air_reform
 		}
 		x = 85
-		y = 13
+		y = 14
 			completion_reward = {
 					add_tech_bonus = {
 							name = fighter_bonus
@@ -2039,7 +2091,7 @@ focus_tree = {
 			focus = kor_air_reform
 		}
 		x = 87
-		y = 13
+		y = 14
 			completion_reward = {
 					add_tech_bonus = {
 							name = kor_airborne_force
@@ -2057,7 +2109,7 @@ focus_tree = {
 			focus = kor_Fighter
 		}
 		x = 85
-		y = 14
+		y = 15
 			completion_reward = {
 					add_tech_bonus = {
 							name = CAS_bonus
@@ -2076,7 +2128,7 @@ focus_tree = {
 		prerequisite = {focus = kor_Fighter}
 		prerequisite = {focus = kor_airborne_force}		
 		x = 87
-		y = 14
+		y = 15
 			completion_reward = {
 					add_tech_bonus = {
 							name = bomber_bonus
@@ -2095,7 +2147,7 @@ focus_tree = {
 			focus = kor_bomber
 		}
 		x = 86
-		y = 15
+		y = 16
 			completion_reward = {
 					add_tech_bonus = {
 							name = nav_bomber_bonus
@@ -2112,10 +2164,10 @@ focus_tree = {
 		icon = GFX_focus_KOR_focus_see_the_hansung
 		cost = 3.00
 		prerequisite = {
-			focus = kor_korean_lebensraum
+			focus = KOR_side_in
 		}
 		x = 56
-		y = 11
+		y = 12
 			available = {
 				}
 			cancelable = no
@@ -2126,16 +2178,6 @@ focus_tree = {
 					add_timed_idea = {
 							idea = KOR_industry_reform
 							days = 365
-						}
-					hidden_effect = {
-							if = {
-									limit = {
-											has_country_flag = FLAG_KOR_FASCIST_ROUTE
-										}
-									country_event = {
-											id = korea.314
-										}
-								}
 						}
 				}
 
@@ -2296,10 +2338,27 @@ focus_tree = {
 		prerequisite = {
 			focus = kor_new_lifeguard_extension
 		}
-		x = 65
+		x = 64
 		y = 18
 			completion_reward = {
 					remove_ideas = KOR_purged_government
+				}
+
+	}
+	focus = {
+		id = KOR_focus_jeongshin_of_korean
+		icon = GFX_focus_KOR_jeongshin_of_korean
+		cost = 8.00
+		prerequisite = {
+			focus = kor_new_lifeguard_extension
+		}
+		x = 66
+		y = 18
+		available = {
+
+		}
+			completion_reward = {
+					add_ideas = KOR_focus_jeongshin_of_korean
 				}
 
 	}
@@ -2310,7 +2369,7 @@ focus_tree = {
 		prerequisite = {
 			focus = kor_new_lifeguard_extension
 		}
-		x = 67
+		x = 68
 		y = 18
 			completion_reward = {
 					add_ideas = KOR_we_korean
@@ -2326,6 +2385,9 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = KOR_oppression_of_intellectuals
+		}
+		prerequisite = {
+			focus = KOR_focus_jeongshin_of_korean
 		}
 		x = 66
 		y = 19
@@ -2403,17 +2465,18 @@ focus_tree = {
 			focus = KOR_focus_see_the_hansung
 		}
 		x = 56
-		y = 12
+		y = 13
 			available = {
 				}
 			completion_reward = {
-					custom_effect_tooltip = TOOLTIP_UNLOCK_MANY_DECISION
+					custom_effect_tooltip = TOOLTIP_KOR_HOMELAND_DEVELOPMENT
 					add_tech_bonus = {
 							name = kor_homeland_development
 							bonus = 0.5
 							uses = 1
 							category = industry
 						}
+					set_country_flag = FLAG_KOR_HOMELAND_DEVELOPMENT
 				}
 
 	}
@@ -2425,7 +2488,7 @@ focus_tree = {
 			focus = kor_homeland_development
 		}
 		x = 52
-		y = 13
+		y = 14
 			available = {
 					if = {
 							limit = {
@@ -2506,7 +2569,7 @@ focus_tree = {
 			focus = kor_industrial_complex_1
 		}
 		x = 50
-		y = 14
+		y = 15
 			completion_reward = {
 					random_owned_controlled_state = {
 							prioritize = { 66 }
@@ -2547,7 +2610,7 @@ focus_tree = {
 			focus = kor_industrial_complex_1
 		}
 		x = 52
-		y = 14
+		y = 15
 			completion_reward = {
 					add_offsite_building = {
 							type = industrial_complex
@@ -2564,7 +2627,7 @@ focus_tree = {
 			focus = KOR_focus_the_heavy_industry
 		}
 		x = 51
-		y = 15
+		y = 16
 			completion_reward = {
 					add_resource = {
 							type = steel
@@ -2582,7 +2645,7 @@ focus_tree = {
 			focus = KOR_focus_the_heavy_industry
 		}
 		x = 53
-		y = 15
+		y = 16
 			completion_reward = {
 					add_resource = {
 							type = tungsten
@@ -2603,7 +2666,7 @@ focus_tree = {
 			focus = kor_resource_search
 		}
 		x = 52
-		y = 16
+		y = 17
 			available = {
 
 }
@@ -2641,7 +2704,7 @@ focus_tree = {
 			focus = KOR_focus_bloodish_restructuring
 		}
 		x = 50
-		y = 16
+		y = 17
 			completion_reward = {
 					525 = {
 							add_extra_state_shared_building_slots = 3
@@ -2672,7 +2735,7 @@ focus_tree = {
 			focus = kor_industrial_complex_1
 		}
 		x = 54
-		y = 14
+		y = 15
 			completion_reward = {
 					add_timed_idea = {
 							days = 180
@@ -2689,7 +2752,7 @@ focus_tree = {
 			focus = KOR_focus_zaebeol_accept
 		}
 		x = 54
-		y = 16
+		y = 17
 			completion_reward = {
 					1133 = {
 							add_extra_state_shared_building_slots = 1
@@ -2718,7 +2781,7 @@ focus_tree = {
 			focus = kor_homeland_development
 		}
 		x = 60
-		y = 13
+		y = 14
 			available = {
 					if = {
 							limit = {
@@ -2756,7 +2819,7 @@ focus_tree = {
 			focus = kor_arms_factory_1
 		}
 		x = 56
-		y = 14
+		y = 15
 			completion_reward = {
 					swap_ideas = {
 							add_idea = KOR_militarism_2
@@ -2773,7 +2836,7 @@ focus_tree = {
 			focus = KOR_focus_national_project
 		}
 		x = 55
-		y = 15
+		y = 16
 			completion_reward = {
 					add_tech_bonus = {
 							name = KOR_focus_budget_support
@@ -2793,7 +2856,7 @@ focus_tree = {
 			focus = KOR_focus_national_project
 		}
 		x = 57
-		y = 15
+		y = 16
 			completion_reward = {
 					add_research_slot = 1
 				}
@@ -2810,7 +2873,7 @@ focus_tree = {
 			focus = KOR_focus_budget_support
 		}
 		x = 56
-		y = 16
+		y = 17
 			completion_reward = {
 					add_tech_bonus = {
 							name = jet_rocket_bonus
@@ -2931,7 +2994,7 @@ focus_tree = {
 			focus = kor_arms_factory_1
 		}
 		x = 58
-		y = 14
+		y = 15
 			completion_reward = {
 					1018 = {
 							add_extra_state_shared_building_slots = 2
@@ -2952,7 +3015,7 @@ focus_tree = {
 			focus = kor_arms_factory_gaesong
 		}
 		x = 58
-		y = 16
+		y = 17
 			completion_reward = {
 					1026 = {
 							add_extra_state_shared_building_slots = 2
@@ -2973,22 +3036,30 @@ focus_tree = {
 			focus = kor_arms_factory_1
 		}
 		x = 60
-		y = 14
-			completion_reward = {
-					every_state = {
-							limit = {
-									is_owned_by = KOR
-									is_core_of = KOR
-									is_claimed_by = ZLC
-								}
-							add_building_construction = {
-									type = infrastructure
-									level = 1
-									instant_build = yes
-								}
-						}
+		y = 15
+		completion_reward = {
+			716 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
 				}
-
+			}
+			1032 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			745 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 	}
 	focus = {
 		id = KOR_focus_zhili_kill
@@ -2998,27 +3069,57 @@ focus_tree = {
 			focus = KOR_focus_plan_manchu
 		}
 		x = 59
-		y = 15
-			available = {
-						OR = {
-							KOR = {
-								controls_state = 608
-								controls_state = 614
-							}
-							if = {
-								limit = {
-									WZC = {
-										is_puppet_of = KOR 
-									} 
-								} 
-								WZC = {
-									controls_state = 608
-									controls_state = 614
-								}
-							}
-							has_country_flag = won_in_china
-						}
+		y = 16
+		available = {
+			OR = {
+				KOR = {
+					controls_state = 608
+					controls_state = 614
+					controls_state = 1137
+					controls_state = 1101
 				}
+				if = {
+					limit = {
+						WZC = {
+							is_puppet_of = KOR 
+						} 
+					} 
+					WZC = {
+						controls_state = 608
+						controls_state = 614
+						controls_state = 1137
+						controls_state = 1101
+					}
+				}
+				if = {
+					limit = {
+						CH1 = {
+							is_puppet_of = KOR 
+						} 
+					} 
+					CH1 = {
+						controls_state = 608
+						controls_state = 614
+						controls_state = 1137
+						controls_state = 1101
+					}
+				}
+				if = {
+					limit = {
+						SZY = {
+							is_puppet_of = KOR 
+						} 
+					} 
+					SZY = {
+						controls_state = 608
+						controls_state = 614
+						controls_state = 1137
+						controls_state = 1101
+					}
+				}
+				has_country_flag = won_in_china
+			}
+		}
 			bypass = {
 
 }
@@ -3035,11 +3136,23 @@ focus_tree = {
 									level = 1
 								}
 						}
+					1137 = {
+							remove_building = {
+									type = industrial_complex
+									level = 1
+								}
+						}
+					1101 = {
+							remove_building = {
+									type = industrial_complex
+									level = 1
+								}
+						}
 					716 = {
-							add_extra_state_shared_building_slots = 2
+							add_extra_state_shared_building_slots = 3
 							add_building_construction = {
 									type = industrial_complex
-									level = 2
+									level = 3
 								}
 						}
 				}
@@ -3053,7 +3166,7 @@ focus_tree = {
 			focus = KOR_focus_plan_manchu
 		}
 		x = 61
-		y = 15
+		y = 16
 			available = {
 					OR = {
 							KOR = {
@@ -3108,7 +3221,7 @@ focus_tree = {
 			focus = KOR_focus_jinling_kill
 		}
 		x = 60
-		y = 16
+		y = 17
 			available = {
 					controls_state = 716
 				}
@@ -3135,7 +3248,7 @@ focus_tree = {
 			focus = kor_arms_factory_1
 		}
 		x = 62
-		y = 14
+		y = 15
 			completion_reward = {
 					1017 = {
 							add_extra_state_shared_building_slots = 2
@@ -3156,7 +3269,7 @@ focus_tree = {
 			focus = kor_arms_factory_womsan
 		}
 		x = 62
-		y = 16
+		y = 17
 			completion_reward = {
 					1018 = {
 							add_extra_state_shared_building_slots = 2
@@ -3395,6 +3508,9 @@ focus_tree = {
 							always = no
 						}
 				}
+		completion_reward = {
+			custom_effect_tooltip = KOR_anchangho_plan_tt
+		}
 
 	}
 	focus = {
@@ -5252,7 +5368,7 @@ focus_tree = {
 				}
 				set_building_level = {
 					type = naval_base
-					level = 2
+					level = 8
 					province = 12060
 				}
 			}
@@ -5479,7 +5595,10 @@ focus_tree = {
 		}
 		x = 34
 		y = 14
-
+		completion_reward = {
+			custom_effect_tooltip = TLE_AHN_ARREST_PAK_TT
+			set_country_flag = TLE_AHN_ARREST_PAK_FLAG
+		}
 	}
 	focus = {
 		id = KOR_an_inner_focus_3

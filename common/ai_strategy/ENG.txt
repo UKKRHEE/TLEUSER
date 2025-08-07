@@ -1833,6 +1833,25 @@ ENG_ALLIES_libya_is_not_THAT_important = { #리비아 상륙 "그만."
 	}
 }
 
+ENG_ALLIES_greece_is_not_THAT_important = { #프랑스를 가
+	allowed = {
+		always = yes
+	}
+	enable = {
+		GRE = {
+			has_war_with = GER
+		}
+		is_in_faction_with = ENG
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = GRE
+		value = 999
+	}
+}
+
 ENG_super_boost_armor_div = { #lets make sure the uk upgrades rtr to divs
 	allowed = {
 		original_tag = ENG
@@ -1999,6 +2018,56 @@ ENG_USA_before_d_day = {
 	
 }
 
+ENG_USA_let_koreans_win = {
+	allowed = {
+		OR = {
+			original_tag = USA
+			original_tag = ENG
+			original_tag = FRA
+			original_tag = AST
+			original_tag = RAJ
+			original_tag = SAF
+			original_tag = BEL
+			original_tag = HOL
+			original_tag = GRE
+			original_tag = NZL
+			original_tag = CAN
+			original_tag = ETH
+		}
+	}
+	enable = {
+		has_war_with = KOR
+		has_game_rule = {
+			rule = TLE_KOR_GREAT_RULE
+			option = TLE_KOR_GREAT_RULE_WIN
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = naval_invasion_focus
+		value = -99999
+	}
+	
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = JAP
+		value = 999
+	}
+	
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = RAJ
+		value = 999
+	}
+	
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = BUR
+		value = 999
+	}
+	
+}
 
 ENG_USA_d_day = {
 	allowed = {

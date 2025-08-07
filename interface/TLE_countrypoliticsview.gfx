@@ -5,6 +5,10 @@ spriteTypes = {
 		textureFile = "gfx/interface/autonomy/korean_confederation.png"
 	}
 	spriteType = {
+		name = "GFX_korean_kyushu_icon"
+		textureFile = "gfx/interface/autonomy/korean_kyushu.png"
+	}
+	spriteType = {
 		name = "GFX_korean_general_government_icon"
 		textureFile = "gfx/interface/autonomy/korean_general_government.png"
 	}

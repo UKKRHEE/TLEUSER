@@ -425,8 +425,19 @@ guiTypes = {
 		}
 
 		ButtonType = {
-			name = "multi_player_button"
+			name = "multi_not_support"
 			position = { x = 409 y = 375}
+			quadTextureSprite ="GFX_main_lobby_button"
+			font = "TNO_hoi_24header_outline_b"
+			text = "FE_MULTI_PLAYER_NOT_SUPPORTED"
+			#clicksound = click_default
+			#oversound = ui_menu_over
+			pdx_tooltip = tno_multi_not_support
+		}
+
+		ButtonType = {
+			name = "multi_player_button"
+			position = { x = 409000 y = 375000}
 			quadTextureSprite ="GFX_main_lobby_button"
 			font = "TNO_hoi_24header_outline_b"
 			text = "FE_MULTI_PLAYER"
@@ -521,13 +532,13 @@ guiTypes = {
 		}
 		iconType = {
 			name = "subscription_divider"
-			position = { x = 4 y = 336 }
+			position = { x = -5000 y = 336 }
 			spriteType = "GFX_main_lobby_divider"
 		}
 
 		containerWindowType = {
 			name = "subscription_widget"
-			position = { x = 16 y = 352 }
+			position = { x = 1600000 y = 3520000 }
 			size = { width = 288 height = 108 }
 
 			ButtonType = {
@@ -542,7 +553,7 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "subscription_widget_subscribed"
-			position = { x = 16 y = 352 }
+			position = { x = 160000 y = 3520000 }
 			size = { width = 288 height = 108 }
 
 			ButtonType = {

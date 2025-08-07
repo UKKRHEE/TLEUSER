@@ -1,0 +1,236 @@
+﻿division_template = {
+	name = "Hohei Hoku Shidan"
+	division_names_group = JAP_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+	}
+}
+units = {
+
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 60
+		}
+		location = 4000
+		division_template = "Hohei Hoku Shidan"
+		start_experience_factor = 0.2
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 61
+		}
+		location = 11908
+		division_template = "Hohei Hoku Shidan"
+		start_experience_factor = 0.2
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 62
+		}
+		location = 13388
+		division_template = "Hohei Hoku Shidan"
+		start_experience_factor = 0.2
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 63
+		}
+		location = 1182
+		division_template = "Hohei Hoku Shidan"
+		start_experience_factor = 0.2
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 64
+		}
+		location = 10128
+		division_template = "Hohei Hoku Shidan"
+		start_experience_factor = 0.2
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 65
+		}
+		location = 7016
+		division_template = "Hohei Hoku Shidan"
+		start_experience_factor = 0.2
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 60
+		}
+		location = 4000
+		division_template = "Hohei Hoku Shidan"
+		start_experience_factor = 0.2
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 61
+		}
+		location = 11908
+		division_template = "Hohei Hoku Shidan"
+		start_experience_factor = 0.2
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 62
+		}
+		location = 13388
+		division_template = "Hohei Hoku Shidan"
+		start_experience_factor = 0.2
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 63
+		}
+		location = 1182
+		division_template = "Hohei Hoku Shidan"
+		start_experience_factor = 0.2
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 64
+		}
+		location = 10128
+		division_template = "Hohei Hoku Shidan"
+		start_experience_factor = 0.2
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 65
+		}
+		location = 7016
+		division_template = "Hohei Hoku Shidan"
+		start_experience_factor = 0.2
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 60
+		}
+		location = 4000
+		division_template = "Hohei Hoku Shidan"
+		start_experience_factor = 0.2
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 61
+		}
+		location = 11908
+		division_template = "Hohei Hoku Shidan"
+		start_experience_factor = 0.2
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 62
+		}
+		location = 13388
+		division_template = "Hohei Hoku Shidan"
+		start_experience_factor = 0.2
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 63
+		}
+		location = 1182
+		division_template = "Hohei Hoku Shidan"
+		start_experience_factor = 0.2
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 64
+		}
+		location = 10128
+		division_template = "Hohei Hoku Shidan"
+		start_experience_factor = 0.2
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 65
+		}
+		location = 7016
+		division_template = "Hohei Hoku Shidan"
+		start_experience_factor = 0.2
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 60
+		}
+		location = 4000
+		division_template = "Hohei Hoku Shidan"
+		start_experience_factor = 0.2
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 61
+		}
+		location = 11908
+		division_template = "Hohei Hoku Shidan"
+		start_experience_factor = 0.2
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 62
+		}
+		location = 13388
+		division_template = "Hohei Hoku Shidan"
+		start_experience_factor = 0.2
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 63
+		}
+		location = 1182
+		division_template = "Hohei Hoku Shidan"
+		start_experience_factor = 0.2
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 64
+		}
+		location = 10128
+		division_template = "Hohei Hoku Shidan"
+		start_experience_factor = 0.2
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 65
+		}
+		location = 7016
+		division_template = "Hohei Hoku Shidan"
+		start_experience_factor = 0.2
+	}
+}

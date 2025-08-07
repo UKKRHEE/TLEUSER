@@ -10,8 +10,8 @@ state={
 		victory_points = {
 			7911 3 
 		}
-		owner = XSM
-		add_core_of = XSM
+		owner = GXM
+		add_core_of = GXM
 		add_core_of = CHI
 		add_core_of = PRC
 		buildings = {

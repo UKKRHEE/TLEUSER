@@ -14,7 +14,7 @@ difficulty_settings = {
 	difficulty_setting = {
 		key = "custom_diff_strong_chi"
 		modifier = diff_strong_ai_generic
-		countries = { CHI PRC ZLC SND WZC SHX XSM SIK YUN GXC SZC SCC XKC HNC AHC }
+		countries = { CHI PRC ZLC SND WZC SHX XSM TNG GXM NXM SIK YUN GXC SZC SCC XKC HNC AHC }
 		multiplier = 2.0
 	}
 	difficulty_setting = {

@@ -11,7 +11,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=despotism
+			ideology=monarchism
 			traits={ RYU_sho_hiroshi_trait }
 		}
 		field_marshal={

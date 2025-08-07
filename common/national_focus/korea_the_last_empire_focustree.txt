@@ -411,7 +411,7 @@ focus_tree = {
 				limit = {
 					is_ai = yes
 				}
-				date > 1947.4.22
+				date > 1946.4.22
 			}
 		}
 		completion_reward = {
@@ -425,19 +425,6 @@ focus_tree = {
 				USA = {
 					end_puppet = KOR
 				}
-				CHI = {
-					end_puppet = KOR
-				}
-				ZLC = {
-					end_puppet = KOR
-				}
-				JAP = {
-					end_puppet = KOR
-				}
-				SOV = {
-					end_puppet = KOR
-				}
-				end_puppet = KOR
 				remove_ideas = KOR_GHQ_government
 				set_politics = {
 					ruling_party = democratic
@@ -450,11 +437,16 @@ focus_tree = {
 					popularity = 1
 				}
 				retire_character = KOR_douglas_mcarthur
+				retire_character = KOR_yi_kang
+				remove_country_leader_role = {
+					character = KOR_emperor_yi_jin
+					ideology = korean_despotism
+				}
 				add_country_leader_role = {
 					Character = KOR_emperor_yi_jin
 					country_leader = {
 						expire = "1965.1.1"
-						ideology = despotism
+						ideology = korean_despotism
 						desc="KOR_yi_jin_desc"
 						traits = {
 							korea_emperor
@@ -480,6 +472,7 @@ focus_tree = {
 					id = eok_news.15
 					hours = 12
 				}
+				mark_focus_tree_layout_dirty = yes
 			}	
 		}
 
@@ -530,7 +523,7 @@ focus_tree = {
 			focus = GHQ_newfocus_15
 		}
 		available = {
-			date > 1951.1.1
+			date > 1948.1.1
 		}
 		allow_branch = {
 			has_completed_focus = GHQ_newfocus_15

@@ -156,6 +156,10 @@ music = {
 	file = "japan/aikoku_koshinkyoku.ogg"
 }
 music = {
+	name = "ibbannokohikara"
+	file = "japan/ibbannokohikara.ogg"
+}
+music = {
 	name = "independent_song_japan"
 	file = "japan/independent_song_japan.ogg"
 }

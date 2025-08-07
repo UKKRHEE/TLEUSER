@@ -1,0 +1,27 @@
+state={
+	id=1138
+	name="STATE_HEPEI"
+	provinces={
+		1083 1146 4148 4203 7035 7222 10008 10017 11994 12061 
+	}
+	history={
+		owner = WZC
+		add_core_of = WZC
+		add_core_of = CHI
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+		}
+		victory_points = {
+			7222 3 
+		}
+		victory_points = {
+			1083 5 
+		}
+	}
+	manpower=8112123
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

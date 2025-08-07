@@ -1,0 +1,1 @@
+﻿recruit_character = AST_min_kwangsik

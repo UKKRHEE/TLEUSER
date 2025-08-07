@@ -30,6 +30,11 @@ ideologies = {
 				can_be_randomly_selected = no
 				color = { 94 92 140 }
 			}
+			
+			showa_democracy = {
+				can_be_randomly_selected = no
+				color = { 129 43 43 }
+			}
 		}
 
 		dynamic_faction_names = {
@@ -109,6 +114,11 @@ ideologies = {
 				can_be_randomly_selected = no
 				color = { 150 7 15 }
 			}
+			
+			showa_communism = {
+				can_be_randomly_selected = no
+				color = { 129 43 43 }
+			}
 		}
 
 		dynamic_faction_names = {
@@ -185,6 +195,12 @@ ideologies = {
 				color = { 45 45 45 }
 			}
 			
+			nkyp_ideology = {
+				can_be_randomly_selected = no
+				#color = { 96 71 68 }
+				color = { 45 45 45 }
+			}
+			
 			korean_war_regime  = {
 				can_be_randomly_selected = no
 				color = { 45 45 45 }
@@ -256,6 +272,7 @@ ideologies = {
 			
 			showaism = {
 				can_be_randomly_selected = no
+				color = { 129 43 43 }
 			}
 			
 			kitaism = {
@@ -269,6 +286,10 @@ ideologies = {
 			}
 			
 			korean_oligarchism  = {
+				can_be_randomly_selected = no
+			}
+			
+			korean_despotism  = {
 				can_be_randomly_selected = no
 			}
 			

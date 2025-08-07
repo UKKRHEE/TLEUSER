@@ -1,7 +1,9 @@
-
 state={
 	id=1063
 	name="STATE_ZHANGYE"
+	provinces={
+		1778 2028 5057 5076 5100 7727 7971 8102 12327 12596 12820 
+	}
 
 	history={
 		victory_points = {
@@ -10,11 +12,8 @@ state={
 		victory_points = {
 			5100 3 
 		}
-		victory_points = {
-			12732 3 
-		}
-		owner = XSM
-		add_core_of = XSM
+		owner = GXM
+		add_core_of = GXM
 		add_core_of = CHI
 		add_core_of = PRC
 		buildings = {
@@ -23,10 +22,6 @@ state={
 
 		}
 
-	}
-
-	provinces={
-		1778 2028 5057 5076 5100 7727 7971 8102 12327 12596 12732 12820 
 	}
 	manpower=532413
 	buildings_max_level_factor=1.000

@@ -3,6 +3,10 @@
  russian_empire:0 "러시아 제국"
  russian_empire_DEF:0 "러시아 제국"
  russian_empire_ADJ:0 "러시아"
+ 
+ LEB_mandate:0 "대레바논국"
+ LEB_mandate_DEF:0 "대레바논국"
+ LEB_mandate_ADJ:0 "레바논"
 
  ARB_FEDERATION:0 "아랍 연합 공화국"
  ARB_FEDERATION_DEF:0 "아랍 연합 공화국"
@@ -12,6 +16,34 @@
  SAU_REDORDER_DEF:0 "아라비아 사회주의 공화국"
  SAU_REDORDER_ADJ:0 "아라비아"
 
+ CHI_YICHIN_LOSE:0 "남경정부"
+ CHI_YICHIN_LOSE_DEF:0 "남경정부"
+ CHI_YICHIN_LOSE_ADJ:0 "국민당"
+ 
+ CHI_YICHIN_LOSE_WANGJINGWEI:0 "국민혁명정부"
+ CHI_YICHIN_LOSE_WANGJINGWEI_DEF:0 "국민혁명정부"
+ CHI_YICHIN_LOSE_WANGJINGWEI_ADJ:0 "국민당"
+
+ GXC_YICHIN_LOSE:0 "국민혁명군 화남전구"
+ GXC_YICHIN_LOSE_DEF:0 "국민혁명군 화남전구"
+ GXC_YICHIN_LOSE_ADJ:0 "국부군"
+
+ GXC_YICHIN_LOSE_KUOMINTANG:0 "곤명 국민정부"
+ GXC_YICHIN_LOSE_KUOMINTANG_DEF:0 "국부군 화남전구"
+ GXC_YICHIN_LOSE_KUOMINTANG_ADJ:0 "국부군"
+
+ PRC_YICHIN_LOSE:0 "국민혁명군 화동전구"
+ PRC_YICHIN_LOSE_DEF:0 "국민혁명군 화동전구"
+ PRC_YICHIN_LOSE_ADJ:0 "국부군"
+
+ PRC_YICHIN_LOSE_PRC:0 "중국공농홍군"
+ PRC_YICHIN_LOSE_PRC_DEF:0 "중국공농홍군"
+ PRC_YICHIN_LOSE_PRC_ADJ:0 "중공"
+
+ PRC_restored_china:0 "중화인민공화국"
+ PRC_restored_china_DEF:0 "중화인민공화국"
+ PRC_restored_china_ADJ:0 "중공"
+ 
  CHI_PCY_KUOMINTANG:0 "국민혁명정부"
  CHI_PCY_KUOMINTANG_DEF:0 "국민혁명정부"
  CHI_PCY_KUOMINTANG_ADJ:0 "국민당"
@@ -119,10 +151,18 @@
  YUG_SOV_FED:0 "발칸 소비에트 사회주의 연방 공화국"
  YUG_SOV_FED_DEF:0 "발칸 소비에트 사회주의 연방 공화국"
  YUG_SOV_FED_ADJ:0 "발칸"
+ 
+ YUG_REDORDER:0 "유고슬라비아 사회주의 연방 공화국"
+ YUG_REDORDER_DEF:0 "유고슬라비아 사회주의 연방 공화국"
+ YUG_REDORDER_ADJ:0 "유고슬라비아"
 
  DDR_GER_OCCUP:0 "소련 점령하 독일"
  DDR_GER_OCCUP_DEF:0 "소련 점령하 독일"
  DDR_GER_OCCUP_ADJ:0 "독일"
+ 
+ WGR_GER_OCCUP:0 "연합국 점령하 독일"
+ WGR_GER_OCCUP_DEF:0 "연합국 점령하 독일"
+ WGR_GER_OCCUP_ADJ:0 "독일"
 
  AS1_GER_OCCUP:0 "소련 점령하 오스트리아"
  AS1_GER_OCCUP_DEF:0 "소련 점령하 독일"
@@ -350,6 +390,14 @@
  ZLC_BEIJING_DEF:0 "중화민국 전민정부"
  ZLC_BEIJING_ADJ:0 "중국"
  
+ SHX_SHAANXI:0 "섬서군벌"
+ SHX_SHAANXI_DEF:0 "섬서군벌"
+ SHX_SHAANXI_ADJ:0 "섬서"
+ 
+ ZLC_BEIYANG:0 "북양군벌"
+ ZLC_BEIYANG_DEF:0 "북양군벌"
+ ZLC_BEIYANG_ADJ:0 "중국"
+ 
  CHI_KOR:0 "중화민국 유신정부"
  CHI_KOR_DEF:0 "중화민국 유신정부"
  CHI_KOR_ADJ:0 "중국"
@@ -422,8 +470,8 @@
  HNC_KOR_ADJ:0 "호남"
  SIK_KOR_ADJ:0 "신강"
  
- TIB_KOR:0 "티베트"
- TIB_KOR_DEF:0 "티베트"
+ TIB_KOR:0 "티베트국"
+ TIB_KOR_DEF:0 "티베트국"
  TIB_KOR_ADJ:0 "티베트"
  
  XKC_KOR:0 "서강군벌"
@@ -476,7 +524,11 @@
  
  KOR_TBJ:0 "일본국 임시정부"
  KOR_TBJ_DEF:0 "일본국 임시정부"
- KOR_TBJ_ADJ:0 "일본
+ KOR_TBJ_ADJ:0 "일본"
+ 
+ TBJ_unified:0 "일본국 복원정부"
+ TBJ_unified_DEF:0 "일본국 복원정부"
+ TBJ_unified_ADJ:0 "일본"
  
  KOR_DK1_puppet:0 "서일본통감부"
  KOR_DK1_puppet_DEF:0 "서일본통감부"
@@ -525,6 +577,10 @@
  ENG_WBPF:0 "영연합왕국"
  ENG_WBPF_DEF:0 "영연합왕국"
  ENG_WBPF_ADJ:0 "영국"
+ 
+ NGJ_KOR:0 "장기-좌세보 경제특구"
+ NGJ_KOR_DEF:0 "장기-좌세보 경제특구"
+ NGJ_KOR_ADJ:0 "장기"
 
  SPA_directory_fascism:0 "스페인 임시위원회"
  SPA_directory_fascism_DEF:0 "스페인 임시위원회"
@@ -611,6 +667,9 @@
  PAK_UK:0 "파키스탄 자치령"
  PAK_UK_DEF:0 "파키스탄 자치령"
  
+ IRQ_UK:0 "이라크 하심 왕국"
+ IRQ_UK_DEF:0 "이라크 하심 왕국"
+ 
  RAJ_FREE:0 "인도 공화국"
  RAJ_FREE_DEF:0 "인도 공화국"
  RAJ_FREETNO:0 "인도 공화국"
@@ -657,7 +716,7 @@
  PRJ_UNIFIED_communism_DEF:0 "조선인민공화국"
  PRJ_UNIFIED_democratic:0 "조선연방공화국"
  PRJ_UNIFIED_democratic_DEF:0 "조선연방공화국"
- RJ_UNIFIED_fascism:0 "조선 제국"
+ PRJ_UNIFIED_fascism:0 "조선 제국"
  PRJ_UNIFIED_fascism_DEF:0 "조선 제국"
  PRJ_UNIFIED_neutrality_ADJ:0 "조선"
  PRJ_UNIFIED_communism_ADJ:0 "조선"
@@ -741,6 +800,22 @@
  ITA_WW2_communism_ADJ:0 "이탈리아"
  ITA_WW2_democratic_ADJ:0 "이탈리아"
  ITA_WW2_fascism_ADJ:0 "이탈리아"
+ ITA_WW2:0 "이탈리아 왕국"
+ ITA_WW2_DEF:0 "이탈리아 왕국"
+ ITA_WW2_ADJ:0 "이탈리아"
+ 
+ ITA_WW2_REP_neutrality:0 "이탈리아 공화국"
+ ITA_WW2_REP_neutrality_DEF:0 "이탈리아 공화국"
+ ITA_WW2_REP_fascism:0 "이탈리아 공화국"
+ ITA_WW2_REP_fascism_DEF:0 "이탈리아 공화국"
+ ITA_WW2_REP_democratic:0 "이탈리아 공화국"
+ ITA_WW2_REP_democratic_DEF:0 "이탈리아 공화국"
+ ITA_WW2_REP_communism:0 "이탈리아 사회주의 공화국"
+ ITA_WW2_REP_communism_DEF:0 "이탈리아 사회주의 공화국"
+ ITA_WW2_REP_neutrality_ADJ:0 "이탈리아"
+ ITA_WW2_REP_communism_ADJ:0 "이탈리아"
+ ITA_WW2_REP_democratic_ADJ:0 "이탈리아"
+ ITA_WW2_REP_fascism_ADJ:0 "이탈리아"
  
  POL_fascism:0 "폴란드국"
  POL_fascism_DEF:0 "폴란드국"
@@ -802,6 +877,14 @@
  POL_prov:0 "폴란드"
  POL_prov_DEF:0 "폴란드"
  POL_prov_ADJ:0 "폴란드"
+ 
+ JOS_general_government:0 "조선군정청"
+ JOS_general_government_DEF:0 "조선군정청"
+ JOS_general_government_ADJ:0 "조선"
+ 
+ PRK_joseon_republic:0 "조선민국"
+ PRK_joseon_republic_DEF:0 "조선민국"
+ PRK_joseon_republic_ADJ:0 "조선"
  
  MOK_UNIFIED_neutrality:0 "대한제국"
  MOK_UNIFIED_neutrality_DEF:0 "대한제국"
@@ -1275,6 +1358,10 @@
  SZY_KOR_DEF:0 "중화민국 임시정부"
  SZY_KOR_ADJ:0 "북중국"
  
+ SZY_KOR_YICHIN:0 "기청정무위원회"
+ SZY_KOR_YICHIN_DEF:0 "기청정무위원회"
+ SZY_KOR_YICHIN_ADJ:0 "북중국"
+ 
  MAL_KOR:0 "남방군정청"
  MAL_KOR_DEF:0 "남방군정청"
  MAL_KOR_ADJ:0 "북보르네오"
@@ -1431,6 +1518,10 @@
  JOS:0 "조선국"
  JOS_DEF:0 "조선국"
  JOS_ADJ:0 "조선"
+
+ JOS_democratic:0 "조선민국"
+ JOS_democratic_DEF:0 "조선민국"
+ JOS_democratic_ADJ:0 "조선"
  
  TAN_URH:0 "탄누 우량하이"
  TAN_URH_DEF:0 "탄누 우량하이"
@@ -1702,7 +1793,9 @@
  GRE_REDORDER_communism:0 "엘라다 사회주의 공화국"
  GRE_REDORDER_communism_DEF:0 "엘라다 사회주의 공화국"
  GRE_REDORDER_communism_ADJ:0 "엘라다"
- 
+ GRE_communism:0 "엘라다 사회주의 공화국"
+ GRE_communism_DEF:0 "엘라다 사회주의 공화국"
+ GRE_communism_ADJ:0 "엘라다"
  #wwww
  KOR_HALLOWEEN:0 "대한제국 은하정부"
  KOR_HALLOWEEN_DEF:0 "전 우주 대한제국 은하정부 제국위원회"
@@ -1710,3 +1803,76 @@
  KOR_HALLOWEEN_2:0 "은하대한제국"
  KOR_HALLOWEEN_2_DEF:0 "은하대한제국"
  KOR_HALLOWEEN_2_ADJ:0 "은하"
+ 
+ #####
+ USA_KOR_ARMY:0 "아메리카 한국군정위원회"
+ USA_KOR_ARMY_DEF:0 "아메리카 한국군정위원회"
+ USA_KOR_ARMY_ADJ:0 "아메리카"
+ 
+ MEX_KOR:0 "묵서가 부왕령"
+ MEX_KOR_DEF:0 "묵서가 부왕령"
+ MEX_KOR_ADJ:0 "묵서가"
+ 
+ AST_KOR:0 "호주 부왕령"
+ AST_KOR_DEF:0 "호주 부왕령"
+ AST_KOR_ADJ:0 "호주"
+ 
+ SCO_KOR:0 "소각란 통제영"
+ SCO_KOR_DEF:0 "소각란 통제영"
+ SCO_KOR_ADJ:0 "소각란"
+ 
+ CAN_KOR:0 "동왜국"
+ CAN_KOR_DEF:0 "동왜국"
+ CAN_KOR_ADJ:0 "동왜국"
+ 
+ QUE_KOR:0 "귀북극 부왕령"
+ QUE_KOR_DEF:0 "귀북극 부왕령"
+ QUE_KOR_ADJ:0 "귀북극"
+ 
+ MAD_KOR:0 "삼성 기업국"
+ MAD_KOR_DEF:0 "삼성 기업국"
+ MAD_KOR_ADJ:0 "삼성"
+ 
+ IRE_KOR:0 "애란 왕국"
+ IRE_KOR_DEF:0 "애란 왕국"
+ IRE_KOR_ADJ:0 "애란"
+ 
+ ENG_KOR:0 "영길리 왕국"
+ ENG_KOR_DEF:0 "영길리 왕국"
+ ENG_KOR_ADJ:0 "영길리"
+ 
+ FRS_KOR:0 "불란서 왕국"
+ FRS_KOR_DEF:0 "불란서 왕국"
+ FRS_KOR_ADJ:0 "불란서"
+ 
+ CHA_KOR:0 "아불리가 총독부"
+ CHA_KOR_DEF:0 "아불리가 총독부"
+ CHA_KOR_ADJ:0 "아불리가"
+ 
+ ITA_KOR_KYO:0 "서학 교왕국"
+ ITA_KOR_KYO_DEF:0 "서학 교왕국"
+ ITA_KOR_KYO_ADJ:0 "교왕국"
+ 
+ HOL_KOR:0 "화란 연합왕국"
+ HOL_KOR_DEF:0 "화란 연합왕국"
+ HOL_KOR_ADJ:0 "화란"
+ 
+ BAY_KOR:0 "배은 공국"
+ BAY_KOR_DEF:0 "배은 공국"
+ BAY_KOR_ADJ:0 "배은"
+ 
+ AUS_KOR:0 "신성로마제국"
+ AUS_KOR_DEF:0 "신성로마제국"
+ AUS_KOR_ADJ:0 "신성로마제국"
+ 
+ PRE_KOR:0 "보로사 왕국"
+ PRE_KOR_DEF:0 "보로사 왕국"
+ PRE_KOR_ADJ:0 "보로사"
+ 
+ RL1_KOR:0 "라인 연방"
+ RL1_KOR_DEF:0 "라인 연방"
+ RL1_KOR_ADJ:0 "라인"
+ 
+ IRE_UK:0 "아일랜드 자유국"
+ IRE_UK_DEF:0 "아일랜드 자유국"
+ IRE_UK_ADJ:0 "아일랜드"

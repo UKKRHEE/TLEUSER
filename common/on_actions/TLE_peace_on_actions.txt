@@ -72,15 +72,27 @@ on_actions = {
 							country_event = {
 								id = TLE_Japan_warlord.1
 							}
-						}
-						SDJ = {
+							transfer_state = 534
+							transfer_state = 1072
+							transfer_state = 1073
 							transfer_state = 533
 							transfer_state = 1071
-							load_oob = "SDJ"
-						}
-						NBJ = {
 							transfer_state = 1068
-							load_oob = "NBJ"
+						}
+						TBJ = {
+							drop_cosmetic_tag = yes
+						}
+						every_state = {
+							limit = {
+								is_core_of = TBJ
+							}
+							remove_core_of = TBJ
+						}
+						every_state = {
+							limit = {
+								is_claimed_by = TBJ
+							}
+							remove_claim_by = TBJ
 						}
 					}
 					if = {
@@ -193,21 +205,331 @@ on_actions = {
 			}
 			if = {
 				limit = {
+					tag = AQC
+					has_war_with = CHI
+					KOR = {
+						has_country_flag = FLAG_YICHIN_ROUTE
+					}
+				}
+				CHI = {
+					annex_country = {
+						target = AQC
+						transfer_troops = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = SHX
+					has_war_with = CHI
+					KOR = {
+						has_country_flag = FLAG_YICHIN_ROUTE
+					}
+				}
+				CHI = {
+					annex_country = {
+						target = SHX
+						transfer_troops = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = XSM
+					has_war_with = CHI
+					KOR = {
+						has_country_flag = FLAG_YICHIN_ROUTE
+					}
+				}
+				CHI = {
+					annex_country = {
+						target = XSM
+						transfer_troops = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = NXM
+					has_war_with = CHI
+					KOR = {
+						has_country_flag = FLAG_YICHIN_ROUTE
+					}
+				}
+				CHI = {
+					annex_country = {
+						target = NXM
+						transfer_troops = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = GXM
+					has_war_with = CHI
+					KOR = {
+						has_country_flag = FLAG_YICHIN_ROUTE
+					}
+				}
+				CHI = {
+					annex_country = {
+						target = GXM
+						transfer_troops = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = HNC
+					has_war_with = CHI
+					KOR = {
+						has_country_flag = FLAG_YICHIN_ROUTE
+					}
+				}
+				CHI = {
+					annex_country = {
+						target = HNC
+						transfer_troops = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = LYC
+					has_war_with = CHI
+					KOR = {
+						has_country_flag = FLAG_YICHIN_ROUTE
+					}
+				}
+				CHI = {
+					annex_country = {
+						target = LYC
+						transfer_troops = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = SCC
+					has_war_with = CHI
+					KOR = {
+						has_country_flag = FLAG_YICHIN_ROUTE
+					}
+				}
+				CHI = {
+					annex_country = {
+						target = SCC
+						transfer_troops = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = SZC
+					has_war_with = CHI
+					KOR = {
+						has_country_flag = FLAG_YICHIN_ROUTE
+					}
+				}
+				CHI = {
+					annex_country = {
+						target = SZC
+						transfer_troops = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = XKC
+					has_war_with = CHI
+					KOR = {
+						has_country_flag = FLAG_YICHIN_ROUTE
+					}
+				}
+				CHI = {
+					annex_country = {
+						target = XKC
+						transfer_troops = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = SCC
+					has_war_with = PRC
+					KOR = {
+						has_country_flag = FLAG_YICHIN_ROUTE
+					}
+				}
+				PRC = {
+					annex_country = {
+						target = SCC
+						transfer_troops = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = SZC
+					has_war_with = PRC
+					KOR = {
+						has_country_flag = FLAG_YICHIN_ROUTE
+					}
+				}
+				PRC = {
+					annex_country = {
+						target = SZC
+						transfer_troops = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = XKC
+					has_war_with = PRC
+					KOR = {
+						has_country_flag = FLAG_YICHIN_ROUTE
+					}
+				}
+				PRC = {
+					annex_country = {
+						target = XKC
+						transfer_troops = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = SCC
+					has_war_with = GXC
+					KOR = {
+						has_country_flag = FLAG_YICHIN_ROUTE
+					}
+				}
+				GXC = {
+					annex_country = {
+						target = SCC
+						transfer_troops = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = SZC
+					has_war_with = GXC
+					KOR = {
+						has_country_flag = FLAG_YICHIN_ROUTE
+					}
+				}
+				GXC = {
+					annex_country = {
+						target = SZC
+						transfer_troops = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = XKC
+					has_war_with = GXC
+					KOR = {
+						has_country_flag = FLAG_YICHIN_ROUTE
+					}
+				}
+				GXC = {
+					annex_country = {
+						target = XKC
+						transfer_troops = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = GXC
+					has_global_flag = GLOB_YICHIN_6TH_KOR_WIN
+					has_war_with = CHI
+					KOR = {
+						has_country_flag = FLAG_YICHIN_ROUTE
+					}
+				}
+				CHI = {
+					annex_country = {
+						target = GXC
+						transfer_troops = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = GXC
+					has_global_flag = GLOB_YICHIN_6TH_KOR_WIN
+					has_war_with = PRC
+					KOR = {
+						has_country_flag = FLAG_YICHIN_ROUTE
+					}
+				}
+				PRC = {
+					annex_country = {
+						target = GXC
+						transfer_troops = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = PRC
+					has_global_flag = GLOB_YICHIN_6TH_KOR_WIN
+					has_war_with = CHI
+					KOR = {
+						has_country_flag = FLAG_YICHIN_ROUTE
+					}
+				}
+				CHI = {
+					annex_country = {
+						target = PRC
+						transfer_troops = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = CHI
+					has_global_flag = GLOB_YICHIN_6TH_KOR_WIN
+					has_war_with = GXC
+					KOR = {
+						has_country_flag = FLAG_YICHIN_ROUTE
+					}
+				}
+				GXC = {
+					annex_country = {
+						target = CHI
+						transfer_troops = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = CHI
+					has_global_flag = GLOB_YICHIN_6TH_KOR_WIN
+					has_war_with = PRC
+					KOR = {
+						has_country_flag = FLAG_YICHIN_ROUTE
+					}
+				}
+				PRC = {
+					annex_country = {
+						target = CHI
+						transfer_troops = yes
+					}
+				}
+			}
+			if = {
+				limit = {
 					tag = KMN
 					has_cosmetic_tag = KMN_REP
 					has_war_with = KOR
 				}
-				every_country = {
-					limit = {
-						has_war_with = KMN
-					}
-					white_peace = KMN
-				}
 				KOR = {
-					annex_country = {
-						target = KMN
-						transfer_troops = no
-					}
 					transfer_state = 745 #비사
 					transfer_state = 716 #심요북도
 					transfer_state = 1032 #심요남도
@@ -224,10 +546,42 @@ on_actions = {
 					add_state_core = 717 #용계북도
 					add_state_core = 1030 #용계남도
 					
-					
-					country_event = {
-						id = korea.800
+				}
+				if = {
+					limit = {
+						KMN = {
+							has_war_with = CHI
+						}
 					}
+					CHI = {
+						annex_country = {
+							target = KMN
+							transfer_troops = no
+						}
+					}
+				}
+				if = {
+					limit = {
+						KMN = {
+							NOT = { has_war_with = CHI }
+						}
+					}
+					KOR = {
+						annex_country = {
+							target = KMN
+							transfer_troops = no
+						}
+					
+						country_event = {
+							id = korea.800
+						}
+					}
+				}
+				every_country = {
+					limit = {
+						has_war_with = KMN
+					}
+					white_peace = KMN
 				}
 			}
 			if = {
@@ -267,6 +621,12 @@ on_actions = {
 					}	
 				}
 				KKS_real_gap_effect = yes
+				KOR = {
+					delete_unit_template_and_units = {
+						division_template = "Gapoteuk'pyolgun"
+						disband = no #will refund equipment and manpower
+					}
+				}
 			}
 			if = {
 				limit = {
@@ -761,6 +1121,66 @@ on_actions = {
 			}
 			if = {
 				limit = {
+					tag = NXM
+					NOT = {
+						is_puppet_of = KOR
+					}
+					has_war_with = CHI
+					CHI = {
+						exists = yes
+					}
+					KOR = {
+						NOT = {
+							has_country_flag = TLE_THE_WAR_IS_WIN
+							has_country_flag = TLE_KOR_WIN_IN_CHINA_FUCKYEAH
+						}
+					}
+				}
+				CHI = {
+					annex_country = {
+						target = NXM
+						transfer_troops = no
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = GXM
+					NOT = {
+						is_puppet_of = KOR
+					}
+					has_war_with = CHI
+					CHI = {
+						exists = yes
+					}
+					KOR = {
+						NOT = {
+							has_country_flag = TLE_THE_WAR_IS_WIN
+							has_country_flag = TLE_KOR_WIN_IN_CHINA_FUCKYEAH
+						}
+					}
+				}
+				CHI = {
+					annex_country = {
+						target = GXM
+						transfer_troops = no
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = TNG
+					has_war_with = SIK
+				}
+				SIK = {
+					annex_country = {
+						target = TNG
+						transfer_troops = no
+					}
+				}
+			}
+			if = {
+				limit = {
 					tag = SZC
 					NOT = {
 						is_puppet_of = KOR
@@ -822,7 +1242,13 @@ on_actions = {
 							has_country_flag = TLE_THE_WAR_IS_WIN
 							has_country_flag = TLE_KOR_WIN_IN_CHINA_FUCKYEAH
 						}
+						NOT = {
+							has_country_flag = FLAG_YICHIN_ROUTE
+						}
 					}
+				}
+				1036 = {
+					set_demilitarized_zone = yes
 				}
 				CHI = {
 					annex_country = {
@@ -865,22 +1291,36 @@ on_actions = {
 					has_war_with = CHI
 				}
 				AQC = {
-					transfer_state = 606
-					transfer_state = 598
-					transfer_state = 1040
-					transfer_state = 1051
-					transfer_state = 1115
+					annex_country = {
+						target = WZC
+						transfer_troops = no
+					}
 					add_state_core = 606
+					add_state_core = 1138
 					add_state_core = 598
 					add_state_core = 1040
 					add_state_core = 1051
 					add_state_core = 1115
+					load_oob = "AQC"
+				}
+				every_state = {
+					limit = {
+						is_core_of = AQC
+						is_owned_by = WZC
+					}
+					set_state_owner_to = AQC
+					transfer_state_to = AQC
+				}
+				CHI = {
+					set_cosmetic_tag = CHI_nanking
+					transfer_state = 600
+					transfer_state = 1062
 				}
 				AHC = {
 					retire_character = AHC_chen_tiao_yuan
 					country_event = {
 						id = china.1110
-						days = 7
+						days = 1
 					}
 				}
 				ZLC = {
@@ -888,14 +1328,6 @@ on_actions = {
 						id = china.1104
 						days = 6
 					}
-				}
-				CHI = {
-					dismantle_faction = yes
-					annex_country = {
-						target = WZC
-						transfer_troops = no
-					}
-					set_cosmetic_tag = CHI_nanking
 				}
 			}
 			if = {
@@ -913,6 +1345,40 @@ on_actions = {
 				}
 				KOR = {
 					puppet = XSM
+				}
+			}
+			if = {
+				limit = {
+					tag = NXM
+					KOR = {
+						has_country_flag = TLE_KOR_WIN_IN_CHINA_FUCKYEAH
+					}
+				}
+				every_country = {
+					limit = {
+						has_war_with = NXM
+					}
+					white_peace = NXM
+				}
+				KOR = {
+					puppet = NXM
+				}
+			}
+			if = {
+				limit = {
+					tag = GXM 
+					KOR = {
+						has_country_flag = TLE_KOR_WIN_IN_CHINA_FUCKYEAH
+					}
+				}
+				every_country = {
+					limit = {
+						has_war_with = GXM
+					}
+					white_peace = GXM
+				}
+				KOR = {
+					puppet = GXM
 				}
 			}
 			if = {
@@ -994,30 +1460,9 @@ on_actions = {
 						transfer_troops = yes
 					}
 				}
-					597 = {
-						set_demilitarized_zone = yes
-					}
-					1122 = {
-						set_demilitarized_zone = yes
-					}
-					743 = {
-						set_demilitarized_zone = yes
-					}
-					1034 = {
-						set_demilitarized_zone = yes
-					}
-					1035 = {
-						set_demilitarized_zone = yes
-					}
-					1049 = {
-						set_demilitarized_zone = yes
-					}
-					1050 = {
-						set_demilitarized_zone = yes
-					}
-					1100 = {
-						set_demilitarized_zone = yes
-					}
+				743 = {
+					set_demilitarized_zone = yes
+				}
 			}
 			if = {
 				limit = {
@@ -1664,11 +2109,18 @@ on_actions = {
 					has_government = democratic
 				}
 				white_peace = KOR
+				set_global_flag = TLE_TNO_SURRENDER_USA
 				USA = {
-					country_event = {
-						id = korea.9
-						hours = 6
+					set_cosmetic_tag = USA_KOR_ARMY
+					if = {
+						limit = {
+							GER = {
+								has_war_with = SOV
+							}
+						}
+						TLE_german_defeat_red_effect = yes
 					}
+					TNO_TLE_KOR_victory_effect = yes
 				}
 				KOR = {
 					complete_national_focus = KOR_the_new_order
@@ -1696,6 +2148,14 @@ on_actions = {
 					set_faction_leader = yes
 					set_major = yes
 				}
+				GXM = {
+					set_faction_leader = yes
+					set_major = yes
+				}
+				NXM = {
+					set_faction_leader = yes
+					set_major = yes
+				}
 				SHX = {
 					set_faction_leader = yes
 					set_major = yes
@@ -1707,6 +2167,8 @@ on_actions = {
 				ZLC = {
 					add_to_faction = YUN
 					add_to_faction = XSM
+					add_to_faction = GXM
+					add_to_faction = NXM
 					add_to_faction = XKC
 					add_to_faction = SIK
 					white_peace = KOR
@@ -1716,6 +2178,8 @@ on_actions = {
 				CHI = {
 					add_to_faction = YUN
 					add_to_faction = XSM
+					add_to_faction = GXM
+					add_to_faction = NXM
 					add_to_faction = XKC
 					add_to_faction = SIK
 					white_peace = KOR
@@ -1745,6 +2209,14 @@ on_actions = {
 					}
 					annex_country = {
 						target = XSM
+						transfer_troops = no
+					}
+					annex_country = {
+						target = NXM
+						transfer_troops = no
+					}
+					annex_country = {
+						target = GXM
 						transfer_troops = no
 					}
 					annex_country = {
@@ -1799,19 +2271,9 @@ on_actions = {
 					original_tag = GER
 					is_historical_focus_on = yes
 					has_government = fascism
-					has_completed_focus = GER_remilitarize_the_rhineland
 					SOV = {
 						has_war_with = GER
 						has_government = communism
-						is_puppet = no
-					}
-					ENG = {
-						has_war_with = GER
-						has_government = democratic
-						is_puppet = no
-					}
-					FRA = {
-						has_war_with = GER
 						is_puppet = no
 					}
 					NOT = {
@@ -1823,6 +2285,26 @@ on_actions = {
 							has_country_flag = FLAG_PCY_ROUTE
 						}
 					}
+					any_country = {
+						OR = {
+							original_tag = SOV
+							is_in_faction_with = SOV
+						}
+						controls_state = 10
+					}
+					SOV = {
+						OR = {
+							NOT = {
+								controls_state = 55
+							}
+							NOT = {
+								controls_state = 58
+							}
+							NOT = {
+								controls_state = 64
+							}
+						}
+					}	
 				}
 				SOV = {
 					news_event = {
@@ -1854,19 +2336,76 @@ on_actions = {
 					original_tag = GER
 					is_historical_focus_on = yes
 					has_government = fascism
-					has_completed_focus = GER_remilitarize_the_rhineland
 					SOV = {
 						has_war_with = GER
 						has_government = communism
 						is_puppet = no
 					}
-					ENG = {
-						has_war_with = GER
-						has_government = democratic
-						is_puppet = no
+					NOT = {
+						has_global_flag = TLE_germany_union_defeat
+						has_global_flag = TLE_soviet_union_defeat
 					}
-					FRA = {
+					NOT = {
+						KOR = {
+							has_country_flag = FLAG_PCY_ROUTE
+						}
+					}
+					SOV = {
+						OR = {
+							NOT = {
+								controls_state = 55
+							}
+							NOT = {
+								controls_state = 58
+							}
+							NOT = {
+								controls_state = 64
+							}
+						}
+					}
+					NOT = {
+						any_country = {
+							OR = {
+								original_tag = SOV
+								is_in_faction_with = SOV
+							}
+							controls_state = 10
+						}
+					}
+				}
+				SOV = {
+					news_event = {
+						id = eok_news.18
+						days = 2
+					}	
+				}
+				if = {
+					limit = {
+						ENG = {
+							has_war_with = SOV
+						}
+					}
+					every_country = {
+						limit = {
+							has_war_with = SOV
+							NOT = {
+								original_tag = KOR
+							}
+						}
+						white_peace = SOV
+					}
+				}
+				set_global_flag = TLE_germany_union_defeat
+				TLE_german_defeat_west_effect = yes
+			}
+			if = {
+				limit = {
+					original_tag = GER
+					is_historical_focus_on = yes
+					has_government = fascism
+					SOV = {
 						has_war_with = GER
+						has_government = communism
 						is_puppet = no
 					}
 					NOT = {
@@ -1890,6 +2429,11 @@ on_actions = {
 						}
 						KOR = {
 							has_country_flag = FLAG_PCY_ROUTE
+						}
+						SOV = {
+							controls_state = 55
+							controls_state = 58
+							controls_state = 64
 						}
 					}
 				}
@@ -1920,6 +2464,7 @@ on_actions = {
 				TLE_REDORDER_yugoslavian_effect = yes
 				TLE_REDORDER_reds_color_effect = yes
 				TLE_REDORDER_italian_civilwar_end_effect = yes
+				TLE_REDORDER_reds_color_effect = yes
 			}	
 			if = {
 				limit = {
@@ -1955,7 +2500,6 @@ on_actions = {
 			if = {
 				limit = {
 					original_tag = MON
-					has_war_with = KOR
 					has_war_with = MEN
 					KOR = {
 						NOT = {
@@ -2066,6 +2610,46 @@ on_actions = {
 			}
 			if = {
 				limit = {
+					tag = CHI
+					KOR = {
+						has_country_flag = FLAG_YICHIN_ROUTE
+					}
+					NOT = {
+						has_global_flag = GLOB_YICHIN_6TH_KOR_WIN
+						has_global_flag = GLOB_YICHIN_6TH_KOR_LOSE
+					}
+				}
+				every_country = {
+					limit = {
+						has_war_with = CHI
+					}
+					white_peace = CHI
+				}
+				KOR = {
+					complete_national_focus = KOR_yi_chin_newfocus_52
+				}
+			}
+			if = {
+				limit = {
+					tag = KOR
+					KOR = {
+						has_country_flag = FLAG_YICHIN_ROUTE
+					}
+					NOT = {
+						has_global_flag = GLOB_YICHIN_6TH_KOR_WIN
+						has_global_flag = GLOB_YICHIN_6TH_KOR_LOSE
+					}
+				}
+				every_country = {
+					limit = {
+						has_war_with = CHI
+					}
+					white_peace = CHI
+				}
+				KOR_YICHIN_6th_sino_korean_war_kor_lose_effect = yes
+			}
+			if = {
+				limit = {
 					original_tag = CHI
 					NOT = {
 						has_global_flag = TLE_ZLC_CAP_CHI_LEAD
@@ -2076,6 +2660,9 @@ on_actions = {
 						NOT = {
 							has_country_flag = TLE_THE_WAR_IS_ENDED
 						}
+						NOT = {
+							has_country_flag = FLAG_YICHIN_ROUTE
+						}
 					}
 				}
 				YUN = {
@@ -2083,6 +2670,14 @@ on_actions = {
 					set_major = yes
 				}
 				XSM = {
+					set_faction_leader = yes
+					set_major = yes
+				}
+				GXM = {
+					set_faction_leader = yes
+					set_major = yes
+				}
+				NXM = {
 					set_faction_leader = yes
 					set_major = yes
 				}
@@ -2103,6 +2698,9 @@ on_actions = {
 						NOT = {
 							has_country_flag = TLE_THE_WAR_IS_ENDED
 						}
+						NOT = {
+							has_country_flag = FLAG_YICHIN_ROUTE
+						}
 					}
 				}
 				YUN = {
@@ -2110,6 +2708,14 @@ on_actions = {
 					set_major = yes
 				}
 				XSM = {
+					set_faction_leader = yes
+					set_major = yes
+				}
+				GXM = {
+					set_faction_leader = yes
+					set_major = yes
+				}
+				NXM = {
 					set_faction_leader = yes
 					set_major = yes
 				}
@@ -2161,6 +2767,9 @@ on_actions = {
 						NOT = {
 							has_country_flag = TLE_THE_WAR_IS_ENDED
 						}
+						NOT = {
+							has_country_flag = FLAG_YICHIN_ROUTE
+						}
 					}
 				}
 				YUN = {
@@ -2168,6 +2777,14 @@ on_actions = {
 					set_major = yes
 				}
 				XSM = {
+					set_faction_leader = yes
+					set_major = yes
+				}
+				GXM = {
+					set_faction_leader = yes
+					set_major = yes
+				}
+				NXM = {
 					set_faction_leader = yes
 					set_major = yes
 				}
@@ -2219,6 +2836,9 @@ on_actions = {
 						NOT = {
 							has_country_flag = TLE_THE_WAR_IS_ENDED
 						}
+						NOT = {
+							has_country_flag = FLAG_YICHIN_ROUTE
+						}
 					}
 					ZLC = {
 						has_capitulated = yes
@@ -2229,6 +2849,14 @@ on_actions = {
 					set_major = yes
 				}
 				XSM = {
+					set_faction_leader = yes
+					set_major = yes
+				}
+				GXM = {
+					set_faction_leader = yes
+					set_major = yes
+				}
+				NXM = {
 					set_faction_leader = yes
 					set_major = yes
 				}
@@ -2243,6 +2871,8 @@ on_actions = {
 				ZLC = {
 					add_to_faction = YUN
 					add_to_faction = XSM
+					add_to_faction = NXM
+					add_to_faction = GXM
 					add_to_faction = XKC
 					add_to_faction = SIK
 					white_peace = KOR
@@ -2277,6 +2907,14 @@ on_actions = {
 					}
 					annex_country = {
 						target = XSM
+						transfer_troops = no
+					}
+					annex_country = {
+						target = GXM
+						transfer_troops = no
+					}
+					annex_country = {
+						target = NXM
 						transfer_troops = no
 					}
 					annex_country = {
@@ -2348,6 +2986,9 @@ on_actions = {
 						NOT = {
 							has_country_flag = TLE_THE_WAR_IS_ENDED
 						}
+						NOT = {
+							has_country_flag = FLAG_YICHIN_ROUTE
+						}
 					}
 					OR = {
 						ZLC = {
@@ -2369,6 +3010,14 @@ on_actions = {
 					set_faction_leader = yes
 					set_major = yes
 				}
+				GXM = {
+					set_faction_leader = yes
+					set_major = yes
+				}
+				NXM = {
+					set_faction_leader = yes
+					set_major = yes
+				}
 				XKC = {
 					set_faction_leader = yes
 					set_major = yes
@@ -2376,6 +3025,8 @@ on_actions = {
 				ZLC = {
 					add_to_faction = YUN
 					add_to_faction = XSM
+					add_to_faction = NXM
+					add_to_faction = GXM
 					add_to_faction = XKC
 					add_to_faction = SIK
 					remove_ideas = CHI_AI_WAR_BONUS_IDEA
@@ -2408,6 +3059,14 @@ on_actions = {
 					}
 					annex_country = {
 						target = XSM
+						transfer_troops = no
+					}
+					annex_country = {
+						target = GXM
+						transfer_troops = no
+					}
+					annex_country = {
+						target = NXM
 						transfer_troops = no
 					}
 					annex_country = {
@@ -2503,7 +3162,7 @@ on_actions = {
 				CHI = {
 					annex_country = {
 						target = ZLC
-						transfer_troops = yes
+						transfer_troops = no
 					}
 				}
 			}
@@ -2518,60 +3177,28 @@ on_actions = {
 					}
 					KOR = {
 						has_country_flag = TLE_THE_WAR_IS_ENDED
-					}
-				}
-				ZLC = {
-					annex_country = {
-						target = CHI
-						transfer_troops = yes
-					}
-					annex_country = {
-						target = YUN
-						transfer_troops = yes
-					}
-					annex_country = {
-						target = SZC
-						transfer_troops = yes
-					}
-					annex_country = {
-						target = SHX
-						transfer_troops = yes
-					}
-					annex_country = {
-						target = XSM
-						transfer_troops = yes
-					}
-					annex_country = {
-						target = FNG
-						transfer_troops = yes
-					}
-					set_faction_name = "BEIJING_PACT"
-					add_state_core = 524
-					remove_ideas = CHI_war_of_resistance_1
-					remove_ideas = CHI_war_of_resistance_2
-					remove_ideas = CHI_forced_conscription
-					remove_ideas = CHI_legislative_yuan
-					remove_ideas = CHI_train_marines
-					retire_character = ZLC_wu_peifu
-					retire_character = ZLC_chao_kun
-					add_country_leader_role = {
-						Character = ZLC_yan_xishan
-						country_leader = {
-							expire = "1965.1.1"
-							ideology = despotism
-							traits = { }
+						NOT = {
+							has_country_flag = FLAG_YICHIN_ROUTE
 						}
-						promote_leader = yes
-					}	
+					}
 				}
-				611 = {
-					set_demilitarized_zone = no
+				TLE_chinese_war_ending_zlc_win = yes
+			}
+			if = {
+				limit = {
+					original_tag = KOR
+					KOR = {
+						has_country_flag = FLAG_KOR_FASCIST_ROUTE
+						NOT = { has_country_flag = FLAG_YICHIN_ROUTE }
+						has_war_with = USA
+						NOT = {
+							has_country_flag = TLE_THE_WAR_IS_ENDED
+						}
+					}
 				}
-				612 = {
-					set_demilitarized_zone = no
-				}
-				621 = {
-					set_demilitarized_zone = no
+				KOR_hangbok_event_2 = yes
+				KOR = {
+					remove_power_balance = { id = KOR_balance }
 				}
 			}
 			if = {
@@ -2579,17 +3206,14 @@ on_actions = {
 					original_tag = KOR
 					KOR = {
 						has_country_flag = FLAG_KOR_FASCIST_ROUTE
+						has_country_flag = FLAG_YICHIN_ROUTE
+						has_war_with = USA
 						NOT = {
 							has_country_flag = TLE_THE_WAR_IS_ENDED
-						}	
+						}
 					}
-					has_global_flag = KOR_nuke_1
-					has_global_flag = KOR_nuke_2
 				}
-				KOR_hangbok_event_2 = yes
-				KOR = {
-					remove_power_balance = { id = KOR_balance }
-				}
+				KOR_YICHIN_6th_sino_korean_war_kor_lose_effect = yes
 			}
 			if = {
 				limit = {
@@ -2598,16 +3222,163 @@ on_actions = {
 						has_country_flag = FLAG_KOR_FASCIST_ROUTE
 						NOT = {
 							has_country_flag = TLE_THE_WAR_IS_ENDED
-						}	
-					}
-					NOT = {
-						has_global_flag = KOR_nuke_1
-						has_global_flag = KOR_nuke_2
+							has_war_with = USA
+						}
 					}
 				}
-				KOR_hangbok_event_2 = yes
+				every_country = {
+					limit = {
+						has_war_with = KOR
+					}
+					white_peace = KOR
+				}	
+				ZLC = {
+					dismantle_faction = yes
+					transfer_state = 608
+					transfer_state = 746
+					transfer_state = 621
+					transfer_state = 611
+					transfer_state = 612
+					transfer_state = 1123
+					transfer_state = 610
+					transfer_state = 1060
+					transfer_state = 715
+					transfer_state = 1059
+					transfer_state = 714
+					transfer_state = 761
+					annex_country = {
+						target = XSM
+						transfer_troops = no
+					}
+					annex_country = {
+						target = GXM
+						transfer_troops = no
+					}
+					annex_country = {
+						target = NXM
+						transfer_troops = no
+					}
+					annex_country = {
+						target = SIK
+						transfer_troops = no
+					}
+					if = {
+						limit = {
+							HNC = {
+								exists = yes
+							}
+						}
+						annex_country = {
+							target = HNC
+							transfer_troops = no
+						}
+					}
+					if = {
+						limit = {
+							SCC = {
+								exists = yes
+							}
+						}
+						annex_country = {
+							target = SCC
+							transfer_troops = no
+						}
+					}
+					if = {
+						limit = {
+							XKC = {
+								exists = yes
+							}
+						}
+						annex_country = {
+							target = XKC
+							transfer_troops = no
+						}
+					}
+					if = {
+						limit = {
+							SZC = {
+								exists = yes
+							}
+						}
+						annex_country = {
+							target = SZC
+							transfer_troops = no
+						}
+					}
+				}
+				SOV = {
+					transfer_state = 560
+					transfer_state = 657
+					transfer_state = 561
+					transfer_state = 555
+				}
+				MSR = {
+					transfer_state = 1124
+					transfer_state = 819
+				}
+				JAP = {
+					transfer_state = 536
+					transfer_state = 1064
+				}
+				CHI = {
+					transfer_state = 613
+				}
 				KOR = {
+					dismantle_faction = yes
 					remove_power_balance = { id = KOR_balance }
+					load_focus_tree = korean_government
+					transfer_state = 633
+					transfer_state = 645
+					transfer_state = 646
+					transfer_state = 647
+					transfer_state = 648
+					transfer_state = 684
+					transfer_state = 528
+					transfer_state = 1029
+				}
+				every_state = {
+					limit = {
+						is_core_of = KOR
+						NOT = {
+							is_core_of = KMN
+							state = 536
+						}
+					}
+					set_state_owner_to = KOR
+					transfer_state_to = KOR
+				}
+				if = {
+					limit = {
+						FRI = {
+							exists = no
+						}
+					}
+					FRI = {
+						transfer_state = 671
+						annex_country = {
+							target = KVN
+							transfer_troops = no
+						}
+					}
+				}
+				716 = {
+					set_demilitarized_zone = yes
+				}
+				328 = {
+					set_demilitarized_zone = yes
+				}
+				717 = {
+					set_demilitarized_zone = yes
+				}
+				408 = {
+					set_demilitarized_zone = yes
+				}
+				409 = {
+					set_demilitarized_zone = yes
+				}
+				528 = {
+					set_demilitarized_zone = yes
 				}
 			}
 		}

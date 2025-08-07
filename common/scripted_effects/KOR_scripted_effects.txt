@@ -124,25 +124,22 @@ KOR_social_reform_down = {
 KOR_china_war_kill = {
 	every_state = {
 		limit = {
-			OR = {
-				is_owned_by = ZLC
-				is_owned_by = CHI
-				is_owned_by = GXC
-				is_owned_by = GZC
-				is_owned_by = SHX
-				is_owned_by = HNC
-				is_owned_by = YUN
-				is_owned_by = SZC
-				is_owned_by = SND
-				is_owned_by = XSM
-				is_owned_by = WZC
-				is_owned_by = SCC
-				is_owned_by = SZC
-				is_owned_by = XKC
-			}
+			OR = { has_state_flag = korean_streatagy_huabei has_state_flag = korean_streatagy_huadong }
+		}
+		add_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
+	}	
+	every_state = {
+		limit = {
+			OR = { has_state_flag = korean_streatagy_jiangnan has_state_flag = korean_streatagy_guangdong }
+		}
+		add_dynamic_modifier = { modifier = CHI_defence_the_korea_2 }
+	}	
+	every_state = {
+		limit = {
+			has_state_flag = korean_streatagy_pannic
 		}
 		add_dynamic_modifier = { modifier = CHI_defence_the_korea }
-	}
+	}	
 }
 KOR_embargo_level_up = {
 	if = {
@@ -251,7 +248,9 @@ TLE_warlord_idea = {
 					original_tag = HNC
 					original_tag = GXC
 					original_tag = SZC
-					original_tag = XSM
+					original_tag = XSM	
+					original_tag = GXM
+					original_tag = NXM
 					original_tag = SIK
 					original_tag = YUN
 					original_tag = QIN
@@ -280,6 +279,8 @@ KOR_remove_ending_flag_effect = {
 	clr_country_flag = TLE_AN_GAW_NONE_WIN_ENDING
 	#
 	clr_country_flag = TLE_PAK_GAW_WIN_ENDING
+	#
+	clr_country_flag = TLE_YICHIN_WIN_ENDING
 }
 
 KOR_newlife_stack_var_clamp = {

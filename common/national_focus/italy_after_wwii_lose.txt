@@ -1,0 +1,313 @@
+focus_tree = {
+	id = italy_after_wwii_lose
+	country = {
+		factor = 0
+	}
+	default = no
+	focus = {
+		id = ITA_lose_newfocus_0
+		icon = GFX_focus_ITA_a_colonial_empire
+		cost = 3
+		x = 9
+		y = 0
+		select_effect = {
+			hidden_effect = {
+				remove_ideas = ITA_bandits_war
+				remove_ideas = ITA_hardened_irregular_bands
+				remove_ideas = vittorio_emanuele
+				remove_ideas = vittorio_emanuele_emperor_of_ethiopia
+				remove_ideas = vittorio_emanuele_king_of_albania
+				remove_ideas = vittorio_emanuele_albania_ethiopia
+			}
+		}
+		completion_reward = {
+			retire_character = ITA_vittorio_emanuele_iii
+			custom_effect_tooltip = ITA_lose_newfocus_0_tt
+			hidden_effect = {			
+				add_ideas = ITA_umberto_ii_king
+			}	
+		}
+	}
+	focus = {
+		id = ITA_lose_newfocus_1
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		cost = 3
+		prerequisite = {
+			focus = ITA_lose_newfocus_0
+		}
+		mutually_exclusive = {
+			focus = ITA_lose_newfocus_7
+		}
+		x = 7
+		y = 1
+		completion_reward = {
+			add_political_power = 120
+		}
+
+	}
+	focus = {
+		id = ITA_lose_newfocus_2
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		cost = 3
+		prerequisite = {
+			focus = ITA_lose_newfocus_1
+		}
+		x = 6
+		y = 2
+		completion_reward = {
+				random_core_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+					set_state_flag = ITA_social_industrialization_flag
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+				random_core_state = {
+					limit = {
+						NOT = { has_state_flag = ITA_social_industrialization_flag }
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+					set_state_flag = ITA_social_industrialization_flag
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+		}
+
+	}
+	focus = {
+		id = ITA_lose_newfocus_3
+		icon = GFX_focus_ITA_cavalry_charge
+		cost = 3
+		prerequisite = {
+			focus = ITA_lose_newfocus_2
+		}
+		x = 6
+		y = 3
+		completion_reward = {
+			add_stability = 0.05
+		}
+
+	}
+	focus = {
+		id = ITA_lose_newfocus_4
+		icon = GFX_focus_ger_assassinate_mussolini
+		cost = 3
+		prerequisite = {
+			focus = ITA_lose_newfocus_1
+		}
+		x = 8
+		y = 2
+		completion_reward = {
+			remove_ideas = ITA_italian_irredentism_ns
+			remove_ideas = vittoria_mutilata
+		}
+
+	}
+	focus = {
+		id = ITA_lose_newfocus_5
+		icon = GFX_focus_ITA_corpo_volontari_della_liberta
+		cost = 3
+		prerequisite = {
+			focus = ITA_lose_newfocus_4
+		}
+		x = 8
+		y = 3
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.15
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+		}
+
+	}
+	focus = {
+		id = ITA_lose_newfocus_6
+		icon = GFX_focus_ITA_king_vittorio
+		cost = 3
+		prerequisite = {
+			focus = ITA_lose_newfocus_3
+		}
+		prerequisite = {
+			focus = ITA_lose_newfocus_5
+		}
+		x = 7
+		y = 4
+		completion_reward = {
+			add_war_support = 0.1
+		}
+
+	}
+	focus = {
+		id = ITA_lose_newfocus_7
+		icon = GFX_focus_generic_conspiracy
+		cost = 3
+		prerequisite = {
+			focus = ITA_lose_newfocus_0
+		}
+		mutually_exclusive = {
+			focus = ITA_lose_newfocus_1
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		x = 11
+		y = 1
+		completion_reward = {
+		
+		}
+
+	}
+	focus = {
+		id = ITA_lose_newfocus_8
+		icon = GFX_focus_YUG_pan_slavic_congress
+		cost = 3
+		prerequisite = {
+			focus = ITA_lose_newfocus_7
+		}
+		x = 10
+		y = 2
+		completion_reward = {
+		
+		}
+
+	}
+	focus = {
+		id = ITA_lose_newfocus_9
+		icon = GFX_focus_SOV_proclaim_soviet_hegemony
+		cost = 3
+		prerequisite = {
+			focus = ITA_lose_newfocus_8
+		}
+		x = 10
+		y = 3
+		completion_reward = {
+		
+		}
+
+	}
+	focus = {
+		id = ITA_lose_newfocus_10
+		icon = GFX_focus_ITA_liberation_or_death
+		cost = 3
+		prerequisite = {
+			focus = ITA_lose_newfocus_7
+		}
+		x = 12
+		y = 2
+		completion_reward = {
+		
+		}
+
+	}
+	focus = {
+		id = ITA_lose_newfocus_11
+		icon = GFX_focus_generic_join_comintern
+		cost = 3
+		prerequisite = {
+			focus = ITA_lose_newfocus_10
+		}
+		x = 12
+		y = 3
+		completion_reward = {
+		
+		}
+
+	}
+	focus = {
+		id = ITA_lose_newfocus_12
+		icon = GFX_focus_ITA_the_italian_republic
+		cost = 3
+		prerequisite = {
+			focus = ITA_lose_newfocus_9
+		}
+		prerequisite = {
+			focus = ITA_lose_newfocus_11
+		}
+		x = 11
+		y = 4
+		completion_reward = {
+		
+		}
+
+	}
+	focus = {
+		id = ITA_lose_newfocus_13
+		icon = GFX_focus_ITA_imperial_recognition
+		cost = 3
+		prerequisite = {
+			focus = ITA_lose_newfocus_6
+			focus = ITA_lose_newfocus_12
+		}
+		x = 9
+		y = 5
+		completion_reward = {
+			if = {
+				limit = {
+					has_completed_focus = ITA_lose_newfocus_1
+				}
+				set_cosmetic_tag = ITA_WW2
+			}
+			if = {
+				limit = {
+					has_completed_focus = ITA_lose_newfocus_7
+				}
+				remove_ideas = ITA_umberto_ii_king
+				set_cosmetic_tag = ITA_WW2_REP
+			}
+			if = {
+				limit = {
+					has_character = ITA_alcide_de_gasperi
+				}
+				promote_character = ITA_alcide_de_gasperi
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.1
+			}
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = no
+			}
+			set_party_name = {
+				ideology = democratic
+				name = ITA_democrazia_cristiana
+				long_name = ITA_democrazia_cristiana_long
+			}
+			OVERLORD = {
+				end_puppet = ROOT
+				ROOT = {
+					add_opinion_modifier = {
+						target = PREV
+						modifier = ITA_granted_us_independence
+					}
+				}
+			}
+		}
+
+	}
+}

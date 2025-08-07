@@ -9,7 +9,7 @@
 			###개장항모###
 			ship = { name = "IKN 충무공 이순신"  definition = carrier start_experience_factor = 0.7 equipment = { ship_hull_carrier_conversion_bb = {amount = 1 owner = KOR version_name = "충무공 이순신급"} } }			
 			ship = { name = "IKN 의민공 이억기"  definition = carrier start_experience_factor = 0.5 equipment = { ship_hull_carrier_conversion_bb = {amount = 1 owner = KOR version_name = "충무공 이순신급"} } }
-			ship = { name = "IKN 충익공 곽재우"  definition = carrier start_experience_factor = 0.5 equipment = { ship_hull_carrier_conversion_bb = {amount = 1 owner = KOR version_name = "충무공 이순신급"} } }
+			ship = { name = "IKN 충익공 곽재우"  definition = carrier start_experience_factor = 0.5 equipment = { ship_hull_carrier_1 = {amount = 1 owner = KOR version_name = "충장공 권율급"} } }
 			
 			###전함###
 			

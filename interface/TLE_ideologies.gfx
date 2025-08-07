@@ -1,0 +1,67 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_koreanpolitics_texticon"
+		texturefile = "gfx/interface/ideologies/texticon/koreanpolitics_texticon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_korean_war_regime_texticon"
+		texturefile = "gfx/interface/ideologies/texticon/korean_war_regime_texticon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_communism_texticon"
+		texturefile = "gfx/interface/ideologies/texticon/communism_texticon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ultranationalism_texticon"
+		texturefile = "gfx/interface/ideologies/texticon/ultranationalism_texticon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_anarchism_texticon"
+		texturefile = "gfx/interface/ideologies/texticon/anarchism_texticon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_conservatism_texticon"
+		texturefile = "gfx/interface/ideologies/texticon/conservatism_texticon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_despotism_texticon"
+		texturefile = "gfx/interface/ideologies/texticon/despotism_texticon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_kuomintang_texticon"
+		texturefile = "gfx/interface/ideologies/texticon/kuomintang_texticon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_liberalism_texticon"
+		texturefile = "gfx/interface/ideologies/texticon/liberalism_texticon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_monarchism_texticon"
+		texturefile = "gfx/interface/ideologies/texticon/monarchism_texticon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_oligarchy_texticon"
+		texturefile = "gfx/interface/ideologies/texticon/oligarchy_texticon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_showaism_texticon"
+		texturefile = "gfx/interface/ideologies/texticon/showaism_texticon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_socialism_texticon"
+		texturefile = "gfx/interface/ideologies/texticon/socialism_texticon.png"
+		legacy_lazy_load = no
+	}
+}	

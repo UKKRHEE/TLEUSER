@@ -434,8 +434,8 @@ WGR = {
 	color_ui = rgb { 115 115 115 }
 }
 DDR = {
-    color = rgb { 245 49 49 }
-    color_ui = rgb { 245 49 49 }
+    color = rgb { 201 23 35 }
+    color_ui = rgb { 201 23 35 }
 }
 ISR = {
 	color = rgb { 152  130  191 }
@@ -1266,7 +1266,7 @@ RYU = {
     color_ui = rgb { 98  98  206 }
 }
 ANU = {
-    color = rgb { 43  124  179 }
+    color = rgb { 99 158 141 }
     color_ui = rgb { 43  124  179 }
 }
 ZLC = { #직예
@@ -1284,6 +1284,10 @@ HNC = { #호남
 TJP = { #일본국
 	color = rgb { 247 144 145 }
 	color_ui = rgb { 247 144 145 }
+}
+NGJ = { #일본국
+	color = rgb { 239 184 147 }
+	color_ui = rgb { 239 184 147 }
 }
 EJP = { #산인산요
 	color = rgb { 230 230 230 }
@@ -1346,8 +1350,8 @@ BRG = { #부르군트 기사단국
 	color_ui = rgb { 68 40 73 }
 }
 AS1 = { #오스트리아 인민공화국
-	color = rgb { 231 58 63 }
-	color_ui = rgb { 231 58 63 }
+	color = rgb { 170 57 100 }
+	color_ui = rgb { 170 57 100 }
 }
 BT1 = { #바나트 SS-기사단국
 	color = rgb { 54 54 54 }
@@ -1503,6 +1507,24 @@ KJU = { #장 공화국
 	color = rgb { 59  41  117 }
 	color_ui = rgb { 59  41  117 }
 }
+###빨갱이
+RMS = {
+	color = rgb { 209 90 78 }
+	color_ui = rgb { 209 90 78 }
+}
+BLS = {
+	color = rgb { 171 42 44 }
+	color_ui = rgb { 171 42 44 }
+}
+HNS = {
+	color = rgb { 209 77 79 }
+	color_ui = rgb { 209 77 79 }
+}
+PLS = {
+	color = rgb { 181 60 73 }
+	color_ui = rgb { 181 60 73 }
+}
+###
 #할로윈-
 MJT = { #마녀 연방
 	color = rgb { 94 30 82 }
@@ -1547,4 +1569,45 @@ KSI = {
 NML = {
 	color = rgb { 171 190 152 }
 	color_ui = rgb { 171 190 152 }
+}
+TNG = {
+	color = rgb { 175 162 108 }
+	color_ui = rgb { 175 162 108 }
+}
+NXM = {
+	color = rgb { 100 90 100 }
+	color_ui = rgb { 124 140 162 }
+}
+GXM = {
+	color = rgb { 80 60 80 }
+	color_ui = rgb { 115 80 82 }
+}
+###
+AK1 = {
+	color = rgb { 79  61  135 }
+	color_ui = rgb { 79  61  135 }
+}
+AK2 = {
+	color = rgb { 36  7  126 }
+	color_ui = rgb { 36  7  126 }
+}
+AK3 = {
+	color = rgb { 75  73  135 }
+	color_ui = rgb { 75  73  135 }
+}
+AK4 = {
+	color = rgb { 39  57  130 }
+	color_ui = rgb { 39  57  130 }
+}
+AK5 = {
+	color = rgb { 55  33  143 }
+	color_ui = rgb { 55  33  143 }
+}
+AK6 = {
+	color = rgb { 36  7  126 }
+	color_ui = rgb { 36  7  126 }
+}
+AK7 = {
+	color = rgb { 51  61  128 }
+	color_ui = rgb { 51  61  128 }
 }

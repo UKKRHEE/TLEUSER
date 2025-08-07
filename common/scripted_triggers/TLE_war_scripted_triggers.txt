@@ -820,6 +820,25 @@ OR = {
 }
 hunan_attack_trigger = {
 OR = {
+				1136 = {
+					OR = {
+						if = {
+							limit = {
+								WZC = {
+									is_puppet_of = KOR
+								}
+							}
+							is_controlled_by = WZC
+							any_neighbor_state = {
+								is_controlled_by = WZC
+							}
+						}
+						is_controlled_by = KOR
+						any_neighbor_state = {
+							is_controlled_by = KOR
+						}
+					}
+				}
 				602 = {
 					OR = {
 						if = {
@@ -839,7 +858,7 @@ OR = {
 						}
 					}
 				}
-				949 = {
+				1054 = {
 					OR = {
 						if = {
 							limit = {
@@ -1182,51 +1201,10 @@ plan_isnt_started_chi = {
 	custom_trigger_tooltip = {
 		tooltip = plan_isnt_started_chi_tt
 		NOT = {
-			has_decision = KOR_zhili_attack_1
-			has_decision = KOR_zhili_attack_2
-			has_decision = KOR_zhili_attack_3
-			has_decision = KOR_shandong_attack_1
-			has_decision = KOR_shandong_attack_2
-			has_decision = KOR_shandong_attack_3
-			has_decision = KOR_shanxi_attack_1
-			has_decision = KOR_shanxi_attack_2
-			has_decision = KOR_shanxi_attack_3
-			has_decision = KOR_shaanxi_attack_1
-			has_decision = KOR_shaanxi_attack_2
-			has_decision = KOR_shaanxi_attack_3
-			has_decision = KOR_henan_attack_1
-			has_decision = KOR_henan_attack_2
-			has_decision = KOR_henan_attack_3
-			has_decision = KOR_anhui_attack_1
-			has_decision = KOR_anhui_attack_2
-			has_decision = KOR_anhui_attack_3
-			has_decision = KOR_jiangsu_attack_1
-			has_decision = KOR_jiangsu_attack_2
-			has_decision = KOR_jiangsu_attack_3
-			has_decision = KOR_zhejiang_attack_1
-			has_decision = KOR_zhejiang_attack_2
-			has_decision = KOR_zhejiang_attack_3
-			has_decision = KOR_fujian_attack_1
-			has_decision = KOR_fujian_attack_2
-			has_decision = KOR_fujian_attack_3
-			has_decision = KOR_hubei_attack_1
-			has_decision = KOR_hubei_attack_2
-			has_decision = KOR_hubei_attack_3
-			has_decision = KOR_hunan_attack_1
-			has_decision = KOR_hunan_attack_2
-			has_decision = KOR_hunan_attack_3
-			has_decision = KOR_guangdong_attack_1
-			has_decision = KOR_guangdong_attack_2
-			has_decision = KOR_guangdong_attack_3
-			has_decision = KOR_guangxi_attack_1
-			has_decision = KOR_guangxi_attack_2
-			has_decision = KOR_guangxi_attack_3
-			has_decision = KOR_guizhou_attack_1
-			has_decision = KOR_guizhou_attack_2
-			has_decision = KOR_guizhou_attack_3
-			has_decision = KOR_sichuan_attack_1
-			has_decision = KOR_sichuan_attack_2
-			has_decision = KOR_sichuan_attack_3
+			has_decision = KOR_huabei_attack
+			has_decision = KOR_huadong_attack
+			has_decision = KOR_jiangnan_attack
+			has_decision = KOR_guangdong_attack
 		}
 	}
 }

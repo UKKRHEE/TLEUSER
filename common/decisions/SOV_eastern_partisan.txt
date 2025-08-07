@@ -124,10 +124,19 @@ SOV_fareastern_partisans = {
 			}
 			KOR = {
 				has_government = fascism
-				NOT = {
-					OR = {
+			}
+			NOT = {
+				OR = {
+					KOR = {
 						has_country_flag = TLE_THE_WAR_IS_ENDED
-						has_country_flag = TLE_KOR_WIN_IN_CHINA_FUCKYEAH
+					}
+					AND = {
+						KOR = {
+							has_country_flag = won_in_china
+						}
+						JAP ={
+							is_ai = yes
+						}
 					}
 				}
 			}

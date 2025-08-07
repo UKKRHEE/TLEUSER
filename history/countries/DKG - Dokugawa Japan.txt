@@ -171,13 +171,8 @@ set_popularities = {
 recruit_character = DKG_dokugawa_yoshihisa
 recruit_character = DKG_dokugawa_yoshimitsu
 recruit_character = DKG_shunroku_hata
-recruit_character = DKG_imamura_hitoshi
-recruit_character = DKG_nagata_tetsuzan
-recruit_character = DKG_Adachi_Hatazou
-recruit_character = DKG_suzuki_sosaku
-recruit_character = DKG_aizawa_saburou
 recruit_character = JAP_shizuichi_tanaka
-recruit_character = JAP_iwane_matsui
+recruit_character = DKG_unknown
 #
 recruit_character = DKG_emperor_hirohito
 recruit_character = DKG_iesato_tokugawa
@@ -186,7 +181,6 @@ recruit_character = DKG_makoto_tokugawa
 recruit_character = DKG_yorisada_tokugawa
 recruit_character = DKG_iemasa_tokugawa
 recruit_character = DKG_kuniyuki_tokugawa
-recruit_character = DKG_yoshikumi_tokugawa
 recruit_character = DKG_takesada_tokugawa
 recruit_character = DKG_yoshichika_tokugawa
 

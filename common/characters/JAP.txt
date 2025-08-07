@@ -20,7 +20,12 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=rexism
+			desc="SHOWA_TENNO_DESC"
+			ideology = conservatism
+			traits={ tenno_heikka showa_tenno }
+		}
+		country_leader={
+			ideology=ultranationalism
 			desc="SHOWA_TENNO_DESC"
 			traits={ tenno_heikka showa_tenno }
 		}
@@ -167,30 +172,6 @@ characters={
 			defense_skill=2
 			maneuvering_skill=2
 			coordination_skill=2
-		}
-	}	
-
-	JAP_kyuichi_tokuda={
-		name=JAP_kyuichi_tokuda
-		portraits={
-			civilian={
-				large="GFX_Portrait_kyuichi_tokuda"
-			}
-		}
-		country_leader={
-			ideology=marxism
-		}
-	}
-
-	JAP_tetsu_katayama={
-		name=JAP_tetsu_katayama
-		portraits={
-			civilian={
-				large="GFX_Portrait_tetsu_katayama"
-			}
-		}
-		country_leader={
-			ideology=liberalism
 		}
 	}
 
@@ -428,7 +409,8 @@ characters={
 		name=JAP_nagata_tetsuzan
 		portraits={
 			army={
-				large="gfx/leaders/JAP/JAP_yamato_junta.png"
+				large="gfx/leaders/JAP/Portrait_JAP_nagata_tetsuzan.png"
+				small="gfx/interface/ideas/JAP/advisors/idea_JAP_nagata_tetsuzan.png"
 			}
 		}
 		advisor={
@@ -657,7 +639,8 @@ characters={
 		name=JAP_sato_kotoku
 		portraits={
 			army={
-				large="gfx/leaders/JAP/JAP_yamato_junta.png"
+				large="gfx/leaders/JAP/Portrait_JAP_sato_kotoku.png"
+				small="gfx/interface/ideas/JAP/advisors/idea_JAP_sato_kotoku.png"
 			}
 		}
 		advisor={
@@ -1393,7 +1376,7 @@ characters={
 				original_tag = JAP
 			}
 			available = {
-				has_completed_focus = JAP_new_army
+				has_completed_focus = JAP_military
 			}
 			traits = {
 				army_chief_drill_3

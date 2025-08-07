@@ -1,0 +1,20 @@
+characters={
+	BLS_gerogiy_dimitrov={
+		name="BLS_gerogiy_dimitrov"
+		portraits={
+			civilian={
+				large="gfx/leaders/BLS/Portrait_BLS_gerogiy_dimitrov.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			id=-1
+		}
+		country_leader={
+			ideology=stalinism
+			traits={ }
+			id=-1
+		}
+	}
+}

@@ -1,0 +1,22 @@
+characters={
+	AK6_kim_koo={
+		name="AK6_kim_koo"
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/Portrait_KOR_kim_changsu.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ 
+				#
+			}
+		}
+		country_leader={
+			ideology=ultranationalism
+			traits={ 
+				#
+			}
+		}
+	}
+}

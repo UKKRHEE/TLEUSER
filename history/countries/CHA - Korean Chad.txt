@@ -1,0 +1,1 @@
+﻿recruit_character = CHA_korean_government

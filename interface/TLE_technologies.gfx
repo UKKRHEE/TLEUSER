@@ -772,12 +772,27 @@ spriteTypes = {
 #KOR battle cruiser#
 	SpriteType = {	
 	    name = "GFX_KOR_early_battlecruiser_medium"
-	    texturefile = "gfx/interface/technologies/KOR_battlecruiser1.dds"
+	    texturefile = "gfx/interface/technologies/KOR_early_battlecruiser.dds"
     }
-
     SpriteType = {
 	    name = "GFX_KOR_basic_battlecruiser_medium"
-	    texturefile = "gfx/interface/technologies/KOR_battlecruiser2.dds"
+	    texturefile = "gfx/interface/technologies/KOR_basic_battlecruiser.dds"
+    }
+    SpriteType = {
+	    name = "GFX_KOR_improved_battlecruiser_medium"
+	    texturefile = "gfx/interface/technologies/KOR_improved_battlecruiser.dds"
+    }
+    SpriteType = {
+	    name = "GFX_KOR_advanced_battlecruiser_medium"
+	    texturefile = "gfx/interface/technologies/KOR_advanced_battlecruiser.dds"
+    }
+    SpriteType = {
+	    name = "GFX_KOR_semi_modern_battlecruiser_medium"
+	    texturefile = "gfx/interface/technologies/KOR_semi_modern_battlecruiser.dds"
+    }
+    SpriteType = {
+	    name = "GFX_KOR_modern_battlecruiser_medium"
+	    texturefile = "gfx/interface/technologies/KOR_modern_battlecruiser.dds"
     }
 
 			

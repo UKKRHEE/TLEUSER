@@ -1,7 +1,9 @@
-
 state={
 	id=1038
-	name="STATE_CHANGZHOU"
+	name="STATE_JURONG"
+	provinces={
+		996 11982 
+	}
 
 	history={
 		owner = AHC
@@ -16,7 +18,7 @@ state={
 
 		}
 		victory_points = {
-			7120 3 
+			11982 3 
 		}
 		1938.10.25 = {
 			controller = DKG
@@ -24,11 +26,7 @@ state={
 		}
 
 	}
-
-	provinces={
-		996 7120 11982 13142 
-	}
-	manpower=8575100
+	manpower=4575100
 	buildings_max_level_factor=1.000
 	state_category=large_city
 	local_supplies=0.000

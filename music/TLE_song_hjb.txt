@@ -1,5 +1,67 @@
 music_station = "hjb"
 music = {
+	song = "eokanthem"
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+music = {
+	song = "eokanthemvol_2"
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+music = {
+	song = "Seoul_Central_Radio_Station_1"
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+music = {
+	song = "Seoul_Central_Radio_Station_2"
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+music = {
+	song = "HLKA_jeongdong"
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+music = {
+	song = "kangmyung_yushins_song"
+	chance = {
+		modifier = {
+			factor = 2
+		}
+	}
+}
+music = {
+	song = "national_anthem"
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+music = {
 	song = "6_25s_music"
 	chance = {
 		modifier = {
@@ -50,6 +112,15 @@ music = {
 	chance = {
 		modifier = {
 			factor = 2
+			has_war = yes
+		}
+	}
+}
+music = {
+	song = "singsingsing"
+	chance = {
+		modifier = {
+			factor = 2
 			has_war = no
 		}
 	}
@@ -65,52 +136,6 @@ music = {
 }
 music = {
 	song = "busan_station_of_farewell"
-	chance = {
-		modifier = {
-			factor = 2
-			has_war = no
-		}
-	}
-}
-music = {
-	song = "national_anthem"
-	chance = {
-		modifier = {
-			factor = 2
-			has_war = no
-		}
-	}
-}
-music = {
-	song = "eokanthem"
-	chance = {
-		modifier = {
-			factor = 2
-			has_war = no
-		}
-	}
-}
-
-music = {
-	song = "Seoul_Central_Radio_Station_1"
-	chance = {
-		modifier = {
-			factor = 2
-			has_war = no
-		}
-	}
-}
-music = {
-	song = "Seoul_Central_Radio_Station_2"
-	chance = {
-		modifier = {
-			factor = 2
-			has_war = no
-		}
-	}
-}
-music = {
-	song = "HLKA_jeongdong"
 	chance = {
 		modifier = {
 			factor = 2
@@ -139,15 +164,6 @@ music = {
 }
 music = {
 	song = "KOR_National_anthem"
-	chance = {
-		modifier = {
-			factor = 2
-			has_war = no
-		}
-	}
-}
-music = {
-	song = "eokanthemvol_2"
 	chance = {
 		modifier = {
 			factor = 2

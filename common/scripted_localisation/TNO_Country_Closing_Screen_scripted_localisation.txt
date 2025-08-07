@@ -143,6 +143,13 @@ defined_text = {
 		}
 		localization_key = "GFX_TLE_CountryClosing_epilogue_KOR_pak_victory"
 	}
+	#
+	text = {
+		trigger = {
+			has_country_flag = TLE_YICHIN_WIN_ENDING #TNO
+		}
+		localization_key = "GFX_TLE_CountryClosing_epilogue_KOR_yichin_victory"
+	}
 	text = {
 		localization_key = "GFX_TNO_CountryClosing_picture_generic"
 	}
@@ -189,6 +196,12 @@ defined_text = {
 			has_country_flag = TLE_PAK_GAW_WIN_ENDING #
 		}
 		localization_key = "TLE_CountryClosing_epilogue_KOR_pak_victory"
+	}	
+	text = {
+		trigger = {
+			has_country_flag = TLE_YICHIN_WIN_ENDING #
+		}
+		localization_key = "TLE_CountryClosing_epilogue_KOR_yichin_victory"
 	}	
 	text = {
 		localization_key = "TNO_CountryClosing_epilogue_KOR_Generic"

@@ -94,9 +94,45 @@ country_event = {
 # Brussels Happened
 news_event = {
 	id = treaty_org.2
-	title = treaty_org.2.t
-	desc = treaty_org.2.desc
-	picture = GFX_news_event_generic_sign_treaty3
+	title = {
+		text = treaty_org.2.t
+		trigger = {
+			NOT = {
+				has_global_flag = TLE_TNO
+			}
+		}
+	}
+	title = {
+		text = treaty_org.2.t.tno
+		trigger = {
+			has_global_flag = TLE_TNO
+			has_global_flag = PRE_THE_NEW_ORDER_GBR
+		}
+	}
+	title = {
+		text = treaty_org.2.t.twr
+		trigger = {
+			has_global_flag = TLE_TNO
+			NOT = {
+				has_global_flag = PRE_THE_NEW_ORDER_GBR
+			}
+		}
+	}
+	desc = {
+		text = treaty_org.2.desc
+		trigger = {
+			NOT = {
+				has_global_flag = TLE_TNO
+			}
+		}
+	}
+	desc = {
+		text = treaty_org.2.desc.tno
+		trigger = {
+			has_global_flag = TLE_TNO
+		}
+	}
+	picture = GFX_news_event_treaty_of_brussel
 
 	is_triggered_only = yes
 	major = yes
@@ -105,10 +141,7 @@ news_event = {
 		name = treaty_org.2.a
 		trigger = {
 			NOT = {
-				OR = { 
-					tag = SOV 
-					is_in_faction_with = SOV
-				}
+				has_global_flag = TLE_TNO
 			}
 		}
 		every_country = {
@@ -121,10 +154,7 @@ news_event = {
 	option = {
 		name = treaty_org.2.b
 		trigger = {
-			OR = { 
-				tag = SOV 
-				is_in_faction_with = SOV
-			}
+			has_global_flag = TLE_TNO
 		}
 		every_country = {
 			limit = { 
@@ -139,7 +169,7 @@ news_event = {
 	id = treaty_org.3
 	title = treaty_org.3.t
 	desc = treaty_org.3.desc
-	picture = GFX_news_event_generic_sign_treaty3
+	picture = GFX_news_event_formation_of_nato
 
 	is_triggered_only = yes
 	major = yes
@@ -176,7 +206,7 @@ news_event = {
 	id = treaty_org.4
 	title = treaty_org.4.t
 	desc = treaty_org.4.desc
-	picture = GFX_news_event_generic_sign_treaty3
+	picture = GFX_news_event_formation_of_nato
 
 	is_triggered_only = yes
 	major = yes

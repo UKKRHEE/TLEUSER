@@ -1,7 +1,7 @@
 
 state={
 	id=611
-	name="STATE_611"
+	name="STATE_XILINGUOLE"
 
 	history={
 		owner = MON #원래 MEN
@@ -21,7 +21,7 @@ state={
 	}
 
 	provinces={
-		828 952 1489 4495 4612 7545 7674 9768 10397 11752 
+		828 952 1489 4495 4612 7545 7674 9768 10397 11752 1590 3955 9776 881
 	}
 	manpower=1030000
 	buildings_max_level_factor=1.000

@@ -1,0 +1,57 @@
+ideas = {
+	academy_spirit = {		
+		love_ahn_junggeun = {
+			ledger = army
+			visible = { original_tag = KOR }
+			available = { has_military_academy = yes }
+			modifier = {
+			    command_power_gain_mult = -0.1
+				army_org_factor = -0.05
+	
+
+			}
+			ai_will_do = {
+				factor = 0
+				modifier = {
+					factor = 0
+					NOT = { has_dlc = "No Step Back" }
+				}
+			}
+		}
+	}
+	army_spirit = {
+		gara_army = {
+			ledger = army
+			visible = { original_tag = KOR }
+			modifier = {
+				training_time_army_factor = 0.10
+				supply_consumption_factor = 0.10
+				army_speed_factor = -0.05
+			}
+			ai_will_do = {
+				factor = 0
+				modifier = {
+					factor = 0
+					NOT = { has_dlc = "No Step Back" }
+				}
+			}
+		}	
+	}	
+	division_command_spirit = {
+		forced_yi_sunshin_spirit = {
+			ledger = army
+			visible = { original_tag = KOR }
+			modifier = {
+				army_morale_factor	= -0.1
+				tactic_manse_charge_preferred_weight_factor = 1
+			}
+			ai_will_do = {
+				factor = 0
+				modifier = {
+					factor = 0
+					NOT = { has_dlc = "No Step Back" }
+				}
+			}
+		}
+	}	
+}

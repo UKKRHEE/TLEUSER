@@ -1,5 +1,310 @@
 spriteTypes = {
 	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_0" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_0.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_1" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_1.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_2" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_2.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_3" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_3.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_4" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_4.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_5" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_5.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_6" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_6.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_7" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_7.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_8" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_8.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_9" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_9.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_10" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_10.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_11" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_11.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_12" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_12.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_13" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_13.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_14" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_14.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_15" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_15.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_16" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_16.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_17" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_17.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_18" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_18.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_19" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_19.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_20" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_20.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_21" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_21.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_22" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_22.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_23" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_23.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_24" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_24.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_25" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_25.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_26" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_26.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_27" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_27.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_28" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_28.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_29" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_29.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_30" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_30.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_31" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_31.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_32" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_32.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_33" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_33.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_34" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_34.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_35" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_35.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_36" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_36.png"  
+	} 
+		SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_37" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_37.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_38" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_38.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_39" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_39.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_40" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_40.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_41" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_41.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_42" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_42.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_43" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_43.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_44" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_44.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_45" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_45.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_46" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_46.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_47" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_47.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_48" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_48.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_49" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_49.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_50" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_50.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_51" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_51.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_52" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_52.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_53" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_53.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_54" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_54.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_55" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_55.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_56" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_56.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_57" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_57.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_58" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_58.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_59" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_59.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_60" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_60.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_61" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_61.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_62" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_62.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_77" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_77.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_78" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_78.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_79" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_79.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_80" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_80.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_81" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_81.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_82" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_82.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_83" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_83.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_84" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_84.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_85" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_85.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_86" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_86.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_87" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_87.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_88" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_88.png"  
+	} 
+	SpriteType = { 
+		name = "GFX_focus_KOR_yi_chin_newfocus_89" 
+		texturefile = "gfx/interface/goals/KOR/YICHIN/focus_KOR_yi_chin_newfocus_89.png"  
+	} 
+	#####
+	SpriteType = { 
 		name = "GFX_focus_KOR_ach_happy_1" 
 		texturefile = "gfx/interface/goals/KOR/ACH/ENDING/HAPPY/focus_KOR_ach_happy_1.png"  
 	} 
@@ -804,7 +1109,63 @@ spriteTypes = {
 	SpriteType = { 
 		name = "GFX_focus_the_third_republic_logo"  
 		texturefile = "gfx/interface/goals/ZLC/focus_the_third_republic_logo.png"  
-	}  
+	}
+	SpriteType = { 
+		name = "GFX_focus_ZLC_BEI_fkr_chongqing_government"  
+		texturefile = "gfx/interface/goals/ZLC/focus_ZLC_BEI_fkr_chongqing_government.png"  
+	}
+	SpriteType = { 
+		name = "GFX_focus_ZLC_BEI_fkr_zhonghua_allies"  
+		texturefile = "gfx/interface/goals/ZLC/focus_ZLC_BEI_fkr_zhonghua_allies.png"  
+	}
+	SpriteType = { 
+		name = "GFX_focus_ZLC_BEI_fkr_huanghe_plan"  
+		texturefile = "gfx/interface/goals/ZLC/focus_ZLC_BEI_fkr_huanghe_plan.png"  
+	}
+	SpriteType = { 
+		name = "GFX_focus_ZLC_BEI_anding_recover_the_economy"  
+		texturefile = "gfx/interface/goals/ZLC/focus_ZLC_BEI_anding_recover_the_economy.png"  
+	}
+	SpriteType = { 
+		name = "GFX_focus_ZLC_BEI_fkr_caokun_burma_road"  
+		texturefile = "gfx/interface/goals/ZLC/focus_ZLC_BEI_fkr_caokun_burma_road.png"  
+	}
+	SpriteType = { 
+		name = "GFX_focus_ZLC_BEI_fkr_conscription"  
+		texturefile = "gfx/interface/goals/ZLC/focus_ZLC_BEI_fkr_conscription.png"  
+	}
+	SpriteType = { 
+		name = "GFX_focus_ZLC_BEI_fkr_japanese_allies"  
+		texturefile = "gfx/interface/goals/ZLC/focus_ZLC_BEI_fkr_japanese_allies.png"  
+	}
+	SpriteType = { 
+		name = "GFX_focus_ZLC_BEI_fkr_no_passe_pas"  
+		texturefile = "gfx/interface/goals/ZLC/focus_ZLC_BEI_fkr_no_passe_pas.png"  
+	}
+	SpriteType = { 
+		name = "GFX_focus_ZLC_BEI_fkr_qingya_plan"  
+		texturefile = "gfx/interface/goals/ZLC/focus_ZLC_BEI_fkr_qingya_plan.png"  
+	}
+	SpriteType = { 
+		name = "GFX_focus_ZLC_BEI_fkr_sichuan_side"  
+		texturefile = "gfx/interface/goals/ZLC/focus_ZLC_BEI_fkr_sichuan_side.png"  
+	}
+	SpriteType = { 
+		name = "GFX_focus_ZLC_BEI_fkr_soviet_support"  
+		texturefile = "gfx/interface/goals/ZLC/focus_ZLC_BEI_fkr_soviet_support.png"  
+	}
+	SpriteType = { 
+		name = "GFX_focus_ZLC_BEI_fkr_wu_shangren_tax"  
+		texturefile = "gfx/interface/goals/ZLC/focus_ZLC_BEI_fkr_wu_shangren_tax.png"  
+	}
+	SpriteType = { 
+		name = "GFX_focus_ZLC_BEI_the_5th_sino_korean_war"  
+		texturefile = "gfx/interface/goals/ZLC/focus_ZLC_BEI_the_5th_sino_korean_war.png"  
+	}
+	SpriteType = { 
+		name = "GFX_focus_ZLC_BEI_fkr_wu_stay_the_date"  
+		texturefile = "gfx/interface/goals/ZLC/focus_ZLC_BEI_fkr_wu_stay_the_date.png"  
+	}
 	SpriteType = { 
 		name = "GFX_focus_ZLC_BEI_the_last_empire" 
 		texturefile = "gfx/interface/goals/ZLC/focus_ZLC_BEI_the_last_empire.png"  
@@ -1820,11 +2181,123 @@ spriteTypes = {
 	SpriteType = { 
 		name = "GFX_goal_KOR_miracle_of_han_river" 
 		texturefile = "gfx/interface/goals/TLE/KOR_miracle_of_han_river.png"     
+	}
+	SpriteType = { 
+		name = "GFX_focus_JAP_america_in_japan"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_america_in_japan.png"     
 	}  
+	SpriteType = { 
+		name = "GFX_focus_JAP_anti_reppen"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_anti_reppen.png"     
+	}
+	SpriteType = { 
+		name = "GFX_focus_JAP_claim_shigoku"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_claim_shigoku.png"     
+	}
+	SpriteType = { 
+		name = "GFX_focus_JAP_control_economy"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_control_economy.png"     
+	}
+	SpriteType = { 
+		name = "GFX_focus_JAP_kmt_question"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_kmt_question.png"     
+	}
+	SpriteType = { 
+		name = "GFX_focus_JAP_kobe_retry"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_kobe_retry.png"     
+	}
+	SpriteType = { 
+		name = "GFX_focus_JAP_modern_country"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_modern_country.png"     
+	}
+	SpriteType = { 
+		name = "GFX_focus_JAP_national_resistance"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_national_resistance.png"     
+	}
+	SpriteType = { 
+		name = "GFX_focus_JAP_no_nazis"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_no_nazis.png"     
+	}
+	SpriteType = { 
+		name = "GFX_focus_JAP_reclaim_boso"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_reclaim_boso.png"     
+	}
+	SpriteType = { 
+		name = "GFX_focus_JAP_reclaim_mainland"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_reclaim_mainland.png"     
+	}
+	SpriteType = { 
+		name = "GFX_focus_JAP_reclaim_tohoku"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_reclaim_tohoku.png"     
+	}
+	SpriteType = { 
+		name = "GFX_focus_JAP_reunification"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_reunification.png"     
+	}
+	SpriteType = { 
+		name = "GFX_focus_JAP_yamato_spirit"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_yamato_spirit.png"     
+	}
+	SpriteType = { 
+		name = "GFX_focus_JAP_ussr"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_ussr.png"     
+	}
+	SpriteType = { 
+		name = "GFX_focus_JAP_contributor"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_contributor.png"     
+	}
+	SpriteType = { 
+		name = "GFX_focus_JAP_civil_focus"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_civil_focus.png"     
+	}
+	SpriteType = { 
+		name = "GFX_focus_JAP_dockyard1"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_dockyard1.png"     
+	}
+	SpriteType = { 
+		name = "GFX_focus_JAP_dockyard2"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_dockyard2.png"     
+	}
+	SpriteType = { 
+		name = "GFX_focus_JAP_focus_the_yamamto_zaibatzu"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_focus_the_yamamto_zaibatzu.png"     
+	}
+	SpriteType = { 
+		name = "GFX_focus_JAP_industry1"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_industry1.png"     
+	}
+	SpriteType = { 
+		name = "GFX_focus_JAP_industry2"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_industry2.png"     
+	}
+	SpriteType = { 
+		name = "GFX_focus_JAP_industry3"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_industry3.png"     
+	}
+	SpriteType = { 
+		name = "GFX_focus_JAP_infrasturcture1"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_infrasturcture1.png"     
+	}
+	SpriteType = { 
+		name = "GFX_focus_JAP_univercity_pact"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_univercity_pact.png"     
+	}
 	SpriteType = { 
 		name = "GFX_goal_JAP_kyoeiken"
 		texturefile = "gfx/interface/goals/JAP/focus_JAP_kyoeiken.png"     
 	}  
+	SpriteType = { 
+		name = "GFX_focus_JAP_into_the_world"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_into_the_world.png"     
+	}
+	SpriteType = { 
+		name = "GFX_focus_JAP_take_back_the_ports"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_take_back_the_ports.png"     
+	}
+	SpriteType = { 
+		name = "GFX_focus_JAP_remove_republicans"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_remove_republicans.png"     
+	}
 	SpriteType = { 
 		name = "GFX_goal_JAP_anti_imperialism"   
 		texturefile = "gfx/interface/goals/JAP/focus_JAP_anti_imperialism.png"     
@@ -1908,7 +2381,11 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_focus_JAP_itki"
 		texturefile = "gfx/interface/goals/JAP/focus_JAP_itki.png"     
-	}  
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_showa_tenno_heil"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_showa_tenno_heil.png"     
+	}
 	SpriteType = {
 		name = "GFX_focus_JAP_kip_support"
 		texturefile = "gfx/interface/goals/JAP/focus_JAP_kip_support.png"     
@@ -1952,6 +2429,10 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_goal_JAP_samuraie"
 		texturefile = "gfx/interface/goals/JAP/focus_JAP_samuraie.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_konoe_visit"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_konoe_visit.png"
 	}
 	SpriteType = {
 		name = "GFX_focus_JAP_recruit"
@@ -2088,6 +2569,14 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_goal_generic_air_tactical_bomber_german"
 		texturefile = "gfx/interface/goals/generic_air_tactical_bomber_german.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_KOR_french_indochina"
+		texturefile = "gfx/interface/goals/KOR/focus_KOR_french_indochina.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_KOR_jeongshin_of_korean"
+		texturefile = "gfx/interface/goals/KOR/focus_KOR_jeongshin_of_korean.png"
 	}
 	SpriteType = {
 		name = "GFX_goal_KOR_Army"
@@ -2670,5 +3159,9 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_focus_KOR_dangun"
 		texturefile = "gfx/interface/goals/TLE/KOR_dangun.png"     		
+	}
+	SpriteType = {
+		name = "GFX_focus_kor_Jinhae_naval_arssenal"
+		texturefile = "gfx/interface/goals/TLE/KOR_Jinhae_Arsenal.png"     		
 	}
 }	

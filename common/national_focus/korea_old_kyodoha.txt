@@ -592,7 +592,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = KOR_focus_jeongshin_of_korean
+		id = KOR_focus_jeongshin_of_korean_2
 		icon = GFX_goal_KOR_secret_agency
 		cost = 8.00
 		prerequisite = {
@@ -613,7 +613,7 @@ focus_tree = {
 		icon = GFX_goal_generic_lightbulb
 		cost = 8.00
 		prerequisite = {
-			focus = KOR_focus_jeongshin_of_korean
+			focus = KOR_focus_jeongshin_of_korean_2
 		}
 		x = 113
 		y = 15

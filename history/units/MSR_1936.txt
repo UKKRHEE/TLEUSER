@@ -99,7 +99,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 1855
+		location = 7717
 		division_template = "Mongolian Revolutinary Cavalry"
 		start_experience_factor = 1
 		start_equipment_factor = 0.8

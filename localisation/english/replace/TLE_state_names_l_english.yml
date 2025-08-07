@@ -29,6 +29,7 @@
  ###식민지###
  STATE_CHEONGDO:0 "청도"
  STATE_QINGDAO:0 "칭다오"
+ KOR_STATE_QINGDAO:0 "청도"
  STATE_DAEMAN:0 "대만"
  STATE_JANGKI:0 "장기"
  STATE_PUGIDO:0 "북이도"
@@ -39,10 +40,12 @@
  STATE_TIANJIN:0 "톈진"
  STATE_WIHAE:0 "위해" #웨이하이
  STATE_WEIHAI:0 "웨이하이웨이" #웨이하이
+ KOR_STATE_WEIHAI:0 "위해" #웨이하이
  STATE_YANTAI:0 "옌타이"
  STATE_SHANGHAI:0 "상하이"
  STATE_SUZHOU:0 "쑤저우"
  STATE_CHANGZHOU:0 "창저우"
+ STATE_JURONG:0 "쥐룽"
  STATE_NANTONG:0 "난퉁"
  STATE_YANGZHOU:0 "양저우"
  STATE_NINGBO:0 "닝보"
@@ -50,6 +53,7 @@
  STATE_FUZHOU:0 "푸저우"
  STATE_XIAMEN:0 "샤먼"
  STATE_ZHANJIANG:0 "잔장"
+ KOR_STATE_ZHANJIANG:0 "진강"
  STATE_GUANGZHOU:0 "광저우"
  STATE_CHENGDU:0 "청두"
  STATE_WUHAN:0 "우한"
@@ -71,6 +75,7 @@
  STATE_HEBI:0 "허비"
  STATE_YANQING:0 "옌칭"
  STATE_QINZHOU:0 "친저우"
+ KOR_STATE_QINZHOU:0 "흠주"
  STATE_YANGQUAN:0 "양취안"
  STATE_LIAOCHENG:0 "랴오청"
  STATE_SIJIAZHUANG:0 "스자좡"
@@ -85,6 +90,14 @@
  STATE_LUQU:0 "루취"
  STATE_QINHUANGDAO:0 "친황다오"
  STATE_JINGHONG:0 "징훙"
+ STATE_SHIQU:0 "스취"
+ STAT_XINING:0 "시닝"
+ STATE_HUAIHUA:0 "화이화"
+ STATE_BEIJING:0 "베이징"
+ STATE_XILINGUOLE:0 "시린궈러"
+ STATE_YINGQING:0 "잉칭"
+ STATE_HEPEI:0 "허페이"
+ STATE_HUANGGANG:0 "황강"
  
  #중세잽랜드
  STATE_KUJU:0 "구주"
@@ -187,13 +200,23 @@
  STATE_600:0 "난창"
  STATE_595:0 "난핑"
  STATE_596:0 "사오싱"
- STATE_606:0 "허페이"
+ STATE_606:0 "화이난"
  STATE_283:0 "톈수이"
  STATE_616:0 "우하이"
  STATE_601:0 "참도"
  STATE_603:0 "구이양"
  STATE_599:0 "류저우"
  STATE_593:0 "선전"
+ GNG_STATE_593:0 "심천"
+ GNG_STATE_326:0 "향항"
+ GNG_STATE_1046:0 "광주"
+ GNG_STATE_592:0 "불산"
+ GNG_STATE_729:0 "오문"
+ 
+ KOR_STATE_591:0 "해남도"
+ KOR_STATE_728:0 "광주만"
+ KOR_STATE_729:0 "오문"
+ KOR_STATE_326:0 "향항"
  
  STATE_537:0 "남부 고혈도"
  STATE_655:0 "북부 고혈도"
@@ -240,8 +263,11 @@
  STATE_736:0 "트리에스테"
  STATE_69:0 "수데티"
  STATE_74:0 "수데티 동부"
+ 
+ STATE_617:0 "디화"
+ ETS_STATE_617:0 "우루무치"
 
- STRATEGICREGION_250:0 "서강"
+ STRATEGICREGION_250:0 "사천"
  STRATEGICREGION_79:0 "한국해"
  LOC_TLE_SEA_OF_KOREA_PROBLEM_1:0 "한국해"
  LOC_TLE_SEA_OF_KOREA_PROBLEM_2:0 "동해"
@@ -257,7 +283,8 @@
  STRATEGICREGION_200:0 "청해"
  STRATEGICREGION_252:0 "천산"
  STRATEGICREGION_164:0 "강남"
- STRATEGICREGION_165:0 "화남"
+ STRATEGICREGION_165:0 "호남"
+ STRATEGICREGION_146:0 "티베트"
  STRATEGICREGION_144:0 "화서"
  
  KOREA_STRAIT:0 "대한해협"
@@ -313,6 +340,8 @@
  Bromberg:0 "브롬베르크"
  Thorn:0 "토른"
  Gdingen:0 "그딩겐"
+ 
+ STATE_SANRAFAEL:0 "샌 라파엘"
  
  
  #그리스-터키
@@ -417,3 +446,7 @@
  Magnesia:0 "마그니시아" #마니사 #확실 x
  Kieros:0 "키에로스" #아다파자리 #확실x
  Attalis:0 "아탈리스" #안탈리아 #확실x
+ 
+ #
+ woonam_state:0 "우남주"
+ ilso_state:0 "일소주"

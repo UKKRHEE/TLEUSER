@@ -15,18 +15,12 @@ set_politics = {
 	elections_allowed = no
 }
 give_military_access = KOR
-give_military_access = CHI
 give_military_access = ITA
-give_military_access = JAP
+give_military_access = BEL
 give_military_access = ENG
 give_military_access = FRA
 give_military_access = USA
-give_military_access = SOV
 
 set_popularities = {
 	neutrality = 100
-}
-
-add_ideas = {
-	KPL_is_cant_attack
 }

@@ -1,0 +1,1955 @@
+focus_tree = {
+	id = korea_yi_chin
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			tag = EOK
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 99999 y = 99999 }
+	focus = {
+		id = KOR_yi_chin_newfocus_0
+		icon = GFX_focus_KOR_yi_chin_newfocus_0
+		cost = 1.00
+		x = 9
+		y = 0
+		cancelable = no
+		completion_reward = {
+			custom_effect_tooltip = KOR_yi_chin_newfocus_0_tt
+			hidden_effect = {
+				country_event = {
+					id = korea.505
+				}
+			}
+			hidden_effect = {
+				country_event = {
+					id = korea.603
+				}
+			}
+		}
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_20
+		icon = GFX_focus_KOR_yi_chin_newfocus_20
+		cost = 3.00
+		x = 27
+		y = 0
+		allow_branch = {
+			has_country_flag = SHOW_ANOTHER_YICHIN_ROUTE_FOCUS
+		}
+		completion_reward = {
+			custom_effect_tooltip = KOR_yi_chin_newfocus_20_tt
+		}
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_1
+		icon = GFX_focus_KOR_yi_chin_newfocus_1
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_0
+		}
+		x = 6
+		y = 1
+		cancelable = no
+		completion_reward = {
+			country_event = {
+				id = korea.506
+			}
+			hidden_effect = {
+				country_event = {
+					id = korea.609
+				}
+			}
+		}
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_2
+		icon = GFX_focus_KOR_yi_chin_newfocus_2
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_1
+		}
+		x = 5
+		y = 2
+		cancelable = no
+		completion_reward = {
+			country_event = {
+				id = korea.507
+			}
+			hidden_effect = {
+				country_event = {
+					id = korea.605
+				}
+			}
+		}
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_3
+		icon = GFX_focus_KOR_yi_chin_newfocus_3
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_2
+		}
+		x = 5
+		y = 3
+		cancelable = no
+		completion_reward = {
+			country_event = {
+				id = korea.508
+			}
+			hidden_effect = {
+				country_event = {
+					id = korea.606
+				}
+			}
+		}
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_4
+		icon = GFX_focus_KOR_yi_chin_newfocus_4
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_1
+		}
+		x = 7
+		y = 2
+		cancelable = no
+		completion_reward = {
+			country_event = {
+				id = korea.509
+			}
+			hidden_effect = {
+				country_event = {
+					id = korea.607
+				}
+			}
+		}
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_5
+		icon = GFX_focus_KOR_yi_chin_newfocus_5
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_4
+		}
+		x = 7
+		y = 3
+		cancelable = no
+		completion_reward = {
+			country_event = {
+				id = korea.510
+			}
+			hidden_effect = {
+				country_event = {
+					id = korea.610
+				}
+			}
+		}
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_6
+		icon = GFX_focus_KOR_yi_chin_newfocus_6
+		cost = 2.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_3
+		}
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_5
+		}
+		x = 6
+		y = 4
+		cancelable = no
+		completion_reward = {
+			custom_effect_tooltip = KOR_yi_chin_newfocus_6_tt
+			hidden_effect = {
+				country_event = {
+					id = korea.511
+				}
+			}	
+			hidden_effect = {
+				country_event = {
+					id = korea.612
+				}
+			}
+		}
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_13
+		icon = GFX_focus_KOR_yi_chin_newfocus_13
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_0
+		}
+		x = 9
+		y = 2
+		cancelable = no
+		completion_reward = {
+			custom_effect_tooltip = KOR_yi_chin_newfocus_13_tt
+		}
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_14
+		icon = GFX_focus_KOR_yi_chin_newfocus_14
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_13
+		}
+		x = 9
+		y = 3
+		cancelable = no
+		completion_reward = {
+			custom_effect_tooltip = KOR_yi_chin_newfocus_14_tt
+		}
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_15
+		icon = GFX_focus_KOR_yi_chin_newfocus_15
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_14
+		}
+		x = 9
+		y = 5
+		select_effect = {
+			hidden_effect = {
+				play_song = "eokanthemvol_2"
+			}
+		}	
+		cancelable = no
+		completion_reward = {
+			country_event = {
+				id = korea.520
+			}
+			hidden_effect = {
+				country_event = {
+					id = korea.616
+				}
+			}	
+		}
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_16
+		icon = GFX_focus_KOR_yi_chin_newfocus_16
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_15
+		}
+		x = 9
+		y = 6
+		cancelable = no
+		completion_reward = {
+			country_event = {
+				id = korea.521
+			}
+			hidden_effect = {
+				country_event = {
+					id = korea.617
+				}
+			}	
+		}
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_17
+		icon = GFX_focus_KOR_yi_chin_newfocus_17
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_16
+		}
+		x = 8
+		y = 7
+		cancelable = no
+		completion_reward = {
+			remove_ideas = KOR_purged_government
+			hidden_effect = {
+				country_event = {
+					id = korea.522
+				}
+				country_event = {
+					id = korea.618
+				}
+			}	
+		}
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_18
+		icon = GFX_focus_KOR_yi_chin_newfocus_18
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_16
+		}
+		x = 10
+		y = 7
+		cancelable = no
+		completion_reward = {
+			add_ideas = KOR_yi_haechang_cabinet
+			hidden_effect = {
+				country_event = {
+					id = korea.523
+				}
+				country_event = {
+					id = korea.619
+				}
+			}	
+		}
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_19
+		icon = GFX_focus_KOR_yi_chin_newfocus_19
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_17
+		}
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_18
+		}
+		x = 9
+		y = 8
+		cancelable = no
+		completion_reward = {
+			country_event = {
+				id = korea.524
+			}
+		}
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_77
+		icon = GFX_focus_KOR_yi_chin_newfocus_77
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_19
+		}
+		allow_branch = {
+			has_country_flag = KOR_yi_chin_route_ending_flag
+		}
+		select_effect = {
+			hidden_effect = {
+				play_song = "narcissism_bluesky"
+			}
+		}
+		x = 9
+		y = 10
+		completion_reward = {
+			country_event = {
+				id = korea.561
+			}
+		}	
+
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_79
+		icon = GFX_focus_KOR_yi_chin_newfocus_79
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_77
+		}
+		x = 10
+		y = 11
+		completion_reward = {
+			country_event = {
+				id = korea.563
+			}
+		}	
+
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_81
+		icon = GFX_focus_KOR_yi_chin_newfocus_81
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_79
+		}
+		x = 10
+		y = 12
+		completion_reward = {
+			country_event = {
+				id = korea.565
+			}
+		}	
+
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_7
+		icon = GFX_focus_KOR_yi_chin_newfocus_7
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_0
+		}
+		x = 12
+		y = 1
+		cancelable = no
+		completion_reward = {
+			country_event = {
+				id = korea.512
+			}
+			hidden_effect = {
+				country_event = {
+					id = korea.604
+				}
+			}
+		}
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_8
+		icon = GFX_focus_KOR_yi_chin_newfocus_8
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_7
+		}
+		x = 11
+		y = 2
+		cancelable = no
+		completion_reward = {
+			country_event = {
+				id = korea.513
+			}
+			hidden_effect = {
+				country_event = {
+					id = korea.608
+				}
+			}
+		}
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_9
+		icon = GFX_focus_KOR_yi_chin_newfocus_9
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_8
+		}
+		x = 11
+		y = 3
+		cancelable = no
+		completion_reward = {
+			country_event = {
+				id = korea.514
+			}
+			hidden_effect = {
+				country_event = {
+					id = korea.613
+				}
+			}
+		}
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_10
+		icon = GFX_focus_KOR_yi_chin_newfocus_10
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_7
+		}
+		x = 13
+		y = 2
+		cancelable = no
+		completion_reward = {
+			country_event = {
+				id = korea.515
+			}
+			hidden_effect = {
+				country_event = {
+					id = korea.611
+				}
+			}
+		}
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_11
+		icon = GFX_focus_KOR_yi_chin_newfocus_11
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_10
+		}
+		x = 13
+		y = 3
+		cancelable = no
+		completion_reward = {
+			country_event = {
+				id = korea.516
+			}
+			hidden_effect = {
+				country_event = {
+					id = korea.614
+				}
+			}
+		}
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_12
+		icon = GFX_focus_KOR_yi_chin_newfocus_12
+		cost = 2.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_9
+		}
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_11
+		}
+		x = 12
+		y = 4
+		cancelable = no
+		completion_reward = {
+			custom_effect_tooltip = KOR_yi_chin_newfocus_12_tt
+			hidden_effect = {
+				country_event = {
+					id = korea.517
+				}
+			}	
+			hidden_effect = {
+				country_event = {
+					id = korea.615
+				}
+			}	
+		}
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_21
+		icon = GFX_focus_KOR_yi_chin_newfocus_21
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_20
+		}
+		x = 18
+		y = 1
+		completion_reward = {
+			country_event = {
+				id = korea.525
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_22
+		icon = GFX_focus_KOR_yi_chin_newfocus_22
+		cost = 3.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_21
+		}
+		x = 17
+		y = 2
+		completion_reward = {
+			custom_effect_tooltip = KOR_yi_chin_newfocus_22_tt
+			hidden_effect = {
+				country_event = {
+					id = korea.526
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_23
+		icon = GFX_focus_KOR_yi_chin_newfocus_23
+		cost = 3.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_21
+		}
+		x = 19
+		y = 2
+		completion_reward = {
+			swap_ideas = {
+				add_idea = KOR_yi_haechang_cabinet_2
+				remove_idea = KOR_yi_haechang_cabinet
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_24
+		icon = GFX_focus_KOR_yi_chin_newfocus_24
+		cost = 2.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_22
+		}
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_23
+		}
+		x = 17
+		y = 3
+		completion_reward = {
+			add_political_power = 100
+		}
+
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_25
+		icon = GFX_focus_KOR_yi_chin_newfocus_25
+		cost = 3.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_24
+		}
+		x = 16
+		y = 4
+		completion_reward = {
+			add_stability = 0.15
+		}
+
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_26
+		icon = GFX_focus_KOR_yi_chin_newfocus_26
+		cost = 3.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_22
+		}
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_23
+		}
+		x = 18
+		y = 4
+		completion_reward = {
+			swap_ideas = {
+				add_idea = KOR_yi_haechang_cabinet_3
+				remove_idea = KOR_yi_haechang_cabinet_2
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_27
+		icon = GFX_focus_KOR_yi_chin_newfocus_27
+		cost = 3.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_26
+		}
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_25
+		}
+		x = 18
+		y = 6
+		completion_reward = {
+			country_event = {
+				id = korea.527
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_28
+		icon = GFX_focus_KOR_yi_chin_newfocus_28
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_20
+		}
+		x = 22
+		y = 1
+		completion_reward = {
+			country_event = {
+				id = korea.528
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_29
+		icon = GFX_focus_KOR_yi_chin_newfocus_29
+		cost = 3.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_28
+		}
+		x = 21
+		y = 2
+		completion_reward = {
+			country_event = {
+				id = korea.529
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_34
+		icon = GFX_focus_KOR_yi_chin_newfocus_34
+		cost = 3.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_23
+		}
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_29
+		}
+		x = 20
+		y = 3
+		completion_reward = {
+			add_stability = 0.1
+			add_war_support = 0.1
+		}
+
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_30
+		icon = GFX_focus_KOR_yi_chin_newfocus_30
+		cost = 3.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_28
+		}
+		x = 23
+		y = 2
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 120
+			#country_event = { #이벤트가 너무 많아서 컷
+			#	id = korea.530
+			#}
+		}
+
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_31
+		icon = GFX_focus_KOR_yi_chin_newfocus_31
+		cost = 3.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_29
+		}
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_30
+		}
+		x = 23
+		y = 3
+		available = {
+		
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = KOR
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = KOR
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_32
+		icon = GFX_focus_KOR_yi_chin_newfocus_32
+		cost = 3.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_29
+		}
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_31
+		}
+		x = 22
+		y = 4
+		available = {
+			has_stability > 0.05
+			has_political_power > 75
+		}
+		select_effect = {
+			add_political_power = -75
+			add_stability = -0.05
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		cancelable = no
+		completion_reward = {
+			add_ideas = KOR_national_development_5years
+		}
+
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_53
+		icon = GFX_focus_KOR_yi_chin_newfocus_53
+		cost = 3.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_20
+		}
+		x = 27
+		y = 1
+		available = {
+			has_completed_focus = KOR_yi_chin_newfocus_34
+		}
+		completion_reward = {
+			country_event = {
+				id = korea.531
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_54
+		icon = GFX_focus_KOR_yi_chin_newfocus_54
+		cost = 3.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_53
+		}
+		mutually_exclusive = {
+			focus = KOR_yi_chin_newfocus_55
+		}
+		x = 26
+		y = 2
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = KOR_WILL_BE_SKIPPED
+				always = no
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = KOR_yi_chin_newfocus_54_tt
+			hidden_effect = {
+			}
+		}
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_56
+		icon = GFX_focus_KOR_yi_chin_newfocus_56
+		cost = 3.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_54
+		}
+		x = 26
+		y = 4
+		available = {
+			has_political_power > 100
+		}
+		select_effect = {
+			add_political_power = -100
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		cancelable = no
+		completion_reward = {
+			set_country_flag = FLAG_YICHIN_KILL_VIETNAM_KUOMINTANG
+			custom_effect_tooltip = KOR_yi_chin_newfocus_56_tt
+			add_war_support = 0.05
+		}
+
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_57
+		icon = GFX_focus_KOR_yi_chin_newfocus_57
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_56
+		}
+		x = 26
+		y = 6
+		completion_reward = {
+			add_timed_idea = {
+				idea = deterrence
+				days = 720
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_55
+		icon = GFX_focus_KOR_yi_chin_newfocus_55
+		cost = 3.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_53
+		}
+		mutually_exclusive = {
+			focus = KOR_yi_chin_newfocus_54
+		}
+		x = 28
+		y = 2
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = KOR_WILL_BE_SKIPPED
+				always = no
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = KOR_yi_chin_newfocus_55_tt
+			hidden_effect = {
+				FRI = {
+					annex_country = {
+						target = KVN
+						transfer_troops = no
+					}
+				}
+			}	
+		}
+
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_58
+		icon = GFX_focus_KOR_yi_chin_newfocus_58
+		cost = 3.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_54
+			focus = KOR_yi_chin_newfocus_55
+		}
+		x = 27
+		y = 3
+		completion_reward = {
+			give_guarantee = PHI
+			PHI = {
+				add_opinion_modifier = {
+					target = KOR
+					modifier = TLE_asian_friends
+				}
+			}
+			USA = {
+				add_opinion_modifier = {
+					target = KOR
+					modifier = TLE_asian_friends
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_60
+		icon = GFX_focus_KOR_yi_chin_newfocus_60
+		cost = 3.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_55
+		}
+		x = 28
+		y = 4
+		completion_reward = {
+			add_equipment_to_stockpile = { 
+				type = infantry_equipment
+				amount = 4000
+				producer = KOR
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = KOR
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = KOR
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_59
+		icon = GFX_focus_KOR_yi_chin_newfocus_59
+		cost = 5.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_60
+		}
+		x = 28
+		y = 6
+		completion_reward = {
+			add_timed_idea = {
+				idea = KOR_indosina_economic_plan
+				days = 365
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_61
+		icon = GFX_focus_KOR_yi_chin_newfocus_61
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_57
+			focus = KOR_yi_chin_newfocus_59
+		}
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_58
+		}
+		x = 27
+		y = 7
+		completion_reward = {
+			custom_effect_tooltip = KOR_yi_chin_newfocus_61_tt
+			hidden_effect = {
+				country_event = {
+					id = korea.533
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_37
+		icon = GFX_focus_KOR_yi_chin_newfocus_37
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_20
+		}
+		x = 32
+		y = 1
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = KOR_YICHIN_HAS_POWER
+				has_completed_focus = KOR_yi_chin_newfocus_36
+			}
+		}
+		completion_reward = {
+			country_event = {
+				id = korea.534
+			}	
+		}
+
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_38
+		icon = GFX_focus_KOR_yi_chin_newfocus_38
+		cost = 3.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_37
+		}
+		x = 31
+		y = 2
+		completion_reward = {
+			every_country = {
+				limit = {
+					OR = {
+						tag = KOR
+						AND = {
+							is_puppet_of = KOR
+							is_chinese_clique = yes
+						}
+					}
+				}
+				add_ideas = KOR_gangseong_daeguk
+			}
+			#country_event = {
+			#	id = korea.536
+			#}
+		}
+
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_40
+		icon = GFX_focus_KOR_yi_chin_newfocus_40
+		cost = 3.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_37
+		}
+		x = 33
+		y = 2
+		completion_reward = {
+			custom_effect_tooltip = TOOLTIP_EVENT_KOREA_537
+			hidden_effect = {
+				add_political_power = 50
+				GER = {
+					add_opinion_modifier = {
+						target = KOR
+						modifier = TLE_anti_germany_korea
+					}
+				}
+				ENG = {
+					add_opinion_modifier = {
+						target = KOR
+						modifier = TLE_they_deny_axis_power
+					}
+				}
+				FRA = {
+					add_opinion_modifier = {
+						target = KOR
+						modifier = TLE_they_deny_axis_power
+					}
+				}
+				USA = {
+					add_opinion_modifier = {
+						target = KOR
+						modifier = TLE_they_deny_axis_power
+					}
+				}
+			}
+			#country_event = {
+			#	id = korea.537
+			#}
+		}
+
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_39
+		icon = GFX_focus_KOR_yi_chin_newfocus_39
+		cost = 3.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_38
+		}
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_40
+		}
+		x = 31
+		y = 3
+		completion_reward = {
+			custom_effect_tooltip = KOR_yi_chin_newfocus_39_tt
+			give_guarantee = FSM
+			FSM = {
+				transfer_state = 646
+				transfer_state = 633
+				transfer_state = 647
+				transfer_state = 684
+				add_opinion_modifier = {
+					target = KOR
+					modifier = TLE_asian_friends
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_41
+		icon = GFX_focus_KOR_yi_chin_newfocus_41
+		cost = 3.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_39
+		}
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_40
+		}
+		x = 32
+		y = 4
+		completion_reward = {
+			custom_effect_tooltip = KOR_DIPLOMANCY_GOVSETTING_TT
+			add_ideas = kor_dip_managism
+		}
+
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_50
+		icon = GFX_focus_KOR_yi_chin_newfocus_50
+		cost = 3.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_41
+		}
+		x = 32
+		y = 6
+		completion_reward = {
+			country_event = {
+				id = korea.540
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_42
+		icon = GFX_focus_KOR_yi_chin_newfocus_42
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_20
+		}
+		x = 36
+		y = 1
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = KOR_YICHIN_HAS_POWER
+				has_completed_focus = KOR_yi_chin_newfocus_36
+			}
+		}
+		completion_reward = {
+			country_event = {
+				id = korea.535
+			}	
+		}
+
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_43
+		icon = GFX_focus_KOR_yi_chin_newfocus_43
+		cost = 3.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_42
+		}
+		x = 35
+		y = 2
+		completion_reward = {
+			add_war_support = 0.1
+			army_experience = 100
+			#country_event = {
+			#	id = korea.538
+			#}	
+		}
+
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_46
+		icon = GFX_focus_KOR_yi_chin_newfocus_46
+		cost = 3.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_40
+		}
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_43
+		}
+		x = 34
+		y = 3
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = KOR_militarism
+				}
+				remove_ideas = KOR_militarism
+			}
+			if = {
+				limit = {
+					has_idea = KOR_militarism_2
+				}
+				remove_ideas = KOR_militarism_2
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_44
+		icon = GFX_focus_KOR_yi_chin_newfocus_44
+		cost = 3.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_42
+		}
+		x = 37
+		y = 2
+		completion_reward = {
+			custom_effect_tooltip = KOR_yi_chin_newfocus_44_tt
+			army_experience = 450
+			hidden_effect = {
+				KOR_yi_dong_hwi = {
+					remove_unit_leader_role = yes
+				}
+				KOR_yu_dong_yeol = {
+					remove_unit_leader_role = yes
+				}
+				KOR_choi_myonglok = {
+					remove_unit_leader_role = yes
+				}
+			}
+			#country_event = {
+			#	id = korea.539
+			#}	
+		}
+
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_45
+		icon = GFX_focus_KOR_yi_chin_newfocus_45
+		cost = 3.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_43
+		}
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_44
+		}
+		x = 37
+		y = 3
+		completion_reward = {
+			set_country_flag = TLE_YICHIN_CAN_MARSHAL
+			custom_effect_tooltip = KOR_yi_chin_newfocus_51_tt
+		}
+
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_48
+		icon = GFX_focus_KOR_yi_chin_newfocus_48
+		cost = 3.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_45
+		}
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_43
+		}
+		x = 36
+		y = 4
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 3
+				category = land_doctrine
+			}
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 3
+				category = naval_doctrine
+			}
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 3
+				category = air_doctrine
+			}
+		}	
+
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_33
+		icon = GFX_focus_KOR_yi_chin_newfocus_33
+		cost = 3.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_32
+		}
+		x = 22
+		y = 6
+		completion_reward = {
+			country_event = {
+				id = korea.532
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_35
+		icon = GFX_focus_KOR_yi_chin_newfocus_35
+		cost = 3.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_34
+		}
+		x = 20
+		y = 5
+		completion_reward = {
+			add_ideas = KOR_always_martial_law
+		}
+
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_36
+		icon = GFX_focus_KOR_yi_chin_newfocus_36
+		cost = 3.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_35
+		}
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_27
+		}
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_33
+		}
+		x = 20
+		y = 7
+		available = {
+			has_political_power > 100
+		}
+		select_effect = {
+			add_political_power = -100
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		cancelable = no
+		completion_reward = {
+			add_ideas = KOR_three_powers_dismentle
+		}
+
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_47
+		icon = GFX_focus_KOR_yi_chin_newfocus_47
+		cost = 3.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_45
+		}
+		x = 38
+		y = 4
+		completion_reward = {
+			custom_effect_tooltip = KOR_MILITARY_GOVSETTING_TT
+			add_ideas = kor_mil_serve_to_emperor
+		}
+
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_49
+		icon = GFX_focus_KOR_yi_chin_newfocus_49
+		cost = 3.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_46
+		}
+		x = 34
+		y = 5
+		completion_reward = {
+			add_ideas = KOR_militarism_3
+		}	
+
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_51
+		icon = GFX_focus_KOR_yi_chin_newfocus_51
+		cost = 3.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_48
+		}
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_47
+		}
+		x = 36
+		y = 6
+		completion_reward = {
+			swap_ideas = {
+				add_idea = KOR_emperors_country2
+				remove_idea = KOR_emperors_country
+			}
+		}
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_52
+		icon = GFX_focus_KOR_yi_chin_newfocus_52
+		cost = 3.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_50
+		}
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_51
+		}
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_49
+		}
+		x = 34
+		y = 7
+		completion_reward = {
+			country_event = {
+				id = korea.541
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_62
+		icon = GFX_focus_KOR_yi_chin_newfocus_62
+		cost = 52.15
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_36
+		}
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_61
+		}
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_52
+		}
+		x = 27
+		y = 8
+		bypass = {
+			KOR = {
+				has_war_with = CHI
+			}
+			SZY = {
+				has_capitulated = yes
+				has_war_with = CHI
+			}
+		}
+		bypass_effect = {
+			custom_effect_tooltip = KOR_yi_chin_newfocus_62_fail_bypass_tt
+			hidden_effect = {
+				JAP = {
+					declare_war_on = {
+						target = KOR
+						type = annex_everything
+					}
+				}
+				SOV = {
+					declare_war_on = {
+						target = KOR
+						type = annex_everything
+					}
+					declare_war_on = {
+						target = MEN
+						type = annex_everything
+					}
+				}
+				MSR = {
+					declare_war_on = {
+						target = KOR
+						type = annex_everything
+					}
+					declare_war_on = {
+						target = MEN
+						type = annex_everything
+					}
+				}
+				CHI = {
+					add_to_faction = SIK
+					puppet = SIK
+				}
+				SIK = {
+					set_cosmetic_tag = CHI_SIK_PRV
+				}
+			}
+		}
+		cancelable = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = KOR_yi_chin_newfocus_62_trigger_tt
+				always = no
+			}
+		}
+		select_effect = {
+			add_ideas = KOR_cheonmyeong_war_yichin
+		}
+		completion_reward = {
+			custom_effect_tooltip = KOR_yi_chin_newfocus_62_tt
+			custom_effect_tooltip = KOR_yi_chin_newfocus_62_tt_2
+			remove_ideas = KOR_cheonmyeong_war_yichin
+			hidden_effect = {
+				KOR_YICHIN_6th_sino_korean_war_kor_win_effect = yes
+			}
+		}
+
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_63
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_62
+		}
+		allow_branch = {
+			always = no
+		}
+		x = 24
+		y = 9
+
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_64
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_63
+		}
+		mutually_exclusive = {
+			focus = KOR_yi_chin_newfocus_65
+		}
+		x = 23
+		y = 10
+
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_65
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_63
+		}
+		mutually_exclusive = {
+			focus = KOR_yi_chin_newfocus_64
+		}
+		x = 25
+		y = 10
+
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_66
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_64
+			focus = KOR_yi_chin_newfocus_65
+		}
+		mutually_exclusive = {
+			focus = KOR_yi_chin_newfocus_69
+		}
+		x = 24
+		y = 11
+
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_67
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_66
+		}
+		x = 24
+		y = 12
+
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_68
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_62
+		}
+		mutually_exclusive = {
+			focus = KOR_yi_chin_newfocus_73
+		}
+		allow_branch = {
+			always = no
+		}
+		x = 27
+		y = 9
+
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_69
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_68
+		}
+		mutually_exclusive = {
+			focus = KOR_yi_chin_newfocus_66
+		}
+		x = 26
+		y = 11
+
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_70
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_69
+		}
+		x = 26
+		y = 12
+
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_71
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_68
+		}
+		mutually_exclusive = {
+			focus = KOR_yi_chin_newfocus_74
+		}
+		x = 28
+		y = 10
+
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_72
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_71
+		}
+		x = 28
+		y = 11
+
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_73
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_62
+		}
+		mutually_exclusive = {
+			focus = KOR_yi_chin_newfocus_68
+		}
+		allow_branch = {
+			always = no
+		}
+		x = 30
+		y = 9
+
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_74
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_73
+		}
+		mutually_exclusive = {
+			focus = KOR_yi_chin_newfocus_71
+		}
+		x = 30
+		y = 10
+
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_75
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_74
+		}
+		x = 30
+		y = 11
+
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_76
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_73
+		}
+		x = 32
+		y = 10
+
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_78
+		icon = GFX_focus_KOR_yi_chin_newfocus_78
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_77
+		}
+		x = 8
+		y = 11
+		completion_reward = {
+			country_event = {
+				id = korea.562
+			}
+		}	
+
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_80
+		icon = GFX_focus_KOR_yi_chin_newfocus_80
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_78
+		}
+		x = 8
+		y = 12
+		completion_reward = {
+			country_event = {
+				id = korea.564
+			}
+		}	
+
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_82
+		icon = GFX_focus_KOR_yi_chin_newfocus_82
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_80
+		}
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_81
+		}
+		x = 9
+		y = 13
+		completion_reward = {
+			country_event = {
+				id = korea.566
+			}
+		}	
+
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_83
+		icon = GFX_focus_KOR_yi_chin_newfocus_83
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_82
+		}
+		x = 11
+		y = 14
+		completion_reward = {
+			country_event = {
+				id = korea.567
+			}
+		}	
+
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_84
+		icon = GFX_focus_KOR_yi_chin_newfocus_84
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_82
+		}
+		x = 9
+		y = 14
+		completion_reward = {
+			country_event = {
+				id = korea.568
+			}
+		}	
+
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_85
+		icon = GFX_focus_KOR_yi_chin_newfocus_85
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_82
+		}
+		x = 7
+		y = 14
+		completion_reward = {
+			country_event = {
+				id = korea.569
+			}
+		}	
+
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_86
+		icon = GFX_focus_KOR_yi_chin_newfocus_86
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_83
+		}
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_84
+		}
+		x = 8
+		y = 15
+		completion_reward = {
+			country_event = {
+				id = korea.570
+			}
+		}	
+
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_87
+		icon = GFX_focus_KOR_yi_chin_newfocus_87
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_84
+		}
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_85
+		}
+		x = 10
+		y = 15
+		completion_reward = {
+			country_event = {
+				id = korea.571
+			}
+		}	
+
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_88
+		icon = GFX_focus_KOR_yi_chin_newfocus_88
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_86
+		}
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_87
+		}
+		x = 9
+		y = 16
+		completion_reward = {
+			country_event = {
+				id = korea.572
+			}
+		}	
+
+	}
+	focus = {
+		id = KOR_yi_chin_newfocus_89
+		icon = GFX_focus_KOR_yi_chin_newfocus_89
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_yi_chin_newfocus_88
+		}
+		x = 9
+		y = 17
+		select_effect = {
+			hidden_effect = {
+				play_song = "lee_to_be_dust" #narcissism_bluesky
+			}
+		}
+		completion_reward = {
+			country_event = {
+				id = korea.573
+			}
+		}	
+
+	}
+}

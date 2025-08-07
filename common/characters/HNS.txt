@@ -1,0 +1,20 @@
+characters={
+	HNS_nagy_imre={
+		name="HNS_nagy_imre"
+		portraits={
+			civilian={
+				large="gfx/leaders/HNS/Portrait_HNS_nagy_imre.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			id=-1
+		}
+		country_leader={
+			ideology=marxism
+			traits={ }
+			id=-1
+		}
+	}
+}

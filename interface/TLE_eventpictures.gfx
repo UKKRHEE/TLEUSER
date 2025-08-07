@@ -37,6 +37,18 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/event_japan_1030.png"
 	}
 	spriteType = {
+		name = "GFX_event_japan_1046"
+		texturefile = "gfx/event_pictures/event_japan_1046.png"
+	}
+	spriteType = {
+		name = "GFX_event_japan_1047"
+		texturefile = "gfx/event_pictures/event_japan_1047.png"
+	}
+	spriteType = {
+		name = "GFX_event_japan_1048"
+		texturefile = "gfx/event_pictures/event_japan_1048.png"
+	}
+	spriteType = {
 		name = "GFX_event_japan_1049"
 		texturefile = "gfx/event_pictures/event_japan_1049.png"
 	}
@@ -101,8 +113,36 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/event_japan_1157.png"
 	}
 	spriteType = {
+		name = "GFX_event_japan_1159"
+		texturefile = "gfx/event_pictures/event_japan_1159.png"
+	}
+	spriteType = {
+		name = "GFX_event_japan_1160"
+		texturefile = "gfx/event_pictures/event_japan_1160.png"
+	}
+	spriteType = {
 		name = "GFX_event_japan_1200"
 		texturefile = "gfx/event_pictures/event_japan_1200.png"
+	}
+	spriteType = {
+		name = "GFX_event_japan_1203"
+		texturefile = "gfx/event_pictures/event_japan_1203.png"
+	}
+	spriteType = {
+		name = "GFX_event_japan_1204"
+		texturefile = "gfx/event_pictures/event_japan_1204.png"
+	}
+	spriteType = {
+		name = "GFX_event_japan_1206"
+		texturefile = "gfx/event_pictures/event_japan_1206.png"
+	}
+	spriteType = {
+		name = "GFX_event_japan_1209"
+		texturefile = "gfx/event_pictures/event_japan_1209.png"
+	}
+	spriteType = {
+		name = "GFX_event_japan_1211"
+		texturefile = "gfx/event_pictures/event_japan_1211.png"
 	}
 	spriteType = {
 		name = "GFX_event_japanetc_1"
@@ -135,6 +175,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_event_korea_16"
 		texturefile = "gfx/event_pictures/event_korea_16.png"
+	}
+	spriteType = {
+		name = "GFX_event_korea_22"
+		texturefile = "gfx/event_pictures/event_korea_22.png"
 	}
 	spriteType = {
 		name = "GFX_event_korea_24"
@@ -235,6 +279,18 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_event_korea_78"
 		texturefile = "gfx/event_pictures/event_korea_78.png"
+	}
+	spriteType = {
+		name = "GFX_event_korea_79"
+		texturefile = "gfx/event_pictures/event_korea_79.png"
+	}
+	spriteType = {
+		name = "GFX_event_korea_81"
+		texturefile = "gfx/event_pictures/event_korea_81.png"
+	}
+	spriteType = {
+		name = "GFX_event_korea_82"
+		texturefile = "gfx/event_pictures/event_korea_82.png"
 	}
 	spriteType = { 
 		name = "GFX_event_korea_86"
@@ -473,6 +529,10 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/event_korea_260.png"
 	}
 	spriteType = { 
+		name = "GFX_event_korea_264"		
+		texturefile = "gfx/event_pictures/event_korea_264.png"
+	}
+	spriteType = { 
 		name = "GFX_event_korea_284"		
 		texturefile = "gfx/event_pictures/event_korea_284.png"
 	}
@@ -537,6 +597,10 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/event_korea_378.png"
 	}
 	spriteType = { 
+		name = "GFX_event_korea_387"		
+		texturefile = "gfx/event_pictures/event_korea_387.png"
+	}
+	spriteType = { 
 		name = "GFX_event_korea_400"
 		texturefile = "gfx/event_pictures/event_korea_400.png"
 	}
@@ -559,6 +623,110 @@ spriteTypes = {
 	spriteType = { 
 		name = "GFX_event_korea_408"
 		texturefile = "gfx/event_pictures/event_korea_408.png"
+	}
+	spriteType = {
+		name = "GFX_event_korea_517"
+		texturefile = "gfx/event_pictures/event_korea_517.png"
+	}
+	spriteType = {
+		name = "GFX_event_korea_520"
+		texturefile = "gfx/event_pictures/event_korea_520.png"
+	}
+	spriteType = {
+		name = "GFX_event_korea_521"
+		texturefile = "gfx/event_pictures/event_korea_521.png"
+	}
+	spriteType = {
+		name = "GFX_event_korea_522" 
+		texturefile = "gfx/event_pictures/event_korea_522.png"
+	}
+	spriteType = { 
+		name = "GFX_event_korea_523" 
+		texturefile = "gfx/event_pictures/event_korea_523.png"
+	}
+	spriteType = { 
+		name = "GFX_event_korea_524" 
+		texturefile = "gfx/event_pictures/event_korea_524.png"
+	}
+	spriteType = { 
+		name = "GFX_event_korea_525" 
+		texturefile = "gfx/event_pictures/event_korea_525.png"
+	}
+	spriteType = { 
+		name = "GFX_event_korea_526"
+		texturefile = "gfx/event_pictures/event_korea_526.png"
+	}
+	spriteType = { 
+		name = "GFX_event_korea_527"
+		texturefile = "gfx/event_pictures/event_korea_527.png"
+	}
+	spriteType = { 
+		name = "GFX_event_korea_528"
+		texturefile = "gfx/event_pictures/event_korea_528.png"
+	}
+	spriteType = { 
+		name = "GFX_event_korea_529"
+		texturefile = "gfx/event_pictures/event_korea_529.png"
+	}
+	spriteType = { 
+		name = "GFX_event_korea_561"
+		texturefile = "gfx/event_pictures/event_korea_561.png"
+	}
+	spriteType = { 
+		name = "GFX_event_korea_562"
+		texturefile = "gfx/event_pictures/event_korea_562.png"
+	}
+	spriteType = { 
+		name = "GFX_event_korea_563"
+		texturefile = "gfx/event_pictures/event_korea_563.png"
+	}
+	spriteType = { 
+		name = "GFX_event_korea_564"
+		texturefile = "gfx/event_pictures/event_korea_564.png"
+	}
+	spriteType = { 
+		name = "GFX_event_korea_565" 
+		texturefile = "gfx/event_pictures/event_korea_565.png"
+	}
+	spriteType = { 
+		name = "GFX_event_korea_566" 
+		texturefile = "gfx/event_pictures/event_korea_566.png"
+	}
+	spriteType = { 
+		name = "GFX_event_korea_567" 
+		texturefile = "gfx/event_pictures/event_korea_567.png"
+	}
+	spriteType = { 
+		name = "GFX_event_korea_568" 
+		texturefile = "gfx/event_pictures/event_korea_568.png"
+	}
+	spriteType = { 
+		name = "GFX_event_korea_569" 
+		texturefile = "gfx/event_pictures/event_korea_569.png"
+	}
+	spriteType = { 
+		name = "GFX_event_korea_570" 
+		texturefile = "gfx/event_pictures/event_korea_570.png"
+	}
+	spriteType = { 
+		name = "GFX_event_korea_571"
+		texturefile = "gfx/event_pictures/event_korea_571.png"
+	}
+	spriteType = { 
+		name = "GFX_event_korea_572"
+		texturefile = "gfx/event_pictures/event_korea_572.png"
+	}
+	spriteType = { 
+		name = "GFX_event_korea_573"
+		texturefile = "gfx/event_pictures/event_korea_573.png"
+	}
+	spriteType = { 
+		name = "GFX_event_korea_575"
+		texturefile = "gfx/event_pictures/event_korea_575.png"
+	}
+	spriteType = { 
+		name = "GFX_event_korea_576"
+		texturefile = "gfx/event_pictures/event_korea_576.png"
 	}
 	spriteType = {
 		name = "GFX_event_korea_777"
@@ -1105,6 +1273,10 @@ spriteTypes = {
        texturefile = "gfx/event_pictures/event_none.png"
     }
 	spriteType = {
+		name = "GFX_event_chinese_nazis"
+		texturefile = "gfx/event_pictures/chinese_nazis.png"
+	} 
+	spriteType = {
 		name = "GFX_Korean_Red_Cross"
 		texturefile = "gfx/event_pictures/Korean_Red_Cross.dds"
 	} 
@@ -1167,12 +1339,76 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/news_event_soviet_tanks.dds"
 	}
 	spriteType = {
+		name = "GFX_news_event_kyushu_annexation" 
+		texturefile = "gfx/event_pictures/news_event_kyushu_annexation.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_end_of_sinokoreanwar" 
+		texturefile = "gfx/event_pictures/news_event_end_of_sinokoreanwar.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_chinese_civil_war" 
+		texturefile = "gfx/event_pictures/news_event_chinese_civil_war.png"
+	}
+	spriteType = {
 		name = "GFX_news_han_gang"
 		texturefile = "gfx/event_pictures/news_han_gang.dds"
 	}
 	spriteType = { 
 		name = "GFX_world_event_nanking"
 		texturefile = "gfx/event_pictures/GFX_world_event_nanking.png"
+	}
+	spriteType = { 
+		name = "GFX_news_event_independence_of_iceland"
+		texturefile = "gfx/event_pictures/news_event_independence_of_iceland.png"
+	}
+	spriteType = { 
+		name = "GFX_news_event_yugolavia_coup"
+		texturefile = "gfx/event_pictures/news_event_yugolavia_coup.png"
+	}
+	spriteType = { 
+		name = "GFX_news_event_brussel_falls"
+		texturefile = "gfx/event_pictures/news_event_brussel_falls.png"
+	}
+	spriteType = { 
+		name = "GFX_news_event_benelux_invasion"
+		texturefile = "gfx/event_pictures/news_event_benelux_invasion.png"
+	}
+	spriteType = { 
+		name = "GFX_news_event_netherlands_surrender"
+		texturefile = "gfx/event_pictures/news_event_netherlands_surrender.png"
+	}
+	spriteType = { 
+		name = "GFX_news_event_tripartite_pact"
+		texturefile = "gfx/event_pictures/news_event_tripartite_pact.png"
+	}
+	spriteType = { 
+		name = "GFX_news_event_invasion_of_sicily"
+		texturefile = "gfx/event_pictures/news_event_invasion_of_sicily.png"
+	}
+	spriteType = { 
+		name = "GFX_news_event_fall_of_rome"
+		texturefile = "gfx/event_pictures/news_event_fall_of_rome.png"
+	}
+	spriteType = { 
+		name = "GFX_news_event_chongqing_government"
+		texturefile = "gfx/event_pictures/news_event_chongqing_government.png"
+	}
+	spriteType = { 
+		name = "GFX_news_event_dunkirk_evacuation"
+		texturefile = "gfx/event_pictures/news_event_dunkirk_evacuation.png"
+	}
+	spriteType = { 
+		name = "GFX_news_event_treaty_of_craiova"
+		texturefile = "gfx/event_pictures/news_event_treaty_of_craiova.png"
+	}
+	spriteType = { 
+		name = "GFX_news_event_occupation_of_bessarabia"
+		texturefile = "gfx/event_pictures/news_event_occupation_of_bessarabia.png"
+	}
+	spriteType = { 
+		name = "GFX_news_event_treaty_of_yokohama"
+		texturefile = "gfx/event_pictures/news_event_treaty_of_yokohama.png"
 	}
 	spriteType = { 
 		name = "GFX_news_event_hangbok_of_korea"
@@ -1223,6 +1459,10 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/news_event_manchurian_fight.png"
 	}
 	spriteType = { 
+		name = "GFX_news_event_utsunomiya_battle"
+		texturefile = "gfx/event_pictures/news_event_utsunomiya_battle.png"
+	}
+	spriteType = { 
 		name = "GFX_news_event_world_war_ii"
 		texturefile = "gfx/event_pictures/news_event_world_war_ii.png"
 	}
@@ -1245,6 +1485,18 @@ spriteTypes = {
 	spriteType = { 
 		name = "GFX_news_event_china_north_war_woosa"
 		texturefile = "gfx/event_pictures/news_event_china_north_war_woosa.png"
+	}
+	spriteType = { 
+		name = "GFX_news_event_end_of_chinesecivilwar_wp"
+		texturefile = "gfx/event_pictures/news_event_end_of_chinesecivilwar_wp.png"
+	}
+	spriteType = { 
+		name = "GFX_news_event_the_great_retreat"
+		texturefile = "gfx/event_pictures/news_event_the_great_retreat.png"
+	}
+	spriteType = { 
+		name = "GFX_news_event_end_of_chinesecivilwar_cease"
+		texturefile = "gfx/event_pictures/news_event_end_of_chinesecivilwar_cease.png"
 	}
 	spriteType = { 
 		name = "GFX_news_event_abcd_allies"
@@ -1291,7 +1543,195 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/news_event_chungqing_battle.png"
 	}
 	spriteType = { 
+		name = "GFX_news_event_kyushu_incident"
+		texturefile = "gfx/event_pictures/news_event_kyushu_incident.png"
+	}
+	spriteType = { 
+		name = "GFX_news_event_anglo_iraq_war"
+		texturefile = "gfx/event_pictures/news_event_anglo_iraq_war.png"
+	}
+	spriteType = { 
+		name = "GFX_news_event_irish_independence"
+		texturefile = "gfx/event_pictures/news_event_irish_independence.png"
+	}
+	spriteType = { 
+		name = "GFX_news_event_hell_palestine"
+		texturefile = "gfx/event_pictures/news_event_hell_palestine.png"
+	}
+	spriteType = { 
+		name = "GFX_news_event_guangxi_attack"
+		texturefile = "gfx/event_pictures/news_event_guangxi_attack.png"
+	}
+	spriteType = { 
+		name = "GFX_news_event_george_v_dead"
+		texturefile = "gfx/event_pictures/news_event_george_v_dead.png"
+	}
+	spriteType = { 
+		name = "GFX_news_event_george_vi"
+		texturefile = "gfx/event_pictures/news_event_george_vi.png"
+	}
+	spriteType = { 
+		name = "GFX_news_event_no_more_london_restriction"
+		texturefile = "gfx/event_pictures/news_event_no_more_london_restriction.png"
+	}
+	spriteType = { 
+		name = "GFX_news_event_spanish_civil_war_occured"
+		texturefile = "gfx/event_pictures/news_event_spanish_civil_war_occured.png"
+	}
+	spriteType = { 
+		name = "GFX_news_event_feburary_korea_incident"
+		texturefile = "gfx/event_pictures/news_event_feburary_korea_incident.png"
+	}
+	spriteType = { 
+		name = "GFX_news_event_japanese_revolution_ends"
+		texturefile = "gfx/event_pictures/news_event_japanese_revolution_ends.png"
+	}
+	spriteType = { 
+		name = "GFX_news_event_annexation_of_baltics"
+		texturefile = "gfx/event_pictures/news_event_annexation_of_baltics.png"
+	}
+	spriteType = { 
+		name = "GFX_news_event_partition_of_poland"
+		texturefile = "gfx/event_pictures/news_event_partition_of_poland.png"
+	}
+	spriteType = { 
+		name = "GFX_news_event_italy_joins_the_war"
+		texturefile = "gfx/event_pictures/news_event_italy_joins_the_war.png"
+	}
+	spriteType = { 
+		name = "GFX_news_event_surrender_of_france"
+		texturefile = "gfx/event_pictures/news_event_surrender_of_france.png"
+	}
+	spriteType = { 
+		name = "GFX_news_event_battle_of_britain"
+		texturefile = "gfx/event_pictures/news_event_battle_of_britain.png"
+	}
+	spriteType = { 
+		name = "GFX_news_event_romania_joins_axis"
+		texturefile = "gfx/event_pictures/news_event_romania_joins_axis.png"
+	}
+	spriteType = { 
+		name = "GFX_news_event_italy_attacks_greece"
+		texturefile = "gfx/event_pictures/news_event_italy_attacks_greece.png"
+	}
+	spriteType = { 
+		name = "GFX_news_event_germany_attacks_yugolsavia"
+		texturefile = "gfx/event_pictures/news_event_germany_attacks_yugolsavia.png"
+	}
+	spriteType = { 
+		name = "GFX_news_event_germany_attacks_yugolsavia"
+		texturefile = "gfx/event_pictures/news_event_germany_attacks_yugolsavia.png"
+	}
+	spriteType = { 
+		name = "GFX_news_event_germany_attacks_ussr"
+		texturefile = "gfx/event_pictures/news_event_germany_attacks_ussr.png"
+	}
+	spriteType = { 
+		name = "GFX_news_event_lendlease_act"
+		texturefile = "gfx/event_pictures/news_event_lendlease_act.png"
+	}
+	spriteType = { 
+		name = "GFX_news_event_division_of_germany"
+		texturefile = "gfx/event_pictures/news_event_division_of_germany.png"
+	}
+	spriteType = { 
+		name = "GFX_news_event_unscresolution83"
+		texturefile = "gfx/event_pictures/news_event_unscresolution83.png"
+	}
+	spriteType = { 
+		name = "GFX_news_event_anti_commintern_pact"
+		texturefile = "gfx/event_pictures/news_event_anti_commintern_pact.png"
+	}
+	spriteType = { 
+		name = "GFX_news_event_bulgaria_joins_axis"
+		texturefile = "gfx/event_pictures/news_event_bulgaria_joins_axis.png"
+	}
+	spriteType = { 
+		name = "GFX_news_event_formation_of_nato"
+		texturefile = "gfx/event_pictures/news_event_formation_of_nato.png"
+	}
+	spriteType = { 
+		name = "GFX_news_event_yalta_conference"
+		texturefile = "gfx/event_pictures/news_event_yalta_conference.png"
+	}
+	spriteType = { 
+		name = "GFX_news_event_marshall_plan"
+		texturefile = "gfx/event_pictures/news_event_marshall_plan.png"
+	}
+	spriteType = { 
+		name = "GFX_news_event_germany_attacks_czech"
+		texturefile = "gfx/event_pictures/news_event_germany_attacks_czech.png"
+	}
+	spriteType = { 
+		name = "GFX_news_event_marshall_plan"
+		texturefile = "gfx/event_pictures/news_event_marshall_plan.png"
+	}
+	spriteType = { 
+		name = "GFX_news_event_formation_of_wto"
+		texturefile = "gfx/event_pictures/news_event_formation_of_wto.png"
+	}
+	spriteType = { 
+		name = "GFX_news_event_treaty_of_brussel"
+		texturefile = "gfx/event_pictures/news_event_treaty_of_brussel.png"
+	}
+	spriteType = { 
+		name = "GFX_news_event_korea_japan_war"
+		texturefile = "gfx/event_pictures/news_event_korea_japan_war.png"
+	}
+	spriteType = { 
+		name = "GFX_news_event_potsdam_conference"
+		texturefile = "gfx/event_pictures/news_event_potsdam_conference.png"
+	}
+	spriteType = { 
+		name = "GFX_news_event_pearl_harbor"
+		texturefile = "gfx/event_pictures/news_event_pearl_harbor.png"
+	}
+	spriteType = { 
+		name = "GFX_news_event_gaw_yichin"
+		texturefile = "gfx/event_pictures/news_event_gaw_yichin.png"
+	}
+	spriteType = { 
+		name = "GFX_news_event_korean_redstrike"
+		texturefile = "gfx/event_pictures/news_event_korean_redstrike.png"
+	}
+	spriteType = { 
+		name = "GFX_news_event_imperial_korea"
+		texturefile = "gfx/event_pictures/news_event_imperial_korea.png"
+	}
+	spriteType = { 
 		name = "GFX_event_korea_event_idolt"
 		texturefile = "gfx/event_pictures/event_korea_idolt.png"
+	}
+	spriteType = { 
+		name = "GFX_event_japan_1052"
+		texturefile = "gfx/event_pictures/event_japan_1052.png"
+	}
+	spriteType = { 
+		name = "GFX_event_japan_1061"
+		texturefile = "gfx/event_pictures/event_japan_1061.png"
+	}
+	spriteType = { 
+		name = "GFX_event_japan_1062"
+		texturefile = "gfx/event_pictures/event_japan_1062.png"
+	}
+	spriteType = { 
+		name = "GFX_event_japan_1063"
+		texturefile = "gfx/event_pictures/event_japan_1063.png"
+	}
+	spriteType = { 
+		name = "GFX_event_japan_1064"
+		texturefile = "gfx/event_pictures/event_japan_1064.png"
+	}
+	spriteType = { 
+		name = "GFX_event_japan_americans"
+		texturefile = "gfx/event_pictures/event_japan_americans.png"
+	}
+	spriteType = { 
+		name = "GFX_event_japan_wakayama"
+		texturefile = "gfx/event_pictures/event_japan_wakayama.png"
+	}
+	spriteType = { 
+		name = "GFX_event_korea_Gap_event_1"
+		texturefile = "gfx/event_pictures/event_korea_Gap_event_1.png"
 	}
 }	

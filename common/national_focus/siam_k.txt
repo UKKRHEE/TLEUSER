@@ -65,13 +65,15 @@
 		icon = GFX_goal_sia_rat
 		x = 20
 		y = 4
-		cost = 5
+		cost = 1
 		prerequisite = { 
 			focus = ksi_2
 			focus = ksi_3
 		}
 		available = {
-			has_war = no
+			SIA = {
+				exists = no
+			}
 		}
 		
 		search_filters = {  FOCUS_FILTER_POLITICAL }

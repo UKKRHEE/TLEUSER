@@ -1,5 +1,22 @@
 ideas = {
 	hidden_ideas = {
+		JAP_kks_ai_fail_idea = {
+			picture = generic_morale_bonus
+			modifier = {
+				army_morale_factor = -0.2
+				army_core_attack_factor = -0.2
+				army_core_defence_factor = -0.3
+				surrender_limit = -0.2
+				war_support_factor = -0.3
+			}
+			targeted_modifier = {
+                tag = KOR
+				attack_bonus_against = -0.3
+			}
+			rule = { 
+				can_join_factions = no
+			}
+		}
 		JAP_AI_WAR_BONUS_IDEA_HID = {
 			picture = generic_morale_bonus
 			modifier = {
@@ -1695,7 +1712,7 @@ ideas = {
 				OR = { original_tag = JAP original_tag = DKG }
 			}
 			available = {
-				has_completed_focus = JAP_new_army
+				has_completed_focus = JAP_military
 			}
 			
 			research_bonus = {
@@ -1711,7 +1728,7 @@ ideas = {
 				OR = { original_tag = JAP original_tag = DKG }
 			}
 			available = {
-				has_completed_focus = JAP_new_army
+				has_completed_focus = JAP_military
 			}
 						
 			research_bonus = {
@@ -1733,7 +1750,7 @@ ideas = {
 				OR = { original_tag = JAP original_tag = DKG }
 			}
 			available = {
-				has_completed_focus = JAP_tanks
+				has_completed_focus = JAP_military
 			}
 				
 			research_bonus = {
@@ -2262,7 +2279,7 @@ ideas = {
 			traits = {
 				tenno_heikka
 			}
-			picture = JAP_showa_hirohito
+			picture = JAP_showa_hirohito_2
 		}
 		JAP_showa_hirohito = {
 			allowed = {
@@ -2712,6 +2729,33 @@ ideas = {
 		}
 
 
+		JAP_war_of_yashima_focus8 = {
+			
+			allowed = {
+				original_tag = JAP
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			cancel = {
+				JAP = {
+					has_war = no
+				}
+			}
+
+			removal_cost = -1
+
+			picture = generic_intel_bonus
+			
+			modifier = {
+				army_core_attack_factor = 0.5
+				army_core_defence_factor = 0.1 
+			}
+		}
+		
 		JAP_warriors = {
 			
 			allowed = {
@@ -2722,6 +2766,12 @@ ideas = {
 			allowed_civil_war = {
 				always = no
 			}
+			
+			cancel = {
+				JAP = {
+					has_war = no
+				}
+			}
 
 			removal_cost = -1
 
@@ -2730,6 +2780,33 @@ ideas = {
 			modifier = {
 			    army_attack_factor = 0.1
 			    army_defence_factor = 0.1 
+			}
+		}
+		
+		JAP_war_of_yashima_focus9 = {
+			
+			allowed = {
+				original_tag = JAP
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			cancel = {
+				JAP = {
+					has_war = no
+				}
+			}
+
+			removal_cost = -1
+
+			picture = generic_intel_bonus
+			
+			modifier = {
+				army_org_regain = 0.1
+				breakthrough_factor = 0.1
 			}
 		}
 

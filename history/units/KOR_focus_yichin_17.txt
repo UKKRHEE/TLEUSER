@@ -1,0 +1,5 @@
+﻿
+focus = {
+    current = "KOR_yi_chin_newfocus_17"
+    Progress = 0
+}   

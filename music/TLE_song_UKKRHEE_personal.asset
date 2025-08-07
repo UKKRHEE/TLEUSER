@@ -10,6 +10,7 @@ music = {
 music = {
 	name = "kyu_kurarin"
 	file = "UKKRHEE_personal/kyu_kurarin.ogg"
+	volume = 2
 }
 music = {
 	name = "shukusen_lolikami_requiem"
@@ -18,6 +19,10 @@ music = {
 music = {
 	name = "ui_mugibatake_de_tsukamaete"
 	file = "UKKRHEE_personal/ui_mugibatake_de_tsukamaete.ogg"
+}
+music = {
+	name = "uikousen"
+	file = "UKKRHEE_personal/uikousen.ogg"
 }
 music = {
 	name = "dadadada_tenshi"
@@ -90,4 +95,17 @@ music = {
 music = {
 	name = "yain"
 	file = "UKKRHEE_personal/yain.ogg"
+}
+music = {
+	name = "springofmylife"
+	file = "UKKRHEE_personal/springofmylife.ogg"
+}
+music = {
+	name = "retry_now"
+	file = "UKKRHEE_personal/retry_now.ogg"
+	volume = 1.5
+}
+music = {
+	name = "rude_buster"
+	file = "UKKRHEE_personal/rude_buster.ogg"
 }

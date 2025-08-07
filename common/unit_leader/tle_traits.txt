@@ -53,7 +53,7 @@ leader_traits = {
 			always = no # not gainable
 		}
 		non_shared_modifier = {
-			promote_cost_factor = 4
+			promote_cost_factor = 10
 		}
 		allowed = {
 			FROM = {
@@ -74,7 +74,7 @@ leader_traits = {
 			always = no # not gainable
 		}
 		non_shared_modifier = {
-			promote_cost_factor = 4
+			promote_cost_factor = 10
 		}
 		allowed = {
 			FROM = {
@@ -95,7 +95,7 @@ leader_traits = {
 			always = no # not gainable
 		}
 		non_shared_modifier = {
-			promote_cost_factor = 4
+			promote_cost_factor = 10
 		}
 		allowed = {
 			FROM = {
@@ -107,6 +107,36 @@ leader_traits = {
 		}
 		new_commander_weight = {
 			factor = 0
+		}
+	}
+	KOR_KORCP = { 
+		type = all
+		trait_type = personality_trait
+		gain_xp = {
+			always = no # not gainable
+		}
+		allowed = {
+			FROM = {
+				tag = KOR
+			}
+		}
+		field_marshal_modifier = {
+			promote_cost_factor = 10
+			max_commander_army_size = -12
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		new_commander_weight = {
+			factor = 0
+			modifier = {
+				factor = 1000
+				FROM = {
+					tag = KOR
+				}
+				has_country_flag = TLE_STATE_OF_KOREA
+			}
 		}
 	}
 	
@@ -144,7 +174,7 @@ leader_traits = {
 			always = no # not gainable
 		}
 		non_shared_modifier = {
-			promote_cost_factor = 4
+			promote_cost_factor = 10
 		}
 		allowed = {
 			FROM = {
@@ -166,7 +196,7 @@ leader_traits = {
 			always = no # not gainable
 		}
 		non_shared_modifier = {
-			promote_cost_factor = 4
+			promote_cost_factor = 10
 		}
 		allowed = {
 			FROM = {
@@ -187,7 +217,7 @@ leader_traits = {
 			always = no # not gainable
 		}
 		non_shared_modifier = {
-			promote_cost_factor = 4
+			promote_cost_factor = 10
 		}
 		allowed = {
 			FROM = {

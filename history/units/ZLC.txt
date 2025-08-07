@@ -274,7 +274,7 @@ units = {
 		start_equipment_factor = 0.65
 	}
 	division = {
-		location = 9776
+		location = 6904
 		division_template = "Zhili Infantry Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.65

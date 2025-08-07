@@ -55,14 +55,36 @@ CHI_beifa_timeout = {
 			if = {
 				limit = {
 					original_tag = CHI
+					has_global_flag = TLE_THE_GREAT_RETREAT
+				}
+				custom_effect_tooltip = TLE_TOOLTIP_BEIFA_SUCCED
+				TLE_chinese_war_ending_kmt_win = yes
+			}
+			if = {
+				limit = {
+					original_tag = CHI
+					NOT = {
+						has_global_flag = TLE_THE_GREAT_RETREAT
+					}
 				}
 				custom_effect_tooltip = TLE_TOOLTIP_BEIFA_FAILED
+				TLE_chinese_war_ending_wp = yes
 			}
 			if = {
 				limit = {
 					original_tag = ZLC
+					has_global_flag = TLE_THE_GREAT_RETREAT
 				}
-				custom_effect_tooltip = TLE_TOOLTIP_BEIFA_FAILED_ZLC
+				custom_effect_tooltip = TLE_TOOLTIP_BEIFA_SUCCED_ZLC
+			}
+			if = {
+				limit = {
+					original_tag = ZLC
+					NOT = {
+						has_global_flag = TLE_THE_GREAT_RETREAT
+					}
+				}
+				custom_effect_tooltip = TLE_TOOLTIP_BEIFA_SUCCED
 			}
 			if = {
 				limit = {
@@ -71,10 +93,23 @@ CHI_beifa_timeout = {
 						original_tag = ZLC
 						original_tag = CHI
 					}
+					has_global_flag = TLE_THE_GREAT_RETREAT
 				}
 				custom_effect_tooltip = TLE_TOOLTIP_BEIFA_FAILED
 			}
-			TLE_chinese_war_ending_wp = yes
+			if = {
+				limit = {
+					is_chinese_clique = yes
+					NOT = {
+						original_tag = ZLC
+						original_tag = CHI
+					}
+					NOT = {
+						has_global_flag = TLE_THE_GREAT_RETREAT
+					}
+				}
+				custom_effect_tooltip = TLE_TOOLTIP_BEIFA_FAILED
+			}
 		}
 	}
 	CHI_plan_2nd_beifa_time_usa_attack = {
@@ -122,15 +157,23 @@ CHI_plan_2nd_beifa = {
 			}
 			if = {
 				limit = {
-					is_ai = yes
+					NOT = {
+						has_game_rule = {
+							rule = TLE_CHINESE_CIVIL_WAR_RULE
+							option = TLE_CHINESE_CIVIL_WAR_RULE_49
+						}
+					}
 				}
-				date > 1949.12.31
+				date > 1946.11.12
 			}
 			if = {
 				limit = {
-					is_ai = no
+					has_game_rule = {
+						rule = TLE_CHINESE_CIVIL_WAR_RULE
+						option = TLE_CHINESE_CIVIL_WAR_RULE_49
+					}
 				}
-				date > 1949.12.31
+				date > 1949.11.12
 			}
 			NOT = {
 				has_war_with = KOR
@@ -508,6 +551,9 @@ economy_decisions = {
 				tag = YUN
 				tag = SHX
 				tag = XSM
+				tag = TNG
+				tag = NXM
+				tag = GXM
 				tag = SIK
 				tag = SND
 				tag = ZLC

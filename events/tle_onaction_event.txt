@@ -552,22 +552,37 @@ country_event = {
                 has_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
             }
         }
-        KOR = {
-            NOT = {
-                has_war_with = ZLC
-                has_war_with = CHI
-            }
-        }
-        CHI = {
-            NOT = {
-                has_war_with = ZLC
-            }
-        }
+		OR = {
+			AND = {
+				KOR = {
+					NOT = {
+						has_war_with = ZLC
+						has_war_with = CHI
+					}
+				}
+				CHI = {
+					NOT = {
+						has_war_with = ZLC
+					}
+				}
+			}
+			has_game_rule = {
+				rule = TLE_KOREA_HARDCORE_RULE
+				option = TLE_SOLIGHT
+			}
+		}
 	}
 	
 	option = { #
 		name = tle_onaction.1.a
         every_state = {
+			limit = {
+				OR = {
+					has_dynamic_modifier = { modifier = CHI_defence_the_korea }
+					has_dynamic_modifier = { modifier = CHI_defence_the_korea_2 }
+					has_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
+				}
+			}
 			remove_dynamic_modifier = { modifier = CHI_defence_the_korea }
 			remove_dynamic_modifier = { modifier = CHI_defence_the_korea_2 }
 			remove_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
@@ -1042,6 +1057,9 @@ country_event = {
 		NOT = {
 			has_global_flag = TLE_KOREA_IS_DEFEATED
 		}
+		NOT = {
+			has_country_flag = FLAG_YICHIN_ROUTE
+		}
     }
 	option = { #
 		name = tle_onaction.1.a
@@ -1072,16 +1090,21 @@ country_event = {
 	fire_only_once = yes
 	
     trigger = {
-        always = no
-    }
+        #always = no
+		has_country_flag = TLE_germany_union_defeat_red
+		date > 1946.3.1
+		tag = SOV
+		DDR = {
+			exists = yes
+		}
+		AS1 = {
+			exists = yes
+		}
+	}
 	option = { #
 		name = tle_onaction.1.a
-        KOR = {
-			set_country_flag = FLAG_EVENT_KOREA_275_TRIGGER
-			country_event = {
-				id = korea.275
-			}
-		}
+        TLE_REDORDER_germany_annex_austria_effect = yes
+        TLE_REDORDER_reds_color_effect = yes
     }
 }
 country_event = {
@@ -1639,12 +1662,17 @@ country_event = {
                 has_cosmetic_tag = MAN_GHQ
 		    }	
 	    }
-        has_global_flag = TLE_germany_union_defeat
         NOT = {
             has_global_flag = TLE_manchuria_doklip
 	    }
 		has_global_flag = TLE_CHINESE_CIVIL_WAR
+		NOT = {
+			has_global_flag = TLE_CHINESE_WAR_ZLC
+		}
     }
+	mean_time_to_happen = {
+		days = 7
+	}
 	option = { #
 		name = tle_onaction.1.a
         set_global_flag = TLE_manchuria_doklip
@@ -3374,6 +3402,9 @@ country_event = {
 	fire_only_once = yes
 	
     trigger = {
+		NOT = {
+			has_global_flag = SOV_will_eventually_win
+		}
         is_historical_focus_on = yes
         GER = {
             is_ai = yes
@@ -3923,6 +3954,12 @@ country_event = {
 			has_global_flag = TLE_germany_union_defeat
 			has_global_flag = TLE_KOREA_IS_DEFEATED
 		}
+		NOT = {
+            has_game_rule = {
+                rule = TLE_KOREA_HARDCORE_RULE
+                option = TLE_SOLIGHT
+		    }
+		}
     }	
 	option = { #
 		name = tle_onaction.1.a
@@ -3990,6 +4027,11 @@ country_event = {
 				option = TLE_SOLIGHT
 			}	
 		}	
+		NOT = {
+			KOR = {
+				has_country_flag = FLAG_YICHIN_ROUTE
+			}
+		}
     }	
 	option = { #
 		name = tle_onaction.1.a
@@ -4625,7 +4667,6 @@ country_event = {
             has_war = yes
             NOT = {
                 has_country_flag = TLE_THE_WAR_IS_ENDED
-				has_country_flag = TLE_KOR_WIN_IN_CHINA_FUCKYEAH
 		    }
             OR = {
                 has_war_with = USA
@@ -4982,6 +5023,12 @@ country_event = {
 	option = { #
 		name = tle_onaction.1.a
 		XSM = {
+			set_major = yes
+		}
+		GXM = {
+			set_major = yes
+		}
+		NXM = {
 			set_major = yes
 		}
 		XKC = {
@@ -5357,6 +5404,7 @@ country_event = {
 						has_country_flag = FLAG_DEC_CLEAR_EMBARGO
 						has_country_flag = won_in_china
 						has_country_flag = FLAG_THE_RULING_CHINA
+						has_country_flag = FLAG_YICHIN_ROUTE
 					}
 				}
 			}
@@ -5875,6 +5923,8 @@ country_event = {
             tag = YUN
             tag = SHX
             tag = XSM
+            tag = GXM
+            tag = NXM
             tag = SIK
             tag = WZC
             tag = SND
@@ -6007,6 +6057,8 @@ country_event = {
             original_tag = SND
             original_tag = HNC
             original_tag = XSM
+            original_tag = GXM
+            original_tag = NXM
             original_tag = SHX
             original_tag = PRC
             original_tag = SZC
@@ -6097,6 +6149,14 @@ country_event = {
 			}
 			annex_country = {
 				target = XSM
+				transfer_troops = yes
+			}
+			annex_country = {
+				target = GXM
+				transfer_troops = yes
+			}
+			annex_country = {
+				target = NXM
 				transfer_troops = yes
 			}
 		}
@@ -6320,6 +6380,9 @@ country_event = {
 				}
 		    }
 	    }
+		NOT = {
+			has_global_flag = GLOB_YICHIN_6TH_KOR_WIN
+		}
         is_ai = yes
     }
 	option = { #
@@ -7536,46 +7599,43 @@ country_event = {
 	fire_only_once = yes
 		
 	trigger = {
-		OR = {
-			AND = {
-				OR = {
-					CHI = {
-						exists = yes
-					}
-					ZLC = {
-						exists = yes
-					}
+		AND = {
+			OR = {
+				CHI = {
+					exists = yes
 				}
-				has_global_flag = GB_5th_sino_korean_war_korea
-				NOT = {
-					KOR = {
-						has_country_flag = TLE_THE_WAR_IS_ENDED
-					}
+				ZLC = {
+					exists = yes
 				}
 			}
-			KOR = {
-				has_war_with = CHI
-				has_war_with = ZLC
-				is_ai = yes
-				controls_state = 1046
-				controls_state = 1036
-				controls_state = 605 
-				controls_state = 1048 
-				controls_state = 608
-				controls_state = 613
-				controls_state = 615
-				controls_state = 1057
-				controls_state = 607
-				controls_state = 602
-				controls_state = 325
+			has_global_flag = GB_5th_sino_korean_war_korea
+			NOT = {
+				KOR = {
+					has_country_flag = TLE_THE_WAR_IS_ENDED
+				}
 			}
+		}
+		KOR = {
+			has_war_with = CHI
+			has_war_with = ZLC
+			is_ai = yes
+			controls_state = 1046
+			controls_state = 1036
+			controls_state = 605 
+			controls_state = 1048 
+			controls_state = 608
+			controls_state = 613
+			controls_state = 615
+			controls_state = 1057
+			controls_state = 607
+			controls_state = 602
+			controls_state = 1136
+			controls_state = 325
 		}
 	}
 	option = {
 		name = tle_onaction.1.a
 		KOR = {
-			annex_country = ZLC
-			annex_country = CHI
 			KOR_china_annex_effect = yes
 		}
 	}
@@ -7822,6 +7882,9 @@ country_event = {
 		has_country_flag = FLAG_KOR_FASCIST_ROUTE
 		has_country_flag = FLAG_FASCIST_ROUTE_NKYP_ALL_1941
 		date > 1944.9.10
+		NOT = {
+			has_country_flag = FLAG_YICHIN_ROUTE
+		}
 	}
 	
 	fire_only_once = yes
@@ -7961,7 +8024,7 @@ country_event = {
 	    }
         SOV = {
             is_ai = yes
-			surrender_progress > 0.40
+			surrender_progress > 0.45
 		}
     }
 	option = { #
@@ -8374,6 +8437,7 @@ country_event = {
 				}
 				controls_state = 597
 				controls_state = 614
+				controls_state = 1137
 				controls_state = 608
 			}
 		}
@@ -8411,6 +8475,7 @@ country_event = {
 				controls_state = 597
 				controls_state = 614
 				controls_state = 608
+				controls_state = 1137
 			}
 		}
 	}
@@ -8477,6 +8542,8 @@ country_event = {
 			add_to_faction = SCC
 			add_to_faction = XKC
 			add_to_faction = XSM
+			add_to_faction = GXM
+			add_to_faction = NXM
 			add_to_faction = YUN
 			add_to_faction = GZC
 		}
@@ -9499,6 +9566,9 @@ country_event = {
 		KOR = {
 			has_country_flag = FLAG_KOR_DEMOCRACY_ROUTE
 		}
+		GER = {
+			has_idea = TLE_GER_WIN_IDEA
+		}
 	}
 	mean_time_to_happen = {
 		days = 1
@@ -9772,6 +9842,917 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = tle_onaction.307 #
+	title = tle_onaction.1.title
+	desc = tle_onaction.1.desc
+	picture = GFX_event_korea_777
+	
+	hidden = yes
+	fire_only_once = yes	
+	trigger = {
+		any_country = {
+			has_country_flag = KOR_CPS_member
+		}
+		KOR = {
+			has_country_flag = TLE_THE_WAR_IS_ENDED
+		}
+	}
+	option = {
+		name = tle_onaction.1.a
+		every_country = {
+			limit = {
+				has_country_flag = KOR_CPS_member
+			}
+			leave_economic_sphere = yes
+		}
+		KOR = {			
+			dismantle_economic_sphere = yes
+		}
+	}
+}
+
+country_event = {
+	id = tle_onaction.308 #
+	title = tle_onaction.1.title
+	desc = tle_onaction.1.desc
+	picture = GFX_event_korea_777
+	
+	hidden = yes
+	trigger = {
+		has_global_flag = TLE_germany_union_defeat
+		HUN = {
+			owns_state = 764
+		}
+	}
+	option = {
+		name = tle_onaction.1.a
+		YUG = {
+			transfer_state = 764
+		}
+	}
+}
+country_event = {
+	id = tle_onaction.309
+	title = tle_onaction.1.title
+	desc = tle_onaction.1.desc
+	picture = GFX_event_korea_777
+	
+	hidden = yes
+	
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+    trigger = {
+		has_global_flag = TLE_germany_union_defeat_red
+		CHI = {
+			has_war_with = ZLC
+		}
+	}
+	option = { #
+		name = tle_onaction.1.a
+		CHI = {
+			add_ideas = CHI_the_attack_of_clique_2
+		}
+    }
+}
+country_event = {
+	id = tle_onaction.310
+	title = tle_onaction.1.title
+	desc = tle_onaction.1.desc
+	picture = GFX_event_korea_777
+	
+	hidden = yes
+	
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+    trigger = {
+		has_global_flag = TLE_CHINESE_CIVIL_WAR
+		ZLC = {
+			controls_state = 524
+			surrender_progress > 0.7
+		}
+		CHI = {
+			has_war_with = ZLC
+			controls_state = 608
+			controls_state = 605
+		}
+	}
+	option = { #
+		name = tle_onaction.1.a
+		set_global_flag = TLE_THE_GREAT_RETREAT
+		news_event = {
+			id = eok_news.111
+		}
+		TWC = {
+			transfer_state = 524
+			add_state_core = 524
+		}
+		every_state = {
+			limit = {
+				is_core_of = ZLC
+			}
+			remove_core_of = ZLC
+		}
+		every_state = {
+			limit = {
+				is_claimed_by = ZLC
+			}
+			remove_claim_by = ZLC
+		}
+    }
+}
+country_event = {
+	id = tle_onaction.311
+	title = tle_onaction.1.title
+	desc = tle_onaction.1.desc
+	picture = GFX_event_korea_777
+	
+	hidden = yes
+	
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+    trigger = {
+		tag = USA
+		has_war_with = GER
+		any_state = {
+			is_core_of = GER
+			OR = {
+				is_fully_controlled_by = HOL
+				is_fully_controlled_by = BEL
+				is_fully_controlled_by = LUX
+				is_fully_controlled_by = SWI
+			}
+			NOT = {
+				is_core_of = HOL
+				is_core_of = BEL
+				is_core_of = LUX
+				is_core_of = SWI
+			}
+		}
+		
+	}
+	option = { #
+		name = tle_onaction.1.a
+		every_state = {
+			limit = {
+				is_core_of = GER
+				OR = {
+					is_fully_controlled_by = HOL
+					is_fully_controlled_by = BEL
+					is_fully_controlled_by = LUX
+					is_fully_controlled_by = SWI
+				}
+				NOT = {
+					is_core_of = HOL
+					is_core_of = BEL
+					is_core_of = LUX
+					is_core_of = SWI
+				}
+			}
+			set_state_controller_to = USA
+		}
+    }
+}
+country_event = {
+	id = tle_onaction.312
+	title = tle_onaction.1.title
+	desc = tle_onaction.1.desc
+	picture = GFX_event_korea_777
+	
+	hidden = yes
+	
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+    trigger = {
+		tag = FRA
+		has_global_flag = USA_normandy_excuted
+		any_country = {
+			limit = {
+				original_tag = FRA
+				NOT = {
+					tag = FRA
+				}
+				has_cosmetic_tag = FRA_VICHY
+			}
+			exists = yes
+		}
+	}
+	immediate = {
+		every_country = {
+			limit = {
+				original_tag = FRA
+				NOT = {
+					tag = FRA
+				}
+				has_cosmetic_tag = FRA_VICHY
+			}
+			save_event_target_as = vichy_france
+		}
+	}
+	option = { #
+		name = tle_onaction.1.a
+		set_global_flag = show_peace_popup_alert
+		
+		FRA = {
+			save_global_event_target_as = winning_country
+		}
+		event_target:vichy_france = {
+			save_global_event_target_as = losing_country
+		}
+		add_to_variable = { global.peace_popup_dirty = 1 }
+		
+		log = "war_won"
+		set_global_flag = war_won
+		
+		FRA = {
+			annex_country = {
+				target = event_target:vichy_france
+				transfer_troops = yes
+			}
+		}
+		
+    }
+}
+country_event = {
+	id = tle_onaction.313
+	title = tle_onaction.1.title
+	desc = tle_onaction.1.desc
+	picture = GFX_event_korea_777
+	
+	hidden = yes
+	
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+    trigger = {
+		tag = ZLC
+		KOR = {
+			has_country_flag = TLE_THE_WAR_IS_ENDED
+		}
+		has_war_with = CHI
+		CHI = {
+			controls_state = 606
+			controls_state = 1138
+		}
+		ZLC = {
+			is_ai = yes
+		}
+		CHI = {
+			is_ai = yes
+		}
+	}
+	option = { #
+		name = tle_onaction.1.a
+		ZLC = {
+			add_ideas = ZLC_the_attack_of_clique_2
+		}
+		country_event = {
+			id = tle_onaction.314
+		}
+		CHI = {
+			remove_ideas = CHI_the_attack_of_clique_2
+		}
+    }
+}
+
+country_event = {
+	id = tle_onaction.314
+	title = tle_onaction.1.title
+	desc = tle_onaction.1.desc
+	picture = GFX_event_korea_777
+	
+	hidden = yes
+	
+	is_triggered_only = yes
+	
+	fire_only_once = no
+	
+	option = { #
+		name = tle_onaction.1.a
+		trigger = {
+			NOT = { has_global_flag = TLE_CHINESE_WAR_END }
+		}
+		every_state = {
+			limit = {
+				OR = {
+					has_state_flag = zhili_province_state
+					has_state_flag = suiyuan_province_state
+					has_state_flag = chahar_province_state
+					has_state_flag = shanxi_province_state
+				}
+				NOT = {
+					state = 608
+					state = 1033
+				}
+				is_owned_by = ZLC
+			}
+			set_demilitarized_zone = yes
+			set_state_controller_to = ZLC
+		}
+		country_event = {
+			id = tle_onaction.315
+		}
+    }
+	option = { #
+		name = tle_onaction.1.a
+		trigger = {
+			has_global_flag = TLE_CHINESE_WAR_END
+		}
+		every_state = {
+			limit = {
+				OR = {
+					has_state_flag = zhili_province_state
+					has_state_flag = suiyuan_province_state
+					has_state_flag = chahar_province_state
+					has_state_flag = shanxi_province_state
+				}
+				NOT = {
+					state = 608
+					state = 1033
+				}
+				is_owned_by = ZLC
+			}
+			set_demilitarized_zone = no
+		}
+    }
+}
+country_event = {
+	id = tle_onaction.315
+	title = tle_onaction.1.title
+	desc = tle_onaction.1.desc
+	picture = GFX_event_korea_777
+	
+	hidden = yes
+	
+	is_triggered_only = yes
+	
+	fire_only_once = no
+	
+	option = { #
+		name = tle_onaction.1.a
+		trigger = {
+			NOT = { has_global_flag = TLE_CHINESE_WAR_END }
+		}
+		every_state = {
+			limit = {
+				OR = {
+					has_state_flag = zhili_province_state
+					has_state_flag = suiyuan_province_state
+					has_state_flag = chahar_province_state
+					has_state_flag = shanxi_province_state
+				}
+				NOT = {
+					state = 608
+					state = 1033
+				}
+				is_owned_by = ZLC
+			}
+			set_demilitarized_zone = yes
+			set_state_controller_to = ZLC
+		}
+		country_event = {
+			id = tle_onaction.314
+		}
+    }
+	option = { #
+		name = tle_onaction.1.a
+		trigger = {
+			has_global_flag = TLE_CHINESE_WAR_END
+		}
+		every_state = {
+			limit = {
+				OR = {
+					has_state_flag = zhili_province_state
+					has_state_flag = suiyuan_province_state
+					has_state_flag = chahar_province_state
+					has_state_flag = shanxi_province_state
+				}
+				NOT = {
+					state = 608
+					state = 1033
+				}
+				is_owned_by = ZLC
+			}
+			set_demilitarized_zone = no
+		}
+    }
+}
+country_event = {
+	id = tle_onaction.316
+	title = tle_onaction.1.title
+	desc = tle_onaction.1.desc
+	picture = GFX_event_korea_777
+		
+	is_triggered_only = yes
+	hidden = yes
+	fire_only_once = no
+	
+	option = { #
+		name = tle_onaction.1.a
+		country_event = {
+			id = tle_onaction.314
+		}
+    }
+}
+country_event = {
+	id = tle_onaction.317
+	title = tle_onaction.1.title
+	desc = tle_onaction.1.desc
+	picture = GFX_event_korea_777
+		
+	is_triggered_only = no
+	hidden = yes
+	fire_only_once = yes
+	trigger = {
+		tag = JAP
+		KOR = {
+			has_country_flag = TLE_THE_WAR_IS_ENDED
+		}
+	}
+	
+	option = { #
+		name = tle_onaction.1.a
+		every_state = {
+			limit = {
+				OR = {
+					is_core_of = DK1
+					is_core_of = DK2
+					is_core_of = DK3
+					is_core_of = DK4
+				}
+			}
+			remove_core_of = DK1
+			remove_core_of = DK2
+			remove_core_of = DK3
+			remove_core_of = DK4
+		}
+	}
+}
+country_event = {
+	id = tle_onaction.318
+	title = tle_onaction.1.title
+	desc = tle_onaction.1.desc
+	picture = GFX_event_korea_777
+		
+	is_triggered_only = yes
+	hidden = yes
+	fire_only_once = no
+	
+	option = { #
+		name = tle_onaction.1.a
+		every_state = {
+			limit = {
+				OR = {
+					is_owned_by = ZLC
+					is_owned_by = CHI
+					is_owned_by = TIB
+				}
+			}
+			set_demilitarized_zone = no
+		}
+		ZLC = {
+			transfer_state = 604
+		}
+    }
+}
+
+country_event = {
+	id = tle_onaction.319
+	title = tle_onaction.1.title
+	desc = tle_onaction.1.desc
+	picture = GFX_event_korea_777
+		
+	trigger = {
+		tag = ITA
+		has_global_flag = TLE_germany_union_defeat
+		NOT = {
+			has_global_flag = TLE_germany_union_defeat_red
+		}
+	}
+	hidden = yes
+	fire_only_once = no
+	
+	option = { #
+		name = tle_onaction.1.a
+		every_country = {
+			limit = {
+				owns_state = 115
+			}
+			transfer_state = 114
+		}
+    }
+}
+
+country_event = {
+	id = tle_onaction.320
+	title = tle_onaction.1.title
+	desc = tle_onaction.1.desc
+	picture = GFX_event_korea_777
+		
+	trigger = {
+		tag = RAJ
+		NOT = {
+			RAJ = {
+				is_puppet_of = ENG
+			}
+		}
+	}
+	hidden = yes
+	fire_only_once = no
+	
+	option = { #
+		name = tle_onaction.1.a
+		every_country = {
+			limit = {
+				owns_state = 659
+			}
+			transfer_state = 992
+		}
+    }
+}
+
+country_event = {
+	id = tle_onaction.321
+	title = tle_onaction.1.title
+	desc = tle_onaction.1.desc
+	picture = GFX_event_korea_777
+		
+	trigger = {
+		is_puppet_of = SOV
+		has_global_flag = TLE_germany_union_defeat
+		NOT = {
+			has_idea = SOV_communist_puppet
+		}
+	}
+	hidden = yes
+	fire_only_once = no
+	
+	option = { #
+		name = tle_onaction.1.a
+		add_ideas = SOV_communist_puppet
+    }
+}
+country_event = {
+	id = tle_onaction.322
+	title = tle_onaction.1.title
+	desc = tle_onaction.1.desc
+	picture = GFX_event_korea_777
+		
+	trigger = {
+		tag = JAP
+		KOR = {
+			NOT = { has_country_flag = FLAG_KOR_FASCIST_ROUTE }
+		}
+		USA = {
+			has_guaranteed = JAP
+		}
+	}
+	hidden = yes
+	fire_only_once = no
+	
+	option = { #
+		name = tle_onaction.1.a
+		USA = {
+			diplomatic_relation = {
+				country = JAP
+				relation = guarantee
+				active = no
+			}
+		}
+    }
+}
+country_event = {
+	id = tle_onaction.323
+	title = tle_onaction.1.title
+	desc = tle_onaction.1.desc
+	picture = GFX_event_korea_777
+		
+	trigger = {
+		tag = GER
+		date > 1944.1.1
+		has_war_with = SOV
+		NOT = {
+			KOR = {
+				has_country_flag = FLAG_KOR_DEMOCRACY_ROUTE
+			}
+		}
+		OR = {
+			has_game_rule = {
+				rule = TLE_GER_GREAT_RULE
+				option = TLE_GER_GREAT_RULE_GER_WIN
+			}
+			has_game_rule = {
+				rule = TLE_GER_GREAT_RULE
+				option = TLE_GER_GREAT_RULE_GER_WIN_TNO
+			}
+			has_global_flag = TLE_KOREA_WON
+		}
+	}
+	hidden = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = tle_onaction.1.a
+		GER = {
+			add_ideas = TLE_GER_WIN_IDEA
+		}
+		if = {
+			limit = {
+				SOV = {
+					has_idea = TLE_SOV_HISTORICAL_IDEA
+				}
+			}
+			SOV = {
+				remove_ideas = TLE_SOV_HISTORICAL_IDEA
+			}
+		}
+		if = {
+			limit = {
+				SOV = {
+					has_idea = SOV_the_defense_against_germany
+				}
+			}
+			SOV = {
+				remove_ideas = SOV_the_defense_against_germany
+			}
+		}
+		set_global_flag = SOV_will_eventually_win
+    }
+}
+country_event = {
+	id = tle_onaction.324
+	title = tle_onaction.1.title
+	desc = tle_onaction.1.desc
+	picture = GFX_event_korea_777
+	
+	hidden = yes
+		
+	trigger = {
+		tag = BHU
+		NOT = {
+			KOR = {
+				controls_state = 1036
+			}
+		}
+		any_country = {
+			controls_state = 1036
+			is_puppet = no
+			NOT = {
+				has_war_with = KOR
+				has_war_with = ZLC
+				has_war_with = CHI
+			}
+		}
+		date < 1942.1.1
+	}
+	option = {
+		name = tle_onaction.1.a
+		1036 = {
+			set_demilitarized_zone = yes
+		}
+	}
+}
+country_event = {
+	id = tle_onaction.325
+	title = tle_onaction.1.title
+	desc = tle_onaction.1.desc
+	picture = GFX_event_korea_777
+	
+	hidden = yes
+		
+	trigger = {
+		tag = BHU
+		ZLC = {
+			controls_state = 743
+			has_war = yes
+			NOT = {
+				has_war_with = KOR
+				has_war_with = CHI
+			}
+		}
+		date < 1942.1.1
+	}
+	option = {
+		name = tle_onaction.1.a
+		743 = {
+			set_demilitarized_zone = yes
+		}
+	}
+}
+country_event = {
+	id = tle_onaction.326
+	title = tle_onaction.1.title
+	desc = tle_onaction.1.desc
+	picture = GFX_event_korea_777
+	
+	hidden = yes
+	fire_only_once = yes
+	trigger = {
+		tag = SOV
+		GER = {
+			controls_state = 86
+			has_war_with = POL
+			has_government = fascism
+		}
+	}
+	option = {
+		name = tle_onaction.1.a
+		news_event = {
+			id = eok_news.81
+		}
+		SOV = {
+			transfer_state = 96
+			transfer_state = 89
+			transfer_state = 97
+			transfer_state = 1090
+			transfer_state = 94
+			transfer_state = 95
+			transfer_state = 93
+			transfer_state = 91
+			trasnfer_state = 89
+		}
+		LIT = {
+			transfer_state = 784
+			transfer_state = 1102
+		}
+	}
+}
+country_event = {
+	id = tle_onaction.327
+	title = tle_onaction.1.title
+	desc = tle_onaction.1.desc
+	picture = GFX_event_korea_777
+	
+	hidden = yes
+	fire_only_once = yes
+	trigger = {
+		tag = SOV
+		GER = {
+			controls_state = 10
+		}
+		SOV = {
+			controls_state = 91
+		}
+		POL = {
+			has_capitulated = yes
+		}
+	}
+	option = {
+		name = tle_onaction.1.a
+		news_event = {
+			id = news.33
+		}
+	}
+}
+country_event = {
+	id = tle_onaction.328
+	title = tle_onaction.1.title
+	desc = tle_onaction.1.desc
+	picture = GFX_event_korea_777
+	
+	hidden = yes
+	fire_only_once = yes
+	trigger = {
+		tag = ENG
+		ENG = {
+			is_faction_leader = yes
+		}
+		OR = {
+			ENG = {
+				is_in_faction_with = FRA
+			}
+			ENG = {
+				is_in_faction_with = USA
+			}
+		}
+	}
+	option = {
+		name = tle_onaction.1.a
+		ENG = {
+			set_faction_name = Allied_Powers
+		}
+		if = {
+			limit = {
+				GER = {
+					is_in_faction = no
+				}
+			}
+			GER = {
+				create_faction = Axis_Powers
+			}
+		}
+	}
+}
+country_event = {
+	id = tle_onaction.329
+	title = tle_onaction.1.title
+	desc = tle_onaction.1.desc
+	picture = GFX_event_korea_777
+	
+	hidden = yes
+	fire_only_once = yes
+	trigger = {
+		tag = SIK
+		date > 1937.1.5
+	}
+	option = {
+		name = tle_onaction.1.a
+		declare_war_on = {
+			target = TNG
+			type = annex_everything
+		}
+	}
+}
+country_event = {
+	id = tle_onaction.330
+	title = tle_onaction.1.title
+	desc = tle_onaction.1.desc
+	picture = GFX_event_korea_777
+	
+	hidden = yes
+	fire_only_once = yes
+	trigger = {
+		has_completed_focus = KOR_yi_chin_newfocus_36
+		has_completed_focus = KOR_yi_chin_newfocus_61
+		has_completed_focus = KOR_yi_chin_newfocus_52
+		has_global_flag = GLOB_YICHIN_END_FOCUS
+	}
+	option = {
+		name = tle_onaction.1.a
+		KOR = {
+			country_event = {
+				id = korea.542
+			}
+		}
+	}
+}
+country_event = {
+	id = tle_onaction.331 #낙일 업적
+	title = tle_onaction.1.title
+	desc = tle_onaction.1.desc
+	picture = GFX_event_korea_777
+	
+	hidden = yes
+	fire_only_once = yes
+	trigger = {
+		tag = KOR
+		has_country_flag = FLAG_KOR_FASCIST_ROUTE
+		NOT = {
+			has_country_flag = FLAG_YICHIN_ROUTE
+		}
+		JAP = {
+			exists = no
+		}
+	}
+	option = {
+		name = tle_onaction.1.a
+		KOR = {
+			country_event = {
+				id = japan.1200
+			}
+		}
+	}
+}
+country_event = {
+	id = tle_onaction.332
+	title = tle_onaction.1.title
+	desc = tle_onaction.1.desc
+	picture = GFX_event_korea_777
+	
+	hidden = yes
+	fire_only_once = yes
+	trigger = {
+		tag = USA
+		USA = {
+			has_war_with = GER
+		}
+		has_global_flag = USA_normandy_excuted
+		KOR = {
+			has_country_flag = FLAG_YICHIN_ROUTE
+		}
+		GER = {
+			surrender_progress > 0.05
+		}
+	}
+	option = {
+		name = tle_onaction.1.a
+		launch_nuke = {
+			province = 514
+			state = 65
+			controller = GER
+			use_nuke = yes
+		}
+	}
+}
 #################
 #################
 #################

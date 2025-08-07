@@ -1,0 +1,1 @@
+﻿recruit_character = MEX_yi_yul

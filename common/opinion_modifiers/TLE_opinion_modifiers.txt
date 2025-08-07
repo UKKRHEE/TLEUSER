@@ -38,5 +38,21 @@ opinion_modifiers = {
 	TLE_koreas_support = {
 		value = 25
 	}
+	
+	TLE_asian_friends = {
+		value = 20
+	}
+	
+	TLE_britain_you_cant_fuck_ireland = {
+		value = 75
+	}
+	
+	TLE_anti_germany_korea = {
+		value = -100
+	}
+	
+	TLE_they_deny_axis_power = {
+		value = 40
+	}
 
 } #end of modifiers	

@@ -5,6 +5,7 @@
  eokanthem:0 "대한제국 애국가"
  go_to_the_frontline:0 "전선을 간다"
  eokanthemvol_2:0 "대한제국 애국가 2"
+ kangmyung_yushins_song:0 "강명유신의 노래"
  KOR_National_anthem:0 "애국가"
  The_Torch_of_Eradicating_Communism:0 "멸공의 횃불"
  youthlife:0 "청춘"
@@ -31,6 +32,7 @@
  not_posted_letter_3:0 "부치지 않은 편지 - 이정열"
  mother_song:0 "어머니"
  yongjin_ga:0 "용진가"
+ singsingsing:0 "Sing Sing Sing"
 
  Seoul_Central_Radio_Station_1:0 "서울 중앙 방송국 라디오 방송 1"
  Seoul_Central_Radio_Station_2:0 "서울 중앙 방송국 라디오 방송 2"
@@ -129,6 +131,7 @@
  forget_me:0 "나를 잊어요"
  under_your_side:0 "너의 그늘 밑"
  i_dont_want_to_chainned:0 "구속받기 싫어"
+ narcissism_bluesky:0 "자아도취"
  
  #Original Music
  sakkijarven_polkka_TLE:0 "세키예르벤 폴카 (Säkkijärven Polkka)"
@@ -194,11 +197,12 @@
  TLE_SE_GREAT_ASIAN_WAR_ILSO:0 "슈퍼 이벤트 - 전선을 간다"
  TLE_SE_FIGHT_OF_QINHUANGDAO:0 "슈퍼 이벤트 - 용진가"
  TLE_SE_GREAT_ASIAN_WAR_DOSAN:0 "슈퍼 이벤트 - 하늘에서 500년을 다시 빌려"
+ TLE_SE_GREAT_ASIAN_WAR_YICHIN:0 "슈퍼 이벤트 - 탄호이저 서곡" 
  TLE_SE_CONSTITUTION_DOSAN:0 "슈퍼 이벤트 - 안창호 애국가"
  TLE_SE_JAPAN_ATTACK_ILSO:0 "슈퍼 이벤트 - 보병의 본령"
  TLE_SE_TIANMING_DIVIDE_ILSO:0 "슈퍼 이벤트 - 삼국지12 오나라 테마"
- TLE_SE_JAPAN_ATTACK_WOOSA:0 "슈퍼 이벤트 - 진노의 날(Dies irae)"
- TLE_SE_CHINA_ATTACK_WOOSA:0 "슈퍼 이벤트 - 진노의 날(Dies irae)" 
+ TLE_SE_JAPAN_ATTACK_WOOSA:0 "슈퍼 이벤트 - 베르디 레퀴엠: 진노의 날(Dies irae)"
+ TLE_SE_CHINA_ATTACK_WOOSA:0 "슈퍼 이벤트 - 베르디 레퀴엠: 경이로운 나팔소리(Tuba mirum)" 
 
  # japan radio
  japan_radio_TITLE:0 "대일본제국 대본영 라디오"
@@ -239,6 +243,7 @@
  donboh:0 "돈보"
  sunyeonga:0 "순연가"
  sakurasakura:0 "사쿠라"
+ ibbannokohikara:0 "한 잔의 커피로부터"
  independent_song_japan:0 "독립군가 (일어판)"
 
 
@@ -312,6 +317,7 @@
  kyu_kurarin:0 "두근 어질 - 이요와"
  shukusen_lolikami_requiem:0 "숙성!! 로리신 레퀴엠 - 시구레 우이(9세)"
  ui_mugibatake_de_tsukamaete:0 "우이밭의 파수꾼 - 시구레 우이"
+ uikousen:0 "UIKOUSEN - 시구레 우이"
  dadadada_tenshi:0 "다다다다천사 - 나나오 아카리"
  yeomra:0 "염라(Karma) - 달의 하루"
  flowering:0 "너로피어오라(Flowering) - 달의 하루"
@@ -324,9 +330,12 @@
  so_lovely:0 "사랑스러워 - 김종국"
  your_shampoo_scent_in_the_flowers:0 "흔들리는 꽃들 속 에서 네 샴푸 향이 느껴진 거야 - 장범준"
  rabbit_hole:0 "래빗 홀 - DECO*27"
+ retry_now:0 "지금 바로 윤회 - 나키소"
  sensensense:0 "전전전세 - 너의 이름은. OST"
  sparkle:0 "Sparkle - 너의 이름은. OST"
  aiai_ii:0 "아이아이ii - 허니츄러스"
  sangokuno_tenshino_tese:0 "잔혹한 천사의 테제 - 신세기 에반게리온 OST [Feat.JMSDF]"
  passport_please_victory:0 "Victory - 동무, 려권내라우 BGM"
  yain:0 "야인 - 강성"
+ springofmylife:0 "내생에 봄날은 - 캔"
+ rude_buster:0 "Rude Buster - TobyFox"

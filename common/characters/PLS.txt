@@ -1,0 +1,20 @@
+characters={
+	PLS_boleslaw_bierut={
+		name="PLS_boleslaw_bierut"
+		portraits={
+			civilian={
+				large="gfx/leaders/PLS/Portrait_PLS_boleslaw_bierut.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			id=-1
+		}
+		country_leader={
+			ideology=stalinism
+			traits={ }
+			id=-1
+		}
+	}
+}

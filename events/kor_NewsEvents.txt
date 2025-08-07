@@ -28,7 +28,7 @@ news_event = { #이강 집권
 	id = eok_news.2
 	title = eok_news.2.t
 	desc = eok_news.2.desc
-	picture = GFX_news_event_CHI_Shanghai_militarised
+	picture = GFX_news_event_feburary_korea_incident
 	
 	major = yes
 	
@@ -689,7 +689,7 @@ news_event = { #대한제국 승전
 	id = eok_news.14
 	title = eok_news.14.t
 	desc = eok_news.14.desc
-	picture = GFX_news_event_hun_otto2
+	picture = GFX_news_event_end_of_sinokoreanwar
 	
 	major = yes
 	
@@ -786,7 +786,7 @@ news_event = { #구주병합조약
 	id = eok_news.16
 	title = eok_news.16.t
 	desc = eok_news.16.desc
-	picture = GFX_news_event_olympics_moscow
+	picture = GFX_news_event_kyushu_annexation
 	
 	major = yes
 	
@@ -1144,7 +1144,7 @@ news_event = {
 	id = eok_news.23 #
 	title = eok_news.23.t
 	desc = eok_news.23.d
-	picture = GFX_news_event_001
+	picture = GFX_news_event_chinese_civil_war
 
 	is_triggered_only = yes
 
@@ -1419,7 +1419,7 @@ news_event = { #대한제국 승전
 	id = eok_news.31
 	title = eok_news.31.t
 	desc = eok_news.31.d
-	picture = GFX_news_event_041
+	picture = GFX_news_event_japanese_revolution_ends
 	
 	major = yes
 	
@@ -1838,17 +1838,10 @@ news_event = { #강명제를 향한 테러
 	option = {
 		name = eok_news.39.d
 		trigger = {
-			tag = KOR
-		}
-	}
-	option = {
-		name = eok_news.39.e
-		trigger = {
 			NOT = {
 				TAG = MON
 				TAG = MSR
 				TAG = SOV
-				TAG = KOR
 			}
 		}
 	}
@@ -2031,13 +2024,15 @@ news_event = {
 	}
 }
 news_event = {
-	id = eok_news.45 #북벌 성공
+	id = eok_news.45 #대아시아전쟁
 	title = eok_news.45.t
 	desc = eok_news.45.desc
 	picture = GFX_news_event_the_great_asian_war
 
 	is_triggered_only = yes
 	##fire_only_once = yes
+	
+	major = yes
 
 	option = {
 		name = eok_news.45.a
@@ -2999,4 +2994,1413 @@ news_event = {
 		}
 	}
 }
+news_event = { #큐슈사태
+	id = eok_news.71
+	title = eok_news.71.t
+	desc = eok_news.71.desc
+	picture = GFX_news_event_kyushu_incident
+	
+	major = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		set_global_flag = kyushu_incident
+	}
+	
+	option = {
+		name = eok_news.71.a
+	}
+}
+news_event = { #이라크의폐급짓
+	id = eok_news.72
+	title = eok_news.72.t
+	desc = eok_news.72.desc
+	picture = GFX_news_event_anglo_iraq_war
+	
+	major = yes
+	trigger = {
+		date > 1941.5.1
+		GER = {
+			has_war_with = ENG
+		}
+		NOT = { has_global_flag = news_event_anglo_iraq_war_flag }
+	}
+	
+	immediate = {
+		set_global_flag = news_event_anglo_iraq_war_flag
+		hidden_effect = {
+			ENG = {
+				puppet = IRQ
+			}
+			IRQ = {
+				set_cosmetic_tag = IRQ_UK
+				set_politics = { 
+					ruling_party = neutrality
+					last_election = "1936.11.26"
+					election_frequency = 48
+					elections_allowed = no
+				}
+				set_political_party = {
+					ideology = neutrality
+					popularity = 100
+				}
+				remove_ideas = IRQ_golden_square
+			}
+		}
+	}
+	
+	option = {
+		name = eok_news.72.a
+	}
+}
+news_event = { #열번의폐급짓
+	id = eok_news.73
+	title = eok_news.73.t
+	desc = eok_news.73.desc
+	picture = GFX_news_event_utsunomiya_battle
+	
+	major = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			TBJ = {
+				add_ideas = JAP_shogunate_lose
+			}
+		}
+	}
+	
+	option = {
+		name = eok_news.73.a
+		trigger = {
+			tag = JAP	
+		}
+	}
+	option = {
+		name = eok_news.73.b
+		trigger = {
+			tag = KOR	
+		}
+	}
+	option = {
+		trigger = {
+			NOT = {
+				OR = {
+					tag = JAP
+					tag = KOR
+				}
+			}
+		}
+		name = eok_news.73.c
+	}
+}
 
+news_event = { #아일랜드독립
+	id = eok_news.74
+	title = eok_news.74.t
+	desc = eok_news.74.desc
+	picture = GFX_news_event_irish_independence
+	
+	major = yes
+	trigger = {
+		date > 1937.12.28
+		NOT = { has_global_flag = news_event_irish_independence_flag }
+	}
+	
+	immediate = {
+		hidden_effect = {
+			IRE = {
+				leave_faction = yes
+				drop_cosmetic_tag = yes
+			}
+			ENG = {
+				add_opinion_modifier = {
+					target = IRE
+					modifier = TLE_britain_you_cant_fuck_ireland
+				}
+			}
+			set_global_flag = news_event_irish_independence_flag
+		}
+	}
+	
+	option = {
+		name = eok_news.74.a
+	}
+}
+news_event = { #조지5세사망
+	id = eok_news.75
+	title = eok_news.75.t
+	desc = eok_news.75.desc
+	picture = GFX_news_event_george_v_dead
+	major = yes
+	trigger = {
+		date > 1936.1.20
+		NOT = { has_global_flag = news_event_george_v_dead_flag }
+	}
+	
+	immediate = {
+		set_global_flag = news_event_george_v_dead_flag
+	}
+	
+	option = {
+		name = eok_news.75.a
+	}
+}
+news_event = { #양광사변
+	id = eok_news.76
+	title = eok_news.76.t
+	desc = eok_news.76.desc
+	picture = GFX_news_event_guangxi_attack
+	
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = eok_news.76.a
+	}
+}
+news_event = { #팔레스타인대봉기
+	id = eok_news.77
+	title = eok_news.77.t
+	desc = eok_news.77.desc
+	picture = GFX_news_event_hell_palestine
+	major = yes
+	trigger = {
+		date > 1936.4.18
+		NOT = { has_global_flag = news_event_hell_palestine_flag }
+	}
+	
+	immediate = {
+		set_global_flag = news_event_hell_palestine_flag
+	}
+	
+	option = {
+		name = eok_news.77.a
+	}
+}
+news_event = { #조지6세
+	id = eok_news.78
+	title = eok_news.78.t
+	desc = eok_news.78.desc
+	picture = GFX_news_event_george_vi
+	major = yes
+	trigger = {
+		date > 1936.12.10
+		NOT = { has_global_flag = news_event_george_vi_flag }
+	}
+	
+	immediate = {
+		set_global_flag = news_event_george_vi_flag
+	}
+	
+	option = {
+		name = eok_news.78.a
+	}
+}
+news_event = { #조선의해군군축조약탈퇴
+	id = eok_news.79
+	title = eok_news.79.t
+	desc = eok_news.79.desc
+	picture = GFX_news_event_no_more_london_restriction
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = eok_news.79.a
+	}
+}
+news_event = { #스페인내전
+	id = eok_news.80
+	title = eok_news.80.t
+	desc = eok_news.80.desc
+	picture = GFX_news_event_spanish_civil_war_occured
+	major = yes
+	trigger = {
+		has_global_flag = spanish_civil_war
+		NOT = { has_global_flag = news_event_spanish_civil_war_occured_flag }
+	}
+	
+	immediate = {
+		set_global_flag = news_event_spanish_civil_war_occured_flag
+	}
+	
+	option = {
+		name = eok_news.80.a
+	}
+}
+news_event = { #폴란드분할
+	id = eok_news.81
+	title = eok_news.81.t
+	desc = eok_news.81.desc
+	picture = GFX_news_event_partition_of_poland
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = eok_news.81.a
+		clr_global_flag = sov_yes_pact
+	}
+}
+news_event = { #이탈리아의 참전
+	id = eok_news.82
+	title = eok_news.82.t
+	desc = eok_news.82.desc
+	picture = GFX_news_event_italy_joins_the_war
+	major = yes
+	trigger = {
+		GER = {
+			has_war_with = FRA
+			is_in_faction_with = ITA
+		}
+		ITA = {
+			has_war_with = FRA
+		}
+		NOT = { has_global_flag = news_event_italy_joins_the_war_flag }
+	}
+	
+	immediate = {
+		set_global_flag = news_event_italy_joins_the_war_flag
+	}
+	
+	option = {
+		name = eok_news.82.a
+	}
+}
+news_event = { #프랑스항복
+	id = eok_news.83
+	title = eok_news.83.t
+	desc = eok_news.83.desc
+	picture = GFX_news_event_surrender_of_france
+	major = yes
+	trigger = {
+		FRA = {
+			has_capitulated = yes
+		}
+		GER = {
+			has_war_with = ENG
+			controls_state = 16
+		}
+		NOT = { has_global_flag = news_event_surrender_of_france_flag }
+	}
+	
+	immediate = {
+		set_global_flag = news_event_surrender_of_france_flag
+	}
+	
+	option = {
+		name = eok_news.83.a
+	}
+}
+news_event = { #영국본토항공전
+	id = eok_news.84
+	title = eok_news.84.t
+	desc = eok_news.84.desc
+	picture = GFX_news_event_battle_of_britain
+	major = yes
+	trigger = {
+		FRA = {
+			has_capitulated = yes
+		}
+		GER = {
+			has_war_with = ENG
+		}
+		date > 1940.7.10
+		NOT = { has_global_flag = news_event_battle_of_britain_flag }
+	}
+	
+	immediate = {
+		set_global_flag = news_event_battle_of_britain_flag
+	}
+	
+	option = {
+		name = eok_news.84.a
+	}
+}
+news_event = { #루마니아
+	id = eok_news.85
+	title = eok_news.85.t
+	desc = eok_news.85.desc
+	picture = GFX_news_event_romania_joins_axis
+	major = yes
+	trigger = {
+		tag = ROM
+		GER = {
+			is_in_faction_with = ROM
+			has_war_with = ENG
+		}
+		NOT = { has_global_flag = news_event_romania_joins_axis_flag }
+	}
+	
+	immediate = {
+		set_global_flag = news_event_romania_joins_axis_flag
+	}
+	
+	option = {
+		name = eok_news.85.a
+	}
+}
+news_event = { #유고슬라비아
+	id = eok_news.86
+	title = eok_news.86.t
+	desc = eok_news.86.desc
+	picture = GFX_news_event_germany_attacks_yugolsavia
+	major = yes
+	trigger = {
+		tag = GER
+		GER = {
+			has_war_with = YUG
+		}
+		NOT = { has_global_flag = news_event_germany_attacks_yugolsavia_flag }
+	}
+	
+	immediate = {
+		set_global_flag = news_event_germany_attacks_yugolsavia_flag
+	}
+	
+	option = {
+		name = eok_news.86.a
+	}
+}
+news_event = { #그리스
+	id = eok_news.87
+	title = eok_news.87.t
+	desc = eok_news.87.desc
+	picture = GFX_news_event_italy_attacks_greece
+	major = yes
+	trigger = {
+		tag = ITA
+		ITA = {
+			has_war_with = GRE
+		}
+		NOT = { has_global_flag = news_event_italy_attacks_greece_flag }
+	}
+	
+	immediate = {
+		set_global_flag = news_event_italy_attacks_greece_flag
+	}
+	
+	option = {
+		name = eok_news.87.a
+	}
+}
+news_event = { #독소전
+	id = eok_news.88
+	title = eok_news.88.t
+	desc = eok_news.88.desc
+	picture = GFX_news_event_germany_attacks_ussr
+	major = yes
+	trigger = {
+		tag = GER
+		GER = {
+			has_war_with = SOV
+		}
+		NOT = { has_global_flag = news_event_germany_attacks_ussr_flag }
+	}
+	
+	immediate = {
+		set_global_flag = news_event_germany_attacks_ussr_flag
+	}
+	
+	option = {
+		name = eok_news.88.a
+	}
+}
+news_event = { #방공협정
+	id = eok_news.89
+	title = eok_news.89.t
+	desc = eok_news.89.desc
+	picture = GFX_news_event_anti_commintern_pact
+	major = yes
+	trigger = {
+		tag = GER
+		GER = {
+			has_completed_focus = GER_anti_comintern_pact
+		}
+		NOT = { has_global_flag = news_event_anti_commintern_pact_flag }
+	}
+	
+	immediate = {
+		set_global_flag = news_event_anti_commintern_pact_flag
+		hidden_effect = {
+			if = {
+				limit = {
+					GER = {
+						is_in_faction = no
+					}
+				}
+				GER = {
+					create_faction = Axis_Powers
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = eok_news.89.a
+	}
+}
+news_event = { #불가리아
+	id = eok_news.90
+	title = eok_news.90.t
+	desc = eok_news.90.desc
+	picture = GFX_news_event_bulgaria_joins_axis
+	major = yes
+	trigger = {
+		tag = BUL
+		GER = {
+			is_in_faction_with = BUL
+			has_war_with = ENG
+		}
+		NOT = { has_global_flag = news_event_bulgaria_joins_axis_flag }
+	}
+	
+	immediate = {
+		set_global_flag = news_event_bulgaria_joins_axis_flag
+	}
+	
+	option = {
+		name = eok_news.90.a
+	}
+}
+news_event = { #마셜
+	id = eok_news.91
+	title = eok_news.91.t
+	desc = eok_news.91.desc
+	picture = GFX_news_event_marshall_plan
+	major = yes
+	trigger = {
+		tag = USA
+		date > 1946.1.1
+		has_global_flag = TLE_germany_union_defeat
+		NOT = { has_global_flag = news_event_marshall_plan_flag }
+	}
+	
+	immediate = {
+		set_global_flag = news_event_marshall_plan_flag
+	}
+	
+	option = {
+		name = eok_news.91.a
+	}
+}
+news_event = { #WTO
+	id = eok_news.92
+	title = eok_news.92.t
+	desc = eok_news.92.desc
+	picture = GFX_news_event_formation_of_wto
+	major = yes
+	trigger = {
+		tag = SOV
+		has_global_flag = TLE_germany_union_defeat
+		date > 1946.5.14
+		NOT = { has_global_flag = news_event_formation_of_wto_flag }
+	}
+	
+	immediate = {
+		set_global_flag = news_event_formation_of_wto_flag
+		hidden_effect = {
+			SOV = {
+				set_faction_name = "warsaw_pact"
+			}
+		}
+	}
+	
+	option = {
+		name = eok_news.92.a
+	}
+}
+news_event = { #진주만
+	id = eok_news.93
+	title = eok_news.93.t
+	desc = eok_news.93.desc
+	picture = GFX_news_event_pearl_harbor
+	major = yes
+	trigger = {
+		tag = USA
+		has_war_with = KOR
+		KOR = {
+			has_country_flag = FLAG_KOR_FASCIST_ROUTE
+		}
+		NOT = { has_global_flag = news_event_pearl_harbor_flag }
+	}
+	
+	immediate = {
+		set_global_flag = news_event_pearl_harbor_flag
+	}
+	
+	option = {
+		trigger = {
+			NOT = {
+				has_government = fascism
+			}
+		}
+		name = eok_news.93.a
+	}
+
+	option = {
+		trigger = {
+			has_government = fascism
+		}
+		name = eok_news.93.b
+	}
+}
+news_event = { #한일전쟁
+	id = eok_news.94
+	title = eok_news.94.t
+	desc = eok_news.94.desc
+	picture = GFX_news_event_korea_japan_war
+	major = yes
+	trigger = {
+		tag = JAP
+		has_war_with = KOR
+		KOR = {
+			has_country_flag = FLAG_KOR_FASCIST_ROUTE
+			NOT = { has_country_flag = FLAG_YICHIN_ROUTE }
+		}
+		NOT = { has_global_flag = news_event_korea_japan_war_flag }
+	}
+	
+	immediate = {
+		set_global_flag = news_event_korea_japan_war_flag
+	}
+	
+	option = {
+		name = eok_news.94.a
+	}
+}
+news_event = { #포츠담
+	id = eok_news.95
+	title = eok_news.95.t
+	desc = eok_news.95.desc
+	picture = GFX_news_event_potsdam_conference
+	major = yes
+	trigger = {
+		tag = USA
+		has_war_with = KOR
+		has_global_flag = TLE_germany_union_defeat
+		KOR = {
+			has_country_flag = FLAG_KOR_FASCIST_ROUTE
+		}
+		NOT = { has_global_flag = news_event_potsdam_conference_flag }
+	}
+	
+	immediate = {
+		set_global_flag = news_event_potsdam_conference_flag
+	}
+	
+	option = {
+		name = eok_news.95.a
+	}
+}
+news_event = { #이진의대아대전
+	id = eok_news.96
+	title = eok_news.96.t
+	desc = eok_news.96.desc
+	picture = GFX_news_event_gaw_yichin
+	major = yes
+	is_triggered_only = yes
+	
+	immediate = {
+	}
+	
+	option = {
+		name = eok_news.96.a
+		trigger = {
+			NOT = {
+				tag = JAP
+				tag = CHI
+				tag = KOR
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					is_ai = no
+				}
+				set_temp_variable = { TNO_temp_super_event = token:SE_GREAT_ASIAN_WAR_YICHIN }
+				TNO_fire_super_event = yes
+			}	
+		}
+	}
+	option = {
+		name = eok_news.96.b
+		trigger = {
+			tag = JAP
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					is_ai = no
+				}
+				set_temp_variable = { TNO_temp_super_event = token:SE_GREAT_ASIAN_WAR_YICHIN }
+				TNO_fire_super_event = yes
+			}	
+		}
+	}
+	option = {
+		name = eok_news.96.c
+		trigger = {
+			tag = CHI
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					is_ai = no
+				}
+				set_temp_variable = { TNO_temp_super_event = token:SE_GREAT_ASIAN_WAR_YICHIN }
+				TNO_fire_super_event = yes
+			}	
+		}
+	}
+	option = {
+		name = eok_news.96.d
+		trigger = {
+			tag = KOR
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					is_ai = no
+				}
+				set_temp_variable = { TNO_temp_super_event = token:SE_GREAT_ASIAN_WAR_YICHIN }
+				TNO_fire_super_event = yes
+			}	
+		}
+	}
+}
+news_event = { #강명유신
+	id = eok_news.97
+	title = eok_news.97.t
+	desc = eok_news.97.desc
+	picture = GFX_news_event_imperial_korea
+	major = yes
+	is_triggered_only = yes
+	
+	immediate = {
+	}
+	
+	option = {
+		name = eok_news.97.a
+		trigger = {
+			NOT = {
+				tag = JAP
+				tag = CHI
+				tag = KOR
+			}
+		}
+		hidden_effect = {
+			set_temp_variable = { TNO_temp_super_event = token:SE_KANGMYONG_YUSHIN }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = eok_news.97.b
+		trigger = {
+			tag = JAP
+		}
+		hidden_effect = {
+			set_temp_variable = { TNO_temp_super_event = token:SE_KANGMYONG_YUSHIN }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = eok_news.97.c
+		trigger = {
+			tag = CHI
+		}
+		hidden_effect = {
+			set_temp_variable = { TNO_temp_super_event = token:SE_KANGMYONG_YUSHIN }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = eok_news.97.d
+		trigger = {
+			tag = KOR
+		}
+		hidden_effect = {
+			set_temp_variable = { TNO_temp_super_event = token:SE_KANGMYONG_YUSHIN }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+news_event = { #총파업
+	id = eok_news.98
+	title = eok_news.98.t
+	desc = eok_news.98.desc
+	picture = GFX_news_event_korean_redstrike
+	major = yes
+	is_triggered_only = yes
+	
+	immediate = {
+	}
+	
+	option = {
+		name = eok_news.98.a
+		trigger = {
+			NOT = {
+				tag = JAP
+				tag = CHI
+				tag = KOR
+			}
+		}
+	}
+	option = {
+		name = eok_news.98.b
+		trigger = {
+			tag = JAP
+		}
+	}
+	option = {
+		name = eok_news.98.c
+		trigger = {
+			tag = CHI
+		}
+	}
+	option = {
+		name = eok_news.98.d
+		trigger = {
+			tag = KOR
+		}
+	}
+}
+
+news_event = {
+	id = eok_news.99
+	title = eok_news.99.t
+	desc = eok_news.99.desc
+	picture = GFX_news_event_brussel_falls
+	major = yes
+	trigger = {
+		GER = {
+			controls_state = 34
+			has_war_with = BEL
+		}
+		NOT = { has_global_flag = news_event_brussel_falls_flag }
+	}
+	
+	immediate = {
+		set_global_flag = news_event_brussel_falls_flag
+	}
+	
+	option = {
+		name = eok_news.99.a
+	}
+}
+
+news_event = {
+	id = eok_news.100
+	title = eok_news.100.t
+	desc = eok_news.100.desc
+	picture = GFX_news_event_netherlands_surrender
+	major = yes
+	trigger = {
+		HOL = {
+			has_war_with = GER
+			has_capitulated = yes
+		}
+		NOT = { has_global_flag = news_event_netherlands_surrender_flag }
+	}
+	
+	immediate = {
+		set_global_flag = news_event_netherlands_surrender_flag
+	}
+	
+	option = {
+		name = eok_news.100.a
+	}
+}
+
+news_event = {
+	id = eok_news.101
+	title = eok_news.101.t
+	desc = eok_news.101.desc
+	picture = GFX_news_event_yugolavia_coup
+	major = yes
+	trigger = {
+		BUL = {
+			is_in_faction_with = GER
+		}
+		ROM = {
+			is_in_faction_with = GER
+		}
+		HUN = {
+			is_in_faction_with = GER
+		}
+		YUG = {
+			NOT = {
+				is_in_faction_with = GER
+			}
+			has_war = no
+		}
+		NOT = { has_global_flag = news_event_yugolavia_coup_flag }
+	}
+	
+	immediate = {
+		set_global_flag = news_event_yugolavia_coup_flag
+	}
+	
+	option = {
+		name = eok_news.101.a
+	}
+}
+
+
+news_event = {
+	id = eok_news.102
+	title = eok_news.102.t
+	desc = eok_news.102.desc
+	picture = GFX_news_event_dunkirk_evacuation
+	major = yes
+	trigger = {
+		GER = {
+			controls_state = 29
+		}
+		FRA = {
+			has_war_with = GER
+			has_capitulated = no
+		}
+		NOT = { has_global_flag = news_event_dunkirk_evacuation_flag }
+	}
+	
+	immediate = {
+		set_global_flag = news_event_dunkirk_evacuation_flag
+	}
+	
+	option = {
+		name = eok_news.102.a
+	}
+}
+
+news_event = {
+	id = eok_news.103
+	title = eok_news.103.t
+	desc = eok_news.103.desc
+	picture = GFX_news_event_treaty_of_yokohama
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = eok_news.103.a
+	}
+}
+
+news_event = {
+	id = eok_news.104
+	title = eok_news.104.t
+	desc = eok_news.104.desc
+	picture = GFX_news_event_tripartite_pact
+	major = yes
+	trigger = {
+		date > 1940.9.26
+		GER = {
+			has_government = fascism
+		}
+		ITA = {
+			has_government = fascism
+		}
+		KOR = {
+			has_country_flag = FLAG_KOR_FASCIST_ROUTE
+		}
+		NOT = {
+			has_global_flag = news_event_tripartite_pact_flag
+		}
+	}
+	immediate = {
+		set_global_flag = news_event_tripartite_pact_flag
+	}
+	option = {
+		name = eok_news.104.a
+		trigger = {
+			OR = {
+				TAG = GER
+				TAG = ITA
+				TAG = KOR
+			}
+		}
+	}
+	
+	option = {
+		name = eok_news.104.b
+		trigger = {
+			NOT = {
+				OR = {
+					TAG = GER
+					TAG = ITA
+					TAG = KOR
+				}
+			}			
+		}
+	}
+}
+
+news_event = {
+	id = eok_news.105
+	title = eok_news.105.t
+	desc = eok_news.105.desc
+	picture = GFX_news_event_invasion_of_sicily
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = eok_news.105.a
+	}
+}
+
+news_event = {
+	id = eok_news.106
+	title = eok_news.106.t
+	desc = eok_news.106.desc
+	picture = GFX_news_event_chongqing_government
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = eok_news.106.a
+		trigger = {
+			OR = {
+				TAG = ZLC
+				TAG = CHI
+			}
+		}
+	}
+	
+	option = {
+		name = eok_news.106.b
+		trigger = {
+			NOT = {
+				OR = {
+					TAG = ZLC
+					TAG = CHI
+				}
+			}			
+		}
+	}
+}
+
+news_event = {
+	id = eok_news.107
+	title = eok_news.107.t
+	desc = eok_news.107.desc
+	picture = GFX_news_event_lendlease_act
+	major = yes
+	trigger = {
+		SOV = {
+			has_war_with = GER
+		}
+		USA = {
+			has_idea = USA_lend_lease_act_na
+		}
+		NOT = { has_global_flag = news_event_lendlease_act_flag }
+	}
+	
+	immediate = {
+		set_global_flag = news_event_lendlease_act_flag
+	}
+	
+	option = {
+		name = eok_news.107.a
+	}
+}
+
+news_event = {
+	id = eok_news.108
+	title = {
+		text = eok_news.108.t
+		trigger = {
+			NOT = {
+				has_global_flag = TLE_germany_union_west_defeat
+			}
+			NOT = {
+				has_global_flag = TLE_germany_union_defeat_red
+			}
+		}
+	}
+	title = {
+		text = eok_news.108.t.red
+		trigger = {
+			has_global_flag = TLE_germany_union_defeat_red
+			NOT = {
+				has_global_flag = TLE_germany_union_west_defeat
+			}
+		}
+	}
+	title = {
+		text = eok_news.108.t.west
+		trigger = {
+			has_global_flag = TLE_germany_union_west_defeat
+			NOT = {
+				has_global_flag = TLE_germany_union_defeat_red
+			}
+		}
+	}
+	desc = {
+		text = eok_news.108.desc
+		trigger = {
+			NOT = {
+				has_global_flag = TLE_germany_union_west_defeat
+			}
+			NOT = {
+				has_global_flag = TLE_germany_union_defeat_red
+			}
+		}
+	}
+	desc = {
+		text = eok_news.108.desc.red
+		trigger = {
+			has_global_flag = TLE_germany_union_defeat_red
+			NOT = {
+				has_global_flag = TLE_germany_union_west_defeat
+			}
+		}
+	}
+	desc = {
+		text = eok_news.108.desc.west
+		trigger = {
+			has_global_flag = TLE_germany_union_west_defeat
+			NOT = {
+				has_global_flag = TLE_germany_union_defeat_red
+			}
+		}
+	}
+	picture = GFX_news_event_division_of_germany
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = eok_news.108.a
+	}
+}
+news_event = {
+	id = eok_news.109
+	title = eok_news.109.t
+	desc = eok_news.109.desc
+	picture = GFX_news_event_unscresolution83
+	major = yes
+	trigger = {
+		has_global_flag = TLE_CHINESE_CIVIL_WAR
+		ZLC = {
+			has_war_with = CHI
+			surrender_progress > 0.25
+		}
+		NOT = { has_global_flag = news_event_unscresolution83_flag }
+	}
+	
+	immediate = {
+		set_global_flag = news_event_unscresolution83_flag
+	}
+	
+	option = {
+		name = eok_news.109.a
+		hidden_effect = {
+			if = {
+				limit = {
+					USA = {
+						exists = yes
+						NOT = {
+							has_government = fascism
+						}
+						NOT = {
+							has_government = communism
+						}
+					}
+				}
+				USA = {
+					add_ideas = ZLC_BEI_un_forces_will_help_us_for_usa
+					set_rule = { can_send_volunteers = yes }
+				}
+			}
+			if = {
+				limit = {
+					ENG = {
+						exists = yes
+						NOT = {
+							has_government = fascism
+						}
+						NOT = {
+							has_government = communism
+						}
+					}
+				}
+				ENG = {
+					add_ideas = ZLC_BEI_un_forces_will_help_us
+					set_rule = { can_send_volunteers = yes }
+				}
+			}
+			if = {
+				limit = {
+					FRA = {
+						exists = yes
+						NOT = {
+							has_government = fascism
+						}
+						NOT = {
+							has_government = communism
+						}
+					}
+				}
+				FRA = {
+					add_ideas = ZLC_BEI_un_forces_will_help_us
+					set_rule = { can_send_volunteers = yes }
+				}
+			}
+			if = {
+				limit = {
+					HOL = {
+						exists = yes
+						NOT = {
+							has_government = fascism
+						}
+						NOT = {
+							has_government = communism
+						}
+					}
+				}
+				HOL = {
+					add_ideas = ZLC_BEI_un_forces_will_help_us
+					set_rule = { can_send_volunteers = yes }
+				}
+			}
+			if = {
+				limit = {
+					BEL = {
+						exists = yes
+						NOT = {
+							has_government = fascism
+						}
+						NOT = {
+							has_government = communism
+						}
+					}
+				}
+				BEL = {
+					add_ideas = ZLC_BEI_un_forces_will_help_us
+					set_rule = { can_send_volunteers = yes }
+				}
+			}
+			if = {
+				limit = {
+					TUR = {
+						exists = yes
+						NOT = {
+							has_government = fascism
+						}
+						NOT = {
+							has_government = communism
+						}
+					}
+				}
+				TUR = {
+					add_ideas = ZLC_BEI_un_forces_will_help_us
+					set_rule = { can_send_volunteers = yes }
+				}
+			}
+			if = {
+				limit = {
+					AST = {
+						exists = yes
+						NOT = {
+							has_government = fascism
+						}
+						NOT = {
+							has_government = communism
+						}
+					}
+				}
+				AST = {
+					add_ideas = ZLC_BEI_un_forces_will_help_us
+					set_rule = { can_send_volunteers = yes }
+				}
+			}
+			if = {
+				limit = {
+					NZL = {
+						exists = yes
+						NOT = {
+							has_government = fascism
+						}
+						NOT = {
+							has_government = communism
+						}
+					}
+				}
+				NZL = {
+					add_ideas = ZLC_BEI_un_forces_will_help_us
+					set_rule = { can_send_volunteers = yes }
+				}
+			}
+			if = {
+				limit = {
+					SIA = {
+						exists = yes
+						NOT = {
+							has_government = fascism
+						}
+						NOT = {
+							has_government = communism
+						}
+					}
+				}
+				SIA = {
+					add_ideas = ZLC_BEI_un_forces_will_help_us
+					set_rule = { can_send_volunteers = yes }
+				}
+			}
+			if = {
+				limit = {
+					PHI = {
+						exists = yes
+						NOT = {
+							has_government = fascism
+						}
+						NOT = {
+							has_government = communism
+						}
+					}
+				}
+				PHI = {
+					add_ideas = ZLC_BEI_un_forces_will_help_us
+					set_rule = { can_send_volunteers = yes }
+				}
+			}
+			if = {
+				limit = {
+					JAP = {
+						exists = yes
+						NOT = {
+							has_government = fascism
+						}
+						NOT = {
+							has_government = communism
+						}
+					}
+				}
+				JAP = {
+					add_ideas = ZLC_BEI_un_forces_will_help_us
+					set_rule = { can_send_volunteers = yes }
+				}
+			}
+			if = {
+				limit = {
+					ETH = {
+						exists = yes
+						NOT = {
+							has_government = fascism
+						}
+						NOT = {
+							has_government = communism
+						}
+					}
+				}
+				ETH = {
+					add_ideas = ZLC_BEI_un_forces_will_help_us
+					set_rule = { can_send_volunteers = yes }
+				}
+			}
+			if = {
+				limit = {
+					GRE = {
+						exists = yes
+						NOT = {
+							has_government = fascism
+						}
+						NOT = {
+							has_government = communism
+						}
+					}
+				}
+				GRE = {
+					add_ideas = ZLC_BEI_un_forces_will_help_us
+					set_rule = { can_send_volunteers = yes }
+				}
+			}
+			if = {
+				limit = {
+					COL = {
+						exists = yes
+						NOT = {
+							has_government = fascism
+						}
+						NOT = {
+							has_government = communism
+						}
+					}
+				}
+				COL = {
+					add_ideas = ZLC_BEI_un_forces_will_help_us
+					set_rule = { can_send_volunteers = yes }
+				}
+			}
+			if = {
+				limit = {
+					CAN = {
+						exists = yes
+						NOT = {
+							has_government = fascism
+						}
+						NOT = {
+							has_government = communism
+						}
+					}
+				}
+				CAN = {
+					add_ideas = ZLC_BEI_un_forces_will_help_us
+					set_rule = { can_send_volunteers = yes }
+				}
+			}
+			if = {
+				limit = {
+					SAF = {
+						exists = yes
+						NOT = {
+							has_government = fascism
+						}
+						NOT = {
+							has_government = communism
+						}
+					}
+				}
+				SAF = {
+					add_ideas = ZLC_BEI_un_forces_will_help_us
+					set_rule = { can_send_volunteers = yes }
+				}
+			}
+		}
+	}
+}
+news_event = {
+	id = eok_news.110
+	title = eok_news.110.t
+	desc = eok_news.110.desc
+	picture = GFX_news_event_end_of_chinesecivilwar_cease
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = eok_news.110.a
+	}
+}
+news_event = {
+	id = eok_news.111
+	title = eok_news.111.t
+	desc = eok_news.111.desc
+	picture = GFX_news_event_the_great_retreat
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = eok_news.111.a
+	}
+}
+news_event = {
+	id = eok_news.112
+	title = eok_news.112.t
+	desc = eok_news.112.desc
+	picture = GFX_news_event_end_of_chinesecivilwar_wp
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = eok_news.112.a
+	}
+}

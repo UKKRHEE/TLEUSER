@@ -43,3 +43,8 @@
  
  french_indochina_faction:0 "프랑스령 인도차이나 연방"
  sa_cooperation_faction:0 "남아시아 상호원조공동체"
+ 
+ Allies:0 "영연방"
+ Allied_Powers:0 "연합국"
+ Axis_Powers:0 "추축국"
+ Comintern:0 "공산주의 인터내셔널"

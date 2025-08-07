@@ -28,6 +28,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/decisions/descision_KOR_plan_nakil.png"
 	}
 	spriteType = {
+		name = "GFX_decision_KOR_economy_projects" 
+		texturefile = "gfx/interface/decisions/decision_KOR_economy_projects.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_decision_KOR_IKN_purge" 
 		texturefile = "gfx/interface/decisions/decision_KOR_IKN_purge.png"
 		legacy_lazy_load = no

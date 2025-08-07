@@ -3,7 +3,7 @@ characters={
 		name="TWC_yan_xishan"
 		portraits={
 			civilian={
-				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+				large="gfx/leaders/ZLC/Portrait_ZLC_yan_xishan.png"
 			}
 		}
 		country_leader={

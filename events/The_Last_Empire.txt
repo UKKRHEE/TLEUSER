@@ -19,6 +19,10 @@ country_event = {
 				}
 				KOR = {
 					add_ideas = KOR_they_will_more_division
+					set_technology = { 
+						KOR_ai_not_death_tomany = 1
+						popup = no 
+					} 
 				}	
 			}
 		}
@@ -572,6 +576,40 @@ country_event = { #결론
 			set_country_flag = TLE_THE_LAST_EMPIRE
 			clr_country_flag = TLE_DUTY_OF_CONFUCIANS 
 			TNO_Country_Closing_Screen_Show = yes
+			country_event = {
+				id = japan.1203
+				days = 7
+			}
+			#set_politics = { 
+			#	ruling_party = democratic
+			#	last_election = "1936.11.26"
+			#	election_frequency = 48
+			#	elections_allowed = no
+			#}
+			#set_political_party = {
+			#	ideology = democratic
+			#	popularity = 100
+			#}
+			#set_party_name = {
+			#	ideology = democratic
+			#	long_name = "TLE_JAPENDING_DEMOCRATIC_LONG"
+			#	name = "TLE_JAPENDING_DEMOCRATIC_SHORT"
+			#}
+			#set_party_name = {
+			#	ideology = fascism
+			#	long_name = "THE_LAST_EMPIRE_FASCISM_LONG"
+			#	name = "THE_LAST_EMPIRE_FASCISM_SHORT"
+			#}
+			#set_party_name = {
+			#	ideology = communism
+			#	long_name = "TLE_JAPENDING_COMMUNISM_LONG"
+			#	name = "TLE_JAPENDING_COMMUNISM_SHORT"
+			#}
+			#set_party_name = {
+			#	ideology = neutrality
+			#	long_name = "TLE_JAPENDING_NEUTRALITY_LONG"
+			#	name = "TLE_JAPENDING_NEUTRALITY_SHORT"
+			#}
 		}
 	}
 }

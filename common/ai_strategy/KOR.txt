@@ -67,7 +67,36 @@ KOR_manchuria_is_needed = {
 	ai_strategy = {
 		type = front_unit_request
 		tag = ZLC
+		value = 10
+	}
+}
+
+MEN_push_chinese = {
+	allowed = {
+		original_tag = MEN
+	}
+	enable = {
+		MEN = {
+			has_war_with = MON
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = front_unit_request
+		tag = MON
 		value = 100
+	}
+	
+	ai_strategy = {
+		type = front_control
+		tag = MON
+		priority = 99999
+		ratio = 0.45
+		ordertype = front
+		execution_type = rush
+		execute_order = yes
+		manual_attack = yes
 	}
 }
 
@@ -112,6 +141,7 @@ CHI_defend_zlc = {
 		CHI = {
 			has_war_with = KOR
 			is_in_faction_with = ZLC
+			surrender_progress < 0.6
 		}
 	}
 	abort_when_not_enabled = yes
@@ -119,7 +149,7 @@ CHI_defend_zlc = {
 	ai_strategy = {
 		type = force_defend_ally_borders
 		id = ZLC
-		value = 100
+		value = 50
 	}
 }
 
@@ -139,7 +169,7 @@ KOR_invade_south_china = {
 	ai_strategy = {
 		type = front_unit_request
 		tag = CHI
-		value = 100
+		value = 10
 	}
 }
 
@@ -179,6 +209,15 @@ KOR_invade_japs = {
 			has_country_flag = FLAG_KOR_FASCIST_ROUTE
 			has_war_with = JAP
 		}
+		OR = {
+			has_game_rule = {
+				rule = TLE_KOR_GREAT_RULE
+				option = TLE_KOR_GREAT_RULE_WIN
+			}
+			JAP = {
+				is_ai = no
+			}
+		}
 	}
 	abort_when_not_enabled = yes
 	
@@ -192,6 +231,35 @@ KOR_invade_japs = {
 		type = invasion_unit_request
 		strategic_region = 154
 		value = 50
+	}
+}
+
+KOR_invade_japs_ai = { #AI일시 일본에 군대 적게 보내기
+	allowed = {
+		original_tag = KOR
+	}
+
+	enable = {
+		KOR = {
+			has_country_flag = FLAG_KOR_FASCIST_ROUTE
+			has_war_with = JAP
+		}
+		JAP = {
+			is_ai = yes
+		}
+		NOT = {
+			has_game_rule = {
+				rule = TLE_KOR_GREAT_RULE
+				option = TLE_KOR_GREAT_RULE_WIN
+			}
+		}
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = front_unit_request
+		tag = JAP
+		value = 20
 	}
 }
 
@@ -1709,7 +1777,12 @@ KOR_hold_up_in_china = { #We got this far but there are bigger targets to worry 
 			INS = { has_capitulated = no }
 			PHI = { has_capitulated = no }
 		}
-		
+		NOT = {
+			KOR = {
+				controls_state = 1057
+				controls_state = 1048
+			}
+		}
 	}
 
 	ai_strategy = {
@@ -1722,6 +1795,84 @@ KOR_hold_up_in_china = { #We got this far but there are bigger targets to worry 
 		priority = 100
 		ordertype = front
 		execution_type = careful
+	}
+}
+KOR_hold_up_in_china = { #We got this far but there are bigger targets to worry about for a while
+	allowed = {
+		original_tag = KOR
+	}
+
+	enable = {
+		date > 1937.1.1
+		date < 1941.1.1
+		is_historical_focus_on = yes
+		CHI = { has_capitulated = no }
+		
+		613 = { # Nanjing
+			is_controlled_by = KOR
+		}
+		
+		OR = {
+			INS = { has_capitulated = no }
+			PHI = { has_capitulated = no }
+		}
+		NOT = {
+			KOR = {
+				controls_state = 1057
+				controls_state = 1048
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = front_control
+
+		tag = ZLC
+
+		ratio = 0.25
+
+		priority = 10
+		ordertype = front
+		execution_type = balanced
+		execute_order = yes
+	}
+	ai_strategy = {
+		type = front_control
+
+		tag = CHI
+
+		ratio = 0.25
+
+		priority = 10
+		ordertype = front
+		execution_type = balanced
+		execute_order = yes
+	}
+}
+KOR_save_in_china = { #We got this far but there are bigger targets to worry about for a while
+	allowed = {
+		original_tag = KOR
+	}
+
+	enable = {
+		is_historical_focus_on = yes
+		CHI = { has_capitulated = no }
+		
+		KOR = {
+			controls_state = 1057
+			controls_state = 1048
+		}
+	}
+
+	ai_strategy = {
+		type = front_unit_request
+		tag = CHI
+		value = 5
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = ZLC
+		value = 5
 	}
 }
 KOR_want_to_war_with_japan = {

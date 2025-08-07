@@ -1,0 +1,38 @@
+characters={
+	NXM_ma_hongkui = {
+		name = "NXM_ma_hongkui"
+		portraits={
+			civilian={
+				large="gfx/leaders/XSM/Portrait_NXM_ma_hongkui.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits = {  }
+		}
+	}
+	GXM_ma_hongbin = {
+		name = "GXM_ma_hongbin"
+		portraits={
+			civilian={
+				large="gfx/leaders/XSM/Portrait_GXM_ma_hongbin.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits = {  }
+		}
+	}
+	TNG_ma_hushan = {
+		name = "TNG_ma_hushan"
+		portraits={
+			civilian={
+				large="gfx/leaders/XSM/Portrait_TNG_ma_hushan.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits = {  }
+		}
+	}
+}

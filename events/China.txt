@@ -54,8 +54,10 @@ country_event = {
 			set_truce = { target = ROOT days = 180 }
 			effect_tooltip = {
 				transfer_state = 608
+				transfer_state = 1137
 				transfer_state = 597
 				transfer_state = 614
+				transfer_state = 1137
 				add_state_claim = 613
 				if = {
 					limit = {

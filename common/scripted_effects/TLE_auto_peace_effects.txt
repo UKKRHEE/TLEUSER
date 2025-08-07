@@ -1,6 +1,432 @@
 ##############################################
 #Nationalism - Empire of Korea War Ending
 ##############################################
+KOR_YICHIN_5th_sino_korean_wp_effect = {
+	custom_effect_tooltip = KOR_YICHIN_5th_sino_korean_wp_effect_tt
+	hidden_effect = {
+		KOR = {
+			set_country_flag = FLAG_YICHIN_ROUTE
+		}
+		ZLC = {
+			annex_country = {
+				target = CH1
+				transfer_troops = no
+			}
+			annex_country = {
+				target = SZY
+				transfer_troops = no
+			}
+			dismantle_faction = yes
+			set_cosmetic_tag = ZLC_BEIYANG
+			country_event = {
+				id = korea.600
+				days = 3
+			}
+			remove_ideas = CHI_AI_WAR_BONUS_IDEA
+			remove_ideas = CHI_AI_WAR_BONUS_IDEA_HID
+		}
+		CHI = {
+			annex_country = {
+				target = CH2
+				transfer_troops = no
+			}
+			remove_ideas = CHI_AI_WAR_BONUS_IDEA
+			remove_ideas = CHI_AI_WAR_BONUS_IDEA_HID
+		}	
+		SZY = {
+			set_cosmetic_tag = SZY_KOR_YICHIN
+			set_politics = {
+				ruling_party = fascism
+				last_election = "1936.1.1"
+				election_frequency = 60
+				elections_allowed = no
+			}
+			set_popularities = {
+				democratic = 0
+				fascism = 100
+				communism = 0
+				neutrality = 0
+			}
+			transfer_state = 1130
+			transfer_state = 609
+			transfer_state = 1033
+			transfer_state = 608
+			transfer_state = 614
+			transfer_state = 1137
+			transfer_state = 1101
+			transfer_state = 1074
+			transfer_state = 1099
+			transfer_state = 615
+			transfer_state = 1052
+			transfer_state = 1100
+			transfer_state = 597
+			transfer_state = 1050
+			transfer_state = 1049
+			transfer_state = 1035
+			transfer_state = 743
+			transfer_state = 1122
+			transfer_state = 1034
+			
+			add_state_core = 1130
+			add_state_core = 609
+			add_state_core = 1033
+			add_state_core = 608
+			add_state_core = 614
+			add_state_core = 1137
+			add_state_core = 1101
+			add_state_core = 1074
+			add_state_core = 1099
+			add_state_core = 615
+			add_state_core = 1052
+			add_state_core = 1100
+			add_state_core = 597
+			add_state_core = 1050
+			add_state_core = 1049
+			add_state_core = 1035
+			add_state_core = 743
+			add_state_core = 1122
+			add_state_core = 1034
+		}
+		KOR = {
+			set_autonomy = { target = SZY autonomy_state = korean_bunguk }	
+			every_country = {
+				limit = {
+					has_war_with = KOR
+				}
+				white_peace = KOR
+			}
+			remove_ideas = KOR_not_planed_attack
+			remove_ideas = KOR_not_planed_attack_HID
+			remove_ideas = KOR_not_planed_attack_2
+			remove_ideas = KOR_not_planed_attack_3
+			remove_ideas = KOR_not_planed_attack_4
+			remove_ideas = KOR_not_planed_attack_5
+			remove_ideas = KOR_embargo_us
+		}
+		MEN = {
+			transfer_state = 1097
+			add_state_core = 1097
+		}
+		every_state = {
+			limit = {
+				is_core_of = ZLC
+			}
+			remove_dynamic_modifier = { modifier = CHI_defence_the_korea }
+			remove_dynamic_modifier = { modifier = CHI_defence_the_korea_2 }
+			remove_dynamic_modifier = { modifier = CHI_defence_the_korea_3 }
+		}
+	}
+}
+KOR_YICHIN_6th_sino_korean_war_kor_win_effect = {
+	set_global_flag = GLOB_YICHIN_6TH_KOR_WIN
+	hidden_effect = {
+		every_country = {
+			limit = {
+				has_war_with = KOR
+			}
+			white_peace = KOR
+		}
+		SZY = {
+			transfer_state = 622
+		}
+		XKC = {
+			set_cosmetic_tag = SZC_clique
+			transfer_state = 753
+			transfer_state = 752
+			transfer_state = 751
+			transfer_state = 1047
+			transfer_state = 1134
+		}
+		SCC = {
+			transfer_state = 1125
+		}
+		SZC = {
+			transfer_state = 605
+			transfer_state = 748
+		}
+		GXM = {
+			transfer_state = 1114
+			transfer_state = 283
+			transfer_state = 1063
+		}
+		NXM = {
+			transfer_state = 616
+			transfer_state = 756
+		}
+		XSM = {
+			transfer_state = 1129
+			transfer_state = 754
+			transfer_state = 1135
+			transfer_state = 755
+			transfer_state = 604
+		}
+		GXC = {
+			set_cosmetic_tag = GXC_YICHIN_LOSE
+			recruit_character = GXC_chiang_kaishek
+			add_country_leader_role = {
+				Character = GXC_chiang_kaishek
+				country_leader = {
+					ideology=xunzheng
+					desc = "POLITICS_CHIANG_KAI-SHEK_DESC"	
+					traits = {
+						CHI_gemingjun_trait
+						CHI_chiang_kaishek_trait
+					}
+				}
+				promote_leader = yes
+			}
+			transfer_state = 747
+			transfer_state = 1128
+			transfer_state = 1131
+			transfer_state = 325
+			transfer_state = 603
+			transfer_state = 599
+			transfer_state = 1053
+			transfer_state = 1058
+			transfer_state = 594
+			
+			add_state_core = 747
+			add_state_core = 1128
+			add_state_core = 1131
+			add_state_core = 325
+			add_state_core = 603
+			add_state_core = 599
+			add_state_core = 1053
+			add_state_core = 1058
+			add_state_core = 594
+			
+			every_state = {
+				limit = {
+					is_core_of = ZLC
+				}
+				add_core_of = GXC
+			}
+		}
+		PRC = {
+			set_capital = { state = 1046 }
+			set_cosmetic_tag = PRC_YICHIN_LOSE
+			add_country_leader_role = {
+				Character = PRC_zhou_enlai
+				country_leader = {
+					ideology=marxism
+					desc = ""	
+					traits = {
+					}
+				}
+				promote_leader = yes
+			}
+			transfer_state = 1098
+			transfer_state = 1045
+			transfer_state = 728
+			transfer_state = 591
+			transfer_state = 592
+			transfer_state = 1046
+			transfer_state = 593
+			transfer_state = 1054
+			transfer_state = 1061
+			transfer_state = 1055
+			transfer_state = 1044
+			transfer_state = 595
+			transfer_state = 1043
+			transfer_state = 600
+			transfer_state = 1062
+			transfer_state = 596
+			transfer_state = 1041
+			transfer_state = 1042
+			transfer_state = 749
+			
+			every_state = {
+				limit = {
+					is_core_of = ZLC
+				}
+				add_core_of = PRC
+			}
+		}
+		CHI = {
+			dismantle_faction = yes
+			create_faction = "ROC_union_faction"
+			add_to_faction = PRC
+			add_to_faction = GXC
+			set_cosmetic_tag = CHI_YICHIN_LOSE
+			country_event = {
+				id = korea.621
+				days = 5
+			}
+		}
+		KOR = {
+			country_event = {
+				id = korea.544
+			}
+		}
+	}
+}	
+KOR_YICHIN_6th_sino_korean_war_kor_lose_effect = {
+	set_global_flag = GLOB_YICHIN_6TH_KOR_LOSE
+	hidden_effect = {
+		every_country = {
+			limit = {
+				has_war_with = KOR
+			}
+			white_peace = KOR
+		}
+		CHI = {
+			set_cosmetic_tag = CHI_YICHIN_VICTORY
+			annex_country = {
+				target = SZY
+				transfer_troops = yes
+			}
+			transfer_state = 1097
+			transfer_state = 611
+			transfer_state = 612
+			transfer_state = 746
+			transfer_state = 621
+			transfer_state = 1123
+			
+			transfer_state = 610
+			transfer_state = 1060
+			transfer_state = 715
+			transfer_state = 716
+			transfer_state = 1032
+			transfer_state = 745
+			transfer_state = 1059
+			transfer_state = 761
+			transfer_state = 714
+			transfer_state = 328
+			transfer_state = 717
+			transfer_state = 1030
+			transfer_state = 1031
+			transfer_state = 524
+			
+			add_state_core = 1097
+			add_state_core = 611
+			add_state_core = 612
+			add_state_core = 746
+			add_state_core = 621
+			add_state_core = 1123
+			
+			add_state_core = 610
+			add_state_core = 1060
+			add_state_core = 715
+			add_state_core = 716
+			add_state_core = 1032
+			add_state_core = 745
+			add_state_core = 1059
+			add_state_core = 761
+			add_state_core = 714
+			add_state_core = 328
+			add_state_core = 717
+			add_state_core = 1030
+			add_state_core = 1031
+			add_state_core = 524
+			
+			annex_country = {
+				target = SIK
+				transfer_troops = yes
+			}
+			
+			#조선
+			transfer_state = 1025
+			transfer_state = 527
+			transfer_state = 1020
+			transfer_state = 1019
+			transfer_state = 1133
+			transfer_state = 1023
+			
+			create_wargoal = {
+				target = TIB
+				type = annex_everything
+			}
+		}
+		SOV = {
+			transfer_state = 561
+			transfer_state = 657 
+			transfer_state = 560
+			transfer_state = 409
+			transfer_state = 408
+			transfer_state = 655
+			transfer_state = 537
+			transfer_state = 1028
+			transfer_state = 1027
+			transfer_state = 555
+			#조선
+			transfer_state = 1024
+			transfer_state = 1021
+			transfer_state = 1017
+		}
+		MSR = {
+			transfer_state = 819
+			transfer_state = 1124
+		}
+		JAP = {
+			transfer_state = 536
+			transfer_state = 1064
+			transfer_state = 528
+			transfer_state = 1029
+			transfer_state = 526
+			transfer_state = 645
+			transfer_state = 648
+			
+			#조선
+			transfer_state = 1026
+			transfer_state = 1091
+		}
+		FSM = {
+			transfer_state = 646
+			transfer_state = 633
+			transfer_state = 647
+			transfer_state = 684
+		}
+		FRI = {
+			annex_country = {
+				target = KVN
+				transfer_troops = no
+			}
+		}
+		PRK = {
+			set_cosmetic_tag = JOS_general_government
+			every_state = {
+				limit = {
+					is_korean_peninsula = yes
+				}
+				add_core_of = PRK
+			}
+			every_state = {
+				limit = {
+					is_core_of = KOR
+				}
+				remove_core_of = KOR
+			}
+			transfer_state = 525
+			transfer_state = 1018
+			transfer_state = 1132
+			transfer_state = 1022
+			transfer_state = 1133
+			transfer_state = 1023
+			set_politics = { 
+				ruling_party = fascism
+				last_election = "1936.11.26"
+				election_frequency = 48
+				elections_allowed = no
+			}
+			set_political_party = {
+				ideology = fascism 
+				popularity = 100
+			}
+			country_event = {
+				id = korea.595
+				days = 30
+			}
+			annex_country = {
+				target = PRK
+				transfer_troops = no
+			}
+			change_tag_from = KOR
+		}
+	}
+}
+##############################################
+#Nationalism - Empire of Korea War Ending
+##############################################
 KOR_hangbok_event = {
 	add_named_threat = { threat = -50 name = KOR_hangbok_event_2 }
 	set_global_flag = TLE_KOREA_IS_DEFEATED
@@ -53,7 +479,7 @@ KOR_hangbok_event = {
 	}
 	every_state = {
 		limit = {
-			is_core_of = QIN
+			is_core_of = ZLC
 		}
 		remove_core_of = QIN
 		remove_core_of = GXC
@@ -69,6 +495,9 @@ KOR_hangbok_event = {
 		remove_core_of = PRC
 		remove_core_of = AQC
 		remove_core_of = HNC
+		remove_core_of = GXM
+		remove_core_of = NXM
+		remove_core_of = TNG
 	}
 	every_state = {
 		limit = {
@@ -257,8 +686,8 @@ KOR_hangbok_event = {
 	}
 	if = {
 		limit = {
-			16 = {
-				is_owned_by = FRA
+			NOT = {
+				has_global_flag = PRE_THE_NEW_ORDER_GBR
 			}
 		}
 		FRA = {
@@ -597,7 +1026,7 @@ KOR_hangbok_event = {
 				}
 			}
 		}
-		YEM = {
+		ENG = {
 			transfer_state = 992
 		}
 		if = { 
@@ -650,13 +1079,13 @@ KOR_hangbok_event = {
 		PAK = {
 			set_cosmetic_tag = PAK_UK
 			set_politics = { 
-				ruling_party = neutrality
+				ruling_party = democratic
 				last_election = "1936.11.26"
 				election_frequency = 48
 				elections_allowed = no
 			}
 			set_popularities = {
-				neutrality = 100
+				democratic = 100
 			}
 		}
 	}
@@ -762,8 +1191,9 @@ KOR_hangbok_event = {
 			country_leader = {
 				expire = "1965.1.1"
 				ideology = conservatism
-				desc=""
+				desc="KOR_douglas_mcarthur_desc"
 				traits = {
+					shogun_with_blue_eys
 				}
 			}
 			promote_leader = yes
@@ -795,8 +1225,9 @@ KOR_hangbok_event = {
 			country_leader = {
 				expire = "1965.1.1"
 				ideology = despotism
-				desc=""
+				desc="KOR_douglas_mcarthur_desc"
 				traits = {
+					shogun_with_blue_eys
 				}
 			}
 			promote_leader = yes
@@ -814,8 +1245,10 @@ KOR_hangbok_event = {
 		remove_ideas = KOR_industry_reform
 		remove_ideas = KOR_purged_government
 		remove_ideas = KOR_the_chaebol
+		remove_ideas = KOR_focus_jeongshin_of_korea
 		remove_ideas = military_youth_focus
-		remove_ideas = JAP_prioritize_naval_aircraft_construction
+		remove_ideas = KOR_prioritize_army_aircraft_construction_idea
+		remove_ideas = KOR_prioritize_naval_aircraft_construction_idea
 		remove_ideas = KOR_interservice_rivalry_army_dominant
 		remove_ideas = KOR_interservice_rivalry_navy_dominant
 		remove_ideas = KOR_interservice_rivalry_army_strengthened
@@ -826,29 +1259,13 @@ KOR_hangbok_event = {
 		remove_ideas = KOR_militarism
 		remove_ideas = KOR_militarism_2
 		remove_ideas = KOR_we_korean
-		remove_ideas = JAP_prioritize_army_aircraft_construction
-		remove_ideas = JAP_prioritize_naval_aircraft_construction
 		remove_ideas = KOR_divided_politics
 		remove_ideas = KOR_failed_civilian_control_of_the_military
 		remove_ideas = KOR_not_planed_attack_2
 		remove_ideas = KOR_the_national_conscription_law
 		remove_ideas = KOR_the_first_army
+		remove_ideas = KOR_focus_jeongshin_of_korean
 		complete_national_focus = KOR_the_last_empire_ending
-		retire_character = KOR_an_jung_geun 
-		retire_character = KOR_yi_wu 
-		retire_character = KOR_yi_geon 
-		retire_character = KOR_kim_sung_ju 
-		retire_character = KOR_yu_dong_yeol 
-		retire_character = KOR_mae_ji_rang 
-		retire_character = KOR_choe_yong_geon 
-		retire_character = KOR_kim_du_han 
-		retire_character = KOR_yi_won 
-		retire_character = KOR_yi_kang 
-		retire_character = KOR_kim_hui_sun 
-		retire_character = KOR_lee_jaemyong 
-		retire_character = KOR_lee_beom_seok 
-		retire_character = KOR_kim_chwa_chin 
-		retire_character = KOR_kim_gyu_sik 
 		remove_ideas = KOR_militarism
 		remove_ideas = KOR_Weakening_the_kingship
 		remove_ideas = KOR_political_officer
@@ -1013,9 +1430,7 @@ KOR_hangbok_event = {
 			}
 		}
 		ENG = {
-			country_event = {
-				id = korea.44
-			}
+			KOR_hangbok_manchu_usa_effect = yes
 		}
 	}
 	if = { #미국이 서울 입성했을 때
@@ -1028,9 +1443,7 @@ KOR_hangbok_event = {
 			}
 		}
 		ENG = {
-			country_event = {
-				id = korea.45
-			}
+			KOR_hangbok_manchu_usa_sov_effect = yes
 		}
 	}
 	if = { #미국이 서울 입성했을 때
@@ -1045,9 +1458,7 @@ KOR_hangbok_event = {
 			}
 		}
 		USA = {
-			country_event = {
-				id = korea.44
-			}
+			KOR_hangbok_manchu_usa_effect = yes
 		}
 		KOR = {
 			set_cosmetic_tag = KOR_GHQ
@@ -1063,9 +1474,7 @@ KOR_hangbok_event = {
 			}
 		}
 		USA = {
-			country_event = {
-				id = korea.45
-			}
+			KOR_hangbok_manchu_usa_sov_effect = yes
 		}
 		KOR = {
 			set_cosmetic_tag = KOR_GHQ
@@ -1081,15 +1490,15 @@ KOR_hangbok_event = {
 				tag = ZLC
 				tag = SIK
 				tag = XSM
+				tag = GXM
+				tag = NXM
 				tag = SHX
 				tag = SZC
 				tag = GXC
 			}
 		}
 		USA = {
-			country_event = {
-				id = korea.44
-			}
+			KOR_hangbok_manchu_usa_effect = yes
 		}
 		KOR = {
 			set_cosmetic_tag = KOR_GHQ
@@ -1102,9 +1511,7 @@ KOR_hangbok_event = {
 			}
 		}
 		JAP = {
-			country_event = {
-				id = korea.48
-			}
+			KOR_hangbok_manchu_usa_jap_effect = yes
 		}
 	}
 	if = { #중국이 서울 점령
@@ -1245,9 +1652,7 @@ KOR_hangbok_event = {
 			}	
 		}
 		SOV = {
-			country_event = {
-				id = korea.46
-			}
+			KOR_hangbok_manchu_sov_effect = yes
 		}
 	}
 	if = { #소련이 서울 점령, 근데 미군을 곁들인
@@ -1260,9 +1665,7 @@ KOR_hangbok_event = {
 			}	
 		}
 		SOV = {
-			country_event = {
-				id = korea.47
-			}
+			KOR_hangbok_manchu_sov_usa_effect = yes
 		}
 	}
 	if = { #소련이 극동공화국과 전쟁할 때
@@ -1341,6 +1744,8 @@ KOR_hangbok_event = {
     			TAG = GXC
     			TAG = PRC
     			TAG = XSM
+    			TAG = GXM
+    			TAG = NXM
     			TAG = AHC
     			TAG = HNC
     			TAG = SND
@@ -1413,6 +1818,7 @@ KOR_hangbok_event = {
     	transfer_state = 1036
     }
     USA = {
+		puppet = KOR
     	transfer_state = 526
     	transfer_state = 648
     	transfer_state = 633
@@ -1477,8 +1883,17 @@ KOR_hangbok_event = {
 		}
 	}
 	ZLC = {
+		set_cosmetic_tag = ZLC_BEIJING
 		annex_country = {
 			target = XSM
+			transfer_troops = yes
+		}
+		annex_country = {
+			target = GXM
+			transfer_troops = yes
+		}
+		annex_country = {
+			target = NXM
 			transfer_troops = yes
 		}
 		annex_country = {
@@ -1502,16 +1917,21 @@ KOR_hangbok_event = {
 			transfer_troops = yes
 		}
 		transfer_state = 602
+		transfer_state = 1136
 		transfer_state = 605
 		transfer_state = 746
 		transfer_state = 748
 		transfer_state = 750
 	}
-	every_state = {
-		limit = {
-			is_core_of = XSM
-		}
-		remove_core_of = XSM
+	ETS = {
+		transfer_state = 1039
+		transfer_state = 618
+	}
+	1039 = {
+		set_demilitarized_zone = yes
+	}
+	618 = {
+		set_demilitarized_zone = yes
 	}
 	every_state = {
 		limit = {
@@ -1525,32 +1945,31 @@ KOR_hangbok_event = {
 		}
 		remove_core_of = CH2
 	}
+	every_state = {
+		limit = {
+			is_core_of = MEN
+		}
+		remove_core_of = MEN
+	}
 	if = {
 		limit = {
 			has_country_flag = TLE_KOR_WIN_IN_CHINA_FUCKYEAH
 		}
-		ZLC = {
-			annex_country = {
-				target = SZY
-				transfer_troops = yes
+		every_state = {
+			limit = {
+				is_core_of = KTA
 			}
-			annex_country = {
-				target = CH1
-				transfer_troops = yes
-			}
-			annex_country = {
-				target = SHX
-				transfer_troops = yes
-			}
-			transfer_state = 1035
-			transfer_state = 1122
+			remove_core_of = KTA
 		}
-		XSM = {
+		SIK = {
+			drop_cosmetic_tag = yes
+			remove_ideas = KOR_chinese_clique_puppet
+		}
+		ZLC = {
 			annex_country = {
 				target = KTA
 				transfer_troops = yes
 			}
-			transfer_state = 604
 		}
 		ENG = {
 			transfer_state = 326
@@ -1602,6 +2021,70 @@ KOR_hangbok_event = {
 			transfer_state = 1036
 			transfer_state = 1042
 			transfer_state = 1041
+		}
+		ZLC = {
+			annex_country = {
+				target = SZY
+				transfer_troops = yes
+			}
+			annex_country = {
+				target = CH1
+				transfer_troops = yes
+			}
+			annex_country = {
+				target = SHX
+				transfer_troops = yes
+			}
+			transfer_state = 1035
+			transfer_state = 1122
+			transfer_state = 1056
+			transfer_state = 1057
+			transfer_state = 607
+			transfer_state = 1122
+			transfer_state = 598
+			transfer_state = 1051
+			transfer_state = 1040
+			transfer_state = 1122
+			transfer_state = 606
+			transfer_state = 1138
+			transfer_state = 1040
+			transfer_state = 1115
+			transfer_state = 1126
+			transfer_state = 1127
+			transfer_state = 1139
+			transfer_state = 1048
+			transfer_state = 620
+		}
+		every_state = {
+			limit = {
+				OR = {
+					has_state_flag = zhili_province_state
+					has_state_flag = shanxi_province_state
+					has_state_flag = shandong_province_state
+					has_state_flag = jiangsu_province_state
+					has_state_flag = jiangxi_province_state
+					has_state_flag = anhui_province_state
+					AND = {
+						has_state_flag = guangdong_province_state
+						NOT = {
+							state = 1098
+						}
+					}
+					has_state_flag = fujian_province_state
+					has_state_flag = zhejiang_province_state
+					has_state_flag = henan_province_state
+					state = 611
+					state = 621
+					state = 604
+				}
+			}
+			set_demilitarized_zone = yes
+		}
+		TIB = {
+			country_event = {
+				id = tle_onaction.318
+				days = 50
+			}
 		}
 	}
 	if = {
@@ -1930,7 +2413,7 @@ KOR_hangbok_event_2 = {
 	}
 	every_state = {
 		limit = {
-			is_core_of = QIN
+			is_core_of = ZLC
 		}
 		remove_core_of = QIN
 		remove_core_of = GXC
@@ -1942,10 +2425,13 @@ KOR_hangbok_event_2 = {
 		remove_core_of = SCC
 		remove_core_of = SZC
 		remove_core_of = SND
-		remove_core_of = GZC
+		remove_core_of = GZC	
 		remove_core_of = PRC
 		remove_core_of = AQC
 		remove_core_of = HNC
+		remove_core_of = GXM
+		remove_core_of = NXM
+		remove_core_of = TNG
 	}
 	every_state = {
 		limit = {
@@ -2164,8 +2650,8 @@ KOR_hangbok_event_2 = {
 	}
 	if = {
 		limit = {
-			16 = {
-				is_owned_by = FRA
+			NOT = {
+				has_global_flag = PRE_THE_NEW_ORDER_GBR
 			}
 		}
 		FRA = {
@@ -2537,7 +3023,7 @@ KOR_hangbok_event_2 = {
 				}
 			}
 		}
-		YEM = {
+		ENG = {
 			transfer_state = 992
 		}
 		if = { 
@@ -2590,13 +3076,13 @@ KOR_hangbok_event_2 = {
 		PAK = {
 			set_cosmetic_tag = PAK_UK
 			set_politics = { 
-				ruling_party = neutrality
+				ruling_party = democratic
 				last_election = "1936.11.26"
 				election_frequency = 48
 				elections_allowed = no
 			}
 			set_popularities = {
-				neutrality = 100
+				democratic = 100
 			}
 		}
 	}
@@ -2703,8 +3189,9 @@ KOR_hangbok_event_2 = {
 			country_leader = {
 				expire = "1965.1.1"
 				ideology = conservatism
-				desc=""
+				desc="KOR_douglas_mcarthur_desc"
 				traits = {
+					shogun_with_blue_eys
 				}
 			}
 			promote_leader = yes
@@ -2736,8 +3223,9 @@ KOR_hangbok_event_2 = {
 			country_leader = {
 				expire = "1965.1.1"
 				ideology = despotism
-				desc=""
+				desc="KOR_douglas_mcarthur_desc"
 				traits = {
+					shogun_with_blue_eys
 				}
 			}
 			promote_leader = yes
@@ -2749,8 +3237,10 @@ KOR_hangbok_event_2 = {
 		remove_ideas = KOR_industry_reform
 		remove_ideas = KOR_purged_government
 		remove_ideas = KOR_the_chaebol
+		remove_ideas = KOR_focus_jeongshin_of_korea
 		remove_ideas = military_youth_focus
-		remove_ideas = JAP_prioritize_naval_aircraft_construction
+		remove_ideas = KOR_prioritize_army_aircraft_construction_idea
+		remove_ideas = KOR_prioritize_naval_aircraft_construction_idea
 		remove_ideas = KOR_interservice_rivalry_army_dominant
 		remove_ideas = KOR_interservice_rivalry_navy_dominant
 		remove_ideas = KOR_interservice_rivalry_army_strengthened
@@ -2760,8 +3250,8 @@ KOR_hangbok_event_2 = {
 		remove_ideas = KOR_fascist_propaganda
 		remove_ideas = KOR_militarism
 		remove_ideas = KOR_militarism_2
-		remove_ideas = KOR_the_first_army
 		remove_ideas = KOR_we_korean
+		remove_ideas = KOR_focus_jeongshin_of_korean
 		every_other_country = {
 			limit = {
 				has_war_with = KOR
@@ -2769,21 +3259,6 @@ KOR_hangbok_event_2 = {
 			white_peace = KOR
 		}
 		complete_national_focus = KOR_the_last_empire_ending
-		retire_character = KOR_an_jung_geun 
-		retire_character = KOR_yi_wu 
-		retire_character = KOR_yi_geon 
-		retire_character = KOR_kim_sung_ju 
-		retire_character = KOR_yu_dong_yeol 
-		retire_character = KOR_mae_ji_rang 
-		retire_character = KOR_choe_yong_geon 
-		retire_character = KOR_kim_du_han 
-		retire_character = KOR_yi_won 
-		retire_character = KOR_yi_kang 
-		retire_character = KOR_kim_hui_sun 
-		retire_character = KOR_lee_jaemyong 
-		retire_character = KOR_lee_beom_seok 
-		retire_character = KOR_kim_chwa_chin 
-		retire_character = KOR_kim_gyu_sik 
 		remove_ideas = KOR_militarism
 		remove_ideas = KOR_Weakening_the_kingship
 		remove_ideas = KOR_political_officer
@@ -2943,9 +3418,7 @@ KOR_hangbok_event_2 = {
 	}
 	set_country_flag = TLE_THE_WAR_IS_ENDED
 	USA = {
-		country_event = {
-			id = korea.44
-		}
+		KOR_hangbok_manchu_usa_effect = yes
 	}
 	if = { #소련이 극동공화국과 전쟁할 때
 		limit = {
@@ -3023,6 +3496,8 @@ KOR_hangbok_event_2 = {
     			TAG = GXC
     			TAG = PRC
     			TAG = XSM
+				TAG = GXM
+				TAG = NXM
     			TAG = AHC
     			TAG = HNC
     			TAG = SND
@@ -3181,6 +3656,7 @@ KOR_hangbok_event_2 = {
     	transfer_state = 1036
     }
     USA = {
+		puppet = KOR
     	transfer_state = 526
     	transfer_state = 648
     	transfer_state = 633
@@ -3241,8 +3717,17 @@ KOR_hangbok_event_2 = {
 		}
 	}
 	ZLC = {
+		set_cosmetic_tag = ZLC_BEIJING
 		annex_country = {
 			target = XSM
+			transfer_troops = yes
+		}
+		annex_country = {
+			target = GXM
+			transfer_troops = yes
+		}
+		annex_country = {
+			target = NXM
 			transfer_troops = yes
 		}
 		annex_country = {
@@ -3266,16 +3751,21 @@ KOR_hangbok_event_2 = {
 			transfer_troops = yes
 		}
 		transfer_state = 602
+		transfer_state = 1136
 		transfer_state = 605
 		transfer_state = 746
 		transfer_state = 748
 		transfer_state = 750
 	}
-	every_state = {
-		limit = {
-			is_core_of = XSM
-		}
-		remove_core_of = XSM
+	ETS = {
+		transfer_state = 1039
+		transfer_state = 618
+	}
+	1039 = {
+		set_demilitarized_zone = yes
+	}
+	618 = {
+		set_demilitarized_zone = yes
 	}
 	every_state = {
 		limit = {
@@ -3289,55 +3779,37 @@ KOR_hangbok_event_2 = {
 		}
 		remove_core_of = CH2
 	}
+	every_state = {
+		limit = {
+			is_core_of = MEN
+		}
+		remove_core_of = MEN
+	}
 	if = {
 		limit = {
 			has_country_flag = TLE_KOR_WIN_IN_CHINA_FUCKYEAH
 		}
-		ZLC = {
-			annex_country = {
-				target = SZY
-				transfer_troops = yes
+		every_state = {
+			limit = {
+				is_core_of = KTA
 			}
-			annex_country = {
-				target = CH1
-				transfer_troops = yes
-			}
-			annex_country = {
-				target = SHX
-				transfer_troops = yes
-			}
-			transfer_state = 1035
-			transfer_state = 1122
+			remove_core_of = KTA
 		}
-		XSM = {
+		SIK = {
+			drop_cosmetic_tag = yes
+			remove_ideas = KOR_chinese_clique_puppet
+		}
+		ZLC = {
 			annex_country = {
 				target = KTA
 				transfer_troops = yes
 			}
-			transfer_state = 604
 		}
 		ENG = {
 			transfer_state = 326
 		}
-		if = {
-			limit = {
-				POR = {
-					exists = yes
-				}
-			}
-			POR = {
-				transfer_state = 729
-			}
-		}
-		if = {
-			limit = {
-				POR = {
-					exists = no
-				}
-			}
-			SPR = {
-				transfer_state = 729
-			}
+		POR = {
+			transfer_state = 729
 		}
 		CHI = {
 			annex_country = {
@@ -3383,6 +3855,70 @@ KOR_hangbok_event_2 = {
 			transfer_state = 1036
 			transfer_state = 1042
 			transfer_state = 1041
+		}
+		ZLC = {
+			annex_country = {
+				target = SZY
+				transfer_troops = yes
+			}
+			annex_country = {
+				target = CH1
+				transfer_troops = yes
+			}
+			annex_country = {
+				target = SHX
+				transfer_troops = yes
+			}
+			transfer_state = 1035
+			transfer_state = 1122
+			transfer_state = 1056
+			transfer_state = 1057
+			transfer_state = 607
+			transfer_state = 1122
+			transfer_state = 598
+			transfer_state = 1051
+			transfer_state = 1040
+			transfer_state = 1122
+			transfer_state = 606
+			transfer_state = 1138
+			transfer_state = 1040
+			transfer_state = 1115
+			transfer_state = 1126
+			transfer_state = 1127
+			transfer_state = 1139
+			transfer_state = 1048
+			transfer_state = 620
+		}
+		every_state = {
+			limit = {
+				OR = {
+					has_state_flag = zhili_province_state
+					has_state_flag = shanxi_province_state
+					has_state_flag = shandong_province_state
+					has_state_flag = jiangsu_province_state
+					has_state_flag = jiangxi_province_state
+					has_state_flag = anhui_province_state
+					AND = {
+						has_state_flag = guangdong_province_state
+						NOT = {
+							state = 1098
+						}
+					}
+					has_state_flag = fujian_province_state
+					has_state_flag = zhejiang_province_state
+					has_state_flag = henan_province_state
+					state = 611
+					state = 621
+					state = 604
+				}
+			}
+			set_demilitarized_zone = yes
+		}
+		TIB = {
+			country_event = {
+				id = tle_onaction.318
+				days = 50
+			}
 		}
 	}
 	408 = {
@@ -3592,6 +4128,1029 @@ KOR_hangbok_event_2 = {
 		transfer_state = 925
 	}
 }
+
+##############################################
+#Nationalism - Empire of Korea Nuclear Ending Manchuria
+##############################################
+KOR_hangbok_china_effect = {
+	hidden_effect = {
+		if = {
+			limit = {
+				CH1 = {
+					exists = yes
+				}
+			}
+			if = {
+				limit = {
+					KVN = {
+						exists = yes
+					}
+				}
+				KVN = {
+					release = VIN
+					release = LAO
+					release = CAM
+				}
+			}
+			KOR = {
+				release = ZLC
+			}
+			every_state = {
+				limit = {
+					is_core_of = ZLC
+					is_owned_by = KOR
+				}	
+				set_state_owner_to = ZLC
+			}
+			SOV = {
+				puppet = SIK
+			}
+			SIK = {
+				set_cosmetic_tag = SIK
+			}
+			ZLC = {
+				set_cosmetic_tag = ZLC
+				transfer_state = 746
+				annex_country = {
+					target = SND
+					transfer_troops = no
+				}
+				annex_country = {
+					target = SHX
+					transfer_troops = no
+				}
+				annex_country = {
+					target = XSM
+					transfer_troops = no
+				}
+				annex_country = {
+					target = GXM
+					transfer_troops = no
+				}
+				annex_country = {
+					target = NXM
+					transfer_troops = no
+				}
+				annex_country = {
+					target = WZC
+					transfer_troops = no
+				}
+				annex_country = {
+					target = QIN
+					transfer_troops = no
+				}
+				annex_country = {
+					target = GXC
+					transfer_troops = no
+				}
+				annex_country = {
+					target = GNG
+					transfer_troops = no
+				}
+				annex_country = {
+					target = GDC
+					transfer_troops = no
+				}
+				annex_country = {
+					target = SZC
+					transfer_troops = no
+				}
+				annex_country = {
+					target = YUN
+					transfer_troops = no
+				}
+				annex_country = {
+					target = CHI
+					transfer_troops = no
+				}
+				annex_country = {
+					target = HNC
+					transfer_troops = no
+				}
+				annex_country = {
+					target = CH1
+					transfer_troops = no
+				}
+				annex_country = {
+					target = XKC
+					transfer_troops = no
+				}
+				annex_country = {
+					target = SCC
+					transfer_troops = no
+				}
+				annex_country = {
+					target = GZC
+					transfer_troops = no
+				}
+				annex_country = {
+					target = KTA
+					transfer_troops = no
+				}
+				annex_country = {
+					target = SZY
+					transfer_troops = no
+				}
+			}
+		}
+	}
+}
+KOR_hangbok_manchu_usa_effect = {
+	hidden_effect = {
+		if = {
+			limit = {
+				OR = {
+					AND = {
+						ZLC = {
+							exists = no
+						}
+						CHI = {
+							exists = no
+						}
+					}
+					KOR = {
+						has_country_flag = TLE_THE_WAR_IS_WIN
+					}
+				}
+			}
+			KOR_hangbok_china_effect = yes
+		}
+		country_event = {
+			id = thelastempire.4
+		}	
+		KOR = {
+			transfer_navy = {
+				target = USA
+			}
+		}
+		USA = { #한국 괴뢰화, 만주민국 설립, 제주 해군기지 획득
+			puppet = KMN
+			puppet = KOR
+			transfer_state = 745
+			transfer_state = 1020
+		}
+		KMN = { #만주민국 건설 wwww
+			transfer_state = 1032
+			transfer_state = 1031
+			transfer_state = 1030
+			transfer_state = 717
+			transfer_state = 328
+			transfer_state = 716
+			transfer_state = 715
+			transfer_state = 610
+			transfer_state = 1060
+								
+			set_capital = { state = 716 }	
+			transfer_state = 1059
+			transfer_state = 714
+			transfer_state = 761
+			set_cosmetic_tag = KMN_GHQ
+			set_party_name = {
+				ideology = democratic
+				long_name = "KMN_US_PARTY_long"
+				name = "KMN_US_PARTY"
+			}
+			set_party_name = {
+				ideology = fascism
+				long_name = "KMN_US_PARTY_long"
+				name = "KMN_US_PARTY"
+			}
+			set_party_name = {
+				ideology = communism
+				long_name = "KMN_US_PARTY_long"
+				name = "KMN_US_PARTY"
+			}
+			set_party_name = {
+				ideology = neutrality
+				long_name = "KMN_US_PARTY_long"
+				name = "KMN_US_PARTY"
+			}
+			set_politics = {
+				ruling_party = neutrality
+				last_election = "1932.3.8"
+				election_frequency = 60
+				elections_allowed = no
+			}
+			set_popularities = {
+				neutrality = 100
+				fascism = 0
+				communism = 0
+				democratic = 0
+			}
+			retire_character = KMN_yi_cheok
+			add_country_leader_role = {
+				Character = KMN_john_reed_hodge
+				country_leader = {
+					#expire = "1965.1.1"
+					ideology = despotism
+					traits = { }
+				}
+				promote_leader = yes
+			}	
+			add_country_leader_role = {
+				Character = KMN_john_reed_hodge
+				country_leader = {
+					#expire = "1965.1.1"
+					ideology = liberalism
+					traits = { }
+				}
+				promote_leader = yes
+			}	
+		}
+		1059 = {
+			set_demilitarized_zone = yes
+		}
+		714 = {
+			set_demilitarized_zone = yes
+		}
+		761 = {
+			set_demilitarized_zone = yes
+		}
+		every_state = {
+			limit = {
+				is_korean_peninsula = no
+				is_core_of = KOR
+			}
+			remove_core_of = KOR
+		}
+		every_state = {
+			limit = {
+				is_korean_peninsula = no
+				is_claimed_by = KOR
+			}
+			remove_claim_by = KOR
+		}
+		every_state = {
+			limit = {
+				is_core_of = KKS
+			}
+			remove_core_of = KKS
+		}
+		every_state = {
+			limit = {
+				is_core_of = KHK
+			}
+			remove_core_of = KHK
+		}
+		every_state = {
+			limit = {
+				is_core_of = KYH
+			}
+			remove_core_of = KYH
+		}
+		KMN = {
+			add_state_core = 716
+			add_state_core = 1032
+			add_state_core = 328
+			add_state_core = 1031
+			add_state_core = 717
+			add_state_core = 1030
+			add_state_core = 745
+			add_state_core = 611
+			add_state_core = 612
+			add_state_core = 621
+			add_state_core = 612
+		}
+		KOR = {
+			add_state_core = 1020
+			set_politics = {
+				ruling_party = neutrality
+				last_election = "1932.3.8"
+				election_frequency = 60
+				elections_allowed = no
+			}
+			set_popularities = {
+				neutrality = 100
+				fascism = 0
+				communism = 0
+				democratic = 0
+			}
+		}
+	}
+}
+KOR_hangbok_manchu_usa_sov_effect = {
+	hidden_effect = {
+		if = {
+			limit = {
+				OR = {
+					AND = {
+						ZLC = {
+							exists = no
+						}
+						CHI = {
+							exists = no
+						}
+					}
+					KOR = {
+						has_country_flag = TLE_THE_WAR_IS_WIN
+					}
+				}
+			}
+			KOR_hangbok_china_effect = yes
+		}
+		country_event = {
+			id = thelastempire.4
+		}	
+		USA = { #한국 괴뢰화, 만주민국 설립, 제주 해군기지 획득
+			puppet = KMN
+			puppet = KOR
+			transfer_state = 745
+			transfer_state = 1020
+		}
+		KMN = { #만주민국 건설, 근데 분단을 섞은
+			transfer_state = 1032
+			transfer_state = 1031
+			transfer_state = 1030
+			transfer_state = 717
+			transfer_state = 328
+			transfer_state = 716
+			transfer_state = 715
+			transfer_state = 610
+			transfer_state = 1060
+			set_cosmetic_tag = MAN_GHQ
+			set_capital = { state = 716 }
+			#transfer_state = 1059
+			#transfer_state = 714
+			#transfer_state = 761
+			set_politics = {
+				ruling_party = neutrality
+				last_election = "1932.3.8"
+				election_frequency = 60
+				elections_allowed = no
+			}
+			set_popularities = {
+				neutrality = 100
+				fascism = 0
+				communism = 0
+				democratic = 0
+			}
+			set_party_name = {
+				ideology = democratic
+				long_name = "KMN_US_PARTY_long"
+				name = "KMN_US_PARTY"
+			}
+			set_party_name = {
+				ideology = fascism
+				long_name = "KMN_US_PARTY_long"
+				name = "KMN_US_PARTY"
+			}
+			set_party_name = {
+				ideology = communism
+				long_name = "KMN_US_PARTY_long"
+				name = "KMN_US_PARTY"
+			}
+			set_party_name = {
+				ideology = neutrality
+				long_name = "KMN_US_PARTY_long"
+				name = "KMN_US_PARTY"
+			}
+			retire_character = KMN_yi_cheok
+			add_country_leader_role = {
+				Character = KMN_john_reed_hodge
+				country_leader = {
+					#expire = "1965.1.1"
+					ideology = despotism
+					traits = { }
+				}
+				promote_leader = yes
+			}	
+			add_country_leader_role = {
+				Character = KMN_john_reed_hodge
+				country_leader = {
+					#expire = "1965.1.1"
+					ideology = liberalism
+					traits = { }
+				}
+				promote_leader = yes
+			}	
+		}
+		SOV = { #쏘오련이 북만주 습득, 북반도 먹음. 한반도 반갈죽 ㅇㅇ..
+			puppet = PRK
+			puppet = MAN
+		}
+		MAN = {
+			transfer_state = 714
+			transfer_state = 1059
+			transfer_state = 761
+			set_cosmetic_tag = SOV_GHQ
+			add_state_core = 714
+			add_state_core = 1059
+			add_state_core = 761
+			add_state_core = 1032
+			add_state_core = 1031
+			add_state_core = 1030
+			add_state_core = 717
+			add_state_core = 328
+			add_state_core = 716
+			add_state_core = 715
+			add_state_core = 610
+			add_state_core = 1060
+			add_state_core = 612
+			add_state_core = 611
+			add_state_core = 621
+		}
+		KOR = {
+			transfer_navy = {
+				target = USA
+			}
+		}
+		every_state = {
+			limit = {
+				is_claimed_by = KOR
+				is_core_of = ZLC
+			}
+			remove_claim_by = KOR
+		}
+		every_state = {
+			limit = {
+				is_core_of = KOR
+				is_core_of = ZLC
+			}
+			remove_core_of = KOR
+		}
+		every_state = {
+			limit = {
+				is_core_of = KOR
+				is_core_of = KMN
+			}
+			remove_core_of = KOR
+			add_claim_by = KOR
+		}
+		every_state = {
+			limit = {
+				is_core_of = KOR
+				is_core_of = SOV	
+			}
+			remove_core_of = KOR
+		}
+		every_state = {
+			limit = {
+				is_core_of = KOR
+				is_claimed_by = SOV	
+			}
+			remove_core_of = KOR
+		}
+		every_state = {
+			limit = {
+				is_core_of = KOR
+				is_core_of = JAP	
+			}
+			remove_core_of = KOR
+		}
+		every_state = {
+			limit = {
+				is_claimed_by = KOR
+				is_core_of = JAP	
+			}
+			remove_claim_by = KOR
+		}
+		every_state = {
+			limit = {
+				is_core_of = KKS
+			}
+			remove_core_of = KKS
+		}
+		every_state = {
+			limit = {
+				is_core_of = KHK
+			}
+			remove_core_of = KHK
+		}
+		every_state = {
+			limit = {
+				is_core_of = KYH
+			}
+			remove_core_of = KYH
+		}
+		KMN = {
+			add_state_core = 716
+			add_state_core = 1032
+			add_state_core = 328
+			add_state_core = 1031
+			add_state_core = 717
+			add_state_core = 1030
+			add_state_core = 745
+			add_state_core = 611
+			add_state_core = 612
+			add_state_core = 621
+			add_state_core = 612
+		}
+		KOR = {
+			add_state_core = 1020
+		}
+	}
+}
+KOR_hangbok_manchu_sov_effect = {
+	hidden_effect = {
+		if = {
+			limit = {
+				OR = {
+					AND = {
+						ZLC = {
+							exists = no
+						}
+						CHI = {
+							exists = no
+						}
+					}
+					KOR = {
+						has_country_flag = TLE_THE_WAR_IS_WIN
+					}
+				}
+			}
+			KOR_hangbok_china_effect = yes
+		}
+		country_event = {
+			id = thelastempire.4
+		}	
+		SOV = {
+			transfer_state = 1020
+			transfer_state = 745
+			puppet = PRK
+			puppet = MAN
+		}
+		MAN = {
+			transfer_state = 761
+			transfer_state = 1032
+			transfer_state = 1031
+			transfer_state = 1030
+			transfer_state = 717
+			transfer_state = 328
+			transfer_state = 716
+			transfer_state = 715
+			transfer_state = 610
+			transfer_state = 1060
+			
+			set_capital = { state = 716 }
+			
+			transfer_state = 1059
+			transfer_state = 714
+			transfer_state = 761
+			
+			add_state_core = 611
+			add_state_core = 612
+			add_state_core = 621
+		}
+		every_state = {
+			limit = {
+				is_core_of = KMN
+			}
+			add_core_of = MAN
+		}
+		KOR = {
+			remove_ideas = KOR_yi_jin
+			remove_ideas = KOR_yi_jin_2
+			remove_unit_leader = 19363
+			remove_unit_leader = 19362
+			remove_unit_leader = 20100
+		}
+		KOR = {
+			transfer_navy = {
+				target = SOV
+			}
+		}
+		every_state = {
+			limit = {
+				is_claimed_by = KOR
+				is_core_of = ZLC
+			}
+			remove_claim_by = KOR
+		}
+		every_state = {
+			limit = {
+				is_core_of = KOR
+				is_core_of = ZLC
+			}
+			remove_core_of = KOR
+		}
+		every_state = {
+			limit = {
+				is_core_of = KOR
+				is_core_of = KMN
+			}
+			remove_core_of = KOR
+			add_claim_by = KOR
+		}
+		every_state = {
+			limit = {
+				is_core_of = KOR
+				is_core_of = SOV	
+			}
+			remove_core_of = KOR
+		}
+		every_state = {
+			limit = {
+				is_core_of = KOR
+				is_claimed_by = SOV	
+			}
+			remove_core_of = KOR
+		}
+		every_state = {
+			limit = {
+				is_core_of = KOR
+				is_core_of = JAP	
+			}
+			remove_core_of = KOR
+		}
+		every_state = {
+			limit = {
+				is_claimed_by = KOR
+				is_core_of = JAP	
+			}
+			remove_claim_by = KOR
+		}
+		every_state = {
+			limit = {
+				is_core_of = KKS
+			}
+			remove_core_of = KKS
+		}
+		every_state = {
+			limit = {
+				is_core_of = KHK
+			}
+			remove_core_of = KHK
+		}
+		every_state = {
+			limit = {
+				is_core_of = KYH
+			}
+			remove_core_of = KYH
+		}
+		KMN = {
+			add_state_core = 716
+			add_state_core = 1032
+			add_state_core = 328
+			add_state_core = 1031
+			add_state_core = 717
+			add_state_core = 1030
+			add_state_core = 745
+			add_state_core = 611
+			add_state_core = 612
+			add_state_core = 621
+			add_state_core = 612
+		}
+		KOR = {
+			add_state_core = 1020
+		}
+		PRK = {
+			annex_country = {
+				target = KOR
+				transfer_troops = yes
+			}
+		}			
+	}
+}
+KOR_hangbok_manchu_sov_usa_effect = {
+	hidden_effect = {
+		if = {
+			limit = {
+				OR = {
+					AND = {
+						ZLC = {
+							exists = no
+						}
+						CHI = {
+							exists = no
+						}
+					}
+					KOR = {
+						has_country_flag = TLE_THE_WAR_IS_WIN
+					}
+				}
+			}
+			KOR_hangbok_china_effect = yes
+		}
+		country_event = {
+			id = thelastempire.4
+		}	
+		KOR = {
+			transfer_navy = {
+				target = SOV
+			}
+		}
+		SOV = { #여순먹고 만주 괴뢰화
+			transfer_state = 745
+			puppet = MAN
+			puppet = PRK
+		}
+		MAN = {
+			transfer_state = 761
+			transfer_state = 1032
+			transfer_state = 1031
+			transfer_state = 1030
+			transfer_state = 717
+			transfer_state = 328
+			transfer_state = 716
+			transfer_state = 715
+			transfer_state = 610
+			transfer_state = 1060
+			
+			transfer_state = 1059
+			transfer_state = 714
+			transfer_state = 761
+			
+			add_state_core = 611
+			add_state_core = 612
+			add_state_core = 621
+		}
+		USA = {
+			transfer_state = 1020
+			puppet = KOR
+		}
+		every_state = {
+			limit = {
+				is_core_of = KMN
+			}
+			add_core_of = MAN
+		}
+		PRK = { #북괴 형성
+			transfer_state = 527
+			transfer_state = 1017
+			transfer_state = 1024
+			transfer_state = 1025
+			
+		}
+		every_state = {
+			limit = {
+				is_core_of = KOR
+			}
+			add_core_of = PRK
+		}
+		every_state = {
+			limit = {
+				is_claimed_by = KOR
+				is_core_of = ZLC
+			}
+			remove_claim_by = KOR
+		}
+		every_state = {
+			limit = {
+				is_core_of = KOR
+				is_core_of = ZLC
+			}
+			remove_core_of = KOR
+		}
+		every_state = {
+			limit = {
+				is_core_of = KOR
+				is_core_of = KMN
+			}
+			remove_core_of = KOR
+			add_claim_by = KOR
+		}
+		every_state = {
+			limit = {
+				is_core_of = KOR
+				is_core_of = SOV	
+			}
+			remove_core_of = KOR
+		}
+		every_state = {
+			limit = {
+				is_core_of = KOR
+				is_claimed_by = SOV	
+			}
+			remove_core_of = KOR
+		}
+		every_state = {
+			limit = {
+				is_core_of = KOR
+				is_core_of = JAP	
+			}
+			remove_core_of = KOR
+		}
+		every_state = {
+			limit = {
+				is_claimed_by = KOR
+				is_core_of = JAP	
+			}
+			remove_claim_by = KOR
+		}
+		every_state = {
+			limit = {
+				is_core_of = KKS
+			}
+			remove_core_of = KKS
+		}
+		every_state = {
+			limit = {
+				is_core_of = KHK
+			}
+			remove_core_of = KHK
+		}
+		every_state = {
+			limit = {
+				is_core_of = KYH
+			}
+			remove_core_of = KYH
+		}
+		KMN = {
+			add_state_core = 716
+			add_state_core = 1032
+			add_state_core = 328
+			add_state_core = 1031
+			add_state_core = 717
+			add_state_core = 1030
+			add_state_core = 745
+			add_state_core = 611
+			add_state_core = 612
+			add_state_core = 621
+			add_state_core = 612
+		}
+		KOR = {
+			add_state_core = 1020
+		}	
+	}
+}
+KOR_hangbok_manchu_jap_effect = {
+	hidden_effect = {
+		if = {
+			limit = {
+				OR = {
+					AND = {
+						ZLC = {
+							exists = no
+						}
+						CHI = {
+							exists = no
+						}
+					}
+					KOR = {
+						has_country_flag = TLE_THE_WAR_IS_WIN
+					}
+				}
+			}
+			KOR_hangbok_china_effect = yes
+		}
+		country_event = {
+			id = thelastempire.4
+		}	
+		if = {
+			limit = {
+				has_global_flag = TLE_soviet_union_defeat
+			}
+			MSR = {
+				transfer_state = 329
+				add_state_core = 329
+			}	
+			KMN = {
+				transfer_state = 655
+				transfer_state = 537
+				transfer_state = 555
+				transfer_state = 561
+				transfer_state = 560
+				transfer_state = 657
+				transfer_state = 409
+				transfer_state = 408
+				transfer_state = 1027
+				transfer_state = 1028
+				add_state_core = 655
+				add_state_core = 537
+				add_state_core = 555
+				add_state_core = 561
+				add_state_core = 560
+				add_state_core = 657
+				add_state_core = 409
+				add_state_core = 408
+				add_state_core = 1027
+				add_state_core = 1028
+			}
+		}
+		USA = {
+			puppet = KOR
+		}
+		655 = {
+			set_state_name = "north_garafuto"
+		}
+		537 = {
+			set_state_name = "south_garafuto"
+		}
+		555 = {
+			set_state_name = "qixima_ryoto"
+		}
+		set_province_name = {
+			id = 12446
+			name = "toyohara"
+		}
+		JAP = { #일본이 한국 괴뢰국 세우고, 제주와 여순을 먹는다
+			puppet = KMN
+			#puppet = KOR
+			transfer_state = 745
+			transfer_state = 1020
+			transfer_state = 555
+			transfer_state = 537
+			transfer_state = 655
+			transfer_state = 526
+			transfer_state = 1021
+		}
+		KMN = { #만주 풀로 괴뢰국
+			transfer_state = 761
+			transfer_state = 716
+			transfer_state = 328
+			transfer_state = 717
+			transfer_state = 714
+			transfer_state = 715
+			transfer_state = 610
+			transfer_state = 1060
+			transfer_state = 1059
+			transfer_state = 1032
+			transfer_state = 1031
+			transfer_state = 1030
+			set_capital = { state = 716 }
+		}
+		KOR = {
+			transfer_navy = {
+				target = JAP
+			}
+		}
+		every_state = {
+			limit = {
+				is_claimed_by = KOR
+				is_core_of = ZLC
+			}
+			remove_claim_by = KOR
+		}
+		every_state = {
+			limit = {
+				is_core_of = KOR
+				is_core_of = ZLC
+			}
+			remove_core_of = KOR
+		}
+		every_state = {
+			limit = {
+				is_core_of = KOR
+				is_core_of = KMN
+			}
+			remove_core_of = KOR
+			add_claim_by = KOR
+		}
+		every_state = {
+			limit = {
+				is_core_of = KOR
+				is_core_of = SOV	
+			}
+			remove_core_of = KOR
+		}
+		every_state = {
+			limit = {
+				is_core_of = KOR
+				is_claimed_by = SOV	
+			}
+			remove_core_of = KOR
+		}
+		every_state = {
+			limit = {
+				is_core_of = KOR
+				is_core_of = JAP	
+			}
+			remove_core_of = KOR
+		}
+		every_state = {
+			limit = {
+				is_claimed_by = KOR
+				is_core_of = JAP	
+			}
+			remove_claim_by = KOR
+		}
+		every_state = {
+			limit = {
+				is_core_of = KKS
+			}
+			remove_core_of = KKS
+		}
+		every_state = {
+			limit = {
+				is_core_of = KHK
+			}
+			remove_core_of = KHK
+		}
+		every_state = {
+			limit = {
+				is_core_of = KYH
+			}
+			remove_core_of = KYH
+		}
+		KMN = {
+			add_state_core = 716
+			add_state_core = 1032
+			add_state_core = 328
+			add_state_core = 1031
+			add_state_core = 717
+			add_state_core = 1030
+			add_state_core = 745
+			add_state_core = 611
+			add_state_core = 612
+			add_state_core = 621
+			add_state_core = 612
+		}
+		KOR = {
+			add_state_core = 1020
+		}
+	}
+}
+
 ##############################################
 #Nationalism - 5th Sino-Korean War's Korean Victory
 ##############################################
@@ -3640,8 +5199,8 @@ KOR_china_annex_effect = {
 		set_resistance = 0
 		set_garrison_strength = 1.0
 		start_resistance = no
-		add_core_of = CH1
 		add_core_of = CH2
+		add_core_of = SZY
 	}
 	KOR = {
 		set_country_flag = TLE_KOR_WIN_IN_CHINA_FUCKYEAH
@@ -3699,6 +5258,8 @@ KOR_china_annex_effect = {
 		set_cosmetic_tag = XSM_REV_KOR
 		transfer_state = 755
 		transfer_state = 754
+		transfer_state = 1134
+		transfer_state = 1135
 		transfer_state = 1129
 		set_politics = {
 			ruling_party = neutrality
@@ -3774,6 +5335,7 @@ KOR_china_annex_effect = {
 		transfer_state = 1035
 		transfer_state = 1122
 		transfer_state = 614
+		transfer_state = 1137
 		transfer_state = 1074
 		transfer_state = 597
 		transfer_state = 1049
@@ -3783,10 +5345,10 @@ KOR_china_annex_effect = {
 		transfer_state = 1033
 		transfer_state = 609
 		transfer_state = 1130
-		transfer_state = 1097
 		#
 		add_state_core = 608
 		add_state_core = 614
+		add_state_core = 1137
 		add_state_core = 1074
 		add_state_core = 615
 		add_state_core = 1052
@@ -3799,7 +5361,6 @@ KOR_china_annex_effect = {
 		add_state_core = 1033
 		add_state_core = 609
 		add_state_core = 1130
-		add_state_core = 1097
 		set_cosmetic_tag = SZY_KOR
 		set_politics = {
 			ruling_party = fascism
@@ -3823,11 +5384,13 @@ KOR_china_annex_effect = {
 		transfer_state = 620
 		transfer_state = 1056	
 		transfer_state = 1127
+		transfer_state = 1139
 		transfer_state = 598	
 		transfer_state = 1051
 		transfer_state = 1115
 		transfer_state = 1040
 		transfer_state = 606
+		transfer_state = 1138
 		transfer_state = 1048
 		transfer_state = 613
 		transfer_state = 1038
@@ -3967,6 +5530,7 @@ KOR_china_annex_effect = {
 		load_focus_tree = korean_government
 		set_cosmetic_tag = HNC_KOR
 		transfer_state = 602
+		transfer_state = 1136
 		transfer_state = 1054
 		transfer_state = 750
 		set_politics = {
@@ -3996,6 +5560,8 @@ KOR_china_annex_effect = {
 			add_state_core = 616
 			add_state_core = 756
 			add_state_core = 746
+			transfer_state = 1097
+			add_state_core = 1097
 		}
 	}
 	if = {
@@ -4346,6 +5912,7 @@ TNO_TLE_KOR_victory_effect = {
 			set_autonomy = { target = BRM autonomy_state = korean_puppet }
 			set_autonomy = { target = KVN autonomy_state = korean_military_admin }
 			set_autonomy = { target = JNT autonomy_state = korean_military_admin }
+			transfer_state = 1140
 			transfer_state = 725
 			transfer_state = 726
 			transfer_state = 641
@@ -4370,51 +5937,6 @@ TNO_TLE_KOR_victory_effect = {
 			GNG = {
 				transfer_state = 326
 				transfer_state = 729
-			}
-			set_province_name = {
-				id = 1047 name = "kwangju"
-			}
-			set_province_name = {
-				id = 4189 name = "omun"
-			}
-			set_province_name = {
-				id = 10062 name = "hyanghang"
-			}
-			set_province_name = {
-				id = 12014 name = "yuwon"
-			}
-			set_province_name = {
-				id = 9938 name = "joju"
-			}
-			set_province_name = {
-				id = 1070 name = "haegu"
-			}
-			set_province_name = {
-				id = 1018 name = "umju"
-			}
-			set_province_name = {
-				id = 7108 name = "simcheon"
-			}
-			set_province_name = {
-				id = 10212 name = "abi"
-			}
-			set_province_name = {
-				id = 10199 name = "sundalgwan"
-			}
-			set_province_name = {
-				id = 12905 name = "gojin"
-			}
-			set_province_name = {
-				id = 4424 name = "shinsan"
-			}
-			set_province_name = {
-				id = 4367 name = "gwandan"
-			}
-			set_province_name = {
-				id = 10297 name = "gilyungpa"
-			}
-			set_province_name = {
-				id = 12215 name = "bingsung"
 			}
 			
 			add_state_core = 631
@@ -4817,9 +6339,6 @@ TNO_TLE_KOR_victory_effect = {
 				set_autonomy = { target = SIA autonomy_state = korean_puppet }
 			}
 		}
-		YEM = {
-			transfer_state = 992
-		}
 		if = {
 			limit = {
 				KOR = {
@@ -4855,12 +6374,6 @@ TNO_TLE_KOR_victory_effect = {
 				puppet = SRL
 				set_autonomy = { target = SRL autonomy_state = korean_puppet }
 			}
-			SZC = {
-				annex_country = {
-					target = XKC
-					transfer_troops = no
-				}
-			}
 			751 = {
 				set_demilitarized_zone = yes
 			}
@@ -4875,9 +6388,6 @@ TNO_TLE_KOR_victory_effect = {
 						has_country_flag = KOR_invade_delhi
 					}
 				}
-			}
-			YEM = {
-				transfer_state = 992
 			}
 			RAJ = {
 				set_country_flag = TLE_RAJ_destiny_of_new_world_flag
@@ -5007,6 +6517,8 @@ TNO_TLE_KOR_victory_effect = {
 		white_peace = SIK
 		white_peace = KVN
 		white_peace = XSM
+		white_peace = GXM
+		white_peace = NXM
 		white_peace = RYU
 	}
 	every_country = {
@@ -5032,6 +6544,1118 @@ TNO_TLE_KOR_victory_effect = {
 		remove_wargoal = {
 			type = annex_everything
 			target = KOR
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = TLE_TNO_SURRENDER_USA
+		}
+		TNO_TLE_KOR_victory_usa_annex_effect = yes
+	}
+}
+TNO_TLE_KOR_victory_usa_annex_effect = {
+	hidden_effect = {
+		every_country = {
+			limit = {
+				OR = {
+					is_in_faction_with = ENG
+					is_in_faction_with = USA
+				}
+			}
+			save_event_target_as = TNO_TLE_KOR_ENG_ALLIES
+		}
+		if = {
+			limit = {
+				USA = {
+					is_faction_leader = yes
+				}
+			}
+			USA = {
+				dismantle_faction = yes
+			}
+		}
+		if = {
+			limit = {
+				ENG = {
+					is_faction_leader = yes
+				}
+			}
+			ENG = {
+				dismantle_faction = yes
+			}
+		}
+		KOR = {
+			add_to_faction = event_target:save_event_target_as
+			annex_country = {
+				target = FRA
+				transfer_troops = no
+			}
+			annex_country = {
+				target = JAP
+				transfer_troops = no
+			}
+			annex_country = {
+				target = USA
+				transfer_troops = no
+			}
+			set_autonomy = { target = MEX autonomy_state = korean_bunguk }
+			set_autonomy = { target = AK1 autonomy_state = korean_bunguk }
+			set_autonomy = { target = AK2 autonomy_state = korean_bunguk }
+			set_autonomy = { target = AK3 autonomy_state = korean_bunguk }
+			set_autonomy = { target = AK4 autonomy_state = korean_bunguk }
+			set_autonomy = { target = AK5 autonomy_state = korean_bunguk }
+			set_autonomy = { target = AK6 autonomy_state = korean_bunguk }
+			set_autonomy = { target = AK7 autonomy_state = korean_bunguk }
+			set_autonomy = { target = KHK autonomy_state = korean_bunguk }
+			set_autonomy = { target = QUE autonomy_state = korean_bunguk }
+			set_autonomy = { target = AST autonomy_state = korean_bunguk }
+			set_autonomy = { target = CAN autonomy_state = korean_bunguk }
+			transfer_state = 650
+			transfer_state = 933
+			transfer_state = 118
+		}
+		MEX = {
+			set_cosmetic_tag = MEX_KOR
+			add_ideas = KOR_yi_jin_TNO
+			transfer_state = 378
+			transfer_state = 379
+			transfer_state = 377
+			transfer_state = 380
+			transfer_state = 376
+			transfer_state = 375
+			
+			add_state_core = 378
+			add_state_core = 379
+			add_state_core = 377
+			add_state_core = 380
+			add_state_core = 376
+			add_state_core = 375
+			set_politics = {
+				ruling_party = neutrality
+				last_election = "1936.1.1"
+				election_frequency = 48
+				elections_allowed = no
+			}
+			set_popularities = {
+				democratic = 0
+				fascism = 0
+				communism = 0
+				neutrality = 100
+			}
+			add_country_leader_role = {
+				Character = MEX_yi_yul
+				country_leader = {
+					ideology = despotism
+					traits = { prince_ui_trait }
+				}
+				promote_leader = yes
+			}
+			add_country_leader_role = {
+				Character = MEX_yi_yul
+				country_leader = {
+					ideology = ultranationalism
+					traits = { prince_ui_trait }
+				}
+				promote_leader = yes
+			}
+			set_party_name = {
+				ideology = neutrality
+				long_name = "KOR_yi_dynasty_party_long"
+				name = "KOR_yi_dynasty_party"
+			}
+		}
+		AK1 = {
+			361 = {
+				set_state_name = "woonam_state"
+			}
+			set_province_name = {
+				id = 3957
+				name = "woonam_city"
+			}
+			358 = {
+				set_state_name = "ilso_state"
+			}
+			set_province_name = {
+				id = 3878
+				name = "ilso_city"
+			}
+			set_province_name = {
+				id = 6845
+				name = "mansong_city"
+			}
+			set_province_name = {
+				id = 11800
+				name = "manhae_city"
+			}
+			set_province_name = {
+				id = 6732
+				name = "dongsan_city"
+			}
+			transfer_state = 361
+			transfer_state = 360
+			transfer_state = 358
+			transfer_state = 359
+			transfer_state = 357
+			transfer_state = 276
+			transfer_state = 465
+			transfer_state = 464
+			transfer_state = 331
+			
+			add_state_core = 361
+			add_state_core = 360
+			add_state_core = 358
+			add_state_core = 359
+			add_state_core = 357
+			add_state_core = 276
+			add_state_core = 465
+			add_state_core = 464
+			add_state_core = 331
+			set_politics = {
+				ruling_party = neutrality
+				last_election = "1936.1.1"
+				election_frequency = 48
+				elections_allowed = no
+			}
+			set_popularities = {
+				democratic = 0
+				fascism = 0
+				communism = 0
+				neutrality = 100
+			}
+			set_party_name = {
+				ideology = neutrality
+				long_name = "KOR_yi_dynasty_party_long"
+				name = "KOR_yi_dynasty_party"
+			}
+		}
+		AK2 = { #하와이
+			transfer_state = 629
+			add_state_core = 629
+			set_politics = {
+				ruling_party = neutrality
+				last_election = "1936.1.1"
+				election_frequency = 48
+				elections_allowed = no
+			}
+			set_popularities = {
+				democratic = 0
+				fascism = 0
+				communism = 0
+				neutrality = 100
+			}
+		}
+		AK3 = { #딕시랜드
+			transfer_state = 362
+			transfer_state = 816
+			transfer_state = 363
+			transfer_state = 368
+			transfer_state = 367
+			transfer_state = 370
+			transfer_state = 365
+			transfer_state = 364
+			transfer_state = 363
+			
+			add_state_core = 362
+			add_state_core = 816
+			add_state_core = 363
+			add_state_core = 368
+			add_state_core = 367
+			add_state_core = 370
+			add_state_core = 365
+			add_state_core = 364
+			add_state_core = 363
+			set_politics = {
+				ruling_party = neutrality
+				last_election = "1936.1.1"
+				election_frequency = 48
+				elections_allowed = no
+			}
+			set_popularities = {
+				democratic = 0
+				fascism = 0
+				communism = 0
+				neutrality = 100
+			}
+			set_party_name = {
+				ideology = neutrality
+				long_name = "KOR_yi_dynasty_party_long"
+				name = "KOR_yi_dynasty_party"
+			}
+		}
+		AK4 = { #딕시랜드
+			transfer_state = 366
+			add_state_core = 366
+			set_politics = {
+				ruling_party = neutrality
+				last_election = "1936.1.1"
+				election_frequency = 48
+				elections_allowed = no
+			}
+			set_popularities = {
+				democratic = 0
+				fascism = 0
+				communism = 0
+				neutrality = 100
+			}
+			set_party_name = {
+				ideology = neutrality
+				long_name = "KOR_yi_dynasty_party_long"
+				name = "KOR_yi_dynasty_party"
+			}
+		}
+		AK5 = { #루이지애나
+			add_ideas = KOR_yi_jin_TNO
+			transfer_state = 371
+			transfer_state = 372
+			transfer_state = 374
+			transfer_state = 373
+			transfer_state = 383
+			transfer_state = 382
+			transfer_state = 384
+			transfer_state = 392
+			transfer_state = 390
+			transfer_state = 391
+			transfer_state = 389
+			
+			add_state_core = 371
+			add_state_core = 372
+			add_state_core = 374
+			add_state_core = 373
+			add_state_core = 383
+			add_state_core = 382
+			add_state_core = 384
+			add_state_core = 392
+			add_state_core = 390
+			add_state_core = 391
+			add_state_core = 389
+			
+			set_politics = {
+				ruling_party = neutrality
+				last_election = "1936.1.1"
+				election_frequency = 48
+				elections_allowed = no
+			}
+			set_popularities = {
+				democratic = 0
+				fascism = 0
+				communism = 0
+				neutrality = 100
+			}
+		}
+		AK6 = { #공영권최고사령부
+			add_ideas = KOR_yi_jin_TNO
+			transfer_state = 388
+			transfer_state = 381
+			
+			387 = {
+				set_demilitarized_zone = yes
+			}
+			
+			add_state_core = 388
+			add_state_core = 381
+			
+			set_politics = {
+				ruling_party = neutrality
+				last_election = "1936.1.1"
+				election_frequency = 48
+				elections_allowed = no
+			}
+			set_popularities = {
+				democratic = 0
+				fascism = 0
+				communism = 0
+				neutrality = 100
+			}
+		}
+		AK7 = { #
+			set_capital = { state = 393 }
+			transfer_state = 393
+			transfer_state = 394
+			transfer_state = 395
+			transfer_state = 396
+			transfer_state = 261
+			transfer_state = 369
+			
+			add_state_core = 393
+			add_state_core = 394
+			add_state_core = 395
+			add_state_core = 396
+			add_state_core = 261
+			add_state_core = 369
+			
+			set_politics = {
+				ruling_party = neutrality
+				last_election = "1936.1.1"
+				election_frequency = 48
+				elections_allowed = no
+			}
+			set_popularities = {
+				democratic = 0
+				fascism = 0
+				communism = 0
+				neutrality = 100
+			}
+		}
+		KHK = { #공영권최고사령부
+			transfer_state = 463
+			transfer_state = 864
+			transfer_state = 471
+			transfer_state = 473
+			transfer_state = 386
+			transfer_state = 387
+			transfer_state = 385
+			transfer_state = 740
+			transfer_state = 739
+			
+			add_state_core = 463
+			add_state_core = 864
+			add_state_core = 471
+			add_state_core = 473
+			add_state_core = 386
+			add_state_core = 387
+			add_state_core = 385
+			add_state_core = 740
+			add_state_core = 739
+			
+			set_capital = { state = 740 }
+			
+			set_politics = {
+				ruling_party = neutrality
+				last_election = "1936.1.1"
+				election_frequency = 48
+				elections_allowed = no
+			}
+			set_popularities = {
+				democratic = 0
+				fascism = 0
+				communism = 0
+				neutrality = 100
+			}
+			set_party_name = {
+				ideology = neutrality
+				long_name = "KOR_yi_dynasty_party_long"
+				name = "KOR_yi_dynasty_party"
+			}
+		}
+		AST = {
+			set_cosmetic_tag = AST_KOR
+			add_ideas = KOR_yi_jin_TNO
+			set_politics = {
+				ruling_party = neutrality
+				last_election = "1936.1.1"
+				election_frequency = 48
+				elections_allowed = no
+			}
+			set_popularities = {
+				democratic = 0
+				fascism = 0
+				communism = 0
+				neutrality = 100
+			}
+			add_country_leader_role = {
+				Character = AST_min_kwangsik
+				country_leader = {
+					ideology = despotism
+					traits = { }
+				}
+				promote_leader = yes
+			}
+			add_country_leader_role = {
+				Character = AST_min_kwangsik
+				country_leader = {
+					ideology = ultranationalism
+					traits = { }
+				}
+				promote_leader = yes
+			}
+			annex_country = {
+				target = NZL
+				transfer_troops = yes
+			}
+			set_party_name = {
+				ideology = neutrality
+				long_name = "AK5_neutrality_party_long"
+				name = "AK5_neutrality_party"
+			}
+		}
+		QUE = {
+			set_cosmetic_tag = QUE_KOR
+			add_ideas = KOR_yi_jin_TNO
+			transfer_state = 466
+			transfer_state = 860
+			transfer_state = 332
+			transfer_state = 863
+			transfer_state = 861
+			transfer_state = 862
+			transfer_state = 468
+			set_politics = {
+				ruling_party = neutrality
+				last_election = "1936.1.1"
+				election_frequency = 48
+				elections_allowed = no
+			}
+			set_popularities = {
+				democratic = 0
+				fascism = 0
+				communism = 0
+				neutrality = 100
+			}
+			add_country_leader_role = {
+				Character = QUE_kim_sunkwon
+				country_leader = {
+					ideology = despotism
+					traits = { }
+				}
+				promote_leader = yes
+			}
+			add_country_leader_role = {
+				Character = QUE_kim_sunkwon
+				country_leader = {
+					ideology = ultranationalism
+					traits = { }
+				}
+				promote_leader = yes
+			}
+			set_party_name = {
+				ideology = neutrality
+				long_name = "AK5_neutrality_party_long"
+				name = "AK5_neutrality_party"
+			}
+		}
+		CAN = {
+			set_cosmetic_tag = CAN_KOR
+			transfer_state = 470
+			transfer_state = 472
+			transfer_state = 865
+			transfer_state = 469
+			transfer_state = 467
+			transfer_state = 867
+			transfer_state = 683
+			transfer_state = 682
+			transfer_state = 866
+			set_politics = {
+				ruling_party = neutrality
+				last_election = "1936.1.1"
+				election_frequency = 48
+				elections_allowed = no
+			}
+			set_popularities = {
+				democratic = 0
+				fascism = 0
+				communism = 0
+				neutrality = 100
+			}
+			add_country_leader_role = {
+				Character = CAN_hirohito
+				country_leader = {
+					ideology = despotism
+					traits = { }
+				}
+				promote_leader = yes
+			}
+			add_country_leader_role = {
+				Character = CAN_hirohito
+				country_leader = {
+					ideology = ultranationalism
+					traits = { }
+				}
+				promote_leader = yes
+			}
+			set_party_name = {
+				ideology = neutrality
+				long_name = "JAP_imperial_party_long"
+				name = "JAP_imperial_party"
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_global_flag = PRE_THE_NEW_ORDER_GBR
+				}
+				NOT = {
+					has_global_flag = TLE_TNO
+				}
+			}
+			KOR = {
+				annex_country = {
+					target = ENG
+					transfer_troops = no
+				}
+				annex_country = {
+					target = COG
+					transfer_troops = no
+				}
+				annex_country = {
+					target = ETH
+					transfer_troops = no
+				}
+				set_autonomy = { target = SCO autonomy_state = korean_bunguk }
+				set_autonomy = { target = MAD autonomy_state = korean_bunguk }
+				set_autonomy = { target = ENG autonomy_state = korean_bunguk }
+				set_autonomy = { target = IRE autonomy_state = korean_bunguk }
+				set_autonomy = { target = CHA autonomy_state = korean_bunguk }
+			}
+			SCO = {
+				set_cosmetic_tag = SCO_KOR
+				add_ideas = KOR_yi_jin_TNO
+				transfer_state = 133
+				transfer_state = 121
+				transfer_state = 120
+				transfer_state = 136
+				
+				add_state_core = 133
+				add_state_core = 121
+				add_state_core = 120
+				add_state_core = 136
+				
+				set_politics = {
+					ruling_party = neutrality
+					last_election = "1936.1.1"
+					election_frequency = 48
+					elections_allowed = no
+				}
+				set_popularities = {
+					democratic = 0
+					fascism = 0
+					communism = 0
+					neutrality = 100
+				}
+				add_country_leader_role = {
+					Character = SCO_shin_sungmo
+					country_leader = {
+						ideology = despotism
+						traits = { }
+					}
+					promote_leader = yes
+				}
+				add_country_leader_role = {
+					Character = SCO_shin_sungmo
+					country_leader = {
+						ideology = ultranationalism
+						traits = { }
+					}
+					promote_leader = yes
+				}
+				set_party_name = {
+					ideology = neutrality
+					long_name = "SCO_korean_party_long"
+					name = "SCO_korean_party"
+				}
+			}
+			MAD = {
+				set_cosmetic_tag = MAD_KOR
+				add_ideas = KOR_yi_jin_TNO
+				transfer_state = 543
+				set_politics = {
+					ruling_party = neutrality
+					last_election = "1936.1.1"
+					election_frequency = 48
+					elections_allowed = no
+				}
+				set_popularities = {
+					democratic = 0
+					fascism = 0
+					communism = 0
+					neutrality = 100
+				}
+				add_country_leader_role = {
+					Character = MAD_lee_byungcheol
+					country_leader = {
+						ideology = despotism
+						traits = { }
+					}
+					promote_leader = yes
+				}
+				add_country_leader_role = {
+					Character = MAD_lee_byungcheol
+					country_leader = {
+						ideology = ultranationalism
+						traits = { }
+					}
+					promote_leader = yes
+				}
+				set_party_name = {
+					ideology = neutrality
+					long_name = "MAD_korean_party_long"
+					name = "MAD_korean_party"
+				}
+			}
+			IRE = {
+				set_cosmetic_tag = IRE_KOR
+				transfer_state = 119
+				add_ideas = KOR_yi_jin_TNO
+				set_politics = {
+					ruling_party = neutrality
+					last_election = "1936.1.1"
+					election_frequency = 48
+					elections_allowed = no
+				}
+				set_popularities = {
+					democratic = 0
+					fascism = 0
+					communism = 0
+					neutrality = 100
+				}
+			}
+			ENG = {
+				set_cosmetic_tag = ENG_KOR
+				transfer_state = 123
+				transfer_state = 338
+				transfer_state = 127
+				transfer_state = 126
+				transfer_state = 125
+				transfer_state = 129
+				transfer_state = 128
+				transfer_state = 132
+				transfer_state = 130
+				transfer_state = 931
+				transfer_state = 131
+				transfer_state = 122
+				set_politics = {
+					ruling_party = neutrality
+					last_election = "1936.1.1"
+					election_frequency = 48
+					elections_allowed = no
+				}
+				set_popularities = {
+					democratic = 0
+					fascism = 0
+					communism = 0
+					neutrality = 100
+				}
+				remove_country_leader_role = {
+					character = ENG_horatio_dundas
+					ideology = centrism
+				}	
+				recruit_character = ENG_queen_elizabeth_ii
+				add_country_leader_role = {
+					Character = ENG_queen_elizabeth_ii
+					country_leader = {
+						ideology = despotism
+						traits = { king_of_england female_of_the_yi_chin }
+					}
+					promote_leader = yes
+				}
+				add_country_leader_role = {
+					Character = ENG_queen_elizabeth_ii
+					country_leader = {
+						ideology = ultranationalism
+						traits = { king_of_england female_of_the_yi_chin }
+					}
+					promote_leader = yes
+				}
+			}
+			CHA = {
+				set_cosmetic_tag = CHA_KOR
+				set_politics = {
+					ruling_party = neutrality
+					last_election = "1936.1.1"
+					election_frequency = 48
+					elections_allowed = no
+				}
+				set_popularities = {
+					democratic = 0
+					fascism = 0
+					communism = 0
+					neutrality = 100
+				}
+				add_country_leader_role = {
+					Character = CHA_korean_government
+					country_leader = {
+						ideology = despotism
+						traits = { }
+					}
+					promote_leader = yes
+				}
+				add_country_leader_role = {
+					Character = CHA_korean_government
+					country_leader = {
+						ideology = ultranationalism
+						traits = { }
+					}
+					promote_leader = yes
+				}
+				annex_country = {
+					target = SAF
+					transfer_troops = no
+				}
+				every_state = {
+					limit = {
+						OR = {
+							is_owned_by = KOR
+						}
+						is_on_continent = africa
+					}
+					add_core_of = CHA
+					set_state_controller_to = CHA
+					set_state_owner_to = CHA
+				}
+				set_party_name = {
+					ideology = neutrality
+					long_name = "CHA_korean_party_long"
+					name = "CHA_korean_party"
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_global_flag = TLE_TNO
+				}
+			}
+			KOR = {
+				annex_country = {
+					target = PAL
+					transfer_troops = no
+				}
+				annex_country = {
+					target = SYR
+					transfer_troops = no
+				}
+				annex_country = {
+					target = IRQ
+					transfer_troops = no
+				}
+				annex_country = {
+					target = LEB
+					transfer_troops = no
+				}
+				annex_country = {
+					target = KUW
+					transfer_troops = no
+				}
+				annex_country = {
+					target = JOR
+					transfer_troops = no
+				}
+				transfer_state = 992
+				set_autonomy = { target = FRS autonomy_state = korean_bunguk }
+				set_autonomy = { target = ITA autonomy_state = korean_bunguk }
+				set_autonomy = { target = BAY autonomy_state = korean_bunguk }
+				set_autonomy = { target = AUS autonomy_state = korean_bunguk }
+				set_autonomy = { target = HOL autonomy_state = korean_bunguk }
+				set_autonomy = { target = RL1 autonomy_state = korean_bunguk }
+				set_autonomy = { target = PRE autonomy_state = korean_bunguk }
+			}
+			CHA = {
+				every_state = {
+					limit = {
+						OR = {
+							is_owned_by = POR	
+							is_owned_by = SPR	
+							is_owned_by = LIB	
+						}
+						is_on_continent = africa
+					}
+					add_core_of = CHA
+					set_state_controller_to = CHA
+					set_state_owner_to = CHA
+				}
+				transfer_state = 448
+				transfer_state = 661
+				transfer_state = 449
+				transfer_state = 662
+				transfer_state = 450
+				transfer_state = 663
+				transfer_state = 451
+				transfer_state = 273
+				annex_country = {
+					target = EGY
+					transfer_troops = no
+				}
+			}
+			FRS = {
+				set_cosmetic_tag = FRS_KOR
+				transfer_state = 16
+				transfer_state = 29
+				transfer_state = 18
+				transfer_state = 1092
+				transfer_state = 28
+				transfer_state = 17
+				transfer_state = 27
+				transfer_state = 785
+				transfer_state = 29
+				transfer_state = 15
+				transfer_state = 30
+				transfer_state = 14
+				transfer_state = 18
+				transfer_state = 24
+				transfer_state = 23
+				transfer_state = 25
+				transfer_state = 33
+				transfer_state = 19
+				transfer_state = 806
+				transfer_state = 26
+				transfer_state = 31
+				transfer_state = 22
+				transfer_state = 20
+				transfer_state = 32
+				transfer_state = 21
+				transfer_state = 851
+				transfer_state = 735
+				
+				add_state_core = 16
+				add_state_core = 29
+				add_state_core = 18
+				add_state_core = 1092
+				add_state_core = 28
+				add_state_core = 17
+				add_state_core = 27
+				add_state_core = 785
+				add_state_core = 29
+				add_state_core = 15
+				add_state_core = 30
+				add_state_core = 14
+				add_state_core = 18
+				add_state_core = 24
+				add_state_core = 23
+				add_state_core = 25
+				add_state_core = 33
+				add_state_core = 19
+				add_state_core = 806
+				add_state_core = 26
+				add_state_core = 31
+				add_state_core = 22
+				add_state_core = 20
+				add_state_core = 32
+				add_state_core = 21
+				add_state_core = 851
+				add_state_core = 735
+				
+				transfer_state = 34
+				transfer_state = 980
+				transfer_state = 1117
+				transfer_state = 8
+				set_politics = {
+					ruling_party = neutrality
+					last_election = "1936.1.1"
+					election_frequency = 48
+					elections_allowed = no
+				}
+				set_popularities = {
+					democratic = 0
+					fascism = 0
+					communism = 0
+					neutrality = 100
+				}
+			}
+			HOL = {
+				transfer_state = 977
+				transfer_state = 6
+			}
+			ITA = {
+				set_cosmetic_tag = ITA_KOR_KYO
+				set_politics = {
+					ruling_party = neutrality
+					last_election = "1936.1.1"
+					election_frequency = 48
+					elections_allowed = no
+				}
+				set_popularities = {
+					democratic = 0
+					fascism = 0
+					communism = 0
+					neutrality = 100
+				}
+				add_country_leader_role = {
+					Character = ITA_pio_xii_korean
+					country_leader = {
+						ideology = despotism
+						traits = { }
+					}
+					promote_leader = yes
+				}
+				add_country_leader_role = {
+					Character = ITA_pio_xii_korean
+					country_leader = {
+						ideology = ultranationalism
+						traits = { }
+					}
+					promote_leader = yes
+				}
+				set_party_name = {
+					ideology = neutrality
+					long_name = "ITA_korean_party_long"
+					name = "ITA_korean_party"
+				}
+			}
+			AUS = {
+				set_cosmetic_tag = AUS_KOR
+				add_ideas = AUH_otto_von_habsburg
+				set_politics = {
+					ruling_party = neutrality
+					last_election = "1936.1.1"
+					election_frequency = 48
+					elections_allowed = no
+				}
+				set_popularities = {
+					democratic = 0
+					fascism = 0
+					communism = 0
+					neutrality = 100
+				}
+				annex_country = {
+					target = AS1
+					transfer_troops = no
+				}
+				annex_country = {
+					target = CZE
+					transfer_troops = no
+				}
+				annex_country = {
+					target = HNS
+					transfer_troops = no
+				}
+				transfer_state = 975
+				transfer_state = 4
+				transfer_state = 976
+				transfer_state = 152
+				transfer_state = 153
+				transfer_state = 848
+			}
+			BAY = {
+				set_cosmetic_tag = BAY_KOR
+				set_politics = {
+					ruling_party = fascism
+					last_election = "1936.1.1"
+					election_frequency = 48
+					elections_allowed = no
+				}
+				set_popularities = {
+					democratic = 0
+					fascism = 100
+					communism = 0
+					neutrality = 0
+				}
+				add_ideas = BAY_yi_beomseok
+				add_country_leader_role = {
+					Character = BAY_adolf_hitler
+					country_leader = {
+						ideology = despotism
+						traits = { bayern_fuhrer_hitler }
+					}
+					promote_leader = yes
+				}
+				add_country_leader_role = {
+					Character = BAY_adolf_hitler
+					country_leader = {
+						ideology = ultranationalism
+						traits = { bayern_fuhrer_hitler }
+					}
+					promote_leader = yes
+				}
+				set_party_name = {
+					ideology = neutrality
+					long_name = "BAY_korean_yi_party_long"
+					name = "BAY_korean_yi_party"
+				}
+				set_party_name = {
+					ideology = fascism
+					long_name = "BAY_korean_party_long"
+					name = "BAY_korean_party"
+				}
+				transfer_state = 53
+				transfer_state = 54
+				transfer_state = 52
+				transfer_state = 50
+				transfer_state = 1116
+				transfer_state = 978
+			}
+			DEN = {
+				transfer_state = 909
+				transfer_state = 58
+			}
+			RL1 = {
+				set_cosmetic_tag = RL1_KOR
+				transfer_state = 1110
+				transfer_state = 55
+				transfer_state = 57
+				transfer_state = 59
+				transfer_state = 56
+				transfer_state = 51
+				transfer_state = 42
+				set_politics = {
+					ruling_party = neutrality
+					last_election = "1936.1.1"
+					election_frequency = 48
+					elections_allowed = no
+				}
+				set_popularities = {
+					democratic = 0
+					fascism = 0
+					communism = 0
+					neutrality = 100
+				}
+			}
+			PRE = {
+				set_cosmetic_tag = PRE_KOR
+				transfer_state = 64
+				transfer_state = 61
+				transfer_state = 62
+				transfer_state = 60
+				transfer_state = 65
+				transfer_state = 68	
+				transfer_state = 63
+				set_politics = {
+					ruling_party = neutrality
+					last_election = "1936.1.1"
+					election_frequency = 48
+					elections_allowed = no
+				}
+				set_popularities = {
+					democratic = 0
+					fascism = 0
+					communism = 0
+					neutrality = 100
+				}
+				add_country_leader_role = {
+					Character = PRE_felicitas_von_hohenzollern
+					country_leader = {
+						ideology = despotism
+						traits = { king_of_preussen female_of_the_yi_chin }
+					}
+					promote_leader = yes
+				}
+				add_country_leader_role = {
+					Character = PRE_felicitas_von_hohenzollern
+					country_leader = {
+						ideology = ultranationalism
+						traits = { king_of_preussen female_of_the_yi_chin }
+					}
+					promote_leader = yes
+				}
+			}
+			HOL = {
+				set_cosmetic_tag = HOL_KOR
+				set_politics = {
+					ruling_party = neutrality
+					last_election = "1936.1.1"
+					election_frequency = 48
+					elections_allowed = no
+				}
+				set_popularities = {
+					democratic = 0
+					fascism = 0
+					communism = 0
+					neutrality = 100
+				}
+				add_country_leader_role = {
+					Character = HOL_juliana
+					country_leader = {
+						ideology = despotism
+						traits = { female_of_the_yi_chin }
+					}
+					promote_leader = yes
+				}
+				add_country_leader_role = {
+					Character = HOL_juliana
+					country_leader = {
+						ideology = ultranationalism
+						traits = { female_of_the_yi_chin }
+					}
+					promote_leader = yes
+				}
+			}
 		}
 	}
 }
@@ -5079,7 +7703,7 @@ TLE_german_defeat_effect = {
 	log = "war_won"
 	set_global_flag = war_won
 	SOV = {
-		set_faction_name = "warsaw_pact"
+		add_ideas = SOVIET_PUPPET
 	}
 	USA = {
 		#activate_decision = NATO_brussels_treaty
@@ -5088,23 +7712,12 @@ TLE_german_defeat_effect = {
 	every_country = {
 		add_ideas = TLE_afterwar_idea
 	}
-	every_country = {
-		limit = {
-			NOT = {
-				original_tag = KOR
-			}
-			is_japan_clique = no
-			is_chinese_clique = no
-			is_ai = yes
-		}
-		add_ideas = TLE_army_nuffer
-	}
-	BUL = {
+	BLS = {
 		set_politics = {
 			ruling_party = communism
 			last_election = "1932.3.8"
 			election_frequency = 60
-			elections_allowed = yes
+			elections_allowed = no
 		}
 		set_popularities = {
 			democratic = 8 #liberalism
@@ -5117,6 +7730,15 @@ TLE_german_defeat_effect = {
 		transfer_state = 801
 		transfer_state = 211
 		transfer_state = 77
+		
+		add_state_core = 48
+		add_state_core = 212
+		add_state_core = 801
+		add_state_core = 211
+		add_state_core = 77
+		add_ideas = SOV_communist_puppet 
+		add_ideas = SOVIET_PUPPET
+		load_focus_tree = korean_government
 	}
 	SWI = {
 		transfer_state = 3
@@ -5139,7 +7761,14 @@ TLE_german_defeat_effect = {
 			neutrality = 5 
 		}
 	}
-    POL = {
+    PLS = {
+		load_focus_tree = korean_government
+		every_state = {
+			limit = {
+				is_core_of = POL
+			}
+			add_core_of = PLS
+		}
     	transfer_state = 97
     	transfer_state = 5
     	transfer_state = 762
@@ -5155,7 +7784,7 @@ TLE_german_defeat_effect = {
     	transfer_state = 86
     	transfer_state = 807
     	transfer_state = 85
-		set_cosmetic_tag = POL_WW2
+		set_cosmetic_tag = PLS_WW2
 		annex_country = {
 			target = POL
 			transfer_troops = yes
@@ -5176,10 +7805,61 @@ TLE_german_defeat_effect = {
 			}
 			transfer_state = 1105
 		}
+		add_ideas = SOV_communist_puppet 
+		add_ideas = SOVIET_PUPPET
 	}	
-	ROM = {
-		set_cosmetic_tag = ROM_WW2
+	RMS = {
+		set_cosmetic_tag = RMS_WW2
 		transfer_state = 971
+		transfer_state = 46
+		transfer_state = 81
+		transfer_state = 84
+		transfer_state = 82
+		transfer_state = 83
+		transfer_state = 76
+		transfer_state = 1104
+		transfer_state = 79
+		
+		add_state_core = 971
+		add_state_core = 46
+		add_state_core = 81
+		add_state_core = 84
+		add_state_core = 82
+		add_state_core = 83
+		add_state_core = 76
+		add_state_core = 1104
+		add_state_core = 79
+		add_ideas = SOV_communist_puppet 
+		add_ideas = SOVIET_PUPPET
+		load_focus_tree = korean_government
+	}
+	if = {
+		limit = {
+			HUN = {
+				OR = { NOT = { has_cosmetic_tag = HUN_EMPIRE } is_in_faction_with = GER }
+			}
+		}
+		HNS = {
+			set_cosmetic_tag = HNS_WW2
+			add_ideas = SOV_communist_puppet 
+			add_ideas = SOVIET_PUPPET
+			load_focus_tree = korean_government
+			transfer_state = 43
+			transfer_state = 973
+			transfer_state = 154
+			transfer_state = 155
+			transfer_state = 974
+			
+			add_state_core = 43
+			add_state_core = 973
+			add_state_core = 154
+			add_state_core = 155
+			add_state_core = 974
+			annex_country = {
+				target = HUN
+				transfer_troops = yes
+			}
+		}
 	}
 	if = {
 		limit = {
@@ -5201,31 +7881,19 @@ TLE_german_defeat_effect = {
 				target = CZE 
 				transfer_troops = yes
 			}
-		}
-	}
-	if = {
-		limit = {
-			HUN = {
-				OR = { NOT = { has_cosmetic_tag = HUN_EMPIRE } is_in_faction_with = GER }
+			annex_country = {
+				target = HNS
+				transfer_troops = yes
 			}
-		}
-		HUN = {
-			set_cosmetic_tag = HUN_WW2
-			remove_ideas = AUH_otto_von_habsburg
 		}
 	}
 	ALB = {
 		set_cosmetic_tag = ALB_WW2
+		load_focus_tree = korean_government
 	}
 	CZE = {
 		set_cosmetic_tag = CZE_WW2
-	}
-	every_country = {
-		limit = {
-			original_tag = BUL
-			has_government = communism
-		}
-		set_cosmetic_tag = BUL_WW2
+		load_focus_tree = korean_government
 	}
     USA = {
     	transfer_state = 54
@@ -5252,20 +7920,23 @@ TLE_german_defeat_effect = {
 		transfer_state = 451
 		transfer_state = 273
 		
-		transfer_state = 455
-		transfer_state = 454
 		transfer_state = 901
 		add_to_faction = CZE
     }
 	if = {
 		limit = {
-			NOT = {
+			OR = {
+				NOT = {
+					KOR = {
+						has_country_flag = FLAG_KOR_FASCIST_ROUTE
+					}
+				}
 				KOR = {
-					has_country_flag = FLAG_KOR_FASCIST_ROUTE
+					has_country_flag = FLAG_YICHIN_ROUTE
 				}
 			}
 		}
-		YEM = {
+		ENG = {
 			transfer_state = 992
 		}
 		RAJ = {
@@ -5305,13 +7976,13 @@ TLE_german_defeat_effect = {
 		PAK = {
 			set_cosmetic_tag = PAK_UK
 			set_politics = { 
-				ruling_party = neutrality
+				ruling_party = democratic
 				last_election = "1936.11.26"
 				election_frequency = 48
 				elections_allowed = no
 			}
 			set_popularities = {
-				neutrality = 100
+				democratic = 100
 			}
 		}
 		MAL = { #말레이 통일
@@ -5402,7 +8073,24 @@ TLE_german_defeat_effect = {
 		transfer_state = 772
 		transfer_state = 1116
 		transfer_state = 1092
+		end_puppet = SYR
+		end_puppet = LEB
     }
+	SYR = {
+		drop_cosmetic_tag = yes
+		leave_faction = yes
+		transfer_state = 680
+		transfer_state = 677
+		transfer_state = 554
+	}
+	LEB = {
+		drop_cosmetic_tag = yes
+		leave_faction = yes
+		transfer_state = 553
+	}
+	TUR = {
+		transfer_state = 799
+	}
 	ALB = {
 		transfer_state = 44
 		transfer_state = 805
@@ -5542,8 +8230,8 @@ TLE_german_defeat_effect = {
 		transfer_state = 970
 		transfer_state = 106
 		set_politics = {
-			ruling_party = communism
-			last_election = "1940.5.1"
+			ruling_party = neutrality #유고 왕정폐지 이벤트 있음 ㅅㅂ
+			last_election = "1944.5.1"
 			election_frequency = 48
 			elections_allowed = yes
 		}
@@ -5554,6 +8242,8 @@ TLE_german_defeat_effect = {
 			communism = 50
 		}
 		leave_faction = yes
+		#add_ideas = SOV_communist_puppet 
+		load_focus_tree = korean_government
 	}
 	736 = {
 		set_demilitarized_zone = yes
@@ -5591,6 +8281,13 @@ TLE_german_defeat_effect = {
 		every_country = {
 			limit = {
 				original_tag = ITA
+				has_cosmetic_tag = ITA_rsi
+			}
+			save_event_target_as = italian_social_republic
+		}
+		every_country = {
+			limit = {
+				original_tag = ITA
 				has_cosmetic_tag = ITA_rds
 			}
 			remove_power_balance = { id = ITA_power_balance }
@@ -5608,22 +8305,22 @@ TLE_german_defeat_effect = {
 			transfer_state = 117
 			transfer_state = 156
 			transfer_state = 115
+			transfer_state = 114
 			if = {
 				limit = {
 					HUN = {
-						NOT = {
-							OR = {
+						OR = {
+							NOT = {
 								has_cosmetic_tag = HUN_EMPIRE
-								NOT = {
-									is_in_faction_with = GER
-								}
-							}	
-						}
+							}
+							is_in_faction_with = GER
+						}	
 					}
 				}
 				transfer_state = 39
 				transfer_state = 850
 			}
+			load_focus_tree = italy_after_wwii_lose
 		}
 	}	
 	if = {
@@ -5649,6 +8346,7 @@ TLE_german_defeat_effect = {
 			transfer_state = 157
 			transfer_state = 2
 			transfer_state = 849
+			transfer_state = 114
 			transfer_state = 117
 			transfer_state = 156
 			transfer_state = 115
@@ -5657,11 +8355,8 @@ TLE_german_defeat_effect = {
 				uncomplete_children = yes
 				refund_political_power = no
 			}
-			complete_national_focus = ITA_undermine_the_duce
-			complete_national_focus = ITA_conspiracies_in_the_shadows
-			complete_national_focus = ITA_convene_the_grand_council
-			complete_national_focus = ITA_depose_mussolini
 			mark_focus_tree_layout_dirty = yes
+			load_focus_tree = italy_after_wwii_lose
 		}
 	}	
 	SOV = {
@@ -5686,10 +8381,12 @@ TLE_german_defeat_effect = {
 		puppet = ITA
 		puppet = event_target:italia_real_ww2
 	}
-	ITA = {
-		load_focus_tree = korean_government
-	}
 	event_target:italia_real_ww2 = {
+		annex_country = {
+			target = event_target:italian_social_republic
+			transfer_troops = no
+		}
+		load_focus_tree = italy_after_wwii_lose
 		set_politics = {
 			ruling_party = democratic
 			last_election = "1932.3.8"
@@ -5707,7 +8404,6 @@ TLE_german_defeat_effect = {
 		remove_ideas = vittorio_emanuele_emperor_of_ethiopia
 		remove_ideas = vittorio_emanuele_king_of_albania
 		remove_ideas = vittorio_emanuele_albania_ethiopia
-		add_ideas = ITA_umberto_ii_king
 		#
 		remove_ideas = ITA_camicie_nere
 		remove_ideas = ITA_german_military_cooperation_focus
@@ -5743,8 +8439,9 @@ TLE_german_defeat_effect = {
 		}
 		set_capital = { state = 37 }
 	}
-	ROM = {
+	RMS = {
 		transfer_state = 76
+		load_focus_tree = korean_government
 	}
 	LUX = {
 		transfer_state = 8
@@ -5779,7 +8476,7 @@ TLE_german_defeat_effect = {
 				}
 			}
 		}
-		ROM = {
+		RMS = {
 			transfer_state = 76
 		}
 	}
@@ -6009,17 +8706,17 @@ TLE_german_defeat_effect = {
 			}
 			add_core_of = SOV
 		}
-    	puppet = POL
-    	puppet = ROM
+    	puppet = PLS
+    	puppet = RMS
     	puppet = ALB
-    	puppet = BUL
+    	puppet = BLS
 		if = {
 			limit = {
 				HUN = {
 					OR = { NOT = { has_cosmetic_tag = HUN_EMPIRE } is_in_faction_with = GER }	
 				}
 			}
-			puppet = HUN
+			puppet = HNS
 		}
 		if = {
 			limit = {
@@ -6058,6 +8755,1088 @@ TLE_german_defeat_effect = {
 			}	
 		}
     }
+	AUS = {
+		load_focus_tree = korean_government
+	}
+}
+##############################################
+#Ending of WW2 - WEST
+##############################################
+TLE_german_defeat_west_effect = {
+	set_global_flag = TLE_germany_union_defeat
+	set_global_flag = TLE_germany_union_west_defeat
+	add_named_threat = { threat = -10000 name = TLE_germany_union_defeat }
+	clr_global_flag = italian_east_africa_flag
+	set_global_flag = show_peace_popup_alert
+	SOV = {
+		save_global_event_target_as = winning_country
+	}
+	GER = {
+		save_global_event_target_as = losing_country
+	}
+	if = {
+		limit = {
+			event_target:losing_country = {
+				any_allied_country = {
+					has_war_together_with = event_target:losing_country
+				}
+			}
+		}
+		set_global_flag = losing_country_multiple
+	}
+
+	if = {
+		limit = {
+			event_target:winning_country = {
+				any_allied_country = {
+					has_war_together_with = event_target:winning_country
+				}
+			}
+		}
+		set_global_flag = winning_country_multiple
+	}
+	every_country = {
+		limit = {
+			is_ai = no
+		}	
+		add_to_variable = { global.peace_popup_dirty = 1 }
+	}
+	log = "war_won"
+	set_global_flag = war_won
+	SOV = {
+		add_ideas = SOVIET_PUPPET
+	}
+	USA = {
+		#activate_decision = NATO_brussels_treaty
+		activate_decision = NATO_suggest_nato
+	}
+	every_country = {
+		add_ideas = TLE_afterwar_idea
+	}
+	BLS = {
+		set_politics = {
+			ruling_party = communism
+			last_election = "1932.3.8"
+			election_frequency = 60
+			elections_allowed = no
+		}
+		set_popularities = {
+			democratic = 8 #liberalism
+			fascism = 1 #nazism
+			communism = 81 #marxism
+			neutrality = 10 #despotism
+		}
+		transfer_state = 48
+		transfer_state = 212
+		transfer_state = 801
+		transfer_state = 211
+		transfer_state = 77
+		
+		add_state_core = 48
+		add_state_core = 212
+		add_state_core = 801
+		add_state_core = 211
+		add_state_core = 77
+		add_ideas = SOV_communist_puppet 
+		add_ideas = SOVIET_PUPPET
+		load_focus_tree = korean_government
+	}
+	SWI = {
+		transfer_state = 3
+		transfer_state = 151
+		transfer_state = 845
+		transfer_state = 846
+		transfer_state = 847
+	}
+	DEN = {	
+		drop_cosmetic_tag = yes
+		end_puppet = GER 
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = yes
+		}
+		set_popularities = {
+			democratic = 86
+			fascism = 2
+			communism = 7
+			neutrality = 5 
+		}
+	}
+    PLS = {
+		load_focus_tree = korean_government
+		every_state = {
+			limit = {
+				is_core_of = POL
+			}
+			add_core_of = PLS
+		}
+    	transfer_state = 97
+    	transfer_state = 5
+    	transfer_state = 762
+    	transfer_state = 67
+    	transfer_state = 98
+    	transfer_state = 10
+    	transfer_state = 92
+    	transfer_state = 90
+    	transfer_state = 87
+    	transfer_state = 86
+    	transfer_state = 807
+    	transfer_state = 85
+		set_cosmetic_tag = PLS_WW2
+		annex_country = {
+			target = POL
+			transfer_troops = yes
+		}
+		if = {
+			limit = {
+				HUN = {
+					OR = { NOT = { has_cosmetic_tag = HUN_EMPIRE } is_in_faction_with = GER }
+				}
+			}
+			transfer_state = 88
+		}
+		if = {
+			limit = {
+				HUN = {
+					OR = { NOT = { has_cosmetic_tag = HUN_EMPIRE } is_in_faction_with = GER }
+				}
+			}
+			transfer_state = 1105
+		}
+		add_ideas = SOV_communist_puppet 
+		add_ideas = SOVIET_PUPPET
+	}	
+	RMS = {
+		set_cosmetic_tag = RMS_WW2
+		transfer_state = 971
+		transfer_state = 46
+		transfer_state = 81
+		transfer_state = 84
+		transfer_state = 82
+		transfer_state = 83
+		transfer_state = 76
+		transfer_state = 1104
+		transfer_state = 79
+		
+		add_state_core = 971
+		add_state_core = 46
+		add_state_core = 81
+		add_state_core = 84
+		add_state_core = 82
+		add_state_core = 83
+		add_state_core = 76
+		add_state_core = 1104
+		add_state_core = 79
+		add_ideas = SOV_communist_puppet 
+		add_ideas = SOVIET_PUPPET
+		load_focus_tree = korean_government
+	}
+	if = {
+		limit = {
+			HUN = {
+				OR = { NOT = { has_cosmetic_tag = HUN_EMPIRE } is_in_faction_with = GER }
+			}
+		}
+		HNS = {
+			set_cosmetic_tag = HNS_WW2
+			add_ideas = SOV_communist_puppet 
+			add_ideas = SOVIET_PUPPET
+			load_focus_tree = korean_government
+			transfer_state = 43
+			transfer_state = 973
+			transfer_state = 154
+			transfer_state = 155
+			transfer_state = 974
+			
+			add_state_core = 43
+			add_state_core = 973
+			add_state_core = 154
+			add_state_core = 155
+			add_state_core = 974
+			annex_country = {
+				target = HUN
+				transfer_troops = yes
+			}
+		}
+	}
+	if = {
+		limit = {
+			HUN = {
+				NOT = {
+					is_in_faction_with = GER
+				}
+				has_cosmetic_tag = HUN_EMPIRE
+			}
+		}
+		HUN = {
+			transfer_state = 39
+			transfer_state = 850
+			transfer_state = 74
+			transfer_state = 69
+			transfer_state = 972
+			transfer_state = 72
+			annex_country = {
+				target = CZE 
+				transfer_troops = yes
+			}
+			annex_country = {
+				target = HNS
+				transfer_troops = yes
+			}
+		}
+	}
+	ALB = {
+		set_cosmetic_tag = ALB_WW2
+		load_focus_tree = korean_government
+	}
+	CZE = {
+		set_cosmetic_tag = CZE_WW2
+		load_focus_tree = korean_government
+	}
+	ENG = {
+		transfer_state = 448
+		transfer_state = 661
+		transfer_state = 662
+		transfer_state = 449
+		transfer_state = 450
+		transfer_state = 663
+		transfer_state = 451
+		transfer_state = 273
+		
+		transfer_state = 901
+		add_to_faction = CZE
+    }
+	if = {
+		limit = {
+			OR = {
+				NOT = {
+					KOR = {
+						has_country_flag = FLAG_KOR_FASCIST_ROUTE
+					}
+				}
+				KOR = {
+					has_country_flag = FLAG_YICHIN_ROUTE
+				}
+			}
+		}
+		ENG = {
+			transfer_state = 992
+		}
+		RAJ = {
+			set_country_flag = TLE_RAJ_indian_independence_act_flag
+			set_cosmetic_tag = RAJ_UK_autonomy_dominion
+			set_politics = { 
+				ruling_party = democratic
+				last_election = "1936.11.26"
+				election_frequency = 48
+				elections_allowed = no
+			}
+			set_popularities = {
+				democratic = 100
+			}
+			country_event = {
+				id = burma.1
+			}
+			retire_country_leader = yes
+			create_country_leader = {
+				name = "RAJ_jawaharlal_nehru"
+				picture = "gfx/leaders/RAJ/Jawaharlal_Nehru.png"
+				ideology = socialism
+				traits = {
+				}
+			}
+		}
+		ENG = {
+			puppet = PAK
+		}
+		every_state = {
+			limit = {
+				is_owned_by = RAJ
+				is_core_of = PAK
+			}
+			transfer_state_to = PAK
+		}
+		PAK = {
+			set_cosmetic_tag = PAK_UK
+			set_politics = { 
+				ruling_party = democratic
+				last_election = "1936.11.26"
+				election_frequency = 48
+				elections_allowed = no
+			}
+			set_popularities = {
+				democratic = 100
+			}
+		}
+		MAL = { #말레이 통일
+			set_cosmetic_tag = MAL_united
+			annex_country = {
+				target = SST
+				transfer_troops = yes
+			}
+			set_capital = { state = 1078 }
+			leave_faction = yes
+		}
+		SAR = {
+			set_cosmetic_tag = SAR_UKD
+		}
+		AST = {
+			transfer_state = 711
+			transfer_state = 712
+		}
+		PHI = {
+			end_puppet = USA
+			set_cosmetic_tag = PHI_USA
+			remove_ideas = us_philippines
+		}
+	}
+    FRA = {
+		set_politics = {
+			ruling_party = democratic
+			last_election = "1940.5.1"
+			election_frequency = 48
+			elections_allowed = yes
+		}
+		set_popularities = {
+			democratic = 79
+			fascism = 1
+			neutrality = 4
+			communism = 16
+		}
+		transfer_state = 33
+		transfer_state = 26
+		transfer_state = 25
+		transfer_state = 31
+		transfer_state = 22
+		transfer_state = 20
+		transfer_state = 32
+		transfer_state = 21
+		transfer_state = 28
+		transfer_state = 735
+		transfer_state = 851
+		transfer_state = 1
+	
+    	transfer_state = 42
+    	transfer_state = 978
+		
+		transfer_state = 458
+		transfer_state = 665
+		transfer_state = 460
+		transfer_state = 513
+		transfer_state = 459
+		transfer_state = 461
+		transfer_state = 462
+		transfer_state = 514
+		transfer_state = 775
+		
+		transfer_state = 706
+		transfer_state = 543
+		transfer_state = 708
+		transfer_state = 713
+		transfer_state = 713
+		
+		transfer_state = 786
+		transfer_state = 782
+		transfer_state = 515
+		transfer_state = 898
+		transfer_state = 774
+		transfer_state = 660
+		transfer_state = 773
+		transfer_state = 539
+		transfer_state = 776
+		transfer_state = 781
+		transfer_state = 778
+		transfer_state = 779
+		transfer_state = 556
+		transfer_state = 780
+		transfer_state = 272
+		transfer_state = 899
+		transfer_state = 557	
+		transfer_state = 777		
+		transfer_state = 772
+		transfer_state = 1116
+		transfer_state = 1092
+		end_puppet = SYR
+		end_puppet = LEB
+    }
+	SYR = {
+		drop_cosmetic_tag = yes
+		leave_faction = yes
+		transfer_state = 680
+		transfer_state = 677
+		transfer_state = 554
+	}
+	LEB = {
+		drop_cosmetic_tag = yes
+		leave_faction = yes
+		transfer_state = 553
+	}
+	TUR = {
+		transfer_state = 799
+	}
+	ALB = {
+		transfer_state = 44
+		transfer_state = 805
+		transfer_state = 934
+	}
+	ETH = {
+		transfer_state = 908
+		transfer_state = 842
+		transfer_state = 841
+		transfer_state = 843
+		transfer_state = 840
+		transfer_state = 271
+		transfer_state = 839
+		transfer_state = 838
+		transfer_state = 837
+		transfer_state = 836
+		transfer_state = 835
+	}
+	ENG = {
+		transfer_state = 269
+		transfer_state = 550
+		transfer_state = 559
+		transfer_state = 844
+		transfer_state = 903
+	}
+	every_country = {
+		limit = {
+			has_war_with = DEN
+		}
+		white_peace = DEN
+	}
+	ENG = {
+		add_to_faction = DEN
+	}
+	USA = {
+		add_to_faction = DEN
+	}
+	every_country = {
+		limit = {
+			has_war_with = SOV
+			OR = {
+				NOT = {
+					original_tag = KOR
+				}
+				is_puppet_of = KOR
+			}
+		}
+		white_peace = SOV
+	}
+	every_country = {
+		limit = {
+			has_war_with = FIN
+		}
+		white_peace = FIN
+	}
+	if = {
+		limit = {
+			HUN = {
+				OR = { NOT = { has_cosmetic_tag = HUN_EMPIRE } is_in_faction_with = GER }
+			}
+		}
+		CZE = {
+			transfer_state = 9
+			transfer_state = 69
+			transfer_state = 972
+			transfer_state = 75
+			transfer_state = 74
+			transfer_state = 72
+			transfer_state = 70
+			transfer_state = 71
+			transfer_state = 664
+			add_ideas = TLE_afterwar_idea
+		}
+	}
+	GRE = {
+		transfer_state = 731
+		transfer_state = 184
+		transfer_state = 164
+		transfer_state = 47
+		transfer_state = 185
+		transfer_state = 186
+		transfer_state = 182
+		transfer_state = 187
+	}
+    every_state = {
+    	limit = {
+    		is_core_of = GER
+    	}
+    	remove_core_of = GER
+    }
+    every_state = {
+    	limit = {
+    		is_claimed_by = GER
+    	}
+    	remove_claim_by = GER
+    }
+	every_state = {
+		limit = {
+			is_claimed_by = SOV
+			NOT = {
+				is_core_of = SOV
+			}
+			is_owned_by = SOV
+		}
+		add_core_of = SOV
+	}
+	YUG = {
+		if = {
+			limit = {
+				HUN = {
+					OR = { NOT = { has_cosmetic_tag = HUN_EMPIRE } is_in_faction_with = GER }
+					NOT = {
+						owns_state = 102
+					}
+				}
+			}
+			transfer_state = 852
+			transfer_state = 163
+			transfer_state = 102
+			transfer_state = 109
+			transfer_state = 104
+			transfer_state = 804
+			transfer_state = 45
+			transfer_state = 764
+			transfer_state = 1118
+			transfer_state = 1120
+			transfer_state = 105
+			transfer_state = 853
+			transfer_state = 103
+			transfer_state = 1119
+			transfer_state = 1076
+		}
+		transfer_state = 107
+		transfer_state = 108
+		transfer_state = 802
+		transfer_state = 803
+		transfer_state = 970
+		transfer_state = 106
+		set_politics = {
+			ruling_party = neutrality #유고 왕정폐지 이벤트 있음 ㅅㅂ
+			last_election = "1944.5.1"
+			election_frequency = 48
+			elections_allowed = yes
+		}
+		set_popularities = {
+			democratic = 10
+			fascism = 10
+			neutrality = 30
+			communism = 50
+		}
+		leave_faction = yes
+		#add_ideas = SOV_communist_puppet 
+		load_focus_tree = korean_government
+	}
+	736 = {
+		set_demilitarized_zone = yes
+	}	
+	DEN = {
+		end_puppet = GER 
+		set_cosmetic_tag = DEN
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = yes
+		}
+		set_popularities = {
+			democratic = 86
+			fascism = 2
+			communism = 7
+			neutrality = 5 
+		}
+	}
+	every_country = {
+		limit = {
+			original_tag = NOR
+			NOT = {
+				has_government = fascism
+			}
+		}
+		set_cosmetic_tag = NOR_WW2
+		transfer_state = 110
+	}
+	if = {
+		limit = {
+			ITA = {
+				has_civil_war = yes
+			}
+		}
+		every_country = {
+			limit = {
+				original_tag = ITA
+				has_cosmetic_tag = ITA_rsi
+			}
+			save_event_target_as = italian_social_republic
+		}
+		every_country = {
+			limit = {
+				original_tag = ITA
+				has_cosmetic_tag = ITA_rds
+			}
+			remove_power_balance = { id = ITA_power_balance }
+			save_event_target_as = italia_real_ww2
+			transfer_state = 160
+			transfer_state = 1121
+			transfer_state = 736
+			transfer_state = 159	
+			transfer_state = 158
+			transfer_state = 161
+			transfer_state = 162
+			transfer_state = 157
+			transfer_state = 2
+			transfer_state = 849
+			transfer_state = 117
+			transfer_state = 156
+			transfer_state = 115
+			transfer_state = 114
+			if = {
+				limit = {
+					HUN = {
+						OR = {
+							NOT = {
+								has_cosmetic_tag = HUN_EMPIRE
+							}
+							is_in_faction_with = GER
+						}	
+					}
+				}
+				transfer_state = 39
+				transfer_state = 850
+			}
+			load_focus_tree = italy_after_wwii_lose
+		}
+	}	
+	if = {
+		limit = {
+			ITA = {
+				has_civil_war = no
+			}
+		}
+		every_country = {
+			limit = {
+				original_tag = ITA
+			}
+			save_event_target_as = italia_real_ww2
+			transfer_state = 39
+			transfer_state = 850
+			transfer_state = 160
+			transfer_state = 1121
+			transfer_state = 736
+			transfer_state = 159	
+			transfer_state = 158
+			transfer_state = 161
+			transfer_state = 162
+			transfer_state = 157
+			transfer_state = 2
+			transfer_state = 849
+			transfer_state = 114
+			transfer_state = 117
+			transfer_state = 156
+			transfer_state = 115
+			uncomplete_national_focus = {
+				focus = ITA_servizio_informazione_militare
+				uncomplete_children = yes
+				refund_political_power = no
+			}
+			mark_focus_tree_layout_dirty = yes
+			load_focus_tree = italy_after_wwii_lose
+		}
+	}	
+	SOV = {
+		end_puppet = ITA
+		end_puppet = event_target:italia_real_ww2
+		transfer_state = 12
+		transfer_state = 810
+		transfer_state = 808
+		transfer_state = 809
+		transfer_state = 190
+		transfer_state = 191
+		transfer_state = 11
+		transfer_state = 815
+		transfer_state = 814
+		transfer_state = 189
+		transfer_state = 811
+		transfer_state = 812
+		transfer_state = 813
+		transfer_state = 13
+	}
+	USA = {
+		puppet = ITA
+		puppet = event_target:italia_real_ww2
+	}
+	event_target:italia_real_ww2 = {
+		annex_country = {
+			target = event_target:italian_social_republic
+			transfer_troops = no
+		}
+		load_focus_tree = italy_after_wwii_lose
+		set_politics = {
+			ruling_party = democratic
+			last_election = "1932.3.8"
+			election_frequency = 60
+			elections_allowed = yes
+		}
+		set_popularities = {
+			democratic = 70 #liberalism
+			fascism = 8 #nazism
+			communism = 12 #marxism
+			neutrality = 10 #despotism
+		}
+		set_cosmetic_tag = ITA_WW2
+		remove_ideas = vittorio_emanuele
+		remove_ideas = vittorio_emanuele_emperor_of_ethiopia
+		remove_ideas = vittorio_emanuele_king_of_albania
+		remove_ideas = vittorio_emanuele_albania_ethiopia
+		#
+		remove_ideas = ITA_camicie_nere
+		remove_ideas = ITA_german_military_cooperation_focus
+		remove_ideas = ITA_italian_irredentism_ns
+		retire_character = ITA_benito_mussolini
+		remove_country_leader_role = {
+			character = ITA_vittorio_emanuele_iii
+			ideology = despotism
+		}
+		add_country_leader_role = {
+			character = ITA_prince_umberto
+    		country_leader = {
+    			expire = "1965.1.1"
+    			ideology = despotism
+    			traits = { }
+    		}
+		}
+		remove_power_balance = { id = ITA_power_balance }
+	}	
+	USA = {
+		add_to_faction = event_target:italia_real_ww2
+	}
+	DEN = {
+		transfer_state = 37
+		transfer_state = 99
+		if = {
+			limit = {
+				912 = {
+					is_core_of = DEN
+				}
+			}
+			transfer_state = 912
+		}
+		set_capital = { state = 37 }
+	}
+	RMS = {
+		transfer_state = 76
+		load_focus_tree = korean_government
+	}
+	LUX = {
+		transfer_state = 8
+	}
+	BEL = {
+		transfer_state = 977
+		transfer_state = 980
+		transfer_state = 34
+		transfer_state = 6
+		if = {
+			limit = {
+				1117 = {
+					is_core_of = BEL
+				}
+			}
+			transfer_state = 1117
+		}
+		set_cosmetic_tag = BEL
+	}
+	HOL = {
+		transfer_state = 35
+		transfer_state = 36
+		transfer_state = 7
+		transfer_state = 695
+		set_cosmetic_tag = HOL
+	}
+	if = {
+		limit = {
+			HUN = {
+				NOT = {
+					OR = { NOT = { has_cosmetic_tag = HUN_EMPIRE } is_in_faction_with = GER }
+				}
+			}
+		}
+		RMS = {
+			transfer_state = 76
+		}
+	}
+	188 = {
+		set_state_name = "klaipeda"
+	}
+    set_province_name = {
+        id = 3288
+        name = "klaipeda"
+    }
+	763 = {
+		set_state_name = "kaliningrad"
+	}
+    set_province_name = {
+        id = 6332
+        name = "kaliningrad"
+    }
+	5 = {
+		set_state_name = "warmiya_majuria"
+	}
+    set_province_name = {
+        id = 6375
+        name = "olshutyin"
+    }
+	67 = {
+		set_state_name = "silonsk"
+	}
+    set_province_name = {
+        id = 11467
+        name = "glibice"
+    }
+    set_province_name = {
+        id = 9511
+        name = "opole"
+    }
+	85 = {
+		set_state_name = "gdansk"
+	}
+    set_province_name = {
+        id = 362
+        name = "gdansk"
+    }
+	if = {
+		limit = {
+			GER = {
+				owns_state = 671
+				owns_state = 286
+				owns_state = 741
+				owns_state = 670
+				owns_state = 1089
+			}
+		}
+		WGR = {
+			transfer_state = 671
+			transfer_state = 286
+			transfer_state = 741
+			transfer_state = 670
+			transfer_state = 1089
+			transfer_state = 1111
+			transfer_state = 1112
+			transfer_state = 1113
+			transfer_state = 1082
+			transfer_state = 1083
+			transfer_state = 1084
+			transfer_state = 1085
+			transfer_state = 1086
+			transfer_state = 1087
+		}
+	}
+    every_country = {
+    	limit = {
+    		has_war_with = GER
+    	}
+    	white_peace = GER
+    }
+    every_country = {
+    	limit = {
+    		has_war_with = ITA
+    	}
+    	white_peace = ITA
+    }
+    every_country = {
+    	limit = {
+    		is_in_faction_with = GER
+    	}
+    	leave_faction = yes
+		white_peace = ENG
+		white_peace = SOV
+    }
+	GER = {
+		dismantle_faction = yes
+	}	
+	if = {
+		limit = {
+			975 = {
+				is_core_of = AUS
+			}
+			HUN = {
+				OR = { NOT = { has_cosmetic_tag = HUN_EMPIRE } is_in_faction_with = GER }
+			}
+		}
+		#오스트리아 분할
+		WGR = {
+			transfer_state = 4
+			transfer_state = 975
+			transfer_state = 152
+			transfer_state = 976
+			transfer_state = 153
+			transfer_state = 848
+		}
+	}
+    SOV = {
+    	transfer_state = 146
+    	transfer_state = 763
+    	transfer_state = 188
+    	transfer_state = 722
+    	transfer_state = 1102
+    	transfer_state = 1090
+    	add_state_core = 1090
+		
+		transfer_state = 784
+		transfer_state = 96
+		transfer_state = 95
+		transfer_state = 94
+		transfer_state = 93
+		
+		if = {
+			limit = {
+				HUN = {
+					OR = { 
+						NOT = { 
+							has_cosmetic_tag = HUN_EMPIRE 
+						} 
+						is_in_faction_with = GER 
+					}
+				}
+				NOT = {
+					CZE = {
+						is_puppet_of = HUN
+						owns_state = 73
+					}
+				}
+			}
+			transfer_state = 73
+		}
+		if = {
+			limit = {
+				HUN = {
+					OR = { 
+						NOT = { 
+							has_cosmetic_tag = HUN_EMPIRE 
+						} 
+						is_in_faction_with = GER 
+					}
+				}
+			}
+			transfer_state = 80
+			transfer_state = 91
+			transfer_state = 89
+		}
+		transfer_state = 78
+		transfer_state = 766
+		
+    	add_state_core = 146
+    	add_state_core = 763
+    	add_state_core = 188
+    	add_state_core = 73
+    	add_state_core = 722
+    	#독일
+		
+		add_state_core = 784
+		add_state_core = 96
+		add_state_core = 95
+		add_state_core = 94
+		add_state_core = 93
+		add_state_core = 91
+		add_state_core = 89
+		
+		add_state_core = 80
+		add_state_core = 78
+		add_state_core = 766
+		
+		every_state = {
+			limit = {
+				OR = {
+					is_core_of = LIT
+					is_core_of = LAT
+					is_core_of = EST
+				}
+			}
+			add_core_of = SOV
+		}
+    	puppet = PLS
+    	puppet = RMS
+    	puppet = ALB
+    	puppet = BLS
+		if = {
+			limit = {
+				HUN = {
+					OR = { NOT = { has_cosmetic_tag = HUN_EMPIRE } is_in_faction_with = GER }	
+				}
+			}
+			puppet = HNS
+		}
+		if = {
+			limit = {
+				is_historical_focus_on = yes
+				EST = {
+					is_ai = yes
+				}
+			}	
+			annex_country = {
+				target = EST
+				transfer_troops = yes
+			}	
+		}
+		if = {
+			limit = {
+				is_historical_focus_on = yes
+				LIT = {
+					is_ai = yes
+				}
+			}	
+			annex_country = {
+				target = LIT
+				transfer_troops = yes
+			}	
+		}
+		if = {
+			limit = {
+				is_historical_focus_on = yes
+				LAT = {
+					is_ai = yes
+				}
+			}	
+			annex_country = {
+				target = LAT
+				transfer_troops = yes
+			}	
+		}
+    }
+	AUS = {
+		load_focus_tree = korean_government
+	}
+	USA = {
+		puppet = WGR
+	}
+	WGR = {
+		set_cosmetic_tag = WGR_GER_OCCUP
+    	transfer_state = 54
+    	transfer_state = 53
+    	transfer_state = 52
+    	transfer_state = 55
+		transfer_state = 50
+    	transfer_state = 51
+    	transfer_state = 1110
+    	transfer_state = 57
+    	transfer_state = 56
+    	transfer_state = 59
+    	transfer_state = 58
+    	transfer_state = 909
+		transfer_state = 66
+    	transfer_state = 68
+    	transfer_state = 63
+		transfer_state = 978
+		transfer_state = 1116
+		transfer_state = 848
+		transfer_state = 153
+		transfer_state = 63
+		transfer_state = 60
+		transfer_state = 64
+		transfer_state = 65
+		transfer_state = 62
+		transfer_state = 61
+		transfer_state = 63
+		transfer_state = 63
+	}
 }
 
 ##############################################
@@ -6105,7 +9884,7 @@ TLE_german_defeat_red_effect = {
 	log = "war_won"
 	set_global_flag = war_won
 	SOV = {
-		set_faction_name = "warsaw_pact"
+		add_ideas = SOVIET_PUPPET
 	}
 	DEN = {	
 		drop_cosmetic_tag = yes
@@ -6128,13 +9907,18 @@ TLE_german_defeat_red_effect = {
 	}
 	if = {
 		limit = {
-			NOT = {
+			OR = {
+				NOT = {
+					KOR = {
+						has_country_flag = FLAG_KOR_FASCIST_ROUTE
+					}
+				}
 				KOR = {
-					has_country_flag = FLAG_KOR_FASCIST_ROUTE
+					has_country_flag = FLAG_YICHIN_ROUTE
 				}
 			}
 		}
-		YEM = {
+		ENG = {
 			transfer_state = 992
 		}
 		RAJ = {
@@ -6174,13 +9958,13 @@ TLE_german_defeat_red_effect = {
 		PAK = {
 			set_cosmetic_tag = PAK_UK
 			set_politics = { 
-				ruling_party = neutrality
+				ruling_party = democratic
 				last_election = "1936.11.26"
 				election_frequency = 48
 				elections_allowed = no
 			}
 			set_popularities = {
-				neutrality = 100
+				democratic = 100
 			}
 		}
 		MAL = { #말레이 통일
@@ -6210,23 +9994,12 @@ TLE_german_defeat_red_effect = {
 	every_country = {
 		add_ideas = TLE_afterwar_idea
 	}
-	every_country = {
-		limit = {
-			NOT = {
-				original_tag = KOR
-			}
-			is_japan_clique = no
-			is_chinese_clique = no
-			is_ai = yes
-		}
-		add_ideas = TLE_army_nuffer
-	}
-	BUL = {
+	BLS = {
 		set_politics = {
 			ruling_party = communism
 			last_election = "1932.3.8"
 			election_frequency = 60
-			elections_allowed = yes
+			elections_allowed = no
 		}
 		set_popularities = {
 			democratic = 8 #liberalism
@@ -6239,6 +10012,14 @@ TLE_german_defeat_red_effect = {
 		transfer_state = 801
 		transfer_state = 211
 		transfer_state = 77
+		
+		add_state_core = 48
+		add_state_core = 212
+		add_state_core = 801
+		add_state_core = 211
+		add_state_core = 77
+		add_ideas = SOV_communist_puppet 
+		load_focus_tree = korean_government
 	}
 	SWI = {
 		transfer_state = 3
@@ -6247,7 +10028,29 @@ TLE_german_defeat_red_effect = {
 		transfer_state = 846
 		transfer_state = 847
 	}
-    POL = {
+	DEN = {	
+		drop_cosmetic_tag = yes
+		end_puppet = GER 
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = yes
+		}
+		set_popularities = {
+			democratic = 86
+			fascism = 2
+			communism = 7
+			neutrality = 5 
+		}
+	}
+    PLS = {
+		load_focus_tree = korean_government
+		add_ideas = SOVIET_PUPPET
+		every_state = {
+			limit = {
+				is_core_of = POL
+			}
+			add_core_of = PLS
+		}
     	transfer_state = 97
     	transfer_state = 5
     	transfer_state = 762
@@ -6263,7 +10066,7 @@ TLE_german_defeat_red_effect = {
     	transfer_state = 86
     	transfer_state = 807
     	transfer_state = 85
-		set_cosmetic_tag = POL_WW2
+		set_cosmetic_tag = PLS_WW2
 		annex_country = {
 			target = POL
 			transfer_troops = yes
@@ -6284,10 +10087,60 @@ TLE_german_defeat_red_effect = {
 			}
 			transfer_state = 1105
 		}
+		add_ideas = SOV_communist_puppet 
 	}	
-	ROM = {
-		set_cosmetic_tag = ROM_WW2
+	RMS = {
+		set_cosmetic_tag = RMS_WW2
+		add_ideas = SOVIET_PUPPET
 		transfer_state = 971
+		transfer_state = 46
+		transfer_state = 81
+		transfer_state = 84
+		transfer_state = 82
+		transfer_state = 83
+		transfer_state = 76
+		transfer_state = 1104
+		transfer_state = 79
+		
+		add_state_core = 971
+		add_state_core = 46
+		add_state_core = 81
+		add_state_core = 84
+		add_state_core = 82
+		add_state_core = 83
+		add_state_core = 76
+		add_state_core = 1104
+		add_state_core = 79
+		add_ideas = SOV_communist_puppet 
+		load_focus_tree = korean_government
+	}
+	if = {
+		limit = {
+			HUN = {
+				OR = { NOT = { has_cosmetic_tag = HUN_EMPIRE } is_in_faction_with = GER }
+			}
+		}
+		HNS = {
+			set_cosmetic_tag = HNS_WW2
+			add_ideas = SOV_communist_puppet 
+			add_ideas = SOVIET_PUPPET
+			load_focus_tree = korean_government
+			transfer_state = 43
+			transfer_state = 973
+			transfer_state = 154
+			transfer_state = 155
+			transfer_state = 974
+			
+			add_state_core = 43
+			add_state_core = 973
+			add_state_core = 154
+			add_state_core = 155
+			add_state_core = 974
+			annex_country = {
+				target = HUN
+				transfer_troops = yes
+			}
+		}
 	}
 	if = {
 		limit = {
@@ -6309,24 +10162,22 @@ TLE_german_defeat_red_effect = {
 				target = CZE 
 				transfer_troops = yes
 			}
-		}
-	}
-	if = {
-		limit = {
-			HUN = {
-				OR = { NOT = { has_cosmetic_tag = HUN_EMPIRE } is_in_faction_with = GER }
+			annex_country = {
+				target = HNS
+				transfer_troops = yes
 			}
-		}
-		HUN = {
-			set_cosmetic_tag = HUN_WW2
-			remove_ideas = AUH_otto_von_habsburg
 		}
 	}
 	ALB = {
 		set_cosmetic_tag = ALB_WW2
+		add_ideas = SOV_communist_puppet 
+		add_ideas = SOVIET_PUPPET
 	}
 	CZE = {
-		set_cosmetic_tag = CZE_WW2
+		set_cosmetic_tag = CZE_REDORDER
+		add_ideas = SOV_communist_puppet 
+		add_ideas = SOVIET_PUPPET
+		load_focus_tree = korean_government
 	}
 	every_country = {
 		limit = {
@@ -6334,8 +10185,10 @@ TLE_german_defeat_red_effect = {
 			has_government = communism
 		}
 	}
-	BUL = {
-		set_cosmetic_tag = BUL_WW2
+	BLS = {
+		set_cosmetic_tag = BLS_WW2
+		add_ideas = SOV_communist_puppet 
+		add_ideas = SOVIET_PUPPET
 	}
     FRA = {
 		set_politics = {
@@ -6490,6 +10343,8 @@ TLE_german_defeat_red_effect = {
 		add_state_core = 53
 		add_state_core = 978
 		set_cosmetic_tag = DDR_GER_OCCUP
+		add_ideas = SOV_communist_puppet 
+		add_ideas = SOVIET_PUPPET
 	}	
 	FRA = {
 		puppet = RL1
@@ -6559,6 +10414,9 @@ TLE_german_defeat_red_effect = {
 		transfer_state = 186
 		transfer_state = 182
 		transfer_state = 187
+		set_cosmetic_tag = GRE_REDORDER
+		add_ideas = SOV_communist_puppet 
+		add_ideas = SOVIET_PUPPET
 	}
     every_state = {
     	limit = {
@@ -6615,6 +10473,28 @@ TLE_german_defeat_red_effect = {
 		transfer_state = 970
 		transfer_state = 106
 		leave_faction = yes
+		add_ideas = SOV_communist_puppet 
+		add_ideas = SOVIET_PUPPET
+		set_cosmetic_tag = YUG_REDORDER
+		load_focus_tree = korean_government
+		set_politics = {
+			ruling_party = communism
+			last_election = "1932.3.8"
+			election_frequency = 60
+			elections_allowed = yes
+		}
+		set_popularities = {
+			democratic = 13 #liberalism
+			fascism = 13 #nazism
+			communism = 61 #marxism
+			neutrality = 13 #despotism
+		}
+	}
+	every_country = {
+		limit = {
+			has_war_with = YUG
+		}
+		white_peace = YUG
 	}
 	736 = {
 		set_demilitarized_zone = yes
@@ -6631,7 +10511,20 @@ TLE_german_defeat_red_effect = {
 		every_country = {
 			limit = {
 				original_tag = ITA
+				NOT = {
+					has_cosmetic_tag = ITA_rds
+				}
+			}
+			save_event_target_as = italia_fascist
+		}
+		every_country = {
+			limit = {
+				original_tag = ITA
 				has_cosmetic_tag = ITA_rds
+			}
+			annex_country = {
+				target = event_target:italia_fascist
+				transfer_troops = no
 			}
 			save_event_target_as = italia_real_ww2
 			transfer_state = 160
@@ -6696,14 +10589,11 @@ TLE_german_defeat_red_effect = {
 				uncomplete_children = yes
 				refund_political_power = no
 			}
-			complete_national_focus = ITA_undermine_the_duce
-			complete_national_focus = ITA_conspiracies_in_the_shadows
-			complete_national_focus = ITA_convene_the_grand_council
-			complete_national_focus = ITA_depose_mussolini
 			mark_focus_tree_layout_dirty = yes
 		}
 	}	
 	event_target:italia_real_ww2 = {
+		load_focus_tree = italy_after_wwii_lose
 		set_politics = {
 			ruling_party = democratic
 			last_election = "1932.3.8"
@@ -6759,7 +10649,7 @@ TLE_german_defeat_red_effect = {
 		}
 		set_capital = { state = 37 }
 	}
-	ROM = {
+	RMS = {
 		transfer_state = 76
 	}
 	LUX = {
@@ -6795,7 +10685,7 @@ TLE_german_defeat_red_effect = {
 				}
 			}
 		}
-		ROM = {
+		RMS = {
 			transfer_state = 76
 		}
 	}
@@ -6997,11 +10887,13 @@ TLE_german_defeat_red_effect = {
 			}
 			add_core_of = SOV
 		}
-    	puppet = POL
-    	puppet = ROM
+		puppet = PLS
+		puppet = RMS
+		puppet = HNS
+		puppet = BLS
     	puppet = ALB
     	puppet = BUL
-		puppet = YUG
+		add_to_faction = YUG
 		puppet = DDR
 		puppet = GRE
 		puppet = CZE
@@ -7138,7 +11030,104 @@ TLE_REDORDER_germany_annex_austria_effect = {
 			transfer_troops = yes
 		}
 	}
-}	
+}
+TLE_four_west_germany_effect = {
+	AUS = {
+		set_politics = {
+			ruling_party = democratic
+			last_election = "1936.1.1"
+			election_frequency = 48
+			elections_allowed = yes
+		}
+		set_popularities = {
+			neutrality = 0
+			fascism = 0
+			communism = 0
+			democratic = 100
+		}
+		set_cosmetic_tag = SGR
+		transfer_state = 975
+		transfer_state = 976
+		transfer_state = 4
+		transfer_state = 152
+		transfer_state = 153
+		transfer_state = 848
+		transfer_state = 52
+		transfer_state = 53
+		transfer_state = 50
+		transfer_state = 1116
+		transfer_state = 54
+		transfer_state = 978
+		transfer_state = 55
+		
+		add_state_core = 52
+		add_state_core = 53
+		add_state_core = 50
+		add_state_core = 1116
+		add_state_core = 54
+		add_state_core = 978
+		add_state_core = 55
+	}
+	RL1 = {
+		transfer_state = 42
+		transfer_state = 51
+		transfer_state = 1110
+		transfer_state = 57
+	}
+	HAN = {
+		set_politics = {
+			ruling_party = democratic
+			last_election = "1936.1.1"
+			election_frequency = 48
+			elections_allowed = yes
+		}
+		set_popularities = {
+			neutrality = 0
+			fascism = 0
+			communism = 0
+			democratic = 100
+		}
+		transfer_state = 56
+		transfer_state = 57
+		transfer_state = 59
+		transfer_state = 58
+		transfer_state = 909
+		add_state_core = 58
+		add_state_core = 909
+	}
+	PRE = {
+		set_politics = {
+			ruling_party = democratic
+			last_election = "1936.1.1"
+			election_frequency = 48
+			elections_allowed = yes
+		}
+		set_popularities = {
+			neutrality = 0
+			fascism = 0
+			communism = 0
+			democratic = 100
+		}
+		transfer_state = 64
+		transfer_state = 62
+		transfer_state = 63
+		transfer_state = 68
+		transfer_state = 66
+		transfer_state = 60
+		transfer_state = 65
+		transfer_state = 61
+		
+		add_state_core = 60
+		add_state_core = 65
+		add_state_core = 61
+	}
+	USA = {
+		add_to_faction = HAN
+		add_to_faction = PRE
+		add_to_faction = AUS
+		add_to_faction = RL1
+	}
+}
 ##############################################
 #Eastern Front - Soviet's Defeat
 ##############################################
@@ -7351,7 +11340,6 @@ TLE_soviet_defeat_effect = {
 	}
     SOV = {
     	set_capital = { state = 398 }
-    	set_cosmetic_tag = SOV_perm_government
     	add_country_leader_role = {
     		Character = SOV_lavrenty_beriya
     		country_leader = {
@@ -7985,6 +11973,9 @@ FRS_diminished_effect = {
 					KOR = {
 						has_country_flag = FLAG_KOR_FASCIST_ROUTE
 					}
+					NOT = {
+						has_global_flag = TLE_KOREA_IS_DEFEATED
+					}
 					FRI = {
 						owns_state = 671
 						owns_state = 286
@@ -8218,15 +12209,18 @@ FRS_diminished_effect = {
 			}
 			remove_core_of = event_target:vichy_france
 		}
-		FRA = {
-			end_puppet = SYR
-			end_puppet = LEB
-		}
-		SYR = {
-			transfer_state = 677
-			transfer_state = 680
-			transfer_state = 554
-			# transfer_state = 553
+		if = {
+			limit = {
+				NOT = {
+					has_global_flag = PRE_THE_NEW_ORDER_GBR
+				}
+			}
+			FRS = {
+				transfer_state = 677
+				transfer_state = 680
+				transfer_state = 554
+				transfer_state = 553
+			}
 		}
 		TUR = {
 			transfer_state = 799
@@ -8246,12 +12240,19 @@ FRS_diminished_effect = {
 		limit = {
 			NOT = {
 				has_global_flag = PRE_THE_NEW_ORDER_GBR
+			}
+			OR  = {
+				NOT = {
+					KOR = {
+						has_country_flag = FLAG_KOR_FASCIST_ROUTE
+					}
+				}
 				KOR = {
-					has_country_flag = FLAG_KOR_FASCIST_ROUTE
+					has_country_flag = FLAG_YICHIN_ROUTE
 				}
 			}
 		}
-		YEM = {
+		ENG = {
 			transfer_state = 992
 		}
 		RAJ = {
@@ -8291,13 +12292,13 @@ FRS_diminished_effect = {
 		PAK = {
 			set_cosmetic_tag = PAK_UK
 			set_politics = { 
-				ruling_party = neutrality
+				ruling_party = democratic
 				last_election = "1936.11.26"
 				election_frequency = 48
 				elections_allowed = no
 			}
 			set_popularities = {
-				neutrality = 100
+				democratic = 100
 			}
 		}
 		MAL = { #말레이 통일
@@ -8811,8 +12812,16 @@ FRS_diminished_effect = {
 					value = 5
 				}
 			}
+			ENG = {
+				end_puppet = IRQ
+			}
 			IRQ = {
+				leave_faction = yes
+				drop_cosmetic_tag = yes
 				transfer_state = 656
+			}
+			OMA = {
+				leave_faction = yes
 			}
 			SPR = {
 				transfer_state = 118
@@ -8970,10 +12979,9 @@ FRS_diminished_effect = {
 				add_state_core = 709
 			}
 			TUR = {
-				annex_country = {
-					target = SYR
-					transfer_troops = no
-				}
+				transfer_state = 554
+				transfer_state = 677
+				transfer_state = 680
 				transfer_state = 230
 				transfer_state = 676
 				set_cosmetic_tag = TUR_TNO
@@ -10266,6 +14274,7 @@ KKS_SMO_Z_effect = {
 		transfer_state = 1033
 		transfer_state = 608
 		transfer_state = 614
+		transfer_state = 1137
 		transfer_state = 1101
 		transfer_state = 1100
 		transfer_state = 597
@@ -10287,12 +14296,14 @@ KKS_kuomintang_north_attack_success_effect = {
 		}
 		CHI = {
 			transfer_state = 606
+			transfer_state = 1138
 			transfer_state = 1040
 			transfer_state = 598
 			transfer_state = 1051
 			transfer_state = 1115
 			transfer_state = 1048
 			transfer_state = 1127
+			transfer_state = 1139
 			transfer_state = 1126
 			transfer_state = 1056
 			transfer_state = 620
@@ -10348,6 +14359,7 @@ GAW_KKS_lose_effect = {
 			white_peace = SZY
 		}
 		CHI = {
+			remove_ideas = KMT_kks_the_time_out
 			annex_country = {
 				target = SZY
 				transfer_troops = no
@@ -10370,6 +14382,14 @@ GAW_KKS_lose_effect = {
 			}
 			annex_country = {
 				target = XSM
+				transfer_troops = no
+			}
+			annex_country = {
+				target = GXM
+				transfer_troops = no
+			}
+			annex_country = {
+				target = NXM
 				transfer_troops = no
 			}
 			annex_country = {
@@ -10418,6 +14438,13 @@ GAW_KKS_lose_effect = {
 			transfer_state = 743
 			transfer_state = 1122
 			transfer_state = 1035
+			transfer_state = 1097
+			transfer_state = 610
+			transfer_state = 1060
+			transfer_state = 715
+			transfer_state = 1059
+			transfer_state = 714
+			transfer_state = 761
 		}
 		if = { #소련 패전시
 			limit = {
@@ -10561,24 +14588,6 @@ GAW_KKS_lose_effect = {
 			remove_ideas = KOR_failed_civilian_control_of_the_military
 			remove_ideas = KOR_failed_civilian_control_of_the_military_2
 		}
-		716 = {
-			set_demilitarized_zone = yes
-		}
-		328 = {
-			set_demilitarized_zone = yes
-		}
-		717 = {
-			set_demilitarized_zone = yes
-		}
-		408 = {
-			set_demilitarized_zone = yes
-		}
-		409 = {
-			set_demilitarized_zone = yes
-		}
-		1029 = {
-			set_demilitarized_zone = yes
-		}
 		VTC = {
 			country_event = {
 				id = siam.27
@@ -10620,6 +14629,7 @@ GAW_KKS_win_effect = {
 			transfer_state = 1074
 			transfer_state = 1057
 			transfer_state = 606
+			transfer_state = 1138
 			transfer_state = 598
 			transfer_state = 1040
 			transfer_state = 1051
@@ -10635,6 +14645,7 @@ GAW_KKS_win_effect = {
 			transfer_state = 1041
 			transfer_state = 620
 			transfer_state = 1127
+			transfer_state = 1139
 			transfer_state = 1048
 			transfer_state = 1056
 		}
@@ -10807,6 +14818,7 @@ GAW_KKS_win_effect = {
 		HNC = {
 			transfer_state = 602
 			transfer_state = 1054
+			transfer_state = 1136
 		}
 		PRC = {
 			transfer_state = 600
@@ -10855,6 +14867,14 @@ GAW_ACH_lose_effect = {
 			}
 			annex_country = {
 				target = XSM
+				transfer_troops = no
+			}
+			annex_country = {
+				target = GXM
+				transfer_troops = no
+			}
+			annex_country = {
+				target = NXM
 				transfer_troops = no
 			}
 			annex_country = {
@@ -11229,6 +15249,14 @@ GAW_NONE_ACH_win_effect = {
 				transfer_troops = no
 			}
 			annex_country = {
+				target = GXM
+				transfer_troops = no
+			}
+			annex_country = {
+				target = NXM
+				transfer_troops = no
+			}
+			annex_country = {
 				target = SCC
 				transfer_troops = no
 			}
@@ -11507,6 +15535,7 @@ PCY_korea_annex_collaped_beigov_effect = {
 			transfer_state = 1130
 			transfer_state = 1097
 			transfer_state = 614
+			transfer_state = 1137
 			
 			transfer_state = 1099
 			transfer_state = 615
@@ -11525,19 +15554,20 @@ PCY_korea_annex_collaped_beigov_effect = {
 			
 			transfer_state = 1074
 		}
-		XSM = {
+		GXM = {
 			transfer_state = 1114
 		}
 		LYC = {
 			annex_country = {
 				target = ZLC
-				transfer_troops = yes
+				transfer_troops = no
 			}
 			transfer_state = 744
 			transfer_state = 1057
 			transfer_state = 607
 			transfer_state = 1126
 			transfer_state = 1127
+			transfer_state = 1139
 			transfer_state = 620
 			transfer_state = 1056
 			transfer_state = 1048
@@ -11547,6 +15577,7 @@ PCY_korea_annex_collaped_beigov_effect = {
 			add_state_core = 607
 			add_state_core = 1126
 			add_state_core = 1127
+			add_state_core = 1139
 			add_state_core = 620
 			add_state_core = 1056
 			add_state_core = 1048
@@ -11557,6 +15588,7 @@ PCY_kuomintang_annex_collaped_beigov_effect = {
 	hidden_effect = {
 		CHI = {
 			transfer_state = 606
+			transfer_state = 1138
 			transfer_state = 598
 			transfer_state = 1051
 			transfer_state = 1040
@@ -11564,6 +15596,7 @@ PCY_kuomintang_annex_collaped_beigov_effect = {
 			
 			transfer_state = 1126
 			transfer_state = 1127
+			transfer_state = 1139
 			transfer_state = 1048
 		}	
 	}
@@ -11627,9 +15660,11 @@ PCY_kuomintang_collapsed_effect = {
 			
 			transfer_state = 1126
 			transfer_state = 1127
+			transfer_state = 1139
 			transfer_state = 1048
 			
 			transfer_state = 606
+			transfer_state = 1138
 			transfer_state = 749
 			
 			transfer_state = 596
@@ -11647,9 +15682,11 @@ PCY_kuomintang_collapsed_effect = {
 			
 			add_state_core = 1126
 			add_state_core = 1127
+			add_state_core = 1139
 			add_state_core = 1048
 			
 			add_state_core = 606
+			add_state_core = 1138
 			add_state_core = 749
 			
 			add_state_core = 596
@@ -11771,6 +15808,7 @@ PCY_north_chinese_government_effect = {
 			transfer_state = 1033
 			transfer_state = 608
 			transfer_state = 614
+			transfer_state = 1137
 			transfer_state = 1101
 			#
 			add_state_core = 1097
@@ -11779,6 +15817,7 @@ PCY_north_chinese_government_effect = {
 			add_state_core = 1033
 			add_state_core = 608
 			add_state_core = 614
+			add_state_core = 1137
 			add_state_core = 1101
 			set_cosmetic_tag = QIN_PROV_GOV_KOR
 		}	
@@ -11835,7 +15874,9 @@ PCY_aiduf_rise_effect = {
 					state =	620
 					state =	1048
 					state =	1127
+					state =	1139
 					state =	606
+					state =	1138
 					state =	598
 					state =	1051
 					state =	1040
@@ -11982,6 +16023,19 @@ PCY_aiduf_rise_effect = {
 		}
 		if = {
 			limit = {
+				1139 = {
+					NOT = {
+						has_state_flag = KOR_border_war_clear
+					}
+				}
+			}
+			1139 = {
+				set_demilitarized_zone = no
+				set_state_controller_to = CH1
+			}
+		}
+		if = {
+			limit = {
 				606 = {
 					NOT = {
 						has_state_flag = KOR_border_war_clear
@@ -11989,6 +16043,19 @@ PCY_aiduf_rise_effect = {
 				}
 			}
 			606 = {
+				set_demilitarized_zone = no
+				set_state_controller_to = CH1
+			}
+		}
+		if = {
+			limit = {
+				1138 = {
+					NOT = {
+						has_state_flag = KOR_border_war_clear
+					}
+				}
+			}
+			1138 = {
 				set_demilitarized_zone = no
 				set_state_controller_to = CH1
 			}
@@ -12244,6 +16311,32 @@ PCY_aiduf_rise_effect = {
 		}
 		if = {
 			limit = {
+				1139 = {
+					NOT = {
+						has_state_flag = KOR_border_war_clear
+					}
+				}
+			}
+			CH1 = {
+				random_controlled_state = {
+					prioritize = { 1139 }
+					create_unit = {
+						division = "name = \"Anti Imperialist Revolitional Army\" division_template = \"Anti Imperialist Revolitional Army\" start_experience_factor = 0.6"
+						owner = CH1
+					}
+					create_unit = {
+						division = "name = \"Anti Imperialist Revolitional Army\" division_template = \"Anti Imperialist Revolitional Army\" start_experience_factor = 0.6"
+						owner = CH1
+					}
+					create_unit = {
+						division = "name = \"Anti Imperialist Revolitional Army\" division_template = \"Anti Imperialist Revolitional Army\" start_experience_factor = 0.6"
+						owner = CH1
+					}
+				}	
+			}	
+		}
+		if = {
+			limit = {
 				606 = {
 					NOT = {
 						has_state_flag = KOR_border_war_clear
@@ -12253,6 +16346,32 @@ PCY_aiduf_rise_effect = {
 			CH1 = {
 				random_controlled_state = {
 					prioritize = { 606 }
+					create_unit = {
+						division = "name = \"Anti Imperialist Revolitional Army\" division_template = \"Anti Imperialist Revolitional Army\" start_experience_factor = 0.6"
+						owner = CH1
+					}
+					create_unit = {
+						division = "name = \"Anti Imperialist Revolitional Army\" division_template = \"Anti Imperialist Revolitional Army\" start_experience_factor = 0.6"
+						owner = CH1
+					}
+					create_unit = {
+						division = "name = \"Anti Imperialist Revolitional Army\" division_template = \"Anti Imperialist Revolitional Army\" start_experience_factor = 0.6"
+						owner = CH1
+					}
+				}	
+			}	
+		}
+		if = {
+			limit = {
+				1138 = {
+					NOT = {
+						has_state_flag = KOR_border_war_clear
+					}
+				}
+			}
+			CH1 = {
+				random_controlled_state = {
+					prioritize = { 1138 }
 					create_unit = {
 						division = "name = \"Anti Imperialist Revolitional Army\" division_template = \"Anti Imperialist Revolitional Army\" start_experience_factor = 0.6"
 						owner = CH1
@@ -12795,6 +16914,14 @@ GAW_PCY_lose_effect = {
 				transfer_troops = no
 			}
 			annex_country = {
+				target = GXM
+				transfer_troops = no
+			}
+			annex_country = {
+				target = NXM
+				transfer_troops = no
+			}
+			annex_country = {
 				target = SCC
 				transfer_troops = no
 			}
@@ -13026,6 +17153,14 @@ GAW_PCY_lose_effect = {
 				target = XSM
 				transfer_troops = no
 			}
+			annex_country = {
+				target = GXM
+				transfer_troops = no
+			}
+			annex_country = {
+				target = NXM
+				transfer_troops = no
+			}
 		}
 		if = { #소련 패전시
 			limit = {
@@ -13156,6 +17291,7 @@ GAW_PCY_win_war_effect = {
 			transfer_state = 1033
 			transfer_state = 608
 			transfer_state = 614
+			transfer_state = 1137
 			transfer_state = 1101
 			#
 			add_state_core = 1097
@@ -13164,6 +17300,7 @@ GAW_PCY_win_war_effect = {
 			add_state_core = 1033
 			add_state_core = 608
 			add_state_core = 614
+			add_state_core = 1137
 			add_state_core = 1101
 		}	
 		SND = {
@@ -13211,9 +17348,11 @@ GAW_PCY_win_war_effect = {
 			
 			transfer_state = 1126
 			transfer_state = 1127
+			transfer_state = 1139
 			transfer_state = 1048
 			
 			transfer_state = 606
+			transfer_state = 1138
 			transfer_state = 749
 			
 			transfer_state = 596
@@ -13507,6 +17646,7 @@ GAW_PCY_win_effect = {
 			transfer_state = 1033
 			transfer_state = 608
 			transfer_state = 614
+			transfer_state = 1137
 			transfer_state = 1101
 			#
 			add_state_core = 1097
@@ -13516,6 +17656,7 @@ GAW_PCY_win_effect = {
 			add_state_core = 608
 			add_state_core = 614
 			add_state_core = 1101
+			add_state_core = 1137
 			set_cosmetic_tag = QIN_PCY_KOR
 		}	
 		KRU = {
@@ -13561,6 +17702,7 @@ GAW_PCY_win_effect = {
 			transfer_state = 1056
 			transfer_state = 1048
 			transfer_state = 1127
+			transfer_state = 1139
 			#
 			add_state_core = 1074
 			add_state_core = 607
@@ -13570,6 +17712,7 @@ GAW_PCY_win_effect = {
 			add_state_core = 1056
 			add_state_core = 1048
 			add_state_core = 1127
+			add_state_core = 1139
 			set_cosmetic_tag = WEI_PCY_KOR
 		}
 		YUN = {
@@ -13618,6 +17761,7 @@ GAW_PCY_win_effect = {
 			transfer_state = 598
 			transfer_state = 1115
 			transfer_state = 606
+			transfer_state = 1138
 			transfer_state = 749
 			transfer_state = 596
 			transfer_state = 1042
@@ -13632,6 +17776,7 @@ GAW_PCY_win_effect = {
 			add_state_core = 598
 			add_state_core = 1115
 			add_state_core = 606
+			add_state_core = 1138
 			add_state_core = 749
 			add_state_core = 596
 			add_state_core = 1042
@@ -13700,8 +17845,10 @@ GAW_PCY_win_effect = {
 				neutrality = 100
 			}
 			transfer_state = 602
+			transfer_state = 1136
 			transfer_state = 1054
 			add_state_core = 602
+			add_state_core = 1136
 			add_state_core = 1054
 			set_cosmetic_tag = HNC_PCY_KOR
 		}	
@@ -13767,6 +17914,9 @@ GAW_PCY_win_effect = {
 			add_state_core = 594
 			set_cosmetic_tag = KJU_PCY_KOR
 		}
+		1136 = {
+			set_demilitarized_zone = yes
+		}
 		602 = {
 			set_demilitarized_zone = yes
 		}
@@ -13808,6 +17958,9 @@ PCY_HAPPY_ENDING_effect = {
 			}
 			add_core_of = CH1
 			add_core_of = QIN
+			set_demilitarized_zone = no
+		}
+		1136 = {
 			set_demilitarized_zone = no
 		}
 		602 = {
@@ -13853,9 +18006,11 @@ PCY_HAPPY_ENDING_effect = {
 			transfer_state = 750
 			transfer_state = 620
 			transfer_state = 1127
+			transfer_state = 1139
 			transfer_state = 1048
 			transfer_state = 1126
 			transfer_state = 606
+			transfer_state = 1138
 			transfer_state = 1040
 			transfer_state = 1115
 			transfer_state = 1051
@@ -13887,8 +18042,9 @@ PCY_HAPPY_ENDING_effect = {
 			add_to_faction = YUN
 			add_to_faction = HNC
 			add_to_faction = SND
-			add_to_faction = XSM
-			
+			add_to_faction = XSM	
+			add_to_faction = GXM
+			add_to_faction = NXM
 		}
 		YUN = {
 			set_cosmetic_tag = YUN_PAK_HAPPY
@@ -13930,6 +18086,7 @@ PCY_HAPPY_ENDING_effect = {
 		HNC = {
 			set_cosmetic_tag = HNC_PAK_HAPPY
 			transfer_state = 602
+			transfer_state = 1136
 			transfer_state = 1054
 		}
 		SND = {
@@ -13947,12 +18104,26 @@ PCY_HAPPY_ENDING_effect = {
 			transfer_state = 756
 			transfer_state = 1063
 			transfer_state = 754
+			transfer_state = 1134
+			transfer_state = 1135
 			transfer_state = 755
 			transfer_state = 604
 			transfer_state = 283
 			transfer_state = 1114
 			transfer_state = 616
 			transfer_state = 1129
+
+			add_state_core = 756
+			add_state_core = 1063
+			add_state_core = 754
+			add_state_core = 1134
+			add_state_core = 1135
+			add_state_core = 755
+			add_state_core = 604
+			add_state_core = 283
+			add_state_core = 1114
+			add_state_core = 616
+			add_state_core = 1129
 		}
 		QIN = {
 			annex_country = {
@@ -13979,14 +18150,6 @@ PCY_HAPPY_ENDING_effect = {
 			transfer_state = 287
 			transfer_state = 759
 			transfer_state = 619
-			
-			add_state_core = 760
-			add_state_core = 1039
-			add_state_core = 618
-			add_state_core = 617
-			add_state_core = 287
-			add_state_core = 759
-			add_state_core = 619
 		}	
 		KOR = {
 			annex_country = {
@@ -14199,6 +18362,11 @@ KKS_KCS_coupdetat_effect = {
 ##############################################
 TLE_chinese_war_ending_wp = {
 	hidden_effect = {
+		news_event = {
+			id = eok_news.110
+		}
+		set_global_flag = TLE_CHINESE_WAR_END
+		set_global_flag = TLE_CHINESE_WAR_WP
 		CHI = {
 			white_peace = ZLC
 			white_peace = XSM
@@ -14210,11 +18378,15 @@ TLE_chinese_war_ending_wp = {
 			transfer_state = 1047
 			transfer_state = 1058
 			transfer_state = 602
+			transfer_state = 1136
 			transfer_state = 1054
 			transfer_state = 750
 			transfer_state = 1048
-			transfer_state = 1048
 			transfer_state = 1125
+			transfer_state = 1138
+			transfer_state = 1040
+			transfer_state = 1115
+			transfer_state = 1139
 			leave_faction = yes
 		}	
 		TIB = {
@@ -14319,6 +18491,12 @@ TLE_chinese_war_ending_wp = {
 			add_state_core = 6118
 			add_state_core = 760
 		}
+		618 = {
+			set_demilitarized_zone = no
+		}
+		1039 = {
+			set_demilitarized_zone = no
+		}
 		SIK = {
 			remove_state_core = 759
 			remove_state_core = 287
@@ -14345,80 +18523,57 @@ TLE_chinese_war_ending_wp = {
 			}
 			add_ideas = TLE_afterwar_idea
 		}
-		every_country = {
+		every_state = {
 			limit = {
-				is_chinese_clique = yes
-				NOT = {
-					has_idea = TLE_army_nuffer
-				}
+				is_core_of = SIK
 			}
-			add_ideas = TLE_army_nuffer
-		}
-		MAN = {
-			leave_faction = yes
+			remove_core_of = SIK
 		}
 	}
 }
 TLE_chinese_war_ending_kmt_win = {
 	hidden_effect = {
-		SOV = {
-			end_puppet = MSR
-		}
-		MSR = {
-			leave_faction = yes
-		}
-		MAN = {
-			leave_faction = yes
-		}
+		set_global_flag = TLE_CHINESE_WAR_END
+		set_global_flag = TLE_CHINESE_WAR_KMT
 		CHI = {
-			every_country = {
-				limit = {
-					is_ai = no
-				}
-				news_event = {
-					id = eok_news.24
-					days = 1
-				}
+			news_event = {
+				id = eok_news.24
 			}
 			transfer_state = 612
-			puppet = SIK
+			set_cosmetic_tag = CHI
 			set_faction_name = "FACTION_CHI_NANKING_PACT"
 			annex_country = {
-				target = XSM
-				transfer_troops = yes
-			}
-			annex_country = {
-				target = SHX
-				transfer_troops = yes
-			}
-			annex_country = {
-				target = SZC
-				transfer_troops = yes
-			}
-			annex_country = {
-				target = FNG
-				transfer_troops = yes
+				target = ZLC
+				transfer_troops = no
 			}
 			set_country_flag = TLE_FLAG_BEIFA_CUT
-			create_wargoal = {
-				target = MSR
-				type = annex_everything
+			annex_country = {
+				target = SIK
+				transfer_troops = yes
 			}
-			create_wargoal = {
-				target = MON
-				type = annex_everything
+			annex_country = {
+				target = ETS
+				transfer_troops = no
 			}
-			create_wargoal = {
-				target = TIB
-				type = annex_everything
-			}
-			create_wargoal = {
+			annex_country = {
 				target = KMN
-				type = annex_everything
+				transfer_troops = no
 			}
 		}
-		SIK = {
-			set_cosmetic_tag = CHI_SIK_PRV
+		every_state = {
+			limit = {
+				is_core_of = SIK
+			}
+			remove_core_of = SIK
+		}
+		MSR = {
+			transfer_state = 1039
+		}
+		618 = {
+			set_demilitarized_zone = no
+		}
+		1039 = {
+			set_demilitarized_zone = no
 		}
 		USA = {
 			give_guarantee = TWC
@@ -14432,11 +18587,98 @@ TLE_chinese_war_ending_kmt_win = {
 		611 = {
 			set_demilitarized_zone = no
 		}
-		612 = {
+		761 = {
 			set_demilitarized_zone = no
 		}
-		621 = {
+		1059 = {
 			set_demilitarized_zone = no
+		}
+		714 = {
+			set_demilitarized_zone = no
+		}
+		every_country = {
+			limit = {
+				is_chinese_clique = yes
+				NOT = {
+					has_idea = TLE_afterwar_idea
+				}
+			}
+			add_ideas = TLE_afterwar_idea
+		}
+	}
+}
+TLE_chinese_war_ending_zlc_win = {
+	hidden_effect = {
+		set_global_flag = TLE_CHINESE_WAR_END
+		set_global_flag = TLE_CHINESE_WAR_ZLC
+		ZLC = {
+			news_event = {
+				id = eok_news.112
+			}
+			set_cosmetic_tag = ZLC_UNITED
+			annex_country = {
+				target = CHI
+				transfer_troops = no
+			}
+			annex_country = {
+				target = KMN
+				transfer_troops = no
+			}
+			annex_country = {
+				target = SIK
+				transfer_troops = yes
+			}
+			annex_country = {
+				target = ETS
+				transfer_troops = no
+			}
+			transfer_state = 612
+			transfer_state = 745
+			set_faction_name = "BEIJING_PACT"
+			add_state_core = 524
+			remove_ideas = CHI_war_of_resistance_1
+			remove_ideas = CHI_war_of_resistance_2
+			remove_ideas = CHI_forced_conscription
+			remove_ideas = CHI_legislative_yuan
+			remove_ideas = CHI_train_marines
+			retire_character = ZLC_wu_peifu
+			retire_character = ZLC_chao_kun
+			add_country_leader_role = {
+				Character = ZLC_yan_xishan
+				country_leader = {
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = { }
+				}
+				promote_leader = yes
+			}	
+		}
+		MSR = {
+			transfer_state = 1039
+		}
+		611 = {
+			set_demilitarized_zone = no
+		}
+		618 = {
+			set_demilitarized_zone = no
+		}
+		1039 = {
+			set_demilitarized_zone = no
+		}
+		761 = {
+			set_demilitarized_zone = no
+		}
+		1059 = {
+			set_demilitarized_zone = no
+		}
+		714 = {
+			set_demilitarized_zone = no
+		}
+		every_state = {
+			limit = {
+				is_core_of = SIK
+			}
+			remove_core_of = SIK
 		}
 	}
 }

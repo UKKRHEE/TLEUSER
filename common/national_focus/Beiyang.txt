@@ -3,7 +3,7 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 0
+			add = 10
 			tag = ZLC
 		}
 	}
@@ -38,19 +38,27 @@ focus_tree = {
 		cost = 10.00
 		x = 15
 		y = 0
+		allow_branch = {
+			has_country_flag = ZLC_next_focus_tree_1
+		}
 		available = {
 			has_completed_focus = ZLC_BEI_zhengchu
 		}
-
+		completion_reward = {
+			custom_effect_tooltip = ZLC_BEI_decide_the_load_tt
+		}
 	}
 	focus = {
 		id = ZLC_BEI_fkr_zhonghua_allies
-		icon = GFX_goal_unknown
+		icon = GFX_focus_ZLC_BEI_fkr_zhonghua_allies
 		cost = 1.00
 		x = 32
 		y = 0
 		available = {
 			has_global_flag = TLE_5TH_SINO_KOREAN_WAR
+		}
+		allow_branch = {
+			has_country_flag = ZLC_next_focus_tree_2
 		}
 
 	}
@@ -74,7 +82,9 @@ focus_tree = {
 		}	
 		x = 15
 		y = 1
-
+		completion_reward = {
+			custom_effect_tooltip = ZLC_BEI_caokun_anding_tt
+		}
 	}
 	focus = {
 		id = ZLC_BEI_anding_tax_resetting
@@ -86,7 +96,12 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = ZLC_BEI_caokun_anding
-
+		completion_reward = {
+			swap_ideas = {
+				add_idea = ZLC_handans_step_2
+				remove_idea = ZLC_handans_step
+			}
+		}
 	}
 	focus = {
 		id = ZLC_BEI_anding_loan_leading
@@ -98,7 +113,12 @@ focus_tree = {
 		x = 1
 		y = 2
 		relative_position_id = ZLC_BEI_caokun_anding
-
+		completion_reward = {
+			swap_ideas = {
+				add_idea = ZLC_handans_step_3
+				remove_idea = ZLC_handans_step_2
+			}
+		}
 	}
 	focus = {
 		id = ZLC_BEI_wu_peifu_is_leader
@@ -278,6 +298,10 @@ focus_tree = {
 		x = 11
 		y = 1
 		available = {
+			custom_trigger_tooltip = {
+				tooltip = TOOLTIP_NEW_CONTENT_FOR_ZLC
+				always = no
+			}
 			is_ai = no
 			NOT = {
 				KOR = {
@@ -301,6 +325,10 @@ focus_tree = {
 		x = 19
 		y = 1
 		available = {
+			custom_trigger_tooltip = {
+				tooltip = TOOLTIP_NEW_CONTENT_FOR_ZLC
+				always = no
+			}
 			is_ai = no
 			NOT = {
 				KOR = {
@@ -314,6 +342,12 @@ focus_tree = {
 		id = ZLC_BEI_fkr_caokun_government_move
 		icon = GFX_goal_unknown
 		cost = 2.00
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = TOOLTIP_NEW_CONTENT_FOR_ZLC
+				always = no
+			}
+		}
 		prerequisite = {
 			focus = ZLC_BEI_fkr_zhonghua_allies
 		}
@@ -400,7 +434,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ZLC_BEI_fkr_caokun_leader_caokun
 		}
-		x = 27
+		x = 28
 		y = 3
 
 	}
@@ -411,14 +445,14 @@ focus_tree = {
 		prerequisite = {
 			focus = ZLC_BEI_fkr_caokun_fall_is_no_problem
 		}
-		x = 27
+		x = 28
 		y = 4
 
 	}
 	focus = {
 		id = ZLC_BEI_the_5th_sino_korean_war
-		icon = GFX_goal_unknown
-		cost = 10.00
+		icon = GFX_focus_ZLC_BEI_the_5th_sino_korean_war
+		cost = 1.00
 		prerequisite = {
 			focus = ZLC_BEI_fkr_zhonghua_allies
 		}
@@ -432,39 +466,70 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = ZLC_BEI_fkr_huanghe_plan
-		icon = GFX_focus_generic_hydroelectric_energy
-		cost = 10.00
+		id = ZLC_BEI_fkr_chongqing_government
+		icon = GFX_focus_ZLC_BEI_fkr_chongqing_government
+		cost = 5.00
 		prerequisite = {
 			focus = ZLC_BEI_the_5th_sino_korean_war
 		}
-		x = 30
+		x = 32
 		y = 3
-		bypass = {
-			any_enemy_country = {
-				controls_state = 607
-			}
-		}
 		available = {
-			has_war = yes
+			has_war_with = KOR
+			has_completed_focus = ZLC_BEI_fkr_sichuan_side
+			surrender_progress > 0.1
 		}
 		completion_reward = {
-			unlock_decision_tooltip = CHI_breach_the_yellow_river
+			custom_effect_tooltip = ZLC_BEI_fkr_chongqing_government_tt
+			hidden_effect = {
+				news_event = {
+					id = eok_news.106
+				}
+				ZLC = {
+					set_cosmetic_tag = ZLC_BEIJING
+					annex_country = {
+						target = HNC
+						transfer_troops = yes
+					}
+					transfer_state = 1047
+					transfer_state = 1125
+					transfer_state = 605
+					transfer_state = 748
+					transfer_state = 753
+					set_capital = { state = 605 }
+				}
+				if = {
+					limit = {
+						NOT = {
+							CHI = {
+								controls_state = 1054
+							}
+						}
+					}
+					CHI = {
+						transfer_state = 1054
+					}
+				}
+				XKC = {
+					set_cosmetic_tag = XKC
+				}
+			}
 		}
 	}
 	focus = {
 		id = ZLC_BEI_fkr_caokun_burma_road
-		icon = GFX_goal_unknown
+		icon = GFX_focus_ZLC_BEI_fkr_caokun_burma_road
 		cost = 10.00
 		prerequisite = {
-			focus = ZLC_BEI_fkr_huanghe_plan
+			focus = ZLC_BEI_fkr_japanese_allies
+			focus = ZLC_BEI_fkr_chongqing_government
 		}
-		prerequisite = {
-			focus = ZLC_BEI_fkr_caokun_leader_caokun
-		}
-		x = 29
+		x = 30
 		y = 4
-
+		completion_reward = {
+			custom_effect_tooltip = ZLC_BEI_fkr_caokun_burma_road_tt
+			set_country_flag = ZLC_can_use_the_burma_road
+		}
 	}
 	focus = {
 		id = ZLC_BEI_fkr_caokun_we_arnt_lose
@@ -479,22 +544,19 @@ focus_tree = {
 		prerequisite = {
 			focus = ZLC_BEI_fkr_caokun_surrender_is_ruin
 		}
-		prerequisite = {
-			focus = ZLC_BEI_fkr_caokun_burma_road
-		}
 		x = 26
 		y = 5
 
 	}
 	focus = {
 		id = ZLC_BEI_fkr_conscription
-		icon = GFX_focus_generic_full_social_mobilization
+		icon = GFX_focus_ZLC_BEI_fkr_conscription
 		cost = 10.00
 		prerequisite = {
-			focus = ZLC_BEI_the_5th_sino_korean_war
+			focus = ZLC_BEI_fkr_chongqing_government
 		}
 		x = 32
-		y = 3
+		y = 4
 		bypass = {
 			has_idea = tot_economic_mobilisation
 		}
@@ -507,21 +569,19 @@ focus_tree = {
 	}
 	focus = {
 		id = ZLC_BEI_fkr_japanese_allies
-		icon = GFX_focus_generic_japanese_imperial_glory
+		icon = GFX_focus_ZLC_BEI_fkr_japanese_allies
 		cost = 10.00
 		prerequisite = {
-			focus = ZLC_BEI_fkr_huanghe_plan
-		}
-		prerequisite = {
-			focus = ZLC_BEI_fkr_conscription
+			focus = ZLC_BEI_the_5th_sino_korean_war
 		}
 		x = 30
-		y = 5
+		y = 3
 		available = {
 			# 이거 일본 태그 뭔지 잘 모르겠으니 확인必
 			JAP = {
 				exists = yes
 				has_capitulated = no
+				has_completed_focus = JAP_focus_support_with_china
 				NOT = {
 					has_war_with = ROOT
 				}
@@ -538,13 +598,13 @@ focus_tree = {
 	}
 	focus = {
 		id = ZLC_BEI_fkr_wu_shangren_tax
-		icon = GFX_focus_SWI_issue_war_bonds
+		icon = GFX_focus_ZLC_BEI_fkr_wu_shangren_tax
 		cost = 10.00
 		prerequisite = {
 			focus = ZLC_BEI_fkr_conscription
 		}
 		x = 32
-		y = 4
+		y = 5
 		available = {
 			has_war = yes
 		}
@@ -557,13 +617,15 @@ focus_tree = {
 	}
 	focus = {
 		id = ZLC_BEI_fkr_no_passe_pas
-		icon = GFX_goal_generic_defence
+		icon = GFX_focus_ZLC_BEI_fkr_no_passe_pas
 		cost = 10.00
 		prerequisite = {
 			focus = ZLC_BEI_fkr_wu_shangren_tax
+			focus = ZLC_BEI_fkr_soviet_support
+			focus = ZLC_BEI_fkr_qingya_plan
 		}
 		x = 32
-		y = 5
+		y = 6
 		available = {
 			has_war = yes
 		}
@@ -586,14 +648,59 @@ focus_tree = {
 
 	}
 	focus = {
-		id = ZLC_BEI_fkr_qingya_plan
-		icon = GFX_goal_generic_occupy_states_ongoing_war
-		cost = 10.00
+		id = ZLC_BEI_fkr_sichuan_side
+		icon = GFX_focus_ZLC_BEI_fkr_sichuan_side
+		cost = 1.00
 		prerequisite = {
 			focus = ZLC_BEI_the_5th_sino_korean_war
 		}
 		x = 34
 		y = 3
+		completion_reward = {
+			custom_effect_tooltip = ZLC_BEI_fkr_sichuan_side_tt
+			hidden_effect = {
+				add_to_faction = YUN
+				add_to_faction = GZC	
+				add_to_faction = SZC
+				add_to_faction = XSM
+				add_to_faction = NXM
+				add_to_faction = GXM
+				add_to_faction = XKC
+				add_to_faction = SCC
+			}	
+		}
+	}
+	focus = {
+		id = ZLC_BEI_fkr_huanghe_plan
+		icon = GFX_focus_ZLC_BEI_fkr_huanghe_plan
+		cost = 1.00
+		prerequisite = {
+			focus = ZLC_BEI_fkr_sichuan_side
+		}
+		x = 34
+		y = 4
+		bypass = {
+			any_enemy_country = {
+				controls_state = 607
+				controls_state = 1057
+			}
+		}
+		available = {
+			has_war = yes
+		}
+		completion_reward = {
+			unlock_decision_tooltip = CHI_breach_the_yellow_river
+		}
+	}
+	focus = {
+		id = ZLC_BEI_fkr_qingya_plan
+		icon = GFX_focus_ZLC_BEI_fkr_qingya_plan
+		cost = 1.00
+		prerequisite = {
+			focus = ZLC_BEI_fkr_huanghe_plan
+		}
+		x = 34
+		y = 5
 		available = {
 			has_war = yes
 		}
@@ -602,51 +709,15 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = ZLC_BEI_fkr_sichuan_side
-		icon = GFX_goal_generic_territory_or_war
-		cost = 10.00
-		prerequisite = {
-			focus = ZLC_BEI_fkr_qingya_plan
-		}
-		x = 34
-		y = 4
-		available = {
-			OR = {
-				is_neighbor_of = HNC
-				is_neighbor_of = SCC
-				is_neighbor_of = SZC
-			}
-		}
-		bypass = {
-			NOT = {
-				is_neighbor_of = HNC
-				is_neighbor_of = SCC
-				is_neighbor_of = SZC
-			}
-		}
-		completion_reward = {
-			every_other_country = {
-				limit = {
-					OR = {
-						tag = HNC
-						tag = SCC
-						tag = SZC
-					}
-					NOT = {
-						has_war_with = ROOT
-					}
-				}
-				country_event = {
-					id = wtt_china.1
-					hours = 3
-				}
-			}
-		}
-	}
-	focus = {
 		id = ZLC_BEI_fkr_wu_lead_government
 		icon = GFX_goal_unknown
 		cost = 2.00
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = TOOLTIP_NEW_CONTENT_FOR_ZLC
+				always = no
+			}
+		}
 		prerequisite = {
 			focus = ZLC_BEI_fkr_zhonghua_allies
 		}
@@ -698,15 +769,12 @@ focus_tree = {
 	}
 	focus = {
 		id = ZLC_BEI_fkr_soviet_support
-		icon = GFX_focus_chi_mission_to_the_soviet_union
+		icon = GFX_focus_ZLC_BEI_fkr_soviet_support
 		cost = 10.00
 		prerequisite = {
-			focus = ZLC_BEI_fkr_sichuan_side
+			focus = ZLC_BEI_fkr_caokun_burma_road
 		}
-		prerequisite = {
-			focus = ZLC_BEI_fkr_wu_peace_with_kuomintang
-		}
-		x = 34
+		x = 30
 		y = 5
 		available = {
 			SOV = {
@@ -802,9 +870,6 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = ZLC_BEI_fkr_sichuan_side
-		}
-		prerequisite = {
 			focus = ZLC_BEI_fkr_wu_hebei_partisan
 		}
 		prerequisite = {
@@ -844,12 +909,19 @@ focus_tree = {
 		x = 0
 		y = 5
 		relative_position_id = ZLC_BEI_caokun_anding
-
+		completion_reward = {
+			country_event = {
+				id = ZLC.21
+			}
+		}
 	}
 	focus = {
 		id = ZLC_BEI_anding_recover_the_economy
-		icon = GFX_goal_unknown
+		icon = GFX_focus_ZLC_BEI_anding_recover_the_economy
 		cost = 5.00
+		available = {
+			has_war = no
+		}
 		prerequisite = {
 			focus = ZLC_BEI_anding_baoding_officer_support
 		}
@@ -859,7 +931,12 @@ focus_tree = {
 		x = 0
 		y = 3
 		relative_position_id = ZLC_BEI_caokun_anding
-
+		completion_reward = {
+			swap_ideas = {
+				add_idea = ZLC_beyond_reform_and_destroyed_2
+				remove_idea = ZLC_beyond_reform_and_destroyed
+			}
+		}
 	}
 	focus = {
 		id = ZLC_BEI_anding_army_corruption
@@ -871,7 +948,12 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = ZLC_BEI_caokun_anding
-
+		completion_reward = {
+			swap_ideas = {
+				add_idea = ZLC_the_footstep_of_seeckt_2
+				remove_idea = ZLC_the_footstep_of_seeckt
+			}
+		}
 	}
 	focus = {
 		id = ZLC_BEI_anding_baoding_officer_support
@@ -883,7 +965,9 @@ focus_tree = {
 		x = -1
 		y = 2
 		relative_position_id = ZLC_BEI_caokun_anding
-
+		completion_reward = {
+			army_experience = 100
+		}
 	}
 	focus = {
 		id = ZLC_BEI_anding_henan_plan
@@ -892,10 +976,27 @@ focus_tree = {
 		prerequisite = {
 			focus = ZLC_BEI_anding_recover_the_economy
 		}
+		available = {
+			has_war = no
+		}
 		x = -1
 		y = 4
 		relative_position_id = ZLC_BEI_caokun_anding
-
+		completion_reward = {
+			1057 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 	}
 	focus = {
 		id = ZLC_BEI_anding_shandong_plan
@@ -904,10 +1005,27 @@ focus_tree = {
 		prerequisite = {
 			focus = ZLC_BEI_anding_recover_the_economy
 		}
+		available = {
+			has_war = no
+		}
 		x = 1
 		y = 4
 		relative_position_id = ZLC_BEI_caokun_anding
-
+		completion_reward = {
+			597 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 	}
 	focus = {
 		id = ZLC_BEI_caokun_2
@@ -1126,7 +1244,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ZLC_BEI_fkr_wu_stay_the_date
-		icon = GFX_goal_unknown
+		icon = GFX_focus_ZLC_BEI_fkr_wu_stay_the_date
 		cost = 10.00
 		prerequisite = {
 			focus = ZLC_BEI_fkr_caokun_anti_korean_war
@@ -1134,6 +1252,12 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = ZLC_BEI_fkr_no_passe_pas
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = TOOLTIP_NEW_CONTENT_FOR_ZLC
+				always = no
+			}
 		}
 		x = 32
 		y = 7
@@ -1152,7 +1276,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ZLC_BEI_sec_west_supported
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
 			focus = ZLC_BEI_fkr_wu_time_is_come
@@ -1179,7 +1303,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ZLC_BEI_sec_armored_support
-		icon = GFX_goal_generic_army_tanks
+		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
 			focus = ZLC_BEI_sec_elite_units
@@ -1200,7 +1324,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ZLC_BEI_sec_elite_units
-		icon = GFX_goal_generic_special_forces
+		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
 			focus = ZLC_BEI_sec_west_supported
@@ -1221,7 +1345,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ZLC_BEI_sec_mountaineer
-		icon = GFX_focus_GRE_a_land_of_mountains
+		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
 			focus = ZLC_BEI_sec_elite_units
@@ -1273,7 +1397,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ZLC_BEI_sec_dongji_attack
-		icon = GFX_focus_generic_winter_warfare
+		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
 			focus = ZLC_BEI_sec_go_to_frontline
@@ -1299,7 +1423,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ZLC_BEI_sec_meal_save
-		icon = GFX_focus_generic_land_reclamation
+		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
 			focus = ZLC_BEI_sec_west_supported
@@ -1315,7 +1439,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ZLC_BEI_sec_want_a_gun
-		icon = GFX_focus_secret_rearmament
+		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
 			focus = ZLC_BEI_sec_west_supported

@@ -1,0 +1,22 @@
+characters={
+	AK4_yi_haeseung={
+		name="AK4_yi_haeseung"
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/Portrait_KOR_yi_haeseung.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ 
+				#
+			}
+		}
+		country_leader={
+			ideology=ultranationalism
+			traits={ 
+				#
+			}
+		}
+	}
+}

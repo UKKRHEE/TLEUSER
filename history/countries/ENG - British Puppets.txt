@@ -1,6 +1,12 @@
+recruit_character = ENG_queen_elizabeth_ii
 
 puppet = EGY
 puppet = SRL
+add_to_faction = IRE
+
+IRE = {
+	set_cosmetic_tag = IRE_UK
+}
 
 if = {
 	limit = {

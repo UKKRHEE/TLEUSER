@@ -22,11 +22,20 @@ characters={
 		}
 
 		country_leader={
-			ideology=despotism
+			ideology=xunzheng
 			expire="1965.1.1.1"
 			id=-1
 		}
 	}
+	GXC_chiang_kaishek={
+		name=GXC_chiang_kaishek
+		portraits={
+			civilian={
+				large="gfx/leaders/CHI/Portrait_CHI_jiang_jieshi.png"
+				small="gfx/interface/ideas/CHI/idea_CHI_chiang_kaishek.png"
+			}
+		}
+	}	
 
 	GXC_chen_jitang={
 		name=GXC_chen_jitang

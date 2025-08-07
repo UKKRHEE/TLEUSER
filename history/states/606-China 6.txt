@@ -1,11 +1,12 @@
-
 state={
 	id=606
 	name="STATE_606"
 	resources={
 		steel=11.000
 	}
-
+	provinces={
+		1001 1161 4079 7094 9937 10040 10064 10079 11916 12036 
+	}
 	history={
 		owner = WZC
 		add_core_of = WZC
@@ -14,13 +15,6 @@ state={
 		buildings = {
 			infrastructure = 1
 			arms_factory = 1
-
-		}
-		victory_points = {
-			7222 5 
-		}
-		victory_points = {
-			1083 3 
 		}
 		victory_points = {
 			10040 3 
@@ -44,11 +38,7 @@ state={
 		}
 
 	}
-
-	provinces={
-		1001 1083 1146 1161 4079 4148 4203 7035 7094 7222 9937 10008 10017 10040 10064 10079 11916 11994 12036 12061 
-	}
-	manpower=18265400
+	manpower=11165400
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

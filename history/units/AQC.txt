@@ -1,0 +1,106 @@
+﻿#편제
+division_template = {
+	name = "Anqing Infantry"
+	division_names_group = CHI_INF_01
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 2 y = 0 }
+	}
+	support = {
+	}
+}
+
+units = {
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10040
+		division_template = "Anqing Infantry"
+		start_experience_factor = 1
+		start_equipment_factor = 0.6
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7094
+		division_template = "Anqing Infantry"
+		start_experience_factor = 1
+		start_equipment_factor = 0.6
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7222
+		division_template = "Anqing Infantry"
+		start_experience_factor = 1
+		start_equipment_factor = 0.6
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1083
+		division_template = "Anqing Infantry"
+		start_experience_factor = 1
+		start_equipment_factor = 0.6
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1121
+		division_template = "Anqing Infantry"
+		start_experience_factor = 1
+		start_equipment_factor = 0.6
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4001
+		division_template = "Anqing Infantry"
+		start_experience_factor = 1
+		start_equipment_factor = 0.6
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7142
+		division_template = "Anqing Infantry"
+		start_experience_factor = 1
+		start_equipment_factor = 0.6
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4091
+		division_template = "Anqing Infantry"
+		start_experience_factor = 1
+		start_equipment_factor = 0.6
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4031
+		division_template = "Anqing Infantry"
+		start_experience_factor = 1
+		start_equipment_factor = 0.6
+	}
+}

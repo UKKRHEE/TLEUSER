@@ -1,0 +1,20 @@
+characters={
+	RMS_gheorghe_gheorghiudej={
+		name="RMS_gheorghe_gheorghiudej"
+		portraits={
+			civilian={
+				large="gfx/leaders/RMS/Portrait_RMS_gheorghe_gheorghiudej.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			id=-1
+		}
+		country_leader={
+			ideology=stalinism
+			traits={ }
+			id=-1
+		}
+	}
+}

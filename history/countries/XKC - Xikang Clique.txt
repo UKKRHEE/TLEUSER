@@ -1,4 +1,4 @@
-﻿capital = 1047 #
+﻿capital = 1047
 
 oob = "XKC_1936"
 

@@ -14,6 +14,8 @@ add_opinion_modifier = {
 }
 set_convoys = 5
 
+set_rule = { can_send_volunteers = no }
+
 recruit_character = KVN_cho_jongdae
 recruit_character = KVN_jean_decoux
 recruit_character = KVN_ho_chi_minh

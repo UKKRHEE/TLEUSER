@@ -206,6 +206,18 @@ leader_traits = {
 		war_support_factor = 0.05
 		army_core_defence_factor = 0.05
 	}
+	kangmyung_endding = { #강명황제 엔딩 트레잇
+		sprite = 13
+		random = no
+		political_power_factor = 1
+		stability_factor = 0.6
+		army_core_defence_factor = 0.3
+		surrender_limit = 0.25
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	korea_emperor = { #대한제국의 황제
 		sprite = 13
 		random = no
@@ -303,6 +315,34 @@ leader_traits = {
 		random = no
 	}
 	trait_the_tool = { #허수아비
+		sprite = 13
+		random = no
+	}
+	shogun_with_blue_eys = { #푸른 눈의 쇼군
+		sprite = 13
+		random = no
+	}
+	female_of_the_yi_chin = { #이진의 후궁
+		sprite = 13
+		random = no
+	}
+	grand_duke_of_korea = { #이진의 후궁
+		sprite = 13
+		random = no
+	}
+	grand_duke_of_korea_syngman = { #
+		sprite = 13
+		random = no
+	}
+	bayern_fuhrer_hitler = { #
+		sprite = 13
+		random = no
+	}
+	king_of_preussen = { #
+		sprite = 13
+		random = no
+	}
+	king_of_england = { #
 		sprite = 13
 		random = no
 	}

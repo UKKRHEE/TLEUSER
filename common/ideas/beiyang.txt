@@ -173,7 +173,7 @@ ideas = {
 		}
 		ZLC_beyond_reform_and_destroyed = {
 
-			picture = generic_morale_bonus
+			picture = ZLC_beyond_reform_and_destroyed
 			allowed = {
 				original_tag = ZLC
 			}
@@ -189,9 +189,26 @@ ideas = {
 				conversion_cost_mil_to_civ_factor = 0.1
 			}
 		}
+		ZLC_beyond_reform_and_destroyed_2 = {
+
+			picture = ZLC_beyond_reform_and_destroyed
+			allowed = {
+				original_tag = ZLC
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.1
+				research_speed_factor = -0.1
+				production_speed_buildings_factor = 0.2
+				conversion_cost_mil_to_civ_factor = -0.2
+			}
+		}
 		ZLC_the_footstep_of_seeckt = {
 
-			picture = generic_morale_bonus
+			picture = ZLC_the_footstep_of_seeckt
 			allowed = {
 				original_tag = ZLC
 			}
@@ -209,9 +226,60 @@ ideas = {
 				custom_modifier_tooltip = ZLC_the_footstep_of_seeckt_tt
 			}
 		}
+		ZLC_the_footstep_of_seeckt_2 = {
+
+			picture = ZLC_the_footstep_of_seeckt
+			allowed = {
+				original_tag = ZLC
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				army_morale_factor = 0.1
+				army_attack_factor = 0.05
+				mobilization_laws_cost_factor = -0.1
+				supply_consumption_factor = 0.1
+				custom_modifier_tooltip = ZLC_the_footstep_of_seeckt_tt
+			}
+		}
 		ZLC_handans_step = {
 
-			picture = generic_morale_bonus
+			picture = ZLC_handans_step
+			allowed = {
+				original_tag = ZLC
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_expected_value = 0.1
+				stability_factor = -0.15
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+			}
+		}
+		ZLC_handans_step_2 = {
+
+			picture = ZLC_handans_step
+			allowed = {
+				original_tag = ZLC
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_expected_value = 0.15
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+			}
+		}
+		ZLC_handans_step_3 = {
+
+			picture = ZLC_handans_step
 			allowed = {
 				original_tag = ZLC
 			}
@@ -221,9 +289,8 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				consumer_goods_expected_value = 0.2
-				stability_factor = -0.15
-				industrial_capacity_factory = 0.05
-				industrial_capacity_dockyard = 0.05
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
 			}
 		}
 		ZLC_war_of_anti_imperialism = {
@@ -307,6 +374,44 @@ ideas = {
 				request_lease_tension = -0.30
 				opinion_gain_monthly_factor = 0.10
 				diplomatic_pressure_mission_factor = 0.15
+			}
+		}
+		ZLC_BEI_un_forces_will_help_us = {
+			picture = CHI_war_of_anti_imperialism
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+
+			}
+			removal_cost = -1
+			modifier = {
+				send_volunteers_tension = -10
+				end_lease_tension = -10
+				send_volunteer_divisions_required = -10
+				send_volunteer_size = 10
+			}
+		}
+		ZLC_BEI_un_forces_will_help_us_for_usa = {
+			picture = CHI_war_of_anti_imperialism
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+
+			}
+			removal_cost = -1
+			modifier = {
+				send_volunteers_tension = -10
+				end_lease_tension = -10
+				send_volunteer_divisions_required = -10
+				send_volunteer_size = 30
 			}
 		}
 	}

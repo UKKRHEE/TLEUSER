@@ -406,6 +406,7 @@
 				limit = {
 					KOR = {
 						has_country_flag = FLAG_KOR_FASCIST_ROUTE
+						has_war_with = USA
 					}
 				}
 				KOR = {

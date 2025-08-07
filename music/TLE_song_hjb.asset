@@ -1,5 +1,10 @@
 
 music = {
+	name = "kangmyung_yushins_song"
+	file = "hjb/kangmyung_yushins_song.ogg"
+	volume = 1.25
+}
+music = {
 	name = "youthlife"
 	file = "hjb/youthlife.ogg"
 	volume = 1.0
@@ -94,6 +99,11 @@ music = {
 	volume = 1.0
 }
 
+music = {
+	name = "singsingsing"
+	file = "hjb/singsingsing.ogg"
+	volume = 1.0
+}
 music = {
 	name = "beautiful_country"
 	file = "hjb/beautiful_country.ogg"

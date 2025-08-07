@@ -1,0 +1,15 @@
+technologies = {
+	KOR_ai_not_death_tomany = {
+		allow = { always = no } 
+		field_hospital = {
+			casualty_trickleback = 0.2
+			experience_loss_factor = -0.3
+		}
+		infantry = { #대대 1개마다 적용됨 ㅅㅂ
+			casualty_trickleback = 0.05 
+		}
+		bicycle_battalion = {
+			casualty_trickleback = 0.05
+		}
+	}
+}

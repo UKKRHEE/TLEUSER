@@ -133,7 +133,7 @@ if = {
 	}
 	set_autonomy = {
 		target = KKS
-		autonomous_state = korean_general_government
+		autonomous_state = korean_kyushu
 	}
 }
 if = {
@@ -290,6 +290,8 @@ set_technology = {
 	motorised_infantry = 1
 	tech_trucks = 1
 	marines  = 1
+	
+	bicycle_infantry  = 1 #자전거보병
 	
 	### 기갑 ###
 	
@@ -506,6 +508,10 @@ recruit_character = KOR_big_council #거국내각
 recruit_character = KOR_kim_changsuk #김창숙 (1879)
 recruit_character = KOR_park_jungyang #박중양 (1872)
 recruit_character = KOR_kim_songsu #김성수 (1891)
+recruit_character = KOR_yi_sangsul #이상설 (1871)
+recruit_character = KOR_lim_yehwan #임예환 (1865)
+recruit_character = KOR_shin_suk #신숙 (1885)
+recruit_character = KOR_pak_mudeok #박무덕 (1882)
 #엔딩시점
 recruit_character = KOR_jang_sedong #장세동 (1936)
 recruit_character = KOR_unknown #불명
@@ -540,7 +546,10 @@ recruit_character = KOR_yang_gitak #양기탁 (1871)
 recruit_character = KOR_ahn_jaehong #안재홍 (1891)
 recruit_character = KOR_han_sangryong #한상룡 (1880)
 recruit_character = KOR_won_saehoon #원세훈 (1887)
+recruit_character = KOR_kim_yongkwan #김용관 (1897)
+recruit_character = KOR_choi_kyunam #최규남 (1898)
 recruit_character = KOR_hong_jonggap #홍종갑 (1902)
+recruit_character = KOR_choi_hwang #최황 (1908)
 
 ### 육군 ###
 ##원수
@@ -606,7 +615,9 @@ recruit_character = KOR_park_chunghee #박정희 (1917)
 recruit_character = KOR_min_kwang_sik #민광식 (1873) - 민병기 장관 부친
 recruit_character = KOR_sin_sun_seong #신순성 (1878)
 recruit_character = KOR_lee_kyugap #이규갑 (1888)
+recruit_character = KOR_min_jeho #민제호 (1890)
 recruit_character = KOR_shin_sung_mo #신성모 (1891)
+recruit_character = KOR_min_pilho #민필호 (1898)
 recruit_character = KOR_lyu_hanglyeol #유항렬 (1900)
 recruit_character = KOR_park_ok_kyu #박옥규 (1901)
 recruit_character = KOR_son_won_ile #손원일 (1909)
@@ -621,6 +632,24 @@ recruit_character = KOR_jang_deokchang #장덕창 (1903)
 recruit_character = KOR_lee_tae_gyu #이태규 (1902)
 recruit_character = KOR_do_sang_log #도상록 (1903)
 recruit_character = KOR_lee_won_chol #이원철 (1896)
+
+### 패전 이후 ###
+#육상전투경찰
+###recruit_character = KOR_kim_won_bong #김원봉 (1898) #구한국군에서 살아남은 놈
+recruit_character = KOR_lee_ikheung #이익흥(1905)
+recruit_character = KOR_choi_hyeon #최현(1907)
+recruit_character = KOR_choi_deokshin #최덕신(1914)
+recruit_character = KOR_chae_byungduk #채병덕(1915)
+recruit_character = KOR_lee_jongchan #이종찬(1916)
+
+#해상전투경찰
+###recruit_character = KOR_park_ok_kyu #박옥규 (1901) #구한국군에서 살아남은 놈
+###recruit_character = KOR_son_won_ile #손원일 (1909)
+recruit_character = KOR_jung_keungmo #정긍모(1914)
+
+#항공전투경찰
+###recruit_character = KOR_jang_deokchang #장덕창 (1903) #구한국군에서 살아남은 놈
+recruit_character = KOR_kim_jungryeol #김정렬(1917)
 
 ### 이스터에그 ###
 #G.O.A.T
@@ -692,6 +721,11 @@ add_ideas = {
 	
 	#황태자
 	KOR_yi_hyul_heir_prince #황태자 이휼
+	
+	#군 정신
+	love_ahn_junggeun #동평파에 우호적
+	gara_army #존재를 위해 존재하는 군 
+	forced_yi_sunshin_spirit #충무공 정신 강요
 }
 
 ########################################################
@@ -1057,6 +1091,7 @@ if = {
 			rear_1_custom_slot = ship_heavy_battery_1
 		}
 		obsolete = yes
+		icon = "GFX_KOR_early_battlecruiser_medium"
 	}
 	create_equipment_variant = {
 		name = "덕유급"
@@ -1076,6 +1111,7 @@ if = {
 			mid_2_custom_slot = ship_airplane_launcher_1
 			rear_1_custom_slot = ship_heavy_battery_2
 		}
+		icon = "GFX_KOR_basic_battlecruiser_medium"
 	}
 	###순양함류###
 	#중순

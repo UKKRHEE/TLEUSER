@@ -50,7 +50,14 @@ focus_tree = {
 			hidden_effect = {
 				annex_country = {
 					target = SDJ
-					transfer_troops = no
+					transfer_troops = yes
+				}
+				every_state = {
+					limit = {
+						is_core_of = SDJ
+					}
+					add_core_of = TBJ
+					remove_core_of = SDJ
 				}
 			}
 		}
@@ -69,7 +76,14 @@ focus_tree = {
 			hidden_effect = {
 				annex_country = {
 					target = GJJ
-					transfer_troops = no
+					transfer_troops = yes
+				}
+				every_state = {
+					limit = {
+						is_core_of = GJJ
+					}
+					add_core_of = TBJ
+					remove_core_of = GJJ
 				}
 			}
 		}
@@ -88,7 +102,14 @@ focus_tree = {
 			hidden_effect = {
 				annex_country = {
 					target = NBJ
-					transfer_troops = no
+					transfer_troops = yes
+				}
+				every_state = {
+					limit = {
+						is_core_of = NBJ
+					}
+					add_core_of = TBJ
+					remove_core_of = NBJ
 				}
 			}
 		}
@@ -110,6 +131,21 @@ focus_tree = {
 		y = 4
 		completion_reward = {
 			custom_effect_tooltip = TBJ_SAKUSEN_TT
+			hidden_effect = {
+				set_cosmetic_tag = TBJ_unified
+				every_state = {
+					limit = {
+						is_core_of = JAP
+					}
+					add_core_of = TBJ
+				}
+				every_state = {
+					limit = {
+						is_claimed_by = JAP
+					}
+					add_claim_by = TBJ
+				}
+			}
 		}
 	}
 	focus = {

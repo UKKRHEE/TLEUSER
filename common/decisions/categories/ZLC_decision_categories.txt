@@ -1,4 +1,20 @@
-#막부 디시전 카테고리
+ZLC_BUR_MAP_GUI_category = {
+	scripted_gui = BUR_MAP_GUI
+
+	allowed = {
+		tag = ZLC
+	}
+	visible = {
+		OR = {
+			ZLC = {
+				has_country_flag = ZLC_can_use_the_burma_road
+			}
+			is_debug = yes
+		}
+	}
+	priority = 100
+	visible_when_empty = yes
+}
 ZLC_balance_of_power_categories = {
 	#picture = GFX_decision_reitoku
 	visible = {

@@ -311,3 +311,61 @@ CHI_buffer_in_mainland = {
 		subtract_fronts_from_need = no
 	}
 }
+
+CHI_purge_clique_XSM = {
+	allowed = {
+		original_tag = CHI
+	}
+	enable = {
+		CHI = {
+			has_war_with = XSM
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = front_unit_request
+		tag = XSM
+		value = 100
+	}
+	
+	ai_strategy = {
+		type = front_control
+		tag = XSM
+		priority = 1000
+		ratio = 0.45
+		ordertype = front
+		execution_type = rush
+		execute_order = yes
+		manual_attack = yes
+	}
+}
+
+CHI_purge_clique_GXM = {
+	allowed = {
+		original_tag = CHI
+	}
+	enable = {
+		CHI = {
+			has_war_with = GXM
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = front_unit_request
+		tag = GXM
+		value = 100
+	}
+	
+	ai_strategy = {
+		type = front_control
+		tag = GXM
+		priority = 1000
+		ratio = 0.45
+		ordertype = front
+		execution_type = rush
+		execute_order = yes
+		manual_attack = yes
+	}
+}

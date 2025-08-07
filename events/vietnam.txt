@@ -13,8 +13,8 @@ country_event = {
 			has_global_flag = TLE_TNO
 		}
 		TAG = FRI
-		date > 1946.12.1
-		date < 1947.1.1
+		date > 1945.12.1
+		date < 1946.1.1
         country_exists = FRI
 		country_exists = VTC
 	}
@@ -67,8 +67,8 @@ country_event = {
 			has_global_flag = TLE_TNO
 		}
 		TAG = FRI
-		date > 1947.12.1
-		date < 1948.1.1
+		date > 1946.12.1
+		date < 1947.1.1
         country_exists = FRI
 		country_exists = VTC
 	}
@@ -129,8 +129,8 @@ country_event = {
 			has_global_flag = TLE_TNO
 		}
 		TAG = FRI
-		date > 1949.7.1
-		date < 1949.8.1
+		date > 1947.7.1
+		date < 1947.8.1
         country_exists = FRI
 		country_exists = VTC
 	}
@@ -354,7 +354,7 @@ country_event = {
 			has_global_flag = PRE_THE_NEW_ORDER_GBR
 		}
 		TAG = INS
-		date > 1949.12.26
+		date > 1947.2.26
         country_exists = INS
 		INS = {
 			is_puppet_of = HOL
@@ -407,6 +407,83 @@ country_event = {
 				set_demilitarized_zone = no
 			}
 			335 = {
+				set_demilitarized_zone = no
+			}
+		}
+	}
+}
+country_event = {
+	id = vietnam.6
+	title = vietnam.6.t
+	desc = vietnam.6.d
+	picture = gfx
+	
+	trigger = {
+		has_global_flag = TLE_KOREA_IS_DEFEATED
+		NOT = {
+			has_global_flag = TLE_TNO
+		}
+		TAG = VIN
+		date > 1947.12.1
+		date < 1947.12.2
+		country_exists = VTC
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	fire_only_once = yes
+	
+	option = {
+		name = vietnam.4.a
+		hidden_effect = {
+			VTC = {
+				transfer_state = 671
+				set_cosmetic_tag = VTC_rep
+				set_capital = {
+					state = 671
+					remember_old_capital = no
+				}
+			}
+			FRA = {
+				end_puppet = VIN
+				end_puppet = LAO
+				end_puppet = CAM
+			}
+			VIN = {
+				set_politics = {
+					ruling_party = democratic
+					last_election = "1936.1.1"
+					election_frequency = 48
+					elections_allowed = yes
+				}
+				set_popularities = {
+					neutrality = 30
+					fascism = 0
+					communism = 0
+					democratic = 70
+				}
+				leave_faction = yes
+			}
+			LAO = {
+				leave_faction = yes
+			}
+			CAM = {
+				leave_faction = yes
+			}
+			671 = {
+				set_demilitarized_zone = no
+			}
+			1085 = {
+				set_demilitarized_zone = no
+			}
+			1084 = {
+				set_demilitarized_zone = no
+			}
+			1082 = {
+				set_demilitarized_zone = no
+			}
+			1083 = {
 				set_demilitarized_zone = no
 			}
 		}

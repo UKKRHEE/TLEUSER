@@ -1,0 +1,22 @@
+characters={
+	AK2_ahn_changho={
+		name="AK2_ahn_changho"
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/Portrait_KOR_an_changho.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ 
+				#
+			}
+		}
+		country_leader={
+			ideology=ultranationalism
+			traits={ 
+				#
+			}
+		}
+	}
+}

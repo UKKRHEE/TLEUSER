@@ -45,6 +45,15 @@ music = {
 	}
 }
 music = {
+	song = "uikousen"
+	chance = {
+		modifier = {
+			factor = 10
+			is_ai = no
+		}
+	}
+}
+music = {
 	song = "dadadada_tenshi"
 	chance = {
 		modifier = {
@@ -153,6 +162,15 @@ music = {
 	}
 }
 music = {
+	song = "retry_now"
+	chance = {
+		modifier = {
+			factor = 10
+			is_ai = no
+		}
+	}
+}
+music = {
 	song = "sensensense"
 	chance = {
 		modifier = {
@@ -199,6 +217,24 @@ music = {
 }
 music = {
 	song = "yain"
+	chance = {
+		modifier = {
+			factor = 10
+			is_ai = no
+		}
+	}
+}
+music = {
+	song = "springofmylife"
+	chance = {
+		modifier = {
+			factor = 10
+			is_ai = no
+		}
+	}
+}
+music = {
+	song = "rude_buster"
 	chance = {
 		modifier = {
 			factor = 10

@@ -269,7 +269,7 @@ country_event = {
 	option = { 
 		name = ZLC_focus.1.a
 		hidden_effect = {
-			load_oob = "ZLC_focus_7"
+			load_oob = "ZLC_focus_8"
 		}
 	}
 }
@@ -304,7 +304,7 @@ country_event = {
 	option = { 
 		name = ZLC_focus.1.a
 		hidden_effect = {
-			load_oob = "ZLC_focus_8"
+			load_oob = "ZLC_focus_9"
 		}
 	}
 }
@@ -341,7 +341,7 @@ country_event = {
 	option = { 
 		name = ZLC_focus.1.a
 		hidden_effect = {
-			load_oob = "ZLC_focus_9"
+			load_oob = "ZLC_focus_7"
 		}
 	}
 }
@@ -394,6 +394,12 @@ country_event = {
 	
 	option = {
 		name = ZLC.12.a
+		hidden_effect = {
+			set_country_flag = ZLC_next_focus_tree_1
+			mark_focus_tree_layout_dirty = yes
+			complete_national_focus = ZLC_BEI_decide_the_load
+			complete_national_focus = ZLC_BEI_caokun_anding
+		}
 	}
 }
 country_event = {
@@ -527,7 +533,7 @@ country_event = {
 	id = ZLC.18
 	title = ZLC.18.t
 	desc = ZLC.18.d
-	picture = GFX_TLE_korea_event_none
+	picture = GFX_event_japan_1159
 	is_triggered_only = yes
 	option = {
 		name = ZLC.18.a
@@ -596,6 +602,53 @@ country_event = {
 	option = {
 		name = ZLC.20.a
 		add_political_power = -25
+	}
+}
+country_event = {
+	id = ZLC.21
+	title = ZLC.21.t
+	desc = ZLC.21.d
+	picture = GFX_TLE_korea_event_none
+	is_triggered_only = yes
+	option = {
+		name = ZLC.21.a
+	}
+}
+country_event = {
+	id = ZLC.22
+	title = ZLC.22.t
+	desc = ZLC.22.d
+	picture = GFX_event_japan_1159
+	is_triggered_only = yes
+	option = {
+		name = ZLC.22.a
+		set_country_flag = ZLC_BEI_is_in_luoyang_flag
+		set_capital = { state = 1057 }
+	}
+}
+country_event = {
+	id = ZLC.23
+	title = ZLC.23.t
+	desc = ZLC.23.d
+	picture = GFX_event_chinese_nazis
+	is_triggered_only = yes
+	option = {
+		name = ZLC.23.a
+		GER = {
+			country_event = {
+				id = ZLC.24
+			}
+		}
+	}
+}
+country_event = {
+	id = ZLC.24
+	title = ZLC.24.t
+	desc = ZLC.24.d
+	picture = GFX_event_chinese_nazis
+	is_triggered_only = yes
+	option = {
+		name = ZLC.24.a
 	}
 }
 ############

@@ -32,6 +32,14 @@ focus_tree = {
 				remove_ideas = KOR_interservice_rivalry_balanced
 			}
 		}
+		available = {
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				date > 1946.4.16
+			}
+		}
 		completion_reward = {
 			country_event = {
 				id = korea.2700
@@ -99,6 +107,14 @@ focus_tree = {
 		}
 		x = 7
 		y = 3
+		available = {
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				date > 1955.12.4
+			}
+		}
 		completion_reward = {
 			country_event = {
 				id = korea.2704
@@ -185,6 +201,14 @@ focus_tree = {
 		}
 		x = 11
 		y = 4
+		available = {
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				date > 1964.10.19
+			}
+		}
 		completion_reward = {
 			country_event = {
 				id = korea.2709

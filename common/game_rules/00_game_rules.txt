@@ -23,7 +23,7 @@
 
 TLE_KOREA_KIYONKUN_RULE = {
 	name = "TLE_KOREA_KIYONKUN_RULE"
-	group = "RULE_TLE_EUGENE_KIM_EXIST"
+	group = "RULE_TLE_DIFFICULTY"
 	default = {
 		name = TLE_KIYOKUN_YES
 		text = "RULE_OPTION_TLE_KIYOKUN_YES"
@@ -35,10 +35,10 @@ TLE_KOREA_KIYONKUN_RULE = {
 		desc = "RULE_OPTION_TLE_KIYOKUN_NO_DESC"
 		allow_achievements = no
 	}
-}	
+}
 TLE_KOREA_HARDCORE_RULE = {
 	name = "TLE_KOREA_HARDCORE_RULE"
-	group = "RULE_TLE_EUGENE_KIM_EXIST"
+	group = "RULE_TLE_DIFFICULTY"
 	option = {
 		name = TLE_VERY_HARD
 		text = "RULE_OPTION_TLE_VERY_HARD"
@@ -64,7 +64,7 @@ TLE_KOREA_HARDCORE_RULE = {
 }	
 TLE_JAP_HARDCORE_RULE = {
 	name = "TLE_JAP_HARDCORE_RULE"
-	group = "RULE_TLE_EUGENE_KIM_EXIST"
+	group = "RULE_TLE_DIFFICULTY"
 	default = {
 		name = TLE_JAP_HARDCORE_DEFAULT #어려움
 		text = "RULE_OPTION_TLE_JAP_HARDCORE"
@@ -77,54 +77,9 @@ TLE_JAP_HARDCORE_RULE = {
 		allow_achievements = no
 	}
 }
-TLE_KILL_THE_KANGMYONG_RULE = {
-	name = "TLE_KILL_THE_KANGMYONG"
-	group = "RULE_TLE_EUGENE_KIM_EXIST"
-	default = {
-		name = TLE_NOT_KILL
-		text = "RULE_OPTION_NOT_KILL_THE_TRAGON"
-		desc = "RULE_OPTION_NOT_KILL_THE_TRAGON_DESC"
-	}
-	option = {
-		name = TLE_SELECT_KILL
-		text = "RULE_OPTION_KILL_THE_TRAGON"
-		desc = "RULE_OPTION_KILL_THE_TRAGON_DESC"
-		allow_achievements = no
-	}
-}
-TLE_REALISTIC_NAME_RULE = {
-	name = "TLE_REALISTIC_NAME_RULE"
-	group = "RULE_TLE_EUGENE_KIM_EXIST"
-	default = {
-		name = TLE_REALISTIC_NAME_RULE_NO
-		text = "RULE_OPTION_TLE_REALISTIC_NAME_RULE_NO"
-		desc = "RULE_OPTION_TLE_REALISTIC_NAME_RULE_NO_DESC"
-	}
-	option = {
-		name = TLE_REALISTIC_NAME_RULE_YES
-		text = "RULE_OPTION_TLE_REALISTIC_NAME_RULE_YES"
-		desc = "RULE_OPTION_TLE_REALISTIC_NAME_RULE_YES_DESC"
-		allow_achievements = yes
-	}
-}
-TLE_EUGENE_KIM_RULE = {
-	name = "TLE_EUGENE_KIM_RULE"
-	group = "RULE_TLE_EUGENE_KIM_EXIST"
-	default = {
-		name = KIM_NOT
-		text = "RULE_OPTION_KIM_NOT"
-		desc = "RULE_OPTION_KIM_NOT_EXIST_DESC"
-	}
-	option = {
-		name = KIM_YES
-		text = "RULE_OPTION_KIM_YES"
-		desc = "RULE_OPTION_KIM_YES_DESC"
-		allow_achievements = no
-	}
-}
 TLE_CHINA_HARDCORE_RULE = {
 	name = "TLE_CHINA_HARDCORE_RULE"
-	group = "RULE_TLE_EUGENE_KIM_EXIST"
+	group = "RULE_TLE_DIFFICULTY"
 	default = {
 		name = TLE_CHINA_HARDCORE_DEFAULT #어려움
 		text = "RULE_OPTION_TLE_CHINA_HARDCORE"
@@ -137,39 +92,9 @@ TLE_CHINA_HARDCORE_RULE = {
 		allow_achievements = no
 	}
 }
-TLE_OSHINO_KO_RULE = {
-	name = "TLE_OSHINO_KO_RULE"
-	group = "RULE_TLE_EUGENE_KIM_EXIST"
-	default = {
-		name = OSHINO_KO_NOT
-		text = "RULE_OPTION_OSHINO_KO_NOT"
-		desc = "RULE_OPTION_OSHINO_KO_NOT_EXIST_DESC"
-	}
-	option = {
-		name = OSHINO_KO_YES
-		text = "RULE_OPTION_OSHINO_KO_YES"
-		desc = "RULE_OPTION_OSHINO_KO_YES_DESC"
-		allow_achievements = no
-	}
-}
-TLE_KOREA_WANT_TO_SEE_MEIWANCHENG = {
-	name = "TLE_KOREA_WANT_TO_SEE_MEIWANCHENG"
-	group = "RULE_TLE_EUGENE_KIM_EXIST"
-	default = {
-		name = TLE_NOPE
-		text = "RULE_OPTION_TLE_NOPE"
-		desc = "RULE_OPTION_TLE_NOPE_DESC"
-	}
-	option = {
-		name = TLE_YES_I_WANT
-		text = "RULE_OPTION_TLE_YES_I_WANT"
-		desc = "RULE_OPTION_TLE_YES_I_WANT_DESC"
-		allow_achievements = no
-	}
-}
 TLE_KOR_GREAT_RULE = {
 	name = "TLE_KOR_GREAT_RULE"
-	group = "RULE_TLE_EUGENE_KIM_EXIST"
+	group = "RULE_TLE_AI"
 	default = {
 		name = TLE_KOR_GREAT_RULE_DEFAULT
 		text = "RULE_OPTION_TLE_KOR_GREAT_RULE_DEFAULT"
@@ -184,7 +109,7 @@ TLE_KOR_GREAT_RULE = {
 }
 TLE_GER_GREAT_RULE = {
 	name = "TLE_GER_GREAT_RULE"
-	group = "RULE_TLE_EUGENE_KIM_EXIST"
+	group = "RULE_TLE_AI"
 	default = {
 		name = TLE_GER_GREAT_RULE_DEFAULT
 		text = "RULE_OPTION_TLE_GER_GREAT_RULE_DEFAULT"
@@ -203,18 +128,48 @@ TLE_GER_GREAT_RULE = {
 		allow_achievements = yes
 	}
 }
-TLE_HALLOWEEN_RULE = {
-	name = "TLE_HALLOWEEN_RULE"
-	group = "RULE_TLE_EUGENE_KIM_EXIST"
+TLE_MANCHU_ANNEX = {
+	name = "TLE_MANCHU_ANNEX_RULE"
+	group = "RULE_TLE_REALISM"
 	default = {
-		name = TLE_HALLOWEEN_RULE_NO
-		text = "RULE_OPTION_TLE_HALLOWEEN_RULE_NO"
-		desc = "RULE_OPTION_TLE_HALLOWEEN_RULE_NO_DESC"
+		name = TLE_MANCHU_ANNEX_NO
+		text = "RULE_OPTION_TLE_MANCHU_ANNEX_NO"
+		desc = "RULE_OPTION_TLE_MANCHU_ANNEX_NO_DESC"
 	}
 	option = {
-		name = TLE_HALLOWEEN_RULE_YES
-		text = "RULE_OPTION_TLE_HALLOWEEN_RULE_YES"
-		desc = "RULE_OPTION_TLE_HALLOWEEN_RULE_YES_DESC"
+		name = TLE_MANCHU_ANNEX_YES
+		text = "RULE_OPTION_TLE_MANCHU_ANNEX_YES"
+		desc = "RULE_OPTION_TLE_MANCHU_ANNEX_YES_DESC"
+		allow_achievements = no
+	}
+}
+TLE_REALISTIC_NAME_RULE = {
+	name = "TLE_REALISTIC_NAME_RULE"
+	group = "RULE_TLE_REALISM"
+	default = {
+		name = TLE_REALISTIC_NAME_RULE_NO
+		text = "RULE_OPTION_TLE_REALISTIC_NAME_RULE_NO"
+		desc = "RULE_OPTION_TLE_REALISTIC_NAME_RULE_NO_DESC"
+	}
+	option = {
+		name = TLE_REALISTIC_NAME_RULE_YES
+		text = "RULE_OPTION_TLE_REALISTIC_NAME_RULE_YES"
+		desc = "RULE_OPTION_TLE_REALISTIC_NAME_RULE_YES_DESC"
+		allow_achievements = yes
+	}
+}
+TLE_CHINESE_CIVIL_WAR_RULE = {
+	name = "TLE_CHINESE_CIVIL_WAR_RULE"
+	group = "RULE_TLE_REALISM"
+	default = {
+		name = TLE_CHINESE_CIVIL_WAR_RULE_46
+		text = "RULE_OPTION_TLE_CHINESE_CIVIL_WAR_46"
+		desc = "RULE_OPTION_TLE_CHINESE_CIVIL_WAR_46_DESC"
+	}
+	option = {
+		name = TLE_CHINESE_CIVIL_WAR_RULE_49
+		text = "RULE_OPTION_TLE_CHINESE_CIVIL_WAR_49"
+		desc = "RULE_OPTION_TLE_CHINESE_CIVIL_WAR_49_DESC"
 		allow_achievements = yes
 	}
 }
@@ -235,6 +190,12 @@ KOR_ai_behavior = {
 		text = "RULE_KOR_FASCIST_HISTORICAL"
 		desc = "RULE_KOR_FASCIST_HISTORICAL_AI_DESC"
 		allow_achievements = yes
+	}
+	option = {
+		name = FASCIST_YICHIN
+		text = "RULE_KOR_FASCIST_YICHIN"
+		desc = "RULE_KOR_FASCIST_YICHIN_AI_DESC"
+		allow_achievements = no
 	}
 	option = {
 		name = DEMOCRATIC_KKS
@@ -349,6 +310,82 @@ SOV_ai_behavior_TLE = {
 		name = HISTORICAL
 		text = "RULE_OPTION_SOV_HISTORICAL_TLE"
 		desc = "RULE_OPTION_SOV_HISTORICAL_TLE_DESC"
+		allow_achievements = yes
+	}
+}
+
+TLE_KOREA_WANT_TO_SEE_MEIWANCHENG = {
+	name = "TLE_KOREA_WANT_TO_SEE_MEIWANCHENG"
+	group = "RULE_TLE_EUGENE_KIM_EXIST"
+	default = {
+		name = TLE_NOPE
+		text = "RULE_OPTION_TLE_NOPE"
+		desc = "RULE_OPTION_TLE_NOPE_DESC"
+	}
+	option = {
+		name = TLE_YES_I_WANT
+		text = "RULE_OPTION_TLE_YES_I_WANT"
+		desc = "RULE_OPTION_TLE_YES_I_WANT_DESC"
+		allow_achievements = no
+	}
+}
+TLE_EUGENE_KIM_RULE = {
+	name = "TLE_EUGENE_KIM_RULE"
+	group = "RULE_TLE_EUGENE_KIM_EXIST"
+	default = {
+		name = KIM_NOT
+		text = "RULE_OPTION_KIM_NOT"
+		desc = "RULE_OPTION_KIM_NOT_EXIST_DESC"
+	}
+	option = {
+		name = KIM_YES
+		text = "RULE_OPTION_KIM_YES"
+		desc = "RULE_OPTION_KIM_YES_DESC"
+		allow_achievements = no
+	}
+}
+TLE_KILL_THE_KANGMYONG_RULE = {
+	name = "TLE_KILL_THE_KANGMYONG"
+	group = "RULE_TLE_EUGENE_KIM_EXIST"
+	default = {
+		name = TLE_NOT_KILL
+		text = "RULE_OPTION_NOT_KILL_THE_TRAGON"
+		desc = "RULE_OPTION_NOT_KILL_THE_TRAGON_DESC"
+	}
+	option = {
+		name = TLE_SELECT_KILL
+		text = "RULE_OPTION_KILL_THE_TRAGON"
+		desc = "RULE_OPTION_KILL_THE_TRAGON_DESC"
+		allow_achievements = no
+	}
+}
+TLE_OSHINO_KO_RULE = {
+	name = "TLE_OSHINO_KO_RULE"
+	group = "RULE_TLE_EUGENE_KIM_EXIST"
+	default = {
+		name = OSHINO_KO_NOT
+		text = "RULE_OPTION_OSHINO_KO_NOT"
+		desc = "RULE_OPTION_OSHINO_KO_NOT_EXIST_DESC"
+	}
+	option = {
+		name = OSHINO_KO_YES
+		text = "RULE_OPTION_OSHINO_KO_YES"
+		desc = "RULE_OPTION_OSHINO_KO_YES_DESC"
+		allow_achievements = no
+	}
+}
+TLE_HALLOWEEN_RULE = {
+	name = "TLE_HALLOWEEN_RULE"
+	group = "RULE_TLE_EUGENE_KIM_EXIST"
+	default = {
+		name = TLE_HALLOWEEN_RULE_NO
+		text = "RULE_OPTION_TLE_HALLOWEEN_RULE_NO"
+		desc = "RULE_OPTION_TLE_HALLOWEEN_RULE_NO_DESC"
+	}
+	option = {
+		name = TLE_HALLOWEEN_RULE_YES
+		text = "RULE_OPTION_TLE_HALLOWEEN_RULE_YES"
+		desc = "RULE_OPTION_TLE_HALLOWEEN_RULE_YES_DESC"
 		allow_achievements = yes
 	}
 }

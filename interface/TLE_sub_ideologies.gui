@@ -32,8 +32,17 @@ guiTypes = {
 				clipping = no						
 				
 				instantTextboxType = {
+					name = "party_name"
+					position = { x = 5 y = -5 }
+					font = "hoi_16mbs"
+					text = [GetPartyLoc]
+					maxWidth = 245
+					maxHeight = 20
+				}
+				
+				instantTextboxType = {
 					name = "ideology_name"
-					position = { x = 5 y = 4 }
+					position = { x = 5 y = 10 }
 					font = "hoi_16mbs"
 					text = [GetIdeologyLoc]
 					maxWidth = 245
@@ -42,7 +51,7 @@ guiTypes = {
 				
 				instantTextboxType = {
 					name = "sub_ideology_name"
-					position = { x = 5 y = 19 }
+					position = { x = 5 y = 25 }
 					font = "hoi_16mbs"
 					text = [GetSubIdeologyLoc]
 					maxWidth = 245

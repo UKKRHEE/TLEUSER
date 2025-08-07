@@ -175,3 +175,12 @@ music = {
 		}
 	}
 }
+music = {
+	song = "narcissism_bluesky"
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}

@@ -28,7 +28,7 @@
  SE_FALL_OF_KOREA_D:0 "남을 너그럽게 받아들이는 사람은\n사람들의 마음을 얻고\n위엄과 무력으로 엄하게 다스리는 자는\n사람들의 노여움을 사게 된다.\n-조선 세종"
  SE_FALL_OF_KOREA_A:0 "오, 대한이여"
 
- SE_WON_IN_CHINA:0 "대아전쟁의 승리"
+ SE_WON_IN_CHINA:0 "대동아전쟁 승리"
  SE_WON_IN_CHINA_D:0 "백성에게 해가 된다면 공자가 돌아와도 용서치 않겠다.\n-흥선군 이하응"
  SE_WON_IN_CHINA_A:0 "대한제국 만세!"
 
@@ -52,7 +52,7 @@
  SE_GERMANY_WIN_D:0 "생명은 나약함을 용서하지 않는다.\n-아돌프 히틀러"
  SE_GERMANY_WIN_A:0 "독일, 그 무엇보다 위에!"
 
- SE_KANGMYONG_YUSHIN:0 "강명유신"
+ SE_KANGMYONG_YUSHIN:0 "강명 유신"
  SE_KANGMYONG_YUSHIN_D:0 "임금과 신하는 백성을 위해 존재한다.\n-성종 이혈"
  SE_KANGMYONG_YUSHIN_A:0 "한 걸음 더"
 
@@ -195,4 +195,8 @@
  SE_TIANMING_DIVIDE_ILSO:0 "천하다분"
  SE_TIANMING_DIVIDE_ILSO_D:0 "꽃 속의 대와 버들에 싸인 정자는 마치 그림 같은데\n때때로 들리는 꾀꼬리 소리는 주인을 부르는구나.\n-조선 효종"
  SE_TIANMING_DIVIDE_ILSO_A:0 "오래된 꿈"
+
+ SE_GREAT_ASIAN_WAR_YICHIN:0 "대아시아 전쟁"
+ SE_GREAT_ASIAN_WAR_YICHIN_D:0 "내가 꿈꾸는 태평성대는 백성들이 하는 일을 원만하게 하는 세상이다.\n-조선 세종"
+ SE_GREAT_ASIAN_WAR_YICHIN_A:0 "나의 태평성대"
 ##USE SUPER_EVENT_MAKER_GUI IN USEFUL PYTHON PROGRAMS TO MAKE NEW SUPER EVENTS##

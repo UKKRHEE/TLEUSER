@@ -412,7 +412,7 @@ country_event = { #체코 쿠데타
 	fire_only_once = yes	
     trigger = {
 		tag = CZE
-		date > 1948.1.15
+		date > 1947.1.15
 		CZE = {
 			is_ai = yes
 			NOT = { has_government = communism }

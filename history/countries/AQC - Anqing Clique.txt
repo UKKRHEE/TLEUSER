@@ -1,4 +1,4 @@
-﻿capital = 606
+﻿capital = 1138
 
 oob = "ANC"
 

@@ -13,6 +13,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/traits/KOR_emperor.dds"
 	}	
 	spriteType = {
+		name = "GFX_trait_KOR_KORCP"
+		texturefile = "gfx/interface/traits/KOR_KORCP.png"
+	}	
+	spriteType = {
 		name = "GFX_trait_cheats_trait_admiral_yi"
 		texturefile = "gfx/interface/traits/cheats_trait_admiral_yi.dds"
 	}	

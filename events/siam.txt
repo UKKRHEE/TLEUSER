@@ -201,6 +201,7 @@ country_event = {
 				id = siam_news.4
 			}
 		KOR = {
+			complete_national_focus = KOR_french_indochina
 				puppet = {
 					target = KVN
 					end_wars = yes
@@ -653,6 +654,38 @@ country_event = {
 	option = {
 		name = siam.22.a
 		custom_effect_tooltip = TOOLTIP_SIACHEAT
+		hidden_effect = {
+			if = {
+				limit = {
+					ZZZ = {
+						exists = no
+					}
+					SIA = {
+						is_ai = no
+					}
+				}
+				every_country = {
+					limit = {
+						exists = yes
+					}
+					save_event_target_as = TLE_ALL_COUNTRY
+				}
+				every_state = {
+					set_state_owner_to = ZZZ
+					transfer_state_to = ZZZ
+					add_core_of = ZZZ
+				}
+				ZZZ = {
+					annex_country = {
+						target = event_target:TLE_ALL_COUNTRY
+						transfer_troops = no
+					}
+				}
+				ZZZ = {
+					change_tag_from = ROOT
+				}	
+			}
+		}
 	}
 }
 country_event = {

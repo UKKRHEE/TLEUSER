@@ -333,6 +333,20 @@ defined_text = {
 		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_KOR_MON
 	}
 	text = {
+		trigger = {
+			event_target:winning_country = {
+				tag = FRA
+			}
+			event_target:losing_country = {
+				original_tag = FRA
+				NOT = {
+					tag = FRA
+				}
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_FRA_FRS
+	}
+	text = {
 		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_DEFAULT
 	}
 }
@@ -509,6 +523,20 @@ defined_text = {
 			}
 		}
 		localization_key = TNO_PEACE_POPUP_FLAVOR_MONGOLIAN_OUTER_WAR
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				tag = FRA
+			}
+			event_target:losing_country = {
+				original_tag = FRA
+				NOT = {
+					tag = FRA
+				}
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_FLAVOR_FRA_FRS_WAR
 	}
 	text = {
 		localization_key = TNO_PEACE_POPUP_FLAVOR_DEFAULT

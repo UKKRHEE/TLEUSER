@@ -16,7 +16,7 @@ characters = {
 		name = "Enver Hoxha"
 		portraits = {
 			civilian = {
-				large = GFX_portrait_Enver_Hoxha
+				large="gfx/leaders/ALB/Portrait_ALB_Enver_Hoxha.png"
 			}
 		}
 		country_leader = {

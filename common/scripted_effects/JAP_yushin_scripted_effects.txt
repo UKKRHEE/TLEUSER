@@ -5,7 +5,7 @@ JAP_anti_yushin_level_up = { #유신 반대 증가
 	if = {
 		limit = { has_idea = JAP_anti_yushin_level_4 }
 		country_event = {
-			id = japan.1029
+			id = japan.1034
 		}
 	}
 	else_if = {

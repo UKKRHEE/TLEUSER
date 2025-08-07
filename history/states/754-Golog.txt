@@ -1,7 +1,9 @@
-
 state={
 	id=754
 	name="STATE_754"
+	provinces={
+		1882 4536 7940 8018 10817 12815 12846 
+	}
 
 	history={
 		victory_points = {
@@ -39,9 +41,6 @@ state={
 
 	}
 
-	provinces={
-		1882 4536 4888 7270 7940 8018 10490 10750 10817 11448 12815 12846 
-	}
 	manpower=400000
 	buildings_max_level_factor=1.000
 	state_category=rural

@@ -8,7 +8,8 @@ JAP_unification_map = {
 	}
 	visible = {
 		tag = JAP
-		JAP = {
+		OR = {
+			is_debug = yes
 			owns_state = 282
 		}
 	}
@@ -22,15 +23,6 @@ JAP_Sakusen_categories = {
 	visible = {
 		tag = JAP
 	}
-	priority = 110
-}
-JAP_Gikai_category = {
-	visible = {
-		tag = JAP
-		has_completed_focus = JAP_war_support
-	}
-	visible_when_empty = yes
-	scripted_gui = JAP_Gikai_GUI
 	priority = 110
 }
 JAP_five_years_plan_category = {
@@ -125,9 +117,12 @@ JAP_yokusankai_GUI = {
 	}
 	visible = {
 		original_tag = JAP
-		is_debug = yes
+		OR = {
+			is_debug = yes
+			has_country_flag = TLE_JAP_can_see_the_ui
+		}
 	}
 	scripted_gui = JAP_yokusankai_GUI
 	visible_when_empty = yes
-	priority = 9999
+	priority = 111
 }

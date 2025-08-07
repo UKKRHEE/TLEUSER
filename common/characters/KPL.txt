@@ -3,12 +3,12 @@ characters={
 		name="KPL_Jean_de_Laborde"
 		portraits={
 			civilian={
-				large="gfx/leaders/FRA/Portrait_France_Jean_de_Laborde.dds"
+				large="gfx/leaders/FRA/Portrait_TLE_France_Jean_de_Laborde.png"
 				small="gfx/interface/ideas/KPL/idea_jean_de_laborde.dds"
 			}
 		}
 		country_leader={
-			ideology=despotism
+			ideology=oligarchism
 		}
 		country_leader={
 			ideology=fascism_ideology

@@ -331,6 +331,10 @@ spriteTypes = {
 		name = "GFX_SE_CHINA_ATTACK_WOOSA"
 		texturefile = "gfx/superevent_pictures/china_attack_woosa.png"
 	}
+	spriteType = {
+		name = "GFX_SE_GREAT_ASIAN_WAR_YICHIN"
+		texturefile = "gfx/superevent_pictures/great_asian_war_yichin.png"
+	}
 	##USE SUPER_EVENT_MAKER_GUI IN USEFUL PYTHON PROGRAMS TO MAKE NEW SUPER EVENTS##
 }
 

@@ -56,6 +56,15 @@ spriteTypes = {
 	}
 	###
 	spriteType = {
+		name = "GFX_no_character_large"
+		texturefile = "gfx/leaders/Portrait_none.png"
+	}
+	spriteType = {
+		name = "GFX_no_character_small"
+		texturefile = "gfx/interface/ideas/idea_advisor_none.png"
+	}
+	###
+	spriteType = {
 		name = "GFX_Portrait_KOR_Generic_land_1"
 		texturefile = "gfx/leaders/KOR/random/Portrait_KOR_Generic_land_1.png"
 	}

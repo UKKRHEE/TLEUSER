@@ -398,7 +398,7 @@ JAP_area_priority = {
 	ai_strategy = {
 		type = area_priority
 		id = asia
-		value = 100
+		value = 500
 	}
 
 	ai_strategy = {
@@ -428,6 +428,37 @@ JAP_area_priority = {
 		type = area_priority
 		id = oceania
 		value = 80
+	}
+}
+JAP_push_tohoku = {
+	allowed = {
+		original_tag = JAP
+	}
+	enable = {
+		JAP = {
+			has_war_with = TBJ
+			NOT = {
+				has_war_with = KOR
+			}
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = front_unit_request
+		tag = TBJ
+		value = 100
+	}
+	
+	ai_strategy = {
+		type = front_control
+		tag = TBJ
+		priority = 99999
+		ratio = 0.45
+		ordertype = front
+		execution_type = rush
+		execute_order = yes
+		manual_attack = yes
 	}
 }
 
@@ -525,6 +556,78 @@ JAP_you_cant_be_international = {
 		id = BUR
 		value = 100
 	}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = SST
+		value = 100
+	}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = EGY
+		value = 100
+	}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = IRE
+		value = 100
+	}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = DEN
+		value = 100
+	}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = NOR
+		value = 100
+	}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = LUX
+		value = 100
+	}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = POL
+		value = 100
+	}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = CAN
+		value = 100
+	}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = SAF
+		value = 100
+	}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = NZL
+		value = 100
+	}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = YUG
+		value = 100
+	}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = BRA
+		value = 100
+	}
 	
 }
 
@@ -568,5 +671,27 @@ JAP_unit_buffer_for_home_islands_invasion_force = {
 		# you can override this to disable the feature
 		subtract_invasions_from_need = yes
 		subtract_fronts_from_need = no
+	}
+}
+
+JAP_war_with_korea_ai = {
+	allowed = {
+		original_tag = JAP
+	}
+	enable = {
+		JAP = {
+			has_war_with = KOR
+			is_ai = yes
+		}
+		KOR = {
+			has_country_flag = FLAG_KOR_FASCIST_ROUTE
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = front_unit_request
+		tag = KOR
+		value = 100
 	}
 }

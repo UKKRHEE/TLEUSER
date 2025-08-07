@@ -74,6 +74,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/country_closing_screen/picture/korea_pak_victory.png"
 	}
 	spriteType = {
+		name = "GFX_TLE_CountryClosing_epilogue_KOR_yichin_victory"
+		texturefile = "gfx/interface/country_closing_screen/picture/korea_yichin_victory.png"
+	}
+	spriteType = {
 		name = "GFX_TLE_CountryClosing_epilogue_JAP_the_last_empire"
 		texturefile = "gfx/interface/country_closing_screen/picture/japan_lastempire.png"
 	}

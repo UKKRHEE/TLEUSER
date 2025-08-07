@@ -95,7 +95,7 @@ country_event = {
 	id = south.4
 	title = south.4.t
 	desc = south.4.d
-	picture = gfx
+	picture = GFX_event_south_aus1
 	
 	trigger = {
 		TAG = KOR
@@ -145,7 +145,7 @@ country_event = {
 	id = south.10
 	title = south.10.t
 	desc = south.10.d
-	picture = gfx
+	picture = GFX_event_south_aus1
 	
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -163,7 +163,7 @@ country_event = {
 	id = south.11
 	title = south.11.t
 	desc = south.11.d
-	picture = gfx
+	picture = GFX_event_south_aus1
 	
 	is_triggered_only = yes
 
@@ -202,7 +202,7 @@ country_event = {
 	id = south.12
 	title = south.12.t
 	desc = south.12.d
-	picture = gfx
+	picture = GFX_event_south_aus1
 	
 	is_triggered_only = yes
 
@@ -825,6 +825,14 @@ country_event = {
 			}
 			RAJ = {
 				set_cosmetic_tag = RAJ_FREETNO
+				if = {
+					limit = {
+						BUR = {
+							is_puppet_of = RAJ
+						}
+					}
+					end_puppet = BUR
+				}
 				every_country = {
 					limit = {
 						has_war_with = RAJ
@@ -923,12 +931,16 @@ country_event = {
 	picture = GFX_event_korea_Gap_event_1
 	
 	fire_only_once = yes
-	trigger = {
+	trigger = {	
+		tag = KOR
+		has_war = yes
+		has_completed_focus = KOR_the_plan_south
+		has_country_flag = FLAG_KOR_FASCIST_ROUTE
 		NOT = {
 			controls_state = 634
 		}			
-		tag = KOR
-		date > 1943.4.18	
+						
+		date > 1943.4.18
 	}
 	
 	option = { #
@@ -947,12 +959,74 @@ country_event = {
 	picture = GFX_event_korea_event_idolt	
 	
 	fire_only_once = yes
-	trigger = {			
+	trigger = {
+		has_country_flag = FLAG_KOR_FASCIST_ROUTE
+		has_war = yes
 		tag = KOR
 		date > 1942.1.1	
 	}
 	
 	option = { #
 		name = south.601.a
+	}
+}
+
+country_event = { 
+	id = south.602 #군국의 어머니
+	title = south.602.t
+	desc = south.602.d
+	picture = GFX_event_korea_777
+	
+	fire_only_once = yes
+	trigger = {
+		has_war = yes
+		tag = KOR
+		date > 1943.1.15
+		has_country_flag = FLAG_KOR_FASCIST_ROUTE
+		has_completed_focus = KOR_the_plan_south		
+	}
+	
+	option = { #
+		name = south.602.a
+	}
+}
+
+country_event = { 
+	id = south.603 #신실용 문답식 예의범절
+	title = south.603.t
+	desc = south.603.d
+	picture = GFX_event_korea_777
+	
+	fire_only_once = yes
+	trigger = {
+		has_war = yes
+		tag = KOR
+		date > 1939.1.15
+		has_country_flag = FLAG_KOR_FASCIST_ROUTE
+		has_completed_focus = kor_korean_lebensraum	
+	}
+	
+	option = { #
+		name = south.603.a
+	}
+}
+
+country_event = { 
+	id = south.604 #실전압축중국어
+	title = south.604.t
+	desc = south.604.d
+	picture = GFX_event_korea_777	
+	
+	fire_only_once = yes
+	trigger = {
+		has_war = yes
+		tag = KOR
+		date > 1938.8.10
+		has_country_flag = FLAG_KOR_FASCIST_ROUTE
+		has_completed_focus = kor_korean_lebensraum	
+	}
+	
+	option = { #
+		name = south.604.a
 	}
 }

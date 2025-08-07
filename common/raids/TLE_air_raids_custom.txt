@@ -1,0 +1,1478 @@
+types = {
+	#한성 대공습
+	Hansung_raid = {
+		days_to_prepare = 30
+
+		ai_will_do = {
+			base = 100	
+		}
+
+		category = air_raids
+
+		command_power = 10 # command power allocation cost
+
+		allowed = {
+			has_dlc = "Gotterdammerung"
+		}
+		# Raid Type is visible
+		visible = {
+
+		}
+		# Specific Target is visible
+		
+		show_target = {
+			original_tag = USA
+			NOT = {
+				is_in_faction_with = FROM
+			}
+		}
+
+		# Can prepare
+		available = {
+			date > 1944.10.15
+		}
+
+
+		# Can launch a raid
+		launchable = {
+			has_war_with = FROM
+		}
+
+		target_type = {
+			province = 7125
+		}
+		target_icon = GFX_facility_icon
+		custom_map_icon = GFX_raid_type_icon_facility_raid
+
+		arrow = {
+		    type = air
+		}
+        unit_model = {
+            type = equipment
+        }
+		launch_sound = raid_launch_air
+
+		unit_requirements = {
+			equipment = {
+				type = { strategic_bomber }
+				amount = { min = 75 }
+			}
+		}
+
+		starting_point = {
+		    types = { air_base }
+		}
+
+		success_factors = {
+			success = {
+				base = 0.80
+
+				# Raiding unit modifiers
+				experience = {
+					weight = 0.1
+					start_weight = -0.1
+					reference = 1.0
+				}
+				air_agility = {
+					reference = 100.0 # As air unit agility approaches 100 (as defined by the value above), increase chance by this value
+					weight = 0.1 # At 0 agility, the modifier will have negative effect.
+					start_weight = -0.1 # The modifier will scale linearly, meaning at 50 agility, the modifier will be 0.
+				}
+				reliability = {
+					reference = 1
+					weight = 0.1
+					start_weight = -0.1
+				}
+				air_defence = {
+					reference = 100
+					weight = 0.05
+					start_weight = -0.05
+				}
+				air_superiority = {
+					reference = 1
+					weight = 0.2
+					start_weight = -0.1
+				}
+
+				### Target Modifiers
+				anti_air = {
+					reference = 5
+					weight = -0.15
+				}
+				interception = {
+					reference = 500 # More than 500 fighters won't really make any difference
+					weight = -0.1
+				}
+				intel = {
+					weight = 0.3
+					reference = 100
+				}
+			}
+
+			critical = {
+				base = 0.15
+			}
+		}
+
+		success_levels = {
+			failure = {
+			    victim_effects = {
+
+			    }
+				actor_effects = {
+					# Damage to raiding units
+					raid_damage_units = {
+						plane_loss = 0.30
+						ratio = yes
+					}
+					raid_add_unit_experience = 0.05
+				}
+				visual_effect = {
+					entity = "nuke_entity"
+					animation = "attack"
+				}
+				visual_effect = {
+					entity = "raid_failed_entity"
+					animation = "attack"
+					}
+			}
+			limited_success = {
+			    victim_effects = {
+					# Damage to Target
+					var:target_state = {
+						damage_building = {
+							type = industrial_complex
+							damage = 4
+						}
+						damage_building = {
+							type = infrastructure
+							damage = 1
+						}
+						add_dynamic_modifier = {
+							modifier = KOR_light_bombed_modifier
+							days = 90
+						}
+					}
+			    }
+				actor_effects = {
+					# Damage to raiding units
+					raid_damage_units = {
+						plane_loss = 0.2
+						ratio = yes
+					}
+
+					# XP etc
+					raid_add_unit_experience = 0.1
+				}
+				visual_effect = {
+					entity = "air_raids_2_limited_success_entity"
+					animation = "attack"
+				}
+			}
+			success = {
+			    victim_effects = {
+					# Damage to Target
+					var:target_state = {
+						damage_building = {
+							type = industrial_complex
+							damage = 6
+						}
+						damage_building = {
+							type = infrastructure
+							damage = 3
+						}
+
+						add_dynamic_modifier = {
+							modifier = KOR_medium_bombed_modifier
+							days = 180
+						}
+					}
+			    }
+				actor_effects = {
+					# Damage to raiding units
+					raid_damage_units = {
+						plane_loss = 0.10
+						ratio = yes
+					}
+
+					# XP etc
+					raid_add_unit_experience = 0.2
+
+					var:actor_country = {
+						air_experience = 10
+					}
+				}
+				visual_effect = {
+					entity = "air_raids_2_success_entity"
+					animation = "attack"
+				}
+			}
+			critical_success = {
+			    victim_effects = {
+					# Damage to Target
+					var:target_state = {
+						damage_building = {
+							type = industrial_complex
+							damage = 8
+						}
+						damage_building = {
+							type = infrastructure
+							damage = 5
+						}						
+						add_dynamic_modifier = {
+							modifier = KOR_heavy_bombed_modifier
+							days = 270
+						}
+					}
+			    }
+				actor_effects = {
+					# Damage to raiding units
+					raid_damage_units = {
+						plane_loss = 0
+						ratio = yes
+					}
+
+					# XP etc
+					raid_add_unit_experience = 0.35
+
+					var:actor_country = {
+						air_experience = 20
+					}
+				}
+				visual_effect = {
+					entity = "air_raids_2_critical_success_entity"
+					animation = "attack"
+				}
+			}
+		}
+	}
+	#진해 군항 공습
+	Jinhae_raid = {
+		days_to_prepare = 30
+
+		ai_will_do = {
+			base = 100	
+		}
+
+		category = air_raids
+
+		command_power = 10 # command power allocation cost
+
+		allowed = {
+			has_dlc = "Gotterdammerung"
+		}
+		# Raid Type is visible
+		visible = {
+
+		}
+		# Specific Target is visible
+		
+		show_target = {
+			original_tag = USA
+			NOT = {
+				is_in_faction_with = FROM
+			}
+		}
+
+		# Can prepare
+		available = {
+			date > 1944.11.15
+		}
+
+
+		# Can launch a raidW
+		launchable = {
+			has_war_with = FROM
+
+		}
+
+		target_type = {
+			province = 12060
+		}
+		target_icon = GFX_facility_icon
+		custom_map_icon = GFX_raid_type_icon_facility_raid
+
+		arrow = {
+		    type = air
+		}
+        unit_model = {
+            type = equipment
+        }
+		launch_sound = raid_launch_air
+
+		unit_requirements = {
+			equipment = {
+				type = { strategic_bomber }
+				amount = { min = 75 }
+			}
+		}
+
+		starting_point = {
+		    types = { air_base }
+		}
+
+		success_factors = {
+			success = {
+				base = 0.80
+
+				# Raiding unit modifiers
+				experience = {
+					weight = 0.1
+					start_weight = -0.1
+					reference = 1.0
+				}
+				air_agility = {
+					reference = 100.0 # As air unit agility approaches 100 (as defined by the value above), increase chance by this value
+					weight = 0.1 # At 0 agility, the modifier will have negative effect.
+					start_weight = -0.1 # The modifier will scale linearly, meaning at 50 agility, the modifier will be 0.
+				}
+				reliability = {
+					reference = 1
+					weight = 0.1
+					start_weight = -0.1
+				}
+				air_defence = {
+					reference = 100
+					weight = 0.05
+					start_weight = -0.05
+				}
+				air_superiority = {
+					reference = 1
+					weight = 0.2
+					start_weight = -0.1
+				}
+
+				### Target Modifiers
+				anti_air = {
+					reference = 5
+					weight = -0.15
+				}
+				interception = {
+					reference = 500 # More than 500 fighters won't really make any difference
+					weight = -0.1
+				}
+				intel = {
+					weight = 0.3
+					reference = 100
+				}
+			}
+
+			critical = {
+				base = 0.15
+			}
+		}
+		success_levels = {
+			failure = {
+			    victim_effects = {
+
+			    }
+				actor_effects = {
+					# Damage to raiding units
+					raid_damage_units = {
+						plane_loss = 0.30
+						ratio = yes
+					}
+					raid_add_unit_experience = 0.05
+				}
+				visual_effect = {
+					entity = "nuke_entity"
+					animation = "attack"
+				}
+				visual_effect = {
+					entity = "raid_failed_entity"
+					animation = "attack"
+					}
+			}
+			limited_success = {
+			    victim_effects = {
+					# Damage to Target
+					var:target_state = {
+						damage_building = {
+							type = naval_base
+							damage = 1
+						}
+						damage_building = {
+							type = dockyard
+							damage = 2
+						}
+						add_dynamic_modifier = {
+							modifier = KOR_light_bombed_modifier
+							days = 90
+						}
+					}
+			    }
+				actor_effects = {
+					# Damage to raiding units
+					raid_damage_units = {
+						plane_loss = 0.2
+						ratio = yes
+					}
+
+					# XP etc
+					raid_add_unit_experience = 0.1
+				}
+				visual_effect = {
+					entity = "air_raids_2_limited_success_entity"
+					animation = "attack"
+				}
+			}
+			success = {
+			    victim_effects = {
+					# Damage to Target
+					var:target_state = {
+						damage_building = {
+							type = naval_base
+							damage = 2
+						}
+						damage_building = {
+							type = dockyard
+							damage = 4
+						}
+
+					}
+			    }
+				actor_effects = {
+					# Damage to raiding units
+					raid_damage_units = {
+						plane_loss = 0.10
+						ratio = yes
+					}
+
+					# XP etc
+					raid_add_unit_experience = 0.2
+
+					var:actor_country = {
+						air_experience = 10
+					}
+				}
+				visual_effect = {
+					entity = "air_raids_2_success_entity"
+					animation = "attack"
+				}
+			}
+			critical_success = {
+			    victim_effects = {
+					# Damage to Target
+					var:target_state = {
+					var:target_state = {
+						damage_building = {
+							type = naval_base
+							damage = 4
+						}
+						damage_building = {
+							type = dockyard
+							damage = 6
+						}
+					
+						add_dynamic_modifier = {
+							modifier = KOR_heavy_bombed_modifier
+							days = 270
+						}
+					}
+			    }
+				actor_effects = {
+					# Damage to raiding units
+					raid_damage_units = {
+						plane_loss = 0
+						ratio = yes
+					}
+
+					# XP etc
+					raid_add_unit_experience = 0.35
+
+					var:actor_country = {
+						air_experience = 20
+					}
+				}
+				visual_effect = {
+					entity = "air_raids_2_critical_success_entity"
+					animation = "attack"
+					}
+				}
+			}
+		}
+	}
+	#원산 중공업 단지 공습
+	Wonsan_raid = {
+		days_to_prepare = 30
+
+		ai_will_do = {
+			base = 100	
+		}
+
+		category = air_raids
+
+		command_power = 10 # command power allocation cost
+
+		allowed = {
+			has_dlc = "Gotterdammerung"
+		}
+		# Raid Type is visible
+		visible = {
+
+		}
+		# Specific Target is visible
+		
+		show_target = {
+			original_tag = USA
+			NOT = {
+				is_in_faction_with = FROM
+			}
+		}
+
+		# Can prepare
+		available = {
+			date > 1944.11.30
+		}
+
+
+		# Can launch a raid
+		launchable = {
+			has_war_with = FROM
+		}
+
+		target_type = {
+			province = 848
+		}
+		target_icon = GFX_facility_icon
+		custom_map_icon = GFX_raid_type_icon_facility_raid
+
+		arrow = {
+		    type = air
+		}
+        unit_model = {
+            type = equipment
+        }
+		launch_sound = raid_launch_air
+
+		unit_requirements = {
+			equipment = {
+				type = { strategic_bomber }
+				amount = { min = 75 }
+			}
+		}
+
+		starting_point = {
+		    types = { air_base }
+		}
+
+		success_factors = {
+			success = {
+				base = 0.80
+
+				# Raiding unit modifiers
+				experience = {
+					weight = 0.1
+					start_weight = -0.1
+					reference = 1.0
+				}
+				air_agility = {
+					reference = 100.0 # As air unit agility approaches 100 (as defined by the value above), increase chance by this value
+					weight = 0.1 # At 0 agility, the modifier will have negative effect.
+					start_weight = -0.1 # The modifier will scale linearly, meaning at 50 agility, the modifier will be 0.
+				}
+				reliability = {
+					reference = 1
+					weight = 0.1
+					start_weight = -0.1
+				}
+				air_defence = {
+					reference = 100
+					weight = 0.05
+					start_weight = -0.05
+				}
+				air_superiority = {
+					reference = 1
+					weight = 0.2
+					start_weight = -0.1
+				}
+
+				### Target Modifiers
+				anti_air = {
+					reference = 5
+					weight = -0.15
+				}
+				interception = {
+					reference = 500 # More than 500 fighters won't really make any difference
+					weight = -0.1
+				}
+				intel = {
+					weight = 0.3
+					reference = 100
+				}
+			}
+
+			critical = {
+				base = 0.15
+			}
+		}
+
+		success_levels = {
+			failure = {
+			    victim_effects = {
+
+			    }
+				actor_effects = {
+					# Damage to raiding units
+					raid_damage_units = {
+						plane_loss = 0.30
+						ratio = yes
+					}
+					raid_add_unit_experience = 0.05
+				}
+				visual_effect = {
+					entity = "nuke_entity"
+					animation = "attack"
+				}
+				visual_effect = {
+					entity = "raid_failed_entity"
+					animation = "attack"
+					}
+			}
+			limited_success = {
+			    victim_effects = {
+					# Damage to Target
+					var:target_state = {
+						damage_building = {
+							type = arms_factory
+							damage = 4
+						}
+						add_dynamic_modifier = {
+							modifier = KOR_light_bombed_modifier
+							days = 90
+						}
+					}
+			    }
+				actor_effects = {
+					# Damage to raiding units
+					raid_damage_units = {
+						plane_loss = 0.2
+						ratio = yes
+					}
+
+					# XP etc
+					raid_add_unit_experience = 0.1
+				}
+				visual_effect = {
+					entity = "air_raids_2_limited_success_entity"
+					animation = "attack"
+				}
+			}
+			success = {
+			    victim_effects = {
+					# Damage to Target
+					var:target_state = {
+						damage_building = {
+							type = arms_factory
+							damage = 6
+						}
+
+						add_dynamic_modifier = {
+							modifier = KOR_medium_bombed_modifier
+							days = 180
+						}
+					}
+			    }
+				actor_effects = {
+					# Damage to raiding units
+					raid_damage_units = {
+						plane_loss = 0.10
+						ratio = yes
+					}
+
+					# XP etc
+					raid_add_unit_experience = 0.2
+
+					var:actor_country = {
+						air_experience = 10
+					}
+				}
+				visual_effect = {
+					entity = "air_raids_2_success_entity"
+					animation = "attack"
+				}
+			}
+			critical_success = {
+			    victim_effects = {
+					# Damage to Target
+					var:target_state = {
+						damage_building = {
+							type = arms_factory
+							damage = 8
+						}					
+						add_dynamic_modifier = {
+							modifier = KOR_heavy_bombed_modifier
+							days = 270
+						}
+					}
+			    }
+				actor_effects = {
+					# Damage to raiding units
+					raid_damage_units = {
+						plane_loss = 0
+						ratio = yes
+					}
+
+					# XP etc
+					raid_add_unit_experience = 0.35
+
+					var:actor_country = {
+						air_experience = 20
+					}
+				}
+				visual_effect = {
+					entity = "air_raids_2_critical_success_entity"
+					animation = "attack"
+				}
+			}
+		}
+	}
+	
+	#대구 경공업 단지 공습
+	Daegu_raid = {
+		days_to_prepare = 30
+
+		ai_will_do = {
+			base = 100	
+		}
+
+		category = air_raids
+
+		command_power = 10 # command power allocation cost
+
+		allowed = {
+			has_dlc = "Gotterdammerung"
+		}
+		# Raid Type is visible
+		visible = {
+
+		}
+		# Specific Target is visible
+		
+		show_target = {
+			original_tag = USA
+			NOT = {
+				is_in_faction_with = FROM
+			}
+		}
+
+		# Can prepare
+		available = {
+			date > 1945.1.1
+		}
+
+
+		# Can launch a raid
+		launchable = {
+			has_war_with = FROM
+
+		}
+
+		target_type = {
+			province = 13396
+		}
+		target_icon = GFX_facility_icon
+		custom_map_icon = GFX_raid_type_icon_facility_raid
+
+		arrow = {
+		    type = air
+		}
+        unit_model = {
+            type = equipment
+        }
+		launch_sound = raid_launch_air
+
+		unit_requirements = {
+			equipment = {
+				type = { strategic_bomber }
+				amount = { min = 75 }
+			}
+		}
+
+		starting_point = {
+		    types = { air_base }
+		}
+
+		success_factors = {
+			success = {
+				base = 0.80
+
+				# Raiding unit modifiers
+				experience = {
+					weight = 0.1
+					start_weight = -0.1
+					reference = 1.0
+				}
+				air_agility = {
+					reference = 100.0 # As air unit agility approaches 100 (as defined by the value above), increase chance by this value
+					weight = 0.1 # At 0 agility, the modifier will have negative effect.
+					start_weight = -0.1 # The modifier will scale linearly, meaning at 50 agility, the modifier will be 0.
+				}
+				reliability = {
+					reference = 1
+					weight = 0.1
+					start_weight = -0.1
+				}
+				air_defence = {
+					reference = 100
+					weight = 0.05
+					start_weight = -0.05
+				}
+				air_superiority = {
+					reference = 1
+					weight = 0.2
+					start_weight = -0.1
+				}
+
+				### Target Modifiers
+				anti_air = {
+					reference = 5
+					weight = -0.15
+				}
+				interception = {
+					reference = 500 # More than 500 fighters won't really make any difference
+					weight = -0.1
+				}
+				intel = {
+					weight = 0.3
+					reference = 100
+				}
+			}
+
+			critical = {
+				base = 0.15
+			}
+		}
+
+		success_levels = {
+			failure = {
+			    victim_effects = {
+
+			    }
+				actor_effects = {
+					# Damage to raiding units
+					raid_damage_units = {
+						plane_loss = 0.30
+						ratio = yes
+					}
+					raid_add_unit_experience = 0.05
+				}
+				visual_effect = {
+					entity = "nuke_entity"
+					animation = "attack"
+				}
+				visual_effect = {
+					entity = "raid_failed_entity"
+					animation = "attack"
+					}
+			}
+			limited_success = {
+			    victim_effects = {
+					# Damage to Target
+					var:target_state = {
+						damage_building = {
+							type = industrial_complex
+							damage = 1
+						}
+						damage_building = {
+							type = arms_factory
+							damage = 1
+						}
+						add_dynamic_modifier = {
+							modifier = KOR_light_bombed_modifier
+							days = 90
+						}
+					}
+			    }
+				actor_effects = {
+					# Damage to raiding units
+					raid_damage_units = {
+						plane_loss = 0.2
+						ratio = yes
+					}
+
+					# XP etc
+					raid_add_unit_experience = 0.1
+				}
+				visual_effect = {
+					entity = "air_raids_2_limited_success_entity"
+					animation = "attack"
+				}
+			}
+			success = {
+			    victim_effects = {
+					# Damage to Target
+					var:target_state = {
+						damage_building = {
+							type = industrial_complex
+							damage = 3
+						}
+						damage_building = {
+							type = arms_factory
+							damage = 3
+						}
+
+
+						add_dynamic_modifier = {
+							modifier = KOR_medium_bombed_modifier
+							days = 180
+						}
+					}
+			    }
+				actor_effects = {
+					# Damage to raiding units
+					raid_damage_units = {
+						plane_loss = 0.10
+						ratio = yes
+					}
+
+					# XP etc
+					raid_add_unit_experience = 0.2
+
+					var:actor_country = {
+						air_experience = 10
+					}
+				}
+				visual_effect = {
+					entity = "air_raids_2_success_entity"
+					animation = "attack"
+				}
+			}
+			critical_success = {
+			    victim_effects = {
+					# Damage to Target
+					var:target_state = {
+						damage_building = {
+							type = industrial_complex
+							damage = 4
+						}
+						damage_building = {
+							type = arms_factory
+							damage = 4
+						}						
+						add_dynamic_modifier = {
+							modifier = KOR_heavy_bombed_modifier
+							days = 270
+						}
+					}
+			    }
+				actor_effects = {
+					# Damage to raiding units
+					raid_damage_units = {
+						plane_loss = 0
+						ratio = yes
+					}
+
+					# XP etc
+					raid_add_unit_experience = 0.35
+
+					var:actor_country = {
+						air_experience = 20
+					}
+				}
+				visual_effect = {
+					entity = "air_raids_2_critical_success_entity"
+					animation = "attack"
+					
+				}
+			}
+		}
+	}
+	#대전 조차장 공습
+	Deajeon_raid = {
+		days_to_prepare = 30
+
+		ai_will_do = {
+			base = 100	
+		}
+
+		category = air_raids
+
+		command_power = 10 # command power allocation cost
+
+		allowed = {
+			has_dlc = "Gotterdammerung"
+		}
+		# Raid Type is visible
+		visible = {
+
+		}
+		# Specific Target is visible
+		
+		show_target = {
+			original_tag = USA
+			NOT = {
+				is_in_faction_with = FROM
+			}
+		}
+
+		# Can prepare
+		available = {
+			date > 1945.1.1
+		}
+
+
+		# Can launch a raid
+		launchable = {
+			has_war_with = FROM
+		}
+
+		target_type = {
+			province = 13401
+		}
+		target_icon = GFX_facility_icon
+		custom_map_icon = GFX_raid_type_icon_facility_raid
+
+		arrow = {
+		    type = air
+		}
+        unit_model = {
+            type = equipment
+        }
+		launch_sound = raid_launch_air
+
+		unit_requirements = {
+			equipment = {
+				type = { strategic_bomber }
+				amount = { min = 75 }
+			}
+		}
+
+		starting_point = {
+		    types = { air_base }
+		}
+
+		success_factors = {
+			success = {
+				base = 0.80
+
+				# Raiding unit modifiers
+				experience = {
+					weight = 0.1
+					start_weight = -0.1
+					reference = 1.0
+				}
+				air_agility = {
+					reference = 100.0 # As air unit agility approaches 100 (as defined by the value above), increase chance by this value
+					weight = 0.1 # At 0 agility, the modifier will have negative effect.
+					start_weight = -0.1 # The modifier will scale linearly, meaning at 50 agility, the modifier will be 0.
+				}
+				reliability = {
+					reference = 1
+					weight = 0.1
+					start_weight = -0.1
+				}
+				air_defence = {
+					reference = 100
+					weight = 0.05
+					start_weight = -0.05
+				}
+				air_superiority = {
+					reference = 1
+					weight = 0.2
+					start_weight = -0.1
+				}
+
+				### Target Modifiers
+				anti_air = {
+					reference = 5
+					weight = -0.15
+				}
+				interception = {
+					reference = 500 # More than 500 fighters won't really make any difference
+					weight = -0.1
+				}
+				intel = {
+					weight = 0.3
+					reference = 100
+				}
+			}
+
+			critical = {
+				base = 0.15
+			}
+		}
+		
+		
+		success_levels = {
+			failure = {
+			    victim_effects = {
+
+			    }
+				actor_effects = {
+					# Damage to raiding units
+					raid_damage_units = {
+						plane_loss = 0.30
+						ratio = yes
+					}
+					raid_add_unit_experience = 0.05
+				}
+				visual_effect = {
+					entity = "nuke_entity"
+					animation = "attack"
+				}
+				visual_effect = {
+					entity = "raid_failed_entity"
+					animation = "attack"
+					}
+			}
+			limited_success = {
+			    victim_effects = {
+					# Damage to Target
+					var:target_state = {
+						damage_building = {
+							type = supply_node
+							damage = 0.3
+						}
+						damage_building = {
+							type = rail_way
+							damage = 4
+						}
+						add_dynamic_modifier = {
+							modifier = KOR_light_bombed_modifier
+							days = 90
+						}
+					}
+			    }
+				actor_effects = {
+					# Damage to raiding units
+					raid_damage_units = {
+						plane_loss = 0.2
+						ratio = yes
+					}
+
+					# XP etc
+					raid_add_unit_experience = 0.1
+				}
+				visual_effect = {
+					entity = "air_raids_2_limited_success_entity"
+					animation = "attack"
+				}
+			}
+			success = {
+			    victim_effects = {
+					# Damage to Target
+					var:target_state = {
+						damage_building = {
+							type = supply_node
+							damage = 0.75
+						}
+						damage_building = {
+							type = rail_way
+							damage = 12
+						}
+						
+						add_dynamic_modifier = {
+							modifier = KOR_medium_bombed_modifier
+							days = 180
+						}
+					}
+			    }
+				actor_effects = {
+					# Damage to raiding units
+					raid_damage_units = {
+						plane_loss = 0.10
+						ratio = yes
+					}
+
+					# XP etc
+					raid_add_unit_experience = 0.2
+
+					var:actor_country = {
+						air_experience = 10
+					}
+				}
+				visual_effect = {
+					entity = "air_raids_2_success_entity"
+					animation = "attack"
+				}
+			}
+			critical_success = {
+			    victim_effects = {
+					# Damage to Target
+					var:target_state = {
+						damage_building = {
+							type = supply_node
+							damage = 1
+						}
+						damage_building = {
+							type = rail_way
+							damage = 20
+						}
+						add_dynamic_modifier = {
+							modifier = KOR_medium_bombed_modifier
+							days = 270
+						}
+					}
+			    }
+				actor_effects = {
+					# Damage to raiding units
+					raid_damage_units = {
+						plane_loss = 0
+						ratio = yes
+					}
+
+					# XP etc
+					raid_add_unit_experience = 0.35
+
+					var:actor_country = {
+						air_experience = 20
+					}
+				}
+				visual_effect = {
+					entity = "air_raids_2_critical_success_entity"
+					animation = "attack"
+				}
+			}
+		}
+	}
+	#평양 대공습
+	Pyongyang_raid = {
+		days_to_prepare = 30
+
+		ai_will_do = {
+			base = 100	
+		}
+
+		category = air_raids
+
+		command_power = 10 # command power allocation cost
+
+		allowed = {
+			has_dlc = "Gotterdammerung"
+		}
+		# Raid Type is visible
+		visible = {
+
+		}
+		# Specific Target is visible
+		
+		show_target = {
+			original_tag = USA
+			NOT = {
+				is_in_faction_with = FROM
+			}
+		}
+
+		# Can prepare
+		available = {
+			date > 1944.12.15
+
+		}
+
+
+		# Can launch a raid
+		launchable = {
+			has_war_with = FROM
+		}
+
+		target_type = {
+			province = 7171
+		}
+		target_icon = GFX_facility_icon
+		custom_map_icon = GFX_raid_type_icon_facility_raid
+
+		arrow = {
+		    type = air
+		}
+        unit_model = {
+            type = equipment
+        }
+		launch_sound = raid_launch_air
+
+		unit_requirements = {
+			equipment = {
+				type = { strategic_bomber }
+				amount = { min = 75 }
+			}
+		}
+
+		starting_point = {
+		    types = { air_base }
+		}
+
+		success_factors = {
+			success = {
+				base = 0.80
+
+				# Raiding unit modifiers
+				experience = {
+					weight = 0.1
+					start_weight = -0.1
+					reference = 1.0
+				}
+				air_agility = {
+					reference = 100.0 # As air unit agility approaches 100 (as defined by the value above), increase chance by this value
+					weight = 0.1 # At 0 agility, the modifier will have negative effect.
+					start_weight = -0.1 # The modifier will scale linearly, meaning at 50 agility, the modifier will be 0.
+				}
+				reliability = {
+					reference = 1
+					weight = 0.1
+					start_weight = -0.1
+				}
+				air_defence = {
+					reference = 100
+					weight = 0.05
+					start_weight = -0.05
+				}
+				air_superiority = {
+					reference = 1
+					weight = 0.2
+					start_weight = -0.1
+				}
+
+				### Target Modifiers
+				anti_air = {
+					reference = 5
+					weight = -0.15
+				}
+				interception = {
+					reference = 500 # More than 500 fighters won't really make any difference
+					weight = -0.1
+				}
+				intel = {
+					weight = 0.3
+					reference = 100
+				}
+			}
+
+			critical = {
+				base = 0.15
+			}
+		}
+
+		success_levels = {
+			failure = {
+			    victim_effects = {
+
+			    }
+				actor_effects = {
+					# Damage to raiding units
+					raid_damage_units = {
+						plane_loss = 0.30
+						ratio = yes
+					}
+					raid_add_unit_experience = 0.05
+				}
+				visual_effect = {
+					entity = "nuke_entity"
+					animation = "attack"
+				}
+				visual_effect = {
+					entity = "raid_failed_entity"
+					animation = "attack"
+					}
+			}
+			limited_success = {
+			    victim_effects = {
+					# Damage to Target
+					var:target_state = {
+						damage_building = {
+							type = industrial_complex
+							damage = 4
+						}
+						damage_building = {
+							type = infrastructure
+							damage = 1
+						}
+						add_dynamic_modifier = {
+							modifier = KOR_light_bombed_modifier
+							days = 90
+						}
+					}
+			    }
+				actor_effects = {
+					# Damage to raiding units
+					raid_damage_units = {
+						plane_loss = 0.2
+						ratio = yes
+					}
+
+					# XP etc
+					raid_add_unit_experience = 0.1
+				}
+				visual_effect = {
+					entity = "air_raids_2_limited_success_entity"
+					animation = "attack"
+				}
+			}
+			success = {
+			    victim_effects = {
+					# Damage to Target
+					var:target_state = {
+						damage_building = {
+							type = industrial_complex
+							damage = 6
+						}
+						damage_building = {
+							type = infrastructure
+							damage = 3
+						}
+
+						add_dynamic_modifier = {
+							modifier = KOR_medium_bombed_modifier
+							days = 180
+						}
+					}
+			    }
+				actor_effects = {
+					# Damage to raiding units
+					raid_damage_units = {
+						plane_loss = 0.10
+						ratio = yes
+					}
+
+					# XP etc
+					raid_add_unit_experience = 0.2
+
+					var:actor_country = {
+						air_experience = 10
+					}
+				}
+				visual_effect = {
+					entity = "air_raids_2_success_entity"
+					animation = "attack"
+				}
+			}
+			critical_success = {
+			    victim_effects = {
+					# Damage to Target
+					var:target_state = {
+						damage_building = {
+							type = industrial_complex
+							damage = 8
+						}
+						damage_building = {
+							type = infrastructure
+							damage = 5
+						}						
+						add_dynamic_modifier = {
+							modifier = KOR_heavy_bombed_modifier
+							days = 270
+						}
+					}
+			    }
+				actor_effects = {
+					# Damage to raiding units
+					raid_damage_units = {
+						plane_loss = 0
+						ratio = yes
+					}
+
+					# XP etc
+					raid_add_unit_experience = 0.35
+
+					var:actor_country = {
+						air_experience = 20
+					}
+				}
+				visual_effect = {
+					entity = "air_raids_2_critical_success_entity"
+					animation = "attack"
+				}
+			}
+		}
+	}
+
+}

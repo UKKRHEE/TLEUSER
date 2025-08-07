@@ -1029,3 +1029,42 @@ adjacency_rule =
 	icon = 1399
 	offset = { -2000 -2000 -2000 }
 }
+adjacency_rule = 
+{
+	name = TAIWAN_STRAIT_FAKE
+
+	contested = {
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	enemy = {
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	friend = {
+		army = yes
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	neutral = {
+		army = yes
+		navy = no
+		submarine = no
+		trade = yes
+	}
+
+	is_disabled = {
+		tooltip = empty
+		always = yes
+	}
+
+	required_provinces = { 7214 }
+
+	icon = 7214
+	offset = { -2000 -2000 -2000 }
+}

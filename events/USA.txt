@@ -1992,3 +1992,121 @@ country_event = {
 		set_global_flag = USA_normandy_excuted
 	}
 }
+
+country_event = {
+	id = usa.178 #시칠리아
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = ENG
+		GER = {
+			is_ai = yes
+		}
+		ENG = {
+			is_ai = yes
+			has_war_with = GER
+			surrender_progress < 0.1
+		}
+		country_exists = SOV
+		ITA = {
+			is_in_faction_with = GER
+			surrender_progress < 0.1
+		}
+		SOV = {
+			has_war_with = GER
+			surrender_progress < 0.2
+		}
+		date > 1944.6.1 #게임적 허용
+	}
+	
+	mean_time_to_happen = {
+		days = 15
+	}
+	
+	hidden = yes
+
+	immediate = {
+		news_event = { id = eok_news.105 }
+		ENG = {
+			set_province_controller = 10074
+			set_province_controller = 4159
+			set_province_controller = 4014
+			set_province_controller = 13256
+			set_province_controller = 7059
+			set_province_controller = 3857
+			set_province_controller = 9990
+			set_province_controller = 12066
+		}
+		load_oob = "ENG_sicilia"
+		set_global_flag = ENG_sicilia_excuted
+	}
+}
+
+country_event = { #
+	id = usa.2000
+	title = usa.2000.t
+	desc = usa.2000.d
+	picture = GFX_report_event_Kor_empire_vs
+	fire_only_once = yes	
+    
+	trigger = {
+		date > 1944.8.15
+		is_ai = yes
+		tag = USA
+	}
+	
+	option = {
+		name = usa.2000.a	
+			if = {
+				limit = { has_dlc_bba = yes }
+				
+
+
+					create_equipment_variant = { #B-29
+						name = "B-29"
+						type = large_plane_airframe_3
+						allow_without_tech = yes
+						modules = {
+							fixed_main_weapon_slot = large_bomb_bay
+							fixed_auxiliary_weapon_slot_1 = large_bomb_bay
+							fixed_auxiliary_weapon_slot_2 = large_bomb_bay
+							fixed_auxiliary_weapon_slot_3 = large_bomb_bay
+							engine_type_slot = engine_4_4x
+							special_type_slot_1 = bomb_sights_2
+							special_type_slot_2 = radio_navigation_2
+							special_type_slot_3 = air_ground_radar_2
+							special_type_slot_4 = fuel_tanks_large
+							special_type_slot_5 = self_sealing_fuel_tanks_large
+						}
+					}
+					
+					add_equipment_to_stockpile = {
+						type = large_plane_airframe_3
+						amount = 1600
+						variant_name = "B-29"
+					}
+			
+			}
+			else = {
+				create_equipment_variant = {
+					name = "B-29"
+					type = strat_bomber_equipment_3
+					obsolete = yes
+					upgrades = {
+					
+						plane_range_upgrade = 5
+						plane_reliability_upgrade = 5
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = strat_bomber_equipment_3
+					amount = 1600
+					variant_name = "B-29"
+				}
+
+
+			}		
+		
+	}
+}

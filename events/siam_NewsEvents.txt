@@ -291,9 +291,27 @@ news_event = {
 					promote_leader = yes
 				}
 			}
-			FRI = {
-				transfer_state = 1112
-				transfer_state = 1113
+			if = {
+				limit = {
+					FRI = {
+						exists = yes
+					}
+				}
+				FRI = {
+					transfer_state = 1112
+					transfer_state = 1113
+				}
+			}
+			if = {
+				limit = {
+					KVN = {
+						exists = yes
+					}
+				}
+				KVN = {
+					transfer_state = 1112
+					transfer_state = 1113
+				}
 			}
 			NML = {
 				load_focus_tree = siam_focus_4

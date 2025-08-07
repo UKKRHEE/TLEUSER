@@ -260,7 +260,7 @@ focus_tree = {
         relative_position_id = TLE_RAJ_the_british_raj 
 		mutually_exclusive = { focus = TLE_RAJ_korean_tiger }
 
-        cost = 150
+        cost = 90
 
         ai_will_do = {
 			factor = 100

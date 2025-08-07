@@ -1142,7 +1142,7 @@ country_event = {
 	title = china.1087.t
 	desc = china.1087.d
     
-    picture = GFX_report_event_chi_great_war
+    picture = GFX_event_japan_1159
 
     fire_only_once = yes
 	trigger = { 
@@ -1161,7 +1161,7 @@ country_event = {
 	title = china.1088.t
 	desc = china.1088.d
     
-    picture = GFX_report_event_chi_great_war
+    picture = GFX_event_japan_1159
 
     fire_only_once = yes
 	is_triggered_only = yes
@@ -1190,7 +1190,7 @@ country_event = {
 	title = china.1089.t
 	desc = china.1089.d
     
-    picture = GFX_report_event_chi_great_war
+    picture = GFX_event_japan_1159
 
     fire_only_once = yes
 	is_triggered_only = yes
@@ -1222,7 +1222,7 @@ country_event = {
 	title = china.1090.t
 	desc = china.1090.d
     
-    picture = GFX_report_event_chi_great_war
+    picture = GFX_event_japan_1159
 
     fire_only_once = yes
 	is_triggered_only = yes
@@ -1259,7 +1259,7 @@ country_event = {
 	title = china.1091.t
 	desc = china.1091.d
     
-    picture = GFX_report_event_chi_great_war
+    picture = GFX_event_japan_1159
 
     fire_only_once = yes
 	is_triggered_only = yes
@@ -1284,7 +1284,7 @@ country_event = {
 	title = china.1092.t
 	desc = china.1092.d
     
-    picture = GFX_report_event_chi_great_war
+    picture = GFX_event_japan_1159
 
 	is_triggered_only = yes
 	option = { 
@@ -1324,50 +1324,37 @@ country_event = {
 	title = china.1093.t
 	desc = china.1093.d
     
-    picture = GFX_report_event_chi_great_war
+    picture = GFX_event_japan_1159
 
     fire_only_once = yes
 	is_triggered_only = yes
 	option = { 
 		name = china.1093.a
-		ZLC = {
-			white_peace = CHI
-			white_peace = WZC
-			white_peace = YUN
-			white_peace = GXC
-			white_peace = PRC
-			white_peace = XSM
-			white_peace = AHC
-			white_peace = HNC 
-			white_peace = SND
-			white_peace = SZC
-			white_peace = SIK
-		}
-		every_other_country = {
-			limit = {
-				OR = {
-					original_tag = CHI
-					original_tag = WZC
-					original_tag = YUN
-					original_tag = GXC
-					original_tag = PRC
-					original_tag = AHC
-					original_tag = HNC 
-					original_tag = SND
-					original_tag = SZC
-					#original_tag = SIK
-					#original_tag = XSM
-				}
-				exists = yes
-			}	
-			country_event = {
-				id = generic.5
+		hidden_effect = {
+			ZLC = {
+				set_country_flag = ZLC_next_focus_tree_2
+				mark_focus_tree_layout_dirty = yes
+				complete_national_focus = ZLC_BEI_fkr_zhonghua_allies
+				white_peace = CHI
+				white_peace = WZC
+				white_peace = YUN
+				white_peace = GXC
+				white_peace = PRC
+				white_peace = XSM
+				white_peace = GXM
+				white_peace = NXM
+				white_peace = AHC
+				white_peace = HNC 
+				white_peace = SND
+				white_peace = SZC
+				white_peace = SIK
 			}
+		}
+		complete_national_focus = ZLC_BEI_the_5th_sino_korean_war
+		CHI = {
 			country_event = {
 				id = china.1094
 			}
-		}
-		CHI = {
 		}
     }
 }
@@ -1376,7 +1363,7 @@ country_event = {
 	title = china.1094.t
 	desc = china.1094.d
     
-    picture = GFX_report_event_chi_great_war
+    picture = GFX_event_japan_1159
 
     fire_only_once = yes
 	is_triggered_only = yes
@@ -1401,7 +1388,7 @@ country_event = {
 	title = china.1095.t
 	desc = china.1095.d
     
-    picture = GFX_report_event_chi_great_war
+    picture = GFX_event_japan_1159
 
     fire_only_once = yes
 	is_triggered_only = yes
@@ -1414,7 +1401,7 @@ country_event = {
 	title = china.1096.t
 	desc = china.1096.d
     
-    picture = GFX_report_event_chi_great_war
+    picture = GFX_event_japan_1159
 
     fire_only_once = yes
 	is_triggered_only = yes
@@ -1428,7 +1415,7 @@ country_event = {
 	title = china.1097.t
 	desc = china.1097.d
     
-    picture = GFX_report_event_chi_great_war
+    picture = GFX_event_japan_1159
 
     fire_only_once = yes
 	is_triggered_only = yes
@@ -1464,7 +1451,7 @@ country_event = {
 	title = china.1101.t
 	desc = china.1101.d
     
-    picture = GFX_report_event_chi_great_war
+    picture = GFX_event_japan_1159
 
     fire_only_once = yes
 	is_triggered_only = yes
@@ -1477,7 +1464,7 @@ country_event = {
 	title = china.1102.t
 	desc = china.1102.d
     
-    picture = GFX_report_event_chi_great_war
+    picture = GFX_event_japan_1159
 
     fire_only_once = yes
 	is_triggered_only = yes
@@ -1494,7 +1481,7 @@ country_event = {
 	title = china.1103.t
 	desc = china.1103.d
     
-    picture = GFX_report_event_chi_great_war
+    picture = GFX_event_japan_1159
 
     fire_only_once = yes
 	is_triggered_only = yes
@@ -1509,7 +1496,7 @@ country_event = {
 	title = china.1104.t
 	desc = china.1104.d
     
-    picture = GFX_report_event_chi_great_war
+    picture = GFX_event_japan_1159
 
     fire_only_once = yes
 	is_triggered_only = yes
@@ -1522,26 +1509,6 @@ country_event = {
 			target = AQC
 			type = annex_everything
 		}
-		AQC = {
-			white_peace = WZC
-			white_peace = CHI
-			white_peace = PRC
-		}
-    }
-	option = { 
-		name = china.1104.b
-		ai_chance = {
-			factor = 0
-		}
-		create_wargoal = {
-			target = AQC
-			type = annex_everything
-		}
-		AQC = {
-			white_peace = WZC
-			white_peace = CHI
-			white_peace = PRC
-		}
     }
 }
 country_event = {
@@ -1549,7 +1516,7 @@ country_event = {
 	title = china.1105.t
 	desc = china.1105.d
     
-    picture = GFX_report_event_chi_great_war
+    picture = GFX_event_japan_1159
 
     fire_only_once = yes
 	is_triggered_only = yes
@@ -1560,34 +1527,32 @@ country_event = {
 			type = annex_everything 
 			target = WZC
 		}	
-		AHC = {
-			add_ideas = CHI_attack_with_clique_1
-		}
-		#ZLC = {
-		#	country_event = {
-		#		id = china.1104
-		#		days = 6
-		#	}
-		#}
-		create_faction = CHI_CHIANGS_NORTHERN_EXPANTION
-		CHI = {
-			add_to_faction = PRC
-			add_to_faction = AHC
-		}
-		#declare_war_on = {
-		#	type = annex_everything 
-		#	target = PRC
-		#}
-		every_state = {
-			limit = {
-				is_core_of = WZC
-				OR = {
-					is_owned_by = WZC	
-					is_owned_by = AHC	
-					is_owned_by = PRC	
-				}
+		hidden_effect = {
+			AHC = {
+				add_ideas = CHI_attack_with_clique_1
+				give_military_access = CHI
 			}
-			add_core_of = CHI
+			#ZLC = {
+			#	country_event = {
+			#		id = china.1104
+			#		days = 6
+			#	}
+			#}
+			#declare_war_on = {
+			#	type = annex_everything 
+			#	target = PRC
+			#}
+			every_state = {
+				limit = {
+					is_core_of = WZC
+					OR = {
+						is_owned_by = WZC	
+						is_owned_by = AHC	
+						is_owned_by = PRC	
+					}
+				}
+				add_core_of = CHI
+			}
 		}
     }
 }
@@ -1596,7 +1561,7 @@ country_event = {
 	title = china.1106.t
 	desc = china.1106.d
      
-    picture = GFX_report_event_chi_great_war
+    picture = GFX_event_japan_1159
 
     fire_only_once = yes
 	is_triggered_only = yes
@@ -1615,7 +1580,7 @@ country_event = {
 	title = china.1107.t
 	desc = china.1107.d
     
-    picture = GFX_report_event_chi_great_war
+    picture = GFX_event_japan_1159
 
     fire_only_once = yes
 	is_triggered_only = yes
@@ -1652,7 +1617,7 @@ country_event = {
 	title = china.1108.t
 	desc = china.1108.d
     
-    picture = GFX_report_event_chi_great_war
+    picture = GFX_event_japan_1159
 
     fire_only_once = yes
 	is_triggered_only = yes
@@ -1660,13 +1625,17 @@ country_event = {
 		name = china.1108.a
 		if = {
 			limit = {
-				tag = CHI
+				OR = {
+					tag = ZLC
+					tag = CHI
+				}
 			}
 			custom_effect_tooltip = TOOLTIP_is_un_wancheng
 		}
 		if = {
 			limit = {
 				NOT = {
+					tag = ZLC
 					tag = CHI
 				}
 			}
@@ -1679,7 +1648,7 @@ country_event = {
 	title = china.1109.t
 	desc = china.1109.d
     
-    picture = GFX_report_event_chi_great_war
+    picture = GFX_event_japan_1159
 
     fire_only_once = yes
 	is_triggered_only = yes
@@ -1704,7 +1673,7 @@ country_event = {
 	title = china.1110.t
 	desc = china.1110.d
     
-    picture = GFX_report_event_chi_great_war
+    picture = GFX_event_japan_1159
 
     fire_only_once = yes
 	is_triggered_only = yes
@@ -1719,7 +1688,7 @@ country_event = {
 		CHI = {
 			country_event = {
 				id = china.1111
-				days = 4
+				days = 1
 			}
 		}
     }
@@ -1729,12 +1698,12 @@ country_event = {
 	title = china.1111.t
 	desc = china.1111.d
     
-    picture = GFX_report_event_chi_great_war
+    picture = GFX_event_japan_1159
 
     fire_only_once = yes
 	is_triggered_only = yes
 	option = { 
-		name = china.1109.a
+		name = china.1111.a
 		CHI = {
 			declare_war_on = {
 				type = annex_everything 
@@ -1748,7 +1717,7 @@ country_event = {
 	title = china.1200.t
 	desc = china.1200.d
     
-    picture = GFX_report_event_chi_great_war
+    picture = GFX_event_japan_1159
 
     fire_only_once = yes
 	is_triggered_only = yes

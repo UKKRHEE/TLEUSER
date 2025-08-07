@@ -31,6 +31,9 @@ CHI_army_reform = {
 			tag = YUN
 			tag = SHX
 			tag = XSM
+			tag = TNG
+			tag = NXM
+			tag = GXM
 			tag = SIK
 			tag = SND
 			tag = ZLC
@@ -54,6 +57,9 @@ CHI_fight_with_korea = {
 			tag = YUN
 			tag = SHX
 			tag = XSM
+			tag = TNG
+			tag = NXM
+			tag = GXM
 			tag = SIK
 			tag = SND
 			tag = ZLC
@@ -75,6 +81,9 @@ CHI_integrate_the_warlords = {
 			tag = YUN
 			tag = SHX
 			tag = XSM
+			tag = TNG
+			tag = NXM
+			tag = GXM
 			tag = SIK
 			tag = SND
 			tag = ZLC
@@ -95,6 +104,9 @@ CHI_integrate_the_warlords = {
 					tag = YUN
 					tag = SHX
 					tag = XSM
+					tag = TNG
+					tag = NXM
+					tag = GXM
 					tag = SIK
 					tag = SND
 					tag = ZLC
@@ -199,6 +211,9 @@ CHI_political_power_struggle = {
 			tag = YUN
 			tag = SHX
 			tag = XSM
+			tag = TNG
+			tag = NXM
+			tag = GXM
 			tag = SIK
 			tag = SND
 			tag = ZLC
@@ -274,6 +289,36 @@ CHI_political_power_struggle = {
 	
 	custom_icon = {
 		tag = XSM
+		value = china_struggle_icon_value
+		desc = china_struggle_full_support_breakdown
+
+		visible = {
+			has_event_target = scope_XSM
+		}
+	}
+	
+	custom_icon = {
+		tag = TNG
+		value = china_struggle_icon_value
+		desc = china_struggle_full_support_breakdown
+
+		visible = {
+			has_event_target = scope_XSM
+		}
+	}
+
+	custom_icon = {
+		tag = NXM
+		value = china_struggle_icon_value
+		desc = china_struggle_full_support_breakdown
+
+		visible = {
+			has_event_target = scope_XSM
+		}
+	}
+
+	custom_icon = {
+		tag = GXM
 		value = china_struggle_icon_value
 		desc = china_struggle_full_support_breakdown
 

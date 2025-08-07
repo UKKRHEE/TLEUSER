@@ -28,7 +28,7 @@ state={
 				naval_base = 7
 
 			}
-			7125 = {
+			13394 = {
 				air_facility = 1
 			}
 
@@ -47,6 +47,9 @@ state={
 		}
 		victory_points = {
 			13394 3 
+		}
+		victory_points = {
+			13410 3 
 		}
 		add_core_of = KOR
 

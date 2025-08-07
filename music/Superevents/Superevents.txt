@@ -326,6 +326,12 @@ music = {
 	}
 }
 music = {
+	song = "TLE_SE_GREAT_ASIAN_WAR_YICHIN"
+	chance = {
+		factor = 0
+	}
+}
+music = {
 	song = "buraphacounty"
 	chance = {
 		factor = 0	

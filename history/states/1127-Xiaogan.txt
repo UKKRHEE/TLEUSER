@@ -2,7 +2,7 @@ state={
 	id=1127
 	name="STATE_XIAOGAN"
 	provinces={
-		7167 7637 9959 10462 
+		7167 10462 
 	}
 	history={
 		owner = ZLC
@@ -12,8 +12,11 @@ state={
 			infrastructure = 2
 			industrial_complex = 1
 		}
+		victory_points = {
+			7167 3 
+		}
 	}	
-	manpower=5127890
+	manpower=3127890
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

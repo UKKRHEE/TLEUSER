@@ -687,7 +687,7 @@ guiTypes = {
 		
 		iconType = { # Siam New
 			name = "country_selection_new_siam"
-			position = { x = 421 y = 244 }
+			position = { x = 481 y = 244 }
 			spriteType = "GFX_country_selection_new_shine"
 			pdx_tooltip = "BOOKMARK_SIAM_INFO"
 			pdx_tooltip_delayed = "BOOKMARK_SIAM_INFO_DELAYED"
@@ -710,7 +710,7 @@ guiTypes = {
 			}
 			iconType = { # BRAZIL INFO
 				name = "country_selection_info_northchina"
-				position = { x = 620 y = 80 }
+				position = { x = 440 y = 80 }
 				spriteType = "GFX_country_selection_alert_big_shine"
 				pdx_tooltip = "BOOKMARK_NORTHCHINA_INFO"
 				pdx_tooltip_delayed = "BOOKMARK_NORTHCHINA_INFO_DELAYED"
@@ -724,7 +724,7 @@ guiTypes = {
 			#}
 			iconType = { # BRAZIL INFO
 				name = "country_selection_info_china"
-				position = { x = 440 y = 80 }
+				position = { x = 620 y = 80 }
 				spriteType = "GFX_country_selection_alert_big_shine"
 				pdx_tooltip = "BOOKMARK_CHINA_INFO"
 				pdx_tooltip_delayed = "BOOKMARK_CHINA_INFO_DELAYED"

@@ -93,3 +93,8 @@ music = {
 	file = "blue_sky/i_dont_want_to_chainned.ogg"
 	volume = 1.0
 }
+music = {
+	name = "narcissism_bluesky"
+	file = "blue_sky/narcissism_bluesky.ogg"
+	volume = 1.0
+}

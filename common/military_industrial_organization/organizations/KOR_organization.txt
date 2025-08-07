@@ -16,9 +16,9 @@ daeseon = {
 		has_dlc = "Arms Against Tyranny"
 	}
 } 
-yeomin = {
+kyungyak = {
 	include = generic_heavy_tank_organization
-	icon = GFX_idea_KOR_yeomin
+	icon = GFX_idea_KOR_kyungyak
 	allowed = {	
 		tag = KOR
 		has_dlc = "Arms Against Tyranny"
@@ -86,7 +86,6 @@ dongmyong = {
 	}
 }
 
-
 pyoahm = {
 	include = generic_escort_ship_organization
 	icon = GFX_idea_KOR_pyoahm
@@ -94,10 +93,28 @@ pyoahm = {
 	allowed = {	 
 		tag = KOR 
 		has_dlc = "Arms Against Tyranny"
-	}
-	
+	}	
 }
 
+jinhae_naval_arsenal = {
+	include = generic_raider_ship_organization
+	icon = GFX_idea_KOR_jinhae_naval_arsenal
+	
+	allowed = {	 
+		tag = KOR 
+		has_dlc = "Arms Against Tyranny"
+	}
+}
+
+daehan_machine_works = {
+	include = generic_submarine_organization
+	icon = GFX_idea_KOR_daehan_machine_works
+	
+	allowed = {	 
+		tag = KOR 
+		has_dlc = "Arms Against Tyranny"
+	}
+}
 ###########################
 
 ###  #    ##  #  # ###  ## 
@@ -137,6 +154,16 @@ haepyong_air = {
 	}
 }
 
+wonsan_naval_arsenal = {
+	include = generic_naval_aircraft_organization
+	icon = GFX_idea_KOR_wonsan_naval_arsenal
+	
+	allowed = {	 
+		tag = KOR 
+		has_dlc = "Arms Against Tyranny"
+	}
+}
+
 
 ################################### 
 
@@ -158,9 +185,9 @@ busanchobyung = {
 	}
 }
 
-samsung = {
+hamhunggigi = {
 	include = generic_artillery_organization
-	icon = GFX_idea_KOR_samsung
+	icon = GFX_idea_KOR_hamhunggigi
 	allowed = {	
 		tag = KOR 
 		has_dlc = "Arms Against Tyranny"

@@ -8,7 +8,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=rexism
+			ideology=ultranationalism
 			desc="SHOWA_TENNO_DESC"
 			traits={ tenno_heikka showa_tenno }
 		}
@@ -22,7 +22,7 @@ characters={
 		}
 		country_leader={
 			desc = "POLITICS_Yoshihisa_DESC"
-			ideology = despotism
+			ideology = oligarchism
 			traits = {
 				the_president_of_japan
 				the_none_popular
@@ -39,10 +39,30 @@ characters={
 		}
 		country_leader={
 			desc = "POLITICS_Yoshimitsu_DESC"
-			ideology = despotism
+			ideology = oligarchism
 			traits = {
 				the_v_president_of_japan
 				DKG_yoshimitsu_trait
+			}
+		}
+	}
+	DKG_unknown={ #불명
+		name="KOR_unknown"
+		portraits={
+			civilian={
+				large = "gfx/leaders/KOR/Portrait_KOR_cho_chungung.png"
+			}
+		}
+		country_leader={
+			desc = ""
+			ideology = marxism
+			traits = {
+			}
+		}
+		country_leader={
+			desc = ""
+			ideology = conservatism
+			traits = {
 			}
 		}
 	}
@@ -376,7 +396,7 @@ characters={
 				factor = 1.000
 			}
 		}
-		corps_commander={
+		field_marshal={
 			traits={ politically_connected JAP_samurai_lineage }
 			skill=2
 			attack_skill=2

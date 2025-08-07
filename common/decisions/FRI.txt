@@ -21,6 +21,14 @@ FRI_befree = {
 		complete_effect = {
 			FRA = {
 				end_puppet = FRI
+				annex_country = {
+					target = SYR
+					transfer_troops = yes
+				}
+				annex_country = {
+					target = LEB
+					transfer_troops = yes
+				}
 			}
 			leave_faction = yes
 			white_peace = GER

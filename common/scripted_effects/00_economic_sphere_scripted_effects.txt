@@ -185,3 +185,15 @@ KOR_add_to_CPS_sphere = {
 		KOR = { add_to_economic_sphere = yes }
 	}
 }
+
+KOR_remove_from_CPS_sphere = {
+	if = {
+		limit = {
+			has_country_flag = KOR_CPS_member
+			THIS = { is_in_economic_sphere = yes }
+		}
+		clr_country_flag = KOR_CPS_member
+		set_temp_variable = { sphere_target = THIS }
+		KOR = { remove_from_economic_sphere = yes }
+	}
+}

@@ -1,4 +1,10 @@
 defined_text = {
+	name = GetPartyLoc
+	text = {
+		localization_key = [From.GetRulingParty]
+	}
+}
+defined_text = {
 	name = GetIdeologyLoc
 	text = {
 		trigger = { has_government = democratic }
@@ -174,6 +180,12 @@ defined_text = {
 		localization_key = korean_war_regime
 	}
 	text = {
+		trigger = {
+			has_country_leader_ideology = nkyp_ideology
+		}
+		localization_key = nkyp_ideology
+	}
+	text = {
 		localization_key = fascism_ideology
 	}
 }
@@ -239,6 +251,12 @@ defined_text = {
 			has_country_leader_ideology = korean_oligarchism
 		}
 		localization_key = korean_oligarchism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = korean_despotism
+		}
+		localization_key = korean_despotism
 	}
 	text = {
 		localization_key = neutrality

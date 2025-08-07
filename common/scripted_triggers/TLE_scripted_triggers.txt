@@ -1,3 +1,20 @@
+is_controlled_by_chinese = {
+	custom_trigger_tooltip = {
+		tooltip = TOOLTIP_CONTROLLED_BY_CHINESE
+		OR = {
+			is_controlled_by = ZLC
+			is_controlled_by = CHI
+			is_controlled_by = XSM
+			is_controlled_by = GXM
+			is_controlled_by = NXM
+			is_controlled_by = SHX
+			is_controlled_by = SCC
+			is_controlled_by = SZC
+			is_controlled_by = XKC
+			is_controlled_by = HNC
+		}
+	}
+}
 JAP_clear_or_has_yushin = {
 	custom_trigger_tooltip = {
 		tooltip = TOOLTIP_JAP_CLER_TIP

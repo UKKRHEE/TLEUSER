@@ -69,7 +69,15 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ideology_KOR_daegongism"
 		texturefile = "gfx/interface/ideologies/KOR_daegongism.png"
-	}	
+	}
+	spriteType = {
+		name = "GFX_ideology_nkyp_ideology"
+		texturefile = "gfx/interface/ideologies/KOR_nkyp.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_KOR_nkyp_ideology"
+		texturefile = "gfx/interface/ideologies/KOR_nkyp.png"
+	}
 	spriteType = {
 		name = "GFX_ideology_sanminzhuyi_communism"
 		texturefile = "gfx/interface/ideologies/TLE_CHI_sun_legacy.png"
@@ -241,6 +249,10 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_ideology_korean_oligarchism"
+		texturefile = "gfx/interface/ideologies/KOR_imperial.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_korean_despotism"
 		texturefile = "gfx/interface/ideologies/KOR_imperial.png"
 	}
 	spriteType = {

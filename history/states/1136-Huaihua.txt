@@ -1,0 +1,27 @@
+state={
+	id=1136
+	name="STATE_HUAIHUA"
+	provinces={
+		4480 7279 7665 10006 10335 12017 12053 12310 
+	}
+	history={
+		victory_points = {
+			10335 3 
+		}
+		victory_points = {
+			12310 3 
+		}
+		owner = HNC
+		add_core_of = HNC
+		add_core_of = CHI
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+	}
+	manpower=8912479
+	state_category=town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

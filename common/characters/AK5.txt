@@ -1,0 +1,22 @@
+characters={
+	AK5_hong_saik={
+		name="AK5_hong_saik"
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/Portrait_KOR_Hong_Sa_ik.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ 
+				#
+			}
+		}
+		country_leader={
+			ideology=ultranationalism
+			traits={ 
+				#
+			}
+		}
+	}
+}

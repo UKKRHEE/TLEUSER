@@ -31,6 +31,7 @@
  TNO_PEACE_POPUP_WAR_CONCLUSION_CHI_WZC: "§R제2차 강동대전§!에서 §Y[winning_country.GetNameWithFlag]§![GetWinnerAlliesWithHas](이)가 §Y[losing_country.GetNameWithFlag]§![GetLoserAllies](을)를 상대로 승리했습니다."
  TNO_PEACE_POPUP_WAR_CONCLUSION_CHI_AHC: "§R강동 평정전§!에서 §Y[winning_country.GetNameWithFlag]§![GetWinnerAlliesWithHas](이)가 §Y[losing_country.GetNameWithFlag]§![GetLoserAllies](을)를 상대로 승리했습니다."
  TNO_PEACE_POPUP_WAR_CONCLUSION_KOR_MON: "§R외몽골 출병§!에서 §Y[winning_country.GetNameWithFlag]§![GetWinnerAlliesWithHas](이)가 §Y[losing_country.GetNameWithFlag]§![GetLoserAllies](을)를 상대로 승리했습니다."
+ TNO_PEACE_POPUP_WAR_CONCLUSION_FRA_FRS: "§R프랑스 해방전§!에서 §Y[winning_country.GetNameWithFlag]§![GetWinnerAlliesWithHas](이)가 §Y[losing_country.GetNameWithFlag]§![GetLoserAllies](을)를 상대로 승리했습니다."
  TNO_PEACE_POPUP_FLAVOR_DEFAULT: "전쟁은 끔찍합니다."
  TNO_PEACE_POPUP_FLAVOR_JAPAN_ISHIN: "천황 폐하 만세."
  TNO_PEACE_POPUP_FLAVOR_GERMAN_LOSE: "역사상 무적의 군대란 존재하지 않았다."
@@ -47,3 +48,4 @@
  TNO_PEACE_POPUP_FLAVOR_JIANGDONG_WAR: "상황은 끊임없이 변화하고 있고, 자신의 생각을 새로운 상황에 적응시키려면 배워야 한다."
  TNO_PEACE_POPUP_FLAVOR_AHC_WAR: "작은 불씨가 들판을 태운다."
  TNO_PEACE_POPUP_FLAVOR_MONGOLIAN_OUTER_WAR: "나라를 검소함으로 다스리는 것은 나 자신이 먼저 행해야 한다."
+ TNO_PEACE_POPUP_FLAVOR_FRA_FRS_WAR: "종소리 울릴 때 창백하고 곧 숨막혀 옛날들 기억나 눈물 흘리네."

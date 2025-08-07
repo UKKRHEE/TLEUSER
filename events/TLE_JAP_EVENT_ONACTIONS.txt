@@ -127,10 +127,7 @@ country_event = {	#spain_civil_war
 	option = {
 		name = super.1.a
 		JAP = {
-			country_event = {
-				id = japan.1153
-				days = 3
-			}	
+			set_country_flag = TLE_JAP_is_owning_tokyo
 		}	
 	}
 }

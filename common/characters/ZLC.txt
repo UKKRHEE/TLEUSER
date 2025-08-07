@@ -36,7 +36,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=rexism
+			ideology=ultranationalism
 			desc="POLITICS_WU_PEIFU_DESC"
 			traits={ ZLC_dazongtong ZLC_xunlieshe wupeifu_trait }
 		}

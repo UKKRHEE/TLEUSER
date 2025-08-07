@@ -1,0 +1,22 @@
+characters={
+	AK3_yi_un={
+		name="AK3_yi_un"
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/Portrait_KOR_Yi_Un.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ 
+				grand_duke_of_korea_yi_un
+			}
+		}
+		country_leader={
+			ideology=ultranationalism
+			traits={ 
+				grand_duke_of_korea_yi_un
+			}
+		}
+	}
+}

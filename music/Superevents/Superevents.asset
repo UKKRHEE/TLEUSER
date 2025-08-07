@@ -250,6 +250,11 @@ music = {
 	volume = 1
 }
 music = {
+	name = "TLE_SE_GREAT_ASIAN_WAR_YICHIN"
+	file = "tle_se_tanhauser.ogg"
+	volume = 2
+}
+music = {
 	name = "buraphacounty"
 	file = "buraphacounty.ogg"
 	volume = 1

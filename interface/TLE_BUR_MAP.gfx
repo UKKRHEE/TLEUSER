@@ -1,0 +1,12 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_china_map_burma_lightedup"
+		texturefile = "gfx/interface/CHI_GUI/redburma.png"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_china_map_burma"
+		texturefile = "gfx/interface/CHI_GUI/burma.png"
+		transparencecheck = yes
+	}
+}

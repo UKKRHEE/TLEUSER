@@ -1,0 +1,18 @@
+characters={
+	NGJ_shimazu_tadashige={
+		name="NGJ_shimazu_tadashige"
+		portraits={
+			civilian={
+				large="gfx/leaders/NGJ/Portrait_NGJ_shimazu_tadashige.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+		}
+		country_leader={
+			ideology=ultranationalism
+			traits={ }
+		}
+	}
+}

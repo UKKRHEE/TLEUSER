@@ -9,7 +9,6 @@ state={
 
 	history={
 		owner = KKS
-		add_claim_by = KKS
 		add_core_of = DKG
 		buildings = {
 			infrastructure = 3
@@ -27,7 +26,10 @@ state={
 
 		}
 		victory_points = {
-			1025 3
+			1025 5
+		}
+		victory_points = {
+			11925 5
 		}
 		victory_points = {
 			4102 5 

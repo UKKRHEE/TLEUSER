@@ -1,0 +1,39 @@
+guiTypes = {
+	containerWindowType = {
+		name = "BUR_MAP_GUI_window"
+		position = { x = 0 y = 0 }
+		size = { width = 500 height = 500 }
+		moveable = yes
+		click_to_front = yes
+		
+		instantTextBoxType = {
+			name = "BUR_MAP_GUI_NAME"
+			position = { x = 0 y = 0 }
+			text = "THE_BURMA_ROAD"
+			font = "aldrich_36_outline"
+			format = center
+			maxWidth = 500
+		}
+		
+		instantTextBoxType = {
+			name = "BUR_MAP_GUI_STATUS"
+			position = { x = 0 y = 430 }
+			font = "Bomb_24"
+			text = "[BUR_MAP_GUI_STATUS_TEXT]"
+			maxWidth = 500
+			maxHeight = 24
+			format = center
+		}
+
+		iconType = {
+			name = "china_map_burma"
+			position = { x = 5 y = 40 }
+			spriteType = "GFX_china_map_burma"
+		}
+		iconType = {
+			name = "china_map_burma_lightedup"
+			position = { x = 5 y = 40 }
+			spriteType = "GFX_china_map_burma_lightedup"
+		}
+	}
+}

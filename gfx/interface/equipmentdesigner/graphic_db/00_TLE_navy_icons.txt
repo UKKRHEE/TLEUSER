@@ -1,0 +1,67 @@
+KOR = {
+	ship_hull_heavy_1 = {
+		pool = {
+			icons = {
+				GFX_KOR_early_battlecruiser_medium
+				#
+				GFX_KOR_early_ship_hull_heavy_medium
+			}
+		}
+	}
+	ship_hull_heavy_2 = {
+		pool = {
+			icons = {
+				GFX_KOR_early_battlecruiser_medium
+				GFX_KOR_basic_battlecruiser_medium
+				#	
+				GFX_KOR_early_ship_hull_heavy_medium
+				GFX_KOR_basic_ship_hull_heavy_medium
+			}
+		}
+	}
+	ship_hull_heavy_3 = {
+		pool = {
+			icons = {
+				GFX_KOR_early_battlecruiser_medium
+				GFX_KOR_basic_battlecruiser_medium
+				GFX_KOR_improved_battlecruiser_medium
+				#	
+				GFX_KOR_early_ship_hull_heavy_medium
+				GFX_KOR_basic_ship_hull_heavy_medium
+				GFX_KOR_improved_ship_hull_heavy_medium
+			}
+		}
+	}
+	ship_hull_heavy_4 = {
+		pool = {
+			icons = {
+				GFX_KOR_early_battlecruiser_medium
+				GFX_KOR_basic_battlecruiser_medium
+				GFX_KOR_improved_battlecruiser_medium
+				GFX_KOR_advanced_battlecruiser_medium
+				#	
+				GFX_KOR_early_ship_hull_heavy_medium
+				GFX_KOR_basic_ship_hull_heavy_medium
+				GFX_KOR_improved_ship_hull_heavy_medium
+				GFX_KOR_advanced_ship_hull_heavy_medium
+			}
+		}
+	}
+	ship_hull_heavy_modern = {
+		pool = {
+			icons = {
+				GFX_KOR_early_battlecruiser_medium
+				GFX_KOR_basic_battlecruiser_medium
+				GFX_KOR_improved_battlecruiser_medium
+				GFX_KOR_advanced_battlecruiser_medium
+				GFX_KOR_modern_battlecruiser_medium
+				#	
+				GFX_KOR_early_ship_hull_heavy_medium
+				GFX_KOR_basic_ship_hull_heavy_medium
+				GFX_KOR_improved_ship_hull_heavy_medium
+				GFX_KOR_advanced_ship_hull_heavy_medium
+				GFX_KOR_modern_ship_hull_heavy_medium
+			}
+		}
+	}
+}

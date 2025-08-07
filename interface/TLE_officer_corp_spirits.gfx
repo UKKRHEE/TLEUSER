@@ -1,0 +1,19 @@
+spriteTypes = {
+    ## Bad Spirits ##
+	spriteType = {
+		name = "GFX_idea_love_ahn_junggeun"
+		texturefile = "gfx/interface/ideas/TLE_spirits/idea_love_ahn_junggeun.png"
+	}
+    ### Army Spirits ###
+    ## Bad Spirits ##
+	spriteType = {
+		name = "GFX_idea_gara_army"
+		texturefile = "gfx/interface/ideas/TLE_spirits/idea_gara_army.png"
+	}
+   ### ARMY Division Command Spirits ###
+    ## Bad Spirits ##
+	spriteType = {
+		name = "GFX_idea_forced_yi_sunshin_spirit"
+		texturefile = "gfx/interface/ideas/TLE_spirits/idea_forced_yi_sunshin_spirit.png"
+	}
+}

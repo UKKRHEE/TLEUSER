@@ -1653,7 +1653,15 @@ ITA = {
 	color = rgb { 67 127 63 }
 	color_ui = rgb { 87 165 82 }
 }
+ITA_neutrality = {
+	color = rgb { 10 150 90 }
+	color_ui = rgb { 10 150 90 }
+}
 ITA_WW2 = {
+	color = rgb { 10 150 90 }
+	color_ui = rgb { 10 150 90 }
+}
+ITA_WW2_REP = {
 	color = rgb { 10 150 90 }
 	color_ui = rgb { 10 150 90 }
 }
@@ -1802,6 +1810,10 @@ SZY_KOR = { #한국
 	color = rgb { 53  56  126 }
 	color_ui = rgb { 53  56  126 }
 }
+SZY_KOR_YICHIN = { #한국
+	color = rgb { 53  56  126 }
+	color_ui = rgb { 53  56  126 }
+}
 TIB_KOR = { #한국
 	color = rgb { 235 235 235 }
 	color_ui = rgb { 235 235 235 }
@@ -1883,6 +1895,10 @@ FNG_UN = { #한국
 SOV_GHQ = { #한국
 	color = rgb { 125 13 24 }
 	color_ui = rgb { 163 17 31 }
+}
+WGR_GER_OCCUP = { #한국
+	color = rgb { 20 133 237 }
+	color_ui = rgb { 20 133 237 }
 }
 KHK_IND = { #한국
 	color = rgb { 140 175 199 }
@@ -2197,6 +2213,10 @@ JOS = { #Choseon
 	color = rgb { 164 128 100 }
 	color_ui = rgb { 164 128 100 }
 }
+JOS_general_government = { #Choseon
+	color = rgb { 164 128 100 }
+	color_ui = rgb { 164 128 100 }
+}
 RYU_puppet = { #Dominion of Ryukyu
     color = rgb { 51  0  124 }
     color_ui = rgb { 51  0  124 }
@@ -2251,6 +2271,10 @@ BUR_US = {
 	color_ui = rgb { 200  14  158 }
 }
 BOR_UK = {
+	color = rgb { 201 56 93 }
+	color_ui = rgb { 255 73 121 }
+}
+IRE_UK = {
 	color = rgb { 201 56 93 }
 	color_ui = rgb { 255 73 121 }
 }
@@ -2339,6 +2363,10 @@ YUG_SOV_FED = {
 	color = rgb { 163 46 78 }
 	color_ui = rgb { 163 46 78 }
 }
+YUG_REDORDER = {
+	color = rgb { 163 46 78 }
+	color_ui = rgb { 163 46 78 }
+}
 ROM_REDORDER = {
 	color = rgb { 170 57 100 }
 	color_ui = rgb { 170 57 100 }
@@ -2384,6 +2412,10 @@ POL_WW2 = {
 	color_ui = rgb { 181 60 73 }
 }
 GRE_REDORDER = {
+	color = rgb { 152 29 75 }
+	color_ui = rgb { 152 29 75 }
+}
+GRE_communism = {
 	color = rgb { 152 29 75 }
 	color_ui = rgb { 152 29 75 }
 }
@@ -2483,6 +2515,36 @@ CHI_REORG_GOV_KOR = {
 	color = rgb { 36  7  126 }
 	color_ui = rgb { 36  7  126 }
 }
+###
+CHI_YICHIN_LOSE = {
+	color = rgb { 0  51  153 }
+	color_ui = rgb { 0  51  153 }
+}
+CHI_YICHIN_LOSE_WANGJINGWEI = {
+	color = rgb { 224 72 52 }
+	color_ui = rgb { 224 72 52 }
+}
+GXC_YICHIN_LOSE = {
+	color = rgb { 0  51  153 }
+	color_ui = rgb { 0  51  153 }
+}
+GXC_YICHIN_LOSE_KUOMINTANG = {
+	color = rgb { 51 102 153 }
+	color_ui = rgb { 51 102 153 }
+}
+PRC_YICHIN_LOSE = {
+	color = rgb { 0  51  153 }
+	color_ui = rgb { 0  51  153 }
+}
+PRC_YICHIN_LOSE_PRC = {
+	color = rgb { 245 12 55 }
+	color_ui = rgb { 245 12 55 }
+}
+PRC_proclaimed_communism = {
+	color = rgb { 160 0 40 }
+	color_ui = rgb { 160 0 40 }
+}
+###
 CHI_PCY_KUOMINTANG = {
 	color = rgb { 224 72 52 }
 	color_ui = rgb { 224 72 52 }
@@ -2564,6 +2626,27 @@ XKC_PCY_KOREA = {
 	color = rgb { 36  7  126 }
 	color_ui = rgb { 36  7  126 }
 }
+NGJ_JAP = {
+	color = rgb { 255 201 178 }
+	color_ui = rgb { 255 201 178 }
+}
+NGJ_KOR = {
+	color = rgb { 36  7  126 }
+	color_ui = rgb { 36  7  126 }
+}
+NGJ_TJP = {
+	color = rgb { 247 144 145 }
+	color_ui = rgb { 247 144 145 }
+}
+NGJ_DKG = {
+	color = rgb { 230 230 230 }
+	color_ui = rgb { 230 230 230 }
+}
+
+CHI_YICHIN_VICTORY = {
+	color = rgb { 224 72 52 }
+	color_ui = rgb { 224 72 52 }
+}
 
 CHI_PCY_SOV_VICTORY = {
 	color = rgb { 224 72 52 }
@@ -2576,4 +2659,78 @@ GER_TLE_ggr = {
 MEN_CHA = {
 	color = rgb { 191 178 119 }
 	color_ui = rgb { 191 178 119 }
+}
+IRQ_UK = {
+	color = rgb { 201 56 93 }
+    color_ui = rgb { 255 73 121 }
+}
+
+####
+USA_KOR_ARMY = {
+	color = rgb { 36  7  126 }
+	color_ui = rgb { 36  7  126 }
+}
+MEX_KOR = {
+	color = rgb { 45  27  120 }
+	color_ui = rgb { 36  7  126 }
+}
+AST_KOR = {
+	color = rgb { 72  72  126 }
+	color_ui = rgb { 72  72  126 }
+}
+SCO_KOR = {
+	color = rgb { 74  85  120 }
+	color_ui = rgb { 74  85  120 }
+}
+QUE_KOR = {
+	color = rgb { 81  69  128 }
+	color_ui = rgb { 81  69  128 }
+}
+CAN_KOR = {
+	color = rgb { 62  29  111 }
+	color_ui = rgb { 62  29  111 }
+}
+MAD_KOR = {
+	color = rgb { 46  52  87 }
+	color_ui = rgb { 46  52  87 }
+}
+IRE_KOR = {
+	color = rgb { 56  43  110 }
+	color_ui = rgb { 56  43  110 }
+}
+FRS_KOR = {
+	color = rgb { 71  85  104 }
+	color_ui = rgb { 71  85  104 }
+}
+ENG_KOR = {
+	color = rgb { 28  15  115 }
+	color_ui = rgb { 28  15  115 }
+}
+CHA_KOR = {
+	color = rgb { 76  54  135 }
+	color_ui = rgb { 76  54  135 }
+}
+ITA_KOR_KYO = {
+	color = rgb { 113  129  135 }
+	color_ui = rgb { 113  129  135 }
+}
+BAY_KOR = {
+	color = rgb { 60  58  115 }
+	color_ui = rgb { 60  58  115 }
+}
+AUS_KOR = {
+	color = rgb { 77  81  115 }
+	color_ui = rgb { 77  81  115 }
+}
+HOL_KOR = {
+	color = rgb { 73  68  99 }
+	color_ui = rgb { 73  68  99 }
+}
+RL1_KOR = {
+	color = rgb { 55  84  99 }
+	color_ui = rgb { 55  84  99 }
+}
+PRE_KOR = {
+	color = rgb { 82  68  99 }
+	color_ui = rgb { 82  68  99 }
 }

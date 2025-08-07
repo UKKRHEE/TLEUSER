@@ -5388,7 +5388,7 @@ focus_tree = {
 
 
 		completion_reward = {
-			JAP = {
+			KOR = {
 				add_opinion_modifier = { target = USA modifier = war_plan_orange }
 			}
 			unlock_decision_tooltip = { decision = USA_execute_war_plan_orange show_effect_tooltip = yes show_modifiers = yes }

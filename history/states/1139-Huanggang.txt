@@ -1,0 +1,23 @@
+state={
+	id=1139
+	name="STATE_HUANGGANG"
+	provinces={
+		7637 9959 
+	}
+	history={
+		owner = ZLC
+		add_core_of = ZLC
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = {
+			9959 3 
+		}
+	}	
+	manpower=2019280
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

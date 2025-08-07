@@ -1,11 +1,13 @@
-
 state={
 	id=1036
 	name="STATE_SHANGHAI"
+	provinces={
+		7014 12076 
+	}
 
 	history={
 		victory_points = {
-			7014 30 
+			7014 20 
 		}
 		buildings = {
 			infrastructure = 3
@@ -23,10 +25,6 @@ state={
 		add_core_of = WZC
 		add_core_of = CHI
 		add_core_of = PRC
-	}
-
-	provinces={
-		7014 10034 12052 12076 
 	}
 	manpower=6727000
 	buildings_max_level_factor=1.000

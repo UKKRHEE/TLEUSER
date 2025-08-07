@@ -295,9 +295,24 @@ focus_tree = {
 		}
 		x = 8
 		y = 5
-		completion_reward = {
-			country_event = {
-				id = korea.220
+		completion_reward = {	
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = TLE_germany_union_defeat
+					}
+				}
+				country_event = {
+					id = korea.220
+				}
+			}
+			if = {
+				limit = {
+					has_global_flag = TLE_germany_union_defeat
+				}
+				country_event = {
+					id = korea.235
+				}
 			}
 		}
 

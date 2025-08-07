@@ -1,0 +1,30 @@
+state={
+	id=1137
+	name="STATE_YINGQING"
+	provinces={
+		1134 4137 4140 6828  9969 11761 12026 
+	}
+	history={
+		owner = ZLC
+		add_core_of = CHI
+		add_core_of = ZLC
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 1
+		}
+		victory_points = {
+			11761 1 
+		}
+		victory_points = {
+			1134 1 
+		}
+
+	}
+	manpower=5327180
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

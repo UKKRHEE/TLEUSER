@@ -1,0 +1,89 @@
+defined_text = {
+	name = BUR_MAP_GUI_STATUS_TEXT
+	text = {
+		trigger = {
+			AND = {
+				has_global_flag = TLE_BURMA_LOAD_COMPLETE
+				AND = {
+					NOT = {
+						has_global_flag = PRE_THE_NEW_ORDER_GBR
+					}
+					NOT = {
+						any_country = {
+							OR = {
+								tag = KOR
+								is_in_faction_with = KOR
+							}
+							controls_state = 640
+						}
+						any_country = {
+							OR = {
+								tag = KOR
+								is_in_faction_with = KOR
+							}
+							controls_state = 999
+						}
+						any_country = {
+							OR = {
+								tag = KOR
+								is_in_faction_with = KOR
+							}
+							controls_state = 995
+						}
+					}
+					any_country = {
+						OR = {
+							tag = ZLC
+							is_in_faction_with = ZLC
+						}
+						controls_state = 325
+					}
+				}
+			}
+		}
+		localization_key = BUR_MAP_GUI_STATUS_GOOD
+	}
+	text = {
+		trigger = { 
+			OR = {
+				OR = {
+					has_global_flag = PRE_THE_NEW_ORDER_GBR
+					any_country = {
+						OR = {
+							tag = KOR
+							is_in_faction_with = KOR
+						}
+						controls_state = 640
+					}
+					any_country = {
+						OR = {
+							tag = KOR
+							is_in_faction_with = KOR
+						}
+						controls_state = 999
+					}
+					any_country = {
+						OR = {
+							tag = KOR
+							is_in_faction_with = KOR
+						}
+						controls_state = 995
+					}
+					NOT = {
+						any_country = {
+							OR = {
+								tag = ZLC
+								is_in_faction_with = ZLC
+							}
+							controls_state = 325
+						}
+					}
+				}
+				NOT = {
+					has_global_flag = TLE_BURMA_LOAD_COMPLETE
+				}
+			}
+		}
+		localization_key = BUR_MAP_GUI_STATUS_BAD
+	}
+}
