@@ -12338,6 +12338,21 @@ country_event = {
 				id = eok_news.103
 			}
 			KOR_YICHIN_5th_sino_korean_wp_effect = yes
+			USA = {
+				break_embargo = KOR
+			}
+			ENG = {
+				break_embargo = KOR
+			}
+			MAL = {
+				break_embargo = KOR
+			}
+			PHI = {
+				break_embargo = KOR
+			}
+			NZL = {
+				break_embargo = KOR
+			}
 		}
     }
 	after = {
